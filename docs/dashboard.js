@@ -36,10 +36,23 @@
       .call(d3.axisBottom(scale).ticks(6).tickFormat(d3.timeFormat("%b %d")));
   }
 
+  function yScale(domain) {
+    if (useLogScale && domain[1] > 1) {
+      return d3.scaleLog().domain([Math.max(domain[0], 0.5), domain[1]]).range([0, 0]).clamp(true);
+    }
+    return d3.scaleLinear().domain(domain).range([0, 0]);
+  }
+
   function drawYAxis(g, scale) {
+    const axis = d3.axisLeft(scale);
+    if (useLogScale) {
+      axis.ticks(5, "~s");
+    } else {
+      axis.ticks(5);
+    }
     g.append("g")
       .attr("class", "axis")
-      .call(d3.axisLeft(scale).ticks(5));
+      .call(axis);
   }
 
   function drawGrid(g, scale, innerW) {
@@ -79,6 +92,7 @@
   let rangeDays = 30;
   let selectedRepo = "__all__";
   let hideWeekends = true;
+  let useLogScale = true;
 
   // --- Load CSV ---
   const raw = await d3.csv("metrics.csv", d => ({
@@ -112,6 +126,10 @@
   });
   d3.select("#weekends-toggle").property("checked", !hideWeekends).on("change", function () {
     hideWeekends = !this.checked;
+    render();
+  });
+  d3.select("#log-toggle").property("checked", useLogScale).on("change", function () {
+    useLogScale = this.checked;
     render();
   });
 
@@ -202,7 +220,7 @@
     const g = createSvg(container, dims);
     const x = xTimeScale(daily, dims.innerW);
     const maxMerges = d3.max(daily, d => d.prs_merged) || 1;
-    const y = d3.scaleLinear().domain([0, maxMerges * 1.15]).range([dims.innerH, 0]);
+    const y = yScale([0, maxMerges * 1.15]).range([dims.innerH, 0]);
 
     drawGrid(g, y, dims.innerW);
     drawXAxis(g, x, dims.innerH);
@@ -263,7 +281,7 @@
     const g = createSvg(container, dims);
     const x = xTimeScale(withData, dims.innerW);
     const maxH = d3.max(withData, d => d.pr_lead_time_median_hours) || 1;
-    const y = d3.scaleLinear().domain([0, Math.max(maxH * 1.15, 48)]).range([dims.innerH, 0]);
+    const y = yScale([0, Math.max(maxH * 1.15, 48)]).range([dims.innerH, 0]);
 
     drawGrid(g, y, dims.innerW);
     drawXAxis(g, x, dims.innerH);
@@ -319,7 +337,7 @@
     const g = createSvg(container, dims);
     const x = xTimeScale(daily, dims.innerW);
     const maxPR = d3.max(daily, d => d.prs_opened + d.prs_merged + d.prs_closed) || 1;
-    const y = d3.scaleLinear().domain([0, maxPR * 1.15]).range([dims.innerH, 0]);
+    const y = yScale([0, maxPR * 1.15]).range([dims.innerH, 0]);
 
     drawGrid(g, y, dims.innerW);
     drawXAxis(g, x, dims.innerH);
@@ -376,7 +394,7 @@
     const g = createSvg(container, dims);
     const x = xTimeScale(daily, dims.innerW);
     const maxIss = d3.max(daily, d => Math.max(d.issues_opened, d.issues_closed)) || 1;
-    const y = d3.scaleLinear().domain([0, maxIss * 1.15]).range([dims.innerH, 0]);
+    const y = yScale([0, maxIss * 1.15]).range([dims.innerH, 0]);
 
     drawGrid(g, y, dims.innerW);
     drawXAxis(g, x, dims.innerH);
