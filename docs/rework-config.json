@@ -1,0 +1,9 @@
+{
+  "ignoreBots": [
+    "github-project-automation[bot]",
+    "github-merge-queue[bot]",
+    "dependabot[bot]",
+    "github-actions[bot]",
+    "fullsend-ai-fullsend[bot]"
+  ]
+}

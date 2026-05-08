@@ -130,6 +130,13 @@
     }));
   } catch (e) { /* rework-details.csv may not exist yet */ }
 
+  // --- Load rework config ---
+  let ignoreBots = [];
+  try {
+    const config = await d3.json("rework-config.json");
+    ignoreBots = config.ignoreBots || [];
+  } catch (e) { /* config may not exist yet */ }
+
   // --- Bot color scale ---
   const botColors = d3.scaleOrdinal(d3.schemeTableau10);
 
@@ -179,7 +186,8 @@
   }
 
   function filterReworkData() {
-    let data = reworkData;
+    // Remove ignored bots and the pre-computed aggregate (we'll recompute it).
+    let data = reworkData.filter(d => d.bot !== "__aggregate__" && !ignoreBots.includes(d.bot));
     if (rangeDays > 0) {
       const cutoff = d3.timeDay.offset(new Date(), -rangeDays);
       const cutoffStr = d3.timeFormat("%Y-%m-%d")(cutoff);
@@ -191,7 +199,19 @@
         return day !== 0 && day !== 6;
       });
     }
-    return data;
+    // Recompute aggregate from visible bots only.
+    const byDate = d3.rollup(data, rows => ({
+      items_touched: d3.sum(rows, d => d.items_touched),
+      items_reworked: d3.sum(rows, d => d.items_reworked),
+    }), d => d.date);
+    const aggRows = Array.from(byDate, ([date, v]) => ({
+      date,
+      bot: "__aggregate__",
+      items_touched: v.items_touched,
+      items_reworked: v.items_reworked,
+      rework_rate: v.items_touched > 0 ? v.items_reworked / v.items_touched : NaN,
+    }));
+    return [...data, ...aggRows];
   }
 
   function aggregateByDate(data) {
