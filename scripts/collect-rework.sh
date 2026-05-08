@@ -16,10 +16,13 @@ if grep -q "^${TARGET_DATE}," "$REWORK_FILE" 2>/dev/null; then
 fi
 
 # Temp files for intermediate data.
-# Each line: bot\trepo\titem\ttimestamp\tevent_id\tevent_url
-TOUCHES_TODAY=$(mktemp)
-TOUCHES_PRIOR=$(mktemp)
-trap 'rm -f "$TOUCHES_TODAY" "$TOUCHES_PRIOR"' EXIT
+# Each line: bot\trepo\tnumber\ttimestamp\titem_url
+TMPDIR_WORK=$(mktemp -d)
+trap 'rm -rf "$TMPDIR_WORK"' EXIT
+TOUCHES_TODAY="$TMPDIR_WORK/touches_today"
+TOUCHES_PRIOR="$TMPDIR_WORK/touches_prior"
+TOUCHES_DEDUPED="$TMPDIR_WORK/touches_deduped"
+REWORK_ITEMS="$TMPDIR_WORK/rework_items"
 
 repos=$(list_repos)
 
@@ -72,9 +75,9 @@ done
 
 # Fetch project board activity via GraphQL.
 echo "  Fetching project board activity..."
-project_items=$(gh api graphql -f query='
-  query {
-    organization(login: "'"${ORG}"'") {
+project_items=$(gh api graphql -f org="$ORG" -f query='
+  query($org: String!) {
+    organization(login: $org) {
       projectsV2(first: 10) {
         nodes {
           items(first: 100) {
@@ -160,21 +163,15 @@ fi
 # Deduplicate TOUCHES_TODAY: for each bot+repo+item, keep the earliest event.
 # Apply 8-second dedup: if the earliest today-touch is within 8s of the latest
 # prior-touch for the same bot+repo+item, remove it from today (same activity).
-TOUCHES_DEDUPED=$(mktemp)
-trap 'rm -f "$TOUCHES_TODAY" "$TOUCHES_PRIOR" "$TOUCHES_DEDUPED"' EXIT
-
 sort -t$'\t' -k1,3 -k4,4 "$TOUCHES_TODAY" | awk -F'\t' '
   !seen[$1 "\t" $2 "\t" $3]++ { print }
 ' > "$TOUCHES_DEDUPED"
 
 # For each bot+repo+item in today's touches, check for prior-day touches.
 # Apply 8-second cross-day dedup.
-REWORK_ITEMS=$(mktemp)
-trap 'rm -f "$TOUCHES_TODAY" "$TOUCHES_PRIOR" "$TOUCHES_DEDUPED" "$REWORK_ITEMS"' EXIT
-
 while IFS=$'\t' read -r bot repo number ts item_url; do
   # Find the latest prior touch by this bot on this item.
-  latest_prior=$(grep -P "^${bot}\t${repo}\t${number}\t" "$TOUCHES_PRIOR" 2>/dev/null \
+  latest_prior=$(awk -F'\t' -v b="$bot" -v r="$repo" -v n="$number" '$1==b && $2==r && $3==n' "$TOUCHES_PRIOR" \
     | sort -t$'\t' -k4,4r \
     | head -1 \
     | cut -f4 || true)
@@ -197,9 +194,7 @@ done < "$TOUCHES_DEDUPED"
 # Write rework-details.csv rows.
 if [[ -s "$REWORK_ITEMS" ]]; then
   while IFS=$'\t' read -r bot repo number ts item_url; do
-    # Build URL with best-effort event anchor.
-    url="${item_url}"
-    append_rework_detail "$ts" "$bot" "$repo" "$number" "$url"
+    append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url"
   done < "$REWORK_ITEMS"
 fi
 
@@ -211,10 +206,10 @@ total_touched=0
 total_reworked=0
 
 while IFS= read -r bot; do
-  touched=$(grep -cP "^${bot}\t" "$TOUCHES_DEDUPED" || true)
+  touched=$(awk -F'\t' -v b="$bot" '$1==b' "$TOUCHES_DEDUPED" | wc -l)
   reworked=0
   if [[ -s "$REWORK_ITEMS" ]]; then
-    reworked=$(grep -cP "^${bot}\t" "$REWORK_ITEMS" || true)
+    reworked=$(awk -F'\t' -v b="$bot" '$1==b' "$REWORK_ITEMS" | wc -l)
   fi
 
   if (( touched > 0 )); then
