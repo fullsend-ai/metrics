@@ -1,0 +1,5 @@
+date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,pr_lead_time_median_hours
+2026-05-07,fullsend,19,16,6,11,9,2,3.70
+2026-05-07,.fullsend,3,1,2,0,0,0,0
+2026-05-07,experiments,2,2,0,0,0,0,0
+2026-05-07,metrics,0,0,0,0,0,0,0
