@@ -78,6 +78,7 @@
   let allData = [];
   let rangeDays = 30;
   let selectedRepo = "__all__";
+  let hideWeekends = true;
 
   // --- Load CSV ---
   const raw = await d3.csv("metrics.csv", d => ({
@@ -109,6 +110,10 @@
     selectedRepo = this.value;
     render();
   });
+  d3.select("#weekends-toggle").property("checked", !hideWeekends).on("change", function () {
+    hideWeekends = !this.checked;
+    render();
+  });
 
   // --- Helpers ---
   function filterData() {
@@ -120,6 +125,12 @@
       const cutoff = d3.timeDay.offset(new Date(), -rangeDays);
       const cutoffStr = d3.timeFormat("%Y-%m-%d")(cutoff);
       data = data.filter(d => d.date >= cutoffStr);
+    }
+    if (hideWeekends) {
+      data = data.filter(d => {
+        const day = new Date(d.date + "T00:00:00").getDay();
+        return day !== 0 && day !== 6;
+      });
     }
     return data;
   }
