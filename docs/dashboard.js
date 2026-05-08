@@ -108,6 +108,31 @@
   }));
   allData = raw;
 
+  // --- Load rework CSVs ---
+  let reworkData = [];
+  let reworkDetails = [];
+  try {
+    reworkData = await d3.csv("rework.csv", d => ({
+      date: d.date,
+      bot: d.bot,
+      items_touched: +d.items_touched,
+      items_reworked: +d.items_reworked,
+      rework_rate: +d.rework_rate,
+    }));
+  } catch (e) { /* rework.csv may not exist yet */ }
+  try {
+    reworkDetails = await d3.csv("rework-details.csv", d => ({
+      datetime: d.datetime,
+      bot: d.bot,
+      repo: d.repo,
+      item: +d.item,
+      url: d.url,
+    }));
+  } catch (e) { /* rework-details.csv may not exist yet */ }
+
+  // --- Bot color scale ---
+  const botColors = d3.scaleOrdinal(d3.schemeTableau10);
+
   // --- Populate repo filter ---
   const repos = [...new Set(raw.map(d => d.repo))].sort();
   const repoSelect = d3.select("#repo-filter");
@@ -139,6 +164,22 @@
     if (selectedRepo !== "__all__") {
       data = data.filter(d => d.repo === selectedRepo);
     }
+    if (rangeDays > 0) {
+      const cutoff = d3.timeDay.offset(new Date(), -rangeDays);
+      const cutoffStr = d3.timeFormat("%Y-%m-%d")(cutoff);
+      data = data.filter(d => d.date >= cutoffStr);
+    }
+    if (hideWeekends) {
+      data = data.filter(d => {
+        const day = new Date(d.date + "T00:00:00").getDay();
+        return day !== 0 && day !== 6;
+      });
+    }
+    return data;
+  }
+
+  function filterReworkData() {
+    let data = reworkData;
     if (rangeDays > 0) {
       const cutoff = d3.timeDay.offset(new Date(), -rangeDays);
       const cutoffStr = d3.timeFormat("%Y-%m-%d")(cutoff);
@@ -210,6 +251,27 @@
           .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev week`);
       }
     });
+
+    // Rework rate summary card
+    const rData = filterReworkData().filter(d => d.bot === "__aggregate__");
+    const rThisWeek = rData.filter(d => d.date >= weekAgoStr);
+    const rLastWeek = rData.filter(d => d.date >= twoWeeksAgoStr && d.date < weekAgoStr);
+
+    if (rThisWeek.length > 0) {
+      const currRate = d3.mean(rThisWeek, d => d.rework_rate) || 0;
+      const prevRate = d3.mean(rLastWeek, d => d.rework_rate) || 0;
+      const delta = prevRate > 0 ? ((currRate - prevRate) / prevRate * 100) : 0;
+      const isPositive = delta <= 0; // lower rework is better
+
+      const card = container.append("div").attr("class", "card");
+      card.append("div").attr("class", "label").text("Rework Rate");
+      card.append("div").attr("class", "value").text((currRate * 100).toFixed(1) + "%");
+      if (prevRate > 0) {
+        card.append("div")
+          .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
+          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev week`);
+      }
+    }
   }
 
   // --- Frequency Chart ---
@@ -501,6 +563,194 @@
     });
   }
 
+  // --- Rework Rate Chart ---
+  function renderReworkRateChart(data) {
+    const container = d3.select("#chart-rework-rate");
+    if (data.length === 0) { container.select("svg").remove(); container.prepend("p").text("No data"); return; }
+    container.select("p").remove();
+    const dims = chartDimensions(container);
+    const g = createSvg(container, dims);
+
+    const bots = [...new Set(data.map(d => d.bot))];
+    const x = d3.scaleTime()
+      .domain(d3.extent(data, d => new Date(d.date)))
+      .range([0, dims.innerW]);
+    const y = d3.scaleLinear()
+      .domain([0, 1])
+      .range([dims.innerH, 0]);
+
+    drawGrid(g, y, dims.innerW);
+    drawXAxis(g, x, dims.innerH);
+    g.append("g").attr("class", "axis").call(
+      d3.axisLeft(y).ticks(5).tickFormat(d3.format(".0%"))
+    );
+
+    bots.forEach(bot => {
+      const botData = data.filter(d => d.bot === bot);
+      const isAggregate = bot === "__aggregate__";
+      const color = isAggregate ? "var(--fg)" : botColors(bot);
+      const width = isAggregate ? 3 : 1.5;
+      const dasharray = isAggregate ? "6 3" : "none";
+
+      g.append("path")
+        .datum(botData)
+        .attr("fill", "none")
+        .attr("stroke", color)
+        .attr("stroke-width", width)
+        .attr("stroke-dasharray", dasharray)
+        .attr("d", d3.line()
+          .defined(d => !isNaN(d.rework_rate))
+          .x(d => x(new Date(d.date)))
+          .y(d => y(d.rework_rate))
+          .curve(d3.curveMonotoneX));
+
+      g.selectAll(`.rr-dot-${bot.replace(/[^a-zA-Z0-9]/g, "_")}`)
+        .data(botData.filter(d => !isNaN(d.rework_rate)))
+        .join("circle")
+        .attr("cx", d => x(new Date(d.date)))
+        .attr("cy", d => y(d.rework_rate))
+        .attr("r", 3)
+        .attr("fill", color)
+        .attr("opacity", 0)
+        .on("mouseover", function (event, d) {
+          d3.select(this).attr("opacity", 1).attr("r", 5);
+          showTooltip(event,
+            `<strong>${d.date}</strong><br>` +
+            `Bot: ${d.bot}<br>` +
+            `Touched: ${d.items_touched}<br>` +
+            `Reworked: ${d.items_reworked}<br>` +
+            `Rate: ${(d.rework_rate * 100).toFixed(1)}%`
+          );
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("opacity", 0).attr("r", 3);
+          hideTooltip();
+        })
+        .on("click", function (event, d) {
+          showReworkDetails(d.date, d.bot);
+        });
+    });
+
+    // Legend
+    const legend = g.append("g").attr("transform", "translate(0, -8)");
+    const displayBots = bots.filter(b => b !== "__aggregate__");
+    displayBots.forEach((bot, i) => {
+      const offset = i * 120;
+      legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0)
+        .attr("stroke", botColors(bot)).attr("stroke-width", 2);
+      legend.append("text").attr("x", offset + 20).attr("y", 4)
+        .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text(bot);
+    });
+    const aggOffset = displayBots.length * 120;
+    legend.append("line").attr("x1", aggOffset).attr("x2", aggOffset + 16).attr("y1", 0).attr("y2", 0)
+      .attr("stroke", "var(--fg)").attr("stroke-width", 3).attr("stroke-dasharray", "6 3");
+    legend.append("text").attr("x", aggOffset + 20).attr("y", 4)
+      .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text("Aggregate");
+  }
+
+  // --- Bot Activity Chart ---
+  function renderBotActivityChart(data) {
+    const container = d3.select("#chart-bot-activity");
+    if (data.length === 0) { container.select("svg").remove(); container.prepend("p").text("No data"); return; }
+    container.select("p").remove();
+    const dims = chartDimensions(container);
+    const g = createSvg(container, dims);
+
+    const bots = [...new Set(data.map(d => d.bot))];
+    const x = d3.scaleTime()
+      .domain(d3.extent(data, d => new Date(d.date)))
+      .range([0, dims.innerW]);
+    const maxTouched = d3.max(data, d => d.items_touched) || 1;
+    const y = yScale([0, maxTouched * 1.15]).range([dims.innerH, 0]);
+
+    drawGrid(g, y, dims.innerW);
+    drawXAxis(g, x, dims.innerH);
+    drawYAxis(g, y);
+
+    bots.forEach(bot => {
+      const botData = data.filter(d => d.bot === bot);
+      const isAggregate = bot === "__aggregate__";
+      const color = isAggregate ? "var(--fg)" : botColors(bot);
+      const width = isAggregate ? 3 : 1.5;
+      const dasharray = isAggregate ? "6 3" : "none";
+
+      g.append("path")
+        .datum(botData)
+        .attr("fill", "none")
+        .attr("stroke", color)
+        .attr("stroke-width", width)
+        .attr("stroke-dasharray", dasharray)
+        .attr("d", d3.line()
+          .x(d => x(new Date(d.date)))
+          .y(d => y(d.items_touched))
+          .curve(d3.curveMonotoneX));
+
+      g.selectAll(`.ba-dot-${bot.replace(/[^a-zA-Z0-9]/g, "_")}`)
+        .data(botData)
+        .join("circle")
+        .attr("cx", d => x(new Date(d.date)))
+        .attr("cy", d => y(d.items_touched))
+        .attr("r", 3)
+        .attr("fill", color)
+        .attr("opacity", 0)
+        .on("mouseover", function (event, d) {
+          d3.select(this).attr("opacity", 1).attr("r", 5);
+          showTooltip(event,
+            `<strong>${d.date}</strong><br>` +
+            `Bot: ${d.bot}<br>` +
+            `Items touched: ${d.items_touched}<br>` +
+            `Reworked: ${d.items_reworked}`
+          );
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("opacity", 0).attr("r", 3);
+          hideTooltip();
+        });
+    });
+
+    // Legend (same style as rework rate chart)
+    const legend = g.append("g").attr("transform", "translate(0, -8)");
+    const displayBots = bots.filter(b => b !== "__aggregate__");
+    displayBots.forEach((bot, i) => {
+      const offset = i * 120;
+      legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0)
+        .attr("stroke", botColors(bot)).attr("stroke-width", 2);
+      legend.append("text").attr("x", offset + 20).attr("y", 4)
+        .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text(bot);
+    });
+    const aggOffset = displayBots.length * 120;
+    legend.append("line").attr("x1", aggOffset).attr("x2", aggOffset + 16).attr("y1", 0).attr("y2", 0)
+      .attr("stroke", "var(--fg)").attr("stroke-width", 3).attr("stroke-dasharray", "6 3");
+    legend.append("text").attr("x", aggOffset + 20).attr("y", 4)
+      .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text("Aggregate");
+  }
+
+  // --- Rework Details ---
+  function showReworkDetails(date, bot) {
+    const panel = d3.select("#rework-details-panel");
+    const matching = reworkDetails.filter(d =>
+      d.datetime.startsWith(date) && (bot === "__aggregate__" || d.bot === bot)
+    );
+
+    if (matching.length === 0) {
+      panel.html("<p>No rework details for this date.</p>");
+      return;
+    }
+
+    let html = `<table><thead><tr><th>Time</th><th>Bot</th><th>Repo</th><th>Item</th></tr></thead><tbody>`;
+    matching.forEach(d => {
+      const time = d.datetime.substring(11, 19);
+      html += `<tr>
+        <td>${time}</td>
+        <td>${d.bot}</td>
+        <td>${d.repo}</td>
+        <td><a href="${d.url}" target="_blank" rel="noopener">#${d.item}</a></td>
+      </tr>`;
+    });
+    html += `</tbody></table>`;
+    panel.html(html);
+  }
+
   // --- Render all ---
   function render() {
     const data = filterData();
@@ -511,6 +761,9 @@
     renderPRVolumeChart(daily);
     renderIssueVolumeChart(daily);
     renderRepoTable(data);
+    const rData = filterReworkData();
+    renderReworkRateChart(rData);
+    renderBotActivityChart(rData);
   }
 
   render();
