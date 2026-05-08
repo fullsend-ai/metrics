@@ -170,3 +170,23 @@ th {
 th:hover { color: var(--fg); }
 
 tr:hover td { background: var(--bg); }
+
+.details-panel {
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.details-panel a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.details-panel a:hover {
+  text-decoration: underline;
+}
+
+.details-panel table {
+  font-size: 0.75rem;
+}
