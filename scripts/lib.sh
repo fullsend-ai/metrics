@@ -2,19 +2,14 @@
 set -euo pipefail
 
 ORG="fullsend-ai"
-DATA_FILE="data/metrics.csv"
-DOCS_CSV="docs/metrics.csv"
+DATA_FILE="docs/metrics.csv"
 CSV_HEADER="date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,pr_lead_time_median_hours"
 
 ensure_csv() {
-  mkdir -p data docs
+  mkdir -p docs
   if [[ ! -f "$DATA_FILE" ]]; then
     echo "$CSV_HEADER" > "$DATA_FILE"
   fi
-}
-
-copy_csv_to_docs() {
-  cp "$DATA_FILE" "$DOCS_CSV"
 }
 
 # List all non-archived, non-fork repos in the org.

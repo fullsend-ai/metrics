@@ -82,5 +82,4 @@ for repo in $repos; do
     "$issues_opened" "$issues_closed" "$releases" "$lead_time_median"
 done
 
-copy_csv_to_docs
 echo "Done. Metrics for ${TARGET_DATE} written to ${DATA_FILE}."
