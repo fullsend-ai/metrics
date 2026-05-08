@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/lib.sh"
 
-START_DATE="${1:-2025-04-01}"
+START_DATE="${1:-2026-04-06}"
 END_DATE="${2:-$(date -d yesterday +%Y-%m-%d)}"
 
 echo "Backfilling metrics from ${START_DATE} to ${END_DATE}..."
