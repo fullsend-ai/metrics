@@ -21,6 +21,11 @@
     </select>
     <label class="toggle-label"><input type="checkbox" id="weekends-toggle"> Show weekends</label>
     <label class="toggle-label"><input type="checkbox" id="log-toggle" checked> Log scale</label>
+    <span class="controls-sep"></span>
+    <span class="toggle-label">Smoothing:</span>
+    <button class="smooth-btn active" data-days="0">None</button>
+    <button class="smooth-btn" data-days="7">7d avg</button>
+    <button class="smooth-btn" data-days="28">28d avg</button>
   </div>
 
   <div class="summary-cards" id="summary-cards"></div>

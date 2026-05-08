@@ -93,6 +93,7 @@
   let selectedRepo = "__all__";
   let hideWeekends = true;
   let useLogScale = true;
+  let smoothDays = 0;
 
   // --- Load CSV ---
   const raw = await d3.csv("metrics.csv", d => ({
@@ -164,6 +165,12 @@
     useLogScale = this.checked;
     render();
   });
+  d3.selectAll(".smooth-btn").on("click", function () {
+    d3.selectAll(".smooth-btn").classed("active", false);
+    d3.select(this).classed("active", true);
+    smoothDays = +this.dataset.days;
+    render();
+  });
 
   // --- Helpers ---
   function filterData() {
@@ -211,7 +218,30 @@
       items_reworked: v.items_reworked,
       rework_rate: v.items_touched > 0 ? v.items_reworked / v.items_touched : NaN,
     }));
-    return [...data, ...aggRows];
+    let result = [...data, ...aggRows];
+    if (smoothDays > 0) result = smoothReworkData(result, smoothDays);
+    return result;
+  }
+
+  function smoothReworkData(data, window) {
+    const bots = [...new Set(data.map(d => d.bot))];
+    const smoothed = [];
+    bots.forEach(bot => {
+      const botData = data.filter(d => d.bot === bot).sort((a, b) => a.date.localeCompare(b.date));
+      botData.forEach((d, i) => {
+        const windowStart = Math.max(0, i - window + 1);
+        const slice = botData.slice(windowStart, i + 1);
+        const avgTouched = d3.mean(slice, s => s.items_touched);
+        const avgReworked = d3.mean(slice, s => s.items_reworked);
+        smoothed.push({
+          ...d,
+          items_touched: Math.round(avgTouched),
+          items_reworked: Math.round(avgReworked),
+          rework_rate: avgTouched > 0 ? avgReworked / avgTouched : NaN,
+        });
+      });
+    });
+    return smoothed;
   }
 
   function aggregateByDate(data) {
