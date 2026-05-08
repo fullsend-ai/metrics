@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fullsend-ai metrics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>fullsend-ai metrics</h1>
+  <p class="subtitle">SDLC performance across all repos, updated daily</p>
+
+  <div class="controls">
+    <button class="range-btn active" data-days="30">30d</button>
+    <button class="range-btn" data-days="90">90d</button>
+    <button class="range-btn" data-days="180">180d</button>
+    <button class="range-btn" data-days="0">All</button>
+    <select id="repo-filter">
+      <option value="__all__">All repos</option>
+    </select>
+  </div>
+
+  <div class="summary-cards" id="summary-cards"></div>
+
+  <div class="chart-section">
+    <h2>Merge &amp; Release Frequency</h2>
+    <div id="chart-frequency"></div>
+  </div>
+
+  <div class="chart-section">
+    <h2>PR Lead Time (median hours)</h2>
+    <div id="chart-leadtime"></div>
+  </div>
+
+  <div class="chart-section">
+    <h2>PR Volume</h2>
+    <div id="chart-pr-volume"></div>
+  </div>
+
+  <div class="chart-section">
+    <h2>Issue Volume</h2>
+    <div id="chart-issue-volume"></div>
+  </div>
+
+  <div class="chart-section">
+    <h2>Per-Repo Breakdown (selected period)</h2>
+    <table id="repo-table">
+      <thead>
+        <tr>
+          <th data-col="repo">Repo</th>
+          <th data-col="prs_merged">PRs Merged</th>
+          <th data-col="prs_opened">PRs Opened</th>
+          <th data-col="issues_opened">Issues Opened</th>
+          <th data-col="issues_closed">Issues Closed</th>
+          <th data-col="releases">Releases</th>
+          <th data-col="pr_lead_time_median_hours">Lead Time (h)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="tooltip" id="tooltip"></div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
