@@ -94,6 +94,49 @@
   let hideWeekends = true;
   let useLogScale = true;
   let smoothDays = 0;
+  const focusedSeries = {};
+
+  function isFocused(chartId, seriesName) {
+    const f = focusedSeries[chartId];
+    return !f || f === seriesName;
+  }
+
+  function seriesOpacity(chartId, seriesName) {
+    return isFocused(chartId, seriesName) ? 1 : 0.08;
+  }
+
+  function toggleFocus(chartId, seriesName) {
+    focusedSeries[chartId] = focusedSeries[chartId] === seriesName ? null : seriesName;
+    render();
+  }
+
+  function makeLegend(g, chartId, items) {
+    const legend = g.append("g").attr("transform", "translate(0, -8)");
+    items.forEach((item, i) => {
+      const offset = i * (item.spacing || 120);
+      const group = legend.append("g")
+        .attr("transform", `translate(${offset}, 0)`)
+        .style("cursor", "pointer")
+        .on("click", () => toggleFocus(chartId, item.name));
+      const dimmed = !isFocused(chartId, item.name);
+      if (item.dash) {
+        group.append("line").attr("x1", 0).attr("x2", 16).attr("y1", 0).attr("y2", 0)
+          .attr("stroke", item.color).attr("stroke-width", item.width || 2)
+          .attr("stroke-dasharray", item.dash).attr("opacity", dimmed ? 0.3 : 1);
+      } else if (item.dot) {
+        group.append("circle").attr("cx", 8).attr("cy", 0).attr("r", 4)
+          .attr("fill", item.color).attr("opacity", dimmed ? 0.3 : 1);
+      } else {
+        group.append("line").attr("x1", 0).attr("x2", 16).attr("y1", 0).attr("y2", 0)
+          .attr("stroke", item.color).attr("stroke-width", item.width || 2)
+          .attr("opacity", dimmed ? 0.3 : 1);
+      }
+      group.append("text").attr("x", 20).attr("y", 4)
+        .attr("font-size", "0.6875rem")
+        .attr("fill", dimmed ? "var(--border)" : "var(--fg-light)")
+        .text(item.label);
+    });
+  }
 
   // --- Load CSV ---
   const raw = await d3.csv("metrics.csv", d => ({
@@ -362,6 +405,7 @@
       .attr("fill", "none")
       .attr("stroke", "var(--chart-1)")
       .attr("stroke-width", 2)
+      .attr("opacity", seriesOpacity("frequency", "merges"))
       .attr("d", d3.line()
         .x(d => x(new Date(d.date)))
         .y(d => y(d.prs_merged))
@@ -377,7 +421,8 @@
       .attr("r", d => 3 + 2 * Math.sqrt(d.releases))
       .attr("fill", "var(--chart-2)")
       .attr("stroke", "var(--bg)")
-      .attr("stroke-width", 2);
+      .attr("stroke-width", 2)
+      .attr("opacity", seriesOpacity("frequency", "releases"));
 
     g.selectAll(".merge-dot")
       .data(daily)
@@ -396,11 +441,10 @@
         hideTooltip();
       });
 
-    const legend = g.append("g").attr("transform", `translate(0, -8)`);
-    legend.append("line").attr("x1", 0).attr("x2", 16).attr("y1", 0).attr("y2", 0).attr("stroke", "var(--chart-1)").attr("stroke-width", 2);
-    legend.append("text").attr("x", 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Merges/day");
-    legend.append("circle").attr("cx", 100).attr("cy", 0).attr("r", 4).attr("fill", "var(--chart-2)");
-    legend.append("text").attr("x", 108).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Release");
+    makeLegend(g, "frequency", [
+      { name: "merges", label: "Merges/day", color: "var(--chart-1)" },
+      { name: "releases", label: "Release", color: "var(--chart-2)", dot: true, spacing: 100 },
+    ]);
   }
 
   // --- Lead Time Chart ---
@@ -425,7 +469,7 @@
     g.append("path")
       .datum(withData)
       .attr("fill", "var(--chart-3)")
-      .attr("fill-opacity", 0.15)
+      .attr("fill-opacity", 0.15 * seriesOpacity("leadtime", "leadtime"))
       .attr("d", d3.area()
         .x(d => x(new Date(d.date)))
         .y0(dims.innerH)
@@ -437,6 +481,7 @@
       .attr("fill", "none")
       .attr("stroke", "var(--chart-3)")
       .attr("stroke-width", 2)
+      .attr("opacity", seriesOpacity("leadtime", "leadtime"))
       .attr("d", d3.line()
         .x(d => x(new Date(d.date)))
         .y(d => y(d.pr_lead_time_median_hours))
@@ -458,6 +503,10 @@
         d3.select(this).attr("opacity", 0).attr("r", 3);
         hideTooltip();
       });
+
+    makeLegend(g, "leadtime", [
+      { name: "leadtime", label: "Lead time", color: "var(--chart-3)" },
+    ]);
   }
 
   // --- PR Volume Chart ---
@@ -484,6 +533,7 @@
         .attr("fill", "none")
         .attr("stroke", colors[i])
         .attr("stroke-width", 2)
+        .attr("opacity", seriesOpacity("pr-volume", labels[i]))
         .attr("d", d3.line()
           .x(d => x(new Date(d.date)))
           .y(d => y(d[key]))
@@ -509,12 +559,9 @@
         });
     });
 
-    const legend = g.append("g").attr("transform", `translate(0, -8)`);
-    keys.forEach((_, i) => {
-      const offset = i * 80;
-      legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0).attr("stroke", colors[i]).attr("stroke-width", 2);
-      legend.append("text").attr("x", offset + 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(labels[i]);
-    });
+    makeLegend(g, "pr-volume", labels.map((label, i) => ({
+      name: label, label, color: colors[i], spacing: 80,
+    })));
   }
 
   // --- Issue Volume Chart ---
@@ -536,10 +583,11 @@
     const labels = ["Opened", "Closed"];
 
     keys.forEach((key, i) => {
+      const op = seriesOpacity("issue-volume", labels[i]);
       g.append("path")
         .datum(daily)
         .attr("fill", colors[i])
-        .attr("fill-opacity", 0.1)
+        .attr("fill-opacity", 0.1 * op)
         .attr("d", d3.area()
           .x(d => x(new Date(d.date)))
           .y0(dims.innerH)
@@ -551,6 +599,7 @@
         .attr("fill", "none")
         .attr("stroke", colors[i])
         .attr("stroke-width", 2)
+        .attr("opacity", op)
         .attr("d", d3.line()
           .x(d => x(new Date(d.date)))
           .y(d => y(d[key]))
@@ -576,12 +625,9 @@
         });
     });
 
-    const legend = g.append("g").attr("transform", `translate(0, -8)`);
-    keys.forEach((_, i) => {
-      const offset = i * 80;
-      legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0).attr("stroke", colors[i]).attr("stroke-width", 2);
-      legend.append("text").attr("x", offset + 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(labels[i]);
-    });
+    makeLegend(g, "issue-volume", labels.map((label, i) => ({
+      name: label, label, color: colors[i], spacing: 80,
+    })));
   }
 
   // --- Repo Table ---
@@ -660,6 +706,7 @@
       const color = isAggregate ? "var(--fg)" : botColors(bot);
       const width = isAggregate ? 3 : 1.5;
       const dasharray = isAggregate ? "6 3" : "none";
+      const legendName = isAggregate ? "Aggregate" : bot;
 
       g.append("path")
         .datum(botData)
@@ -667,6 +714,7 @@
         .attr("stroke", color)
         .attr("stroke-width", width)
         .attr("stroke-dasharray", dasharray)
+        .attr("opacity", seriesOpacity("rework-rate", legendName))
         .attr("d", d3.line()
           .defined(d => !isNaN(d.rework_rate))
           .x(d => x(new Date(d.date)))
@@ -682,7 +730,7 @@
         .attr("fill", color)
         .attr("opacity", 0)
         .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", 1).attr("r", 5);
+          d3.select(this).attr("opacity", seriesOpacity("rework-rate", legendName)).attr("r", 5);
           showTooltip(event,
             `<strong>${d.date}</strong><br>` +
             `Bot: ${d.bot}<br>` +
@@ -700,21 +748,13 @@
         });
     });
 
-    // Legend
-    const legend = g.append("g").attr("transform", "translate(0, -8)");
     const displayBots = bots.filter(b => b !== "__aggregate__");
-    displayBots.forEach((bot, i) => {
-      const offset = i * 120;
-      legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0)
-        .attr("stroke", botColors(bot)).attr("stroke-width", 2);
-      legend.append("text").attr("x", offset + 20).attr("y", 4)
-        .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(bot);
-    });
-    const aggOffset = displayBots.length * 120;
-    legend.append("line").attr("x1", aggOffset).attr("x2", aggOffset + 16).attr("y1", 0).attr("y2", 0)
-      .attr("stroke", "var(--fg)").attr("stroke-width", 3).attr("stroke-dasharray", "6 3");
-    legend.append("text").attr("x", aggOffset + 20).attr("y", 4)
-      .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Aggregate");
+    makeLegend(g, "rework-rate", [
+      ...displayBots.map(bot => ({
+        name: bot, label: bot, color: botColors(bot),
+      })),
+      { name: "Aggregate", label: "Aggregate", color: "var(--fg)", width: 3, dash: "6 3" },
+    ]);
   }
 
   // --- Bot Activity Chart ---
@@ -742,6 +782,7 @@
       const color = isAggregate ? "var(--fg)" : botColors(bot);
       const width = isAggregate ? 3 : 1.5;
       const dasharray = isAggregate ? "6 3" : "none";
+      const legendName = isAggregate ? "Aggregate" : bot;
 
       g.append("path")
         .datum(botData)
@@ -749,6 +790,7 @@
         .attr("stroke", color)
         .attr("stroke-width", width)
         .attr("stroke-dasharray", dasharray)
+        .attr("opacity", seriesOpacity("bot-activity", legendName))
         .attr("d", d3.line()
           .x(d => x(new Date(d.date)))
           .y(d => y(d.items_touched))
@@ -763,7 +805,7 @@
         .attr("fill", color)
         .attr("opacity", 0)
         .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", 1).attr("r", 5);
+          d3.select(this).attr("opacity", seriesOpacity("bot-activity", legendName)).attr("r", 5);
           showTooltip(event,
             `<strong>${d.date}</strong><br>` +
             `Bot: ${d.bot}<br>` +
@@ -777,21 +819,13 @@
         });
     });
 
-    // Legend (same style as rework rate chart)
-    const legend = g.append("g").attr("transform", "translate(0, -8)");
     const displayBots = bots.filter(b => b !== "__aggregate__");
-    displayBots.forEach((bot, i) => {
-      const offset = i * 120;
-      legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0)
-        .attr("stroke", botColors(bot)).attr("stroke-width", 2);
-      legend.append("text").attr("x", offset + 20).attr("y", 4)
-        .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(bot);
-    });
-    const aggOffset = displayBots.length * 120;
-    legend.append("line").attr("x1", aggOffset).attr("x2", aggOffset + 16).attr("y1", 0).attr("y2", 0)
-      .attr("stroke", "var(--fg)").attr("stroke-width", 3).attr("stroke-dasharray", "6 3");
-    legend.append("text").attr("x", aggOffset + 20).attr("y", 4)
-      .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Aggregate");
+    makeLegend(g, "bot-activity", [
+      ...displayBots.map(bot => ({
+        name: bot, label: bot, color: botColors(bot),
+      })),
+      { name: "Aggregate", label: "Aggregate", color: "var(--fg)", width: 3, dash: "6 3" },
+    ]);
   }
 
   // --- Rework Details ---
