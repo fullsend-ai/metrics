@@ -379,9 +379,9 @@
 
     const legend = g.append("g").attr("transform", `translate(0, -8)`);
     legend.append("line").attr("x1", 0).attr("x2", 16).attr("y1", 0).attr("y2", 0).attr("stroke", "var(--chart-1)").attr("stroke-width", 2);
-    legend.append("text").attr("x", 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text("Merges/day");
+    legend.append("text").attr("x", 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Merges/day");
     legend.append("circle").attr("cx", 100).attr("cy", 0).attr("r", 4).attr("fill", "var(--chart-2)");
-    legend.append("text").attr("x", 108).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text("Release");
+    legend.append("text").attr("x", 108).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Release");
   }
 
   // --- Lead Time Chart ---
@@ -399,9 +399,9 @@
     drawXAxis(g, x, dims.innerH);
     drawYAxis(g, y);
 
-    doraLine(g, y, 1, "Elite (<1h)", "var(--dora-elite)", dims.innerW);
-    doraLine(g, y, 24, "High (<1d)", "var(--dora-high)", dims.innerW);
-    doraLine(g, y, 168, "Medium (<1w)", "var(--dora-medium)", dims.innerW);
+    doraLine(g, y, 1, "Elite (<1h)", "var(--positive)", dims.innerW);
+    doraLine(g, y, 24, "High (<1d)", "var(--chart-1)", dims.innerW);
+    doraLine(g, y, 168, "Medium (<1w)", "var(--chart-2)", dims.innerW);
 
     g.append("path")
       .datum(withData)
@@ -494,7 +494,7 @@
     keys.forEach((_, i) => {
       const offset = i * 80;
       legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0).attr("stroke", colors[i]).attr("stroke-width", 2);
-      legend.append("text").attr("x", offset + 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text(labels[i]);
+      legend.append("text").attr("x", offset + 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(labels[i]);
     });
   }
 
@@ -561,7 +561,7 @@
     keys.forEach((_, i) => {
       const offset = i * 80;
       legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0).attr("stroke", colors[i]).attr("stroke-width", 2);
-      legend.append("text").attr("x", offset + 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text(labels[i]);
+      legend.append("text").attr("x", offset + 20).attr("y", 4).attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(labels[i]);
     });
   }
 
@@ -689,13 +689,13 @@
       legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0)
         .attr("stroke", botColors(bot)).attr("stroke-width", 2);
       legend.append("text").attr("x", offset + 20).attr("y", 4)
-        .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text(bot);
+        .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(bot);
     });
     const aggOffset = displayBots.length * 120;
     legend.append("line").attr("x1", aggOffset).attr("x2", aggOffset + 16).attr("y1", 0).attr("y2", 0)
       .attr("stroke", "var(--fg)").attr("stroke-width", 3).attr("stroke-dasharray", "6 3");
     legend.append("text").attr("x", aggOffset + 20).attr("y", 4)
-      .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text("Aggregate");
+      .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Aggregate");
   }
 
   // --- Bot Activity Chart ---
@@ -766,13 +766,13 @@
       legend.append("line").attr("x1", offset).attr("x2", offset + 16).attr("y1", 0).attr("y2", 0)
         .attr("stroke", botColors(bot)).attr("stroke-width", 2);
       legend.append("text").attr("x", offset + 20).attr("y", 4)
-        .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text(bot);
+        .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text(bot);
     });
     const aggOffset = displayBots.length * 120;
     legend.append("line").attr("x1", aggOffset).attr("x2", aggOffset + 16).attr("y1", 0).attr("y2", 0)
       .attr("stroke", "var(--fg)").attr("stroke-width", 3).attr("stroke-dasharray", "6 3");
     legend.append("text").attr("x", aggOffset + 20).attr("y", 4)
-      .attr("font-size", "0.6875rem").attr("fill", "var(--muted)").text("Aggregate");
+      .attr("font-size", "0.6875rem").attr("fill", "var(--fg-light)").text("Aggregate");
   }
 
   // --- Rework Details ---
