@@ -57,6 +57,15 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.section-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--fg-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
 /* --- Controls --- */
 
 .controls {
