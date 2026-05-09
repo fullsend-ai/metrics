@@ -468,6 +468,38 @@
           .text(`${ppDelta >= 0 ? "+" : ""}${ppDelta.toFixed(1)}pp vs prev 7d`);
       }
     });
+
+    // Per-workflow failure rate cards.
+    const fData = failureData.slice(); // unfiltered by range — use raw 7d windows
+    const fThisWeek = fData.filter(d => d.date >= weekAgoStr);
+    const fLastWeek = fData.filter(d => d.date >= twoWeeksAgoStr && d.date < weekAgoStr);
+
+    const wfNames = [...new Set(fThisWeek.map(d => d.workflow))].sort();
+    wfNames.forEach(wf => {
+      const wfThis = fThisWeek.filter(d => d.workflow === wf);
+      const wfLast = fLastWeek.filter(d => d.workflow === wf);
+      if (wfThis.length === 0) return;
+
+      const totalRuns = d3.sum(wfThis, d => d.runs);
+      const totalFails = d3.sum(wfThis, d => d.failures);
+      const currRate = totalRuns > 0 ? totalFails / totalRuns : 0;
+
+      const prevRuns = d3.sum(wfLast, d => d.runs);
+      const prevFails = d3.sum(wfLast, d => d.failures);
+      const prevRate = prevRuns > 0 ? prevFails / prevRuns : 0;
+
+      const ppDelta = (currRate - prevRate) * 100;
+      const isPositive = ppDelta <= 0; // lower failure is better
+
+      const card = container.append("div").attr("class", "card");
+      card.append("div").attr("class", "label").text(`${wf} fail`);
+      card.append("div").attr("class", "value").text((currRate * 100).toFixed(1) + "%");
+      if (wfLast.length > 0) {
+        card.append("div")
+          .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
+          .text(`${ppDelta >= 0 ? "+" : ""}${ppDelta.toFixed(1)}pp vs prev 7d`);
+      }
+    });
   }
 
   // --- Frequency Chart ---
