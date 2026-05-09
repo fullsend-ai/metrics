@@ -381,16 +381,16 @@
     if (aggThisWeek.length > 0) {
       const currRate = d3.mean(aggThisWeek, d => d.rework_rate) || 0;
       const prevRate = d3.mean(aggLastWeek, d => d.rework_rate) || 0;
-      const delta = prevRate > 0 ? ((currRate - prevRate) / prevRate * 100) : 0;
-      const isPositive = delta <= 0;
+      const ppDelta = (currRate - prevRate) * 100;
+      const isPositive = ppDelta <= 0;
 
       const card = container.append("div").attr("class", "card");
       card.append("div").attr("class", "label").text("Rework Rate");
       card.append("div").attr("class", "value").text((currRate * 100).toFixed(1) + "%");
-      if (prevRate > 0) {
+      if (aggLastWeek.length > 0) {
         card.append("div")
           .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
-          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev 7d`);
+          .text(`${ppDelta >= 0 ? "+" : ""}${ppDelta.toFixed(1)}pp vs prev 7d`);
       }
     }
 
@@ -403,8 +403,8 @@
 
       const currRate = d3.mean(botThis, d => d.rework_rate) || 0;
       const prevRate = d3.mean(botLast, d => d.rework_rate) || 0;
-      const delta = prevRate > 0 ? ((currRate - prevRate) / prevRate * 100) : 0;
-      const isPositive = delta <= 0;
+      const ppDelta = (currRate - prevRate) * 100;
+      const isPositive = ppDelta <= 0;
 
       // Shorten bot name for display: "fullsend-ai-coder[bot]" → "coder"
       const shortName = bot.replace(/^fullsend-ai-/, "").replace(/\[bot\]$/, "");
@@ -412,10 +412,10 @@
       const card = container.append("div").attr("class", "card");
       card.append("div").attr("class", "label").text(`${shortName} rework`);
       card.append("div").attr("class", "value").text((currRate * 100).toFixed(1) + "%");
-      if (prevRate > 0) {
+      if (botLast.length > 0) {
         card.append("div")
           .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
-          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev 7d`);
+          .text(`${ppDelta >= 0 ? "+" : ""}${ppDelta.toFixed(1)}pp vs prev 7d`);
       }
     });
   }
