@@ -355,7 +355,7 @@
       .attr("class", "release-dot")
       .attr("cx", d => x(new Date(d.date)))
       .attr("cy", d => y(d.prs_merged))
-      .attr("r", 5)
+      .attr("r", d => 3 + 2 * Math.sqrt(d.releases))
       .attr("fill", "var(--chart-2)")
       .attr("stroke", "var(--bg)")
       .attr("stroke-width", 2);
