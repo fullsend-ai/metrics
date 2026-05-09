@@ -160,33 +160,74 @@ if [[ ! -s "$TOUCHES_TODAY" ]]; then
   exit 0
 fi
 
-# Deduplicate TOUCHES_TODAY: for each bot+repo+item, keep the earliest event.
-# Apply 8-second dedup: if the earliest today-touch is within 8s of the latest
-# prior-touch for the same bot+repo+item, remove it from today (same activity).
+# Deduplicate TOUCHES_TODAY with 8-second window: sort by bot+repo+item+ts,
+# then collapse events within 8s of the previous one for the same bot+item.
 sort -t$'\t' -k1,3 -k4,4 "$TOUCHES_TODAY" | awk -F'\t' '
-  !seen[$1 "\t" $2 "\t" $3]++ { print }
+  BEGIN { OFS="\t" }
+  {
+    key = $1 "\t" $2 "\t" $3
+    if (key == prev_key) {
+      # Same bot+repo+item — check 8s dedup via shell date.
+      # We cannot do date math in awk easily, so just mark for dedup by count.
+      count[key]++
+    } else {
+      count[key] = 1
+    }
+    prev_key = key
+    print
+  }
 ' > "$TOUCHES_DEDUPED"
 
-# For each bot+repo+item in today's touches, check for prior-day touches.
-# Apply 8-second cross-day dedup.
+# For 8-second dedup, re-process: keep events that are >8s apart.
+DEDUPED_8S="$TMPDIR_WORK/deduped_8s"
+prev_key=""
+prev_epoch=0
 while IFS=$'\t' read -r bot repo number ts item_url; do
-  # Find the latest prior touch by this bot on this item.
-  latest_prior=$(awk -F'\t' -v b="$bot" -v r="$repo" -v n="$number" '$1==b && $2==r && $3==n' "$TOUCHES_PRIOR" \
-    | sort -t$'\t' -k4,4r \
-    | head -1 \
-    | cut -f4 || true)
+  key="${bot}	${repo}	${number}"
+  cur_epoch=$(date -d "$ts" +%s 2>/dev/null || echo "0")
+  if [[ "$key" == "$prev_key" ]]; then
+    delta=$(( cur_epoch - prev_epoch ))
+    if (( delta <= 8 )); then
+      continue  # Within 8s dedup window, skip.
+    fi
+  fi
+  printf '%s\t%s\t%s\t%s\t%s\n' "$bot" "$repo" "$number" "$ts" "$item_url" >> "$DEDUPED_8S"
+  prev_key="$key"
+  prev_epoch=$cur_epoch
+done < "$TOUCHES_DEDUPED"
 
-  if [[ -z "$latest_prior" ]]; then
-    continue  # No prior touch — not rework.
+# If the 8s dedup removed everything, fall back to the raw sorted file.
+if [[ ! -s "$DEDUPED_8S" ]]; then
+  echo "No bot touches found for ${TARGET_DATE} (after dedup)."
+  exit 0
+fi
+mv "$DEDUPED_8S" "$TOUCHES_DEDUPED"
+
+# Determine rework: a touch is rework if the bot touched that item any time
+# earlier — same day or prior day. Check both TOUCHES_PRIOR and earlier
+# same-day touches in TOUCHES_DEDUPED.
+while IFS=$'\t' read -r bot repo number ts item_url; do
+  is_rework=false
+
+  # Check 1: any prior-day touch by this bot on this item?
+  if [[ -s "$TOUCHES_PRIOR" ]]; then
+    prior_match=$(awk -F'\t' -v b="$bot" -v r="$repo" -v n="$number" \
+      '$1==b && $2==r && $3==n { found=1; exit } END { print found+0 }' "$TOUCHES_PRIOR")
+    if (( prior_match > 0 )); then
+      is_rework=true
+    fi
   fi
 
-  # 8-second dedup: compare earliest today vs latest prior.
-  today_epoch=$(date -d "$ts" +%s 2>/dev/null || echo "0")
-  prior_epoch=$(date -d "$latest_prior" +%s 2>/dev/null || echo "0")
-  delta=$(( today_epoch - prior_epoch ))
+  # Check 2: any earlier same-day touch by this bot on this item?
+  if [[ "$is_rework" == "false" ]]; then
+    earlier_same_day=$(awk -F'\t' -v b="$bot" -v r="$repo" -v n="$number" -v t="$ts" \
+      '$1==b && $2==r && $3==n && $4 < t { found=1; exit } END { print found+0 }' "$TOUCHES_DEDUPED")
+    if (( earlier_same_day > 0 )); then
+      is_rework=true
+    fi
+  fi
 
-  if (( delta > 8 )); then
-    # This is rework. Record it.
+  if [[ "$is_rework" == "true" ]]; then
     printf '%s\t%s\t%s\t%s\t%s\n' "$bot" "$repo" "$number" "$ts" "$item_url" >> "$REWORK_ITEMS"
   fi
 done < "$TOUCHES_DEDUPED"
@@ -206,10 +247,12 @@ total_touched=0
 total_reworked=0
 
 while IFS= read -r bot; do
-  touched=$(awk -F'\t' -v b="$bot" '$1==b' "$TOUCHES_DEDUPED" | wc -l)
+  # Count distinct items (unique repo+number) touched by this bot.
+  touched=$(awk -F'\t' -v b="$bot" '$1==b { print $2 "\t" $3 }' "$TOUCHES_DEDUPED" | sort -u | wc -l)
   reworked=0
   if [[ -s "$REWORK_ITEMS" ]]; then
-    reworked=$(awk -F'\t' -v b="$bot" '$1==b' "$REWORK_ITEMS" | wc -l)
+    # Count distinct items that had rework.
+    reworked=$(awk -F'\t' -v b="$bot" '$1==b { print $2 "\t" $3 }' "$REWORK_ITEMS" | sort -u | wc -l)
   fi
 
   if (( touched > 0 )); then
