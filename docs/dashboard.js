@@ -333,6 +333,12 @@
     const twoWeeksAgo = d3.timeDay.offset(today, -14);
     const weekAgoStr = d3.timeFormat("%Y-%m-%d")(weekAgo);
     const twoWeeksAgoStr = d3.timeFormat("%Y-%m-%d")(twoWeeksAgo);
+    const fmt = d3.timeFormat("%b %d");
+
+    // Update heading to show the actual date range.
+    d3.select("#summary-label").text(
+      `Last 7 days (${fmt(weekAgo)} – ${fmt(today)}) vs previous 7 days`
+    );
 
     const thisWeek = daily.filter(d => d.date >= weekAgoStr);
     const lastWeek = daily.filter(d => d.date >= twoWeeksAgoStr && d.date < weekAgoStr);
@@ -355,25 +361,28 @@
       const card = container.append("div").attr("class", "card");
       card.append("div").attr("class", "label").text(m.label);
       card.append("div").attr("class", "value").text(
-        m.key === "pr_lead_time_median_hours" ? curr.toFixed(1) : curr
+        m.key === "pr_lead_time_median_hours" ? curr.toFixed(1) : Math.round(curr)
       );
       if (prev > 0) {
         card.append("div")
           .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
-          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev week`);
+          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev 7d`);
       }
     });
 
-    // Rework rate summary card
-    const rData = filterReworkData().filter(d => d.bot === "__aggregate__");
+    // Rework rate summary cards — aggregate + per-bot.
+    const rData = filterReworkData();
     const rThisWeek = rData.filter(d => d.date >= weekAgoStr);
     const rLastWeek = rData.filter(d => d.date >= twoWeeksAgoStr && d.date < weekAgoStr);
 
-    if (rThisWeek.length > 0) {
-      const currRate = d3.mean(rThisWeek, d => d.rework_rate) || 0;
-      const prevRate = d3.mean(rLastWeek, d => d.rework_rate) || 0;
+    // Aggregate rework card.
+    const aggThisWeek = rThisWeek.filter(d => d.bot === "__aggregate__");
+    const aggLastWeek = rLastWeek.filter(d => d.bot === "__aggregate__");
+    if (aggThisWeek.length > 0) {
+      const currRate = d3.mean(aggThisWeek, d => d.rework_rate) || 0;
+      const prevRate = d3.mean(aggLastWeek, d => d.rework_rate) || 0;
       const delta = prevRate > 0 ? ((currRate - prevRate) / prevRate * 100) : 0;
-      const isPositive = delta <= 0; // lower rework is better
+      const isPositive = delta <= 0;
 
       const card = container.append("div").attr("class", "card");
       card.append("div").attr("class", "label").text("Rework Rate");
@@ -381,9 +390,34 @@
       if (prevRate > 0) {
         card.append("div")
           .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
-          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev week`);
+          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev 7d`);
       }
     }
+
+    // Per-bot rework cards (skip aggregate, skip bots with no this-week data).
+    const botNames = [...new Set(rThisWeek.filter(d => d.bot !== "__aggregate__").map(d => d.bot))].sort();
+    botNames.forEach(bot => {
+      const botThis = rThisWeek.filter(d => d.bot === bot);
+      const botLast = rLastWeek.filter(d => d.bot === bot);
+      if (botThis.length === 0) return;
+
+      const currRate = d3.mean(botThis, d => d.rework_rate) || 0;
+      const prevRate = d3.mean(botLast, d => d.rework_rate) || 0;
+      const delta = prevRate > 0 ? ((currRate - prevRate) / prevRate * 100) : 0;
+      const isPositive = delta <= 0;
+
+      // Shorten bot name for display: "fullsend-ai-coder[bot]" → "coder"
+      const shortName = bot.replace(/^fullsend-ai-/, "").replace(/\[bot\]$/, "");
+
+      const card = container.append("div").attr("class", "card");
+      card.append("div").attr("class", "label").text(`${shortName} rework`);
+      card.append("div").attr("class", "value").text((currRate * 100).toFixed(1) + "%");
+      if (prevRate > 0) {
+        card.append("div")
+          .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
+          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev 7d`);
+      }
+    });
   }
 
   // --- Frequency Chart ---
