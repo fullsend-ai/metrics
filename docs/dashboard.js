@@ -386,7 +386,7 @@
     const fmt = d3.timeFormat("%b %d");
 
     // Update heading to show the actual date range.
-    d3.select("#summary-label").text(
+    d3.select("#sec-weekly").text(
       `Last 7 days (${fmt(weekAgo)} – ${fmt(today)}) vs previous 7 days`
     );
 
@@ -1116,4 +1116,33 @@
   }
 
   render();
+
+  // --- ToC scroll spy ---
+  const tocLinks = document.querySelectorAll(".toc a");
+  const tocTargets = Array.from(tocLinks).map(a => ({
+    link: a,
+    target: document.querySelector(a.getAttribute("href")),
+  })).filter(t => t.target);
+
+  function updateToc() {
+    let current = tocTargets[0];
+    const scrollY = window.scrollY + 80;
+    for (const t of tocTargets) {
+      if (t.target.offsetTop <= scrollY) current = t;
+    }
+    tocLinks.forEach(a => a.classList.remove("active"));
+    if (current) current.link.classList.add("active");
+  }
+
+  window.addEventListener("scroll", updateToc, { passive: true });
+  updateToc();
+
+  // Smooth scroll for ToC links.
+  tocLinks.forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute("href"));
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 })();

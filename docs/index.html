@@ -11,8 +11,21 @@
   <h1>fullsend-ai metrics</h1>
   <p class="subtitle">SDLC performance across all repos, updated daily</p>
 
-  <h2 class="section-label" id="summary-label">This week</h2>
-  <div class="summary-cards" id="summary-cards"></div>
+  <nav class="toc" id="toc">
+    <a href="#sec-weekly">Weekly Summary</a>
+    <a href="#sec-frequency">Merge &amp; Release</a>
+    <a href="#sec-leadtime">Lead Time</a>
+    <a href="#sec-pr-volume">PR Volume</a>
+    <a href="#sec-issue-volume">Issue Volume</a>
+    <a href="#sec-run-volume">Run Volume</a>
+    <a href="#sec-failure-rate">Failure Rate</a>
+    <a href="#sec-rework-rate">Rework Rate</a>
+    <a href="#sec-bot-activity">Bot Activity</a>
+    <a href="#sec-repo-table">Per-Repo</a>
+  </nav>
+
+  <h2 class="section-label" id="sec-weekly">This week</h2>
+  <div id="summary-cards" class="summary-cards"></div>
 
   <div class="controls">
     <button class="range-btn active" data-days="30">30d</button>
@@ -31,48 +44,48 @@
     <button class="smooth-btn" data-days="28">28d avg</button>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-frequency" class="chart-section">
     <h2>Merge &amp; Release Frequency</h2>
     <div id="chart-frequency"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-leadtime" class="chart-section">
     <h2>PR Lead Time (median hours)</h2>
     <div id="chart-leadtime"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-pr-volume" class="chart-section">
     <h2>PR Volume</h2>
     <div id="chart-pr-volume"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-issue-volume" class="chart-section">
     <h2>Issue Volume</h2>
     <div id="chart-issue-volume"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-run-volume" class="chart-section">
     <h2>Agent Run Volume</h2>
     <div id="chart-run-volume"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-failure-rate" class="chart-section">
     <h2>Agent Failure Rate</h2>
     <div id="chart-failure-rate"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-rework-rate" class="chart-section">
     <h2>Bot Rework Rate</h2>
     <div id="chart-rework-rate"></div>
     <div id="rework-details-panel" class="details-panel"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-bot-activity" class="chart-section">
     <h2>Bot Activity (items touched)</h2>
     <div id="chart-bot-activity"></div>
   </div>
 
-  <div class="chart-section">
+  <div id="sec-repo-table" class="chart-section">
     <h2>Per-Repo Breakdown (selected period)</h2>
     <table id="repo-table">
       <thead>
