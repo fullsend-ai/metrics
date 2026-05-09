@@ -48,6 +48,20 @@ append_rework_detail() {
   echo "$1,$2,$3,$4,$5" >> "$REWORK_DETAILS_FILE"
 }
 
+FAILURE_FILE="docs/failures.csv"
+FAILURE_HEADER="date,workflow,runs,failures,failure_rate"
+
+ensure_failure_csv() {
+  mkdir -p docs
+  if [[ ! -f "$FAILURE_FILE" ]]; then
+    echo "$FAILURE_HEADER" > "$FAILURE_FILE"
+  fi
+}
+
+append_failure_row() {
+  echo "$1,$2,$3,$4,$5" >> "$FAILURE_FILE"
+}
+
 # Compute median from a newline-separated list of numbers on stdin.
 # Outputs "0" if input is empty.
 median() {

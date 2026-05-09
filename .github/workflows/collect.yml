@@ -39,6 +39,17 @@ jobs:
             ./scripts/collect-rework.sh
           fi
 
+      - name: Collect failure metrics
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_DATE: ${{ github.event.inputs.date }}
+        run: |
+          if [[ -n "$INPUT_DATE" ]]; then
+            ./scripts/collect-failures.sh "$INPUT_DATE"
+          else
+            ./scripts/collect-failures.sh
+          fi
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"

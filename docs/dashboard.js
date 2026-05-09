@@ -174,6 +174,18 @@
     }));
   } catch (e) { /* rework-details.csv may not exist yet */ }
 
+  // --- Load failure CSV ---
+  let failureData = [];
+  try {
+    failureData = await d3.csv("failures.csv", d => ({
+      date: d.date,
+      workflow: d.workflow,
+      runs: +d.runs,
+      failures: +d.failures,
+      failure_rate: +d.failure_rate,
+    }));
+  } catch (e) { /* failures.csv may not exist yet */ }
+
   // --- Load rework config ---
   let ignoreBots = [];
   try {
@@ -281,6 +293,44 @@
           items_touched: Math.round(avgTouched),
           items_reworked: Math.round(avgReworked),
           rework_rate: avgTouched > 0 ? avgReworked / avgTouched : NaN,
+        });
+      });
+    });
+    return smoothed;
+  }
+
+  function filterFailureData() {
+    let data = failureData.slice();
+    if (rangeDays > 0) {
+      const cutoff = d3.timeDay.offset(new Date(), -rangeDays);
+      const cutoffStr = d3.timeFormat("%Y-%m-%d")(cutoff);
+      data = data.filter(d => d.date >= cutoffStr);
+    }
+    if (hideWeekends) {
+      data = data.filter(d => {
+        const day = new Date(d.date + "T00:00:00").getDay();
+        return day !== 0 && day !== 6;
+      });
+    }
+    if (smoothDays > 0) data = smoothFailureData(data, smoothDays);
+    return data;
+  }
+
+  function smoothFailureData(data, window) {
+    const workflows = [...new Set(data.map(d => d.workflow))];
+    const smoothed = [];
+    workflows.forEach(wf => {
+      const wfData = data.filter(d => d.workflow === wf).sort((a, b) => a.date.localeCompare(b.date));
+      wfData.forEach((d, i) => {
+        const start = Math.max(0, i - window + 1);
+        const slice = wfData.slice(start, i + 1);
+        const avgRuns = d3.mean(slice, s => s.runs);
+        const avgFails = d3.mean(slice, s => s.failures);
+        smoothed.push({
+          ...d,
+          runs: Math.round(avgRuns),
+          failures: Math.round(avgFails),
+          failure_rate: avgRuns > 0 ? avgFails / avgRuns : NaN,
         });
       });
     });
@@ -664,6 +714,133 @@
     })));
   }
 
+  // --- Agent Run Volume Chart ---
+  const workflowColors = d3.scaleOrdinal(d3.schemeTableau10);
+
+  function renderRunVolumeChart(data) {
+    const container = d3.select("#chart-run-volume");
+    if (data.length === 0) { container.select("svg").remove(); container.html("<p>No data</p>"); return; }
+    container.select("p").remove();
+    const dims = chartDimensions(container);
+    const g = createSvg(container, dims);
+
+    const workflows = [...new Set(data.map(d => d.workflow))].sort();
+    const x = d3.scaleTime()
+      .domain(d3.extent(data, d => new Date(d.date)))
+      .range([0, dims.innerW]);
+    const maxRuns = d3.max(data, d => d.runs) || 1;
+    const y = yScale([0, maxRuns * 1.15]).range([dims.innerH, 0]);
+
+    drawGrid(g, y, dims.innerW);
+    drawXAxis(g, x, dims.innerH);
+    drawYAxis(g, y);
+
+    workflows.forEach(wf => {
+      const wfData = data.filter(d => d.workflow === wf).sort((a, b) => a.date.localeCompare(b.date));
+      const color = workflowColors(wf);
+
+      g.append("path")
+        .datum(wfData)
+        .attr("fill", "none")
+        .attr("stroke", color)
+        .attr("stroke-width", 1.5)
+        .attr("opacity", seriesOpacity("run-volume", wf))
+        .attr("d", d3.line()
+          .x(d => x(new Date(d.date)))
+          .y(d => y(d.runs))
+          .curve(d3.curveMonotoneX));
+
+      g.selectAll(`.rv-dot-${wf.replace(/[^a-zA-Z0-9]/g, "_")}`)
+        .data(wfData)
+        .join("circle")
+        .attr("cx", d => x(new Date(d.date)))
+        .attr("cy", d => y(d.runs))
+        .attr("r", 3)
+        .attr("fill", color)
+        .attr("opacity", 0)
+        .on("mouseover", function (event, d) {
+          d3.select(this).attr("opacity", seriesOpacity("run-volume", wf)).attr("r", 5);
+          showTooltip(event,
+            `<strong>${d.date}</strong><br>` +
+            `${d.workflow}: ${d.runs} runs, ${d.failures} failed`
+          );
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("opacity", 0).attr("r", 3);
+          hideTooltip();
+        });
+    });
+
+    makeLegend(g, "run-volume", workflows.map(wf => ({
+      name: wf, label: wf, color: workflowColors(wf),
+    })));
+  }
+
+  // --- Agent Failure Rate Chart ---
+  function renderFailureRateChart(data) {
+    const container = d3.select("#chart-failure-rate");
+    if (data.length === 0) { container.select("svg").remove(); container.html("<p>No data</p>"); return; }
+    container.select("p").remove();
+    const dims = chartDimensions(container);
+    const g = createSvg(container, dims);
+
+    const workflows = [...new Set(data.map(d => d.workflow))].sort();
+    const x = d3.scaleTime()
+      .domain(d3.extent(data, d => new Date(d.date)))
+      .range([0, dims.innerW]);
+    const y = d3.scaleLinear()
+      .domain([0, 1])
+      .range([dims.innerH, 0]);
+
+    drawGrid(g, y, dims.innerW);
+    drawXAxis(g, x, dims.innerH);
+    g.append("g").attr("class", "axis").call(
+      d3.axisLeft(y).ticks(5).tickFormat(d3.format(".0%"))
+    );
+
+    workflows.forEach(wf => {
+      const wfData = data.filter(d => d.workflow === wf).sort((a, b) => a.date.localeCompare(b.date));
+      const color = workflowColors(wf);
+
+      g.append("path")
+        .datum(wfData)
+        .attr("fill", "none")
+        .attr("stroke", color)
+        .attr("stroke-width", 1.5)
+        .attr("opacity", seriesOpacity("failure-rate", wf))
+        .attr("d", d3.line()
+          .defined(d => !isNaN(d.failure_rate))
+          .x(d => x(new Date(d.date)))
+          .y(d => y(d.failure_rate))
+          .curve(d3.curveMonotoneX));
+
+      g.selectAll(`.fr-dot-${wf.replace(/[^a-zA-Z0-9]/g, "_")}`)
+        .data(wfData.filter(d => !isNaN(d.failure_rate)))
+        .join("circle")
+        .attr("cx", d => x(new Date(d.date)))
+        .attr("cy", d => y(d.failure_rate))
+        .attr("r", 3)
+        .attr("fill", color)
+        .attr("opacity", 0)
+        .on("mouseover", function (event, d) {
+          d3.select(this).attr("opacity", seriesOpacity("failure-rate", wf)).attr("r", 5);
+          showTooltip(event,
+            `<strong>${d.date}</strong><br>` +
+            `${d.workflow}: ${(d.failure_rate * 100).toFixed(1)}% failure<br>` +
+            `${d.failures}/${d.runs} runs failed`
+          );
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("opacity", 0).attr("r", 3);
+          hideTooltip();
+        });
+    });
+
+    makeLegend(g, "failure-rate", workflows.map(wf => ({
+      name: wf, label: wf, color: workflowColors(wf),
+    })));
+  }
+
   // --- Repo Table ---
   function renderRepoTable(data) {
     const tbody = d3.select("#repo-table tbody");
@@ -898,6 +1075,9 @@
     renderPRVolumeChart(daily);
     renderIssueVolumeChart(daily);
     renderRepoTable(data);
+    const fData = filterFailureData();
+    renderRunVolumeChart(fData);
+    renderFailureRateChart(fData);
     const rData = filterReworkData();
     renderReworkRateChart(rData);
     renderBotActivityChart(rData);
