@@ -5,5 +5,8 @@
     "dependabot[bot]",
     "github-actions[bot]",
     "fullsend-ai-fullsend[bot]"
-  ]
+  ],
+  "commitEmailToBot": {
+    "fullsend-code@users.noreply.github.com": "fullsend-ai-coder[bot]"
+  }
 }

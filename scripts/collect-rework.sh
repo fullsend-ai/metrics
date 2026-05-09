@@ -24,6 +24,22 @@ TOUCHES_PRIOR="$TMPDIR_WORK/touches_prior"
 TOUCHES_DEDUPED="$TMPDIR_WORK/touches_deduped"
 REWORK_ITEMS="$TMPDIR_WORK/rework_items"
 
+# Load commit email-to-bot mapping from config.
+CONFIG_FILE="docs/rework-config.json"
+EMAIL_MAP="$TMPDIR_WORK/email_map"
+if [[ -f "$CONFIG_FILE" ]]; then
+  # Build a TSV of email→bot from the config.
+  jq -r '.commitEmailToBot // {} | to_entries[] | [.key, .value] | @tsv' "$CONFIG_FILE" > "$EMAIL_MAP" 2>/dev/null || true
+fi
+
+# Lookup function: map a commit email to a bot name, or return empty.
+email_to_bot() {
+  local email="$1"
+  if [[ -s "$EMAIL_MAP" ]]; then
+    awk -F'\t' -v e="$email" '$1==e { print $2; exit }' "$EMAIL_MAP"
+  fi
+}
+
 repos=$(list_repos)
 
 for repo in $repos; do
@@ -43,26 +59,35 @@ for repo in $repos; do
 
   while IFS=$'\t' read -r number item_url; do
     # Fetch full timeline for this issue/PR.
-    # The timeline API returns different event shapes; normalize them.
+    # Extract bot touches from actor/user-based events AND committed events.
     timeline=$(gh api "/repos/${full_repo}/issues/${number}/timeline" \
       --paginate \
       -H "Accept: application/vnd.github.mockingbird-preview+json" \
       --jq '
         .[] |
-        (
-          if .actor.type? == "Bot" then {bot: .actor.login, ts: (.created_at // null)}
-          elif .user.type? == "Bot" then {bot: .user.login, ts: (.submitted_at // .created_at // null)}
-          else null
-          end
-        ) //
-        null |
-        select(. != null and .bot != null and .ts != null) |
-        [.bot, .ts] | @tsv
+        if .event == "committed" then
+          {type: "commit", email: .committer.email, ts: .committer.date}
+        elif .actor.type? == "Bot" then
+          {type: "bot", bot: .actor.login, ts: (.created_at // null)}
+        elif .user.type? == "Bot" then
+          {type: "bot", bot: .user.login, ts: (.submitted_at // .created_at // null)}
+        else empty
+        end |
+        select(.ts != null) |
+        [.type, (.bot // .email), .ts] | @tsv
       ' 2>/dev/null || true)
 
     [[ -z "$timeline" ]] && continue
 
-    while IFS=$'\t' read -r bot ts; do
+    while IFS=$'\t' read -r etype ident ts; do
+      # For committed events, resolve email to bot name via config mapping.
+      if [[ "$etype" == "commit" ]]; then
+        bot=$(email_to_bot "$ident")
+        [[ -z "$bot" ]] && continue
+      else
+        bot="$ident"
+      fi
+
       event_date="${ts:0:10}"
       if [[ "$event_date" == "$TARGET_DATE" ]]; then
         printf '%s\t%s\t%s\t%s\t%s\n' "$bot" "$repo" "$number" "$ts" "$item_url" >> "$TOUCHES_TODAY"
