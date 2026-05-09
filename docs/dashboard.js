@@ -273,7 +273,7 @@
 
     return smoothDaily(daily, smoothDays, [
       "prs_opened", "prs_merged", "prs_closed",
-      "issues_opened", "issues_closed", "releases",
+      "issues_opened", "issues_closed",
       "pr_lead_time_median_hours",
     ]);
   }
