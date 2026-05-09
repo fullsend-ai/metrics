@@ -244,6 +244,19 @@
     return smoothed;
   }
 
+  function smoothDaily(daily, window, keys) {
+    if (window <= 0 || daily.length === 0) return daily;
+    return daily.map((d, i) => {
+      const start = Math.max(0, i - window + 1);
+      const slice = daily.slice(start, i + 1);
+      const smoothed = { ...d };
+      keys.forEach(k => {
+        smoothed[k] = d3.mean(slice, s => s[k]);
+      });
+      return smoothed;
+    });
+  }
+
   function aggregateByDate(data) {
     const byDate = d3.rollup(data, rows => ({
       prs_opened: d3.sum(rows, d => d.prs_opened),
@@ -255,8 +268,14 @@
       pr_lead_time_median_hours: d3.median(rows.filter(r => r.pr_lead_time_median_hours > 0), d => d.pr_lead_time_median_hours) || 0,
     }), d => d.date);
 
-    return Array.from(byDate, ([date, vals]) => ({ date, ...vals }))
+    const daily = Array.from(byDate, ([date, vals]) => ({ date, ...vals }))
       .sort((a, b) => a.date.localeCompare(b.date));
+
+    return smoothDaily(daily, smoothDays, [
+      "prs_opened", "prs_merged", "prs_closed",
+      "issues_opened", "issues_closed", "releases",
+      "pr_lead_time_median_hours",
+    ]);
   }
 
   // --- Summary Cards ---
