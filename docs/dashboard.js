@@ -386,7 +386,7 @@
     const fmt = d3.timeFormat("%b %d");
 
     // Update heading to show the actual date range.
-    d3.select("#sec-weekly").text(
+    d3.select("#weekly").text(
       `Last 7 days (${fmt(weekAgo)} – ${fmt(today)}) vs previous 7 days`
     );
 
