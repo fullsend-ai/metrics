@@ -294,3 +294,54 @@ tr:hover td { background: var(--surface); }
 .details-panel table {
   font-size: 0.6875rem;
 }
+
+/* --- Mobile --- */
+
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem 1rem;
+  }
+
+  h1 { font-size: 1rem; }
+
+  .summary-cards {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    padding: 0.625rem 0.75rem;
+  }
+
+  .card .value {
+    font-size: 1rem;
+  }
+
+  .card .delta {
+    font-size: 0.625rem;
+  }
+
+  .controls {
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .controls-sep {
+    display: none;
+  }
+
+  .chart-section {
+    margin-bottom: 2rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th, td {
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+  }
+}
