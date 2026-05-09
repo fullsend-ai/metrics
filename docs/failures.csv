@@ -53,3 +53,10 @@ date,workflow,runs,failures,failure_rate
 2026-05-07,Prioritize,12,1,0.083
 2026-05-07,Retro,11,11,1.000
 2026-05-07,Scribe,2,0,0.000
+2026-05-08,Code,18,5,0.278
+2026-05-08,Fix,8,2,0.250
+2026-05-08,Review,104,3,0.029
+2026-05-08,Triage,8,0,0.000
+2026-05-08,Prioritize,54,52,0.963
+2026-05-08,Retro,27,27,1.000
+2026-05-08,Classify GitHub Issues,17,0,0.000
