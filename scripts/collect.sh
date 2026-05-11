@@ -43,7 +43,7 @@ for repo in $repos; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$TARGET_DATE" "$repo" "pr" "opened" "$number" "$title" "$url"
-    done
+    done || true
   fi
 
   prs_merged=$(to_int "$(gh api "/search/issues" \
@@ -57,7 +57,7 @@ for repo in $repos; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$TARGET_DATE" "$repo" "pr" "merged" "$number" "$title" "$url"
-    done
+    done || true
   fi
 
   prs_closed_total=$(to_int "$(gh api "/search/issues" \
@@ -73,7 +73,7 @@ for repo in $repos; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$TARGET_DATE" "$repo" "pr" "closed" "$number" "$title" "$url"
-    done
+    done || true
   fi
 
   issues_opened=$(to_int "$(gh api "/search/issues" \
@@ -87,7 +87,7 @@ for repo in $repos; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$TARGET_DATE" "$repo" "issue" "opened" "$number" "$title" "$url"
-    done
+    done || true
   fi
 
   issues_closed=$(to_int "$(gh api "/search/issues" \
@@ -101,7 +101,7 @@ for repo in $repos; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$TARGET_DATE" "$repo" "issue" "closed" "$number" "$title" "$url"
-    done
+    done || true
   fi
 
   releases=$(to_int "$(gh api "/repos/${full_repo}/releases" \

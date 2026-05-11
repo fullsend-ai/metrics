@@ -33,7 +33,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$current" "$repo" "pr" "opened" "$number" "$title" "$url"
-    done
+    done || true
 
     # PRs merged
     gh api "/search/issues" --method GET --paginate \
@@ -41,7 +41,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$current" "$repo" "pr" "merged" "$number" "$title" "$url"
-    done
+    done || true
 
     # PRs closed (non-merge)
     gh api "/search/issues" --method GET --paginate \
@@ -49,7 +49,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$current" "$repo" "pr" "closed" "$number" "$title" "$url"
-    done
+    done || true
 
     # Issues opened
     gh api "/search/issues" --method GET --paginate \
@@ -57,7 +57,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$current" "$repo" "issue" "opened" "$number" "$title" "$url"
-    done
+    done || true
 
     # Issues closed
     gh api "/search/issues" --method GET --paginate \
@@ -65,7 +65,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
       --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
     while IFS=$'\t' read -r number title url; do
       append_metric_detail "$current" "$repo" "issue" "closed" "$number" "$title" "$url"
-    done
+    done || true
   done
 
   sleep 3
