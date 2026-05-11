@@ -1,0 +1,124 @@
+date,repo,type,event,number,title,url
+2026-04-06,fullsend,issue,closed,148,"Notify Slack via webhook when PRs touching ADRs are merged",https://github.com/fullsend-ai/fullsend/issues/148
+2026-04-06,fullsend,issue,closed,56,"Explore ambient-code/platform and evaluate relevance to fullsend",https://github.com/fullsend-ai/fullsend/issues/56
+2026-04-06,fullsend,issue,closed,64,"Explore AgentGateway and evaluate relevance to fullsend",https://github.com/fullsend-ai/fullsend/issues/64
+2026-04-06,fullsend,pr,closed,158,"feat(e2e): implement working admin e2e tests with Playwright",https://github.com/fullsend-ai/fullsend/pull/158
+2026-04-06,fullsend,pr,merged,105,"ADR 0006: Forge abstraction layer",https://github.com/fullsend-ai/fullsend/pull/105
+2026-04-06,fullsend,pr,merged,110,"docs: Ambient Code Platform notes in agent infrastructure",https://github.com/fullsend-ai/fullsend/pull/110
+2026-04-06,fullsend,pr,merged,111,"docs: contextualize Kubernetes SIG Agent Sandbox vs fullsend",https://github.com/fullsend-ai/fullsend/pull/111
+2026-04-06,fullsend,pr,merged,112,"docs: Agent Gateway in landscape and cross-links",https://github.com/fullsend-ai/fullsend/pull/112
+2026-04-06,fullsend,pr,merged,167,"fix: revert PR #142, merge correct admin CLI (PR #160), add e2e tests",https://github.com/fullsend-ai/fullsend/pull/167
+2026-04-06,fullsend,pr,merged,168,"experiment: pluggable guardrails evaluation for Story 6",https://github.com/fullsend-ai/fullsend/pull/168
+2026-04-06,fullsend,pr,merged,175,"docs: ADR 0011 — canonical org config.yaml v1 (SPEC + schema)",https://github.com/fullsend-ai/fullsend/pull/175
+2026-04-06,fullsend,pr,merged,176,"docs: ADR 0012 — normative v1 files under .fullsend",https://github.com/fullsend-ai/fullsend/pull/176
+2026-04-06,fullsend,pr,merged,177,"docs(adr): ADR 0014 — GitHub Apps and .fullsend credential surface (v1)",https://github.com/fullsend-ai/fullsend/pull/177
+2026-04-06,fullsend,pr,merged,183,"Add Slack notification workflow for merged ADR changes",https://github.com/fullsend-ai/fullsend/pull/183
+2026-04-06,fullsend,pr,opened,182,"docs: ADR 0015 docs/normative/ convention + writing-adrs skill",https://github.com/fullsend-ai/fullsend/pull/182
+2026-04-06,fullsend,pr,opened,183,"Add Slack notification workflow for merged ADR changes",https://github.com/fullsend-ai/fullsend/pull/183
+2026-04-06,fullsend,pr,opened,184,"docs: Add contribution volume problem area from Vibe Maintainer analysis",https://github.com/fullsend-ai/fullsend/pull/184
+2026-04-06,fullsend,pr,opened,185,"docs: Add Gas City analysis and ZFC to landscape",https://github.com/fullsend-ai/fullsend/pull/185
+2026-04-06,fullsend,pr,opened,186,"Credential isolation for sandboxed agents",https://github.com/fullsend-ai/fullsend/pull/186
+2026-04-06,fullsend,pr,opened,187,"feat(agents): add retro agent and supporting skills",https://github.com/fullsend-ai/fullsend/pull/187
+2026-04-06,fullsend,pr,opened,188,"docs: design spec for static fullsend admin installation SPA",https://github.com/fullsend-ai/fullsend/pull/188
+2026-04-07,fullsend,issue,opened,195,"Story 10: Per-repo configuration overrides: use cases, merging rules, and protected-key enforcement",https://github.com/fullsend-ai/fullsend/issues/195
+2026-04-07,fullsend,issue,opened,196,"Evaluate OpenShell providers + L7 egress policies as alternative to host-side REST server for credential isolation",https://github.com/fullsend-ai/fullsend/issues/196
+2026-04-07,fullsend,issue,opened,197,"Story 9: Fix Agent",https://github.com/fullsend-ai/fullsend/issues/197
+2026-04-07,fullsend,issue,opened,199,"task: experiment - do subagents use unlisted skills?",https://github.com/fullsend-ai/fullsend/issues/199
+2026-04-07,fullsend,issue,opened,200,"feat: Configurable `model` field for subagents",https://github.com/fullsend-ai/fullsend/issues/200
+2026-04-07,fullsend,pr,closed,107,"ADR 0008: Reusable workflows for credential isolation (undecided)",https://github.com/fullsend-ai/fullsend/pull/107
+2026-04-07,fullsend,pr,closed,108,"ADR 0009: GitHub App for agent identity and ephemeral credentials (undecided)",https://github.com/fullsend-ai/fullsend/pull/108
+2026-04-07,fullsend,pr,closed,190,"test: add regression tests for redirect_url in manifest JSON",https://github.com/fullsend-ai/fullsend/pull/190
+2026-04-07,fullsend,pr,closed,192,"fix: e2e Makefile session path + redirect_url regression tests",https://github.com/fullsend-ai/fullsend/pull/192
+2026-04-07,fullsend,pr,closed,37,"Add agent observability problem document with Langfuse analysis",https://github.com/fullsend-ai/fullsend/pull/37
+2026-04-07,fullsend,pr,merged,104,"ADR 0005: Unidirectional control flow through the execution stack",https://github.com/fullsend-ai/fullsend/pull/104
+2026-04-07,fullsend,pr,merged,106,"ADR 0007: GitHub Actions as initial execution platform",https://github.com/fullsend-ai/fullsend/pull/106
+2026-04-07,fullsend,pr,merged,119,"experiment: GitHub Actions agent runtime MVP",https://github.com/fullsend-ai/fullsend/pull/119
+2026-04-07,fullsend,pr,merged,178,"docs: ADR 0013 — admin install enrollment v1 (normative SPEC)",https://github.com/fullsend-ai/fullsend/pull/178
+2026-04-07,fullsend,pr,merged,182,"docs: ADR 0015 docs/normative/ convention + writing-adrs skill",https://github.com/fullsend-ai/fullsend/pull/182
+2026-04-07,fullsend,pr,merged,185,"docs: Add Gas City analysis and ZFC to landscape",https://github.com/fullsend-ai/fullsend/pull/185
+2026-04-07,fullsend,pr,merged,188,"docs: design spec for static fullsend admin installation SPA",https://github.com/fullsend-ai/fullsend/pull/188
+2026-04-07,fullsend,pr,merged,191,"fix: notify-adr-slack silently passed despite gh pr diff failure",https://github.com/fullsend-ai/fullsend/pull/191
+2026-04-07,fullsend,pr,merged,198,"fix: use pull_request_target for Slack ADR notification",https://github.com/fullsend-ai/fullsend/pull/198
+2026-04-07,fullsend,pr,merged,28,"Add multi-agent framework landscape analysis",https://github.com/fullsend-ai/fullsend/pull/28
+2026-04-07,fullsend,pr,merged,38,"Add operational observability problem document",https://github.com/fullsend-ai/fullsend/pull/38
+2026-04-07,fullsend,pr,opened,189,"Add code agent definition and skill",https://github.com/fullsend-ai/fullsend/pull/189
+2026-04-07,fullsend,pr,opened,190,"test: add regression tests for redirect_url in manifest JSON",https://github.com/fullsend-ai/fullsend/pull/190
+2026-04-07,fullsend,pr,opened,191,"fix: notify-adr-slack silently passed despite gh pr diff failure",https://github.com/fullsend-ai/fullsend/pull/191
+2026-04-07,fullsend,pr,opened,192,"fix: e2e Makefile session path + redirect_url regression tests",https://github.com/fullsend-ai/fullsend/pull/192
+2026-04-07,fullsend,pr,opened,193,"fix: org secret visibility, e2e Makefile, redirect_url regression tests",https://github.com/fullsend-ai/fullsend/pull/193
+2026-04-07,fullsend,pr,opened,194,"Rename implementation agent to code agent across the repo",https://github.com/fullsend-ai/fullsend/pull/194
+2026-04-07,fullsend,pr,opened,198,"fix: use pull_request_target for Slack ADR notification",https://github.com/fullsend-ai/fullsend/pull/198
+2026-04-07,fullsend,pr,opened,201,"ADR-0024 harness definitions",https://github.com/fullsend-ai/fullsend/pull/201
+2026-04-07,fullsend,pr,opened,202,"docs: add issue type requirement to filing-issues skill",https://github.com/fullsend-ai/fullsend/pull/202
+2026-04-13,fullsend,issue,opened,228,"docs: add Caveman to landscape analysis",https://github.com/fullsend-ai/fullsend/issues/228
+2026-04-13,fullsend,pr,closed,227,"Admin SPA phase 1: docs, site deploy, OAuth experiment",https://github.com/fullsend-ai/fullsend/pull/227
+2026-04-13,fullsend,pr,merged,210,"Add upload of artifacts. Prep for MVP.",https://github.com/fullsend-ai/fullsend/pull/210
+2026-04-13,fullsend,pr,opened,227,"Admin SPA phase 1: docs, site deploy, OAuth experiment",https://github.com/fullsend-ai/fullsend/pull/227
+2026-04-13,fullsend,pr,opened,229,"docs: add Caveman to landscape analysis",https://github.com/fullsend-ai/fullsend/pull/229
+2026-04-13,fullsend,pr,opened,230,"fix: harden entrypoint output handling in fullsend action",https://github.com/fullsend-ai/fullsend/pull/230
+2026-04-13,fullsend,pr,opened,231,"Add fullsend run agent command and experiment for test it",https://github.com/fullsend-ai/fullsend/pull/231
+2026-04-14,fullsend,pr,merged,217,"Fix org secret visibility to always use selected",https://github.com/fullsend-ai/fullsend/pull/217
+2026-04-14,fullsend,pr,merged,218,"Fix enrollment analyze reporting not-installed with no repos",https://github.com/fullsend-ai/fullsend/pull/218
+2026-04-14,fullsend,pr,merged,229,"docs: add Caveman to landscape analysis",https://github.com/fullsend-ai/fullsend/pull/229
+2026-04-14,fullsend,pr,opened,238,"Update workflows for MVP.",https://github.com/fullsend-ai/fullsend/pull/238
+2026-04-19,fullsend,issue,opened,271,"Sandbox startup takes ~90–120s from openshell gateway to ready",https://github.com/fullsend-ai/fullsend/issues/271
+2026-04-19,fullsend,issue,opened,272,"Agent lifecycle emoji reactions on trigger comments, issues, and PRs",https://github.com/fullsend-ai/fullsend/issues/272
+2026-04-20,fullsend,issue,opened,274,"Harness model validation rejects Vertex AI @version syntax",https://github.com/fullsend-ai/fullsend/issues/274
+2026-04-20,fullsend,issue,opened,276,"Collect OpenShell sandbox logs into the run output directory",https://github.com/fullsend-ai/fullsend/issues/276
+2026-04-20,fullsend,issue,opened,278,"repo-maintenance should create required labels for enabled agent harnesses",https://github.com/fullsend-ai/fullsend/issues/278
+2026-04-20,fullsend,issue,opened,280,"triage agent: add 'not-a-bug' action to reject invalid bug reports",https://github.com/fullsend-ai/fullsend/issues/280
+2026-04-20,fullsend,issue,opened,281,"triage agent: add 'already-fixed' action to close issues resolved by existing commits",https://github.com/fullsend-ai/fullsend/issues/281
+2026-04-20,fullsend,issue,opened,282,"triage agent: add 'feature-request' action to reclassify bugs as feature requests",https://github.com/fullsend-ai/fullsend/issues/282
+2026-04-20,fullsend,issue,opened,283,"triage agent: streamline 'sufficient' action to LGTM instead of restating everything",https://github.com/fullsend-ai/fullsend/issues/283
+2026-04-20,fullsend,issue,opened,287,"e2e: manifest flow callback times out intermittently on first role",https://github.com/fullsend-ai/fullsend/issues/287
+2026-04-20,fullsend,pr,closed,170,"Experiment: triage skill comparison with oh-my-claudecode and oh-my-openagent adapters",https://github.com/fullsend-ai/fullsend/pull/170
+2026-04-20,fullsend,pr,closed,243,"Add Experiment Agent V3.0 with Discovery Mode",https://github.com/fullsend-ai/fullsend/pull/243
+2026-04-20,fullsend,pr,merged,239,"feat: layered prompt injection security scanning",https://github.com/fullsend-ai/fullsend/pull/239
+2026-04-20,fullsend,pr,merged,250,"docs: add ADR for per-agent sandboxing of single-responsibility agents",https://github.com/fullsend-ai/fullsend/pull/250
+2026-04-20,fullsend,pr,merged,262,"docs: JSONL reasoning trace exposure from sandboxed agents",https://github.com/fullsend-ai/fullsend/pull/262
+2026-04-20,fullsend,pr,merged,264,"Connect installer to Stories 2/7 content (and move enrollment to a repo maintenance workflow in the .fullsend repo)",https://github.com/fullsend-ai/fullsend/pull/264
+2026-04-20,fullsend,pr,merged,268,"Remove nonexistent --type flag from filing-issues skill",https://github.com/fullsend-ai/fullsend/pull/268
+2026-04-20,fullsend,pr,merged,273,"Add replay-session skill",https://github.com/fullsend-ai/fullsend/pull/273
+2026-04-20,fullsend,pr,merged,275,"Fix release workflow deprecation warnings",https://github.com/fullsend-ai/fullsend/pull/275
+2026-04-20,fullsend,pr,merged,284,"feat: add agent progress tracking to CLI run command",https://github.com/fullsend-ai/fullsend/pull/284
+2026-04-20,fullsend,pr,opened,273,"Add replay-session skill",https://github.com/fullsend-ai/fullsend/pull/273
+2026-04-20,fullsend,pr,opened,275,"Fix release workflow deprecation warnings",https://github.com/fullsend-ai/fullsend/pull/275
+2026-04-20,fullsend,pr,opened,277,"feat: add --vendor-fullsend-binary for dev iteration",https://github.com/fullsend-ai/fullsend/pull/277
+2026-04-20,fullsend,pr,opened,279,"feat: implement triage agent (Story 3, #126)",https://github.com/fullsend-ai/fullsend/pull/279
+2026-04-20,fullsend,pr,opened,284,"feat: add agent progress tracking to CLI run command",https://github.com/fullsend-ai/fullsend/pull/284
+2026-04-20,fullsend,pr,opened,285,"feat: native Go ONNX prompt injection scanner with sandbox image build",https://github.com/fullsend-ai/fullsend/pull/285
+2026-04-20,fullsend,pr,opened,286,"feat: add code agent scaffold, image, and push pipeline",https://github.com/fullsend-ai/fullsend/pull/286
+2026-04-26,fullsend,issue,opened,449,"Fix agent: review body bypasses fullsend CLI scan stages",https://github.com/fullsend-ai/fullsend/issues/449
+2026-04-26,fullsend,issue,opened,450,"Fix agent: evaluate +fix email subaddressing for commit attribution",https://github.com/fullsend-ai/fullsend/issues/450
+2026-05-02,experiments,pr,merged,15,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/15
+2026-05-02,fullsend,issue,closed,51,"Review arxiv.org/abs/2602.20021 for security threat model insights",https://github.com/fullsend-ai/fullsend/issues/51
+2026-05-02,fullsend,issue,opened,609,"Ship a good default AGENTS.md in the scaffold",https://github.com/fullsend-ai/fullsend/issues/609
+2026-05-02,fullsend,issue,opened,615,"Fix agent fails when HUMAN_INSTRUCTION contains shell metacharacters (|| true, $() expansion)",https://github.com/fullsend-ai/fullsend/issues/615
+2026-05-02,fullsend,pr,merged,564,"feat(security): add canary token and tool allowlist sandbox hooks",https://github.com/fullsend-ai/fullsend/pull/564
+2026-05-02,fullsend,pr,merged,578,"docs: integrate 'Agents of Chaos' findings into security threat model",https://github.com/fullsend-ai/fullsend/pull/578
+2026-05-02,fullsend,pr,opened,610,"feat: embed agent role icons",https://github.com/fullsend-ai/fullsend/pull/610
+2026-05-02,fullsend,pr,opened,611,"feat: Playwright as default installer mechanism",https://github.com/fullsend-ai/fullsend/pull/611
+2026-05-02,fullsend,pr,opened,612,"feat(images): multi-arch (amd64 + arm64) sandbox images",https://github.com/fullsend-ai/fullsend/pull/612
+2026-05-02,fullsend,pr,opened,613,"feat(cli): add --env-file flag and FULLSEND_SANDBOX_IMAGE override",https://github.com/fullsend-ai/fullsend/pull/613
+2026-05-02,fullsend,pr,opened,614,"fix: support newline-delimited bodies in slash command dispatch",https://github.com/fullsend-ai/fullsend/pull/614
+2026-05-02,fullsend,pr,opened,616,"feat(cli): migrate pre-code.sh to fullsend gate code command",https://github.com/fullsend-ai/fullsend/pull/616
+2026-05-03,fullsend,issue,opened,618,"Admin SPA: overlapping org-list layer analysis when filters or effects re-run quickly",https://github.com/fullsend-ai/fullsend/issues/618
+2026-05-03,fullsend,issue,opened,619,"Admin SPA: GitHub REST usage lacks shared rate-limit handling and retry policy",https://github.com/fullsend-ai/fullsend/issues/619
+2026-05-03,fullsend,issue,opened,620,"Admin SPA: batch org GraphQL drops all per-org hints when the response includes errors",https://github.com/fullsend-ai/fullsend/issues/620
+2026-05-03,fullsend,issue,opened,621,"Admin SPA: empty OAuth authorization code leads to confusing handoff error copy",https://github.com/fullsend-ai/fullsend/issues/621
+2026-05-03,fullsend,issue,opened,622,"Dev experiment: OAuth localhost helper uses a fixed OAuth state value",https://github.com/fullsend-ai/fullsend/issues/622
+2026-05-03,fullsend,issue,opened,623,"Admin SPA: install-readiness probes report only the first missing capability after a 403",https://github.com/fullsend-ai/fullsend/issues/623
+2026-05-03,fullsend,issue,opened,626,"Admin SPA: extract shared components (Button, Spinner, Banner) and CSS design tokens",https://github.com/fullsend-ai/fullsend/issues/626
+2026-05-03,fullsend,pr,merged,240,"feat(admin): Scaffold  Vite/Svelte admin SPA with oAuth",https://github.com/fullsend-ai/fullsend/pull/240
+2026-05-03,fullsend,pr,opened,617,"feat(admin): Worker OAuth, installations org list, and per-org layer analysis",https://github.com/fullsend-ai/fullsend/pull/617
+2026-05-03,fullsend,pr,opened,624,"feat(admin): add DESIGN.md design system for admin SPA",https://github.com/fullsend-ai/fullsend/pull/624
+2026-05-03,fullsend,pr,opened,625,"feat(admin): add ESLint, Prettier, and Stylelint for admin SPA",https://github.com/fullsend-ai/fullsend/pull/625
+2026-05-03,fullsend,pr,opened,627,"feat: add kill switch, role-gating, and fix-agent PR protection",https://github.com/fullsend-ai/fullsend/pull/627
+2026-05-08,experiments,pr,merged,21,"Add pre-commit config matching fullsend-ai/fullsend",https://github.com/fullsend-ai/experiments/pull/21
+2026-05-08,experiments,pr,opened,21,"Add pre-commit config matching fullsend-ai/fullsend",https://github.com/fullsend-ai/experiments/pull/21
+2026-05-08,experiments,pr,opened,22,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/22
+2026-05-09,fullsend,issue,opened,789,"Review agent should create follow-up issues for actionable low/info findings when approving",https://github.com/fullsend-ai/fullsend/issues/789
+2026-05-09,fullsend,pr,merged,790,"fix: prevent dev build versions from being pinned in action.yml",https://github.com/fullsend-ai/fullsend/pull/790
+2026-05-09,fullsend,pr,opened,790,"fix: prevent dev build versions from being pinned in action.yml",https://github.com/fullsend-ai/fullsend/pull/790
+2026-05-09,fullsend,pr,opened,791,"chore: add lint-workflow-size to cap workflow file growth",https://github.com/fullsend-ai/fullsend/pull/791
+2026-05-09,fullsend,pr,opened,792,"feat: reusable workflows (ADR 31), centralized routing (ADR 34), layered content (ADR 35)",https://github.com/fullsend-ai/fullsend/pull/792
