@@ -14,6 +14,7 @@ fi
 echo "Collecting metrics for ${TARGET_DATE}..."
 
 ensure_csv
+ensure_metric_details_csv
 
 # Ensure result is a non-negative integer; default to 0 on any error.
 to_int() {
@@ -36,10 +37,28 @@ for repo in $repos; do
     -f q="repo:${full_repo} is:pr created:${TARGET_DATE}" \
     --jq '.total_count' 2>/dev/null || true)")
 
+  if (( prs_opened > 0 )); then
+    gh api "/search/issues" --method GET --paginate \
+      -f q="repo:${full_repo} is:pr created:${TARGET_DATE}" \
+      --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
+    while IFS=$'\t' read -r number title url; do
+      append_metric_detail "$TARGET_DATE" "$repo" "pr" "opened" "$number" "$title" "$url"
+    done
+  fi
+
   prs_merged=$(to_int "$(gh api "/search/issues" \
     --method GET \
     -f q="repo:${full_repo} is:pr is:merged merged:${TARGET_DATE}" \
     --jq '.total_count' 2>/dev/null || true)")
+
+  if (( prs_merged > 0 )); then
+    gh api "/search/issues" --method GET --paginate \
+      -f q="repo:${full_repo} is:pr is:merged merged:${TARGET_DATE}" \
+      --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
+    while IFS=$'\t' read -r number title url; do
+      append_metric_detail "$TARGET_DATE" "$repo" "pr" "merged" "$number" "$title" "$url"
+    done
+  fi
 
   prs_closed_total=$(to_int "$(gh api "/search/issues" \
     --method GET \
@@ -48,15 +67,42 @@ for repo in $repos; do
   prs_closed=$(( prs_closed_total - prs_merged ))
   if (( prs_closed < 0 )); then prs_closed=0; fi
 
+  if (( prs_closed > 0 )); then
+    gh api "/search/issues" --method GET --paginate \
+      -f q="repo:${full_repo} is:pr is:closed is:unmerged closed:${TARGET_DATE}" \
+      --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
+    while IFS=$'\t' read -r number title url; do
+      append_metric_detail "$TARGET_DATE" "$repo" "pr" "closed" "$number" "$title" "$url"
+    done
+  fi
+
   issues_opened=$(to_int "$(gh api "/search/issues" \
     --method GET \
     -f q="repo:${full_repo} is:issue created:${TARGET_DATE}" \
     --jq '.total_count' 2>/dev/null || true)")
 
+  if (( issues_opened > 0 )); then
+    gh api "/search/issues" --method GET --paginate \
+      -f q="repo:${full_repo} is:issue created:${TARGET_DATE}" \
+      --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
+    while IFS=$'\t' read -r number title url; do
+      append_metric_detail "$TARGET_DATE" "$repo" "issue" "opened" "$number" "$title" "$url"
+    done
+  fi
+
   issues_closed=$(to_int "$(gh api "/search/issues" \
     --method GET \
     -f q="repo:${full_repo} is:issue is:closed closed:${TARGET_DATE}" \
     --jq '.total_count' 2>/dev/null || true)")
+
+  if (( issues_closed > 0 )); then
+    gh api "/search/issues" --method GET --paginate \
+      -f q="repo:${full_repo} is:issue is:closed closed:${TARGET_DATE}" \
+      --jq '.items[] | [.number, .title, .html_url] | @tsv' 2>/dev/null | \
+    while IFS=$'\t' read -r number title url; do
+      append_metric_detail "$TARGET_DATE" "$repo" "issue" "closed" "$number" "$title" "$url"
+    done
+  fi
 
   releases=$(to_int "$(gh api "/repos/${full_repo}/releases" \
     --paginate \
