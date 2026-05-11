@@ -28,7 +28,7 @@ append_row() {
 REWORK_FILE="docs/rework.csv"
 REWORK_DETAILS_FILE="docs/rework-details.csv"
 REWORK_HEADER="date,bot,items_touched,items_reworked,rework_rate"
-REWORK_DETAILS_HEADER="datetime,bot,repo,item,url"
+REWORK_DETAILS_HEADER="datetime,bot,repo,item,url,is_rework"
 
 ensure_rework_csv() {
   mkdir -p docs
@@ -45,7 +45,7 @@ append_rework_row() {
 }
 
 append_rework_detail() {
-  echo "$1,$2,$3,$4,$5" >> "$REWORK_DETAILS_FILE"
+  echo "$1,$2,$3,$4,$5,$6" >> "$REWORK_DETAILS_FILE"
 }
 
 FAILURE_FILE="docs/failures.csv"
@@ -60,6 +60,38 @@ ensure_failure_csv() {
 
 append_failure_row() {
   echo "$1,$2,$3,$4,$5" >> "$FAILURE_FILE"
+}
+
+FAILURE_DETAILS_FILE="docs/failure-details.csv"
+FAILURE_DETAILS_HEADER="date,workflow,repo,run_id,status,url"
+
+ensure_failure_details_csv() {
+  mkdir -p docs
+  if [[ ! -f "$FAILURE_DETAILS_FILE" ]]; then
+    echo "$FAILURE_DETAILS_HEADER" > "$FAILURE_DETAILS_FILE"
+  fi
+}
+
+append_failure_detail() {
+  echo "$1,$2,$3,$4,$5,$6" >> "$FAILURE_DETAILS_FILE"
+}
+
+METRIC_DETAILS_FILE="docs/metric-details.csv"
+METRIC_DETAILS_HEADER="date,repo,type,event,number,title,url"
+
+ensure_metric_details_csv() {
+  mkdir -p docs
+  if [[ ! -f "$METRIC_DETAILS_FILE" ]]; then
+    echo "$METRIC_DETAILS_HEADER" > "$METRIC_DETAILS_FILE"
+  fi
+}
+
+# Handles CSV quoting for the title field (may contain commas).
+append_metric_detail() {
+  local date="$1" repo="$2" type="$3" event="$4" number="$5" title="$6" url="$7"
+  # Escape double quotes in title by doubling them, then wrap in quotes.
+  title="${title//\"/\"\"}"
+  echo "${date},${repo},${type},${event},${number},\"${title}\",${url}" >> "$METRIC_DETAILS_FILE"
 }
 
 # Compute median from a newline-separated list of numbers on stdin.
