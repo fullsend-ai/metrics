@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metric Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" style="max-width: 960px; margin: 2rem auto; padding: 0 1rem;">
+    <div class="details-header">
+      <a href="index.html">← Dashboard</a>
+      <h1 id="page-title">Details</h1>
+      <div class="date-picker">
+        <label>From <input type="date" id="date-from"></label>
+        <label>To <input type="date" id="date-to"></label>
+        <button id="date-update">Update</button>
+      </div>
+    </div>
+
+    <div id="section-rework" class="detail-section">
+      <h2>Rework</h2>
+      <div class="detail-body">
+        <p class="detail-summary" id="rework-summary"></p>
+        <div style="overflow-x: auto;">
+          <table class="detail-table" id="rework-table">
+            <thead><tr>
+              <th data-col="datetime">Time</th>
+              <th data-col="bot">Bot</th>
+              <th data-col="repo">Repo</th>
+              <th data-col="item">Item</th>
+              <th data-col="is_rework">Rework</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-failures" class="detail-section">
+      <h2>Failures</h2>
+      <div class="detail-body">
+        <p class="detail-summary" id="failure-summary"></p>
+        <div style="overflow-x: auto;">
+          <table class="detail-table" id="failure-table">
+            <thead><tr>
+              <th data-col="date">Date</th>
+              <th data-col="workflow">Workflow</th>
+              <th data-col="repo">Repo</th>
+              <th data-col="run_id">Run</th>
+              <th data-col="status">Status</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-metrics" class="detail-section">
+      <h2>PR &amp; Issue Activity</h2>
+      <div class="detail-body">
+        <p class="detail-summary" id="metric-summary"></p>
+        <div style="overflow-x: auto;">
+          <table class="detail-table" id="metric-table">
+            <thead><tr>
+              <th data-col="date">Date</th>
+              <th data-col="repo">Repo</th>
+              <th data-col="type">Type</th>
+              <th data-col="event">Event</th>
+              <th data-col="number">Number</th>
+              <th data-col="title">Title</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="details.js"></script>
+</body>
+</html>
