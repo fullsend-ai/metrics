@@ -89,9 +89,18 @@
     }));
   } catch (e) { /* file may not exist */ }
 
+  // --- Load rework config ---
+  let ignoreBots = [];
+  try {
+    const config = await d3.json("rework-config.json");
+    ignoreBots = config.ignoreBots || [];
+  } catch (e) { /* config may not exist */ }
+
   // --- Filter to date range ---
   const inRange = (d) => d >= dateFrom && d <= dateTo;
-  const rework = reworkDetails.filter(d => inRange(d.datetime.substring(0, 10)));
+  const rework = reworkDetails.filter(d =>
+    inRange(d.datetime.substring(0, 10)) && !ignoreBots.includes(d.bot)
+  );
   const failures = failureDetails.filter(d => inRange(d.date));
   const metrics = metricDetails.filter(d => inRange(d.date));
 
