@@ -261,12 +261,14 @@ while IFS=$'\t' read -r bot repo number ts item_url; do
   fi
 done < "$TOUCHES_DEDUPED"
 
-# Write rework-details.csv rows.
-if [[ -s "$REWORK_ITEMS" ]]; then
-  while IFS=$'\t' read -r bot repo number ts item_url; do
-    append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url"
-  done < "$REWORK_ITEMS"
-fi
+# Write rework-details.csv rows for ALL touches (not just rework).
+while IFS=$'\t' read -r bot repo number ts item_url; do
+  if [[ -s "$REWORK_ITEMS" ]] && grep -qP "^${bot}\t${repo}\t${number}\t" "$REWORK_ITEMS" 2>/dev/null; then
+    append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "true"
+  else
+    append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "false"
+  fi
+done < "$TOUCHES_DEDUPED"
 
 # Build rework.csv summary rows.
 # Count distinct items touched per bot (from TOUCHES_DEDUPED).
