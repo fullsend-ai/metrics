@@ -672,6 +672,9 @@
         .on("mouseout", function () {
           d3.select(this).attr("opacity", 0).attr("r", 3);
           hideTooltip();
+        })
+        .on("click", function (event, d) {
+          window.location.href = "details.html?date=" + d.date;
         });
     });
 
@@ -738,6 +741,9 @@
         .on("mouseout", function () {
           d3.select(this).attr("opacity", 0).attr("r", 3);
           hideTooltip();
+        })
+        .on("click", function (event, d) {
+          window.location.href = "details.html?date=" + d.date;
         });
     });
 
@@ -865,6 +871,9 @@
         .on("mouseout", function () {
           d3.select(this).attr("opacity", 0).attr("r", 3);
           hideTooltip();
+        })
+        .on("click", function (event, d) {
+          window.location.href = "details.html?date=" + d.date;
         });
     });
 
@@ -987,7 +996,7 @@
           hideTooltip();
         })
         .on("click", function (event, d) {
-          showReworkDetails(d.date, d.bot);
+          window.location.href = "details.html?date=" + d.date;
         });
     });
 
@@ -1059,6 +1068,9 @@
         .on("mouseout", function () {
           d3.select(this).attr("opacity", 0).attr("r", 3);
           hideTooltip();
+        })
+        .on("click", function (event, d) {
+          window.location.href = "details.html?date=" + d.date;
         });
     });
 
@@ -1069,32 +1081,6 @@
       })),
       { name: "Aggregate", label: "Aggregate", color: "var(--fg)", width: 3, dash: "6 3" },
     ]);
-  }
-
-  // --- Rework Details ---
-  function showReworkDetails(date, bot) {
-    const panel = d3.select("#rework-details-panel");
-    const matching = reworkDetails.filter(d =>
-      d.datetime.startsWith(date) && (bot === "__aggregate__" || d.bot === bot)
-    );
-
-    if (matching.length === 0) {
-      panel.html("<p>No rework details for this date.</p>");
-      return;
-    }
-
-    let html = `<table><thead><tr><th>Time</th><th>Bot</th><th>Repo</th><th>Item</th></tr></thead><tbody>`;
-    matching.forEach(d => {
-      const time = d.datetime.substring(11, 19);
-      html += `<tr>
-        <td>${time}</td>
-        <td>${d.bot}</td>
-        <td>${d.repo}</td>
-        <td><a href="${d.url}" target="_blank" rel="noopener">#${d.item}</a></td>
-      </tr>`;
-    });
-    html += `</tbody></table>`;
-    panel.html(html);
   }
 
   // --- Render all ---
