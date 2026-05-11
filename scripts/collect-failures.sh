@@ -8,6 +8,7 @@ TARGET_DATE="${1:-$(date -d yesterday +%Y-%m-%d)}"
 echo "Collecting failure metrics for ${TARGET_DATE}..."
 
 ensure_failure_csv
+ensure_failure_details_csv
 
 # Skip if this date already has data.
 if grep -q "^${TARGET_DATE}," "$FAILURE_FILE" 2>/dev/null; then
@@ -32,7 +33,7 @@ AGENT_WORKFLOWS=(
 # Fetch all completed workflow runs for the target date.
 runs=$(gh api "/repos/${AGENT_REPO}/actions/runs?per_page=100&created=${TARGET_DATE}" \
   --paginate \
-  --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion] | @tsv' 2>/dev/null || true)
+  --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion, (.id | tostring), .html_url] | @tsv' 2>/dev/null || true)
 
 if [[ -z "$runs" ]]; then
   echo "No workflow runs found for ${TARGET_DATE}."
@@ -49,11 +50,14 @@ done
 declare -A total_runs
 declare -A failed_runs
 
-while IFS=$'\t' read -r name conclusion; do
+while IFS=$'\t' read -r name conclusion run_id run_url; do
   [[ -z "${is_agent[$name]+x}" ]] && continue
   total_runs["$name"]=$(( ${total_runs["$name"]:-0} + 1 ))
   if [[ "$conclusion" == "failure" ]]; then
     failed_runs["$name"]=$(( ${failed_runs["$name"]:-0} + 1 ))
+    append_failure_detail "$TARGET_DATE" "$name" ".fullsend" "$run_id" "failure" "$run_url"
+  else
+    append_failure_detail "$TARGET_DATE" "$name" ".fullsend" "$run_id" "success" "$run_url"
   fi
 done <<< "$runs"
 
