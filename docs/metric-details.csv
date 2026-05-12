@@ -122,3 +122,32 @@ date,repo,type,event,number,title,url
 2026-05-09,fullsend,pr,opened,790,"fix: prevent dev build versions from being pinned in action.yml",https://github.com/fullsend-ai/fullsend/pull/790
 2026-05-09,fullsend,pr,opened,791,"chore: add lint-workflow-size to cap workflow file growth",https://github.com/fullsend-ai/fullsend/pull/791
 2026-05-09,fullsend,pr,opened,792,"feat: reusable workflows (ADR 31), centralized routing (ADR 34), layered content (ADR 35)",https://github.com/fullsend-ai/fullsend/pull/792
+2026-05-11,fullsend,pr,opened,816,"Track actionable review follow-ups",https://github.com/fullsend-ai/fullsend/pull/816
+2026-05-11,fullsend,pr,opened,815,"feat: add gopls LSP plugin support for Claude code running in the sandbox",https://github.com/fullsend-ai/fullsend/pull/815
+2026-05-11,fullsend,pr,opened,814,"chore: add merge-queue skill",https://github.com/fullsend-ai/fullsend/pull/814
+2026-05-11,fullsend,pr,opened,811,"fix(#810): use OPENSHELL_VERSION env var for OpenShell install",https://github.com/fullsend-ai/fullsend/pull/811
+2026-05-11,fullsend,pr,opened,809,"docs(skills): add spec-start skill and Cursor skills symlink",https://github.com/fullsend-ai/fullsend/pull/809
+2026-05-11,fullsend,pr,opened,808,"fix(#748): replace per-tick heartbeat notices with single completion annotation",https://github.com/fullsend-ai/fullsend/pull/808
+2026-05-11,fullsend,pr,opened,807,"feat: add search filter to docs sidebar file tree",https://github.com/fullsend-ai/fullsend/pull/807
+2026-05-11,fullsend,pr,opened,800,"fix(#644): make GCP resource creation commands idempotent for reinstall",https://github.com/fullsend-ai/fullsend/pull/800
+2026-05-11,fullsend,pr,merged,791,"chore: add lint-workflow-size to cap workflow file growth",https://github.com/fullsend-ai/fullsend/pull/791
+2026-05-11,fullsend,pr,merged,785,"fix: restore automatic triage on issue open/edit",https://github.com/fullsend-ai/fullsend/pull/785
+2026-05-11,fullsend,pr,merged,784,"fix: add dispatch-prioritize job to shim workflow",https://github.com/fullsend-ai/fullsend/pull/784
+2026-05-11,fullsend,pr,merged,783,"chore: add markdown link linter and fix broken links",https://github.com/fullsend-ai/fullsend/pull/783
+2026-05-11,fullsend,pr,merged,746,"feat(#745): add analyze-transcript skill",https://github.com/fullsend-ai/fullsend/pull/746
+2026-05-11,fullsend,pr,merged,707,"docs: ADR 0033 — per-repo installation mode",https://github.com/fullsend-ai/fullsend/pull/707
+2026-05-11,fullsend,pr,merged,659,"Add agent execution sandbox architecture ADR",https://github.com/fullsend-ai/fullsend/pull/659
+2026-05-11,fullsend,pr,closed,373,"ci: skip site build when no site files changed",https://github.com/fullsend-ai/fullsend/pull/373
+2026-05-11,fullsend,issue,opened,813,"ci: add paths filter to site build workflow to skip unnecessary builds on PRs",https://github.com/fullsend-ai/fullsend/issues/813
+2026-05-11,fullsend,issue,opened,812,"refactor: pass all env vars explicitly to mint NewHandler",https://github.com/fullsend-ai/fullsend/issues/812
+2026-05-11,fullsend,issue,opened,810,"Use OPENSHELL_VERSION env var for OpenShell install instead of hardcoded URL tag",https://github.com/fullsend-ai/fullsend/issues/810
+2026-05-11,fullsend,issue,opened,806,"Agent: PR comments/reviews trigger spec-refine-github for spec agent PRs",https://github.com/fullsend-ai/fullsend/issues/806
+2026-05-11,fullsend,issue,opened,805,"Agent: /spec on issue triggers spec-start-github (PR via deterministic script)",https://github.com/fullsend-ai/fullsend/issues/805
+2026-05-11,fullsend,issue,opened,804,"Skill: spec-refine-github — PR review/comments into spec and Q&A, push updates",https://github.com/fullsend-ai/fullsend/issues/804
+2026-05-11,fullsend,issue,opened,803,"Skill: spec-start-github — issue-driven spec run, artifacts on a PR",https://github.com/fullsend-ai/fullsend/issues/803
+2026-05-11,fullsend,issue,opened,802,"Skill: spec-refine — iterate spec from Q&A, comments, and new questions",https://github.com/fullsend-ai/fullsend/issues/802
+2026-05-11,fullsend,issue,opened,801,"Skill: spec-start — headless one-shot spec and Q&A file generation",https://github.com/fullsend-ai/fullsend/issues/801
+2026-05-11,fullsend,issue,closed,745,"Add analyze-transcript skill for inspecting agent run artifacts",https://github.com/fullsend-ai/fullsend/issues/745
+2026-05-11,fullsend,issue,closed,563,"Restore automatic triage on issue open/edit",https://github.com/fullsend-ai/fullsend/issues/563
+2026-05-11,.fullsend,pr,opened,19,"fix(scribe): move cron 1 hour earlier to absorb GHA scheduling drift",https://github.com/fullsend-ai/.fullsend/pull/19
+2026-05-11,.fullsend,pr,merged,19,"fix(scribe): move cron 1 hour earlier to absorb GHA scheduling drift",https://github.com/fullsend-ai/.fullsend/pull/19
