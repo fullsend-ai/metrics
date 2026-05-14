@@ -2307,3 +2307,145 @@ date,workflow,repo,run_id,status,url
 2026-05-11,Prioritize,.fullsend,25643487675,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25643487675
 2026-05-11,Prioritize,.fullsend,25643487205,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25643487205
 2026-05-11,Prioritize,.fullsend,25643486705,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25643486705
+2026-05-13,Review,.fullsend,25831932699,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25831932699
+2026-05-13,Review,.fullsend,25831423169,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25831423169
+2026-05-13,Review,.fullsend,25831222756,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25831222756
+2026-05-13,Retro,.fullsend,25831050998,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25831050998
+2026-05-13,Code,.fullsend,25830606769,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25830606769
+2026-05-13,Review,.fullsend,25830454485,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25830454485
+2026-05-13,Review,.fullsend,25829997936,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25829997936
+2026-05-13,Triage,.fullsend,25828504458,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25828504458
+2026-05-13,Triage,.fullsend,25828504628,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25828504628
+2026-05-13,Triage,.fullsend,25828500852,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25828500852
+2026-05-13,Classify GitHub Issues,.fullsend,25828496188,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25828496188
+2026-05-13,Classify GitHub Issues,.fullsend,25828493417,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25828493417
+2026-05-13,Classify GitHub Issues,.fullsend,25828489883,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25828489883
+2026-05-13,Retro,.fullsend,25828026555,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25828026555
+2026-05-13,Triage,.fullsend,25826469592,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25826469592
+2026-05-13,Triage,.fullsend,25826446212,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25826446212
+2026-05-13,Classify GitHub Issues,.fullsend,25826441464,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25826441464
+2026-05-13,Review,.fullsend,25825406325,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25825406325
+2026-05-13,Review,.fullsend,25824745496,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25824745496
+2026-05-13,Triage,.fullsend,25824431044,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25824431044
+2026-05-13,Classify GitHub Issues,.fullsend,25824417771,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25824417771
+2026-05-13,Triage,.fullsend,25822395548,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25822395548
+2026-05-13,Classify GitHub Issues,.fullsend,25822384724,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25822384724
+2026-05-13,Review,.fullsend,25822159392,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25822159392
+2026-05-13,Review,.fullsend,25821949735,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25821949735
+2026-05-13,Retro,.fullsend,25821923757,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25821923757
+2026-05-13,Fix,.fullsend,25821665048,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25821665048
+2026-05-13,Review,.fullsend,25821573227,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25821573227
+2026-05-13,Review,.fullsend,25820873474,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25820873474
+2026-05-13,Review,.fullsend,25820175934,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25820175934
+2026-05-13,Review,.fullsend,25819541522,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25819541522
+2026-05-13,Review,.fullsend,25819442130,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25819442130
+2026-05-13,Review,.fullsend,25819279271,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25819279271
+2026-05-13,Review,.fullsend,25819143798,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25819143798
+2026-05-13,Review,.fullsend,25818485491,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818485491
+2026-05-13,Triage,.fullsend,25818251299,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818251299
+2026-05-13,Triage,.fullsend,25818245788,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818245788
+2026-05-13,Triage,.fullsend,25818241840,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818241840
+2026-05-13,Classify GitHub Issues,.fullsend,25818238995,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818238995
+2026-05-13,Classify GitHub Issues,.fullsend,25818236223,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818236223
+2026-05-13,Classify GitHub Issues,.fullsend,25818230965,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818230965
+2026-05-13,Triage,.fullsend,25818133900,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818133900
+2026-05-13,Triage,.fullsend,25818127472,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818127472
+2026-05-13,Classify GitHub Issues,.fullsend,25818119463,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818119463
+2026-05-13,Classify GitHub Issues,.fullsend,25818114953,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25818114953
+2026-05-13,Review,.fullsend,25817965486,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25817965486
+2026-05-13,Review,.fullsend,25817878131,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25817878131
+2026-05-13,Retro,.fullsend,25817545249,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25817545249
+2026-05-13,Review,.fullsend,25817260373,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25817260373
+2026-05-13,Retro,.fullsend,25817187961,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25817187961
+2026-05-13,Retro,.fullsend,25816846260,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25816846260
+2026-05-13,Review,.fullsend,25816805590,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25816805590
+2026-05-13,Review,.fullsend,25816194647,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25816194647
+2026-05-13,Review,.fullsend,25815733950,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25815733950
+2026-05-13,Review,.fullsend,25815681488,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25815681488
+2026-05-13,Review,.fullsend,25815291747,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25815291747
+2026-05-13,Review,.fullsend,25815260418,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25815260418
+2026-05-13,Review,.fullsend,25814799046,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25814799046
+2026-05-13,Scribe,.fullsend,25811969428,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25811969428
+2026-05-13,Triage,.fullsend,25811925031,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25811925031
+2026-05-13,Triage,.fullsend,25811908011,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25811908011
+2026-05-13,Classify GitHub Issues,.fullsend,25811893534,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25811893534
+2026-05-13,Classify GitHub Issues,.fullsend,25811891170,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25811891170
+2026-05-13,Retro,.fullsend,25811417496,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25811417496
+2026-05-13,Review,.fullsend,25811193680,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25811193680
+2026-05-13,Review,.fullsend,25811116008,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25811116008
+2026-05-13,Triage,.fullsend,25810903971,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25810903971
+2026-05-13,Classify GitHub Issues,.fullsend,25810891160,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25810891160
+2026-05-13,Review,.fullsend,25810828932,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25810828932
+2026-05-13,Retro,.fullsend,25810504084,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25810504084
+2026-05-13,Triage,.fullsend,25810424066,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25810424066
+2026-05-13,Classify GitHub Issues,.fullsend,25810418595,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25810418595
+2026-05-13,Review,.fullsend,25810407850,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25810407850
+2026-05-13,Review,.fullsend,25810164832,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25810164832
+2026-05-13,Review,.fullsend,25809559499,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25809559499
+2026-05-13,Review,.fullsend,25809243297,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25809243297
+2026-05-13,Triage,.fullsend,25809057664,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25809057664
+2026-05-13,Review,.fullsend,25808908271,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808908271
+2026-05-13,Triage,.fullsend,25808884229,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808884229
+2026-05-13,Classify GitHub Issues,.fullsend,25808865467,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808865467
+2026-05-13,Triage,.fullsend,25808751021,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808751021
+2026-05-13,Classify GitHub Issues,.fullsend,25808737453,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808737453
+2026-05-13,Fix,.fullsend,25808699330,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808699330
+2026-05-13,Triage,.fullsend,25808682251,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808682251
+2026-05-13,Classify GitHub Issues,.fullsend,25808662459,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808662459
+2026-05-13,Triage,.fullsend,25808554823,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25808554823
+2026-05-13,Classify GitHub Issues,.fullsend,25808526894,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808526894
+2026-05-13,Review,.fullsend,25808285503,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25808285503
+2026-05-13,Review,.fullsend,25807268652,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25807268652
+2026-05-13,Triage,.fullsend,25806991802,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25806991802
+2026-05-13,Classify GitHub Issues,.fullsend,25806980060,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25806980060
+2026-05-13,Retro,.fullsend,25806616670,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25806616670
+2026-05-13,Scribe,.fullsend,25806589378,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25806589378
+2026-05-13,Triage,.fullsend,25806321782,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25806321782
+2026-05-13,Classify GitHub Issues,.fullsend,25806302794,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25806302794
+2026-05-13,Scribe,.fullsend,25805282334,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25805282334
+2026-05-13,Retro,.fullsend,25805094668,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25805094668
+2026-05-13,Retro,.fullsend,25805044714,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25805044714
+2026-05-13,Retro,.fullsend,25804393662,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25804393662
+2026-05-13,Review,.fullsend,25800316372,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25800316372
+2026-05-13,Review,.fullsend,25799158786,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25799158786
+2026-05-13,Code,.fullsend,25798784773,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798784773
+2026-05-13,Review,.fullsend,25798377140,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25798377140
+2026-05-13,Triage,.fullsend,25798374997,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798374997
+2026-05-13,Review,.fullsend,25798121476,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798121476
+2026-05-13,Triage,.fullsend,25798071070,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798071070
+2026-05-13,Triage,.fullsend,25798071079,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798071079
+2026-05-13,Triage,.fullsend,25798070659,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798070659
+2026-05-13,Classify GitHub Issues,.fullsend,25798064491,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798064491
+2026-05-13,Classify GitHub Issues,.fullsend,25798063096,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798063096
+2026-05-13,Classify GitHub Issues,.fullsend,25798060406,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25798060406
+2026-05-13,Code,.fullsend,25797654241,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25797654241
+2026-05-13,Retro,.fullsend,25797430888,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25797430888
+2026-05-13,Review,.fullsend,25796133862,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25796133862
+2026-05-13,Triage,.fullsend,25793449820,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25793449820
+2026-05-13,Triage,.fullsend,25793442604,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25793442604
+2026-05-13,Classify GitHub Issues,.fullsend,25793440849,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25793440849
+2026-05-13,Classify GitHub Issues,.fullsend,25793440000,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25793440000
+2026-05-13,Code,.fullsend,25793136096,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25793136096
+2026-05-13,Retro,.fullsend,25793131784,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25793131784
+2026-05-13,Retro,.fullsend,25793117945,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25793117945
+2026-05-13,Triage,.fullsend,25792916105,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792916105
+2026-05-13,Classify GitHub Issues,.fullsend,25792904988,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792904988
+2026-05-13,Review,.fullsend,25792902228,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792902228
+2026-05-13,Review,.fullsend,25792838533,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792838533
+2026-05-13,Code,.fullsend,25792408931,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792408931
+2026-05-13,Code,.fullsend,25792303712,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792303712
+2026-05-13,Triage,.fullsend,25792200603,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792200603
+2026-05-13,Classify GitHub Issues,.fullsend,25792187202,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792187202
+2026-05-13,Review,.fullsend,25792077504,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792077504
+2026-05-13,Triage,.fullsend,25792034517,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792034517
+2026-05-13,Classify GitHub Issues,.fullsend,25792026318,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25792026318
+2026-05-13,Code,.fullsend,25791523859,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25791523859
+2026-05-13,Triage,.fullsend,25791281451,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25791281451
+2026-05-13,Classify GitHub Issues,.fullsend,25791273703,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25791273703
+2026-05-13,Triage,.fullsend,25791102442,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25791102442
+2026-05-13,Classify GitHub Issues,.fullsend,25791098444,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25791098444
+2026-05-13,Review,.fullsend,25790812653,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25790812653
+2026-05-13,Retro,.fullsend,25790449756,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/25790449756
+2026-05-13,Review,.fullsend,25785283876,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25785283876
+2026-05-13,Review,.fullsend,25776220694,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25776220694
+2026-05-13,Review,.fullsend,25775587344,success,https://github.com/fullsend-ai/.fullsend/actions/runs/25775587344
