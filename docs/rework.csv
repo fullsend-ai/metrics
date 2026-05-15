@@ -161,3 +161,10 @@ date,bot,items_touched,items_reworked,rework_rate
 2026-05-13,github-actions[bot],54,28,0.519
 2026-05-13,github-merge-queue[bot],15,0,0.000
 2026-05-13,__aggregate__,156,53,0.340
+2026-05-14,fullsend-ai-coder[bot],16,2,0.125
+2026-05-14,fullsend-ai-retro[bot],52,14,0.269
+2026-05-14,fullsend-ai-review[bot],28,13,0.464
+2026-05-14,fullsend-ai-triage[bot],78,33,0.423
+2026-05-14,github-actions[bot],92,45,0.489
+2026-05-14,github-merge-queue[bot],18,1,0.056
+2026-05-14,__aggregate__,284,108,0.380
