@@ -151,3 +151,7 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-05-14,.fullsend,0,0,0,21,24,0,0
 2026-05-14,experiments,0,0,0,0,0,0,0
 2026-05-14,metrics,0,0,0,0,0,0,0
+2026-05-15,fullsend,29,27,3,40,21,4,2.10
+2026-05-15,.fullsend,3,3,0,14,15,0,0.50
+2026-05-15,experiments,1,1,0,0,0,0,0.10
+2026-05-15,metrics,1,0,0,0,0,0,0
