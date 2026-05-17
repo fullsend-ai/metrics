@@ -560,3 +560,29 @@ date,repo,type,event,number,title,url
 2026-05-15,.fullsend,issue,closed,56,"Add harness exit-code semantics to code agent context",https://github.com/fullsend-ai/.fullsend/issues/56
 2026-05-15,experiments,pr,opened,26,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/26
 2026-05-15,experiments,pr,merged,26,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/26
+2026-05-16,fullsend,pr,opened,1063,"fix(dispatch): restore /fs- prefix on slash commands",https://github.com/fullsend-ai/fullsend/pull/1063
+2026-05-16,fullsend,pr,opened,1062,"chore(deps): bump github.com/go-jose/go-jose/v3 from 3.0.4 to 3.0.5",https://github.com/fullsend-ai/fullsend/pull/1062
+2026-05-16,fullsend,pr,opened,1059,"fix(mint): accept job_workflow_ref from registered per-repo repos",https://github.com/fullsend-ai/fullsend/pull/1059
+2026-05-16,fullsend,pr,opened,1058,"docs(adr-35): cover per-repo install mode in layered content resolution",https://github.com/fullsend-ai/fullsend/pull/1058
+2026-05-16,fullsend,pr,opened,1055,"feat(scaffold): auto-detect and install pre-commit tool dependencies",https://github.com/fullsend-ai/fullsend/pull/1055
+2026-05-16,fullsend,pr,opened,1054,"fix: add lychee to code image and fix tar extraction in post-scripts",https://github.com/fullsend-ai/fullsend/pull/1054
+2026-05-16,fullsend,pr,opened,1053,"fix(retro): use REST API for PR comments to avoid pull_requests:write",https://github.com/fullsend-ai/fullsend/pull/1053
+2026-05-16,fullsend,pr,opened,1049,"fix(retro): harden output schema instructions to prevent extra properties",https://github.com/fullsend-ai/fullsend/pull/1049
+2026-05-16,fullsend,pr,merged,1059,"fix(mint): accept job_workflow_ref from registered per-repo repos",https://github.com/fullsend-ai/fullsend/pull/1059
+2026-05-16,fullsend,pr,merged,1058,"docs(adr-35): cover per-repo install mode in layered content resolution",https://github.com/fullsend-ai/fullsend/pull/1058
+2026-05-16,fullsend,pr,merged,1054,"fix: add lychee to code image and fix tar extraction in post-scripts",https://github.com/fullsend-ai/fullsend/pull/1054
+2026-05-16,fullsend,pr,merged,1053,"fix(retro): use REST API for PR comments to avoid pull_requests:write",https://github.com/fullsend-ai/fullsend/pull/1053
+2026-05-16,fullsend,pr,merged,1049,"fix(retro): harden output schema instructions to prevent extra properties",https://github.com/fullsend-ai/fullsend/pull/1049
+2026-05-16,fullsend,pr,merged,906,"feat: disable fix agent auto-run on human-authored PRs",https://github.com/fullsend-ai/fullsend/pull/906
+2026-05-16,fullsend,issue,opened,1060,"Add permission-manifest change detection to code-review skill",https://github.com/fullsend-ai/fullsend/issues/1060
+2026-05-16,fullsend,issue,opened,1061,"Improve docs-staleness scanning to find all instances in one pass",https://github.com/fullsend-ai/fullsend/issues/1061
+2026-05-16,fullsend,issue,opened,1057,"Follow-up from PR #1055: PyYAML is installed with an unpinned version floor (pyyaml>=6.0). Every other depende...",https://github.com/fullsend-ai/fullsend/issues/1057
+2026-05-16,fullsend,issue,opened,1056,"Follow-up from PR #1055: The strip_prefix for lychee is set to ""lychee-{triple}"", but the original hardcoded i...",https://github.com/fullsend-ai/fullsend/issues/1056
+2026-05-16,fullsend,issue,opened,1052,"Enrich validation script error output with expected schema structure",https://github.com/fullsend-ai/fullsend/issues/1052
+2026-05-16,fullsend,issue,opened,1051,"Add additionalProperties warnings to triage and fix agent output instructions",https://github.com/fullsend-ai/fullsend/issues/1051
+2026-05-16,fullsend,issue,opened,1050,"Implement validation loop feedback so agents can self-correct",https://github.com/fullsend-ai/fullsend/issues/1050
+2026-05-16,fullsend,issue,closed,308,"Replace dispatch PAT with a dedicated GitHub App to remove user-identity dependency",https://github.com/fullsend-ai/fullsend/issues/308
+2026-05-16,.fullsend,pr,opened,75,"rename classify output key from issues to classifications",https://github.com/fullsend-ai/.fullsend/pull/75
+2026-05-16,.fullsend,pr,opened,74,"fix: migrate scribe and gh-classify workflows to WIF auth",https://github.com/fullsend-ai/.fullsend/pull/74
+2026-05-16,.fullsend,pr,merged,75,"rename classify output key from issues to classifications",https://github.com/fullsend-ai/.fullsend/pull/75
+2026-05-16,.fullsend,pr,merged,74,"fix: migrate scribe and gh-classify workflows to WIF auth",https://github.com/fullsend-ai/.fullsend/pull/74
