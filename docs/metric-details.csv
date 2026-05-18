@@ -586,3 +586,11 @@ date,repo,type,event,number,title,url
 2026-05-16,.fullsend,pr,opened,74,"fix: migrate scribe and gh-classify workflows to WIF auth",https://github.com/fullsend-ai/.fullsend/pull/74
 2026-05-16,.fullsend,pr,merged,75,"rename classify output key from issues to classifications",https://github.com/fullsend-ai/.fullsend/pull/75
 2026-05-16,.fullsend,pr,merged,74,"fix: migrate scribe and gh-classify workflows to WIF auth",https://github.com/fullsend-ai/.fullsend/pull/74
+2026-05-17,fullsend,pr,merged,1063,"fix(dispatch): restore /fs- prefix on slash commands",https://github.com/fullsend-ai/fullsend/pull/1063
+2026-05-17,fullsend,pr,merged,821,"docs(skills): add spec-start-github for issue-driven spec PRs",https://github.com/fullsend-ai/fullsend/pull/821
+2026-05-17,fullsend,issue,opened,1069,"Review agent: add behavioral-change detection for dispatch and workflow files",https://github.com/fullsend-ai/fullsend/issues/1069
+2026-05-17,fullsend,issue,opened,1068,"Review agent should not file CHANGES_REQUESTED for governance-only findings that the fix agent cannot resolve",https://github.com/fullsend-ai/fullsend/issues/1068
+2026-05-17,fullsend,issue,opened,1067,"post-review: handle GitHub API 422 on inline comment submission gracefully",https://github.com/fullsend-ai/fullsend/issues/1067
+2026-05-17,fullsend,issue,opened,1066,"docs: encourage review agent to prefer GFM image syntax over HTML img tags",https://github.com/fullsend-ai/fullsend/issues/1066
+2026-05-17,fullsend,issue,opened,1065,"docs: render markdown images (https URLs and repo-relative paths under docs/)",https://github.com/fullsend-ai/fullsend/issues/1065
+2026-05-17,fullsend,issue,opened,1064,"Add docs maintenance agent for separate documentation repos",https://github.com/fullsend-ai/fullsend/issues/1064
