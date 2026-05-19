@@ -163,3 +163,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-05-17,.fullsend,0,0,0,0,0,0,0
 2026-05-17,experiments,0,0,0,0,0,0,0
 2026-05-17,metrics,0,0,0,0,0,0,0
+2026-05-18,fullsend,21,8,2,36,10,2,0.70
+2026-05-18,.fullsend,0,0,0,0,0,0,0
+2026-05-18,experiments,0,0,0,0,0,0,0
+2026-05-18,metrics,0,0,0,0,0,0,0
+2026-05-18,features,0,0,0,0,0,0,0

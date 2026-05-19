@@ -594,3 +594,80 @@ date,repo,type,event,number,title,url
 2026-05-17,fullsend,issue,opened,1066,"docs: encourage review agent to prefer GFM image syntax over HTML img tags",https://github.com/fullsend-ai/fullsend/issues/1066
 2026-05-17,fullsend,issue,opened,1065,"docs: render markdown images (https URLs and repo-relative paths under docs/)",https://github.com/fullsend-ai/fullsend/issues/1065
 2026-05-17,fullsend,issue,opened,1064,"Add docs maintenance agent for separate documentation repos",https://github.com/fullsend-ai/fullsend/issues/1064
+2026-05-18,fullsend,pr,opened,1121,"fix(#1120): derive max-repos error message from maxRepos constant",https://github.com/fullsend-ai/fullsend/pull/1121
+2026-05-18,fullsend,pr,opened,1119,"fix: raise mint maxRepos from 100 to 500",https://github.com/fullsend-ai/fullsend/pull/1119
+2026-05-18,fullsend,pr,opened,1117,"chore(deps): bump experiments from `8b7a139` to `16798de`",https://github.com/fullsend-ai/fullsend/pull/1117
+2026-05-18,fullsend,pr,opened,1113,"fix: merge existing orgs in ProvisionWIF to prevent WIF condition clobber",https://github.com/fullsend-ai/fullsend/pull/1113
+2026-05-18,fullsend,pr,opened,1112,"fix(review-agent): move output schema from pr-review skill to agent definition",https://github.com/fullsend-ai/fullsend/pull/1112
+2026-05-18,fullsend,pr,opened,1111,"fix: escape HTML comments in review skill, add output schema to agent def",https://github.com/fullsend-ai/fullsend/pull/1111
+2026-05-18,fullsend,pr,opened,1110,"feat: agent self-check tool for output schema validation",https://github.com/fullsend-ai/fullsend/pull/1110
+2026-05-18,fullsend,pr,opened,1108,"fix: accept result.json as fallback in output validation",https://github.com/fullsend-ai/fullsend/pull/1108
+2026-05-18,fullsend,pr,opened,1105,"fix: filter known slugs by app set when switching app sets",https://github.com/fullsend-ai/fullsend/pull/1105
+2026-05-18,fullsend,pr,opened,1104,"fix: filter config knownSlugs by requested app-set prefix",https://github.com/fullsend-ai/fullsend/pull/1104
+2026-05-18,fullsend,pr,opened,1097,"feat: add internal/fetch package with SSRF-protected HTTP client",https://github.com/fullsend-ai/fullsend/pull/1097
+2026-05-18,fullsend,pr,opened,1096,"feat: add internal/fetch package with SSRF-protected HTTP client",https://github.com/fullsend-ai/fullsend/pull/1096
+2026-05-18,fullsend,pr,opened,1095,"feat: add URL detection and integrity hash parsing to harness package",https://github.com/fullsend-ai/fullsend/pull/1095
+2026-05-18,fullsend,pr,opened,1094,"feat: add fetch audit logging for remote resource tracking",https://github.com/fullsend-ai/fullsend/pull/1094
+2026-05-18,fullsend,pr,opened,1090,"docs: phased implementation plan for ADR-0038 universal harness access",https://github.com/fullsend-ai/fullsend/pull/1090
+2026-05-18,fullsend,pr,opened,1087,"docs: add CLI architecture deep-dive guides",https://github.com/fullsend-ai/fullsend/pull/1087
+2026-05-18,fullsend,pr,opened,1083,"docs: document platform-provided infrastructure for per-repo install",https://github.com/fullsend-ai/fullsend/pull/1083
+2026-05-18,fullsend,pr,opened,1079,"fix(sandbox): use tarball upload to preserve symlinks",https://github.com/fullsend-ai/fullsend/pull/1079
+2026-05-18,fullsend,pr,opened,1074,"fix: remove empty secrets section from shim workflow-call template",https://github.com/fullsend-ai/fullsend/pull/1074
+2026-05-18,fullsend,pr,opened,1073,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/1073
+2026-05-18,fullsend,pr,opened,1071,"fix(sandbox): upload .git directory separately into sandbox",https://github.com/fullsend-ai/fullsend/pull/1071
+2026-05-18,fullsend,pr,merged,1119,"fix: raise mint maxRepos from 100 to 500",https://github.com/fullsend-ai/fullsend/pull/1119
+2026-05-18,fullsend,pr,merged,1112,"fix(review-agent): move output schema from pr-review skill to agent definition",https://github.com/fullsend-ai/fullsend/pull/1112
+2026-05-18,fullsend,pr,merged,1108,"fix: accept result.json as fallback in output validation",https://github.com/fullsend-ai/fullsend/pull/1108
+2026-05-18,fullsend,pr,merged,1087,"docs: add CLI architecture deep-dive guides",https://github.com/fullsend-ai/fullsend/pull/1087
+2026-05-18,fullsend,pr,merged,1074,"fix: remove empty secrets section from shim workflow-call template",https://github.com/fullsend-ai/fullsend/pull/1074
+2026-05-18,fullsend,pr,merged,1071,"fix(sandbox): upload .git directory separately into sandbox",https://github.com/fullsend-ai/fullsend/pull/1071
+2026-05-18,fullsend,pr,merged,1062,"chore(deps): bump github.com/go-jose/go-jose/v3 from 3.0.4 to 3.0.5",https://github.com/fullsend-ai/fullsend/pull/1062
+2026-05-18,fullsend,pr,merged,1040,"fix: filter inline review comments to files in the PR diff",https://github.com/fullsend-ai/fullsend/pull/1040
+2026-05-18,fullsend,pr,closed,1111,"fix: escape HTML comments in review skill, add output schema to agent def",https://github.com/fullsend-ai/fullsend/pull/1111
+2026-05-18,fullsend,pr,closed,1097,"feat: add internal/fetch package with SSRF-protected HTTP client",https://github.com/fullsend-ai/fullsend/pull/1097
+2026-05-18,fullsend,issue,opened,1126,"Add jq to the review agent sandbox environment",https://github.com/fullsend-ai/fullsend/issues/1126
+2026-05-18,fullsend,issue,opened,1125,"Filter pull_request_review trigger to only fire on changes_requested",https://github.com/fullsend-ai/fullsend/issues/1125
+2026-05-18,fullsend,issue,opened,1124,"Enable cancel-in-progress for review dispatch concurrency group",https://github.com/fullsend-ai/fullsend/issues/1124
+2026-05-18,fullsend,issue,opened,1122,"Follow-up from PR #1087: Variable name `FULLSEND_PER_REPO_GUARD` is incorrect. The actual environment variable...",https://github.com/fullsend-ai/fullsend/issues/1122
+2026-05-18,fullsend,issue,opened,1123,"Follow-up from PR #1087: The guides index (docs/guides/README.md) was not updated to include links to the thre...",https://github.com/fullsend-ai/fullsend/issues/1123
+2026-05-18,fullsend,issue,opened,1120,"Follow-up from PR #1119: Error message hardcodes ""too many repos (max 500)"" instead of deriving from the maxRe...",https://github.com/fullsend-ai/fullsend/issues/1120
+2026-05-18,fullsend,issue,opened,1118,"Follow-up from PR #1113: The read-existing, parse, union, sort merge pattern is now duplicated between Provisi...",https://github.com/fullsend-ai/fullsend/issues/1118
+2026-05-18,fullsend,issue,opened,1116,"Follow-up from PR #1113: The read-existing / parse / union / sort merge pattern is duplicated between Provisio...",https://github.com/fullsend-ai/fullsend/issues/1116
+2026-05-18,fullsend,issue,opened,1115,"Follow-up from PR #1111: Three non-scaffold copies of SKILL.md (.claude/skills/, skills/, .cursor/skills/) sti...",https://github.com/fullsend-ai/fullsend/issues/1115
+2026-05-18,fullsend,issue,opened,1114,"Follow-up from PR #1111: The literal HTML comment pattern inside the Failure output code fence was not escaped...",https://github.com/fullsend-ai/fullsend/issues/1114
+2026-05-18,fullsend,issue,opened,1109,"Standardize agent output filename across all agent schemas",https://github.com/fullsend-ai/fullsend/issues/1109
+2026-05-18,fullsend,issue,opened,1107,"feat: give agents a tool to self-check output against their JSON schema before finishing",https://github.com/fullsend-ai/fullsend/issues/1107
+2026-05-18,fullsend,issue,opened,1106,"hack/lint-broken-symlinks silently exits 1 without reporting which symlinks are broken",https://github.com/fullsend-ai/fullsend/issues/1106
+2026-05-18,fullsend,issue,opened,1103,"Harness skill upload does not register skills in Claude Code settings.json",https://github.com/fullsend-ai/fullsend/issues/1103
+2026-05-18,fullsend,issue,opened,1102,"Follow-up from PR #1096: isInternalIP does not block documentation/TEST-NET IP ranges (192.0.2.0/24, 198.51.10...",https://github.com/fullsend-ai/fullsend/issues/1102
+2026-05-18,fullsend,issue,opened,1101,"Follow-up from PR #1096: Only first resolved IP used for connection pinning. Plan doc specifies iterating all...",https://github.com/fullsend-ai/fullsend/issues/1101
+2026-05-18,fullsend,issue,opened,1100,"Follow-up from PR #1096: DialContext closure ignores context parameter, using net.DialTimeout instead of conte...",https://github.com/fullsend-ai/fullsend/issues/1100
+2026-05-18,fullsend,issue,opened,1099,"Follow-up from PR #1095: ParseIntegrityHash godoc does not mention that uppercase hex characters (A-F) are rej...",https://github.com/fullsend-ai/fullsend/issues/1099
+2026-05-18,fullsend,issue,opened,1098,"Follow-up from PR #1094: Audit log file created with 0o644 permissions (world-readable), while the analogous s...",https://github.com/fullsend-ai/fullsend/issues/1098
+2026-05-18,fullsend,issue,opened,1092,"Follow-up from PR #1090: ASCII dependency graph omits PR 6 (gitignore entry). Trivial but the graph should be...",https://github.com/fullsend-ai/fullsend/issues/1092
+2026-05-18,fullsend,issue,opened,1093,"Follow-up from PR #1090: PR 4 places audit logging in internal/fetch/audit.go, diverging from the existing des...",https://github.com/fullsend-ai/fullsend/issues/1093
+2026-05-18,fullsend,issue,opened,1091,"Follow-up from PR #1090: New plan doc docs/plans/universal-harness-access-implementation.md is not linked from...",https://github.com/fullsend-ai/fullsend/issues/1091
+2026-05-18,fullsend,issue,opened,1089,"Follow-up from PR #1079: The three new tests verify the function does not panic and returns an error when open...",https://github.com/fullsend-ai/fullsend/issues/1089
+2026-05-18,fullsend,issue,opened,1088,"code agent: invoke review agent in a pre-PR self-review loop (max 3 iterations)",https://github.com/fullsend-ai/fullsend/issues/1088
+2026-05-18,fullsend,issue,opened,1086,"review agent (backlog): expand security sub-agent to cover threat modeling, OWASP Top 10, and adversarial thinking",https://github.com/fullsend-ai/fullsend/issues/1086
+2026-05-18,fullsend,issue,opened,1085,"review agent: orchestrate parallel specialized sub-agents with a challenger pass",https://github.com/fullsend-ai/fullsend/issues/1085
+2026-05-18,fullsend,issue,opened,1084,"Define policy for experimental agent placement and promotion",https://github.com/fullsend-ai/fullsend/issues/1084
+2026-05-18,fullsend,issue,opened,1082,"Investigate Cursor Bugbot and expand landscape.md with a Bugbot vs CodeRabbit comparison",https://github.com/fullsend-ai/fullsend/issues/1082
+2026-05-18,fullsend,issue,opened,1081,"Follow-up from PR #1079: RestoreSymlinks has no unit test. A table-driven test with a mock Exec could validate...",https://github.com/fullsend-ai/fullsend/issues/1081
+2026-05-18,fullsend,issue,opened,1080,"Follow-up from PR #1079: awk default whitespace field splitting truncates symlink paths containing spaces. git...",https://github.com/fullsend-ai/fullsend/issues/1080
+2026-05-18,fullsend,issue,opened,1078,"Retro agent fails to post workflow post-mortems",https://github.com/fullsend-ai/fullsend/issues/1078
+2026-05-18,fullsend,issue,opened,1077,"docs: document SaaS profile for per-repo install (platform mint + bring-your-own inference project)",https://github.com/fullsend-ai/fullsend/issues/1077
+2026-05-18,fullsend,issue,opened,1076,"retro agent: GitHub App missing Issues: write permission for post-script comment",https://github.com/fullsend-ai/fullsend/issues/1076
+2026-05-18,fullsend,issue,opened,1075,"admin install should pin reusable workflows and actions to a commit SHA instead of v0",https://github.com/fullsend-ai/fullsend/issues/1075
+2026-05-18,fullsend,issue,opened,1072,"cutting-releases: local-only tags skew changelog base ref and annotation omits commits",https://github.com/fullsend-ai/fullsend/issues/1072
+2026-05-18,fullsend,issue,opened,1070,"openshell upload strips .git — code agent operates on bare file tree since May 7",https://github.com/fullsend-ai/fullsend/issues/1070
+2026-05-18,fullsend,issue,closed,1124,"Enable cancel-in-progress for review dispatch concurrency group",https://github.com/fullsend-ai/fullsend/issues/1124
+2026-05-18,fullsend,issue,closed,1102,"Follow-up from PR #1096: isInternalIP does not block documentation/TEST-NET IP ranges (192.0.2.0/24, 198.51.10...",https://github.com/fullsend-ai/fullsend/issues/1102
+2026-05-18,fullsend,issue,closed,1101,"Follow-up from PR #1096: Only first resolved IP used for connection pinning. Plan doc specifies iterating all...",https://github.com/fullsend-ai/fullsend/issues/1101
+2026-05-18,fullsend,issue,closed,1100,"Follow-up from PR #1096: DialContext closure ignores context parameter, using net.DialTimeout instead of conte...",https://github.com/fullsend-ai/fullsend/issues/1100
+2026-05-18,fullsend,issue,closed,1099,"Follow-up from PR #1095: ParseIntegrityHash godoc does not mention that uppercase hex characters (A-F) are rej...",https://github.com/fullsend-ai/fullsend/issues/1099
+2026-05-18,fullsend,issue,closed,1098,"Follow-up from PR #1094: Audit log file created with 0o644 permissions (world-readable), while the analogous s...",https://github.com/fullsend-ai/fullsend/issues/1098
+2026-05-18,fullsend,issue,closed,1089,"Follow-up from PR #1079: The three new tests verify the function does not panic and returns an error when open...",https://github.com/fullsend-ai/fullsend/issues/1089
+2026-05-18,fullsend,issue,closed,1078,"Retro agent fails to post workflow post-mortems",https://github.com/fullsend-ai/fullsend/issues/1078
+2026-05-18,fullsend,issue,closed,1070,"openshell upload strips .git — code agent operates on bare file tree since May 7",https://github.com/fullsend-ai/fullsend/issues/1070
+2026-05-18,fullsend,issue,closed,803,"Skill: spec-start-github — issue-driven spec run, artifacts on a PR",https://github.com/fullsend-ai/fullsend/issues/803
