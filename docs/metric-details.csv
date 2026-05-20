@@ -671,3 +671,158 @@ date,repo,type,event,number,title,url
 2026-05-18,fullsend,issue,closed,1078,"Retro agent fails to post workflow post-mortems",https://github.com/fullsend-ai/fullsend/issues/1078
 2026-05-18,fullsend,issue,closed,1070,"openshell upload strips .git — code agent operates on bare file tree since May 7",https://github.com/fullsend-ai/fullsend/issues/1070
 2026-05-18,fullsend,issue,closed,803,"Skill: spec-start-github — issue-driven spec run, artifacts on a PR",https://github.com/fullsend-ai/fullsend/issues/803
+2026-05-19,fullsend,pr,opened,1227,"chore(deps): bump experiments from `16798de` to `8a13cad`",https://github.com/fullsend-ai/fullsend/pull/1227
+2026-05-19,fullsend,pr,opened,1225,"fix(#1220): add fix role to PerRepoDefaultRoles for review→fix dispatch loop",https://github.com/fullsend-ai/fullsend/pull/1225
+2026-05-19,fullsend,pr,opened,1215,"feat(e2e): parallel test runs via org pool",https://github.com/fullsend-ai/fullsend/pull/1215
+2026-05-19,fullsend,pr,opened,1211,"feat(e2e): add TOTP support for 2FA-enabled GitHub accounts",https://github.com/fullsend-ai/fullsend/pull/1211
+2026-05-19,fullsend,pr,opened,1203,"feat(e2e): add TOTP 2FA support to export-session",https://github.com/fullsend-ai/fullsend/pull/1203
+2026-05-19,fullsend,pr,opened,1202,"refactor(#1148): join Claude command parts",https://github.com/fullsend-ai/fullsend/pull/1202
+2026-05-19,fullsend,pr,opened,1198,"docs(images): add jq to sandbox tool list in README",https://github.com/fullsend-ai/fullsend/pull/1198
+2026-05-19,fullsend,pr,opened,1190,"docs(admin): add guide for enabling fullsend on private repositories",https://github.com/fullsend-ai/fullsend/pull/1190
+2026-05-19,fullsend,pr,opened,1187,"fix(dispatch): map fix stage to coder role in config check",https://github.com/fullsend-ai/fullsend/pull/1187
+2026-05-19,fullsend,pr,opened,1182,"feat(#1145): default --mint-url to fullsend-ai hosted mint and auto-skip provisioning",https://github.com/fullsend-ai/fullsend/pull/1182
+2026-05-19,fullsend,pr,opened,1180,"fix(#1142): change DefaultAppSet from ""fullsend"" to ""fullsend-ai""",https://github.com/fullsend-ai/fullsend/pull/1180
+2026-05-19,fullsend,pr,opened,1179,"docs(guides): add building custom agents guide",https://github.com/fullsend-ai/fullsend/pull/1179
+2026-05-19,fullsend,pr,opened,1178,"fix(security): run unicode normalization before secret redaction",https://github.com/fullsend-ai/fullsend/pull/1178
+2026-05-19,fullsend,pr,opened,1177,"fix(sandbox): keep relative in-repo symlinks on download",https://github.com/fullsend-ai/fullsend/pull/1177
+2026-05-19,fullsend,pr,opened,1176,"feat(#1052): show allowed properties in validation error output",https://github.com/fullsend-ai/fullsend/pull/1176
+2026-05-19,fullsend,pr,opened,1174,"feat(analyze-transcript): add cost estimate to summary output",https://github.com/fullsend-ai/fullsend/pull/1174
+2026-05-19,fullsend,pr,opened,1172,"fix(run): clarify skill scan log — blocked vs uploading",https://github.com/fullsend-ai/fullsend/pull/1172
+2026-05-19,fullsend,pr,opened,1168,"fix(run): restore git-tracked symlinks after SafeDownload (partial fix for #1149)",https://github.com/fullsend-ai/fullsend/pull/1168
+2026-05-19,fullsend,pr,opened,1167,"feat(#1052): show allowed properties in validation error output",https://github.com/fullsend-ai/fullsend/pull/1167
+2026-05-19,fullsend,pr,opened,1156,"feat(code-review): flag permission manifest changes as mandatory finding",https://github.com/fullsend-ai/fullsend/pull/1156
+2026-05-19,fullsend,pr,opened,1152,"fix(hack): report broken symlinks before exiting",https://github.com/fullsend-ai/fullsend/pull/1152
+2026-05-19,fullsend,pr,opened,1151,"build(sandbox): add jq to base image",https://github.com/fullsend-ai/fullsend/pull/1151
+2026-05-19,fullsend,pr,opened,1140,"fix(skills): use repo-root-relative path for install-binary.sh",https://github.com/fullsend-ai/fullsend/pull/1140
+2026-05-19,fullsend,pr,opened,1138,"fix: skip existing-PR check when --force is in comment body",https://github.com/fullsend-ai/fullsend/pull/1138
+2026-05-19,fullsend,pr,opened,1128,"fix: detect public apps without --public flag and filter shared slugs by app-set",https://github.com/fullsend-ai/fullsend/pull/1128
+2026-05-19,fullsend,pr,merged,1190,"docs(admin): add guide for enabling fullsend on private repositories",https://github.com/fullsend-ai/fullsend/pull/1190
+2026-05-19,fullsend,pr,merged,1187,"fix(dispatch): map fix stage to coder role in config check",https://github.com/fullsend-ai/fullsend/pull/1187
+2026-05-19,fullsend,pr,merged,1180,"fix(#1142): change DefaultAppSet from ""fullsend"" to ""fullsend-ai""",https://github.com/fullsend-ai/fullsend/pull/1180
+2026-05-19,fullsend,pr,merged,1177,"fix(sandbox): keep relative in-repo symlinks on download",https://github.com/fullsend-ai/fullsend/pull/1177
+2026-05-19,fullsend,pr,merged,1151,"build(sandbox): add jq to base image",https://github.com/fullsend-ai/fullsend/pull/1151
+2026-05-19,fullsend,pr,merged,1128,"fix: detect public apps without --public flag and filter shared slugs by app-set",https://github.com/fullsend-ai/fullsend/pull/1128
+2026-05-19,fullsend,pr,merged,1117,"chore(deps): bump experiments from `8b7a139` to `16798de`",https://github.com/fullsend-ai/fullsend/pull/1117
+2026-05-19,fullsend,pr,merged,1113,"fix: merge existing orgs in ProvisionWIF to prevent WIF condition clobber",https://github.com/fullsend-ai/fullsend/pull/1113
+2026-05-19,fullsend,pr,merged,1104,"fix: filter config knownSlugs by requested app-set prefix",https://github.com/fullsend-ai/fullsend/pull/1104
+2026-05-19,fullsend,pr,merged,1079,"fix(sandbox): use tarball upload to preserve symlinks",https://github.com/fullsend-ai/fullsend/pull/1079
+2026-05-19,fullsend,pr,merged,1039,"triage: align control labels with pipeline usage, rename type/feature to feature",https://github.com/fullsend-ai/fullsend/pull/1039
+2026-05-19,fullsend,pr,merged,1029,"ci: consolidate lint + test into single make test job",https://github.com/fullsend-ai/fullsend/pull/1029
+2026-05-19,fullsend,pr,merged,1022,"fix: silent skip when stage role not configured",https://github.com/fullsend-ai/fullsend/pull/1022
+2026-05-19,fullsend,pr,merged,1020,"fix: correct install-binary.sh path in cutting-releases skill",https://github.com/fullsend-ai/fullsend/pull/1020
+2026-05-19,fullsend,pr,merged,974,"docs: document conventional commits policy",https://github.com/fullsend-ai/fullsend/pull/974
+2026-05-19,fullsend,pr,merged,911,"feat: add --debug flag for Claude Code debug logging",https://github.com/fullsend-ai/fullsend/pull/911
+2026-05-19,fullsend,pr,merged,807,"feat: add search filter to docs sidebar file tree",https://github.com/fullsend-ai/fullsend/pull/807
+2026-05-19,fullsend,pr,closed,1203,"feat(e2e): add TOTP 2FA support to export-session",https://github.com/fullsend-ai/fullsend/pull/1203
+2026-05-19,fullsend,pr,closed,1198,"docs(images): add jq to sandbox tool list in README",https://github.com/fullsend-ai/fullsend/pull/1198
+2026-05-19,fullsend,pr,closed,1182,"feat(#1145): default --mint-url to fullsend-ai hosted mint and auto-skip provisioning",https://github.com/fullsend-ai/fullsend/pull/1182
+2026-05-19,fullsend,pr,closed,1176,"feat(#1052): show allowed properties in validation error output",https://github.com/fullsend-ai/fullsend/pull/1176
+2026-05-19,fullsend,pr,closed,1168,"fix(run): restore git-tracked symlinks after SafeDownload (partial fix for #1149)",https://github.com/fullsend-ai/fullsend/pull/1168
+2026-05-19,fullsend,pr,closed,1105,"fix: filter known slugs by app set when switching app sets",https://github.com/fullsend-ai/fullsend/pull/1105
+2026-05-19,fullsend,issue,opened,1226,"Follow-up from PR #1225: No dedicated test for PerRepoDefaultRoles(). Other role functions (ValidRoles, Defaul...",https://github.com/fullsend-ai/fullsend/issues/1226
+2026-05-19,fullsend,issue,opened,1224,"Follow-up from PR #1190: Contributor comment on #1188 requested coverage of indirect exposure paths (public re...",https://github.com/fullsend-ai/fullsend/issues/1224
+2026-05-19,fullsend,issue,opened,1223,"Follow-up from PR #1190: Installation guide discusses .fullsend visibility constraints for private repos but d...",https://github.com/fullsend-ai/fullsend/issues/1223
+2026-05-19,fullsend,issue,opened,1222,"Triage agent: recommend old-value searches for rename/default-change tasks",https://github.com/fullsend-ai/fullsend/issues/1222
+2026-05-19,fullsend,issue,opened,1221,"Code agent: search for old literal values when changing constants or defaults",https://github.com/fullsend-ai/fullsend/issues/1221
+2026-05-19,fullsend,issue,opened,1220,"Add fix role to PerRepoDefaultRoles so review→fix loop works by default",https://github.com/fullsend-ai/fullsend/issues/1220
+2026-05-19,fullsend,issue,opened,1219,"Follow-up from PR #1190: The guide covers all five areas requested in #1188 but does not address the indirect...",https://github.com/fullsend-ai/fullsend/issues/1219
+2026-05-19,fullsend,issue,opened,1218,"Follow-up from PR #1180: The --app-set flag documentation still shows (default: `fullsend`). This is now stale...",https://github.com/fullsend-ai/fullsend/issues/1218
+2026-05-19,fullsend,issue,opened,1217,"Support environment variable expansion in policy file content",https://github.com/fullsend-ai/fullsend/issues/1217
+2026-05-19,fullsend,issue,opened,1216,"Onboarding: GCP project barrier",https://github.com/fullsend-ai/fullsend/issues/1216
+2026-05-19,fullsend,issue,opened,1214,"Code agent: analyze all usage sites before implementing, not just the one in the issue",https://github.com/fullsend-ai/fullsend/issues/1214
+2026-05-19,fullsend,issue,opened,1213,"Review agent: add completeness check for multi-site patterns",https://github.com/fullsend-ai/fullsend/issues/1213
+2026-05-19,fullsend,issue,opened,1212,"review agent: carry forward unresolved prior findings in unchanged files",https://github.com/fullsend-ai/fullsend/issues/1212
+2026-05-19,fullsend,issue,opened,1210,"Triage should not edit previous comments",https://github.com/fullsend-ai/fullsend/issues/1210
+2026-05-19,fullsend,issue,opened,1209,"Clean up or suppress stale ""working on this"" notification comments",https://github.com/fullsend-ai/fullsend/issues/1209
+2026-05-19,fullsend,issue,opened,1208,"Filter issue_comment events containing slash commands from review dispatch",https://github.com/fullsend-ai/fullsend/issues/1208
+2026-05-19,fullsend,issue,opened,1207,"Triage agent missing trigger / doesn't notice changes while it's replying",https://github.com/fullsend-ai/fullsend/issues/1207
+2026-05-19,fullsend,issue,opened,1206,"Review agent: accept HUMAN_INSTRUCTION from /fs-review comment body",https://github.com/fullsend-ai/fullsend/issues/1206
+2026-05-19,fullsend,issue,opened,1204,"Follow-up from PR #1203: The ""Running e2e tests"" section documents three credential env vars (E2E_GITHUB_PASSW...",https://github.com/fullsend-ai/fullsend/issues/1204
+2026-05-19,fullsend,issue,opened,1205,"Follow-up from PR #1203: States ""If the test account enables 2FA, the session export must happen after the 2FA...",https://github.com/fullsend-ai/fullsend/issues/1205
+2026-05-19,fullsend,issue,opened,1201,"Review bot CHANGES_REQUESTED did not block merge of PR with known correctness bug",https://github.com/fullsend-ai/fullsend/issues/1201
+2026-05-19,fullsend,issue,opened,1200,"Code agent blocked by workflow file size lint — surface size constraints before coding",https://github.com/fullsend-ai/fullsend/issues/1200
+2026-05-19,fullsend,issue,opened,1199,"Merged PR contains broken GHA expression that defeats the silent-skip feature",https://github.com/fullsend-ai/fullsend/issues/1199
+2026-05-19,fullsend,issue,opened,1197,"Add CI lint check validating skill allowed-tools script paths exist on disk",https://github.com/fullsend-ai/fullsend/issues/1197
+2026-05-19,fullsend,issue,opened,1196,"Review agent hits jq unavailability in sandbox on every run",https://github.com/fullsend-ai/fullsend/issues/1196
+2026-05-19,fullsend,issue,opened,1195,"Review agent should deduplicate findings across iterations",https://github.com/fullsend-ai/fullsend/issues/1195
+2026-05-19,fullsend,issue,opened,1194,"Review agent should question necessity, not just correctness",https://github.com/fullsend-ai/fullsend/issues/1194
+2026-05-19,fullsend,issue,opened,1193,"Follow-up from PR #1096: IP validation logic remains duplicated across isInternalIP (internal/fetch/fetch.go)...",https://github.com/fullsend-ai/fullsend/issues/1193
+2026-05-19,fullsend,issue,opened,1192,"Code agent: tests should assert intermediate state, not just final outcome",https://github.com/fullsend-ai/fullsend/issues/1192
+2026-05-19,fullsend,issue,opened,1191,"Review agent: improve control-flow analysis for parameter override patterns",https://github.com/fullsend-ai/fullsend/issues/1191
+2026-05-19,fullsend,issue,opened,1189,"Retro agent: issue content from private repos may leak into public destinations",https://github.com/fullsend-ai/fullsend/issues/1189
+2026-05-19,fullsend,issue,opened,1188,"Admin guide: enabling fullsend on private repositories",https://github.com/fullsend-ai/fullsend/issues/1188
+2026-05-19,fullsend,issue,opened,1186,"dispatch: fix stage blocked on new installations — fix role absent from default config",https://github.com/fullsend-ai/fullsend/issues/1186
+2026-05-19,fullsend,issue,opened,1185,"Follow-up from PR #1182: The primary install example implies --mint-project is always required. With the hoste...",https://github.com/fullsend-ai/fullsend/issues/1185
+2026-05-19,fullsend,issue,opened,1184,"Follow-up from PR #1182: The --mint-url flag row shows no default, but it now defaults to the hosted mint URL....",https://github.com/fullsend-ai/fullsend/issues/1184
+2026-05-19,fullsend,issue,opened,1183,"Follow-up from PR #1182: Missing per-org auto-skip test. The auto-skip logic is duplicated in per-org RunE and...",https://github.com/fullsend-ai/fullsend/issues/1183
+2026-05-19,fullsend,issue,opened,1181,"Fullsend user skills",https://github.com/fullsend-ai/fullsend/issues/1181
+2026-05-19,fullsend,issue,opened,1175,"ci: add scan job for agent scaffolding files in PRs",https://github.com/fullsend-ai/fullsend/issues/1175
+2026-05-19,fullsend,issue,opened,1173,"analyze-transcript: document cost estimation in SKILL.md",https://github.com/fullsend-ai/fullsend/issues/1173
+2026-05-19,fullsend,issue,opened,1171,"plugins: explore skill-based tool installation within plugin definitions",https://github.com/fullsend-ai/fullsend/issues/1171
+2026-05-19,fullsend,issue,opened,1170,"plugin bootstrap: make PATH additions per-plugin instead of hardcoding Go path",https://github.com/fullsend-ai/fullsend/issues/1170
+2026-05-19,fullsend,issue,opened,1169,"Follow-up from PR #1167: New test helpers (run_test_output, run_test_custom_filename_output) duplicate ~90% of...",https://github.com/fullsend-ai/fullsend/issues/1169
+2026-05-19,fullsend,issue,opened,1166,"Release process should move `v0` tag to the commit SHA of each new release",https://github.com/fullsend-ai/fullsend/issues/1166
+2026-05-19,fullsend,issue,opened,1165,"layers: use errors.Join in uninstallOIDC for partial cleanup",https://github.com/fullsend-ai/fullsend/issues/1165
+2026-05-19,fullsend,issue,opened,1164,"shim: add fork guard to review and retro dispatch on pull_request_target",https://github.com/fullsend-ai/fullsend/issues/1164
+2026-05-19,fullsend,issue,opened,1163,"gcp: cache Application Default Credentials at client construction",https://github.com/fullsend-ai/fullsend/issues/1163
+2026-05-19,fullsend,issue,opened,1162,"gcf: validate project ID in StoreAgentPEM",https://github.com/fullsend-ai/fullsend/issues/1162
+2026-05-19,fullsend,issue,opened,1161,"mint: reject empty string in audience.UnmarshalJSON single-string branch",https://github.com/fullsend-ai/fullsend/issues/1161
+2026-05-19,fullsend,issue,opened,1160,"mint: add retro and prioritize roles to test defaults",https://github.com/fullsend-ai/fullsend/issues/1160
+2026-05-19,fullsend,issue,opened,1159,"mint: deduplicate rolePattern with dispatch provisioner",https://github.com/fullsend-ai/fullsend/issues/1159
+2026-05-19,fullsend,issue,opened,1158,"mint: zero PEM material after parsing private key",https://github.com/fullsend-ai/fullsend/issues/1158
+2026-05-19,fullsend,issue,opened,1157,"mint: validate ALLOWED_ROLES entries exist in ROLE_APP_IDS at startup",https://github.com/fullsend-ai/fullsend/issues/1157
+2026-05-19,fullsend,issue,opened,1155,"Review comment should state whether findings changed since prior review",https://github.com/fullsend-ai/fullsend/issues/1155
+2026-05-19,fullsend,issue,opened,1154,"Review agent should flag UI/visual review blindspot on CSS-heavy PRs",https://github.com/fullsend-ai/fullsend/issues/1154
+2026-05-19,fullsend,issue,opened,1153,"Follow-up from PR #1151: The sandbox image description lists installed tools (Claude Code, rsync, gitleaks, ti...",https://github.com/fullsend-ai/fullsend/issues/1153
+2026-05-19,fullsend,issue,opened,1150,"Remove `rsync` from base sandbox image — no longer used after OpenShell native transport",https://github.com/fullsend-ai/fullsend/issues/1150
+2026-05-19,fullsend,issue,opened,1149,"lint-broken-symlinks and SafeDownload conflict: one enforces valid symlinks, the other removes them",https://github.com/fullsend-ai/fullsend/issues/1149
+2026-05-19,fullsend,issue,opened,1148,"buildClaudeCommand: replace trailing-space flag convention with explicit separators",https://github.com/fullsend-ai/fullsend/issues/1148
+2026-05-19,fullsend,issue,opened,1147,"triage agent: close or label issues that are no longer actionable",https://github.com/fullsend-ai/fullsend/issues/1147
+2026-05-19,fullsend,issue,opened,1146,"Fix agent auto-triggers on all bot-authored PRs with no way to exclude specific bots",https://github.com/fullsend-ai/fullsend/issues/1146
+2026-05-19,fullsend,issue,opened,1145,"feat: default --mint-url to fullsend-ai hosted mint and skip provisioning by default",https://github.com/fullsend-ai/fullsend/issues/1145
+2026-05-19,fullsend,issue,opened,1144,"Severity calibration: silent-failure correctness bugs should not be rated [low]",https://github.com/fullsend-ai/fullsend/issues/1144
+2026-05-19,fullsend,issue,opened,1143,"Review agent should consider author uncertainty signals before approving",https://github.com/fullsend-ai/fullsend/issues/1143
+2026-05-19,fullsend,issue,opened,1142,"admin install: default --app-set to fullsend-ai",https://github.com/fullsend-ai/fullsend/issues/1142
+2026-05-19,fullsend,issue,opened,1141,"macOS Gatekeeper blocks fullsend binary: unsigned executable",https://github.com/fullsend-ai/fullsend/issues/1141
+2026-05-19,fullsend,issue,opened,1139,"cutting-releases skill: install script path is wrong, causing lookup failure",https://github.com/fullsend-ai/fullsend/issues/1139
+2026-05-19,fullsend,issue,opened,1137,"Review agent: defer followup issue creation until PR is merged",https://github.com/fullsend-ai/fullsend/issues/1137
+2026-05-19,fullsend,issue,opened,1136,"pre-code: existing-PR warning posted even when /fs-code --force is used",https://github.com/fullsend-ai/fullsend/issues/1136
+2026-05-19,fullsend,issue,opened,1135,"Follow-up from PR #1079: TestUploadDir_OpenshellNotInPath only exercises the error path. The happy path (tarba...",https://github.com/fullsend-ai/fullsend/issues/1135
+2026-05-19,fullsend,issue,opened,1134,"Follow-up from PR #1079: The sandbox function table lists Upload() but does not include the new UploadDir() fu...",https://github.com/fullsend-ai/fullsend/issues/1134
+2026-05-19,fullsend,issue,opened,1133,"sandbox upload dereferences symlinks — sandbox working tree diverges from source repo",https://github.com/fullsend-ai/fullsend/issues/1133
+2026-05-19,fullsend,issue,opened,1132,"Follow-up from PR #1113: The GCF Provisioner: Provision() Flow diagram shows the old step ordering (GetProject...",https://github.com/fullsend-ai/fullsend/issues/1132
+2026-05-19,fullsend,issue,opened,1131,"Follow-up from PR #1113: The strings.Contains(org, ""--"") check in ProvisionWIF() org validation rejects GitHub...",https://github.com/fullsend-ai/fullsend/issues/1131
+2026-05-19,fullsend,issue,opened,1130,"Follow-up from PR #1113: The GCF Provisioner Provision() Flow diagram shows old step ordering and does not ref...",https://github.com/fullsend-ai/fullsend/issues/1130
+2026-05-19,fullsend,issue,opened,1129,"Follow-up from PR #1113: strings.Contains(org, ""--"") check rejects valid GitHub org names with consecutive hyp...",https://github.com/fullsend-ai/fullsend/issues/1129
+2026-05-19,fullsend,issue,opened,1127,"Follow-up from PR #1096: IP validation logic remains duplicated across isInternalIP (fetch.go) and checkIP (ss...",https://github.com/fullsend-ai/fullsend/issues/1127
+2026-05-19,fullsend,issue,closed,1224,"Follow-up from PR #1190: Contributor comment on #1188 requested coverage of indirect exposure paths (public re...",https://github.com/fullsend-ai/fullsend/issues/1224
+2026-05-19,fullsend,issue,closed,1212,"review agent: carry forward unresolved prior findings in unchanged files",https://github.com/fullsend-ai/fullsend/issues/1212
+2026-05-19,fullsend,issue,closed,1210,"Triage should not edit previous comments",https://github.com/fullsend-ai/fullsend/issues/1210
+2026-05-19,fullsend,issue,closed,1195,"Review agent should deduplicate findings across iterations",https://github.com/fullsend-ai/fullsend/issues/1195
+2026-05-19,fullsend,issue,closed,1193,"Follow-up from PR #1096: IP validation logic remains duplicated across isInternalIP (internal/fetch/fetch.go)...",https://github.com/fullsend-ai/fullsend/issues/1193
+2026-05-19,fullsend,issue,closed,1188,"Admin guide: enabling fullsend on private repositories",https://github.com/fullsend-ai/fullsend/issues/1188
+2026-05-19,fullsend,issue,closed,1186,"dispatch: fix stage blocked on new installations — fix role absent from default config",https://github.com/fullsend-ai/fullsend/issues/1186
+2026-05-19,fullsend,issue,closed,1185,"Follow-up from PR #1182: The primary install example implies --mint-project is always required. With the hoste...",https://github.com/fullsend-ai/fullsend/issues/1185
+2026-05-19,fullsend,issue,closed,1184,"Follow-up from PR #1182: The --mint-url flag row shows no default, but it now defaults to the hosted mint URL....",https://github.com/fullsend-ai/fullsend/issues/1184
+2026-05-19,fullsend,issue,closed,1183,"Follow-up from PR #1182: Missing per-org auto-skip test. The auto-skip logic is duplicated in per-org RunE and...",https://github.com/fullsend-ai/fullsend/issues/1183
+2026-05-19,fullsend,issue,closed,1166,"Release process should move `v0` tag to the commit SHA of each new release",https://github.com/fullsend-ai/fullsend/issues/1166
+2026-05-19,fullsend,issue,closed,1157,"mint: validate ALLOWED_ROLES entries exist in ROLE_APP_IDS at startup",https://github.com/fullsend-ai/fullsend/issues/1157
+2026-05-19,fullsend,issue,closed,1149,"lint-broken-symlinks and SafeDownload conflict: one enforces valid symlinks, the other removes them",https://github.com/fullsend-ai/fullsend/issues/1149
+2026-05-19,fullsend,issue,closed,1142,"admin install: default --app-set to fullsend-ai",https://github.com/fullsend-ai/fullsend/issues/1142
+2026-05-19,fullsend,issue,closed,1141,"macOS Gatekeeper blocks fullsend binary: unsigned executable",https://github.com/fullsend-ai/fullsend/issues/1141
+2026-05-19,fullsend,issue,closed,1133,"sandbox upload dereferences symlinks — sandbox working tree diverges from source repo",https://github.com/fullsend-ai/fullsend/issues/1133
+2026-05-19,fullsend,issue,closed,1132,"Follow-up from PR #1113: The GCF Provisioner: Provision() Flow diagram shows the old step ordering (GetProject...",https://github.com/fullsend-ai/fullsend/issues/1132
+2026-05-19,fullsend,issue,closed,1131,"Follow-up from PR #1113: The strings.Contains(org, ""--"") check in ProvisionWIF() org validation rejects GitHub...",https://github.com/fullsend-ai/fullsend/issues/1131
+2026-05-19,fullsend,issue,closed,1126,"Add jq to the review agent sandbox environment",https://github.com/fullsend-ai/fullsend/issues/1126
+2026-05-19,fullsend,issue,closed,1080,"Follow-up from PR #1079: awk default whitespace field splitting truncates symlink paths containing spaces. git...",https://github.com/fullsend-ai/fullsend/issues/1080
+2026-05-19,fullsend,issue,closed,1024,"CI does not run Go unit tests — regressions reach main uncaught",https://github.com/fullsend-ai/fullsend/issues/1024
+2026-05-19,fullsend,issue,closed,973,"Shim dispatches retro stage on PR close even when org has no retro agent configured",https://github.com/fullsend-ai/fullsend/issues/973
+2026-05-19,fullsend,issue,closed,909,"Add --debug flag to fullsend run for Claude Code debug logging",https://github.com/fullsend-ai/fullsend/issues/909
+2026-05-19,fullsend,issue,closed,794,"Add search bar to the files tree in the docs app",https://github.com/fullsend-ai/fullsend/issues/794
+2026-05-19,fullsend,issue,closed,740,"mint: redact Secret Manager error response body in logs",https://github.com/fullsend-ai/fullsend/issues/740
+2026-05-19,fullsend,issue,closed,738,"mint: add clock skew tolerance to OIDC token expiry check",https://github.com/fullsend-ai/fullsend/issues/738
+2026-05-19,fullsend,issue,closed,710,"Define continuous release strategy and policy",https://github.com/fullsend-ai/fullsend/issues/710
+2026-05-19,fullsend,issue,closed,632,"Directory separation between scaffold-managed and user-added agent files",https://github.com/fullsend-ai/fullsend/issues/632
+2026-05-19,experiments,pr,opened,27,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/27
+2026-05-19,experiments,pr,merged,27,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/27
+2026-05-19,metrics,pr,opened,3,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/metrics/pull/3
