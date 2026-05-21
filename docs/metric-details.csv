@@ -826,3 +826,62 @@ date,repo,type,event,number,title,url
 2026-05-19,experiments,pr,opened,27,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/27
 2026-05-19,experiments,pr,merged,27,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/27
 2026-05-19,metrics,pr,opened,3,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/metrics/pull/3
+2026-05-20,fullsend,pr,opened,1268,"feat(e2e): simplify tests with CLI subprocess",https://github.com/fullsend-ai/fullsend/pull/1268
+2026-05-20,fullsend,pr,opened,1267,"fix(install): verify app installations when using --skip-app-setup",https://github.com/fullsend-ai/fullsend/pull/1267
+2026-05-20,fullsend,pr,opened,1265,"docs(#1264): document required GCP IAM roles for mint provisioning",https://github.com/fullsend-ai/fullsend/pull/1265
+2026-05-20,fullsend,pr,opened,1261,"feat(cli): add mint sub-command for standalone GCP mint management",https://github.com/fullsend-ai/fullsend/pull/1261
+2026-05-20,fullsend,pr,opened,1259,"feat(cli): add github sub-command for standalone org/repo setup",https://github.com/fullsend-ai/fullsend/pull/1259
+2026-05-20,fullsend,pr,opened,1258,"feat(cli): add inference sub-command for standalone WIF provisioning",https://github.com/fullsend-ai/fullsend/pull/1258
+2026-05-20,fullsend,pr,opened,1257,"fix(scaffold): add env/ to prioritize.yml layered directory loops",https://github.com/fullsend-ai/fullsend/pull/1257
+2026-05-20,fullsend,pr,opened,1252,"fix(scaffold): add plugins/ to layered directories",https://github.com/fullsend-ai/fullsend/pull/1252
+2026-05-20,fullsend,pr,opened,1250,"feat(skills): add mint-enroll SRE runbook skill",https://github.com/fullsend-ai/fullsend/pull/1250
+2026-05-20,fullsend,pr,opened,1246,"fix(review): disable follow-up issue creation while PR is open",https://github.com/fullsend-ai/fullsend/pull/1246
+2026-05-20,fullsend,pr,opened,1245,"docs(adr): synchronous workflow_call for event-driven agent dispatch",https://github.com/fullsend-ai/fullsend/pull/1245
+2026-05-20,fullsend,pr,opened,1242,"feat(scaffold): pin uses: refs to commit SHA instead of @v0",https://github.com/fullsend-ai/fullsend/pull/1242
+2026-05-20,fullsend,pr,opened,1240,"fix(skills): require blank first line in tag annotation when no custom title",https://github.com/fullsend-ai/fullsend/pull/1240
+2026-05-20,fullsend,pr,opened,1239,"fix(skills): start tag annotation with blank line when no custom title",https://github.com/fullsend-ai/fullsend/pull/1239
+2026-05-20,fullsend,pr,opened,1238,"fix(#1236): show exec error when validation script fails to run",https://github.com/fullsend-ai/fullsend/pull/1238
+2026-05-20,fullsend,pr,opened,1235,"refactor(test): add optional expect_output param to test helpers",https://github.com/fullsend-ai/fullsend/pull/1235
+2026-05-20,fullsend,pr,opened,1234,"docs(#1196): add jq to sandbox image tool list in images/README.md",https://github.com/fullsend-ai/fullsend/pull/1234
+2026-05-20,fullsend,pr,opened,1233,"feat(#1221): add constant-value search guidance to code skill",https://github.com/fullsend-ai/fullsend/pull/1233
+2026-05-20,fullsend,pr,opened,1232,"feat(skills): add /topissues slash command for RICE backlog",https://github.com/fullsend-ai/fullsend/pull/1232
+2026-05-20,fullsend,pr,opened,1231,"docs(#669): verify API contracts per code path in code skill",https://github.com/fullsend-ai/fullsend/pull/1231
+2026-05-20,fullsend,pr,merged,1252,"fix(scaffold): add plugins/ to layered directories",https://github.com/fullsend-ai/fullsend/pull/1252
+2026-05-20,fullsend,pr,merged,1246,"fix(review): disable follow-up issue creation while PR is open",https://github.com/fullsend-ai/fullsend/pull/1246
+2026-05-20,fullsend,pr,merged,1211,"feat(e2e): add TOTP support for 2FA-enabled GitHub accounts",https://github.com/fullsend-ai/fullsend/pull/1211
+2026-05-20,fullsend,pr,merged,1110,"feat: agent self-check tool for output schema validation",https://github.com/fullsend-ai/fullsend/pull/1110
+2026-05-20,fullsend,pr,closed,1240,"fix(skills): require blank first line in tag annotation when no custom title",https://github.com/fullsend-ai/fullsend/pull/1240
+2026-05-20,fullsend,pr,closed,1174,"feat(analyze-transcript): add cost estimate to summary output",https://github.com/fullsend-ai/fullsend/pull/1174
+2026-05-20,fullsend,pr,closed,1073,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/1073
+2026-05-20,fullsend,pr,closed,993,"feat(#895): support multiple target repositories in scribe agent",https://github.com/fullsend-ai/fullsend/pull/993
+2026-05-20,fullsend,issue,opened,1270,"Expand precommit-tools.yaml registry coverage",https://github.com/fullsend-ai/fullsend/issues/1270
+2026-05-20,fullsend,issue,opened,1269,"e2e tests don't exercise local scaffold/workflow changes",https://github.com/fullsend-ai/fullsend/issues/1269
+2026-05-20,fullsend,issue,opened,1266,"installer should verify app installations when using --skip-app-setup",https://github.com/fullsend-ai/fullsend/issues/1266
+2026-05-20,fullsend,issue,opened,1264,"docs: document required GCP IAM roles for mint provisioning",https://github.com/fullsend-ai/fullsend/issues/1264
+2026-05-20,fullsend,issue,opened,1263,"feat: put the shared mint Cloud Function under gitops control",https://github.com/fullsend-ai/fullsend/issues/1263
+2026-05-20,fullsend,issue,opened,1262,"feat: Slack webhook notification on mint Cloud Function deployment",https://github.com/fullsend-ai/fullsend/issues/1262
+2026-05-20,fullsend,issue,opened,1260,"Track opencode as a supported agent runtime",https://github.com/fullsend-ai/fullsend/issues/1260
+2026-05-20,fullsend,issue,opened,1256,"Fix: prioritize.yml template is missing env/ from layered directory loops",https://github.com/fullsend-ai/fullsend/issues/1256
+2026-05-20,fullsend,issue,opened,1255,"Code agent: add scaffold layered-dirs pattern to agent context for multi-site updates",https://github.com/fullsend-ai/fullsend/issues/1255
+2026-05-20,fullsend,issue,opened,1254,"Add CI check that validates layered dirs are consistent across all definition sites",https://github.com/fullsend-ai/fullsend/issues/1254
+2026-05-20,fullsend,issue,opened,1253,"e2e: enrollment workflow fails at 'Mint fullsend token' step",https://github.com/fullsend-ai/fullsend/issues/1253
+2026-05-20,fullsend,issue,opened,1251,"scaffold: plugins/ directory not copied to workspace — harness validation fails",https://github.com/fullsend-ai/fullsend/issues/1251
+2026-05-20,fullsend,issue,opened,1249,"admin install: show version on banner line",https://github.com/fullsend-ai/fullsend/issues/1249
+2026-05-20,fullsend,issue,opened,1248,"Add Atlassian CLI to sandbox image for Jira integration",https://github.com/fullsend-ai/fullsend/issues/1248
+2026-05-20,fullsend,issue,opened,1247,"Review bot creates follow-up issues for trivial findings instead of fixing them in the same PR",https://github.com/fullsend-ai/fullsend/issues/1247
+2026-05-20,fullsend,issue,opened,1244,"reconcile-repos.sh: pre-validate shim content with actionlint before creating PRs",https://github.com/fullsend-ai/fullsend/issues/1244
+2026-05-20,fullsend,issue,opened,1243,"reconcile-repos.sh: close stale onboard PRs when shim is already up-to-date",https://github.com/fullsend-ai/fullsend/issues/1243
+2026-05-20,fullsend,issue,opened,1241,"dispatch: per-repo install does not trigger triage on issue open",https://github.com/fullsend-ai/fullsend/issues/1241
+2026-05-20,fullsend,issue,opened,1237,"cutting-releases skill produces verbose release titles when no custom title is given",https://github.com/fullsend-ai/fullsend/issues/1237
+2026-05-20,fullsend,issue,opened,1236,"validation failed shows empty message when script fails to exec (ENOENT / EACCES)",https://github.com/fullsend-ai/fullsend/issues/1236
+2026-05-20,fullsend,issue,opened,1230,"security: run OutputPipeline on post-review before forge API post",https://github.com/fullsend-ai/fullsend/issues/1230
+2026-05-20,fullsend,issue,opened,1229,"security: run OutputPipeline on post-comment before forge API post",https://github.com/fullsend-ai/fullsend/issues/1229
+2026-05-20,fullsend,issue,opened,1228,"fullsend run: tee stream-json output to a file in the run artifact",https://github.com/fullsend-ai/fullsend/issues/1228
+2026-05-20,fullsend,issue,closed,1253,"e2e: enrollment workflow fails at 'Mint fullsend token' step",https://github.com/fullsend-ai/fullsend/issues/1253
+2026-05-20,fullsend,issue,closed,1251,"scaffold: plugins/ directory not copied to workspace — harness validation fails",https://github.com/fullsend-ai/fullsend/issues/1251
+2026-05-20,fullsend,issue,closed,1247,"Review bot creates follow-up issues for trivial findings instead of fixing them in the same PR",https://github.com/fullsend-ai/fullsend/issues/1247
+2026-05-20,fullsend,issue,closed,1173,"analyze-transcript: document cost estimation in SKILL.md",https://github.com/fullsend-ai/fullsend/issues/1173
+2026-05-20,fullsend,issue,closed,1137,"Review agent: defer followup issue creation until PR is merged",https://github.com/fullsend-ai/fullsend/issues/1137
+2026-05-20,fullsend,issue,closed,1107,"feat: give agents a tool to self-check output against their JSON schema before finishing",https://github.com/fullsend-ai/fullsend/issues/1107
+2026-05-20,fullsend,issue,closed,591,"Set up @ship-help Slack bot for team workflow support",https://github.com/fullsend-ai/fullsend/issues/591
+2026-05-20,experiments,pr,opened,28,"Host-side API server experiment",https://github.com/fullsend-ai/experiments/pull/28
