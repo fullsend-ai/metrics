@@ -885,3 +885,134 @@ date,repo,type,event,number,title,url
 2026-05-20,fullsend,issue,closed,1107,"feat: give agents a tool to self-check output against their JSON schema before finishing",https://github.com/fullsend-ai/fullsend/issues/1107
 2026-05-20,fullsend,issue,closed,591,"Set up @ship-help Slack bot for team workflow support",https://github.com/fullsend-ai/fullsend/issues/591
 2026-05-20,experiments,pr,opened,28,"Host-side API server experiment",https://github.com/fullsend-ai/experiments/pull/28
+2026-05-21,fullsend,pr,opened,1348,"fix: validate inline review comment lines against diff hunks",https://github.com/fullsend-ai/fullsend/pull/1348
+2026-05-21,fullsend,pr,opened,1333,"feat(cli): log token scope at start of fullsend run",https://github.com/fullsend-ai/fullsend/pull/1333
+2026-05-21,fullsend,pr,opened,1332,"fix(mint): reject cross-org installation mismatch",https://github.com/fullsend-ai/fullsend/pull/1332
+2026-05-21,fullsend,pr,opened,1329,"fix: use plain comments for interactive triage actions",https://github.com/fullsend-ai/fullsend/pull/1329
+2026-05-21,fullsend,pr,opened,1325,"feat: add sandbox creation failure tolerance",https://github.com/fullsend-ai/fullsend/pull/1325
+2026-05-21,fullsend,pr,opened,1311,"fix: escape shell metacharacters in expanded env files",https://github.com/fullsend-ai/fullsend/pull/1311
+2026-05-21,fullsend,pr,opened,1308,"fix(#1300): add explicit trigger_source mapping to fix agent",https://github.com/fullsend-ai/fullsend/pull/1308
+2026-05-21,fullsend,pr,opened,1307,"fix(#1301): delete stale remote branches before pushing",https://github.com/fullsend-ai/fullsend/pull/1307
+2026-05-21,fullsend,pr,opened,1304,"docs(#1299): document forge.Client abstraction convention",https://github.com/fullsend-ai/fullsend/pull/1304
+2026-05-21,fullsend,pr,opened,1295,"docs(#1290): add export blocks for shell variables in install guide",https://github.com/fullsend-ai/fullsend/pull/1295
+2026-05-21,fullsend,pr,opened,1278,"feat(workflows): add fullsend_ai_ref for self-consistent version pinning",https://github.com/fullsend-ai/fullsend/pull/1278
+2026-05-21,fullsend,pr,opened,1277,"fix(cli): join Claude command args",https://github.com/fullsend-ai/fullsend/pull/1277
+2026-05-21,fullsend,pr,opened,1274,"fix(admin): show CLI version in banner",https://github.com/fullsend-ai/fullsend/pull/1274
+2026-05-21,fullsend,pr,merged,1325,"feat: add sandbox creation failure tolerance",https://github.com/fullsend-ai/fullsend/pull/1325
+2026-05-21,fullsend,pr,merged,1307,"fix(#1301): delete stale remote branches before pushing",https://github.com/fullsend-ai/fullsend/pull/1307
+2026-05-21,fullsend,pr,merged,1268,"feat(e2e): simplify tests with CLI subprocess",https://github.com/fullsend-ai/fullsend/pull/1268
+2026-05-21,fullsend,pr,merged,1265,"docs(#1264): document required GCP IAM roles for mint provisioning",https://github.com/fullsend-ai/fullsend/pull/1265
+2026-05-21,fullsend,pr,merged,1257,"fix(scaffold): add env/ to prioritize.yml layered directory loops",https://github.com/fullsend-ai/fullsend/pull/1257
+2026-05-21,fullsend,pr,merged,1250,"feat(skills): add mint-enroll SRE runbook skill",https://github.com/fullsend-ai/fullsend/pull/1250
+2026-05-21,fullsend,pr,merged,1235,"refactor(test): add optional expect_output param to test helpers",https://github.com/fullsend-ai/fullsend/pull/1235
+2026-05-21,fullsend,pr,merged,1234,"docs(#1196): add jq to sandbox image tool list in images/README.md",https://github.com/fullsend-ai/fullsend/pull/1234
+2026-05-21,fullsend,pr,merged,1233,"feat(#1221): add constant-value search guidance to code skill",https://github.com/fullsend-ai/fullsend/pull/1233
+2026-05-21,fullsend,pr,merged,1167,"feat(#1052): show allowed properties in validation error output",https://github.com/fullsend-ai/fullsend/pull/1167
+2026-05-21,fullsend,pr,merged,1156,"feat(code-review): flag permission manifest changes as mandatory finding",https://github.com/fullsend-ai/fullsend/pull/1156
+2026-05-21,fullsend,pr,merged,1121,"fix(#1120): derive max-repos error message from maxRepos constant",https://github.com/fullsend-ai/fullsend/pull/1121
+2026-05-21,fullsend,pr,merged,1016,"fix(#1012): add extract-transcript-error.sh to executableFiles map",https://github.com/fullsend-ai/fullsend/pull/1016
+2026-05-21,fullsend,pr,merged,919,"feat(#780): migrate OpenShell to Podman driver",https://github.com/fullsend-ai/fullsend/pull/919
+2026-05-21,fullsend,pr,merged,665,"docs: add guide for running agents locally with released binaries",https://github.com/fullsend-ai/fullsend/pull/665
+2026-05-21,fullsend,pr,closed,1242,"feat(scaffold): pin uses: refs to commit SHA instead of @v0",https://github.com/fullsend-ai/fullsend/pull/1242
+2026-05-21,fullsend,pr,closed,979,"fix(#976): post PR comment when validation fails",https://github.com/fullsend-ai/fullsend/pull/979
+2026-05-21,fullsend,issue,opened,1347,"Prioritize rebase-only re-review skipping — concrete cost evidence from PR #944",https://github.com/fullsend-ai/fullsend/issues/1347
+2026-05-21,fullsend,issue,opened,1346,"Code agent should check for existing entries before adding to map/collection literals",https://github.com/fullsend-ai/fullsend/issues/1346
+2026-05-21,fullsend,issue,opened,1345,"Review agent should attempt Go compilation as a basic validation step",https://github.com/fullsend-ai/fullsend/issues/1345
+2026-05-21,fullsend,issue,opened,1344,"Update Go version in code agent sandbox image to match go.mod",https://github.com/fullsend-ai/fullsend/issues/1344
+2026-05-21,fullsend,issue,opened,1343,"Review agent should check if new code patterns reveal pre-existing inconsistencies in nearby code",https://github.com/fullsend-ai/fullsend/issues/1343
+2026-05-21,fullsend,issue,opened,1342,"[feature-squad] Explore meeting notes/transcripts as a context source for refinement",https://github.com/fullsend-ai/fullsend/issues/1342
+2026-05-21,fullsend,issue,opened,1341,"[feature-squad] /fs-refine slash commands only work for GitHub issues, not Jira",https://github.com/fullsend-ai/fullsend/issues/1341
+2026-05-21,fullsend,issue,opened,1340,"[feature-squad] Confidence-driven presentation: order agent output by risk and uncertainty",https://github.com/fullsend-ai/fullsend/issues/1340
+2026-05-21,fullsend,issue,opened,1339,"[feature-squad] Implement work-in-progress limits to prevent downstream bottlenecks",https://github.com/fullsend-ai/fullsend/issues/1339
+2026-05-21,fullsend,issue,opened,1338,"[feature-squad] Enable re-running /fs-refine with user-provided answers to continue refinement",https://github.com/fullsend-ai/fullsend/issues/1338
+2026-05-21,fullsend,issue,opened,1337,"[feature-squad] Create an opinionated ""Definition of Ready"" template for feature issues",https://github.com/fullsend-ai/fullsend/issues/1337
+2026-05-21,fullsend,issue,opened,1336,"[feature-squad] Apply `human-refinement` label when agent confidence is below threshold",https://github.com/fullsend-ai/fullsend/issues/1336
+2026-05-21,fullsend,issue,opened,1335,"Skip retro dispatch on PRs with no agent authorship",https://github.com/fullsend-ai/fullsend/issues/1335
+2026-05-21,fullsend,issue,opened,1334,"Post-review script should auto-file issues for unresolved actionable low findings on merge",https://github.com/fullsend-ai/fullsend/issues/1334
+2026-05-21,fullsend,issue,opened,1331,"Reduce wasted review runs from stale-head races",https://github.com/fullsend-ai/fullsend/issues/1331
+2026-05-21,fullsend,issue,opened,1330,"Review agent should validate skill allowed-tools against body commands",https://github.com/fullsend-ai/fullsend/issues/1330
+2026-05-21,fullsend,issue,opened,1328,"Handle 422 errors gracefully when submitting review comments on stale diffs",https://github.com/fullsend-ai/fullsend/issues/1328
+2026-05-21,fullsend,issue,opened,1327,"Review bot should not carry forward findings already fixed in latest commit",https://github.com/fullsend-ai/fullsend/issues/1327
+2026-05-21,fullsend,issue,opened,1326,"Fix dispatch passing wrong PR number to review workflow",https://github.com/fullsend-ai/fullsend/issues/1326
+2026-05-21,fullsend,issue,opened,1324,"Post-script verification message should distinguish docs-only changes from code changes",https://github.com/fullsend-ai/fullsend/issues/1324
+2026-05-21,fullsend,issue,opened,1323,"Fix agent should not retry when the required fix needs domain expertise the agent lacks",https://github.com/fullsend-ai/fullsend/issues/1323
+2026-05-21,fullsend,issue,opened,1322,"Code agent should validate CLI flag semantics in documentation against source code",https://github.com/fullsend-ai/fullsend/issues/1322
+2026-05-21,fullsend,issue,opened,1321,"Triage agent should not label ready-to-code when it identifies an existing PR that addresses the issue",https://github.com/fullsend-ai/fullsend/issues/1321
+2026-05-21,fullsend,issue,opened,1320,"Expand ISSUE_HAS_PR check to detect PRs that mention (not just formally link) an issue",https://github.com/fullsend-ai/fullsend/issues/1320
+2026-05-21,fullsend,issue,opened,1319,"Review bot should align approval status with finding severity on first pass",https://github.com/fullsend-ai/fullsend/issues/1319
+2026-05-21,fullsend,issue,opened,1318,"Review bot should not APPROVE when it has High-severity findings",https://github.com/fullsend-ai/fullsend/issues/1318
+2026-05-21,fullsend,issue,opened,1317,"Review agent should detect and flag duplicate/superseded PRs",https://github.com/fullsend-ai/fullsend/issues/1317
+2026-05-21,fullsend,issue,opened,1316,"pre-code.sh skip decision does not gate downstream code agent steps",https://github.com/fullsend-ai/fullsend/issues/1316
+2026-05-21,fullsend,issue,opened,1315,"Review agent should check for duplicate/superseded PRs before approving",https://github.com/fullsend-ai/fullsend/issues/1315
+2026-05-21,fullsend,issue,opened,1314,"Code agent creates PR despite detecting existing PR and posting skip notice",https://github.com/fullsend-ai/fullsend/issues/1314
+2026-05-21,fullsend,issue,opened,1313,"Review agent should check for duplicate/superseding PRs before approving",https://github.com/fullsend-ai/fullsend/issues/1313
+2026-05-21,fullsend,issue,opened,1312,"Code agent skip logic should abort PR creation, not just post a comment",https://github.com/fullsend-ai/fullsend/issues/1312
+2026-05-21,fullsend,issue,opened,1310,"Auto-comment on issue when code agent produces no branch",https://github.com/fullsend-ai/fullsend/issues/1310
+2026-05-21,fullsend,issue,opened,1309,"code-review skill: mandatory finding when diff modifies review agent behavior files",https://github.com/fullsend-ai/fullsend/issues/1309
+2026-05-21,fullsend,issue,opened,1306,"Review agent: validate findings against the PR's 'after' state before filing follow-ups",https://github.com/fullsend-ai/fullsend/issues/1306
+2026-05-21,fullsend,issue,opened,1305,"Code agent: prefer extending existing functions over duplicating them",https://github.com/fullsend-ai/fullsend/issues/1305
+2026-05-21,fullsend,issue,opened,1303,"Auto-retry review dispatch on sandbox creation timeout",https://github.com/fullsend-ai/fullsend/issues/1303
+2026-05-21,fullsend,issue,opened,1302,"Code agent should place Closes keywords in PR body, not just commit message",https://github.com/fullsend-ai/fullsend/issues/1302
+2026-05-21,fullsend,issue,opened,1301,"Post-code script should delete stale remote branches before pushing",https://github.com/fullsend-ai/fullsend/issues/1301
+2026-05-21,fullsend,issue,opened,1300,"Fix agent consistently fails schema validation (5 of 10 recent runs)",https://github.com/fullsend-ai/fullsend/issues/1300
+2026-05-21,fullsend,issue,opened,1299,"AGENTS.md should document the forge.Client abstraction convention",https://github.com/fullsend-ai/fullsend/issues/1299
+2026-05-21,fullsend,issue,opened,1298,"Review agent sandbox timeout: container not ready after 60s",https://github.com/fullsend-ai/fullsend/issues/1298
+2026-05-21,fullsend,issue,opened,1297,"Dispatch-layer failures (mint 502) should notify the PR, not fail silently",https://github.com/fullsend-ai/fullsend/issues/1297
+2026-05-21,fullsend,issue,opened,1296,"Post-scripts should retry on transient HTTP errors before giving up",https://github.com/fullsend-ai/fullsend/issues/1296
+2026-05-21,fullsend,issue,opened,1294,"Install fails with missing permission",https://github.com/fullsend-ai/fullsend/issues/1294
+2026-05-21,fullsend,issue,opened,1293,"Consider skipping review on merge-only synchronize events",https://github.com/fullsend-ai/fullsend/issues/1293
+2026-05-21,fullsend,issue,opened,1292,"Deduplicate review dispatches from near-simultaneous triggers",https://github.com/fullsend-ai/fullsend/issues/1292
+2026-05-21,fullsend,issue,opened,1291,"Filter bot-authored pull_request_review events in shim template",https://github.com/fullsend-ai/fullsend/issues/1291
+2026-05-21,fullsend,issue,opened,1290,"Document install properties consistently",https://github.com/fullsend-ai/fullsend/issues/1290
+2026-05-21,fullsend,issue,opened,1289,"Code agent should read existing method implementations before adding new ones",https://github.com/fullsend-ai/fullsend/issues/1289
+2026-05-21,fullsend,issue,opened,1288,"Review agent should detect duplicate Python method definitions as high severity",https://github.com/fullsend-ai/fullsend/issues/1288
+2026-05-21,fullsend,issue,opened,1287,"Skip or diff-gate re-review when PR changes are rebase-only",https://github.com/fullsend-ai/fullsend/issues/1287
+2026-05-21,fullsend,issue,opened,1286,"Auto-file tracking issues for unresolved low-severity review findings",https://github.com/fullsend-ai/fullsend/issues/1286
+2026-05-21,fullsend,issue,opened,1285,"Review agent should not regenerate unchanged inline comments on re-reviews",https://github.com/fullsend-ai/fullsend/issues/1285
+2026-05-21,fullsend,issue,opened,1284,"Post-review script should handle 422 on inline comment attachment gracefully",https://github.com/fullsend-ai/fullsend/issues/1284
+2026-05-21,fullsend,issue,opened,1283,"Surface clear error when triage token minting fails",https://github.com/fullsend-ai/fullsend/issues/1283
+2026-05-21,fullsend,issue,opened,1282,"Skip re-review on merge-only commits with no code changes",https://github.com/fullsend-ai/fullsend/issues/1282
+2026-05-21,fullsend,issue,opened,1281,"Review bot should not silently drop medium-severity findings on re-review",https://github.com/fullsend-ai/fullsend/issues/1281
+2026-05-21,fullsend,issue,opened,1280,"Fix agent should run after changes_requested review",https://github.com/fullsend-ai/fullsend/issues/1280
+2026-05-21,fullsend,issue,opened,1279,"Per repo install still creates .fullsend repo",https://github.com/fullsend-ai/fullsend/issues/1279
+2026-05-21,fullsend,issue,opened,1276,"Triage agent: flag cross-repo workflow chain issues as high complexity",https://github.com/fullsend-ai/fullsend/issues/1276
+2026-05-21,fullsend,issue,opened,1275,"Review agent: trace workflow_call chains for Actions changes",https://github.com/fullsend-ai/fullsend/issues/1275
+2026-05-21,fullsend,issue,opened,1273,"review agent: better incorporate PR description context when assessing change scope and intent",https://github.com/fullsend-ai/fullsend/issues/1273
+2026-05-21,fullsend,issue,opened,1272,"review agent: reduce repeated findings across iterations by better leveraging prior review context",https://github.com/fullsend-ai/fullsend/issues/1272
+2026-05-21,fullsend,issue,opened,1271,"dispatch: filter bot-triggered pull_request_review events to prevent review self-triggering loop",https://github.com/fullsend-ai/fullsend/issues/1271
+2026-05-21,fullsend,issue,closed,1347,"Prioritize rebase-only re-review skipping — concrete cost evidence from PR #944",https://github.com/fullsend-ai/fullsend/issues/1347
+2026-05-21,fullsend,issue,closed,1335,"Skip retro dispatch on PRs with no agent authorship",https://github.com/fullsend-ai/fullsend/issues/1335
+2026-05-21,fullsend,issue,closed,1334,"Post-review script should auto-file issues for unresolved actionable low findings on merge",https://github.com/fullsend-ai/fullsend/issues/1334
+2026-05-21,fullsend,issue,closed,1328,"Handle 422 errors gracefully when submitting review comments on stale diffs",https://github.com/fullsend-ai/fullsend/issues/1328
+2026-05-21,fullsend,issue,closed,1327,"Review bot should not carry forward findings already fixed in latest commit",https://github.com/fullsend-ai/fullsend/issues/1327
+2026-05-21,fullsend,issue,closed,1318,"Review bot should not APPROVE when it has High-severity findings",https://github.com/fullsend-ai/fullsend/issues/1318
+2026-05-21,fullsend,issue,closed,1317,"Review agent should detect and flag duplicate/superseded PRs",https://github.com/fullsend-ai/fullsend/issues/1317
+2026-05-21,fullsend,issue,closed,1316,"pre-code.sh skip decision does not gate downstream code agent steps",https://github.com/fullsend-ai/fullsend/issues/1316
+2026-05-21,fullsend,issue,closed,1315,"Review agent should check for duplicate/superseded PRs before approving",https://github.com/fullsend-ai/fullsend/issues/1315
+2026-05-21,fullsend,issue,closed,1314,"Code agent creates PR despite detecting existing PR and posting skip notice",https://github.com/fullsend-ai/fullsend/issues/1314
+2026-05-21,fullsend,issue,closed,1310,"Auto-comment on issue when code agent produces no branch",https://github.com/fullsend-ai/fullsend/issues/1310
+2026-05-21,fullsend,issue,closed,1303,"Auto-retry review dispatch on sandbox creation timeout",https://github.com/fullsend-ai/fullsend/issues/1303
+2026-05-21,fullsend,issue,closed,1301,"Post-code script should delete stale remote branches before pushing",https://github.com/fullsend-ai/fullsend/issues/1301
+2026-05-21,fullsend,issue,closed,1298,"Review agent sandbox timeout: container not ready after 60s",https://github.com/fullsend-ai/fullsend/issues/1298
+2026-05-21,fullsend,issue,closed,1294,"Install fails with missing permission",https://github.com/fullsend-ai/fullsend/issues/1294
+2026-05-21,fullsend,issue,closed,1293,"Consider skipping review on merge-only synchronize events",https://github.com/fullsend-ai/fullsend/issues/1293
+2026-05-21,fullsend,issue,closed,1292,"Deduplicate review dispatches from near-simultaneous triggers",https://github.com/fullsend-ai/fullsend/issues/1292
+2026-05-21,fullsend,issue,closed,1291,"Filter bot-authored pull_request_review events in shim template",https://github.com/fullsend-ai/fullsend/issues/1291
+2026-05-21,fullsend,issue,closed,1284,"Post-review script should handle 422 on inline comment attachment gracefully",https://github.com/fullsend-ai/fullsend/issues/1284
+2026-05-21,fullsend,issue,closed,1281,"Review bot should not silently drop medium-severity findings on re-review",https://github.com/fullsend-ai/fullsend/issues/1281
+2026-05-21,fullsend,issue,closed,1280,"Fix agent should run after changes_requested review",https://github.com/fullsend-ai/fullsend/issues/1280
+2026-05-21,fullsend,issue,closed,1272,"review agent: reduce repeated findings across iterations by better leveraging prior review context",https://github.com/fullsend-ai/fullsend/issues/1272
+2026-05-21,fullsend,issue,closed,1264,"docs: document required GCP IAM roles for mint provisioning",https://github.com/fullsend-ai/fullsend/issues/1264
+2026-05-21,fullsend,issue,closed,1256,"Fix: prioritize.yml template is missing env/ from layered directory loops",https://github.com/fullsend-ai/fullsend/issues/1256
+2026-05-21,fullsend,issue,closed,1226,"Follow-up from PR #1225: No dedicated test for PerRepoDefaultRoles(). Other role functions (ValidRoles, Defaul...",https://github.com/fullsend-ai/fullsend/issues/1226
+2026-05-21,fullsend,issue,closed,1221,"Code agent: search for old literal values when changing constants or defaults",https://github.com/fullsend-ai/fullsend/issues/1221
+2026-05-21,fullsend,issue,closed,1205,"Follow-up from PR #1203: States ""If the test account enables 2FA, the session export must happen after the 2FA...",https://github.com/fullsend-ai/fullsend/issues/1205
+2026-05-21,fullsend,issue,closed,1204,"Follow-up from PR #1203: The ""Running e2e tests"" section documents three credential env vars (E2E_GITHUB_PASSW...",https://github.com/fullsend-ai/fullsend/issues/1204
+2026-05-21,fullsend,issue,closed,1196,"Review agent hits jq unavailability in sandbox on every run",https://github.com/fullsend-ai/fullsend/issues/1196
+2026-05-21,fullsend,issue,closed,1169,"Follow-up from PR #1167: New test helpers (run_test_output, run_test_custom_filename_output) duplicate ~90% of...",https://github.com/fullsend-ai/fullsend/issues/1169
+2026-05-21,fullsend,issue,closed,1120,"Follow-up from PR #1119: Error message hardcodes ""too many repos (max 500)"" instead of deriving from the maxRe...",https://github.com/fullsend-ai/fullsend/issues/1120
+2026-05-21,fullsend,issue,closed,1060,"Add permission-manifest change detection to code-review skill",https://github.com/fullsend-ai/fullsend/issues/1060
+2026-05-21,fullsend,issue,closed,1052,"Enrich validation script error output with expected schema structure",https://github.com/fullsend-ai/fullsend/issues/1052
+2026-05-21,fullsend,issue,closed,1012,"scaffold test failure: extract-transcript-error.sh missing from executableFiles",https://github.com/fullsend-ai/fullsend/issues/1012
+2026-05-21,fullsend,issue,closed,780,"Investigate standalone openshell-gateway with Docker/Podman drivers across target environments",https://github.com/fullsend-ai/fullsend/issues/780
+2026-05-21,fullsend,issue,closed,486,"e2e: botsend account requires 2FA by May 19 — session export will break",https://github.com/fullsend-ai/fullsend/issues/486
