@@ -1016,3 +1016,19 @@ date,repo,type,event,number,title,url
 2026-05-21,fullsend,issue,closed,1012,"scaffold test failure: extract-transcript-error.sh missing from executableFiles",https://github.com/fullsend-ai/fullsend/issues/1012
 2026-05-21,fullsend,issue,closed,780,"Investigate standalone openshell-gateway with Docker/Podman drivers across target environments",https://github.com/fullsend-ai/fullsend/issues/780
 2026-05-21,fullsend,issue,closed,486,"e2e: botsend account requires 2FA by May 19 — session export will break",https://github.com/fullsend-ai/fullsend/issues/486
+2026-05-22,fullsend,pr,merged,1348,"fix: validate inline review comment lines against diff hunks",https://github.com/fullsend-ai/fullsend/pull/1348
+2026-05-22,fullsend,pr,closed,1277,"fix(cli): join Claude command args",https://github.com/fullsend-ai/fullsend/pull/1277
+2026-05-22,fullsend,pr,closed,1274,"fix(admin): show CLI version in banner",https://github.com/fullsend-ai/fullsend/pull/1274
+2026-05-22,fullsend,issue,opened,1360,"Review agent should detect existing open PRs for the same linked issue",https://github.com/fullsend-ai/fullsend/issues/1360
+2026-05-22,fullsend,issue,opened,1359,"Detect and handle ready-for-merge PRs closed without merging",https://github.com/fullsend-ai/fullsend/issues/1359
+2026-05-22,fullsend,issue,opened,1358,"Add lightweight review path for trivial bot dependency bumps",https://github.com/fullsend-ai/fullsend/issues/1358
+2026-05-22,fullsend,issue,opened,1356,"Skip re-review when PR diff is unchanged after rebase/reopen",https://github.com/fullsend-ai/fullsend/issues/1356
+2026-05-22,fullsend,issue,opened,1357,"Enable cancel-in-progress for review dispatches on the same PR",https://github.com/fullsend-ai/fullsend/issues/1357
+2026-05-22,fullsend,issue,opened,1355,"Skip re-review when bot dep-bump PR is rebased with no semantic change",https://github.com/fullsend-ai/fullsend/issues/1355
+2026-05-22,fullsend,issue,opened,1354,"Review agent should flag bug-fix PRs that lack tests for the fixed behavior",https://github.com/fullsend-ai/fullsend/issues/1354
+2026-05-22,fullsend,issue,opened,1353,"Review agent should cross-reference triage findings when reviewing linked PRs",https://github.com/fullsend-ai/fullsend/issues/1353
+2026-05-22,fullsend,issue,opened,1352,"Review findings in non-diff files should be actionable, not silently omitted",https://github.com/fullsend-ai/fullsend/issues/1352
+2026-05-22,fullsend,issue,opened,1351,"Review agent should cross-reference triage findings when reviewing PRs linked to triaged issues",https://github.com/fullsend-ai/fullsend/issues/1351
+2026-05-22,fullsend,issue,opened,1350,"Review agent first-pass missed dead-code finding that second-pass caught",https://github.com/fullsend-ai/fullsend/issues/1350
+2026-05-22,fullsend,issue,opened,1349,"Close issue #1067 as fixed by PR #1348 to prevent redundant code agent work",https://github.com/fullsend-ai/fullsend/issues/1349
+2026-05-22,fullsend,issue,closed,1353,"Review agent should cross-reference triage findings when reviewing linked PRs",https://github.com/fullsend-ai/fullsend/issues/1353

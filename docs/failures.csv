@@ -136,3 +136,6 @@ date,workflow,runs,failures,failure_rate
 2026-05-21,Triage,68,0,0.000
 2026-05-21,Retro,17,17,1.000
 2026-05-21,Scribe,1,1,1.000
+2026-05-22,Review,4,4,1.000
+2026-05-22,Triage,12,0,0.000
+2026-05-22,Retro,3,3,1.000
