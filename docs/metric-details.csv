@@ -1032,3 +1032,12 @@ date,repo,type,event,number,title,url
 2026-05-22,fullsend,issue,opened,1350,"Review agent first-pass missed dead-code finding that second-pass caught",https://github.com/fullsend-ai/fullsend/issues/1350
 2026-05-22,fullsend,issue,opened,1349,"Close issue #1067 as fixed by PR #1348 to prevent redundant code agent work",https://github.com/fullsend-ai/fullsend/issues/1349
 2026-05-22,fullsend,issue,closed,1353,"Review agent should cross-reference triage findings when reviewing linked PRs",https://github.com/fullsend-ai/fullsend/issues/1353
+2026-05-23,fullsend,issue,opened,1364,"Skip re-review when PR diff is unchanged from last approved review",https://github.com/fullsend-ai/fullsend/issues/1364
+2026-05-23,fullsend,issue,opened,1363,"Filter bot-submitted reviews from re-triggering dispatch",https://github.com/fullsend-ai/fullsend/issues/1363
+2026-05-23,fullsend,issue,opened,1362,"Filter bot-triggered label events to reduce duplicate workflow runs",https://github.com/fullsend-ai/fullsend/issues/1362
+2026-05-23,fullsend,issue,opened,1361,"Suppress cascading fullsend dispatches triggered by bot's own actions",https://github.com/fullsend-ai/fullsend/issues/1361
+2026-05-23,fullsend,issue,closed,1364,"Skip re-review when PR diff is unchanged from last approved review",https://github.com/fullsend-ai/fullsend/issues/1364
+2026-05-23,fullsend,issue,closed,1363,"Filter bot-submitted reviews from re-triggering dispatch",https://github.com/fullsend-ai/fullsend/issues/1363
+2026-05-23,fullsend,issue,closed,1361,"Suppress cascading fullsend dispatches triggered by bot's own actions",https://github.com/fullsend-ai/fullsend/issues/1361
+2026-05-23,fullsend,issue,closed,457,"Support local execution of individual agents for pre-adoption evaluation",https://github.com/fullsend-ai/fullsend/issues/457
+2026-05-23,.fullsend,pr,opened,76,"fix(policies): update OpenShell L7 policy schema for 0.0.38+",https://github.com/fullsend-ai/.fullsend/pull/76

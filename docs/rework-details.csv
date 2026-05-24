@@ -4726,3 +4726,7 @@ datetime,bot,repo,item,url,is_rework
 2026-05-22T00:22:46Z,github-actions[bot],fullsend,1083,https://github.com/fullsend-ai/fullsend/pull/1083,false
 2026-05-22T00:27:47Z,github-actions[bot],fullsend,1083,https://github.com/fullsend-ai/fullsend/pull/1083,false
 2026-05-22T00:17:33Z,github-merge-queue[bot],fullsend,1348,https://github.com/fullsend-ai/fullsend/pull/1348,false
+2026-05-23T02:04:48Z,fullsend-ai-triage[bot],fullsend,1361,https://github.com/fullsend-ai/fullsend/issues/1361,false
+2026-05-23T05:53:18Z,fullsend-ai-triage[bot],fullsend,1362,https://github.com/fullsend-ai/fullsend/issues/1362,false
+2026-05-23T10:17:49Z,fullsend-ai-triage[bot],fullsend,1363,https://github.com/fullsend-ai/fullsend/issues/1363,false
+2026-05-23T10:18:23Z,fullsend-ai-triage[bot],fullsend,1364,https://github.com/fullsend-ai/fullsend/issues/1364,false

@@ -3627,3 +3627,8 @@ date,workflow,repo,run_id,status,url
 2026-05-22,Retro,.fullsend,26260831534,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/26260831534
 2026-05-22,Review,.fullsend,26260630401,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/26260630401
 2026-05-22,Review,.fullsend,26260604085,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/26260604085
+2026-05-23,Triage,.fullsend,26330121744,success,https://github.com/fullsend-ai/.fullsend/actions/runs/26330121744
+2026-05-23,Triage,.fullsend,26330120029,success,https://github.com/fullsend-ai/.fullsend/actions/runs/26330120029
+2026-05-23,Code,.fullsend,26325102739,failure,https://github.com/fullsend-ai/.fullsend/actions/runs/26325102739
+2026-05-23,Triage,.fullsend,26325014834,success,https://github.com/fullsend-ai/.fullsend/actions/runs/26325014834
+2026-05-23,Triage,.fullsend,26320517674,success,https://github.com/fullsend-ai/.fullsend/actions/runs/26320517674
