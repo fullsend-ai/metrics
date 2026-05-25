@@ -1041,3 +1041,11 @@ date,repo,type,event,number,title,url
 2026-05-23,fullsend,issue,closed,1361,"Suppress cascading fullsend dispatches triggered by bot's own actions",https://github.com/fullsend-ai/fullsend/issues/1361
 2026-05-23,fullsend,issue,closed,457,"Support local execution of individual agents for pre-adoption evaluation",https://github.com/fullsend-ai/fullsend/issues/457
 2026-05-23,.fullsend,pr,opened,76,"fix(policies): update OpenShell L7 policy schema for 0.0.38+",https://github.com/fullsend-ai/.fullsend/pull/76
+2026-05-24,fullsend,issue,opened,1369,"Skip review dispatch for bot-authored dependency digest PRs",https://github.com/fullsend-ai/fullsend/issues/1369
+2026-05-24,fullsend,issue,opened,1367,"Review agent surfaces new low-severity findings across multiple approved passes",https://github.com/fullsend-ai/fullsend/issues/1367
+2026-05-24,fullsend,issue,opened,1368,"Review agent approval with residual findings drives unnecessary author rework",https://github.com/fullsend-ai/fullsend/issues/1368
+2026-05-24,fullsend,issue,opened,1366,"Skip or fast-path reviews for trivial automated dependency bumps",https://github.com/fullsend-ai/fullsend/issues/1366
+2026-05-24,fullsend,issue,opened,1365,"Cancel in-progress reviews when PR is updated",https://github.com/fullsend-ai/fullsend/issues/1365
+2026-05-24,fullsend,issue,closed,1369,"Skip review dispatch for bot-authored dependency digest PRs",https://github.com/fullsend-ai/fullsend/issues/1369
+2026-05-24,fullsend,issue,closed,1366,"Skip or fast-path reviews for trivial automated dependency bumps",https://github.com/fullsend-ai/fullsend/issues/1366
+2026-05-24,fullsend,issue,closed,1365,"Cancel in-progress reviews when PR is updated",https://github.com/fullsend-ai/fullsend/issues/1365
