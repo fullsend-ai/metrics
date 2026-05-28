@@ -193,6 +193,22 @@
     ignoreBots = config.ignoreBots || [];
   } catch (e) { /* config may not exist yet */ }
 
+  // --- Load holidays ---
+  let holidayDates = new Set();
+  try {
+    const text = await d3.text("holidays.yaml");
+    for (const line of text.split("\n")) {
+      const m = line.match(/^\s+(\d{4}-\d{2}-\d{2}):/);
+      if (m) holidayDates.add(m[1]);
+    }
+  } catch (e) { /* holidays.yaml may not exist yet */ }
+
+  function isNonWorkDay(dateStr) {
+    if (holidayDates.has(dateStr)) return true;
+    const day = new Date(dateStr + "T00:00:00").getDay();
+    return day === 0 || day === 6;
+  }
+
   // --- Bot color scale ---
   const botColors = d3.scaleOrdinal(d3.schemeTableau10);
 
@@ -239,10 +255,7 @@
       data = data.filter(d => d.date >= cutoffStr);
     }
     if (hideWeekends) {
-      data = data.filter(d => {
-        const day = new Date(d.date + "T00:00:00").getDay();
-        return day !== 0 && day !== 6;
-      });
+      data = data.filter(d => !isNonWorkDay(d.date));
     }
     return data;
   }
@@ -256,10 +269,7 @@
       data = data.filter(d => d.date >= cutoffStr);
     }
     if (hideWeekends) {
-      data = data.filter(d => {
-        const day = new Date(d.date + "T00:00:00").getDay();
-        return day !== 0 && day !== 6;
-      });
+      data = data.filter(d => !isNonWorkDay(d.date));
     }
     // Recompute aggregate from visible bots only.
     const byDate = d3.rollup(data, rows => ({
@@ -307,10 +317,7 @@
       data = data.filter(d => d.date >= cutoffStr);
     }
     if (hideWeekends) {
-      data = data.filter(d => {
-        const day = new Date(d.date + "T00:00:00").getDay();
-        return day !== 0 && day !== 6;
-      });
+      data = data.filter(d => !isNonWorkDay(d.date));
     }
     if (smoothDays > 0) data = smoothFailureData(data, smoothDays);
     return data;

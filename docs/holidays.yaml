@@ -1,0 +1,5 @@
+# Days to hide alongside weekends.
+# Format: YYYY-MM-DD: Name
+holidays:
+  2026-05-22: Recharge
+  2026-05-25: US Labor Day
