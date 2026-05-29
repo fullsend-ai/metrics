@@ -1455,3 +1455,100 @@ date,repo,type,event,number,title,url
 2026-05-27,fullsend,issue,closed,1473,"Route `/fix` as an alias for `/fs-fix` in the dispatch shim",https://github.com/fullsend-ai/fullsend/issues/1473
 2026-05-27,fullsend,issue,closed,1467,"Retro agent files too many duplicate issues (33% dup rate)",https://github.com/fullsend-ai/fullsend/issues/1467
 2026-05-27,fullsend,issue,closed,1402,"Code agent should follow the target repo's PR template and include screenshots for UI changes",https://github.com/fullsend-ai/fullsend/issues/1402
+2026-05-28,fullsend,pr,opened,1681,"ci: add shellcheck to pre-commit and fix existing warnings",https://github.com/fullsend-ai/fullsend/pull/1681
+2026-05-28,fullsend,pr,opened,1680,"docs: remove Proposed and Undecided as valid ADR statuses",https://github.com/fullsend-ai/fullsend/pull/1680
+2026-05-28,fullsend,pr,opened,1679,"fix(#1678): add retry polling for enrollment PR detection in e2e",https://github.com/fullsend-ai/fullsend/pull/1679
+2026-05-28,fullsend,pr,opened,1677,"refactor!: rename --source-org flag to --app-set in mint enroll",https://github.com/fullsend-ai/fullsend/pull/1677
+2026-05-28,fullsend,pr,opened,1673,"fix: prevent grep no-match from crashing pre-fetch-prior-review",https://github.com/fullsend-ai/fullsend/pull/1673
+2026-05-28,fullsend,pr,opened,1671,"fix: deduplicate app slugs and suppress browser opens in CI",https://github.com/fullsend-ai/fullsend/pull/1671
+2026-05-28,fullsend,pr,opened,1669,"fix(#1667): make bot-exclusion tests exercise the jq filter",https://github.com/fullsend-ai/fullsend/pull/1669
+2026-05-28,fullsend,pr,opened,1668,"feat: add inference deprovision, split Vertex AI ops from mint enroll",https://github.com/fullsend-ai/fullsend/pull/1668
+2026-05-28,fullsend,pr,opened,1664,"fix: use Cloud Run API for env-var-only mint updates",https://github.com/fullsend-ai/fullsend/pull/1664
+2026-05-28,fullsend,pr,opened,1663,"ci: add halfsend-03 through halfsend-06 to e2e org pool",https://github.com/fullsend-ai/fullsend/pull/1663
+2026-05-28,fullsend,pr,opened,1661,"docs: surface ADR rules in AGENTS.md and clarify PR status",https://github.com/fullsend-ai/fullsend/pull/1661
+2026-05-28,fullsend,pr,opened,1658,"docs(refactor): running agents locally update",https://github.com/fullsend-ai/fullsend/pull/1658
+2026-05-28,fullsend,pr,opened,1657,"docs: deprecate ADR-0028 (GitLab support)",https://github.com/fullsend-ai/fullsend/pull/1657
+2026-05-28,fullsend,pr,opened,1652,"fix(dispatch): route issues opened/edited to triage in per-repo mode",https://github.com/fullsend-ai/fullsend/pull/1652
+2026-05-28,fullsend,pr,opened,1651,"fix(#1649): add UploadFile for file-to-file sandbox upload semantics",https://github.com/fullsend-ai/fullsend/pull/1651
+2026-05-28,fullsend,pr,opened,1645,"fix(#1139): use repo-root-relative path in step 9 install instructions",https://github.com/fullsend-ai/fullsend/pull/1645
+2026-05-28,fullsend,pr,opened,1644,"fix(#1640): fall back to /app endpoint for bot user detection",https://github.com/fullsend-ai/fullsend/pull/1644
+2026-05-28,fullsend,pr,opened,1643,"docs(#1636): clarify workflow_call nesting limits and thin-caller guidance",https://github.com/fullsend-ai/fullsend/pull/1643
+2026-05-28,fullsend,pr,opened,1642,"docs(#1639): add cross-reference annotations for ADRs 0026/0029/0041",https://github.com/fullsend-ai/fullsend/pull/1642
+2026-05-28,fullsend,pr,opened,1641,"docs(#1638): assess return_run_details impact on ADR 0041 Option C",https://github.com/fullsend-ai/fullsend/pull/1641
+2026-05-28,fullsend,pr,opened,1635,"ADR 0015: Normative implementation contracts live under docs/normative/",https://github.com/fullsend-ai/fullsend/pull/1635
+2026-05-28,fullsend,pr,opened,1634,"docs: accept ADR 0029 central token mint and secretless .fullsend",https://github.com/fullsend-ai/fullsend/pull/1634
+2026-05-28,fullsend,pr,opened,1633,"docs: accept ADR 0013",https://github.com/fullsend-ai/fullsend/pull/1633
+2026-05-28,fullsend,pr,opened,1632,"docs: accept ADR 0014",https://github.com/fullsend-ai/fullsend/pull/1632
+2026-05-28,fullsend,pr,opened,1631,"docs: accept ADR 0012",https://github.com/fullsend-ai/fullsend/pull/1631
+2026-05-28,fullsend,pr,opened,1627,"fix(#1625): exclude agent working directories from git tracking",https://github.com/fullsend-ai/fullsend/pull/1627
+2026-05-28,fullsend,pr,merged,1673,"fix: prevent grep no-match from crashing pre-fetch-prior-review",https://github.com/fullsend-ai/fullsend/pull/1673
+2026-05-28,fullsend,pr,merged,1668,"feat: add inference deprovision, split Vertex AI ops from mint enroll",https://github.com/fullsend-ai/fullsend/pull/1668
+2026-05-28,fullsend,pr,merged,1664,"fix: use Cloud Run API for env-var-only mint updates",https://github.com/fullsend-ai/fullsend/pull/1664
+2026-05-28,fullsend,pr,merged,1663,"ci: add halfsend-03 through halfsend-06 to e2e org pool",https://github.com/fullsend-ai/fullsend/pull/1663
+2026-05-28,fullsend,pr,merged,1657,"docs: deprecate ADR-0028 (GitLab support)",https://github.com/fullsend-ai/fullsend/pull/1657
+2026-05-28,fullsend,pr,merged,1635,"ADR 0015: Normative implementation contracts live under docs/normative/",https://github.com/fullsend-ai/fullsend/pull/1635
+2026-05-28,fullsend,pr,merged,1634,"docs: accept ADR 0029 central token mint and secretless .fullsend",https://github.com/fullsend-ai/fullsend/pull/1634
+2026-05-28,fullsend,pr,merged,1633,"docs: accept ADR 0013",https://github.com/fullsend-ai/fullsend/pull/1633
+2026-05-28,fullsend,pr,merged,1632,"docs: accept ADR 0014",https://github.com/fullsend-ai/fullsend/pull/1632
+2026-05-28,fullsend,pr,merged,1631,"docs: accept ADR 0012",https://github.com/fullsend-ai/fullsend/pull/1631
+2026-05-28,fullsend,pr,merged,1612,"fix(e2e): fix stale lock recovery and improve lock debugging",https://github.com/fullsend-ai/fullsend/pull/1612
+2026-05-28,fullsend,pr,merged,1578,"docs: accept ADR 0041 and update living docs",https://github.com/fullsend-ai/fullsend/pull/1578
+2026-05-28,fullsend,pr,merged,1571,"fix(triage): accumulate prior analysis on re-runs",https://github.com/fullsend-ai/fullsend/pull/1571
+2026-05-28,fullsend,pr,merged,1565,"fix(reusable-fix): propagate gh pr view failures in eligibility check",https://github.com/fullsend-ai/fullsend/pull/1565
+2026-05-28,fullsend,pr,merged,1506,"Add acli (Atlassian CLI) to sandbox image",https://github.com/fullsend-ai/fullsend/pull/1506
+2026-05-28,fullsend,pr,merged,1497,"fix(#1496): exclude coder bot PRs from pre-code check",https://github.com/fullsend-ai/fullsend/pull/1497
+2026-05-28,fullsend,pr,merged,1457,"fix: restore setup-agent-env.sh copy in prioritize scaffold workflow",https://github.com/fullsend-ai/fullsend/pull/1457
+2026-05-28,fullsend,pr,merged,1231,"docs(#669): verify API contracts per code path in code skill",https://github.com/fullsend-ai/fullsend/pull/1231
+2026-05-28,fullsend,pr,merged,1225,"fix(#1220): add fix role to PerRepoDefaultRoles for dispatch loop",https://github.com/fullsend-ai/fullsend/pull/1225
+2026-05-28,fullsend,pr,merged,1138,"fix: skip existing-PR check when --force is in comment body",https://github.com/fullsend-ai/fullsend/pull/1138
+2026-05-28,fullsend,pr,merged,862,"fix(#860): sync org variable visibility when enabling repos",https://github.com/fullsend-ai/fullsend/pull/862
+2026-05-28,fullsend,pr,closed,1643,"docs(#1636): clarify workflow_call nesting limits and thin-caller guidance",https://github.com/fullsend-ai/fullsend/pull/1643
+2026-05-28,fullsend,pr,closed,1642,"docs(#1639): add cross-reference annotations for ADRs 0026/0029/0041",https://github.com/fullsend-ai/fullsend/pull/1642
+2026-05-28,fullsend,pr,closed,1641,"docs(#1638): assess return_run_details impact on ADR 0041 Option C",https://github.com/fullsend-ai/fullsend/pull/1641
+2026-05-28,fullsend,pr,closed,1613,"fix(appsetup): skip browser open when running under go test",https://github.com/fullsend-ai/fullsend/pull/1613
+2026-05-28,fullsend,pr,closed,1483,"docs: add simplified install guide for admins",https://github.com/fullsend-ai/fullsend/pull/1483
+2026-05-28,fullsend,pr,closed,1140,"fix(skills): use repo-root-relative path for install-binary.sh",https://github.com/fullsend-ai/fullsend/pull/1140
+2026-05-28,fullsend,issue,opened,1678,"e2e: concurrent runs cause enrollment PR detection failures",https://github.com/fullsend-ai/fullsend/issues/1678
+2026-05-28,fullsend,issue,opened,1676,"Review agent should detect approach regressions across PR revisions",https://github.com/fullsend-ai/fullsend/issues/1676
+2026-05-28,fullsend,issue,opened,1675,"Extend retro skip guard to human-authored PRs with no-finding reviews",https://github.com/fullsend-ai/fullsend/issues/1675
+2026-05-28,fullsend,issue,opened,1674,"Scribe agent: replace cron trigger with event-driven trigger when Gemini notes are available",https://github.com/fullsend-ai/fullsend/issues/1674
+2026-05-28,fullsend,issue,opened,1672,"Review agent should honor explicit author dismissals of findings",https://github.com/fullsend-ai/fullsend/issues/1672
+2026-05-28,fullsend,issue,opened,1670,"Skip retro dispatch for non-agent PRs (onboarding, shim sync)",https://github.com/fullsend-ai/fullsend/issues/1670
+2026-05-28,fullsend,issue,opened,1667,"pre-code-test.sh bot-exclusion tests don't exercise the jq filter",https://github.com/fullsend-ai/fullsend/issues/1667
+2026-05-28,fullsend,issue,opened,1666,"Split GrantOrgVertexAIAccess and EnsureOrgInWIFCondition out of mint enroll",https://github.com/fullsend-ai/fullsend/issues/1666
+2026-05-28,fullsend,issue,opened,1665,"Add Containerfile/Dockerfile to review agent protected paths",https://github.com/fullsend-ai/fullsend/issues/1665
+2026-05-28,fullsend,issue,opened,1662,"ADR: authorization checks and rate limiting for agent slash commands",https://github.com/fullsend-ai/fullsend/issues/1662
+2026-05-28,fullsend,issue,opened,1660,"Review agent should not suggest adding implementation details to ADRs",https://github.com/fullsend-ai/fullsend/issues/1660
+2026-05-28,fullsend,issue,opened,1659,"Review agent should comment-only (not approve) on ADR PRs",https://github.com/fullsend-ai/fullsend/issues/1659
+2026-05-28,fullsend,issue,opened,1656,"Review agent should verify external platform claims in docs against upstream sources",https://github.com/fullsend-ai/fullsend/issues/1656
+2026-05-28,fullsend,issue,opened,1655,"Code agent existing-PR check is non-functional when GH_TOKEN is missing",https://github.com/fullsend-ai/fullsend/issues/1655
+2026-05-28,fullsend,issue,opened,1654,"Review agent should resolve platform-mechanic uncertainty before reporting findings",https://github.com/fullsend-ai/fullsend/issues/1654
+2026-05-28,fullsend,issue,opened,1653,"Review agent should check PR mergeability state before approving",https://github.com/fullsend-ai/fullsend/issues/1653
+2026-05-28,fullsend,issue,opened,1650,"Triage agent: flag issues that reference open PRs before auto-labeling ready-to-code",https://github.com/fullsend-ai/fullsend/issues/1650
+2026-05-28,fullsend,issue,opened,1649,"Fix prior review artifact staging: file downloaded as directory causes EISDIR",https://github.com/fullsend-ai/fullsend/issues/1649
+2026-05-28,fullsend,issue,opened,1648,"Review agent should flag in-place modifications to accepted/merged ADRs",https://github.com/fullsend-ai/fullsend/issues/1648
+2026-05-28,fullsend,issue,opened,1647,"Code agent should verify linked issue is still open before creating PR",https://github.com/fullsend-ai/fullsend/issues/1647
+2026-05-28,fullsend,issue,opened,1646,"Add lint check to detect divergence between skill copy directories",https://github.com/fullsend-ai/fullsend/issues/1646
+2026-05-28,fullsend,issue,opened,1640,"Review agent fails to determine bot user, degrading spoofing protection and stale review cleanup",https://github.com/fullsend-ai/fullsend/issues/1640
+2026-05-28,fullsend,issue,opened,1639,"Follow-up: supersession/dependency annotations around ADR 0026/0029/0038 (post ADR 0041)",https://github.com/fullsend-ai/fullsend/issues/1639
+2026-05-28,fullsend,issue,opened,1638,"Follow-up: reassess workflow_dispatch mitigations given return_run_details/run IDs (post ADR 0041)",https://github.com/fullsend-ai/fullsend/issues/1638
+2026-05-28,fullsend,issue,opened,1637,"Follow-up: document concurrency/cancel-in-progress & fan-out semantics under synchronous dispatch (post ADR 0041)",https://github.com/fullsend-ai/fullsend/issues/1637
+2026-05-28,fullsend,issue,opened,1636,"Follow-up: clarify workflow_call nesting limits & thin-caller guidance (post ADR 0041)",https://github.com/fullsend-ai/fullsend/issues/1636
+2026-05-28,fullsend,issue,opened,1630,"Skip retro dispatch for bot-authored PRs with review-only agent interaction",https://github.com/fullsend-ai/fullsend/issues/1630
+2026-05-28,fullsend,issue,opened,1629,"Review agent: suppress content-security URL findings in documentation files",https://github.com/fullsend-ai/fullsend/issues/1629
+2026-05-28,fullsend,issue,opened,1628,"Org upgrade via sync-scaffold does not create FULLSEND_MINT_URL (OIDC migration gap)",https://github.com/fullsend-ai/fullsend/issues/1628
+2026-05-28,fullsend,issue,opened,1626,"Code agent should enforce gitlint title-length limit before pushing",https://github.com/fullsend-ai/fullsend/issues/1626
+2026-05-28,fullsend,issue,opened,1625,"Code agent should exclude its own working directories from commits",https://github.com/fullsend-ai/fullsend/issues/1625
+2026-05-28,fullsend,issue,closed,1670,"Skip retro dispatch for non-agent PRs (onboarding, shim sync)",https://github.com/fullsend-ai/fullsend/issues/1670
+2026-05-28,fullsend,issue,closed,1639,"Follow-up: supersession/dependency annotations around ADR 0026/0029/0038 (post ADR 0041)",https://github.com/fullsend-ai/fullsend/issues/1639
+2026-05-28,fullsend,issue,closed,1638,"Follow-up: reassess workflow_dispatch mitigations given return_run_details/run IDs (post ADR 0041)",https://github.com/fullsend-ai/fullsend/issues/1638
+2026-05-28,fullsend,issue,closed,1636,"Follow-up: clarify workflow_call nesting limits & thin-caller guidance (post ADR 0041)",https://github.com/fullsend-ai/fullsend/issues/1636
+2026-05-28,fullsend,issue,closed,1564,"reusable-fix: gh pr view failure silently bypasses fix eligibility check",https://github.com/fullsend-ai/fullsend/issues/1564
+2026-05-28,fullsend,issue,closed,1496,"Coder agent thinks its own work is duplication",https://github.com/fullsend-ai/fullsend/issues/1496
+2026-05-28,fullsend,issue,closed,1491,"Triagebot doesn't deal well with multiple causes and re-runs",https://github.com/fullsend-ai/fullsend/issues/1491
+2026-05-28,fullsend,issue,closed,1248,"Add Atlassian CLI to sandbox image for Jira integration",https://github.com/fullsend-ai/fullsend/issues/1248
+2026-05-28,fullsend,issue,closed,1220,"Add fix role to PerRepoDefaultRoles so review→fix loop works by default",https://github.com/fullsend-ai/fullsend/issues/1220
+2026-05-28,fullsend,issue,closed,1136,"pre-code: existing-PR warning posted even when /fs-code --force is used",https://github.com/fullsend-ai/fullsend/issues/1136
+2026-05-28,fullsend,issue,closed,860,"FULLSEND_MINT_URL org variable not visible to newly enrolled repos",https://github.com/fullsend-ai/fullsend/issues/860
+2026-05-28,fullsend,issue,closed,669,"Code agent should verify API behavior empirically when removing required-looking parameters",https://github.com/fullsend-ai/fullsend/issues/669
+2026-05-28,fullsend,issue,closed,605,"docs: create docs/agents/ reference with per-agent documentation and CI enforcement",https://github.com/fullsend-ai/fullsend/issues/605
