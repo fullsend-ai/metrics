@@ -1552,3 +1552,43 @@ date,repo,type,event,number,title,url
 2026-05-28,fullsend,issue,closed,860,"FULLSEND_MINT_URL org variable not visible to newly enrolled repos",https://github.com/fullsend-ai/fullsend/issues/860
 2026-05-28,fullsend,issue,closed,669,"Code agent should verify API behavior empirically when removing required-looking parameters",https://github.com/fullsend-ai/fullsend/issues/669
 2026-05-28,fullsend,issue,closed,605,"docs: create docs/agents/ reference with per-agent documentation and CI enforcement",https://github.com/fullsend-ai/fullsend/issues/605
+2026-05-29,fullsend,pr,opened,1709,"Add pre-flight and post-flight release procedures to cutting-releases skill",https://github.com/fullsend-ai/fullsend/pull/1709
+2026-05-29,fullsend,pr,opened,1708,"docs: document required IAM roles for standalone mint and inference commands",https://github.com/fullsend-ai/fullsend/pull/1708
+2026-05-29,fullsend,pr,opened,1705,"docs(#1704): consolidate e2e test documentation into docs/testing/e2e.md",https://github.com/fullsend-ai/fullsend/pull/1705
+2026-05-29,fullsend,pr,opened,1703,"fix(inference): separate WIF pool from mint to prevent cross-domain interference",https://github.com/fullsend-ai/fullsend/pull/1703
+2026-05-29,fullsend,pr,opened,1702,"fix(#1699): add post-upload verification to sandbox.Upload()",https://github.com/fullsend-ai/fullsend/pull/1702
+2026-05-29,fullsend,pr,opened,1698,"fix(#1697): add force-override logging and regression tests",https://github.com/fullsend-ai/fullsend/pull/1698
+2026-05-29,fullsend,pr,opened,1696,"fix(e2e): seed empty test-repo so enrollment PR creation succeeds",https://github.com/fullsend-ai/fullsend/pull/1696
+2026-05-29,fullsend,pr,opened,1694,"fix(#1693): make PAT expiration selector resilient to GitHub UI changes",https://github.com/fullsend-ai/fullsend/pull/1694
+2026-05-29,fullsend,pr,opened,1692,"fix: use tarball upload for fullsend binary in sandbox",https://github.com/fullsend-ai/fullsend/pull/1692
+2026-05-29,fullsend,pr,opened,1691,"ci: add weekly cleanup of expired e2e PATs",https://github.com/fullsend-ai/fullsend/pull/1691
+2026-05-29,fullsend,pr,opened,1690,"feat(mint): add --pem-dir to bootstrap PEMs during deploy",https://github.com/fullsend-ai/fullsend/pull/1690
+2026-05-29,fullsend,pr,opened,1688,"docs(#1662): ADR 0043 — require authorization on all slash commands",https://github.com/fullsend-ai/fullsend/pull/1688
+2026-05-29,fullsend,pr,opened,1682,"feat: add functional eval framework for agent pipelines",https://github.com/fullsend-ai/fullsend/pull/1682
+2026-05-29,fullsend,pr,merged,1703,"fix(inference): separate WIF pool from mint to prevent cross-domain interference",https://github.com/fullsend-ai/fullsend/pull/1703
+2026-05-29,fullsend,pr,merged,1696,"fix(e2e): seed empty test-repo so enrollment PR creation succeeds",https://github.com/fullsend-ai/fullsend/pull/1696
+2026-05-29,fullsend,pr,merged,1692,"fix: use tarball upload for fullsend binary in sandbox",https://github.com/fullsend-ai/fullsend/pull/1692
+2026-05-29,fullsend,pr,merged,1690,"feat(mint): add --pem-dir to bootstrap PEMs during deploy",https://github.com/fullsend-ai/fullsend/pull/1690
+2026-05-29,fullsend,pr,merged,1677,"refactor!: rename --source-org flag to --app-set in mint enroll",https://github.com/fullsend-ai/fullsend/pull/1677
+2026-05-29,fullsend,pr,merged,1671,"fix: deduplicate app slugs and suppress browser opens in CI",https://github.com/fullsend-ai/fullsend/pull/1671
+2026-05-29,fullsend,pr,merged,1658,"docs(refactor): running agents locally update",https://github.com/fullsend-ai/fullsend/pull/1658
+2026-05-29,fullsend,pr,closed,1694,"fix(#1693): make PAT expiration selector resilient to GitHub UI changes",https://github.com/fullsend-ai/fullsend/pull/1694
+2026-05-29,fullsend,pr,closed,1679,"fix(#1678): add retry polling for enrollment PR detection in e2e",https://github.com/fullsend-ai/fullsend/pull/1679
+2026-05-29,fullsend,issue,opened,1707,"e2e: add mint installation and usage test coverage",https://github.com/fullsend-ai/fullsend/issues/1707
+2026-05-29,fullsend,issue,opened,1706,"Review agent: apply contextual labels to PRs using the issue-labels skill",https://github.com/fullsend-ai/fullsend/issues/1706
+2026-05-29,fullsend,issue,opened,1704,"docs: consolidate e2e test documentation into docs/testing/e2e.md",https://github.com/fullsend-ai/fullsend/issues/1704
+2026-05-29,fullsend,issue,opened,1701,"Code agent should investigate related issues and assess root cause before implementing",https://github.com/fullsend-ai/fullsend/issues/1701
+2026-05-29,fullsend,issue,opened,1700,"Review agent should fetch issue comments, not just title and body",https://github.com/fullsend-ai/fullsend/issues/1700
+2026-05-29,fullsend,issue,opened,1699,"sandbox.Upload() silently drops files above ~16MB",https://github.com/fullsend-ai/fullsend/issues/1699
+2026-05-29,fullsend,issue,opened,1697,"Verify --force flag fix deployed and add regression test",https://github.com/fullsend-ai/fullsend/issues/1697
+2026-05-29,fullsend,issue,opened,1695,"Annotate agent PRs when CI failure also exists on base branch",https://github.com/fullsend-ai/fullsend/issues/1695
+2026-05-29,fullsend,issue,opened,1693,"e2e: PAT expiration field times out in Playwright during token creation",https://github.com/fullsend-ai/fullsend/issues/1693
+2026-05-29,fullsend,issue,opened,1689,"install: fall back to PR when default branch push is rejected",https://github.com/fullsend-ai/fullsend/issues/1689
+2026-05-29,fullsend,issue,opened,1687,"feat(dispatch): per-user and per-repo rate limiting for agent invocations",https://github.com/fullsend-ai/fullsend/issues/1687
+2026-05-29,fullsend,issue,opened,1686,"feat(scaffold): add is_authorized to triage, code, and review slash commands",https://github.com/fullsend-ai/fullsend/issues/1686
+2026-05-29,fullsend,issue,opened,1685,"Investigate using gitsign to produce GPG signatures on agent-generated commits",https://github.com/fullsend-ai/fullsend/issues/1685
+2026-05-29,fullsend,issue,opened,1684,"feat: experiment with ""caveman"" mode for token efficiency",https://github.com/fullsend-ai/fullsend/issues/1684
+2026-05-29,fullsend,issue,opened,1683,"e2e: clean up botsend PATs accumulating from test runs",https://github.com/fullsend-ai/fullsend/issues/1683
+2026-05-29,fullsend,issue,closed,1684,"feat: experiment with ""caveman"" mode for token efficiency",https://github.com/fullsend-ai/fullsend/issues/1684
+2026-05-29,fullsend,issue,closed,1678,"e2e: concurrent runs cause enrollment PR detection failures",https://github.com/fullsend-ai/fullsend/issues/1678
+2026-05-29,fullsend,issue,closed,1666,"Split GrantOrgVertexAIAccess and EnsureOrgInWIFCondition out of mint enroll",https://github.com/fullsend-ai/fullsend/issues/1666
