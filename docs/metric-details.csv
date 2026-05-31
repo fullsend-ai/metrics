@@ -1592,3 +1592,5 @@ date,repo,type,event,number,title,url
 2026-05-29,fullsend,issue,closed,1684,"feat: experiment with ""caveman"" mode for token efficiency",https://github.com/fullsend-ai/fullsend/issues/1684
 2026-05-29,fullsend,issue,closed,1678,"e2e: concurrent runs cause enrollment PR detection failures",https://github.com/fullsend-ai/fullsend/issues/1678
 2026-05-29,fullsend,issue,closed,1666,"Split GrantOrgVertexAIAccess and EnsureOrgInWIFCondition out of mint enroll",https://github.com/fullsend-ai/fullsend/issues/1666
+2026-05-30,fullsend,pr,opened,1710,"feat: add fullsend-architecture skill",https://github.com/fullsend-ai/fullsend/pull/1710
+2026-05-30,fullsend,pr,merged,1708,"docs: document required IAM roles for standalone mint and inference commands",https://github.com/fullsend-ai/fullsend/pull/1708
