@@ -1594,3 +1594,14 @@ date,repo,type,event,number,title,url
 2026-05-29,fullsend,issue,closed,1666,"Split GrantOrgVertexAIAccess and EnsureOrgInWIFCondition out of mint enroll",https://github.com/fullsend-ai/fullsend/issues/1666
 2026-05-30,fullsend,pr,opened,1710,"feat: add fullsend-architecture skill",https://github.com/fullsend-ai/fullsend/pull/1710
 2026-05-30,fullsend,pr,merged,1708,"docs: document required IAM roles for standalone mint and inference commands",https://github.com/fullsend-ai/fullsend/pull/1708
+2026-05-31,fullsend,pr,opened,1720,"fix: allow per-repo setup to reuse existing inference secrets on re-run",https://github.com/fullsend-ai/fullsend/pull/1720
+2026-05-31,fullsend,pr,opened,1717,"feat(mint): switch PEM secrets to role-only naming",https://github.com/fullsend-ai/fullsend/pull/1717
+2026-05-31,fullsend,pr,opened,1714,"ci: add gofmt enforcement and mint embed sync checks",https://github.com/fullsend-ai/fullsend/pull/1714
+2026-05-31,fullsend,pr,opened,1711,"fix: check CSMA output for rate limit errors even on exit 0",https://github.com/fullsend-ai/fullsend/pull/1711
+2026-05-31,fullsend,issue,opened,1719,"Code agent should run repo CI commands before pushing commits",https://github.com/fullsend-ai/fullsend/issues/1719
+2026-05-31,fullsend,issue,opened,1718,"Review agent should apply stricter scope checks on backport/release-branch PRs",https://github.com/fullsend-ai/fullsend/issues/1718
+2026-05-31,fullsend,issue,opened,1716,"Review agent should validate ENTRYPOINT/CMD compatibility on base image changes",https://github.com/fullsend-ai/fullsend/issues/1716
+2026-05-31,fullsend,issue,opened,1715,"Skip review dispatch when PR is in draft state",https://github.com/fullsend-ai/fullsend/issues/1715
+2026-05-31,fullsend,issue,opened,1713,"Retro agent should skip bot-authored onboarding/infrastructure PRs",https://github.com/fullsend-ai/fullsend/issues/1713
+2026-05-31,fullsend,issue,opened,1712,"Adopt CSMA rate-limit wrapper in all default agent pre/post scripts",https://github.com/fullsend-ai/fullsend/issues/1712
+2026-05-31,fullsend,issue,closed,1713,"Retro agent should skip bot-authored onboarding/infrastructure PRs",https://github.com/fullsend-ai/fullsend/issues/1713
