@@ -1605,3 +1605,78 @@ date,repo,type,event,number,title,url
 2026-05-31,fullsend,issue,opened,1713,"Retro agent should skip bot-authored onboarding/infrastructure PRs",https://github.com/fullsend-ai/fullsend/issues/1713
 2026-05-31,fullsend,issue,opened,1712,"Adopt CSMA rate-limit wrapper in all default agent pre/post scripts",https://github.com/fullsend-ai/fullsend/issues/1712
 2026-05-31,fullsend,issue,closed,1713,"Retro agent should skip bot-authored onboarding/infrastructure PRs",https://github.com/fullsend-ai/fullsend/issues/1713
+2026-06-01,fullsend,pr,opened,1760,"feat(cli): wire URL-referenced harness resources into fullsend run",https://github.com/fullsend-ai/fullsend/pull/1760
+2026-06-01,fullsend,pr,opened,1756,"fix(#1734): scope mint token to enabled repos only in repo-maintenance",https://github.com/fullsend-ai/fullsend/pull/1756
+2026-06-01,fullsend,pr,opened,1755,"fix(#1752): defer ready-to-code label until after label_actions",https://github.com/fullsend-ai/fullsend/pull/1755
+2026-06-01,fullsend,pr,opened,1751,"feat: add mintcore shared library and dev mint for local evaluation",https://github.com/fullsend-ai/fullsend/pull/1751
+2026-06-01,fullsend,pr,opened,1749,"fix(#1746): add body and Signed-off-by to enrollment commit messages",https://github.com/fullsend-ai/fullsend/pull/1749
+2026-06-01,fullsend,pr,opened,1747,"fix(cli): update followup commands from 'admin install' to 'github setup'",https://github.com/fullsend-ai/fullsend/pull/1747
+2026-06-01,fullsend,pr,opened,1740,"fix(#1738): skip dispatch for offboard when FULLSEND_MINT_URL is unset",https://github.com/fullsend-ai/fullsend/pull/1740
+2026-06-01,fullsend,pr,opened,1739,"docs(adr): propose ADR 0044 gate workflows:write on repo secret allowlist",https://github.com/fullsend-ai/fullsend/pull/1739
+2026-06-01,fullsend,pr,opened,1730,"fix(ci): correct reusable-dispatch stage skip expression",https://github.com/fullsend-ai/fullsend/pull/1730
+2026-06-01,fullsend,pr,opened,1729,"fix(#1728): use GITHUB_REPOSITORY for workflow run URL in failure comments",https://github.com/fullsend-ai/fullsend/pull/1729
+2026-06-01,fullsend,pr,opened,1723,"fix(#1161): reject empty string in audience.UnmarshalJSON",https://github.com/fullsend-ai/fullsend/pull/1723
+2026-06-01,fullsend,pr,merged,1747,"fix(cli): update followup commands from 'admin install' to 'github setup'",https://github.com/fullsend-ai/fullsend/pull/1747
+2026-06-01,fullsend,pr,merged,1729,"fix(#1728): use GITHUB_REPOSITORY for workflow run URL in failure comments",https://github.com/fullsend-ai/fullsend/pull/1729
+2026-06-01,fullsend,pr,merged,1723,"fix(#1161): reject empty string in audience.UnmarshalJSON",https://github.com/fullsend-ai/fullsend/pull/1723
+2026-06-01,fullsend,pr,merged,1711,"fix: check CSMA output for rate limit errors even on exit 0",https://github.com/fullsend-ai/fullsend/pull/1711
+2026-06-01,fullsend,pr,merged,1691,"ci: add weekly cleanup of expired e2e PATs",https://github.com/fullsend-ai/fullsend/pull/1691
+2026-06-01,fullsend,pr,merged,1681,"ci: add shellcheck to pre-commit and fix existing warnings",https://github.com/fullsend-ai/fullsend/pull/1681
+2026-06-01,fullsend,pr,merged,1680,"docs: remove Proposed and Undecided as valid ADR statuses",https://github.com/fullsend-ai/fullsend/pull/1680
+2026-06-01,fullsend,pr,merged,1669,"fix(#1667): make bot-exclusion tests exercise the jq filter",https://github.com/fullsend-ai/fullsend/pull/1669
+2026-06-01,fullsend,pr,merged,1661,"docs: surface ADR rules in AGENTS.md and clarify PR status",https://github.com/fullsend-ai/fullsend/pull/1661
+2026-06-01,fullsend,pr,merged,1652,"fix(dispatch): route issues opened/edited to triage in per-repo mode",https://github.com/fullsend-ai/fullsend/pull/1652
+2026-06-01,fullsend,pr,merged,1645,"fix(#1139): use repo-root-relative path in step 9 install instructions",https://github.com/fullsend-ai/fullsend/pull/1645
+2026-06-01,fullsend,pr,merged,1623,"feat: add resource resolver for URL-referenced harness resources",https://github.com/fullsend-ai/fullsend/pull/1623
+2026-06-01,fullsend,pr,merged,1620,"fix(#1619): guard grep pipeline in pre-fetch-prior-review.sh",https://github.com/fullsend-ai/fullsend/pull/1620
+2026-06-01,fullsend,pr,merged,1615,"feat(cli): watch repo-maintenance workflow after enable/disable repos",https://github.com/fullsend-ai/fullsend/pull/1615
+2026-06-01,fullsend,pr,merged,1614,"fix(e2e): retry lock verification read to handle auto_init race",https://github.com/fullsend-ai/fullsend/pull/1614
+2026-06-01,fullsend,pr,merged,1550,"feat(review): parallel specialized sub-agents for PR review",https://github.com/fullsend-ai/fullsend/pull/1550
+2026-06-01,fullsend,pr,merged,1540,"docs(#1537): clarify findings vs inline comments distinction",https://github.com/fullsend-ai/fullsend/pull/1540
+2026-06-01,fullsend,pr,closed,1749,"fix(#1746): add body and Signed-off-by to enrollment commit messages",https://github.com/fullsend-ai/fullsend/pull/1749
+2026-06-01,fullsend,issue,opened,1762,"Review agent should prioritize functional correctness over surface-level consistency checks",https://github.com/fullsend-ai/fullsend/issues/1762
+2026-06-01,fullsend,issue,opened,1761,"prioritize workflow should use the reusable workflow pattern",https://github.com/fullsend-ai/fullsend/issues/1761
+2026-06-01,fullsend,issue,opened,1759,"chore(docs): followups from PR# [1550](https://github.com/fullsend-ai/fullsend/pull/1550)",https://github.com/fullsend-ai/fullsend/issues/1759
+2026-06-01,fullsend,issue,opened,1758,"Triage agent onboarding options",https://github.com/fullsend-ai/fullsend/issues/1758
+2026-06-01,fullsend,issue,opened,1757,"Triage agent: improve duplicate detection for issues with shared root causes but different surface descriptions",https://github.com/fullsend-ai/fullsend/issues/1757
+2026-06-01,fullsend,issue,opened,1754,"Triage agent configuration for code",https://github.com/fullsend-ai/fullsend/issues/1754
+2026-06-01,fullsend,issue,opened,1753,"Code agent PRs fail DCO check: commits missing Signed-off-by trailer",https://github.com/fullsend-ai/fullsend/issues/1753
+2026-06-01,fullsend,issue,opened,1752,"Race condition: multiple labels applied simultaneously can prevent code agent from running",https://github.com/fullsend-ai/fullsend/issues/1752
+2026-06-01,fullsend,issue,opened,1750,"Triage agent off by default?",https://github.com/fullsend-ai/fullsend/issues/1750
+2026-06-01,fullsend,issue,opened,1748,"Review agent should evaluate test assertion correctness, not just test presence",https://github.com/fullsend-ai/fullsend/issues/1748
+2026-06-01,fullsend,issue,opened,1746,"Generated enrollment PRs fail gitlint: missing Signed-off-by and commit body",https://github.com/fullsend-ai/fullsend/issues/1746
+2026-06-01,fullsend,issue,opened,1745,"Fix AGENTS.md stale ADR status guidance (Proposed/Undecided)",https://github.com/fullsend-ai/fullsend/issues/1745
+2026-06-01,fullsend,issue,opened,1744,"Auto-file follow-up issues for unaddressed docs-currency findings after PR merge",https://github.com/fullsend-ai/fullsend/issues/1744
+2026-06-01,fullsend,issue,opened,1743,"Fix agent should debug test assertions independently, not just validate production code",https://github.com/fullsend-ai/fullsend/issues/1743
+2026-06-01,fullsend,issue,opened,1742,"Fix agent should incorporate prior review comments to avoid repeated /fs-fix cycles",https://github.com/fullsend-ai/fullsend/issues/1742
+2026-06-01,fullsend,issue,opened,1741,"Review agent: detect stale-branch merge artifacts and suggest rebasing",https://github.com/fullsend-ai/fullsend/issues/1741
+2026-06-01,fullsend,issue,opened,1738,"Dispatch shim: offboard runs fail when FULLSEND_MINT_URL org variable is unavailable",https://github.com/fullsend-ai/fullsend/issues/1738
+2026-06-01,fullsend,issue,opened,1737,"Code agent: apply validation fixes across all code paths in the same function",https://github.com/fullsend-ai/fullsend/issues/1737
+2026-06-01,fullsend,issue,opened,1736,"Add AGENTS.md, CLAUDE.md, and skills/ to review agent protected paths",https://github.com/fullsend-ai/fullsend/issues/1736
+2026-06-01,fullsend,issue,opened,1735,"repo-maintenance: workflow fails with error when all repos are disabled",https://github.com/fullsend-ai/fullsend/issues/1735
+2026-06-01,fullsend,issue,opened,1734,"repo-maintenance: mint-token scoped to all repos, ignoring enabled: false",https://github.com/fullsend-ai/fullsend/issues/1734
+2026-06-01,fullsend,issue,opened,1733,"Code agent should proactively update documentation when implementing user-facing features",https://github.com/fullsend-ai/fullsend/issues/1733
+2026-06-01,fullsend,issue,opened,1732,"Fix agent should evaluate systemic vs point fixes for design-level findings",https://github.com/fullsend-ai/fullsend/issues/1732
+2026-06-01,fullsend,issue,opened,1731,"Fix agent should pre-check protected-path feasibility before running",https://github.com/fullsend-ai/fullsend/issues/1731
+2026-06-01,fullsend,issue,opened,1728,"post-code.sh failure comment links to wrong repo in org-mode",https://github.com/fullsend-ai/fullsend/issues/1728
+2026-06-01,fullsend,issue,opened,1727,"Review agent: broaden stale-reference grep patterns for rename/deprecation PRs",https://github.com/fullsend-ai/fullsend/issues/1727
+2026-06-01,fullsend,issue,opened,1726,"Re-dispatch code agent when blocking PR is closed without merge",https://github.com/fullsend-ai/fullsend/issues/1726
+2026-06-01,fullsend,issue,opened,1725,"Add parity check between org-mode and per-repo dispatch routing logic",https://github.com/fullsend-ai/fullsend/issues/1725
+2026-06-01,fullsend,issue,opened,1724,"Review agent should escalate verdict on self-described temporary workarounds",https://github.com/fullsend-ai/fullsend/issues/1724
+2026-06-01,fullsend,issue,opened,1722,"Review agent: support repo-level review profiles to calibrate severity for experiment repos",https://github.com/fullsend-ai/fullsend/issues/1722
+2026-06-01,fullsend,issue,opened,1721,"Bridge OpenShell sandbox skills into Claude Code skill discovery",https://github.com/fullsend-ai/fullsend/issues/1721
+2026-06-01,fullsend,issue,closed,1753,"Code agent PRs fail DCO check: commits missing Signed-off-by trailer",https://github.com/fullsend-ai/fullsend/issues/1753
+2026-06-01,fullsend,issue,closed,1746,"Generated enrollment PRs fail gitlint: missing Signed-off-by and commit body",https://github.com/fullsend-ai/fullsend/issues/1746
+2026-06-01,fullsend,issue,closed,1744,"Auto-file follow-up issues for unaddressed docs-currency findings after PR merge",https://github.com/fullsend-ai/fullsend/issues/1744
+2026-06-01,fullsend,issue,closed,1731,"Fix agent should pre-check protected-path feasibility before running",https://github.com/fullsend-ai/fullsend/issues/1731
+2026-06-01,fullsend,issue,closed,1728,"post-code.sh failure comment links to wrong repo in org-mode",https://github.com/fullsend-ai/fullsend/issues/1728
+2026-06-01,fullsend,issue,closed,1683,"e2e: clean up botsend PATs accumulating from test runs",https://github.com/fullsend-ai/fullsend/issues/1683
+2026-06-01,fullsend,issue,closed,1667,"pre-code-test.sh bot-exclusion tests don't exercise the jq filter",https://github.com/fullsend-ai/fullsend/issues/1667
+2026-06-01,fullsend,issue,closed,1648,"Review agent should flag in-place modifications to accepted/merged ADRs",https://github.com/fullsend-ai/fullsend/issues/1648
+2026-06-01,fullsend,issue,closed,1619,"Fix grep pipefail crash in pre-fetch-prior-review.sh SHA extraction",https://github.com/fullsend-ai/fullsend/issues/1619
+2026-06-01,fullsend,issue,closed,1537,"Document the findings vs inline comments distinction in postreview.go and review agent docs",https://github.com/fullsend-ai/fullsend/issues/1537
+2026-06-01,fullsend,issue,closed,1241,"dispatch: per-repo install does not trigger triage on issue open",https://github.com/fullsend-ai/fullsend/issues/1241
+2026-06-01,fullsend,issue,closed,1161,"mint: reject empty string in audience.UnmarshalJSON single-string branch",https://github.com/fullsend-ai/fullsend/issues/1161
+2026-06-01,fullsend,issue,closed,1139,"cutting-releases skill: install script path is wrong, causing lookup failure",https://github.com/fullsend-ai/fullsend/issues/1139
+2026-06-01,experiments,pr,merged,28,"Host-side API server experiment",https://github.com/fullsend-ai/experiments/pull/28
+2026-06-01,experiments,issue,closed,25,"Experiment: host-side API server for sandboxed agents",https://github.com/fullsend-ai/experiments/issues/25
