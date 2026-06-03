@@ -1680,3 +1680,70 @@ date,repo,type,event,number,title,url
 2026-06-01,fullsend,issue,closed,1139,"cutting-releases skill: install script path is wrong, causing lookup failure",https://github.com/fullsend-ai/fullsend/issues/1139
 2026-06-01,experiments,pr,merged,28,"Host-side API server experiment",https://github.com/fullsend-ai/experiments/pull/28
 2026-06-01,experiments,issue,closed,25,"Experiment: host-side API server for sandboxed agents",https://github.com/fullsend-ai/experiments/issues/25
+2026-06-02,fullsend,pr,opened,1816,"docs: add ADR 0043 for GitLab support via webhook bridge",https://github.com/fullsend-ai/fullsend/pull/1816
+2026-06-02,fullsend,pr,opened,1815,"refactor: rename ""coder"" role to ""code""",https://github.com/fullsend-ai/fullsend/pull/1815
+2026-06-02,fullsend,pr,opened,1814,"docs: ADR 0046 — host-side API server design for sandboxed agents",https://github.com/fullsend-ai/fullsend/pull/1814
+2026-06-02,fullsend,pr,opened,1812,"feat(#1797): extract challenger pass into dedicated sub-agent",https://github.com/fullsend-ai/fullsend/pull/1812
+2026-06-02,fullsend,pr,opened,1807,"fix(#852): add consumer-completeness check to code-review Correctness dimension",https://github.com/fullsend-ai/fullsend/pull/1807
+2026-06-02,fullsend,pr,opened,1806,"chore(#1805): replace hardcoded model enums with authoritative refs",https://github.com/fullsend-ai/fullsend/pull/1806
+2026-06-02,fullsend,pr,opened,1804,"docs: add Phase 2 implementation plan and rename Phase 1 for consistency",https://github.com/fullsend-ai/fullsend/pull/1804
+2026-06-02,fullsend,pr,opened,1802,"fix(#1798): expand model frontmatter docs to include full model IDs",https://github.com/fullsend-ai/fullsend/pull/1802
+2026-06-02,fullsend,pr,opened,1796,"fix(dispatch): map fix stage to coder role in per-org scaffold",https://github.com/fullsend-ai/fullsend/pull/1796
+2026-06-02,fullsend,pr,opened,1793,"fix(review): use the exact Vertex model label for sub-agents",https://github.com/fullsend-ai/fullsend/pull/1793
+2026-06-02,fullsend,pr,opened,1792,"fix(#1787): post inline comments for COMMENT review verdicts",https://github.com/fullsend-ai/fullsend/pull/1792
+2026-06-02,fullsend,pr,opened,1784,"feat: add development-only local mint server",https://github.com/fullsend-ai/fullsend/pull/1784
+2026-06-02,fullsend,pr,opened,1783,"feat: extract mintcore shared library with JWKSVerifier and status endpoint",https://github.com/fullsend-ai/fullsend/pull/1783
+2026-06-02,fullsend,pr,opened,1782,"docs(#1759): update stale sub-agent names across docs",https://github.com/fullsend-ai/fullsend/pull/1782
+2026-06-02,fullsend,pr,opened,1781,"build(deps): bump experiments from `8a13cad` to `bafeb37`",https://github.com/fullsend-ai/fullsend/pull/1781
+2026-06-02,fullsend,pr,opened,1780,"feat(runtime): abstract Claude Code behind pluggable agent runtime",https://github.com/fullsend-ai/fullsend/pull/1780
+2026-06-02,fullsend,pr,opened,1779,"fix(scaffold): preserve user-added headers across shim reconciliation",https://github.com/fullsend-ai/fullsend/pull/1779
+2026-06-02,fullsend,pr,opened,1770,"chore(#1768): move sandbox paths from /tmp/ to /sandbox/",https://github.com/fullsend-ai/fullsend/pull/1770
+2026-06-02,fullsend,pr,opened,1769,"chore(#1763): remove stale OPENSHELL_SSH_HANDSHAKE_SECRET references",https://github.com/fullsend-ai/fullsend/pull/1769
+2026-06-02,fullsend,pr,merged,1807,"fix(#852): add consumer-completeness check to code-review Correctness dimension",https://github.com/fullsend-ai/fullsend/pull/1807
+2026-06-02,fullsend,pr,merged,1802,"fix(#1798): expand model frontmatter docs to include full model IDs",https://github.com/fullsend-ai/fullsend/pull/1802
+2026-06-02,fullsend,pr,merged,1793,"fix(review): use the exact Vertex model label for sub-agents",https://github.com/fullsend-ai/fullsend/pull/1793
+2026-06-02,fullsend,pr,merged,1782,"docs(#1759): update stale sub-agent names across docs",https://github.com/fullsend-ai/fullsend/pull/1782
+2026-06-02,fullsend,pr,merged,1760,"feat(cli): wire URL-referenced harness resources into fullsend run",https://github.com/fullsend-ai/fullsend/pull/1760
+2026-06-02,fullsend,pr,merged,1720,"fix: allow per-repo setup to reuse existing inference secrets on re-run",https://github.com/fullsend-ai/fullsend/pull/1720
+2026-06-02,fullsend,issue,opened,1817,"Investigate deterministic orchestration for intra-stage multi-agent pipelines",https://github.com/fullsend-ai/fullsend/issues/1817
+2026-06-02,fullsend,issue,opened,1813,"Migrate Vertex AI credential delivery from Tier 4 (host files) to Tier 2 (OpenShell providers)",https://github.com/fullsend-ai/fullsend/issues/1813
+2026-06-02,fullsend,issue,opened,1811,"Triage agent: distinguish support requests (questions) from feature requests",https://github.com/fullsend-ai/fullsend/issues/1811
+2026-06-02,fullsend,issue,opened,1810,"Code agent should discover and use existing constants instead of hardcoded strings",https://github.com/fullsend-ai/fullsend/issues/1810
+2026-06-02,fullsend,issue,opened,1809,"Fix agent should post PR comment on validation failure",https://github.com/fullsend-ai/fullsend/issues/1809
+2026-06-02,fullsend,issue,opened,1808,"Code agent should replace scaffold placeholder text before committing",https://github.com/fullsend-ai/fullsend/issues/1808
+2026-06-02,fullsend,issue,opened,1805,"Skill docs should reference authoritative definitions instead of hardcoding enumerated values",https://github.com/fullsend-ai/fullsend/issues/1805
+2026-06-02,fullsend,issue,opened,1803,"Fork NVIDIA/OpenShell for fullsend demo",https://github.com/fullsend-ai/fullsend/issues/1803
+2026-06-02,fullsend,issue,opened,1801,"Harden host-side runtime scan/upload atomicity",https://github.com/fullsend-ai/fullsend/issues/1801
+2026-06-02,fullsend,issue,opened,1800,"feat: allow per-repo customization using .fullsend.yaml",https://github.com/fullsend-ai/fullsend/issues/1800
+2026-06-02,fullsend,issue,opened,1799,"Review agent ignores author's factual correction with documentation on re-review",https://github.com/fullsend-ai/fullsend/issues/1799
+2026-06-02,fullsend,issue,opened,1798,"pr-review SKILL.md incorrectly documents model frontmatter as enum-only",https://github.com/fullsend-ai/fullsend/issues/1798
+2026-06-02,fullsend,issue,opened,1797,"feat(review agent): challenger pass should use a dedicated sub-agent, not the orchestrator",https://github.com/fullsend-ai/fullsend/issues/1797
+2026-06-02,fullsend,issue,opened,1795,"Review orchestrator should qualify verdict when change-relevant sub-agents fail",https://github.com/fullsend-ai/fullsend/issues/1795
+2026-06-02,fullsend,issue,opened,1794,"Code agent should grep-verify completeness after rename/terminology tasks",https://github.com/fullsend-ai/fullsend/issues/1794
+2026-06-02,fullsend,issue,opened,1791,"Suppress review dispatch when human CHANGES_REQUESTED is active",https://github.com/fullsend-ai/fullsend/issues/1791
+2026-06-02,fullsend,issue,opened,1790,"feat(dispatch): treat reply to review bot comment as implicit /fs-fix",https://github.com/fullsend-ai/fullsend/issues/1790
+2026-06-02,fullsend,issue,opened,1789,"feat(review): add action hints to review bot comments",https://github.com/fullsend-ai/fullsend/issues/1789
+2026-06-02,fullsend,issue,opened,1788,"docs: update bugfix-workflow guide to document fix agent and /fs-fix commands",https://github.com/fullsend-ai/fullsend/issues/1788
+2026-06-02,fullsend,issue,opened,1787,"Review agent: post inline comments for comment-only verdicts",https://github.com/fullsend-ai/fullsend/issues/1787
+2026-06-02,fullsend,issue,opened,1786,"Store inference config as repo variables instead of secrets to enable status checks and re-run fallback",https://github.com/fullsend-ai/fullsend/issues/1786
+2026-06-02,fullsend,issue,opened,1785,"forge/github: retryOnTransient does not cover HTTP 500 Internal Server Error",https://github.com/fullsend-ai/fullsend/issues/1785
+2026-06-02,fullsend,issue,opened,1778,"Review agent should detect breaking API changes in dependency version bumps",https://github.com/fullsend-ai/fullsend/issues/1778
+2026-06-02,fullsend,issue,opened,1777,"Code agent should discover and learn from existing PRs on the same issue",https://github.com/fullsend-ai/fullsend/issues/1777
+2026-06-02,fullsend,issue,opened,1776,"Code agent should reference recently-closed PRs on linked issues",https://github.com/fullsend-ai/fullsend/issues/1776
+2026-06-02,fullsend,issue,opened,1775,"Retro agent should broaden pattern-based proposals to cover all affected call sites",https://github.com/fullsend-ai/fullsend/issues/1775
+2026-06-02,fullsend,issue,opened,1774,"Review agent: verify functional impact before flagging incomplete multi-site changes",https://github.com/fullsend-ai/fullsend/issues/1774
+2026-06-02,fullsend,issue,opened,1773,"Code agent should extract helpers when applying the same transformation at 4+ call sites",https://github.com/fullsend-ai/fullsend/issues/1773
+2026-06-02,fullsend,issue,opened,1772,"Review agent should defer ready-for-merge label on documentation-only PRs until human review",https://github.com/fullsend-ai/fullsend/issues/1772
+2026-06-02,fullsend,issue,opened,1771,"Review sub-agents should fall back to an available model when the primary model is unavailable",https://github.com/fullsend-ai/fullsend/issues/1771
+2026-06-02,fullsend,issue,opened,1768,"sandbox: downloads from /tmp/workspace blocked by OpenShell v0.0.41 workspace-boundary check",https://github.com/fullsend-ai/fullsend/issues/1768
+2026-06-02,fullsend,issue,opened,1767,"sandbox: upgrade OpenShell dependency from v0.0.38 to v0.0.52",https://github.com/fullsend-ai/fullsend/issues/1767
+2026-06-02,fullsend,issue,opened,1766,"sandbox: per-sandbox JWT auth may conflict with --disable-tls gateway mode (OpenShell v0.0.47)",https://github.com/fullsend-ai/fullsend/issues/1766
+2026-06-02,fullsend,issue,opened,1765,"sandbox: nftables kernel requirement added in OpenShell v0.0.44",https://github.com/fullsend-ai/fullsend/issues/1765
+2026-06-02,fullsend,issue,opened,1764,"sandbox: policy DNS resolution in mechanistic mapper removed in OpenShell v0.0.43",https://github.com/fullsend-ai/fullsend/issues/1764
+2026-06-02,fullsend,issue,opened,1763,"sandbox: OPENSHELL_SSH_HANDSHAKE_SECRET references break with OpenShell v0.0.42",https://github.com/fullsend-ai/fullsend/issues/1763
+2026-06-02,fullsend,issue,closed,1800,"feat: allow per-repo customization using .fullsend.yaml",https://github.com/fullsend-ai/fullsend/issues/1800
+2026-06-02,fullsend,issue,closed,1799,"Review agent ignores author's factual correction with documentation on re-review",https://github.com/fullsend-ai/fullsend/issues/1799
+2026-06-02,fullsend,issue,closed,1798,"pr-review SKILL.md incorrectly documents model frontmatter as enum-only",https://github.com/fullsend-ai/fullsend/issues/1798
+2026-06-02,fullsend,issue,closed,1759,"chore(docs): followups from PR# [1550](https://github.com/fullsend-ai/fullsend/pull/1550)",https://github.com/fullsend-ai/fullsend/issues/1759
+2026-06-02,fullsend,issue,closed,1624,"Unify --inference-project and --inference-wif-provider behavior across per-repo and per-org modes",https://github.com/fullsend-ai/fullsend/issues/1624
+2026-06-02,fullsend,issue,closed,852,"Review skill: add consumer-completeness check for new enum values/dispatch entries",https://github.com/fullsend-ai/fullsend/issues/852
