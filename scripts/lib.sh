@@ -3,7 +3,7 @@ set -euo pipefail
 
 ORG="fullsend-ai"
 DATA_FILE="docs/metrics.csv"
-CSV_HEADER="date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,pr_lead_time_median_hours"
+CSV_HEADER="date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,pr_lead_time_median_hours,prs_open"
 
 ensure_csv() {
   mkdir -p docs
@@ -22,7 +22,7 @@ list_repos() {
 
 # Append a row to the CSV. Arguments: all column values in order.
 append_row() {
-  echo "$1,$2,$3,$4,$5,$6,$7,$8,$9" >> "$DATA_FILE"
+  echo "$1,$2,$3,$4,$5,$6,$7,$8,$9,${10}" >> "$DATA_FILE"
 }
 
 REWORK_FILE="docs/rework.csv"

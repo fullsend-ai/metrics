@@ -149,6 +149,7 @@
     issues_closed: +d.issues_closed,
     releases: +d.releases,
     pr_lead_time_median_hours: +d.pr_lead_time_median_hours,
+    prs_open: +d.prs_open || 0,
   }));
   allData = raw;
 
@@ -366,6 +367,7 @@
       issues_closed: d3.sum(rows, d => d.issues_closed),
       releases: d3.sum(rows, d => d.releases),
       pr_lead_time_median_hours: d3.median(rows.filter(r => r.pr_lead_time_median_hours > 0), d => d.pr_lead_time_median_hours) || 0,
+      prs_open: d3.sum(rows, d => d.prs_open),
     }), d => d.date);
 
     const daily = Array.from(byDate, ([date, vals]) => ({ date, ...vals }))
@@ -375,6 +377,7 @@
       "prs_opened", "prs_merged", "prs_closed",
       "issues_opened", "issues_closed",
       "pr_lead_time_median_hours",
+      "prs_open",
     ]);
   }
 
@@ -407,6 +410,7 @@
       { label: "Issues Opened", key: "issues_opened", agg: d3.sum },
       { label: "Issues Closed", key: "issues_closed", agg: d3.sum },
       { label: "Releases", key: "releases", agg: d3.sum },
+      { label: "Open PRs", key: "prs_open", agg: arr => arr.length > 0 ? arr[arr.length - 1] : 0, invert: true },
     ];
 
     metrics.forEach(m => {
@@ -759,6 +763,65 @@
     })));
   }
 
+  // --- PR WIP Chart ---
+  function renderPRWipChart(daily) {
+    const container = d3.select("#chart-pr-wip");
+    const withData = daily.filter(d => d.prs_open > 0);
+    if (withData.length === 0) { container.html("<p>No data</p>"); return; }
+    container.select("p").remove();
+    const dims = chartDimensions(container);
+    const g = createSvg(container, dims);
+    const x = xTimeScale(withData, dims.innerW);
+    const maxOpen = d3.max(withData, d => d.prs_open) || 1;
+    const y = yScale([0, maxOpen * 1.15]).range([dims.innerH, 0]);
+
+    drawGrid(g, y, dims.innerW);
+    drawXAxis(g, x, dims.innerH);
+    drawYAxis(g, y);
+
+    g.append("path")
+      .datum(withData)
+      .attr("fill", "var(--chart-4)")
+      .attr("fill-opacity", 0.15 * seriesOpacity("pr-wip", "open"))
+      .attr("d", d3.area()
+        .x(d => x(new Date(d.date)))
+        .y0(dims.innerH)
+        .y1(d => y(d.prs_open))
+        .curve(d3.curveMonotoneX));
+
+    g.append("path")
+      .datum(withData)
+      .attr("fill", "none")
+      .attr("stroke", "var(--chart-4)")
+      .attr("stroke-width", 2)
+      .attr("opacity", seriesOpacity("pr-wip", "open"))
+      .attr("d", d3.line()
+        .x(d => x(new Date(d.date)))
+        .y(d => y(d.prs_open))
+        .curve(d3.curveMonotoneX));
+
+    g.selectAll(".wip-dot")
+      .data(withData)
+      .join("circle")
+      .attr("cx", d => x(new Date(d.date)))
+      .attr("cy", d => y(d.prs_open))
+      .attr("r", 3)
+      .attr("fill", "var(--chart-4)")
+      .attr("opacity", 0)
+      .on("mouseover", function (event, d) {
+        d3.select(this).attr("opacity", 1).attr("r", 5);
+        showTooltip(event, `<strong>${d.date}</strong><br>Open PRs: ${Math.round(d.prs_open)}`);
+      })
+      .on("mouseout", function () {
+        d3.select(this).attr("opacity", 0).attr("r", 3);
+        hideTooltip();
+      });
+
+    makeLegend(g, "pr-wip", [
+      { name: "open", label: "Open PRs", color: "var(--chart-4)" },
+    ]);
+  }
+
   // --- Agent Run Volume Chart ---
   const workflowColors = d3.scaleOrdinal(d3.schemeTableau10);
 
@@ -1098,6 +1161,7 @@
     renderFrequencyChart(daily);
     renderLeadTimeChart(daily);
     renderPRVolumeChart(daily);
+    renderPRWipChart(daily);
     renderIssueVolumeChart(daily);
     renderRepoTable(data);
     const fData = filterFailureData();

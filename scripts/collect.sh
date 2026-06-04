@@ -108,6 +108,11 @@ for repo in $repos; do
     --paginate \
     --jq "[.[] | select(.published_at | startswith(\"${TARGET_DATE}\"))] | length" 2>/dev/null || true)")
 
+  prs_open=$(to_int "$(gh api "/search/issues" \
+    --method GET \
+    -f q="repo:${full_repo} is:pr is:open" \
+    --jq '.total_count' 2>/dev/null || true)")
+
   lead_time_median="0"
   if (( prs_merged > 0 )); then
     lead_times=$(gh api "/search/issues" \
@@ -126,7 +131,7 @@ for repo in $repos; do
   fi
 
   append_row "$TARGET_DATE" "$repo" "$prs_opened" "$prs_merged" "$prs_closed" \
-    "$issues_opened" "$issues_closed" "$releases" "$lead_time_median"
+    "$issues_opened" "$issues_closed" "$releases" "$lead_time_median" "$prs_open"
 done
 
 echo "Done. Metrics for ${TARGET_DATE} written to ${DATA_FILE}."

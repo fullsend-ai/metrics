@@ -97,7 +97,7 @@ for repo in $repos; do
       fi
     fi
 
-    append_row "$current" "$repo" "$prs_o" "$prs_m" "$prs_c" "$iss_o" "$iss_c" "$rels" "$lt_median"
+    append_row "$current" "$repo" "$prs_o" "$prs_m" "$prs_c" "$iss_o" "$iss_c" "$rels" "$lt_median" "0"
     current=$(date -d "${current} + 1 day" +%Y-%m-%d)
   done
 
