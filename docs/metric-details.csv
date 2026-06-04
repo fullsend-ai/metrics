@@ -1747,3 +1747,78 @@ date,repo,type,event,number,title,url
 2026-06-02,fullsend,issue,closed,1759,"chore(docs): followups from PR# [1550](https://github.com/fullsend-ai/fullsend/pull/1550)",https://github.com/fullsend-ai/fullsend/issues/1759
 2026-06-02,fullsend,issue,closed,1624,"Unify --inference-project and --inference-wif-provider behavior across per-repo and per-org modes",https://github.com/fullsend-ai/fullsend/issues/1624
 2026-06-02,fullsend,issue,closed,852,"Review skill: add consumer-completeness check for new enum values/dispatch entries",https://github.com/fullsend-ai/fullsend/issues/852
+2026-06-03,fullsend,pr,opened,1874,"fix(mint): handle short revision names and update admin guide",https://github.com/fullsend-ai/fullsend/pull/1874
+2026-06-03,fullsend,pr,opened,1871,"feat: move agent status comments into fullsend run",https://github.com/fullsend-ai/fullsend/pull/1871
+2026-06-03,fullsend,pr,opened,1867,"perf: cache sandbox image in GitHub Actions",https://github.com/fullsend-ai/fullsend/pull/1867
+2026-06-03,fullsend,pr,opened,1862,"fix(mint): grant retro role pull_requests:write for PR comments",https://github.com/fullsend-ai/fullsend/pull/1862
+2026-06-03,fullsend,pr,opened,1861,"feat(mint): add Cloud Run revision awareness to status and enroll commands",https://github.com/fullsend-ai/fullsend/pull/1861
+2026-06-03,fullsend,pr,opened,1860,"feat: post agent status comments on workflow start and completion",https://github.com/fullsend-ai/fullsend/pull/1860
+2026-06-03,fullsend,pr,opened,1857,"feat: add skill frontmatter parser for transitive dependency resolution",https://github.com/fullsend-ai/fullsend/pull/1857
+2026-06-03,fullsend,pr,opened,1853,"fix(review): use the *actually* exact Vertex model label for sub-agents",https://github.com/fullsend-ai/fullsend/pull/1853
+2026-06-03,fullsend,pr,opened,1848,"docs: add ADR 0045 for forge-portable harness schema",https://github.com/fullsend-ai/fullsend/pull/1848
+2026-06-03,fullsend,pr,opened,1846,"fix(#1842): read env vars from traffic-serving revision in EnsureOrgInMint",https://github.com/fullsend-ai/fullsend/pull/1846
+2026-06-03,fullsend,pr,opened,1845,"fix(#1844): route Cloud Run traffic to latest revision in UpdateServiceEnvVars",https://github.com/fullsend-ai/fullsend/pull/1845
+2026-06-03,fullsend,pr,opened,1843,"feat(retro): add agent-scaffolding skill to retro harness",https://github.com/fullsend-ai/fullsend/pull/1843
+2026-06-03,fullsend,pr,opened,1841,"feat: include fullsend version in scaffold commit messages",https://github.com/fullsend-ai/fullsend/pull/1841
+2026-06-03,fullsend,pr,opened,1840,"fix(#1839): add technical doc accuracy to correctness sub-agent",https://github.com/fullsend-ai/fullsend/pull/1840
+2026-06-03,fullsend,pr,opened,1834,"fix(#1541): re-dispatch review after stale-head discard",https://github.com/fullsend-ai/fullsend/pull/1834
+2026-06-03,fullsend,pr,opened,1833,"fix(harness): exit gracefully when all repos are disabled",https://github.com/fullsend-ai/fullsend/pull/1833
+2026-06-03,fullsend,pr,opened,1832,"fix(#1827): post feedback comment when /fs-review targets non-open PR",https://github.com/fullsend-ai/fullsend/pull/1832
+2026-06-03,fullsend,pr,opened,1826,"docs(problems): add static analysis layer to testing-agents",https://github.com/fullsend-ai/fullsend/pull/1826
+2026-06-03,fullsend,pr,opened,1825,"fix(#1824): add body to enrollment commit messages",https://github.com/fullsend-ai/fullsend/pull/1825
+2026-06-03,fullsend,pr,opened,1823,"fix(#1822): add exploration budget and early exit to style sub-agent",https://github.com/fullsend-ai/fullsend/pull/1823
+2026-06-03,fullsend,pr,merged,1861,"feat(mint): add Cloud Run revision awareness to status and enroll commands",https://github.com/fullsend-ai/fullsend/pull/1861
+2026-06-03,fullsend,pr,merged,1853,"fix(review): use the *actually* exact Vertex model label for sub-agents",https://github.com/fullsend-ai/fullsend/pull/1853
+2026-06-03,fullsend,pr,merged,1846,"fix(#1842): read env vars from traffic-serving revision in EnsureOrgInMint",https://github.com/fullsend-ai/fullsend/pull/1846
+2026-06-03,fullsend,pr,merged,1845,"fix(#1844): route Cloud Run traffic to latest revision in UpdateServiceEnvVars",https://github.com/fullsend-ai/fullsend/pull/1845
+2026-06-03,fullsend,pr,merged,1804,"docs: add Phase 2 implementation plan and rename Phase 1 for consistency",https://github.com/fullsend-ai/fullsend/pull/1804
+2026-06-03,fullsend,pr,merged,1755,"fix(#1752): defer ready-to-code label until after label_actions",https://github.com/fullsend-ai/fullsend/pull/1755
+2026-06-03,fullsend,pr,closed,1860,"feat: post agent status comments on workflow start and completion",https://github.com/fullsend-ai/fullsend/pull/1860
+2026-06-03,fullsend,pr,closed,1770,"chore(#1768): move sandbox paths from /tmp/ to /sandbox/",https://github.com/fullsend-ai/fullsend/pull/1770
+2026-06-03,fullsend,pr,closed,1769,"chore(#1763): remove stale OPENSHELL_SSH_HANDSHAKE_SECRET references",https://github.com/fullsend-ai/fullsend/pull/1769
+2026-06-03,fullsend,pr,closed,1740,"fix(#1738): skip dispatch for offboard when FULLSEND_MINT_URL is unset",https://github.com/fullsend-ai/fullsend/pull/1740
+2026-06-03,fullsend,issue,opened,1873,"feat: forge-portable agent status notifications",https://github.com/fullsend-ai/fullsend/issues/1873
+2026-06-03,fullsend,issue,opened,1872,"Review agent should exit early when target PR is closed",https://github.com/fullsend-ai/fullsend/issues/1872
+2026-06-03,fullsend,issue,opened,1870,"Skip review/fix dispatch when PR action is 'closed'",https://github.com/fullsend-ai/fullsend/issues/1870
+2026-06-03,fullsend,issue,opened,1869,"`mint deploy` without `--pem-dir` deploys a function that crashes on startup",https://github.com/fullsend-ai/fullsend/issues/1869
+2026-06-03,fullsend,issue,opened,1868,"Triage agent should adopt issue author's explicit fix plan over generating its own",https://github.com/fullsend-ai/fullsend/issues/1868
+2026-06-03,fullsend,issue,opened,1866,"Post-code should not block on pre-existing hook failures unrelated to agent changes",https://github.com/fullsend-ai/fullsend/issues/1866
+2026-06-03,fullsend,issue,opened,1864,"Fix agent should fulfill original issue requirements, not just silence review findings",https://github.com/fullsend-ai/fullsend/issues/1864
+2026-06-03,fullsend,issue,opened,1865,"Code and fix agents should run repo-configured formatters before committing",https://github.com/fullsend-ai/fullsend/issues/1865
+2026-06-03,fullsend,issue,opened,1863,"Test issue",https://github.com/fullsend-ai/fullsend/issues/1863
+2026-06-03,fullsend,issue,opened,1859,"feat: post agent status comments on workflow start and completion",https://github.com/fullsend-ai/fullsend/issues/1859
+2026-06-03,fullsend,issue,opened,1858,"mint CLI lacks Cloud Run revision awareness (status and enroll)",https://github.com/fullsend-ai/fullsend/issues/1858
+2026-06-03,fullsend,issue,opened,1856,"Triage agent should not assert external CLI commands don't exist without verification",https://github.com/fullsend-ai/fullsend/issues/1856
+2026-06-03,fullsend,issue,opened,1855,"Code agent: preserve existing key bindings and handlers when adding new ones",https://github.com/fullsend-ai/fullsend/issues/1855
+2026-06-03,fullsend,issue,opened,1854,"Validate model frontmatter in sub-agent definitions during CI",https://github.com/fullsend-ai/fullsend/issues/1854
+2026-06-03,fullsend,issue,opened,1852,"Review agent should detect inconsistent parameter usage in repeated similar function calls",https://github.com/fullsend-ai/fullsend/issues/1852
+2026-06-03,fullsend,issue,opened,1851,"Code agent should write tests with values that exercise the logic under test",https://github.com/fullsend-ai/fullsend/issues/1851
+2026-06-03,fullsend,issue,opened,1850,"Remove transitional ""coder"" role alias from rolePermissions",https://github.com/fullsend-ai/fullsend/issues/1850
+2026-06-03,fullsend,issue,opened,1849,"reconcile-repos: auto-exclude shim from yamllint when target repo has .yamllint.yaml",https://github.com/fullsend-ai/fullsend/issues/1849
+2026-06-03,fullsend,issue,opened,1847,"Retro agent should track recurrence frequency for known issues",https://github.com/fullsend-ai/fullsend/issues/1847
+2026-06-03,fullsend,issue,opened,1844,"UpdateServiceEnvVars creates Cloud Run revisions without routing traffic",https://github.com/fullsend-ai/fullsend/issues/1844
+2026-06-03,fullsend,issue,opened,1842,"EnsureOrgInMint silently clobbers ALLOWED_ORGS when service template has empty value",https://github.com/fullsend-ai/fullsend/issues/1842
+2026-06-03,fullsend,issue,opened,1839,"Review correctness sub-agent should evaluate technical accuracy in implementation plans",https://github.com/fullsend-ai/fullsend/issues/1839
+2026-06-03,fullsend,issue,opened,1838,"Coding agent should be GitHub Assignee",https://github.com/fullsend-ai/fullsend/issues/1838
+2026-06-03,fullsend,issue,opened,1837,"Review agent should escalate logic-error findings to changes-requested severity",https://github.com/fullsend-ai/fullsend/issues/1837
+2026-06-03,fullsend,issue,opened,1836,"Review correctness sub-agent: add expression-language null-safety checks for declarative configs",https://github.com/fullsend-ai/fullsend/issues/1836
+2026-06-03,fullsend,issue,opened,1835,"Review agent should verify file contents before asserting facts about them",https://github.com/fullsend-ai/fullsend/issues/1835
+2026-06-03,fullsend,issue,opened,1831,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1831
+2026-06-03,fullsend,issue,opened,1830,"Triage agent action needs to be updated from node 20",https://github.com/fullsend-ai/fullsend/issues/1830
+2026-06-03,fullsend,issue,opened,1829,"Add /fs-status command to show current agent activity for an issue",https://github.com/fullsend-ai/fullsend/issues/1829
+2026-06-03,fullsend,issue,opened,1828,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1828
+2026-06-03,fullsend,issue,opened,1827,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1827
+2026-06-03,fullsend,issue,opened,1824,"reconcile-repos: enrollment commits lack a body, causing gitlint failures in onboarded repos",https://github.com/fullsend-ai/fullsend/issues/1824
+2026-06-03,fullsend,issue,opened,1822,"Review style sub-agent should scope exploration to diff-relevant files",https://github.com/fullsend-ai/fullsend/issues/1822
+2026-06-03,fullsend,issue,opened,1821,"Prioritize agent: accept HUMAN_INSTRUCTION from /fs-prioritize comment body",https://github.com/fullsend-ai/fullsend/issues/1821
+2026-06-03,fullsend,issue,opened,1820,"Code agent: accept HUMAN_INSTRUCTION from /fs-code comment body",https://github.com/fullsend-ai/fullsend/issues/1820
+2026-06-03,fullsend,issue,opened,1819,"Triage agent: accept HUMAN_INSTRUCTION from /fs-triage comment body",https://github.com/fullsend-ai/fullsend/issues/1819
+2026-06-03,fullsend,issue,opened,1818,"Review agent should flag unverifiable image references in dependency-update PRs",https://github.com/fullsend-ai/fullsend/issues/1818
+2026-06-03,fullsend,issue,closed,1873,"feat: forge-portable agent status notifications",https://github.com/fullsend-ai/fullsend/issues/1873
+2026-06-03,fullsend,issue,closed,1872,"Review agent should exit early when target PR is closed",https://github.com/fullsend-ai/fullsend/issues/1872
+2026-06-03,fullsend,issue,closed,1858,"mint CLI lacks Cloud Run revision awareness (status and enroll)",https://github.com/fullsend-ai/fullsend/issues/1858
+2026-06-03,fullsend,issue,closed,1844,"UpdateServiceEnvVars creates Cloud Run revisions without routing traffic",https://github.com/fullsend-ai/fullsend/issues/1844
+2026-06-03,fullsend,issue,closed,1842,"EnsureOrgInMint silently clobbers ALLOWED_ORGS when service template has empty value",https://github.com/fullsend-ai/fullsend/issues/1842
+2026-06-03,fullsend,issue,closed,1831,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1831
+2026-06-03,fullsend,issue,closed,1828,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1828
+2026-06-03,fullsend,issue,closed,1752,"Race condition: multiple labels applied simultaneously can prevent code agent from running",https://github.com/fullsend-ai/fullsend/issues/1752
