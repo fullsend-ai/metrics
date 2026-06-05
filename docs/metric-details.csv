@@ -1822,3 +1822,91 @@ date,repo,type,event,number,title,url
 2026-06-03,fullsend,issue,closed,1831,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1831
 2026-06-03,fullsend,issue,closed,1828,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1828
 2026-06-03,fullsend,issue,closed,1752,"Race condition: multiple labels applied simultaneously can prevent code agent from running",https://github.com/fullsend-ai/fullsend/issues/1752
+2026-06-04,fullsend,pr,opened,1921,"ci: add build to allowed conventional commit types",https://github.com/fullsend-ai/fullsend/pull/1921
+2026-06-04,fullsend,pr,opened,1918,"chore(mint): log requested and granted token scope",https://github.com/fullsend-ai/fullsend/pull/1918
+2026-06-04,fullsend,pr,opened,1917,"feat(#1761): convert prioritize to reusable workflow pattern",https://github.com/fullsend-ai/fullsend/pull/1917
+2026-06-04,fullsend,pr,opened,1915,"fix(forge): treat HTTP 500 as transient in retryOnTransient",https://github.com/fullsend-ai/fullsend/pull/1915
+2026-06-04,fullsend,pr,opened,1914,"fix(#1449): use GitHub App bot identity for agent commits",https://github.com/fullsend-ai/fullsend/pull/1914
+2026-06-04,fullsend,pr,opened,1913,"docs(#1279): add per-repo vs per-org decision point to install guide",https://github.com/fullsend-ai/fullsend/pull/1913
+2026-06-04,fullsend,pr,opened,1912,"feat(#1911): add staleness and consumer-completeness checks to correctness sub-agent",https://github.com/fullsend-ai/fullsend/pull/1912
+2026-06-04,fullsend,pr,opened,1905,"fix(images/code): run gopls install as sandbox user",https://github.com/fullsend-ai/fullsend/pull/1905
+2026-06-04,fullsend,pr,opened,1903,"feat(#1885): add diff-size calibration to review sub-agents",https://github.com/fullsend-ai/fullsend/pull/1903
+2026-06-04,fullsend,pr,opened,1902,"feat(#1762): prioritize functional correctness over surface-level checks in review",https://github.com/fullsend-ai/fullsend/pull/1902
+2026-06-04,fullsend,pr,opened,1899,"fix(#1897): remove scripts/ from protected paths in post-fix and post-review",https://github.com/fullsend-ai/fullsend/pull/1899
+2026-06-04,fullsend,pr,opened,1892,"fix(dispatch): prevent auto-review of human PRs",https://github.com/fullsend-ai/fullsend/pull/1892
+2026-06-04,fullsend,pr,opened,1887,"feat(openshell): upgrade to 0.0.54, fix sandbox integration",https://github.com/fullsend-ai/fullsend/pull/1887
+2026-06-04,fullsend,pr,opened,1886,"feat(config): add skip_auto_review field to control PR review triggers",https://github.com/fullsend-ai/fullsend/pull/1886
+2026-06-04,fullsend,pr,opened,1877,"fix(#1876): dismiss all stale CHANGES_REQUESTED reviews on verdict downgrade",https://github.com/fullsend-ai/fullsend/pull/1877
+2026-06-04,fullsend,pr,merged,1912,"feat(#1911): add staleness and consumer-completeness checks to correctness sub-agent",https://github.com/fullsend-ai/fullsend/pull/1912
+2026-06-04,fullsend,pr,merged,1903,"feat(#1885): add diff-size calibration to review sub-agents",https://github.com/fullsend-ai/fullsend/pull/1903
+2026-06-04,fullsend,pr,merged,1902,"feat(#1762): prioritize functional correctness over surface-level checks in review",https://github.com/fullsend-ai/fullsend/pull/1902
+2026-06-04,fullsend,pr,merged,1899,"fix(#1897): remove scripts/ from protected paths in post-fix and post-review",https://github.com/fullsend-ai/fullsend/pull/1899
+2026-06-04,fullsend,pr,merged,1874,"fix(mint): handle short revision names and update admin guide",https://github.com/fullsend-ai/fullsend/pull/1874
+2026-06-04,fullsend,pr,merged,1840,"fix(#1839): add technical doc accuracy to correctness sub-agent",https://github.com/fullsend-ai/fullsend/pull/1840
+2026-06-04,fullsend,pr,merged,1833,"fix(harness): exit gracefully when all repos are disabled",https://github.com/fullsend-ai/fullsend/pull/1833
+2026-06-04,fullsend,pr,merged,1825,"fix(#1824): add body to enrollment commit messages",https://github.com/fullsend-ai/fullsend/pull/1825
+2026-06-04,fullsend,pr,merged,1823,"fix(#1822): add exploration budget and early exit to style sub-agent",https://github.com/fullsend-ai/fullsend/pull/1823
+2026-06-04,fullsend,pr,merged,1806,"chore(#1805): replace hardcoded model enums with authoritative refs",https://github.com/fullsend-ai/fullsend/pull/1806
+2026-06-04,fullsend,pr,merged,1796,"fix(dispatch): map fix stage to coder role in per-org scaffold",https://github.com/fullsend-ai/fullsend/pull/1796
+2026-06-04,fullsend,pr,merged,1783,"feat: extract mintcore shared library with JWKSVerifier and status endpoint",https://github.com/fullsend-ai/fullsend/pull/1783
+2026-06-04,fullsend,pr,merged,1780,"feat(runtime): abstract Claude Code behind pluggable agent runtime",https://github.com/fullsend-ai/fullsend/pull/1780
+2026-06-04,fullsend,pr,merged,1730,"fix(ci): correct reusable-dispatch stage skip expression",https://github.com/fullsend-ai/fullsend/pull/1730
+2026-06-04,fullsend,pr,merged,1595,"feat(cli): add --keep-sandbox flag to fullsend run",https://github.com/fullsend-ai/fullsend/pull/1595
+2026-06-04,fullsend,pr,merged,1278,"feat(workflows): add fullsend_ai_ref for self-consistent version pinning",https://github.com/fullsend-ai/fullsend/pull/1278
+2026-06-04,fullsend,pr,merged,1152,"fix(hack): report broken symlinks before exiting",https://github.com/fullsend-ai/fullsend/pull/1152
+2026-06-04,fullsend,pr,closed,1892,"fix(dispatch): prevent auto-review of human PRs",https://github.com/fullsend-ai/fullsend/pull/1892
+2026-06-04,fullsend,pr,closed,1886,"feat(config): add skip_auto_review field to control PR review triggers",https://github.com/fullsend-ai/fullsend/pull/1886
+2026-06-04,fullsend,pr,closed,1651,"fix(#1649): add UploadFile for file-to-file sandbox upload semantics",https://github.com/fullsend-ai/fullsend/pull/1651
+2026-06-04,fullsend,pr,closed,1592,"docs(#1279): add install mode decision point before commands",https://github.com/fullsend-ai/fullsend/pull/1592
+2026-06-04,fullsend,issue,opened,1922,"Review bot should not override human approval with stale findings",https://github.com/fullsend-ai/fullsend/issues/1922
+2026-06-04,fullsend,issue,opened,1920,"Dispatch shim should post a reaction or comment when /fs-fix dispatch fails",https://github.com/fullsend-ai/fullsend/issues/1920
+2026-06-04,fullsend,issue,opened,1919,"Agent workflow runs that hit startup_failure are silently lost",https://github.com/fullsend-ai/fullsend/issues/1919
+2026-06-04,fullsend,issue,opened,1916,"mint: investigate how downstream retro runs post issues to fullsend-ai/fullsend",https://github.com/fullsend-ai/fullsend/issues/1916
+2026-06-04,fullsend,issue,opened,1911,"Review agent: extend correctness sub-agent with source-code staleness and consumer-completeness checks",https://github.com/fullsend-ai/fullsend/issues/1911
+2026-06-04,fullsend,issue,opened,1910,"Review agent should recognize fullsend's own workflow template as trusted",https://github.com/fullsend-ai/fullsend/issues/1910
+2026-06-04,fullsend,issue,opened,1909,"Code agent should treat scaffolded skill definitions as generic templates",https://github.com/fullsend-ai/fullsend/issues/1909
+2026-06-04,fullsend,issue,opened,1908,"Review agent should detect repo-specific references in scaffolded skill definitions",https://github.com/fullsend-ai/fullsend/issues/1908
+2026-06-04,fullsend,issue,opened,1907,"Agents must play well with others",https://github.com/fullsend-ai/fullsend/issues/1907
+2026-06-04,fullsend,issue,opened,1906,"Review skill: detect omissions in ADRs, specs, and design documents by exploring project context",https://github.com/fullsend-ai/fullsend/issues/1906
+2026-06-04,fullsend,issue,opened,1904,"fix/code agent: /sandbox/go owned by root blocks Go toolchain auto-download",https://github.com/fullsend-ai/fullsend/issues/1904
+2026-06-04,fullsend,issue,opened,1901,"Publish scaffold skills and sub-agent definitions as a standalone Claude Code plugin",https://github.com/fullsend-ai/fullsend/issues/1901
+2026-06-04,fullsend,issue,opened,1900,"Review orchestrator: add fast path for trivial docs/prompt-only changes",https://github.com/fullsend-ai/fullsend/issues/1900
+2026-06-04,fullsend,issue,opened,1898,"Review agent should consider PR conversation context before flagging human-endorsed changes",https://github.com/fullsend-ai/fullsend/issues/1898
+2026-06-04,fullsend,issue,opened,1897,"post-fix.sh: scripts/ protected path blocks target repo's own scripts directory",https://github.com/fullsend-ai/fullsend/issues/1897
+2026-06-04,fullsend,issue,opened,1896,"Skip or minimize review for branch-merge PRs with already-reviewed content",https://github.com/fullsend-ai/fullsend/issues/1896
+2026-06-04,fullsend,issue,opened,1895,"Review agent: detect backward-incompatible workflow input schema changes",https://github.com/fullsend-ai/fullsend/issues/1895
+2026-06-04,fullsend,issue,opened,1894,"Code/fix agent should treat triage caveats as requirements to address",https://github.com/fullsend-ai/fullsend/issues/1894
+2026-06-04,fullsend,issue,opened,1893,"Skip retro dispatch for bot-authored PRs with no-finding reviews",https://github.com/fullsend-ai/fullsend/issues/1893
+2026-06-04,fullsend,issue,opened,1891,"Code agent should prefer minimal-impact solutions matching triage scope",https://github.com/fullsend-ai/fullsend/issues/1891
+2026-06-04,fullsend,issue,opened,1890,"Review agent should challenge the factual premise of agent-generated fix PRs",https://github.com/fullsend-ai/fullsend/issues/1890
+2026-06-04,fullsend,issue,opened,1889,"Retro agent should verify external protocol claims before filing bug issues",https://github.com/fullsend-ai/fullsend/issues/1889
+2026-06-04,fullsend,issue,opened,1888,"Triage should detect likely GHA workflow modifications and skip automatic code agent",https://github.com/fullsend-ai/fullsend/issues/1888
+2026-06-04,fullsend,issue,opened,1885,"Review sub-agents should scale investigation depth to diff size and complexity",https://github.com/fullsend-ai/fullsend/issues/1885
+2026-06-04,fullsend,issue,opened,1884,"Fix agent should check CI status and address failing checks",https://github.com/fullsend-ai/fullsend/issues/1884
+2026-06-04,fullsend,issue,opened,1883,"Code agent should assess vendor-directory impact before adding dependencies",https://github.com/fullsend-ai/fullsend/issues/1883
+2026-06-04,fullsend,issue,opened,1882,"Review agent should accept repo-type context to skip irrelevant finding categories",https://github.com/fullsend-ai/fullsend/issues/1882
+2026-06-04,fullsend,issue,opened,1881,"Review agent should suppress findings its own analysis deems non-actionable",https://github.com/fullsend-ai/fullsend/issues/1881
+2026-06-04,fullsend,issue,opened,1880,"feat(code): auto-assign PRs created by code agent to triggering human",https://github.com/fullsend-ai/fullsend/issues/1880
+2026-06-04,fullsend,issue,opened,1879,"Track and reduce E2E test flakiness in CI",https://github.com/fullsend-ai/fullsend/issues/1879
+2026-06-04,fullsend,issue,opened,1878,"Review agent should flag missing DCO sign-off on human-authored PRs",https://github.com/fullsend-ai/fullsend/issues/1878
+2026-06-04,fullsend,issue,opened,1876,"Post-review script should dismiss prior CHANGES_REQUESTED when verdict downgrades",https://github.com/fullsend-ai/fullsend/issues/1876
+2026-06-04,fullsend,issue,opened,1875,"Authorize protected-path changes for coder→code role rename",https://github.com/fullsend-ai/fullsend/issues/1875
+2026-06-04,fullsend,issue,closed,1911,"Review agent: extend correctness sub-agent with source-code staleness and consumer-completeness checks",https://github.com/fullsend-ai/fullsend/issues/1911
+2026-06-04,fullsend,issue,closed,1898,"Review agent should consider PR conversation context before flagging human-endorsed changes",https://github.com/fullsend-ai/fullsend/issues/1898
+2026-06-04,fullsend,issue,closed,1897,"post-fix.sh: scripts/ protected path blocks target repo's own scripts directory",https://github.com/fullsend-ai/fullsend/issues/1897
+2026-06-04,fullsend,issue,closed,1893,"Skip retro dispatch for bot-authored PRs with no-finding reviews",https://github.com/fullsend-ai/fullsend/issues/1893
+2026-06-04,fullsend,issue,closed,1885,"Review sub-agents should scale investigation depth to diff size and complexity",https://github.com/fullsend-ai/fullsend/issues/1885
+2026-06-04,fullsend,issue,closed,1839,"Review correctness sub-agent should evaluate technical accuracy in implementation plans",https://github.com/fullsend-ai/fullsend/issues/1839
+2026-06-04,fullsend,issue,closed,1824,"reconcile-repos: enrollment commits lack a body, causing gitlint failures in onboarded repos",https://github.com/fullsend-ai/fullsend/issues/1824
+2026-06-04,fullsend,issue,closed,1822,"Review style sub-agent should scope exploration to diff-relevant files",https://github.com/fullsend-ai/fullsend/issues/1822
+2026-06-04,fullsend,issue,closed,1805,"Skill docs should reference authoritative definitions instead of hardcoding enumerated values",https://github.com/fullsend-ai/fullsend/issues/1805
+2026-06-04,fullsend,issue,closed,1764,"sandbox: policy DNS resolution in mechanistic mapper removed in OpenShell v0.0.43",https://github.com/fullsend-ai/fullsend/issues/1764
+2026-06-04,fullsend,issue,closed,1762,"Review agent should prioritize functional correctness over surface-level consistency checks",https://github.com/fullsend-ai/fullsend/issues/1762
+2026-06-04,fullsend,issue,closed,1735,"repo-maintenance: workflow fails with error when all repos are disabled",https://github.com/fullsend-ai/fullsend/issues/1735
+2026-06-04,fullsend,issue,closed,1649,"Fix prior review artifact staging: file downloaded as directory causes EISDIR",https://github.com/fullsend-ai/fullsend/issues/1649
+2026-06-04,fullsend,issue,closed,1610,"Provide a pre-enrolled sandbox repository for new-user experimentation",https://github.com/fullsend-ai/fullsend/issues/1610
+2026-06-04,fullsend,issue,closed,1594,"cli: add --keep-sandbox flag to fullsend run for post-failure inspection",https://github.com/fullsend-ai/fullsend/issues/1594
+2026-06-04,fullsend,issue,closed,1199,"Merged PR contains broken GHA expression that defeats the silent-skip feature",https://github.com/fullsend-ai/fullsend/issues/1199
+2026-06-04,fullsend,issue,closed,1106,"hack/lint-broken-symlinks silently exits 1 without reporting which symlinks are broken",https://github.com/fullsend-ai/fullsend/issues/1106
+2026-06-04,fullsend,issue,closed,1075,"admin install should pin reusable workflows and actions to a commit SHA instead of v0",https://github.com/fullsend-ai/fullsend/issues/1075
+2026-06-04,fullsend,issue,closed,890,"Review agent: grep for stale references when PR removes or renames concepts",https://github.com/fullsend-ai/fullsend/issues/890
