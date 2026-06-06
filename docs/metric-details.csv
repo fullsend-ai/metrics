@@ -1910,3 +1910,89 @@ date,repo,type,event,number,title,url
 2026-06-04,fullsend,issue,closed,1106,"hack/lint-broken-symlinks silently exits 1 without reporting which symlinks are broken",https://github.com/fullsend-ai/fullsend/issues/1106
 2026-06-04,fullsend,issue,closed,1075,"admin install should pin reusable workflows and actions to a commit SHA instead of v0",https://github.com/fullsend-ai/fullsend/issues/1075
 2026-06-04,fullsend,issue,closed,890,"Review agent: grep for stale references when PR removes or renames concepts",https://github.com/fullsend-ai/fullsend/issues/890
+2026-06-05,fullsend,pr,opened,1970,"chore(mint): log app_id and installation_id in minted line",https://github.com/fullsend-ai/fullsend/pull/1970
+2026-06-05,fullsend,pr,opened,1968,"chore(skills): update cutting-releases for fullsend-ai @main switch",https://github.com/fullsend-ai/fullsend/pull/1968
+2026-06-05,fullsend,pr,opened,1967,"chore: add .playwright-mcp to .gitignore",https://github.com/fullsend-ai/fullsend/pull/1967
+2026-06-05,fullsend,pr,opened,1966,"docs: allow minor annotations on accepted ADRs",https://github.com/fullsend-ai/fullsend/pull/1966
+2026-06-05,fullsend,pr,opened,1962,"fix(#1960): include disabled repos in repo-maintenance token scope",https://github.com/fullsend-ai/fullsend/pull/1962
+2026-06-05,fullsend,pr,opened,1961,"fix(#1960): capture repo-maintenance workflow logs in e2e unenrollment test",https://github.com/fullsend-ai/fullsend/pull/1961
+2026-06-05,fullsend,pr,opened,1959,"fix(#1958): use merge-base-aware diff for protected-path check in post-fix",https://github.com/fullsend-ai/fullsend/pull/1959
+2026-06-05,fullsend,pr,opened,1954,"feat(install): layered and standalone distribution modes",https://github.com/fullsend-ai/fullsend/pull/1954
+2026-06-05,fullsend,pr,opened,1953,"fix(#1449): resolve bot identity with GraphQL viewer instead of /app",https://github.com/fullsend-ai/fullsend/pull/1953
+2026-06-05,fullsend,pr,opened,1947,"fix(#1946): add YAML document start marker to shim workflow template",https://github.com/fullsend-ai/fullsend/pull/1947
+2026-06-05,fullsend,pr,opened,1944,"docs(#1943): add `build` to commit type lists in scaffold and skill docs",https://github.com/fullsend-ai/fullsend/pull/1944
+2026-06-05,fullsend,pr,opened,1940,"fix(#1939): add prominent protected-paths section to fix agent",https://github.com/fullsend-ai/fullsend/pull/1940
+2026-06-05,fullsend,pr,opened,1936,"feat(web): add landing page, move doc graph to /graph.html",https://github.com/fullsend-ai/fullsend/pull/1936
+2026-06-05,fullsend,pr,opened,1934,"fix(#1931): document label_actions.actions constraints in triage prompt",https://github.com/fullsend-ai/fullsend/pull/1934
+2026-06-05,fullsend,pr,opened,1927,"feat(#1811): add question action to triage agent",https://github.com/fullsend-ai/fullsend/pull/1927
+2026-06-05,fullsend,pr,opened,1926,"perf(#1924): pass source file contents to review sub-agents",https://github.com/fullsend-ai/fullsend/pull/1926
+2026-06-05,fullsend,pr,opened,1923,"feat: add transitive dependency resolution to URL resolver",https://github.com/fullsend-ai/fullsend/pull/1923
+2026-06-05,fullsend,pr,merged,1953,"fix(#1449): resolve bot identity with GraphQL viewer instead of /app",https://github.com/fullsend-ai/fullsend/pull/1953
+2026-06-05,fullsend,pr,merged,1944,"docs(#1943): add `build` to commit type lists in scaffold and skill docs",https://github.com/fullsend-ai/fullsend/pull/1944
+2026-06-05,fullsend,pr,merged,1927,"feat(#1811): add question action to triage agent",https://github.com/fullsend-ai/fullsend/pull/1927
+2026-06-05,fullsend,pr,merged,1921,"ci: add build to allowed conventional commit types",https://github.com/fullsend-ai/fullsend/pull/1921
+2026-06-05,fullsend,pr,merged,1918,"chore(mint): log requested and granted token scope",https://github.com/fullsend-ai/fullsend/pull/1918
+2026-06-05,fullsend,pr,merged,1917,"feat(#1761): convert prioritize to reusable workflow pattern",https://github.com/fullsend-ai/fullsend/pull/1917
+2026-06-05,fullsend,pr,merged,1915,"fix(forge): treat HTTP 500 as transient in retryOnTransient",https://github.com/fullsend-ai/fullsend/pull/1915
+2026-06-05,fullsend,pr,merged,1914,"fix(#1449): use GitHub App bot identity for agent commits",https://github.com/fullsend-ai/fullsend/pull/1914
+2026-06-05,fullsend,pr,merged,1913,"docs(#1279): add per-repo vs per-org decision point to install guide",https://github.com/fullsend-ai/fullsend/pull/1913
+2026-06-05,fullsend,pr,merged,1877,"fix(#1876): dismiss all stale CHANGES_REQUESTED reviews on verdict downgrade",https://github.com/fullsend-ai/fullsend/pull/1877
+2026-06-05,fullsend,pr,merged,1862,"fix(mint): grant retro role pull_requests:write for PR comments",https://github.com/fullsend-ai/fullsend/pull/1862
+2026-06-05,fullsend,pr,merged,1857,"feat: add skill frontmatter parser for transitive dependency resolution",https://github.com/fullsend-ai/fullsend/pull/1857
+2026-06-05,fullsend,pr,merged,1843,"feat(retro): add agent-scaffolding skill to retro harness",https://github.com/fullsend-ai/fullsend/pull/1843
+2026-06-05,fullsend,pr,merged,1841,"feat: include fullsend version in scaffold commit messages",https://github.com/fullsend-ai/fullsend/pull/1841
+2026-06-05,fullsend,pr,merged,1832,"fix(#1827): post feedback comment when /fs-review targets non-open PR",https://github.com/fullsend-ai/fullsend/pull/1832
+2026-06-05,fullsend,pr,merged,1781,"build(deps): bump experiments from `8a13cad` to `bafeb37`",https://github.com/fullsend-ai/fullsend/pull/1781
+2026-06-05,fullsend,pr,merged,1779,"fix(scaffold): preserve user-added headers across shim reconciliation",https://github.com/fullsend-ai/fullsend/pull/1779
+2026-06-05,fullsend,pr,merged,1709,"feat(skill): add pre-flight and post-flight release procedures",https://github.com/fullsend-ai/fullsend/pull/1709
+2026-06-05,fullsend,pr,merged,1495,"fix(#1492): prevent triage agent from creating unknown labels",https://github.com/fullsend-ai/fullsend/pull/1495
+2026-06-05,fullsend,pr,closed,1961,"fix(#1960): capture repo-maintenance workflow logs in e2e unenrollment test",https://github.com/fullsend-ai/fullsend/pull/1961
+2026-06-05,fullsend,pr,closed,1934,"fix(#1931): document label_actions.actions constraints in triage prompt",https://github.com/fullsend-ai/fullsend/pull/1934
+2026-06-05,fullsend,pr,closed,1756,"fix(#1734): scope mint token to enabled repos only in repo-maintenance",https://github.com/fullsend-ai/fullsend/pull/1756
+2026-06-05,fullsend,issue,opened,1969,"Code agent should detect and skip identical re-creation after close-without-merge",https://github.com/fullsend-ai/fullsend/issues/1969
+2026-06-05,fullsend,issue,opened,1965,"ADR-0038 Phase 2 PR 2: Transitive dependency resolution for URL resolver",https://github.com/fullsend-ai/fullsend/issues/1965
+2026-06-05,fullsend,issue,opened,1964,"GitLab support via webhook bridge (ADR 0043)",https://github.com/fullsend-ai/fullsend/issues/1964
+2026-06-05,fullsend,issue,opened,1963,"Standalone dev mint server (no GCP required)",https://github.com/fullsend-ai/fullsend/issues/1963
+2026-06-05,fullsend,issue,opened,1960,"E2E: unenrollment phase fails — removal PR never appears for test-repo",https://github.com/fullsend-ai/fullsend/issues/1960
+2026-06-05,fullsend,issue,opened,1958,"Post-fix safety script produces false positives when fix agent rebases to resolve merge conflicts",https://github.com/fullsend-ai/fullsend/issues/1958
+2026-06-05,fullsend,issue,opened,1956,"Auto-file tracking issues for unresolved medium+ severity review findings",https://github.com/fullsend-ai/fullsend/issues/1956
+2026-06-05,fullsend,issue,opened,1957,"Fix project_number required/optional mismatch between reusable-prioritize.yml and reusable-dispatch.yml",https://github.com/fullsend-ai/fullsend/issues/1957
+2026-06-05,fullsend,issue,opened,1955,"Review agent: detect GitHub API endpoint / token-type mismatches in workflow files",https://github.com/fullsend-ai/fullsend/issues/1955
+2026-06-05,fullsend,issue,opened,1952,"Support Anthropic Workload Identity Federation as an alternative inference provider to Vertex AI",https://github.com/fullsend-ai/fullsend/issues/1952
+2026-06-05,fullsend,issue,opened,1951,"Review agent should evaluate procedural correctness of shell commands in skill files",https://github.com/fullsend-ai/fullsend/issues/1951
+2026-06-05,fullsend,issue,opened,1950,"Retro GitHub App missing pull_requests:write — all PR retros failing since Jun 4",https://github.com/fullsend-ai/fullsend/issues/1950
+2026-06-05,fullsend,issue,opened,1949,"Add fallback default for GIT_BOT_EMAIL in agent env files",https://github.com/fullsend-ai/fullsend/issues/1949
+2026-06-05,fullsend,issue,opened,1948,"Retro agent should search for related open issues before proposing fixes",https://github.com/fullsend-ai/fullsend/issues/1948
+2026-06-05,fullsend,issue,opened,1946,"Add `---` at the top of shim workflows",https://github.com/fullsend-ai/fullsend/issues/1946
+2026-06-05,fullsend,issue,opened,1945,"Skip triage dispatch when issue is created with ready-to-code label",https://github.com/fullsend-ai/fullsend/issues/1945
+2026-06-05,fullsend,issue,opened,1943,"Update scaffold AGENTS.md and cutting-releases SKILL.md with `build` commit type",https://github.com/fullsend-ai/fullsend/issues/1943
+2026-06-05,fullsend,issue,opened,1942,"Review agent verdict should align with finding severity",https://github.com/fullsend-ai/fullsend/issues/1942
+2026-06-05,fullsend,issue,opened,1941,"Fix agent should address all medium+ findings before declaring completion",https://github.com/fullsend-ai/fullsend/issues/1941
+2026-06-05,fullsend,issue,opened,1939,"Fix agent should not modify .claude/ directory during unrelated tasks",https://github.com/fullsend-ai/fullsend/issues/1939
+2026-06-05,fullsend,issue,opened,1938,"Review agent should not approve when a human has already requested changes",https://github.com/fullsend-ai/fullsend/issues/1938
+2026-06-05,fullsend,issue,opened,1937,"feat: add working_dir field to harness schema for monorepo workspace routing",https://github.com/fullsend-ai/fullsend/issues/1937
+2026-06-05,fullsend,issue,opened,1935,"TranscriptHandler assumes file-based JSONL traces — needs format-neutral contract before second runtime",https://github.com/fullsend-ai/fullsend/issues/1935
+2026-06-05,fullsend,issue,opened,1933,"Installation should pin workflows to version being installed",https://github.com/fullsend-ai/fullsend/issues/1933
+2026-06-05,fullsend,issue,opened,1932,"Review agent should evaluate security impact of its own suggestions",https://github.com/fullsend-ai/fullsend/issues/1932
+2026-06-05,fullsend,issue,opened,1931,"Triage agent produces invalid label_actions.actions, causing silent failure",https://github.com/fullsend-ai/fullsend/issues/1931
+2026-06-05,fullsend,issue,opened,1930,"Code agent should cross-check new code against reference implementations cited in issues",https://github.com/fullsend-ai/fullsend/issues/1930
+2026-06-05,fullsend,issue,opened,1929,"Code agent should generate dimensional constraint tests for rendering code",https://github.com/fullsend-ai/fullsend/issues/1929
+2026-06-05,fullsend,issue,opened,1928,"Review agent should cap severity at high for findings based on unverifiable environment assumptions",https://github.com/fullsend-ai/fullsend/issues/1928
+2026-06-05,fullsend,issue,opened,1925,"Automate E2E session refresh or alert on expiry before CI runs fail",https://github.com/fullsend-ai/fullsend/issues/1925
+2026-06-05,fullsend,issue,opened,1924,"Review sub-agents should receive source file contents in prompt instead of re-reading from disk",https://github.com/fullsend-ai/fullsend/issues/1924
+2026-06-05,fullsend,issue,closed,1943,"Update scaffold AGENTS.md and cutting-releases SKILL.md with `build` commit type",https://github.com/fullsend-ai/fullsend/issues/1943
+2026-06-05,fullsend,issue,closed,1942,"Review agent verdict should align with finding severity",https://github.com/fullsend-ai/fullsend/issues/1942
+2026-06-05,fullsend,issue,closed,1931,"Triage agent produces invalid label_actions.actions, causing silent failure",https://github.com/fullsend-ai/fullsend/issues/1931
+2026-06-05,fullsend,issue,closed,1876,"Post-review script should dismiss prior CHANGES_REQUESTED when verdict downgrades",https://github.com/fullsend-ai/fullsend/issues/1876
+2026-06-05,fullsend,issue,closed,1827,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1827
+2026-06-05,fullsend,issue,closed,1811,"Triage agent: distinguish support requests (questions) from feature requests",https://github.com/fullsend-ai/fullsend/issues/1811
+2026-06-05,fullsend,issue,closed,1785,"forge/github: retryOnTransient does not cover HTTP 500 Internal Server Error",https://github.com/fullsend-ai/fullsend/issues/1785
+2026-06-05,fullsend,issue,closed,1761,"prioritize workflow should use the reusable workflow pattern",https://github.com/fullsend-ai/fullsend/issues/1761
+2026-06-05,fullsend,issue,closed,1734,"repo-maintenance: mint-token scoped to all repos, ignoring enabled: false",https://github.com/fullsend-ai/fullsend/issues/1734
+2026-06-05,fullsend,issue,closed,1492,"Triage agent adds 'unknown' labels",https://github.com/fullsend-ai/fullsend/issues/1492
+2026-06-05,fullsend,issue,closed,1449,"Skip DCO check for PRs opened by the code agent",https://github.com/fullsend-ai/fullsend/issues/1449
+2026-06-05,fullsend,issue,closed,1409,"Investigate and fix systemic retro agent failures",https://github.com/fullsend-ai/fullsend/issues/1409
+2026-06-05,fullsend,issue,closed,1279,"Per repo install still creates .fullsend repo",https://github.com/fullsend-ai/fullsend/issues/1279
+2026-06-05,fullsend,issue,closed,1076,"retro agent: GitHub App missing Issues: write permission for post-script comment",https://github.com/fullsend-ai/fullsend/issues/1076
+2026-06-05,.fullsend,pr,opened,78,"chore: update customer-research skill for June 2026",https://github.com/fullsend-ai/.fullsend/pull/78
+2026-06-05,.fullsend,pr,merged,78,"chore: update customer-research skill for June 2026",https://github.com/fullsend-ai/.fullsend/pull/78
