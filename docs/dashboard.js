@@ -92,7 +92,7 @@
   let rangeDays = 30;
   let selectedRepo = "__all__";
   let hideWeekends = true;
-  let useLogScale = true;
+  let useLogScale = false;
   let smoothDays = 0;
   const focusedSeries = {};
 
