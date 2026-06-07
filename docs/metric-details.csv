@@ -1996,3 +1996,16 @@ date,repo,type,event,number,title,url
 2026-06-05,fullsend,issue,closed,1076,"retro agent: GitHub App missing Issues: write permission for post-script comment",https://github.com/fullsend-ai/fullsend/issues/1076
 2026-06-05,.fullsend,pr,opened,78,"chore: update customer-research skill for June 2026",https://github.com/fullsend-ai/.fullsend/pull/78
 2026-06-05,.fullsend,pr,merged,78,"chore: update customer-research skill for June 2026",https://github.com/fullsend-ai/.fullsend/pull/78
+2026-06-06,fullsend,pr,opened,1976,"feat(scaffold): add managed-by headers to installed scaffold files",https://github.com/fullsend-ai/fullsend/pull/1976
+2026-06-06,fullsend,pr,opened,1975,"feat(workflows): add wip_limit input to prioritize scheduler",https://github.com/fullsend-ai/fullsend/pull/1975
+2026-06-06,fullsend,pr,opened,1971,"fix(workflows): use fully-qualified paths in reusable-dispatch stage jobs",https://github.com/fullsend-ai/fullsend/pull/1971
+2026-06-06,fullsend,pr,merged,1971,"fix(workflows): use fully-qualified paths in reusable-dispatch stage jobs",https://github.com/fullsend-ai/fullsend/pull/1971
+2026-06-06,fullsend,pr,merged,1967,"chore: add .playwright-mcp to .gitignore",https://github.com/fullsend-ai/fullsend/pull/1967
+2026-06-06,fullsend,pr,merged,1539,"fix(#1532): use github.token for fork-check in dispatch",https://github.com/fullsend-ai/fullsend/pull/1539
+2026-06-06,fullsend,issue,opened,1974,"Priority-aware escalation for agent-approved PRs awaiting human review",https://github.com/fullsend-ai/fullsend/issues/1974
+2026-06-06,fullsend,issue,opened,1973,"code agent: silent success when agent stays on main: no issue comment",https://github.com/fullsend-ai/fullsend/issues/1973
+2026-06-06,fullsend,issue,opened,1972,"Review agent: require evidence before dismissing flagged findings as false positives",https://github.com/fullsend-ai/fullsend/issues/1972
+2026-06-06,fullsend,issue,closed,1973,"code agent: silent success when agent stays on main: no issue comment",https://github.com/fullsend-ai/fullsend/issues/1973
+2026-06-06,fullsend,issue,closed,1532,"Fix agent fork-check uses wrong token, blocking all /fs-fix slash commands",https://github.com/fullsend-ai/fullsend/issues/1532
+2026-06-06,fullsend,issue,closed,887,"Cancel in-flight review runs when PR HEAD advances",https://github.com/fullsend-ai/fullsend/issues/887
+2026-06-06,fullsend,issue,closed,70,"Add opencode as an alternative agent runtime",https://github.com/fullsend-ai/fullsend/issues/70
