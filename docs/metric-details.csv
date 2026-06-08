@@ -2009,3 +2009,32 @@ date,repo,type,event,number,title,url
 2026-06-06,fullsend,issue,closed,1532,"Fix agent fork-check uses wrong token, blocking all /fs-fix slash commands",https://github.com/fullsend-ai/fullsend/issues/1532
 2026-06-06,fullsend,issue,closed,887,"Cancel in-flight review runs when PR HEAD advances",https://github.com/fullsend-ai/fullsend/issues/887
 2026-06-06,fullsend,issue,closed,70,"Add opencode as an alternative agent runtime",https://github.com/fullsend-ai/fullsend/issues/70
+2026-06-07,fullsend,pr,opened,1995,"docs: add Go developer cookbook for contributors",https://github.com/fullsend-ai/fullsend/pull/1995
+2026-06-07,fullsend,pr,opened,1993,"docs: refresh roadmap for June 2026",https://github.com/fullsend-ai/fullsend/pull/1993
+2026-06-07,fullsend,pr,opened,1990,"fix(#1344): update Go version in code agent sandbox to 1.26.0",https://github.com/fullsend-ai/fullsend/pull/1990
+2026-06-07,fullsend,pr,opened,1988,"ci(e2e): always report status on PRs and merge queue",https://github.com/fullsend-ai/fullsend/pull/1988
+2026-06-07,fullsend,pr,opened,1983,"feat(e2e): WIF shim and PR authorization gate (#1604)",https://github.com/fullsend-ai/fullsend/pull/1983
+2026-06-07,fullsend,pr,opened,1982,"feat(e2e): add Gherkin behaviour tests with dummy runtime",https://github.com/fullsend-ai/fullsend/pull/1982
+2026-06-07,fullsend,pr,opened,1981,"Add Gherkin behaviour tests with dummy runtime",https://github.com/fullsend-ai/fullsend/pull/1981
+2026-06-07,fullsend,pr,merged,1962,"fix(#1960): include disabled repos in repo-maintenance token scope",https://github.com/fullsend-ai/fullsend/pull/1962
+2026-06-07,fullsend,pr,merged,1947,"fix(#1946): add YAML document start marker to shim workflow template",https://github.com/fullsend-ai/fullsend/pull/1947
+2026-06-07,fullsend,pr,closed,1995,"docs: add Go developer cookbook for contributors",https://github.com/fullsend-ai/fullsend/pull/1995
+2026-06-07,fullsend,pr,closed,1981,"Add Gherkin behaviour tests with dummy runtime",https://github.com/fullsend-ai/fullsend/pull/1981
+2026-06-07,fullsend,issue,opened,1996,"Review agent should detect content that will trigger detect-private-key pre-commit hook",https://github.com/fullsend-ai/fullsend/issues/1996
+2026-06-07,fullsend,issue,opened,1994,"chore: update roadmap PR #1993 with results of June 10 planning session",https://github.com/fullsend-ai/fullsend/issues/1994
+2026-06-07,fullsend,issue,opened,1992,"chore: scope JIRA-driven workflows backlog",https://github.com/fullsend-ai/fullsend/issues/1992
+2026-06-07,fullsend,issue,opened,1991,"chore: build out trustworthiness evidence tracking issues",https://github.com/fullsend-ai/fullsend/issues/1991
+2026-06-07,fullsend,issue,opened,1989,"ci: add test, e2e, commit-lint, and DCO as required status checks",https://github.com/fullsend-ai/fullsend/issues/1989
+2026-06-07,fullsend,issue,opened,1987,"ci: conditional checks block merge queue when they don't run",https://github.com/fullsend-ai/fullsend/issues/1987
+2026-06-07,fullsend,issue,opened,1986,"Re-platform default agents as harness-driven configs, not scaffold-embedded artifacts",https://github.com/fullsend-ai/fullsend/issues/1986
+2026-06-07,fullsend,issue,opened,1985,"Harness-driven dispatch routing: eliminate per-agent workflow files for custom agents",https://github.com/fullsend-ai/fullsend/issues/1985
+2026-06-07,fullsend,issue,opened,1984,"Code agent should preserve existing safety guards when modifying conditional expressions",https://github.com/fullsend-ai/fullsend/issues/1984
+2026-06-07,fullsend,issue,opened,1980,"Review agent should support a CLOSE verdict for policy-violating bot PRs",https://github.com/fullsend-ai/fullsend/issues/1980
+2026-06-07,fullsend,issue,opened,1979,"Review agent should carry forward previous findings when re-reviewing unchanged diffs",https://github.com/fullsend-ai/fullsend/issues/1979
+2026-06-07,fullsend,issue,opened,1978,"Review agent should withhold approval when dependency bot PR violates project's own dependency config",https://github.com/fullsend-ai/fullsend/issues/1978
+2026-06-07,fullsend,issue,opened,1977,"Review agent should escalate findings where a PR contradicts the repo's own configuration policy",https://github.com/fullsend-ai/fullsend/issues/1977
+2026-06-07,fullsend,issue,closed,1979,"Review agent should carry forward previous findings when re-reviewing unchanged diffs",https://github.com/fullsend-ai/fullsend/issues/1979
+2026-06-07,fullsend,issue,closed,1978,"Review agent should withhold approval when dependency bot PR violates project's own dependency config",https://github.com/fullsend-ai/fullsend/issues/1978
+2026-06-07,fullsend,issue,closed,1977,"Review agent should escalate findings where a PR contradicts the repo's own configuration policy",https://github.com/fullsend-ai/fullsend/issues/1977
+2026-06-07,fullsend,issue,closed,1960,"E2E: unenrollment phase fails — removal PR never appears for test-repo",https://github.com/fullsend-ai/fullsend/issues/1960
+2026-06-07,fullsend,issue,closed,1946,"Add `---` at the top of shim workflows",https://github.com/fullsend-ai/fullsend/issues/1946
