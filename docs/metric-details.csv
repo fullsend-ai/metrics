@@ -2038,3 +2038,122 @@ date,repo,type,event,number,title,url
 2026-06-07,fullsend,issue,closed,1977,"Review agent should escalate findings where a PR contradicts the repo's own configuration policy",https://github.com/fullsend-ai/fullsend/issues/1977
 2026-06-07,fullsend,issue,closed,1960,"E2E: unenrollment phase fails — removal PR never appears for test-repo",https://github.com/fullsend-ai/fullsend/issues/1960
 2026-06-07,fullsend,issue,closed,1946,"Add `---` at the top of shim workflows",https://github.com/fullsend-ai/fullsend/issues/1946
+2026-06-08,fullsend,pr,opened,2051,"fix(#2050): reject dev-vendored binaries when release version requested",https://github.com/fullsend-ai/fullsend/pull/2051
+2026-06-08,fullsend,pr,opened,2049,"feat: add internal/lock package for harness dependency pinning",https://github.com/fullsend-ai/fullsend/pull/2049
+2026-06-08,fullsend,pr,opened,2048,"fix(#2045): use PR head SHA in status comment instead of GITHUB_SHA",https://github.com/fullsend-ai/fullsend/pull/2048
+2026-06-08,fullsend,pr,opened,2046,"fix: trim security heuristics to policy directives",https://github.com/fullsend-ai/fullsend/pull/2046
+2026-06-08,fullsend,pr,opened,2044,"feat(#1727): add bare-word grep pattern guidance for rename PRs",https://github.com/fullsend-ai/fullsend/pull/2044
+2026-06-08,fullsend,pr,opened,2042,"docs: ADR 0043 — GitLab per-repo support via CI_JOB_TOKEN and webhook bridge",https://github.com/fullsend-ai/fullsend/pull/2042
+2026-06-08,fullsend,pr,opened,2040,"fix(#2032): suppress macOS AppleDouble files in sandbox uploads",https://github.com/fullsend-ai/fullsend/pull/2040
+2026-06-08,fullsend,pr,opened,2039,"feat(#990): require exhaustive variable verification for security claims",https://github.com/fullsend-ai/fullsend/pull/2039
+2026-06-08,fullsend,pr,opened,2038,"feat(#898): add security heuristics to review sub-agent",https://github.com/fullsend-ai/fullsend/pull/2038
+2026-06-08,fullsend,pr,opened,2035,"feat(#989): add GHA workflow command injection to review security dimensions",https://github.com/fullsend-ai/fullsend/pull/2035
+2026-06-08,fullsend,pr,opened,2028,"fix(#2027): use start comment author instead of GetAuthenticatedUser in analyzeTimeline",https://github.com/fullsend-ai/fullsend/pull/2028
+2026-06-08,fullsend,pr,opened,2023,"docs: add contributor issue search link",https://github.com/fullsend-ai/fullsend/pull/2023
+2026-06-08,fullsend,pr,opened,2022,"feat(cli): wire --max-depth and --max-resources flags for transitive resolution",https://github.com/fullsend-ai/fullsend/pull/2022
+2026-06-08,fullsend,pr,opened,2021,"fix(web): add SRI to CDN scripts",https://github.com/fullsend-ai/fullsend/pull/2021
+2026-06-08,fullsend,pr,opened,2020,"fix(#2017): unenroll repos during uninstall via repo-maintenance workflow",https://github.com/fullsend-ai/fullsend/pull/2020
+2026-06-08,fullsend,pr,opened,2016,"fix(#2013): use <a> elements for sidebar doc links instead of <button>",https://github.com/fullsend-ai/fullsend/pull/2016
+2026-06-08,fullsend,pr,opened,2015,"refactor(cli): share Linux binary acquisition for run and vendoring",https://github.com/fullsend-ai/fullsend/pull/2015
+2026-06-08,fullsend,pr,opened,2012,"docs(problems): add graduated approval policy problem doc",https://github.com/fullsend-ai/fullsend/pull/2012
+2026-06-08,fullsend,pr,opened,2011,"docs(problems): add MCP configuration drift problem doc",https://github.com/fullsend-ai/fullsend/pull/2011
+2026-06-08,fullsend,pr,opened,2010,"docs(security): add audit log integrity to threat model",https://github.com/fullsend-ai/fullsend/pull/2010
+2026-06-08,fullsend,pr,opened,2009,"docs(problems): add tool call risk assessment problem doc",https://github.com/fullsend-ai/fullsend/pull/2009
+2026-06-08,fullsend,pr,opened,2007,"fix(#2002): mock HTTP server in TestResolveLinuxBinary_Download",https://github.com/fullsend-ai/fullsend/pull/2007
+2026-06-08,fullsend,pr,opened,2006,"fix(#1447): add retry logic and diagnostics to prior review SHA fetch",https://github.com/fullsend-ai/fullsend/pull/2006
+2026-06-08,fullsend,pr,opened,2005,"fix(#2003): use correct pagination pattern for HUMAN_REVIEW_COUNT",https://github.com/fullsend-ai/fullsend/pull/2005
+2026-06-08,fullsend,pr,opened,1998,"fix(#1997): notify issue when pre-commit blocks PR creation",https://github.com/fullsend-ai/fullsend/pull/1998
+2026-06-08,fullsend,pr,merged,2039,"feat(#990): require exhaustive variable verification for security claims",https://github.com/fullsend-ai/fullsend/pull/2039
+2026-06-08,fullsend,pr,merged,2038,"feat(#898): add security heuristics to review sub-agent",https://github.com/fullsend-ai/fullsend/pull/2038
+2026-06-08,fullsend,pr,merged,2035,"feat(#989): add GHA workflow command injection to review security dimensions",https://github.com/fullsend-ai/fullsend/pull/2035
+2026-06-08,fullsend,pr,merged,2028,"fix(#2027): use start comment author instead of GetAuthenticatedUser in analyzeTimeline",https://github.com/fullsend-ai/fullsend/pull/2028
+2026-06-08,fullsend,pr,merged,2022,"feat(cli): wire --max-depth and --max-resources flags for transitive resolution",https://github.com/fullsend-ai/fullsend/pull/2022
+2026-06-08,fullsend,pr,merged,2016,"fix(#2013): use <a> elements for sidebar doc links instead of <button>",https://github.com/fullsend-ai/fullsend/pull/2016
+2026-06-08,fullsend,pr,merged,2005,"fix(#2003): use correct pagination pattern for HUMAN_REVIEW_COUNT",https://github.com/fullsend-ai/fullsend/pull/2005
+2026-06-08,fullsend,pr,merged,1990,"fix(#1344): update Go version in code agent sandbox to 1.26.0",https://github.com/fullsend-ai/fullsend/pull/1990
+2026-06-08,fullsend,pr,merged,1975,"feat(workflows): add wip_limit input to prioritize scheduler",https://github.com/fullsend-ai/fullsend/pull/1975
+2026-06-08,fullsend,pr,merged,1970,"chore(mint): log app_id and installation_id in minted line",https://github.com/fullsend-ai/fullsend/pull/1970
+2026-06-08,fullsend,pr,merged,1968,"chore(skills): update cutting-releases for fullsend-ai @main switch",https://github.com/fullsend-ai/fullsend/pull/1968
+2026-06-08,fullsend,pr,merged,1966,"docs: allow minor annotations on accepted ADRs",https://github.com/fullsend-ai/fullsend/pull/1966
+2026-06-08,fullsend,pr,merged,1959,"fix(#1958): use merge-base-aware diff for protected-path check in post-fix",https://github.com/fullsend-ai/fullsend/pull/1959
+2026-06-08,fullsend,pr,merged,1940,"fix(#1939): add prominent protected-paths section to fix agent",https://github.com/fullsend-ai/fullsend/pull/1940
+2026-06-08,fullsend,pr,merged,1936,"feat(web): add landing page, move doc graph to /graph.html",https://github.com/fullsend-ai/fullsend/pull/1936
+2026-06-08,fullsend,pr,merged,1923,"feat: add transitive dependency resolution to URL resolver",https://github.com/fullsend-ai/fullsend/pull/1923
+2026-06-08,fullsend,pr,merged,1905,"fix(images/code): run gopls install as sandbox user",https://github.com/fullsend-ai/fullsend/pull/1905
+2026-06-08,fullsend,pr,merged,1871,"feat: move agent status comments into fullsend run",https://github.com/fullsend-ai/fullsend/pull/1871
+2026-06-08,fullsend,pr,merged,1812,"feat(#1797): extract challenger pass into dedicated sub-agent",https://github.com/fullsend-ai/fullsend/pull/1812
+2026-06-08,fullsend,pr,merged,1644,"fix(#1640): fall back to /app endpoint for bot user detection",https://github.com/fullsend-ai/fullsend/pull/1644
+2026-06-08,fullsend,pr,merged,1627,"fix(#1625): exclude agent working directories from git tracking",https://github.com/fullsend-ai/fullsend/pull/1627
+2026-06-08,fullsend,pr,merged,1593,"feat(cli): tee stream-json output to iteration artifact",https://github.com/fullsend-ai/fullsend/pull/1593
+2026-06-08,fullsend,pr,merged,1573,"fix(cli): open correct uninstall URL and wait for user confirmation",https://github.com/fullsend-ai/fullsend/pull/1573
+2026-06-08,fullsend,pr,merged,1531,"fix(#1527): warn when automated review misses initial PR window",https://github.com/fullsend-ai/fullsend/pull/1531
+2026-06-08,fullsend,pr,merged,1468,"fix(#1408): debounce retro workflow to make concurrency group effective",https://github.com/fullsend-ai/fullsend/pull/1468
+2026-06-08,fullsend,pr,merged,1239,"fix(skills): start tag annotation with blank line when no custom title",https://github.com/fullsend-ai/fullsend/pull/1239
+2026-06-08,fullsend,pr,merged,1238,"fix(#1236): show exec error when validation script fails to run",https://github.com/fullsend-ai/fullsend/pull/1238
+2026-06-08,fullsend,pr,closed,2046,"fix: trim security heuristics to policy directives",https://github.com/fullsend-ai/fullsend/pull/2046
+2026-06-08,fullsend,pr,closed,2006,"fix(#1447): add retry logic and diagnostics to prior review SHA fetch",https://github.com/fullsend-ai/fullsend/pull/2006
+2026-06-08,fullsend,pr,closed,1998,"fix(#1997): notify issue when pre-commit blocks PR creation",https://github.com/fullsend-ai/fullsend/pull/1998
+2026-06-08,fullsend,pr,closed,1751,"feat: add mintcore shared library and dev mint for local evaluation",https://github.com/fullsend-ai/fullsend/pull/1751
+2026-06-08,fullsend,pr,closed,1705,"docs(#1704): consolidate e2e test documentation into docs/testing/e2e.md",https://github.com/fullsend-ai/fullsend/pull/1705
+2026-06-08,fullsend,pr,closed,1560,"fix(#1559): preserve prior successful review on agent failure",https://github.com/fullsend-ai/fullsend/pull/1560
+2026-06-08,fullsend,pr,closed,1486,"fix(#1485): tighten existing-PR matching in pre-code",https://github.com/fullsend-ai/fullsend/pull/1486
+2026-06-08,fullsend,pr,closed,1474,"fix(#1470): retry review submission without inline comments on 422",https://github.com/fullsend-ai/fullsend/pull/1474
+2026-06-08,fullsend,pr,closed,1451,"fix(#1447): prevent grep crash in prior-review SHA extraction",https://github.com/fullsend-ai/fullsend/pull/1451
+2026-06-08,fullsend,pr,closed,1267,"fix(install): verify app installations when using --skip-app-setup",https://github.com/fullsend-ai/fullsend/pull/1267
+2026-06-08,fullsend,issue,opened,2050,"CLI latest-version resolution can serve stale dev-vendored builds after a new release",https://github.com/fullsend-ai/fullsend/issues/2050
+2026-06-08,fullsend,issue,opened,2047,"Code agent over-explains domain knowledge in agent prompt files, causing rework",https://github.com/fullsend-ai/fullsend/issues/2047
+2026-06-08,fullsend,issue,opened,2045,"statuscomment: ""Commit:"" line shows .fullsend repo HEAD, not PR head SHA",https://github.com/fullsend-ai/fullsend/issues/2045
+2026-06-08,fullsend,issue,opened,2043,"Code agent: reason about step ordering when modifying procedural documents",https://github.com/fullsend-ai/fullsend/issues/2043
+2026-06-08,fullsend,issue,opened,2041,"Sandbox: fix Go module cache permissions for markdown-only repos",https://github.com/fullsend-ai/fullsend/issues/2041
+2026-06-08,fullsend,issue,opened,2037,"fix.md protected-paths list has three mismatches with post-fix.sh enforcement",https://github.com/fullsend-ai/fullsend/issues/2037
+2026-06-08,fullsend,issue,opened,2036,"Review agent should check CLAUDE.md path-based test requirements",https://github.com/fullsend-ai/fullsend/issues/2036
+2026-06-08,fullsend,issue,opened,2034,"Review agent should flag large PRs and recommend splitting",https://github.com/fullsend-ai/fullsend/issues/2034
+2026-06-08,fullsend,issue,opened,2033,"Simplify `install` command implementation while retaining single entry point",https://github.com/fullsend-ai/fullsend/issues/2033
+2026-06-08,fullsend,issue,opened,2032,"macOS tar includes ._* AppleDouble files in UploadDir, corrupting .git on round-trip",https://github.com/fullsend-ai/fullsend/issues/2032
+2026-06-08,fullsend,issue,opened,2031,"Code agent should check co-located tool compatibility when bumping language versions",https://github.com/fullsend-ai/fullsend/issues/2031
+2026-06-08,fullsend,issue,opened,2030,"Code agent: read sibling scripts to maintain pattern consistency",https://github.com/fullsend-ai/fullsend/issues/2030
+2026-06-08,fullsend,issue,opened,2029,"Review agent: use COMMENT verdict for re-reviews with only low-severity findings",https://github.com/fullsend-ai/fullsend/issues/2029
+2026-06-08,fullsend,issue,opened,2027,"fix(statuscomment): use start comment author instead of GetAuthenticatedUser in analyzeTimeline",https://github.com/fullsend-ai/fullsend/issues/2027
+2026-06-08,fullsend,issue,opened,2026,"action.yml: fall back to building from source when version has no published release",https://github.com/fullsend-ai/fullsend/issues/2026
+2026-06-08,fullsend,issue,opened,2025,"action.yml: build fullsend from source when version: main",https://github.com/fullsend-ai/fullsend/issues/2025
+2026-06-08,fullsend,issue,opened,2024,"Triage bot should defer to domain expert sometimes instead of end-user",https://github.com/fullsend-ai/fullsend/issues/2024
+2026-06-08,fullsend,issue,opened,2019,"Review agent: detect file moves and suppress findings on relocated-but-unchanged code",https://github.com/fullsend-ai/fullsend/issues/2019
+2026-06-08,fullsend,issue,opened,2018,"Add SRI integrity and crossorigin attributes to CDN scripts on setup page",https://github.com/fullsend-ai/fullsend/issues/2018
+2026-06-08,fullsend,issue,opened,2017,"Uninstall doesn't remove .fullsend",https://github.com/fullsend-ai/fullsend/issues/2017
+2026-06-08,fullsend,issue,opened,2014,"post-fix: remove protected-path block — enforce at review, not push",https://github.com/fullsend-ai/fullsend/issues/2014
+2026-06-08,fullsend,issue,opened,2013,"docs: sidebar links use <span> instead of <a>, breaking middle-click to open in new tab",https://github.com/fullsend-ai/fullsend/issues/2013
+2026-06-08,fullsend,issue,opened,2008,"Code agent should validate implementation against triage acceptance criteria before opening PR",https://github.com/fullsend-ai/fullsend/issues/2008
+2026-06-08,fullsend,issue,opened,2004,"Proactive staleness alert for fully-approved ready-for-merge PRs",https://github.com/fullsend-ai/fullsend/issues/2004
+2026-06-08,fullsend,issue,opened,2003,"Fix incorrect --paginate --jq pattern in pre-fetch-prior-review.sh",https://github.com/fullsend-ai/fullsend/issues/2003
+2026-06-08,fullsend,issue,opened,2002,"TestResolveLinuxBinary_Download should not make live HTTP calls to GitHub CDN",https://github.com/fullsend-ai/fullsend/issues/2002
+2026-06-08,fullsend,issue,opened,2001,"Code agent should include regression tests for bug-fix PRs",https://github.com/fullsend-ai/fullsend/issues/2001
+2026-06-08,fullsend,issue,opened,2000,"Triage agent: check related issues for active PRs before labeling ready-to-code",https://github.com/fullsend-ai/fullsend/issues/2000
+2026-06-08,fullsend,issue,opened,1999,"Review agent should evaluate approach soundness, not just implementation correctness",https://github.com/fullsend-ai/fullsend/issues/1999
+2026-06-08,fullsend,issue,opened,1997,"post-code: notify issue when pre-commit block prevents PR creation",https://github.com/fullsend-ai/fullsend/issues/1997
+2026-06-08,fullsend,issue,closed,2027,"fix(statuscomment): use start comment author instead of GetAuthenticatedUser in analyzeTimeline",https://github.com/fullsend-ai/fullsend/issues/2027
+2026-06-08,fullsend,issue,closed,2025,"action.yml: build fullsend from source when version: main",https://github.com/fullsend-ai/fullsend/issues/2025
+2026-06-08,fullsend,issue,closed,2003,"Fix incorrect --paginate --jq pattern in pre-fetch-prior-review.sh",https://github.com/fullsend-ai/fullsend/issues/2003
+2026-06-08,fullsend,issue,closed,1999,"Review agent should evaluate approach soundness, not just implementation correctness",https://github.com/fullsend-ai/fullsend/issues/1999
+2026-06-08,fullsend,issue,closed,1965,"ADR-0038 Phase 2 PR 2: Transitive dependency resolution for URL resolver",https://github.com/fullsend-ai/fullsend/issues/1965
+2026-06-08,fullsend,issue,closed,1958,"Post-fix safety script produces false positives when fix agent rebases to resolve merge conflicts",https://github.com/fullsend-ai/fullsend/issues/1958
+2026-06-08,fullsend,issue,closed,1939,"Fix agent should not modify .claude/ directory during unrelated tasks",https://github.com/fullsend-ai/fullsend/issues/1939
+2026-06-08,fullsend,issue,closed,1904,"fix/code agent: /sandbox/go owned by root blocks Go toolchain auto-download",https://github.com/fullsend-ai/fullsend/issues/1904
+2026-06-08,fullsend,issue,closed,1859,"feat: post agent status comments on workflow start and completion",https://github.com/fullsend-ai/fullsend/issues/1859
+2026-06-08,fullsend,issue,closed,1797,"feat(review agent): challenger pass should use a dedicated sub-agent, not the orchestrator",https://github.com/fullsend-ai/fullsend/issues/1797
+2026-06-08,fullsend,issue,closed,1640,"Review agent fails to determine bot user, degrading spoofing protection and stale review cleanup",https://github.com/fullsend-ai/fullsend/issues/1640
+2026-06-08,fullsend,issue,closed,1625,"Code agent should exclude its own working directories from commits",https://github.com/fullsend-ai/fullsend/issues/1625
+2026-06-08,fullsend,issue,closed,1527,"Investigate missing review dispatch on initial PR creation",https://github.com/fullsend-ai/fullsend/issues/1527
+2026-06-08,fullsend,issue,closed,1470,"Post-review script should handle 422 errors from invalid diff positions gracefully",https://github.com/fullsend-ai/fullsend/issues/1470
+2026-06-08,fullsend,issue,closed,1447,"Investigate empty PRIOR_REVIEW_SHA causing redundant full re-reviews",https://github.com/fullsend-ai/fullsend/issues/1447
+2026-06-08,fullsend,issue,closed,1408,"Deduplicate retro dispatches on PR merge/close events",https://github.com/fullsend-ai/fullsend/issues/1408
+2026-06-08,fullsend,issue,closed,1344,"Update Go version in code agent sandbox image to match go.mod",https://github.com/fullsend-ai/fullsend/issues/1344
+2026-06-08,fullsend,issue,closed,1266,"installer should verify app installations when using --skip-app-setup",https://github.com/fullsend-ai/fullsend/issues/1266
+2026-06-08,fullsend,issue,closed,1237,"cutting-releases skill produces verbose release titles when no custom title is given",https://github.com/fullsend-ai/fullsend/issues/1237
+2026-06-08,fullsend,issue,closed,1236,"validation failed shows empty message when script fails to exec (ENOENT / EACCES)",https://github.com/fullsend-ai/fullsend/issues/1236
+2026-06-08,fullsend,issue,closed,1228,"fullsend run: tee stream-json output to a file in the run artifact",https://github.com/fullsend-ai/fullsend/issues/1228
+2026-06-08,fullsend,issue,closed,990,"Review agent should not assert safety claims without exhaustive variable verification",https://github.com/fullsend-ai/fullsend/issues/990
+2026-06-08,fullsend,issue,closed,989,"Add GHA workflow command injection to code-review security dimensions",https://github.com/fullsend-ai/fullsend/issues/989
+2026-06-08,fullsend,issue,closed,549,"Product landing page: entry to documentation app and admin app",https://github.com/fullsend-ai/fullsend/issues/549
+2026-06-08,fullsend,issue,closed,323,"admin uninstall exits immediately after opening browser for app deletion",https://github.com/fullsend-ai/fullsend/issues/323
+2026-06-08,.fullsend,pr,opened,79,"chore: remove vendored fullsend binary",https://github.com/fullsend-ai/.fullsend/pull/79
+2026-06-08,.fullsend,pr,merged,79,"chore: remove vendored fullsend binary",https://github.com/fullsend-ai/.fullsend/pull/79
