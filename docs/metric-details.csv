@@ -2157,3 +2157,94 @@ date,repo,type,event,number,title,url
 2026-06-08,fullsend,issue,closed,323,"admin uninstall exits immediately after opening browser for app deletion",https://github.com/fullsend-ai/fullsend/issues/323
 2026-06-08,.fullsend,pr,opened,79,"chore: remove vendored fullsend binary",https://github.com/fullsend-ai/.fullsend/pull/79
 2026-06-08,.fullsend,pr,merged,79,"chore: remove vendored fullsend binary",https://github.com/fullsend-ai/.fullsend/pull/79
+2026-06-09,fullsend,pr,opened,2101,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2101
+2026-06-09,fullsend,pr,opened,2100,"docs(plans): implementation plan for ADR-0045 forge-portable harness schema",https://github.com/fullsend-ai/fullsend/pull/2100
+2026-06-09,fullsend,pr,opened,2098,"fix(agents): Explore agent type is *specifically* not to be used for code review...",https://github.com/fullsend-ai/fullsend/pull/2098
+2026-06-09,fullsend,pr,opened,2097,"ci: expand merge-queue skill with monitoring scripts",https://github.com/fullsend-ai/fullsend/pull/2097
+2026-06-09,fullsend,pr,opened,2094,"ci(e2e): use commit SHA for upstream workflow refs in e2e tests",https://github.com/fullsend-ai/fullsend/pull/2094
+2026-06-09,fullsend,pr,opened,2092,"docs(#2091): add gh api --paginate + jq guidance to CLAUDE.md",https://github.com/fullsend-ai/fullsend/pull/2092
+2026-06-09,fullsend,pr,opened,2089,"chore: consolidate commit message guidance into COMMITS.md",https://github.com/fullsend-ai/fullsend/pull/2089
+2026-06-09,fullsend,pr,opened,2085,"build(sandbox): bump tirith from 0.2.12 to 0.3.1",https://github.com/fullsend-ai/fullsend/pull/2085
+2026-06-09,fullsend,pr,opened,2082,"feat: add fullsend lock CLI and lock-aware resolution",https://github.com/fullsend-ai/fullsend/pull/2082
+2026-06-09,fullsend,pr,opened,2081,"feat(#2073): default --mint-url to the hosted public mint",https://github.com/fullsend-ai/fullsend/pull/2081
+2026-06-09,fullsend,pr,opened,2079,"docs(updates): add ADR discussing automatic versioning",https://github.com/fullsend-ai/fullsend/pull/2079
+2026-06-09,fullsend,pr,opened,2077,"fix(#2075): use atomic directory swap for repo extraction",https://github.com/fullsend-ai/fullsend/pull/2077
+2026-06-09,fullsend,pr,opened,2072,"docs(#2071): add public hosted mint URL to mint administration guide",https://github.com/fullsend-ai/fullsend/pull/2072
+2026-06-09,fullsend,pr,opened,2069,"ci: add codecov configuration",https://github.com/fullsend-ai/fullsend/pull/2069
+2026-06-09,fullsend,pr,opened,2068,"docs(#2067): add dispatch workflow sync guidance to CLAUDE.md",https://github.com/fullsend-ai/fullsend/pull/2068
+2026-06-09,fullsend,pr,opened,2064,"ci: add codecov configuration",https://github.com/fullsend-ai/fullsend/pull/2064
+2026-06-09,fullsend,pr,opened,2063,"fix(sandbox): Add macOS runner due to some specialized tests",https://github.com/fullsend-ai/fullsend/pull/2063
+2026-06-09,fullsend,pr,opened,2061,"fix(#2060): install matching Go toolchain before pre-commit in post-code",https://github.com/fullsend-ai/fullsend/pull/2061
+2026-06-09,fullsend,pr,opened,2055,"fix(#2054): patch review summary when body contradicts findings",https://github.com/fullsend-ai/fullsend/pull/2055
+2026-06-09,fullsend,pr,opened,2053,"build(action): action.yml now compiles from source if not release",https://github.com/fullsend-ai/fullsend/pull/2053
+2026-06-09,fullsend,pr,opened,2052,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2052
+2026-06-09,fullsend,pr,merged,2085,"build(sandbox): bump tirith from 0.2.12 to 0.3.1",https://github.com/fullsend-ai/fullsend/pull/2085
+2026-06-09,fullsend,pr,merged,2082,"feat: add fullsend lock CLI and lock-aware resolution",https://github.com/fullsend-ai/fullsend/pull/2082
+2026-06-09,fullsend,pr,merged,2081,"feat(#2073): default --mint-url to the hosted public mint",https://github.com/fullsend-ai/fullsend/pull/2081
+2026-06-09,fullsend,pr,merged,2052,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2052
+2026-06-09,fullsend,pr,merged,2049,"feat: add internal/lock package for harness dependency pinning",https://github.com/fullsend-ai/fullsend/pull/2049
+2026-06-09,fullsend,pr,merged,2048,"fix(#2045): use PR head SHA in status comment instead of GITHUB_SHA",https://github.com/fullsend-ai/fullsend/pull/2048
+2026-06-09,fullsend,pr,merged,2040,"fix(#2032): suppress macOS AppleDouble files in sandbox uploads",https://github.com/fullsend-ai/fullsend/pull/2040
+2026-06-09,fullsend,pr,merged,2023,"docs: add contributor issue search link",https://github.com/fullsend-ai/fullsend/pull/2023
+2026-06-09,fullsend,pr,merged,1988,"ci(e2e): always report status on PRs and merge queue",https://github.com/fullsend-ai/fullsend/pull/1988
+2026-06-09,fullsend,pr,merged,1887,"feat(openshell): upgrade to 0.0.54, fix sandbox integration",https://github.com/fullsend-ai/fullsend/pull/1887
+2026-06-09,fullsend,pr,merged,1848,"docs: add ADR 0045 for forge-portable harness schema",https://github.com/fullsend-ai/fullsend/pull/1848
+2026-06-09,fullsend,pr,merged,1834,"fix(#1541): re-dispatch review after stale-head discard",https://github.com/fullsend-ai/fullsend/pull/1834
+2026-06-09,fullsend,pr,merged,1792,"fix(#1787): post inline comments for COMMENT review verdicts",https://github.com/fullsend-ai/fullsend/pull/1792
+2026-06-09,fullsend,pr,merged,1717,"feat(mint): switch PEM secrets to role-only naming",https://github.com/fullsend-ai/fullsend/pull/1717
+2026-06-09,fullsend,pr,merged,1698,"fix(#1697): add force-override logging and regression tests",https://github.com/fullsend-ai/fullsend/pull/1698
+2026-06-09,fullsend,pr,closed,2077,"fix(#2075): use atomic directory swap for repo extraction",https://github.com/fullsend-ai/fullsend/pull/2077
+2026-06-09,fullsend,pr,closed,2064,"ci: add codecov configuration",https://github.com/fullsend-ai/fullsend/pull/2064
+2026-06-09,fullsend,pr,closed,2051,"fix(#2050): reject dev-vendored binaries when release version requested",https://github.com/fullsend-ai/fullsend/pull/2051
+2026-06-09,fullsend,pr,closed,1816,"docs: add ADR 0043 for GitLab support via webhook bridge",https://github.com/fullsend-ai/fullsend/pull/1816
+2026-06-09,fullsend,issue,opened,2102,"Review agent: detect missing input validation when new CLI commands share flags with existing ones",https://github.com/fullsend-ai/fullsend/issues/2102
+2026-06-09,fullsend,issue,opened,2099,"Review agent should alert when human approves with unresolved Medium+ findings",https://github.com/fullsend-ai/fullsend/issues/2099
+2026-06-09,fullsend,issue,opened,2096,"Review agent: two-pass strategy for large PRs — triage security-critical files, then deep-review",https://github.com/fullsend-ai/fullsend/issues/2096
+2026-06-09,fullsend,issue,opened,2095,"Review agent: require structured enumeration of verified vs unchecked variables in sanitization findings",https://github.com/fullsend-ai/fullsend/issues/2095
+2026-06-09,fullsend,issue,opened,2093,"post-review.sh fails when GitHub API returns 0 changed_files for open PRs",https://github.com/fullsend-ai/fullsend/issues/2093
+2026-06-09,fullsend,issue,opened,2091,"Code agent should understand gh api --paginate + jq per-page semantics",https://github.com/fullsend-ai/fullsend/issues/2091
+2026-06-09,fullsend,issue,opened,2090,"Review post-script: fix 403/401 errors when resolving bot and authenticated user identity",https://github.com/fullsend-ai/fullsend/issues/2090
+2026-06-09,fullsend,issue,opened,2088,"De-duplicate CLAUDE.md and AGENTS.md into a single source of truth",https://github.com/fullsend-ai/fullsend/issues/2088
+2026-06-09,fullsend,issue,opened,2087,"e2e workflow: deduplicate path-relevance logic between push paths filter and PR grep",https://github.com/fullsend-ai/fullsend/issues/2087
+2026-06-09,fullsend,issue,opened,2086,"suggestion: set assignee for fullsend PRs",https://github.com/fullsend-ai/fullsend/issues/2086
+2026-06-09,fullsend,issue,opened,2084,"CLI: add command to update the fullsend binary to the latest release",https://github.com/fullsend-ai/fullsend/issues/2084
+2026-06-09,fullsend,issue,opened,2083,"Review agent: improve typo detection consistency for proper nouns and project names",https://github.com/fullsend-ai/fullsend/issues/2083
+2026-06-09,fullsend,issue,opened,2080,"Code agent should read source of called functions to verify API contract assumptions",https://github.com/fullsend-ai/fullsend/issues/2080
+2026-06-09,fullsend,issue,opened,2078,"Allow orgs to disable auto-triggered review while keeping /fs-review on demand",https://github.com/fullsend-ai/fullsend/issues/2078
+2026-06-09,fullsend,issue,opened,2076,"Review agent should recognize external issue tracker references as valid authorization",https://github.com/fullsend-ai/fullsend/issues/2076
+2026-06-09,fullsend,issue,opened,2075,"fullsend run: os.RemoveAll creates race condition with concurrent directory access",https://github.com/fullsend-ai/fullsend/issues/2075
+2026-06-09,fullsend,issue,opened,2074,"Review agent: detect k8s optional volume vs hard-coded application path mismatches",https://github.com/fullsend-ai/fullsend/issues/2074
+2026-06-09,fullsend,issue,opened,2073,"feat: default --mint-url to the hosted public mint",https://github.com/fullsend-ai/fullsend/issues/2073
+2026-06-09,fullsend,issue,opened,2071,"docs: add public mint URL to top of mint administration guide",https://github.com/fullsend-ai/fullsend/issues/2071
+2026-06-09,fullsend,issue,opened,2070,"Review agent should distinguish illustrative code in design docs from production code",https://github.com/fullsend-ai/fullsend/issues/2070
+2026-06-09,fullsend,issue,opened,2067,"Add CLAUDE.md guidance for dispatch.yml ↔ reusable-dispatch.yml sync",https://github.com/fullsend-ai/fullsend/issues/2067
+2026-06-09,fullsend,issue,opened,2066,"Review agent should flag new helper functions lacking dedicated unit tests",https://github.com/fullsend-ai/fullsend/issues/2066
+2026-06-09,fullsend,issue,opened,2065,"Code agent should add inline comments for non-obvious test values",https://github.com/fullsend-ai/fullsend/issues/2065
+2026-06-09,fullsend,issue,opened,2062,"Review agent should critically evaluate linter suppression directives",https://github.com/fullsend-ai/fullsend/issues/2062
+2026-06-09,fullsend,issue,opened,2060,"post-code: golangci-lint pre-commit fails when repo go.mod exceeds runner Go toolchain",https://github.com/fullsend-ai/fullsend/issues/2060
+2026-06-09,fullsend,issue,opened,2059,"Code agent should smoke-test CLI invocations it writes in shell scripts",https://github.com/fullsend-ai/fullsend/issues/2059
+2026-06-09,fullsend,issue,opened,2058,"Harness should fail fast on authentication errors instead of retrying",https://github.com/fullsend-ai/fullsend/issues/2058
+2026-06-09,fullsend,issue,opened,2057,"Review agent: use COMMENT verdict for bot-authored PRs with only pre-existing or informational findings",https://github.com/fullsend-ai/fullsend/issues/2057
+2026-06-09,fullsend,issue,opened,2056,"Search for related open pull requests seems broken",https://github.com/fullsend-ai/fullsend/issues/2056
+2026-06-09,fullsend,issue,opened,2054,"Review agent summary comment should reflect inline findings and verdict",https://github.com/fullsend-ai/fullsend/issues/2054
+2026-06-09,fullsend,issue,closed,2086,"suggestion: set assignee for fullsend PRs",https://github.com/fullsend-ai/fullsend/issues/2086
+2026-06-09,fullsend,issue,closed,2073,"feat: default --mint-url to the hosted public mint",https://github.com/fullsend-ai/fullsend/issues/2073
+2026-06-09,fullsend,issue,closed,2070,"Review agent should distinguish illustrative code in design docs from production code",https://github.com/fullsend-ai/fullsend/issues/2070
+2026-06-09,fullsend,issue,closed,2056,"Search for related open pull requests seems broken",https://github.com/fullsend-ai/fullsend/issues/2056
+2026-06-09,fullsend,issue,closed,2050,"CLI latest-version resolution can serve stale dev-vendored builds after a new release",https://github.com/fullsend-ai/fullsend/issues/2050
+2026-06-09,fullsend,issue,closed,2045,"statuscomment: ""Commit:"" line shows .fullsend repo HEAD, not PR head SHA",https://github.com/fullsend-ai/fullsend/issues/2045
+2026-06-09,fullsend,issue,closed,1987,"ci: conditional checks block merge queue when they don't run",https://github.com/fullsend-ai/fullsend/issues/1987
+2026-06-09,fullsend,issue,closed,1830,"Triage agent action needs to be updated from node 20",https://github.com/fullsend-ai/fullsend/issues/1830
+2026-06-09,fullsend,issue,closed,1787,"Review agent: post inline comments for comment-only verdicts",https://github.com/fullsend-ai/fullsend/issues/1787
+2026-06-09,fullsend,issue,closed,1768,"sandbox: downloads from /tmp/workspace blocked by OpenShell v0.0.41 workspace-boundary check",https://github.com/fullsend-ai/fullsend/issues/1768
+2026-06-09,fullsend,issue,closed,1767,"sandbox: upgrade OpenShell dependency from v0.0.38 to v0.0.52",https://github.com/fullsend-ai/fullsend/issues/1767
+2026-06-09,fullsend,issue,closed,1766,"sandbox: per-sandbox JWT auth may conflict with --disable-tls gateway mode (OpenShell v0.0.47)",https://github.com/fullsend-ai/fullsend/issues/1766
+2026-06-09,fullsend,issue,closed,1765,"sandbox: nftables kernel requirement added in OpenShell v0.0.44",https://github.com/fullsend-ai/fullsend/issues/1765
+2026-06-09,fullsend,issue,closed,1763,"sandbox: OPENSHELL_SSH_HANDSHAKE_SECRET references break with OpenShell v0.0.42",https://github.com/fullsend-ai/fullsend/issues/1763
+2026-06-09,fullsend,issue,closed,1697,"Verify --force flag fix deployed and add regression test",https://github.com/fullsend-ai/fullsend/issues/1697
+2026-06-09,fullsend,issue,closed,1605,"Forge-portable harness schema (role, slug, forge sections with inheritance)",https://github.com/fullsend-ai/fullsend/issues/1605
+2026-06-09,fullsend,issue,closed,1541,"Re-trigger review after stale-head discard",https://github.com/fullsend-ai/fullsend/issues/1541
+2026-06-09,fullsend,issue,closed,1103,"Harness skill upload does not register skills in Claude Code settings.json",https://github.com/fullsend-ai/fullsend/issues/1103
+2026-06-09,fullsend,issue,closed,878,"Migrate OpenShell install to package-based installer (v0.0.38+)",https://github.com/fullsend-ai/fullsend/issues/878
+2026-06-09,experiments,pr,opened,30,"experiment: Agent evaluation via MLflow + OpenTelemetry",https://github.com/fullsend-ai/experiments/pull/30
+2026-06-09,experiments,pr,opened,29,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/29
