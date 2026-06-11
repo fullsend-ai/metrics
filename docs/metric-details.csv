@@ -2248,3 +2248,74 @@ date,repo,type,event,number,title,url
 2026-06-09,fullsend,issue,closed,878,"Migrate OpenShell install to package-based installer (v0.0.38+)",https://github.com/fullsend-ai/fullsend/issues/878
 2026-06-09,experiments,pr,opened,30,"experiment: Agent evaluation via MLflow + OpenTelemetry",https://github.com/fullsend-ai/experiments/pull/30
 2026-06-09,experiments,pr,opened,29,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/29
+2026-06-10,fullsend,pr,opened,2144,"fix(#2143): add pre-flight GitHub API connectivity check in sandbox",https://github.com/fullsend-ai/fullsend/pull/2144
+2026-06-10,fullsend,pr,opened,2142,"feat(harness): wire ResolveForge into load pipeline (ADR-0045 PR 3/7)",https://github.com/fullsend-ai/fullsend/pull/2142
+2026-06-10,fullsend,pr,opened,2140,"feat(scaffold): add role and slug to harness templates (ADR-0045 PR 6)",https://github.com/fullsend-ai/fullsend/pull/2140
+2026-06-10,fullsend,pr,opened,2139,"feat(resolve): model skills as directories instead of single files",https://github.com/fullsend-ai/fullsend/pull/2139
+2026-06-10,fullsend,pr,opened,2136,"fix(#2134): consolidate protected path lists into single source of truth",https://github.com/fullsend-ai/fullsend/pull/2136
+2026-06-10,fullsend,pr,opened,2133,"feat(#1309): add mandatory finding for agent behavior definition changes",https://github.com/fullsend-ai/fullsend/pull/2133
+2026-06-10,fullsend,pr,opened,2132,"fix(#1736): add AGENTS.md, CLAUDE.md, and skills/ to protected paths",https://github.com/fullsend-ai/fullsend/pull/2132
+2026-06-10,fullsend,pr,opened,2129,"test(harness): add YAML nil-vs-empty unmarshaling semantics tests",https://github.com/fullsend-ai/fullsend/pull/2129
+2026-06-10,fullsend,pr,opened,2128,"feat(harness): add optional role and slug fields (ADR-0045 PR 2)",https://github.com/fullsend-ai/fullsend/pull/2128
+2026-06-10,fullsend,pr,opened,2127,"feat(harness): add ForgeConfig struct and merge logic (ADR-0045 PR 1/7)",https://github.com/fullsend-ai/fullsend/pull/2127
+2026-06-10,fullsend,pr,opened,2126,"docs(#2125): fix stale .gitlint comment reference",https://github.com/fullsend-ai/fullsend/pull/2126
+2026-06-10,fullsend,pr,opened,2124,"docs(install): refactor of installation guides",https://github.com/fullsend-ai/fullsend/pull/2124
+2026-06-10,fullsend,pr,opened,2122,"feat(#1575): populate PR body from target repo's PR template",https://github.com/fullsend-ai/fullsend/pull/2122
+2026-06-10,fullsend,pr,opened,2121,"fix(#1577): prevent premature issue closure on partial fixes",https://github.com/fullsend-ai/fullsend/pull/2121
+2026-06-10,fullsend,pr,opened,2120,"chore(#1150): remove rsync from sandbox image",https://github.com/fullsend-ai/fullsend/pull/2120
+2026-06-10,fullsend,pr,opened,2112,"fix(images): Install Gopls as sandbox to preserve ownership of folders",https://github.com/fullsend-ai/fullsend/pull/2112
+2026-06-10,fullsend,pr,opened,2110,"chore(#2109): remove dead scaffold action directories",https://github.com/fullsend-ai/fullsend/pull/2110
+2026-06-10,fullsend,pr,opened,2106,"feat(e2e): gate fork PR runs with pull_request_target",https://github.com/fullsend-ai/fullsend/pull/2106
+2026-06-10,fullsend,pr,opened,2104,"feat(resolve): add runtime fetch schema and ResolveSkillURL (Phase 4 PR 1)",https://github.com/fullsend-ai/fullsend/pull/2104
+2026-06-10,fullsend,pr,opened,2103,"feat(resolve): add runtime fetch schema and ResolveSkillURL (Phase 4 PR 1)",https://github.com/fullsend-ai/fullsend/pull/2103
+2026-06-10,fullsend,pr,merged,2129,"test(harness): add YAML nil-vs-empty unmarshaling semantics tests",https://github.com/fullsend-ai/fullsend/pull/2129
+2026-06-10,fullsend,pr,merged,2128,"feat(harness): add optional role and slug fields (ADR-0045 PR 2)",https://github.com/fullsend-ai/fullsend/pull/2128
+2026-06-10,fullsend,pr,merged,2127,"feat(harness): add ForgeConfig struct and merge logic (ADR-0045 PR 1/7)",https://github.com/fullsend-ai/fullsend/pull/2127
+2026-06-10,fullsend,pr,merged,2110,"chore(#2109): remove dead scaffold action directories",https://github.com/fullsend-ai/fullsend/pull/2110
+2026-06-10,fullsend,pr,merged,2100,"docs(plans): implementation plan for ADR-0045 forge-portable harness schema",https://github.com/fullsend-ai/fullsend/pull/2100
+2026-06-10,fullsend,pr,merged,2097,"ci: expand merge-queue skill with monitoring scripts",https://github.com/fullsend-ai/fullsend/pull/2097
+2026-06-10,fullsend,pr,merged,2089,"chore: consolidate commit message guidance into COMMITS.md",https://github.com/fullsend-ai/fullsend/pull/2089
+2026-06-10,fullsend,pr,merged,2072,"docs(#2071): add public hosted mint URL to mint administration guide",https://github.com/fullsend-ai/fullsend/pull/2072
+2026-06-10,fullsend,pr,merged,2068,"docs(#2067): add dispatch workflow sync guidance to CLAUDE.md",https://github.com/fullsend-ai/fullsend/pull/2068
+2026-06-10,fullsend,pr,merged,2044,"feat(#1727): add bare-word grep pattern guidance for rename PRs",https://github.com/fullsend-ai/fullsend/pull/2044
+2026-06-10,fullsend,pr,merged,2021,"fix(web): add SRI to CDN scripts",https://github.com/fullsend-ai/fullsend/pull/2021
+2026-06-10,fullsend,pr,merged,2015,"refactor(cli): share Linux binary acquisition for run and vendoring",https://github.com/fullsend-ai/fullsend/pull/2015
+2026-06-10,fullsend,pr,closed,2136,"fix(#2134): consolidate protected path lists into single source of truth",https://github.com/fullsend-ai/fullsend/pull/2136
+2026-06-10,fullsend,pr,closed,2103,"feat(resolve): add runtime fetch schema and ResolveSkillURL (Phase 4 PR 1)",https://github.com/fullsend-ai/fullsend/pull/2103
+2026-06-10,fullsend,pr,closed,2061,"fix(#2060): install matching Go toolchain before pre-commit in post-code",https://github.com/fullsend-ai/fullsend/pull/2061
+2026-06-10,fullsend,pr,closed,1983,"feat(e2e): WIF shim and PR authorization gate (#1604)",https://github.com/fullsend-ai/fullsend/pull/1983
+2026-06-10,fullsend,pr,closed,1579,"fix(#1577): prevent premature issue closure on partial fixes",https://github.com/fullsend-ai/fullsend/pull/1579
+2026-06-10,fullsend,issue,opened,2143,"Retro agent sandbox cannot reach GitHub API (proxy 403)",https://github.com/fullsend-ai/fullsend/issues/2143
+2026-06-10,fullsend,issue,opened,2141,"Review agent should hedge or validate actionable recommendations before presenting them",https://github.com/fullsend-ai/fullsend/issues/2141
+2026-06-10,fullsend,issue,opened,2138,"Enable post-script-only retry when agent succeeds but post-script fails",https://github.com/fullsend-ai/fullsend/issues/2138
+2026-06-10,fullsend,issue,opened,2137,"Slash commands silently fail when comment body has multiple lines (CRLF \\r not stripped)",https://github.com/fullsend-ai/fullsend/issues/2137
+2026-06-10,fullsend,issue,opened,2135,"Frame a unified skill/agent customization strategy across all extension mechanisms",https://github.com/fullsend-ai/fullsend/issues/2135
+2026-06-10,fullsend,issue,opened,2134,"Protected path lists are drifting across four locations",https://github.com/fullsend-ai/fullsend/issues/2134
+2026-06-10,fullsend,issue,opened,2131,"Code agent should receive triage agent output as context when available",https://github.com/fullsend-ai/fullsend/issues/2131
+2026-06-10,fullsend,issue,opened,2130,"Status comment uses minted agent token and fails to update when token expires",https://github.com/fullsend-ai/fullsend/issues/2130
+2026-06-10,fullsend,issue,opened,2125,"Fix stale .gitlint comment: references CONTRIBUTING.md instead of COMMITS.md",https://github.com/fullsend-ai/fullsend/issues/2125
+2026-06-10,fullsend,issue,opened,2123,"Add fullsend-architecture skill for install modes and resource separation",https://github.com/fullsend-ai/fullsend/issues/2123
+2026-06-10,fullsend,issue,opened,2119,"Triage agent should validate that file paths referenced in issues exist in the repo",https://github.com/fullsend-ai/fullsend/issues/2119
+2026-06-10,fullsend,issue,opened,2118,"Code agent should enforce a maximum PR size and decompose large changes",https://github.com/fullsend-ai/fullsend/issues/2118
+2026-06-10,fullsend,issue,opened,2117,"Fix agent should detect unresolvable test failures and stop early",https://github.com/fullsend-ai/fullsend/issues/2117
+2026-06-10,fullsend,issue,opened,2116,"Review agent should discard findings from superseded SHAs during mid-review pushes",https://github.com/fullsend-ai/fullsend/issues/2116
+2026-06-10,fullsend,issue,opened,2115,"Review agent: use COMMENT verdict for human-authored PRs with only medium/low findings",https://github.com/fullsend-ai/fullsend/issues/2115
+2026-06-10,fullsend,issue,opened,2114,"Code agent should research container image compatibility before performing image replacements",https://github.com/fullsend-ai/fullsend/issues/2114
+2026-06-10,fullsend,issue,opened,2113,"Extend ADR-0038 URL support to plugins: harness field",https://github.com/fullsend-ai/fullsend/issues/2113
+2026-06-10,fullsend,issue,opened,2111,"Review agent: detect review-cycle churn and suggest approach reassessment",https://github.com/fullsend-ai/fullsend/issues/2111
+2026-06-10,fullsend,issue,opened,2109,"internal/scaffold/fullsend-repo/.github/actions/ is dead code — never installed, diverged from source",https://github.com/fullsend-ai/fullsend/issues/2109
+2026-06-10,fullsend,issue,opened,2108,"Review agent should flag when required checks couldn't run in sandbox",https://github.com/fullsend-ai/fullsend/issues/2108
+2026-06-10,fullsend,issue,opened,2107,"Code agent should replicate existing security patterns when adding similar logic to a file",https://github.com/fullsend-ai/fullsend/issues/2107
+2026-06-10,fullsend,issue,opened,2105,"Review agent should escalate conventional commit prefix mismatches to changes_requested",https://github.com/fullsend-ai/fullsend/issues/2105
+2026-06-10,fullsend,issue,closed,2134,"Protected path lists are drifting across four locations",https://github.com/fullsend-ai/fullsend/issues/2134
+2026-06-10,fullsend,issue,closed,2109,"internal/scaffold/fullsend-repo/.github/actions/ is dead code — never installed, diverged from source",https://github.com/fullsend-ai/fullsend/issues/2109
+2026-06-10,fullsend,issue,closed,2071,"docs: add public mint URL to top of mint administration guide",https://github.com/fullsend-ai/fullsend/issues/2071
+2026-06-10,fullsend,issue,closed,2067,"Add CLAUDE.md guidance for dispatch.yml ↔ reusable-dispatch.yml sync",https://github.com/fullsend-ai/fullsend/issues/2067
+2026-06-10,fullsend,issue,closed,2018,"Add SRI integrity and crossorigin attributes to CDN scripts on setup page",https://github.com/fullsend-ai/fullsend/issues/2018
+2026-06-10,fullsend,issue,closed,2013,"docs: sidebar links use <span> instead of <a>, breaking middle-click to open in new tab",https://github.com/fullsend-ai/fullsend/issues/2013
+2026-06-10,fullsend,issue,closed,1950,"Retro GitHub App missing pull_requests:write — all PR retros failing since Jun 4",https://github.com/fullsend-ai/fullsend/issues/1950
+2026-06-10,fullsend,issue,closed,1916,"mint: investigate how downstream retro runs post issues to fullsend-ai/fullsend",https://github.com/fullsend-ai/fullsend/issues/1916
+2026-06-10,fullsend,issue,closed,1727,"Review agent: broaden stale-reference grep patterns for rename/deprecation PRs",https://github.com/fullsend-ai/fullsend/issues/1727
+2026-06-10,fullsend,issue,closed,1085,"review agent: orchestrate parallel specialized sub-agents with a challenger pass",https://github.com/fullsend-ai/fullsend/issues/1085
+2026-06-10,fullsend,issue,closed,984,"Add development guide for testing action changes from a feature branch",https://github.com/fullsend-ai/fullsend/issues/984
+2026-06-10,.fullsend,pr,opened,80,"feat: add workstream categories and classify agent dispatch",https://github.com/fullsend-ai/.fullsend/pull/80
