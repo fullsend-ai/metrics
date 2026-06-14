@@ -252,3 +252,6 @@ date,workflow,runs,failures,failure_rate
 2026-06-12,Retro,32,0,0.000
 2026-06-12,Scribe,2,1,0.500
 2026-06-12,Classify GitHub Issues,10,1,0.100
+2026-06-13,Code,1,0,0.000
+2026-06-13,Review,15,0,0.000
+2026-06-13,Triage,1,0,0.000

@@ -2539,3 +2539,5 @@ date,repo,type,event,number,title,url
 2026-06-12,.fullsend,pr,merged,82,"fix(scribe): pack notes as tarball to work around host_files directory limitation",https://github.com/fullsend-ai/.fullsend/pull/82
 2026-06-12,.fullsend,pr,merged,81,"fix(harness): correct sandbox paths for gh-classify and scribe credential delivery",https://github.com/fullsend-ai/.fullsend/pull/81
 2026-06-12,.fullsend,pr,merged,80,"feat: add workstream categories and classify agent dispatch",https://github.com/fullsend-ai/.fullsend/pull/80
+2026-06-13,fullsend,issue,opened,2274,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/2274
+2026-06-13,fullsend,issue,closed,2274,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/2274
