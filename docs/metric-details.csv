@@ -2541,3 +2541,8 @@ date,repo,type,event,number,title,url
 2026-06-12,.fullsend,pr,merged,80,"feat: add workstream categories and classify agent dispatch",https://github.com/fullsend-ai/.fullsend/pull/80
 2026-06-13,fullsend,issue,opened,2274,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/2274
 2026-06-13,fullsend,issue,closed,2274,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/2274
+2026-06-14,fullsend,pr,opened,2277,"feat(mint): cross-org authorization and e2e WIF auth (#2155)",https://github.com/fullsend-ai/fullsend/pull/2277
+2026-06-14,fullsend,pr,closed,13,"Add problem document for strategic risks",https://github.com/fullsend-ai/fullsend/pull/13
+2026-06-14,fullsend,issue,opened,2278,"Review agent should verify precedent analogies before using them as validation signals",https://github.com/fullsend-ai/fullsend/issues/2278
+2026-06-14,fullsend,issue,opened,2276,"Add Gherkin behaviour tests with dummy runtime and CI job",https://github.com/fullsend-ai/fullsend/issues/2276
+2026-06-14,fullsend,issue,opened,2275,"Review agent should detect new files missing from CI workflow paths filters",https://github.com/fullsend-ai/fullsend/issues/2275
