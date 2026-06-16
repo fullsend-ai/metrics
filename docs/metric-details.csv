@@ -2546,3 +2546,61 @@ date,repo,type,event,number,title,url
 2026-06-14,fullsend,issue,opened,2278,"Review agent should verify precedent analogies before using them as validation signals",https://github.com/fullsend-ai/fullsend/issues/2278
 2026-06-14,fullsend,issue,opened,2276,"Add Gherkin behaviour tests with dummy runtime and CI job",https://github.com/fullsend-ai/fullsend/issues/2276
 2026-06-14,fullsend,issue,opened,2275,"Review agent should detect new files missing from CI workflow paths filters",https://github.com/fullsend-ai/fullsend/issues/2275
+2026-06-15,fullsend,pr,opened,2306,"fix(#2305): treat 401/403 comment-posting errors as non-fatal in post-retro.sh",https://github.com/fullsend-ai/fullsend/pull/2306
+2026-06-15,fullsend,pr,opened,2304,"fix: widen CSMA post-reset jitter to prevent thundering herd",https://github.com/fullsend-ai/fullsend/pull/2304
+2026-06-15,fullsend,pr,opened,2303,"feat(#2096): add two-pass review strategy for large PRs",https://github.com/fullsend-ai/fullsend/pull/2303
+2026-06-15,fullsend,pr,opened,2301,"feat(skills): add e2e-health skill",https://github.com/fullsend-ai/fullsend/pull/2301
+2026-06-15,fullsend,pr,opened,2300,"feat(layers): add HarnessWrappersLayer for install-time base composition",https://github.com/fullsend-ai/fullsend/pull/2300
+2026-06-15,fullsend,pr,opened,2299,"fix(#2130): mint fresh tokens for status comments",https://github.com/fullsend-ai/fullsend/pull/2299
+2026-06-15,fullsend,pr,opened,2296,"fix(#2294): make EnsureProvider idempotent via delete-and-recreate",https://github.com/fullsend-ai/fullsend/pull/2296
+2026-06-15,fullsend,pr,opened,2295,"fix: align protected-path enforcement to review layer",https://github.com/fullsend-ai/fullsend/pull/2295
+2026-06-15,fullsend,pr,opened,2288,"docs(#2091): document gh api --paginate + jq per-page semantics",https://github.com/fullsend-ai/fullsend/pull/2288
+2026-06-15,fullsend,pr,opened,2283,"fix(#2281): use inputs.target-repo in Go setup step",https://github.com/fullsend-ai/fullsend/pull/2283
+2026-06-15,fullsend,pr,opened,2282,"fix(#2279): reset scroll position on document navigation",https://github.com/fullsend-ai/fullsend/pull/2282
+2026-06-15,fullsend,pr,merged,2283,"fix(#2281): use inputs.target-repo in Go setup step",https://github.com/fullsend-ai/fullsend/pull/2283
+2026-06-15,fullsend,pr,merged,2282,"fix(#2279): reset scroll position on document navigation",https://github.com/fullsend-ai/fullsend/pull/2282
+2026-06-15,fullsend,pr,merged,2272,"docs(#1992): add JIRA-driven workflows tracking issues to roadmap",https://github.com/fullsend-ai/fullsend/pull/2272
+2026-06-15,fullsend,pr,merged,2270,"feat(harness): add allow_runtime_fetch and max_runtime_fetches (ADR-0038 Phase 4, PR 3)",https://github.com/fullsend-ai/fullsend/pull/2270
+2026-06-15,fullsend,pr,merged,2261,"refactor(scaffold): base URL generation and content hashing",https://github.com/fullsend-ai/fullsend/pull/2261
+2026-06-15,fullsend,pr,merged,2260,"feat(harness): move GitHub-specific fields into forge.github blocks",https://github.com/fullsend-ai/fullsend/pull/2260
+2026-06-15,fullsend,pr,merged,2256,"docs(#2252): clarify DCO policy to exempt autonomous agent commits",https://github.com/fullsend-ai/fullsend/pull/2256
+2026-06-15,fullsend,pr,merged,2213,"fix(#2060): set up Go on runner before post-code pre-commit",https://github.com/fullsend-ai/fullsend/pull/2213
+2026-06-15,fullsend,pr,merged,2201,"fix(cli): fall back to PR when default branch is protected",https://github.com/fullsend-ai/fullsend/pull/2201
+2026-06-15,fullsend,pr,merged,2183,"feat(mint): add mint-token CLI command and mintclient package",https://github.com/fullsend-ai/fullsend/pull/2183
+2026-06-15,fullsend,pr,merged,2179,"docs: remove local-dev.md, consolidate into running-agents-locally",https://github.com/fullsend-ai/fullsend/pull/2179
+2026-06-15,fullsend,pr,merged,2164,"fix(#2163): skip PEM prompt in github setup when using mint URL",https://github.com/fullsend-ai/fullsend/pull/2164
+2026-06-15,fullsend,pr,merged,1714,"ci: add gofmt enforcement and mint embed sync checks",https://github.com/fullsend-ai/fullsend/pull/1714
+2026-06-15,fullsend,pr,closed,2162,"feat: add jira-triage agent for Jira project triage",https://github.com/fullsend-ai/fullsend/pull/2162
+2026-06-15,fullsend,pr,closed,2092,"docs(#2091): add gh api --paginate + jq guidance to CLAUDE.md",https://github.com/fullsend-ai/fullsend/pull/2092
+2026-06-15,fullsend,pr,closed,2007,"fix(#2002): mock HTTP server in TestResolveLinuxBinary_Download",https://github.com/fullsend-ai/fullsend/pull/2007
+2026-06-15,fullsend,pr,closed,1702,"fix(#1699): add post-upload verification to sandbox.Upload()",https://github.com/fullsend-ai/fullsend/pull/1702
+2026-06-15,fullsend,pr,closed,624,"feat(admin): add DESIGN.md design system for admin SPA",https://github.com/fullsend-ai/fullsend/pull/624
+2026-06-15,fullsend,issue,opened,2305,"Retro post-script should treat 403 comment-posting errors as non-fatal",https://github.com/fullsend-ai/fullsend/issues/2305
+2026-06-15,fullsend,issue,opened,2302,"ADR: evaluate deprecation of per-org install mode",https://github.com/fullsend-ai/fullsend/issues/2302
+2026-06-15,fullsend,issue,opened,2298,"dispatch: retro and prioritize skipped in per-repo mode — role check looks for fullsend",https://github.com/fullsend-ai/fullsend/issues/2298
+2026-06-15,fullsend,issue,opened,2297,"sandbox: deliver GitHub credentials via OpenShell provider so the token never enters the sandbox",https://github.com/fullsend-ai/fullsend/issues/2297
+2026-06-15,fullsend,issue,opened,2294,"EnsureProvider should be idempotent — fails with AlreadyExists on repeated runs",https://github.com/fullsend-ai/fullsend/issues/2294
+2026-06-15,fullsend,issue,opened,2293,"Docs sidebar order is purely alphabetical with no authoring control",https://github.com/fullsend-ai/fullsend/issues/2293
+2026-06-15,fullsend,issue,opened,2292,"Auto-close orphaned agent PRs when linked issue is closed by a different PR",https://github.com/fullsend-ai/fullsend/issues/2292
+2026-06-15,fullsend,issue,opened,2290,"Retro/triage agents should detect when proposed fix requires modifying protected paths",https://github.com/fullsend-ai/fullsend/issues/2290
+2026-06-15,fullsend,issue,opened,2291,"Code agent should not add substantive content to pointer-only CLAUDE.md files",https://github.com/fullsend-ai/fullsend/issues/2291
+2026-06-15,fullsend,issue,opened,2289,"Code agent: scan existing usages of variables within the same file before introducing new ones",https://github.com/fullsend-ai/fullsend/issues/2289
+2026-06-15,fullsend,issue,opened,2287,"Review agent: never post inline comments for info-severity findings",https://github.com/fullsend-ai/fullsend/issues/2287
+2026-06-15,fullsend,issue,opened,2286,"Fast-path review for trivially small PRs to reduce latency",https://github.com/fullsend-ai/fullsend/issues/2286
+2026-06-15,fullsend,issue,opened,2285,"Auto-flag linked issues for closure when agent PR is closed as superseded",https://github.com/fullsend-ai/fullsend/issues/2285
+2026-06-15,fullsend,issue,opened,2284,"Pipeline should re-evaluate in-flight PRs when humans question the linked issue diagnosis",https://github.com/fullsend-ai/fullsend/issues/2284
+2026-06-15,fullsend,issue,opened,2281,"Go setup step in action.yml ignores inputs.target-repo override",https://github.com/fullsend-ai/fullsend/issues/2281
+2026-06-15,fullsend,issue,opened,2280,"Review agent: escalate PR-description-vs-diff discrepancies above Info severity",https://github.com/fullsend-ai/fullsend/issues/2280
+2026-06-15,fullsend,issue,opened,2279,"docs browser: page does not scroll to top on document change",https://github.com/fullsend-ai/fullsend/issues/2279
+2026-06-15,fullsend,issue,closed,2286,"Fast-path review for trivially small PRs to reduce latency",https://github.com/fullsend-ai/fullsend/issues/2286
+2026-06-15,fullsend,issue,closed,2281,"Go setup step in action.yml ignores inputs.target-repo override",https://github.com/fullsend-ai/fullsend/issues/2281
+2026-06-15,fullsend,issue,closed,2279,"docs browser: page does not scroll to top on document change",https://github.com/fullsend-ai/fullsend/issues/2279
+2026-06-15,fullsend,issue,closed,2252,"Clarify AGENTS.md DCO policy: exempt agent-authored commits",https://github.com/fullsend-ai/fullsend/issues/2252
+2026-06-15,fullsend,issue,closed,2163,"github setup prompts for app PEM when apps already exist in the org",https://github.com/fullsend-ai/fullsend/issues/2163
+2026-06-15,fullsend,issue,closed,2060,"post-code: golangci-lint pre-commit fails when repo go.mod exceeds runner Go toolchain",https://github.com/fullsend-ai/fullsend/issues/2060
+2026-06-15,fullsend,issue,closed,1992,"chore: scope JIRA-driven workflows backlog",https://github.com/fullsend-ai/fullsend/issues/1992
+2026-06-15,fullsend,issue,closed,1699,"sandbox.Upload() silently drops files above ~16MB",https://github.com/fullsend-ai/fullsend/issues/1699
+2026-06-15,fullsend,issue,closed,1689,"install: fall back to PR when default branch push is rejected",https://github.com/fullsend-ai/fullsend/issues/1689
+2026-06-15,fullsend,issue,closed,1490,"Uninstall doesn't clean everything up (part 2)",https://github.com/fullsend-ai/fullsend/issues/1490
+2026-06-15,fullsend,issue,closed,960,"Add gofmt check to pre-commit hooks or CI lint target",https://github.com/fullsend-ai/fullsend/issues/960
+2026-06-15,fullsend,issue,closed,762,"docs: add SA key creation steps to local-dev guide",https://github.com/fullsend-ai/fullsend/issues/762
