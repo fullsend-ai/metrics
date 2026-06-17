@@ -2604,3 +2604,94 @@ date,repo,type,event,number,title,url
 2026-06-15,fullsend,issue,closed,1490,"Uninstall doesn't clean everything up (part 2)",https://github.com/fullsend-ai/fullsend/issues/1490
 2026-06-15,fullsend,issue,closed,960,"Add gofmt check to pre-commit hooks or CI lint target",https://github.com/fullsend-ai/fullsend/issues/960
 2026-06-15,fullsend,issue,closed,762,"docs: add SA key creation steps to local-dev guide",https://github.com/fullsend-ai/fullsend/issues/762
+2026-06-16,fullsend,pr,opened,2365,"refactor: remove deprecated status-token fallback paths",https://github.com/fullsend-ai/fullsend/pull/2365
+2026-06-16,fullsend,pr,opened,2364,"refactor(cli): migrate uninstall flows to harness-first agent discovery",https://github.com/fullsend-ai/fullsend/pull/2364
+2026-06-16,fullsend,pr,opened,2363,"feat(#2095): add verified/unchecked variable fields to review findings schema",https://github.com/fullsend-ai/fullsend/pull/2363
+2026-06-16,fullsend,pr,opened,2362,"feat(harness): wire Lint() diagnostics into fullsend run and lock",https://github.com/fullsend-ai/fullsend/pull/2362
+2026-06-16,fullsend,pr,opened,2361,"refactor(harness): migrate loadKnownSlugs to harness-first discovery",https://github.com/fullsend-ai/fullsend/pull/2361
+2026-06-16,fullsend,pr,opened,2360,"perf(#2351): batch path-existence checks via Git Trees API",https://github.com/fullsend-ai/fullsend/pull/2360
+2026-06-16,fullsend,pr,opened,2359,"perf(#2354): bound enrollment wait with timeout and backoff",https://github.com/fullsend-ai/fullsend/pull/2359
+2026-06-16,fullsend,pr,opened,2349,"fix(#2348): stop swallowing gh pr create stderr in post-code.sh",https://github.com/fullsend-ai/fullsend/pull/2349
+2026-06-16,fullsend,pr,opened,2346,"fix(#2345): resolve TARGET_BRANCH dynamically in code agent",https://github.com/fullsend-ai/fullsend/pull/2346
+2026-06-16,fullsend,pr,opened,2344,"fix(#2343): add post-reset spread to _github_csma_sleep_after_rate_limit",https://github.com/fullsend-ai/fullsend/pull/2344
+2026-06-16,fullsend,pr,opened,2342,"fix(forge): retry 5xx server errors at the HTTP client level",https://github.com/fullsend-ai/fullsend/pull/2342
+2026-06-16,fullsend,pr,opened,2341,"feat(review): add REVIEW_FINDING_SEVERITY_THRESHOLD config var (ADR 0047)",https://github.com/fullsend-ai/fullsend/pull/2341
+2026-06-16,fullsend,pr,opened,2340,"docs(adr): deprecate per-org installation mode",https://github.com/fullsend-ai/fullsend/pull/2340
+2026-06-16,fullsend,pr,opened,2339,"docs: document fix agent context model, URL behavior, and limitations",https://github.com/fullsend-ai/fullsend/pull/2339
+2026-06-16,fullsend,pr,opened,2334,"docs(adr): ADR 0047 — agent configuration env var convention",https://github.com/fullsend-ai/fullsend/pull/2334
+2026-06-16,fullsend,pr,opened,2331,"feat(mint): share ROLE_APP_IDS per role across orgs",https://github.com/fullsend-ai/fullsend/pull/2331
+2026-06-16,fullsend,pr,opened,2327,"feat(harness): add remote harness agent discovery via forge API (ADR-0045 Phase 3 PR 2)",https://github.com/fullsend-ai/fullsend/pull/2327
+2026-06-16,fullsend,pr,opened,2323,"fix(#2294): make EnsureProvider idempotent via update on AlreadyExists",https://github.com/fullsend-ai/fullsend/pull/2323
+2026-06-16,fullsend,pr,opened,2322,"feat(harness): add Lint() diagnostic method (ADR-0045 Phase 3 PR 1)",https://github.com/fullsend-ai/fullsend/pull/2322
+2026-06-16,fullsend,pr,opened,2321,"test: Phase 2 integration tests for ADR-0045 forge-portable harness",https://github.com/fullsend-ai/fullsend/pull/2321
+2026-06-16,fullsend,pr,opened,2319,"fix(#2318): verify PR metadata claims against API data",https://github.com/fullsend-ai/fullsend/pull/2319
+2026-06-16,fullsend,pr,opened,2315,"chore(ci): bump OpenShell to 0.0.63, extract install scripts, add Renovate",https://github.com/fullsend-ai/fullsend/pull/2315
+2026-06-16,fullsend,pr,opened,2312,"docs: use make lint-all in agent guidance",https://github.com/fullsend-ai/fullsend/pull/2312
+2026-06-16,fullsend,pr,opened,2310,"docs(#2309): change lint guidance from `make lint` to `make lint-all`",https://github.com/fullsend-ai/fullsend/pull/2310
+2026-06-16,fullsend,pr,merged,2349,"fix(#2348): stop swallowing gh pr create stderr in post-code.sh",https://github.com/fullsend-ai/fullsend/pull/2349
+2026-06-16,fullsend,pr,merged,2344,"fix(#2343): add post-reset spread to _github_csma_sleep_after_rate_limit",https://github.com/fullsend-ai/fullsend/pull/2344
+2026-06-16,fullsend,pr,merged,2331,"feat(mint): share ROLE_APP_IDS per role across orgs",https://github.com/fullsend-ai/fullsend/pull/2331
+2026-06-16,fullsend,pr,merged,2327,"feat(harness): add remote harness agent discovery via forge API (ADR-0045 Phase 3 PR 2)",https://github.com/fullsend-ai/fullsend/pull/2327
+2026-06-16,fullsend,pr,merged,2322,"feat(harness): add Lint() diagnostic method (ADR-0045 Phase 3 PR 1)",https://github.com/fullsend-ai/fullsend/pull/2322
+2026-06-16,fullsend,pr,merged,2321,"test: Phase 2 integration tests for ADR-0045 forge-portable harness",https://github.com/fullsend-ai/fullsend/pull/2321
+2026-06-16,fullsend,pr,merged,2304,"fix: widen CSMA post-reset jitter to prevent thundering herd",https://github.com/fullsend-ai/fullsend/pull/2304
+2026-06-16,fullsend,pr,merged,2301,"feat(skills): add e2e-health skill",https://github.com/fullsend-ai/fullsend/pull/2301
+2026-06-16,fullsend,pr,merged,2300,"feat(layers): add HarnessWrappersLayer for install-time base composition",https://github.com/fullsend-ai/fullsend/pull/2300
+2026-06-16,fullsend,pr,merged,2299,"fix(#2130): mint fresh tokens for status comments",https://github.com/fullsend-ai/fullsend/pull/2299
+2026-06-16,fullsend,pr,merged,2295,"fix: align protected-path enforcement to review layer",https://github.com/fullsend-ai/fullsend/pull/2295
+2026-06-16,fullsend,pr,merged,2262,"feat(cli): add --all flag to fullsend lock for batch harness locking",https://github.com/fullsend-ai/fullsend/pull/2262
+2026-06-16,fullsend,pr,merged,2197,"feat(triage): add prerequisites action for upstream issue creation (#401)",https://github.com/fullsend-ai/fullsend/pull/2197
+2026-06-16,fullsend,pr,merged,1954,"feat(install)!: add --vendor for self-contained workflow and agent assets",https://github.com/fullsend-ai/fullsend/pull/1954
+2026-06-16,fullsend,pr,closed,2310,"docs(#2309): change lint guidance from `make lint` to `make lint-all`",https://github.com/fullsend-ai/fullsend/pull/2310
+2026-06-16,fullsend,pr,closed,2296,"fix(#2294): make EnsureProvider idempotent via delete-and-recreate",https://github.com/fullsend-ai/fullsend/pull/2296
+2026-06-16,fullsend,pr,closed,2231,"fix(gcp): remove the project from the number call",https://github.com/fullsend-ai/fullsend/pull/2231
+2026-06-16,fullsend,issue,opened,2368,"feat: add fullsend.harness.content_sha trace attribute for config change correlation",https://github.com/fullsend-ai/fullsend/issues/2368
+2026-06-16,fullsend,issue,opened,2367,"feat: add fullsend.runtime trace attribute for multi-runtime observability",https://github.com/fullsend-ai/fullsend/issues/2367
+2026-06-16,fullsend,issue,opened,2366,"Refactor prepareVendorFiles cleanup return pattern",https://github.com/fullsend-ai/fullsend/issues/2366
+2026-06-16,fullsend,issue,opened,2358,"Cap stacked historical iterations in consolidated review comment",https://github.com/fullsend-ai/fullsend/issues/2358
+2026-06-16,fullsend,issue,opened,2357,"Rename VendorBinaryLayer now that vendor layer covers full stack",https://github.com/fullsend-ai/fullsend/issues/2357
+2026-06-16,fullsend,issue,opened,2356,"CLI install: refactor buildLayerStack and remove dead ManagedPaths parameter",https://github.com/fullsend-ai/fullsend/issues/2356
+2026-06-16,fullsend,issue,opened,2355,"Repo-maintenance activation relies on identity-write commit to config.yaml",https://github.com/fullsend-ai/fullsend/issues/2355
+2026-06-16,fullsend,issue,opened,2354,"Enrollment: long serial wait when activating repo-maintenance workflow",https://github.com/fullsend-ai/fullsend/issues/2354
+2026-06-16,fullsend,issue,opened,2353,"Vendor upload: avoid loading entire binary into memory",https://github.com/fullsend-ai/fullsend/issues/2353
+2026-06-16,fullsend,issue,opened,2352,"Vendor binary integrity: checksum and signature verification after download",https://github.com/fullsend-ai/fullsend/issues/2352
+2026-06-16,fullsend,issue,opened,2351,"Vendor analyze: batch path existence checks instead of O(N) GetFileContent calls",https://github.com/fullsend-ai/fullsend/issues/2351
+2026-06-16,fullsend,issue,opened,2350,"Deprecate and remove per-org installation mode",https://github.com/fullsend-ai/fullsend/issues/2350
+2026-06-16,fullsend,issue,opened,2348,"bug: post-code.sh swallows gh pr create error output via 2>&1 redirect",https://github.com/fullsend-ai/fullsend/issues/2348
+2026-06-16,fullsend,issue,opened,2347,"feat: allow code agent to target a non-main branch from triage output",https://github.com/fullsend-ai/fullsend/issues/2347
+2026-06-16,fullsend,issue,opened,2345,"Code agent hardcodes TARGET_BRANCH to main, breaking repos with non-main default branches",https://github.com/fullsend-ai/fullsend/issues/2345
+2026-06-16,fullsend,issue,opened,2343,"Add post-reset spread to _github_csma_sleep_after_rate_limit to prevent thundering herd on retries",https://github.com/fullsend-ai/fullsend/issues/2343
+2026-06-16,fullsend,issue,opened,2335,"Fix agent should expand input to include trusted human PR comments",https://github.com/fullsend-ai/fullsend/issues/2335
+2026-06-16,fullsend,issue,opened,2337,"User-controlled trust signals via reactions on PR comments",https://github.com/fullsend-ai/fullsend/issues/2337
+2026-06-16,fullsend,issue,opened,2338,"Configurable comment source allowlist for agent input",https://github.com/fullsend-ai/fullsend/issues/2338
+2026-06-16,fullsend,issue,opened,2336,"Pre-agent for comment screening, dedup, and context curation",https://github.com/fullsend-ai/fullsend/issues/2336
+2026-06-16,fullsend,issue,opened,2333,"Review agent: configurable severity threshold for reported findings",https://github.com/fullsend-ai/fullsend/issues/2333
+2026-06-16,fullsend,issue,opened,2332,"Review agent should respect tool-specific filename conventions",https://github.com/fullsend-ai/fullsend/issues/2332
+2026-06-16,fullsend,issue,opened,2330,"feature(review): post-review coordinator that dedupes fullsend findings against external reviews",https://github.com/fullsend-ai/fullsend/issues/2330
+2026-06-16,fullsend,issue,opened,2329,"Review agent should detect newly-unnecessary code paths after simplifying refactors",https://github.com/fullsend-ai/fullsend/issues/2329
+2026-06-16,fullsend,issue,opened,2328,"ADR-0045 Phase 2 PR 6: integration tests and end-to-end verification",https://github.com/fullsend-ai/fullsend/issues/2328
+2026-06-16,fullsend,issue,opened,2326,"ADR-0045 Phase 3: Deprecate config.yaml agents: block",https://github.com/fullsend-ai/fullsend/issues/2326
+2026-06-16,fullsend,issue,opened,2325,"Review agent should escalate architectural-coherence findings when they indicate a design-level alternative exists",https://github.com/fullsend-ai/fullsend/issues/2325
+2026-06-16,fullsend,issue,opened,2324,"Triage agent should consider preventive alternatives to reactive error handling",https://github.com/fullsend-ai/fullsend/issues/2324
+2026-06-16,fullsend,issue,opened,2320,"Review agent should surface pre-existing inconsistencies relevant to the PR's change mechanism",https://github.com/fullsend-ai/fullsend/issues/2320
+2026-06-16,fullsend,issue,opened,2318,"Review agent should verify PR metadata claims against event payload",https://github.com/fullsend-ai/fullsend/issues/2318
+2026-06-16,fullsend,issue,opened,2317,"Skip retro dispatch for bot dependency PRs with clean reviews",https://github.com/fullsend-ai/fullsend/issues/2317
+2026-06-16,fullsend,issue,opened,2316,"Review agent should escalate verdict when change targets absent infrastructure",https://github.com/fullsend-ai/fullsend/issues/2316
+2026-06-16,fullsend,issue,opened,2314,"Triage should require human confirmation before auto-coding bot-created issues",https://github.com/fullsend-ai/fullsend/issues/2314
+2026-06-16,fullsend,issue,opened,2313,"Elevate test-adequacy findings to medium for bug-fix PRs lacking regression tests",https://github.com/fullsend-ai/fullsend/issues/2313
+2026-06-16,fullsend,issue,opened,2311,"Triage should not apply ready-to-code when it also applies good-first-issue",https://github.com/fullsend-ai/fullsend/issues/2311
+2026-06-16,fullsend,issue,opened,2309,"AGENTS.md: ""run make lint"" guidance misleads agents — pre-commit stashes unstaged changes",https://github.com/fullsend-ai/fullsend/issues/2309
+2026-06-16,fullsend,issue,opened,2308,"Review agent should detect contradictions between generated code comments and PR/ADR design intent",https://github.com/fullsend-ai/fullsend/issues/2308
+2026-06-16,fullsend,issue,opened,2307,"Fix agent should validate Helm charts holistically after changes, not just the reported symptom",https://github.com/fullsend-ai/fullsend/issues/2307
+2026-06-16,fullsend,issue,closed,2348,"bug: post-code.sh swallows gh pr create error output via 2>&1 redirect",https://github.com/fullsend-ai/fullsend/issues/2348
+2026-06-16,fullsend,issue,closed,2347,"feat: allow code agent to target a non-main branch from triage output",https://github.com/fullsend-ai/fullsend/issues/2347
+2026-06-16,fullsend,issue,closed,2343,"Add post-reset spread to _github_csma_sleep_after_rate_limit to prevent thundering herd on retries",https://github.com/fullsend-ai/fullsend/issues/2343
+2026-06-16,fullsend,issue,closed,2330,"feature(review): post-review coordinator that dedupes fullsend findings against external reviews",https://github.com/fullsend-ai/fullsend/issues/2330
+2026-06-16,fullsend,issue,closed,2328,"ADR-0045 Phase 2 PR 6: integration tests and end-to-end verification",https://github.com/fullsend-ai/fullsend/issues/2328
+2026-06-16,fullsend,issue,closed,2317,"Skip retro dispatch for bot dependency PRs with clean reviews",https://github.com/fullsend-ai/fullsend/issues/2317
+2026-06-16,fullsend,issue,closed,2145,"feat(install): --vendor self-contained workflow and agent assets",https://github.com/fullsend-ai/fullsend/issues/2145
+2026-06-16,fullsend,issue,closed,2130,"Status comment uses minted agent token and fails to update when token expires",https://github.com/fullsend-ai/fullsend/issues/2130
+2026-06-16,fullsend,issue,closed,2014,"post-fix: remove protected-path block — enforce at review, not push",https://github.com/fullsend-ai/fullsend/issues/2014
+2026-06-16,fullsend,issue,closed,1665,"Add Containerfile/Dockerfile to review agent protected paths",https://github.com/fullsend-ai/fullsend/issues/1665
+2026-06-16,fullsend,issue,closed,401,"Triage agent cannot split or decompose issues that contain multiple concerns",https://github.com/fullsend-ai/fullsend/issues/401
+2026-06-16,experiments,pr,closed,12,"Add the triage skills and strategies experiments",https://github.com/fullsend-ai/experiments/pull/12
