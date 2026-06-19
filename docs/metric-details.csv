@@ -2739,3 +2739,99 @@ date,repo,type,event,number,title,url
 2026-06-17,fullsend,issue,closed,2386,"TestRunAgent_HarnessLoadPipeline fails sporadically due to hardcoded /tmp/repo path",https://github.com/fullsend-ai/fullsend/issues/2386
 2026-06-17,fullsend,issue,closed,2169,"Fix PATH ordering in code image: /sandbox/go/bin shadows system binaries",https://github.com/fullsend-ai/fullsend/issues/2169
 2026-06-17,experiments,pr,opened,31,"experiment: OpenShell filesystem hierarchical policy",https://github.com/fullsend-ai/experiments/pull/31
+2026-06-18,fullsend,pr,opened,2448,"refactor(config): remove legacy agent discovery fallbacks (ADR-0045 Phase 4 PR 3)",https://github.com/fullsend-ai/fullsend/pull/2448
+2026-06-18,fullsend,pr,opened,2447,"refactor(config): stop writing agents block during install (ADR-0045 Phase 4, PR 2)",https://github.com/fullsend-ai/fullsend/pull/2447
+2026-06-18,fullsend,pr,opened,2446,"feat(harness): require role field in Validate()",https://github.com/fullsend-ai/fullsend/pull/2446
+2026-06-18,fullsend,pr,opened,2444,"fix(#1230): run OutputPipeline on post-review before posting to forge",https://github.com/fullsend-ai/fullsend/pull/2444
+2026-06-18,fullsend,pr,opened,2443,"fix(#1835): require file reads before asserting contents in findings",https://github.com/fullsend-ai/fullsend/pull/2443
+2026-06-18,fullsend,pr,opened,2442,"docs(#2440): fix ADR 0047 heading to match convention",https://github.com/fullsend-ai/fullsend/pull/2442
+2026-06-18,fullsend,pr,opened,2439,"feat: add explore, refine, critique refinement pipeline agents",https://github.com/fullsend-ai/fullsend/pull/2439
+2026-06-18,fullsend,pr,opened,2436,"fix(#2433): restore data consistency guard in EnsureOrgInMint",https://github.com/fullsend-ai/fullsend/pull/2436
+2026-06-18,fullsend,pr,opened,2435,"fix(#2432): retry enrollment PR merge on 409 with branch update",https://github.com/fullsend-ai/fullsend/pull/2435
+2026-06-18,fullsend,pr,opened,2434,"fix(#2432): retry merge on 409 after updating PR branch",https://github.com/fullsend-ai/fullsend/pull/2434
+2026-06-18,fullsend,pr,opened,2431,"refactor(#2429): instruct orchestrator to trust subagent results",https://github.com/fullsend-ai/fullsend/pull/2431
+2026-06-18,fullsend,pr,opened,2428,"feat(#2425): inject CLAUDE.md pointer for repos with AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/2428
+2026-06-18,fullsend,pr,opened,2423,"docs(adr): add ADR 0049 semantic observability and improvement loop",https://github.com/fullsend-ai/fullsend/pull/2423
+2026-06-18,fullsend,pr,opened,2422,"fix(deps): update transitive deps for critical and high CVEs",https://github.com/fullsend-ai/fullsend/pull/2422
+2026-06-18,fullsend,pr,opened,2421,"fix(#2420): automate v0 floating tag move in release workflow",https://github.com/fullsend-ai/fullsend/pull/2421
+2026-06-18,fullsend,pr,opened,2419,"fix(#2405): fall back to --force-with-lease in post-fix.sh",https://github.com/fullsend-ai/fullsend/pull/2419
+2026-06-18,fullsend,pr,opened,2417,"fix(#2416): prioritize convention docs over inferred patterns in style sub-agent",https://github.com/fullsend-ai/fullsend/pull/2417
+2026-06-18,fullsend,pr,opened,2415,"fix(#2411): post medium+ findings as file-level comments when line is outside diff hunk",https://github.com/fullsend-ai/fullsend/pull/2415
+2026-06-18,fullsend,pr,opened,2412,"ci(#2403): remove dead RETRO_SANDBOX_TOKEN env var",https://github.com/fullsend-ai/fullsend/pull/2412
+2026-06-18,fullsend,pr,opened,2410,"docs: instruct agents to stage changes before make lint",https://github.com/fullsend-ai/fullsend/pull/2410
+2026-06-18,fullsend,pr,opened,2409,"docs(adr): add polling-based work discovery ADR",https://github.com/fullsend-ai/fullsend/pull/2409
+2026-06-18,fullsend,pr,opened,2407,"feat(mint): add e2e agent role for pool testing",https://github.com/fullsend-ai/fullsend/pull/2407
+2026-06-18,fullsend,pr,merged,2442,"docs(#2440): fix ADR 0047 heading to match convention",https://github.com/fullsend-ai/fullsend/pull/2442
+2026-06-18,fullsend,pr,merged,2435,"fix(#2432): retry enrollment PR merge on 409 with branch update",https://github.com/fullsend-ai/fullsend/pull/2435
+2026-06-18,fullsend,pr,merged,2428,"feat(#2425): inject CLAUDE.md pointer for repos with AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/2428
+2026-06-18,fullsend,pr,merged,2422,"fix(deps): update transitive deps for critical and high CVEs",https://github.com/fullsend-ai/fullsend/pull/2422
+2026-06-18,fullsend,pr,merged,2415,"fix(#2411): post medium+ findings as file-level comments when line is outside diff hunk",https://github.com/fullsend-ai/fullsend/pull/2415
+2026-06-18,fullsend,pr,merged,2412,"ci(#2403): remove dead RETRO_SANDBOX_TOKEN env var",https://github.com/fullsend-ai/fullsend/pull/2412
+2026-06-18,fullsend,pr,merged,2400,"feat(merge-queue): add await-and-enqueue script",https://github.com/fullsend-ai/fullsend/pull/2400
+2026-06-18,fullsend,pr,merged,2398,"ci(e2e): always report status on PRs, short-circuit for irrelevant paths",https://github.com/fullsend-ai/fullsend/pull/2398
+2026-06-18,fullsend,pr,merged,2395,"fix(#2393): add diagnostic stderr output to post-script failure paths",https://github.com/fullsend-ai/fullsend/pull/2395
+2026-06-18,fullsend,pr,merged,2374,"docs: document Codecov coverage thresholds for contributors",https://github.com/fullsend-ai/fullsend/pull/2374
+2026-06-18,fullsend,pr,merged,2373,"fix: defense-in-depth against duplicate code agent PRs (#1312, #1320, #1321)",https://github.com/fullsend-ai/fullsend/pull/2373
+2026-06-18,fullsend,pr,merged,2370,"feat(mint): add add-role and remove-role CLI commands",https://github.com/fullsend-ai/fullsend/pull/2370
+2026-06-18,fullsend,pr,merged,2369,"refactor(config): make OrgConfig.Agents optional and add Phase 4 plan (ADR-0045 Phase 3 PR 6)",https://github.com/fullsend-ai/fullsend/pull/2369
+2026-06-18,fullsend,pr,merged,2342,"fix(forge): retry 5xx server errors at the HTTP client level",https://github.com/fullsend-ai/fullsend/pull/2342
+2026-06-18,fullsend,pr,merged,2341,"feat(review): add REVIEW_FINDING_SEVERITY_THRESHOLD config var",https://github.com/fullsend-ai/fullsend/pull/2341
+2026-06-18,fullsend,pr,merged,2339,"docs: document fix agent context model, URL behavior, and limitations",https://github.com/fullsend-ai/fullsend/pull/2339
+2026-06-18,fullsend,pr,merged,2334,"docs(adr): ADR 0047 — agent configuration env var convention",https://github.com/fullsend-ai/fullsend/pull/2334
+2026-06-18,fullsend,pr,merged,2323,"fix(#2294): make EnsureProvider idempotent via update on AlreadyExists",https://github.com/fullsend-ai/fullsend/pull/2323
+2026-06-18,fullsend,pr,merged,2319,"fix(#2318): verify PR metadata claims against API data",https://github.com/fullsend-ai/fullsend/pull/2319
+2026-06-18,fullsend,pr,merged,2306,"fix(#2305): treat 401/403 comment-posting errors as non-fatal in post-retro.sh",https://github.com/fullsend-ai/fullsend/pull/2306
+2026-06-18,fullsend,pr,merged,2196,"feat: review agent applies contextual labels via issue-labels skill (#1706)",https://github.com/fullsend-ai/fullsend/pull/2196
+2026-06-18,fullsend,pr,merged,1826,"docs(problems): add static analysis layer to testing-agents",https://github.com/fullsend-ai/fullsend/pull/1826
+2026-06-18,fullsend,pr,merged,1489,"docs: ADR 0050 — distributed tracing instrumentation with OpenTelemetry",https://github.com/fullsend-ai/fullsend/pull/1489
+2026-06-18,fullsend,pr,closed,2417,"fix(#2416): prioritize convention docs over inferred patterns in style sub-agent",https://github.com/fullsend-ai/fullsend/pull/2417
+2026-06-18,fullsend,pr,closed,2382,"feat(providers): migrate to openshell profile-based provider setup",https://github.com/fullsend-ai/fullsend/pull/2382
+2026-06-18,fullsend,pr,closed,2312,"docs: use make lint-all in agent guidance",https://github.com/fullsend-ai/fullsend/pull/2312
+2026-06-18,fullsend,pr,closed,2122,"feat(#1575): populate PR body from target repo's PR template",https://github.com/fullsend-ai/fullsend/pull/2122
+2026-06-18,fullsend,pr,closed,1034,"ci(merge queue): add merge_group triggers for merge queue support",https://github.com/fullsend-ai/fullsend/pull/1034
+2026-06-18,fullsend,issue,opened,2449,"Consolidate agent role lists and permission definitions",https://github.com/fullsend-ai/fullsend/issues/2449
+2026-06-18,fullsend,issue,opened,2445,"Skip fix dispatch when comment author has an active approval on the PR",https://github.com/fullsend-ai/fullsend/issues/2445
+2026-06-18,fullsend,issue,opened,2441,"feat: inject CLAUDE.md bridge for repos receiving org-level AGENTS.md",https://github.com/fullsend-ai/fullsend/issues/2441
+2026-06-18,fullsend,issue,opened,2440,"docs: ADR 0047 title format does not match convention",https://github.com/fullsend-ai/fullsend/issues/2440
+2026-06-18,fullsend,issue,opened,2438,"Mint deployment suggestions and health check capabilities",https://github.com/fullsend-ai/fullsend/issues/2438
+2026-06-18,fullsend,issue,opened,2437,"Mint service decomposition: define criteria for splitting into multiple instances",https://github.com/fullsend-ai/fullsend/issues/2437
+2026-06-18,fullsend,issue,opened,2433,"EnsureOrgInMint missing data consistency guard after role-only ROLE_APP_IDS migration",https://github.com/fullsend-ai/fullsend/issues/2433
+2026-06-18,fullsend,issue,opened,2432,"bug(e2e): flaky 409 ""Head branch is out of date"" when merging enrollment PR",https://github.com/fullsend-ai/fullsend/issues/2432
+2026-06-18,fullsend,issue,opened,2430,"Support model tier selection based on PR complexity signals",https://github.com/fullsend-ai/fullsend/issues/2430
+2026-06-18,fullsend,issue,opened,2429,"Review orchestrator should trust subagent investigation results instead of re-executing commands",https://github.com/fullsend-ai/fullsend/issues/2429
+2026-06-18,fullsend,issue,opened,2427,"eval: merge duplicate gh issue view calls in capture-fixture.sh",https://github.com/fullsend-ai/fullsend/issues/2427
+2026-06-18,fullsend,issue,opened,2426,"AGENTS.md: add sync guidance for scaffold skill files and their active copies",https://github.com/fullsend-ai/fullsend/issues/2426
+2026-06-18,fullsend,issue,opened,2425,"Inject CLAUDE.md pointer when running Claude Code against repos with AGENTS.md but no CLAUDE.md",https://github.com/fullsend-ai/fullsend/issues/2425
+2026-06-18,fullsend,issue,opened,2424,"PR-review orchestrator should include AGENTS.md in context packages for all sub-agents",https://github.com/fullsend-ai/fullsend/issues/2424
+2026-06-18,fullsend,issue,opened,2420,"release: move v0 floating tag in CI after GoReleaser completes",https://github.com/fullsend-ai/fullsend/issues/2420
+2026-06-18,fullsend,issue,opened,2418,"Fix agent should update PR title and body when it changes the implementation approach",https://github.com/fullsend-ai/fullsend/issues/2418
+2026-06-18,fullsend,issue,opened,2416,"Review agent should use AGENTS.md conventions over inferred patterns when flagging style inconsistencies",https://github.com/fullsend-ai/fullsend/issues/2416
+2026-06-18,fullsend,issue,opened,2414,"Code agent should study sibling files for established patterns before generating code",https://github.com/fullsend-ai/fullsend/issues/2414
+2026-06-18,fullsend,issue,opened,2413,"Retro agent should search for related PRs and recent fixes before filing issues",https://github.com/fullsend-ai/fullsend/issues/2413
+2026-06-18,fullsend,issue,opened,2411,"Review agent should post Medium+ findings as inline code comments, not just Low-severity ones",https://github.com/fullsend-ai/fullsend/issues/2411
+2026-06-18,fullsend,issue,opened,2408,"Review agent should consider multi-replica deployment behavior",https://github.com/fullsend-ai/fullsend/issues/2408
+2026-06-18,fullsend,issue,opened,2406,"Fix agent should fail fast when the instruction cannot be fulfilled by the post-script",https://github.com/fullsend-ai/fullsend/issues/2406
+2026-06-18,fullsend,issue,opened,2405,"post-fix.sh should use --force-with-lease when the agent rebased the branch",https://github.com/fullsend-ai/fullsend/issues/2405
+2026-06-18,fullsend,issue,opened,2404,"Review agent should withhold approval for medium-severity architectural/UX-consistency findings",https://github.com/fullsend-ai/fullsend/issues/2404
+2026-06-18,fullsend,issue,opened,2403,"Remove dead RETRO_SANDBOX_TOKEN env var from reusable-retro workflow",https://github.com/fullsend-ai/fullsend/issues/2403
+2026-06-18,fullsend,issue,opened,2402,"Retro agent sandbox needs GitHub API access via proxy allowlist or fresh token",https://github.com/fullsend-ai/fullsend/issues/2402
+2026-06-18,fullsend,issue,opened,2401,"Deduplicate retro runs: skip if a retro already completed on the same PR",https://github.com/fullsend-ai/fullsend/issues/2401
+2026-06-18,fullsend,issue,closed,2440,"docs: ADR 0047 title format does not match convention",https://github.com/fullsend-ai/fullsend/issues/2440
+2026-06-18,fullsend,issue,closed,2432,"bug(e2e): flaky 409 ""Head branch is out of date"" when merging enrollment PR",https://github.com/fullsend-ai/fullsend/issues/2432
+2026-06-18,fullsend,issue,closed,2430,"Support model tier selection based on PR complexity signals",https://github.com/fullsend-ai/fullsend/issues/2430
+2026-06-18,fullsend,issue,closed,2425,"Inject CLAUDE.md pointer when running Claude Code against repos with AGENTS.md but no CLAUDE.md",https://github.com/fullsend-ai/fullsend/issues/2425
+2026-06-18,fullsend,issue,closed,2424,"PR-review orchestrator should include AGENTS.md in context packages for all sub-agents",https://github.com/fullsend-ai/fullsend/issues/2424
+2026-06-18,fullsend,issue,closed,2416,"Review agent should use AGENTS.md conventions over inferred patterns when flagging style inconsistencies",https://github.com/fullsend-ai/fullsend/issues/2416
+2026-06-18,fullsend,issue,closed,2411,"Review agent should post Medium+ findings as inline code comments, not just Low-severity ones",https://github.com/fullsend-ai/fullsend/issues/2411
+2026-06-18,fullsend,issue,closed,2404,"Review agent should withhold approval for medium-severity architectural/UX-consistency findings",https://github.com/fullsend-ai/fullsend/issues/2404
+2026-06-18,fullsend,issue,closed,2403,"Remove dead RETRO_SANDBOX_TOKEN env var from reusable-retro workflow",https://github.com/fullsend-ai/fullsend/issues/2403
+2026-06-18,fullsend,issue,closed,2393,"Post-script failures are silent — add diagnostic error output",https://github.com/fullsend-ai/fullsend/issues/2393
+2026-06-18,fullsend,issue,closed,2318,"Review agent should verify PR metadata claims against event payload",https://github.com/fullsend-ai/fullsend/issues/2318
+2026-06-18,fullsend,issue,closed,2305,"Retro post-script should treat 403 comment-posting errors as non-fatal",https://github.com/fullsend-ai/fullsend/issues/2305
+2026-06-18,fullsend,issue,closed,2294,"EnsureProvider should be idempotent — fails with AlreadyExists on repeated runs",https://github.com/fullsend-ai/fullsend/issues/2294
+2026-06-18,fullsend,issue,closed,1989,"ci: add test, e2e, commit-lint, and DCO as required status checks",https://github.com/fullsend-ai/fullsend/issues/1989
+2026-06-18,fullsend,issue,closed,1706,"Review agent: apply contextual labels to PRs using the issue-labels skill",https://github.com/fullsend-ai/fullsend/issues/1706
+2026-06-18,fullsend,issue,closed,1321,"Triage agent should not label ready-to-code when it identifies an existing PR that addresses the issue",https://github.com/fullsend-ai/fullsend/issues/1321
+2026-06-18,fullsend,issue,closed,1320,"Expand ISSUE_HAS_PR check to detect PRs that mention (not just formally link) an issue",https://github.com/fullsend-ai/fullsend/issues/1320
+2026-06-18,fullsend,issue,closed,1312,"Code agent skip logic should abort PR creation, not just post a comment",https://github.com/fullsend-ai/fullsend/issues/1312
+2026-06-18,fullsend,issue,closed,932,"Require Claude-readable agent context before target repo onboarding",https://github.com/fullsend-ai/fullsend/issues/932
