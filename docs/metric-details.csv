@@ -2835,3 +2835,27 @@ date,repo,type,event,number,title,url
 2026-06-18,fullsend,issue,closed,1320,"Expand ISSUE_HAS_PR check to detect PRs that mention (not just formally link) an issue",https://github.com/fullsend-ai/fullsend/issues/1320
 2026-06-18,fullsend,issue,closed,1312,"Code agent skip logic should abort PR creation, not just post a comment",https://github.com/fullsend-ai/fullsend/issues/1312
 2026-06-18,fullsend,issue,closed,932,"Require Claude-readable agent context before target repo onboarding",https://github.com/fullsend-ai/fullsend/issues/932
+2026-06-19,fullsend,pr,opened,2459,"fix(#2458): guard GITHUB_WORKSPACE in post-triage.sh for local execution",https://github.com/fullsend-ai/fullsend/pull/2459
+2026-06-19,fullsend,pr,opened,2457,"chore: update obsolete GitHub Actions to latest major versions",https://github.com/fullsend-ai/fullsend/pull/2457
+2026-06-19,fullsend,pr,opened,2456,"fix(#2455): guard GITHUB_OUTPUT for local execution",https://github.com/fullsend-ai/fullsend/pull/2456
+2026-06-19,fullsend,pr,opened,2453,"docs(adr): amend ADR 48 for dispatch version-skew and migration",https://github.com/fullsend-ai/fullsend/pull/2453
+2026-06-19,fullsend,pr,opened,2451,"fix(#2450): widen changelog scope regex and exclude merge commits",https://github.com/fullsend-ai/fullsend/pull/2451
+2026-06-19,fullsend,pr,merged,2456,"fix(#2455): guard GITHUB_OUTPUT for local execution",https://github.com/fullsend-ai/fullsend/pull/2456
+2026-06-19,fullsend,pr,merged,2451,"fix(#2450): widen changelog scope regex and exclude merge commits",https://github.com/fullsend-ai/fullsend/pull/2451
+2026-06-19,fullsend,pr,merged,2419,"fix(#2405): fall back to --force-with-lease in post-fix.sh",https://github.com/fullsend-ai/fullsend/pull/2419
+2026-06-19,fullsend,pr,merged,2410,"docs: instruct agents to stage changes before make lint",https://github.com/fullsend-ai/fullsend/pull/2410
+2026-06-19,fullsend,pr,merged,2288,"docs(#2091): document gh api --paginate + jq per-page semantics",https://github.com/fullsend-ai/fullsend/pull/2288
+2026-06-19,fullsend,pr,merged,2181,"chore(#2177): add lint-docs-links check; fix all escaping docs/ links",https://github.com/fullsend-ai/fullsend/pull/2181
+2026-06-19,fullsend,pr,merged,2101,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2101
+2026-06-19,fullsend,issue,opened,2460,"Statistical-significance layer for non-deterministic evals (testing-agents.md open question #1)",https://github.com/fullsend-ai/fullsend/issues/2460
+2026-06-19,fullsend,issue,opened,2458,"Guard GITHUB_WORKSPACE in post-triage.sh for local execution",https://github.com/fullsend-ai/fullsend/issues/2458
+2026-06-19,fullsend,issue,opened,2455,"fix: pre-code.sh crashes locally — GITHUB_OUTPUT unbound",https://github.com/fullsend-ai/fullsend/issues/2455
+2026-06-19,fullsend,issue,opened,2454,"Implement ADR 0048: automatic updates via --upstream-ref",https://github.com/fullsend-ai/fullsend/issues/2454
+2026-06-19,fullsend,issue,opened,2452,"Concurrency group cancels code dispatch when triage applies multiple labels",https://github.com/fullsend-ai/fullsend/issues/2452
+2026-06-19,fullsend,issue,opened,2450,"Improve Goreleaser Changelog",https://github.com/fullsend-ai/fullsend/issues/2450
+2026-06-19,fullsend,issue,closed,2455,"fix: pre-code.sh crashes locally — GITHUB_OUTPUT unbound",https://github.com/fullsend-ai/fullsend/issues/2455
+2026-06-19,fullsend,issue,closed,2450,"Improve Goreleaser Changelog",https://github.com/fullsend-ai/fullsend/issues/2450
+2026-06-19,fullsend,issue,closed,2405,"post-fix.sh should use --force-with-lease when the agent rebased the branch",https://github.com/fullsend-ai/fullsend/issues/2405
+2026-06-19,fullsend,issue,closed,2309,"AGENTS.md: ""run make lint"" guidance misleads agents — pre-commit stashes unstaged changes",https://github.com/fullsend-ai/fullsend/issues/2309
+2026-06-19,fullsend,issue,closed,2177,"lint: reject docs/ links that resolve outside docs/",https://github.com/fullsend-ai/fullsend/issues/2177
+2026-06-19,fullsend,issue,closed,2091,"Code agent should understand gh api --paginate + jq per-page semantics",https://github.com/fullsend-ai/fullsend/issues/2091
