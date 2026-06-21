@@ -2859,3 +2859,4 @@ date,repo,type,event,number,title,url
 2026-06-19,fullsend,issue,closed,2309,"AGENTS.md: ""run make lint"" guidance misleads agents — pre-commit stashes unstaged changes",https://github.com/fullsend-ai/fullsend/issues/2309
 2026-06-19,fullsend,issue,closed,2177,"lint: reject docs/ links that resolve outside docs/",https://github.com/fullsend-ai/fullsend/issues/2177
 2026-06-19,fullsend,issue,closed,2091,"Code agent should understand gh api --paginate + jq per-page semantics",https://github.com/fullsend-ai/fullsend/issues/2091
+2026-06-20,fullsend,issue,opened,2461,"Skip retro dispatch for autoclosed bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2461
