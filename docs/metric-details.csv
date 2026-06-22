@@ -2860,3 +2860,19 @@ date,repo,type,event,number,title,url
 2026-06-19,fullsend,issue,closed,2177,"lint: reject docs/ links that resolve outside docs/",https://github.com/fullsend-ai/fullsend/issues/2177
 2026-06-19,fullsend,issue,closed,2091,"Code agent should understand gh api --paginate + jq per-page semantics",https://github.com/fullsend-ai/fullsend/issues/2091
 2026-06-20,fullsend,issue,opened,2461,"Skip retro dispatch for autoclosed bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2461
+2026-06-21,fullsend,pr,opened,2473,"refactor(dispatch): require PR context for review triggers",https://github.com/fullsend-ai/fullsend/pull/2473
+2026-06-21,fullsend,pr,opened,2472,"fix(#2470): delete status comment on cancelled runs instead of updating",https://github.com/fullsend-ai/fullsend/pull/2472
+2026-06-21,fullsend,pr,opened,2468,"fix(#2467): elevate lint execution to mandatory sub-step in 9c",https://github.com/fullsend-ai/fullsend/pull/2468
+2026-06-21,fullsend,pr,opened,2465,"fix(dispatch): per-role two-layer concurrency for per-repo (#981)",https://github.com/fullsend-ai/fullsend/pull/2465
+2026-06-21,fullsend,pr,opened,2464,"docs: document GCP project for hosted mint",https://github.com/fullsend-ai/fullsend/pull/2464
+2026-06-21,fullsend,pr,merged,2407,"feat(mint): add e2e agent role for pool testing",https://github.com/fullsend-ai/fullsend/pull/2407
+2026-06-21,fullsend,pr,closed,53,"Add problem doc for advanced linting guardrails",https://github.com/fullsend-ai/fullsend/pull/53
+2026-06-21,fullsend,issue,opened,2471,"Skip retro for unmerged human PRs with only review-agent interaction",https://github.com/fullsend-ai/fullsend/issues/2471
+2026-06-21,fullsend,issue,opened,2470,"Suppress status comments for cancelled review runs",https://github.com/fullsend-ai/fullsend/issues/2470
+2026-06-21,fullsend,issue,opened,2469,"Review agent: produce structured dependency summary instead of generic LGTM",https://github.com/fullsend-ai/fullsend/issues/2469
+2026-06-21,fullsend,issue,opened,2467,"Code agent skips lint command in step 9c, causing repeated post-script rejections",https://github.com/fullsend-ai/fullsend/issues/2467
+2026-06-21,fullsend,issue,opened,2466,"Review agent should suppress purely affirmative info-level findings",https://github.com/fullsend-ai/fullsend/issues/2466
+2026-06-21,fullsend,issue,opened,2463,"Review agent should fetch author reply comments as context for re-reviews",https://github.com/fullsend-ai/fullsend/issues/2463
+2026-06-21,fullsend,issue,opened,2462,"Fix agent dispatch fails when review bot name doesn't match org-name pattern",https://github.com/fullsend-ai/fullsend/issues/2462
+2026-06-21,fullsend,issue,closed,2466,"Review agent should suppress purely affirmative info-level findings",https://github.com/fullsend-ai/fullsend/issues/2466
+2026-06-21,fullsend,issue,closed,2463,"Review agent should fetch author reply comments as context for re-reviews",https://github.com/fullsend-ai/fullsend/issues/2463
