@@ -2876,3 +2876,110 @@ date,repo,type,event,number,title,url
 2026-06-21,fullsend,issue,opened,2462,"Fix agent dispatch fails when review bot name doesn't match org-name pattern",https://github.com/fullsend-ai/fullsend/issues/2462
 2026-06-21,fullsend,issue,closed,2466,"Review agent should suppress purely affirmative info-level findings",https://github.com/fullsend-ai/fullsend/issues/2466
 2026-06-21,fullsend,issue,closed,2463,"Review agent should fetch author reply comments as context for re-reviews",https://github.com/fullsend-ai/fullsend/issues/2463
+2026-06-22,fullsend,pr,opened,2539,"feat: add autonomy-readiness skill for retro agent",https://github.com/fullsend-ai/fullsend/pull/2539
+2026-06-22,fullsend,pr,opened,2538,"fix(web-admin): sync VALID_ROLES and variableNameForRole with Go backend",https://github.com/fullsend-ai/fullsend/pull/2538
+2026-06-22,fullsend,pr,opened,2537,"feat: add standalone mint with custom role support",https://github.com/fullsend-ai/fullsend/pull/2537
+2026-06-22,fullsend,pr,opened,2535,"fix: sync functional tests openshell version with shared pin",https://github.com/fullsend-ai/fullsend/pull/2535
+2026-06-22,fullsend,pr,opened,2534,"ci(functional-tests): use pull_request_target for fork PR support",https://github.com/fullsend-ai/fullsend/pull/2534
+2026-06-22,fullsend,pr,opened,2533,"feat(install): default to PR-based scaffold delivery",https://github.com/fullsend-ai/fullsend/pull/2533
+2026-06-22,fullsend,pr,opened,2532,"fix(#2527): use _CLIENT_ID suffix in variableNameForRole",https://github.com/fullsend-ai/fullsend/pull/2532
+2026-06-22,fullsend,pr,opened,2531,"fix: disable CSMA spread delay in post-prioritize tests",https://github.com/fullsend-ai/fullsend/pull/2531
+2026-06-22,fullsend,pr,opened,2530,"ci: add per-script timing to script-test target",https://github.com/fullsend-ai/fullsend/pull/2530
+2026-06-22,fullsend,pr,opened,2525,"feat(harness): fetch scripts from URL-referenced base harnesses",https://github.com/fullsend-ai/fullsend/pull/2525
+2026-06-22,fullsend,pr,opened,2519,"refactor(#2512): propagate discovery errors and address review findings",https://github.com/fullsend-ai/fullsend/pull/2519
+2026-06-22,fullsend,pr,opened,2518,"docs(#2513): add Jira data leakage warnings for public repository configurations",https://github.com/fullsend-ai/fullsend/pull/2518
+2026-06-22,fullsend,pr,opened,2517,"refactor(config): remove OrgConfig.Agents field (ADR-0045 Phase 4 PR 4)",https://github.com/fullsend-ai/fullsend/pull/2517
+2026-06-22,fullsend,pr,opened,2516,"fix(skills): enqueue script polls until merge or ejection",https://github.com/fullsend-ai/fullsend/pull/2516
+2026-06-22,fullsend,pr,opened,2515,"test(#2511): strengthen agent-field assertions after ADR-0045 Phase 4",https://github.com/fullsend-ai/fullsend/pull/2515
+2026-06-22,fullsend,pr,opened,2514,"fix(ci): lint individual commits on PRs to catch invalid prefixes early",https://github.com/fullsend-ai/fullsend/pull/2514
+2026-06-22,fullsend,pr,opened,2509,"chore(ci): add pinact pre-commit hook to enforce SHA-pinned actions",https://github.com/fullsend-ai/fullsend/pull/2509
+2026-06-22,fullsend,pr,opened,2508,"chore(ci): pin all GitHub Actions to full-length commit SHAs",https://github.com/fullsend-ai/fullsend/pull/2508
+2026-06-22,fullsend,pr,opened,2507,"fix(#2504): restore e2e fork PR checkout after actions/checkout@v7 bump",https://github.com/fullsend-ai/fullsend/pull/2507
+2026-06-22,fullsend,pr,opened,2505,"fix(#2504): allow checkout@v7 to check out fork PR code in e2e workflow",https://github.com/fullsend-ai/fullsend/pull/2505
+2026-06-22,fullsend,pr,opened,2503,"fix(ci): restore e2e fork PR checkout after actions/checkout@v7 bump",https://github.com/fullsend-ai/fullsend/pull/2503
+2026-06-22,fullsend,pr,opened,2500,"fix(#2499): suppress false-positive version skew for independent GitHub Actions",https://github.com/fullsend-ai/fullsend/pull/2500
+2026-06-22,fullsend,pr,opened,2492,"fix(#2490): add retry logic for flaky e2e TestAdminInstallUninstall",https://github.com/fullsend-ai/fullsend/pull/2492
+2026-06-22,fullsend,pr,opened,2491,"fix(#2489): retry scaffold push with force on non-fast-forward",https://github.com/fullsend-ai/fullsend/pull/2491
+2026-06-22,fullsend,pr,opened,2486,"fix(#2484): add finding reconciliation step to review agent",https://github.com/fullsend-ai/fullsend/pull/2486
+2026-06-22,fullsend,pr,opened,2482,"chore(deps): update dependency mermaid to v11.15.0 [security]",https://github.com/fullsend-ai/fullsend/pull/2482
+2026-06-22,fullsend,pr,opened,2481,"chore(deps): update dependency svelte to v5.55.7 [security]",https://github.com/fullsend-ai/fullsend/pull/2481
+2026-06-22,fullsend,pr,opened,2480,"feat(#2479): enable Renovate via self-hosted GitHub App",https://github.com/fullsend-ai/fullsend/pull/2480
+2026-06-22,fullsend,pr,opened,2475,"fix(#2474): include linters in 9c terminal condition",https://github.com/fullsend-ai/fullsend/pull/2475
+2026-06-22,fullsend,pr,merged,2525,"feat(harness): fetch scripts from URL-referenced base harnesses",https://github.com/fullsend-ai/fullsend/pull/2525
+2026-06-22,fullsend,pr,merged,2517,"refactor(config): remove OrgConfig.Agents field (ADR-0045 Phase 4 PR 4)",https://github.com/fullsend-ai/fullsend/pull/2517
+2026-06-22,fullsend,pr,merged,2503,"fix(ci): restore e2e fork PR checkout after actions/checkout@v7 bump",https://github.com/fullsend-ai/fullsend/pull/2503
+2026-06-22,fullsend,pr,merged,2492,"fix(#2490): add retry logic for flaky e2e TestAdminInstallUninstall",https://github.com/fullsend-ai/fullsend/pull/2492
+2026-06-22,fullsend,pr,merged,2482,"chore(deps): update dependency mermaid to v11.15.0 [security]",https://github.com/fullsend-ai/fullsend/pull/2482
+2026-06-22,fullsend,pr,merged,2481,"chore(deps): update dependency svelte to v5.55.7 [security]",https://github.com/fullsend-ai/fullsend/pull/2481
+2026-06-22,fullsend,pr,merged,2475,"fix(#2474): include linters in 9c terminal condition",https://github.com/fullsend-ai/fullsend/pull/2475
+2026-06-22,fullsend,pr,merged,2468,"fix(#2467): elevate lint execution to mandatory sub-step in 9c",https://github.com/fullsend-ai/fullsend/pull/2468
+2026-06-22,fullsend,pr,merged,2459,"fix(#2458): guard GITHUB_WORKSPACE in post-triage.sh for local execution",https://github.com/fullsend-ai/fullsend/pull/2459
+2026-06-22,fullsend,pr,merged,2457,"chore: update obsolete GitHub Actions to latest major versions",https://github.com/fullsend-ai/fullsend/pull/2457
+2026-06-22,fullsend,pr,merged,2448,"refactor(config): remove legacy agent discovery fallbacks (ADR-0045 Phase 4 PR 3)",https://github.com/fullsend-ai/fullsend/pull/2448
+2026-06-22,fullsend,pr,merged,2447,"refactor(config): stop writing agents block during install (ADR-0045 Phase 4, PR 2)",https://github.com/fullsend-ai/fullsend/pull/2447
+2026-06-22,fullsend,pr,merged,2446,"feat(harness): require role field in Validate()",https://github.com/fullsend-ai/fullsend/pull/2446
+2026-06-22,fullsend,pr,merged,2443,"fix(#1835): require file reads before asserting contents in findings",https://github.com/fullsend-ai/fullsend/pull/2443
+2026-06-22,fullsend,pr,merged,2346,"docs(#2345): ADR 0053 — agent-driven branch targeting for code agent",https://github.com/fullsend-ai/fullsend/pull/2346
+2026-06-22,fullsend,pr,merged,2010,"docs(security): add audit log integrity to threat model",https://github.com/fullsend-ai/fullsend/pull/2010
+2026-06-22,fullsend,pr,merged,1682,"feat: add functional test framework for agent pipelines",https://github.com/fullsend-ai/fullsend/pull/1682
+2026-06-22,fullsend,pr,closed,2507,"fix(#2504): restore e2e fork PR checkout after actions/checkout@v7 bump",https://github.com/fullsend-ai/fullsend/pull/2507
+2026-06-22,fullsend,pr,closed,2505,"fix(#2504): allow checkout@v7 to check out fork PR code in e2e workflow",https://github.com/fullsend-ai/fullsend/pull/2505
+2026-06-22,fullsend,pr,closed,2500,"fix(#2499): suppress false-positive version skew for independent GitHub Actions",https://github.com/fullsend-ai/fullsend/pull/2500
+2026-06-22,fullsend,pr,closed,2472,"fix(#2470): delete status comment on cancelled runs instead of updating",https://github.com/fullsend-ai/fullsend/pull/2472
+2026-06-22,fullsend,issue,opened,2536,"Triage agent should enumerate all affected files for cross-cutting prompt changes",https://github.com/fullsend-ai/fullsend/issues/2536
+2026-06-22,fullsend,issue,opened,2529,"Review agent should recognize provably infallible Go operations before flagging ignored errors",https://github.com/fullsend-ai/fullsend/issues/2529
+2026-06-22,fullsend,issue,opened,2528,"fix(web-admin): VALID_ROLES has 4 roles vs Go's 8",https://github.com/fullsend-ai/fullsend/issues/2528
+2026-06-22,fullsend,issue,opened,2527,"fix(web-admin): variableNameForRole uses wrong suffix APP_ID vs CLIENT_ID",https://github.com/fullsend-ai/fullsend/issues/2527
+2026-06-22,fullsend,issue,opened,2526,"fix(web-admin): agentsFromConfig() references removed agents block",https://github.com/fullsend-ai/fullsend/issues/2526
+2026-06-22,fullsend,issue,opened,2524,"Guard retro dispatch against still-open PRs to prevent premature runs",https://github.com/fullsend-ai/fullsend/issues/2524
+2026-06-22,fullsend,issue,opened,2523,"Skip retro dispatch for merged bot dependency-bump PRs with no code agent interaction",https://github.com/fullsend-ai/fullsend/issues/2523
+2026-06-22,fullsend,issue,opened,2522,"Post-review script should not post skip comment when pre-review already skipped",https://github.com/fullsend-ai/fullsend/issues/2522
+2026-06-22,fullsend,issue,opened,2521,"Skip retro dispatch for merged human PRs with clean review-only approval",https://github.com/fullsend-ai/fullsend/issues/2521
+2026-06-22,fullsend,issue,opened,2520,"Filter COMMENTED pull_request_review events from review dispatch",https://github.com/fullsend-ai/fullsend/issues/2520
+2026-06-22,fullsend,issue,opened,2513,"Document Jira data leakage risks for public repository configurations",https://github.com/fullsend-ai/fullsend/issues/2513
+2026-06-22,fullsend,issue,opened,2512,"refactor(config): address review findings from ADR-0045 Phase 4 PR 3",https://github.com/fullsend-ai/fullsend/issues/2512
+2026-06-22,fullsend,issue,opened,2511,"Address review findings from ADR-0045 Phase 4 PR 2 (#2447)",https://github.com/fullsend-ai/fullsend/issues/2511
+2026-06-22,fullsend,issue,opened,2510,"Pilot: SWE-benchify + Harbor for code-agent outcome eval",https://github.com/fullsend-ai/fullsend/issues/2510
+2026-06-22,fullsend,issue,opened,2506,"Enable auto-merge for Renovate PRs",https://github.com/fullsend-ai/fullsend/issues/2506
+2026-06-22,fullsend,issue,opened,2504,"e2e: actions/checkout@v7 rejects fork PR checkouts in pull_request_target workflow",https://github.com/fullsend-ai/fullsend/issues/2504
+2026-06-22,fullsend,issue,opened,2502,"Retro agent should assess fix proportionality before proposing changes for single-instance findings",https://github.com/fullsend-ai/fullsend/issues/2502
+2026-06-22,fullsend,issue,opened,2501,"Skip review dispatch for release-please PRs",https://github.com/fullsend-ai/fullsend/issues/2501
+2026-06-22,fullsend,issue,opened,2499,"Review agent: don't flag independent GitHub Actions with different major versions as version skew",https://github.com/fullsend-ai/fullsend/issues/2499
+2026-06-22,fullsend,issue,opened,2498,"Triage agent should prefer non-destructive alternatives when multiple approaches are proposed",https://github.com/fullsend-ai/fullsend/issues/2498
+2026-06-22,fullsend,issue,opened,2497,"Retro agent should independently verify review findings before filing issues",https://github.com/fullsend-ai/fullsend/issues/2497
+2026-06-22,fullsend,issue,opened,2496,"Code agent should close or flag issues when it determines the premise is invalid",https://github.com/fullsend-ai/fullsend/issues/2496
+2026-06-22,fullsend,issue,opened,2495,"Auto-apply ok-to-test label for trusted bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2495
+2026-06-22,fullsend,issue,opened,2494,"feat(fix): add action hints to fix agent comments",https://github.com/fullsend-ai/fullsend/issues/2494
+2026-06-22,fullsend,issue,opened,2493,"feat(triage): add action hints to triage bot comments",https://github.com/fullsend-ai/fullsend/issues/2493
+2026-06-22,fullsend,issue,opened,2490,"e2e: TestAdminInstallUninstall flaky — multiple failure modes",https://github.com/fullsend-ai/fullsend/issues/2490
+2026-06-22,fullsend,issue,opened,2489,"e2e: TestVendorFromSubdirectory flaky — 422 non-fast-forward on scaffold push",https://github.com/fullsend-ai/fullsend/issues/2489
+2026-06-22,fullsend,issue,opened,2488,"Fix agent should remove dead code from abandoned strategies before pushing",https://github.com/fullsend-ai/fullsend/issues/2488
+2026-06-22,fullsend,issue,opened,2487,"Code/fix agent should detect missing validation tools and escalate instead of guessing",https://github.com/fullsend-ai/fullsend/issues/2487
+2026-06-22,fullsend,issue,opened,2485,"Review orchestrator should accept challenger findings when backed by verifiable config evidence",https://github.com/fullsend-ai/fullsend/issues/2485
+2026-06-22,fullsend,issue,opened,2484,"Review agent should not emit findings that contradict each other within the same review",https://github.com/fullsend-ai/fullsend/issues/2484
+2026-06-22,fullsend,issue,opened,2483,"Dependency Dashboard",https://github.com/fullsend-ai/fullsend/issues/2483
+2026-06-22,fullsend,issue,opened,2479,"Enable Renovate via self-hosted GitHub App",https://github.com/fullsend-ai/fullsend/issues/2479
+2026-06-22,fullsend,issue,opened,2478,"Triage agent should flag uncertainty when bug reports target potentially-intentional behavior",https://github.com/fullsend-ai/fullsend/issues/2478
+2026-06-22,fullsend,issue,opened,2477,"Review agent should flag PRs that remove deliberate code patterns without justifying the removal",https://github.com/fullsend-ai/fullsend/issues/2477
+2026-06-22,fullsend,issue,opened,2476,"Skip review dispatch when PR has zero changed files",https://github.com/fullsend-ai/fullsend/issues/2476
+2026-06-22,fullsend,issue,opened,2474,"Step 9c terminal condition omits linters despite PR #2468 fix",https://github.com/fullsend-ai/fullsend/issues/2474
+2026-06-22,fullsend,issue,closed,2523,"Skip retro dispatch for merged bot dependency-bump PRs with no code agent interaction",https://github.com/fullsend-ai/fullsend/issues/2523
+2026-06-22,fullsend,issue,closed,2521,"Skip retro dispatch for merged human PRs with clean review-only approval",https://github.com/fullsend-ai/fullsend/issues/2521
+2026-06-22,fullsend,issue,closed,2520,"Filter COMMENTED pull_request_review events from review dispatch",https://github.com/fullsend-ai/fullsend/issues/2520
+2026-06-22,fullsend,issue,closed,2504,"e2e: actions/checkout@v7 rejects fork PR checkouts in pull_request_target workflow",https://github.com/fullsend-ai/fullsend/issues/2504
+2026-06-22,fullsend,issue,closed,2501,"Skip review dispatch for release-please PRs",https://github.com/fullsend-ai/fullsend/issues/2501
+2026-06-22,fullsend,issue,closed,2499,"Review agent: don't flag independent GitHub Actions with different major versions as version skew",https://github.com/fullsend-ai/fullsend/issues/2499
+2026-06-22,fullsend,issue,closed,2497,"Retro agent should independently verify review findings before filing issues",https://github.com/fullsend-ai/fullsend/issues/2497
+2026-06-22,fullsend,issue,closed,2496,"Code agent should close or flag issues when it determines the premise is invalid",https://github.com/fullsend-ai/fullsend/issues/2496
+2026-06-22,fullsend,issue,closed,2490,"e2e: TestAdminInstallUninstall flaky — multiple failure modes",https://github.com/fullsend-ai/fullsend/issues/2490
+2026-06-22,fullsend,issue,closed,2474,"Step 9c terminal condition omits linters despite PR #2468 fix",https://github.com/fullsend-ai/fullsend/issues/2474
+2026-06-22,fullsend,issue,closed,2470,"Suppress status comments for cancelled review runs",https://github.com/fullsend-ai/fullsend/issues/2470
+2026-06-22,fullsend,issue,closed,2467,"Code agent skips lint command in step 9c, causing repeated post-script rejections",https://github.com/fullsend-ai/fullsend/issues/2467
+2026-06-22,fullsend,issue,closed,2458,"Guard GITHUB_WORKSPACE in post-triage.sh for local execution",https://github.com/fullsend-ai/fullsend/issues/2458
+2026-06-22,fullsend,issue,closed,2345,"Code agent hardcodes TARGET_BRANCH to main, breaking repos with non-main default branches",https://github.com/fullsend-ai/fullsend/issues/2345
+2026-06-22,fullsend,issue,closed,2204,"dispatch: no author-association gate before coder dispatch on external issues",https://github.com/fullsend-ai/fullsend/issues/2204
+2026-06-22,fullsend,issue,closed,1835,"Review agent should verify file contents before asserting facts about them",https://github.com/fullsend-ai/fullsend/issues/1835
+2026-06-22,fullsend,issue,closed,1745,"Fix AGENTS.md stale ADR status guidance (Proposed/Undecided)",https://github.com/fullsend-ai/fullsend/issues/1745
+2026-06-22,fullsend,issue,closed,1123,"Follow-up from PR #1087: The guides index (docs/guides/README.md) was not updated to include links to the thre...",https://github.com/fullsend-ai/fullsend/issues/1123
+2026-06-22,fullsend,issue,closed,773,"Add Renovate automation for openshell version pin",https://github.com/fullsend-ai/fullsend/issues/773
+2026-06-22,fullsend,issue,closed,346,"Add functional tests for agents using local openshell sandbox",https://github.com/fullsend-ai/fullsend/issues/346
