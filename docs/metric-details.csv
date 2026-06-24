@@ -2983,3 +2983,76 @@ date,repo,type,event,number,title,url
 2026-06-22,fullsend,issue,closed,1123,"Follow-up from PR #1087: The guides index (docs/guides/README.md) was not updated to include links to the thre...",https://github.com/fullsend-ai/fullsend/issues/1123
 2026-06-22,fullsend,issue,closed,773,"Add Renovate automation for openshell version pin",https://github.com/fullsend-ai/fullsend/issues/773
 2026-06-22,fullsend,issue,closed,346,"Add functional tests for agents using local openshell sandbox",https://github.com/fullsend-ai/fullsend/issues/346
+2026-06-23,fullsend,pr,opened,2584,"docs: sandbox layout, skill precedence, and agent rule layering",https://github.com/fullsend-ai/fullsend/pull/2584
+2026-06-23,fullsend,pr,opened,2583,"docs(adr): ADR 0055 — GitLab cron-polling event dispatch",https://github.com/fullsend-ai/fullsend/pull/2583
+2026-06-23,fullsend,pr,opened,2582,"feat(harness): unified env var delivery (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2582
+2026-06-23,fullsend,pr,opened,2578,"fix(#2574): embed provenance headers in shim template",https://github.com/fullsend-ai/fullsend/pull/2578
+2026-06-23,fullsend,pr,opened,2576,"fix(deps): restore toml-eslint-parser for CI deploy",https://github.com/fullsend-ai/fullsend/pull/2576
+2026-06-23,fullsend,pr,opened,2573,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2573
+2026-06-23,fullsend,pr,opened,2568,"docs(custom-agents): add BYOI section and improve example agent",https://github.com/fullsend-ai/fullsend/pull/2568
+2026-06-23,fullsend,pr,opened,2567,"fix(install): skip enrollment in PR mode + e2e PR-based scaffold flow",https://github.com/fullsend-ai/fullsend/pull/2567
+2026-06-23,fullsend,pr,opened,2557,"docs(#2554): add custom agent identity section to building-custom-agents guide",https://github.com/fullsend-ai/fullsend/pull/2557
+2026-06-23,fullsend,pr,opened,2551,"chore(#2550): upgrade OpenShell from v0.0.63 to v0.0.67",https://github.com/fullsend-ai/fullsend/pull/2551
+2026-06-23,fullsend,pr,opened,2549,"docs: Add debugging problem doc for agentic systems",https://github.com/fullsend-ai/fullsend/pull/2549
+2026-06-23,fullsend,pr,opened,2548,"feat(auth): label-gated workflow-change elevation",https://github.com/fullsend-ai/fullsend/pull/2548
+2026-06-23,fullsend,pr,opened,2546,"feat(renovate): enable automerge for low-risk PRs",https://github.com/fullsend-ai/fullsend/pull/2546
+2026-06-23,fullsend,pr,opened,2545,"fix(scaffold): place vendored per-repo reusable workflows under .github/workflows/",https://github.com/fullsend-ai/fullsend/pull/2545
+2026-06-23,fullsend,pr,merged,2573,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2573
+2026-06-23,fullsend,pr,merged,2535,"fix: sync functional tests openshell version with shared pin",https://github.com/fullsend-ai/fullsend/pull/2535
+2026-06-23,fullsend,pr,merged,2534,"ci(functional-tests): use pull_request_target for fork PR support",https://github.com/fullsend-ai/fullsend/pull/2534
+2026-06-23,fullsend,pr,merged,2533,"feat(install): default to PR-based scaffold delivery",https://github.com/fullsend-ai/fullsend/pull/2533
+2026-06-23,fullsend,pr,merged,2508,"chore(ci): pin all GitHub Actions to full-length commit SHAs",https://github.com/fullsend-ai/fullsend/pull/2508
+2026-06-23,fullsend,pr,merged,2480,"feat(#2479): enable Renovate via self-hosted GitHub App",https://github.com/fullsend-ai/fullsend/pull/2480
+2026-06-23,fullsend,pr,merged,2473,"refactor(dispatch): require PR context for review triggers",https://github.com/fullsend-ai/fullsend/pull/2473
+2026-06-23,fullsend,pr,merged,2444,"fix(#1230): run OutputPipeline on post-review before posting to forge",https://github.com/fullsend-ai/fullsend/pull/2444
+2026-06-23,fullsend,pr,merged,2421,"fix(#2420): automate v0 floating tag move in release workflow",https://github.com/fullsend-ai/fullsend/pull/2421
+2026-06-23,fullsend,pr,merged,625,"feat: add ESLint, Prettier, and Stylelint for web apps",https://github.com/fullsend-ai/fullsend/pull/625
+2026-06-23,fullsend,pr,closed,2557,"docs(#2554): add custom agent identity section to building-custom-agents guide",https://github.com/fullsend-ai/fullsend/pull/2557
+2026-06-23,fullsend,pr,closed,2551,"chore(#2550): upgrade OpenShell from v0.0.63 to v0.0.67",https://github.com/fullsend-ai/fullsend/pull/2551
+2026-06-23,fullsend,pr,closed,2439,"feat: add explore, refine, critique refinement pipeline agents",https://github.com/fullsend-ai/fullsend/pull/2439
+2026-06-23,fullsend,issue,opened,2581,"Deploy Site workflow broken: missing toml-eslint-parser package",https://github.com/fullsend-ai/fullsend/issues/2581
+2026-06-23,fullsend,issue,opened,2580,"Review agent: verify diff completeness against PR's stated scope for bulk-change PRs",https://github.com/fullsend-ai/fullsend/issues/2580
+2026-06-23,fullsend,issue,opened,2579,"Detect and escalate repeated post-script failures on the same issue",https://github.com/fullsend-ai/fullsend/issues/2579
+2026-06-23,fullsend,issue,opened,2577,"feat: implement Level 1 distributed tracing — local telemetry files for every run",https://github.com/fullsend-ai/fullsend/issues/2577
+2026-06-23,fullsend,issue,opened,2575,"Unify runner and sandbox env var delivery under a single harness env: key",https://github.com/fullsend-ai/fullsend/issues/2575
+2026-06-23,fullsend,issue,opened,2574,"Reconciliation bot shim output diverges from template while claiming sync",https://github.com/fullsend-ai/fullsend/issues/2574
+2026-06-23,fullsend,issue,opened,2572,"Review status comment shows Terminated then posts a second Success comment for the same run",https://github.com/fullsend-ai/fullsend/issues/2572
+2026-06-23,fullsend,issue,opened,2571,"Code agent should consult relevant ADRs before writing docs on architectural topics",https://github.com/fullsend-ai/fullsend/issues/2571
+2026-06-23,fullsend,issue,opened,2570,"Code agent should grep for existing usage of actions/tools before documenting them",https://github.com/fullsend-ai/fullsend/issues/2570
+2026-06-23,fullsend,issue,opened,2569,"post-review 422 regression: diff-hunk validation does not cover all edge cases",https://github.com/fullsend-ai/fullsend/issues/2569
+2026-06-23,fullsend,issue,opened,2566,"Review agent should flag when default-behavior changes may invalidate unchanged tests",https://github.com/fullsend-ai/fullsend/issues/2566
+2026-06-23,fullsend,issue,opened,2565,"Define unified harness configuration for dynamic agent triggering and dispatching",https://github.com/fullsend-ai/fullsend/issues/2565
+2026-06-23,fullsend,issue,opened,2564,"Evaluate database-backed persistence for mint identity and workflow management",https://github.com/fullsend-ai/fullsend/issues/2564
+2026-06-23,fullsend,issue,opened,2563,"Evaluate consolidating reusable agent workflows into a generic runner",https://github.com/fullsend-ai/fullsend/issues/2563
+2026-06-23,fullsend,issue,opened,2562,"Decouple refinement pipeline into standalone explore, refine, and critique agents",https://github.com/fullsend-ai/fullsend/issues/2562
+2026-06-23,fullsend,issue,opened,2561,"Fix agent: configurable commit strategy (amend, squash, reset, append)",https://github.com/fullsend-ai/fullsend/issues/2561
+2026-06-23,fullsend,issue,opened,2560,"fix: delete stale scaffold branch before re-creating on install re-run",https://github.com/fullsend-ai/fullsend/issues/2560
+2026-06-23,fullsend,issue,opened,2559,"refactor: replace positional parameters in buildLayerStack and runInstall with config structs",https://github.com/fullsend-ai/fullsend/issues/2559
+2026-06-23,fullsend,issue,opened,2558,"e2e: exercise default PR-based scaffold install flow",https://github.com/fullsend-ai/fullsend/issues/2558
+2026-06-23,fullsend,issue,opened,2556,"Review agent should flag test-fix PRs that reduce test coverage scope",https://github.com/fullsend-ai/fullsend/issues/2556
+2026-06-23,fullsend,issue,opened,2555,"Code agent should not fix flaky tests by replacing them with weaker alternatives",https://github.com/fullsend-ai/fullsend/issues/2555
+2026-06-23,fullsend,issue,opened,2554,"Doc: Add custom agent identity section to building-custom-agents guide",https://github.com/fullsend-ai/fullsend/issues/2554
+2026-06-23,fullsend,issue,opened,2553,"Code agent should detect Renovate-managed dependencies and warn before proceeding",https://github.com/fullsend-ai/fullsend/issues/2553
+2026-06-23,fullsend,issue,opened,2552,"Defer review dispatch for external PRs pending trust signal",https://github.com/fullsend-ai/fullsend/issues/2552
+2026-06-23,fullsend,issue,opened,2550,"sandbox: upgrade OpenShell dependency from v0.0.63 to v0.0.67",https://github.com/fullsend-ai/fullsend/issues/2550
+2026-06-23,fullsend,issue,opened,2547,"Review agent should accept major-version GitHub Actions tags as valid pinning strategy",https://github.com/fullsend-ai/fullsend/issues/2547
+2026-06-23,fullsend,issue,opened,2544,"Vendored per-repo shim uses invalid local path for reusable workflows",https://github.com/fullsend-ai/fullsend/issues/2544
+2026-06-23,fullsend,issue,opened,2543,"github setup --vendor can leak untracked local files into scaffold PRs",https://github.com/fullsend-ai/fullsend/issues/2543
+2026-06-23,fullsend,issue,opened,2542,"Cache minted tokens with safe refresh across nested CLI invocations",https://github.com/fullsend-ai/fullsend/issues/2542
+2026-06-23,fullsend,issue,opened,2541,"Unify GitHub commenting and auth through the fullsend CLI",https://github.com/fullsend-ai/fullsend/issues/2541
+2026-06-23,fullsend,issue,opened,2540,"Skip retro dispatch for merged trivial bot dependency PRs",https://github.com/fullsend-ai/fullsend/issues/2540
+2026-06-23,fullsend,issue,closed,2550,"sandbox: upgrade OpenShell dependency from v0.0.63 to v0.0.67",https://github.com/fullsend-ai/fullsend/issues/2550
+2026-06-23,fullsend,issue,closed,2540,"Skip retro dispatch for merged trivial bot dependency PRs",https://github.com/fullsend-ai/fullsend/issues/2540
+2026-06-23,fullsend,issue,closed,2479,"Enable Renovate via self-hosted GitHub App",https://github.com/fullsend-ai/fullsend/issues/2479
+2026-06-23,fullsend,issue,closed,2420,"release: move v0 floating tag in CI after GoReleaser completes",https://github.com/fullsend-ai/fullsend/issues/2420
+2026-06-23,fullsend,issue,closed,2385,"fullsend dispatch task is not triggered due to SHA enforcement",https://github.com/fullsend-ai/fullsend/issues/2385
+2026-06-23,fullsend,issue,closed,1230,"security: run OutputPipeline on post-review before forge API post",https://github.com/fullsend-ai/fullsend/issues/1230
+2026-06-23,fullsend,issue,closed,483,"Require an approved PR for all changes to the .fullsend and target repos",https://github.com/fullsend-ai/fullsend/issues/483
+2026-06-23,.fullsend,pr,opened,85,"fix: pin review harness base URL to commit ref",https://github.com/fullsend-ai/.fullsend/pull/85
+2026-06-23,.fullsend,pr,opened,84,"feat: set review severity threshold to medium",https://github.com/fullsend-ai/.fullsend/pull/84
+2026-06-23,.fullsend,pr,opened,83,"feat(customer-research): map adoption blocker labels to customer cohorts",https://github.com/fullsend-ai/.fullsend/pull/83
+2026-06-23,.fullsend,pr,merged,85,"fix: pin review harness base URL to commit ref",https://github.com/fullsend-ai/.fullsend/pull/85
+2026-06-23,.fullsend,pr,merged,84,"feat: set review severity threshold to medium",https://github.com/fullsend-ai/.fullsend/pull/84
+2026-06-23,.fullsend,pr,merged,83,"feat(customer-research): map adoption blocker labels to customer cohorts",https://github.com/fullsend-ai/.fullsend/pull/83
+2026-06-23,metrics,pr,opened,4,"docs: fix README wording",https://github.com/fullsend-ai/metrics/pull/4
+2026-06-23,metrics,pr,closed,4,"docs: fix README wording",https://github.com/fullsend-ai/metrics/pull/4
