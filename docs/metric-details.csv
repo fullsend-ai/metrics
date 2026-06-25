@@ -3056,3 +3056,88 @@ date,repo,type,event,number,title,url
 2026-06-23,.fullsend,pr,merged,83,"feat(customer-research): map adoption blocker labels to customer cohorts",https://github.com/fullsend-ai/.fullsend/pull/83
 2026-06-23,metrics,pr,opened,4,"docs: fix README wording",https://github.com/fullsend-ai/metrics/pull/4
 2026-06-23,metrics,pr,closed,4,"docs: fix README wording",https://github.com/fullsend-ai/metrics/pull/4
+2026-06-24,fullsend,pr,opened,2633,"fix(#2632): use SKILL.md frontmatter name for remote skill display",https://github.com/fullsend-ai/fullsend/pull/2633
+2026-06-24,fullsend,pr,opened,2630,"feat(cli): add --pr and --direct flags to sync-scaffold, enroll, and unenroll",https://github.com/fullsend-ai/fullsend/pull/2630
+2026-06-24,fullsend,pr,opened,2628,"fix(scaffold): use __FULLSEND_AI_REF__ for mint-token action refs",https://github.com/fullsend-ai/fullsend/pull/2628
+2026-06-24,fullsend,pr,opened,2627,"fix(ci): use GitHub PR titles for release notes",https://github.com/fullsend-ai/fullsend/pull/2627
+2026-06-24,fullsend,pr,opened,2626,"fix: use skill directory name from URL instead of cache-internal ""tree""",https://github.com/fullsend-ai/fullsend/pull/2626
+2026-06-24,fullsend,pr,opened,2622,"fix(ci): include root action.yml in pinact and pre-commit checks",https://github.com/fullsend-ai/fullsend/pull/2622
+2026-06-24,fullsend,pr,opened,2621,"fix(ci): pin third-party actions in root action.yml to commit SHAs",https://github.com/fullsend-ai/fullsend/pull/2621
+2026-06-24,fullsend,pr,opened,2617,"fix(ci): skip e2e/functional tests in merge queue for irrelevant paths",https://github.com/fullsend-ai/fullsend/pull/2617
+2026-06-24,fullsend,pr,opened,2615,"feat(scaffold): pin workflow refs to release commit SHA",https://github.com/fullsend-ai/fullsend/pull/2615
+2026-06-24,fullsend,pr,opened,2613,"fix(harness): resolve URL base scripts relative to scaffold root",https://github.com/fullsend-ai/fullsend/pull/2613
+2026-06-24,fullsend,pr,opened,2605,"fix(#2602): enforce scope constraints on review subagents for trivial diffs",https://github.com/fullsend-ai/fullsend/pull/2605
+2026-06-24,fullsend,pr,opened,2603,"docs: add maintainer nomination process",https://github.com/fullsend-ai/fullsend/pull/2603
+2026-06-24,fullsend,pr,opened,2595,"fix(#2591): add Signed-off-by trailer to scaffold PR commits",https://github.com/fullsend-ai/fullsend/pull/2595
+2026-06-24,fullsend,pr,opened,2594,"fix(#2592): use fork for scaffold PR when user lacks push access",https://github.com/fullsend-ai/fullsend/pull/2594
+2026-06-24,fullsend,pr,merged,2633,"fix(#2632): use SKILL.md frontmatter name for remote skill display",https://github.com/fullsend-ai/fullsend/pull/2633
+2026-06-24,fullsend,pr,merged,2628,"fix(scaffold): use __FULLSEND_AI_REF__ for mint-token action refs",https://github.com/fullsend-ai/fullsend/pull/2628
+2026-06-24,fullsend,pr,merged,2622,"fix(ci): include root action.yml in pinact and pre-commit checks",https://github.com/fullsend-ai/fullsend/pull/2622
+2026-06-24,fullsend,pr,merged,2621,"fix(ci): pin third-party actions in root action.yml to commit SHAs",https://github.com/fullsend-ai/fullsend/pull/2621
+2026-06-24,fullsend,pr,merged,2615,"feat(scaffold): pin workflow refs to release commit SHA",https://github.com/fullsend-ai/fullsend/pull/2615
+2026-06-24,fullsend,pr,merged,2613,"fix(harness): resolve URL base scripts relative to scaffold root",https://github.com/fullsend-ai/fullsend/pull/2613
+2026-06-24,fullsend,pr,merged,2595,"fix(#2591): add Signed-off-by trailer to scaffold PR commits",https://github.com/fullsend-ai/fullsend/pull/2595
+2026-06-24,fullsend,pr,merged,2576,"fix(deps): restore toml-eslint-parser for CI deploy",https://github.com/fullsend-ai/fullsend/pull/2576
+2026-06-24,fullsend,pr,merged,2567,"fix(install): skip enrollment in PR mode + e2e PR-based scaffold flow",https://github.com/fullsend-ai/fullsend/pull/2567
+2026-06-24,fullsend,pr,merged,2539,"feat: add autonomy-readiness skill for retro agent",https://github.com/fullsend-ai/fullsend/pull/2539
+2026-06-24,fullsend,pr,merged,2531,"fix: disable CSMA spread delay in post-prioritize tests",https://github.com/fullsend-ai/fullsend/pull/2531
+2026-06-24,fullsend,pr,merged,2530,"ci: add per-script timing to script-test target",https://github.com/fullsend-ai/fullsend/pull/2530
+2026-06-24,fullsend,pr,merged,2514,"fix(ci): lint individual commits on PRs to catch invalid prefixes early",https://github.com/fullsend-ai/fullsend/pull/2514
+2026-06-24,fullsend,pr,merged,2509,"chore(ci): add pinact pre-commit hook to enforce SHA-pinned actions",https://github.com/fullsend-ai/fullsend/pull/2509
+2026-06-24,fullsend,pr,merged,2465,"fix(dispatch): per-role two-layer concurrency for per-repo (#981)",https://github.com/fullsend-ai/fullsend/pull/2465
+2026-06-24,fullsend,pr,merged,2464,"docs: document GCP project for hosted mint",https://github.com/fullsend-ai/fullsend/pull/2464
+2026-06-24,fullsend,pr,merged,2389,"feat(cli): mint agent tokens in the binary instead of workflows",https://github.com/fullsend-ai/fullsend/pull/2389
+2026-06-24,fullsend,pr,merged,2011,"docs(problems): add MCP configuration drift problem doc",https://github.com/fullsend-ai/fullsend/pull/2011
+2026-06-24,fullsend,pr,merged,1688,"feat(#1662): ADR 0054 — implement is_authorized on all agent dispatch paths",https://github.com/fullsend-ai/fullsend/pull/1688
+2026-06-24,fullsend,issue,opened,2637,"Review agent should always leave a visible trace on agent-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2637
+2026-06-24,fullsend,issue,opened,2636,"dispatch: retro-filed proposal issues skip auto-triage under ADR 0054 authorization gate",https://github.com/fullsend-ai/fullsend/issues/2636
+2026-06-24,fullsend,issue,opened,2635,"docs: Getting started order",https://github.com/fullsend-ai/fullsend/issues/2635
+2026-06-24,fullsend,issue,opened,2634,"doc: add --agents mention and clarify subset installation in https://fullsend.sh/docs/#/guides/getting-started/configuring-github",https://github.com/fullsend-ai/fullsend/issues/2634
+2026-06-24,fullsend,issue,opened,2632,"Remote skill display name uses filepath.Base of cache path instead of SKILL.md frontmatter name",https://github.com/fullsend-ai/fullsend/issues/2632
+2026-06-24,fullsend,issue,opened,2631,"Triage agent should not apply ready-to-code when root cause is outside the current repo",https://github.com/fullsend-ai/fullsend/issues/2631
+2026-06-24,fullsend,issue,opened,2629,"Review agent: flag documentation needs when PRs change user-facing API semantics",https://github.com/fullsend-ai/fullsend/issues/2629
+2026-06-24,fullsend,issue,opened,2625,"sync-scaffold, enroll, and unenroll push directly to default branch instead of creating PRs",https://github.com/fullsend-ai/fullsend/issues/2625
+2026-06-24,fullsend,issue,opened,2624,"Review agent: verify SHA-to-tag correspondence for GitHub Actions pinning changes",https://github.com/fullsend-ai/fullsend/issues/2624
+2026-06-24,fullsend,issue,opened,2623,"Review agent: detect growing positional parameter lists in Go functions",https://github.com/fullsend-ai/fullsend/issues/2623
+2026-06-24,fullsend,issue,opened,2620,"Review agent should validate changes against CLAUDE.md conventions",https://github.com/fullsend-ai/fullsend/issues/2620
+2026-06-24,fullsend,issue,opened,2619,"Review status comment should not finalize until post-script completes",https://github.com/fullsend-ai/fullsend/issues/2619
+2026-06-24,fullsend,issue,opened,2618,"e2e: CreateIssue call in admin_test.go lacks retry for transient 401s",https://github.com/fullsend-ai/fullsend/issues/2618
+2026-06-24,fullsend,issue,opened,2616,"Review agent should assess content quality and redundancy in agent-facing documents",https://github.com/fullsend-ai/fullsend/issues/2616
+2026-06-24,fullsend,issue,opened,2614,"Refine `.github/` protected path to target specific subdirectories instead of the entire prefix",https://github.com/fullsend-ai/fullsend/issues/2614
+2026-06-24,fullsend,issue,opened,2612,"Research Vertex AI inference budget caps for multi-org GCP setups",https://github.com/fullsend-ai/fullsend/issues/2612
+2026-06-24,fullsend,issue,opened,2611,"fullsend github action use -latest for github runner ",https://github.com/fullsend-ai/fullsend/issues/2611
+2026-06-24,fullsend,issue,opened,2610,"harness: URL base script resolution resolves relative to YAML dir instead of scaffold root",https://github.com/fullsend-ai/fullsend/issues/2610
+2026-06-24,fullsend,issue,opened,2609,"Surface low-severity findings in APPROVE summary comments",https://github.com/fullsend-ai/fullsend/issues/2609
+2026-06-24,fullsend,issue,opened,2608,"Review agent should REQUEST_CHANGES for RBAC/permission expansions in dependency-update PRs",https://github.com/fullsend-ai/fullsend/issues/2608
+2026-06-24,fullsend,issue,opened,2607,"Review agent should recognize NO-ISSUE prefix as intentional unlinked PR",https://github.com/fullsend-ai/fullsend/issues/2607
+2026-06-24,fullsend,issue,opened,2606,"Cancel or short-circuit review runs when PR merges before review completes",https://github.com/fullsend-ai/fullsend/issues/2606
+2026-06-24,fullsend,issue,opened,2604,"Review agent should verify datasource-to-consumer correctness in dependency tracking PRs",https://github.com/fullsend-ai/fullsend/issues/2604
+2026-06-24,fullsend,issue,opened,2602,"Review subagents should enforce orchestrator-specified scope constraints on tool call volume",https://github.com/fullsend-ai/fullsend/issues/2602
+2026-06-24,fullsend,issue,opened,2601,"Code agent should discover and use repo generation scripts before hand-editing generated files",https://github.com/fullsend-ai/fullsend/issues/2601
+2026-06-24,fullsend,issue,opened,2600,"Refine AGENTS.md sensitive-data policy to distinguish code from infrastructure docs",https://github.com/fullsend-ai/fullsend/issues/2600
+2026-06-24,fullsend,issue,opened,2599,"Add per-PR review budget to cap runaway review dispatches",https://github.com/fullsend-ai/fullsend/issues/2599
+2026-06-24,fullsend,issue,opened,2598,"Code/fix agent should check CI and deployment scripts before removing dependencies",https://github.com/fullsend-ai/fullsend/issues/2598
+2026-06-24,fullsend,issue,opened,2597,"Fix agent should post a PR comment when /fix produces no changes",https://github.com/fullsend-ai/fullsend/issues/2597
+2026-06-24,fullsend,issue,opened,2596,"Auto-dispatch fix agent on critical review findings for bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2596
+2026-06-24,fullsend,issue,opened,2593,"Review agent should consult AGENTS.md before suggesting dependency-management scope expansion",https://github.com/fullsend-ai/fullsend/issues/2593
+2026-06-24,fullsend,issue,opened,2592,"`fullsend github setup` command create the PR from a branch in the main repository and not from my fork",https://github.com/fullsend-ai/fullsend/issues/2592
+2026-06-24,fullsend,issue,opened,2591,"fullsend github setup PR is not signing commits",https://github.com/fullsend-ai/fullsend/issues/2591
+2026-06-24,fullsend,issue,opened,2590,"Retro skip guard for onboarding PRs is not effective",https://github.com/fullsend-ai/fullsend/issues/2590
+2026-06-24,fullsend,issue,opened,2589,"Review agent should detect missing test coverage for new code paths",https://github.com/fullsend-ai/fullsend/issues/2589
+2026-06-24,fullsend,issue,opened,2588,"Review agent: downgrade protected-path severity for bot-authored dependency update PRs",https://github.com/fullsend-ai/fullsend/issues/2588
+2026-06-24,fullsend,issue,opened,2587,"Add hard cap on total review dispatches per PR as a backstop",https://github.com/fullsend-ai/fullsend/issues/2587
+2026-06-24,fullsend,issue,opened,2586,"Review agent should recommend closing unfixable dependency-bot PRs",https://github.com/fullsend-ai/fullsend/issues/2586
+2026-06-24,fullsend,issue,opened,2585,"Fix agent should close PR when fix reverts all changes to empty diff",https://github.com/fullsend-ai/fullsend/issues/2585
+2026-06-24,fullsend,issue,closed,2632,"Remote skill display name uses filepath.Base of cache path instead of SKILL.md frontmatter name",https://github.com/fullsend-ai/fullsend/issues/2632
+2026-06-24,fullsend,issue,closed,2610,"harness: URL base script resolution resolves relative to YAML dir instead of scaffold root",https://github.com/fullsend-ai/fullsend/issues/2610
+2026-06-24,fullsend,issue,closed,2606,"Cancel or short-circuit review runs when PR merges before review completes",https://github.com/fullsend-ai/fullsend/issues/2606
+2026-06-24,fullsend,issue,closed,2591,"fullsend github setup PR is not signing commits",https://github.com/fullsend-ai/fullsend/issues/2591
+2026-06-24,fullsend,issue,closed,2590,"Retro skip guard for onboarding PRs is not effective",https://github.com/fullsend-ai/fullsend/issues/2590
+2026-06-24,fullsend,issue,closed,2558,"e2e: exercise default PR-based scaffold install flow",https://github.com/fullsend-ai/fullsend/issues/2558
+2026-06-24,fullsend,issue,closed,1933,"Installation should pin workflows to version being installed",https://github.com/fullsend-ai/fullsend/issues/1933
+2026-06-24,fullsend,issue,closed,1662,"ADR: require is_authorized check on all agent slash commands",https://github.com/fullsend-ai/fullsend/issues/1662
+2026-06-24,fullsend,issue,closed,1357,"Enable cancel-in-progress for review dispatches on the same PR",https://github.com/fullsend-ai/fullsend/issues/1357
+2026-06-24,fullsend,issue,closed,981,"Add concurrency group to dispatch-review job in fullsend.yaml",https://github.com/fullsend-ai/fullsend/issues/981
+2026-06-24,fullsend,issue,closed,982,"Add concurrency group to dispatch-code job in fullsend.yaml",https://github.com/fullsend-ai/fullsend/issues/982
+2026-06-24,.fullsend,pr,opened,86,"fix: SHA-pin third-party actions in custom workflows",https://github.com/fullsend-ai/.fullsend/pull/86
+2026-06-24,experiments,issue,opened,32,"Experiment: re-platform opendatahub-io/rfe-creator as a fullsend custom agent",https://github.com/fullsend-ai/experiments/issues/32
