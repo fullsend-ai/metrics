@@ -3141,3 +3141,68 @@ date,repo,type,event,number,title,url
 2026-06-24,fullsend,issue,closed,982,"Add concurrency group to dispatch-code job in fullsend.yaml",https://github.com/fullsend-ai/fullsend/issues/982
 2026-06-24,.fullsend,pr,opened,86,"fix: SHA-pin third-party actions in custom workflows",https://github.com/fullsend-ai/.fullsend/pull/86
 2026-06-24,experiments,issue,opened,32,"Experiment: re-platform opendatahub-io/rfe-creator as a fullsend custom agent",https://github.com/fullsend-ai/experiments/issues/32
+2026-06-25,fullsend,pr,opened,2679,"fix(dispatch): add label-based handoffs for bot-to-bot dispatch paths",https://github.com/fullsend-ai/fullsend/pull/2679
+2026-06-25,fullsend,pr,opened,2673,"fix(ci): fall back to collaborator permission API in e2e/functional gate",https://github.com/fullsend-ai/fullsend/pull/2673
+2026-06-25,fullsend,pr,opened,2671,"feat(sandbox): adopt provider-backed policy composition",https://github.com/fullsend-ai/fullsend/pull/2671
+2026-06-25,fullsend,pr,opened,2666,"docs(#2635): support frontmatter ordering in docs sidebar",https://github.com/fullsend-ai/fullsend/pull/2666
+2026-06-25,fullsend,pr,opened,2663,"feat(scaffold): per-repo pre-commit tools registry (L2 additive merge)",https://github.com/fullsend-ai/fullsend/pull/2663
+2026-06-25,fullsend,pr,opened,2660,"docs(#2634): document --agents flag in getting-started guide",https://github.com/fullsend-ai/fullsend/pull/2660
+2026-06-25,fullsend,pr,opened,2659,"feat(#2611): pin runners to ubuntu-24.04 with configurable __GH_RUNNER__",https://github.com/fullsend-ai/fullsend/pull/2659
+2026-06-25,fullsend,pr,opened,2657,"docs: strengthen breaking-change marking guidance",https://github.com/fullsend-ai/fullsend/pull/2657
+2026-06-25,fullsend,pr,opened,2656,"fix(post-code): block workflow file changes and correct token docs",https://github.com/fullsend-ai/fullsend/pull/2656
+2026-06-25,fullsend,pr,opened,2650,"docs(adr): harness CEL dispatch and NormalizedEvent v1",https://github.com/fullsend-ai/fullsend/pull/2650
+2026-06-25,fullsend,pr,opened,2647,"fix(renovate): add repository target and fork guard",https://github.com/fullsend-ai/fullsend/pull/2647
+2026-06-25,fullsend,pr,merged,2666,"docs(#2635): support frontmatter ordering in docs sidebar",https://github.com/fullsend-ai/fullsend/pull/2666
+2026-06-25,fullsend,pr,merged,2663,"feat(scaffold): per-repo pre-commit tools registry (L2 additive merge)",https://github.com/fullsend-ai/fullsend/pull/2663
+2026-06-25,fullsend,pr,merged,2660,"docs(#2634): document --agents flag in getting-started guide",https://github.com/fullsend-ai/fullsend/pull/2660
+2026-06-25,fullsend,pr,merged,2659,"feat(#2611): pin runners to ubuntu-24.04 with configurable __GH_RUNNER__",https://github.com/fullsend-ai/fullsend/pull/2659
+2026-06-25,fullsend,pr,merged,2627,"fix(ci): use GitHub PR titles for release notes",https://github.com/fullsend-ai/fullsend/pull/2627
+2026-06-25,fullsend,pr,merged,2617,"fix(ci): skip e2e/functional tests in merge queue for irrelevant paths",https://github.com/fullsend-ai/fullsend/pull/2617
+2026-06-25,fullsend,pr,merged,2584,"docs: sandbox layout, skill precedence, and agent rule layering",https://github.com/fullsend-ai/fullsend/pull/2584
+2026-06-25,fullsend,pr,merged,2546,"feat(renovate): enable automerge for low-risk PRs",https://github.com/fullsend-ai/fullsend/pull/2546
+2026-06-25,fullsend,pr,merged,2063,"ci(sandbox): add macOS runner for darwin-specific tar behavior test",https://github.com/fullsend-ai/fullsend/pull/2063
+2026-06-25,fullsend,pr,merged,1055,"feat(scaffold): auto-detect and install pre-commit tool dependencies",https://github.com/fullsend-ai/fullsend/pull/1055
+2026-06-25,fullsend,pr,closed,2548,"feat(auth): label-gated workflow-change elevation",https://github.com/fullsend-ai/fullsend/pull/2548
+2026-06-25,fullsend,issue,opened,2678,"Review agent should deprioritize findings on planning/design documents",https://github.com/fullsend-ai/fullsend/issues/2678
+2026-06-25,fullsend,issue,opened,2677,"Review status comment should surface unresolved finding count for human reviewers",https://github.com/fullsend-ai/fullsend/issues/2677
+2026-06-25,fullsend,issue,opened,2676,"Review agent should detect incomplete mechanical migrations across docs and examples",https://github.com/fullsend-ai/fullsend/issues/2676
+2026-06-25,fullsend,issue,opened,2675,"E2e-gate workflow posts duplicate comments on bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2675
+2026-06-25,fullsend,issue,opened,2674,"dispatch: ADR 0054 authorization gate blocks review dispatch for coder-bot PRs",https://github.com/fullsend-ai/fullsend/issues/2674
+2026-06-25,fullsend,issue,opened,2672,"Provider and profile definitions cannot be resolved from URL-referenced base harnesses",https://github.com/fullsend-ai/fullsend/issues/2672
+2026-06-25,fullsend,issue,opened,2670,"Harden code agent security: block workflow modifications and enforce technical permission controls",https://github.com/fullsend-ai/fullsend/issues/2670
+2026-06-25,fullsend,issue,opened,2669,"Adopt label-based gating for agent dispatch and trusted-process identification",https://github.com/fullsend-ai/fullsend/issues/2669
+2026-06-25,fullsend,issue,opened,2668,"Implement per-repository budget cap for agent usage",https://github.com/fullsend-ai/fullsend/issues/2668
+2026-06-25,fullsend,issue,opened,2667,"Review agent should poll CI status before finalizing review (fuse timer)",https://github.com/fullsend-ai/fullsend/issues/2667
+2026-06-25,fullsend,issue,opened,2665,"Review agent should not post inline comments for non-actionable findings",https://github.com/fullsend-ai/fullsend/issues/2665
+2026-06-25,fullsend,issue,opened,2664,"Review agent should verify docs claims against source code before flagging architectural-misalignment",https://github.com/fullsend-ai/fullsend/issues/2664
+2026-06-25,fullsend,issue,opened,2662,"Update stale skill ""overload"" terminology in triage.md and review.md",https://github.com/fullsend-ai/fullsend/issues/2662
+2026-06-25,fullsend,issue,opened,2661,"Log a warning when a repo skill is shadowed by a personal-level skill",https://github.com/fullsend-ai/fullsend/issues/2661
+2026-06-25,fullsend,issue,opened,2658,"Review agent: verify CI workflow permission scopes match tool requirements",https://github.com/fullsend-ai/fullsend/issues/2658
+2026-06-25,fullsend,issue,opened,2655,"Review agent should suppress findings whose own analysis concludes they are justified",https://github.com/fullsend-ai/fullsend/issues/2655
+2026-06-25,fullsend,issue,opened,2654,"ADR-0045 Phase 4 PR #2446 shipped breaking change without ! marker",https://github.com/fullsend-ai/fullsend/issues/2654
+2026-06-25,fullsend,issue,opened,2653,"Document and formalize maintainer onboarding process",https://github.com/fullsend-ai/fullsend/issues/2653
+2026-06-25,fullsend,issue,opened,2652,"Decommission playground environment and clean up references",https://github.com/fullsend-ai/fullsend/issues/2652
+2026-06-25,fullsend,issue,opened,2651,"Review agent should escalate detected parallel implementations into unification suggestions",https://github.com/fullsend-ai/fullsend/issues/2651
+2026-06-25,fullsend,issue,opened,2649,"Issue-authoring agents should validate code snippets against repo conventions",https://github.com/fullsend-ai/fullsend/issues/2649
+2026-06-25,fullsend,issue,opened,2648,"Review agent: trace feature-flag skip patterns across dependent functions in shell scripts",https://github.com/fullsend-ai/fullsend/issues/2648
+2026-06-25,fullsend,issue,opened,2646,"Review agent: detect inconsistent config between sibling CI workflow jobs",https://github.com/fullsend-ai/fullsend/issues/2646
+2026-06-25,fullsend,issue,opened,2645,"fix(renovate): repository not found + skip forks",https://github.com/fullsend-ai/fullsend/issues/2645
+2026-06-25,fullsend,issue,opened,2644,"Review agent should perform deeper security analysis on authorization and privilege-escalation code paths",https://github.com/fullsend-ai/fullsend/issues/2644
+2026-06-25,fullsend,issue,opened,2643,"Retro agent should verify codebase-internal references before including them in proposals",https://github.com/fullsend-ai/fullsend/issues/2643
+2026-06-25,fullsend,issue,opened,2642,"Make agent environment setup resilient to transient APT repository failures",https://github.com/fullsend-ai/fullsend/issues/2642
+2026-06-25,fullsend,issue,opened,2641,"e2e: adopt bot-authorization fix from #2636 and remove PAT workaround",https://github.com/fullsend-ai/fullsend/issues/2641
+2026-06-25,fullsend,issue,opened,2640,"Fix conflicting early-exit vs full-read instructions in style-conventions sub-agent",https://github.com/fullsend-ai/fullsend/issues/2640
+2026-06-25,fullsend,issue,opened,2639,"Add fast-path in review orchestrator for trivial bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2639
+2026-06-25,fullsend,issue,opened,2638,"Skip retro dispatch for merged bot PRs with no review findings",https://github.com/fullsend-ai/fullsend/issues/2638
+2026-06-25,fullsend,issue,closed,2652,"Decommission playground environment and clean up references",https://github.com/fullsend-ai/fullsend/issues/2652
+2026-06-25,fullsend,issue,closed,2635,"docs: Getting started order",https://github.com/fullsend-ai/fullsend/issues/2635
+2026-06-25,fullsend,issue,closed,2634,"doc: add --agents mention and clarify subset installation in https://fullsend.sh/docs/#/guides/getting-started/configuring-github",https://github.com/fullsend-ai/fullsend/issues/2634
+2026-06-25,fullsend,issue,closed,2611,"fullsend github action use -latest for github runner ",https://github.com/fullsend-ai/fullsend/issues/2611
+2026-06-25,fullsend,issue,closed,2506,"Enable auto-merge for Renovate PRs",https://github.com/fullsend-ai/fullsend/issues/2506
+2026-06-25,fullsend,issue,closed,2032,"macOS tar includes ._* AppleDouble files in UploadDir, corrupting .git on round-trip",https://github.com/fullsend-ai/fullsend/issues/2032
+2026-06-25,fullsend,issue,closed,1270,"Expand precommit-tools.yaml registry coverage",https://github.com/fullsend-ai/fullsend/issues/1270
+2026-06-25,fullsend,issue,closed,1056,"Follow-up from PR #1055: The strip_prefix for lychee is set to ""lychee-{triple}"", but the original hardcoded i...",https://github.com/fullsend-ai/fullsend/issues/1056
+2026-06-25,fullsend,issue,closed,1057,"Follow-up from PR #1055: PyYAML is installed with an unpinned version floor (pyyaml>=6.0). Every other depende...",https://github.com/fullsend-ai/fullsend/issues/1057
+2026-06-25,fullsend,issue,closed,850,"Add pre-flight tool availability checks to post-code/post-fix scripts",https://github.com/fullsend-ai/fullsend/issues/850
+2026-06-25,.fullsend,pr,opened,87,"fix: add required role field to scribe and gh-classify harnesses",https://github.com/fullsend-ai/.fullsend/pull/87
+2026-06-25,.fullsend,pr,merged,87,"fix: add required role field to scribe and gh-classify harnesses",https://github.com/fullsend-ai/.fullsend/pull/87
