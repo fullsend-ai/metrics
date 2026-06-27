@@ -3206,3 +3206,43 @@ date,repo,type,event,number,title,url
 2026-06-25,fullsend,issue,closed,850,"Add pre-flight tool availability checks to post-code/post-fix scripts",https://github.com/fullsend-ai/fullsend/issues/850
 2026-06-25,.fullsend,pr,opened,87,"fix: add required role field to scribe and gh-classify harnesses",https://github.com/fullsend-ai/.fullsend/pull/87
 2026-06-25,.fullsend,pr,merged,87,"fix: add required role field to scribe and gh-classify harnesses",https://github.com/fullsend-ai/.fullsend/pull/87
+2026-06-26,fullsend,pr,opened,2707,"fix(harness): fetch full skill directory from URL base via ForgeClient",https://github.com/fullsend-ai/fullsend/pull/2707
+2026-06-26,fullsend,pr,opened,2706,"fix(#2705): fetch full skill directories from URL bases via forge API",https://github.com/fullsend-ai/fullsend/pull/2706
+2026-06-26,fullsend,pr,opened,2702,"chore: update copyright from Red Hat, Inc to Red Hat, LLC",https://github.com/fullsend-ai/fullsend/pull/2702
+2026-06-26,fullsend,pr,opened,2701,"docs: migrate docs site from Svelte SPA to Docusaurus",https://github.com/fullsend-ai/fullsend/pull/2701
+2026-06-26,fullsend,pr,opened,2700,"chore(deps): update dependency concurrently to v9.2.3",https://github.com/fullsend-ai/fullsend/pull/2700
+2026-06-26,fullsend,pr,opened,2698,"docs: deprecate all-in-one admin install, restructure reference/ into admin/",https://github.com/fullsend-ai/fullsend/pull/2698
+2026-06-26,fullsend,pr,opened,2697,"fix(harness): warn when URL-base skill is fetched with only SKILL.md",https://github.com/fullsend-ai/fullsend/pull/2697
+2026-06-26,fullsend,pr,opened,2695,"fix(#2687): add line-number verification to review skill prompts",https://github.com/fullsend-ai/fullsend/pull/2695
+2026-06-26,fullsend,pr,opened,2693,"fix(renovate): group OpenShell base image and version pin updates",https://github.com/fullsend-ai/fullsend/pull/2693
+2026-06-26,fullsend,pr,opened,2690,"feat(harness): resolve declarative resources from URL-referenced bases",https://github.com/fullsend-ai/fullsend/pull/2690
+2026-06-26,fullsend,pr,opened,2689,"refactor(workflows): replace fullsend_ai_ref by job.workflow_sha",https://github.com/fullsend-ai/fullsend/pull/2689
+2026-06-26,fullsend,pr,opened,2686,"chore(config): migrate Renovate config",https://github.com/fullsend-ai/fullsend/pull/2686
+2026-06-26,fullsend,pr,opened,2685,"chore(deps): update ghcr.io/nvidia/openshell-community/sandboxes/base docker digest to aeef1c6",https://github.com/fullsend-ai/fullsend/pull/2685
+2026-06-26,fullsend,pr,opened,2681,"chore(deps): update eval/.agent-eval-harness digest to ff68bc5",https://github.com/fullsend-ai/fullsend/pull/2681
+2026-06-26,fullsend,pr,merged,2697,"fix(harness): warn when URL-base skill is fetched with only SKILL.md",https://github.com/fullsend-ai/fullsend/pull/2697
+2026-06-26,fullsend,pr,merged,2690,"feat(harness): resolve declarative resources from URL-referenced bases",https://github.com/fullsend-ai/fullsend/pull/2690
+2026-06-26,fullsend,pr,merged,2686,"chore(config): migrate Renovate config",https://github.com/fullsend-ai/fullsend/pull/2686
+2026-06-26,fullsend,pr,merged,2681,"chore(deps): update eval/.agent-eval-harness digest to ff68bc5",https://github.com/fullsend-ai/fullsend/pull/2681
+2026-06-26,fullsend,pr,merged,2647,"fix(renovate): add repository target and fork guard",https://github.com/fullsend-ai/fullsend/pull/2647
+2026-06-26,fullsend,pr,merged,2392,"docs(adr): multi-repo management for per-repo installations",https://github.com/fullsend-ai/fullsend/pull/2392
+2026-06-26,fullsend,pr,merged,2340,"docs(adr): deprecate per-org installation mode",https://github.com/fullsend-ai/fullsend/pull/2340
+2026-06-26,fullsend,issue,opened,2708,"Skip retro dispatch for merged human PRs with no agent involvement",https://github.com/fullsend-ai/fullsend/issues/2708
+2026-06-26,fullsend,issue,opened,2705,"bug(harness): v0.22.0 URL-base skill resolution drops companion files, breaks review agent for all users",https://github.com/fullsend-ai/fullsend/issues/2705
+2026-06-26,fullsend,issue,opened,2704,"Include agent name in hardcoded prompt so agent can self-orient on definition load failure",https://github.com/fullsend-ai/fullsend/issues/2704
+2026-06-26,fullsend,issue,opened,2703,"Harness should validate agent definition and critical env vars before starting LLM conversation",https://github.com/fullsend-ai/fullsend/issues/2703
+2026-06-26,fullsend,issue,opened,2699,"Review agent should flag plans that propose deleting tests rather than migrating them",https://github.com/fullsend-ai/fullsend/issues/2699
+2026-06-26,fullsend,issue,opened,2696,"Review agent should verify new validation functions cover all fields of the validated entity",https://github.com/fullsend-ai/fullsend/issues/2696
+2026-06-26,fullsend,issue,opened,2694,"Review agent: detect unhandled new string-enum variants in downstream consumers",https://github.com/fullsend-ai/fullsend/issues/2694
+2026-06-26,fullsend,issue,opened,2692,"Renovate creates separate PRs for OpenShell base image and version pin",https://github.com/fullsend-ai/fullsend/issues/2692
+2026-06-26,fullsend,issue,opened,2691,"Add curl-pipe-bash installer script for fullsend CLI",https://github.com/fullsend-ai/fullsend/issues/2691
+2026-06-26,fullsend,issue,opened,2688,"Post-review harness should anchor inline comments with content snippets",https://github.com/fullsend-ai/fullsend/issues/2688
+2026-06-26,fullsend,issue,opened,2687,"Review skill should instruct agents to verify line numbers against file content",https://github.com/fullsend-ai/fullsend/issues/2687
+2026-06-26,fullsend,issue,opened,2684,"Review agent: add prominent 'out-of-diff impact' callout for findings affecting unchanged files",https://github.com/fullsend-ai/fullsend/issues/2684
+2026-06-26,fullsend,issue,opened,2683,"reusable-workflow and dependabot update",https://github.com/fullsend-ai/fullsend/issues/2683
+2026-06-26,fullsend,issue,opened,2682,"Dependency Dashboard",https://github.com/fullsend-ai/fullsend/issues/2682
+2026-06-26,fullsend,issue,opened,2680,"mint delete: add command to tear down mint infrastructure",https://github.com/fullsend-ai/fullsend/issues/2680
+2026-06-26,fullsend,issue,closed,2645,"fix(renovate): repository not found + skip forks",https://github.com/fullsend-ai/fullsend/issues/2645
+2026-06-26,fullsend,issue,closed,2483,"Dependency Dashboard",https://github.com/fullsend-ai/fullsend/issues/2483
+2026-06-26,fullsend,issue,closed,2350,"Deprecate and remove per-org installation mode",https://github.com/fullsend-ai/fullsend/issues/2350
+2026-06-26,.fullsend,pr,merged,86,"fix: SHA-pin third-party actions in custom workflows",https://github.com/fullsend-ai/.fullsend/pull/86
