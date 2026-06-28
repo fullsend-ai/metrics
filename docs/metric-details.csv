@@ -3246,3 +3246,40 @@ date,repo,type,event,number,title,url
 2026-06-26,fullsend,issue,closed,2483,"Dependency Dashboard",https://github.com/fullsend-ai/fullsend/issues/2483
 2026-06-26,fullsend,issue,closed,2350,"Deprecate and remove per-org installation mode",https://github.com/fullsend-ai/fullsend/issues/2350
 2026-06-26,.fullsend,pr,merged,86,"fix: SHA-pin third-party actions in custom workflows",https://github.com/fullsend-ai/.fullsend/pull/86
+2026-06-27,fullsend,pr,opened,2727,"fix(#2726): upload agent definition as {name}.md in bootstrap",https://github.com/fullsend-ai/fullsend/pull/2727
+2026-06-27,fullsend,pr,opened,2725,"feat(#2722): add reader role for self-minting tokens during harness loading",https://github.com/fullsend-ai/fullsend/pull/2725
+2026-06-27,fullsend,pr,opened,2723,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2723
+2026-06-27,fullsend,pr,opened,2721,"feat(site): migrate documentation site from Docusaurus to VitePress",https://github.com/fullsend-ai/fullsend/pull/2721
+2026-06-27,fullsend,pr,opened,2720,"fix(#2713): add GH_TOKEN to ""Run fullsend"" step env block",https://github.com/fullsend-ai/fullsend/pull/2720
+2026-06-27,fullsend,pr,opened,2717,"fix(#2715): add pinact to pre-commit tools registry",https://github.com/fullsend-ai/fullsend/pull/2717
+2026-06-27,fullsend,pr,opened,2716,"fix(#2715): install pinact in sandbox container image",https://github.com/fullsend-ai/fullsend/pull/2716
+2026-06-27,fullsend,pr,opened,2714,"chore(deps): update dependency nvidia/openshell to v0.0.71",https://github.com/fullsend-ai/fullsend/pull/2714
+2026-06-27,fullsend,pr,opened,2709,"chore(deps): update dependency go to v1.26.4",https://github.com/fullsend-ai/fullsend/pull/2709
+2026-06-27,fullsend,pr,merged,2727,"fix(#2726): upload agent definition as {name}.md in bootstrap",https://github.com/fullsend-ai/fullsend/pull/2727
+2026-06-27,fullsend,pr,merged,2721,"feat(site): migrate documentation site from Docusaurus to VitePress",https://github.com/fullsend-ai/fullsend/pull/2721
+2026-06-27,fullsend,pr,merged,2720,"fix(#2713): add GH_TOKEN to ""Run fullsend"" step env block",https://github.com/fullsend-ai/fullsend/pull/2720
+2026-06-27,fullsend,pr,merged,2717,"fix(#2715): add pinact to pre-commit tools registry",https://github.com/fullsend-ai/fullsend/pull/2717
+2026-06-27,fullsend,pr,merged,2707,"fix(harness): fetch full skill directory from URL base via ForgeClient",https://github.com/fullsend-ai/fullsend/pull/2707
+2026-06-27,fullsend,pr,closed,2716,"fix(#2715): install pinact in sandbox container image",https://github.com/fullsend-ai/fullsend/pull/2716
+2026-06-27,fullsend,issue,opened,2729,"Retro post-script should handle repos with GitHub Issues disabled gracefully",https://github.com/fullsend-ai/fullsend/issues/2729
+2026-06-27,fullsend,issue,opened,2728,"Fix agent should verify explicit success criteria from human /fs-fix instructions",https://github.com/fullsend-ai/fullsend/issues/2728
+2026-06-27,fullsend,issue,opened,2726,"Base-composed agent prompt not injected: cached file uploaded as 'content' instead of agent name",https://github.com/fullsend-ai/fullsend/issues/2726
+2026-06-27,fullsend,issue,opened,2724,"Post user-visible feedback when /fs-review dispatch is skipped",https://github.com/fullsend-ai/fullsend/issues/2724
+2026-06-27,fullsend,issue,opened,2722,"mint: add loader role so the binary self-mints tokens for URL-based harness loading",https://github.com/fullsend-ai/fullsend/issues/2722
+2026-06-27,fullsend,issue,opened,2719,"Document pre-commit tools registry in AGENTS.md",https://github.com/fullsend-ai/fullsend/issues/2719
+2026-06-27,fullsend,issue,opened,2718,"Triage agent should discover existing infrastructure patterns before recommending new ones",https://github.com/fullsend-ai/fullsend/issues/2718
+2026-06-27,fullsend,issue,opened,2715,"Code agent: pinact not installed in sandbox, blocks action.yml changes",https://github.com/fullsend-ai/fullsend/issues/2715
+2026-06-27,fullsend,issue,opened,2713,"action.yml: ""Run fullsend"" step missing GH_TOKEN for URL-based skill fetching",https://github.com/fullsend-ai/fullsend/issues/2713
+2026-06-27,fullsend,issue,opened,2712,"Code agent should validate its fix eliminates the reported failure mode, not just add the missing capability",https://github.com/fullsend-ai/fullsend/issues/2712
+2026-06-27,fullsend,issue,opened,2711,"Auto re-dispatch review after consecutive infrastructure failures with backoff",https://github.com/fullsend-ai/fullsend/issues/2711
+2026-06-27,fullsend,issue,opened,2710,"Fix intent-coherence sub-agent ignoring early-exit criteria for trivial bot diffs",https://github.com/fullsend-ai/fullsend/issues/2710
+2026-06-27,fullsend,issue,closed,2726,"Base-composed agent prompt not injected: cached file uploaded as 'content' instead of agent name",https://github.com/fullsend-ai/fullsend/issues/2726
+2026-06-27,fullsend,issue,closed,2715,"Code agent: pinact not installed in sandbox, blocks action.yml changes",https://github.com/fullsend-ai/fullsend/issues/2715
+2026-06-27,fullsend,issue,closed,2713,"action.yml: ""Run fullsend"" step missing GH_TOKEN for URL-based skill fetching",https://github.com/fullsend-ai/fullsend/issues/2713
+2026-06-27,fullsend,issue,closed,2705,"bug(harness): v0.22.0 URL-base skill resolution drops companion files, breaks review agent for all users",https://github.com/fullsend-ai/fullsend/issues/2705
+2026-06-27,triage-agent,pr,opened,3,"fix(#1): update harness dest paths and restructure for forge",https://github.com/fullsend-ai/triage-agent/pull/3
+2026-06-27,triage-agent,pr,opened,2,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/triage-agent/pull/2
+2026-06-27,triage-agent,pr,merged,3,"fix(#1): update harness dest paths and restructure for forge",https://github.com/fullsend-ai/triage-agent/pull/3
+2026-06-27,triage-agent,pr,merged,2,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/triage-agent/pull/2
+2026-06-27,triage-agent,issue,opened,1,"harness/triage.yaml has stale /tmp/workspace/ dest paths; env vars never reach sandbox",https://github.com/fullsend-ai/triage-agent/issues/1
+2026-06-27,triage-agent,issue,closed,1,"harness/triage.yaml has stale /tmp/workspace/ dest paths; env vars never reach sandbox",https://github.com/fullsend-ai/triage-agent/issues/1
