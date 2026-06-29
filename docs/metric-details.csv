@@ -3283,3 +3283,16 @@ date,repo,type,event,number,title,url
 2026-06-27,triage-agent,pr,merged,2,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/triage-agent/pull/2
 2026-06-27,triage-agent,issue,opened,1,"harness/triage.yaml has stale /tmp/workspace/ dest paths; env vars never reach sandbox",https://github.com/fullsend-ai/triage-agent/issues/1
 2026-06-27,triage-agent,issue,closed,1,"harness/triage.yaml has stale /tmp/workspace/ dest paths; env vars never reach sandbox",https://github.com/fullsend-ai/triage-agent/issues/1
+2026-06-28,fullsend,pr,opened,2736,"feat(#2735): replace GitHub Contents API with git sparse checkout",https://github.com/fullsend-ai/fullsend/pull/2736
+2026-06-28,fullsend,pr,opened,2734,"chore(deps): update dependency vite to v6.4.3",https://github.com/fullsend-ai/fullsend/pull/2734
+2026-06-28,fullsend,pr,opened,2733,"feat(config): add triage-agent to default allowed_remote_resources",https://github.com/fullsend-ai/fullsend/pull/2733
+2026-06-28,fullsend,pr,opened,2730,"chore(deps): update dependency prettier-plugin-svelte to v3.5.2",https://github.com/fullsend-ai/fullsend/pull/2730
+2026-06-28,fullsend,pr,merged,2730,"chore(deps): update dependency prettier-plugin-svelte to v3.5.2",https://github.com/fullsend-ai/fullsend/pull/2730
+2026-06-28,fullsend,pr,merged,2709,"chore(deps): update dependency go to v1.26.4",https://github.com/fullsend-ai/fullsend/pull/2709
+2026-06-28,fullsend,pr,merged,2702,"chore: update copyright from Red Hat, Inc to Red Hat, LLC",https://github.com/fullsend-ai/fullsend/pull/2702
+2026-06-28,fullsend,pr,merged,2700,"chore(deps): update dependency concurrently to v9.2.3",https://github.com/fullsend-ai/fullsend/pull/2700
+2026-06-28,fullsend,pr,merged,2545,"fix(scaffold): place vendored per-repo reusable workflows under .github/workflows/",https://github.com/fullsend-ai/fullsend/pull/2545
+2026-06-28,fullsend,issue,opened,2735,"refactor(forge): replace GitHub Contents API with git-based directory fetching",https://github.com/fullsend-ai/fullsend/issues/2735
+2026-06-28,fullsend,issue,opened,2732,"Fix agent should warn when committing to a dependency-bot-managed branch",https://github.com/fullsend-ai/fullsend/issues/2732
+2026-06-28,fullsend,issue,opened,2731,"Fix agent should avoid pushing directly to Renovate-managed branches",https://github.com/fullsend-ai/fullsend/issues/2731
+2026-06-28,fullsend,issue,closed,2544,"Vendored per-repo shim uses invalid local path for reusable workflows",https://github.com/fullsend-ai/fullsend/issues/2544
