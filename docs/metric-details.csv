@@ -3296,3 +3296,73 @@ date,repo,type,event,number,title,url
 2026-06-28,fullsend,issue,opened,2732,"Fix agent should warn when committing to a dependency-bot-managed branch",https://github.com/fullsend-ai/fullsend/issues/2732
 2026-06-28,fullsend,issue,opened,2731,"Fix agent should avoid pushing directly to Renovate-managed branches",https://github.com/fullsend-ai/fullsend/issues/2731
 2026-06-28,fullsend,issue,closed,2544,"Vendored per-repo shim uses invalid local path for reusable workflows",https://github.com/fullsend-ai/fullsend/issues/2544
+2026-06-29,fullsend,pr,opened,2767,"docs: revert hardcoded getting-started link to README.md",https://github.com/fullsend-ai/fullsend/pull/2767
+2026-06-29,fullsend,pr,opened,2766,"feat(e2e): expand org pool from 6 to 12",https://github.com/fullsend-ai/fullsend/pull/2766
+2026-06-29,fullsend,pr,opened,2765,"fix(site): rewrite broken README.md and out-of-docs links",https://github.com/fullsend-ai/fullsend/pull/2765
+2026-06-29,fullsend,pr,opened,2764,"fix(github): increase retry attempts and add jitter to backoff",https://github.com/fullsend-ai/fullsend/pull/2764
+2026-06-29,fullsend,pr,opened,2763,"refactor(harness): migrate triage to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2763
+2026-06-29,fullsend,pr,opened,2762,"refactor(harness): migrate fix agent to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2762
+2026-06-29,fullsend,pr,opened,2761,"refactor(harness): migrate retro agent to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2761
+2026-06-29,fullsend,pr,opened,2760,"refactor(harness): migrate code agent to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2760
+2026-06-29,fullsend,pr,opened,2759,"refactor(harness): migrate prioritize agent to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2759
+2026-06-29,fullsend,pr,opened,2758,"refactor(harness): migrate review agent to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2758
+2026-06-29,fullsend,pr,opened,2756,"docs(guides): migrate runner_env examples to env.runner",https://github.com/fullsend-ai/fullsend/pull/2756
+2026-06-29,fullsend,pr,opened,2755,"docs(adr): Agent registration",https://github.com/fullsend-ai/fullsend/pull/2755
+2026-06-29,fullsend,pr,opened,2754,"feat(site): add mermaid diagram rendering",https://github.com/fullsend-ai/fullsend/pull/2754
+2026-06-29,fullsend,pr,opened,2753,"chore(deps): update dependency nvidia/openshell to v0.0.72",https://github.com/fullsend-ai/fullsend/pull/2753
+2026-06-29,fullsend,pr,opened,2752,"feat(#2577): add Level 1 distributed tracing",https://github.com/fullsend-ai/fullsend/pull/2752
+2026-06-29,fullsend,pr,opened,2751,"fix(config): rename triage-agent to agents in allowlist",https://github.com/fullsend-ai/fullsend/pull/2751
+2026-06-29,fullsend,pr,opened,2750,"feat(scaffold): replace triage harness with external agent registry",https://github.com/fullsend-ai/fullsend/pull/2750
+2026-06-29,fullsend,pr,opened,2743,"docs(adr): add ADR 0059 for ready-made configuration presets",https://github.com/fullsend-ai/fullsend/pull/2743
+2026-06-29,fullsend,pr,opened,2737,"chore(deps): update dependency vitest to v4.1.9",https://github.com/fullsend-ai/fullsend/pull/2737
+2026-06-29,fullsend,pr,merged,2765,"fix(site): rewrite broken README.md and out-of-docs links",https://github.com/fullsend-ai/fullsend/pull/2765
+2026-06-29,fullsend,pr,merged,2754,"feat(site): add mermaid diagram rendering",https://github.com/fullsend-ai/fullsend/pull/2754
+2026-06-29,fullsend,pr,merged,2751,"fix(config): rename triage-agent to agents in allowlist",https://github.com/fullsend-ai/fullsend/pull/2751
+2026-06-29,fullsend,pr,merged,2737,"chore(deps): update dependency vitest to v4.1.9",https://github.com/fullsend-ai/fullsend/pull/2737
+2026-06-29,fullsend,pr,merged,2734,"chore(deps): update dependency vite to v6.4.3",https://github.com/fullsend-ai/fullsend/pull/2734
+2026-06-29,fullsend,pr,merged,2733,"feat(config): add triage-agent to default allowed_remote_resources",https://github.com/fullsend-ai/fullsend/pull/2733
+2026-06-29,fullsend,pr,merged,2714,"chore(deps): update dependency nvidia/openshell to v0.0.71",https://github.com/fullsend-ai/fullsend/pull/2714
+2026-06-29,fullsend,pr,merged,2701,"feat(site): migrate docs site to VitePress and redesign landing page",https://github.com/fullsend-ai/fullsend/pull/2701
+2026-06-29,fullsend,pr,merged,2698,"docs: deprecate all-in-one admin, restructure reference/ into sidebar sections",https://github.com/fullsend-ai/fullsend/pull/2698
+2026-06-29,fullsend,pr,merged,2695,"fix(#2687): add line-number verification to review skill prompts",https://github.com/fullsend-ai/fullsend/pull/2695
+2026-06-29,fullsend,pr,merged,2689,"refactor(workflows): replace fullsend_ai_ref by job.workflow_sha",https://github.com/fullsend-ai/fullsend/pull/2689
+2026-06-29,fullsend,pr,merged,2679,"fix(dispatch): add label-based handoffs for bot-to-bot dispatch paths",https://github.com/fullsend-ai/fullsend/pull/2679
+2026-06-29,fullsend,pr,merged,2673,"fix(ci): fall back to collaborator permission API in e2e/functional gate",https://github.com/fullsend-ai/fullsend/pull/2673
+2026-06-29,fullsend,pr,merged,2657,"docs: strengthen breaking-change marking guidance",https://github.com/fullsend-ai/fullsend/pull/2657
+2026-06-29,fullsend,pr,merged,2630,"feat(cli)!: add --direct flag to sync-scaffold, enroll, and unenroll",https://github.com/fullsend-ai/fullsend/pull/2630
+2026-06-29,fullsend,pr,merged,2594,"fix(#2592): default to fork-based scaffold PR for non-owner users",https://github.com/fullsend-ai/fullsend/pull/2594
+2026-06-29,fullsend,pr,merged,2582,"feat(harness): unified env var delivery (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2582
+2026-06-29,fullsend,pr,merged,2537,"feat: add standalone mint with custom role support",https://github.com/fullsend-ai/fullsend/pull/2537
+2026-06-29,fullsend,pr,closed,2750,"feat(scaffold): replace triage harness with external agent registry",https://github.com/fullsend-ai/fullsend/pull/2750
+2026-06-29,fullsend,pr,closed,2685,"chore(deps): update ghcr.io/nvidia/openshell-community/sandboxes/base docker digest to aeef1c6",https://github.com/fullsend-ai/fullsend/pull/2685
+2026-06-29,fullsend,issue,opened,2757,"Docs site: experiments/ submodule content not included in built site",https://github.com/fullsend-ai/fullsend/issues/2757
+2026-06-29,fullsend,issue,opened,2749,"Unify retro skip conditions: skip when review verdict is clean approval with no findings",https://github.com/fullsend-ai/fullsend/issues/2749
+2026-06-29,fullsend,issue,opened,2748,"Review agent should detect repo-specific shell conventions before reviewing shell scripts",https://github.com/fullsend-ai/fullsend/issues/2748
+2026-06-29,fullsend,issue,opened,2747,"Review agent includes base-branch changes in diff analysis, producing false positives",https://github.com/fullsend-ai/fullsend/issues/2747
+2026-06-29,fullsend,issue,opened,2746,"Review agent produces non-deterministic verdicts on unchanged commits",https://github.com/fullsend-ai/fullsend/issues/2746
+2026-06-29,fullsend,issue,opened,2745,"Review agent should read repo AGENTS.md to calibrate protected-path list",https://github.com/fullsend-ai/fullsend/issues/2745
+2026-06-29,fullsend,issue,opened,2744,"Review agent should grep codebase for existing usage before flagging upstream-downstream violations",https://github.com/fullsend-ai/fullsend/issues/2744
+2026-06-29,fullsend,issue,opened,2742,"Remove __FULLSEND_AI_REF__ placeholder from scaffold action references",https://github.com/fullsend-ai/fullsend/issues/2742
+2026-06-29,fullsend,issue,opened,2741,"Review agent should flag weak test matchers that under-assert",https://github.com/fullsend-ai/fullsend/issues/2741
+2026-06-29,fullsend,issue,opened,2740,"Review agent should detect placeholder/stub markers in committed content",https://github.com/fullsend-ai/fullsend/issues/2740
+2026-06-29,fullsend,issue,opened,2739,"Skip retro dispatch for merged bot PRs with no agent interaction",https://github.com/fullsend-ai/fullsend/issues/2739
+2026-06-29,fullsend,issue,opened,2738,"Review agent should validate remediation feasibility against PR context",https://github.com/fullsend-ai/fullsend/issues/2738
+2026-06-29,fullsend,issue,closed,2687,"Review skill should instruct agents to verify line numbers against file content",https://github.com/fullsend-ai/fullsend/issues/2687
+2026-06-29,fullsend,issue,closed,2683,"reusable-workflow and dependabot update",https://github.com/fullsend-ai/fullsend/issues/2683
+2026-06-29,fullsend,issue,closed,2669,"Adopt label-based gating for agent dispatch and trusted-process identification",https://github.com/fullsend-ai/fullsend/issues/2669
+2026-06-29,fullsend,issue,closed,2654,"ADR-0045 Phase 4 PR #2446 shipped breaking change without ! marker",https://github.com/fullsend-ai/fullsend/issues/2654
+2026-06-29,fullsend,issue,closed,2636,"dispatch: retro-filed proposal issues skip auto-triage under ADR 0054 authorization gate",https://github.com/fullsend-ai/fullsend/issues/2636
+2026-06-29,fullsend,issue,closed,2625,"sync-scaffold, enroll, and unenroll push directly to default branch instead of creating PRs",https://github.com/fullsend-ai/fullsend/issues/2625
+2026-06-29,fullsend,issue,closed,2592,"`fullsend github setup` command create the PR from a branch in the main repository and not from my fork",https://github.com/fullsend-ai/fullsend/issues/2592
+2026-06-29,fullsend,issue,closed,2581,"Deploy Site workflow broken: missing toml-eslint-parser package",https://github.com/fullsend-ai/fullsend/issues/2581
+2026-06-29,fullsend,issue,closed,2575,"Unify runner and sandbox env var delivery under a single harness env: key",https://github.com/fullsend-ai/fullsend/issues/2575
+2026-06-29,fullsend,issue,closed,2293,"Docs sidebar order is purely alphabetical with no authoring control",https://github.com/fullsend-ai/fullsend/issues/2293
+2026-06-29,fullsend,issue,closed,1065,"docs: render markdown images (https URLs and repo-relative paths under docs/)",https://github.com/fullsend-ai/fullsend/issues/1065
+2026-06-29,fullsend,issue,closed,829,"Disable fix agent by default on human-created PRs",https://github.com/fullsend-ai/fullsend/issues/829
+2026-06-29,fullsend,issue,closed,795,"Add document search in the docs app",https://github.com/fullsend-ai/fullsend/issues/795
+2026-06-29,.fullsend,pr,opened,90,"refactor(classify): migrate runner_env to env.runner (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/90
+2026-06-29,.fullsend,pr,opened,89,"refactor(scribe): migrate to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/89
+2026-06-29,.fullsend,pr,opened,88,"refactor(review): migrate to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/88
+2026-06-29,.fullsend,pr,merged,90,"refactor(classify): migrate runner_env to env.runner (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/90
+2026-06-29,.fullsend,pr,merged,89,"refactor(scribe): migrate to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/89
+2026-06-29,.fullsend,pr,merged,88,"refactor(review): migrate to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/88

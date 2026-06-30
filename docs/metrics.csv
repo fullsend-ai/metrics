@@ -335,3 +335,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-06-28,experiments,0,0,0,0,0,0,0,3
 2026-06-28,metrics,0,0,0,0,0,0,0,1
 2026-06-28,triage-agent,0,0,0,0,0,0,0,0
+2026-06-29,fullsend,19,18,2,12,13,1,68.40,68
+2026-06-29,.fullsend,3,3,0,0,0,0,2,1
+2026-06-29,experiments,0,0,0,0,0,0,0,3
+2026-06-29,metrics,0,0,0,0,0,0,0,1
+2026-06-29,agents,0,0,0,0,0,0,0,0
