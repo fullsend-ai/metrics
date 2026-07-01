@@ -3366,3 +3366,74 @@ date,repo,type,event,number,title,url
 2026-06-29,.fullsend,pr,merged,90,"refactor(classify): migrate runner_env to env.runner (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/90
 2026-06-29,.fullsend,pr,merged,89,"refactor(scribe): migrate to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/89
 2026-06-29,.fullsend,pr,merged,88,"refactor(review): migrate to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/.fullsend/pull/88
+2026-06-30,fullsend,pr,opened,2808,"fix(#2806): resolve host_files relative src paths for URL bases",https://github.com/fullsend-ai/fullsend/pull/2808
+2026-06-30,fullsend,pr,opened,2807,"fix(#2805): resolve relative resources for URL-sourced config agents",https://github.com/fullsend-ai/fullsend/pull/2807
+2026-06-30,fullsend,pr,opened,2800,"fix(#2797): create ready-for-triage label before use in post-retro.sh",https://github.com/fullsend-ai/fullsend/pull/2800
+2026-06-30,fullsend,pr,opened,2799,"ci(lint): forbid misleading type+scope combinations in commit messages",https://github.com/fullsend-ai/fullsend/pull/2799
+2026-06-30,fullsend,pr,opened,2798,"chore(deps): update OpenShell to 0.0.72",https://github.com/fullsend-ai/fullsend/pull/2798
+2026-06-30,fullsend,pr,opened,2796,"perf: remove sandbox image cache (~4.5 min overhead)",https://github.com/fullsend-ai/fullsend/pull/2796
+2026-06-30,fullsend,pr,opened,2795,"fix: pin supervisor image to match openshell CLI version",https://github.com/fullsend-ai/fullsend/pull/2795
+2026-06-30,fullsend,pr,opened,2793,"ci(e2e): bootstrap behaviour job on main for pull_request_target",https://github.com/fullsend-ai/fullsend/pull/2793
+2026-06-30,fullsend,pr,opened,2791,"docs: ADR 0062 — Auto-merge",https://github.com/fullsend-ai/fullsend/pull/2791
+2026-06-30,fullsend,pr,opened,2790,"chore: exempt go.mod/go.sum from CODEOWNERS review",https://github.com/fullsend-ai/fullsend/pull/2790
+2026-06-30,fullsend,pr,opened,2789,"fix(ci): treat renovate bot as trusted for e2e/functional test gates",https://github.com/fullsend-ai/fullsend/pull/2789
+2026-06-30,fullsend,pr,opened,2788,"fix(ci): trigger e2e tests on .github/scripts/ and action.yml changes",https://github.com/fullsend-ai/fullsend/pull/2788
+2026-06-30,fullsend,pr,opened,2787,"fix: revert openshell to 0.0.63",https://github.com/fullsend-ai/fullsend/pull/2787
+2026-06-30,fullsend,pr,opened,2784,"chore(deps): update dependency nvidia/openshell to v0.0.73",https://github.com/fullsend-ai/fullsend/pull/2784
+2026-06-30,fullsend,pr,opened,2781,"fix(#2298): remove retro/prioritize→fullsend role mapping in dispatch",https://github.com/fullsend-ai/fullsend/pull/2781
+2026-06-30,fullsend,pr,opened,2776,"fix(github): detect primary rate limits returned as 403",https://github.com/fullsend-ai/fullsend/pull/2776
+2026-06-30,fullsend,pr,opened,2775,"feat(agents): add action-hints footer to review, triage, and fix comments",https://github.com/fullsend-ai/fullsend/pull/2775
+2026-06-30,fullsend,pr,opened,2774,"fix(runner): extract sandbox output to temp dir instead of overwriting target repo",https://github.com/fullsend-ai/fullsend/pull/2774
+2026-06-30,fullsend,pr,opened,2773,"feat(mint): implement ADR 0059 public mint mode",https://github.com/fullsend-ai/fullsend/pull/2773
+2026-06-30,fullsend,pr,opened,2771,"chore(deps): update goreleaser/goreleaser-action action to v7.2.3",https://github.com/fullsend-ai/fullsend/pull/2771
+2026-06-30,fullsend,pr,opened,2770,"feat(cli): add fullsend agent subcommand (ADR 0058 Phase 2)",https://github.com/fullsend-ai/fullsend/pull/2770
+2026-06-30,fullsend,pr,opened,2769,"feat(run): add runtime agent resolution from config (ADR 0058 Phase 3)",https://github.com/fullsend-ai/fullsend/pull/2769
+2026-06-30,fullsend,pr,opened,2768,"feat(config): add agent registration schema (ADR 0058 Phase 1)",https://github.com/fullsend-ai/fullsend/pull/2768
+2026-06-30,fullsend,pr,merged,2808,"fix(#2806): resolve host_files relative src paths for URL bases",https://github.com/fullsend-ai/fullsend/pull/2808
+2026-06-30,fullsend,pr,merged,2795,"fix: pin supervisor image to match openshell CLI version",https://github.com/fullsend-ai/fullsend/pull/2795
+2026-06-30,fullsend,pr,merged,2788,"fix(ci): trigger e2e tests on .github/scripts/ and action.yml changes",https://github.com/fullsend-ai/fullsend/pull/2788
+2026-06-30,fullsend,pr,merged,2787,"fix: revert openshell to 0.0.63",https://github.com/fullsend-ai/fullsend/pull/2787
+2026-06-30,fullsend,pr,merged,2771,"chore(deps): update goreleaser/goreleaser-action action to v7.2.3",https://github.com/fullsend-ai/fullsend/pull/2771
+2026-06-30,fullsend,pr,merged,2770,"feat(cli): add fullsend agent subcommand (ADR 0058 Phase 2)",https://github.com/fullsend-ai/fullsend/pull/2770
+2026-06-30,fullsend,pr,merged,2769,"feat(run): add runtime agent resolution from config (ADR 0058 Phase 3)",https://github.com/fullsend-ai/fullsend/pull/2769
+2026-06-30,fullsend,pr,merged,2768,"feat(config): add agent registration schema (ADR 0058 Phase 1)",https://github.com/fullsend-ai/fullsend/pull/2768
+2026-06-30,fullsend,pr,merged,2766,"feat(e2e): expand org pool from 6 to 12",https://github.com/fullsend-ai/fullsend/pull/2766
+2026-06-30,fullsend,pr,merged,2764,"fix(github): increase retry attempts and add jitter to backoff",https://github.com/fullsend-ai/fullsend/pull/2764
+2026-06-30,fullsend,pr,merged,2763,"refactor(harness): migrate triage to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2763
+2026-06-30,fullsend,pr,merged,2762,"refactor(harness): migrate fix agent to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2762
+2026-06-30,fullsend,pr,merged,2759,"refactor(harness): migrate prioritize agent to env.runner/env.sandbox (ADR 0055)",https://github.com/fullsend-ai/fullsend/pull/2759
+2026-06-30,fullsend,pr,merged,2755,"docs(adr): Agent registration",https://github.com/fullsend-ai/fullsend/pull/2755
+2026-06-30,fullsend,pr,merged,2753,"chore(deps): update dependency nvidia/openshell to v0.0.72",https://github.com/fullsend-ai/fullsend/pull/2753
+2026-06-30,fullsend,pr,merged,2650,"docs(adr): harness CEL dispatch and NormalizedEvent v1",https://github.com/fullsend-ai/fullsend/pull/2650
+2026-06-30,fullsend,pr,merged,2277,"feat(mint): cross-org authorization and e2e WIF auth (#2155)",https://github.com/fullsend-ai/fullsend/pull/2277
+2026-06-30,fullsend,pr,merged,1580,"docs(adr): add ADR 0059 for public mint mode with wildcard allowlists",https://github.com/fullsend-ai/fullsend/pull/1580
+2026-06-30,fullsend,pr,closed,2154,"feat(cli): download from sandbox into different directory",https://github.com/fullsend-ai/fullsend/pull/2154
+2026-06-30,fullsend,pr,closed,1739,"docs(adr): propose ADR 0044 gate workflows:write on repo secret allowlist",https://github.com/fullsend-ai/fullsend/pull/1739
+2026-06-30,fullsend,issue,opened,2809,"Pre-review skip should halt workflow to prevent agent bootstrap token waste",https://github.com/fullsend-ai/fullsend/issues/2809
+2026-06-30,fullsend,issue,opened,2806,"harness: host_files with relative src paths not resolved for URL-sourced harnesses",https://github.com/fullsend-ai/fullsend/issues/2806
+2026-06-30,fullsend,issue,opened,2805,"harness: config-registered URL agents skip ADR-0045 resource resolution",https://github.com/fullsend-ai/fullsend/issues/2805
+2026-06-30,fullsend,issue,opened,2804,"Move JSON schema validation into fullsend run as a core platform feature",https://github.com/fullsend-ai/fullsend/issues/2804
+2026-06-30,fullsend,issue,opened,2803,"Investigate git log history as context source for code and triage agents",https://github.com/fullsend-ai/fullsend/issues/2803
+2026-06-30,fullsend,issue,opened,2802,"Standardize 'tier' terminology to always use descriptive prefix",https://github.com/fullsend-ai/fullsend/issues/2802
+2026-06-30,fullsend,issue,opened,2801,"Review agent should not flag scope-creep against ADR phase boundaries for human-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2801
+2026-06-30,fullsend,issue,opened,2797,"post-retro.sh fails when ready-for-triage label doesn't exist in target repo",https://github.com/fullsend-ai/fullsend/issues/2797
+2026-06-30,fullsend,issue,opened,2794,"Bot gives identical ""protected-path"" review comments on every workflow run",https://github.com/fullsend-ai/fullsend/issues/2794
+2026-06-30,fullsend,issue,opened,2792,"Sandbox enters Error phase immediately on creation across all agent types and openshell versions",https://github.com/fullsend-ai/fullsend/issues/2792
+2026-06-30,fullsend,issue,opened,2786,"Agent API errors silently swallowed when Claude Code exits 0 with is_error:true",https://github.com/fullsend-ai/fullsend/issues/2786
+2026-06-30,fullsend,issue,opened,2785,"Scribe bot should use real originator - or at least notifications",https://github.com/fullsend-ai/fullsend/issues/2785
+2026-06-30,fullsend,issue,opened,2783,"OIDC token stale before first inference call when sandbox setup exceeds 5 minutes",https://github.com/fullsend-ai/fullsend/issues/2783
+2026-06-30,fullsend,issue,opened,2782,"dispatch: per-repo shim does not pass project_number for prioritize agent",https://github.com/fullsend-ai/fullsend/issues/2782
+2026-06-30,fullsend,issue,opened,2780,"Explore the OpenTelemetry Go SDK for Level 2 trace export",https://github.com/fullsend-ai/fullsend/issues/2780
+2026-06-30,fullsend,issue,opened,2779,"Respect a pre-existing TRACEPARENT in the security trace chain",https://github.com/fullsend-ai/fullsend/issues/2779
+2026-06-30,fullsend,issue,opened,2778,"Release summary bot",https://github.com/fullsend-ai/fullsend/issues/2778
+2026-06-30,fullsend,issue,opened,2777,"Code agent missing fullsend-check-output self-validation before exit",https://github.com/fullsend-ai/fullsend/issues/2777
+2026-06-30,fullsend,issue,opened,2772,"e2e: align auth and scaffold delivery flags across admin tests",https://github.com/fullsend-ai/fullsend/issues/2772
+2026-06-30,fullsend,issue,closed,2806,"harness: host_files with relative src paths not resolved for URL-sourced harnesses",https://github.com/fullsend-ai/fullsend/issues/2806
+2026-06-30,fullsend,issue,closed,2792,"Sandbox enters Error phase immediately on creation across all agent types and openshell versions",https://github.com/fullsend-ai/fullsend/issues/2792
+2026-06-30,.fullsend,pr,opened,93,"Add QualityFlow custom agent with CEL trigger",https://github.com/fullsend-ai/.fullsend/pull/93
+2026-06-30,.fullsend,pr,opened,92,"Add QualityFlow custom agent for automated test planning",https://github.com/fullsend-ai/.fullsend/pull/92
+2026-06-30,.fullsend,pr,opened,91,"Add QualityFlow custom agent for automated test planning",https://github.com/fullsend-ai/.fullsend/pull/91
+2026-06-30,.fullsend,pr,closed,92,"Add QualityFlow custom agent for automated test planning",https://github.com/fullsend-ai/.fullsend/pull/92
+2026-06-30,.fullsend,pr,closed,91,"Add QualityFlow custom agent for automated test planning",https://github.com/fullsend-ai/.fullsend/pull/91
+2026-06-30,agents,pr,opened,4,"feat: add role and slug to triage harness",https://github.com/fullsend-ai/agents/pull/4
+2026-06-30,agents,pr,merged,4,"feat: add role and slug to triage harness",https://github.com/fullsend-ai/agents/pull/4
