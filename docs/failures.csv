@@ -348,3 +348,10 @@ date,workflow,runs,failures,failure_rate
 2026-06-30,Prioritize,10,5,0.500
 2026-06-30,Retro,21,6,0.286
 2026-06-30,Scribe,4,1,0.250
+2026-07-01,Code,11,2,0.182
+2026-07-01,Fix,3,0,0.000
+2026-07-01,Review,99,8,0.081
+2026-07-01,Triage,33,0,0.000
+2026-07-01,Retro,39,0,0.000
+2026-07-01,Scribe,1,0,0.000
+2026-07-01,Classify GitHub Issues,42,2,0.048

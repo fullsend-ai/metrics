@@ -3437,3 +3437,137 @@ date,repo,type,event,number,title,url
 2026-06-30,.fullsend,pr,closed,91,"Add QualityFlow custom agent for automated test planning",https://github.com/fullsend-ai/.fullsend/pull/91
 2026-06-30,agents,pr,opened,4,"feat: add role and slug to triage harness",https://github.com/fullsend-ai/agents/pull/4
 2026-06-30,agents,pr,merged,4,"feat: add role and slug to triage harness",https://github.com/fullsend-ai/agents/pull/4
+2026-07-01,fullsend,pr,opened,2870,"fix(#2869): inject FULLSEND_OUTPUT_SCHEMA into validation script env",https://github.com/fullsend-ai/fullsend/pull/2870
+2026-07-01,fullsend,pr,opened,2861,"docs(architecture): update env delivery to reflect current schema",https://github.com/fullsend-ai/fullsend/pull/2861
+2026-07-01,fullsend,pr,opened,2860,"fix(#2786): surface agent API errors when Claude Code exits 0",https://github.com/fullsend-ai/fullsend/pull/2860
+2026-07-01,fullsend,pr,opened,2859,"fix(#2783): refresh OIDC token before agent start",https://github.com/fullsend-ai/fullsend/pull/2859
+2026-07-01,fullsend,pr,opened,2857,"fix(#2856): calibrate ADR convention violation severities in review agent",https://github.com/fullsend-ai/fullsend/pull/2857
+2026-07-01,fullsend,pr,opened,2855,"fix(#2852): re-stage and retry when pre-commit hooks auto-fix files",https://github.com/fullsend-ai/fullsend/pull/2855
+2026-07-01,fullsend,pr,opened,2854,"fix(deps): update module github.com/googlecloudplatform/functions-framework-go to v1.9.2",https://github.com/fullsend-ai/fullsend/pull/2854
+2026-07-01,fullsend,pr,opened,2853,"docs: move experiments from Internals to Contributing section",https://github.com/fullsend-ai/fullsend/pull/2853
+2026-07-01,fullsend,pr,opened,2851,"feat(harness): add validation_loop.schema for URL-resolved output schemas",https://github.com/fullsend-ai/fullsend/pull/2851
+2026-07-01,fullsend,pr,opened,2850,"docs: July 2026 roadmap refresh",https://github.com/fullsend-ai/fullsend/pull/2850
+2026-07-01,fullsend,pr,opened,2846,"fix(#2845): skip host_files fetch when file exists locally",https://github.com/fullsend-ai/fullsend/pull/2846
+2026-07-01,fullsend,pr,opened,2833,"fix(#2779): respect inbound TRACEPARENT in trace chain",https://github.com/fullsend-ai/fullsend/pull/2833
+2026-07-01,fullsend,pr,opened,2830,"docs(adr): add ADR 0065 for human-gated permission adjustments",https://github.com/fullsend-ai/fullsend/pull/2830
+2026-07-01,fullsend,pr,opened,2820,"chore(deps): update renovatebot/github-action action to v46.1.17",https://github.com/fullsend-ai/fullsend/pull/2820
+2026-07-01,fullsend,pr,opened,2818,"fix(#2817): resolve host_files relative src paths in SourceURL path",https://github.com/fullsend-ai/fullsend/pull/2818
+2026-07-01,fullsend,pr,opened,2815,"fix(#2814): retry git fetch without token on auth failure",https://github.com/fullsend-ai/fullsend/pull/2815
+2026-07-01,fullsend,pr,opened,2811,"docs(adr): ADR 0064 — deprecate customized/ directory overlay",https://github.com/fullsend-ai/fullsend/pull/2811
+2026-07-01,fullsend,pr,merged,2860,"fix(#2786): surface agent API errors when Claude Code exits 0",https://github.com/fullsend-ai/fullsend/pull/2860
+2026-07-01,fullsend,pr,merged,2859,"fix(#2783): refresh OIDC token before agent start",https://github.com/fullsend-ai/fullsend/pull/2859
+2026-07-01,fullsend,pr,merged,2855,"fix(#2852): re-stage and retry when pre-commit hooks auto-fix files",https://github.com/fullsend-ai/fullsend/pull/2855
+2026-07-01,fullsend,pr,merged,2851,"feat(harness): add validation_loop.schema for URL-resolved output schemas",https://github.com/fullsend-ai/fullsend/pull/2851
+2026-07-01,fullsend,pr,merged,2820,"chore(deps): update renovatebot/github-action action to v46.1.17",https://github.com/fullsend-ai/fullsend/pull/2820
+2026-07-01,fullsend,pr,merged,2818,"fix(#2817): resolve host_files relative src paths in SourceURL path",https://github.com/fullsend-ai/fullsend/pull/2818
+2026-07-01,fullsend,pr,merged,2815,"fix(#2814): retry git fetch without token on auth failure",https://github.com/fullsend-ai/fullsend/pull/2815
+2026-07-01,fullsend,pr,merged,2807,"fix(#2805): resolve relative resources for URL-sourced config agents",https://github.com/fullsend-ai/fullsend/pull/2807
+2026-07-01,fullsend,pr,merged,2800,"fix(#2797): create ready-for-triage label before use in post-retro.sh",https://github.com/fullsend-ai/fullsend/pull/2800
+2026-07-01,fullsend,pr,merged,2799,"ci(lint): forbid misleading type+scope combinations in commit messages",https://github.com/fullsend-ai/fullsend/pull/2799
+2026-07-01,fullsend,pr,merged,2798,"chore(deps): update OpenShell to 0.0.72",https://github.com/fullsend-ai/fullsend/pull/2798
+2026-07-01,fullsend,pr,merged,2793,"ci(e2e): bootstrap behaviour job on main for pull_request_target",https://github.com/fullsend-ai/fullsend/pull/2793
+2026-07-01,fullsend,pr,merged,2789,"fix(ci): treat renovate bot as trusted for e2e/functional test gates",https://github.com/fullsend-ai/fullsend/pull/2789
+2026-07-01,fullsend,pr,merged,2781,"fix(#2298): remove retro/prioritize→fullsend role mapping in dispatch",https://github.com/fullsend-ai/fullsend/pull/2781
+2026-07-01,fullsend,pr,merged,2776,"fix(github): detect primary rate limits returned as 403",https://github.com/fullsend-ai/fullsend/pull/2776
+2026-07-01,fullsend,pr,merged,2767,"docs: revert hardcoded getting-started link to README.md",https://github.com/fullsend-ai/fullsend/pull/2767
+2026-07-01,fullsend,pr,merged,2756,"docs(guides): migrate runner_env examples to env.runner",https://github.com/fullsend-ai/fullsend/pull/2756
+2026-07-01,fullsend,pr,merged,2752,"feat(#2577): add Level 1 distributed tracing",https://github.com/fullsend-ai/fullsend/pull/2752
+2026-07-01,fullsend,pr,merged,2736,"feat(#2735): replace GitHub Contents API with git sparse checkout",https://github.com/fullsend-ai/fullsend/pull/2736
+2026-07-01,fullsend,pr,merged,2723,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/2723
+2026-07-01,fullsend,pr,merged,2605,"fix(#2602): enforce scope constraints on review subagents for trivial diffs",https://github.com/fullsend-ai/fullsend/pull/2605
+2026-07-01,fullsend,pr,merged,2549,"docs(problems): Add debugging problem doc for agentic systems",https://github.com/fullsend-ai/fullsend/pull/2549
+2026-07-01,fullsend,pr,merged,2532,"fix(#2527): use _CLIENT_ID suffix in variableNameForRole",https://github.com/fullsend-ai/fullsend/pull/2532
+2026-07-01,fullsend,pr,merged,2486,"fix(#2484): add finding reconciliation step to review agent",https://github.com/fullsend-ai/fullsend/pull/2486
+2026-07-01,fullsend,pr,merged,2453,"docs(adr): add ADR for dispatch version-skew resolution",https://github.com/fullsend-ai/fullsend/pull/2453
+2026-07-01,fullsend,pr,merged,2431,"refactor(#2429): instruct orchestrator to trust subagent results",https://github.com/fullsend-ai/fullsend/pull/2431
+2026-07-01,fullsend,pr,merged,2009,"docs(problems): add tool call risk assessment problem doc",https://github.com/fullsend-ai/fullsend/pull/2009
+2026-07-01,fullsend,pr,closed,2846,"fix(#2845): skip host_files fetch when file exists locally",https://github.com/fullsend-ai/fullsend/pull/2846
+2026-07-01,fullsend,pr,closed,2833,"fix(#2779): respect inbound TRACEPARENT in trace chain",https://github.com/fullsend-ai/fullsend/pull/2833
+2026-07-01,fullsend,pr,closed,2725,"feat(#2722): add reader role for self-minting tokens during harness loading",https://github.com/fullsend-ai/fullsend/pull/2725
+2026-07-01,fullsend,pr,closed,2518,"docs(#2513): add Jira data leakage warnings for public repository configurations",https://github.com/fullsend-ai/fullsend/pull/2518
+2026-07-01,fullsend,pr,closed,2254,"fix(#2247): compare decoded text in shim drift detection",https://github.com/fullsend-ai/fullsend/pull/2254
+2026-07-01,fullsend,pr,closed,2042,"docs: ADR 0043 — GitLab per-repo support via OIDC/WIF and webhook bridge",https://github.com/fullsend-ai/fullsend/pull/2042
+2026-07-01,fullsend,issue,opened,2873,"Code agent should trace all consumers of modified gating variables before committing",https://github.com/fullsend-ai/fullsend/issues/2873
+2026-07-01,fullsend,issue,opened,2872,"Post-scripts: document security invariants so code and review agents maintain them",https://github.com/fullsend-ai/fullsend/issues/2872
+2026-07-01,fullsend,issue,opened,2871,"fix(e2e): clean up stale FULLSEND_PER_REPO_INSTALL variable from test-repo in halfsend orgs",https://github.com/fullsend-ai/fullsend/issues/2871
+2026-07-01,fullsend,issue,opened,2869,"validation_loop.schema not exposed to validation script environment",https://github.com/fullsend-ai/fullsend/issues/2869
+2026-07-01,fullsend,issue,opened,2868,"Review agent should quote actual code before asserting what it contains",https://github.com/fullsend-ai/fullsend/issues/2868
+2026-07-01,fullsend,issue,opened,2867,"Review agent should verify new error-checking functions cover all error-producing paths",https://github.com/fullsend-ai/fullsend/issues/2867
+2026-07-01,fullsend,issue,opened,2866,"Gate merge queue entry on completion of all dispatched review sources",https://github.com/fullsend-ai/fullsend/issues/2866
+2026-07-01,fullsend,issue,opened,2865,"Review agent should check forge-scoped validation parity with top-level validation",https://github.com/fullsend-ai/fullsend/issues/2865
+2026-07-01,fullsend,issue,opened,2864,"Review agent should detect Go context propagation violations in new blocking calls",https://github.com/fullsend-ai/fullsend/issues/2864
+2026-07-01,fullsend,issue,opened,2863,"Add stale bot PR detection to auto-close PRs with prolonged CI failure and no human engagement",https://github.com/fullsend-ai/fullsend/issues/2863
+2026-07-01,fullsend,issue,opened,2862,"feat: implement Level 2 distributed tracing — OTLP export to a backend",https://github.com/fullsend-ai/fullsend/issues/2862
+2026-07-01,fullsend,issue,opened,2858,"Review agent should trace data flow through shell pipelines to downstream consumers",https://github.com/fullsend-ai/fullsend/issues/2858
+2026-07-01,fullsend,issue,opened,2856,"Review agent should rate ADR convention violations at medium+ severity",https://github.com/fullsend-ai/fullsend/issues/2856
+2026-07-01,fullsend,issue,opened,2852,"post-code: re-stage and retry when pre-commit hooks auto-fix files instead of failing",https://github.com/fullsend-ai/fullsend/issues/2852
+2026-07-01,fullsend,issue,opened,2849,"Output schema not resolved for URL-sourced harnesses (config-driven agents)",https://github.com/fullsend-ai/fullsend/issues/2849
+2026-07-01,fullsend,issue,opened,2848,"Review agent: detect breaking API response shape changes in application endpoints",https://github.com/fullsend-ai/fullsend/issues/2848
+2026-07-01,fullsend,issue,opened,2847,"Review agent: detect fallback/default-value regressions when expressions are expanded into branches",https://github.com/fullsend-ai/fullsend/issues/2847
+2026-07-01,fullsend,issue,opened,2845,"resolveBaseHostFiles should skip host_files that already exist locally",https://github.com/fullsend-ai/fullsend/issues/2845
+2026-07-01,fullsend,issue,opened,2844,"Review agent: detect behavioral changes in error propagation during refactoring PRs",https://github.com/fullsend-ai/fullsend/issues/2844
+2026-07-01,fullsend,issue,opened,2843,"Re-review should contextualize PR description staleness caused by prior review feedback",https://github.com/fullsend-ai/fullsend/issues/2843
+2026-07-01,fullsend,issue,opened,2842,"Review agent: use cheaper model for trivial bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/2842
+2026-07-01,fullsend,issue,opened,2841,"Review agent should down-weight findings in intentionally restored legacy code",https://github.com/fullsend-ai/fullsend/issues/2841
+2026-07-01,fullsend,issue,opened,2840,"Code and review agents should cross-reference prior rejected PRs on the same issue",https://github.com/fullsend-ai/fullsend/issues/2840
+2026-07-01,fullsend,issue,opened,2839,"Review agent should detect prescriptive language in problem docs",https://github.com/fullsend-ai/fullsend/issues/2839
+2026-07-01,fullsend,issue,opened,2838,"Fix constraint inconsistency introduced by finding reconciliation step (PR #2486)",https://github.com/fullsend-ai/fullsend/issues/2838
+2026-07-01,fullsend,issue,opened,2837,"Post diagnostic comment and alert when a PR is ejected from the merge queue",https://github.com/fullsend-ai/fullsend/issues/2837
+2026-07-01,fullsend,issue,opened,2836,"Add scope_constraint handling and exploration budgets to correctness, docs-currency, and cross-repo-contracts sub-agents",https://github.com/fullsend-ai/fullsend/issues/2836
+2026-07-01,fullsend,issue,opened,2835,"Review agent should verify docs PRs reference features that exist in the codebase",https://github.com/fullsend-ai/fullsend/issues/2835
+2026-07-01,fullsend,issue,opened,2834,"Triage agent should recommend but not auto-apply ready-to-code on /fs-triage",https://github.com/fullsend-ai/fullsend/issues/2834
+2026-07-01,fullsend,issue,opened,2832,"Add --no-code flag to /fs-triage to prevent ready-to-code label",https://github.com/fullsend-ai/fullsend/issues/2832
+2026-07-01,fullsend,issue,opened,2831,"refactor: break up runAgent for testability",https://github.com/fullsend-ai/fullsend/issues/2831
+2026-07-01,fullsend,issue,opened,2829,"harness + fullsend run: human approval UX for restricted permissions",https://github.com/fullsend-ai/fullsend/issues/2829
+2026-07-01,fullsend,issue,opened,2828,"workflow file changes: privileged operations only in deterministic automation",https://github.com/fullsend-ai/fullsend/issues/2828
+2026-07-01,fullsend,issue,opened,2827,"authorization: derive gate inputs deterministically, not from agent tools",https://github.com/fullsend-ai/fullsend/issues/2827
+2026-07-01,fullsend,issue,opened,2826,"harness: separate permission profiles per run phase",https://github.com/fullsend-ai/fullsend/issues/2826
+2026-07-01,fullsend,issue,opened,2825,"cli: single-invocation auth decision and token mint",https://github.com/fullsend-ai/fullsend/issues/2825
+2026-07-01,fullsend,issue,opened,2824,"cli: reusable authorization gates for permission adjustments",https://github.com/fullsend-ai/fullsend/issues/2824
+2026-07-01,fullsend,issue,opened,2823,"mint: support caller-requested permission adjustments beyond role baseline",https://github.com/fullsend-ai/fullsend/issues/2823
+2026-07-01,fullsend,issue,opened,2822,"Epic: least-privilege path to workflow file changes",https://github.com/fullsend-ai/fullsend/issues/2822
+2026-07-01,fullsend,issue,opened,2821,"docs: ADR for human-gated permission adjustments and threat model",https://github.com/fullsend-ai/fullsend/issues/2821
+2026-07-01,fullsend,issue,opened,2819,"Extract shared resolveBase helper to prevent recurring SourceURL path drift",https://github.com/fullsend-ai/fullsend/issues/2819
+2026-07-01,fullsend,issue,opened,2817,"host_files relative src paths not resolved for URL-sourced config agents (SourceURL path)",https://github.com/fullsend-ai/fullsend/issues/2817
+2026-07-01,fullsend,issue,opened,2816,"Review agent: persistent finding cache for cross-iteration deduplication and dismissal enforcement",https://github.com/fullsend-ai/fullsend/issues/2816
+2026-07-01,fullsend,issue,opened,2814,"gitfetch: skill directory fetch fails when GH_TOKEN is scoped to a different repo than the skill source",https://github.com/fullsend-ai/fullsend/issues/2814
+2026-07-01,fullsend,issue,opened,2813,"Deprecate and remove customized/ directory overlay (ADR 0064)",https://github.com/fullsend-ai/fullsend/issues/2813
+2026-07-01,fullsend,issue,opened,2812,"Review agent should verify implementation against ADR rejected alternatives",https://github.com/fullsend-ai/fullsend/issues/2812
+2026-07-01,fullsend,issue,opened,2810,"Code agent should validate patch coverage meets repo threshold before opening PR",https://github.com/fullsend-ai/fullsend/issues/2810
+2026-07-01,fullsend,issue,closed,2852,"post-code: re-stage and retry when pre-commit hooks auto-fix files instead of failing",https://github.com/fullsend-ai/fullsend/issues/2852
+2026-07-01,fullsend,issue,closed,2849,"Output schema not resolved for URL-sourced harnesses (config-driven agents)",https://github.com/fullsend-ai/fullsend/issues/2849
+2026-07-01,fullsend,issue,closed,2845,"resolveBaseHostFiles should skip host_files that already exist locally",https://github.com/fullsend-ai/fullsend/issues/2845
+2026-07-01,fullsend,issue,closed,2817,"host_files relative src paths not resolved for URL-sourced config agents (SourceURL path)",https://github.com/fullsend-ai/fullsend/issues/2817
+2026-07-01,fullsend,issue,closed,2814,"gitfetch: skill directory fetch fails when GH_TOKEN is scoped to a different repo than the skill source",https://github.com/fullsend-ai/fullsend/issues/2814
+2026-07-01,fullsend,issue,closed,2805,"harness: config-registered URL agents skip ADR-0045 resource resolution",https://github.com/fullsend-ai/fullsend/issues/2805
+2026-07-01,fullsend,issue,closed,2797,"post-retro.sh fails when ready-for-triage label doesn't exist in target repo",https://github.com/fullsend-ai/fullsend/issues/2797
+2026-07-01,fullsend,issue,closed,2786,"Agent API errors silently swallowed when Claude Code exits 0 with is_error:true",https://github.com/fullsend-ai/fullsend/issues/2786
+2026-07-01,fullsend,issue,closed,2783,"OIDC token stale before first inference call when sandbox setup exceeds 5 minutes",https://github.com/fullsend-ai/fullsend/issues/2783
+2026-07-01,fullsend,issue,closed,2735,"refactor(forge): replace GitHub Contents API with git-based directory fetching",https://github.com/fullsend-ai/fullsend/issues/2735
+2026-07-01,fullsend,issue,closed,2722,"mint: add loader role so the binary self-mints tokens for URL-based harness loading",https://github.com/fullsend-ai/fullsend/issues/2722
+2026-07-01,fullsend,issue,closed,2602,"Review subagents should enforce orchestrator-specified scope constraints on tool call volume",https://github.com/fullsend-ai/fullsend/issues/2602
+2026-07-01,fullsend,issue,closed,2577,"feat: implement Level 1 distributed tracing — local telemetry files for every run",https://github.com/fullsend-ai/fullsend/issues/2577
+2026-07-01,fullsend,issue,closed,2527,"fix(web-admin): variableNameForRole uses wrong suffix APP_ID vs CLIENT_ID",https://github.com/fullsend-ai/fullsend/issues/2527
+2026-07-01,fullsend,issue,closed,2484,"Review agent should not emit findings that contradict each other within the same review",https://github.com/fullsend-ai/fullsend/issues/2484
+2026-07-01,fullsend,issue,closed,2429,"Review orchestrator should trust subagent investigation results instead of re-executing commands",https://github.com/fullsend-ai/fullsend/issues/2429
+2026-07-01,fullsend,issue,closed,2298,"dispatch: retro and prioritize skipped in per-repo mode — role check looks for fullsend",https://github.com/fullsend-ai/fullsend/issues/2298
+2026-07-01,fullsend,issue,closed,1686,"feat(scaffold): add is_authorized to triage, code, and review slash commands",https://github.com/fullsend-ai/fullsend/issues/1686
+2026-07-01,.fullsend,pr,opened,95,"docs: update workstream categories for July 2026",https://github.com/fullsend-ai/.fullsend/pull/95
+2026-07-01,.fullsend,pr,opened,94,"chore: add fullsend scaffold files",https://github.com/fullsend-ai/.fullsend/pull/94
+2026-07-01,.fullsend,pr,merged,95,"docs: update workstream categories for July 2026",https://github.com/fullsend-ai/.fullsend/pull/95
+2026-07-01,.fullsend,pr,merged,94,"chore: add fullsend scaffold files",https://github.com/fullsend-ai/.fullsend/pull/94
+2026-07-01,experiments,pr,opened,35,"feat: add experiment numbering and metadata conventions",https://github.com/fullsend-ai/experiments/pull/35
+2026-07-01,experiments,pr,opened,33,"Add review cache MVP experiment",https://github.com/fullsend-ai/experiments/pull/33
+2026-07-01,experiments,issue,opened,34,"Add experiment numbering and metadata conventions",https://github.com/fullsend-ai/experiments/issues/34
+2026-07-01,agents,pr,opened,11,"feat: add generic explore agent",https://github.com/fullsend-ai/agents/pull/11
+2026-07-01,agents,pr,opened,10,"Add scribe agent",https://github.com/fullsend-ai/agents/pull/10
+2026-07-01,agents,pr,opened,9,"feat(triage): use validation_loop.schema for output schema resolution",https://github.com/fullsend-ai/agents/pull/9
+2026-07-01,agents,pr,opened,8,"sync: port triage agent changes from scaffold",https://github.com/fullsend-ai/agents/pull/8
+2026-07-01,agents,pr,opened,7,"Move gcp-vertex.env to common/env/",https://github.com/fullsend-ai/agents/pull/7
+2026-07-01,agents,pr,opened,6,"Add shared GCP Vertex AI env template",https://github.com/fullsend-ai/agents/pull/6
+2026-07-01,agents,pr,opened,5,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/agents/pull/5
+2026-07-01,agents,pr,merged,9,"feat(triage): use validation_loop.schema for output schema resolution",https://github.com/fullsend-ai/agents/pull/9
+2026-07-01,agents,pr,merged,8,"sync: port triage agent changes from scaffold",https://github.com/fullsend-ai/agents/pull/8
+2026-07-01,agents,pr,merged,7,"Move gcp-vertex.env to common/env/",https://github.com/fullsend-ai/agents/pull/7
+2026-07-01,agents,pr,merged,6,"Add shared GCP Vertex AI env template",https://github.com/fullsend-ai/agents/pull/6
+2026-07-01,agents,pr,merged,5,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/agents/pull/5
