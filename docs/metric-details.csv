@@ -3726,3 +3726,54 @@ date,repo,type,event,number,title,url
 2026-07-02,agents,issue,closed,18,"Document extension point skills to prevent false-positive agent findings",https://github.com/fullsend-ai/agents/issues/18
 2026-07-02,agents,issue,closed,17,"Document org-level skill resolution in AGENTS.md to prevent false-positive filing",https://github.com/fullsend-ai/agents/issues/17
 2026-07-02,agents,issue,closed,13,"Fix missing customer-research skill directory declared in prioritize agent",https://github.com/fullsend-ai/agents/issues/13
+2026-07-03,fullsend,pr,opened,3001,"feat(forge): add ListRepoVariables, DeleteRepoVariable, DeleteRepoSecret",https://github.com/fullsend-ai/fullsend/pull/3001
+2026-07-03,fullsend,pr,opened,3000,"fix: load per-repo config.yaml in fullsend run and reusable workflows",https://github.com/fullsend-ai/fullsend/pull/3000
+2026-07-03,fullsend,pr,opened,2998,"chore(deps): update openshell",https://github.com/fullsend-ai/fullsend/pull/2998
+2026-07-03,fullsend,pr,opened,2986,"chore(test): mock openshell in TestRunAgent_* to prevent hangs",https://github.com/fullsend-ai/fullsend/pull/2986
+2026-07-03,fullsend,pr,opened,2979,"feat(code-agent): uses PR template if found",https://github.com/fullsend-ai/fullsend/pull/2979
+2026-07-03,fullsend,pr,opened,2978,"chore(e2e): delete per-repo var before starting",https://github.com/fullsend-ai/fullsend/pull/2978
+2026-07-03,fullsend,pr,opened,2972,"chore(deps): update actions/setup-go action to v6.5.0",https://github.com/fullsend-ai/fullsend/pull/2972
+2026-07-03,fullsend,pr,merged,2978,"chore(e2e): delete per-repo var before starting",https://github.com/fullsend-ai/fullsend/pull/2978
+2026-07-03,fullsend,pr,merged,2972,"chore(deps): update actions/setup-go action to v6.5.0",https://github.com/fullsend-ai/fullsend/pull/2972
+2026-07-03,fullsend,pr,merged,2963,"test(#2962): canonicalize temp dirs in path-containment tests",https://github.com/fullsend-ai/fullsend/pull/2963
+2026-07-03,fullsend,pr,merged,2960,"fix(#2779): respect inbound TRACEPARENT in trace chain",https://github.com/fullsend-ai/fullsend/pull/2960
+2026-07-03,fullsend,pr,merged,2941,"chore(deps): update experiments digest to 68c6a3b",https://github.com/fullsend-ai/fullsend/pull/2941
+2026-07-03,fullsend,pr,merged,2857,"fix(#2856): calibrate ADR convention violation severities in review agent",https://github.com/fullsend-ai/fullsend/pull/2857
+2026-07-03,fullsend,pr,merged,2693,"fix(renovate): group OpenShell base image and version pin updates",https://github.com/fullsend-ai/fullsend/pull/2693
+2026-07-03,fullsend,pr,closed,2931,"fix(#2918): preserve dismissed review findings",https://github.com/fullsend-ai/fullsend/pull/2931
+2026-07-03,fullsend,pr,closed,2929,"docs(review): require heading cross-reference checks",https://github.com/fullsend-ai/fullsend/pull/2929
+2026-07-03,fullsend,pr,closed,2928,"docs(#2923): add runner prerequisite review guidance",https://github.com/fullsend-ai/fullsend/pull/2928
+2026-07-03,fullsend,pr,closed,2927,"docs(review): check runner prerequisites for write ops",https://github.com/fullsend-ai/fullsend/pull/2927
+2026-07-03,fullsend,pr,closed,2925,"fix(#2903): show bootstrap scan finding details",https://github.com/fullsend-ai/fullsend/pull/2925
+2026-07-03,fullsend,pr,closed,2784,"chore(deps): update dependency nvidia/openshell to v0.0.75 - autoclosed",https://github.com/fullsend-ai/fullsend/pull/2784
+2026-07-03,fullsend,issue,opened,2999,"Post-script should guard CHANGES_REQUESTED dismissal against unchanged diffs",https://github.com/fullsend-ai/fullsend/issues/2999
+2026-07-03,fullsend,issue,opened,2997,"Route review dispatch for human commits on bot-opened PRs",https://github.com/fullsend-ai/fullsend/issues/2997
+2026-07-03,fullsend,issue,opened,2996,"Enhance VitePress docs with SEO metadata for better discoverability",https://github.com/fullsend-ai/fullsend/issues/2996
+2026-07-03,fullsend,issue,opened,2995,"Review agent should flag dependency PRs missing documented companion changes",https://github.com/fullsend-ai/fullsend/issues/2995
+2026-07-03,fullsend,issue,opened,2994,"Filter bot-submitted pull_request_review events from review dispatch",https://github.com/fullsend-ai/fullsend/issues/2994
+2026-07-03,fullsend,issue,opened,2993,"Stabilize severity ratings for recurring findings across re-review runs",https://github.com/fullsend-ai/fullsend/issues/2993
+2026-07-03,fullsend,issue,opened,2992,"Add circuit breaker: cap review iterations per PR when no human engagement",https://github.com/fullsend-ai/fullsend/issues/2992
+2026-07-03,fullsend,issue,opened,2991,"Shim template missing bot filter for pull_request_review events (regression from #1420)",https://github.com/fullsend-ai/fullsend/issues/2991
+2026-07-03,fullsend,issue,opened,2990,"post-review.sh fails with 422 when REVIEW_TOKEN undefined after PR #2389",https://github.com/fullsend-ai/fullsend/issues/2990
+2026-07-03,fullsend,issue,opened,2989,"Review agent should analyze dependency manager config rule interactions",https://github.com/fullsend-ai/fullsend/issues/2989
+2026-07-03,fullsend,issue,opened,2988,"Prioritize review dispatch for bot-authored PRs that modify agent definitions",https://github.com/fullsend-ai/fullsend/issues/2988
+2026-07-03,fullsend,issue,opened,2987,"Review agent should detect ADR number collisions with concurrent PRs",https://github.com/fullsend-ai/fullsend/issues/2987
+2026-07-03,fullsend,issue,opened,2985,"TestRunAgent_* tests hang when openshell is installed",https://github.com/fullsend-ai/fullsend/issues/2985
+2026-07-03,fullsend,issue,opened,2984,"Track autonomy readiness: review agent fully drove improvements on forge interface PR",https://github.com/fullsend-ai/fullsend/issues/2984
+2026-07-03,fullsend,issue,opened,2983,"Require thread safety test coverage when adding new forge.Client methods",https://github.com/fullsend-ai/fullsend/issues/2983
+2026-07-03,fullsend,issue,opened,2982,"Review agent should evaluate whether security fixes achieve their stated goal",https://github.com/fullsend-ai/fullsend/issues/2982
+2026-07-03,fullsend,issue,opened,2981,"Skip challenger sub-agent when all findings are below severity threshold",https://github.com/fullsend-ai/fullsend/issues/2981
+2026-07-03,fullsend,issue,opened,2980,"Fix agent should track review feedback chronology across iterations",https://github.com/fullsend-ai/fullsend/issues/2980
+2026-07-03,fullsend,issue,opened,2977,"Clarify preferred implementation approach on issue #2923 after PR #2928 closure",https://github.com/fullsend-ai/fullsend/issues/2977
+2026-07-03,fullsend,issue,opened,2976,"Retro agent should short-circuit on PRs with no review activity",https://github.com/fullsend-ai/fullsend/issues/2976
+2026-07-03,fullsend,issue,opened,2975,"Add workflow to prompt maintainers when closing external PRs without feedback",https://github.com/fullsend-ai/fullsend/issues/2975
+2026-07-03,fullsend,issue,opened,2974,"Retro agent should self-skip when no fullsend agents participated in the PR",https://github.com/fullsend-ai/fullsend/issues/2974
+2026-07-03,fullsend,issue,opened,2973,"Add scaffolded-skill scope boundary to AGENTS.md",https://github.com/fullsend-ai/fullsend/issues/2973
+2026-07-03,fullsend,issue,opened,2971,"feat: add migrate-customizations command (ADR-0064)",https://github.com/fullsend-ai/fullsend/issues/2971
+2026-07-03,fullsend,issue,closed,2962,"internal/cli path-containment tests fail on macOS (/var vs /private/var symlink)",https://github.com/fullsend-ai/fullsend/issues/2962
+2026-07-03,fullsend,issue,closed,2871,"fix(e2e): clean up stale FULLSEND_PER_REPO_INSTALL variable from test-repo in halfsend orgs",https://github.com/fullsend-ai/fullsend/issues/2871
+2026-07-03,fullsend,issue,closed,2856,"Review agent should rate ADR convention violations at medium+ severity",https://github.com/fullsend-ai/fullsend/issues/2856
+2026-07-03,fullsend,issue,closed,2779,"Respect a pre-existing TRACEPARENT in the security trace chain",https://github.com/fullsend-ai/fullsend/issues/2779
+2026-07-03,fullsend,issue,closed,2692,"Renovate creates separate PRs for OpenShell base image and version pin",https://github.com/fullsend-ai/fullsend/issues/2692
+2026-07-03,.fullsend,issue,opened,99,"code.yml: agent fails validation - code-result.json not created",https://github.com/fullsend-ai/.fullsend/issues/99
+2026-07-03,.fullsend,issue,opened,98,"code.yml: pre-commit hook fails due to missing lychee executable",https://github.com/fullsend-ai/.fullsend/issues/98
