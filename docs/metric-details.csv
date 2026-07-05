@@ -3777,3 +3777,11 @@ date,repo,type,event,number,title,url
 2026-07-03,fullsend,issue,closed,2692,"Renovate creates separate PRs for OpenShell base image and version pin",https://github.com/fullsend-ai/fullsend/issues/2692
 2026-07-03,.fullsend,issue,opened,99,"code.yml: agent fails validation - code-result.json not created",https://github.com/fullsend-ai/.fullsend/issues/99
 2026-07-03,.fullsend,issue,opened,98,"code.yml: pre-commit hook fails due to missing lychee executable",https://github.com/fullsend-ai/.fullsend/issues/98
+2026-07-04,fullsend,pr,opened,3006,"chore(deps): update cloudflare/wrangler-action action to v3.15.0",https://github.com/fullsend-ai/fullsend/pull/3006
+2026-07-04,fullsend,pr,opened,3004,"chore(deps): update actions/setup-python action to v6.3.0",https://github.com/fullsend-ai/fullsend/pull/3004
+2026-07-04,fullsend,pr,opened,3003,"refactor(repos): extract per-repo install logic into internal/repos package",https://github.com/fullsend-ai/fullsend/pull/3003
+2026-07-04,fullsend,pr,opened,3002,"feat(repos): add manifest parser and validation for repos.yaml",https://github.com/fullsend-ai/fullsend/pull/3002
+2026-07-04,fullsend,pr,closed,2954,"feat(cli): add migrate-customizations command",https://github.com/fullsend-ai/fullsend/pull/2954
+2026-07-04,fullsend,issue,opened,3008,"Review agent should flag missing nil-safety in Go functions processing deserialized structs with pointer fields",https://github.com/fullsend-ai/fullsend/issues/3008
+2026-07-04,fullsend,issue,opened,3007,"Review agent should cross-reference ADRs cited in PR descriptions to validate implementation compliance",https://github.com/fullsend-ai/fullsend/issues/3007
+2026-07-04,fullsend,issue,opened,3005,"Review agent should not flip from findings to LGTM without code changes",https://github.com/fullsend-ai/fullsend/issues/3005
