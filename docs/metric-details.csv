@@ -3785,3 +3785,41 @@ date,repo,type,event,number,title,url
 2026-07-04,fullsend,issue,opened,3008,"Review agent should flag missing nil-safety in Go functions processing deserialized structs with pointer fields",https://github.com/fullsend-ai/fullsend/issues/3008
 2026-07-04,fullsend,issue,opened,3007,"Review agent should cross-reference ADRs cited in PR descriptions to validate implementation compliance",https://github.com/fullsend-ai/fullsend/issues/3007
 2026-07-04,fullsend,issue,opened,3005,"Review agent should not flip from findings to LGTM without code changes",https://github.com/fullsend-ai/fullsend/issues/3005
+2026-07-05,fullsend,pr,opened,3032,"feat(repos): add repos init command for manifest bootstrapping",https://github.com/fullsend-ai/fullsend/pull/3032
+2026-07-05,fullsend,pr,opened,3031,"feat(repos): add repos status command",https://github.com/fullsend-ai/fullsend/pull/3031
+2026-07-05,fullsend,pr,opened,3023,"chore(deps): update dependency cytoscape to v3.34.0",https://github.com/fullsend-ai/fullsend/pull/3023
+2026-07-05,fullsend,pr,opened,3020,"docs(adr): add ADR 0066 for interactive admin install guide",https://github.com/fullsend-ai/fullsend/pull/3020
+2026-07-05,fullsend,pr,opened,3009,"chore(deps): update dependency @cloudflare/vitest-pool-workers to ^0.18.0",https://github.com/fullsend-ai/fullsend/pull/3009
+2026-07-05,fullsend,pr,merged,3009,"chore(deps): update dependency @cloudflare/vitest-pool-workers to ^0.18.0",https://github.com/fullsend-ai/fullsend/pull/3009
+2026-07-05,fullsend,pr,merged,3006,"chore(deps): update cloudflare/wrangler-action action to v3.15.0",https://github.com/fullsend-ai/fullsend/pull/3006
+2026-07-05,fullsend,pr,merged,3004,"chore(deps): update actions/setup-python action to v6.3.0",https://github.com/fullsend-ai/fullsend/pull/3004
+2026-07-05,fullsend,pr,merged,3002,"feat(repos): add manifest parser and validation for repos.yaml",https://github.com/fullsend-ai/fullsend/pull/3002
+2026-07-05,fullsend,pr,merged,3001,"feat(forge): add ListRepoVariables, DeleteRepoVariable, DeleteRepoSecret",https://github.com/fullsend-ai/fullsend/pull/3001
+2026-07-05,fullsend,pr,merged,3000,"fix: load per-repo config.yaml in fullsend run and reusable workflows",https://github.com/fullsend-ai/fullsend/pull/3000
+2026-07-05,fullsend,pr,merged,2909,"feat(#2904): expose version and commit in mint /health and /v1/status",https://github.com/fullsend-ai/fullsend/pull/2909
+2026-07-05,fullsend,pr,merged,2773,"feat(mint): implement ADR 0059 public mint mode",https://github.com/fullsend-ai/fullsend/pull/2773
+2026-07-05,fullsend,pr,merged,2409,"docs(adr): add polling-based work discovery ADR",https://github.com/fullsend-ai/fullsend/pull/2409
+2026-07-05,fullsend,issue,opened,3030,"Add ADR design-depth checklist to AGENTS.md review guidance",https://github.com/fullsend-ai/fullsend/issues/3030
+2026-07-05,fullsend,issue,opened,3029,"Track autonomy signal: human review added no value on forge interface PR #3001",https://github.com/fullsend-ai/fullsend/issues/3029
+2026-07-05,fullsend,issue,opened,3028,"Review agent should verify test double state consistency across related methods",https://github.com/fullsend-ai/fullsend/issues/3028
+2026-07-05,fullsend,issue,opened,3027,"Review agent should flag silent data truncation in paginated API clients as a correctness bug",https://github.com/fullsend-ai/fullsend/issues/3027
+2026-07-05,fullsend,issue,opened,3026,"Track agent-vs-human review delta for internal Go packages to evaluate autonomy",https://github.com/fullsend-ai/fullsend/issues/3026
+2026-07-05,fullsend,issue,opened,3025,"Review agent posts diminishing-value findings after approval",https://github.com/fullsend-ai/fullsend/issues/3025
+2026-07-05,fullsend,issue,opened,3024,"Add AGENTS.md guidance for secure HTTP client construction in Go",https://github.com/fullsend-ai/fullsend/issues/3024
+2026-07-05,fullsend,issue,opened,3022,"Review agent should enumerate edge cases when recommending new discriminator or validation functions",https://github.com/fullsend-ai/fullsend/issues/3022
+2026-07-05,fullsend,issue,opened,3021,"Track autonomy readiness: review agent fully covered human review on CLI config loading PR",https://github.com/fullsend-ai/fullsend/issues/3021
+2026-07-05,fullsend,issue,opened,3019,"Fix agent should not dismiss CI failures it cannot reproduce locally",https://github.com/fullsend-ai/fullsend/issues/3019
+2026-07-05,fullsend,issue,opened,3018,"Document mint version-stamping pattern in AGENTS.md to prevent env-var anti-pattern",https://github.com/fullsend-ai/fullsend/issues/3018
+2026-07-05,fullsend,issue,opened,3017,"Extend Renovate auto-merge to cover minor GitHub Actions version bumps",https://github.com/fullsend-ai/fullsend/issues/3017
+2026-07-05,fullsend,issue,opened,3016,"Consider auto-merge for low-risk Renovate patch/minor devDependency updates where CI passes",https://github.com/fullsend-ai/fullsend/issues/3016
+2026-07-05,fullsend,issue,opened,3015,"Review agent should screen Renovate PRs with multi-minor or major version bumps for breaking changes",https://github.com/fullsend-ai/fullsend/issues/3015
+2026-07-05,fullsend,issue,opened,3014,"Review agent caught code bugs human reviewer missed on mint component — track for autonomy signal",https://github.com/fullsend-ai/fullsend/issues/3014
+2026-07-05,fullsend,issue,opened,3013,"Add AGENTS.md guidance: update cross-referenced 'in progress' docs when implementing features",https://github.com/fullsend-ai/fullsend/issues/3013
+2026-07-05,fullsend,issue,opened,3012,"Pre-create FULLSEND_OUTPUT_DIR before launching the agent",https://github.com/fullsend-ai/fullsend/issues/3012
+2026-07-05,fullsend,issue,opened,3011,"Fail fast when agent sandbox GH_TOKEN is invalid",https://github.com/fullsend-ai/fullsend/issues/3011
+2026-07-05,fullsend,issue,opened,3010,"Skip review dispatch when PR is already closed or merged",https://github.com/fullsend-ai/fullsend/issues/3010
+2026-07-05,fullsend,issue,closed,3029,"Track autonomy signal: human review added no value on forge interface PR #3001",https://github.com/fullsend-ai/fullsend/issues/3029
+2026-07-05,fullsend,issue,closed,2970,"Per-repo config.yaml not read by fullsend run; workspace layout diverges from ADR 0033",https://github.com/fullsend-ai/fullsend/issues/2970
+2026-07-05,fullsend,issue,closed,2904,"feat(mint): expose fullsend version in /health, /v1/status, and mint status",https://github.com/fullsend-ai/fullsend/issues/2904
+2026-07-05,fullsend,issue,closed,2565,"Define unified harness configuration for dynamic agent triggering and dispatching",https://github.com/fullsend-ai/fullsend/issues/2565
+2026-07-05,fullsend,issue,closed,2263,"JIRA trigger model — define how JIRA events reach fullsend agents",https://github.com/fullsend-ai/fullsend/issues/2263
