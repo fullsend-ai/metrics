@@ -370,3 +370,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-07-05,experiments,0,0,0,0,0,0,0,3
 2026-07-05,metrics,0,0,0,0,0,0,0,1
 2026-07-05,agents,0,0,0,0,0,0,0,6
+2026-07-06,fullsend,22,11,5,139,15,2,48.60,61
+2026-07-06,.fullsend,1,0,1,0,0,0,0,1
+2026-07-06,experiments,0,1,0,0,0,0,660.20,2
+2026-07-06,metrics,0,1,0,0,0,0,1162.90,0
+2026-07-06,agents,7,3,1,4,3,2,93.90,10
