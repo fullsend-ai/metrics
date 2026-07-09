@@ -380,3 +380,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-07-07,experiments,0,0,0,0,0,0,0,2
 2026-07-07,metrics,0,0,0,0,0,0,0,0
 2026-07-07,agents,7,4,0,8,2,0,28.90,13
+2026-07-08,fullsend,8,10,7,306,17,1,24.60,52
+2026-07-08,.fullsend,0,0,0,0,2,0,0,1
+2026-07-08,experiments,0,0,0,0,0,0,0,2
+2026-07-08,metrics,0,0,0,0,0,0,0,0
+2026-07-08,agents,13,10,2,18,4,1,0.80,13
