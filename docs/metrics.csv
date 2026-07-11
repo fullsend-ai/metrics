@@ -390,3 +390,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-07-09,experiments,0,0,0,0,0,0,0,2
 2026-07-09,metrics,0,0,0,0,0,0,0,0
 2026-07-09,agents,8,4,1,5,3,0,4.20,16
+2026-07-10,fullsend,14,17,6,124,613,0,42.20,45
+2026-07-10,.fullsend,8,5,1,1,0,0,0.10,4
+2026-07-10,experiments,1,0,0,0,0,0,0,3
+2026-07-10,metrics,0,0,0,0,0,0,0,0
+2026-07-10,agents,10,6,2,21,3,0,15.40,18
