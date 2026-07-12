@@ -395,3 +395,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-07-10,experiments,1,0,0,0,0,0,0,3
 2026-07-10,metrics,0,0,0,0,0,0,0,0
 2026-07-10,agents,10,6,2,21,3,0,15.40,18
+2026-07-11,fullsend,8,0,3,57,2,0,0,48
+2026-07-11,.fullsend,0,0,0,0,0,0,0,4
+2026-07-11,experiments,0,0,0,0,0,0,0,3
+2026-07-11,metrics,0,0,0,0,0,0,0,0
+2026-07-11,agents,0,0,0,1,0,0,0,18
