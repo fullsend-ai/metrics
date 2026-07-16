@@ -7153,3 +7153,427 @@ date,repo,type,event,number,title,url
 2026-07-14,agents,issue,opened,164,"Add early API access validation to retro agent and retro-analysis skill",https://github.com/fullsend-ai/agents/issues/164
 2026-07-14,agents,issue,opened,163,"Add GH_TOKEN validation to pre-retro.sh to fail fast on bad tokens",https://github.com/fullsend-ai/agents/issues/163
 2026-07-14,agents,issue,closed,163,"Add GH_TOKEN validation to pre-retro.sh to fail fast on bad tokens",https://github.com/fullsend-ai/agents/issues/163
+2026-07-15,fullsend,pr,opened,5057,"chore(#5056): track wranglerVersion pins with Renovate custom manager",https://github.com/fullsend-ai/fullsend/pull/5057
+2026-07-15,fullsend,pr,opened,5052,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/5052
+2026-07-15,fullsend,pr,opened,5016,"docs(#4718): add ADR 0072 for the pre-script skip-flag convention",https://github.com/fullsend-ai/fullsend/pull/5016
+2026-07-15,fullsend,pr,opened,5015,"fix(dispatch): route pull_request_target.labeled to review stage",https://github.com/fullsend-ai/fullsend/pull/5015
+2026-07-15,fullsend,pr,opened,5013,"fix(#4718): wire GH_TOKEN and re-add fail-fast validation for pre-code/pre-fix",https://github.com/fullsend-ai/fullsend/pull/5013
+2026-07-15,fullsend,pr,opened,4998,"docs(#4894): add missing --project flag to gcloud key creation command",https://github.com/fullsend-ai/fullsend/pull/4998
+2026-07-15,fullsend,pr,opened,4979,"feat(#4911): add layered config accessor for config.base.yaml",https://github.com/fullsend-ai/fullsend/pull/4979
+2026-07-15,fullsend,pr,opened,4908,"chore(deps): update dependency svelte to v5.56.5",https://github.com/fullsend-ai/fullsend/pull/4908
+2026-07-15,fullsend,pr,merged,5052,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/5052
+2026-07-15,fullsend,pr,merged,4998,"docs(#4894): add missing --project flag to gcloud key creation command",https://github.com/fullsend-ai/fullsend/pull/4998
+2026-07-15,fullsend,pr,merged,4908,"chore(deps): update dependency svelte to v5.56.5",https://github.com/fullsend-ai/fullsend/pull/4908
+2026-07-15,fullsend,pr,merged,4864,"fix(#4861): restore explicit npx wrangler@ pin in preCommands",https://github.com/fullsend-ai/fullsend/pull/4864
+2026-07-15,fullsend,pr,merged,4824,"chore(deps): update dependency nvidia/openshell to v0.0.83",https://github.com/fullsend-ai/fullsend/pull/4824
+2026-07-15,fullsend,pr,merged,3062,"feat(resolve): portable provider and profile definitions via URL references",https://github.com/fullsend-ai/fullsend/pull/3062
+2026-07-15,fullsend,pr,merged,2919,"refactor(dispatch): inline stage workflows to fix version skew",https://github.com/fullsend-ai/fullsend/pull/2919
+2026-07-15,fullsend,pr,merged,2743,"docs(adr): add ADR 0068 for ready-made configuration presets",https://github.com/fullsend-ai/fullsend/pull/2743
+2026-07-15,fullsend,pr,closed,4762,"fix(#4718): stop running pre-code/pre-fix scripts twice per run",https://github.com/fullsend-ai/fullsend/pull/4762
+2026-07-15,fullsend,issue,opened,5079,"refactor(config): define opaque interfaces and migrate small consumers (1/3)",https://github.com/fullsend-ai/fullsend/issues/5079
+2026-07-15,fullsend,issue,opened,5078,"refactor(config): migrate cli package to config interfaces (2/3)",https://github.com/fullsend-ai/fullsend/issues/5078
+2026-07-15,fullsend,issue,opened,5080,"refactor(config): remove DirConfig, unexport raw structs, add enforcement (3/3)",https://github.com/fullsend-ai/fullsend/issues/5080
+2026-07-15,fullsend,issue,opened,5077,"Evidence for #2401 and #4064: 3rd retro on coverport PR #20 in 5 days with all prior evidence issues closed",https://github.com/fullsend-ai/fullsend/issues/5077
+2026-07-15,fullsend,issue,opened,5076,"Evidence for #4378: 76+ agent dispatches across 15 MintMaker PRs in konflux-ci/coverport with zero value",https://github.com/fullsend-ai/fullsend/issues/5076
+2026-07-15,fullsend,issue,opened,5075,"bug(harness): code agent reports success when time budget is exhausted without producing code",https://github.com/fullsend-ai/fullsend/issues/5075
+2026-07-15,fullsend,issue,opened,5074,"runner: preflight dependency check does not catch missing python3-jsonschema before agent execution",https://github.com/fullsend-ai/fullsend/issues/5074
+2026-07-15,fullsend,issue,opened,5073,"Additional evidence for #4980: 16 dispatches over 24 days on never-merged bot PR devlake #111",https://github.com/fullsend-ai/fullsend/issues/5073
+2026-07-15,fullsend,issue,opened,5072,"Additional evidence for #3005: review agent approved unbuildable PR twice on devlake #111",https://github.com/fullsend-ai/fullsend/issues/5072
+2026-07-15,fullsend,issue,opened,5071,"Additional evidence for #5067: coverport PR #22 shows 8-month, 8-dispatch waste on bot dependency PR",https://github.com/fullsend-ai/fullsend/issues/5071
+2026-07-15,fullsend,issue,opened,5070,"Additional evidence for #2401: 4th retro dispatch on same coverport PR #22 over 3 weeks",https://github.com/fullsend-ai/fullsend/issues/5070
+2026-07-15,fullsend,issue,opened,5069,"Additional evidence for #4970: ErrorIfCRDPathMissing caught on second pass but not first on PR #145",https://github.com/fullsend-ai/fullsend/issues/5069
+2026-07-15,fullsend,issue,opened,5068,"Add early-exit for retro agent on bot dependency PRs",https://github.com/fullsend-ai/fullsend/issues/5068
+2026-07-15,fullsend,issue,opened,5067,"Skip fullsend agent dispatch for bot dependency PRs",https://github.com/fullsend-ai/fullsend/issues/5067
+2026-07-15,fullsend,issue,opened,5066,"Additional evidence for #4282: PR #143 produced 12 label toggle events across 6 identical-verdict review runs",https://github.com/fullsend-ai/fullsend/issues/5066
+2026-07-15,fullsend,issue,opened,5065,"Review post-script should not apply ready-for-merge label while a human reviewer has outstanding CHANGES_REQUESTED",https://github.com/fullsend-ai/fullsend/issues/5065
+2026-07-15,fullsend,issue,opened,5064,"Use GitHub reactions for agent feedback",https://github.com/fullsend-ai/fullsend/issues/5064
+2026-07-15,fullsend,issue,opened,5063,"Additional evidence for #4974: retro dispatched on autoclosed MintMaker dependency bump PR #8028 in konflux-ci/konflux-ci",https://github.com/fullsend-ai/fullsend/issues/5063
+2026-07-15,fullsend,issue,opened,5062,"Track autonomy readiness: review agent fully covered human review on well-scoped Helm chart config PR in konflux-ci/caching",https://github.com/fullsend-ai/fullsend/issues/5062
+2026-07-15,fullsend,issue,opened,5061,"Triage agent should check change-category merge rates before labeling ready-to-code",https://github.com/fullsend-ai/fullsend/issues/5061
+2026-07-15,fullsend,issue,opened,5060,"Additional evidence for #5019: 4th docs rejection in quay/quay confirms 0% docs merge rate",https://github.com/fullsend-ai/fullsend/issues/5060
+2026-07-15,fullsend,issue,opened,5059,"Additional evidence for #3679: quay/quay#6517 cherry-pick approved without parent review context",https://github.com/fullsend-ai/fullsend/issues/5059
+2026-07-15,fullsend,issue,opened,5058,"Additional evidence for #3426: cherry-pick retro on quay/quay#6517 duplicates parent PR #6512 analysis",https://github.com/fullsend-ai/fullsend/issues/5058
+2026-07-15,fullsend,issue,opened,5056,"Renovate does not track wranglerVersion pins in site-deploy.yml, causing version drift",https://github.com/fullsend-ai/fullsend/issues/5056
+2026-07-15,fullsend,issue,opened,5055,"Track autonomy readiness: review agents caught genuine URL and documentation bugs that human reviewer did not engage with on infrastructure migration PR #8096",https://github.com/fullsend-ai/fullsend/issues/5055
+2026-07-15,fullsend,issue,opened,5054,"Additional evidence for #4956: security hardening regression finding merged unresolved across 8 review iterations on PR #8096",https://github.com/fullsend-ai/fullsend/issues/5054
+2026-07-15,fullsend,issue,opened,5053,"Additional evidence for #4984: 16 fullsend dispatches with 50% cancellation rate on PR #8096",https://github.com/fullsend-ai/fullsend/issues/5053
+2026-07-15,fullsend,issue,opened,5051,"Review agent should cross-reference documented pitfalls in CLAUDE.md against PR code",https://github.com/fullsend-ai/fullsend/issues/5051
+2026-07-15,fullsend,issue,opened,5050,"Additional evidence for #4972: review agent AGENTS.md approval aligned with human on PR #8212",https://github.com/fullsend-ai/fullsend/issues/5050
+2026-07-15,fullsend,issue,opened,5049,"Additional evidence for #4974: retro dispatched on zero-interaction MintMaker submodule bump PR #3263 in quay-konflux-components",https://github.com/fullsend-ai/fullsend/issues/5049
+2026-07-15,fullsend,issue,opened,5048,"Track autonomy readiness: review agent correctly approved test-only single-file bug fix with zero human delta on PR #8213",https://github.com/fullsend-ai/fullsend/issues/5048
+2026-07-15,fullsend,issue,opened,5047,"Additional evidence for #4985: standalone-fullsend issue #2 shows 2-month cost of undetected pipeline failure",https://github.com/fullsend-ai/fullsend/issues/5047
+2026-07-15,fullsend,issue,opened,5046,"Additional evidence for #4371: review dispatch skipped on code-agent PR #42 in standalone-fullsend",https://github.com/fullsend-ai/fullsend/issues/5046
+2026-07-15,fullsend,issue,opened,5045,"`fullsend dispatch` rejects local harnesses with `base:` field during enumeration",https://github.com/fullsend-ai/fullsend/issues/5045
+2026-07-15,fullsend,issue,opened,5044,"Extend stale override detection (#5012) to cover inline agent source URLs in config.yaml",https://github.com/fullsend-ai/fullsend/issues/5044
+2026-07-15,fullsend,issue,opened,5043,"CLI should fail closed when PAT token error prevents resolving agent references",https://github.com/fullsend-ai/fullsend/issues/5043
+2026-07-15,fullsend,issue,opened,5042,"Skip review AND retro dispatches on superseded-by-companion parent PRs at dispatch time",https://github.com/fullsend-ai/fullsend/issues/5042
+2026-07-15,fullsend,issue,opened,5041,"Evidence for #4115: aggregate repo-wide waste from 9 concurrent superseded parent PRs totaling 130+ wasted dispatches in 2 weeks",https://github.com/fullsend-ai/fullsend/issues/5041
+2026-07-15,fullsend,issue,opened,5040,"Additional evidence for #4899: 5th retro run on PR #7915 produced zero novel insights",https://github.com/fullsend-ai/fullsend/issues/5040
+2026-07-15,fullsend,issue,opened,5039,"Additional evidence for #4980: PR #7915 accumulated 18 dispatches over 9 days with 11 companion cycles",https://github.com/fullsend-ai/fullsend/issues/5039
+2026-07-15,fullsend,issue,opened,5038,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/5038
+2026-07-15,fullsend,issue,opened,5037,"Retro agent sandbox lacks GitHub API access (proxy blocks api.github.com)",https://github.com/fullsend-ai/fullsend/issues/5037
+2026-07-15,fullsend,issue,opened,5036,"Review agent should include exact code snippets for trivial remediation",https://github.com/fullsend-ai/fullsend/issues/5036
+2026-07-15,fullsend,issue,opened,5035,"Reduce repository label count by purging agent-workflow-specific labels",https://github.com/fullsend-ai/fullsend/issues/5035
+2026-07-15,fullsend,issue,opened,5034,"Code agent should use case-insensitive regex when matching HTML tags to avoid CodeQL findings",https://github.com/fullsend-ai/fullsend/issues/5034
+2026-07-15,fullsend,issue,opened,5033,"Triage agent should not repeat a dismissed line of investigation after user pushback",https://github.com/fullsend-ai/fullsend/issues/5033
+2026-07-15,fullsend,issue,opened,5032,"Triage agent should investigate referenced code paths before asking clarifying questions",https://github.com/fullsend-ai/fullsend/issues/5032
+2026-07-15,fullsend,issue,opened,5031,"Additional evidence for #4974: retro dispatched on zero-interaction MintMaker submodule bump in quay-konflux-components",https://github.com/fullsend-ai/fullsend/issues/5031
+2026-07-15,fullsend,issue,opened,5030,"Review agent should request changes when documentation contains factual inaccuracies in decision-guide content",https://github.com/fullsend-ai/fullsend/issues/5030
+2026-07-15,fullsend,issue,opened,5029,"Additional evidence for #4381: retro-originated docs PR closed without feedback in konflux-ci/project-controller",https://github.com/fullsend-ai/fullsend/issues/5029
+2026-07-15,fullsend,issue,opened,5028,"Per-repo harness `base:` URL commit SHA is silently ignored during agent resolution",https://github.com/fullsend-ai/fullsend/issues/5028
+2026-07-15,fullsend,issue,opened,5027,"docs: allow AI retrieval bots to crawl docs (currently blocked by Cloudflare managed robots.txt)",https://github.com/fullsend-ai/fullsend/issues/5027
+2026-07-15,fullsend,issue,opened,5026,"Review agent should cross-validate commit-message SHAs against actual diff content for submodule updates",https://github.com/fullsend-ai/fullsend/issues/5026
+2026-07-15,fullsend,issue,opened,5025,"Additional evidence for #3679: quay/quay#6526 cherry-pick merged known bugs without surfacing parent review",https://github.com/fullsend-ai/fullsend/issues/5025
+2026-07-15,fullsend,issue,opened,5024,"Additional evidence for #3426: cherry-pick retro on quay/quay#6526 duplicates parent PR #6523 analysis",https://github.com/fullsend-ai/fullsend/issues/5024
+2026-07-15,fullsend,issue,opened,5023,"Track autonomy readiness: review agent demonstrated prompt injection resilience on deliberate adversarial PR",https://github.com/fullsend-ai/fullsend/issues/5023
+2026-07-15,fullsend,issue,opened,5022,"Additional evidence for #4943: second agent-rejected PR in coverport, this time from a repo member",https://github.com/fullsend-ai/fullsend/issues/5022
+2026-07-15,fullsend,issue,opened,5021,"Retro agent should check repo rejection history before filing AGENTS.md proposals",https://github.com/fullsend-ai/fullsend/issues/5021
+2026-07-15,fullsend,issue,opened,5020,"Code agent leaves orphaned branches on enrolled repos instead of using fork workflow",https://github.com/fullsend-ai/fullsend/issues/5020
+2026-07-15,fullsend,issue,opened,5019,"Additional evidence for #4381: 3rd silent rejection of retro-originated docs PR in quay/quay",https://github.com/fullsend-ai/fullsend/issues/5019
+2026-07-15,fullsend,issue,opened,5018,"Track autonomy readiness: CodeRabbit provides complementary but shallower coverage than domain-expert human review on concurrent systems",https://github.com/fullsend-ai/fullsend/issues/5018
+2026-07-15,fullsend,issue,opened,5017,"Review agent should post medium-severity actionable findings on new diff lines as inline comments",https://github.com/fullsend-ai/fullsend/issues/5017
+2026-07-15,fullsend,issue,opened,5014,"refactor(config): opaque read/write interfaces; encapsulate raw config structs",https://github.com/fullsend-ai/fullsend/issues/5014
+2026-07-15,fullsend,issue,opened,5012,"Detect stale per-repo agent source overrides pinned to merged upstream branches",https://github.com/fullsend-ai/fullsend/issues/5012
+2026-07-15,fullsend,issue,opened,5011,"Additional evidence for #4980: parent PR #7722 accumulated 13 agent dispatches over 15 days",https://github.com/fullsend-ai/fullsend/issues/5011
+2026-07-15,fullsend,issue,opened,5010,"Track autonomy readiness: review agent companion PR reviews consistently align with human approvals across 5 consecutive PRs in konflux-ci/konflux-ci",https://github.com/fullsend-ai/fullsend/issues/5010
+2026-07-15,fullsend,issue,opened,5009,"Fix agent should detect repeated pre-commit failures and avoid re-introducing the same failing change",https://github.com/fullsend-ai/fullsend/issues/5009
+2026-07-15,fullsend,issue,opened,5008,"Calibrate 'no linked issue' finding severity for repos without issue-tracking conventions",https://github.com/fullsend-ai/fullsend/issues/5008
+2026-07-15,fullsend,issue,opened,5007,"Deduplicate inline review comments across force-push re-reviews",https://github.com/fullsend-ai/fullsend/issues/5007
+2026-07-15,fullsend,issue,opened,5006,"Retro agent should default to recommendation language when proposing AGENTS.md conventions from single incidents",https://github.com/fullsend-ai/fullsend/issues/5006
+2026-07-15,fullsend,issue,opened,5005,"Additional evidence for #4972: AGENTS.md protection correctly deferred prescriptiveness judgment to human on PR #8147",https://github.com/fullsend-ai/fullsend/issues/5005
+2026-07-15,fullsend,issue,opened,5004,"Review agent should flag silent failure mode degradation when crash paths become zero-value returns",https://github.com/fullsend-ai/fullsend/issues/5004
+2026-07-15,fullsend,issue,opened,5003,"Additional evidence for #4985: code-agent PR sat 23 hours with no downstream activity and no alert",https://github.com/fullsend-ai/fullsend/issues/5003
+2026-07-15,fullsend,issue,opened,5002,"Additional evidence for #4371: review dispatch skipped on code-agent-authored PR in at-at-fullsend-test",https://github.com/fullsend-ai/fullsend/issues/5002
+2026-07-15,fullsend,issue,opened,5001,"Review agent should suggest /fs-fix for auto-fixable low-severity findings to prevent manual rework loops",https://github.com/fullsend-ai/fullsend/issues/5001
+2026-07-15,fullsend,issue,opened,5000,"Additional evidence for #4970: review agent reported zero findings on Run 3 but four findings on Run 4 for similar code on at-at-fullsend-test PR #8",https://github.com/fullsend-ai/fullsend/issues/5000
+2026-07-15,fullsend,issue,opened,4999,"Additional evidence for #4984: bot review cascade triggered 5 redundant workflow runs on at-at-fullsend-test PR #8",https://github.com/fullsend-ai/fullsend/issues/4999
+2026-07-15,fullsend,issue,opened,4997,"Evidence for #4980: 29 agent dispatches on single parent PR (most extreme case documented)",https://github.com/fullsend-ai/fullsend/issues/4997
+2026-07-15,fullsend,issue,opened,4996,"Review agent adds deps-only label to companion PRs despite skill prohibition",https://github.com/fullsend-ai/fullsend/issues/4996
+2026-07-15,fullsend,issue,opened,4995,"Track autonomy readiness: review agent outperforms human review on mechanical consistency checks in konflux-ci/architecture PR #368",https://github.com/fullsend-ai/fullsend/issues/4995
+2026-07-15,fullsend,issue,opened,4994,"Additional evidence for #1194: review agent analyzed categorization correctness but did not question necessity of new docs category",https://github.com/fullsend-ai/fullsend/issues/4994
+2026-07-15,fullsend,issue,opened,4993,"Additional evidence for #4970: review agent discovered findings piecemeal across 7 runs on PR #368",https://github.com/fullsend-ai/fullsend/issues/4993
+2026-07-15,fullsend,issue,opened,4992,"Additional evidence for #4780: finding severity downgraded from medium to low on unchanged code",https://github.com/fullsend-ai/fullsend/issues/4992
+2026-07-15,fullsend,issue,opened,4991,"Skip review agent re-run when only new commits are merges from base branch",https://github.com/fullsend-ai/fullsend/issues/4991
+2026-07-15,fullsend,issue,opened,4990,"Ensure retro agent has sufficient git clone depth for PR diff analysis",https://github.com/fullsend-ai/fullsend/issues/4990
+2026-07-15,fullsend,issue,opened,4989,"Skip fullsend agent pipeline for auto-merged bot dependency PRs",https://github.com/fullsend-ai/fullsend/issues/4989
+2026-07-15,fullsend,issue,opened,4988,"Track autonomy readiness: review agent found real timeout bug and outperformed human reviewers on testrepo-updater PR #46",https://github.com/fullsend-ai/fullsend/issues/4988
+2026-07-15,fullsend,issue,opened,4987,"Additional evidence for same-SHA dedup: /test commands triggered 30 redundant review runs",https://github.com/fullsend-ai/fullsend/issues/4987
+2026-07-15,fullsend,issue,opened,4986,"Additional evidence for #4783: triage agent mislabels implementing PR as blocking the issue it implements",https://github.com/fullsend-ai/fullsend/issues/4986
+2026-07-15,fullsend,issue,opened,4985,"Detect when code agent PRs receive no downstream agent activity and notify the originating issue",https://github.com/fullsend-ai/fullsend/issues/4985
+2026-07-15,fullsend,issue,opened,4984,"Filter bot-submitted pull_request_review events at dispatch shim to reduce unnecessary workflow runs",https://github.com/fullsend-ai/fullsend/issues/4984
+2026-07-15,fullsend,issue,opened,4983,"Add retry logic for intermittent 'unexpected characters' token minting failures in fullsend CLI",https://github.com/fullsend-ai/fullsend/issues/4983
+2026-07-15,fullsend,issue,opened,4982,"Retro agent sandbox lacks GitHub API access (token + network)",https://github.com/fullsend-ai/fullsend/issues/4982
+2026-07-15,fullsend,issue,opened,4981,"Retro agent should return empty proposals when it cannot access PR-specific context, not analyze unrelated codebase aspects",https://github.com/fullsend-ai/fullsend/issues/4981
+2026-07-15,fullsend,issue,opened,4980,"Cap agent dispatch count on bot-authored dependency PRs that cycle through close/reopen",https://github.com/fullsend-ai/fullsend/issues/4980
+2026-07-15,fullsend,issue,opened,4978,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4978
+2026-07-15,fullsend,issue,opened,4977,"chore(install): migrate existing installs from repo vars/secrets to config (ADR 0069, optional)",https://github.com/fullsend-ai/fullsend/issues/4977
+2026-07-15,fullsend,issue,opened,4976,"feat(config): store mint and inference settings in layered config by default (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4976
+2026-07-15,fullsend,issue,opened,4975,"Skip agent stages for auto-merge bot PRs to reduce wasted compute",https://github.com/fullsend-ai/fullsend/issues/4975
+2026-07-15,fullsend,issue,opened,4974,"Skip retro analysis for automated dependency update PRs (MintMaker, Renovate)",https://github.com/fullsend-ai/fullsend/issues/4974
+2026-07-15,fullsend,issue,opened,4973,"Retro agent sandbox lacks GitHub API credentials, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4973
+2026-07-15,fullsend,issue,opened,4972,"Track autonomy readiness: review agent protected-path mechanism correctly deferred AGENTS.md judgment to human on PR #8148",https://github.com/fullsend-ai/fullsend/issues/4972
+2026-07-15,fullsend,issue,opened,4971,"Retro agent materiality threshold: PR #8148 provides additional evidence for fullsend-ai/fullsend#4809",https://github.com/fullsend-ai/fullsend/issues/4971
+2026-07-15,fullsend,issue,opened,4970,"Review agent should detect all valid findings in a single pass rather than discovering them piecemeal across iterations",https://github.com/fullsend-ai/fullsend/issues/4970
+2026-07-15,fullsend,issue,opened,4969,"docs: crawl-walk-run-fly adoption guide",https://github.com/fullsend-ai/fullsend/issues/4969
+2026-07-15,fullsend,issue,opened,4968,"Review agent adds requires-manual-review to superseded companion-eligible parent PRs despite skill prohibition",https://github.com/fullsend-ai/fullsend/issues/4968
+2026-07-15,fullsend,issue,opened,4967,"Evidence for #4841: retro agent running unnecessarily on trivial dep bump PR #1802",https://github.com/fullsend-ai/fullsend/issues/4967
+2026-07-15,fullsend,issue,opened,4966,"Evidence for #4835: review agent fully covered human review on Go indirect dep bump in release-service PR #1802",https://github.com/fullsend-ai/fullsend/issues/4966
+2026-07-15,fullsend,issue,opened,4965,"Evidence for #4681: 5 review runs on rebased-but-functionally-identical dep bump in release-service PR #1802",https://github.com/fullsend-ai/fullsend/issues/4965
+2026-07-15,fullsend,issue,opened,4964,"Evidence for #4652: PR #159 adds 3 redundant re-review runs triggered by Renovate rebases in crossplane-components",https://github.com/fullsend-ai/fullsend/issues/4964
+2026-07-15,fullsend,issue,opened,4963,"Evidence for #4387: protected-path gate on Containerfile blocks agent approval for digest-only ARG changes in crossplane-components",https://github.com/fullsend-ai/fullsend/issues/4963
+2026-07-15,fullsend,issue,opened,4962,"Track autonomy readiness: review agent has 100% human-match rate on container-digest bumps across 15+ PRs in crossplane-components",https://github.com/fullsend-ai/fullsend/issues/4962
+2026-07-15,fullsend,issue,opened,4961,"Track autonomy readiness: review agent correctly approved metadata-only annotation PR",https://github.com/fullsend-ai/fullsend/issues/4961
+2026-07-15,fullsend,issue,opened,4960,"Debounce review agent runs on rapid force-pushes to reduce token waste",https://github.com/fullsend-ai/fullsend/issues/4960
+2026-07-15,fullsend,issue,opened,4959,"Code agent should write concise AGENTS.md entries rather than verbose explanations with code examples",https://github.com/fullsend-ai/fullsend/issues/4959
+2026-07-15,fullsend,issue,opened,4958,"Fix agent should squash commits when human requests a redo from scratch",https://github.com/fullsend-ai/fullsend/issues/4958
+2026-07-15,fullsend,issue,opened,4957,"Code agent should preserve existing function signatures unless the issue explicitly requires changing them",https://github.com/fullsend-ai/fullsend/issues/4957
+2026-07-15,fullsend,issue,opened,4956,"Review agent should carry forward unresolved medium+ findings across commit iterations",https://github.com/fullsend-ai/fullsend/issues/4956
+2026-07-15,fullsend,issue,opened,4955,"Track autonomy readiness: review agent caught jq validation bug that human reviewers did not flag on konflux-test-tasks PR #585",https://github.com/fullsend-ai/fullsend/issues/4955
+2026-07-15,fullsend,issue,opened,4954,"Evidence for #4682: review agent repeated dismissed style finding 3 times on auto-generated file in konflux-test-tasks PR #585",https://github.com/fullsend-ai/fullsend/issues/4954
+2026-07-15,fullsend,issue,opened,4953,"Fix agent must verify source files before using 'Disagreed' to dismiss review findings",https://github.com/fullsend-ai/fullsend/issues/4953
+2026-07-15,fullsend,issue,opened,4952,"Track autonomy readiness: review agent fully covered human review on pip dependency patch bumps in konflux-ci/tools",https://github.com/fullsend-ai/fullsend/issues/4952
+2026-07-15,fullsend,issue,opened,4951,"Evidence for #4835: 5th consecutive rubber-stamp on Renovate digest bump in build-definitions, second reviewer observed",https://github.com/fullsend-ai/fullsend/issues/4951
+2026-07-15,fullsend,issue,opened,4950,"Evidence for #4387: 4th consecutive Dockerfile builder tag bump blocked by protected-path gate in smee-sidecar",https://github.com/fullsend-ai/fullsend/issues/4950
+2026-07-15,fullsend,issue,opened,4949,"Track autonomy readiness: review agent caught controller-ordering bug that 4 human reviewers missed on PR #1604",https://github.com/fullsend-ai/fullsend/issues/4949
+2026-07-15,fullsend,issue,opened,4948,"Evidence for #4681: 17 review runs on integration-service PR #1604 with 64KB sticky accumulation",https://github.com/fullsend-ai/fullsend/issues/4948
+2026-07-15,fullsend,issue,opened,4947,"Review agent should post HIGH-severity findings as inline comments and use CHANGES_REQUESTED disposition",https://github.com/fullsend-ai/fullsend/issues/4947
+2026-07-15,fullsend,issue,opened,4946,"Evidence for #4826: review agent fully covered human review on Renovate config PR in konflux-build-cli #190",https://github.com/fullsend-ai/fullsend/issues/4946
+2026-07-15,fullsend,issue,opened,4945,"Code agent should include Closes references for superseded issues identified in triage analysis",https://github.com/fullsend-ai/fullsend/issues/4945
+2026-07-15,fullsend,issue,opened,4944,"Retro agent should investigate adjacent open issues and PRs to identify root causes beyond the triggering PR",https://github.com/fullsend-ai/fullsend/issues/4944
+2026-07-15,fullsend,issue,opened,4943,"Skip retro dispatch on PRs rejected and closed by the review agent",https://github.com/fullsend-ai/fullsend/issues/4943
+2026-07-15,fullsend,issue,opened,4942,"Evidence for #4387 and #4919: 22-day protected-path gate on bot digest-only Containerfile bump with 4 review runs and retro dispatch (mintmaker-schedule-calculator PR #28)",https://github.com/fullsend-ai/fullsend/issues/4942
+2026-07-15,fullsend,issue,opened,4941,"Evidence for #3005 and #3961: review agent missed protected-path on Run 1 and incorrectly applied ready-for-merge label on mintmaker-schedule-calculator PR #28",https://github.com/fullsend-ai/fullsend/issues/4941
+2026-07-15,fullsend,issue,opened,4940,"Evidence for #4387 and #4919: 22-day protected-path gate with zero human findings, plus retro on clean bot PR",https://github.com/fullsend-ai/fullsend/issues/4940
+2026-07-15,fullsend,issue,opened,4939,"Evidence for #1285: 7 duplicate inline protected-path comments across Renovate rebases on renovate-log-analyzer PR #61",https://github.com/fullsend-ai/fullsend/issues/4939
+2026-07-15,fullsend,issue,opened,4938,"Evidence for #4796 and #2599: 15 review runs on 1-line Renovate Containerfile bump in renovate-log-analyzer PR #61",https://github.com/fullsend-ai/fullsend/issues/4938
+2026-07-15,fullsend,issue,opened,4937,"Consider reviewing large bot PRs even when the author is in ignore_pr_authors",https://github.com/fullsend-ai/fullsend/issues/4937
+2026-07-15,fullsend,issue,opened,4936,"Track autonomy readiness: review agent cross-codebase stale-reference detection exceeded human review on build-definitions #3688",https://github.com/fullsend-ai/fullsend/issues/4936
+2026-07-15,fullsend,issue,opened,4935,"Evidence for #4107: Qodo and fullsend provide complementary coverage on file-deletion PRs (build-definitions #3688)",https://github.com/fullsend-ai/fullsend/issues/4935
+2026-07-15,fullsend,issue,opened,4934,"Retro agent sandbox cannot access GitHub API — blocks all workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4934
+2026-07-15,fullsend,issue,opened,4933,"Retro agent sandbox blocks GitHub REST API access, preventing all analysis",https://github.com/fullsend-ai/fullsend/issues/4933
+2026-07-15,fullsend,issue,opened,4932,"Evidence for #4919 and #4796: retro and review dispatched on 1-line bot digest bump in konflux-ci PR #8185",https://github.com/fullsend-ai/fullsend/issues/4932
+2026-07-15,fullsend,issue,opened,4931,"Functional tests use stale agents v0 tag, miss post-triage fixes",https://github.com/fullsend-ai/fullsend/issues/4931
+2026-07-15,fullsend,issue,opened,4930,"Evidence for #1890: review agent ran 4 times on PR with fabricated premise without questioning it",https://github.com/fullsend-ai/fullsend/issues/4930
+2026-07-15,fullsend,issue,opened,4929,"Evidence for #2314: triage auto-coded external AI bot issue with fabricated premise, wasting 9 agent runs",https://github.com/fullsend-ai/fullsend/issues/4929
+2026-07-15,fullsend,issue,opened,4928,"Evidence for #4809: counter-evidence showing convention documentation fixes are valuable even from single-occurrence triggers",https://github.com/fullsend-ai/fullsend/issues/4928
+2026-07-15,fullsend,issue,opened,4927,"Evidence for #4751: review agent outperformed human reviewers on docs-only AGENTS.md fix in konflux-ui PR #1162",https://github.com/fullsend-ai/fullsend/issues/4927
+2026-07-15,fullsend,issue,opened,4926,"Evidence for #4919 and #4825: tekton-tools generates 30+ agent runs on 15 consecutive bot PRs with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4926
+2026-07-15,fullsend,issue,opened,4925,"Evidence for #4919 and #4796: tekton-tools at 100% bot PR rate with 65+ consecutive bot PRs triggering full review+retro pipeline",https://github.com/fullsend-ai/fullsend/issues/4925
+2026-07-15,fullsend,issue,opened,4924,"Code agent should verify consistency across all branches when adding cleanup logic to a multi-path function",https://github.com/fullsend-ai/fullsend/issues/4924
+2026-07-15,fullsend,issue,opened,4923,"Evidence for #4371 and #4858: review agent never dispatched on any bot PR in ci-failure-tracker due to permission check and naming mismatch",https://github.com/fullsend-ai/fullsend/issues/4923
+2026-07-15,fullsend,issue,opened,4922,"Evidence for #4919 and #4796: 14 agent dispatches across companion chain for 2-line digest swap in konflux-ci PR #8178",https://github.com/fullsend-ai/fullsend/issues/4922
+2026-07-15,fullsend,issue,opened,4921,"Evidence for #2599 and #3034: 13 review dispatches on superseded parent PR triggered by companion notification comments",https://github.com/fullsend-ai/fullsend/issues/4921
+2026-07-15,fullsend,issue,opened,4920,"Evidence for #4661 and #4796: retro and review dispatched on 3-line bot lockfile bump in konflux-ci PR #8186",https://github.com/fullsend-ai/fullsend/issues/4920
+2026-07-15,fullsend,issue,opened,4919,"Broaden retro skip criteria to cover bot PRs with clean agent approvals (evidence for #3780)",https://github.com/fullsend-ai/fullsend/issues/4919
+2026-07-15,fullsend,issue,opened,4918,"Evidence for #2401: 2nd retro dispatched on build-service PR #599, 14 days after first retro already covered all findings",https://github.com/fullsend-ai/fullsend/issues/4918
+2026-07-15,fullsend,issue,opened,4917,"Evidence for #3005 and #4780: review agent flipped from CHANGES_REQUESTED to APPROVED on build-service PR #599",https://github.com/fullsend-ai/fullsend/issues/4917
+2026-07-15,fullsend,issue,opened,4916,"Evidence for #2401: second retro dispatched on PR #238 in konflux-operator-tasks 3 days after first retro already filed all findings",https://github.com/fullsend-ai/fullsend/issues/4916
+2026-07-15,fullsend,issue,opened,4915,"docs(install): tests and documentation for ADR 0069 preset installs",https://github.com/fullsend-ai/fullsend/issues/4915
+2026-07-15,fullsend,issue,opened,4914,"feat(install): shared-infrastructure enrollment alignment for presets (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4914
+2026-07-15,fullsend,issue,opened,4913,"feat(install): github setup reads layered config instead of install flags (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4913
+2026-07-15,fullsend,issue,opened,4912,"feat(install): --config and --config-hash preset install flags (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4912
+2026-07-15,fullsend,issue,opened,4911,"feat(config): layered accessor for config.base.yaml and config.yaml (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4911
+2026-07-15,fullsend,issue,opened,4910,"Epic: ADR 0069 — ready-made configuration presets",https://github.com/fullsend-ai/fullsend/issues/4910
+2026-07-15,fullsend,issue,opened,4909,"Evidence for #4627: oauth2-proxy companion chain adds second dependency family and second reviewer to autonomy tracking",https://github.com/fullsend-ai/fullsend/issues/4909
+2026-07-15,fullsend,issue,closed,5028,"Per-repo harness `base:` URL commit SHA is silently ignored during agent resolution",https://github.com/fullsend-ai/fullsend/issues/5028
+2026-07-15,fullsend,issue,closed,4982,"Retro agent sandbox lacks GitHub API access (token + network)",https://github.com/fullsend-ai/fullsend/issues/4982
+2026-07-15,fullsend,issue,closed,4978,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4978
+2026-07-15,fullsend,issue,closed,4973,"Retro agent sandbox lacks GitHub API credentials, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4973
+2026-07-15,fullsend,issue,closed,4967,"Evidence for #4841: retro agent running unnecessarily on trivial dep bump PR #1802",https://github.com/fullsend-ai/fullsend/issues/4967
+2026-07-15,fullsend,issue,closed,4966,"Evidence for #4835: review agent fully covered human review on Go indirect dep bump in release-service PR #1802",https://github.com/fullsend-ai/fullsend/issues/4966
+2026-07-15,fullsend,issue,closed,4965,"Evidence for #4681: 5 review runs on rebased-but-functionally-identical dep bump in release-service PR #1802",https://github.com/fullsend-ai/fullsend/issues/4965
+2026-07-15,fullsend,issue,closed,4964,"Evidence for #4652: PR #159 adds 3 redundant re-review runs triggered by Renovate rebases in crossplane-components",https://github.com/fullsend-ai/fullsend/issues/4964
+2026-07-15,fullsend,issue,closed,4963,"Evidence for #4387: protected-path gate on Containerfile blocks agent approval for digest-only ARG changes in crossplane-components",https://github.com/fullsend-ai/fullsend/issues/4963
+2026-07-15,fullsend,issue,closed,4954,"Evidence for #4682: review agent repeated dismissed style finding 3 times on auto-generated file in konflux-test-tasks PR #585",https://github.com/fullsend-ai/fullsend/issues/4954
+2026-07-15,fullsend,issue,closed,4951,"Evidence for #4835: 5th consecutive rubber-stamp on Renovate digest bump in build-definitions, second reviewer observed",https://github.com/fullsend-ai/fullsend/issues/4951
+2026-07-15,fullsend,issue,closed,4950,"Evidence for #4387: 4th consecutive Dockerfile builder tag bump blocked by protected-path gate in smee-sidecar",https://github.com/fullsend-ai/fullsend/issues/4950
+2026-07-15,fullsend,issue,closed,4948,"Evidence for #4681: 17 review runs on integration-service PR #1604 with 64KB sticky accumulation",https://github.com/fullsend-ai/fullsend/issues/4948
+2026-07-15,fullsend,issue,closed,4946,"Evidence for #4826: review agent fully covered human review on Renovate config PR in konflux-build-cli #190",https://github.com/fullsend-ai/fullsend/issues/4946
+2026-07-15,fullsend,issue,closed,4942,"Evidence for #4387 and #4919: 22-day protected-path gate on bot digest-only Containerfile bump with 4 review runs and retro dispatch (mintmaker-schedule-calculator PR #28)",https://github.com/fullsend-ai/fullsend/issues/4942
+2026-07-15,fullsend,issue,closed,4941,"Evidence for #3005 and #3961: review agent missed protected-path on Run 1 and incorrectly applied ready-for-merge label on mintmaker-schedule-calculator PR #28",https://github.com/fullsend-ai/fullsend/issues/4941
+2026-07-15,fullsend,issue,closed,4940,"Evidence for #4387 and #4919: 22-day protected-path gate with zero human findings, plus retro on clean bot PR",https://github.com/fullsend-ai/fullsend/issues/4940
+2026-07-15,fullsend,issue,closed,4939,"Evidence for #1285: 7 duplicate inline protected-path comments across Renovate rebases on renovate-log-analyzer PR #61",https://github.com/fullsend-ai/fullsend/issues/4939
+2026-07-15,fullsend,issue,closed,4938,"Evidence for #4796 and #2599: 15 review runs on 1-line Renovate Containerfile bump in renovate-log-analyzer PR #61",https://github.com/fullsend-ai/fullsend/issues/4938
+2026-07-15,fullsend,issue,closed,4935,"Evidence for #4107: Qodo and fullsend provide complementary coverage on file-deletion PRs (build-definitions #3688)",https://github.com/fullsend-ai/fullsend/issues/4935
+2026-07-15,fullsend,issue,closed,4933,"Retro agent sandbox blocks GitHub REST API access, preventing all analysis",https://github.com/fullsend-ai/fullsend/issues/4933
+2026-07-15,fullsend,issue,closed,4932,"Evidence for #4919 and #4796: retro and review dispatched on 1-line bot digest bump in konflux-ci PR #8185",https://github.com/fullsend-ai/fullsend/issues/4932
+2026-07-15,fullsend,issue,closed,4930,"Evidence for #1890: review agent ran 4 times on PR with fabricated premise without questioning it",https://github.com/fullsend-ai/fullsend/issues/4930
+2026-07-15,fullsend,issue,closed,4929,"Evidence for #2314: triage auto-coded external AI bot issue with fabricated premise, wasting 9 agent runs",https://github.com/fullsend-ai/fullsend/issues/4929
+2026-07-15,fullsend,issue,closed,4928,"Evidence for #4809: counter-evidence showing convention documentation fixes are valuable even from single-occurrence triggers",https://github.com/fullsend-ai/fullsend/issues/4928
+2026-07-15,fullsend,issue,closed,4927,"Evidence for #4751: review agent outperformed human reviewers on docs-only AGENTS.md fix in konflux-ui PR #1162",https://github.com/fullsend-ai/fullsend/issues/4927
+2026-07-15,fullsend,issue,closed,4926,"Evidence for #4919 and #4825: tekton-tools generates 30+ agent runs on 15 consecutive bot PRs with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4926
+2026-07-15,fullsend,issue,closed,4925,"Evidence for #4919 and #4796: tekton-tools at 100% bot PR rate with 65+ consecutive bot PRs triggering full review+retro pipeline",https://github.com/fullsend-ai/fullsend/issues/4925
+2026-07-15,fullsend,issue,closed,4923,"Evidence for #4371 and #4858: review agent never dispatched on any bot PR in ci-failure-tracker due to permission check and naming mismatch",https://github.com/fullsend-ai/fullsend/issues/4923
+2026-07-15,fullsend,issue,closed,4922,"Evidence for #4919 and #4796: 14 agent dispatches across companion chain for 2-line digest swap in konflux-ci PR #8178",https://github.com/fullsend-ai/fullsend/issues/4922
+2026-07-15,fullsend,issue,closed,4921,"Evidence for #2599 and #3034: 13 review dispatches on superseded parent PR triggered by companion notification comments",https://github.com/fullsend-ai/fullsend/issues/4921
+2026-07-15,fullsend,issue,closed,4920,"Evidence for #4661 and #4796: retro and review dispatched on 3-line bot lockfile bump in konflux-ci PR #8186",https://github.com/fullsend-ai/fullsend/issues/4920
+2026-07-15,fullsend,issue,closed,4919,"Broaden retro skip criteria to cover bot PRs with clean agent approvals (evidence for #3780)",https://github.com/fullsend-ai/fullsend/issues/4919
+2026-07-15,fullsend,issue,closed,4918,"Evidence for #2401: 2nd retro dispatched on build-service PR #599, 14 days after first retro already covered all findings",https://github.com/fullsend-ai/fullsend/issues/4918
+2026-07-15,fullsend,issue,closed,4917,"Evidence for #3005 and #4780: review agent flipped from CHANGES_REQUESTED to APPROVED on build-service PR #599",https://github.com/fullsend-ai/fullsend/issues/4917
+2026-07-15,fullsend,issue,closed,4916,"Evidence for #2401: second retro dispatched on PR #238 in konflux-operator-tasks 3 days after first retro already filed all findings",https://github.com/fullsend-ai/fullsend/issues/4916
+2026-07-15,fullsend,issue,closed,4909,"Evidence for #4627: oauth2-proxy companion chain adds second dependency family and second reviewer to autonomy tracking",https://github.com/fullsend-ai/fullsend/issues/4909
+2026-07-15,fullsend,issue,closed,4904,"Evidence for #2401: second retro dispatched on devlake PR #25, 12 days after first retro found zero novel proposals",https://github.com/fullsend-ai/fullsend/issues/4904
+2026-07-15,fullsend,issue,closed,4903,"Evidence for #3005 and #4780: review agent flipped from CHANGES_REQUESTED to APPROVED on broken go.mod-only PR #25 and applied ready-for-merge label",https://github.com/fullsend-ai/fullsend/issues/4903
+2026-07-15,fullsend,issue,closed,4902,"Evidence for #4841: retro dispatched on namespace-lister PR #439, identical to PR #437 retro'd 8 hours earlier",https://github.com/fullsend-ai/fullsend/issues/4902
+2026-07-15,fullsend,issue,closed,4900,"Evidence for #3034 and #2599: 13 agent dispatches with zero human interaction on 2-line bot PR (konflux-test-tasks #563)",https://github.com/fullsend-ai/fullsend/issues/4900
+2026-07-15,fullsend,issue,closed,4898,"Evidence for #4064 and #2401: 6th retro run on release-service #1706 with zero novel findings across all 6 runs",https://github.com/fullsend-ai/fullsend/issues/4898
+2026-07-15,fullsend,issue,closed,4897,"Evidence for #2992 and #2587: 41 review runs on release-service #1706 plus 13 on #1786 — 54 combined reviews on two broken 1-line bot PRs",https://github.com/fullsend-ai/fullsend/issues/4897
+2026-07-15,fullsend,issue,closed,4896,"Evidence for #2414: code agent used wrong naming convention for CatalogProcessor class",https://github.com/fullsend-ai/fullsend/issues/4896
+2026-07-15,fullsend,issue,closed,4895,"Evidence for #1719: code agent had type-check command in AGENTS.md but did not run it",https://github.com/fullsend-ai/fullsend/issues/4895
+2026-07-15,fullsend,issue,closed,4894,"docs: add missing --project flag to gcloud service account key creation command",https://github.com/fullsend-ai/fullsend/issues/4894
+2026-07-15,fullsend,issue,closed,4893,"Evidence for #4825: openshift-cherrypick-robot PRs trigger full retro pipeline (quay/quay#6515, #6516)",https://github.com/fullsend-ai/fullsend/issues/4893
+2026-07-15,fullsend,issue,closed,4892,"Evidence for #4599: retro dispatched on zero-agent bot cherry-pick PR quay/quay#6515 (3rd retro for same CVE fix)",https://github.com/fullsend-ai/fullsend/issues/4892
+2026-07-15,fullsend,issue,closed,4890,"Pre-fetch PR metadata and diff into the retro agent sandbox",https://github.com/fullsend-ai/fullsend/issues/4890
+2026-07-15,fullsend,issue,closed,4888,"Evidence for #4882 and #4387: 4th consecutive zero-finding human review on Go version bump in conforma/cli PR #3413",https://github.com/fullsend-ai/fullsend/issues/4888
+2026-07-15,fullsend,issue,closed,4883,"Evidence for #4795: review agent fully covered human review on human-authored lint config change in konflux-ci/may PR #148",https://github.com/fullsend-ai/fullsend/issues/4883
+2026-07-15,fullsend,issue,closed,4881,"Evidence for #4387: trivial CI workflow change on conforma/cli PR #3406 blocked by protected-path for ~18 hours with zero human findings",https://github.com/fullsend-ai/fullsend/issues/4881
+2026-07-15,fullsend,issue,closed,4879,"Evidence for #3780: retro dispatched on trivial bot Renovate chart bump with no issues found (crossplane-control-plane #182)",https://github.com/fullsend-ai/fullsend/issues/4879
+2026-07-15,fullsend,issue,closed,4878,"Evidence for #4293: review agent took 4 min on 1-line bot chart bump while human approved in 70s (crossplane-control-plane #182)",https://github.com/fullsend-ai/fullsend/issues/4878
+2026-07-15,fullsend,issue,closed,4875,"Counter-evidence for autonomy readiness claim: review agent and human both missed functional bug on crossplane-control-plane PR #179",https://github.com/fullsend-ai/fullsend/issues/4875
+2026-07-15,fullsend,issue,closed,4872,"Evidence for #4652: review agent ran twice on coverport PR #23 with identical diff after Renovate rebase force-push",https://github.com/fullsend-ai/fullsend/issues/4872
+2026-07-15,fullsend,issue,closed,4871,"Evidence for #2401: second retro on coverport PR #23 within 3 days of first retro that already filed all findings",https://github.com/fullsend-ai/fullsend/issues/4871
+2026-07-15,fullsend,issue,closed,4870,"Evidence for #3496: retro dispatched on trivial docs PR #9 closing retro-generated issue #6 in roming22-org/fullsend-python",https://github.com/fullsend-ai/fullsend/issues/4870
+2026-07-15,fullsend,issue,closed,4869,"Evidence for #3222: review workflow reported failure despite posting valid review on PR #5",https://github.com/fullsend-ai/fullsend/issues/4869
+2026-07-15,fullsend,issue,closed,4868,"Evidence for #3819: retro agent filed two separate AGENTS.md issues from a single PR analysis",https://github.com/fullsend-ai/fullsend/issues/4868
+2026-07-15,fullsend,issue,closed,4867,"Evidence for #924: fix agent labeled AGENTS.md protected-path refusal as 'Disagreed' on PR #5",https://github.com/fullsend-ai/fullsend/issues/4867
+2026-07-15,fullsend,issue,closed,4865,"Evidence for #4661 and #4825: 71% of quay-konflux-components closed PRs are auto-merged nudge PRs triggering wasted retro runs",https://github.com/fullsend-ai/fullsend/issues/4865
+2026-07-15,fullsend,issue,closed,4862,"Evidence for #4825: review agent matches human rubber-stamp on human-authored submodule bump PR #3253 in quay-konflux-components",https://github.com/fullsend-ai/fullsend/issues/4862
+2026-07-15,fullsend,issue,closed,4861,"Deploy Site failing: `wrangler: not found` in preCommands after #4102",https://github.com/fullsend-ai/fullsend/issues/4861
+2026-07-15,fullsend,issue,closed,4859,"Evidence for #4780: review agent gave opposite verdicts on same commit SHA on PR #8043",https://github.com/fullsend-ai/fullsend/issues/4859
+2026-07-15,fullsend,issue,closed,4857,"Evidence for #4809: quay/quay has 35 open retro-filed issues (19 are AGENTS.md doc changes) with 24% resolution rate",https://github.com/fullsend-ai/fullsend/issues/4857
+2026-07-15,fullsend,issue,closed,4856,"Evidence for #4599: retro dispatched on quay/quay PR #6512 with zero fullsend agent participation",https://github.com/fullsend-ai/fullsend/issues/4856
+2026-07-15,fullsend,issue,closed,4855,"Evidence for #4110: retro dispatched on mechanical companion PR #8157 with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4855
+2026-07-15,fullsend,issue,closed,4854,"Evidence for #4627: companion PR #8157 extends zero-finding human review streak to 13/13",https://github.com/fullsend-ai/fullsend/issues/4854
+2026-07-15,fullsend,issue,closed,4853,"Evidence for #4599: retro dispatched on quay/quay PR #4776 with zero fullsend agent participation",https://github.com/fullsend-ai/fullsend/issues/4853
+2026-07-15,fullsend,issue,closed,4850,"Evidence for #4796 and #4661: full review+retro pipeline dispatched on 1-line bot digest bump at non-companion-eligible path in konflux-ci",https://github.com/fullsend-ai/fullsend/issues/4850
+2026-07-15,fullsend,issue,closed,4847,"Evidence for #1398: parent #7914 received 10 review dispatches despite superseded-by-companion label",https://github.com/fullsend-ai/fullsend/issues/4847
+2026-07-15,fullsend,issue,closed,4846,"Evidence for #2401 and #4661: 8th retro across parent #7914 chain with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4846
+2026-07-15,fullsend,issue,closed,4845,"Evidence for #4627: zero-finding human review on noop parent PR #8153 extends companion pattern",https://github.com/fullsend-ai/fullsend/issues/4845
+2026-07-15,fullsend,issue,closed,4844,"Evidence for #4661: retro dispatched on clean MintMaker noop parent PR #8153 with zero findings",https://github.com/fullsend-ai/fullsend/issues/4844
+2026-07-15,fullsend,issue,closed,4842,"Evidence for #3496: retro dispatched on trivial 1-line doc fix PR #8170 closing retro-generated issue #8169 in konflux-ci",https://github.com/fullsend-ai/fullsend/issues/4842
+2026-07-15,fullsend,issue,closed,4840,"Retro agent sandbox lacks GitHub API access, blocking all analysis",https://github.com/fullsend-ai/fullsend/issues/4840
+2026-07-15,fullsend,issue,closed,4834,"Evidence for #4796 and #4661: 3rd consecutive same-image digest bump in build-definitions within 14 hours, all triggering full review+retro pipeline",https://github.com/fullsend-ai/fullsend/issues/4834
+2026-07-15,fullsend,issue,closed,4833,"Evidence for #3376: scaffold PR title says 'initialize' for an upgrade on konflux-ci/scribe4jira",https://github.com/fullsend-ai/fullsend/issues/4833
+2026-07-15,fullsend,issue,closed,4832,"Evidence for #4581: retro dispatched on scaffold installation PR in konflux-ci/scribe4jira",https://github.com/fullsend-ai/fullsend/issues/4832
+2026-07-15,fullsend,issue,closed,4831,"Evidence for #4627: zero-finding human review on 10th consecutive companion from parent #7909",https://github.com/fullsend-ai/fullsend/issues/4831
+2026-07-15,fullsend,issue,closed,4830,"Evidence for #2401 and #4661: retro dispatched on companion #8165 after 4 prior retros on parent #7909 with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4830
+2026-07-15,fullsend,issue,closed,4829,"Evidence for #1398 and #4652: 13 redundant review dispatches on superseded parent #7909 over 8 days",https://github.com/fullsend-ai/fullsend/issues/4829
+2026-07-15,fullsend,issue,closed,4828,"Evidence for #3005 and #2746: review agent APPROVED a fundamentally broken change on run 8 of 12 (release-service #1786)",https://github.com/fullsend-ai/fullsend/issues/4828
+2026-07-15,fullsend,issue,closed,4827,"Evidence for #2992: 12 review runs with zero human engagement on broken bot PR (release-service #1786)",https://github.com/fullsend-ai/fullsend/issues/4827
+2026-07-15,fullsend,issue,closed,4822,"Evidence for #4650 and #4661: retro dispatched on trivial unmerged bot Renovate PR in konflux-build-cli",https://github.com/fullsend-ai/fullsend/issues/4822
+2026-07-15,fullsend,issue,closed,4821,"Evidence for #4796: 9-minute review agent run on 1-line bot Renovate digest PR in konflux-build-cli",https://github.com/fullsend-ai/fullsend/issues/4821
+2026-07-15,fullsend,issue,closed,4820,"Evidence for #4387: protected-path gate flagged zero-risk bot digest bump on konflux-build-cli PR #10",https://github.com/fullsend-ai/fullsend/issues/4820
+2026-07-15,fullsend,issue,closed,4818,"Evidence for #4652 and #4796: 5 redundant review runs on Tekton bundle update in integration-service PR #1599",https://github.com/fullsend-ai/fullsend/issues/4818
+2026-07-15,fullsend,issue,closed,4816,"Evidence for #4652 and #4796: 7 redundant review runs on 1-line bot Dockerfile tag bump in integration-service PR #1627",https://github.com/fullsend-ai/fullsend/issues/4816
+2026-07-15,fullsend,issue,closed,4812,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4812
+2026-07-15,fullsend,issue,closed,4805,"Evidence for #4652 and #4796: 9 redundant review runs on 1-line bot submodule bump PR #2333 in quay-konflux-components",https://github.com/fullsend-ai/fullsend/issues/4805
+2026-07-15,fullsend,issue,closed,4803,"Evidence for #4652: manual rebase force-push on release-service PR #1775 triggered $1.05 full re-review of identical 1-line diff",https://github.com/fullsend-ai/fullsend/issues/4803
+2026-07-15,fullsend,issue,closed,4802,"Evidence for #4675: failed fix run on release-service PR #1775 posted no diagnostic comment explaining what went wrong",https://github.com/fullsend-ai/fullsend/issues/4802
+2026-07-15,fullsend,issue,closed,4801,"Evidence for #2406: fix agent spent $1.54 on merge workaround for rebase request, then harness rejected it silently on release-service PR #1775",https://github.com/fullsend-ai/fullsend/issues/4801
+2026-07-15,fullsend,issue,closed,4799,"Evidence for #2401: second retro dispatched on quay/quay PR #6393 within 6 hours of first retro that already filed all findings",https://github.com/fullsend-ai/fullsend/issues/4799
+2026-07-15,fullsend,issue,closed,4798,"Prefetch PR context as local files in retro agent sandbox",https://github.com/fullsend-ai/fullsend/issues/4798
+2026-07-15,fullsend,issue,closed,4797,"Validate GH_TOKEN before launching retro agent sandbox",https://github.com/fullsend-ai/fullsend/issues/4797
+2026-07-15,fullsend,issue,closed,4791,"Evidence for #4336: good-first-issue on bot issue quay/quay#6500 attracted two independent community contributors whose correct work was rejected",https://github.com/fullsend-ai/fullsend/issues/4791
+2026-07-15,fullsend,issue,closed,4790,"Evidence for #4383: second rejected PR for quay/quay#6500 followed by manual not_planned closure validates auto-close behavior",https://github.com/fullsend-ai/fullsend/issues/4790
+2026-07-15,fullsend,issue,closed,4777,"Evidence for #3496: retro dispatched on trivial 1-line doc fix PR #8161 closing retro-generated issue #8152 in konflux-ci",https://github.com/fullsend-ai/fullsend/issues/4777
+2026-07-15,fullsend,issue,closed,4764,"Evidence for #3055: review agent fully covered human review on docs-only reference update in conforma/cli PR #3393",https://github.com/fullsend-ai/fullsend/issues/4764
+2026-07-15,fullsend,issue,closed,4761,"Evidence for #2401 and #4661: retro dispatched on companion #8140 after 3 prior retros on parent #7910 found identical patterns",https://github.com/fullsend-ai/fullsend/issues/4761
+2026-07-15,fullsend,issue,closed,4756,"Evidence for #4387: protected-path gate on CI workflow and skills paths added 6-day latency (konflux-ci #7969)",https://github.com/fullsend-ai/fullsend/issues/4756
+2026-07-15,fullsend,issue,closed,4752,"Evidence for #4387: protected-path gate added 6-day latency on zero-risk bot digest bump (konflux-ui #1131)",https://github.com/fullsend-ai/fullsend/issues/4752
+2026-07-15,fullsend,issue,closed,4750,"Evidence for #3496: retro dispatched on trivial 1-line doc fix (konflux-ui PR #1134) closing retro-generated issue #1133",https://github.com/fullsend-ai/fullsend/issues/4750
+2026-07-15,fullsend,issue,closed,4742,"Evidence for #4627: companion PR #8141 received zero-finding human review, continuing pattern across 8+ companion PRs from parent #7909",https://github.com/fullsend-ai/fullsend/issues/4742
+2026-07-15,fullsend,issue,closed,4741,"Evidence for #2401 and #4661: retro dispatched on bot companion PR #8141 after 4 prior retros on the same parent chain found identical patterns",https://github.com/fullsend-ai/fullsend/issues/4741
+2026-07-15,fullsend,issue,closed,4739,"Evidence for #4387: protected-path gate + rebase approval dismissal delayed bot Dockerfile bump 15 days (konflux-test PR #858)",https://github.com/fullsend-ai/fullsend/issues/4739
+2026-07-15,fullsend,issue,closed,4738,"Evidence for #4401 and #2599: 11 review runs on 1-line Renovate Dockerfile tag bump (konflux-test PR #858)",https://github.com/fullsend-ai/fullsend/issues/4738
+2026-07-15,fullsend,issue,closed,4734,"Evidence for #4627: human review added zero findings and 85 min latency on agent-authored config-only fix (konflux-ui #1159)",https://github.com/fullsend-ai/fullsend/issues/4734
+2026-07-15,fullsend,issue,closed,4731,"Evidence for #2401: 5th retro run on release-service PR #1690 with zero novel findings across all 5 runs",https://github.com/fullsend-ai/fullsend/issues/4731
+2026-07-15,fullsend,issue,closed,4730,"Evidence for #3034 and #2587: release-service PR #1690 accumulated 20 agent runs over 28 days with zero human interaction",https://github.com/fullsend-ai/fullsend/issues/4730
+2026-07-15,fullsend,issue,closed,4729,"Evidence for #2599: 10 review dispatches (6 wasted) across 4 force-pushes on a 3-file Tekton task PR",https://github.com/fullsend-ai/fullsend/issues/4729
+2026-07-15,fullsend,issue,closed,4728,"Evidence for #3907: review agent flagged RETRY_MAX_TRIES removal after human had already resolved it via separate PR",https://github.com/fullsend-ai/fullsend/issues/4728
+2026-07-15,fullsend,issue,closed,4726,"Evidence for #4652: Renovate content update (not pure rebase) still triggers redundant re-review on build-definitions PR #3697",https://github.com/fullsend-ai/fullsend/issues/4726
+2026-07-15,fullsend,issue,closed,4723,"Evidence for #4258: review agent did not flag identical-diff duplicate PR on build-definitions #3698 while #3694 was open",https://github.com/fullsend-ai/fullsend/issues/4723
+2026-07-15,fullsend,issue,closed,4720,"Evidence for #2569: post-review 422 failure on build-definitions PR #3698 when inline comment references file outside diff",https://github.com/fullsend-ai/fullsend/issues/4720
+2026-07-15,fullsend,issue,closed,4717,"Evidence for #4065: retro has filed 3 near-identical issues for the same onboard skip proposal over 12 days",https://github.com/fullsend-ai/fullsend/issues/4717
+2026-07-15,fullsend,issue,closed,4714,"Evidence for #1355 and #4401: third review on coverport PR #20 after MintMaker reopen with same go.mod mismatch",https://github.com/fullsend-ai/fullsend/issues/4714
+2026-07-15,fullsend,issue,closed,4713,"Evidence for #2401 and #4064: second retro dispatched on coverport PR #20 after first retro already filed 2 issues",https://github.com/fullsend-ai/fullsend/issues/4713
+2026-07-15,fullsend,issue,closed,4712,"Evidence for #4698: review agent spends 4.5 min on 1-line bot digest change that needs <1 min analysis",https://github.com/fullsend-ai/fullsend/issues/4712
+2026-07-15,fullsend,issue,closed,4705,"Evidence for #1398: 183 agent runs across 10 concurrent superseded-by-companion parent PRs in konflux-ci/konflux-ci",https://github.com/fullsend-ai/fullsend/issues/4705
+2026-07-15,fullsend,issue,closed,4704,"Evidence for #3873: review status comments on PR #1140 and sibling PRs display base branch SHA instead of PR head SHA",https://github.com/fullsend-ai/fullsend/issues/4704
+2026-07-15,fullsend,issue,closed,4702,"Evidence for #1013: review agent posted identical semicolon finding 3 times on unchanged code across 3 reviews (konflux-ui PR #1143)",https://github.com/fullsend-ai/fullsend/issues/4702
+2026-07-15,fullsend,issue,closed,4701,"Evidence for #1896: fourth branch-merge PR on konflux-ui/patternfly-v6 triggers 3 full review runs reviewing already-reviewed content",https://github.com/fullsend-ai/fullsend/issues/4701
+2026-07-15,fullsend,issue,closed,4697,"Retro agent sandbox blocks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4697
+2026-07-15,fullsend,issue,closed,4695,"Retro agent sandbox cannot access GitHub API (proxy blocks api.github.com)",https://github.com/fullsend-ai/fullsend/issues/4695
+2026-07-15,fullsend,issue,closed,4693,"Evidence for #2599: 5 review dispatches in 20 minutes for a 4-file RBAC PR (konflux-ci PR #8085)",https://github.com/fullsend-ai/fullsend/issues/4693
+2026-07-15,fullsend,issue,closed,4691,"Evidence for #4661: retro dispatched on bot companion PR #8119 and twice on parent #7949 with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4691
+2026-07-15,fullsend,issue,closed,4690,"Evidence for #1398 and #4271: parent PR #7949 received 4 review dispatches and 4 requires-manual-review cycles despite superseded-by-companion",https://github.com/fullsend-ai/fullsend/issues/4690
+2026-07-15,fullsend,issue,closed,4679,"Evidence for #4387: protected-path gate delayed bot Dockerfile ARG bump 16.5 hours on mintmaker-renovate-image PR #501",https://github.com/fullsend-ai/fullsend/issues/4679
+2026-07-15,fullsend,issue,closed,4678,"Evidence for #4661/#4670: retro dispatched on bot Dockerfile ARG bump PR #501 in mintmaker-renovate-image with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4678
+2026-07-15,fullsend,issue,closed,4666,"Retro agent sandbox lacks GitHub API access — cannot analyze PR data",https://github.com/fullsend-ai/fullsend/issues/4666
+2026-07-15,fullsend,issue,closed,4665,"Evidence for #4387: Dockerfile protected-path gate blocked bot digest-only bump for 5 days on testrepo-updater PR #42",https://github.com/fullsend-ai/fullsend/issues/4665
+2026-07-15,fullsend,issue,closed,4662,"Evidence for #4650: retro dispatched on bot Docker digest PR #8107 in konflux-ci/konflux-ci with zero novel findings",https://github.com/fullsend-ai/fullsend/issues/4662
+2026-07-15,fullsend,issue,closed,4648,"Evidence for #4064 and #2401: 3 retro dispatches on release-service PR #1636, each producing identical empty-proposal analysis",https://github.com/fullsend-ai/fullsend/issues/4648
+2026-07-15,fullsend,issue,closed,4645,"Evidence for #4387: protected-path gate blocked bot container image bump for 21 days on project-controller PR #1002",https://github.com/fullsend-ai/fullsend/issues/4645
+2026-07-15,fullsend,issue,closed,4643,"Evidence for #4006 and #4427: third retro dispatch on identical bot Dockerfile bump change class in smee-sidecar within 14 days",https://github.com/fullsend-ai/fullsend/issues/4643
+2026-07-15,fullsend,issue,closed,4635,"Evidence for #4401: 53 force-push events across 7 rebase cycles amplified dispatch count on conforma/cli PR #3373",https://github.com/fullsend-ai/fullsend/issues/4635
+2026-07-15,fullsend,issue,closed,4634,"Evidence for #3034 and #2587: conforma/cli PR #3373 escalated to 25+ dispatches after prior evidence issue #3880 was closed",https://github.com/fullsend-ai/fullsend/issues/4634
+2026-07-15,fullsend,issue,closed,4632,"Retro agent sandbox lacks GitHub API access, cannot perform analysis",https://github.com/fullsend-ai/fullsend/issues/4632
+2026-07-15,fullsend,issue,closed,4618,"Evidence for #1359: PR #995 in konflux-ci/caching still carries ready-for-merge label after being closed without merge",https://github.com/fullsend-ai/fullsend/issues/4618
+2026-07-15,fullsend,issue,closed,4617,"Evidence for #3177: retro dispatched on bot-authored Konflux purge PR #995 closed without merge in konflux-ci/caching",https://github.com/fullsend-ai/fullsend/issues/4617
+2026-07-15,fullsend,issue,closed,4615,"Evidence for #4323: review agent harness failed with token minting error on conforma/cli PR #3404, no status comment posted",https://github.com/fullsend-ai/fullsend/issues/4615
+2026-07-15,fullsend,issue,closed,4606,"Evidence for #2401: PR #919 in konflux-ci/caching received 7 retro dispatches over 16 days, all producing identical findings",https://github.com/fullsend-ai/fullsend/issues/4606
+2026-07-15,fullsend,issue,closed,4595,"Evidence for #2667 and #3907: review agent approved dep PR with failing CI 3 times on conforma/cli #3363",https://github.com/fullsend-ai/fullsend/issues/4595
+2026-07-15,fullsend,issue,closed,4583,"Evidence for #1398: parent PR #7724 received 9+ review dispatches and 32 label events over 13 days despite superseded-by-companion label",https://github.com/fullsend-ai/fullsend/issues/4583
+2026-07-15,fullsend,issue,closed,4575,"Evidence for #4387: Dockerfile digest-only bump on conforma/cli PR #3401 blocked by protected-path for 3+ hours",https://github.com/fullsend-ai/fullsend/issues/4575
+2026-07-15,fullsend,issue,closed,4554,"Evidence for #4401: rebase force-push on konflux-test PR #867 triggered redundant review on identical 1-line diff",https://github.com/fullsend-ai/fullsend/issues/4554
+2026-07-15,fullsend,issue,closed,4551,"Evidence for #4513: retro dispatched on auto-merged nudge PR #3247 in quay-konflux-components (78% bot PR ratio)",https://github.com/fullsend-ai/fullsend/issues/4551
+2026-07-15,fullsend,issue,closed,4534,"Evidence for #3996: review agent skipped on PR #67, allowing rule-13 test violation to merge in ci-failure-tracker",https://github.com/fullsend-ai/fullsend/issues/4534
+2026-07-15,fullsend,issue,closed,4525,"Evidence for fullsend-ai/fullsend#3912: medium-confidence retro proposal auto-routed to code pipeline, consuming 3 agent runs before human rejection",https://github.com/fullsend-ai/fullsend/issues/4525
+2026-07-15,fullsend,issue,closed,4521,"Evidence for #4380: retro dispatched on PR #51, a retro-originated dead-code cleanup PR in ci-failure-tracker",https://github.com/fullsend-ai/fullsend/issues/4521
+2026-07-15,fullsend,issue,closed,4518,"Evidence for #1331: code agent force-push after PR creation caused wasted review run on coverport PR #106",https://github.com/fullsend-ai/fullsend/issues/4518
+2026-07-15,fullsend,issue,closed,4517,"Evidence for #1485: pre-code check falsely matched go-openapi Renovate PRs against codecov skill doc issue on coverport PR #106",https://github.com/fullsend-ai/fullsend/issues/4517
+2026-07-15,fullsend,issue,closed,4514,"Evidence for fullsend-ai/fullsend#3996: 10 consecutive code-agent PRs in ci-failure-tracker received zero automated review",https://github.com/fullsend-ai/fullsend/issues/4514
+2026-07-15,fullsend,issue,closed,4512,"Evidence for #4401: 5 concurrent Renovate PRs triggered 15 redundant review runs via rebase cascade in crossplane-control-plane",https://github.com/fullsend-ai/fullsend/issues/4512
+2026-07-15,fullsend,issue,closed,4511,"Evidence for #1676: review agent approved wait-helper regression from output-checking to exit-code-only across force-push",https://github.com/fullsend-ai/fullsend/issues/4511
+2026-07-15,fullsend,issue,closed,4508,"Evidence for #4502: review agent missed config.yaml registration for new harness files on rhdh-agentic PR #91",https://github.com/fullsend-ai/fullsend/issues/4508
+2026-07-15,fullsend,issue,closed,4500,"Evidence for #1194: review agent flagged symptoms of over-engineering but never questioned necessity, missing all high-impact architectural feedback",https://github.com/fullsend-ai/fullsend/issues/4500
+2026-07-15,fullsend,issue,closed,4499,"Evidence for #2599: 20 review dispatches on 19-commit feature PR with 80% of issue comments being bot status notifications",https://github.com/fullsend-ai/fullsend/issues/4499
+2026-07-15,fullsend,issue,closed,4498,"Evidence for #1013: review agent raised identical catch-block isCancelled finding 4 times on same PR without deduplication",https://github.com/fullsend-ai/fullsend/issues/4498
+2026-07-15,fullsend,issue,closed,4495,"Evidence for #4293: review agent spent 7 minutes on bot Tekton digest bump that human rubber-stamped in 2 minutes",https://github.com/fullsend-ai/fullsend/issues/4495
+2026-07-15,fullsend,issue,closed,4493,"Evidence for #2401 and #4427: 7+ retro runs on the same dead bot PR, each duplicating prior analysis",https://github.com/fullsend-ai/fullsend/issues/4493
+2026-07-15,fullsend,issue,closed,4491,"Evidence for #2587 and #1715: PR #934 hit 30 review dispatches on a draft PR — worst documented case",https://github.com/fullsend-ai/fullsend/issues/4491
+2026-07-15,fullsend,issue,closed,4486,"Evidence for #1286: review finding on PR #174 lost at merge, retro rediscovered same gap 2 hours later",https://github.com/fullsend-ai/fullsend/issues/4486
+2026-07-15,fullsend,issue,closed,4483,"Evidence for #4236: review agent identified indirect deps on crossplane-components PR #160 but approved without questioning necessity",https://github.com/fullsend-ai/fullsend/issues/4483
+2026-07-15,fullsend,issue,closed,4482,"Evidence for #4236: retro agent's Renovate config proposal had the same manager-scope error as the review agent and human",https://github.com/fullsend-ai/fullsend/issues/4482
+2026-07-15,fullsend,issue,closed,4481,"Evidence for #2401: second retro dispatched on PR #167 in crossplane-components, 25.5h after first retro completed",https://github.com/fullsend-ai/fullsend/issues/4481
+2026-07-15,fullsend,issue,closed,4478,"Evidence for #4236: review agent identified indirect deps but approved 8 times across 5 PRs on crossplane-components",https://github.com/fullsend-ai/fullsend/issues/4478
+2026-07-15,fullsend,issue,closed,4467,"Evidence for #1355: review agent re-reviewed identical indirect dep digest bump on PR #154 after Renovate reopen/force-push",https://github.com/fullsend-ai/fullsend/issues/4467
+2026-07-15,fullsend,issue,closed,4466,"Evidence for #2401: retro dispatched twice on same PR #154 in crossplane-components due to close-reopen-close cycle",https://github.com/fullsend-ai/fullsend/issues/4466
+2026-07-15,fullsend,issue,closed,4464,"Evidence for #4236: review agent labeled 3 indirect dep PRs ready-for-merge in project-controller after broken config fix",https://github.com/fullsend-ai/fullsend/issues/4464
+2026-07-15,fullsend,issue,closed,4462,"Retro agent sandbox blocks GitHub API access, preventing analysis",https://github.com/fullsend-ai/fullsend/issues/4462
+2026-07-15,fullsend,issue,closed,4461,"Evidence for #4236: review agent approved and labeled ready-for-merge on three indirect gomod PRs during config fix window",https://github.com/fullsend-ai/fullsend/issues/4461
+2026-07-15,fullsend,issue,closed,4460,"Evidence for #4427: retro dispatched on bot-authored indirect dep PR #327 in smee-sidecar, closed without merge",https://github.com/fullsend-ai/fullsend/issues/4460
+2026-07-15,fullsend,issue,closed,4459,"Evidence for #4236: review agent explicitly identified indirect dependency on smee-sidecar PR #327 but still approved without advisory",https://github.com/fullsend-ai/fullsend/issues/4459
+2026-07-15,fullsend,issue,closed,4458,"Retro agent sandbox cannot access GitHub API — blocks all analysis",https://github.com/fullsend-ai/fullsend/issues/4458
+2026-07-15,fullsend,issue,closed,4457,"Evidence for #4427: retro dispatched on bot-authored indirect dep PR #869 closed without merge in notification-service",https://github.com/fullsend-ai/fullsend/issues/4457
+2026-07-15,fullsend,issue,closed,4456,"Evidence for #4236: review agent approved indirect dep PR 18 hours after repo merged rule to disable them",https://github.com/fullsend-ai/fullsend/issues/4456
+2026-07-15,fullsend,issue,closed,4454,"Evidence for #4236: review agent approved indirect-only Go dep PR on project-controller #1055 despite repo policy",https://github.com/fullsend-ai/fullsend/issues/4454
+2026-07-15,fullsend,issue,closed,4446,"Evidence for #1938: review agent approved 6+ times while human CHANGES_REQUESTED was active on project-controller PR #1015",https://github.com/fullsend-ai/fullsend/issues/4446
+2026-07-15,fullsend,issue,closed,4442,"Evidence for #4373: retro dispatched on 16-month-old MintMaker bot PR closed without merge in tekton-integration-catalog",https://github.com/fullsend-ai/fullsend/issues/4442
+2026-07-15,fullsend,issue,closed,4436,"Retro agent sandbox lacks GitHub API access, preventing meaningful analysis",https://github.com/fullsend-ai/fullsend/issues/4436
+2026-07-15,fullsend,issue,closed,4435,"Evidence for #2401: second retro dispatched on same PR #250 in konflux-operator-tasks within 28 hours due to Renovate close/reopen cycle",https://github.com/fullsend-ai/fullsend/issues/4435
+2026-07-15,fullsend,issue,closed,4429,"Evidence for #2471: retro dispatched on 49-day dormant PR closed without merge with only review-agent interaction",https://github.com/fullsend-ai/fullsend/issues/4429
+2026-07-15,fullsend,issue,closed,4423,"Evidence for #4401: 27 rebase-only force-pushes on konflux-ui PR #1039 each triggered full LLM re-review",https://github.com/fullsend-ai/fullsend/issues/4423
+2026-07-15,fullsend,issue,closed,4418,"Evidence for #4236: review agent noted indirect marker but missed policy contradiction in repo with existing config rule",https://github.com/fullsend-ai/fullsend/issues/4418
+2026-07-15,fullsend,issue,closed,4414,"Evidence for #2599: 4 review dispatches (3 cancelled) on same commit SHA within 6 minutes on integration-service PR #1646",https://github.com/fullsend-ai/fullsend/issues/4414
+2026-07-15,fullsend,issue,closed,4413,"Evidence for #1194: review agent found binary placement issue but didn't question whether PR belongs in this repository",https://github.com/fullsend-ai/fullsend/issues/4413
+2026-07-15,fullsend,issue,closed,4402,"Evidence for #4387: review agent submitted CHANGES_REQUESTED for protected-path finding on Dependabot PR, blocking merge for 3.5 days",https://github.com/fullsend-ai/fullsend/issues/4402
+2026-07-15,fullsend,issue,closed,4398,"Evidence for #4293: 40+ registry.redhat.io digest PRs in quay-konflux-components sit 12+ days without review",https://github.com/fullsend-ai/fullsend/issues/4398
+2026-07-15,fullsend,issue,closed,4386,"Evidence for #4377: Renovate force-push caused double review run, fullsend shim ignores .pr_agent.toml bot exclusion",https://github.com/fullsend-ai/fullsend/issues/4386
+2026-07-15,fullsend,issue,closed,4384,"Evidence for #4336: good-first-issue on bot issue attracted AI-generated spam PR on quay/quay#6467",https://github.com/fullsend-ai/fullsend/issues/4384
+2026-07-15,fullsend,issue,closed,4363,"Retro agent sandbox lacks GitHub API access, making analysis impossible",https://github.com/fullsend-ai/fullsend/issues/4363
+2026-07-15,fullsend,issue,closed,4314,"Retro agent sandbox lacks GitHub API access, limiting analysis depth",https://github.com/fullsend-ai/fullsend/issues/4314
+2026-07-15,fullsend,issue,closed,4290,"Retro agent sandbox blocks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4290
+2026-07-15,fullsend,issue,closed,4182,"Retro agent sandbox blocks GitHub API access, preventing effective analysis",https://github.com/fullsend-ai/fullsend/issues/4182
+2026-07-15,fullsend,issue,closed,4140,"Retro agent sandbox proxy blocks GitHub REST API, preventing all analysis",https://github.com/fullsend-ai/fullsend/issues/4140
+2026-07-15,fullsend,issue,closed,4116,"Retro agent sandbox lacks GitHub API access — cannot perform analysis",https://github.com/fullsend-ai/fullsend/issues/4116
+2026-07-15,fullsend,issue,closed,4093,"Retro agent sandbox cannot access GitHub API — no PR data available for analysis",https://github.com/fullsend-ai/fullsend/issues/4093
+2026-07-15,fullsend,issue,closed,3958,"Retro agent sandbox lacks GitHub API access, cannot analyze PR workflows",https://github.com/fullsend-ai/fullsend/issues/3958
+2026-07-15,fullsend,issue,closed,3953,"Pre-fetch PR metadata for retro agent instead of relying on runtime API access",https://github.com/fullsend-ai/fullsend/issues/3953
+2026-07-15,fullsend,issue,closed,3937,"Retro agent sandbox needs GitHub API access to analyze workflows",https://github.com/fullsend-ai/fullsend/issues/3937
+2026-07-15,fullsend,issue,closed,3896,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/3896
+2026-07-15,fullsend,issue,closed,3882,"Retro agent sandbox cannot access GitHub API (proxy policy + invalid token)",https://github.com/fullsend-ai/fullsend/issues/3882
+2026-07-15,fullsend,issue,closed,3834,"Retro agent cannot read PR data due to missing GitHub API access",https://github.com/fullsend-ai/fullsend/issues/3834
+2026-07-15,fullsend,issue,closed,3823,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/3823
+2026-07-15,fullsend,issue,closed,3808,"Retro agent sandbox cannot reach GitHub API — token expired and proxy blocks REST",https://github.com/fullsend-ai/fullsend/issues/3808
+2026-07-15,fullsend,issue,closed,3781,"Retro agent sandbox cannot reach GitHub API through proxy",https://github.com/fullsend-ai/fullsend/issues/3781
+2026-07-15,fullsend,issue,closed,3734,"Retro agent sandbox lacks GitHub API access — pre-fetch PR context in harness pre-script",https://github.com/fullsend-ai/fullsend/issues/3734
+2026-07-15,fullsend,issue,closed,3724,"Retro agent sandbox lacks working GitHub API access",https://github.com/fullsend-ai/fullsend/issues/3724
+2026-07-15,fullsend,issue,closed,3490,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/3490
+2026-07-15,fullsend,issue,closed,3466,"Retro agent sandbox lacks GitHub API access, cannot analyze PRs",https://github.com/fullsend-ai/fullsend/issues/3466
+2026-07-15,fullsend,issue,closed,3418,"Retro agent sandbox lacks GitHub API access, preventing all analysis",https://github.com/fullsend-ai/fullsend/issues/3418
+2026-07-15,fullsend,issue,closed,3258,"Retro agent sandbox lacks GitHub API access, cannot analyze PRs",https://github.com/fullsend-ai/fullsend/issues/3258
+2026-07-15,fullsend,issue,closed,2884,"Implement ADR 62: inline stage workflows into reusable-dispatch.yml",https://github.com/fullsend-ai/fullsend/issues/2884
+2026-07-15,fullsend,issue,closed,2672,"Provider and profile definitions cannot be resolved from URL-referenced base harnesses",https://github.com/fullsend-ai/fullsend/issues/2672
+2026-07-15,.fullsend,issue,opened,119,"Register QualityFlow custom agent for automated e2e test generation",https://github.com/fullsend-ai/.fullsend/issues/119
+2026-07-15,agents,pr,opened,190,"feat(review-agent): add two-pass review strategy for large PRs",https://github.com/fullsend-ai/agents/pull/190
+2026-07-15,agents,pr,opened,187,"fix(#186): add minimum-length guard on ::add-mask:: values",https://github.com/fullsend-ai/agents/pull/187
+2026-07-15,agents,pr,opened,184,"fix(eval): emulate Actions ::add-mask:: on functional-test artifacts",https://github.com/fullsend-ai/agents/pull/184
+2026-07-15,agents,pr,opened,183,"test(eval): add fix agent human /fs-fix functional eval",https://github.com/fullsend-ai/agents/pull/183
+2026-07-15,agents,pr,opened,178,"fix(#176): restrict code agent GitHub API access to read-only",https://github.com/fullsend-ai/agents/pull/178
+2026-07-15,agents,pr,opened,177,"test(eval scenario): add code agent functional eval scenario",https://github.com/fullsend-ai/agents/pull/177
+2026-07-15,agents,pr,opened,175,"fix(#4718): stop running pre-code/pre-fix scripts twice per run",https://github.com/fullsend-ai/agents/pull/175
+2026-07-15,agents,pr,opened,173,"fix(policies): allow POST /graphql in retro and review sandbox policies",https://github.com/fullsend-ai/agents/pull/173
+2026-07-15,agents,pr,opened,172,"perf(#1924): pass source file contents to review sub-agents",https://github.com/fullsend-ai/agents/pull/172
+2026-07-15,agents,pr,merged,184,"fix(eval): emulate Actions ::add-mask:: on functional-test artifacts",https://github.com/fullsend-ai/agents/pull/184
+2026-07-15,agents,pr,merged,178,"fix(#176): restrict code agent GitHub API access to read-only",https://github.com/fullsend-ai/agents/pull/178
+2026-07-15,agents,issue,opened,186,"eval scrub: add minimum-length guard on ::add-mask:: values",https://github.com/fullsend-ai/agents/issues/186
+2026-07-15,agents,issue,opened,185,"eval scrub: TEXT_SUFFIXES blind spot — upload path broader than scrub/verify path",https://github.com/fullsend-ai/agents/issues/185
+2026-07-15,agents,issue,opened,182,"Add fix agent human /fs-fix functional eval",https://github.com/fullsend-ai/agents/issues/182
+2026-07-15,agents,issue,opened,181,"Review agent should detect orphaned local agent definition files when config switches to remote sources",https://github.com/fullsend-ai/agents/issues/181
+2026-07-15,agents,issue,opened,180,"Add code agent functional eval (pre→sandbox→post PR creation)",https://github.com/fullsend-ai/agents/issues/180
+2026-07-15,agents,issue,opened,179,"Retro agent should detect discrepancies between harness override intent and actual execution",https://github.com/fullsend-ai/agents/issues/179
+2026-07-15,agents,issue,opened,176,"code agent policy grants unnecessary write access to GitHub API",https://github.com/fullsend-ai/agents/issues/176
+2026-07-15,agents,issue,opened,174,"Retro agent should detect and deduplicate existing issues before filing new ones",https://github.com/fullsend-ai/agents/issues/174
+2026-07-15,agents,issue,closed,179,"Retro agent should detect discrepancies between harness override intent and actual execution",https://github.com/fullsend-ai/agents/issues/179
+2026-07-15,agents,issue,closed,176,"code agent policy grants unnecessary write access to GitHub API",https://github.com/fullsend-ai/agents/issues/176
+2026-07-15,agents,issue,closed,122,"Review agent dispatch instructions are underspecified after removing hallucinated Agent tool parameters",https://github.com/fullsend-ai/agents/issues/122
