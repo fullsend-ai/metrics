@@ -420,3 +420,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-07-15,experiments,0,0,0,0,0,0,0,3
 2026-07-15,metrics,0,0,0,0,0,0,0,0
 2026-07-15,agents,9,2,0,8,3,0,0.90,22
+2026-07-16,fullsend,22,9,2,120,152,1,19.80,41
+2026-07-16,.fullsend,4,2,0,0,0,0,3,2
+2026-07-16,experiments,2,1,0,1,0,0,0.50,4
+2026-07-16,metrics,1,0,0,0,0,0,0,1
+2026-07-16,agents,10,6,1,39,3,1,50.70,24
