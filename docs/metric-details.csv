@@ -7952,3 +7952,119 @@ date,repo,type,event,number,title,url
 2026-07-16,agents,issue,closed,214,"Review agent was not dispatched on PR #171 due to ready-for-review label failure",https://github.com/fullsend-ai/agents/issues/214
 2026-07-16,agents,issue,closed,202,"Remove review eval case 001-clean-approve until post-review 422 errors are resolved",https://github.com/fullsend-ai/agents/issues/202
 2026-07-16,agents,issue,closed,170,"fix: remove disallowedTools from all agents/*.md files",https://github.com/fullsend-ai/agents/issues/170
+2026-07-17,fullsend,pr,opened,5276,"feat(repos): preserve SHA pinning during repos upgrade",https://github.com/fullsend-ai/fullsend/pull/5276
+2026-07-17,fullsend,pr,opened,5275,"feat(#5271): include private repos in repos.yaml glob expansion",https://github.com/fullsend-ai/fullsend/pull/5275
+2026-07-17,fullsend,pr,opened,5274,"fix(dispatch): resolve PR head SHA for issue_comment events",https://github.com/fullsend-ai/fullsend/pull/5274
+2026-07-17,fullsend,pr,opened,5273,"docs(adr): update repos-management plan to reflect all PRs merged",https://github.com/fullsend-ai/fullsend/pull/5273
+2026-07-17,fullsend,pr,opened,5269,"docs(#5268): add review autonomy evidence tracking document",https://github.com/fullsend-ai/fullsend/pull/5269
+2026-07-17,fullsend,pr,opened,5267,"docs(#5266): add review autonomy evidence tracking document",https://github.com/fullsend-ai/fullsend/pull/5267
+2026-07-17,fullsend,pr,opened,5262,"fix(#5261): auto-detect unreachable gateway loopback in containers",https://github.com/fullsend-ai/fullsend/pull/5262
+2026-07-17,fullsend,pr,opened,5255,"docs: add Bring Your Own Agent guide and agent CLI reference",https://github.com/fullsend-ai/fullsend/pull/5255
+2026-07-17,fullsend,pr,opened,5252,"chore(deps): update experiments digest to 5d8bed2",https://github.com/fullsend-ai/fullsend/pull/5252
+2026-07-17,fullsend,pr,opened,5248,"fix(#5247): make sandbox.Upload symlink-safe instead of patching call sites",https://github.com/fullsend-ai/fullsend/pull/5248
+2026-07-17,fullsend,pr,opened,5246,"docs(adr): add ADR 0073 — tool-proxy design for transparent CLI interception",https://github.com/fullsend-ai/fullsend/pull/5246
+2026-07-17,fullsend,pr,opened,5245,"fix(#5241): add missing --file flag to ImportProfile openshell command",https://github.com/fullsend-ai/fullsend/pull/5245
+2026-07-17,fullsend,pr,opened,5244,"feat(dispatch): allow triage role for observation stages",https://github.com/fullsend-ai/fullsend/pull/5244
+2026-07-17,fullsend,pr,opened,5237,"fix(#5193): pin Claude Code version in sandbox Containerfile",https://github.com/fullsend-ai/fullsend/pull/5237
+2026-07-17,fullsend,pr,opened,5234,"docs: annotate ADR 0046 with allowed_ips validation results",https://github.com/fullsend-ai/fullsend/pull/5234
+2026-07-17,fullsend,pr,opened,5232,"fix(#5231): avoid tmpPath collision in UploadFile when remotePath is under /tmp/",https://github.com/fullsend-ai/fullsend/pull/5232
+2026-07-17,fullsend,pr,opened,5228,"chore(deps): update experiments digest to 5def9f1",https://github.com/fullsend-ai/fullsend/pull/5228
+2026-07-17,fullsend,pr,merged,5262,"fix(#5261): auto-detect unreachable gateway loopback in containers",https://github.com/fullsend-ai/fullsend/pull/5262
+2026-07-17,fullsend,pr,merged,5248,"fix(#5247): make sandbox.Upload symlink-safe instead of patching call sites",https://github.com/fullsend-ai/fullsend/pull/5248
+2026-07-17,fullsend,pr,merged,5232,"fix(#5231): avoid tmpPath collision in UploadFile when remotePath is under /tmp/",https://github.com/fullsend-ai/fullsend/pull/5232
+2026-07-17,fullsend,pr,merged,5228,"chore(deps): update experiments digest to 5def9f1",https://github.com/fullsend-ai/fullsend/pull/5228
+2026-07-17,fullsend,pr,merged,5204,"chore(deps): update dependency svelte-check to v4.7.3",https://github.com/fullsend-ai/fullsend/pull/5204
+2026-07-17,fullsend,pr,merged,5201,"feat(#5183): publish runner image with fullsend CLI and host-side run dependencies",https://github.com/fullsend-ai/fullsend/pull/5201
+2026-07-17,fullsend,pr,merged,5198,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/fullsend/pull/5198
+2026-07-17,fullsend,pr,merged,4510,"refactor(telemetry)!: replace bespoke recorder with OTel Go SDK",https://github.com/fullsend-ai/fullsend/pull/4510
+2026-07-17,fullsend,pr,merged,4081,"feat(repos)!: add, remove, install, uninstall subcommands",https://github.com/fullsend-ai/fullsend/pull/4081
+2026-07-17,fullsend,pr,merged,4080,"feat(repos): add upgrade and upgrade-mint subcommands",https://github.com/fullsend-ai/fullsend/pull/4080
+2026-07-17,fullsend,pr,merged,4079,"feat(repos)!: add repos diff and repos sync CLI commands",https://github.com/fullsend-ai/fullsend/pull/4079
+2026-07-17,fullsend,issue,opened,5272,"feat(repos): repos upgrade should preserve SHA pinning in workflow uses lines",https://github.com/fullsend-ai/fullsend/issues/5272
+2026-07-17,fullsend,issue,opened,5271,"feat(repos): glob patterns in repos.yaml exclude private repositories",https://github.com/fullsend-ai/fullsend/issues/5271
+2026-07-17,fullsend,issue,opened,5270,"docs(adr): update ADR-0057 and repos-management plan to reflect completed implementation",https://github.com/fullsend-ai/fullsend/issues/5270
+2026-07-17,fullsend,issue,opened,5268,"Counter-evidence for review autonomy: agent missed all high-impact findings on repos sync/diff feature PR",https://github.com/fullsend-ai/fullsend/issues/5268
+2026-07-17,fullsend,issue,opened,5266,"Counter-evidence for review autonomy: human reviewer caught all high-impact findings on complex Go regex/semver PR #4080",https://github.com/fullsend-ai/fullsend/issues/5266
+2026-07-17,fullsend,issue,opened,5265,"Review re-review anchoring should incorporate author response context to suppress explained-away findings",https://github.com/fullsend-ai/fullsend/issues/5265
+2026-07-17,fullsend,issue,opened,5264,"Review agent correctness sub-agent should construct concrete impact examples before assigning severity to edge-case findings",https://github.com/fullsend-ai/fullsend/issues/5264
+2026-07-17,fullsend,issue,opened,5263,"Post-script pre-commit failure should distinguish missing-tool errors from actual lint failures",https://github.com/fullsend-ai/fullsend/issues/5263
+2026-07-17,fullsend,issue,opened,5261,"Container-image local run path unreachable on macOS: OpenShell gateway binds to 127.0.0.1 only",https://github.com/fullsend-ai/fullsend/issues/5261
+2026-07-17,fullsend,issue,opened,5260,"Evidence for fullsend#5226: 9th retro dispatch on same PR demonstrates retro dedup urgency",https://github.com/fullsend-ai/fullsend/issues/5260
+2026-07-17,fullsend,issue,opened,5259,"Evidence for fullsend#4681: conforma/cli PR #3373 had 12 reviews on a single commit SHA",https://github.com/fullsend-ai/fullsend/issues/5259
+2026-07-17,fullsend,issue,opened,5258,"Evidence for fullsend#4980: conforma/cli PR #3373 had 30 dispatches over 18 days with 10 close/reopen cycles",https://github.com/fullsend-ai/fullsend/issues/5258
+2026-07-17,fullsend,issue,opened,5257,"Track autonomy readiness: review agent findings fully covered human review on backend processor PR",https://github.com/fullsend-ai/fullsend/issues/5257
+2026-07-17,fullsend,issue,opened,5256,"Fix agent should generalize validation fixes to cover adjacent edge cases of the same pattern",https://github.com/fullsend-ai/fullsend/issues/5256
+2026-07-17,fullsend,issue,opened,5254,"UploadDir's destination-clearing races with fetchsvc's live in-sandbox re-fetch on a cache hit",https://github.com/fullsend-ai/fullsend/issues/5254
+2026-07-17,fullsend,issue,opened,5253,"Uploaded skill/plugin content is not sanitized for symlink escapes, unlike the download direction",https://github.com/fullsend-ai/fullsend/issues/5253
+2026-07-17,fullsend,issue,opened,5251,"Counter-evidence for review autonomy: review agent missed 12 unique findings on large telemetry refactor PR #4510",https://github.com/fullsend-ai/fullsend/issues/5251
+2026-07-17,fullsend,issue,opened,5250,"Review agent should apply elevated severity when findings co-occur with breaking-change indicators",https://github.com/fullsend-ai/fullsend/issues/5250
+2026-07-17,fullsend,issue,opened,5249,"Review agent should analyze deleted test assertions to detect behavioral regressions in replacement code",https://github.com/fullsend-ai/fullsend/issues/5249
+2026-07-17,fullsend,issue,opened,5247,"Skills uploaded to sandbox become dangling symlinks, Claude Code silently falls back to built-in skills",https://github.com/fullsend-ai/fullsend/issues/5247
+2026-07-17,fullsend,issue,opened,5243,"ADR: tool-proxy design for transparent CLI interception",https://github.com/fullsend-ai/fullsend/issues/5243
+2026-07-17,fullsend,issue,opened,5242,"Tool proxies: transparent CLI interception for sandboxed agents",https://github.com/fullsend-ai/fullsend/issues/5242
+2026-07-17,fullsend,issue,opened,5241,"bug(sandbox): ImportProfile passes positional arg instead of --file flag",https://github.com/fullsend-ai/fullsend/issues/5241
+2026-07-17,fullsend,issue,opened,5240,"feat(compose): support local-path resolution for profiles and providers during base composition",https://github.com/fullsend-ai/fullsend/issues/5240
+2026-07-17,fullsend,issue,opened,5239,"Writing-adrs skill should guide agents to use Proposed status for unratified designs",https://github.com/fullsend-ai/fullsend/issues/5239
+2026-07-17,fullsend,issue,opened,5238,"Dispatch auth check silently rejects code-agent bot PRs from review",https://github.com/fullsend-ai/fullsend/issues/5238
+2026-07-17,fullsend,issue,opened,5235,"Evidence for fullsend#5185: retro dispatched on zero-agent-involvement bot PR with 11 close/reopen cycles",https://github.com/fullsend-ai/fullsend/issues/5235
+2026-07-17,fullsend,issue,opened,5236,"Evidence for fullsend#5226: PR with 11 close/reopen cycles demonstrates extreme dedup need",https://github.com/fullsend-ai/fullsend/issues/5236
+2026-07-17,fullsend,issue,opened,5233,"Harness resolver should warn when repo-level agents have divergent skill lists",https://github.com/fullsend-ai/fullsend/issues/5233
+2026-07-17,fullsend,issue,opened,5231,"UploadFile fails when remotePath basename matches source filename under /tmp/",https://github.com/fullsend-ai/fullsend/issues/5231
+2026-07-17,fullsend,issue,opened,5230,"Add GH_TOKEN pre-flight validation to retro pre-script",https://github.com/fullsend-ai/fullsend/issues/5230
+2026-07-17,fullsend,issue,opened,5229,"Dispatch should skip retro stage on reconciliation branch PRs",https://github.com/fullsend-ai/fullsend/issues/5229
+2026-07-17,fullsend,issue,closed,5261,"Container-image local run path unreachable on macOS: OpenShell gateway binds to 127.0.0.1 only",https://github.com/fullsend-ai/fullsend/issues/5261
+2026-07-17,fullsend,issue,closed,5247,"Skills uploaded to sandbox become dangling symlinks, Claude Code silently falls back to built-in skills",https://github.com/fullsend-ai/fullsend/issues/5247
+2026-07-17,fullsend,issue,closed,5238,"Dispatch auth check silently rejects code-agent bot PRs from review",https://github.com/fullsend-ai/fullsend/issues/5238
+2026-07-17,fullsend,issue,closed,5231,"UploadFile fails when remotePath basename matches source filename under /tmp/",https://github.com/fullsend-ai/fullsend/issues/5231
+2026-07-17,fullsend,issue,closed,5230,"Add GH_TOKEN pre-flight validation to retro pre-script",https://github.com/fullsend-ai/fullsend/issues/5230
+2026-07-17,fullsend,issue,closed,5183,"Release a container image with the fullsend CLI and all host-side run dependencies pre-installed",https://github.com/fullsend-ai/fullsend/issues/5183
+2026-07-17,fullsend,issue,closed,4934,"Retro agent sandbox cannot access GitHub API — blocks all workflow analysis",https://github.com/fullsend-ai/fullsend/issues/4934
+2026-07-17,fullsend,issue,closed,4098,"feat(repos): add, remove, install, uninstall subcommands (ADR-0057 PR 8)",https://github.com/fullsend-ai/fullsend/issues/4098
+2026-07-17,fullsend,issue,closed,3749,"Level 2 native OTLP export: reverse proxy blocks `/v1/traces` on the pilot MLflow backend",https://github.com/fullsend-ai/fullsend/issues/3749
+2026-07-17,fullsend,issue,closed,1924,"Review sub-agents should receive source file contents in prompt instead of re-reading from disk",https://github.com/fullsend-ai/fullsend/issues/1924
+2026-07-17,.fullsend,pr,opened,125,"chore(deps): update fullsend-ai/agents digest to 6565264",https://github.com/fullsend-ai/.fullsend/pull/125
+2026-07-17,.fullsend,pr,opened,124,"chore(deps): update fullsend-ai/agents digest to def8cb5",https://github.com/fullsend-ai/.fullsend/pull/124
+2026-07-17,.fullsend,pr,merged,124,"chore(deps): update fullsend-ai/agents digest to def8cb5",https://github.com/fullsend-ai/.fullsend/pull/124
+2026-07-17,.fullsend,pr,merged,123,"chore: auto-merge renovate PRs for agents digest bumps",https://github.com/fullsend-ai/.fullsend/pull/123
+2026-07-17,.fullsend,pr,merged,122,"chore: disconnect from fullsend agent pipeline",https://github.com/fullsend-ai/.fullsend/pull/122
+2026-07-17,.fullsend,issue,opened,126,"Post-review script uses config repo SHA as commit_id for comment-triggered reviews",https://github.com/fullsend-ai/.fullsend/issues/126
+2026-07-17,experiments,pr,opened,44,"docs: annotate experiment 0021 with post-v2.1.119 corrections",https://github.com/fullsend-ai/experiments/pull/44
+2026-07-17,experiments,pr,merged,44,"docs: annotate experiment 0021 with post-v2.1.119 corrections",https://github.com/fullsend-ai/experiments/pull/44
+2026-07-17,experiments,pr,merged,41,"chore: update fullsend shim workflow",https://github.com/fullsend-ai/experiments/pull/41
+2026-07-17,agents,pr,opened,253,"fix(#250): remove unexecutable gh api fallback from review sub-agent prompts",https://github.com/fullsend-ai/agents/pull/253
+2026-07-17,agents,pr,opened,249,"docs(eval): add README for running evals locally",https://github.com/fullsend-ai/agents/pull/249
+2026-07-17,agents,pr,opened,248,"docs(eval): document required env vars and token scopes",https://github.com/fullsend-ai/agents/pull/248
+2026-07-17,agents,pr,opened,243,"fix(#242): add -- separator to grep calls in test helpers",https://github.com/fullsend-ai/agents/pull/243
+2026-07-17,agents,pr,merged,196,"fix(#194): skip ready-for-merge label on draft PRs",https://github.com/fullsend-ai/agents/pull/196
+2026-07-17,agents,pr,merged,173,"fix(policies): allow POST /graphql in agent sandbox policies",https://github.com/fullsend-ai/agents/pull/173
+2026-07-17,agents,pr,merged,172,"perf(#1924): pass source file contents to review sub-agents",https://github.com/fullsend-ai/agents/pull/172
+2026-07-17,agents,pr,closed,222,"fix(review): detect submodule bumps and downgrade approve to comment",https://github.com/fullsend-ai/agents/pull/222
+2026-07-17,agents,issue,opened,271,"Code agent should attempt triage-preferred approach before falling back to docs-only workarounds",https://github.com/fullsend-ai/agents/issues/271
+2026-07-17,agents,issue,opened,270,"Review agent re-review should perform targeted side-effect analysis when fix commits address HIGH/CRITICAL findings",https://github.com/fullsend-ai/agents/issues/270
+2026-07-17,agents,issue,opened,269,"Review agent should read plan/spec documents linked from PR description and validate implementation completeness",https://github.com/fullsend-ai/agents/issues/269
+2026-07-17,agents,issue,opened,268,"Review agent should escalate findings where the fix does not eliminate the reported bug class",https://github.com/fullsend-ai/agents/issues/268
+2026-07-17,agents,issue,opened,267,"Code agent should critically evaluate suggested fixes rather than implementing them verbatim",https://github.com/fullsend-ai/agents/issues/267
+2026-07-17,agents,issue,opened,266,"Functional tests still depend on metrics.json after OTel became the Level 1 telemetry artifact",https://github.com/fullsend-ai/agents/issues/266
+2026-07-17,agents,issue,opened,265,"Review correctness sub-agent should cross-reference verified facts to detect misleading documentation narratives",https://github.com/fullsend-ai/agents/issues/265
+2026-07-17,agents,issue,opened,264,"Correctness sub-agent: add CLI operational safety checklist for destructive commands",https://github.com/fullsend-ai/agents/issues/264
+2026-07-17,agents,issue,opened,263,"Correctness sub-agent: detect parallel error variable consolidation gaps",https://github.com/fullsend-ai/agents/issues/263
+2026-07-17,agents,issue,opened,262,"Correctness sub-agent: add batch-operation partial-failure consistency checks",https://github.com/fullsend-ai/agents/issues/262
+2026-07-17,agents,issue,opened,261,"Review agent should evaluate information architecture of new user-facing documentation",https://github.com/fullsend-ai/agents/issues/261
+2026-07-17,agents,issue,opened,260,"Triage routing should not auto-promote ADR issues to ready-to-code",https://github.com/fullsend-ai/agents/issues/260
+2026-07-17,agents,issue,opened,259,"Code agent should surface chosen approach before implementing multi-option issues",https://github.com/fullsend-ai/agents/issues/259
+2026-07-17,agents,issue,opened,258,"Issue #189 proposed approach was rejected — re-scope before next coder attempt",https://github.com/fullsend-ai/agents/issues/258
+2026-07-17,agents,issue,opened,257,"Add pre-review early exit for bot-authored dependency-update PRs",https://github.com/fullsend-ai/agents/issues/257
+2026-07-17,agents,issue,opened,256,"Review orchestrator passes roster-table model alias instead of frontmatter model to sub-agents",https://github.com/fullsend-ai/agents/issues/256
+2026-07-17,agents,issue,opened,255,"Review orchestrator wastes 6 tool calls discovering skill file paths in sandbox",https://github.com/fullsend-ai/agents/issues/255
+2026-07-17,agents,issue,opened,254,"Triage agent should not label proposed-design ADR issues as ready-to-code",https://github.com/fullsend-ai/agents/issues/254
+2026-07-17,agents,issue,opened,252,"Close issue #140: sub-agent redundant file reads resolved by PR #172",https://github.com/fullsend-ai/agents/issues/252
+2026-07-17,agents,issue,opened,251,"fix(review): address unresolved review findings from PR #172 (sanitization gap, stale prose)",https://github.com/fullsend-ai/agents/issues/251
+2026-07-17,agents,issue,opened,250,"Review sub-agents cannot execute large-PR file-fetch fallback (no Bash tool)",https://github.com/fullsend-ai/agents/issues/250
+2026-07-17,agents,issue,opened,247,"Document how to run review eval locally",https://github.com/fullsend-ai/agents/issues/247
+2026-07-17,agents,issue,opened,246,"Document EVAL_GH_TOKEN permissions for review eval",https://github.com/fullsend-ai/agents/issues/246
+2026-07-17,agents,issue,opened,245,"Reintroduce review eval tests — self-review token blocker",https://github.com/fullsend-ai/agents/issues/245
+2026-07-17,agents,issue,opened,244,"Review agent should detect cross-agent policy consistency gaps in policies/ changes",https://github.com/fullsend-ai/agents/issues/244
+2026-07-17,agents,issue,opened,242,"Fix grep option/pattern confusion in test no-pattern helpers",https://github.com/fullsend-ai/agents/issues/242
+2026-07-17,agents,issue,opened,241,"Add review eval test case for draft PR label guard",https://github.com/fullsend-ai/agents/issues/241
+2026-07-17,agents,issue,opened,240,"Review agent should use comment-only disposition for PRs that expand fullsend trust boundaries",https://github.com/fullsend-ai/agents/issues/240
+2026-07-17,agents,issue,closed,194,"Review post-script should not apply ready-for-merge label to draft PRs",https://github.com/fullsend-ai/agents/issues/194
