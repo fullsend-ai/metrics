@@ -8068,3 +8068,50 @@ date,repo,type,event,number,title,url
 2026-07-17,agents,issue,opened,241,"Add review eval test case for draft PR label guard",https://github.com/fullsend-ai/agents/issues/241
 2026-07-17,agents,issue,opened,240,"Review agent should use comment-only disposition for PRs that expand fullsend trust boundaries",https://github.com/fullsend-ai/agents/issues/240
 2026-07-17,agents,issue,closed,194,"Review post-script should not apply ready-for-merge label to draft PRs",https://github.com/fullsend-ai/agents/issues/194
+2026-07-18,fullsend,pr,opened,5294,"chore(deps): update dependency svelte to v5.56.6",https://github.com/fullsend-ai/fullsend/pull/5294
+2026-07-18,fullsend,pr,opened,5291,"feat(cli)!: rename --fullsend-dir to --agent-dir with deprecation alias",https://github.com/fullsend-ai/fullsend/pull/5291
+2026-07-18,fullsend,pr,opened,5287,"docs(#5286): point --fullsend-dir at fullsend-ai/agents instead of scaffold",https://github.com/fullsend-ai/fullsend/pull/5287
+2026-07-18,fullsend,pr,opened,5277,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/5277
+2026-07-18,fullsend,pr,merged,5287,"docs(#5286): point --fullsend-dir at fullsend-ai/agents instead of scaffold",https://github.com/fullsend-ai/fullsend/pull/5287
+2026-07-18,fullsend,pr,merged,5255,"docs: add Bring Your Own Agent guide and agent CLI reference",https://github.com/fullsend-ai/fullsend/pull/5255
+2026-07-18,fullsend,pr,merged,5252,"chore(deps): update experiments digest to 5d8bed2",https://github.com/fullsend-ai/fullsend/pull/5252
+2026-07-18,fullsend,pr,merged,5245,"fix(#5241): add missing --file flag to ImportProfile openshell command",https://github.com/fullsend-ai/fullsend/pull/5245
+2026-07-18,fullsend,issue,opened,5302,"Review agent intent-coherence sub-agent should question changes motivated by external scoring frameworks",https://github.com/fullsend-ai/fullsend/issues/5302
+2026-07-18,fullsend,issue,opened,5301,"Counter-evidence for review autonomy: agent missed team-policy question on config/tooling PR",https://github.com/fullsend-ai/fullsend/issues/5301
+2026-07-18,fullsend,issue,opened,5300,"Review agent should flag new enforcement tooling that may conflict with existing repo conventions",https://github.com/fullsend-ai/fullsend/issues/5300
+2026-07-18,fullsend,issue,opened,5299,"Review agent severity guidance should escalate documentation findings that block users or cause security confusion",https://github.com/fullsend-ai/fullsend/issues/5299
+2026-07-18,fullsend,issue,opened,5298,"Review orchestrator should promote docs sub-agent budget priority for docs-only PRs",https://github.com/fullsend-ai/fullsend/issues/5298
+2026-07-18,fullsend,issue,opened,5297,"Review docs-currency sub-agent should cross-validate documentation examples against actual source files",https://github.com/fullsend-ai/fullsend/issues/5297
+2026-07-18,fullsend,issue,opened,5296,"Retro stage fails on fork PRs due to pull_request_target checkout security restriction",https://github.com/fullsend-ai/fullsend/issues/5296
+2026-07-18,fullsend,issue,opened,5295,"Skip retro dispatch for bot-authored PRs with zero agent involvement",https://github.com/fullsend-ai/fullsend/issues/5295
+2026-07-18,fullsend,issue,opened,5293,"fullsend-ai/agents is missing profiles/ — breaks vertex-ai (and other built-in) provider creation for local runs",https://github.com/fullsend-ai/fullsend/issues/5293
+2026-07-18,fullsend,issue,opened,5292,"Evidence for fullsend#5185: retro dispatched on zero-agent-involvement bot PR in rhdh-plugin-export-overlays",https://github.com/fullsend-ai/fullsend/issues/5292
+2026-07-18,fullsend,issue,opened,5290,"Evidence for fullsend#5185: retro dispatched on zero-agent-involvement bot PR with close/reopen/close cycle",https://github.com/fullsend-ai/fullsend/issues/5290
+2026-07-18,fullsend,issue,opened,5289,"Track autonomy readiness: review agent fully covered human review on docs-only mechanical path update",https://github.com/fullsend-ai/fullsend/issues/5289
+2026-07-18,fullsend,issue,opened,5288,"Deprecate --fullsend-dir in favor of a clearer name (e.g. --agent-dir)",https://github.com/fullsend-ai/fullsend/issues/5288
+2026-07-18,fullsend,issue,opened,5286,"docs: running-agents-locally.md still points --fullsend-dir at the deprecated scaffold instead of fullsend-ai/agents",https://github.com/fullsend-ai/fullsend/issues/5286
+2026-07-18,fullsend,issue,opened,5285,"Retro agent sandbox blocks GitHub API access via proxy",https://github.com/fullsend-ai/fullsend/issues/5285
+2026-07-18,fullsend,issue,opened,5284,"Retro agent sandbox cannot reach GitHub API — blocks PR analysis",https://github.com/fullsend-ai/fullsend/issues/5284
+2026-07-18,fullsend,issue,opened,5283,"Validate GH_TOKEN before launching retro agent sandbox",https://github.com/fullsend-ai/fullsend/issues/5283
+2026-07-18,fullsend,issue,opened,5282,"Pre-fetch PR and workflow context into the retro agent sandbox",https://github.com/fullsend-ai/fullsend/issues/5282
+2026-07-18,fullsend,issue,opened,5281,"Retro agent sandbox lacks GitHub API access for workflow analysis",https://github.com/fullsend-ai/fullsend/issues/5281
+2026-07-18,fullsend,issue,opened,5280,"Retro agent sandbox lacks GitHub API access, preventing workflow analysis",https://github.com/fullsend-ai/fullsend/issues/5280
+2026-07-18,fullsend,issue,opened,5279,"Evidence for fullsend#5185: 6th consecutive bot PR retro in quay-konflux-components within 5 minutes",https://github.com/fullsend-ai/fullsend/issues/5279
+2026-07-18,fullsend,issue,opened,5278,"Evidence for fullsend#5185: retro dispatched on zero-agent-involvement bot PR in bot-heavy repo (91% bot PRs)",https://github.com/fullsend-ai/fullsend/issues/5278
+2026-07-18,fullsend,issue,closed,5293,"fullsend-ai/agents is missing profiles/ — breaks vertex-ai (and other built-in) provider creation for local runs",https://github.com/fullsend-ai/fullsend/issues/5293
+2026-07-18,fullsend,issue,closed,5286,"docs: running-agents-locally.md still points --fullsend-dir at the deprecated scaffold instead of fullsend-ai/agents",https://github.com/fullsend-ai/fullsend/issues/5286
+2026-07-18,fullsend,issue,closed,5241,"bug(sandbox): ImportProfile passes positional arg instead of --file flag",https://github.com/fullsend-ai/fullsend/issues/5241
+2026-07-18,.fullsend,pr,merged,125,"chore(deps): update fullsend-ai/agents digest to 6565264",https://github.com/fullsend-ai/.fullsend/pull/125
+2026-07-18,.fullsend,issue,opened,127,"Fix agent repeatedly fails with Signed-off-by post-script block on PR #5273",https://github.com/fullsend-ai/.fullsend/issues/127
+2026-07-18,.fullsend,issue,closed,127,"Fix agent repeatedly fails with Signed-off-by post-script block on PR #5273",https://github.com/fullsend-ai/.fullsend/issues/127
+2026-07-18,agents,pr,opened,279,"fix(ci): track profiles/providers in select-eval-agents.sh",https://github.com/fullsend-ai/agents/pull/279
+2026-07-18,agents,pr,opened,273,"fix(#272): remove signing from convention discovery lists",https://github.com/fullsend-ai/agents/pull/273
+2026-07-18,agents,issue,opened,281,"Code agent should pre-disable git hooks inside sandbox to avoid wasted commit attempts",https://github.com/fullsend-ai/agents/issues/281
+2026-07-18,agents,issue,opened,280,"Review agent should surface confirmatory reasoning in APPROVE comments, not just ""Looks good to me""",https://github.com/fullsend-ai/agents/issues/280
+2026-07-18,agents,issue,opened,278,"select-eval-agents.sh doesn't track profiles/providers changes, so functional tests won't trigger on them",https://github.com/fullsend-ai/agents/issues/278
+2026-07-18,agents,issue,opened,277,"Missing profiles/ directory breaks vertex-ai (and other) provider creation",https://github.com/fullsend-ai/agents/issues/277
+2026-07-18,agents,issue,opened,276,"Add bot-PR early exit to pre-retro.sh to skip retro on zero-involvement bot PRs",https://github.com/fullsend-ai/agents/issues/276
+2026-07-18,agents,issue,opened,275,"Code agent wastes ~5 minutes in subagent delegation before productive work begins",https://github.com/fullsend-ai/agents/issues/275
+2026-07-18,agents,issue,opened,274,"Post-code.sh should auto-create ready-for-review label before applying it",https://github.com/fullsend-ai/agents/issues/274
+2026-07-18,agents,issue,opened,272,"Fix agent repeatedly fails with Signed-off-by post-script block on PR #5273",https://github.com/fullsend-ai/agents/issues/272
+2026-07-18,agents,issue,closed,277,"Missing profiles/ directory breaks vertex-ai (and other) provider creation",https://github.com/fullsend-ai/agents/issues/277
