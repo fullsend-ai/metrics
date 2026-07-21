@@ -8172,3 +8172,131 @@ date,repo,type,event,number,title,url
 2026-07-19,agents,issue,opened,283,"Correctness sub-agent should flag security-critical functions lacking adversarial test coverage",https://github.com/fullsend-ai/agents/issues/283
 2026-07-19,agents,issue,opened,282,"Security sub-agent should verify shell script security controls against bypass vectors",https://github.com/fullsend-ai/agents/issues/282
 2026-07-19,agents,issue,closed,223,"fix: add platform detection to gitleaks install in post-code.sh and post-fix.sh",https://github.com/fullsend-ai/agents/issues/223
+2026-07-20,fullsend,pr,opened,5395,"fix(#5393): defer validation until all retry iterations complete",https://github.com/fullsend-ai/fullsend/pull/5395
+2026-07-20,fullsend,pr,opened,5391,"refactor(#5390): add polling-support methods to GitLab client",https://github.com/fullsend-ai/fullsend/pull/5391
+2026-07-20,fullsend,pr,opened,5386,"docs: add fix, retro, and prioritize agent env examples to local run guide",https://github.com/fullsend-ai/fullsend/pull/5386
+2026-07-20,fullsend,pr,opened,5374,"ci(renovate): add custom manager to auto-bump tirith CLI version",https://github.com/fullsend-ai/fullsend/pull/5374
+2026-07-20,fullsend,pr,opened,5373,"docs(#5372): add escalation ladder for core agent changes",https://github.com/fullsend-ai/fullsend/pull/5373
+2026-07-20,fullsend,pr,opened,5371,"chore(deps): update actions/checkout digest to 3d3c42e",https://github.com/fullsend-ai/fullsend/pull/5371
+2026-07-20,fullsend,pr,opened,5357,"fix(version): resolve CLI version from reusable workflow ref",https://github.com/fullsend-ai/fullsend/pull/5357
+2026-07-20,fullsend,pr,opened,5349,"feat: forward SSH_SIGNING_KEY secret to code agent sandbox",https://github.com/fullsend-ai/fullsend/pull/5349
+2026-07-20,fullsend,pr,opened,5348,"feat(#5343): gate GCP/filesystem paths behind build tags for WASM",https://github.com/fullsend-ai/fullsend/pull/5348
+2026-07-20,fullsend,pr,opened,5342,"fix(#4983): accept dots in minted GitHub token validation",https://github.com/fullsend-ai/fullsend/pull/5342
+2026-07-20,fullsend,pr,opened,5341,"fix(#5337): add missing @vue/server-renderer to lockfile",https://github.com/fullsend-ai/fullsend/pull/5341
+2026-07-20,fullsend,pr,opened,5340,"fix(#5339): skip disabled workflows gracefully in per-org dispatch",https://github.com/fullsend-ai/fullsend/pull/5340
+2026-07-20,fullsend,pr,opened,5336,"chore(deps): update dependency stylelint to v17.14.1",https://github.com/fullsend-ai/fullsend/pull/5336
+2026-07-20,fullsend,pr,merged,5342,"fix(#4983): accept dots in minted GitHub token validation",https://github.com/fullsend-ai/fullsend/pull/5342
+2026-07-20,fullsend,pr,merged,5341,"fix(#5337): add missing @vue/server-renderer to lockfile",https://github.com/fullsend-ai/fullsend/pull/5341
+2026-07-20,fullsend,pr,merged,5336,"chore(deps): update dependency stylelint to v17.14.1",https://github.com/fullsend-ai/fullsend/pull/5336
+2026-07-20,fullsend,pr,merged,5327,"chore(deps): update actions/cache action to v4.3.0",https://github.com/fullsend-ai/fullsend/pull/5327
+2026-07-20,fullsend,pr,merged,5310,"docs(e2e): document TEST_CLOUDFLARE_* for mint-test Worker",https://github.com/fullsend-ai/fullsend/pull/5310
+2026-07-20,fullsend,pr,merged,5303,"chore(deps): update dependency vue to v3.5.40",https://github.com/fullsend-ai/fullsend/pull/5303
+2026-07-20,fullsend,pr,merged,5294,"chore(deps): update dependency svelte to v5.56.6",https://github.com/fullsend-ai/fullsend/pull/5294
+2026-07-20,fullsend,pr,merged,5277,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/5277
+2026-07-20,fullsend,pr,merged,5244,"feat(dispatch): allow triage role for observation stages",https://github.com/fullsend-ai/fullsend/pull/5244
+2026-07-20,fullsend,pr,merged,4874,"docs(glossary): define eval scenario vs eval measurement",https://github.com/fullsend-ai/fullsend/pull/4874
+2026-07-20,fullsend,pr,merged,4101,"feat(forge): add GitLab forge client implementation",https://github.com/fullsend-ai/fullsend/pull/4101
+2026-07-20,fullsend,pr,merged,4100,"feat(poll): implement Phase 2 cron poller for GitLab event dispatch",https://github.com/fullsend-ai/fullsend/pull/4100
+2026-07-20,fullsend,pr,closed,5386,"docs: add fix, retro, and prioritize agent env examples to local run guide",https://github.com/fullsend-ai/fullsend/pull/5386
+2026-07-20,fullsend,issue,opened,5396,"URL-referenced openshell profile import fails: cached content has no file extension",https://github.com/fullsend-ai/fullsend/issues/5396
+2026-07-20,fullsend,issue,opened,5393,"Harness should defer validation until all retry iterations complete",https://github.com/fullsend-ai/fullsend/issues/5393
+2026-07-20,fullsend,issue,opened,5392,"Evidence for fullsend#5360: retro dispatched on auto-merged bot nudge PR in repo with 96% bot PR volume",https://github.com/fullsend-ai/fullsend/issues/5392
+2026-07-20,fullsend,issue,opened,5390,"feat(gitlab): add polling-support methods to GitLab LiveClient",https://github.com/fullsend-ai/fullsend/issues/5390
+2026-07-20,fullsend,issue,opened,5389,"Review agent severity for missing-authorization fluctuates between HIGH and MEDIUM on identical code",https://github.com/fullsend-ai/fullsend/issues/5389
+2026-07-20,fullsend,issue,opened,5388,"Fix empty expected app client_id in pre-fetch-prior-review for per-repo install mode",https://github.com/fullsend-ai/fullsend/issues/5388
+2026-07-20,fullsend,issue,opened,5387,"Request: vouch redhat-chai-bot as a contributor",https://github.com/fullsend-ai/fullsend/issues/5387
+2026-07-20,fullsend,issue,opened,5385,"Review agent should add methodology/design-soundness critique for evaluation and scoring code",https://github.com/fullsend-ai/fullsend/issues/5385
+2026-07-20,fullsend,issue,opened,5384,"Evidence for fullsend#5375: retro dispatched on zero-agent-involvement unmerged PR closed on fullsend installation day",https://github.com/fullsend-ai/fullsend/issues/5384
+2026-07-20,fullsend,issue,opened,5383,"Investigate intermittent sandbox creation failure on openshell 0.0.63 after revert from 0.0.72",https://github.com/fullsend-ai/fullsend/issues/5383
+2026-07-20,fullsend,issue,opened,5382,"Status comment should classify infrastructure failures and suggest retry",https://github.com/fullsend-ai/fullsend/issues/5382
+2026-07-20,fullsend,issue,opened,5381,"Evidence for fullsend#5354: re-review blocked by allowed_remote_resources for agents repo scripts",https://github.com/fullsend-ai/fullsend/issues/5381
+2026-07-20,fullsend,issue,opened,5380,"CHANGES_REQUESTED persists indefinitely when re-review infrastructure fails",https://github.com/fullsend-ai/fullsend/issues/5380
+2026-07-20,fullsend,issue,opened,5379,"/fs-fix on fork PRs fails silently with no user-facing feedback",https://github.com/fullsend-ai/fullsend/issues/5379
+2026-07-20,fullsend,issue,opened,5378,"action.yml reconcile-status uses github.sha which is the default branch HEAD for pull_request_target events",https://github.com/fullsend-ai/fullsend/issues/5378
+2026-07-20,fullsend,issue,opened,5377,"Add retry with backoff for transient agent token minting failures in fullsend CLI",https://github.com/fullsend-ai/fullsend/issues/5377
+2026-07-20,fullsend,issue,opened,5376,"Skip retro dispatch for automated cherry-pick PRs that reference an already-analyzed original PR",https://github.com/fullsend-ai/fullsend/issues/5376
+2026-07-20,fullsend,issue,opened,5375,"Broaden retro skip to all zero-agent-involvement unmerged PRs, not just drafts",https://github.com/fullsend-ai/fullsend/issues/5375
+2026-07-20,fullsend,issue,opened,5372,"docs: escalation ladder before replacing or deriving a core agent",https://github.com/fullsend-ai/fullsend/issues/5372
+2026-07-20,fullsend,issue,opened,5370,"Protected-path policy should distinguish mechanical version bumps from governance changes in .github/",https://github.com/fullsend-ai/fullsend/issues/5370
+2026-07-20,fullsend,issue,opened,5369,"Review agent should use COMMENT instead of CHANGES_REQUESTED for governance-only findings on bot PRs",https://github.com/fullsend-ai/fullsend/issues/5369
+2026-07-20,fullsend,issue,opened,5368,"Evidence for fullsend#5360: Dependabot PR in iib-tekton-utils blocked for 35 days by review agent CHANGES_REQUESTED",https://github.com/fullsend-ai/fullsend/issues/5368
+2026-07-20,fullsend,issue,opened,5367,"Fix agent spends disproportionate tokens verifying unrelated languages on single-language PRs",https://github.com/fullsend-ai/fullsend/issues/5367
+2026-07-20,fullsend,issue,opened,5366,"Retro agent should audit all instances of a bug class, not just the nearest one",https://github.com/fullsend-ai/fullsend/issues/5366
+2026-07-20,fullsend,issue,opened,5365,"Code agent should verify all added imports are actually used before committing",https://github.com/fullsend-ai/fullsend/issues/5365
+2026-07-20,fullsend,issue,opened,5364,"Code agent should validate commit subject against the repo's PR title check regex before committing",https://github.com/fullsend-ai/fullsend/issues/5364
+2026-07-20,fullsend,issue,opened,5363,"Include draft and merged fields in dispatch event_payload for downstream agent filtering",https://github.com/fullsend-ai/fullsend/issues/5363
+2026-07-20,fullsend,issue,opened,5362,"Skip retro dispatch for unmerged draft PRs with zero fullsend agent involvement",https://github.com/fullsend-ai/fullsend/issues/5362
+2026-07-20,fullsend,issue,opened,5361,"telemetry: MLflow trace columns (Name/Session/User/Source) blank; token & cost omit cache tokens",https://github.com/fullsend-ai/fullsend/issues/5361
+2026-07-20,fullsend,issue,opened,5360,"Skip review and retro stages for bot-authored dependency update PRs",https://github.com/fullsend-ai/fullsend/issues/5360
+2026-07-20,fullsend,issue,opened,5359,"Suppress 'base64: invalid input' stderr warnings in reconcile-repos.sh shim comparison",https://github.com/fullsend-ai/fullsend/issues/5359
+2026-07-20,fullsend,issue,opened,5358,"Triage agent shouldn't repeat",https://github.com/fullsend-ai/fullsend/issues/5358
+2026-07-20,fullsend,issue,opened,5356,"Coding agent should include screens captures as appropriate",https://github.com/fullsend-ai/fullsend/issues/5356
+2026-07-20,fullsend,issue,opened,5355,"Harness dispatch silently skips agents that fail resolution with no user-facing feedback",https://github.com/fullsend-ai/fullsend/issues/5355
+2026-07-20,fullsend,issue,opened,5354,"Harness dispatch does not propagate AllowedDomains to FetchPolicy, blocking all URL-sourced agent resolution",https://github.com/fullsend-ai/fullsend/issues/5354
+2026-07-20,fullsend,issue,opened,5353,"Track autonomy readiness: review agent findings fully covered human review on defense-in-depth bug fix",https://github.com/fullsend-ai/fullsend/issues/5353
+2026-07-20,fullsend,issue,opened,5352,"Evidence for fullsend#4991: wasted review on merge-from-base commit on conforma/cli PR #3418",https://github.com/fullsend-ai/fullsend/issues/5352
+2026-07-20,fullsend,issue,opened,5351,"Evidence for fullsend#5140: out-of-hunk finding caused 422 on conforma/cli PR #3418",https://github.com/fullsend-ai/fullsend/issues/5351
+2026-07-20,fullsend,issue,opened,5350,"Shouldn't require human to poke the agent when it breaks CI",https://github.com/fullsend-ai/fullsend/issues/5350
+2026-07-20,fullsend,issue,opened,5347,"Per-repo scaffold shim template should forward SSH_SIGNING_KEY for SSH commit signing",https://github.com/fullsend-ai/fullsend/issues/5347
+2026-07-20,fullsend,issue,opened,5346,"BT: replace GCP tight mint with temp CF Worker mint + debugging",https://github.com/fullsend-ai/fullsend/issues/5346
+2026-07-20,fullsend,issue,opened,5345,"fullsend mint deploy: Cloudflare platform mode (flags, env creds, embedded workersrc)",https://github.com/fullsend-ai/fullsend/issues/5345
+2026-07-20,fullsend,issue,opened,5344,"dispatch/cf: thin TS Worker adapter + Wrangler config (embeddable workersrc)",https://github.com/fullsend-ai/fullsend/issues/5344
+2026-07-20,fullsend,issue,opened,5343,"mintcore: standard-Go WASM build for Cloudflare Worker (interfaces, build tags, size gate)",https://github.com/fullsend-ai/fullsend/issues/5343
+2026-07-20,fullsend,issue,opened,5339,"Per-org dispatch should gracefully skip disabled target workflows instead of failing",https://github.com/fullsend-ai/fullsend/issues/5339
+2026-07-20,fullsend,issue,opened,5338,"Evaluate making Build Site a required status check to prevent broken docs deploys",https://github.com/fullsend-ai/fullsend/issues/5338
+2026-07-20,fullsend,issue,opened,5337,"Renovate Vue 3.5.40 update broke docs site build on main",https://github.com/fullsend-ai/fullsend/issues/5337
+2026-07-20,fullsend,issue,closed,5387,"Request: vouch redhat-chai-bot as a contributor",https://github.com/fullsend-ai/fullsend/issues/5387
+2026-07-20,fullsend,issue,closed,5337,"Renovate Vue 3.5.40 update broke docs site build on main",https://github.com/fullsend-ai/fullsend/issues/5337
+2026-07-20,fullsend,issue,closed,5335,"Evidence for fullsend#5295: retro dispatched on auto-closed, never-merged Renovate bot PR in release-engineering/iib",https://github.com/fullsend-ai/fullsend/issues/5335
+2026-07-20,fullsend,issue,closed,5334,"Review agent should skip re-review on diff-equivalent rebases for dependency bot PRs",https://github.com/fullsend-ai/fullsend/issues/5334
+2026-07-20,fullsend,issue,closed,5333,"Evidence for fullsend#5188: review skipped on renovate[bot] PRs in release-engineering/iib after routing authorization change",https://github.com/fullsend-ai/fullsend/issues/5333
+2026-07-20,fullsend,issue,closed,5323,"Router should accept /review as an alias for /fs-review (and similar for other slash commands)",https://github.com/fullsend-ai/fullsend/issues/5323
+2026-07-20,fullsend,issue,closed,5313,"Evidence for fullsend#5188: review skipped on bot-authored PR #117 in ci-failure-tracker",https://github.com/fullsend-ai/fullsend/issues/5313
+2026-07-20,fullsend,issue,closed,5304,"Retro agent sandbox should have valid GitHub API credentials for PR analysis",https://github.com/fullsend-ai/fullsend/issues/5304
+2026-07-20,fullsend,issue,closed,5285,"Retro agent sandbox blocks GitHub API access via proxy",https://github.com/fullsend-ai/fullsend/issues/5285
+2026-07-20,fullsend,issue,closed,5223,"dispatch: relax authorization gate to Triage role for triage stage and auto-review",https://github.com/fullsend-ai/fullsend/issues/5223
+2026-07-20,fullsend,issue,closed,5222,"e2e: provision test-scoped Cloudflare token and set real TEST_CLOUDFLARE_* secrets",https://github.com/fullsend-ai/fullsend/issues/5222
+2026-07-20,fullsend,issue,closed,4983,"Token minting failes with: minted status token contains unexpected characters",https://github.com/fullsend-ai/fullsend/issues/4983
+2026-07-20,.fullsend,pr,opened,133,"chore(deps): update fullsend-ai/agents digest to ca518d9",https://github.com/fullsend-ai/.fullsend/pull/133
+2026-07-20,.fullsend,pr,opened,132,"chore(deps): update actions/checkout digest to 3d3c42e",https://github.com/fullsend-ai/.fullsend/pull/132
+2026-07-20,.fullsend,pr,opened,131,"chore(deps): update fullsend-ai/agents digest to c65eba2",https://github.com/fullsend-ai/.fullsend/pull/131
+2026-07-20,.fullsend,pr,opened,130,"Pass fullsend_version to reusable workflows",https://github.com/fullsend-ai/.fullsend/pull/130
+2026-07-20,.fullsend,pr,opened,129,"chore(deps): update renovatebot/github-action action to v46.1.20",https://github.com/fullsend-ai/.fullsend/pull/129
+2026-07-20,.fullsend,pr,merged,131,"chore(deps): update fullsend-ai/agents digest to c65eba2",https://github.com/fullsend-ai/.fullsend/pull/131
+2026-07-20,.fullsend,pr,merged,130,"Pass fullsend_version to reusable workflows",https://github.com/fullsend-ai/.fullsend/pull/130
+2026-07-20,.fullsend,pr,merged,129,"chore(deps): update renovatebot/github-action action to v46.1.20",https://github.com/fullsend-ai/.fullsend/pull/129
+2026-07-20,.fullsend,pr,merged,128,"chore(deps): update fullsend-ai/agents digest to fc7b83e",https://github.com/fullsend-ai/.fullsend/pull/128
+2026-07-20,.fullsend,pr,merged,101,"chore(config): register scribe agent from agents repo",https://github.com/fullsend-ai/.fullsend/pull/101
+2026-07-20,experiments,pr,merged,30,"experiment: Agent evaluation via MLflow + OpenTelemetry",https://github.com/fullsend-ai/experiments/pull/30
+2026-07-20,experiments,issue,opened,45,"Add experiment-specific review guidance to AGENTS.md",https://github.com/fullsend-ai/experiments/issues/45
+2026-07-20,agents,pr,opened,305,"fix(#304): apply ready-for-merge when human approval covers protected paths",https://github.com/fullsend-ai/agents/pull/305
+2026-07-20,agents,pr,opened,303,"fix(#297): add schema constraint rejecting approve with protected-path findings",https://github.com/fullsend-ai/agents/pull/303
+2026-07-20,agents,pr,opened,296,"fix(#272): remove signing from convention discovery lists",https://github.com/fullsend-ai/agents/pull/296
+2026-07-20,agents,pr,opened,295,"docs(#294): add cross-repo ordering guidance to PR body instructions",https://github.com/fullsend-ai/agents/pull/295
+2026-07-20,agents,pr,merged,284,"feat(code): auto-assign code-agent PRs to a human owner",https://github.com/fullsend-ai/agents/pull/284
+2026-07-20,agents,pr,merged,253,"fix(#250): remove unexecutable gh api fallback from review sub-agent prompts",https://github.com/fullsend-ai/agents/pull/253
+2026-07-20,agents,pr,merged,243,"fix(#242): add -- separator to grep calls in test helpers",https://github.com/fullsend-ai/agents/pull/243
+2026-07-20,agents,pr,closed,273,"fix(#272): remove signing from convention discovery lists",https://github.com/fullsend-ai/agents/pull/273
+2026-07-20,agents,pr,closed,195,"fix(#193): apply outcome labels even when review submission fails",https://github.com/fullsend-ai/agents/pull/195
+2026-07-20,agents,issue,opened,317,"Correctness sub-agent should verify deployment-context feasibility for infrastructure changes",https://github.com/fullsend-ai/agents/issues/317
+2026-07-20,agents,issue,opened,316,"Security sub-agent should trace authorization flow when PRs modify permission gates",https://github.com/fullsend-ai/agents/issues/316
+2026-07-20,agents,issue,opened,315,"Review agent should trace cross-method semantic implications within interface implementations",https://github.com/fullsend-ai/agents/issues/315
+2026-07-20,agents,issue,opened,314,"Review agent correctness sub-agent should verify API endpoint assumptions against external documentation",https://github.com/fullsend-ai/agents/issues/314
+2026-07-20,agents,issue,opened,313,"Correctness sub-agent should check for null/missing-field handling in jq filters processing API responses",https://github.com/fullsend-ai/agents/issues/313
+2026-07-20,agents,issue,opened,312,"Review agent should verify package documentation consistency when architectural changes alter module registration",https://github.com/fullsend-ai/agents/issues/312
+2026-07-20,agents,issue,opened,311,"Review agent should flag unregistered/unused public exports as design concerns, especially in pre-1.0 packages",https://github.com/fullsend-ai/agents/issues/311
+2026-07-20,agents,issue,opened,310,"Add cherry-pick detection to pre-retro.sh as defense-in-depth against redundant retro runs",https://github.com/fullsend-ai/agents/issues/310
+2026-07-20,agents,issue,opened,309,"Track autonomy evidence: review agent competently handles submodule-only PRs",https://github.com/fullsend-ai/agents/issues/309
+2026-07-20,agents,issue,opened,308,"Review agent verdict heuristic should weigh PR-goal alignment, not just finding count, when choosing between comment and request-changes",https://github.com/fullsend-ai/agents/issues/308
+2026-07-20,agents,issue,opened,307,"Review agent remediation advice should consider whether sibling code shares the defect, not just recommend matching it",https://github.com/fullsend-ai/agents/issues/307
+2026-07-20,agents,issue,opened,306,"Code-implementation skill extracts contextual Jira references from issue body, producing invalid PR titles",https://github.com/fullsend-ai/agents/issues/306
+2026-07-20,agents,issue,opened,304,"Post-review should apply ready-for-merge when human approval already satisfies protected-path requirement",https://github.com/fullsend-ai/agents/issues/304
+2026-07-20,agents,issue,opened,302,"Review agent should self-report coverage gaps on large PRs",https://github.com/fullsend-ai/agents/issues/302
+2026-07-20,agents,issue,opened,301,"Review agent should use a lightweight path when it classifies a change as trivial/mechanical",https://github.com/fullsend-ai/agents/issues/301
+2026-07-20,agents,issue,opened,300,"Style sub-agent should verify existing element ordering before flagging new entries as violations",https://github.com/fullsend-ai/agents/issues/300
+2026-07-20,agents,issue,opened,299,"Code agent should verify root cause hypothesis before implementing",https://github.com/fullsend-ai/agents/issues/299
+2026-07-20,agents,issue,opened,298,"Correctness sub-agent should verify side-effect preconditions",https://github.com/fullsend-ai/agents/issues/298
+2026-07-20,agents,issue,opened,297,"Review agent outputs approve despite detecting protected-path constraint",https://github.com/fullsend-ai/agents/issues/297
+2026-07-20,agents,issue,opened,294,"Code agent PR summary should lead with local file changes, not cross-repo references",https://github.com/fullsend-ai/agents/issues/294
+2026-07-20,agents,issue,closed,250,"Review sub-agents cannot execute large-PR file-fetch fallback (no Bash tool)",https://github.com/fullsend-ai/agents/issues/250
+2026-07-20,agents,issue,closed,242,"Fix grep option/pattern confusion in test no-pattern helpers",https://github.com/fullsend-ai/agents/issues/242
