@@ -460,3 +460,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-07-23,experiments,0,0,0,0,0,0,0,2
 2026-07-23,metrics,0,0,0,0,0,0,0,1
 2026-07-23,agents,8,4,0,31,1,0,21.60,26
+2026-07-24,fullsend,16,15,1,16,11,0,14.60,50
+2026-07-24,.fullsend,2,2,0,0,0,0,0.10,2
+2026-07-24,experiments,1,1,0,0,0,0,0,2
+2026-07-24,metrics,0,0,0,0,0,0,0,1
+2026-07-24,agents,7,4,0,16,3,0,6.60,29
