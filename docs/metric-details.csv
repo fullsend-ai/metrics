@@ -8855,3 +8855,29 @@ date,repo,type,event,number,title,url
 2026-07-24,agents,issue,closed,411,"Port FULLSEND_VALIDATED_ITERATION_DIR selection (and its fail-open fix) to the 5 post-scripts",https://github.com/fullsend-ai/agents/issues/411
 2026-07-24,agents,issue,closed,345,"Prioritize user-focused documentation",https://github.com/fullsend-ai/agents/issues/345
 2026-07-24,agents,issue,closed,433,"Triage agent incorrectly marks issue as blocked",https://github.com/fullsend-ai/agents/issues/433
+2026-07-25,fullsend,pr,opened,5600,"docs(#5599): add repo management guide",https://github.com/fullsend-ai/fullsend/pull/5600
+2026-07-25,fullsend,pr,opened,5597,"chore(deps): update dependency nvidia/openshell to v0.0.91",https://github.com/fullsend-ai/fullsend/pull/5597
+2026-07-25,fullsend,pr,opened,5596,"feat(repos): add mint verification pre-flight to repos upgrade",https://github.com/fullsend-ai/fullsend/pull/5596
+2026-07-25,fullsend,pr,opened,5595,"fix(#5593): log per-repo skip reasons in repos upgrade output",https://github.com/fullsend-ai/fullsend/pull/5595
+2026-07-25,fullsend,pr,opened,5591,"fix(#5590): verify all install components before skipping",https://github.com/fullsend-ai/fullsend/pull/5591
+2026-07-25,fullsend,pr,opened,5589,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.220",https://github.com/fullsend-ai/fullsend/pull/5589
+2026-07-25,fullsend,pr,opened,5588,"refactor(scaffold)!: delete agent files from scaffold embed",https://github.com/fullsend-ai/fullsend/pull/5588
+2026-07-25,fullsend,pr,opened,5587,"docs(#5586): add security guidance for destructive forge operations",https://github.com/fullsend-ai/fullsend/pull/5587
+2026-07-25,fullsend,pr,merged,5600,"docs(#5599): add repo management guide",https://github.com/fullsend-ai/fullsend/pull/5600
+2026-07-25,fullsend,pr,merged,5596,"feat(repos): add mint verification pre-flight to repos upgrade",https://github.com/fullsend-ai/fullsend/pull/5596
+2026-07-25,fullsend,pr,merged,5595,"fix(#5593): log per-repo skip reasons in repos upgrade output",https://github.com/fullsend-ai/fullsend/pull/5595
+2026-07-25,fullsend,pr,merged,5591,"fix(#5590): verify all install components before skipping",https://github.com/fullsend-ai/fullsend/pull/5591
+2026-07-25,fullsend,issue,opened,5599,"docs(repos): update repo management guide based on hands-on testing",https://github.com/fullsend-ai/fullsend/issues/5599
+2026-07-25,fullsend,issue,opened,5598,"Add CLI-to-documentation cross-reference in contributing guide",https://github.com/fullsend-ai/fullsend/issues/5598
+2026-07-25,fullsend,issue,opened,5594,"fix(repos): upgrade should verify mint before upgrading",https://github.com/fullsend-ai/fullsend/issues/5594
+2026-07-25,fullsend,issue,opened,5593,"fix(repos): upgrade should explain why repos are skipped",https://github.com/fullsend-ai/fullsend/issues/5593
+2026-07-25,fullsend,issue,opened,5592,"Retro post-script should retract issues a subsequent run identifies as incorrectly filed",https://github.com/fullsend-ai/fullsend/issues/5592
+2026-07-25,fullsend,issue,opened,5590,"fix(install): repair partial installations instead of skipping",https://github.com/fullsend-ai/fullsend/issues/5590
+2026-07-25,fullsend,issue,opened,5586,"Add authorization guidance for destructive forge operations to forge-abstraction.md",https://github.com/fullsend-ai/fullsend/issues/5586
+2026-07-25,fullsend,issue,closed,5599,"docs(repos): update repo management guide based on hands-on testing",https://github.com/fullsend-ai/fullsend/issues/5599
+2026-07-25,fullsend,issue,closed,5594,"fix(repos): upgrade should verify mint before upgrading",https://github.com/fullsend-ai/fullsend/issues/5594
+2026-07-25,fullsend,issue,closed,5593,"fix(repos): upgrade should explain why repos are skipped",https://github.com/fullsend-ai/fullsend/issues/5593
+2026-07-25,fullsend,issue,closed,5590,"fix(install): repair partial installations instead of skipping",https://github.com/fullsend-ai/fullsend/issues/5590
+2026-07-25,.fullsend,pr,merged,142,"chore(deps): update fullsend-ai/agents digest to 78540ca",https://github.com/fullsend-ai/.fullsend/pull/142
+2026-07-25,agents,issue,opened,452,"Triage agent should enumerate documentation touchpoints for CLI changes",https://github.com/fullsend-ai/agents/issues/452
+2026-07-25,agents,issue,opened,451,"Code agent should grep for old literal values when modifying user-facing output strings",https://github.com/fullsend-ai/agents/issues/451
