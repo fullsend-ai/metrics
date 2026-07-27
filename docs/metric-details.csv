@@ -8881,3 +8881,33 @@ date,repo,type,event,number,title,url
 2026-07-25,.fullsend,pr,merged,142,"chore(deps): update fullsend-ai/agents digest to 78540ca",https://github.com/fullsend-ai/.fullsend/pull/142
 2026-07-25,agents,issue,opened,452,"Triage agent should enumerate documentation touchpoints for CLI changes",https://github.com/fullsend-ai/agents/issues/452
 2026-07-25,agents,issue,opened,451,"Code agent should grep for old literal values when modifying user-facing output strings",https://github.com/fullsend-ai/agents/issues/451
+2026-07-26,fullsend,pr,opened,5618,"chore(deps): update dependency sheeki03/tirith to v0.3.3",https://github.com/fullsend-ai/fullsend/pull/5618
+2026-07-26,fullsend,pr,opened,5617,"feat(#5616): make repos tool forge-aware for multi-forge manifest support",https://github.com/fullsend-ai/fullsend/pull/5617
+2026-07-26,fullsend,pr,opened,5615,"feat(#5345): add Cloudflare platform mode to mint deploy",https://github.com/fullsend-ai/fullsend/pull/5615
+2026-07-26,fullsend,pr,opened,5614,"test(#5440)!: delete fork repos after scenario in CleanupScenario",https://github.com/fullsend-ai/fullsend/pull/5614
+2026-07-26,fullsend,pr,opened,5611,"docs(#2821): add ADR 0074 for human-gated permission adjustments",https://github.com/fullsend-ai/fullsend/pull/5611
+2026-07-26,fullsend,pr,opened,5610,"ci: skip site build when no site files changed",https://github.com/fullsend-ai/fullsend/pull/5610
+2026-07-26,fullsend,pr,opened,5605,"chore(deps): update dependency prettier to v3.9.6",https://github.com/fullsend-ai/fullsend/pull/5605
+2026-07-26,fullsend,pr,opened,5604,"fix(#5603): warn when --repo filter matches no manifest entries",https://github.com/fullsend-ai/fullsend/pull/5604
+2026-07-26,fullsend,pr,opened,5602,"docs(#5601): fill repos documentation gaps",https://github.com/fullsend-ai/fullsend/pull/5602
+2026-07-26,fullsend,pr,merged,5617,"feat(#5616): make repos tool forge-aware for multi-forge manifest support",https://github.com/fullsend-ai/fullsend/pull/5617
+2026-07-26,fullsend,pr,merged,5604,"fix(#5603): warn when --repo filter matches no manifest entries",https://github.com/fullsend-ai/fullsend/pull/5604
+2026-07-26,fullsend,pr,merged,5602,"docs(#5601): fill repos documentation gaps",https://github.com/fullsend-ai/fullsend/pull/5602
+2026-07-26,fullsend,issue,opened,5619,"Broaden retro skip criteria to all unmerged PRs with no agent interaction",https://github.com/fullsend-ai/fullsend/issues/5619
+2026-07-26,fullsend,issue,opened,5616,"repos: make repos tool forge-aware for multi-forge manifest support",https://github.com/fullsend-ai/fullsend/issues/5616
+2026-07-26,fullsend,issue,opened,5613,"test(behaviour): harness-dispatch fork PR unauthorized-actor (ADR 54)",https://github.com/fullsend-ai/fullsend/issues/5613
+2026-07-26,fullsend,issue,opened,5612,"test(behaviour): less-privileged human-like accounts for behaviour tests",https://github.com/fullsend-ai/fullsend/issues/5612
+2026-07-26,fullsend,issue,opened,5609,"docs(config): document per-field layered merge semantics (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/5609
+2026-07-26,fullsend,issue,opened,5608,"feat(config): load config.base.yaml and config.yaml as parent chain",https://github.com/fullsend-ai/fullsend/issues/5608
+2026-07-26,fullsend,issue,opened,5607,"feat(config): parent fallback chain and code-default PerRepoConfigReader",https://github.com/fullsend-ai/fullsend/issues/5607
+2026-07-26,fullsend,issue,opened,5606,"Auto-retry code agent dispatch on pre-agent infrastructure failures",https://github.com/fullsend-ai/fullsend/issues/5606
+2026-07-26,fullsend,issue,opened,5603,"repos: warn when --repo filter matches no manifest entries",https://github.com/fullsend-ai/fullsend/issues/5603
+2026-07-26,fullsend,issue,opened,5601,"docs(repos): fill documentation gaps found during hands-on testing",https://github.com/fullsend-ai/fullsend/issues/5601
+2026-07-26,fullsend,issue,closed,5616,"repos: make repos tool forge-aware for multi-forge manifest support",https://github.com/fullsend-ai/fullsend/issues/5616
+2026-07-26,fullsend,issue,closed,5603,"repos: warn when --repo filter matches no manifest entries",https://github.com/fullsend-ai/fullsend/issues/5603
+2026-07-26,fullsend,issue,closed,5601,"docs(repos): fill documentation gaps found during hands-on testing",https://github.com/fullsend-ai/fullsend/issues/5601
+2026-07-26,fullsend,issue,closed,2155,"E2e: secretless GitHub auth via mint OIDC (replace Playwright session + PAT)",https://github.com/fullsend-ai/fullsend/issues/2155
+2026-07-26,agents,issue,opened,456,"Eval judge model should be more capable than the model under evaluation",https://github.com/fullsend-ai/agents/issues/456
+2026-07-26,agents,issue,opened,455,"Code agent should enumerate struct consumers when implementing cross-site field additions",https://github.com/fullsend-ai/agents/issues/455
+2026-07-26,agents,issue,opened,454,"Correctness sub-agent should trace runtime config value changes to consuming code",https://github.com/fullsend-ai/agents/issues/454
+2026-07-26,agents,issue,opened,453,"Retro agent dedup check should search recently-closed issues, not just open ones",https://github.com/fullsend-ai/agents/issues/453
