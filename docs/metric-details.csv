@@ -8911,3 +8911,106 @@ date,repo,type,event,number,title,url
 2026-07-26,agents,issue,opened,455,"Code agent should enumerate struct consumers when implementing cross-site field additions",https://github.com/fullsend-ai/agents/issues/455
 2026-07-26,agents,issue,opened,454,"Correctness sub-agent should trace runtime config value changes to consuming code",https://github.com/fullsend-ai/agents/issues/454
 2026-07-26,agents,issue,opened,453,"Retro agent dedup check should search recently-closed issues, not just open ones",https://github.com/fullsend-ai/agents/issues/453
+2026-07-27,fullsend,pr,opened,5657,"fix(#5626): create missing ready-for-review label on-the-fly",https://github.com/fullsend-ai/fullsend/pull/5657
+2026-07-27,fullsend,pr,opened,5656,"test: add e2e test for repos lifecycle across GitHub and GitLab",https://github.com/fullsend-ai/fullsend/pull/5656
+2026-07-27,fullsend,pr,opened,5655,"test(#1160): add retro and prioritize roles to mint test defaults",https://github.com/fullsend-ai/fullsend/pull/5655
+2026-07-27,fullsend,pr,opened,5654,"test(#3733): add fork PR bash-routing smoke scenario",https://github.com/fullsend-ai/fullsend/pull/5654
+2026-07-27,fullsend,pr,opened,5652,"feat(#5608): load config.base.yaml as base layer in parent chain",https://github.com/fullsend-ai/fullsend/pull/5652
+2026-07-27,fullsend,pr,opened,5651,"docs(#5609): document per-field layered merge semantics",https://github.com/fullsend-ai/fullsend/pull/5651
+2026-07-27,fullsend,pr,opened,5649,"docs: Add ADR 074 with a single-auth",https://github.com/fullsend-ai/fullsend/pull/5649
+2026-07-27,fullsend,pr,opened,5647,"chore(deps): bump google.golang.org/grpc to v1.82.1",https://github.com/fullsend-ai/fullsend/pull/5647
+2026-07-27,fullsend,pr,opened,5646,"docs(problems): sharpen gh-aw comparison in platform-nativeness",https://github.com/fullsend-ai/fullsend/pull/5646
+2026-07-27,fullsend,pr,opened,5645,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 2504bf2",https://github.com/fullsend-ai/fullsend/pull/5645
+2026-07-27,fullsend,pr,opened,5643,"feat(#5642)!: require --forge flag for repos init and add",https://github.com/fullsend-ai/fullsend/pull/5643
+2026-07-27,fullsend,pr,opened,5641,"feat(skills): add /nextwork readiness queue",https://github.com/fullsend-ai/fullsend/pull/5641
+2026-07-27,fullsend,pr,opened,5640,"perf(#1163): cache ADC TokenSource via sync.Once in gcp.Client",https://github.com/fullsend-ai/fullsend/pull/5640
+2026-07-27,fullsend,pr,opened,5639,"feat(#5631)!: make --preview accept alias for real Wrangler preview upload",https://github.com/fullsend-ai/fullsend/pull/5639
+2026-07-27,fullsend,pr,opened,5638,"fix(#1165): accumulate errors in uninstallOIDC instead of returning early",https://github.com/fullsend-ai/fullsend/pull/5638
+2026-07-27,fullsend,pr,opened,5637,"fix(#1162): validate project ID format in StoreAgentPEM",https://github.com/fullsend-ai/fullsend/pull/5637
+2026-07-27,fullsend,pr,opened,5636,"ci(#5441): enable parallel godog concurrency (default 12)",https://github.com/fullsend-ai/fullsend/pull/5636
+2026-07-27,fullsend,pr,opened,5635,"docs(#5585): add SECURITY.md for vulnerability reporting",https://github.com/fullsend-ai/fullsend/pull/5635
+2026-07-27,fullsend,pr,opened,5628,"fix(#5627): wire dispatched_count output in dispatch.yml",https://github.com/fullsend-ai/fullsend/pull/5628
+2026-07-27,fullsend,pr,opened,5625,"refactor(#5607): add parent fallback chain to perRepoConfig",https://github.com/fullsend-ai/fullsend/pull/5625
+2026-07-27,fullsend,pr,opened,5624,"chore(deps): update dependency svelte to v5.56.8",https://github.com/fullsend-ai/fullsend/pull/5624
+2026-07-27,fullsend,pr,opened,5623,"feat(#5620): support mixed-forge manifests with per-repo client resolution",https://github.com/fullsend-ai/fullsend/pull/5623
+2026-07-27,fullsend,pr,opened,5622,"fix(#5621): fall back to PR env vars for work item resolution",https://github.com/fullsend-ai/fullsend/pull/5622
+2026-07-27,fullsend,pr,merged,5643,"feat(#5642)!: require --forge flag for repos init and add",https://github.com/fullsend-ai/fullsend/pull/5643
+2026-07-27,fullsend,pr,merged,5636,"ci(#5441): enable parallel godog concurrency (default 12)",https://github.com/fullsend-ai/fullsend/pull/5636
+2026-07-27,fullsend,pr,merged,5635,"docs(#5585): add SECURITY.md for vulnerability reporting",https://github.com/fullsend-ai/fullsend/pull/5635
+2026-07-27,fullsend,pr,merged,5625,"refactor(#5607): add parent fallback chain to perRepoConfig",https://github.com/fullsend-ai/fullsend/pull/5625
+2026-07-27,fullsend,pr,merged,5624,"chore(deps): update dependency svelte to v5.56.8",https://github.com/fullsend-ai/fullsend/pull/5624
+2026-07-27,fullsend,pr,merged,5623,"feat(#5620): support mixed-forge manifests with per-repo client resolution",https://github.com/fullsend-ai/fullsend/pull/5623
+2026-07-27,fullsend,pr,merged,5622,"fix(#5621): fall back to PR env vars for work item resolution",https://github.com/fullsend-ai/fullsend/pull/5622
+2026-07-27,fullsend,pr,merged,5615,"feat(#5345): add Cloudflare platform mode to mint deploy",https://github.com/fullsend-ai/fullsend/pull/5615
+2026-07-27,fullsend,pr,merged,5614,"test(#5440)!: delete fork repos after scenario in CleanupScenario",https://github.com/fullsend-ai/fullsend/pull/5614
+2026-07-27,fullsend,pr,merged,5610,"ci: skip site build when no site files changed",https://github.com/fullsend-ai/fullsend/pull/5610
+2026-07-27,fullsend,pr,merged,5605,"chore(deps): update dependency prettier to v3.9.6",https://github.com/fullsend-ai/fullsend/pull/5605
+2026-07-27,fullsend,pr,merged,5587,"docs(#5586): add security guidance for destructive forge operations",https://github.com/fullsend-ai/fullsend/pull/5587
+2026-07-27,fullsend,pr,merged,5567,"fix(#5566): surface full API error details on 422 failures",https://github.com/fullsend-ai/fullsend/pull/5567
+2026-07-27,fullsend,pr,merged,5546,"docs(#5544): add forge operational constraints to behaviour testing guide",https://github.com/fullsend-ai/fullsend/pull/5546
+2026-07-27,fullsend,pr,merged,5532,"docs(#5426): add CEL trigger and dispatch guidance to BYOA guide",https://github.com/fullsend-ai/fullsend/pull/5532
+2026-07-27,fullsend,pr,merged,5523,"docs(#5521): add CI workflow conventions guide",https://github.com/fullsend-ai/fullsend/pull/5523
+2026-07-27,fullsend,pr,merged,5462,"docs(#4886): label deprecated features in user documentation",https://github.com/fullsend-ai/fullsend/pull/5462
+2026-07-27,fullsend,pr,merged,5340,"fix(#5339): skip disabled workflows gracefully in per-org dispatch",https://github.com/fullsend-ai/fullsend/pull/5340
+2026-07-27,fullsend,issue,opened,5653,"E2e triage test issues should be closed after validation succeeds",https://github.com/fullsend-ai/fullsend/issues/5653
+2026-07-27,fullsend,issue,opened,5650,"Add /fs-stop <agent> slash command with in-flight cancellation",https://github.com/fullsend-ai/fullsend/issues/5650
+2026-07-27,fullsend,issue,opened,5648,"Add post-script guardrail to block APPROVED verdict when review contains HIGH-severity findings",https://github.com/fullsend-ai/fullsend/issues/5648
+2026-07-27,fullsend,issue,opened,5644,"Evaluate automated triage heuristic tool for issue prioritization",https://github.com/fullsend-ai/fullsend/issues/5644
+2026-07-27,fullsend,issue,opened,5642,"Make --forge a required parameter for repos init and repos add",https://github.com/fullsend-ai/fullsend/issues/5642
+2026-07-27,fullsend,issue,opened,5634,"mint deploy --platform=cloudflare: support --public (ALLOWED_ORGS=*)",https://github.com/fullsend-ai/fullsend/issues/5634
+2026-07-27,fullsend,issue,opened,5633,"mint enroll / mint unenroll: add --platform=cloudflare (and --preview=<alias> targeting)",https://github.com/fullsend-ai/fullsend/issues/5633
+2026-07-27,fullsend,issue,opened,5632,"mint deploy --platform=cloudflare: bootstrap role PEMs and ROLE_APP_IDS (parity with GCP non-WIF pieces)",https://github.com/fullsend-ai/fullsend/issues/5632
+2026-07-27,fullsend,issue,opened,5631,"mint deploy --platform=cloudflare --preview=<alias>: real Wrangler preview upload",https://github.com/fullsend-ai/fullsend/issues/5631
+2026-07-27,fullsend,issue,opened,5630,"Add folder-based filter to docs search",https://github.com/fullsend-ai/fullsend/issues/5630
+2026-07-27,fullsend,issue,opened,5629,"Fix ci-workflows.md: add reusable workflow carve-out for github.workflow",https://github.com/fullsend-ai/fullsend/issues/5629
+2026-07-27,fullsend,issue,opened,5627,"dispatch.yml: add step id and wire outputs for dispatched_count",https://github.com/fullsend-ai/fullsend/issues/5627
+2026-07-27,fullsend,issue,opened,5626,"Post-code script should create missing workflow labels on-the-fly instead of silently warning",https://github.com/fullsend-ai/fullsend/issues/5626
+2026-07-27,fullsend,issue,opened,5621,"telemetry: review work_item_id is unknown for pull_request triggers",https://github.com/fullsend-ai/fullsend/issues/5621
+2026-07-27,fullsend,issue,opened,5620,"repos: support mixed-forge manifests with per-repo client resolution",https://github.com/fullsend-ai/fullsend/issues/5620
+2026-07-27,fullsend,issue,closed,5642,"Make --forge a required parameter for repos init and repos add",https://github.com/fullsend-ai/fullsend/issues/5642
+2026-07-27,fullsend,issue,closed,5621,"telemetry: review work_item_id is unknown for pull_request triggers",https://github.com/fullsend-ai/fullsend/issues/5621
+2026-07-27,fullsend,issue,closed,5620,"repos: support mixed-forge manifests with per-repo client resolution",https://github.com/fullsend-ai/fullsend/issues/5620
+2026-07-27,fullsend,issue,closed,5607,"feat(config): parent fallback chain and code-default PerRepoConfigReader",https://github.com/fullsend-ai/fullsend/issues/5607
+2026-07-27,fullsend,issue,closed,5586,"Add authorization guidance for destructive forge operations to forge-abstraction.md",https://github.com/fullsend-ai/fullsend/issues/5586
+2026-07-27,fullsend,issue,closed,5585,"Missing SECURITY.md",https://github.com/fullsend-ai/fullsend/issues/5585
+2026-07-27,fullsend,issue,closed,5566,"post-review: surface full API error details on 422 failures",https://github.com/fullsend-ai/fullsend/issues/5566
+2026-07-27,fullsend,issue,closed,5544,"Add behaviour-test forge operational constraints to contributing guidance",https://github.com/fullsend-ai/fullsend/issues/5544
+2026-07-27,fullsend,issue,closed,5521,"Add CI workflow conventions doc to close review knowledge gap",https://github.com/fullsend-ai/fullsend/issues/5521
+2026-07-27,fullsend,issue,closed,5441,"ci(e2e): enable GODOG_CONCURRENCY for behaviour suite (default 12)",https://github.com/fullsend-ai/fullsend/issues/5441
+2026-07-27,fullsend,issue,closed,5440,"feat(behaviour): ephemeral forks with logical name alias to {leased}-fork",https://github.com/fullsend-ai/fullsend/issues/5440
+2026-07-27,fullsend,issue,closed,5426,"docs: cover CEL triggers and custom agent dispatch in Bring Your Own Agent guide",https://github.com/fullsend-ai/fullsend/issues/5426
+2026-07-27,fullsend,issue,closed,5345,"fullsend mint deploy: Cloudflare platform mode (flags, env creds, embedded workersrc)",https://github.com/fullsend-ai/fullsend/issues/5345
+2026-07-27,fullsend,issue,closed,5339,"Per-org dispatch should gracefully skip disabled target workflows instead of failing",https://github.com/fullsend-ai/fullsend/issues/5339
+2026-07-27,fullsend,issue,closed,5202,"post-code.sh hardcodes linux_x64 gitleaks binary — fails on macOS with exit status 126",https://github.com/fullsend-ai/fullsend/issues/5202
+2026-07-27,fullsend,issue,closed,4886,"Clearly label deprecated features in user documentation",https://github.com/fullsend-ai/fullsend/issues/4886
+2026-07-27,fullsend,issue,closed,3454,"ci(e2e): enable parallel godog behaviour scenarios",https://github.com/fullsend-ai/fullsend/issues/3454
+2026-07-27,fullsend,issue,closed,1789,"feat(review): add action hints to review bot comments",https://github.com/fullsend-ai/fullsend/issues/1789
+2026-07-27,fullsend,issue,closed,1159,"mint: deduplicate rolePattern with dispatch provisioner",https://github.com/fullsend-ai/fullsend/issues/1159
+2026-07-27,fullsend,issue,closed,813,"ci: add paths filter to site build workflow to skip unnecessary builds on PRs",https://github.com/fullsend-ai/fullsend/issues/813
+2026-07-27,.fullsend,pr,opened,144,"chore(deps): update fullsend-ai/agents digest to 3760b3b",https://github.com/fullsend-ai/.fullsend/pull/144
+2026-07-27,.fullsend,pr,opened,143,"chore(deps): update renovatebot/github-action action to v46.1.21",https://github.com/fullsend-ai/.fullsend/pull/143
+2026-07-27,agents,pr,opened,476,"ci: add agent docs structure linter with Setup section",https://github.com/fullsend-ai/agents/pull/476
+2026-07-27,agents,pr,opened,475,"ci: add agent docs structure linter",https://github.com/fullsend-ai/agents/pull/475
+2026-07-27,agents,pr,opened,473,"chore: ignore Python bytecode cache artifacts",https://github.com/fullsend-ai/agents/pull/473
+2026-07-27,agents,pr,opened,469,"fix(#5188): re-trigger review via label after fix-agent push",https://github.com/fullsend-ai/agents/pull/469
+2026-07-27,agents,pr,opened,463,"fix(#462): add no-content-abbreviation directive to pr-review skill",https://github.com/fullsend-ai/agents/pull/463
+2026-07-27,agents,pr,merged,326,"feat(#325): detect workflow file changes in triage and skip code agent",https://github.com/fullsend-ai/agents/pull/326
+2026-07-27,agents,pr,merged,53,"feat(agents): add action-hints footer to review, triage, and fix comments",https://github.com/fullsend-ai/agents/pull/53
+2026-07-27,agents,issue,opened,478,"Post-fix script should reply to review inline threads it addressed",https://github.com/fullsend-ai/agents/issues/478
+2026-07-27,agents,issue,opened,477,"Correctness sub-agent should detect absent-input silent pass-through in validation code",https://github.com/fullsend-ai/agents/issues/477
+2026-07-27,agents,issue,opened,474,"Code agent should verify all files explicitly listed in the issue body are addressed",https://github.com/fullsend-ai/agents/issues/474
+2026-07-27,agents,issue,opened,472,"gha_echo/sanitize_gha_log_output doesn't strip ANSI escape or other control characters",https://github.com/fullsend-ai/agents/issues/472
+2026-07-27,agents,issue,opened,471,"Correctness sub-agent should elevate test-integrity severity when co-located production bugs exist",https://github.com/fullsend-ai/agents/issues/471
+2026-07-27,agents,issue,opened,470,"Review agent should apply scaffold-aware review profile for initialization PRs",https://github.com/fullsend-ai/agents/issues/470
+2026-07-27,agents,issue,opened,468,"Fix agent should independently assess whether behavioral findings warrant code changes, not just follow remediation wording",https://github.com/fullsend-ai/agents/issues/468
+2026-07-27,agents,issue,opened,467,"Review agent remediation should suggest code fixes for behavioral-deviation findings, not only documentation",https://github.com/fullsend-ai/agents/issues/467
+2026-07-27,agents,issue,opened,466,"Review correctness sub-agent should generalize detected dead-code findings to search for parallel instances",https://github.com/fullsend-ai/agents/issues/466
+2026-07-27,agents,issue,opened,465,"Triage agent should verify AC captures runtime requirements when issue extends a multi-mode system",https://github.com/fullsend-ai/agents/issues/465
+2026-07-27,agents,issue,opened,464,"Fix agent self-review should catch dead-code artifacts and pattern-inconsistent idioms",https://github.com/fullsend-ai/agents/issues/464
+2026-07-27,agents,issue,opened,462,"Review orchestrator should not abbreviate source file content with placeholder strings in sub-agent context packages",https://github.com/fullsend-ai/agents/issues/462
+2026-07-27,agents,issue,opened,461,"Code agent should verify that referenced artifacts exist before including them in generated content",https://github.com/fullsend-ai/agents/issues/461
+2026-07-27,agents,issue,opened,460,"Post-triage footer should check for code agent availability before suggesting /fs-code",https://github.com/fullsend-ai/agents/issues/460
+2026-07-27,agents,issue,opened,459,"Correctness sub-agent should verify sequential-transformation integrity",https://github.com/fullsend-ai/agents/issues/459
+2026-07-27,agents,issue,opened,458,"Code agent should match peer-file formatting when creating new docs",https://github.com/fullsend-ai/agents/issues/458
+2026-07-27,agents,issue,opened,457,"Code agent should detect breaking changes when extending exported Go interfaces",https://github.com/fullsend-ai/agents/issues/457
+2026-07-27,agents,issue,closed,325,"Triage should detect likely GHA workflow modifications and skip automatic code agent",https://github.com/fullsend-ai/agents/issues/325
