@@ -9014,3 +9014,112 @@ date,repo,type,event,number,title,url
 2026-07-27,agents,issue,opened,458,"Code agent should match peer-file formatting when creating new docs",https://github.com/fullsend-ai/agents/issues/458
 2026-07-27,agents,issue,opened,457,"Code agent should detect breaking changes when extending exported Go interfaces",https://github.com/fullsend-ai/agents/issues/457
 2026-07-27,agents,issue,closed,325,"Triage should detect likely GHA workflow modifications and skip automatic code agent",https://github.com/fullsend-ai/agents/issues/325
+2026-07-28,fullsend,pr,opened,5699,"test(#5695): add dispatch continuation tests for integrity failures",https://github.com/fullsend-ai/fullsend/pull/5699
+2026-07-28,fullsend,pr,opened,5698,"test(#5671): poll fork default branch before proceeding",https://github.com/fullsend-ai/fullsend/pull/5698
+2026-07-28,fullsend,pr,opened,5697,"chore(#5694): remove deprecated customized/ scaffold",https://github.com/fullsend-ai/fullsend/pull/5697
+2026-07-28,fullsend,pr,opened,5693,"fix(#5045): use LoadWithBase for dispatch harness enumeration",https://github.com/fullsend-ai/fullsend/pull/5693
+2026-07-28,fullsend,pr,opened,5689,"docs(roadmap): August 2026 planning refresh",https://github.com/fullsend-ai/fullsend/pull/5689
+2026-07-28,fullsend,pr,opened,5688,"fix(#3640): directory-level fetching for pre/post scripts",https://github.com/fullsend-ai/fullsend/pull/5688
+2026-07-28,fullsend,pr,opened,5685,"docs(#553): add ADR 0076 for slash command entity-context separation",https://github.com/fullsend-ai/fullsend/pull/5685
+2026-07-28,fullsend,pr,opened,5683,"chore: Add THREAT_MODEL.md symlink at repo root",https://github.com/fullsend-ai/fullsend/pull/5683
+2026-07-28,fullsend,pr,opened,5682,"refactor(#5668): remove dead scaffold functions and make lock config-aware",https://github.com/fullsend-ai/fullsend/pull/5682
+2026-07-28,fullsend,pr,opened,5681,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to eb7b37c",https://github.com/fullsend-ai/fullsend/pull/5681
+2026-07-28,fullsend,pr,opened,5678,"docs(#5677): replace ASCII box table with markdown table",https://github.com/fullsend-ai/fullsend/pull/5678
+2026-07-28,fullsend,pr,opened,5676,"docs(#5675): add require-vs-assert goroutine rule to Go guide",https://github.com/fullsend-ai/fullsend/pull/5676
+2026-07-28,fullsend,pr,opened,5674,"fix(#5669): align head_sha schema pattern with CLI regex",https://github.com/fullsend-ai/fullsend/pull/5674
+2026-07-28,fullsend,pr,opened,5673,"docs(#5670): add fixture authoring section to behaviour-testing guide",https://github.com/fullsend-ai/fullsend/pull/5673
+2026-07-28,fullsend,pr,opened,5665,"test(#3732): add kill switch and CEL is_fork exclusion to fork dispatch contract",https://github.com/fullsend-ai/fullsend/pull/5665
+2026-07-28,fullsend,pr,opened,5663,"docs(agents): prefer go run for fullsend CLI",https://github.com/fullsend-ai/fullsend/pull/5663
+2026-07-28,fullsend,pr,opened,5661,"fix(#5660): preserve roles: [] through per-repo YAML marshal roundtrip",https://github.com/fullsend-ai/fullsend/pull/5661
+2026-07-28,fullsend,pr,opened,5658,"chore(deps): update dependency svelte-check to v4.7.4",https://github.com/fullsend-ai/fullsend/pull/5658
+2026-07-28,fullsend,pr,merged,5693,"fix(#5045): use LoadWithBase for dispatch harness enumeration",https://github.com/fullsend-ai/fullsend/pull/5693
+2026-07-28,fullsend,pr,merged,5682,"refactor(#5668): remove dead scaffold functions and make lock config-aware",https://github.com/fullsend-ai/fullsend/pull/5682
+2026-07-28,fullsend,pr,merged,5661,"fix(#5660): preserve roles: [] through per-repo YAML marshal roundtrip",https://github.com/fullsend-ai/fullsend/pull/5661
+2026-07-28,fullsend,pr,merged,5658,"chore(deps): update dependency svelte-check to v4.7.4",https://github.com/fullsend-ai/fullsend/pull/5658
+2026-07-28,fullsend,pr,merged,5655,"test(#1160): add retro and prioritize roles to mint test defaults",https://github.com/fullsend-ai/fullsend/pull/5655
+2026-07-28,fullsend,pr,merged,5654,"test(#3733): add fork PR bash-routing smoke scenario",https://github.com/fullsend-ai/fullsend/pull/5654
+2026-07-28,fullsend,pr,merged,5652,"feat(#5608): load config.base.yaml as base layer in parent chain",https://github.com/fullsend-ai/fullsend/pull/5652
+2026-07-28,fullsend,pr,merged,5651,"docs(#5609): document per-field layered merge semantics",https://github.com/fullsend-ai/fullsend/pull/5651
+2026-07-28,fullsend,pr,merged,5647,"chore(deps): bump google.golang.org/grpc to v1.82.1",https://github.com/fullsend-ai/fullsend/pull/5647
+2026-07-28,fullsend,pr,merged,5646,"docs(problems): sharpen gh-aw comparison in platform-nativeness",https://github.com/fullsend-ai/fullsend/pull/5646
+2026-07-28,fullsend,pr,merged,5645,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 2504bf2",https://github.com/fullsend-ai/fullsend/pull/5645
+2026-07-28,fullsend,pr,merged,5640,"perf(#1163): cache ADC TokenSource via sync.Once in gcp.Client",https://github.com/fullsend-ai/fullsend/pull/5640
+2026-07-28,fullsend,pr,merged,5588,"refactor(scaffold)!: delete agent files from scaffold embed",https://github.com/fullsend-ai/fullsend/pull/5588
+2026-07-28,fullsend,pr,merged,5407,"test(#3928): add behaviour scenarios for URL-sourced harness dispatch",https://github.com/fullsend-ai/fullsend/pull/5407
+2026-07-28,fullsend,issue,opened,5696,"Refactor dispatch workflow permissions",https://github.com/fullsend-ai/fullsend/issues/5696
+2026-07-28,fullsend,issue,opened,5695,"test(behaviour): ""good-local"" harness flaky timeout in url-dispatch integrity scenario",https://github.com/fullsend-ai/fullsend/issues/5695
+2026-07-28,fullsend,issue,opened,5694,"Installer shouldn't perpetuate deprecated /customized folder",https://github.com/fullsend-ai/fullsend/issues/5694
+2026-07-28,fullsend,issue,opened,5692,"ListTriggeredHarnesses uses Load instead of LoadWithBase, rejecting base: composition",https://github.com/fullsend-ai/fullsend/issues/5692
+2026-07-28,fullsend,issue,opened,5691,"Harness dispatch trigger detection silently fails when agent entry lacks name field",https://github.com/fullsend-ai/fullsend/issues/5691
+2026-07-28,fullsend,issue,opened,5690,"Add trigger CEL expressions to default agent harnesses",https://github.com/fullsend-ai/fullsend/issues/5690
+2026-07-28,fullsend,issue,opened,5687,"dispatch: allow Triage role to trigger code/fix, gated on write+ approval before merge",https://github.com/fullsend-ai/fullsend/issues/5687
+2026-07-28,fullsend,issue,opened,5686,"Documentation consistency",https://github.com/fullsend-ai/fullsend/issues/5686
+2026-07-28,fullsend,issue,opened,5684,"Harness dispatch should fall back to default branch config when PR base branch lacks .fullsend/config.yaml",https://github.com/fullsend-ai/fullsend/issues/5684
+2026-07-28,fullsend,issue,opened,5680,"Create minimal sandbox image for custom code agent images",https://github.com/fullsend-ai/fullsend/issues/5680
+2026-07-28,fullsend,issue,opened,5679,"Submit ADR for proposed work queue dashboard",https://github.com/fullsend-ai/fullsend/issues/5679
+2026-07-28,fullsend,issue,opened,5677,"ASCII tables and formatting",https://github.com/fullsend-ai/fullsend/issues/5677
+2026-07-28,fullsend,issue,opened,5675,"Add testify require-vs-assert goroutine rule to Go contributing guide",https://github.com/fullsend-ai/fullsend/issues/5675
+2026-07-28,fullsend,issue,opened,5672,"test(behaviour): inference provision hits IAM policy conflict 409 under parallel ensure",https://github.com/fullsend-ai/fullsend/issues/5672
+2026-07-28,fullsend,issue,opened,5671,"test(behaviour): fork branch create fails with 409 empty repository",https://github.com/fullsend-ai/fullsend/issues/5671
+2026-07-28,fullsend,issue,opened,5670,"Add fixture authoring checklist to behaviour-testing.md",https://github.com/fullsend-ai/fullsend/issues/5670
+2026-07-28,fullsend,issue,opened,5669,"Tighten head_sha validation in review-result.schema.json to match CLI requirements",https://github.com/fullsend-ai/fullsend/issues/5669
+2026-07-28,fullsend,issue,opened,5668,"Complete remaining #5552 items: fullsend lock awareness + dead code removal",https://github.com/fullsend-ai/fullsend/issues/5668
+2026-07-28,fullsend,issue,opened,5667,"Sync scaffold workflow scripts with fullsend-ai/agents copies",https://github.com/fullsend-ai/fullsend/issues/5667
+2026-07-28,fullsend,issue,opened,5666,"Route fix-agent synchronize events to review stage for automated re-review",https://github.com/fullsend-ai/fullsend/issues/5666
+2026-07-28,fullsend,issue,opened,5664,"Auto-detect repo default branch instead of hardcoding TARGET_BRANCH to main",https://github.com/fullsend-ai/fullsend/issues/5664
+2026-07-28,fullsend,issue,opened,5662,"Security: remove CONTRIBUTOR from stop-fix authorization in scaffolded workflow",https://github.com/fullsend-ai/fullsend/issues/5662
+2026-07-28,fullsend,issue,opened,5660,"bug(config): roles: [] does not survive per-repo YAML marshal round-trip",https://github.com/fullsend-ai/fullsend/issues/5660
+2026-07-28,fullsend,issue,opened,5659,"docs(telemetry): reorganize into user guide, reference, and dev guide",https://github.com/fullsend-ai/fullsend/issues/5659
+2026-07-28,fullsend,issue,closed,5692,"ListTriggeredHarnesses uses Load instead of LoadWithBase, rejecting base: composition",https://github.com/fullsend-ai/fullsend/issues/5692
+2026-07-28,fullsend,issue,closed,5690,"Add trigger CEL expressions to default agent harnesses",https://github.com/fullsend-ai/fullsend/issues/5690
+2026-07-28,fullsend,issue,closed,5668,"Complete remaining #5552 items: fullsend lock awareness + dead code removal",https://github.com/fullsend-ai/fullsend/issues/5668
+2026-07-28,fullsend,issue,closed,5667,"Sync scaffold workflow scripts with fullsend-ai/agents copies",https://github.com/fullsend-ai/fullsend/issues/5667
+2026-07-28,fullsend,issue,closed,5664,"Auto-detect repo default branch instead of hardcoding TARGET_BRANCH to main",https://github.com/fullsend-ai/fullsend/issues/5664
+2026-07-28,fullsend,issue,closed,5660,"bug(config): roles: [] does not survive per-repo YAML marshal round-trip",https://github.com/fullsend-ai/fullsend/issues/5660
+2026-07-28,fullsend,issue,closed,5609,"docs(config): document per-field layered merge semantics (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/5609
+2026-07-28,fullsend,issue,closed,5608,"feat(config): load config.base.yaml and config.yaml as parent chain",https://github.com/fullsend-ai/fullsend/issues/5608
+2026-07-28,fullsend,issue,closed,5045,"`fullsend dispatch` rejects local harnesses with `base:` field during enumeration",https://github.com/fullsend-ai/fullsend/issues/5045
+2026-07-28,fullsend,issue,closed,3928,"test(behaviour): harness-dispatch URL-sourced custom agents",https://github.com/fullsend-ai/fullsend/issues/3928
+2026-07-28,fullsend,issue,closed,3733,"test(behaviour): interim bash-routing fork smoke until harness cutover",https://github.com/fullsend-ai/fullsend/issues/3733
+2026-07-28,fullsend,issue,closed,1163,"gcp: cache Application Default Credentials at client construction",https://github.com/fullsend-ai/fullsend/issues/1163
+2026-07-28,fullsend,issue,closed,1160,"mint: add retro and prioritize roles to test defaults",https://github.com/fullsend-ai/fullsend/issues/1160
+2026-07-28,fullsend,issue,closed,76,"Decide how agents get triggered: webhooks, polling, or something else",https://github.com/fullsend-ai/fullsend/issues/76
+2026-07-28,.fullsend,pr,opened,145,"chore(deps): update fullsend-ai/agents digest to 8b9e25e",https://github.com/fullsend-ai/.fullsend/pull/145
+2026-07-28,.fullsend,pr,merged,144,"chore(deps): update fullsend-ai/agents digest to 3760b3b",https://github.com/fullsend-ai/.fullsend/pull/144
+2026-07-28,agents,pr,opened,508,"feat(#505): post comment on issue when agent takes no-op exit path",https://github.com/fullsend-ai/agents/pull/508
+2026-07-28,agents,pr,opened,502,"docs(#500): document PR assignee resolution logic",https://github.com/fullsend-ai/agents/pull/502
+2026-07-28,agents,pr,opened,498,"docs(#419): add custom sandbox image guidance to code and fix agent docs",https://github.com/fullsend-ai/agents/pull/498
+2026-07-28,agents,pr,opened,491,"feat: add CODE_AUTO_MERGE env var to post-code script",https://github.com/fullsend-ai/agents/pull/491
+2026-07-28,agents,pr,opened,488,"fix(#483): defer target_branch until after default branch discovery",https://github.com/fullsend-ai/agents/pull/488
+2026-07-28,agents,pr,opened,487,"docs(#484): document CODE_ALLOWED_TARGET_BRANCHES in AGENTS.md",https://github.com/fullsend-ai/agents/pull/487
+2026-07-28,agents,pr,opened,481,"fix(#479): add create-on-missing fallback for ready-for-review label",https://github.com/fullsend-ai/agents/pull/481
+2026-07-28,agents,pr,merged,508,"feat(#505): post comment on issue when agent takes no-op exit path",https://github.com/fullsend-ai/agents/pull/508
+2026-07-28,agents,pr,merged,377,"fix(#376): standardize agent output filename to agent-result.json",https://github.com/fullsend-ai/agents/pull/377
+2026-07-28,agents,issue,opened,511,"Review agent should run a coverage-stability check before emitting findings on re-review",https://github.com/fullsend-ai/agents/issues/511
+2026-07-28,agents,issue,opened,510,"SCRIPT_DIR companion file lookups fail under content-addressed cache resolution",https://github.com/fullsend-ai/agents/issues/510
+2026-07-28,agents,issue,opened,507,"Review orchestrator should not skip cross-repo-contracts sub-agent for PRs deleting shared files",https://github.com/fullsend-ai/agents/issues/507
+2026-07-28,agents,issue,opened,506,"Review correctness sub-agent should check for references to deleted files in CI/CD pipelines",https://github.com/fullsend-ai/agents/issues/506
+2026-07-28,agents,issue,opened,504,"Minimal code/fix image",https://github.com/fullsend-ai/agents/issues/504
+2026-07-28,agents,issue,opened,503,"Correctness sub-agent should detect unsynchronized shared state mutations in Go concurrent code",https://github.com/fullsend-ai/agents/issues/503
+2026-07-28,agents,issue,opened,501,"Post-review script should suppress ready-for-merge on PRs with explicit no-merge intent",https://github.com/fullsend-ai/agents/issues/501
+2026-07-28,agents,issue,opened,500,"docs: document PR assignee resolution logic used by the code agent",https://github.com/fullsend-ai/agents/issues/500
+2026-07-28,agents,issue,opened,499,"Security sub-agent should detect data exposure via script logging and artifact patterns",https://github.com/fullsend-ai/agents/issues/499
+2026-07-28,agents,issue,opened,497,"Review agent should downgrade sub-agent models based on scope classification, not just author identity",https://github.com/fullsend-ai/agents/issues/497
+2026-07-28,agents,issue,opened,496,"Code agent should trace production code paths before authoring integration test assertions",https://github.com/fullsend-ai/agents/issues/496
+2026-07-28,agents,issue,opened,495,"Stale-head discard should be verdict-aware: preserve request-changes, only discard approvals",https://github.com/fullsend-ai/agents/issues/495
+2026-07-28,agents,issue,opened,494,"Triage agent should ensure surviving issue gets triaged after closing a duplicate",https://github.com/fullsend-ai/agents/issues/494
+2026-07-28,agents,issue,opened,493,"Review style sub-agent should check for formatter config before flagging formatting inconsistencies",https://github.com/fullsend-ai/agents/issues/493
+2026-07-28,agents,issue,opened,492,"Fix agent should run repo-wide tests when its changes affect cross-package behavior",https://github.com/fullsend-ai/agents/issues/492
+2026-07-28,agents,issue,opened,490,"Review agent should verify error-path completeness in shell scripts",https://github.com/fullsend-ai/agents/issues/490
+2026-07-28,agents,issue,opened,489,"fix(code-implementation): branch discovery and git fetch incompatible with sandbox network policy",https://github.com/fullsend-ai/agents/issues/489
+2026-07-28,agents,issue,opened,486,"Fix agent should verify import and convention consistency with target branch after merge conflict resolution",https://github.com/fullsend-ai/agents/issues/486
+2026-07-28,agents,issue,opened,485,"Fix agent should trace SAST data flow to source when addressing CodeQL findings",https://github.com/fullsend-ai/agents/issues/485
+2026-07-28,agents,issue,opened,484,"Document CODE_ALLOWED_TARGET_BRANCHES in AGENTS.md",https://github.com/fullsend-ai/agents/issues/484
+2026-07-28,agents,issue,opened,483,"fix(code): defer target_branch until after default branch discovery",https://github.com/fullsend-ai/agents/issues/483
+2026-07-28,agents,issue,opened,482,"Review agent should cross-validate analyzed file count against PR metadata",https://github.com/fullsend-ai/agents/issues/482
+2026-07-28,agents,issue,opened,480,"Post-review script should gracefully handle all out-of-diff inline comments to prevent 422 failures",https://github.com/fullsend-ai/agents/issues/480
+2026-07-28,agents,issue,opened,479,"Port fullsend PR 5657 (ready-for-review label create-on-missing) to the live post-code.sh in this repo",https://github.com/fullsend-ai/agents/issues/479
+2026-07-28,agents,issue,closed,510,"SCRIPT_DIR companion file lookups fail under content-addressed cache resolution",https://github.com/fullsend-ai/agents/issues/510
+2026-07-28,agents,issue,closed,182,"Add fix agent human /fs-fix functional eval",https://github.com/fullsend-ai/agents/issues/182
+2026-07-28,agents,issue,closed,376,"Standardize agent output filename across all agent schemas",https://github.com/fullsend-ai/agents/issues/376
+2026-07-28,agents,issue,closed,505,"post-code.sh: comment on issue when agent determines no changes needed",https://github.com/fullsend-ai/agents/issues/505
