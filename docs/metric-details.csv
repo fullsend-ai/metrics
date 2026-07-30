@@ -9123,3 +9123,118 @@ date,repo,type,event,number,title,url
 2026-07-28,agents,issue,closed,182,"Add fix agent human /fs-fix functional eval",https://github.com/fullsend-ai/agents/issues/182
 2026-07-28,agents,issue,closed,376,"Standardize agent output filename across all agent schemas",https://github.com/fullsend-ai/agents/issues/376
 2026-07-28,agents,issue,closed,505,"post-code.sh: comment on issue when agent determines no changes needed",https://github.com/fullsend-ai/agents/issues/505
+2026-07-29,fullsend,pr,opened,5743,"fix(#5742): pin podman to 5.8.4 (matching the image) with a verified static bundle",https://github.com/fullsend-ai/fullsend/pull/5743
+2026-07-29,fullsend,pr,opened,5741,"docs(#5740): add forge URL flag coverage to repo management docs",https://github.com/fullsend-ai/fullsend/pull/5741
+2026-07-29,fullsend,pr,opened,5739,"fix(#4718)!: remove inline pre-script calls and scaffold script copies",https://github.com/fullsend-ai/fullsend/pull/5739
+2026-07-29,fullsend,pr,opened,5738,"ci(#5733): pin podman to 4.x to avoid crun incompatibility",https://github.com/fullsend-ai/fullsend/pull/5738
+2026-07-29,fullsend,pr,opened,5737,"feat(#4718): add pre-script output protocol to fullsend run",https://github.com/fullsend-ai/fullsend/pull/5737
+2026-07-29,fullsend,pr,opened,5736,"feat(#3697): add on_failure mode for comment.completion status notifications",https://github.com/fullsend-ai/fullsend/pull/5736
+2026-07-29,fullsend,pr,opened,5732,"fix(#5716): fail fast on concluded harness workflow failures",https://github.com/fullsend-ai/fullsend/pull/5732
+2026-07-29,fullsend,pr,opened,5730,"fix(deps): update module github.com/knights-analytics/hugot to v0.7.6",https://github.com/fullsend-ai/fullsend/pull/5730
+2026-07-29,fullsend,pr,opened,5729,"fix(#5722): inject FULLSEND_OUTPUT_SCHEMA into post-script env",https://github.com/fullsend-ai/fullsend/pull/5729
+2026-07-29,fullsend,pr,opened,5728,"chore(#5721): scope ty pre-commit hook to changed files",https://github.com/fullsend-ai/fullsend/pull/5728
+2026-07-29,fullsend,pr,opened,5719,"test(#5715): commit agent fixtures when registering local custom harness",https://github.com/fullsend-ai/fullsend/pull/5719
+2026-07-29,fullsend,pr,opened,5714,"test(#5707): fix missing harness agent fixtures and timeout diagnostics",https://github.com/fullsend-ai/fullsend/pull/5714
+2026-07-29,fullsend,pr,opened,5713,"feat(#5712)!: add forge URL fields to repos.yaml manifest",https://github.com/fullsend-ai/fullsend/pull/5713
+2026-07-29,fullsend,pr,opened,5711,"docs: align guide language with configured/derived/custom taxonomy",https://github.com/fullsend-ai/fullsend/pull/5711
+2026-07-29,fullsend,pr,opened,5709,"fix(#5672): increase IAM retry budget with exponential backoff and jitter",https://github.com/fullsend-ai/fullsend/pull/5709
+2026-07-29,fullsend,pr,opened,5704,"feat(#5630): add scoped search filters to docs site",https://github.com/fullsend-ai/fullsend/pull/5704
+2026-07-29,fullsend,pr,opened,5702,"chore(deps): update renovatebot/github-action action to v46.1.21",https://github.com/fullsend-ai/fullsend/pull/5702
+2026-07-29,fullsend,pr,opened,5701,"fix(#5700): move mint config into per-forge section in repos.yaml",https://github.com/fullsend-ai/fullsend/pull/5701
+2026-07-29,fullsend,pr,merged,5738,"ci(#5733): pin podman to 4.x to avoid crun incompatibility",https://github.com/fullsend-ai/fullsend/pull/5738
+2026-07-29,fullsend,pr,merged,5737,"feat(#4718): add pre-script output protocol to fullsend run",https://github.com/fullsend-ai/fullsend/pull/5737
+2026-07-29,fullsend,pr,merged,5729,"fix(#5722): inject FULLSEND_OUTPUT_SCHEMA into post-script env",https://github.com/fullsend-ai/fullsend/pull/5729
+2026-07-29,fullsend,pr,merged,5728,"chore(#5721): scope ty pre-commit hook to changed files",https://github.com/fullsend-ai/fullsend/pull/5728
+2026-07-29,fullsend,pr,merged,5713,"feat(#5712)!: add forge URL fields to repos.yaml manifest",https://github.com/fullsend-ai/fullsend/pull/5713
+2026-07-29,fullsend,pr,merged,5711,"docs: align guide language with configured/derived/custom taxonomy",https://github.com/fullsend-ai/fullsend/pull/5711
+2026-07-29,fullsend,pr,merged,5704,"feat(#5630): add scoped search filters to docs site",https://github.com/fullsend-ai/fullsend/pull/5704
+2026-07-29,fullsend,pr,merged,5702,"chore(deps): update renovatebot/github-action action to v46.1.21",https://github.com/fullsend-ai/fullsend/pull/5702
+2026-07-29,fullsend,pr,merged,5701,"fix(#5700): move mint config into per-forge section in repos.yaml",https://github.com/fullsend-ai/fullsend/pull/5701
+2026-07-29,fullsend,pr,merged,5699,"test(#5695): add dispatch continuation tests for integrity failures",https://github.com/fullsend-ai/fullsend/pull/5699
+2026-07-29,fullsend,pr,merged,5698,"test(#5671): poll fork default branch before proceeding",https://github.com/fullsend-ai/fullsend/pull/5698
+2026-07-29,fullsend,pr,merged,5688,"fix(#3640): directory-level fetching for pre/post scripts",https://github.com/fullsend-ai/fullsend/pull/5688
+2026-07-29,fullsend,pr,merged,5678,"docs(#5677): replace ASCII box table with markdown table",https://github.com/fullsend-ai/fullsend/pull/5678
+2026-07-29,fullsend,pr,merged,5676,"docs(#5675): add require-vs-assert goroutine rule to Go guide",https://github.com/fullsend-ai/fullsend/pull/5676
+2026-07-29,fullsend,pr,merged,5663,"docs(agents): prefer go run for fullsend CLI",https://github.com/fullsend-ai/fullsend/pull/5663
+2026-07-29,fullsend,pr,merged,5557,"refactor(#5556): replace GitLab bridge job with API-triggered dispatch",https://github.com/fullsend-ai/fullsend/pull/5557
+2026-07-29,fullsend,pr,merged,5472,"fix(dispatch): label-aware concurrency prevents routing-label cancellation",https://github.com/fullsend-ai/fullsend/pull/5472
+2026-07-29,fullsend,issue,opened,5744,"test: verify triage dispatch with labels at creation (#5476)",https://github.com/fullsend-ai/fullsend/issues/5744
+2026-07-29,fullsend,issue,opened,5742,"ci: apt podman 4.x pin does not override runner static 5.8.4",https://github.com/fullsend-ai/fullsend/issues/5742
+2026-07-29,fullsend,issue,opened,5740,"docs: repos management documentation missing forge URL flag coverage",https://github.com/fullsend-ai/fullsend/issues/5740
+2026-07-29,fullsend,issue,opened,5735,"allow to mount the project files rather than copying/uploading all the files to speed up things",https://github.com/fullsend-ai/fullsend/issues/5735
+2026-07-29,fullsend,issue,opened,5734,"Retro stage should check out post-merge ref on pull_request_target closed events",https://github.com/fullsend-ai/fullsend/issues/5734
+2026-07-29,fullsend,issue,opened,5733,"Pin podman version in action.yml to prevent runner image upgrade breakage",https://github.com/fullsend-ai/fullsend/issues/5733
+2026-07-29,fullsend,issue,opened,5731,"fix(renovate): track OpenShell releases instead of tags",https://github.com/fullsend-ai/fullsend/issues/5731
+2026-07-29,fullsend,issue,opened,5727,"Implement controlled cross-repository access and deactivate unused access features",https://github.com/fullsend-ai/fullsend/issues/5727
+2026-07-29,fullsend,issue,opened,5726,"Update robots.txt to enable agent discovery of documentation and examples",https://github.com/fullsend-ai/fullsend/issues/5726
+2026-07-29,fullsend,issue,opened,5725,"Define agent model pinning strategy to resolve versioning inconsistencies",https://github.com/fullsend-ai/fullsend/issues/5725
+2026-07-29,fullsend,issue,opened,5724,"Triage agent: add skill to route documentation issues separately",https://github.com/fullsend-ai/fullsend/issues/5724
+2026-07-29,fullsend,issue,opened,5723,"Retro agent: add configurable gating skill to control issue filing decisions",https://github.com/fullsend-ai/fullsend/issues/5723
+2026-07-29,fullsend,issue,opened,5722,"runner: inject FULLSEND_OUTPUT_SCHEMA into post-script environment",https://github.com/fullsend-ai/fullsend/issues/5722
+2026-07-29,fullsend,issue,opened,5721,"pre-commit: ty hook checks entire project instead of changed files",https://github.com/fullsend-ai/fullsend/issues/5721
+2026-07-29,fullsend,issue,opened,5720,"docs: tutorial for contributing a configurable env var to a default agent",https://github.com/fullsend-ai/fullsend/issues/5720
+2026-07-29,fullsend,issue,opened,5718,"Move VitePress config from website/ to docs/",https://github.com/fullsend-ai/fullsend/issues/5718
+2026-07-29,fullsend,issue,opened,5717,"Add multi-version documentation support",https://github.com/fullsend-ai/fullsend/issues/5717
+2026-07-29,fullsend,issue,opened,5716,"test(behaviour): WaitForHarnessAgent should fail fast on failed harness runs",https://github.com/fullsend-ai/fullsend/issues/5716
+2026-07-29,fullsend,issue,opened,5715,"test(behaviour): custom harness creation does not create referenced agent MD file",https://github.com/fullsend-ai/fullsend/issues/5715
+2026-07-29,fullsend,issue,opened,5712,"repos.yaml: add forge URL fields for self-hosted instance support",https://github.com/fullsend-ai/fullsend/issues/5712
+2026-07-29,fullsend,issue,opened,5710,"Include fullsend-ai/agents docs in the documentation site",https://github.com/fullsend-ai/fullsend/issues/5710
+2026-07-29,fullsend,issue,opened,5708,"Triage runner does not execute `pre_script` from harness configuration",https://github.com/fullsend-ai/fullsend/issues/5708
+2026-07-29,fullsend,issue,opened,5707,"test(behaviour): fork-related harness agent timeouts across all branches",https://github.com/fullsend-ai/fullsend/issues/5707
+2026-07-29,fullsend,issue,opened,5706,"Add bot carve-out to review dispatch path for pull_request_target events",https://github.com/fullsend-ai/fullsend/issues/5706
+2026-07-29,fullsend,issue,opened,5705,"Output sanitizer should validate JSON structural integrity after redaction",https://github.com/fullsend-ai/fullsend/issues/5705
+2026-07-29,fullsend,issue,opened,5703,"Post-agent json_field sanitizer produces false positives on field names containing the substring 'key'",https://github.com/fullsend-ai/fullsend/issues/5703
+2026-07-29,fullsend,issue,opened,5700,"repos.yaml: move mint config into per-forge section, fix GitLab install variables",https://github.com/fullsend-ai/fullsend/issues/5700
+2026-07-29,fullsend,issue,closed,5744,"test: verify triage dispatch with labels at creation (#5476)",https://github.com/fullsend-ai/fullsend/issues/5744
+2026-07-29,fullsend,issue,closed,5733,"Pin podman version in action.yml to prevent runner image upgrade breakage",https://github.com/fullsend-ai/fullsend/issues/5733
+2026-07-29,fullsend,issue,closed,5722,"runner: inject FULLSEND_OUTPUT_SCHEMA into post-script environment",https://github.com/fullsend-ai/fullsend/issues/5722
+2026-07-29,fullsend,issue,closed,5721,"pre-commit: ty hook checks entire project instead of changed files",https://github.com/fullsend-ai/fullsend/issues/5721
+2026-07-29,fullsend,issue,closed,5712,"repos.yaml: add forge URL fields for self-hosted instance support",https://github.com/fullsend-ai/fullsend/issues/5712
+2026-07-29,fullsend,issue,closed,5695,"test(behaviour): ""good-local"" harness flaky timeout in url-dispatch integrity scenario",https://github.com/fullsend-ai/fullsend/issues/5695
+2026-07-29,fullsend,issue,closed,5677,"ASCII tables and formatting",https://github.com/fullsend-ai/fullsend/issues/5677
+2026-07-29,fullsend,issue,closed,5675,"Add testify require-vs-assert goroutine rule to Go contributing guide",https://github.com/fullsend-ai/fullsend/issues/5675
+2026-07-29,fullsend,issue,closed,5671,"test(behaviour): fork branch create fails with 409 empty repository",https://github.com/fullsend-ai/fullsend/issues/5671
+2026-07-29,fullsend,issue,closed,5630,"Add folder-based filter to docs search",https://github.com/fullsend-ai/fullsend/issues/5630
+2026-07-29,fullsend,issue,closed,5556,"Replace GitLab bridge job with API-triggered dispatch",https://github.com/fullsend-ai/fullsend/issues/5556
+2026-07-29,fullsend,issue,closed,5476,"fix(dispatch): triage dispatch lost when issue created with labels via API/CLI",https://github.com/fullsend-ai/fullsend/issues/5476
+2026-07-29,fullsend,issue,closed,3640,"Harness compose should support directory-level fetching for pre/post scripts to prevent recurring companion-file breakage",https://github.com/fullsend-ai/fullsend/issues/3640
+2026-07-29,fullsend,issue,closed,2452,"Concurrency group cancels code dispatch when triage applies multiple labels",https://github.com/fullsend-ai/fullsend/issues/2452
+2026-07-29,.fullsend,pr,opened,146,"chore(deps): update fullsend-ai/agents digest to e86bf74",https://github.com/fullsend-ai/.fullsend/pull/146
+2026-07-29,.fullsend,pr,merged,145,"chore(deps): update fullsend-ai/agents digest to 8b9e25e",https://github.com/fullsend-ai/.fullsend/pull/145
+2026-07-29,agents,pr,opened,538,"fix(#537): add remediation consistency rule to correctness sub-agent",https://github.com/fullsend-ai/agents/pull/538
+2026-07-29,agents,pr,opened,536,"fix(pre-code): signal skip via the pre-script output protocol",https://github.com/fullsend-ai/agents/pull/536
+2026-07-29,agents,pr,opened,533,"fix(#531): allow encoded slashes in npmjs policy for scoped packages",https://github.com/fullsend-ai/agents/pull/533
+2026-07-29,agents,pr,opened,527,"fix(#526): read schema path from FULLSEND_OUTPUT_SCHEMA env var",https://github.com/fullsend-ai/agents/pull/527
+2026-07-29,agents,pr,opened,523,"feat(scripts): gate triage-triggered code/fix PRs behind write+ approval",https://github.com/fullsend-ai/agents/pull/523
+2026-07-29,agents,pr,opened,516,"docs(#514): add harness override pattern reference to agent docs",https://github.com/fullsend-ai/agents/pull/516
+2026-07-29,agents,pr,merged,527,"fix(#526): read schema path from FULLSEND_OUTPUT_SCHEMA env var",https://github.com/fullsend-ai/agents/pull/527
+2026-07-29,agents,pr,merged,498,"docs(#419): add custom sandbox image guidance to code and fix agent docs",https://github.com/fullsend-ai/agents/pull/498
+2026-07-29,agents,pr,merged,487,"docs(#484): document CODE_ALLOWED_TARGET_BRANCHES in AGENTS.md",https://github.com/fullsend-ai/agents/pull/487
+2026-07-29,agents,pr,merged,177,"test(eval scenario): add code agent functional eval scenario",https://github.com/fullsend-ai/agents/pull/177
+2026-07-29,agents,issue,opened,539,"Add eval config linter rule validating env-var sections against runner contract",https://github.com/fullsend-ai/agents/issues/539
+2026-07-29,agents,issue,opened,537,"Correctness sub-agent should not suggest remediation that contradicts its own analysis",https://github.com/fullsend-ai/agents/issues/537
+2026-07-29,agents,issue,opened,535,"Review agent should escalate security sub-agent depth based on PR labels and file-path signals",https://github.com/fullsend-ai/agents/issues/535
+2026-07-29,agents,issue,opened,534,"Post-fix failure comment should distinguish pre-push from post-push failures",https://github.com/fullsend-ai/agents/issues/534
+2026-07-29,agents,issue,opened,532,"Fix agent policy gaps with code agent",https://github.com/fullsend-ai/agents/issues/532
+2026-07-29,agents,issue,opened,531,"Code agent can't access npmjs",https://github.com/fullsend-ai/agents/issues/531
+2026-07-29,agents,issue,opened,530,"Review agent should trace cross-subsystem data lifecycle for database mutation changes",https://github.com/fullsend-ai/agents/issues/530
+2026-07-29,agents,issue,opened,529,"Review agent should flag SQL query plan regressions when queries are rewritten",https://github.com/fullsend-ai/agents/issues/529
+2026-07-29,agents,issue,opened,528,"Review agent docs-currency sub-agent should verify that script and file references in documentation are linked or resolvable",https://github.com/fullsend-ai/agents/issues/528
+2026-07-29,agents,issue,opened,526,"post-fix: read FULLSEND_OUTPUT_SCHEMA from env instead of relative path",https://github.com/fullsend-ai/agents/issues/526
+2026-07-29,agents,issue,opened,525,"feat(retro): accept a skill to control proposal filing behavior",https://github.com/fullsend-ai/agents/issues/525
+2026-07-29,agents,issue,opened,524,"Triage agent should structurally separate required vs optional recommendations",https://github.com/fullsend-ai/agents/issues/524
+2026-07-29,agents,issue,opened,522,"Code agent should verify production code is updated when test fixtures reference a restructured type",https://github.com/fullsend-ai/agents/issues/522
+2026-07-29,agents,issue,opened,521,"Code agent should add backward-compatible migration detection when restructuring config schemas",https://github.com/fullsend-ai/agents/issues/521
+2026-07-29,agents,issue,opened,520,"Correctness sub-agent should verify poll/readiness mechanisms target the same API surface as the guarded operation",https://github.com/fullsend-ai/agents/issues/520
+2026-07-29,agents,issue,opened,519,"Fix agent should support updating PR metadata when scope changes",https://github.com/fullsend-ai/agents/issues/519
+2026-07-29,agents,issue,opened,518,"Code agent should check harness doc: field to determine documentation placement",https://github.com/fullsend-ai/agents/issues/518
+2026-07-29,agents,issue,opened,517,"Retro-analysis skill should add documentation-ownership heuristic to localization guidance",https://github.com/fullsend-ai/agents/issues/517
+2026-07-29,agents,issue,opened,515,"Standardize model specifier format: aliases vs pinned IDs vs pinned+@default",https://github.com/fullsend-ai/agents/issues/515
+2026-07-29,agents,issue,opened,514,"Add harness override pattern reference to agent docs so code agent can write correct user-facing config paths",https://github.com/fullsend-ai/agents/issues/514
+2026-07-29,agents,issue,opened,513,"Review agent should short-circuit to lightweight mode after classifying a PR as a mechanical dependency bump",https://github.com/fullsend-ai/agents/issues/513
+2026-07-29,agents,issue,opened,512,"Review correctness sub-agent should flag untested conditional branches in new code",https://github.com/fullsend-ai/agents/issues/512
+2026-07-29,agents,issue,closed,526,"post-fix: read FULLSEND_OUTPUT_SCHEMA from env instead of relative path",https://github.com/fullsend-ai/agents/issues/526
+2026-07-29,agents,issue,closed,514,"Add harness override pattern reference to agent docs so code agent can write correct user-facing config paths",https://github.com/fullsend-ai/agents/issues/514
+2026-07-29,agents,issue,closed,484,"Document CODE_ALLOWED_TARGET_BRANCHES in AGENTS.md",https://github.com/fullsend-ai/agents/issues/484
+2026-07-29,agents,issue,closed,419,"Implicit requirement to create code image",https://github.com/fullsend-ai/agents/issues/419
+2026-07-29,agents,issue,closed,180,"Add code agent functional eval (pre→sandbox→post PR creation)",https://github.com/fullsend-ai/agents/issues/180
