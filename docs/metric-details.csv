@@ -9492,3 +9492,22 @@ date,repo,type,event,number,title,url
 2026-07-31,agents,issue,closed,428,"Triage agent shouldn't repeat",https://github.com/fullsend-ai/agents/issues/428
 2026-07-31,agents,issue,closed,186,"eval scrub: add minimum-length guard on ::add-mask:: values",https://github.com/fullsend-ai/agents/issues/186
 2026-07-31,agents,issue,closed,159,"Post-review.sh should retry on transient GitHub API errors when submitting formal PR reviews",https://github.com/fullsend-ai/agents/issues/159
+2026-08-01,fullsend,pr,opened,5819,"docs(#5818): add guidance for doc cleanup on feature removal",https://github.com/fullsend-ai/fullsend/pull/5819
+2026-08-01,fullsend,pr,opened,5816,"feat(#5815): add repos migrate command, remove repos init",https://github.com/fullsend-ai/fullsend/pull/5816
+2026-08-01,fullsend,pr,opened,5814,"chore(deps): update dependency globals to v17.8.0",https://github.com/fullsend-ai/fullsend/pull/5814
+2026-08-01,fullsend,pr,opened,5813,"feat(#5812): add set-default, secret reuse, remove inference_region and deprecated fields",https://github.com/fullsend-ai/fullsend/pull/5813
+2026-08-01,fullsend,pr,opened,5810,"fix(docs): track OpenShell pin with Renovate",https://github.com/fullsend-ai/fullsend/pull/5810
+2026-08-01,fullsend,pr,opened,5809,"chore(deps): update dependency eslint-plugin-svelte to v3.22.0",https://github.com/fullsend-ai/fullsend/pull/5809
+2026-08-01,fullsend,pr,merged,5816,"feat(#5815): add repos migrate command, remove repos init",https://github.com/fullsend-ai/fullsend/pull/5816
+2026-08-01,fullsend,pr,merged,5813,"feat(#5812): add set-default, secret reuse, remove inference_region and deprecated fields",https://github.com/fullsend-ai/fullsend/pull/5813
+2026-08-01,fullsend,pr,merged,5807,"feat(#5806): consolidate repos commands from 9 to 4",https://github.com/fullsend-ai/fullsend/pull/5807
+2026-08-01,fullsend,issue,opened,5820,"Fix repos management documentation gaps",https://github.com/fullsend-ai/fullsend/issues/5820
+2026-08-01,fullsend,issue,opened,5818,"AGENTS.md: add guidance to search docs for stale references when removing features",https://github.com/fullsend-ai/fullsend/issues/5818
+2026-08-01,fullsend,issue,opened,5817,"Consolidate 22+ overlapping ""skip retro/agent dispatch"" issues into a single design issue",https://github.com/fullsend-ai/fullsend/issues/5817
+2026-08-01,fullsend,issue,opened,5815,"repos migrate: one-command migration from per-org to per-repo install",https://github.com/fullsend-ai/fullsend/issues/5815
+2026-08-01,fullsend,issue,opened,5812,"repos: add set-default command, secret reuse, remove inference_region from schema, clean up deprecated fields",https://github.com/fullsend-ai/fullsend/issues/5812
+2026-08-01,fullsend,issue,opened,5811,"Skip fix dispatch at routing level for human-authored PRs without fullsend-fix label",https://github.com/fullsend-ai/fullsend/issues/5811
+2026-08-01,fullsend,issue,closed,5815,"repos migrate: one-command migration from per-org to per-repo install",https://github.com/fullsend-ai/fullsend/issues/5815
+2026-08-01,fullsend,issue,closed,5812,"repos: add set-default command, secret reuse, remove inference_region from schema, clean up deprecated fields",https://github.com/fullsend-ai/fullsend/issues/5812
+2026-08-01,.fullsend,pr,opened,151,"chore(deps): update fullsend-ai/agents digest to a0fec95",https://github.com/fullsend-ai/.fullsend/pull/151
+2026-08-01,.fullsend,pr,merged,151,"chore(deps): update fullsend-ai/agents digest to a0fec95",https://github.com/fullsend-ai/.fullsend/pull/151

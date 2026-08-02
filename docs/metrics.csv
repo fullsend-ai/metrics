@@ -500,3 +500,8 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-07-31,experiments,1,0,0,0,0,0,0,3
 2026-07-31,metrics,1,0,0,0,0,0,0,1
 2026-07-31,agents,7,6,2,25,8,1,70.20,36
+2026-08-01,fullsend,6,3,0,6,2,0,8.20,57
+2026-08-01,.fullsend,1,1,0,0,0,0,11.30,1
+2026-08-01,experiments,0,0,0,0,0,0,0,3
+2026-08-01,metrics,0,0,0,0,0,0,0,1
+2026-08-01,agents,0,0,0,0,0,0,0,36
