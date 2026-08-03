@@ -9511,3 +9511,33 @@ date,repo,type,event,number,title,url
 2026-08-01,fullsend,issue,closed,5812,"repos: add set-default command, secret reuse, remove inference_region from schema, clean up deprecated fields",https://github.com/fullsend-ai/fullsend/issues/5812
 2026-08-01,.fullsend,pr,opened,151,"chore(deps): update fullsend-ai/agents digest to a0fec95",https://github.com/fullsend-ai/.fullsend/pull/151
 2026-08-01,.fullsend,pr,merged,151,"chore(deps): update fullsend-ai/agents digest to a0fec95",https://github.com/fullsend-ai/.fullsend/pull/151
+2026-08-02,fullsend,pr,opened,5840,"chore(deps): update docker/login-action action to v4.6.0",https://github.com/fullsend-ai/fullsend/pull/5840
+2026-08-02,fullsend,pr,opened,5839,"feat(#5835): bootstrap manifest when file does not exist",https://github.com/fullsend-ai/fullsend/pull/5839
+2026-08-02,fullsend,pr,opened,5837,"fix(#5832): strip OIDC credentials from user-controlled environments",https://github.com/fullsend-ai/fullsend/pull/5837
+2026-08-02,fullsend,pr,opened,5836,"chore(#5824): remove CUSTOM_BASE overlay loop from reusable workflows",https://github.com/fullsend-ai/fullsend/pull/5836
+2026-08-02,fullsend,pr,opened,5826,"feat(mint)!: harden repos scope against cross-repo minting",https://github.com/fullsend-ai/fullsend/pull/5826
+2026-08-02,fullsend,pr,opened,5825,"chore(deps): update dependency typescript-eslint to v8.65.0",https://github.com/fullsend-ai/fullsend/pull/5825
+2026-08-02,fullsend,pr,opened,5823,"fix(#5822): carry over org config fields during repos migrate",https://github.com/fullsend-ai/fullsend/pull/5823
+2026-08-02,fullsend,pr,opened,5821,"docs(#5820): fix repos management documentation gaps",https://github.com/fullsend-ai/fullsend/pull/5821
+2026-08-02,fullsend,pr,merged,5839,"feat(#5835): bootstrap manifest when file does not exist",https://github.com/fullsend-ai/fullsend/pull/5839
+2026-08-02,fullsend,pr,merged,5823,"fix(#5822): carry over org config fields during repos migrate",https://github.com/fullsend-ai/fullsend/pull/5823
+2026-08-02,fullsend,pr,merged,5821,"docs(#5820): fix repos management documentation gaps",https://github.com/fullsend-ai/fullsend/pull/5821
+2026-08-02,fullsend,issue,opened,5843,"feat(sandbox): add ownership and expiration labels",https://github.com/fullsend-ai/fullsend/issues/5843
+2026-08-02,fullsend,issue,opened,5842,"feat(sandbox): support non-interactive OpenShell workload authentication",https://github.com/fullsend-ai/fullsend/issues/5842
+2026-08-02,fullsend,issue,opened,5841,"feat(mint): accept file-backed OIDC assertions",https://github.com/fullsend-ai/fullsend/issues/5841
+2026-08-02,fullsend,issue,opened,5838,"mint: separate caller allow-list from workflow-host allow-list (default fullsend-ai/fullsend)",https://github.com/fullsend-ai/fullsend/issues/5838
+2026-08-02,fullsend,issue,opened,5835,"repos install: create manifest file when it does not exist",https://github.com/fullsend-ai/fullsend/issues/5835
+2026-08-02,fullsend,issue,opened,5834,"mint: require explicit foreign-permission syntax for org-wide token minting",https://github.com/fullsend-ai/fullsend/issues/5834
+2026-08-02,fullsend,issue,opened,5833,"mint: add a repo-level foreign allow-list for controlled inter-org and intra-org cross-repo access",https://github.com/fullsend-ai/fullsend/issues/5833
+2026-08-02,fullsend,issue,opened,5832,"mint: block token minting from user-controlled scripts and LLM sessions",https://github.com/fullsend-ai/fullsend/issues/5832
+2026-08-02,fullsend,issue,opened,5831,"mint: require a non-empty repos field; reject omitted and empty lists",https://github.com/fullsend-ai/fullsend/issues/5831
+2026-08-02,fullsend,issue,opened,5830,"e2e: mint org-wide tokens with repos: [""*""] instead of an empty/omitted repos list",https://github.com/fullsend-ai/fullsend/issues/5830
+2026-08-02,fullsend,issue,opened,5829,"mint: support ""*"" as the explicit org-wide repos signal for cross-org tokens",https://github.com/fullsend-ai/fullsend/issues/5829
+2026-08-02,fullsend,issue,opened,5828,"mint: forbid intra-org cross-repo token minting by default; gate org-mode shapes behind a feature flag",https://github.com/fullsend-ai/fullsend/issues/5828
+2026-08-02,fullsend,issue,opened,5827,"Epic: Harden mint token scoping and foreign permissions",https://github.com/fullsend-ai/fullsend/issues/5827
+2026-08-02,fullsend,issue,opened,5824,"Remove customized/ directory overlay mechanism (ADR-0064)",https://github.com/fullsend-ai/fullsend/issues/5824
+2026-08-02,fullsend,issue,opened,5822,"repos migrate does not carry over org config fields or register repos in mint",https://github.com/fullsend-ai/fullsend/issues/5822
+2026-08-02,fullsend,issue,closed,5835,"repos install: create manifest file when it does not exist",https://github.com/fullsend-ai/fullsend/issues/5835
+2026-08-02,fullsend,issue,closed,5822,"repos migrate does not carry over org config fields or register repos in mint",https://github.com/fullsend-ai/fullsend/issues/5822
+2026-08-02,fullsend,issue,closed,5820,"Fix repos management documentation gaps",https://github.com/fullsend-ai/fullsend/issues/5820
+2026-08-02,agents,issue,opened,616,"Scope classification should escalate from trivial when version bumps introduce new API surface",https://github.com/fullsend-ai/agents/issues/616
