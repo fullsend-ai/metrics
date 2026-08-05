@@ -9645,3 +9645,105 @@ date,repo,type,event,number,title,url
 2026-08-03,agents,issue,opened,620,"Correctness sub-agent should verify config struct field propagation across adapter serialization paths",https://github.com/fullsend-ai/agents/issues/620
 2026-08-03,agents,issue,opened,618,"triage: support user-defined categories via TRIAGE_EXTRA_CATEGORIES",https://github.com/fullsend-ai/agents/issues/618
 2026-08-03,agents,issue,closed,621,"Tighten head_sha validation in review-result.schema.json to match CLI requirements",https://github.com/fullsend-ai/agents/issues/621
+2026-08-04,fullsend,pr,opened,5918,"fix(#5917): fetch forge-specific skills and host_files from URL bases",https://github.com/fullsend-ai/fullsend/pull/5918
+2026-08-04,fullsend,pr,opened,5916,"feat(#5838): separate workflow-host allow-list from caller allow-list",https://github.com/fullsend-ai/fullsend/pull/5916
+2026-08-04,fullsend,pr,opened,5915,"fix(#5913): stop mint enroll from granting Vertex AI access",https://github.com/fullsend-ai/fullsend/pull/5915
+2026-08-04,fullsend,pr,opened,5914,"fix(#5912): GitLab WIF install/uninstall cleanup and edge cases",https://github.com/fullsend-ai/fullsend/pull/5914
+2026-08-04,fullsend,pr,opened,5910,"docs(#5909): document cross-repo retro label limitation",https://github.com/fullsend-ai/fullsend/pull/5910
+2026-08-04,fullsend,pr,opened,5908,"fix(#5872): add URL resolution for plugins in harness",https://github.com/fullsend-ai/fullsend/pull/5908
+2026-08-04,fullsend,pr,opened,5906,"feat(#5831)!: require non-empty repos field on mint requests",https://github.com/fullsend-ai/fullsend/pull/5906
+2026-08-04,fullsend,pr,opened,5905,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 1f675b8",https://github.com/fullsend-ai/fullsend/pull/5905
+2026-08-04,fullsend,pr,opened,5904,"docs(#5903): document that poller gap > 24h silently drops events",https://github.com/fullsend-ai/fullsend/pull/5904
+2026-08-04,fullsend,pr,opened,5898,"fix(#5896): set FULLSEND_WIF_PROVIDER and store bot token in Secret Manager",https://github.com/fullsend-ai/fullsend/pull/5898
+2026-08-04,fullsend,pr,opened,5895,"feat(mint): add opt-in scribe agent role",https://github.com/fullsend-ai/fullsend/pull/5895
+2026-08-04,fullsend,pr,opened,5893,"fix(#5892): apply per-org scope for dual-enrolled callers",https://github.com/fullsend-ai/fullsend/pull/5893
+2026-08-04,fullsend,pr,opened,5891,"docs(#5890): generalize mint embed sync guidance in go-code.md",https://github.com/fullsend-ai/fullsend/pull/5891
+2026-08-04,fullsend,pr,opened,5888,"docs(tracing): split tracing docs by audience",https://github.com/fullsend-ai/fullsend/pull/5888
+2026-08-04,fullsend,pr,opened,5887,"fix(#5886): forward missing OTEL variables in managed workflows",https://github.com/fullsend-ai/fullsend/pull/5887
+2026-08-04,fullsend,pr,opened,5878,"chore(deps): update experiments digest to 3e3f4df",https://github.com/fullsend-ai/fullsend/pull/5878
+2026-08-04,fullsend,pr,opened,5875,"feat(#2113): extend URL support to plugins harness field",https://github.com/fullsend-ai/fullsend/pull/5875
+2026-08-04,fullsend,pr,merged,5915,"fix(#5913): stop mint enroll from granting Vertex AI access",https://github.com/fullsend-ai/fullsend/pull/5915
+2026-08-04,fullsend,pr,merged,5906,"feat(#5831)!: require non-empty repos field on mint requests",https://github.com/fullsend-ai/fullsend/pull/5906
+2026-08-04,fullsend,pr,merged,5898,"fix(#5896): set FULLSEND_WIF_PROVIDER and store bot token in Secret Manager",https://github.com/fullsend-ai/fullsend/pull/5898
+2026-08-04,fullsend,pr,merged,5893,"fix(#5892): apply per-org scope for dual-enrolled callers",https://github.com/fullsend-ai/fullsend/pull/5893
+2026-08-04,fullsend,pr,merged,5878,"chore(deps): update experiments digest to 3e3f4df",https://github.com/fullsend-ai/fullsend/pull/5878
+2026-08-04,fullsend,pr,merged,5875,"feat(#2113): extend URL support to plugins harness field",https://github.com/fullsend-ai/fullsend/pull/5875
+2026-08-04,fullsend,pr,merged,5874,"feat(#5873): wire Vertex AI inference credentials for GitLab agents",https://github.com/fullsend-ai/fullsend/pull/5874
+2026-08-04,fullsend,pr,merged,5871,"ci(#5830): pass explicit repos: [""*""] in e2e token mint",https://github.com/fullsend-ai/fullsend/pull/5871
+2026-08-04,fullsend,pr,merged,5857,"chore(deps): update docker/metadata-action action to v6.2.0",https://github.com/fullsend-ai/fullsend/pull/5857
+2026-08-04,fullsend,pr,merged,5856,"feat(#5854): decouple per-repo enrollment from ALLOWED_ORGS",https://github.com/fullsend-ai/fullsend/pull/5856
+2026-08-04,fullsend,pr,merged,5836,"chore(#5824): remove CUSTOM_BASE overlay loop from reusable workflows",https://github.com/fullsend-ai/fullsend/pull/5836
+2026-08-04,fullsend,pr,merged,5697,"chore(#5694): remove deprecated customized/ scaffold",https://github.com/fullsend-ai/fullsend/pull/5697
+2026-08-04,fullsend,pr,merged,5665,"test(#3732): add kill switch and CEL is_fork exclusion to fork dispatch contract",https://github.com/fullsend-ai/fullsend/pull/5665
+2026-08-04,fullsend,pr,merged,5562,"fix(telemetry)!: respect OTEL variables default behaviour",https://github.com/fullsend-ai/fullsend/pull/5562
+2026-08-04,fullsend,pr,merged,5016,"docs(#4718): add ADR 0072 for the pre-script output protocol",https://github.com/fullsend-ai/fullsend/pull/5016
+2026-08-04,fullsend,issue,opened,5919,"Track autonomy readiness: review agent identified cross-file label inconsistency on infrastructure-as-code PR in quay-konflux-components",https://github.com/fullsend-ai/fullsend/issues/5919
+2026-08-04,fullsend,issue,opened,5917,"resolveBaseResources does not fetch forge-specific skills, policy, or host_files from URL-based base harnesses",https://github.com/fullsend-ai/fullsend/issues/5917
+2026-08-04,fullsend,issue,opened,5913,"mint enroll (repo-scoped) unconditionally grants Vertex AI access as a side effect",https://github.com/fullsend-ai/fullsend/issues/5913
+2026-08-04,fullsend,issue,opened,5912,"fix: GitLab WIF install/uninstall cleanup and edge cases",https://github.com/fullsend-ai/fullsend/issues/5912
+2026-08-04,fullsend,issue,opened,5911,"feat: configurable third-party reviewer bots as fix agent triggers",https://github.com/fullsend-ai/fullsend/issues/5911
+2026-08-04,fullsend,issue,opened,5909,"Document that cross-repo retro-filed issues don't get the ready-for-triage label",https://github.com/fullsend-ai/fullsend/issues/5909
+2026-08-04,fullsend,issue,opened,5907,"v0.33.0 regression: file validation fails for plugins not fetched from agents repo",https://github.com/fullsend-ai/fullsend/issues/5907
+2026-08-04,fullsend,issue,opened,5903,"Document that a poller gap longer than the backfill window silently drops Jira events on resume",https://github.com/fullsend-ai/fullsend/issues/5903
+2026-08-04,fullsend,issue,opened,5902,"reconcile-repos.sh should check repo state before creating shim PRs to prevent oscillation loops",https://github.com/fullsend-ai/fullsend/issues/5902
+2026-08-04,fullsend,issue,opened,5900,"fix(dispatch): existing-PR check false-positives on version strings",https://github.com/fullsend-ai/fullsend/issues/5900
+2026-08-04,fullsend,issue,opened,5899,"GitHub self-hosted runner",https://github.com/fullsend-ai/fullsend/issues/5899
+2026-08-04,fullsend,issue,opened,5897,"WIF mode incompatible with internal/private GitLab instances — OIDC issuer must be publicly reachable",https://github.com/fullsend-ai/fullsend/issues/5897
+2026-08-04,fullsend,issue,opened,5896,"fix: GitLab WIF mode bugs and variable-mode inference support",https://github.com/fullsend-ai/fullsend/issues/5896
+2026-08-04,fullsend,issue,opened,5894,"Support GitHub Security Advisories",https://github.com/fullsend-ai/fullsend/issues/5894
+2026-08-04,fullsend,issue,opened,5892,"mint: when a caller is in both ALLOWED_ORGS and PER_REPO_WIF_REPOS, both enrollment scopes should apply",https://github.com/fullsend-ai/fullsend/issues/5892
+2026-08-04,fullsend,issue,opened,5890,"Generalize mint embed sync guidance in go-code.md to cover all mintcore files",https://github.com/fullsend-ai/fullsend/issues/5890
+2026-08-04,fullsend,issue,opened,5889,"mint status: add --platform=cloudflare (and --preview=<alias> targeting)",https://github.com/fullsend-ai/fullsend/issues/5889
+2026-08-04,fullsend,issue,opened,5886,"feat(workflows): forward missing OTEL environment variables in managed workflows",https://github.com/fullsend-ai/fullsend/issues/5886
+2026-08-04,fullsend,issue,opened,5885,"cli: mint status Cloudflare Access auth against /v1/status",https://github.com/fullsend-ai/fullsend/issues/5885
+2026-08-04,fullsend,issue,opened,5884,"cli: mint status GitHub auth against /v1/status",https://github.com/fullsend-ai/fullsend/issues/5884
+2026-08-04,fullsend,issue,opened,5883,"cli: configure Cloudflare Access status auth via mint deploy and mint configure-auth",https://github.com/fullsend-ai/fullsend/issues/5883
+2026-08-04,fullsend,issue,opened,5882,"cli: configure GitHub status auth via mint deploy and mint configure-auth",https://github.com/fullsend-ai/fullsend/issues/5882
+2026-08-04,fullsend,issue,opened,5881,"mint: support Cloudflare Access Managed OAuth for GET /v1/status",https://github.com/fullsend-ai/fullsend/issues/5881
+2026-08-04,fullsend,issue,opened,5880,"mint: accept GitHub OAuth2 for GET /v1/status",https://github.com/fullsend-ai/fullsend/issues/5880
+2026-08-04,fullsend,issue,opened,5879,"Epic: Configurable auth for mint status API and CLI",https://github.com/fullsend-ai/fullsend/issues/5879
+2026-08-04,fullsend,issue,opened,5877,"Add install/uninstall variable parity test and contributing guidance for internal/repos/",https://github.com/fullsend-ai/fullsend/issues/5877
+2026-08-04,fullsend,issue,opened,5876,"Dispatcher pr-check step does not honor --force override",https://github.com/fullsend-ai/fullsend/issues/5876
+2026-08-04,fullsend,issue,closed,5913,"mint enroll (repo-scoped) unconditionally grants Vertex AI access as a side effect",https://github.com/fullsend-ai/fullsend/issues/5913
+2026-08-04,fullsend,issue,closed,5907,"v0.33.0 regression: file validation fails for plugins not fetched from agents repo",https://github.com/fullsend-ai/fullsend/issues/5907
+2026-08-04,fullsend,issue,closed,5897,"WIF mode incompatible with internal/private GitLab instances — OIDC issuer must be publicly reachable",https://github.com/fullsend-ai/fullsend/issues/5897
+2026-08-04,fullsend,issue,closed,5896,"fix: GitLab WIF mode bugs and variable-mode inference support",https://github.com/fullsend-ai/fullsend/issues/5896
+2026-08-04,fullsend,issue,closed,5892,"mint: when a caller is in both ALLOWED_ORGS and PER_REPO_WIF_REPOS, both enrollment scopes should apply",https://github.com/fullsend-ai/fullsend/issues/5892
+2026-08-04,fullsend,issue,closed,5873,"feat: wire Vertex AI inference credentials for GitLab agents",https://github.com/fullsend-ai/fullsend/issues/5873
+2026-08-04,fullsend,issue,closed,5872,"Plugin files missing from scaffold after agent-resolution refactor breaks all code agent runs",https://github.com/fullsend-ai/fullsend/issues/5872
+2026-08-04,fullsend,issue,closed,5854,"mint: stop requiring ALLOWED_ORGS for PER_REPO_WIF_REPOS callers",https://github.com/fullsend-ai/fullsend/issues/5854
+2026-08-04,fullsend,issue,closed,5831,"mint: require a non-empty repos field; reject omitted and empty lists",https://github.com/fullsend-ai/fullsend/issues/5831
+2026-08-04,fullsend,issue,closed,5830,"e2e: mint org-wide tokens with repos: [""*""] instead of an empty/omitted repos list",https://github.com/fullsend-ai/fullsend/issues/5830
+2026-08-04,fullsend,issue,closed,5694,"Installer shouldn't perpetuate deprecated /customized folder",https://github.com/fullsend-ai/fullsend/issues/5694
+2026-08-04,fullsend,issue,closed,5545,"telemetry: OTLP export silently loses spans — endpoint path handling, terminal flush, and no wire-level tests",https://github.com/fullsend-ai/fullsend/issues/5545
+2026-08-04,fullsend,issue,closed,3732,"test(behaviour): harness-dispatch fork PR behaviour contract",https://github.com/fullsend-ai/fullsend/issues/3732
+2026-08-04,fullsend,issue,closed,2113,"Extend ADR-0038 URL support to plugins: harness field",https://github.com/fullsend-ai/fullsend/issues/2113
+2026-08-04,fullsend,issue,closed,692,"Auto-enroll new repositories as they are created",https://github.com/fullsend-ai/fullsend/issues/692
+2026-08-04,.fullsend,pr,opened,155,"chore(deps): update fullsend-ai/agents digest to 5e98b13",https://github.com/fullsend-ai/.fullsend/pull/155
+2026-08-04,.fullsend,pr,merged,155,"chore(deps): update fullsend-ai/agents digest to 5e98b13",https://github.com/fullsend-ai/.fullsend/pull/155
+2026-08-04,agents,pr,opened,658,"fix(#123): pin harness images to immutable sha256 digests",https://github.com/fullsend-ai/agents/pull/658
+2026-08-04,agents,pr,opened,650,"docs(#648): add OpenShell network policy configuration guide",https://github.com/fullsend-ai/agents/pull/650
+2026-08-04,agents,pr,opened,647,"fix(#637): give AGENTS.md precedence over inferred code patterns",https://github.com/fullsend-ai/agents/pull/647
+2026-08-04,agents,pr,opened,646,"feat(triage): effort-estimation skill and auto-promotion gate",https://github.com/fullsend-ai/agents/pull/646
+2026-08-04,agents,issue,opened,664,"pr-review skill should use absolute paths for sub-agent definitions",https://github.com/fullsend-ai/agents/issues/664
+2026-08-04,agents,issue,opened,663,"Protected-path verdict downgrade should not block fix agent dispatch for non-protected-file findings",https://github.com/fullsend-ai/agents/issues/663
+2026-08-04,agents,issue,opened,662,"Security sub-agent should verify IAM/permission removal does not regress authentication paths",https://github.com/fullsend-ai/agents/issues/662
+2026-08-04,agents,issue,opened,661,"Code and fix agents should detect mirrored implementations and apply changes symmetrically",https://github.com/fullsend-ai/agents/issues/661
+2026-08-04,agents,issue,opened,660,"Correctness sub-agent should perform cross-function state-flow analysis for mutation-heavy diffs",https://github.com/fullsend-ai/agents/issues/660
+2026-08-04,agents,issue,opened,659,"Security sub-agent should cross-reference harness sandbox capabilities against documented security model",https://github.com/fullsend-ai/agents/issues/659
+2026-08-04,agents,issue,opened,657,"Code agent should grep for stale path references when deleting embedded files",https://github.com/fullsend-ai/agents/issues/657
+2026-08-04,agents,issue,opened,656,"Code agent should do repo-wide grep for old identifiers during rename/refactor tasks",https://github.com/fullsend-ai/agents/issues/656
+2026-08-04,agents,issue,opened,655,"pr-review skill should detect and flag inaccessible cross-repo linked issues",https://github.com/fullsend-ai/agents/issues/655
+2026-08-04,agents,issue,opened,654,"Review agent should validate implementation plan prerequisite chains",https://github.com/fullsend-ai/agents/issues/654
+2026-08-04,agents,issue,opened,653,"Correctness sub-agent should trace error/exception paths for destructive operations",https://github.com/fullsend-ai/agents/issues/653
+2026-08-04,agents,issue,opened,652,"Agent starvation",https://github.com/fullsend-ai/agents/issues/652
+2026-08-04,agents,issue,opened,651,"Review agent should surface explicit post-merge action items from PR body",https://github.com/fullsend-ai/agents/issues/651
+2026-08-04,agents,issue,opened,649,"Extend pre-retro early-exit to skip retro on trivially-handled mechanical PRs",https://github.com/fullsend-ai/agents/issues/649
+2026-08-04,agents,issue,opened,648,"Configuring OpenShell policy",https://github.com/fullsend-ai/agents/issues/648
+2026-08-04,agents,issue,opened,645,"Code agent should verify prohibitive guidance against codebase usage before writing blanket rules",https://github.com/fullsend-ai/agents/issues/645
+2026-08-04,agents,issue,opened,644,"Review correctness sub-agent should evaluate policy safety of agent guidance changes",https://github.com/fullsend-ai/agents/issues/644
+2026-08-04,agents,issue,opened,643,"Fix agent should prioritize human /fs-fix instructions over review bot findings",https://github.com/fullsend-ai/agents/issues/643
+2026-08-04,agents,issue,opened,642,"pre-review.sh should use the prescript output protocol to skip sandbox creation on merged/closed PRs",https://github.com/fullsend-ai/agents/issues/642
+2026-08-04,agents,issue,opened,641,"Triage agent should validate domain-mechanism accuracy when producing code examples",https://github.com/fullsend-ai/agents/issues/641
+2026-08-04,agents,issue,opened,640,"Review correctness sub-agent should detect missing cleanup for test-shared-state mutations",https://github.com/fullsend-ai/agents/issues/640
+2026-08-04,agents,issue,opened,639,"Review agent should treat defensive-code removal with library-delegation claims as unverifiable",https://github.com/fullsend-ai/agents/issues/639
