@@ -187,6 +187,20 @@
     }));
   } catch (e) { /* failures.csv may not exist yet */ }
 
+  // --- Load community CSV ---
+  let communityData = [];
+  try {
+    communityData = await d3.csv("community.csv", d => ({
+      date: d.date,
+      repo: d.repo,
+      issues_opened_external: +d.issues_opened_external,
+      issues_closed_via_pr_external: +d.issues_closed_via_pr_external,
+      issues_closed_other_external: +d.issues_closed_other_external,
+      prs_opened_core: +d.prs_opened_core,
+      pr_reviews_external: +d.pr_reviews_external,
+    }));
+  } catch (e) { /* community.csv may not exist yet */ }
+
   // --- Load rework config ---
   let ignoreBots = [];
   try {
@@ -343,6 +357,36 @@
       });
     });
     return smoothed;
+  }
+
+  function filterCommunityData() {
+    let data = communityData;
+    if (selectedRepo !== "__all__") {
+      data = data.filter(d => d.repo === selectedRepo);
+    }
+    if (rangeDays > 0) {
+      const cutoff = d3.timeDay.offset(new Date(), -rangeDays);
+      const cutoffStr = d3.timeFormat("%Y-%m-%d")(cutoff);
+      data = data.filter(d => d.date >= cutoffStr);
+    }
+    if (hideWeekends) {
+      data = data.filter(d => !isNonWorkDay(d.date));
+    }
+    const byDate = d3.rollup(data, rows => ({
+      issues_opened_external: d3.sum(rows, d => d.issues_opened_external),
+      issues_closed_via_pr_external: d3.sum(rows, d => d.issues_closed_via_pr_external),
+      issues_closed_other_external: d3.sum(rows, d => d.issues_closed_other_external),
+      prs_opened_core: d3.sum(rows, d => d.prs_opened_core),
+      pr_reviews_external: d3.sum(rows, d => d.pr_reviews_external),
+    }), d => d.date);
+
+    const daily = Array.from(byDate, ([date, vals]) => ({ date, ...vals }))
+      .sort((a, b) => a.date.localeCompare(b.date));
+
+    return smoothDaily(daily, smoothDays, [
+      "issues_opened_external", "issues_closed_via_pr_external", "issues_closed_other_external",
+      "prs_opened_core", "pr_reviews_external",
+    ]);
   }
 
   function smoothDaily(daily, window, keys) {
@@ -509,6 +553,31 @@
         card.append("div")
           .attr("class", `delta ${isPositive ? "positive" : "negative"}`)
           .text(`${ppDelta >= 0 ? "+" : ""}${ppDelta.toFixed(1)}pp vs prev 7d`);
+      }
+    });
+
+    // Community contribution summary cards (org-wide, unfiltered by repo).
+    const cThisWeek = communityData.filter(d => d.date >= weekAgoStr);
+    const cLastWeek = communityData.filter(d => d.date >= twoWeeksAgoStr && d.date < weekAgoStr);
+    const communityMetrics = [
+      { label: "Issues Filed (external)", key: "issues_opened_external" },
+      { label: "Issues Closed via PR (external)", key: "issues_closed_via_pr_external" },
+      { label: "Issues Closed Other (external)", key: "issues_closed_other_external" },
+      { label: "PRs Opened (core)", key: "prs_opened_core" },
+      { label: "External PR Reviews", key: "pr_reviews_external" },
+    ];
+    communityMetrics.forEach(m => {
+      const curr = d3.sum(cThisWeek, d => d[m.key]);
+      const prev = d3.sum(cLastWeek, d => d[m.key]);
+      const delta = prev > 0 ? ((curr - prev) / prev * 100) : 0;
+
+      const card = container.append("div").attr("class", "card");
+      card.append("div").attr("class", "label").text(m.label);
+      card.append("div").attr("class", "value").text(curr);
+      if (prev > 0) {
+        card.append("div")
+          .attr("class", `delta ${delta >= 0 ? "positive" : "negative"}`)
+          .text(`${delta >= 0 ? "+" : ""}${delta.toFixed(0)}% vs prev 7d`);
       }
     });
   }
@@ -1153,6 +1222,135 @@
     ]);
   }
 
+  // --- Community: Issue Attribution Chart ---
+  function renderCommunityIssuesChart(daily) {
+    const container = d3.select("#chart-community-issues");
+    if (daily.length === 0) { container.select("svg").remove(); container.html("<p>No data</p>"); return; }
+    container.select("p").remove();
+    const dims = chartDimensions(container);
+    const g = createSvg(container, dims);
+    const x = xTimeScale(daily, dims.innerW);
+    const maxVal = d3.max(daily, d => Math.max(
+      d.issues_opened_external, d.issues_closed_via_pr_external, d.issues_closed_other_external
+    )) || 1;
+    const y = yScale([0, maxVal * 1.15]).range([dims.innerH, 0]);
+
+    drawGrid(g, y, dims.innerW);
+    drawXAxis(g, x, dims.innerH);
+    drawYAxis(g, y);
+
+    const keys = ["issues_opened_external", "issues_closed_via_pr_external", "issues_closed_other_external"];
+    const colors = ["var(--chart-4)", "var(--chart-1)", "var(--chart-5)"];
+    const labels = ["Opened (external)", "Closed via PR (external)", "Closed other (external)"];
+
+    keys.forEach((key, i) => {
+      g.append("path")
+        .datum(daily)
+        .attr("fill", "none")
+        .attr("stroke", colors[i])
+        .attr("stroke-width", 2)
+        .attr("opacity", seriesOpacity("community-issues", labels[i]))
+        .attr("d", d3.line()
+          .x(d => x(new Date(d.date)))
+          .y(d => y(d[key]))
+          .curve(d3.curveMonotoneX));
+    });
+
+    keys.forEach((key, i) => {
+      g.selectAll(`.ci-dot-${i}`)
+        .data(daily)
+        .join("circle")
+        .attr("cx", d => x(new Date(d.date)))
+        .attr("cy", d => y(d[key]))
+        .attr("r", 3)
+        .attr("fill", colors[i])
+        .attr("opacity", 0)
+        .on("mouseover", function (event, d) {
+          d3.select(this).attr("opacity", 1).attr("r", 5);
+          showTooltip(event,
+            `<strong>${d.date}</strong><br>` +
+            `Opened: ${d.issues_opened_external}<br>` +
+            `Closed via PR: ${d.issues_closed_via_pr_external}<br>` +
+            `Closed other: ${d.issues_closed_other_external}`
+          );
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("opacity", 0).attr("r", 3);
+          hideTooltip();
+        })
+        .on("click", function (event, d) {
+          window.location.href = "details.html?date=" + d.date;
+        });
+    });
+
+    makeLegend(g, "community-issues", labels.map((label, i) => ({
+      name: label, label, color: colors[i], spacing: 160,
+    })));
+  }
+
+  // --- Community: PR Attribution Chart ---
+  function renderCommunityPRChart(daily) {
+    const container = d3.select("#chart-community-prs");
+    if (daily.length === 0) { container.select("svg").remove(); container.html("<p>No data</p>"); return; }
+    container.select("p").remove();
+    const dims = chartDimensions(container);
+    const g = createSvg(container, dims);
+    const x = xTimeScale(daily, dims.innerW);
+    const maxVal = d3.max(daily, d => Math.max(d.prs_opened_core, d.pr_reviews_external)) || 1;
+    const y = yScale([0, maxVal * 1.15]).range([dims.innerH, 0]);
+
+    drawGrid(g, y, dims.innerW);
+    drawXAxis(g, x, dims.innerH);
+    drawYAxis(g, y);
+
+    const keys = ["prs_opened_core", "pr_reviews_external"];
+    const colors = ["var(--chart-2)", "var(--chart-3)"];
+    const labels = ["Opened by core team", "External reviews"];
+
+    keys.forEach((key, i) => {
+      g.append("path")
+        .datum(daily)
+        .attr("fill", "none")
+        .attr("stroke", colors[i])
+        .attr("stroke-width", 2)
+        .attr("opacity", seriesOpacity("community-prs", labels[i]))
+        .attr("d", d3.line()
+          .x(d => x(new Date(d.date)))
+          .y(d => y(d[key]))
+          .curve(d3.curveMonotoneX));
+    });
+
+    keys.forEach((key, i) => {
+      g.selectAll(`.cp-dot-${i}`)
+        .data(daily)
+        .join("circle")
+        .attr("cx", d => x(new Date(d.date)))
+        .attr("cy", d => y(d[key]))
+        .attr("r", 3)
+        .attr("fill", colors[i])
+        .attr("opacity", 0)
+        .on("mouseover", function (event, d) {
+          d3.select(this).attr("opacity", 1).attr("r", 5);
+          showTooltip(event,
+            `<strong>${d.date}</strong><br>` +
+            `Opened by core team: ${d.prs_opened_core}<br>` +
+            `External reviews: ${d.pr_reviews_external}`
+          );
+        })
+        .on("mouseout", function () {
+          d3.select(this).attr("opacity", 0).attr("r", 3);
+          hideTooltip();
+        })
+        .on("click", function (event, d) {
+          window.location.href = "details.html?date=" + d.date;
+        });
+    });
+
+    makeLegend(g, "community-prs", labels.map((label, i) => ({
+      name: label, label, color: colors[i], spacing: 160,
+    })));
+  }
+
   // --- Render all ---
   function render() {
     const data = filterData();
@@ -1170,6 +1368,9 @@
     const rData = filterReworkData();
     renderReworkRateChart(rData);
     renderBotActivityChart(rData);
+    const cData = filterCommunityData();
+    renderCommunityIssuesChart(cData);
+    renderCommunityPRChart(cData);
   }
 
   render();

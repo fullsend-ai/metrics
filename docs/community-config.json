@@ -1,0 +1,15 @@
+{
+  "coreTeam": [
+    "ralphbean",
+    "ifireball",
+    "waynesun09",
+    "maruiz93",
+    "ben-alkov",
+    "ascerra",
+    "rh-hemartin",
+    "ggallen"
+  ],
+  "ignoreBots": [
+    "redhat-chai-bot"
+  ]
+}

@@ -88,6 +88,19 @@
       url: d.url,
     }));
   } catch (e) { /* file may not exist */ }
+  let communityDetails = [];
+  try {
+    communityDetails = await d3.csv("community-details.csv", d => ({
+      date: d.date,
+      repo: d.repo,
+      type: d.type,
+      event: d.event,
+      number: +d.number,
+      actor: d.actor,
+      title: d.title,
+      url: d.url,
+    }));
+  } catch (e) { /* file may not exist */ }
 
   // --- Load rework config ---
   let ignoreBots = [];
@@ -103,6 +116,7 @@
   );
   const failures = failureDetails.filter(d => inRange(d.date));
   const metrics = metricDetails.filter(d => inRange(d.date));
+  const community = communityDetails.filter(d => inRange(d.date));
 
   // --- DOM table builder helper ---
   function buildRow(cells) {
@@ -227,6 +241,34 @@
     { text: d.type.toUpperCase() },
     { tag: d.event, tagClass: d.event },
     { href: d.url, text: "#" + d.number },
+    { text: d.title },
+  ]), "date", "asc");
+
+  // --- Community section ---
+  const communityTagClass = {
+    opened_external: "opened",
+    opened_core: "opened",
+    closed_via_pr_external: "merged",
+    closed_other_external: "closed",
+    reviewed_external: "success",
+  };
+  const commIssuesOpened = community.filter(d => d.event === "opened_external").length;
+  const commIssuesClosedPr = community.filter(d => d.event === "closed_via_pr_external").length;
+  const commIssuesClosedOther = community.filter(d => d.event === "closed_other_external").length;
+  const commPrsOpenedCore = community.filter(d => d.event === "opened_core").length;
+  const commReviews = community.filter(d => d.event === "reviewed_external").length;
+  document.getElementById("community-summary").textContent =
+    commIssuesOpened + " external issues opened, " + commIssuesClosedPr + " closed via PR, " +
+    commIssuesClosedOther + " closed other · " + commPrsOpenedCore + " core PRs opened · " +
+    commReviews + " external reviews";
+
+  makeTable("community-table", community, d => buildRow([
+    { text: d.date },
+    { text: d.repo },
+    { text: d.type.toUpperCase() },
+    { tag: d.event, tagClass: communityTagClass[d.event] || d.event },
+    { href: d.url, text: "#" + d.number },
+    { text: d.actor },
     { text: d.title },
   ]), "date", "asc");
 })();
