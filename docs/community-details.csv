@@ -1292,3 +1292,19 @@ date,repo,type,event,number,actor,title,url
 2026-08-05,agents,issue,closed_via_pr_external,531,deboer-tim,"Code agent can't access npmjs",https://github.com/fullsend-ai/agents/issues/531
 2026-08-05,agents,pr,opened_core,682,ralphbean,"feat(#677): add needs_input pushback for the code agent",https://github.com/fullsend-ai/agents/pull/682
 2026-08-05,agents,pr,opened_core,674,rh-hemartin,"feat(retro): retro-filing-policy skill (#525)",https://github.com/fullsend-ai/agents/pull/674
+2026-08-06,fullsend,issue,closed_other_external,2778,deboer-tim,"Release summary bot",https://github.com/fullsend-ai/fullsend/issues/2778
+2026-08-06,fullsend,issue,closed_other_external,1907,deboer-tim,"Agents must play well with others",https://github.com/fullsend-ai/fullsend/issues/1907
+2026-08-06,fullsend,issue,closed_other_external,1754,deboer-tim,"Triage agent configuration for code",https://github.com/fullsend-ai/fullsend/issues/1754
+2026-08-06,fullsend,issue,closed_other_external,1750,deboer-tim,"Triage agent off by default?",https://github.com/fullsend-ai/fullsend/issues/1750
+2026-08-06,fullsend,pr,opened_core,5997,ralphbean,"feat(#5994): add status_notifications support to per-repo config",https://github.com/fullsend-ai/fullsend/pull/5997
+2026-08-06,fullsend,pr,opened_core,5996,ralphbean,"feat(#5989): Jira comment write support + tracker.Client for Jira",https://github.com/fullsend-ai/fullsend/pull/5996
+2026-08-06,fullsend,pr,opened_core,5995,ralphbean,"docs: update per-org removal plan for immediate-removal decision",https://github.com/fullsend-ai/fullsend/pull/5995
+2026-08-06,fullsend,pr,opened_core,5993,ralphbean,"feat(#5988): introduce tracker.Client interface with forge adapter",https://github.com/fullsend-ai/fullsend/pull/5993
+2026-08-06,fullsend,pr,opened_core,5992,waynesun09,"test(#5987): add behaviour coverage for code applier branch handling",https://github.com/fullsend-ai/fullsend/pull/5992
+2026-08-06,fullsend,pr,opened_core,5978,rh-hemartin,"fix: resolve relative plugin paths from URL-sourced harnesses",https://github.com/fullsend-ai/fullsend/pull/5978
+2026-08-06,fullsend,pr,opened_core,5975,ifireball,"ci(mint): pin setup-go and setup-node for CF Worker tests",https://github.com/fullsend-ai/fullsend/pull/5975
+2026-08-06,fullsend,pr,opened_core,5973,rh-hemartin,"docs: pull Agents docs directly",https://github.com/fullsend-ai/fullsend/pull/5973
+2026-08-06,fullsend,pr,opened_core,5972,rh-hemartin,"chore(docs): delete plans and superpower stuff",https://github.com/fullsend-ai/fullsend/pull/5972
+2026-08-06,agents,issue,closed_via_pr_external,648,deboer-tim,"Configuring OpenShell policy",https://github.com/fullsend-ai/agents/issues/648
+2026-08-06,agents,pr,opened_core,709,ralphbean,"feat(#106): reconcile findings maintainers have already declined",https://github.com/fullsend-ai/agents/pull/709
+2026-08-06,agents,pr,opened_core,686,ggallen,"feat: make triage agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/686

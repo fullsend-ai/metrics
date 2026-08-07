@@ -9861,3 +9861,102 @@ date,repo,type,event,number,title,url
 2026-08-05,agents,issue,closed,531,"Code agent can't access npmjs",https://github.com/fullsend-ai/agents/issues/531
 2026-08-05,agents,issue,closed,489,"fix(code-implementation): branch discovery and git fetch incompatible with sandbox network policy",https://github.com/fullsend-ai/agents/issues/489
 2026-08-05,agents,issue,closed,368,"Allow skipping review agent for configurable bot PR authors",https://github.com/fullsend-ai/agents/issues/368
+2026-08-06,fullsend,pr,opened,5999,"docs(testing-agents): the sample-size cost of statistical significance",https://github.com/fullsend-ai/fullsend/pull/5999
+2026-08-06,fullsend,pr,opened,5997,"feat(#5994): add status_notifications support to per-repo config",https://github.com/fullsend-ai/fullsend/pull/5997
+2026-08-06,fullsend,pr,opened,5996,"feat(#5989): Jira comment write support + tracker.Client for Jira",https://github.com/fullsend-ai/fullsend/pull/5996
+2026-08-06,fullsend,pr,opened,5995,"docs: update per-org removal plan for immediate-removal decision",https://github.com/fullsend-ai/fullsend/pull/5995
+2026-08-06,fullsend,pr,opened,5993,"feat(#5988): introduce tracker.Client interface with forge adapter",https://github.com/fullsend-ai/fullsend/pull/5993
+2026-08-06,fullsend,pr,opened,5992,"test(#5987): add behaviour coverage for code applier branch handling",https://github.com/fullsend-ai/fullsend/pull/5992
+2026-08-06,fullsend,pr,opened,5978,"fix: resolve relative plugin paths from URL-sourced harnesses",https://github.com/fullsend-ai/fullsend/pull/5978
+2026-08-06,fullsend,pr,opened,5976,"feat(#4976): store mint and inference settings in per-repo config",https://github.com/fullsend-ai/fullsend/pull/5976
+2026-08-06,fullsend,pr,opened,5975,"ci(mint): pin setup-go and setup-node for CF Worker tests",https://github.com/fullsend-ai/fullsend/pull/5975
+2026-08-06,fullsend,pr,opened,5973,"docs: pull Agents docs directly",https://github.com/fullsend-ai/fullsend/pull/5973
+2026-08-06,fullsend,pr,opened,5972,"chore(docs): delete plans and superpower stuff",https://github.com/fullsend-ai/fullsend/pull/5972
+2026-08-06,fullsend,pr,opened,5969,"docs(#5968): remove inaccurate BLOCKED verdict from network debugging examples",https://github.com/fullsend-ai/fullsend/pull/5969
+2026-08-06,fullsend,pr,opened,5966,"fix(#5965): scope lint-md-links hook to only staged .md files",https://github.com/fullsend-ai/fullsend/pull/5966
+2026-08-06,fullsend,pr,opened,5963,"chore(deps): update dependency mermaid to v11.16.1",https://github.com/fullsend-ai/fullsend/pull/5963
+2026-08-06,fullsend,pr,merged,5969,"docs(#5968): remove inaccurate BLOCKED verdict from network debugging examples",https://github.com/fullsend-ai/fullsend/pull/5969
+2026-08-06,fullsend,pr,merged,5966,"fix(#5965): scope lint-md-links hook to only staged .md files",https://github.com/fullsend-ai/fullsend/pull/5966
+2026-08-06,fullsend,pr,merged,5963,"chore(deps): update dependency mermaid to v11.16.1",https://github.com/fullsend-ai/fullsend/pull/5963
+2026-08-06,fullsend,pr,merged,5962,"feat(#5958): GitLab scaffold dynamic job names, WIF fixes, resource group self-heal",https://github.com/fullsend-ai/fullsend/pull/5962
+2026-08-06,fullsend,pr,merged,5953,"feat(#4912): add --config and --config-hash preset install flags",https://github.com/fullsend-ai/fullsend/pull/5953
+2026-08-06,fullsend,pr,merged,5945,"feat(#5833): add repo-level foreign allow-list for mint",https://github.com/fullsend-ai/fullsend/pull/5945
+2026-08-06,fullsend,pr,merged,5940,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.223",https://github.com/fullsend-ai/fullsend/pull/5940
+2026-08-06,fullsend,pr,merged,5936,"docs(#5935): document local OpenShell debugging artifacts",https://github.com/fullsend-ai/fullsend/pull/5936
+2026-08-06,fullsend,pr,merged,5905,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 1f675b8",https://github.com/fullsend-ai/fullsend/pull/5905
+2026-08-06,fullsend,pr,merged,5888,"docs(tracing): split tracing docs by audience",https://github.com/fullsend-ai/fullsend/pull/5888
+2026-08-06,fullsend,pr,merged,5685,"docs(#553): add ADR 0076 for slash command entity-context separation",https://github.com/fullsend-ai/fullsend/pull/5685
+2026-08-06,fullsend,issue,opened,5998,"status_notifications.reaction config has no forge-compatibility validation",https://github.com/fullsend-ai/fullsend/issues/5998
+2026-08-06,fullsend,issue,opened,5994,"perRepoConfig has no status_notifications field — reactions/comments toggles are org-only",https://github.com/fullsend-ai/fullsend/issues/5994
+2026-08-06,fullsend,issue,opened,5991,"Add `fullsend issues get`/`fullsend issues post-comment`, deprecate top-level `fullsend post-comment`",https://github.com/fullsend-ai/fullsend/issues/5991
+2026-08-06,fullsend,issue,opened,5990,"e2e: convert admin install/uninstall suite from org mode to per-repo mode",https://github.com/fullsend-ai/fullsend/issues/5990
+2026-08-06,fullsend,issue,opened,5989,"Add Jira comment write support and implement tracker.Client for Jira",https://github.com/fullsend-ai/fullsend/issues/5989
+2026-08-06,fullsend,issue,opened,5988,"Introduce tracker.Client: a forge-agnostic issue-content interface for GitHub/GitLab",https://github.com/fullsend-ai/fullsend/issues/5988
+2026-08-06,fullsend,issue,opened,5987,"test: add behaviour coverage for code/fix applier branch handling",https://github.com/fullsend-ai/fullsend/issues/5987
+2026-08-06,fullsend,issue,opened,5985,"Evaluate API support for automated monitoring of GitHub Discussions",https://github.com/fullsend-ai/fullsend/issues/5985
+2026-08-06,fullsend,issue,opened,5984,"Automate Slack notifications for new GitHub Security Advisory reports",https://github.com/fullsend-ai/fullsend/issues/5984
+2026-08-06,fullsend,issue,opened,5983,"Update docs to clarify pre-tool hooks sub-agent orchestration is experimental",https://github.com/fullsend-ai/fullsend/issues/5983
+2026-08-06,fullsend,issue,opened,5982,"refactor: deduplicate fetchBaseSkill and fetchBasePlugin",https://github.com/fullsend-ai/fullsend/issues/5982
+2026-08-06,fullsend,issue,opened,5981,"Make PR assignee behavior configurable for the coding agent",https://github.com/fullsend-ai/fullsend/issues/5981
+2026-08-06,fullsend,issue,opened,5980,"Explore integration of code and fix agents",https://github.com/fullsend-ai/fullsend/issues/5980
+2026-08-06,fullsend,issue,opened,5979,"Remove org mode support from the system",https://github.com/fullsend-ai/fullsend/issues/5979
+2026-08-06,fullsend,issue,opened,5977,"fix: resolve relative plugin paths from URL-sourced harnesses",https://github.com/fullsend-ai/fullsend/issues/5977
+2026-08-06,fullsend,issue,opened,5974,"Code dispatch existing-PR guard uses bare substring search, causing false-positive blocks",https://github.com/fullsend-ai/fullsend/issues/5974
+2026-08-06,fullsend,issue,opened,5971,"Code agent dispatch should check out the issue's target branch for multi-branch repos",https://github.com/fullsend-ai/fullsend/issues/5971
+2026-08-06,fullsend,issue,opened,5970,"harness: add providers and openshell to ForgeConfig for per-forge provider/profile selection",https://github.com/fullsend-ai/fullsend/issues/5970
+2026-08-06,fullsend,issue,opened,5968,"Fix inaccurate BLOCKED verdict in network policy debugging docs",https://github.com/fullsend-ai/fullsend/issues/5968
+2026-08-06,fullsend,issue,opened,5967,"Filter pull_request_review events in fullsend.yaml shim to changes_requested state",https://github.com/fullsend-ai/fullsend/issues/5967
+2026-08-06,fullsend,issue,opened,5965,"lint-md-links pre-commit hook scans all markdown files instead of only committed ones",https://github.com/fullsend-ai/fullsend/issues/5965
+2026-08-06,fullsend,issue,opened,5964,"mint add-role / mint remove-role: add --platform=cloudflare (durable / mutable only)",https://github.com/fullsend-ai/fullsend/issues/5964
+2026-08-06,fullsend,issue,closed,5981,"Make PR assignee behavior configurable for the coding agent",https://github.com/fullsend-ai/fullsend/issues/5981
+2026-08-06,fullsend,issue,closed,5980,"Explore integration of code and fix agents",https://github.com/fullsend-ai/fullsend/issues/5980
+2026-08-06,fullsend,issue,closed,5979,"Remove org mode support from the system",https://github.com/fullsend-ai/fullsend/issues/5979
+2026-08-06,fullsend,issue,closed,5968,"Fix inaccurate BLOCKED verdict in network policy debugging docs",https://github.com/fullsend-ai/fullsend/issues/5968
+2026-08-06,fullsend,issue,closed,5965,"lint-md-links pre-commit hook scans all markdown files instead of only committed ones",https://github.com/fullsend-ai/fullsend/issues/5965
+2026-08-06,fullsend,issue,closed,5958,"GitLab scaffold: dynamic job names, WIF fixes, resource group self-heal, and status comment rendering",https://github.com/fullsend-ai/fullsend/issues/5958
+2026-08-06,fullsend,issue,closed,5935,"Document artifacts from local OpenShell runs",https://github.com/fullsend-ai/fullsend/issues/5935
+2026-08-06,fullsend,issue,closed,5834,"mint: require explicit foreign-permission syntax for org-wide token minting",https://github.com/fullsend-ai/fullsend/issues/5834
+2026-08-06,fullsend,issue,closed,5833,"mint: add a repo-level foreign allow-list for controlled inter-org and intra-org cross-repo access",https://github.com/fullsend-ai/fullsend/issues/5833
+2026-08-06,fullsend,issue,closed,5827,"Epic: Harden mint token scoping and foreign permissions",https://github.com/fullsend-ai/fullsend/issues/5827
+2026-08-06,fullsend,issue,closed,5659,"docs(telemetry): reorganize into user guide, reference, and dev guide",https://github.com/fullsend-ai/fullsend/issues/5659
+2026-08-06,fullsend,issue,closed,5634,"mint deploy --platform=cloudflare: support --public (ALLOWED_ORGS=*)",https://github.com/fullsend-ai/fullsend/issues/5634
+2026-08-06,fullsend,issue,closed,4912,"feat(install): --config and --config-hash preset install flags (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4912
+2026-08-06,fullsend,issue,closed,2778,"Release summary bot",https://github.com/fullsend-ai/fullsend/issues/2778
+2026-08-06,fullsend,issue,closed,1907,"Agents must play well with others",https://github.com/fullsend-ai/fullsend/issues/1907
+2026-08-06,fullsend,issue,closed,1754,"Triage agent configuration for code",https://github.com/fullsend-ai/fullsend/issues/1754
+2026-08-06,fullsend,issue,closed,1750,"Triage agent off by default?",https://github.com/fullsend-ai/fullsend/issues/1750
+2026-08-06,fullsend,issue,closed,553,"ADR: formalize slash command context separation (/code on issues, /fix on PRs)",https://github.com/fullsend-ai/fullsend/issues/553
+2026-08-06,experiments,pr,merged,48,"feat(0025): subagent process isolation via PreToolUse hooks",https://github.com/fullsend-ai/experiments/pull/48
+2026-08-06,experiments,pr,merged,39,"experiment(eval): statistical significance layer for non-deterministi…",https://github.com/fullsend-ai/experiments/pull/39
+2026-08-06,agents,pr,opened,709,"feat(#106): reconcile findings maintainers have already declined",https://github.com/fullsend-ai/agents/pull/709
+2026-08-06,agents,pr,opened,708,"fix(#705): paginate all open issues in pre-scribe backlog fetch",https://github.com/fullsend-ai/agents/pull/708
+2026-08-06,agents,pr,opened,686,"feat: make triage agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/686
+2026-08-06,agents,pr,merged,673,"docs(#672): restructure DCO section to co-locate agent exemption with sign-off instruction",https://github.com/fullsend-ai/agents/pull/673
+2026-08-06,agents,pr,merged,671,"fix(#670): replace sandbox-incompatible origin/ refs in review skills",https://github.com/fullsend-ai/agents/pull/671
+2026-08-06,agents,pr,merged,658,"fix(#123): pin harness images to immutable sha256 digests",https://github.com/fullsend-ai/agents/pull/658
+2026-08-06,agents,pr,merged,650,"docs(#648): add OpenShell network policy configuration guide",https://github.com/fullsend-ai/agents/pull/650
+2026-08-06,agents,issue,opened,707,"Scribe: support multiple meeting title search queries in one run",https://github.com/fullsend-ai/agents/issues/707
+2026-08-06,agents,issue,opened,706,"Scribe: include meeting title in Slack notification output",https://github.com/fullsend-ai/agents/issues/706
+2026-08-06,agents,issue,opened,705,"Scribe: backlog truncation (--limit 1000) causes duplicate new issues for stale open issues",https://github.com/fullsend-ai/agents/issues/705
+2026-08-06,agents,issue,opened,704,"Correctness sub-agent should flag rather than dismiss adjacent code when reasoning depends on unverified external-tool assumptions",https://github.com/fullsend-ai/agents/issues/704
+2026-08-06,agents,issue,opened,703,"Review correctness sub-agent should flag echo with variable arguments as a shell correctness risk",https://github.com/fullsend-ai/agents/issues/703
+2026-08-06,agents,issue,opened,702,"Code agent should grep for source definitions when writing conditionals that depend on specific variable values",https://github.com/fullsend-ai/agents/issues/702
+2026-08-06,agents,issue,opened,701,"Code agent should verify enumerated-item completeness against the source issue before creating a PR",https://github.com/fullsend-ai/agents/issues/701
+2026-08-06,agents,issue,opened,700,"Intent-coherence sub-agent should read linked issue comments, not just the issue body",https://github.com/fullsend-ai/agents/issues/700
+2026-08-06,agents,issue,opened,699,"Post-review script should pre-validate inline comment positions against PR diff hunk ranges",https://github.com/fullsend-ai/agents/issues/699
+2026-08-06,agents,issue,opened,698,"Triage agent: add `completed` action to close issues as done",https://github.com/fullsend-ai/agents/issues/698
+2026-08-06,agents,issue,opened,697,"Post-code script should reject long-lived branches as PR head and create a feature branch",https://github.com/fullsend-ai/agents/issues/697
+2026-08-06,agents,issue,opened,696,"Code agent should validate user-facing surface completeness for CLI features",https://github.com/fullsend-ai/agents/issues/696
+2026-08-06,agents,issue,opened,695,"Code agent should remediate existing artifact instances when fixing generation bugs",https://github.com/fullsend-ai/agents/issues/695
+2026-08-06,agents,issue,opened,694,"Code agent should avoid duplicating canonical source content in generated documentation",https://github.com/fullsend-ai/agents/issues/694
+2026-08-06,agents,issue,opened,693,"Review agent should flag file-matching pattern changes that alter effective scope",https://github.com/fullsend-ai/agents/issues/693
+2026-08-06,agents,issue,opened,692,"Code agent should verify file-set equivalence when refactoring matching mechanisms",https://github.com/fullsend-ai/agents/issues/692
+2026-08-06,agents,issue,opened,691,"Review agent should itemize and verify content redistribution in documentation restructuring PRs",https://github.com/fullsend-ai/agents/issues/691
+2026-08-06,agents,issue,opened,690,"Review agent should check git history before recommending re-addition of deliberately removed content",https://github.com/fullsend-ai/agents/issues/690
+2026-08-06,agents,issue,opened,689,"Review CI sub-agent should check GitHub Actions platform semantic constraints",https://github.com/fullsend-ai/agents/issues/689
+2026-08-06,agents,issue,opened,688,"Review agent should not post self-acknowledged-as-justified observations as inline findings",https://github.com/fullsend-ai/agents/issues/688
+2026-08-06,agents,issue,opened,687,"Review agent should perform actual file comparison when cross-checking backport PRs",https://github.com/fullsend-ai/agents/issues/687
+2026-08-06,agents,issue,closed,672,"Restructure CONTRIBUTING.md DCO section to eliminate agent confusion about Signed-off-by",https://github.com/fullsend-ai/agents/issues/672
+2026-08-06,agents,issue,closed,670,"Fix-review skill has sandbox-incompatible origin/ ref in diff command",https://github.com/fullsend-ai/agents/issues/670
+2026-08-06,agents,issue,closed,648,"Configuring OpenShell policy",https://github.com/fullsend-ai/agents/issues/648
+2026-08-06,agents,issue,closed,123,"Harness sandbox images use mutable :latest tags",https://github.com/fullsend-ai/agents/issues/123
