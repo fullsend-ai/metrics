@@ -9960,3 +9960,48 @@ date,repo,type,event,number,title,url
 2026-08-06,agents,issue,closed,670,"Fix-review skill has sandbox-incompatible origin/ ref in diff command",https://github.com/fullsend-ai/agents/issues/670
 2026-08-06,agents,issue,closed,648,"Configuring OpenShell policy",https://github.com/fullsend-ai/agents/issues/648
 2026-08-06,agents,issue,closed,123,"Harness sandbox images use mutable :latest tags",https://github.com/fullsend-ai/agents/issues/123
+2026-08-07,fullsend,pr,opened,6014,"test(#5569): make runAgent fixture tests hermetic against ambient credentials",https://github.com/fullsend-ai/fullsend/pull/6014
+2026-08-07,fullsend,pr,opened,6011,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.226",https://github.com/fullsend-ai/fullsend/pull/6011
+2026-08-07,fullsend,pr,opened,6010,"refactor(docs): switch to VitePress Plus theme with multi-version builds",https://github.com/fullsend-ai/fullsend/pull/6010
+2026-08-07,fullsend,pr,opened,6009,"feat(#5568): add top-level preflight_check to harness schema",https://github.com/fullsend-ai/fullsend/pull/6009
+2026-08-07,fullsend,pr,opened,6008,"ci(#6005): extend triage dispatch polling to 120s",https://github.com/fullsend-ai/fullsend/pull/6008
+2026-08-07,fullsend,pr,opened,6004,"feat(#6002): add --signoff flag to github setup command",https://github.com/fullsend-ai/fullsend/pull/6004
+2026-08-07,fullsend,pr,opened,6003,"feat(#3376): differentiate scaffold PR titles for upgrades vs installs",https://github.com/fullsend-ai/fullsend/pull/6003
+2026-08-07,fullsend,pr,opened,6001,"fix(post-review): post file-level comments in a separate review",https://github.com/fullsend-ai/fullsend/pull/6001
+2026-08-07,fullsend,pr,opened,6000,"chore(deps): update experiments digest to 931aee0",https://github.com/fullsend-ai/fullsend/pull/6000
+2026-08-07,fullsend,pr,merged,6008,"ci(#6005): extend triage dispatch polling to 120s",https://github.com/fullsend-ai/fullsend/pull/6008
+2026-08-07,fullsend,pr,merged,5999,"docs(testing-agents): the sample-size cost of statistical significance",https://github.com/fullsend-ai/fullsend/pull/5999
+2026-08-07,fullsend,pr,merged,5992,"test(#5987): add behaviour coverage for code applier branch handling",https://github.com/fullsend-ai/fullsend/pull/5992
+2026-08-07,fullsend,pr,merged,5978,"fix: resolve relative plugin paths from URL-sourced harnesses",https://github.com/fullsend-ai/fullsend/pull/5978
+2026-08-07,fullsend,pr,merged,5972,"chore(docs): delete plans and superpower stuff",https://github.com/fullsend-ai/fullsend/pull/5972
+2026-08-07,fullsend,pr,merged,5934,"refactor: move VitePress config from website/ to docs/",https://github.com/fullsend-ai/fullsend/pull/5934
+2026-08-07,fullsend,pr,merged,5921,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to aad065f",https://github.com/fullsend-ai/fullsend/pull/5921
+2026-08-07,fullsend,pr,merged,5851,"ci(renovate): auto-update SHA256 checksums for tirith and cosign",https://github.com/fullsend-ai/fullsend/pull/5851
+2026-08-07,fullsend,pr,merged,5578,"fix(#5575): match linked-PR closing keywords instead of substring search",https://github.com/fullsend-ai/fullsend/pull/5578
+2026-08-07,fullsend,pr,merged,5573,"fix(dispatch): pass pr-head-sha to action.yml in harness-run job",https://github.com/fullsend-ai/fullsend/pull/5573
+2026-08-07,fullsend,pr,merged,5420,"fix(#5254): skip redundant uploads for already-uploaded skill paths",https://github.com/fullsend-ai/fullsend/pull/5420
+2026-08-07,fullsend,pr,closed,5618,"chore(deps): update dependency sheeki03/tirith to v0.3.3",https://github.com/fullsend-ai/fullsend/pull/5618
+2026-08-07,fullsend,issue,opened,6013,"Per-org dispatch.yml doesn't propagate reusable-workflow fixes (sync-scaffold gap; per-repo mode unaffected)",https://github.com/fullsend-ai/fullsend/issues/6013
+2026-08-07,fullsend,issue,opened,6007,"Fix agent guard misidentifies GitHub App bot PRs as human-authored",https://github.com/fullsend-ai/fullsend/issues/6007
+2026-08-07,fullsend,issue,opened,6005,"e2e: TestAdminInstallUninstall flaky — triage dispatch not detected within 60s polling window",https://github.com/fullsend-ai/fullsend/issues/6005
+2026-08-07,fullsend,issue,opened,6002,"github setup scaffold commits lack DCO sign-off, breaking repos that enforce DCO",https://github.com/fullsend-ai/fullsend/issues/6002
+2026-08-07,fullsend,issue,closed,6005,"e2e: TestAdminInstallUninstall flaky — triage dispatch not detected within 60s polling window",https://github.com/fullsend-ai/fullsend/issues/6005
+2026-08-07,fullsend,issue,closed,5977,"fix: resolve relative plugin paths from URL-sourced harnesses",https://github.com/fullsend-ai/fullsend/issues/5977
+2026-08-07,fullsend,issue,closed,5718,"Move VitePress config from website/ to docs/",https://github.com/fullsend-ai/fullsend/issues/5718
+2026-08-07,fullsend,issue,closed,5575,"dispatch.yml ""Check for existing PRs"" guard blocks /fs-code forever due to bot-login format mismatch + overbroad mention search",https://github.com/fullsend-ai/fullsend/issues/5575
+2026-08-07,fullsend,issue,closed,5329,"harness-run job doesn't pass pr-head-sha to action.yml, so custom harness agents keep the wrong-SHA bug from #5271/#5274",https://github.com/fullsend-ai/fullsend/issues/5329
+2026-08-07,fullsend,issue,closed,5254,"UploadDir's destination-clearing races with fetchsvc's live in-sandbox re-fetch on a cache hit",https://github.com/fullsend-ai/fullsend/issues/5254
+2026-08-07,.fullsend,pr,merged,156,"chore(deps): update fullsend-ai/agents digest to 91f61f3",https://github.com/fullsend-ai/.fullsend/pull/156
+2026-08-07,agents,pr,opened,719,"fix(#717): resolve shellcheck failures on main",https://github.com/fullsend-ai/agents/pull/719
+2026-08-07,agents,pr,merged,719,"fix(#717): resolve shellcheck failures on main",https://github.com/fullsend-ai/agents/pull/719
+2026-08-07,agents,issue,opened,718,"Review agent should recognize external issue tracker references as authorization context for protected-path severity",https://github.com/fullsend-ai/agents/issues/718
+2026-08-07,agents,issue,opened,717,"shellcheck fails on main after post-code.sh/post-fix.sh branch-guard changes",https://github.com/fullsend-ai/agents/issues/717
+2026-08-07,agents,issue,opened,716,"Review scope classifier should escalate when PR body contains explicit risk/caveat claims",https://github.com/fullsend-ai/agents/issues/716
+2026-08-07,agents,issue,opened,715,"Review output should disclose when challenger pass suppresses findings",https://github.com/fullsend-ai/agents/issues/715
+2026-08-07,agents,issue,opened,714,"Review agent correctness sub-agent should adversarially test staggered-arrival timing in concurrency patterns",https://github.com/fullsend-ai/agents/issues/714
+2026-08-07,agents,issue,opened,713,"Intent-coherence sub-agent should cross-reference linked issue AC and elevate severity when deviations affect dependent issues",https://github.com/fullsend-ai/agents/issues/713
+2026-08-07,agents,issue,opened,712,"Correctness sub-agent should verify PR test-plan evidence links against actual outcomes",https://github.com/fullsend-ai/agents/issues/712
+2026-08-07,agents,issue,opened,711,"Docs-currency sub-agent should search relative path variants when checking for references to deleted files",https://github.com/fullsend-ai/agents/issues/711
+2026-08-07,agents,issue,opened,710,"Review correctness sub-agent should trace producer-consumer format compatibility for new struct-field writes",https://github.com/fullsend-ai/agents/issues/710
+2026-08-07,agents,issue,closed,717,"shellcheck fails on main after post-code.sh/post-fix.sh branch-guard changes",https://github.com/fullsend-ai/agents/issues/717
+2026-08-07,agents,issue,closed,480,"Post-review script should gracefully handle all out-of-diff inline comments to prevent 422 failures",https://github.com/fullsend-ai/agents/issues/480

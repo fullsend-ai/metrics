@@ -1308,3 +1308,5 @@ date,repo,type,event,number,actor,title,url
 2026-08-06,agents,issue,closed_via_pr_external,648,deboer-tim,"Configuring OpenShell policy",https://github.com/fullsend-ai/agents/issues/648
 2026-08-06,agents,pr,opened_core,709,ralphbean,"feat(#106): reconcile findings maintainers have already declined",https://github.com/fullsend-ai/agents/pull/709
 2026-08-06,agents,pr,opened_core,686,ggallen,"feat: make triage agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/686
+2026-08-07,fullsend,pr,opened_core,6010,rh-hemartin,"refactor(docs): switch to VitePress Plus theme with multi-version builds",https://github.com/fullsend-ai/fullsend/pull/6010
+2026-08-07,fullsend,pr,opened_core,6001,rh-hemartin,"fix(post-review): post file-level comments in a separate review",https://github.com/fullsend-ai/fullsend/pull/6001
