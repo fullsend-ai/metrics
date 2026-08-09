@@ -10005,3 +10005,9 @@ date,repo,type,event,number,title,url
 2026-08-07,agents,issue,opened,710,"Review correctness sub-agent should trace producer-consumer format compatibility for new struct-field writes",https://github.com/fullsend-ai/agents/issues/710
 2026-08-07,agents,issue,closed,717,"shellcheck fails on main after post-code.sh/post-fix.sh branch-guard changes",https://github.com/fullsend-ai/agents/issues/717
 2026-08-07,agents,issue,closed,480,"Post-review script should gracefully handle all out-of-diff inline comments to prevent 422 failures",https://github.com/fullsend-ai/agents/issues/480
+2026-08-08,fullsend,pr,opened,6016,"chore(deps): update dependency sigstore/cosign to v3.1.3",https://github.com/fullsend-ai/fullsend/pull/6016
+2026-08-08,fullsend,pr,opened,6015,"chore(deps): update dependency eslint to v10.8.1",https://github.com/fullsend-ai/fullsend/pull/6015
+2026-08-08,fullsend,pr,merged,6011,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.226",https://github.com/fullsend-ai/fullsend/pull/6011
+2026-08-08,.fullsend,pr,opened,158,"chore(deps): update fullsend-ai/agents digest to 4a12f03",https://github.com/fullsend-ai/.fullsend/pull/158
+2026-08-08,.fullsend,pr,opened,157,"fix: sync stale scaffold workflows from fullsend-ai/fullsend@v0",https://github.com/fullsend-ai/.fullsend/pull/157
+2026-08-08,.fullsend,pr,merged,158,"chore(deps): update fullsend-ai/agents digest to 4a12f03",https://github.com/fullsend-ai/.fullsend/pull/158

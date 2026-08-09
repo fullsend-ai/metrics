@@ -1310,3 +1310,4 @@ date,repo,type,event,number,actor,title,url
 2026-08-06,agents,pr,opened_core,686,ggallen,"feat: make triage agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/686
 2026-08-07,fullsend,pr,opened_core,6010,rh-hemartin,"refactor(docs): switch to VitePress Plus theme with multi-version builds",https://github.com/fullsend-ai/fullsend/pull/6010
 2026-08-07,fullsend,pr,opened_core,6001,rh-hemartin,"fix(post-review): post file-level comments in a separate review",https://github.com/fullsend-ai/fullsend/pull/6001
+2026-08-08,.fullsend,pr,opened_core,157,waynesun09,"fix: sync stale scaffold workflows from fullsend-ai/fullsend@v0",https://github.com/fullsend-ai/.fullsend/pull/157
