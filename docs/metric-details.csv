@@ -10011,3 +10011,15 @@ date,repo,type,event,number,title,url
 2026-08-08,.fullsend,pr,opened,158,"chore(deps): update fullsend-ai/agents digest to 4a12f03",https://github.com/fullsend-ai/.fullsend/pull/158
 2026-08-08,.fullsend,pr,opened,157,"fix: sync stale scaffold workflows from fullsend-ai/fullsend@v0",https://github.com/fullsend-ai/.fullsend/pull/157
 2026-08-08,.fullsend,pr,merged,158,"chore(deps): update fullsend-ai/agents digest to 4a12f03",https://github.com/fullsend-ai/.fullsend/pull/158
+2026-08-09,fullsend,pr,opened,6020,"fix(jira-poll): degrade gracefully when project role lookup returns 401",https://github.com/fullsend-ai/fullsend/pull/6020
+2026-08-09,fullsend,pr,opened,6019,"fix(deps): update module github.com/knights-analytics/hugot to v0.7.7",https://github.com/fullsend-ai/fullsend/pull/6019
+2026-08-09,fullsend,pr,opened,6017,"chore(deps): update dependency svelte-check to v4.7.5",https://github.com/fullsend-ai/fullsend/pull/6017
+2026-08-09,fullsend,pr,merged,6015,"chore(deps): update dependency eslint to v10.8.1",https://github.com/fullsend-ai/fullsend/pull/6015
+2026-08-09,fullsend,pr,merged,5950,"feat(#5632): support --pem-dir for CF mint deploy (PEM bootstrap parity)",https://github.com/fullsend-ai/fullsend/pull/5950
+2026-08-09,fullsend,pr,merged,5373,"docs(#5372): add escalation ladder for core agent changes",https://github.com/fullsend-ai/fullsend/pull/5373
+2026-08-09,fullsend,pr,closed,6020,"fix(jira-poll): degrade gracefully when project role lookup returns 401",https://github.com/fullsend-ai/fullsend/pull/6020
+2026-08-09,fullsend,issue,opened,6018,"Post-review script should set REQUEST_CHANGES when applying requires-manual-review label",https://github.com/fullsend-ai/fullsend/issues/6018
+2026-08-09,fullsend,issue,closed,5632,"mint deploy --platform=cloudflare: bootstrap role PEMs and ROLE_APP_IDS (parity with GCP non-WIF pieces)",https://github.com/fullsend-ai/fullsend/issues/5632
+2026-08-09,fullsend,issue,closed,5372,"docs: escalation ladder before replacing or deriving a core agent",https://github.com/fullsend-ai/fullsend/issues/5372
+2026-08-09,agents,issue,opened,721,"Review agent should assign content-based stable identifiers to findings for cross-round dedup",https://github.com/fullsend-ai/agents/issues/721
+2026-08-09,agents,issue,opened,720,"Correctness sub-agent should verify framing statements match their supporting content",https://github.com/fullsend-ai/agents/issues/720
