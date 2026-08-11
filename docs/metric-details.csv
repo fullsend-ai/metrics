@@ -10023,3 +10023,106 @@ date,repo,type,event,number,title,url
 2026-08-09,fullsend,issue,closed,5372,"docs: escalation ladder before replacing or deriving a core agent",https://github.com/fullsend-ai/fullsend/issues/5372
 2026-08-09,agents,issue,opened,721,"Review agent should assign content-based stable identifiers to findings for cross-round dedup",https://github.com/fullsend-ai/agents/issues/721
 2026-08-09,agents,issue,opened,720,"Correctness sub-agent should verify framing statements match their supporting content",https://github.com/fullsend-ai/agents/issues/720
+2026-08-10,fullsend,pr,opened,6074,"feat(#5959): consolidate GitLab poll into single auto-promoting schedule",https://github.com/fullsend-ai/fullsend/pull/6074
+2026-08-10,fullsend,pr,opened,6071,"test(#6057): inject clock into EnrollmentLayer to eliminate poll/retry sleeps",https://github.com/fullsend-ai/fullsend/pull/6071
+2026-08-10,fullsend,pr,opened,6070,"docs(#6063): add pull_request_target secrets security section to ci-workflows.md",https://github.com/fullsend-ai/fullsend/pull/6070
+2026-08-10,fullsend,pr,opened,6069,"docs(#6064): document fstest-* account permission scope",https://github.com/fullsend-ai/fullsend/pull/6069
+2026-08-10,fullsend,pr,opened,6068,"fix(#6061): use direct scaffold delivery in non-GitHub forge test",https://github.com/fullsend-ai/fullsend/pull/6068
+2026-08-10,fullsend,pr,opened,6067,"perf(#6056): add injectable afterFunc to forge clients for fast retry tests",https://github.com/fullsend-ai/fullsend/pull/6067
+2026-08-10,fullsend,pr,opened,6066,"perf(#6060): make CreateWithRetry sleep injectable for tests",https://github.com/fullsend-ai/fullsend/pull/6066
+2026-08-10,fullsend,pr,opened,6065,"test(#6058): inject timer in CI driver to eliminate poll sleeps",https://github.com/fullsend-ai/fullsend/pull/6065
+2026-08-10,fullsend,pr,opened,6062,"perf(#6059): make LiveGCFClient poll delay injectable for tests",https://github.com/fullsend-ai/fullsend/pull/6062
+2026-08-10,fullsend,pr,opened,6055,"ci(#6053): exclude cancelled runs from dispatch count",https://github.com/fullsend-ai/fullsend/pull/6055
+2026-08-10,fullsend,pr,opened,6054,"fix(#6052): scale blob upload timeout by content size",https://github.com/fullsend-ai/fullsend/pull/6054
+2026-08-10,fullsend,pr,opened,6051,"feat(#6042): support Prow OWNERS file authorization for slash commands",https://github.com/fullsend-ai/fullsend/pull/6051
+2026-08-10,fullsend,pr,opened,6049,"feat(#6045): expose FULLSEND_ROLE and FULLSEND_SLUG as sandbox env vars",https://github.com/fullsend-ai/fullsend/pull/6049
+2026-08-10,fullsend,pr,opened,6048,"feat(#6041): add per-actor role lookup to overcome group pagination cap",https://github.com/fullsend-ai/fullsend/pull/6048
+2026-08-10,fullsend,pr,opened,6047,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to cc3a002",https://github.com/fullsend-ai/fullsend/pull/6047
+2026-08-10,fullsend,pr,opened,6044,"ci(#6034): enable auto-merge for Renovate submodule bumps",https://github.com/fullsend-ai/fullsend/pull/6044
+2026-08-10,fullsend,pr,opened,6038,"feat: add Slack notification for new vouch requests",https://github.com/fullsend-ai/fullsend/pull/6038
+2026-08-10,fullsend,pr,opened,6037,"ci(#5346): add CF Worker preview mint to BT driver",https://github.com/fullsend-ai/fullsend/pull/6037
+2026-08-10,fullsend,pr,opened,6036,"feat(eval): add eval measurements and EM-001 trace_fitness scorer",https://github.com/fullsend-ai/fullsend/pull/6036
+2026-08-10,fullsend,pr,opened,6035,"refactor(runtime): register opencode as a stub runtime",https://github.com/fullsend-ai/fullsend/pull/6035
+2026-08-10,fullsend,pr,opened,6033,"fix(#739): return error when IAM operation has no name and is not done",https://github.com/fullsend-ai/fullsend/pull/6033
+2026-08-10,fullsend,pr,opened,6032,"ci(#6025): provision test actor permissions in pool org setup",https://github.com/fullsend-ai/fullsend/pull/6032
+2026-08-10,fullsend,pr,opened,6031,"docs(#6030): add doc-update guidance for new CLI command additions",https://github.com/fullsend-ai/fullsend/pull/6031
+2026-08-10,fullsend,pr,opened,6028,"ci(#6026): route actor PAT secrets into behaviour job",https://github.com/fullsend-ai/fullsend/pull/6028
+2026-08-10,fullsend,pr,opened,6023,"fix(#737): validate all repos in mintToken before creating installation token",https://github.com/fullsend-ai/fullsend/pull/6023
+2026-08-10,fullsend,pr,opened,6022,"feat(#2680): add mint delete command to tear down mint infrastructure",https://github.com/fullsend-ai/fullsend/pull/6022
+2026-08-10,fullsend,pr,opened,6021,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to ccb838d",https://github.com/fullsend-ai/fullsend/pull/6021
+2026-08-10,fullsend,pr,merged,6074,"feat(#5959): consolidate GitLab poll into single auto-promoting schedule",https://github.com/fullsend-ai/fullsend/pull/6074
+2026-08-10,fullsend,pr,merged,6068,"fix(#6061): use direct scaffold delivery in non-GitHub forge test",https://github.com/fullsend-ai/fullsend/pull/6068
+2026-08-10,fullsend,pr,merged,6049,"feat(#6045): expose FULLSEND_ROLE and FULLSEND_SLUG as sandbox env vars",https://github.com/fullsend-ai/fullsend/pull/6049
+2026-08-10,fullsend,pr,merged,6048,"feat(#6041): add per-actor role lookup to overcome group pagination cap",https://github.com/fullsend-ai/fullsend/pull/6048
+2026-08-10,fullsend,pr,merged,6028,"ci(#6026): route actor PAT secrets into behaviour job",https://github.com/fullsend-ai/fullsend/pull/6028
+2026-08-10,fullsend,pr,merged,6022,"feat(#2680): add mint delete command to tear down mint infrastructure",https://github.com/fullsend-ai/fullsend/pull/6022
+2026-08-10,fullsend,pr,merged,6019,"fix(deps): update module github.com/knights-analytics/hugot to v0.7.7",https://github.com/fullsend-ai/fullsend/pull/6019
+2026-08-10,fullsend,pr,merged,6016,"chore(deps): update dependency sigstore/cosign to v3.1.3",https://github.com/fullsend-ai/fullsend/pull/6016
+2026-08-10,fullsend,pr,merged,6003,"feat(#3376): differentiate scaffold PR titles for upgrades vs installs",https://github.com/fullsend-ai/fullsend/pull/6003
+2026-08-10,fullsend,pr,merged,6000,"chore(deps): update experiments digest to 931aee0",https://github.com/fullsend-ai/fullsend/pull/6000
+2026-08-10,fullsend,pr,merged,5997,"feat(#5994): add status_notifications support to per-repo config",https://github.com/fullsend-ai/fullsend/pull/5997
+2026-08-10,fullsend,pr,merged,5993,"refactor(#5988): introduce tracker.Client interface with forge adapter",https://github.com/fullsend-ai/fullsend/pull/5993
+2026-08-10,fullsend,pr,merged,5955,"docs(#5952): remove stale customized/ directory references",https://github.com/fullsend-ai/fullsend/pull/5955
+2026-08-10,fullsend,pr,closed,5995,"docs: update per-org removal plan for immediate-removal decision",https://github.com/fullsend-ai/fullsend/pull/5995
+2026-08-10,fullsend,issue,opened,6075,"layers: six EnrollmentLayer tests still sleep on real clock after #6071",https://github.com/fullsend-ai/fullsend/issues/6075
+2026-08-10,fullsend,issue,opened,6073,"Add retry logic for transient gitfetch failures during harness skill resolution",https://github.com/fullsend-ai/fullsend/issues/6073
+2026-08-10,fullsend,issue,opened,6072,"Migrate OWNERS-file dispatch authorization from bash/yq to a Go implementation",https://github.com/fullsend-ai/fullsend/issues/6072
+2026-08-10,fullsend,issue,opened,6064,"Document fstest-* test actor account permission scope for blast-radius assessment",https://github.com/fullsend-ai/fullsend/issues/6064
+2026-08-10,fullsend,issue,opened,6063,"Document pull_request_target + secrets security review checklist in ci-workflows.md",https://github.com/fullsend-ai/fullsend/issues/6063
+2026-08-10,fullsend,issue,opened,6061,"cli: TestRunReposInstall_NonGitHubForgeWarnings makes real GCP calls, taking 120s",https://github.com/fullsend-ai/fullsend/issues/6061
+2026-08-10,fullsend,issue,opened,6060,"sandbox: CreateWithRetry sleeps for real between retry attempts in unit tests",https://github.com/fullsend-ai/fullsend/issues/6060
+2026-08-10,fullsend,issue,opened,6059,"gcf: LiveGCFClient.WaitForOperation polls sleep for real in unit tests",https://github.com/fullsend-ai/fullsend/issues/6059
+2026-08-10,fullsend,issue,opened,6058,"behaviourtest: GitHub Actions CI driver polls sleep for real in unit tests",https://github.com/fullsend-ai/fullsend/issues/6058
+2026-08-10,fullsend,issue,opened,6057,"layers: EnrollmentLayer poll/retry loops sleep for real in unit tests",https://github.com/fullsend-ai/fullsend/issues/6057
+2026-08-10,fullsend,issue,opened,6056,"forge: github/gitlab client retry backoff sleeps for real in unit tests",https://github.com/fullsend-ai/fullsend/issues/6056
+2026-08-10,fullsend,issue,opened,6053,"test(behaviour): ""Fork PR sync + label dispatches harness"" flaky — dispatched twice after a pool-org push race",https://github.com/fullsend-ai/fullsend/issues/6053
+2026-08-10,fullsend,issue,opened,6052,"github client: flat 30s HTTP timeout causes intermittent blob-upload failures for large vendor binaries",https://github.com/fullsend-ai/fullsend/issues/6052
+2026-08-10,fullsend,issue,opened,6050,"Detect PRs with missing review dispatch caused by silently dropped webhooks",https://github.com/fullsend-ai/fullsend/issues/6050
+2026-08-10,fullsend,issue,opened,6045,"Expose harness role/slug as always-injected FULLSEND_ROLE/FULLSEND_SLUG sandbox env vars",https://github.com/fullsend-ai/fullsend/issues/6045
+2026-08-10,fullsend,issue,opened,6043,"Consolidate duplicated owner/repo split logic in internal/tracker and internal/poll",https://github.com/fullsend-ai/fullsend/issues/6043
+2026-08-10,fullsend,issue,opened,6042,"Support Prow/OWNERS file permission model for slash command authorization",https://github.com/fullsend-ai/fullsend/issues/6042
+2026-08-10,fullsend,issue,opened,6041,"jira-poll: support per-actor role lookup to overcome 100-page group member pagination cap",https://github.com/fullsend-ai/fullsend/issues/6041
+2026-08-10,fullsend,issue,opened,6040,"Review dispatch job hangs in in_progress after posting skip comment on merged PR",https://github.com/fullsend-ai/fullsend/issues/6040
+2026-08-10,fullsend,issue,opened,6039,"Investigate 100% inline comment posting failure (422) on re-review rounds",https://github.com/fullsend-ai/fullsend/issues/6039
+2026-08-10,fullsend,issue,opened,6034,"feat: auto-merge Renovate submodule bump PRs",https://github.com/fullsend-ai/fullsend/issues/6034
+2026-08-10,fullsend,issue,opened,6030,"AGENTS.md: add doc-update guidance for new CLI command additions",https://github.com/fullsend-ai/fullsend/issues/6030
+2026-08-10,fullsend,issue,opened,6029,"fix: change experiments submodule URL from SSH to HTTPS for Renovate compatibility",https://github.com/fullsend-ai/fullsend/issues/6029
+2026-08-10,fullsend,issue,opened,6027,"test(behaviour): SCM driver account surfaces for write/triage/outsider actors plus smoke scenario",https://github.com/fullsend-ai/fullsend/issues/6027
+2026-08-10,fullsend,issue,opened,6026,"test(behaviour): route write/triage/outsider actor PAT secrets into the behaviour job",https://github.com/fullsend-ai/fullsend/issues/6026
+2026-08-10,fullsend,issue,opened,6025,"test(e2e): grant write/triage/outsider permissions in pool orgs and update org setup scripts",https://github.com/fullsend-ai/fullsend/issues/6025
+2026-08-10,fullsend,issue,opened,6024,"test(e2e): create write, triage, and outsider test accounts with PATs and stored credentials",https://github.com/fullsend-ai/fullsend/issues/6024
+2026-08-10,fullsend,issue,closed,6061,"cli: TestRunReposInstall_NonGitHubForgeWarnings makes real GCP calls, taking 120s",https://github.com/fullsend-ai/fullsend/issues/6061
+2026-08-10,fullsend,issue,closed,6045,"Expose harness role/slug as always-injected FULLSEND_ROLE/FULLSEND_SLUG sandbox env vars",https://github.com/fullsend-ai/fullsend/issues/6045
+2026-08-10,fullsend,issue,closed,6041,"jira-poll: support per-actor role lookup to overcome 100-page group member pagination cap",https://github.com/fullsend-ai/fullsend/issues/6041
+2026-08-10,fullsend,issue,closed,6029,"fix: change experiments submodule URL from SSH to HTTPS for Renovate compatibility",https://github.com/fullsend-ai/fullsend/issues/6029
+2026-08-10,fullsend,issue,closed,6026,"test(behaviour): route write/triage/outsider actor PAT secrets into the behaviour job",https://github.com/fullsend-ai/fullsend/issues/6026
+2026-08-10,fullsend,issue,closed,6024,"test(e2e): create write, triage, and outsider test accounts with PATs and stored credentials",https://github.com/fullsend-ai/fullsend/issues/6024
+2026-08-10,fullsend,issue,closed,5994,"perRepoConfig has no status_notifications field — reactions/comments toggles are org-only",https://github.com/fullsend-ai/fullsend/issues/5994
+2026-08-10,fullsend,issue,closed,5988,"Introduce tracker.Client: a forge-agnostic issue-content interface for GitHub/GitLab",https://github.com/fullsend-ai/fullsend/issues/5988
+2026-08-10,fullsend,issue,closed,5959,"GitLab: consolidate fast/full poll into a single schedule",https://github.com/fullsend-ai/fullsend/issues/5959
+2026-08-10,fullsend,issue,closed,5952,"Remove stale customized/ directory references from user-facing docs",https://github.com/fullsend-ai/fullsend/issues/5952
+2026-08-10,fullsend,issue,closed,5824,"Remove customized/ directory overlay mechanism (ADR-0064)",https://github.com/fullsend-ai/fullsend/issues/5824
+2026-08-10,fullsend,issue,closed,3785,"test(behaviour): platform dispatch features in fullsend",https://github.com/fullsend-ai/fullsend/issues/3785
+2026-08-10,fullsend,issue,closed,3376,"Scaffold PR title template should differentiate version upgrades from initial installation",https://github.com/fullsend-ai/fullsend/issues/3376
+2026-08-10,fullsend,issue,closed,2680,"mint delete: add command to tear down mint infrastructure (GCP + Cloudflare)",https://github.com/fullsend-ai/fullsend/issues/2680
+2026-08-10,.fullsend,pr,opened,160,"chore: remove deprecated scaffold files and gh-classify agent",https://github.com/fullsend-ai/.fullsend/pull/160
+2026-08-10,.fullsend,pr,opened,159,"chore(deps): update fullsend-ai/agents digest to 6bdcab6",https://github.com/fullsend-ai/.fullsend/pull/159
+2026-08-10,.fullsend,pr,merged,159,"chore(deps): update fullsend-ai/agents digest to 6bdcab6",https://github.com/fullsend-ai/.fullsend/pull/159
+2026-08-10,.fullsend,issue,opened,161,"Add hardikpandya/stop-slop as example third-party skill for agent tone customization",https://github.com/fullsend-ai/.fullsend/issues/161
+2026-08-10,experiments,pr,opened,49,"experiment(0027): add SDLC experiment with iterative waterfall diagram",https://github.com/fullsend-ai/experiments/pull/49
+2026-08-10,agents,pr,opened,731,"docs: harness env var literals are not hardcoded mistakes",https://github.com/fullsend-ai/agents/pull/731
+2026-08-10,agents,pr,opened,722,"feat(eval): add measurement manifests for online scoring",https://github.com/fullsend-ai/agents/pull/722
+2026-08-10,agents,pr,merged,569,"feat(#568): make protected paths configurable via env var",https://github.com/fullsend-ai/agents/pull/569
+2026-08-10,agents,pr,merged,566,"docs: add configuration checklist for agent feature work",https://github.com/fullsend-ai/agents/pull/566
+2026-08-10,agents,pr,closed,576,"fix(pre-code): harden GHA workflow command injection surface",https://github.com/fullsend-ai/agents/pull/576
+2026-08-10,agents,issue,opened,733,"Compose agent prompts from layered building blocks instead of monolithic skills",https://github.com/fullsend-ai/agents/issues/733
+2026-08-10,agents,issue,opened,732,"Add a consistent agent voice via hardikpandya/stop-slop skill integration",https://github.com/fullsend-ai/agents/issues/732
+2026-08-10,agents,issue,opened,730,"Correctness sub-agent should validate doc comments against referenced struct fields",https://github.com/fullsend-ai/agents/issues/730
+2026-08-10,agents,issue,opened,729,"Code agent should remove function implementations it makes dead during replacement refactors",https://github.com/fullsend-ai/agents/issues/729
+2026-08-10,agents,issue,opened,728,"Correctness subagent should evaluate error wrapping quality and interface completeness for adapter/wrapper patterns",https://github.com/fullsend-ai/agents/issues/728
+2026-08-10,agents,issue,opened,727,"Correctness sub-agent should trace blast radius when safety-critical conditionals are restructured",https://github.com/fullsend-ai/agents/issues/727
+2026-08-10,agents,issue,opened,726,"Correctness sub-agent should verify state of external issues and PRs referenced in code",https://github.com/fullsend-ai/agents/issues/726
+2026-08-10,agents,issue,opened,725,"Correctness sub-agent should verify implementation against linked issue acceptance criteria",https://github.com/fullsend-ai/agents/issues/725
+2026-08-10,agents,issue,opened,724,"Correctness sub-agent should enumerate concrete error shapes for classification functions",https://github.com/fullsend-ai/agents/issues/724
+2026-08-10,agents,issue,opened,723,"Challenger sub-agent should apply structured verification for test-integrity findings",https://github.com/fullsend-ai/agents/issues/723
+2026-08-10,agents,issue,closed,568,"Review agent: make protected paths configurable via environment variable",https://github.com/fullsend-ai/agents/issues/568

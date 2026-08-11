@@ -1311,3 +1311,9 @@ date,repo,type,event,number,actor,title,url
 2026-08-07,fullsend,pr,opened_core,6010,rh-hemartin,"refactor(docs): switch to VitePress Plus theme with multi-version builds",https://github.com/fullsend-ai/fullsend/pull/6010
 2026-08-07,fullsend,pr,opened_core,6001,rh-hemartin,"fix(post-review): post file-level comments in a separate review",https://github.com/fullsend-ai/fullsend/pull/6001
 2026-08-08,.fullsend,pr,opened_core,157,waynesun09,"fix: sync stale scaffold workflows from fullsend-ai/fullsend@v0",https://github.com/fullsend-ai/.fullsend/pull/157
+2026-08-10,fullsend,pr,opened_core,6038,maruiz93,"feat: add Slack notification for new vouch requests",https://github.com/fullsend-ai/fullsend/pull/6038
+2026-08-10,fullsend,pr,opened_core,6036,ascerra,"feat(eval): add eval measurements and EM-001 trace_fitness scorer",https://github.com/fullsend-ai/fullsend/pull/6036
+2026-08-10,fullsend,pr,opened_core,6028,ifireball,"ci(#6026): route actor PAT secrets into behaviour job",https://github.com/fullsend-ai/fullsend/pull/6028
+2026-08-10,.fullsend,pr,opened_core,160,ggallen,"chore: remove deprecated scaffold files and gh-classify agent",https://github.com/fullsend-ai/.fullsend/pull/160
+2026-08-10,agents,pr,opened_core,731,ralphbean,"docs: harness env var literals are not hardcoded mistakes",https://github.com/fullsend-ai/agents/pull/731
+2026-08-10,agents,pr,opened_core,722,ascerra,"feat(eval): add measurement manifests for online scoring",https://github.com/fullsend-ai/agents/pull/722
