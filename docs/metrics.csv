@@ -550,3 +550,9 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-10,experiments,1,0,0,0,0,0,0,2
 2026-08-10,metrics,0,0,0,0,0,0,0,0
 2026-08-10,agents,2,2,1,10,1,0,262.60,30
+2026-08-11,fullsend,24,15,1,27,13,1,20.50,72
+2026-08-11,.fullsend,0,1,0,0,0,0,21.80,5
+2026-08-11,experiments,1,0,0,1,0,0,0,3
+2026-08-11,metrics,0,0,0,0,0,0,0,0
+2026-08-11,agents,9,1,0,17,2,1,123.90,38
+2026-08-11,autonomy-readiness,0,0,0,0,0,0,0,0

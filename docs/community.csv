@@ -1000,3 +1000,9 @@ date,repo,issues_opened_external,issues_closed_via_pr_external,issues_closed_oth
 2026-08-10,experiments,0,0,0,0,0
 2026-08-10,metrics,0,0,0,0,0
 2026-08-10,agents,0,0,0,2,0
+2026-08-11,fullsend,1,0,0,4,0
+2026-08-11,.fullsend,0,0,0,0,0
+2026-08-11,experiments,0,0,0,1,0
+2026-08-11,metrics,0,0,0,0,0
+2026-08-11,agents,0,0,0,8,0
+2026-08-11,autonomy-readiness,0,0,0,0,0

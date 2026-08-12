@@ -10126,3 +10126,115 @@ date,repo,type,event,number,title,url
 2026-08-10,agents,issue,opened,724,"Correctness sub-agent should enumerate concrete error shapes for classification functions",https://github.com/fullsend-ai/agents/issues/724
 2026-08-10,agents,issue,opened,723,"Challenger sub-agent should apply structured verification for test-integrity findings",https://github.com/fullsend-ai/agents/issues/723
 2026-08-10,agents,issue,closed,568,"Review agent: make protected paths configurable via environment variable",https://github.com/fullsend-ai/agents/issues/568
+2026-08-11,fullsend,pr,opened,6126,"fix(#6125): delete leaked repo-level FULLSEND_MINT_URL in e2e cleanup",https://github.com/fullsend-ai/fullsend/pull/6126
+2026-08-11,fullsend,pr,opened,6124,"feat(#5964): add --platform=cloudflare to mint add-role / remove-role",https://github.com/fullsend-ai/fullsend/pull/6124
+2026-08-11,fullsend,pr,opened,6123,"fix(#6122): write variables and secrets before committing scaffold",https://github.com/fullsend-ai/fullsend/pull/6123
+2026-08-11,fullsend,pr,opened,6121,"ci(#6119): stop BT suite from installing on singular test-repo",https://github.com/fullsend-ai/fullsend/pull/6121
+2026-08-11,fullsend,pr,opened,6114,"docs(#6113): surface org-mode deprecation in agent-visible files",https://github.com/fullsend-ai/fullsend/pull/6114
+2026-08-11,fullsend,pr,opened,6112,"ci(e2e): delete leaked repo-level FULLSEND_MINT_URL from test-repo",https://github.com/fullsend-ai/fullsend/pull/6112
+2026-08-11,fullsend,pr,opened,6111,"docs(#6099): add image and network policy sync warning to agent docs",https://github.com/fullsend-ai/fullsend/pull/6111
+2026-08-11,fullsend,pr,opened,6110,"fix(deps): resolve OpenShell digest lookup and add UBI digest automerge",https://github.com/fullsend-ai/fullsend/pull/6110
+2026-08-11,fullsend,pr,opened,6108,"fix(#6052): raise HTTP timeout to 60s and retry on timeouts",https://github.com/fullsend-ai/fullsend/pull/6108
+2026-08-11,fullsend,pr,opened,6107,"fix(deps): update module google.golang.org/protobuf to v1.36.12",https://github.com/fullsend-ai/fullsend/pull/6107
+2026-08-11,fullsend,pr,opened,6106,"fix(#6105): retry GetFileContent on 404 in post-install validation",https://github.com/fullsend-ai/fullsend/pull/6106
+2026-08-11,fullsend,pr,opened,6104,"docs(#6087): document split action for triage agent",https://github.com/fullsend-ai/fullsend/pull/6104
+2026-08-11,fullsend,pr,opened,6103,"docs(#6094): add multi-repo polling section to Jira guide",https://github.com/fullsend-ai/fullsend/pull/6103
+2026-08-11,fullsend,pr,opened,6102,"docs(#6092): add local testing section to Jira integration guide",https://github.com/fullsend-ai/fullsend/pull/6102
+2026-08-11,fullsend,pr,opened,6101,"docs(#6090): add receiving workflow section to Jira integration guide",https://github.com/fullsend-ai/fullsend/pull/6101
+2026-08-11,fullsend,pr,opened,6100,"docs(#6093): document dispatches.json record schema",https://github.com/fullsend-ai/fullsend/pull/6100
+2026-08-11,fullsend,pr,opened,6098,"docs(#6091): clarify event semantics and Jira output limitations",https://github.com/fullsend-ai/fullsend/pull/6098
+2026-08-11,fullsend,pr,opened,6097,"docs(#6088): document 100-page group member pagination cap",https://github.com/fullsend-ai/fullsend/pull/6097
+2026-08-11,fullsend,pr,opened,6096,"docs(#6089): clarify --jira-project is required for slash commands",https://github.com/fullsend-ai/fullsend/pull/6096
+2026-08-11,fullsend,pr,opened,6095,"docs(#6076): fill Jira integration guide gaps from ROSAENG onboarding",https://github.com/fullsend-ai/fullsend/pull/6095
+2026-08-11,fullsend,pr,opened,6085,"docs(#6084): add install driver checklist to behaviour-drivers.md",https://github.com/fullsend-ai/fullsend/pull/6085
+2026-08-11,fullsend,pr,opened,6083,"docs(adr): add ADR 0086 for conversation surface participation",https://github.com/fullsend-ai/fullsend/pull/6083
+2026-08-11,fullsend,pr,opened,6079,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.228",https://github.com/fullsend-ai/fullsend/pull/6079
+2026-08-11,fullsend,pr,opened,6078,"feat(#6077): split GitLab poller into independent slash and event schedules",https://github.com/fullsend-ai/fullsend/pull/6078
+2026-08-11,fullsend,pr,merged,6112,"ci(e2e): delete leaked repo-level FULLSEND_MINT_URL from test-repo",https://github.com/fullsend-ai/fullsend/pull/6112
+2026-08-11,fullsend,pr,merged,6102,"docs(#6092): add local testing section to Jira integration guide",https://github.com/fullsend-ai/fullsend/pull/6102
+2026-08-11,fullsend,pr,merged,6100,"docs(#6093): document dispatches.json record schema",https://github.com/fullsend-ai/fullsend/pull/6100
+2026-08-11,fullsend,pr,merged,6098,"docs(#6091): clarify event semantics and Jira output limitations",https://github.com/fullsend-ai/fullsend/pull/6098
+2026-08-11,fullsend,pr,merged,6096,"docs(#6089): clarify --jira-project is required for slash commands",https://github.com/fullsend-ai/fullsend/pull/6096
+2026-08-11,fullsend,pr,merged,6070,"docs(#6063): add pull_request_target secrets security section to ci-workflows.md",https://github.com/fullsend-ai/fullsend/pull/6070
+2026-08-11,fullsend,pr,merged,6047,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to cc3a002",https://github.com/fullsend-ai/fullsend/pull/6047
+2026-08-11,fullsend,pr,merged,6044,"ci(#6034): enable auto-merge for Renovate submodule bumps",https://github.com/fullsend-ai/fullsend/pull/6044
+2026-08-11,fullsend,pr,merged,6038,"ci(vouch): add Slack notification for new vouch requests",https://github.com/fullsend-ai/fullsend/pull/6038
+2026-08-11,fullsend,pr,merged,6037,"ci(#5346): add CF Worker preview mint to BT driver",https://github.com/fullsend-ai/fullsend/pull/6037
+2026-08-11,fullsend,pr,merged,6021,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to ccb838d",https://github.com/fullsend-ai/fullsend/pull/6021
+2026-08-11,fullsend,pr,merged,5996,"feat(#5989): Jira comment write support + tracker.Client for Jira",https://github.com/fullsend-ai/fullsend/pull/5996
+2026-08-11,fullsend,pr,merged,5976,"feat(#4976): store mint and inference settings in per-repo config",https://github.com/fullsend-ai/fullsend/pull/5976
+2026-08-11,fullsend,pr,merged,5975,"ci(mint): pin setup-go and setup-node for CF Worker tests",https://github.com/fullsend-ai/fullsend/pull/5975
+2026-08-11,fullsend,pr,merged,5736,"feat(#3697): add on_failure mode for comment.completion status notifications",https://github.com/fullsend-ai/fullsend/pull/5736
+2026-08-11,fullsend,pr,closed,6095,"docs(#6076): fill Jira integration guide gaps from ROSAENG onboarding",https://github.com/fullsend-ai/fullsend/pull/6095
+2026-08-11,fullsend,issue,opened,6125,"e2e: CleanupStaleResources should delete leaked repo-level FULLSEND_MINT_URL from test-repo",https://github.com/fullsend-ai/fullsend/issues/6125
+2026-08-11,fullsend,issue,opened,6122,"fix(repos): write variables and secrets before committing scaffold",https://github.com/fullsend-ai/fullsend/issues/6122
+2026-08-11,fullsend,issue,opened,6120,"test(behaviour): delete leased pool repos after scenarios and recreate on acquire",https://github.com/fullsend-ai/fullsend/issues/6120
+2026-08-11,fullsend,issue,opened,6119,"test(e2e): behaviour suite must not install or allowlist singular test-repo",https://github.com/fullsend-ai/fullsend/issues/6119
+2026-08-11,fullsend,issue,opened,6118,"test(behaviour): collect mint logs into debug artifacts",https://github.com/fullsend-ai/fullsend/issues/6118
+2026-08-11,fullsend,issue,opened,6117,"test(behaviour): collect workflow run logs into debug artifacts",https://github.com/fullsend-ai/fullsend/issues/6117
+2026-08-11,fullsend,issue,opened,6116,"test(behaviour): post-run collection path and bulk agent artifact capture",https://github.com/fullsend-ai/fullsend/issues/6116
+2026-08-11,fullsend,issue,opened,6115,"Epic: behaviour-test post-run debug artifact collection",https://github.com/fullsend-ai/fullsend/issues/6115
+2026-08-11,fullsend,issue,opened,6113,"Surface org-mode deprecation in agent-visible context files",https://github.com/fullsend-ai/fullsend/issues/6113
+2026-08-11,fullsend,issue,opened,6109,"Route job token scope prevents collaborator API authorization for /fs-review slash commands",https://github.com/fullsend-ai/fullsend/issues/6109
+2026-08-11,fullsend,issue,opened,6105,"test(behaviour): post-install validation races GitHub read-after-write, 404s on .github/workflows/fullsend.yaml",https://github.com/fullsend-ai/fullsend/issues/6105
+2026-08-11,fullsend,issue,opened,6099,"docs: add admonition for image and network policy synchronization between code and fix agents",https://github.com/fullsend-ai/fullsend/issues/6099
+2026-08-11,fullsend,issue,opened,6094,"docs(jira): document multi-repo polling patterns",https://github.com/fullsend-ai/fullsend/issues/6094
+2026-08-11,fullsend,issue,opened,6093,"docs(jira): document the dispatches.json record schema",https://github.com/fullsend-ai/fullsend/issues/6093
+2026-08-11,fullsend,issue,opened,6092,"docs(jira): add local testing/debugging guidance for fullsend poll",https://github.com/fullsend-ai/fullsend/issues/6092
+2026-08-11,fullsend,issue,opened,6091,"docs(jira): clarify comment_added event semantics and Jira output limitations",https://github.com/fullsend-ai/fullsend/issues/6091
+2026-08-11,fullsend,issue,opened,6090,"docs(jira): add example of a receiving agent workflow for dispatches",https://github.com/fullsend-ai/fullsend/issues/6090
+2026-08-11,fullsend,issue,opened,6089,"docs(jira): clarify that --jira-project is effectively required for slash commands",https://github.com/fullsend-ai/fullsend/issues/6089
+2026-08-11,fullsend,issue,opened,6088,"docs(jira): document 100-page group member pagination cap in role resolution",https://github.com/fullsend-ai/fullsend/issues/6088
+2026-08-11,fullsend,issue,opened,6087,"Triage agent should support splitting a single issue into multiple independent same-repo issues",https://github.com/fullsend-ai/fullsend/issues/6087
+2026-08-11,fullsend,issue,opened,6086,"Dispatch reviews for pre-existing open PRs at enrollment time",https://github.com/fullsend-ai/fullsend/issues/6086
+2026-08-11,fullsend,issue,opened,6084,"Add install driver addition checklist to behaviour-drivers.md",https://github.com/fullsend-ai/fullsend/issues/6084
+2026-08-11,fullsend,issue,opened,6082,"Retain code-owner review for .gitmodules to prevent submodule-swap auto-merge",https://github.com/fullsend-ai/fullsend/issues/6082
+2026-08-11,fullsend,issue,opened,6081,"Broaden Slack notifications to all new GitHub Discussions",https://github.com/fullsend-ai/fullsend/issues/6081
+2026-08-11,fullsend,issue,opened,6080,"[Bug] code agent skips coding due mistake when finding ""a PR that already addresses the issue""",https://github.com/fullsend-ai/fullsend/issues/6080
+2026-08-11,fullsend,issue,opened,6077,"GitLab: split poller into independent slash-command and event-discovery schedules",https://github.com/fullsend-ai/fullsend/issues/6077
+2026-08-11,fullsend,issue,opened,6076,"docs: Jira integration guide gaps identified during ROSAENG onboarding",https://github.com/fullsend-ai/fullsend/issues/6076
+2026-08-11,fullsend,issue,closed,6093,"docs(jira): document the dispatches.json record schema",https://github.com/fullsend-ai/fullsend/issues/6093
+2026-08-11,fullsend,issue,closed,6092,"docs(jira): add local testing/debugging guidance for fullsend poll",https://github.com/fullsend-ai/fullsend/issues/6092
+2026-08-11,fullsend,issue,closed,6091,"docs(jira): clarify comment_added event semantics and Jira output limitations",https://github.com/fullsend-ai/fullsend/issues/6091
+2026-08-11,fullsend,issue,closed,6090,"docs(jira): add example of a receiving agent workflow for dispatches",https://github.com/fullsend-ai/fullsend/issues/6090
+2026-08-11,fullsend,issue,closed,6089,"docs(jira): clarify that --jira-project is effectively required for slash commands",https://github.com/fullsend-ai/fullsend/issues/6089
+2026-08-11,fullsend,issue,closed,6087,"Triage agent should support splitting a single issue into multiple independent same-repo issues",https://github.com/fullsend-ai/fullsend/issues/6087
+2026-08-11,fullsend,issue,closed,6076,"docs: Jira integration guide gaps identified during ROSAENG onboarding",https://github.com/fullsend-ai/fullsend/issues/6076
+2026-08-11,fullsend,issue,closed,6063,"Document pull_request_target + secrets security review checklist in ci-workflows.md",https://github.com/fullsend-ai/fullsend/issues/6063
+2026-08-11,fullsend,issue,closed,6034,"feat: auto-merge Renovate submodule bump PRs",https://github.com/fullsend-ai/fullsend/issues/6034
+2026-08-11,fullsend,issue,closed,5989,"Add Jira comment write support and implement tracker.Client for Jira",https://github.com/fullsend-ai/fullsend/issues/5989
+2026-08-11,fullsend,issue,closed,5541,"ci(mint): add setup-go and setup-node to mint-cf-worker-test workflow",https://github.com/fullsend-ai/fullsend/issues/5541
+2026-08-11,fullsend,issue,closed,5346,"BT: replace GCP tight mint with temp CF Worker mint + debugging",https://github.com/fullsend-ai/fullsend/issues/5346
+2026-08-11,fullsend,issue,closed,4976,"feat(config): store mint and inference settings in layered config by default (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4976
+2026-08-11,.fullsend,pr,merged,160,"chore: remove deprecated scaffold files and gh-classify agent",https://github.com/fullsend-ai/.fullsend/pull/160
+2026-08-11,experiments,pr,opened,51,"fix: update site-build workflow for website/ → docs/ move",https://github.com/fullsend-ai/experiments/pull/51
+2026-08-11,experiments,issue,opened,50,"Build Doc Site workflow broken since fullsend moved website/ to docs/",https://github.com/fullsend-ai/experiments/issues/50
+2026-08-11,agents,pr,opened,757,"feat(#756): add split action to triage for bundled issues",https://github.com/fullsend-ai/agents/pull/757
+2026-08-11,agents,pr,opened,754,"ci(skillsaw): add lint job, Makefile targets, and repo config",https://github.com/fullsend-ai/agents/pull/754
+2026-08-11,agents,pr,opened,753,"docs(pr-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/753
+2026-08-11,agents,pr,opened,752,"docs(issue-labels): add trigger phrase to description",https://github.com/fullsend-ai/agents/pull/752
+2026-08-11,agents,pr,opened,751,"docs(fix-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/751
+2026-08-11,agents,pr,opened,750,"docs(docs-review): add trigger phrase to description",https://github.com/fullsend-ai/agents/pull/750
+2026-08-11,agents,pr,opened,749,"docs(code-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/749
+2026-08-11,agents,pr,opened,748,"docs(code-implementation): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/748
+2026-08-11,agents,pr,opened,747,"docs(autonomy-readiness): tighten weak language in skill",https://github.com/fullsend-ai/agents/pull/747
+2026-08-11,agents,pr,merged,708,"fix(#705): paginate all open issues in pre-scribe backlog fetch",https://github.com/fullsend-ai/agents/pull/708
+2026-08-11,agents,issue,opened,760,"Review agent should re-map inline comments on 422 stale-diff errors instead of falling back to review body",https://github.com/fullsend-ai/agents/issues/760
+2026-08-11,agents,issue,opened,759,"Fix agent should self-check new code for same-defect-class regressions",https://github.com/fullsend-ai/agents/issues/759
+2026-08-11,agents,issue,opened,758,"Code agent should use non-closing link when it recognizes partial implementation scope",https://github.com/fullsend-ai/agents/issues/758
+2026-08-11,agents,issue,opened,756,"Triage agent should support splitting a single issue into multiple independent same-repo issues",https://github.com/fullsend-ai/agents/issues/756
+2026-08-11,agents,issue,opened,746,"Review agent should flag premature issue-closing keywords when PR describes partial work",https://github.com/fullsend-ai/agents/issues/746
+2026-08-11,agents,issue,opened,745,"Triage agent should evaluate approach simplicity using available empirical data when multiple fix strategies exist",https://github.com/fullsend-ai/agents/issues/745
+2026-08-11,agents,issue,opened,744,"Review agent should apply prompt-engineering heuristics for agent definition files",https://github.com/fullsend-ai/agents/issues/744
+2026-08-11,agents,issue,opened,743,"Review agent should check for harness-provided alternatives when reviewing .fullsend/ scripts",https://github.com/fullsend-ai/agents/issues/743
+2026-08-11,agents,issue,opened,742,"Code agent should read issue comments to detect human course-corrections",https://github.com/fullsend-ai/agents/issues/742
+2026-08-11,agents,issue,opened,741,"Review agent should assess semantic significance of protected-path changes before assigning high severity",https://github.com/fullsend-ai/agents/issues/741
+2026-08-11,agents,issue,opened,740,"Fix agent should flag when /fs-fix instructions contradict linked issue requirements",https://github.com/fullsend-ai/agents/issues/740
+2026-08-11,agents,issue,opened,739,"Review agent should cross-validate PR test-plan claims against code behavior",https://github.com/fullsend-ai/agents/issues/739
+2026-08-11,agents,issue,opened,738,"Review approve body should include analysis summary when security sub-agent was dispatched",https://github.com/fullsend-ai/agents/issues/738
+2026-08-11,agents,issue,opened,737,"Review agent should cross-reference unpinned actions with workflow secret usage for risk-aware severity",https://github.com/fullsend-ai/agents/issues/737
+2026-08-11,agents,issue,opened,736,"AGENTS.md should document script bundling constraints to prevent recurring base-composition breakage",https://github.com/fullsend-ai/agents/issues/736
+2026-08-11,agents,issue,opened,735,"pr-review skill should accept PR body rationale as protected-path authorization context",https://github.com/fullsend-ai/agents/issues/735
+2026-08-11,agents,issue,opened,734,"Intent-coherence sub-agent should search for ADRs governing the modified component, not only referenced ADRs",https://github.com/fullsend-ai/agents/issues/734
+2026-08-11,agents,issue,closed,736,"AGENTS.md should document script bundling constraints to prevent recurring base-composition breakage",https://github.com/fullsend-ai/agents/issues/736
+2026-08-11,agents,issue,closed,705,"Scribe: backlog truncation (--limit 1000) causes duplicate new issues for stale open issues",https://github.com/fullsend-ai/agents/issues/705

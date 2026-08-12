@@ -1317,3 +1317,17 @@ date,repo,type,event,number,actor,title,url
 2026-08-10,.fullsend,pr,opened_core,160,ggallen,"chore: remove deprecated scaffold files and gh-classify agent",https://github.com/fullsend-ai/.fullsend/pull/160
 2026-08-10,agents,pr,opened_core,731,ralphbean,"docs: harness env var literals are not hardcoded mistakes",https://github.com/fullsend-ai/agents/pull/731
 2026-08-10,agents,pr,opened_core,722,ascerra,"feat(eval): add measurement manifests for online scoring",https://github.com/fullsend-ai/agents/pull/722
+2026-08-11,fullsend,issue,opened_external,6080,rrosatti,"[Bug] code agent skips coding due mistake when finding ""a PR that already addresses the issue""",https://github.com/fullsend-ai/fullsend/issues/6080
+2026-08-11,fullsend,pr,opened_core,6126,ggallen,"fix(#6125): delete leaked repo-level FULLSEND_MINT_URL in e2e cleanup",https://github.com/fullsend-ai/fullsend/pull/6126
+2026-08-11,fullsend,pr,opened_core,6112,ralphbean,"ci(e2e): delete leaked repo-level FULLSEND_MINT_URL from test-repo",https://github.com/fullsend-ai/fullsend/pull/6112
+2026-08-11,fullsend,pr,opened_core,6110,ralphbean,"fix(deps): resolve OpenShell digest lookup and add UBI digest automerge",https://github.com/fullsend-ai/fullsend/pull/6110
+2026-08-11,fullsend,pr,opened_core,6083,ifireball,"docs(adr): add ADR 0086 for conversation surface participation",https://github.com/fullsend-ai/fullsend/pull/6083
+2026-08-11,experiments,pr,opened_core,51,maruiz93,"fix: update site-build workflow for website/ → docs/ move",https://github.com/fullsend-ai/experiments/pull/51
+2026-08-11,agents,pr,opened_core,754,ralphbean,"ci(skillsaw): add lint job, Makefile targets, and repo config",https://github.com/fullsend-ai/agents/pull/754
+2026-08-11,agents,pr,opened_core,753,ralphbean,"docs(pr-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/753
+2026-08-11,agents,pr,opened_core,752,ralphbean,"docs(issue-labels): add trigger phrase to description",https://github.com/fullsend-ai/agents/pull/752
+2026-08-11,agents,pr,opened_core,751,ralphbean,"docs(fix-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/751
+2026-08-11,agents,pr,opened_core,750,ralphbean,"docs(docs-review): add trigger phrase to description",https://github.com/fullsend-ai/agents/pull/750
+2026-08-11,agents,pr,opened_core,749,ralphbean,"docs(code-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/749
+2026-08-11,agents,pr,opened_core,748,ralphbean,"docs(code-implementation): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/748
+2026-08-11,agents,pr,opened_core,747,ralphbean,"docs(autonomy-readiness): tighten weak language in skill",https://github.com/fullsend-ai/agents/pull/747
