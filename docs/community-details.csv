@@ -1331,3 +1331,4 @@ date,repo,type,event,number,actor,title,url
 2026-08-11,agents,pr,opened_core,749,ralphbean,"docs(code-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/749
 2026-08-11,agents,pr,opened_core,748,ralphbean,"docs(code-implementation): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/748
 2026-08-11,agents,pr,opened_core,747,ralphbean,"docs(autonomy-readiness): tighten weak language in skill",https://github.com/fullsend-ai/agents/pull/747
+2026-08-12,agents,pr,opened_core,766,ascerra,"docs(fix): clarify fix policy overlap with code policy",https://github.com/fullsend-ai/agents/pull/766
