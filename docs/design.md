@@ -166,3 +166,28 @@ fullsend-ai/metrics/
 - **Daily granularity over hourly:** Sufficient for trend analysis. Keeps API usage low. Avoids partial-day noise.
 - **Org-wide dynamic repo discovery:** No hardcoded repo list to maintain. New repos automatically appear in the next day's collection.
 - **Both merge and release frequency:** Reported as separate metrics since merge-to-main and tagged releases represent different deployment signals.
+
+## Dashboard evolution (2026)
+
+The dashboard has grown beyond the original single-page overview:
+
+| Area | Files | Notes |
+|------|-------|-------|
+| Overview | `docs/index.html`, `docs/dashboard.js` | Core SDLC metrics, community, rework, failures |
+| Drill-down | `docs/details.html` | Per-day detail view (linked from overview charts) |
+| Delivered PR types | `docs/delivered-pr-types.html` | Conventional-commit mix + fix-filer attribution |
+
+**Navigation:** `index.html` and `delivered-pr-types.html` share a tab header. `details.html` is a drill-down page reached from overview charts, not a peer tab.
+
+**Delivered PR Types defaults:** 90-day range and 28-day smoothing (vs. 30d / none on the overview) because delivery-mix trends are noisy at daily granularity.
+
+### PR type / fix-source collector
+
+Tracks merged PR conventional-commit types and fix-filer attribution for `fullsend` and `agents`:
+
+- `docs/pr-type.csv` — daily aggregates per repo
+- `docs/pr-type-details.csv` — per-PR drill-down
+- `scripts/collect-pr-type.sh` + `scripts/collect-pr-type.py` — daily collection (wired in `collect.yml`)
+- `scripts/backfill-pr-type.sh` — date-range backfill
+
+**Python exception:** Most collectors remain shell + `gh` + `jq`. The PR-type collector uses Python because it needs cross-API orchestration (search windows with adaptive splitting on the 1000-result cap, per-issue author caching, qualified issue-reference parsing, and per-(date, repo) idempotent writes). Python is available on Actions runners without extra setup.

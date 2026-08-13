@@ -6,15 +6,10 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/lib.sh"
 
-TARGET_DATE="${1:-$(date -u -d yesterday +%Y-%m-%d)}"
+TARGET_DATE="${1:-$(date -d yesterday +%Y-%m-%d)}"
 echo "Collecting PR type metrics for ${TARGET_DATE}..."
 
 ensure_pr_type_csv
-
-if grep -q "^${TARGET_DATE}," "$PR_TYPE_FILE" 2>/dev/null; then
-  echo "Data for ${TARGET_DATE} already exists in ${PR_TYPE_FILE}. Skipping."
-  exit 0
-fi
 
 # Default to the two delivery repos; override with PR_TYPE_REPOS=repo1,repo2
 export PR_TYPE_REPOS="${PR_TYPE_REPOS:-fullsend,agents}"

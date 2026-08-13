@@ -21,15 +21,19 @@ import subprocess
 import sys
 import time
 from collections import defaultdict
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 ORG = "fullsend-ai"
 TYPES = ("feat", "fix", "docs", "ci", "chore", "test", "perf", "other")
 REPO_PATTERN = re.compile(r"^(\w+)(?:\([^)]+\))?!?:")
 ISSUE_TITLE = re.compile(r"^fix\(#(\d+)\)", re.I)
-ISSUE_BODY = re.compile(
-    r"(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+(?:fullsend-ai/(?:fullsend|agents)#)?(\d+)",
+ISSUE_BODY_QUALIFIED = re.compile(
+    r"(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+fullsend-ai/(fullsend|agents)#(\d+)",
+    re.I,
+)
+ISSUE_BODY_LOCAL = re.compile(
+    r"(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+#(\d+)",
     re.I,
 )
 
@@ -47,6 +51,8 @@ PR_TYPE_DETAILS_HEADER = [
     "issue_number", "issue_author", "url",
 ]
 
+RATE_LIMIT_MARKERS = ("rate limit", "secondary rate limit")
+
 
 def load_config():
     cfg = json.loads(CONFIG_FILE.read_text())
@@ -62,12 +68,16 @@ def classify_title(title: str) -> str:
     return "other"
 
 
-def extract_issue_num(title: str, body: str | None) -> int | None:
+def extract_issue_ref(pr_repo: str, title: str, body: str | None) -> tuple[str, int] | None:
+    """Return (issue_repo, issue_number) for a fix PR linkage."""
     m = ISSUE_TITLE.match(title.strip())
     if m:
-        return int(m.group(1))
-    for m in ISSUE_BODY.finditer(body or ""):
-        return int(m.group(1))
+        return (pr_repo, int(m.group(1)))
+    text = body or ""
+    for m in ISSUE_BODY_QUALIFIED.finditer(text):
+        return (m.group(1), int(m.group(2)))
+    for m in ISSUE_BODY_LOCAL.finditer(text):
+        return (pr_repo, int(m.group(1)))
     return None
 
 
@@ -91,19 +101,27 @@ def classify_filer(login, user_type, core, ignored_bots) -> str:
     return "external"
 
 
+def is_rate_limited(err: str) -> bool:
+    low = err.lower()
+    return any(marker in low for marker in RATE_LIMIT_MARKERS)
+
+
 def gh_json(args: list[str], retries: int = 5):
+    last_err = ""
     for attempt in range(1, retries + 1):
         r = subprocess.run(["gh", *args], capture_output=True, text=True)
         if r.returncode == 0:
             return json.loads(r.stdout) if r.stdout.strip() else None
-        err = r.stderr.strip()
-        if "rate limit" in err.lower() or "403" in err:
+        last_err = r.stderr.strip()
+        if is_rate_limited(last_err):
             wait = attempt * 25
             print(f"  rate limited (attempt {attempt}/{retries}), sleep {wait}s", file=sys.stderr)
             time.sleep(wait)
             continue
-        raise RuntimeError(err or f"gh failed: {' '.join(args)}")
-    raise RuntimeError(f"rate limit retries exhausted: {' '.join(args)}")
+        raise RuntimeError(last_err or f"gh failed: {' '.join(args)}")
+    raise RuntimeError(
+        f"rate limit retries exhausted: {last_err}; args: {' '.join(args)}"
+    )
 
 
 def list_repos() -> list[str]:
@@ -111,8 +129,7 @@ def list_repos() -> list[str]:
     return sorted(r["name"] for r in data if not r.get("archived") and not r.get("fork"))
 
 
-def fetch_merged_range(repo: str, start: date, end: date) -> list[dict]:
-    """Fetch all merged PRs in [start, end] inclusive via one search."""
+def _search_merged(repo: str, start: date, end: date) -> list[dict]:
     cmd = [
         "search", "prs",
         "--repo", f"{ORG}/{repo}",
@@ -121,19 +138,40 @@ def fetch_merged_range(repo: str, start: date, end: date) -> list[dict]:
         "--json", "title,closedAt,number,body,url",
         "--limit", "1000",
     ]
-    data = gh_json(cmd) or []
-    if len(data) >= 1000:
-        print(f"  WARN: hit 1000 limit for {repo} {start}..{end}", file=sys.stderr)
-    # Soft pacing for search API
+    return gh_json(cmd) or []
+
+
+def fetch_merged_range(repo: str, start: date, end: date) -> list[dict]:
+    """Fetch all merged PRs in [start, end] inclusive, splitting on the 1000 cap."""
+    by_number: dict[int, dict] = {}
+
+    def collect(chunk_start: date, chunk_end: date) -> None:
+        data = _search_merged(repo, chunk_start, chunk_end)
+        if len(data) >= 1000:
+            if chunk_start >= chunk_end:
+                raise RuntimeError(
+                    f"Search cap exceeded for {repo} on {chunk_start} "
+                    f"(>=1000 merged PRs in one day)"
+                )
+            span = (chunk_end - chunk_start).days
+            mid = chunk_start + timedelta(days=span // 2)
+            collect(chunk_start, mid)
+            collect(mid + timedelta(days=1), chunk_end)
+            return
+        for pr in data:
+            by_number[pr["number"]] = pr
+
+    collect(start, end)
     time.sleep(2.5)
-    return data
+    return list(by_number.values())
 
 
-def fetch_issue_author(repo: str, number: int, cache: dict) -> tuple[str | None, str | None]:
-    key = (repo, number)
+def fetch_issue_author(issue_repo: str, number: int, pr_repo: str, cache: dict) -> tuple[str | None, str | None]:
+    key = (issue_repo, number)
     if key in cache:
         return cache[key]
-    for name in (repo, "fullsend", "agents"):
+    # Only probe the referenced repo, then the PR's repo when they differ.
+    for name in dict.fromkeys([issue_repo, pr_repo]):
         try:
             data = gh_json([
                 "api", f"repos/{ORG}/{name}/issues/{number}",
@@ -158,11 +196,21 @@ def ensure_csvs():
             csv.writer(f).writerow(PR_TYPE_DETAILS_HEADER)
 
 
-def existing_dates() -> set[str]:
+def existing_day_repo() -> set[tuple[str, str]]:
     if not PR_TYPE_FILE.exists():
         return set()
     with PR_TYPE_FILE.open() as f:
-        return {row["date"] for row in csv.DictReader(f)}
+        return {(row["date"], row["repo"]) for row in csv.DictReader(f)}
+
+
+def existing_detail_keys() -> set[tuple[str, str, str]]:
+    if not PR_TYPE_DETAILS_FILE.exists():
+        return set()
+    with PR_TYPE_DETAILS_FILE.open() as f:
+        return {
+            (row["date"], row["repo"], row["number"])
+            for row in csv.DictReader(f)
+        }
 
 
 def month_chunks(start: date, end: date):
@@ -198,12 +246,13 @@ def process_prs(prs, repo, core, ignored_bots, author_cache):
             issue_author = ""
 
             if pr_type == "fix":
-                num = extract_issue_num(title, pr.get("body"))
-                if not num:
+                ref = extract_issue_ref(repo, title, pr.get("body"))
+                if not ref:
                     fix_source = "unlinked"
                     fix_counts["unlinked"] += 1
                 else:
-                    login, typ = fetch_issue_author(repo, num, author_cache)
+                    issue_repo, num = ref
+                    login, typ = fetch_issue_author(issue_repo, num, repo, author_cache)
                     if not login:
                         fix_source = "unlinked"
                         fix_counts["unlinked"] += 1
@@ -242,12 +291,12 @@ def write_zero_row(day_s: str, repo: str):
 
 def collect_range(start: date, end: date, repos: list[str], core, ignored_bots,
                   skip_existing: bool) -> int:
-    existing = existing_dates() if skip_existing else set()
+    existing_rows = existing_day_repo() if skip_existing else set()
+    existing_details = existing_detail_keys() if skip_existing else set()
     author_cache = {}
     total_prs = 0
 
-    # Aggregate rows: for every day×repo in range, ensure a row (zeros if none)
-    all_day_rows = {}  # (date, repo) -> row list
+    all_day_rows = {}
     all_details = []
 
     for repo in repos:
@@ -262,15 +311,13 @@ def collect_range(start: date, end: date, repos: list[str], core, ignored_bots,
                 total_prs += n
             all_details.extend(details)
 
-    # Write: skip days already present when skip_existing
     cur = start
     while cur <= end:
         day_s = cur.isoformat()
-        if skip_existing and day_s in existing:
-            cur += timedelta(days=1)
-            continue
         for repo in repos:
             key = (day_s, repo)
+            if skip_existing and key in existing_rows:
+                continue
             if key in all_day_rows:
                 with PR_TYPE_FILE.open("a", newline="") as f:
                     csv.writer(f).writerow(all_day_rows[key])
@@ -279,11 +326,11 @@ def collect_range(start: date, end: date, repos: list[str], core, ignored_bots,
         cur += timedelta(days=1)
 
     if all_details:
-        # Only write details for days we just collected
         with PR_TYPE_DETAILS_FILE.open("a", newline="") as f:
             w = csv.DictWriter(f, fieldnames=PR_TYPE_DETAILS_HEADER)
             for d in all_details:
-                if skip_existing and d["date"] in existing:
+                detail_key = (d["date"], d["repo"], str(d["number"]))
+                if skip_existing and detail_key in existing_details:
                     continue
                 w.writerow(d)
 
@@ -292,7 +339,7 @@ def collect_range(start: date, end: date, repos: list[str], core, ignored_bots,
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--date", help="Single day YYYY-MM-DD (default: yesterday UTC)")
+    p.add_argument("--date", help="Single day YYYY-MM-DD (default: yesterday)")
     p.add_argument("--from", dest="date_from", help="Backfill start YYYY-MM-DD")
     p.add_argument("--to", dest="date_to", help="Backfill end YYYY-MM-DD (inclusive)")
     p.add_argument("--repos", nargs="*", help="Limit to these repo names")
@@ -309,17 +356,16 @@ def main():
     else:
         repos = list_repos()
 
-    today = datetime.now(timezone.utc).date()
+    yesterday = date.today() - timedelta(days=1)
     if args.date_from:
         start = date.fromisoformat(args.date_from)
-        end = date.fromisoformat(args.date_to) if args.date_to else today - timedelta(days=1)
+        end = date.fromisoformat(args.date_to) if args.date_to else yesterday
     elif args.date:
         start = end = date.fromisoformat(args.date)
     else:
-        start = end = today - timedelta(days=1)
+        start = end = yesterday
 
     if args.force:
-        # Rebuild CSVs from scratch for a clean backfill
         with PR_TYPE_FILE.open("w", newline="") as f:
             csv.writer(f).writerow(PR_TYPE_HEADER)
         with PR_TYPE_DETAILS_FILE.open("w", newline="") as f:

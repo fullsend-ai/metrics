@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/lib.sh"
 
 START_DATE="${1:-2026-05-14}"
-END_DATE="${2:-$(date -u -d yesterday +%Y-%m-%d)}"
+END_DATE="${2:-$(date -d yesterday +%Y-%m-%d)}"
 
 echo "Backfilling PR type metrics from ${START_DATE} to ${END_DATE}..."
 
