@@ -223,3 +223,28 @@ median() {
   mid=$(( (count + 1) / 2 ))
   echo "$nums" | sed -n "${mid}p"
 }
+
+PR_TYPE_FILE="docs/pr-type.csv"
+PR_TYPE_DETAILS_FILE="docs/pr-type-details.csv"
+PR_TYPE_HEADER="date,repo,feat,fix,docs,ci,chore,test,perf,other,fix_core,fix_external,fix_bot,fix_unlinked"
+PR_TYPE_DETAILS_HEADER="date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url"
+
+ensure_pr_type_csv() {
+  mkdir -p docs
+  if [[ ! -f "$PR_TYPE_FILE" ]]; then
+    echo "$PR_TYPE_HEADER" > "$PR_TYPE_FILE"
+  fi
+  if [[ ! -f "$PR_TYPE_DETAILS_FILE" ]]; then
+    echo "$PR_TYPE_DETAILS_HEADER" > "$PR_TYPE_DETAILS_FILE"
+  fi
+}
+
+append_pr_type_row() {
+  echo "$1,$2,$3,$4,$5,$6,$7,$8,$9,${10},${11},${12},${13},${14}" >> "$PR_TYPE_FILE"
+}
+
+append_pr_type_detail() {
+  local date="$1" repo="$2" number="$3" title="$4" pr_type="$5" fix_source="$6" issue_number="$7" issue_author="$8" url="$9"
+  title="${title//\"/\"\"}"
+  echo "${date},${repo},${number},\"${title}\",${pr_type},${fix_source},${issue_number},${issue_author},${url}" >> "$PR_TYPE_DETAILS_FILE"
+}

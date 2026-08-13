@@ -45,6 +45,239 @@ body {
   margin: 0 auto;
 }
 
+body.page-delivered {
+  max-width: 1040px;
+}
+
+/* --- Top page tabs --- */
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-header .subtitle {
+  margin-bottom: 0;
+}
+
+.page-tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.page-tabs a {
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  color: var(--fg-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.page-tabs a:hover {
+  color: var(--fg);
+}
+
+.page-tabs a.active {
+  background: var(--bg);
+  color: var(--fg);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.stat-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.stat-hero .stat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  text-align: center;
+}
+
+.stat-hero .val {
+  font-size: 1.6rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+}
+
+.stat-hero .lbl {
+  color: var(--fg-light);
+  font-size: 0.72rem;
+  margin-top: 0.3rem;
+}
+
+.fix-buckets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+@media (max-width: 720px) {
+  .fix-buckets { grid-template-columns: 1fr; }
+}
+
+.fix-bucket {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.15rem 1rem;
+  text-align: center;
+  background: var(--surface);
+}
+
+.fix-bucket.core { border-color: color-mix(in srgb, var(--chart-1) 45%, var(--border)); }
+.fix-bucket.external { border-color: color-mix(in srgb, var(--chart-5) 45%, var(--border)); }
+.fix-bucket.bot { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
+
+.fix-bucket .pct {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.fix-bucket.core .pct { color: var(--chart-1); }
+.fix-bucket.external .pct { color: var(--chart-5); }
+.fix-bucket.bot .pct { color: var(--accent); }
+
+.fix-bucket .label {
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+
+.fix-bucket .sub {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--fg-light);
+}
+
+.period-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 800px) {
+  .period-grid { grid-template-columns: 1fr; }
+}
+
+.period-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+}
+
+.period-card .meta {
+  font-size: 0.75rem;
+  color: var(--fg-light);
+}
+
+.period-card .total {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  margin-top: 0.15rem;
+}
+
+.period-card .sub {
+  font-size: 0.75rem;
+  color: var(--fg-light);
+  margin-bottom: 0.75rem;
+}
+
+.period-card .bar-row {
+  display: grid;
+  grid-template-columns: 42px 1fr 40px;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0.3rem 0;
+  font-size: 0.75rem;
+}
+
+.period-card .bar-label { color: var(--fg-light); font-family: ui-monospace, monospace; }
+.period-card .bar-track {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.period-card .bar-fill { height: 100%; border-radius: 3px; }
+.period-card .bar-pct {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-light);
+}
+
+.period-card .fix-line {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--fg-light);
+  line-height: 1.4;
+}
+
+.stat-hero .stat-wide {
+  grid-column: span 2;
+  text-align: left;
+}
+
+.stat-hero .val-sm {
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.35;
+  margin-top: 0.15rem;
+}
+
+.chart-fix-follow {
+  margin-top: 1rem;
+  min-height: 260px;
+}
+
+.chart-tall #chart-pr-type {
+  min-height: 340px;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin-top: 0.65rem;
+  padding-left: 0.25rem;
+}
+
+.chart-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--fg-light);
+}
+
+.chart-legend-item .swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 /* --- Floating ToC --- */
 
 .toc {
