@@ -29,7 +29,7 @@ TYPES = ("feat", "fix", "docs", "ci", "chore", "test", "perf", "other")
 REPO_PATTERN = re.compile(r"^(\w+)(?:\([^)]+\))?!?:")
 ISSUE_TITLE = re.compile(r"^fix\(#(\d+)\)", re.I)
 ISSUE_BODY_QUALIFIED = re.compile(
-    r"(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+fullsend-ai/(fullsend|agents)#(\d+)",
+    r"(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+fullsend-ai/([\w.-]+)#(\d+)",
     re.I,
 )
 ISSUE_BODY_LOCAL = re.compile(

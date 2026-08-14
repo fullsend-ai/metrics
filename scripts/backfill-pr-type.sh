@@ -6,6 +6,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "${SCRIPT_DIR}/lib.sh"
 
+# PR type data starts 2026-05-14 (first deploy of this collector).
+# Other backfill scripts use 2026-04-06; this date is intentionally later.
 START_DATE="${1:-2026-05-14}"
 END_DATE="${2:-$(date -d yesterday +%Y-%m-%d)}"
 
