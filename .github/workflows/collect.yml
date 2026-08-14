@@ -61,6 +61,18 @@ jobs:
             ./scripts/collect-community.sh
           fi
 
+      - name: Collect PR type metrics
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_DATE: ${{ github.event.inputs.date }}
+          PR_TYPE_REPOS: fullsend,agents
+        run: |
+          if [[ -n "$INPUT_DATE" ]]; then
+            ./scripts/collect-pr-type.sh "$INPUT_DATE"
+          else
+            ./scripts/collect-pr-type.sh
+          fi
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"

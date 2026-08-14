@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivered PR Types — fullsend-ai metrics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body class="page-delivered">
+  <header class="page-header">
+    <div>
+      <h1>fullsend-ai metrics</h1>
+      <p class="subtitle">What kind of work we ship — and who filed the issues behind fixes</p>
+    </div>
+    <nav class="page-tabs" aria-label="Dashboard sections">
+      <a href="index.html">Overview</a>
+      <a href="delivered-pr-types.html" class="active">Delivered PR Types</a>
+    </nav>
+  </header>
+
+  <div class="controls" id="controls">
+    <button class="range-btn" data-days="30">30d</button>
+    <button class="range-btn active" data-days="90">90d</button>
+    <button class="range-btn" data-days="180">180d</button>
+    <button class="range-btn" data-days="0">All</button>
+    <select id="repo-filter">
+      <option value="__all__" selected>All repos (fullsend + agents)</option>
+      <option value="fullsend">fullsend</option>
+      <option value="agents">agents</option>
+    </select>
+    <label class="toggle-label"><input type="checkbox" id="weekends-toggle"> Show weekends &amp; holidays</label>
+    <span class="controls-sep"></span>
+    <span class="toggle-label">Smoothing:</span>
+    <button class="smooth-btn" data-days="0">None</button>
+    <button class="smooth-btn" data-days="7">7d avg</button>
+    <button class="smooth-btn active" data-days="28">28d avg</button>
+  </div>
+
+  <div class="stat-hero" id="hero"></div>
+
+  <div class="chart-section chart-tall">
+    <h2>Delivery mix</h2>
+    <p class="subtitle">Daily merged PR counts for the top 4 conventional-commit types · 28d smoothing · 90d default range</p>
+    <div id="chart-pr-type"></div>
+  </div>
+
+  <div class="chart-section">
+    <h2>Fix source</h2>
+    <p class="subtitle">Who filed the issue closed by a fix PR (linked fixes only)</p>
+    <div class="fix-buckets" id="fix-buckets"></div>
+    <div id="chart-fix-source" class="chart-fix-follow"></div>
+  </div>
+
+  <div class="tooltip" id="tooltip"></div>
+  <script src="delivered-pr-types.js"></script>
+</body>
+</html>
