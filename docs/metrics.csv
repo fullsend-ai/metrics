@@ -569,3 +569,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-13,agents,2,7,0,19,4,0,74.30,33
 2026-08-13,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-13,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-13,fullsend,24,18,1,31,19,0,13.20,80
+2026-08-13,.fullsend,1,1,0,0,1,0,1056.10,4
+2026-08-13,experiments,0,1,0,0,1,0,43.70,2
+2026-08-13,metrics,1,0,0,0,0,0,0,1
+2026-08-13,agents,2,7,0,19,4,0,74.30,32
+2026-08-13,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-13,autonomy-analysis,0,0,0,0,0,0,0,0

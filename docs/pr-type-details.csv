@@ -1101,3 +1101,28 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-12,fullsend,6023,fix(#737): validate all repos in mintToken before creating installation token,fix,core,737,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6023
 2026-08-12,fullsend,6017,chore(deps): update dependency svelte-check to v4.7.5,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6017
 2026-08-12,fullsend,5944,"fix(#5361): set span status from run outcome, not runErr alone",fix,external,5361,dhshah13,https://github.com/fullsend-ai/fullsend/pull/5944
+2026-08-13,fullsend,6199,fix(#6196): authenticate lookupAppID with env token when available,fix,core,6196,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6199
+2026-08-13,fullsend,6192,fix(#6190): use manifest fullsend_ref over binary version,fix,core,6190,ggallen,https://github.com/fullsend-ai/fullsend/pull/6192
+2026-08-13,fullsend,6189,fix(#6185): hardcode canonical mint URL in repos migrate,fix,core,6185,ggallen,https://github.com/fullsend-ai/fullsend/pull/6189
+2026-08-13,fullsend,6187,chore(deps): update experiments digest to 38734a2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6187
+2026-08-13,fullsend,6181,fix(#6180): retry WIF provider operations on HTTP 429,fix,core,6180,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6181
+2026-08-13,fullsend,6177,feat(#6176): add fullsend_ref support to GitLab forge infrastructure,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6177
+2026-08-13,fullsend,6171,test(#6168): stop BT steps from using install.State config indirection,test,,,,https://github.com/fullsend-ai/fullsend/pull/6171
+2026-08-13,fullsend,6167,ci(#5221): redact behaviour debug artifacts before upload,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6167
+2026-08-13,fullsend,6159,feat(#6158): add SkillEntry type for file-level skill overrides,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6159
+2026-08-13,fullsend,6138,docs(#2810): add patch coverage verification guidance for agents,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6138
+2026-08-13,fullsend,6136,feat(mint): add CF mint custom domain support,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6136
+2026-08-13,fullsend,6108,fix(#6052): raise HTTP timeout to 60s and retry on timeouts,fix,core,6052,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6108
+2026-08-13,fullsend,6106,fix(#6105): retry GetFileContent on 404 in post-install validation,fix,core,6105,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6106
+2026-08-13,fullsend,6071,test(#6057): inject clock into EnrollmentLayer to eliminate poll/retry sleeps,test,,,,https://github.com/fullsend-ai/fullsend/pull/6071
+2026-08-13,fullsend,6066,perf(#6060): make CreateWithRetry sleep injectable for tests,perf,,,,https://github.com/fullsend-ai/fullsend/pull/6066
+2026-08-13,fullsend,6065,test(#6058): inject timer in CI driver to eliminate poll sleeps,test,,,,https://github.com/fullsend-ai/fullsend/pull/6065
+2026-08-13,fullsend,6062,perf(#6059): make LiveGCFClient poll delay injectable for tests,perf,,,,https://github.com/fullsend-ai/fullsend/pull/6062
+2026-08-13,fullsend,6004,feat(#6002): add --signoff flag to github setup command,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6004
+2026-08-13,agents,784,docs(#782): add test flakiness guidance to retro-analysis skill,docs,,,,https://github.com/fullsend-ai/agents/pull/784
+2026-08-13,agents,757,feat(#756): add split action to triage for bundled issues,feat,,,,https://github.com/fullsend-ai/agents/pull/757
+2026-08-13,agents,747,docs(autonomy-readiness): tighten weak language in skill,docs,,,,https://github.com/fullsend-ai/agents/pull/747
+2026-08-13,agents,731,docs: harness env var literals are not hardcoded mistakes,docs,,,,https://github.com/fullsend-ai/agents/pull/731
+2026-08-13,agents,609,docs(#608): migrate off .fullsend/customized/skills/ per ADR 0064,docs,,,,https://github.com/fullsend-ai/agents/pull/609
+2026-08-13,agents,601,fix(#600): enforce allow_targets in post-retro.sh,fix,core,600,ralphbean,https://github.com/fullsend-ai/agents/pull/601
+2026-08-13,agents,491,feat: add CODE_AUTO_MERGE env var to post-code script,feat,,,,https://github.com/fullsend-ai/agents/pull/491
