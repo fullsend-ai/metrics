@@ -10574,3 +10574,89 @@ date,repo,type,event,number,title,url
 2026-08-13,agents,issue,closed,756,"Triage agent should support splitting a single issue into multiple independent same-repo issues",https://github.com/fullsend-ai/agents/issues/756
 2026-08-13,agents,issue,closed,608,"docs: migrate off .fullsend/customized/skills/ per ADR 0064",https://github.com/fullsend-ai/agents/issues/608
 2026-08-13,agents,issue,closed,600,"post-retro.sh doesn't respect create_issues.allow_targets",https://github.com/fullsend-ai/agents/issues/600
+2026-08-14,fullsend,pr,opened,6245,"docs(#6243): broaden doc-update rule to cover behavior and format changes",https://github.com/fullsend-ai/fullsend/pull/6245
+2026-08-14,fullsend,pr,opened,6242,"feat(#6240): add --forge and --base-url flags to post-review",https://github.com/fullsend-ai/fullsend/pull/6242
+2026-08-14,fullsend,pr,opened,6241,"feat(#6226): gate WIF secrets in per-repo shim by credential mode",https://github.com/fullsend-ai/fullsend/pull/6241
+2026-08-14,fullsend,pr,opened,6239,"feat(#6238): show short SHA with expected ref in repos status",https://github.com/fullsend-ai/fullsend/pull/6239
+2026-08-14,fullsend,pr,opened,6237,"docs: add ADR 0088 for tracker/forge harness config split",https://github.com/fullsend-ai/fullsend/pull/6237
+2026-08-14,fullsend,pr,opened,6235,"docs(#6232): add skill doc-integration checklist to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6235
+2026-08-14,fullsend,pr,opened,6234,"docs(#6231): require runtime discovery for agent/skill inventory refs",https://github.com/fullsend-ai/fullsend/pull/6234
+2026-08-14,fullsend,pr,opened,6230,"chore(#6228): add qodo pr-agent config to disable stale Go test rules",https://github.com/fullsend-ai/fullsend/pull/6230
+2026-08-14,fullsend,pr,opened,6227,"chore(deps): update dependency go to v1.26.6",https://github.com/fullsend-ai/fullsend/pull/6227
+2026-08-14,fullsend,pr,opened,6224,"feat(#6222): add credential mode model (wif/oidc/token) to repos commands",https://github.com/fullsend-ai/fullsend/pull/6224
+2026-08-14,fullsend,pr,opened,6223,"feat: gate agents tag on functional test validation",https://github.com/fullsend-ai/fullsend/pull/6223
+2026-08-14,fullsend,pr,opened,6221,"chore(deps): update experiments digest to 5fd7912",https://github.com/fullsend-ai/fullsend/pull/6221
+2026-08-14,fullsend,pr,opened,6220,"fix(#6219): resolve floating refs to SHAs in upgrade path",https://github.com/fullsend-ai/fullsend/pull/6220
+2026-08-14,fullsend,pr,opened,6218,"feat(#6188): add effort field for per-agent reasoning effort control",https://github.com/fullsend-ai/fullsend/pull/6218
+2026-08-14,fullsend,pr,merged,6239,"feat(#6238): show short SHA with expected ref in repos status",https://github.com/fullsend-ai/fullsend/pull/6239
+2026-08-14,fullsend,pr,merged,6224,"feat(#6222): add credential mode model (wif/oidc/token) to repos commands",https://github.com/fullsend-ai/fullsend/pull/6224
+2026-08-14,fullsend,pr,merged,6220,"fix(#6219): resolve floating refs to SHAs in upgrade path",https://github.com/fullsend-ai/fullsend/pull/6220
+2026-08-14,fullsend,pr,merged,6218,"feat(#6188): add effort field for per-agent reasoning effort control",https://github.com/fullsend-ai/fullsend/pull/6218
+2026-08-14,fullsend,pr,merged,6215,"fix(#6213): resolve floating refs to SHAs in upgrade path",https://github.com/fullsend-ai/fullsend/pull/6215
+2026-08-14,fullsend,pr,merged,6212,"fix(#6211)!: reject unknown fields in manifest YAML sections",https://github.com/fullsend-ai/fullsend/pull/6212
+2026-08-14,fullsend,pr,merged,6202,"feat(#6193): add author-fullsend-augmentations skill and BYOA docs",https://github.com/fullsend-ai/fullsend/pull/6202
+2026-08-14,fullsend,pr,merged,6147,"refactor(runtime): add OpenCode ndjson stream parser",https://github.com/fullsend-ai/fullsend/pull/6147
+2026-08-14,fullsend,pr,merged,6144,"feat(#5991): add fullsend issues get/post-comment commands",https://github.com/fullsend-ai/fullsend/pull/6144
+2026-08-14,fullsend,pr,merged,5895,"feat(mint): add opt-in scribe agent role",https://github.com/fullsend-ai/fullsend/pull/5895
+2026-08-14,fullsend,issue,opened,6244,"Tighten fullsend.yaml shim label filter to match only dispatch-routable labels",https://github.com/fullsend-ai/fullsend/issues/6244
+2026-08-14,fullsend,issue,opened,6243,"Broaden AGENTS.md doc-update rule to cover behavior and output format changes",https://github.com/fullsend-ai/fullsend/issues/6243
+2026-08-14,fullsend,issue,opened,6240,"Make `fullsend post-review` multi-forge (add --forge flag)",https://github.com/fullsend-ai/fullsend/issues/6240
+2026-08-14,fullsend,issue,opened,6238,"repos status: show short SHA with tag annotation",https://github.com/fullsend-ai/fullsend/issues/6238
+2026-08-14,fullsend,issue,opened,6236,"fullsend issues post-comment: findMarkedTrackerComment should filter by comment author to prevent marker spoofing",https://github.com/fullsend-ai/fullsend/issues/6236
+2026-08-14,fullsend,issue,opened,6233,"feat(postreview): add `VerifiedVariables` and `UncheckedVariables` fields to `ReviewFinding`",https://github.com/fullsend-ai/fullsend/issues/6233
+2026-08-14,fullsend,issue,opened,6232,"AGENTS.md: add doc-integration checklist for new skills",https://github.com/fullsend-ai/fullsend/issues/6232
+2026-08-14,fullsend,issue,opened,6231,"AGENTS.md: require runtime discovery for content referencing skill/agent inventories",https://github.com/fullsend-ai/fullsend/issues/6231
+2026-08-14,fullsend,issue,opened,6229,"Triage agent should verify implementation-level code snippets against actual source before finalizing plan",https://github.com/fullsend-ai/fullsend/issues/6229
+2026-08-14,fullsend,issue,opened,6228,"Update qodo-code-review Go convention pack to remove stale testify rules (TC-001/TC-002)",https://github.com/fullsend-ai/fullsend/issues/6228
+2026-08-14,fullsend,issue,opened,6226,"repos: scaffold template WIF gating and mint-administration docs for credential modes",https://github.com/fullsend-ai/fullsend/issues/6226
+2026-08-14,fullsend,issue,opened,6225,"repos: scaffold template WIF gating and mint-administration docs for credential modes",https://github.com/fullsend-ai/fullsend/issues/6225
+2026-08-14,fullsend,issue,opened,6222,"repos commands: add credential mode model (wif/oidc/token) for public mint compatibility",https://github.com/fullsend-ai/fullsend/issues/6222
+2026-08-14,fullsend,issue,opened,6219,"repos install: upgrade path writes floating ref string instead of resolved SHA",https://github.com/fullsend-ai/fullsend/issues/6219
+2026-08-14,fullsend,issue,closed,6238,"repos status: show short SHA with tag annotation",https://github.com/fullsend-ai/fullsend/issues/6238
+2026-08-14,fullsend,issue,closed,6225,"repos: scaffold template WIF gating and mint-administration docs for credential modes",https://github.com/fullsend-ai/fullsend/issues/6225
+2026-08-14,fullsend,issue,closed,6222,"repos commands: add credential mode model (wif/oidc/token) for public mint compatibility",https://github.com/fullsend-ai/fullsend/issues/6222
+2026-08-14,fullsend,issue,closed,6219,"repos install: upgrade path writes floating ref string instead of resolved SHA",https://github.com/fullsend-ai/fullsend/issues/6219
+2026-08-14,fullsend,issue,closed,6213,"repos install: upgrade phase skips floating refs instead of resolving to SHA",https://github.com/fullsend-ai/fullsend/issues/6213
+2026-08-14,fullsend,issue,closed,6211,"repos.yaml: silently ignores unknown fields in defaults and forge sections",https://github.com/fullsend-ai/fullsend/issues/6211
+2026-08-14,fullsend,issue,closed,6193,"Skill for creating and augmenting fullsend skills",https://github.com/fullsend-ai/fullsend/issues/6193
+2026-08-14,fullsend,issue,closed,6188,"harness: support configuring model reasoning effort per agent",https://github.com/fullsend-ai/fullsend/issues/6188
+2026-08-14,fullsend,issue,closed,5991,"Add `fullsend issues get`/`fullsend issues post-comment`, deprecate top-level `fullsend post-comment`",https://github.com/fullsend-ai/fullsend/issues/5991
+2026-08-14,.fullsend,pr,opened,164,"fix(scripts): scope hash update to agents repo sources only",https://github.com/fullsend-ai/.fullsend/pull/164
+2026-08-14,.fullsend,pr,merged,164,"fix(scripts): scope hash update to agents repo sources only",https://github.com/fullsend-ai/.fullsend/pull/164
+2026-08-14,.fullsend,pr,merged,163,"chore(deps): update fullsend-ai/agents digest to a8566cd",https://github.com/fullsend-ai/.fullsend/pull/163
+2026-08-14,experiments,pr,opened,52,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/52
+2026-08-14,experiments,pr,merged,52,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/52
+2026-08-14,metrics,pr,opened,9,"docs(#8): add repo-specific conventions to AGENTS.md",https://github.com/fullsend-ai/metrics/pull/9
+2026-08-14,metrics,pr,merged,7,"feat: add delivered PR type metrics and dashboard tab",https://github.com/fullsend-ai/metrics/pull/7
+2026-08-14,metrics,issue,opened,8,"Add AGENTS.md with repo-specific conventions and architecture decisions",https://github.com/fullsend-ai/metrics/issues/8
+2026-08-14,agents,pr,opened,813,"feat(#807): make code agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/813
+2026-08-14,agents,pr,opened,810,"fix(#809): disambiguate scope clause in correctness sub-agent",https://github.com/fullsend-ai/agents/pull/810
+2026-08-14,agents,pr,opened,806,"docs(#805): extend fix agent zero-trust to cover remediation text",https://github.com/fullsend-ai/agents/pull/806
+2026-08-14,agents,pr,opened,804,"chore: ignore openspec",https://github.com/fullsend-ai/agents/pull/804
+2026-08-14,agents,pr,merged,776,"feat: build fullsend from source in functional tests",https://github.com/fullsend-ai/agents/pull/776
+2026-08-14,agents,pr,merged,766,"fix(fix-agent): sync package registry policy with code agent",https://github.com/fullsend-ai/agents/pull/766
+2026-08-14,agents,pr,merged,752,"docs(issue-labels): add trigger phrase to description",https://github.com/fullsend-ai/agents/pull/752
+2026-08-14,agents,pr,merged,751,"docs(fix-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/751
+2026-08-14,agents,pr,merged,750,"docs(docs-review): add trigger phrase to description",https://github.com/fullsend-ai/agents/pull/750
+2026-08-14,agents,pr,merged,749,"docs(code-review): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/749
+2026-08-14,agents,pr,merged,748,"docs(code-implementation): tighten weak language and add trigger phrase",https://github.com/fullsend-ai/agents/pull/748
+2026-08-14,agents,pr,merged,686,"feat: make triage agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/686
+2026-08-14,agents,issue,opened,814,"Make review agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/814
+2026-08-14,agents,issue,opened,812,"Pre-retro should early-exit for PRs that close retro-originated issues",https://github.com/fullsend-ai/agents/issues/812
+2026-08-14,agents,issue,opened,811,"Review docs-currency sub-agent should scan sibling files when stale-doc drift is detected",https://github.com/fullsend-ai/agents/issues/811
+2026-08-14,agents,issue,opened,809,"Correctness sub-agent should not suppress beyond-diff findings under scope reasoning it does not own",https://github.com/fullsend-ai/agents/issues/809
+2026-08-14,agents,issue,opened,808,"Review agent should detect cross-variant drift for forge-specific skills",https://github.com/fullsend-ai/agents/issues/808
+2026-08-14,agents,issue,opened,807,"Make code agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/807
+2026-08-14,agents,issue,opened,805,"Fix agent should verify factual claims in review-suggested remediation text",https://github.com/fullsend-ai/agents/issues/805
+2026-08-14,agents,issue,opened,803,"Intent-coherence sub-agent should detect doc-only reframing of open issues as non-substantive resolution",https://github.com/fullsend-ai/agents/issues/803
+2026-08-14,agents,issue,opened,802,"Correctness sub-agent should detect GFM list-breaking insertions in Markdown files",https://github.com/fullsend-ai/agents/issues/802
+2026-08-14,agents,issue,opened,801,"Style-conventions sub-agent should cross-reference peer skill files for structural pattern consistency",https://github.com/fullsend-ai/agents/issues/801
+2026-08-14,agents,issue,opened,800,"feat: expose tested_sha output from functional-tests workflow_call",https://github.com/fullsend-ai/agents/issues/800
+2026-08-14,agents,issue,opened,799,"Retro agent post-script: add target_repo allowlist to limit cross-org issue filing destinations",https://github.com/fullsend-ai/agents/issues/799
+2026-08-14,agents,issue,opened,798,"Code agent should verify prescriptive code examples are semantically correct before committing documentation",https://github.com/fullsend-ai/agents/issues/798
+2026-08-14,agents,issue,opened,797,"Refine severity anchoring to code-area granularity within changed files",https://github.com/fullsend-ai/agents/issues/797
+2026-08-14,agents,issue,opened,796,"Review correctness sub-agent should detect test-infrastructure failures in shell-script test suites",https://github.com/fullsend-ai/agents/issues/796
+2026-08-14,agents,issue,opened,795,"Correctness sub-agent should grep for callers of modified shared validation functions to verify consumer completeness",https://github.com/fullsend-ai/agents/issues/795
+2026-08-14,agents,issue,opened,794,"Code agent should verify edge-case behavioral equivalence when replacing Go stdlib APIs",https://github.com/fullsend-ai/agents/issues/794
+2026-08-14,agents,issue,closed,775,"Build fullsend from source in functional tests instead of downloading release binary",https://github.com/fullsend-ai/agents/issues/775
+2026-08-14,agents,issue,closed,532,"Fix agent policy gaps with code agent",https://github.com/fullsend-ai/agents/issues/532

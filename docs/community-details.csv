@@ -1338,3 +1338,9 @@ date,repo,type,event,number,actor,title,url
 2026-08-13,metrics,pr,opened_core,7,ascerra,"feat: add delivered PR type metrics and dashboard tab",https://github.com/fullsend-ai/metrics/pull/7
 2026-08-13,agents,issue,opened_external,780,deboer-tim,"Code agent workflow block is overly restrictive",https://github.com/fullsend-ai/agents/issues/780
 2026-08-13,agents,pr,opened_core,776,maruiz93,"feat: build fullsend from source in functional tests",https://github.com/fullsend-ai/agents/pull/776
+2026-08-14,fullsend,pr,opened_core,6237,ralphbean,"docs: add ADR 0088 for tracker/forge harness config split",https://github.com/fullsend-ai/fullsend/pull/6237
+2026-08-14,fullsend,pr,opened_core,6223,maruiz93,"feat: gate agents tag on functional test validation",https://github.com/fullsend-ai/fullsend/pull/6223
+2026-08-14,.fullsend,pr,opened_core,164,ggallen,"fix(scripts): scope hash update to agents repo sources only",https://github.com/fullsend-ai/.fullsend/pull/164
+2026-08-14,experiments,pr,opened_core,52,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/52
+2026-08-14,agents,issue,closed_via_pr_external,532,deboer-tim,"Fix agent policy gaps with code agent",https://github.com/fullsend-ai/agents/issues/532
+2026-08-14,agents,pr,opened_core,804,ralphbean,"chore: ignore openspec",https://github.com/fullsend-ai/agents/pull/804

@@ -1126,3 +1126,21 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-13,agents,609,docs(#608): migrate off .fullsend/customized/skills/ per ADR 0064,docs,,,,https://github.com/fullsend-ai/agents/pull/609
 2026-08-13,agents,601,fix(#600): enforce allow_targets in post-retro.sh,fix,core,600,ralphbean,https://github.com/fullsend-ai/agents/pull/601
 2026-08-13,agents,491,feat: add CODE_AUTO_MERGE env var to post-code script,feat,,,,https://github.com/fullsend-ai/agents/pull/491
+2026-08-14,fullsend,6239,feat(#6238): show short SHA with expected ref in repos status,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6239
+2026-08-14,fullsend,6224,feat(#6222): add credential mode model (wif/oidc/token) to repos commands,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6224
+2026-08-14,fullsend,6220,fix(#6219): resolve floating refs to SHAs in upgrade path,fix,core,6219,ggallen,https://github.com/fullsend-ai/fullsend/pull/6220
+2026-08-14,fullsend,6218,feat(#6188): add effort field for per-agent reasoning effort control,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6218
+2026-08-14,fullsend,6215,fix(#6213): resolve floating refs to SHAs in upgrade path,fix,core,6213,ggallen,https://github.com/fullsend-ai/fullsend/pull/6215
+2026-08-14,fullsend,6212,fix(#6211)!: reject unknown fields in manifest YAML sections,fix,core,6211,ggallen,https://github.com/fullsend-ai/fullsend/pull/6212
+2026-08-14,fullsend,6202,feat(#6193): add author-fullsend-augmentations skill and BYOA docs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6202
+2026-08-14,fullsend,6147,refactor(runtime): add OpenCode ndjson stream parser,other,,,,https://github.com/fullsend-ai/fullsend/pull/6147
+2026-08-14,fullsend,6144,feat(#5991): add fullsend issues get/post-comment commands,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6144
+2026-08-14,fullsend,5895,feat(mint): add opt-in scribe agent role,feat,,,,https://github.com/fullsend-ai/fullsend/pull/5895
+2026-08-14,agents,776,feat: build fullsend from source in functional tests,feat,,,,https://github.com/fullsend-ai/agents/pull/776
+2026-08-14,agents,766,fix(fix-agent): sync package registry policy with code agent,fix,external,532,deboer-tim,https://github.com/fullsend-ai/agents/pull/766
+2026-08-14,agents,752,docs(issue-labels): add trigger phrase to description,docs,,,,https://github.com/fullsend-ai/agents/pull/752
+2026-08-14,agents,751,docs(fix-review): tighten weak language and add trigger phrase,docs,,,,https://github.com/fullsend-ai/agents/pull/751
+2026-08-14,agents,750,docs(docs-review): add trigger phrase to description,docs,,,,https://github.com/fullsend-ai/agents/pull/750
+2026-08-14,agents,749,docs(code-review): tighten weak language and add trigger phrase,docs,,,,https://github.com/fullsend-ai/agents/pull/749
+2026-08-14,agents,748,docs(code-implementation): tighten weak language and add trigger phrase,docs,,,,https://github.com/fullsend-ai/agents/pull/748
+2026-08-14,agents,686,feat: make triage agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/686

@@ -576,3 +576,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-13,agents,2,7,0,19,4,0,74.30,32
 2026-08-13,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-13,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-14,fullsend,14,10,0,14,9,0,15.10,83
+2026-08-14,.fullsend,1,2,0,0,0,0,0,4
+2026-08-14,experiments,1,1,0,0,0,0,0,2
+2026-08-14,metrics,1,1,0,1,0,0,25.40,1
+2026-08-14,agents,4,8,0,17,2,0,71.10,31
+2026-08-14,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-14,autonomy-analysis,0,0,0,0,0,0,0,0
