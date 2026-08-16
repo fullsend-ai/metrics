@@ -583,3 +583,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-14,agents,4,8,0,17,2,0,71.10,31
 2026-08-14,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-14,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-15,fullsend,6,4,0,2,4,0,4,83
+2026-08-15,.fullsend,1,1,0,0,0,0,11.90,3
+2026-08-15,experiments,0,0,0,0,0,0,0,2
+2026-08-15,metrics,0,0,0,0,0,0,0,1
+2026-08-15,agents,3,0,0,3,0,0,0,33
+2026-08-15,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-15,autonomy-analysis,0,0,0,0,0,0,0,0

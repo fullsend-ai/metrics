@@ -1144,3 +1144,7 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-14,agents,749,docs(code-review): tighten weak language and add trigger phrase,docs,,,,https://github.com/fullsend-ai/agents/pull/749
 2026-08-14,agents,748,docs(code-implementation): tighten weak language and add trigger phrase,docs,,,,https://github.com/fullsend-ai/agents/pull/748
 2026-08-14,agents,686,feat: make triage agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/686
+2026-08-15,fullsend,6252,fix(#6246)!: preserve SHA pinning only for already-pinned repos during upgrade,fix,core,6246,ggallen,https://github.com/fullsend-ai/fullsend/pull/6252
+2026-08-15,fullsend,6251,refactor(#5974): log matched PR numbers in dispatch existing-PR guard skip notice,other,,,,https://github.com/fullsend-ai/fullsend/pull/6251
+2026-08-15,fullsend,6242,feat(#6240): add --forge and --base-url flags to post-review,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6242
+2026-08-15,fullsend,6221,chore(deps): update experiments digest to 5fd7912,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6221

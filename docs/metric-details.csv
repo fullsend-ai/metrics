@@ -10660,3 +10660,27 @@ date,repo,type,event,number,title,url
 2026-08-14,agents,issue,opened,794,"Code agent should verify edge-case behavioral equivalence when replacing Go stdlib APIs",https://github.com/fullsend-ai/agents/issues/794
 2026-08-14,agents,issue,closed,775,"Build fullsend from source in functional tests instead of downloading release binary",https://github.com/fullsend-ai/agents/issues/775
 2026-08-14,agents,issue,closed,532,"Fix agent policy gaps with code agent",https://github.com/fullsend-ai/agents/issues/532
+2026-08-15,fullsend,pr,opened,6253,"chore(deps): update dependency svelte-check to v4.7.6",https://github.com/fullsend-ai/fullsend/pull/6253
+2026-08-15,fullsend,pr,opened,6252,"fix(#6246)!: preserve SHA pinning only for already-pinned repos during upgrade",https://github.com/fullsend-ai/fullsend/pull/6252
+2026-08-15,fullsend,pr,opened,6251,"refactor(#5974): log matched PR numbers in dispatch existing-PR guard skip notice",https://github.com/fullsend-ai/fullsend/pull/6251
+2026-08-15,fullsend,pr,opened,6250,"fix(#5536): use is_bot for bot-author detection in fix eligibility",https://github.com/fullsend-ai/fullsend/pull/6250
+2026-08-15,fullsend,pr,opened,6249,"chore(deps): update dependency svelte to v5.56.9",https://github.com/fullsend-ai/fullsend/pull/6249
+2026-08-15,fullsend,pr,opened,6248,"docs(#6247): add error-handling and constant-usage conventions to go-code.md",https://github.com/fullsend-ai/fullsend/pull/6248
+2026-08-15,fullsend,pr,merged,6252,"fix(#6246)!: preserve SHA pinning only for already-pinned repos during upgrade",https://github.com/fullsend-ai/fullsend/pull/6252
+2026-08-15,fullsend,pr,merged,6251,"refactor(#5974): log matched PR numbers in dispatch existing-PR guard skip notice",https://github.com/fullsend-ai/fullsend/pull/6251
+2026-08-15,fullsend,pr,merged,6242,"feat(#6240): add --forge and --base-url flags to post-review",https://github.com/fullsend-ai/fullsend/pull/6242
+2026-08-15,fullsend,pr,merged,6221,"chore(deps): update experiments digest to 5fd7912",https://github.com/fullsend-ai/fullsend/pull/6221
+2026-08-15,fullsend,issue,opened,6247,"Add Go error-handling and constant-usage conventions to go-code.md",https://github.com/fullsend-ai/fullsend/issues/6247
+2026-08-15,fullsend,issue,opened,6246,"refactor: preserve SHA pinning only for already-pinned repos during upgrade",https://github.com/fullsend-ai/fullsend/issues/6246
+2026-08-15,fullsend,issue,closed,6246,"refactor: preserve SHA pinning only for already-pinned repos during upgrade",https://github.com/fullsend-ai/fullsend/issues/6246
+2026-08-15,fullsend,issue,closed,6240,"Make `fullsend post-review` multi-forge (add --forge flag)",https://github.com/fullsend-ai/fullsend/issues/6240
+2026-08-15,fullsend,issue,closed,6007,"Fix agent guard misidentifies GitHub App bot PRs as human-authored",https://github.com/fullsend-ai/fullsend/issues/6007
+2026-08-15,fullsend,issue,closed,5974,"Code dispatch existing-PR guard uses bare substring search, causing false-positive blocks",https://github.com/fullsend-ai/fullsend/issues/5974
+2026-08-15,.fullsend,pr,opened,165,"chore(deps): update fullsend-ai/agents digest to 693ed83",https://github.com/fullsend-ai/.fullsend/pull/165
+2026-08-15,.fullsend,pr,merged,165,"chore(deps): update fullsend-ai/agents digest to 693ed83",https://github.com/fullsend-ai/.fullsend/pull/165
+2026-08-15,agents,pr,opened,820,"feat(#818): make prioritize agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/820
+2026-08-15,agents,pr,opened,817,"feat(#816): make retro agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/817
+2026-08-15,agents,pr,opened,815,"feat(#814): make review agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/815
+2026-08-15,agents,issue,opened,819,"Code agent should independently assess conventional commit type rather than inheriting from issue title",https://github.com/fullsend-ai/agents/issues/819
+2026-08-15,agents,issue,opened,818,"Make prioritize agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/818
+2026-08-15,agents,issue,opened,816,"feat: make retro agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/816

@@ -1344,3 +1344,5 @@ date,repo,type,event,number,actor,title,url
 2026-08-14,experiments,pr,opened_core,52,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/52
 2026-08-14,agents,issue,closed_via_pr_external,532,deboer-tim,"Fix agent policy gaps with code agent",https://github.com/fullsend-ai/agents/issues/532
 2026-08-14,agents,pr,opened_core,804,ralphbean,"chore: ignore openspec",https://github.com/fullsend-ai/agents/pull/804
+2026-08-15,fullsend,pr,opened_core,6251,ggallen,"refactor(#5974): log matched PR numbers in dispatch existing-PR guard skip notice",https://github.com/fullsend-ai/fullsend/pull/6251
+2026-08-15,fullsend,pr,opened_core,6250,ggallen,"fix(#5536): use is_bot for bot-author detection in fix eligibility",https://github.com/fullsend-ai/fullsend/pull/6250
