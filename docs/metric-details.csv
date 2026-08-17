@@ -10684,3 +10684,38 @@ date,repo,type,event,number,title,url
 2026-08-15,agents,issue,opened,819,"Code agent should independently assess conventional commit type rather than inheriting from issue title",https://github.com/fullsend-ai/agents/issues/819
 2026-08-15,agents,issue,opened,818,"Make prioritize agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/818
 2026-08-15,agents,issue,opened,816,"feat: make retro agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/816
+2026-08-16,fullsend,pr,opened,6267,"fix(#6266): skip non-source artifacts in lint-mint-embed-sync",https://github.com/fullsend-ai/fullsend/pull/6267
+2026-08-16,fullsend,pr,opened,6265,"feat(#6263): offload RSA crypto to host Web Crypto API for WASM",https://github.com/fullsend-ai/fullsend/pull/6265
+2026-08-16,fullsend,pr,opened,6264,"perf(#6262): eliminate net/http and crypto from WASM build",https://github.com/fullsend-ai/fullsend/pull/6264
+2026-08-16,fullsend,pr,opened,6261,"feat(#6256): default hosted mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/pull/6261
+2026-08-16,fullsend,pr,opened,6260,"test(#6169): suite uses unified Driver for repo allocate/deallocate/finalize",https://github.com/fullsend-ai/fullsend/pull/6260
+2026-08-16,fullsend,pr,opened,6258,"fix(#6257): remove credential mode model, make inference secrets unconditional",https://github.com/fullsend-ai/fullsend/pull/6258
+2026-08-16,fullsend,pr,opened,6255,"refactor(#812): unify mintcore handler construction via getEnv injection",https://github.com/fullsend-ai/fullsend/pull/6255
+2026-08-16,fullsend,pr,opened,6254,"chore(deps): update dependency eslint-plugin-svelte to v3.23.0",https://github.com/fullsend-ai/fullsend/pull/6254
+2026-08-16,fullsend,pr,merged,6261,"feat(#6256): default hosted mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/pull/6261
+2026-08-16,fullsend,pr,merged,6260,"test(#6169): suite uses unified Driver for repo allocate/deallocate/finalize",https://github.com/fullsend-ai/fullsend/pull/6260
+2026-08-16,fullsend,pr,merged,6258,"fix(#6257): remove credential mode model, make inference secrets unconditional",https://github.com/fullsend-ai/fullsend/pull/6258
+2026-08-16,fullsend,pr,merged,6203,"fix(#6201): detect merge-queue membership regardless of labels",https://github.com/fullsend-ai/fullsend/pull/6203
+2026-08-16,fullsend,pr,closed,2519,"refactor(#2512): propagate discovery errors and address review findings",https://github.com/fullsend-ai/fullsend/pull/2519
+2026-08-16,fullsend,pr,closed,2515,"test(#2511): strengthen agent-field assertions after ADR-0045 Phase 4",https://github.com/fullsend-ai/fullsend/pull/2515
+2026-08-16,fullsend,issue,opened,6266,"lint-mint-embed-sync: skip non-Go-source artifacts like coverage.out",https://github.com/fullsend-ai/fullsend/issues/6266
+2026-08-16,fullsend,issue,opened,6263,"mintcore: spike — offload RSA crypto to Worker Web Crypto and measure WASM size savings",https://github.com/fullsend-ai/fullsend/issues/6263
+2026-08-16,fullsend,issue,opened,6262,"mintcore: WASM artifact exceeds CF Workers free-tier limit (blocks CF mint / behaviour CI)",https://github.com/fullsend-ai/fullsend/issues/6262
+2026-08-16,fullsend,issue,opened,6259,"fix(ci): post-fix gitleaks scan false-positives when fix agent merges or rebases main",https://github.com/fullsend-ai/fullsend/issues/6259
+2026-08-16,fullsend,issue,opened,6257,"fix: remove credential mode model, separate mint mode from inference requirements",https://github.com/fullsend-ai/fullsend/issues/6257
+2026-08-16,fullsend,issue,opened,6256,"feat: default hosted mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/issues/6256
+2026-08-16,fullsend,issue,closed,6263,"mintcore: spike — offload RSA crypto to Worker Web Crypto and measure WASM size savings",https://github.com/fullsend-ai/fullsend/issues/6263
+2026-08-16,fullsend,issue,closed,6262,"mintcore: WASM artifact exceeds CF Workers free-tier limit (blocks CF mint / behaviour CI)",https://github.com/fullsend-ai/fullsend/issues/6262
+2026-08-16,fullsend,issue,closed,6257,"fix: remove credential mode model, separate mint mode from inference requirements",https://github.com/fullsend-ai/fullsend/issues/6257
+2026-08-16,fullsend,issue,closed,6256,"feat: default hosted mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/issues/6256
+2026-08-16,fullsend,issue,closed,6226,"repos: scaffold template WIF gating and mint-administration docs for credential modes",https://github.com/fullsend-ai/fullsend/issues/6226
+2026-08-16,fullsend,issue,closed,6201,"nextwork: detect merge-queue membership regardless of ready-for-merge label",https://github.com/fullsend-ai/fullsend/issues/6201
+2026-08-16,fullsend,issue,closed,6169,"test(behaviour): suite uses one install Driver for repo allocate/deallocate/finalize",https://github.com/fullsend-ai/fullsend/issues/6169
+2026-08-16,fullsend,issue,closed,1145,"feat: default --mint-url to fullsend-ai hosted mint and skip provisioning by default",https://github.com/fullsend-ai/fullsend/issues/1145
+2026-08-16,.fullsend,pr,opened,166,"fix(deps): update qualityflow agent pin to f6311b4",https://github.com/fullsend-ai/.fullsend/pull/166
+2026-08-16,agents,pr,opened,823,"fix(#821): add commit-existence gate before declaring success",https://github.com/fullsend-ai/agents/pull/823
+2026-08-16,agents,issue,opened,826,"Fix agent should flag uncertainty rather than fabricating rationale in code comments",https://github.com/fullsend-ai/agents/issues/826
+2026-08-16,agents,issue,opened,825,"Triage agent: detect open PRs in the same subsystem before labeling ready-to-code on regression bugs",https://github.com/fullsend-ai/agents/issues/825
+2026-08-16,agents,issue,opened,824,"Cross-repo-contracts sub-agent should verify external consumers before flagging breaking API changes",https://github.com/fullsend-ai/agents/issues/824
+2026-08-16,agents,issue,opened,822,"post-code.sh: detect and recover staged-but-uncommitted agent changes",https://github.com/fullsend-ai/agents/issues/822
+2026-08-16,agents,issue,opened,821,"Code-implementation skill: add commit-existence gate before declaring success",https://github.com/fullsend-ai/agents/issues/821

@@ -1148,3 +1148,7 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-15,fullsend,6251,refactor(#5974): log matched PR numbers in dispatch existing-PR guard skip notice,other,,,,https://github.com/fullsend-ai/fullsend/pull/6251
 2026-08-15,fullsend,6242,feat(#6240): add --forge and --base-url flags to post-review,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6242
 2026-08-15,fullsend,6221,chore(deps): update experiments digest to 5fd7912,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6221
+2026-08-16,fullsend,6261,feat(#6256): default hosted mint URL to mint.fullsend.sh,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6261
+2026-08-16,fullsend,6260,test(#6169): suite uses unified Driver for repo allocate/deallocate/finalize,test,,,,https://github.com/fullsend-ai/fullsend/pull/6260
+2026-08-16,fullsend,6258,"fix(#6257): remove credential mode model, make inference secrets unconditional",fix,core,6257,ggallen,https://github.com/fullsend-ai/fullsend/pull/6258
+2026-08-16,fullsend,6203,fix(#6201): detect merge-queue membership regardless of labels,fix,core,6201,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6203
