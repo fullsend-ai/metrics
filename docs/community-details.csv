@@ -1346,3 +1346,10 @@ date,repo,type,event,number,actor,title,url
 2026-08-14,agents,pr,opened_core,804,ralphbean,"chore: ignore openspec",https://github.com/fullsend-ai/agents/pull/804
 2026-08-15,fullsend,pr,opened_core,6251,ggallen,"refactor(#5974): log matched PR numbers in dispatch existing-PR guard skip notice",https://github.com/fullsend-ai/fullsend/pull/6251
 2026-08-15,fullsend,pr,opened_core,6250,ggallen,"fix(#5536): use is_bot for bot-author detection in fix eligibility",https://github.com/fullsend-ai/fullsend/pull/6250
+2026-08-17,fullsend,issue,closed_other_external,5516,Benkapner,"feat(eval): add rework rate tracking for agent PRs",https://github.com/fullsend-ai/fullsend/issues/5516
+2026-08-17,fullsend,pr,opened_core,6290,rh-hemartin,"fix: reapply mint.fullsend.sh as default hosted mint URL",https://github.com/fullsend-ai/fullsend/pull/6290
+2026-08-17,fullsend,pr,opened_core,6285,ralphbean,"feat(harness): implement CEL-guarded overlays (ADR 0088)",https://github.com/fullsend-ai/fullsend/pull/6285
+2026-08-17,fullsend,pr,opened_core,6281,rh-hemartin,"docs(#6280): remove stale mint enrollment block from getting started",https://github.com/fullsend-ai/fullsend/pull/6281
+2026-08-17,fullsend,pr,opened_core,6279,rh-hemartin,"fix(#6178): bump actions/cache to v6.1.0, add actions:write to harness-dispatch",https://github.com/fullsend-ai/fullsend/pull/6279
+2026-08-17,fullsend,pr,opened_core,6272,ralphbean,"chore: add ""jira"" as a valid forge platform key",https://github.com/fullsend-ai/fullsend/pull/6272
+2026-08-17,agents,pr,opened_core,827,ralphbean,"feat(triage): add Jira Cloud tracker support",https://github.com/fullsend-ai/agents/pull/827

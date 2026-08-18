@@ -597,3 +597,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-16,agents,1,0,0,5,0,0,0,35
 2026-08-16,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-16,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-17,fullsend,15,21,5,22,18,0,55.10,68
+2026-08-17,.fullsend,1,0,0,0,0,0,0,6
+2026-08-17,experiments,0,0,0,0,0,0,0,2
+2026-08-17,metrics,0,0,0,1,0,0,0,1
+2026-08-17,agents,6,3,0,23,4,0,596,34
+2026-08-17,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-17,autonomy-analysis,0,0,0,0,0,0,0,0

@@ -1152,3 +1152,27 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-16,fullsend,6260,test(#6169): suite uses unified Driver for repo allocate/deallocate/finalize,test,,,,https://github.com/fullsend-ai/fullsend/pull/6260
 2026-08-16,fullsend,6258,"fix(#6257): remove credential mode model, make inference secrets unconditional",fix,core,6257,ggallen,https://github.com/fullsend-ai/fullsend/pull/6258
 2026-08-16,fullsend,6203,fix(#6201): detect merge-queue membership regardless of labels,fix,core,6201,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6203
+2026-08-17,fullsend,6289,fix(#6288): fetch forge resources only for the active platform,fix,core,6288,ggallen,https://github.com/fullsend-ai/fullsend/pull/6289
+2026-08-17,fullsend,6283,docs(#6282): update old Cloud Run mint URL to mint.fullsend.sh,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6283
+2026-08-17,fullsend,6277,docs(#6276): document WASM binary size constraints for mintcore changes,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6277
+2026-08-17,fullsend,6274,fix(#6273): add CODE_ALLOWED_TARGET_BRANCHES to GitLab agent template,fix,core,6273,ggallen,https://github.com/fullsend-ai/fullsend/pull/6274
+2026-08-17,fullsend,6271,feat(#6269): derive inference project number in repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6271
+2026-08-17,fullsend,6267,fix(#6266): skip non-source artifacts in lint-mint-embed-sync,fix,bot,6266,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6267
+2026-08-17,fullsend,6255,refactor(#812): unify mintcore handler construction via getEnv injection,other,,,,https://github.com/fullsend-ai/fullsend/pull/6255
+2026-08-17,fullsend,6254,chore(deps): update dependency eslint-plugin-svelte to v3.23.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6254
+2026-08-17,fullsend,6253,chore(deps): update dependency svelte-check to v4.7.6,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6253
+2026-08-17,fullsend,6249,chore(deps): update dependency svelte to v5.56.9,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6249
+2026-08-17,fullsend,6248,docs(#6247): add error-handling and constant-usage conventions to go-code.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6248
+2026-08-17,fullsend,6245,docs(#6243): broaden doc-update rule to cover behavior and format changes,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6245
+2026-08-17,fullsend,6235,docs(#6232): add skill doc-integration checklist to AGENTS.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6235
+2026-08-17,fullsend,6227,chore(deps): update dependency go to v1.26.6,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6227
+2026-08-17,fullsend,6223,feat: gate agents tag on functional test validation,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6223
+2026-08-17,fullsend,6207,docs(#2653): add maintainer onboarding process,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6207
+2026-08-17,fullsend,6162,chore(deps): update dependency cytoscape to v3.34.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6162
+2026-08-17,fullsend,6146,chore(deps): update dependency globals to v17.11.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6146
+2026-08-17,fullsend,6111,docs(#6099): document code/fix image and policy sync guidance,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6111
+2026-08-17,fullsend,6103,docs(#6094): add multi-repo polling section to Jira guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6103
+2026-08-17,fullsend,6067,perf(#6056): add injectable afterFunc to forge clients for fast retry tests,perf,,,,https://github.com/fullsend-ai/fullsend/pull/6067
+2026-08-17,agents,813,feat(#807): make code agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/813
+2026-08-17,agents,400,ci(#388): fail roll-up when tests are skipped on pull_request_target,ci,,,,https://github.com/fullsend-ai/agents/pull/400
+2026-08-17,agents,211,refactor(sandbox): migrate to local-path providers and profiles,other,,,,https://github.com/fullsend-ai/agents/pull/211

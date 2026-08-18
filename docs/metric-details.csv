@@ -10719,3 +10719,122 @@ date,repo,type,event,number,title,url
 2026-08-16,agents,issue,opened,824,"Cross-repo-contracts sub-agent should verify external consumers before flagging breaking API changes",https://github.com/fullsend-ai/agents/issues/824
 2026-08-16,agents,issue,opened,822,"post-code.sh: detect and recover staged-but-uncommitted agent changes",https://github.com/fullsend-ai/agents/issues/822
 2026-08-16,agents,issue,opened,821,"Code-implementation skill: add commit-existence gate before declaring success",https://github.com/fullsend-ai/agents/issues/821
+2026-08-17,fullsend,pr,opened,6303,"fix(#6302): route remaining time.After calls through afterFunc",https://github.com/fullsend-ai/fullsend/pull/6303
+2026-08-17,fullsend,pr,opened,6301,"fix(#6299): detect zero-test-file packages in coverage skill",https://github.com/fullsend-ai/fullsend/pull/6301
+2026-08-17,fullsend,pr,opened,6293,"chore(deps): update dependency typescript-eslint to v8.67.0",https://github.com/fullsend-ai/fullsend/pull/6293
+2026-08-17,fullsend,pr,opened,6290,"fix: reapply mint.fullsend.sh as default hosted mint URL",https://github.com/fullsend-ai/fullsend/pull/6290
+2026-08-17,fullsend,pr,opened,6289,"fix(#6288): fetch forge resources only for the active platform",https://github.com/fullsend-ai/fullsend/pull/6289
+2026-08-17,fullsend,pr,opened,6285,"feat(harness): implement CEL-guarded overlays (ADR 0088)",https://github.com/fullsend-ai/fullsend/pull/6285
+2026-08-17,fullsend,pr,opened,6284,"feat(dispatch): route /fs-plan-tests to the qualityflow stage",https://github.com/fullsend-ai/fullsend/pull/6284
+2026-08-17,fullsend,pr,opened,6283,"docs(#6282): update old Cloud Run mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/pull/6283
+2026-08-17,fullsend,pr,opened,6281,"docs(#6280): remove stale mint enrollment block from getting started",https://github.com/fullsend-ai/fullsend/pull/6281
+2026-08-17,fullsend,pr,opened,6279,"fix(#6178): bump actions/cache to v6.1.0, add actions:write to harness-dispatch",https://github.com/fullsend-ai/fullsend/pull/6279
+2026-08-17,fullsend,pr,opened,6277,"docs(#6276): document WASM binary size constraints for mintcore changes",https://github.com/fullsend-ai/fullsend/pull/6277
+2026-08-17,fullsend,pr,opened,6274,"fix(#6273): add CODE_ALLOWED_TARGET_BRANCHES to GitLab agent template",https://github.com/fullsend-ai/fullsend/pull/6274
+2026-08-17,fullsend,pr,opened,6272,"chore: add ""jira"" as a valid forge platform key",https://github.com/fullsend-ai/fullsend/pull/6272
+2026-08-17,fullsend,pr,opened,6271,"feat(#6269): derive inference project number in repos install",https://github.com/fullsend-ai/fullsend/pull/6271
+2026-08-17,fullsend,pr,opened,6270,"docs(#6268): add deployment-status annotations to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6270
+2026-08-17,fullsend,pr,merged,6289,"fix(#6288): fetch forge resources only for the active platform",https://github.com/fullsend-ai/fullsend/pull/6289
+2026-08-17,fullsend,pr,merged,6283,"docs(#6282): update old Cloud Run mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/pull/6283
+2026-08-17,fullsend,pr,merged,6277,"docs(#6276): document WASM binary size constraints for mintcore changes",https://github.com/fullsend-ai/fullsend/pull/6277
+2026-08-17,fullsend,pr,merged,6274,"fix(#6273): add CODE_ALLOWED_TARGET_BRANCHES to GitLab agent template",https://github.com/fullsend-ai/fullsend/pull/6274
+2026-08-17,fullsend,pr,merged,6271,"feat(#6269): derive inference project number in repos install",https://github.com/fullsend-ai/fullsend/pull/6271
+2026-08-17,fullsend,pr,merged,6267,"fix(#6266): skip non-source artifacts in lint-mint-embed-sync",https://github.com/fullsend-ai/fullsend/pull/6267
+2026-08-17,fullsend,pr,merged,6255,"refactor(#812): unify mintcore handler construction via getEnv injection",https://github.com/fullsend-ai/fullsend/pull/6255
+2026-08-17,fullsend,pr,merged,6254,"chore(deps): update dependency eslint-plugin-svelte to v3.23.0",https://github.com/fullsend-ai/fullsend/pull/6254
+2026-08-17,fullsend,pr,merged,6253,"chore(deps): update dependency svelte-check to v4.7.6",https://github.com/fullsend-ai/fullsend/pull/6253
+2026-08-17,fullsend,pr,merged,6249,"chore(deps): update dependency svelte to v5.56.9",https://github.com/fullsend-ai/fullsend/pull/6249
+2026-08-17,fullsend,pr,merged,6248,"docs(#6247): add error-handling and constant-usage conventions to go-code.md",https://github.com/fullsend-ai/fullsend/pull/6248
+2026-08-17,fullsend,pr,merged,6245,"docs(#6243): broaden doc-update rule to cover behavior and format changes",https://github.com/fullsend-ai/fullsend/pull/6245
+2026-08-17,fullsend,pr,merged,6235,"docs(#6232): add skill doc-integration checklist to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6235
+2026-08-17,fullsend,pr,merged,6227,"chore(deps): update dependency go to v1.26.6",https://github.com/fullsend-ai/fullsend/pull/6227
+2026-08-17,fullsend,pr,merged,6223,"feat: gate agents tag on functional test validation",https://github.com/fullsend-ai/fullsend/pull/6223
+2026-08-17,fullsend,pr,merged,6207,"docs(#2653): add maintainer onboarding process",https://github.com/fullsend-ai/fullsend/pull/6207
+2026-08-17,fullsend,pr,merged,6162,"chore(deps): update dependency cytoscape to v3.34.1",https://github.com/fullsend-ai/fullsend/pull/6162
+2026-08-17,fullsend,pr,merged,6146,"chore(deps): update dependency globals to v17.11.0",https://github.com/fullsend-ai/fullsend/pull/6146
+2026-08-17,fullsend,pr,merged,6111,"docs(#6099): document code/fix image and policy sync guidance",https://github.com/fullsend-ai/fullsend/pull/6111
+2026-08-17,fullsend,pr,merged,6103,"docs(#6094): add multi-repo polling section to Jira guide",https://github.com/fullsend-ai/fullsend/pull/6103
+2026-08-17,fullsend,pr,merged,6067,"perf(#6056): add injectable afterFunc to forge clients for fast retry tests",https://github.com/fullsend-ai/fullsend/pull/6067
+2026-08-17,fullsend,pr,closed,6281,"docs(#6280): remove stale mint enrollment block from getting started",https://github.com/fullsend-ai/fullsend/pull/6281
+2026-08-17,fullsend,pr,closed,6270,"docs(#6268): add deployment-status annotations to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6270
+2026-08-17,fullsend,pr,closed,6208,"fix(#2247): compare managed content below sentinel as text",https://github.com/fullsend-ai/fullsend/pull/6208
+2026-08-17,fullsend,pr,closed,6195,"perf(#6179): skip WIF provisioning when provider already exists",https://github.com/fullsend-ai/fullsend/pull/6195
+2026-08-17,fullsend,pr,closed,5973,"docs: pull Agents docs directly",https://github.com/fullsend-ai/fullsend/pull/5973
+2026-08-17,fullsend,issue,opened,6307,"docs(mintcore): document platform accessors, factories, and deploy-time wiring",https://github.com/fullsend-ai/fullsend/issues/6307
+2026-08-17,fullsend,issue,opened,6306,"refactor(mint): internalize mintPEM and deploy-time wiring",https://github.com/fullsend-ai/fullsend/issues/6306
+2026-08-17,fullsend,issue,opened,6305,"refactor(mintcore): internalize mintEnv, mintHTTP, and niladic verifier factories",https://github.com/fullsend-ai/fullsend/issues/6305
+2026-08-17,fullsend,issue,opened,6304,"refactor(mintcore): resolve platform strategies at deploy build time",https://github.com/fullsend-ai/fullsend/issues/6304
+2026-08-17,fullsend,issue,opened,6302,"Fix remaining time.After calls not routed through afterFunc in GitHub LiveClient",https://github.com/fullsend-ai/fullsend/issues/6302
+2026-08-17,fullsend,issue,opened,6300,"Dispatch should consider security signals when routing review for opted-out repos",https://github.com/fullsend-ai/fullsend/issues/6300
+2026-08-17,fullsend,issue,opened,6299,"check-patch-coverage skill should detect Go packages with zero test files",https://github.com/fullsend-ai/fullsend/issues/6299
+2026-08-17,fullsend,issue,opened,6298,"Enforce companion test file for new scripts in CI",https://github.com/fullsend-ai/fullsend/issues/6298
+2026-08-17,fullsend,issue,opened,6297,"Extend retro skip logic to merged PRs with zero fullsend agent involvement",https://github.com/fullsend-ai/fullsend/issues/6297
+2026-08-17,fullsend,issue,opened,6296,"Remove temporary ""jira"" from validForgeKeys once tracker-scoped design lands",https://github.com/fullsend-ai/fullsend/issues/6296
+2026-08-17,fullsend,issue,opened,6295,"Code agent pre-script PR check matches PRs for unrelated issues",https://github.com/fullsend-ai/fullsend/issues/6295
+2026-08-17,fullsend,issue,opened,6292,"fullsend run: extract harness lifecycle into shared execution engine with pluggable backends",https://github.com/fullsend-ai/fullsend/issues/6292
+2026-08-17,fullsend,issue,opened,6291,"AGENTS.md: add reverse-direction docs-to-code verification guidance",https://github.com/fullsend-ai/fullsend/issues/6291
+2026-08-17,fullsend,issue,opened,6288,"Harness loader fetches forge-specific resources for all platforms, not just the active one",https://github.com/fullsend-ai/fullsend/issues/6288
+2026-08-17,fullsend,issue,opened,6282,"docs: update old Cloud Run mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/issues/6282
+2026-08-17,fullsend,issue,opened,6280,"docs: remove stale mint enrollment block from getting started guide",https://github.com/fullsend-ai/fullsend/issues/6280
+2026-08-17,fullsend,issue,opened,6278,"Set Renovate rebaseWhen to 'conflicted' for lockfile-only patch updates to reduce spurious review dispatches",https://github.com/fullsend-ai/fullsend/issues/6278
+2026-08-17,fullsend,issue,opened,6276,"Document WASM binary size constraint in agent-facing guidance for mintcore changes",https://github.com/fullsend-ai/fullsend/issues/6276
+2026-08-17,fullsend,issue,opened,6275,"Automate cross-forge harness passthrough variable parity test",https://github.com/fullsend-ai/fullsend/issues/6275
+2026-08-17,fullsend,issue,opened,6273,"GitLab agent template missing CODE_ALLOWED_TARGET_BRANCHES (harness env validation failure)",https://github.com/fullsend-ai/fullsend/issues/6273
+2026-08-17,fullsend,issue,opened,6269,"repos install: derive inference project number from project ID",https://github.com/fullsend-ai/fullsend/issues/6269
+2026-08-17,fullsend,issue,opened,6268,"Add deployment-status annotations to AGENTS.md for subsystems without production consumers",https://github.com/fullsend-ai/fullsend/issues/6268
+2026-08-17,fullsend,issue,closed,6295,"Code agent pre-script PR check matches PRs for unrelated issues",https://github.com/fullsend-ai/fullsend/issues/6295
+2026-08-17,fullsend,issue,closed,6288,"Harness loader fetches forge-specific resources for all platforms, not just the active one",https://github.com/fullsend-ai/fullsend/issues/6288
+2026-08-17,fullsend,issue,closed,6282,"docs: update old Cloud Run mint URL to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/issues/6282
+2026-08-17,fullsend,issue,closed,6276,"Document WASM binary size constraint in agent-facing guidance for mintcore changes",https://github.com/fullsend-ai/fullsend/issues/6276
+2026-08-17,fullsend,issue,closed,6273,"GitLab agent template missing CODE_ALLOWED_TARGET_BRANCHES (harness env validation failure)",https://github.com/fullsend-ai/fullsend/issues/6273
+2026-08-17,fullsend,issue,closed,6269,"repos install: derive inference project number from project ID",https://github.com/fullsend-ai/fullsend/issues/6269
+2026-08-17,fullsend,issue,closed,6268,"Add deployment-status annotations to AGENTS.md for subsystems without production consumers",https://github.com/fullsend-ai/fullsend/issues/6268
+2026-08-17,fullsend,issue,closed,6266,"lint-mint-embed-sync: skip non-Go-source artifacts like coverage.out",https://github.com/fullsend-ai/fullsend/issues/6266
+2026-08-17,fullsend,issue,closed,6247,"Add Go error-handling and constant-usage conventions to go-code.md",https://github.com/fullsend-ai/fullsend/issues/6247
+2026-08-17,fullsend,issue,closed,6243,"Broaden AGENTS.md doc-update rule to cover behavior and output format changes",https://github.com/fullsend-ai/fullsend/issues/6243
+2026-08-17,fullsend,issue,closed,6232,"AGENTS.md: add doc-integration checklist for new skills",https://github.com/fullsend-ai/fullsend/issues/6232
+2026-08-17,fullsend,issue,closed,6173,"Gate agents version tag on functional test validation at release time",https://github.com/fullsend-ai/fullsend/issues/6173
+2026-08-17,fullsend,issue,closed,6099,"docs: add admonition for image and network policy synchronization between code and fix agents",https://github.com/fullsend-ai/fullsend/issues/6099
+2026-08-17,fullsend,issue,closed,6094,"docs(jira): document multi-repo polling patterns",https://github.com/fullsend-ai/fullsend/issues/6094
+2026-08-17,fullsend,issue,closed,6056,"forge: github/gitlab client retry backoff sleeps for real in unit tests",https://github.com/fullsend-ai/fullsend/issues/6056
+2026-08-17,fullsend,issue,closed,5516,"feat(eval): add rework rate tracking for agent PRs",https://github.com/fullsend-ai/fullsend/issues/5516
+2026-08-17,fullsend,issue,closed,2653,"Document and formalize maintainer onboarding process",https://github.com/fullsend-ai/fullsend/issues/2653
+2026-08-17,fullsend,issue,closed,812,"Unify mintcore handler construction across entrypoints",https://github.com/fullsend-ai/fullsend/issues/812
+2026-08-17,.fullsend,pr,opened,167,"feat(qualityflow): stage workflow + dispatch case so /fs-plan-tests runs in per-org mode",https://github.com/fullsend-ai/.fullsend/pull/167
+2026-08-17,metrics,issue,opened,10,"feat: collect human rework rate for bot-merged PRs",https://github.com/fullsend-ai/metrics/issues/10
+2026-08-17,agents,pr,opened,855,"fix(#854): update stale policy refs and mask GITLAB_TOKEN in post-code",https://github.com/fullsend-ai/agents/pull/855
+2026-08-17,agents,pr,opened,846,"docs(#843): document event_payload for run-to-PR correlation",https://github.com/fullsend-ai/agents/pull/846
+2026-08-17,agents,pr,opened,845,"docs(#844): add skill documentation altitude guidance",https://github.com/fullsend-ai/agents/pull/845
+2026-08-17,agents,pr,opened,835,"docs(#832): prohibit unsubstantiated verification claims in review output",https://github.com/fullsend-ai/agents/pull/835
+2026-08-17,agents,pr,opened,834,"feat(retro): add flapping detection to retro analysis skill",https://github.com/fullsend-ai/agents/pull/834
+2026-08-17,agents,pr,opened,827,"feat(triage): add Jira Cloud tracker support",https://github.com/fullsend-ai/agents/pull/827
+2026-08-17,agents,pr,merged,813,"feat(#807): make code agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/813
+2026-08-17,agents,pr,merged,400,"ci(#388): fail roll-up when tests are skipped on pull_request_target",https://github.com/fullsend-ai/agents/pull/400
+2026-08-17,agents,pr,merged,211,"refactor(sandbox): migrate to local-path providers and profiles",https://github.com/fullsend-ai/agents/pull/211
+2026-08-17,agents,issue,opened,854,"Fix stale doc refs and add GITLAB_TOKEN log masking (PR #813 follow-up)",https://github.com/fullsend-ai/agents/issues/854
+2026-08-17,agents,issue,opened,853,"Code-implementation skill Step 4 reuses rejected branch without consulting rejection feedback",https://github.com/fullsend-ai/agents/issues/853
+2026-08-17,agents,issue,opened,852,"Security sub-agent should flag USER directive removal in Containerfiles",https://github.com/fullsend-ai/agents/issues/852
+2026-08-17,agents,issue,opened,851,"Fix agent should implement authorization fixes, not document them as known limitations",https://github.com/fullsend-ai/agents/issues/851
+2026-08-17,agents,issue,opened,850,"Add .gitignore to REVIEW_PROTECTED_PATHS as defense-in-depth",https://github.com/fullsend-ai/agents/issues/850
+2026-08-17,agents,issue,opened,849,"pr-review protected-path check should detect .gitignore suppression of protected paths",https://github.com/fullsend-ai/agents/issues/849
+2026-08-17,agents,issue,opened,848,"Triage agent should consolidate nightly recurrences into the root cause issue when a fix PR exists",https://github.com/fullsend-ai/agents/issues/848
+2026-08-17,agents,issue,opened,847,"Code agent pre-script PR check matches PRs for unrelated issues",https://github.com/fullsend-ai/agents/issues/847
+2026-08-17,agents,issue,opened,844,"AGENTS.md should include altitude guidance for skill documentation",https://github.com/fullsend-ai/agents/issues/844
+2026-08-17,agents,issue,opened,843,"Retro-analysis skill should document event_payload for run-to-PR/commit correlation",https://github.com/fullsend-ai/agents/issues/843
+2026-08-17,agents,issue,opened,841,"review: skip challenger subagent for clean re-reviews",https://github.com/fullsend-ai/agents/issues/841
+2026-08-17,agents,issue,opened,842,"review: inline sub-agent definitions to eliminate sequential file reads",https://github.com/fullsend-ai/agents/issues/842
+2026-08-17,agents,issue,opened,840,"review: batch env var reads in orchestrator startup",https://github.com/fullsend-ai/agents/issues/840
+2026-08-17,agents,issue,opened,839,"review: apply scope constraints consistently to subagents",https://github.com/fullsend-ai/agents/issues/839
+2026-08-17,agents,issue,opened,837,"review: pre-create output directory in pre-review.sh",https://github.com/fullsend-ai/agents/issues/837
+2026-08-17,agents,issue,opened,838,"review: move orchestrator deterministic setup to pre-script",https://github.com/fullsend-ai/agents/issues/838
+2026-08-17,agents,issue,opened,836,"review agent: reduce wall-clock time (currently 8-19 min)",https://github.com/fullsend-ai/agents/issues/836
+2026-08-17,agents,issue,opened,833,"Review agent should check PR CI status before finalizing verdict",https://github.com/fullsend-ai/agents/issues/833
+2026-08-17,agents,issue,opened,832,"Review agent should not produce unsubstantiated verification claims",https://github.com/fullsend-ai/agents/issues/832
+2026-08-17,agents,issue,opened,831,"Review scope-authorization sub-agent should soften findings when the linked issue was bot-authored",https://github.com/fullsend-ai/agents/issues/831
+2026-08-17,agents,issue,opened,830,"Correctness sub-agent full-scope guarantee should apply on first reviews, not just re-reviews",https://github.com/fullsend-ai/agents/issues/830
+2026-08-17,agents,issue,opened,829,"Review agent should inspect externally-sourced content when reviewing content-vendoring scripts",https://github.com/fullsend-ai/agents/issues/829
+2026-08-17,agents,issue,opened,828,"Fix agent should validate changed function signatures compile across all Go modules before committing",https://github.com/fullsend-ai/agents/issues/828
+2026-08-17,agents,issue,closed,836,"review agent: reduce wall-clock time (currently 8-19 min)",https://github.com/fullsend-ai/agents/issues/836
+2026-08-17,agents,issue,closed,822,"post-code.sh: detect and recover staged-but-uncommitted agent changes",https://github.com/fullsend-ai/agents/issues/822
+2026-08-17,agents,issue,closed,807,"Make code agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/807
+2026-08-17,agents,issue,closed,388,"ci(functional-tests): complete job reports SUCCESS when all tests are skipped",https://github.com/fullsend-ai/agents/issues/388
