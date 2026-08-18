@@ -2,13 +2,28 @@
   "use strict";
 
   const PR_TYPE_KEYS = ["feat", "fix", "docs", "ci", "chore", "test", "perf", "other"];
-  // Concrete hex — CSS vars are unreliable as SVG fill in some browsers
+  // Resolve theme tokens to concrete colors for SVG (CSS vars as fill attrs are unreliable).
+  function themeColor(name, fallback) {
+    const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return v || fallback;
+  }
   const TYPE_COLORS = {
-    feat: "#6b93f7", fix: "#ff453a", docs: "#9775fa", ci: "#f5c842",
-    chore: "#8e8e93", test: "#4fbc6b", perf: "#f4845f", other: "#5c5c5e",
+    feat: themeColor("--chart-1", "#5cb3ff"),
+    fix: themeColor("--negative", "#f87171"),
+    docs: "#9775fa",
+    ci: themeColor("--chart-2", "#f5c842"),
+    chore: "#8e8e93",
+    test: themeColor("--positive", "#4ade80"),
+    perf: themeColor("--chart-3", "#ff8f5c"),
+    other: "#5c5c5e",
   };
   const FIX_KEYS = ["core", "external", "bot"];
-  const FIX_COLORS = { core: "#6b93f7", external: "#4fbc6b", bot: "#f4845f" };
+  // Must match .fix-bucket.{core,external,bot} in style.css (chart-1 / chart-5 / accent).
+  const FIX_COLORS = {
+    core: themeColor("--chart-1", "#5cb3ff"),
+    external: themeColor("--chart-5", "#2dd4bf"),
+    bot: themeColor("--accent", "#c4ff0e"),
+  };
   const FIX_LABELS = {
     core: "Core team filed",
     external: "External human filed",
