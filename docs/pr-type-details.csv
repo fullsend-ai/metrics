@@ -1176,3 +1176,30 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-17,agents,813,feat(#807): make code agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/813
 2026-08-17,agents,400,ci(#388): fail roll-up when tests are skipped on pull_request_target,ci,,,,https://github.com/fullsend-ai/agents/pull/400
 2026-08-17,agents,211,refactor(sandbox): migrate to local-path providers and profiles,other,,,,https://github.com/fullsend-ai/agents/pull/211
+2026-08-18,fullsend,6345,"fix(#6344): fix GitLab review agent status comments, URL resolution, token source, and prior review",fix,core,6344,ggallen,https://github.com/fullsend-ai/fullsend/pull/6345
+2026-08-18,fullsend,6342,fix(#6341): use manifest fullsend_ref in repos migrate scaffold,fix,core,6341,ggallen,https://github.com/fullsend-ai/fullsend/pull/6342
+2026-08-18,fullsend,6338,fix(#6337): add SHA ancestry check to upgrade downgrade guard,fix,core,6337,ggallen,https://github.com/fullsend-ai/fullsend/pull/6338
+2026-08-18,fullsend,6336,refactor(#6305): internalize mintEnv and static HTTPDoer,other,,,,https://github.com/fullsend-ai/fullsend/pull/6336
+2026-08-18,fullsend,6332,fix(#6331): merge with existing manifest in repos migrate,fix,core,6331,ggallen,https://github.com/fullsend-ai/fullsend/pull/6332
+2026-08-18,fullsend,6324,fix(#6323): skip fullsend_ref drift when symbolic refs match,fix,core,6323,ggallen,https://github.com/fullsend-ai/fullsend/pull/6324
+2026-08-18,fullsend,6315,refactor(#6312): promote OIDC audience to shared const,other,,,,https://github.com/fullsend-ai/fullsend/pull/6315
+2026-08-18,fullsend,6313,refactor(#6170): fold RepoPool and RepoEnsurer into install drivers,other,,,,https://github.com/fullsend-ai/fullsend/pull/6313
+2026-08-18,fullsend,6309,chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to c9da135,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6309
+2026-08-18,fullsend,6293,chore(deps): update dependency typescript-eslint to v8.67.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6293
+2026-08-18,fullsend,6290,fix: reapply mint.fullsend.sh as default hosted mint URL,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/6290
+2026-08-18,fullsend,6272,"chore: add ""jira"" as a valid forge platform key",chore,,,,https://github.com/fullsend-ai/fullsend/pull/6272
+2026-08-18,fullsend,6237,docs!: add ADR 0088 for CEL-guarded overlays in the harness schema,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6237
+2026-08-18,fullsend,6131,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 26d2558,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6131
+2026-08-18,fullsend,6110,fix(deps): resolve OpenShell digest lookup,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/6110
+2026-08-18,fullsend,6107,fix(deps): update module google.golang.org/protobuf to v1.36.12,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/6107
+2026-08-18,fullsend,6079,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.234,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6079
+2026-08-18,fullsend,5961,feat(#582): support exit code 78 as neutral pre-script skip,feat,,,,https://github.com/fullsend-ai/fullsend/pull/5961
+2026-08-18,fullsend,5951,chore: add reproducible GitLab Runner VM setup with OCI CA hook,chore,,,,https://github.com/fullsend-ai/fullsend/pull/5951
+2026-08-18,fullsend,5776,fix(#5774): retry commitFiles on stale tree SHA 422,fix,core,5774,ralphbean,https://github.com/fullsend-ai/fullsend/pull/5776
+2026-08-18,fullsend,5765,docs(adr): add ADR 0089 — PR-level risk assessment scoring,docs,,,,https://github.com/fullsend-ai/fullsend/pull/5765
+2026-08-18,agents,874,chore: update fullsend per-repo installation,chore,,,,https://github.com/fullsend-ai/agents/pull/874
+2026-08-18,agents,873,chore: update fullsend per-repo installation,chore,,,,https://github.com/fullsend-ai/agents/pull/873
+2026-08-18,agents,855,fix(#854): update stale policy refs and mask GITLAB_TOKEN in post-code,fix,core,854,ggallen,https://github.com/fullsend-ai/agents/pull/855
+2026-08-18,agents,827,feat(triage): add Jira Cloud tracker support,feat,,,,https://github.com/fullsend-ai/agents/pull/827
+2026-08-18,agents,753,docs(pr-review): tighten weak language and add trigger phrase,docs,,,,https://github.com/fullsend-ai/agents/pull/753
+2026-08-18,agents,481,fix(#479): add create-on-missing fallback for ready-for-review label,fix,core,479,waynesun09,https://github.com/fullsend-ai/agents/pull/481

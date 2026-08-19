@@ -604,3 +604,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-17,agents,6,3,0,23,4,0,596,34
 2026-08-17,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-17,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-18,fullsend,22,21,3,23,19,0,22.60,64
+2026-08-18,.fullsend,4,5,1,0,0,0,0.10,3
+2026-08-18,experiments,1,1,0,0,0,0,0,2
+2026-08-18,metrics,1,0,0,0,0,0,0,2
+2026-08-18,agents,4,6,0,16,3,0,2.20,33
+2026-08-18,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-18,autonomy-analysis,0,0,0,0,0,0,0,0

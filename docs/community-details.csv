@@ -1353,3 +1353,21 @@ date,repo,type,event,number,actor,title,url
 2026-08-17,fullsend,pr,opened_core,6279,rh-hemartin,"fix(#6178): bump actions/cache to v6.1.0, add actions:write to harness-dispatch",https://github.com/fullsend-ai/fullsend/pull/6279
 2026-08-17,fullsend,pr,opened_core,6272,ralphbean,"chore: add ""jira"" as a valid forge platform key",https://github.com/fullsend-ai/fullsend/pull/6272
 2026-08-17,agents,pr,opened_core,827,ralphbean,"feat(triage): add Jira Cloud tracker support",https://github.com/fullsend-ai/agents/pull/827
+2026-08-18,fullsend,issue,opened_external,6330,deboer-tim,"Simplify options for configuring, customizing, and BYO agent",https://github.com/fullsend-ai/fullsend/issues/6330
+2026-08-18,fullsend,issue,opened_external,6328,deboer-tim,"Remove ADRs from user documentation",https://github.com/fullsend-ai/fullsend/issues/6328
+2026-08-18,fullsend,issue,opened_external,6326,deboer-tim,"Simplify BYO Agent doc",https://github.com/fullsend-ai/fullsend/issues/6326
+2026-08-18,fullsend,issue,closed_other_external,5949,dhshah13,"sandbox: extend env denylist to telemetry and runtime control variables",https://github.com/fullsend-ai/fullsend/issues/5949
+2026-08-18,fullsend,issue,closed_other_external,5948,dhshah13,"feat: implement Level 3 distributed tracing — content capture",https://github.com/fullsend-ai/fullsend/issues/5948
+2026-08-18,fullsend,issue,closed_other_external,3313,deboer-tim,"Triage agent should use GitHub issue types",https://github.com/fullsend-ai/fullsend/issues/3313
+2026-08-18,fullsend,pr,opened_core,6314,ascerra,"chore(skills): add user forum What's New recap skill",https://github.com/fullsend-ai/fullsend/pull/6314
+2026-08-18,.fullsend,pr,opened_core,171,ggallen,"chore: unenroll agents from per-org config",https://github.com/fullsend-ai/.fullsend/pull/171
+2026-08-18,.fullsend,pr,opened_core,170,ggallen,"chore: unenroll metrics from per-org config",https://github.com/fullsend-ai/.fullsend/pull/170
+2026-08-18,.fullsend,pr,opened_core,169,rh-hemartin,"Update workflows and agents",https://github.com/fullsend-ai/.fullsend/pull/169
+2026-08-18,experiments,pr,opened_core,53,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/53
+2026-08-18,metrics,pr,opened_core,11,ascerra,"fix: align delivered-pr-types chart colors with bucket cards",https://github.com/fullsend-ai/metrics/pull/11
+2026-08-18,agents,issue,opened_external,871,deboer-tim,"Split issue skill should be able to create sub/related issues",https://github.com/fullsend-ai/agents/issues/871
+2026-08-18,agents,issue,opened_external,870,deboer-tim,"Split issue skill should keep originator informed",https://github.com/fullsend-ai/agents/issues/870
+2026-08-18,agents,issue,opened_external,869,deboer-tim,"Ability to deliver one issue via multiple PRs",https://github.com/fullsend-ai/agents/issues/869
+2026-08-18,agents,pr,opened_core,874,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/agents/pull/874
+2026-08-18,agents,pr,opened_core,873,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/agents/pull/873
+2026-08-18,agents,pr,opened_core,861,maruiz93,"feat(risk): add PR risk assessment scoring to review pipeline",https://github.com/fullsend-ai/agents/pull/861
