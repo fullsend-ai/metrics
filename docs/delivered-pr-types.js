@@ -7,23 +7,28 @@
     const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     return v || fallback;
   }
-  const TYPE_COLORS = {
-    feat: themeColor("--chart-1", "#5cb3ff"),
-    fix: themeColor("--negative", "#f87171"),
-    docs: "#9775fa",
-    ci: themeColor("--chart-2", "#f5c842"),
-    chore: "#8e8e93",
-    test: themeColor("--positive", "#4ade80"),
-    perf: themeColor("--chart-3", "#ff8f5c"),
-    other: "#5c5c5e",
-  };
+  // Re-resolved on each render / color-scheme change so charts track live CSS tokens.
+  function resolveTypeColors() {
+    return {
+      feat: themeColor("--chart-1", "#5cb3ff"),
+      fix: themeColor("--negative", "#f87171"),
+      docs: themeColor("--type-docs", "#9775fa"),
+      ci: themeColor("--chart-2", "#f5c842"),
+      chore: themeColor("--type-chore", "#8e8e93"),
+      test: themeColor("--positive", "#4ade80"),
+      perf: themeColor("--chart-3", "#ff8f5c"),
+      other: themeColor("--type-other", "#5c5c5e"),
+    };
+  }
   const FIX_KEYS = ["core", "external", "bot"];
   // Must match .fix-bucket.{core,external,bot} in style.css (chart-1 / chart-5 / accent).
-  const FIX_COLORS = {
-    core: themeColor("--chart-1", "#5cb3ff"),
-    external: themeColor("--chart-5", "#2dd4bf"),
-    bot: themeColor("--accent", "#c4ff0e"),
-  };
+  function resolveFixColors() {
+    return {
+      core: themeColor("--chart-1", "#5cb3ff"),
+      external: themeColor("--chart-5", "#2dd4bf"),
+      bot: themeColor("--accent", "#c4ff0e"),
+    };
+  }
   const FIX_LABELS = {
     core: "Core team filed",
     external: "External human filed",
@@ -222,7 +227,7 @@
     });
   }
 
-  function renderHero(t) {
+  function renderHero(t, typeColors) {
     const topType = PR_TYPE_KEYS.slice().sort((a, b) => t[b] - t[a])[0];
     const topPct = t.merged ? (100 * t[topType] / t.merged).toFixed(1) : "0.0";
     const typeBits = PR_TYPE_KEYS
@@ -231,10 +236,12 @@
       .slice(0, 4)
       .map(k => `${k} ${(100 * t[k] / (t.merged || 1)).toFixed(0)}%`)
       .join(" · ");
+    const fixColor = typeColors.fix;
+    const topColor = typeColors[topType] || typeColors.feat;
     document.getElementById("hero").innerHTML = `
       <div class="stat"><div class="val">${t.merged.toLocaleString()}</div><div class="lbl">Merged PRs</div></div>
-      <div class="stat"><div class="val" style="color:#ff453a">${t.fix}</div><div class="lbl">Fix PRs</div></div>
-      <div class="stat"><div class="val" style="color:#6b93f7">${topPct}%</div><div class="lbl">Top type: ${topType}</div></div>
+      <div class="stat"><div class="val" style="color:${fixColor}">${t.fix}</div><div class="lbl">Fix PRs</div></div>
+      <div class="stat"><div class="val" style="color:${topColor}">${topPct}%</div><div class="lbl">Top type: ${topType}</div></div>
       <div class="stat stat-wide"><div class="val-sm">${typeBits || "—"}</div><div class="lbl">Mix in selected range</div></div>`;
   }
 
@@ -251,6 +258,8 @@
   }
 
   function render() {
+    const typeColors = resolveTypeColors();
+    const fixColors = resolveFixColors();
     const exact = filterDaily(false);
     const smoothed = filterDaily(true);
     const t = totals(exact);
@@ -262,10 +271,10 @@
       bot: d.fix_bot || 0,
     })).filter(d => d.core + d.external + d.bot > 0);
 
-    renderHero(t);
+    renderHero(t, typeColors);
     renderBuckets(t);
-    renderLineCounts("#chart-pr-type", smoothed, top4, TYPE_COLORS, null, 340);
-    renderLineCounts("#chart-fix-source", fixDaily, FIX_KEYS, FIX_COLORS, FIX_LABELS, 260);
+    renderLineCounts("#chart-pr-type", smoothed, top4, typeColors, null, 340);
+    renderLineCounts("#chart-fix-source", fixDaily, FIX_KEYS, fixColors, FIX_LABELS, 260);
   }
 
   document.querySelectorAll(".range-btn").forEach(btn => {
@@ -294,5 +303,12 @@
   });
 
   window.addEventListener("resize", () => render());
+  // Cards use live CSS vars; charts need a re-resolve + redraw when the scheme flips.
+  const colorScheme = window.matchMedia("(prefers-color-scheme: light)");
+  if (typeof colorScheme.addEventListener === "function") {
+    colorScheme.addEventListener("change", () => render());
+  } else if (typeof colorScheme.addListener === "function") {
+    colorScheme.addListener(() => render());
+  }
   render();
 })();
