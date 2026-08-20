@@ -1371,3 +1371,17 @@ date,repo,type,event,number,actor,title,url
 2026-08-18,agents,pr,opened_core,874,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/agents/pull/874
 2026-08-18,agents,pr,opened_core,873,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/agents/pull/873
 2026-08-18,agents,pr,opened_core,861,maruiz93,"feat(risk): add PR risk assessment scoring to review pipeline",https://github.com/fullsend-ai/agents/pull/861
+2026-08-19,fullsend,issue,closed_via_pr_external,6328,deboer-tim,"Remove ADRs from user documentation",https://github.com/fullsend-ai/fullsend/issues/6328
+2026-08-19,fullsend,pr,opened_core,6399,ggallen,"fix(#6397): add missing status comment params to prioritize job",https://github.com/fullsend-ai/fullsend/pull/6399
+2026-08-19,fullsend,pr,opened_core,6383,ascerra,"docs(glossary): customization vocabulary for agents and skills",https://github.com/fullsend-ai/fullsend/pull/6383
+2026-08-19,fullsend,pr,opened_core,6379,ggallen,"ci: add dispatch workflow to trigger scaffold sync",https://github.com/fullsend-ai/fullsend/pull/6379
+2026-08-19,fullsend,pr,opened_core,6378,ascerra,"docs(adr): add ADR 0091 always-on harness skills",https://github.com/fullsend-ai/fullsend/pull/6378
+2026-08-19,fullsend,pr,opened_core,6364,ifireball,"ci(e2e): bind behaviour job to dev and stage environments",https://github.com/fullsend-ai/fullsend/pull/6364
+2026-08-19,fullsend,pr,opened_core,6356,ralphbean,"feat(workflows): extract harness-run into reusable workflow",https://github.com/fullsend-ai/fullsend/pull/6356
+2026-08-19,fullsend,pr,opened_core,6355,waynesun09,"refactor(runtime): make sandbox tool hooks and runner capabilities runtime-neutral",https://github.com/fullsend-ai/fullsend/pull/6355
+2026-08-19,.fullsend,pr,opened_core,175,ggallen,"chore: migrate sync workflows from app-id to client-id",https://github.com/fullsend-ai/.fullsend/pull/175
+2026-08-19,.fullsend,pr,opened_core,174,ggallen,"Replace renovate agent digest tracking with sync workflow",https://github.com/fullsend-ai/.fullsend/pull/174
+2026-08-19,.fullsend,pr,opened_core,172,ggallen,"chore(deps): update fullsend-ai/agents digest to 816b89b",https://github.com/fullsend-ai/.fullsend/pull/172
+2026-08-19,agents,pr,opened_core,883,maruiz93,"fix(#880): resolve retro agent provider credential conflict",https://github.com/fullsend-ai/agents/pull/883
+2026-08-19,agents,pr,opened_core,882,ggallen,"chore: add dispatch workflow to trigger agent digest sync",https://github.com/fullsend-ai/agents/pull/882
+2026-08-19,agents,pr,opened_core,876,ralphbean,"chore: check JIRA vars before making api calls",https://github.com/fullsend-ai/agents/pull/876

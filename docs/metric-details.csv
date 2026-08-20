@@ -10968,3 +10968,97 @@ date,repo,type,event,number,title,url
 2026-08-18,agents,issue,closed,862,"AGENTS.md should document the bundled-vs-non-bundled script runtime invariant",https://github.com/fullsend-ai/agents/issues/862
 2026-08-18,agents,issue,closed,854,"Fix stale doc refs and add GITLAB_TOKEN log masking (PR #813 follow-up)",https://github.com/fullsend-ai/agents/issues/854
 2026-08-18,agents,issue,closed,479,"Port fullsend PR 5657 (ready-for-review label create-on-missing) to the live post-code.sh in this repo",https://github.com/fullsend-ai/agents/issues/479
+2026-08-19,fullsend,pr,opened,6399,"fix(#6397): add missing status comment params to prioritize job",https://github.com/fullsend-ai/fullsend/pull/6399
+2026-08-19,fullsend,pr,opened,6398,"docs(#6160): extract harness field reference into living doc",https://github.com/fullsend-ai/fullsend/pull/6398
+2026-08-19,fullsend,pr,opened,6396,"fix(#6386): pin agent fallback to installed version via FULLSEND_UPSTREAM_REF",https://github.com/fullsend-ai/fullsend/pull/6396
+2026-08-19,fullsend,pr,opened,6395,"feat(#2161)!: add per-repo uninstall to github uninstall command",https://github.com/fullsend-ai/fullsend/pull/6395
+2026-08-19,fullsend,pr,opened,6394,"docs(#6392): present repos uninstall as primary per-repo teardown method",https://github.com/fullsend-ai/fullsend/pull/6394
+2026-08-19,fullsend,pr,opened,6389,"ci(#6387): skip cancelled/skipped artifacts in WaitForHarnessAgent",https://github.com/fullsend-ai/fullsend/pull/6389
+2026-08-19,fullsend,pr,opened,6388,"docs(#6385): add Cursor Origin entry to landscape doc",https://github.com/fullsend-ai/fullsend/pull/6388
+2026-08-19,fullsend,pr,opened,6383,"docs(glossary): customization vocabulary for agents and skills",https://github.com/fullsend-ai/fullsend/pull/6383
+2026-08-19,fullsend,pr,opened,6382,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to a7e505b",https://github.com/fullsend-ai/fullsend/pull/6382
+2026-08-19,fullsend,pr,opened,6379,"ci: add dispatch workflow to trigger scaffold sync",https://github.com/fullsend-ai/fullsend/pull/6379
+2026-08-19,fullsend,pr,opened,6378,"docs(adr): add ADR 0091 always-on harness skills",https://github.com/fullsend-ai/fullsend/pull/6378
+2026-08-19,fullsend,pr,opened,6377,"fix(#6204): use PER_REPO_WIF_REPOS=* for GCP public mint mode",https://github.com/fullsend-ai/fullsend/pull/6377
+2026-08-19,fullsend,pr,opened,6376,"fix(#6374): classify needs-breakdown, needs-design, and workflow-blocked issues",https://github.com/fullsend-ai/fullsend/pull/6376
+2026-08-19,fullsend,pr,opened,6375,"docs(#5598): add CLI-to-documentation cross-reference guide",https://github.com/fullsend-ai/fullsend/pull/6375
+2026-08-19,fullsend,pr,opened,6373,"fix(#1158): zero PEM block and RSA key internals after JWT signing",https://github.com/fullsend-ai/fullsend/pull/6373
+2026-08-19,fullsend,pr,opened,6372,"feat(#6198): surface unresolved thread details and add --resolve-threads",https://github.com/fullsend-ai/fullsend/pull/6372
+2026-08-19,fullsend,pr,opened,6371,"feat(#996): log dropped permissions on role-level downscoping",https://github.com/fullsend-ai/fullsend/pull/6371
+2026-08-19,fullsend,pr,opened,6370,"feat(#2823): implement named privilege levels under agent roles",https://github.com/fullsend-ai/fullsend/pull/6370
+2026-08-19,fullsend,pr,opened,6369,"fix(#2528): sync VALID_ROLES with Go's ValidRoles()",https://github.com/fullsend-ai/fullsend/pull/6369
+2026-08-19,fullsend,pr,opened,6367,"fix(#6127): dispatch URL-sourced child harnesses that inherit a URL base",https://github.com/fullsend-ai/fullsend/pull/6367
+2026-08-19,fullsend,pr,opened,6366,"fix(#2528): sync VALID_ROLES with Go's ValidRoles()",https://github.com/fullsend-ai/fullsend/pull/6366
+2026-08-19,fullsend,pr,opened,6365,"feat(#5880): add GitHub OAuth2 status auth for GET /v1/status",https://github.com/fullsend-ai/fullsend/pull/6365
+2026-08-19,fullsend,pr,opened,6364,"ci(e2e): bind behaviour job to dev and stage environments",https://github.com/fullsend-ai/fullsend/pull/6364
+2026-08-19,fullsend,pr,opened,6363,"feat(review): skip docs/test-only PRs via exit-78 precheck + review-spend measurement (POC)",https://github.com/fullsend-ai/fullsend/pull/6363
+2026-08-19,fullsend,pr,opened,6362,"feat(normevent): surface check_run to CEL + ready-tests label workflow (POC)",https://github.com/fullsend-ai/fullsend/pull/6362
+2026-08-19,fullsend,pr,opened,6361,"feat(sandbox): opt-in Costwise model routing hooks + ADR 0090 (POC)",https://github.com/fullsend-ai/fullsend/pull/6361
+2026-08-19,fullsend,pr,opened,6360,"chore(deps): update experiments digest to 2698f08",https://github.com/fullsend-ai/fullsend/pull/6360
+2026-08-19,fullsend,pr,opened,6356,"feat(workflows): extract harness-run into reusable workflow",https://github.com/fullsend-ai/fullsend/pull/6356
+2026-08-19,fullsend,pr,opened,6355,"refactor(runtime): make sandbox tool hooks and runner capabilities runtime-neutral",https://github.com/fullsend-ai/fullsend/pull/6355
+2026-08-19,fullsend,pr,merged,6389,"ci(#6387): skip cancelled/skipped artifacts in WaitForHarnessAgent",https://github.com/fullsend-ai/fullsend/pull/6389
+2026-08-19,fullsend,pr,merged,6377,"fix(#6204): use PER_REPO_WIF_REPOS=* for GCP public mint mode",https://github.com/fullsend-ai/fullsend/pull/6377
+2026-08-19,fullsend,pr,merged,6376,"fix(#6374): classify needs-breakdown, needs-design, and workflow-blocked issues",https://github.com/fullsend-ai/fullsend/pull/6376
+2026-08-19,fullsend,pr,merged,6372,"feat(#6198): surface unresolved thread details and add --resolve-threads",https://github.com/fullsend-ai/fullsend/pull/6372
+2026-08-19,fullsend,pr,merged,6367,"fix(#6127): dispatch URL-sourced child harnesses that inherit a URL base",https://github.com/fullsend-ai/fullsend/pull/6367
+2026-08-19,fullsend,pr,merged,6350,"feat(#6346): simplify repos.yaml manifest format",https://github.com/fullsend-ai/fullsend/pull/6350
+2026-08-19,fullsend,pr,merged,6349,"fix(#6348): preserve file extension in fetchBaseFile cache paths",https://github.com/fullsend-ai/fullsend/pull/6349
+2026-08-19,fullsend,pr,merged,6340,"feat(#6339): replace jira-poll HarnessRouter with CEL trigger evaluation",https://github.com/fullsend-ai/fullsend/pull/6340
+2026-08-19,fullsend,pr,merged,6335,"feat(#6334): add openshell provider and profile for Jira",https://github.com/fullsend-ai/fullsend/pull/6335
+2026-08-19,fullsend,pr,merged,6329,"docs(#6328): remove ADR references from user-facing documentation",https://github.com/fullsend-ai/fullsend/pull/6329
+2026-08-19,fullsend,pr,merged,6250,"fix(#5536): use is_bot for bot-author detection in fix eligibility",https://github.com/fullsend-ai/fullsend/pull/6250
+2026-08-19,fullsend,pr,merged,6114,"docs(#6113): surface org-mode deprecation in agent-visible files",https://github.com/fullsend-ai/fullsend/pull/6114
+2026-08-19,fullsend,pr,closed,6366,"fix(#2528): sync VALID_ROLES with Go's ValidRoles()",https://github.com/fullsend-ai/fullsend/pull/6366
+2026-08-19,fullsend,issue,opened,6397,"Prioritize job missing status comment and project_number passthrough (per-repo)",https://github.com/fullsend-ai/fullsend/issues/6397
+2026-08-19,fullsend,issue,opened,6393,"Add CI validation of NormalizedEvent fixtures against published schema",https://github.com/fullsend-ai/fullsend/issues/6393
+2026-08-19,fullsend,issue,opened,6391,"Implement ADR-0044 Phase 1 deprecation warnings for per-org CLI commands",https://github.com/fullsend-ai/fullsend/issues/6391
+2026-08-19,fullsend,issue,opened,6392,"Update operations.md ""Per-repo teardown"" to document `repos uninstall`",https://github.com/fullsend-ai/fullsend/issues/6392
+2026-08-19,fullsend,issue,opened,6390,"Decide: unify `github uninstall` and `repos uninstall` or document the split",https://github.com/fullsend-ai/fullsend/issues/6390
+2026-08-19,fullsend,issue,opened,6387,"test(behaviour): Fork_PR_labeled_ready-for-review flaky - dispatched review harness concludes with ""cancelled""",https://github.com/fullsend-ai/fullsend/issues/6387
+2026-08-19,fullsend,issue,opened,6386,"Per-repo agent fallback fetches agents at floating v0 instead of installed workflow version",https://github.com/fullsend-ai/fullsend/issues/6386
+2026-08-19,fullsend,issue,opened,6385,"Add Cursor Origin to landscape doc",https://github.com/fullsend-ai/fullsend/issues/6385
+2026-08-19,fullsend,issue,opened,6384,"Track agents@v0 release cut for eval measurement manifests",https://github.com/fullsend-ai/fullsend/issues/6384
+2026-08-19,fullsend,issue,opened,6381,"ci: add post-merge dispatch workflow for scaffold sync",https://github.com/fullsend-ai/fullsend/issues/6381
+2026-08-19,fullsend,issue,opened,6380,"Harness-listed team skills do not reliably apply without default-prompt naming",https://github.com/fullsend-ai/fullsend/issues/6380
+2026-08-19,fullsend,issue,opened,6374,"nextwork: classify needs-breakdown, needs-design, and workflow-blocked triaged issues",https://github.com/fullsend-ai/fullsend/issues/6374
+2026-08-19,fullsend,issue,opened,6359,"How should users pass custom secrets to BYOA agents invoked via reusable dispatch?",https://github.com/fullsend-ai/fullsend/issues/6359
+2026-08-19,fullsend,issue,opened,6358,"Sandbox tool hooks are never loaded: settings.json is written to /sandbox/workspace/.claude but Claude Code runs from /sandbox/workspace/<repo>",https://github.com/fullsend-ai/fullsend/issues/6358
+2026-08-19,fullsend,issue,opened,6357,"PostToolUse sandbox hooks read `tool_result` but Claude Code sends `tool_response` — sanitizers are inert under Claude Code",https://github.com/fullsend-ai/fullsend/issues/6357
+2026-08-19,fullsend,issue,opened,6354,"Runtime-neutral foundation: sandbox hooks contract, runner de-Claude, per-runtime config-key matrix",https://github.com/fullsend-ai/fullsend/issues/6354
+2026-08-19,fullsend,issue,closed,6391,"Implement ADR-0044 Phase 1 deprecation warnings for per-org CLI commands",https://github.com/fullsend-ai/fullsend/issues/6391
+2026-08-19,fullsend,issue,closed,6390,"Decide: unify `github uninstall` and `repos uninstall` or document the split",https://github.com/fullsend-ai/fullsend/issues/6390
+2026-08-19,fullsend,issue,closed,6387,"test(behaviour): Fork_PR_labeled_ready-for-review flaky - dispatched review harness concludes with ""cancelled""",https://github.com/fullsend-ai/fullsend/issues/6387
+2026-08-19,fullsend,issue,closed,6374,"nextwork: classify needs-breakdown, needs-design, and workflow-blocked triaged issues",https://github.com/fullsend-ai/fullsend/issues/6374
+2026-08-19,fullsend,issue,closed,6348,"LoadWithBase resolves remote profile paths to extension-less cache paths, failing Validate()",https://github.com/fullsend-ai/fullsend/issues/6348
+2026-08-19,fullsend,issue,closed,6347,"Extract harness-run from reusable-dispatch.yml into a reusable action",https://github.com/fullsend-ai/fullsend/issues/6347
+2026-08-19,fullsend,issue,closed,6346,"Simplify repos.yaml manifest format: platform as top-level key",https://github.com/fullsend-ai/fullsend/issues/6346
+2026-08-19,fullsend,issue,closed,6339,"feat(dispatch): replace jira-poll hardcoded HarnessRouter with CEL trigger evaluation",https://github.com/fullsend-ai/fullsend/issues/6339
+2026-08-19,fullsend,issue,closed,6334,"Add openshell credential provider and profile for JIRA",https://github.com/fullsend-ai/fullsend/issues/6334
+2026-08-19,fullsend,issue,closed,6328,"Remove ADRs from user documentation",https://github.com/fullsend-ai/fullsend/issues/6328
+2026-08-19,fullsend,issue,closed,6204,"fix(mint): GCP `--public` deploy should set PER_REPO_WIF_REPOS=* not ALLOWED_ORGS=*",https://github.com/fullsend-ai/fullsend/issues/6204
+2026-08-19,fullsend,issue,closed,6198,"nextwork: unresolved review threads aren't treated as a hard merge prerequisite",https://github.com/fullsend-ai/fullsend/issues/6198
+2026-08-19,fullsend,issue,closed,6135,"test(behaviour): consolidate install driver, RepoEnsurer, and RepoPool behind one driver interface",https://github.com/fullsend-ai/fullsend/issues/6135
+2026-08-19,fullsend,issue,closed,6127,"Harness dispatch should use LoadWithBase for configs with base composition",https://github.com/fullsend-ai/fullsend/issues/6127
+2026-08-19,fullsend,issue,closed,6113,"Surface org-mode deprecation in agent-visible context files",https://github.com/fullsend-ai/fullsend/issues/6113
+2026-08-19,fullsend,issue,closed,5536,"Fix agent eligibility check misidentifies bot-authored PRs as human-authored",https://github.com/fullsend-ai/fullsend/issues/5536
+2026-08-19,fullsend,issue,closed,2302,"Remove per-org install mode",https://github.com/fullsend-ai/fullsend/issues/2302
+2026-08-19,.fullsend,pr,opened,175,"chore: migrate sync workflows from app-id to client-id",https://github.com/fullsend-ai/.fullsend/pull/175
+2026-08-19,.fullsend,pr,opened,174,"Replace renovate agent digest tracking with sync workflow",https://github.com/fullsend-ai/.fullsend/pull/174
+2026-08-19,.fullsend,pr,opened,173,"feat(qualityflow): dispatch QF on the ready-tests label (POC)",https://github.com/fullsend-ai/.fullsend/pull/173
+2026-08-19,.fullsend,pr,opened,172,"chore(deps): update fullsend-ai/agents digest to 816b89b",https://github.com/fullsend-ai/.fullsend/pull/172
+2026-08-19,.fullsend,pr,merged,175,"chore: migrate sync workflows from app-id to client-id",https://github.com/fullsend-ai/.fullsend/pull/175
+2026-08-19,.fullsend,pr,merged,174,"Replace renovate agent digest tracking with sync workflow",https://github.com/fullsend-ai/.fullsend/pull/174
+2026-08-19,.fullsend,pr,merged,172,"chore(deps): update fullsend-ai/agents digest to 816b89b",https://github.com/fullsend-ai/.fullsend/pull/172
+2026-08-19,experiments,pr,merged,49,"experiment(0027): add SDLC experiment with iterative waterfall diagram",https://github.com/fullsend-ai/experiments/pull/49
+2026-08-19,agents,pr,opened,883,"fix(#880): resolve retro agent provider credential conflict",https://github.com/fullsend-ai/agents/pull/883
+2026-08-19,agents,pr,opened,882,"chore: add dispatch workflow to trigger agent digest sync",https://github.com/fullsend-ai/agents/pull/882
+2026-08-19,agents,pr,opened,881,"fix(#880): rename github-artifacts credential key to avoid collision",https://github.com/fullsend-ai/agents/pull/881
+2026-08-19,agents,pr,opened,878,"feat(review): measured test results in pr_body + codecov-backed test-inadequate finding (POC)",https://github.com/fullsend-ai/agents/pull/878
+2026-08-19,agents,pr,opened,877,"feat(harness): route code and fix to sonnet by default (POC)",https://github.com/fullsend-ai/agents/pull/877
+2026-08-19,agents,pr,opened,876,"chore: check JIRA vars before making api calls",https://github.com/fullsend-ai/agents/pull/876
+2026-08-19,agents,pr,merged,815,"feat(#814): make review agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/815
+2026-08-19,agents,issue,opened,884,"Review agent should check for remaining codebase references when test data is deleted",https://github.com/fullsend-ai/agents/issues/884
+2026-08-19,agents,issue,opened,880,"bug: retro agent sandbox creation fails — duplicate GH_TOKEN credential key across providers",https://github.com/fullsend-ai/agents/issues/880
+2026-08-19,agents,issue,opened,879,"Extend review fast-path to trivial human-authored PRs using change-complexity detection",https://github.com/fullsend-ai/agents/issues/879
+2026-08-19,agents,issue,closed,814,"Make review agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/814

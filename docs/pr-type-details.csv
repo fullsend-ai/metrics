@@ -1203,3 +1203,16 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-18,agents,827,feat(triage): add Jira Cloud tracker support,feat,,,,https://github.com/fullsend-ai/agents/pull/827
 2026-08-18,agents,753,docs(pr-review): tighten weak language and add trigger phrase,docs,,,,https://github.com/fullsend-ai/agents/pull/753
 2026-08-18,agents,481,fix(#479): add create-on-missing fallback for ready-for-review label,fix,core,479,waynesun09,https://github.com/fullsend-ai/agents/pull/481
+2026-08-19,fullsend,6389,ci(#6387): skip cancelled/skipped artifacts in WaitForHarnessAgent,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6389
+2026-08-19,fullsend,6377,fix(#6204): use PER_REPO_WIF_REPOS=* for GCP public mint mode,fix,core,6204,ifireball,https://github.com/fullsend-ai/fullsend/pull/6377
+2026-08-19,fullsend,6376,"fix(#6374): classify needs-breakdown, needs-design, and workflow-blocked issues",fix,core,6374,ifireball,https://github.com/fullsend-ai/fullsend/pull/6376
+2026-08-19,fullsend,6372,feat(#6198): surface unresolved thread details and add --resolve-threads,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6372
+2026-08-19,fullsend,6367,fix(#6127): dispatch URL-sourced child harnesses that inherit a URL base,fix,bot,6127,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6367
+2026-08-19,fullsend,6350,feat(#6346): simplify repos.yaml manifest format,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6350
+2026-08-19,fullsend,6349,fix(#6348): preserve file extension in fetchBaseFile cache paths,fix,core,6348,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6349
+2026-08-19,fullsend,6340,feat(#6339): replace jira-poll HarnessRouter with CEL trigger evaluation,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6340
+2026-08-19,fullsend,6335,feat(#6334): add openshell provider and profile for Jira,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6335
+2026-08-19,fullsend,6329,docs(#6328): remove ADR references from user-facing documentation,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6329
+2026-08-19,fullsend,6250,fix(#5536): use is_bot for bot-author detection in fix eligibility,fix,core,5536,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/6250
+2026-08-19,fullsend,6114,docs(#6113): surface org-mode deprecation in agent-visible files,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6114
+2026-08-19,agents,815,feat(#814): make review agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/815
