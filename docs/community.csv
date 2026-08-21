@@ -1061,3 +1061,10 @@ date,repo,issues_opened_external,issues_closed_via_pr_external,issues_closed_oth
 2026-08-19,agents,0,0,0,3,0
 2026-08-19,autonomy-readiness,0,0,0,0,0
 2026-08-19,autonomy-analysis,0,0,0,0,0
+2026-08-20,fullsend,1,1,1,2,0
+2026-08-20,.fullsend,0,0,0,4,0
+2026-08-20,experiments,0,0,0,0,0
+2026-08-20,metrics,0,0,0,0,0
+2026-08-20,agents,0,0,0,0,0
+2026-08-20,autonomy-readiness,0,0,0,0,0
+2026-08-20,autonomy-analysis,0,0,0,0,0

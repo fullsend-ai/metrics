@@ -1216,3 +1216,25 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-19,fullsend,6250,fix(#5536): use is_bot for bot-author detection in fix eligibility,fix,core,5536,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/6250
 2026-08-19,fullsend,6114,docs(#6113): surface org-mode deprecation in agent-visible files,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6114
 2026-08-19,agents,815,feat(#814): make review agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/815
+2026-08-20,fullsend,6419,fix(#6418): pass ORIGINATING_URL and REPO_FULL_NAME in GitLab dispatch,fix,core,6418,ggallen,https://github.com/fullsend-ai/fullsend/pull/6419
+2026-08-20,fullsend,6417,fix(#6415): add fix-stage environment for GitLab dispatch,fix,core,6415,ggallen,https://github.com/fullsend-ai/fullsend/pull/6417
+2026-08-20,fullsend,6413,chore(web): remove the admin SPA and its OAuth worker routes,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6413
+2026-08-20,fullsend,6400,chore: update fullsend per-repo installation,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6400
+2026-08-20,fullsend,6399,fix(#6397): add missing status comment params to prioritize job,fix,core,6397,ggallen,https://github.com/fullsend-ai/fullsend/pull/6399
+2026-08-20,fullsend,6398,docs(#6160): extract harness field reference into living doc,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6398
+2026-08-20,fullsend,6379,ci: add dispatch workflow to trigger scaffold sync,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6379
+2026-08-20,fullsend,6375,docs(#5598): add CLI-to-documentation cross-reference guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6375
+2026-08-20,fullsend,6365,feat(#5880): add GitHub OAuth2 status auth for GET /v1/status,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6365
+2026-08-20,fullsend,6364,ci(e2e): bind behaviour job to dev and stage environments,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6364
+2026-08-20,fullsend,6360,chore(deps): update experiments digest to 2698f08,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6360
+2026-08-20,fullsend,6279,"fix(#6178): bump actions/cache to v6.1.0, add actions:write to harness-dispatch",fix,external,6178,deboer-tim,https://github.com/fullsend-ai/fullsend/pull/6279
+2026-08-20,fullsend,6217,ci(#6216): retry transient errors in after-scenario cleanup hooks,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6217
+2026-08-20,fullsend,6083,docs(adr): add ADR 0086 for conversation surface participation,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6083
+2026-08-20,fullsend,6036,feat(eval)!: add eval measurements and EM-001 trace_fitness scorer,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6036
+2026-08-20,fullsend,5923,docs(#5861): remove label and priority from filing skill,docs,,,,https://github.com/fullsend-ai/fullsend/pull/5923
+2026-08-20,fullsend,5788,fix(#5537): remove duplicate token/cost attributes from root span,fix,core,5537,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/5788
+2026-08-20,agents,883,fix(#880): resolve retro agent provider credential conflict,fix,core,880,maruiz93,https://github.com/fullsend-ai/agents/pull/883
+2026-08-20,agents,882,chore: add dispatch workflow to trigger agent digest sync,chore,,,,https://github.com/fullsend-ai/agents/pull/882
+2026-08-20,agents,820,feat(#818): make prioritize agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/820
+2026-08-20,agents,817,feat(#816): make retro agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/817
+2026-08-20,agents,722,feat(eval): add measurement manifests for online scoring,feat,,,,https://github.com/fullsend-ai/agents/pull/722

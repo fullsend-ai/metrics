@@ -11062,3 +11062,135 @@ date,repo,type,event,number,title,url
 2026-08-19,agents,issue,opened,880,"bug: retro agent sandbox creation fails — duplicate GH_TOKEN credential key across providers",https://github.com/fullsend-ai/agents/issues/880
 2026-08-19,agents,issue,opened,879,"Extend review fast-path to trivial human-authored PRs using change-complexity detection",https://github.com/fullsend-ai/agents/issues/879
 2026-08-19,agents,issue,closed,814,"Make review agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/814
+2026-08-20,fullsend,pr,opened,6434,"ci(#5115): add STAGE CF mint driver for halfsend post-merge BT",https://github.com/fullsend-ai/fullsend/pull/6434
+2026-08-20,fullsend,pr,opened,6432,"docs(skills): update writing-user-docs layout to ADR 0023 revision",https://github.com/fullsend-ai/fullsend/pull/6432
+2026-08-20,fullsend,pr,opened,6431,"fix(#6430): pass RETRO_COMMENT in GitLab dispatch variables",https://github.com/fullsend-ai/fullsend/pull/6431
+2026-08-20,fullsend,pr,opened,6429,"feat(telemetry): implement ADR 0050 Level 3 content capture",https://github.com/fullsend-ai/fullsend/pull/6429
+2026-08-20,fullsend,pr,opened,6428,"fix(#6425): make isTimeoutError self-contained against context errors",https://github.com/fullsend-ai/fullsend/pull/6428
+2026-08-20,fullsend,pr,opened,6427,"docs(#6424): add Timeout() / context.DeadlineExceeded pitfall to Go guidelines",https://github.com/fullsend-ai/fullsend/pull/6427
+2026-08-20,fullsend,pr,opened,6426,"docs(#6423): document extract-to-living-doc pattern for ADRs",https://github.com/fullsend-ai/fullsend/pull/6426
+2026-08-20,fullsend,pr,opened,6421,"fix(#6420): make ImportProfile concurrency-safe with hash-based caching",https://github.com/fullsend-ai/fullsend/pull/6421
+2026-08-20,fullsend,pr,opened,6419,"fix(#6418): pass ORIGINATING_URL and REPO_FULL_NAME in GitLab dispatch",https://github.com/fullsend-ai/fullsend/pull/6419
+2026-08-20,fullsend,pr,opened,6417,"fix(#6415): add fix-stage environment for GitLab dispatch",https://github.com/fullsend-ai/fullsend/pull/6417
+2026-08-20,fullsend,pr,opened,6416,"fix(#6412): limit sandbox name to 19 characters for OpenShell",https://github.com/fullsend-ai/fullsend/pull/6416
+2026-08-20,fullsend,pr,opened,6414,"chore(deps): update experiments digest to c4c3e79",https://github.com/fullsend-ai/fullsend/pull/6414
+2026-08-20,fullsend,pr,opened,6413,"chore(web): remove the admin SPA and its OAuth worker routes",https://github.com/fullsend-ai/fullsend/pull/6413
+2026-08-20,fullsend,pr,opened,6405,"fix(#6358): load sandbox hook settings via --settings flag",https://github.com/fullsend-ai/fullsend/pull/6405
+2026-08-20,fullsend,pr,opened,6403,"fix(#5582): strip trailing punctuation from dispatch slash commands",https://github.com/fullsend-ai/fullsend/pull/6403
+2026-08-20,fullsend,pr,opened,6401,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 145a2d6",https://github.com/fullsend-ai/fullsend/pull/6401
+2026-08-20,fullsend,pr,opened,6400,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/fullsend/pull/6400
+2026-08-20,fullsend,pr,merged,6419,"fix(#6418): pass ORIGINATING_URL and REPO_FULL_NAME in GitLab dispatch",https://github.com/fullsend-ai/fullsend/pull/6419
+2026-08-20,fullsend,pr,merged,6417,"fix(#6415): add fix-stage environment for GitLab dispatch",https://github.com/fullsend-ai/fullsend/pull/6417
+2026-08-20,fullsend,pr,merged,6413,"chore(web): remove the admin SPA and its OAuth worker routes",https://github.com/fullsend-ai/fullsend/pull/6413
+2026-08-20,fullsend,pr,merged,6400,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/fullsend/pull/6400
+2026-08-20,fullsend,pr,merged,6399,"fix(#6397): add missing status comment params to prioritize job",https://github.com/fullsend-ai/fullsend/pull/6399
+2026-08-20,fullsend,pr,merged,6398,"docs(#6160): extract harness field reference into living doc",https://github.com/fullsend-ai/fullsend/pull/6398
+2026-08-20,fullsend,pr,merged,6379,"ci: add dispatch workflow to trigger scaffold sync",https://github.com/fullsend-ai/fullsend/pull/6379
+2026-08-20,fullsend,pr,merged,6375,"docs(#5598): add CLI-to-documentation cross-reference guide",https://github.com/fullsend-ai/fullsend/pull/6375
+2026-08-20,fullsend,pr,merged,6365,"feat(#5880): add GitHub OAuth2 status auth for GET /v1/status",https://github.com/fullsend-ai/fullsend/pull/6365
+2026-08-20,fullsend,pr,merged,6364,"ci(e2e): bind behaviour job to dev and stage environments",https://github.com/fullsend-ai/fullsend/pull/6364
+2026-08-20,fullsend,pr,merged,6360,"chore(deps): update experiments digest to 2698f08",https://github.com/fullsend-ai/fullsend/pull/6360
+2026-08-20,fullsend,pr,merged,6279,"fix(#6178): bump actions/cache to v6.1.0, add actions:write to harness-dispatch",https://github.com/fullsend-ai/fullsend/pull/6279
+2026-08-20,fullsend,pr,merged,6217,"ci(#6216): retry transient errors in after-scenario cleanup hooks",https://github.com/fullsend-ai/fullsend/pull/6217
+2026-08-20,fullsend,pr,merged,6083,"docs(adr): add ADR 0086 for conversation surface participation",https://github.com/fullsend-ai/fullsend/pull/6083
+2026-08-20,fullsend,pr,merged,6036,"feat(eval)!: add eval measurements and EM-001 trace_fitness scorer",https://github.com/fullsend-ai/fullsend/pull/6036
+2026-08-20,fullsend,pr,merged,5923,"docs(#5861): remove label and priority from filing skill",https://github.com/fullsend-ai/fullsend/pull/5923
+2026-08-20,fullsend,pr,merged,5788,"fix(#5537): remove duplicate token/cost attributes from root span",https://github.com/fullsend-ai/fullsend/pull/5788
+2026-08-20,fullsend,issue,opened,6433,"telemetry: hierarchical work-graph correlation IDs for cost rollup (leaf / parent / feature)",https://github.com/fullsend-ai/fullsend/issues/6433
+2026-08-20,fullsend,issue,opened,6430,"GitLab dispatch missing RETRO_COMMENT env var",https://github.com/fullsend-ai/fullsend/issues/6430
+2026-08-20,fullsend,issue,opened,6425,"Harden existing isTimeoutError against context.DeadlineExceeded without caller obligation",https://github.com/fullsend-ai/fullsend/issues/6425
+2026-08-20,fullsend,issue,opened,6424,"Document Timeout() interface / context.DeadlineExceeded pitfall in Go coding guidelines",https://github.com/fullsend-ai/fullsend/issues/6424
+2026-08-20,fullsend,issue,opened,6423,"Document ADR immutability convention so agents avoid modifying accepted ADRs",https://github.com/fullsend-ai/fullsend/issues/6423
+2026-08-20,fullsend,issue,opened,6422,"Route job should inherit org-level agent enabled/disabled when per-repo config omits agents key",https://github.com/fullsend-ai/fullsend/issues/6422
+2026-08-20,fullsend,issue,opened,6420,"sandbox: ImportProfile delete-then-reimport is not concurrency-safe",https://github.com/fullsend-ai/fullsend/issues/6420
+2026-08-20,fullsend,issue,opened,6418,"GitLab retro dispatch does not pass required env vars to pipeline",https://github.com/fullsend-ai/fullsend/issues/6418
+2026-08-20,fullsend,issue,opened,6415,"GitLab fix dispatch: pre-fetch review body and set REVIEW_BODY_FILE",https://github.com/fullsend-ai/fullsend/issues/6415
+2026-08-20,fullsend,issue,opened,6412,"sandbox name should be no more than 19 characters",https://github.com/fullsend-ai/fullsend/issues/6412
+2026-08-20,fullsend,issue,opened,6411,"Enable fix agent to debug behavioral tests and review agent to encourage test creation",https://github.com/fullsend-ai/fullsend/issues/6411
+2026-08-20,fullsend,issue,opened,6410,"Export agent traces to persistent GCP bucket for cross-team querying",https://github.com/fullsend-ai/fullsend/issues/6410
+2026-08-20,fullsend,issue,opened,6409,"Standardize agent telemetry to report data sources provided, accessed, and unavailable",https://github.com/fullsend-ai/fullsend/issues/6409
+2026-08-20,fullsend,issue,opened,6408,"Define uniform JSON output format for cross-agent communication",https://github.com/fullsend-ai/fullsend/issues/6408
+2026-08-20,fullsend,issue,opened,6407,"Implement deterministic binary for collecting and structuring PR data as agent input",https://github.com/fullsend-ai/fullsend/issues/6407
+2026-08-20,fullsend,issue,opened,6406,"feat: add run-name to shim workflows for agent-prefixed Actions filtering",https://github.com/fullsend-ai/fullsend/issues/6406
+2026-08-20,fullsend,issue,opened,6404,"Replace sandbox.Upload()/SafeDownload() with driver_config bind mounts",https://github.com/fullsend-ai/fullsend/issues/6404
+2026-08-20,fullsend,issue,opened,6402,"Epic: ADR 0086 — conversation surface implementation",https://github.com/fullsend-ai/fullsend/issues/6402
+2026-08-20,fullsend,issue,closed,6430,"GitLab dispatch missing RETRO_COMMENT env var",https://github.com/fullsend-ai/fullsend/issues/6430
+2026-08-20,fullsend,issue,closed,6418,"GitLab retro dispatch does not pass required env vars to pipeline",https://github.com/fullsend-ai/fullsend/issues/6418
+2026-08-20,fullsend,issue,closed,6415,"GitLab fix dispatch: pre-fetch review body and set REVIEW_BODY_FILE",https://github.com/fullsend-ai/fullsend/issues/6415
+2026-08-20,fullsend,issue,closed,6397,"Prioritize job missing status comment and project_number passthrough (per-repo)",https://github.com/fullsend-ai/fullsend/issues/6397
+2026-08-20,fullsend,issue,closed,6381,"ci: add post-merge dispatch workflow for scaffold sync",https://github.com/fullsend-ai/fullsend/issues/6381
+2026-08-20,fullsend,issue,closed,6216,"Behaviour test after-scenario hooks should tolerate transient GCP/GitHub API errors",https://github.com/fullsend-ai/fullsend/issues/6216
+2026-08-20,fullsend,issue,closed,6178,"Dispatch warning, cache running on Node 24",https://github.com/fullsend-ai/fullsend/issues/6178
+2026-08-20,fullsend,issue,closed,6160,"Add ADR-0045 maintenance step to harness-composition.md checklist",https://github.com/fullsend-ai/fullsend/issues/6160
+2026-08-20,fullsend,issue,closed,5985,"Evaluate API support for automated monitoring of GitHub Discussions",https://github.com/fullsend-ai/fullsend/issues/5985
+2026-08-20,fullsend,issue,closed,5900,"fix(dispatch): existing-PR check false-positives on version strings",https://github.com/fullsend-ai/fullsend/issues/5900
+2026-08-20,fullsend,issue,closed,5880,"mint: accept GitHub OAuth2 for GET /v1/status",https://github.com/fullsend-ai/fullsend/issues/5880
+2026-08-20,fullsend,issue,closed,5861,"Remove label and priority settings from issue filing skill",https://github.com/fullsend-ai/fullsend/issues/5861
+2026-08-20,fullsend,issue,closed,5598,"Add CLI-to-documentation cross-reference in contributing guide",https://github.com/fullsend-ai/fullsend/issues/5598
+2026-08-20,fullsend,issue,closed,5537,"Investigate mflow summary vs. span attribute discrepancies for token count and cost",https://github.com/fullsend-ai/fullsend/issues/5537
+2026-08-20,fullsend,issue,closed,2528,"fix(web-admin): VALID_ROLES has 4 roles vs Go's 8",https://github.com/fullsend-ai/fullsend/issues/2528
+2026-08-20,fullsend,issue,closed,2526,"fix(web-admin): agentsFromConfig() references removed agents block",https://github.com/fullsend-ai/fullsend/issues/2526
+2026-08-20,fullsend,issue,closed,700,"admin install: config.yaml rebuilt from scratch, roles without dedicated apps dropped",https://github.com/fullsend-ai/fullsend/issues/700
+2026-08-20,fullsend,issue,closed,683,"admin install: compact output by default, add --verbose for file-level detail",https://github.com/fullsend-ai/fullsend/issues/683
+2026-08-20,fullsend,issue,closed,675,"admin: wire up /org/:login and /install/:login routes in App.svelte",https://github.com/fullsend-ai/fullsend/issues/675
+2026-08-20,fullsend,issue,closed,674,"admin: parallelize inner-layer API calls in enrollment and secrets analysis",https://github.com/fullsend-ai/fullsend/issues/674
+2026-08-20,fullsend,issue,closed,626,"Admin SPA: extract shared components (Button, Spinner, Banner) and CSS design tokens",https://github.com/fullsend-ai/fullsend/issues/626
+2026-08-20,fullsend,issue,closed,623,"Admin SPA: install-readiness probes report only the first missing capability after a 403",https://github.com/fullsend-ai/fullsend/issues/623
+2026-08-20,fullsend,issue,closed,622,"Dev experiment: OAuth localhost helper uses a fixed OAuth state value",https://github.com/fullsend-ai/fullsend/issues/622
+2026-08-20,fullsend,issue,closed,621,"Admin SPA: empty OAuth authorization code leads to confusing handoff error copy",https://github.com/fullsend-ai/fullsend/issues/621
+2026-08-20,fullsend,issue,closed,620,"Admin SPA: batch org GraphQL drops all per-org hints when the response includes errors",https://github.com/fullsend-ai/fullsend/issues/620
+2026-08-20,fullsend,issue,closed,619,"Admin SPA: GitHub REST usage lacks shared rate-limit handling and retry policy",https://github.com/fullsend-ai/fullsend/issues/619
+2026-08-20,fullsend,issue,closed,618,"Admin SPA: overlapping org-list layer analysis when filters or effects re-run quickly",https://github.com/fullsend-ai/fullsend/issues/618
+2026-08-20,fullsend,issue,closed,585,"Site / admin SPA: Content-Security-Policy headers for Worker and static responses",https://github.com/fullsend-ai/fullsend/issues/585
+2026-08-20,fullsend,issue,closed,550,"Browser-based test suite for admin SPA with parity vs Go CLI flows",https://github.com/fullsend-ai/fullsend/issues/550
+2026-08-20,fullsend,issue,closed,547,"Admin web: trustworthy org listing and GitHub App install guidance",https://github.com/fullsend-ai/fullsend/issues/547
+2026-08-20,fullsend,issue,closed,546,"Admin OAuth: explicit GitHub authorize scope when org/repo APIs are needed",https://github.com/fullsend-ai/fullsend/issues/546
+2026-08-20,fullsend,issue,closed,543,"Site Worker: generic JSON errors for GitHub /user proxy (no raw upstream bodies)",https://github.com/fullsend-ai/fullsend/issues/543
+2026-08-20,fullsend,issue,closed,542,"Admin SPA: surface non-401 errors from refreshSession (network vs signed out)",https://github.com/fullsend-ai/fullsend/issues/542
+2026-08-20,fullsend,issue,closed,541,"Admin SPA: decide token-at-rest strategy (localStorage vs mitigations)",https://github.com/fullsend-ai/fullsend/issues/541
+2026-08-20,fullsend,issue,closed,514,"Admin web: onboard and offboard repos from the org dashboard",https://github.com/fullsend-ai/fullsend/issues/514
+2026-08-20,fullsend,issue,closed,513,"Admin web: install or repair Fullsend for an organization (guided flow)",https://github.com/fullsend-ai/fullsend/issues/513
+2026-08-20,fullsend,issue,closed,512,"Admin web: organization hub — navigation, account context, and org detail",https://github.com/fullsend-ai/fullsend/issues/512
+2026-08-20,fullsend,issue,closed,509,"Admin web UI / SPA: delivery index for Story #124",https://github.com/fullsend-ai/fullsend/issues/509
+2026-08-20,fullsend,issue,closed,506,"Align production and preview admin hostnames for stricter OAuth redirect validation",https://github.com/fullsend-ai/fullsend/issues/506
+2026-08-20,fullsend,issue,closed,505,"Pass client IP to Turnstile siteverify (remoteip) on admin token exchange",https://github.com/fullsend-ai/fullsend/issues/505
+2026-08-20,.fullsend,pr,opened,179,"chore: add fullsend-ai/fullsend to repos.yaml",https://github.com/fullsend-ai/.fullsend/pull/179
+2026-08-20,.fullsend,pr,opened,178,"fix: drop per-org config sync step",https://github.com/fullsend-ai/.fullsend/pull/178
+2026-08-20,.fullsend,pr,opened,177,"fix: use app token in checkout to fix push auth",https://github.com/fullsend-ai/.fullsend/pull/177
+2026-08-20,.fullsend,pr,opened,176,"chore: unenroll fullsend from per-org config",https://github.com/fullsend-ai/.fullsend/pull/176
+2026-08-20,.fullsend,pr,merged,179,"chore: add fullsend-ai/fullsend to repos.yaml",https://github.com/fullsend-ai/.fullsend/pull/179
+2026-08-20,.fullsend,pr,merged,178,"fix: drop per-org config sync step",https://github.com/fullsend-ai/.fullsend/pull/178
+2026-08-20,.fullsend,pr,merged,177,"fix: use app token in checkout to fix push auth",https://github.com/fullsend-ai/.fullsend/pull/177
+2026-08-20,.fullsend,pr,merged,176,"chore: unenroll fullsend from per-org config",https://github.com/fullsend-ai/.fullsend/pull/176
+2026-08-20,agents,pr,opened,908,"chore(#904): deduplicate harness config across forge sections",https://github.com/fullsend-ai/agents/pull/908
+2026-08-20,agents,pr,opened,887,"fix(#847): use closing-reference queries for PR-issue matching",https://github.com/fullsend-ai/agents/pull/887
+2026-08-20,agents,pr,merged,883,"fix(#880): resolve retro agent provider credential conflict",https://github.com/fullsend-ai/agents/pull/883
+2026-08-20,agents,pr,merged,882,"chore: add dispatch workflow to trigger agent digest sync",https://github.com/fullsend-ai/agents/pull/882
+2026-08-20,agents,pr,merged,820,"feat(#818): make prioritize agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/820
+2026-08-20,agents,pr,merged,817,"feat(#816): make retro agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/817
+2026-08-20,agents,pr,merged,722,"feat(eval): add measurement manifests for online scoring",https://github.com/fullsend-ai/agents/pull/722
+2026-08-20,agents,issue,opened,907,"Code agent should create at least one test when including test framework dependencies",https://github.com/fullsend-ai/agents/issues/907
+2026-08-20,agents,issue,opened,906,"Fix agent should check for documentation consistency after structural changes",https://github.com/fullsend-ai/agents/issues/906
+2026-08-20,agents,issue,opened,905,"Review agent should recognize upstream template sync PRs and adjust findings accordingly",https://github.com/fullsend-ai/agents/issues/905
+2026-08-20,agents,issue,opened,904,"chore: deduplicate harness config across forge sections",https://github.com/fullsend-ai/agents/issues/904
+2026-08-20,agents,issue,opened,903,"Triage agent should verify whether referenced prior fixes already resolve the current issue",https://github.com/fullsend-ai/agents/issues/903
+2026-08-20,agents,issue,opened,902,"Review agent should surface security advisories identified during classification in dependency update reviews",https://github.com/fullsend-ai/agents/issues/902
+2026-08-20,agents,issue,opened,901,"Intent-coherence sub-agent should detect premature abstraction when registry/dispatch patterns wrap a single implementation",https://github.com/fullsend-ai/agents/issues/901
+2026-08-20,agents,issue,opened,900,"Correctness sub-agent should cross-reference same-package API callers for header/auth pattern consistency",https://github.com/fullsend-ai/agents/issues/900
+2026-08-20,agents,issue,opened,899,"Triage agent's duplicate-issue closure has no tie-breaker, causing mutual/circular closures that lose bug tracking entirely",https://github.com/fullsend-ai/agents/issues/899
+2026-08-20,agents,issue,opened,898,"Code agent should compare forge implementations when fixing cross-forge gaps",https://github.com/fullsend-ai/agents/issues/898
+2026-08-20,agents,issue,opened,897,"Review orchestrator should verify submodule pointer direction before approving",https://github.com/fullsend-ai/agents/issues/897
+2026-08-20,agents,issue,opened,896,"Review correctness sub-agent should flag missing validation coverage for new config file types",https://github.com/fullsend-ai/agents/issues/896
+2026-08-20,agents,issue,opened,895,"Review agent should verify documentation claims against explicitly-coupled companion PRs",https://github.com/fullsend-ai/agents/issues/895
+2026-08-20,agents,issue,opened,894,"Review agent correctness sub-agent should verify fix efficacy against prior-round findings on re-review",https://github.com/fullsend-ai/agents/issues/894
+2026-08-20,agents,issue,opened,893,"Review agent should verify upstream specification currency when code references external standards",https://github.com/fullsend-ai/agents/issues/893
+2026-08-20,agents,issue,opened,892,"Cut v0.37.0 release to activate eval measurement manifests",https://github.com/fullsend-ai/agents/issues/892
+2026-08-20,agents,issue,opened,891,"Review correctness sub-agent should suggest fail-safe behavioral corrections for fail-open edge cases",https://github.com/fullsend-ai/agents/issues/891
+2026-08-20,agents,issue,opened,890,"Triage agent should flag when recommended approaches require specialized external tooling",https://github.com/fullsend-ai/agents/issues/890
+2026-08-20,agents,issue,opened,889,"Code agent should follow CLAUDE.md conventions for commit-message issue reference format",https://github.com/fullsend-ai/agents/issues/889
+2026-08-20,agents,issue,opened,888,"Triage agent should treat its own prior conclusions as re-evaluable hypotheses during re-triage",https://github.com/fullsend-ai/agents/issues/888
+2026-08-20,agents,issue,opened,886,"Triage agent should recognize additive constraints as a fix class for skill/prompt issues",https://github.com/fullsend-ai/agents/issues/886
+2026-08-20,agents,issue,opened,885,"Review correctness sub-agent should search for parallel instances of the bug class on first review of bug-fix PRs",https://github.com/fullsend-ai/agents/issues/885
+2026-08-20,agents,issue,closed,880,"bug: retro agent sandbox creation fails — duplicate GH_TOKEN credential key across providers",https://github.com/fullsend-ai/agents/issues/880
+2026-08-20,agents,issue,closed,818,"Make prioritize agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/818
+2026-08-20,agents,issue,closed,816,"feat: make retro agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/816

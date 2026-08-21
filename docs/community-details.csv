@@ -1385,3 +1385,12 @@ date,repo,type,event,number,actor,title,url
 2026-08-19,agents,pr,opened_core,883,maruiz93,"fix(#880): resolve retro agent provider credential conflict",https://github.com/fullsend-ai/agents/pull/883
 2026-08-19,agents,pr,opened_core,882,ggallen,"chore: add dispatch workflow to trigger agent digest sync",https://github.com/fullsend-ai/agents/pull/882
 2026-08-19,agents,pr,opened_core,876,ralphbean,"chore: check JIRA vars before making api calls",https://github.com/fullsend-ai/agents/pull/876
+2026-08-20,fullsend,issue,opened_external,6412,benoitf,"sandbox name should be no more than 19 characters",https://github.com/fullsend-ai/fullsend/issues/6412
+2026-08-20,fullsend,issue,closed_via_pr_external,6178,deboer-tim,"Dispatch warning, cache running on Node 24",https://github.com/fullsend-ai/fullsend/issues/6178
+2026-08-20,fullsend,issue,closed_other_external,5900,jkhelil,"fix(dispatch): existing-PR check false-positives on version strings",https://github.com/fullsend-ai/fullsend/issues/5900
+2026-08-20,fullsend,pr,opened_core,6413,waynesun09,"chore(web): remove the admin SPA and its OAuth worker routes",https://github.com/fullsend-ai/fullsend/pull/6413
+2026-08-20,fullsend,pr,opened_core,6400,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/fullsend/pull/6400
+2026-08-20,.fullsend,pr,opened_core,179,ggallen,"chore: add fullsend-ai/fullsend to repos.yaml",https://github.com/fullsend-ai/.fullsend/pull/179
+2026-08-20,.fullsend,pr,opened_core,178,ggallen,"fix: drop per-org config sync step",https://github.com/fullsend-ai/.fullsend/pull/178
+2026-08-20,.fullsend,pr,opened_core,177,ggallen,"fix: use app token in checkout to fix push auth",https://github.com/fullsend-ai/.fullsend/pull/177
+2026-08-20,.fullsend,pr,opened_core,176,ggallen,"chore: unenroll fullsend from per-org config",https://github.com/fullsend-ai/.fullsend/pull/176

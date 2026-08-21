@@ -618,3 +618,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-19,agents,6,1,0,3,1,0,95,35
 2026-08-19,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-19,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-20,fullsend,17,17,0,18,40,0,28.20,76
+2026-08-20,.fullsend,4,4,0,0,0,0,0,3
+2026-08-20,experiments,0,0,0,0,0,0,0,1
+2026-08-20,metrics,0,0,0,0,0,0,0,2
+2026-08-20,agents,2,5,0,22,3,0,99.70,34
+2026-08-20,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-20,autonomy-analysis,0,0,0,0,0,0,0,0
