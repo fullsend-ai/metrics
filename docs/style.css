@@ -18,6 +18,9 @@
   --chart-3: #ff8f5c;
   --chart-4: #c4ff0e;
   --chart-5: #2dd4bf;
+  --type-docs: #9775fa;
+  --type-chore: #8e8e93;
+  --type-other: #5c5c5e;
   --radius: 10px;
 }
 
@@ -38,6 +41,9 @@
     --chart-3: #f97316;
     --chart-4: #4d7c0f;
     --chart-5: #0d9488;
+    --type-docs: #7c3aed;
+    --type-chore: #6b7280;
+    --type-other: #9ca3af;
   }
 }
 
