@@ -11194,3 +11194,94 @@ date,repo,type,event,number,title,url
 2026-08-20,agents,issue,closed,880,"bug: retro agent sandbox creation fails — duplicate GH_TOKEN credential key across providers",https://github.com/fullsend-ai/agents/issues/880
 2026-08-20,agents,issue,closed,818,"Make prioritize agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/818
 2026-08-20,agents,issue,closed,816,"feat: make retro agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/816
+2026-08-21,fullsend,pr,opened,6470,"docs(#6469): expand doc-update trigger to cover adding new features",https://github.com/fullsend-ai/fullsend/pull/6470
+2026-08-21,fullsend,pr,opened,6468,"fix(#6357): make PostToolUse sanitizers honor Claude Code's hook contract",https://github.com/fullsend-ai/fullsend/pull/6468
+2026-08-21,fullsend,pr,opened,6467,"refactor(#6464): register pi runtime stub with stream parser",https://github.com/fullsend-ai/fullsend/pull/6467
+2026-08-21,fullsend,pr,opened,6466,"refactor(runtime): register pi as a stub runtime",https://github.com/fullsend-ai/fullsend/pull/6466
+2026-08-21,fullsend,pr,opened,6465,"ci(#6462): add retry with backoff to eval setup-fixture.sh",https://github.com/fullsend-ai/fullsend/pull/6465
+2026-08-21,fullsend,pr,opened,6461,"fix(#6460): export RUNNER_TEMP with /tmp fallback in GitLab agent template",https://github.com/fullsend-ai/fullsend/pull/6461
+2026-08-21,fullsend,pr,opened,6459,"feat(#6458): export eval measurement scores via OTLP",https://github.com/fullsend-ai/fullsend/pull/6459
+2026-08-21,fullsend,pr,opened,6457,"docs(#6456): align SKILL.md bot-login refs with GraphQL-format constants",https://github.com/fullsend-ai/fullsend/pull/6457
+2026-08-21,fullsend,pr,opened,6455,"feat(#6347): add pre-computed matrix input to reusable-dispatch",https://github.com/fullsend-ai/fullsend/pull/6455
+2026-08-21,fullsend,pr,opened,6454,"fix(#6452): propagate org-level allowed_remote_resources to URL resolution",https://github.com/fullsend-ai/fullsend/pull/6454
+2026-08-21,fullsend,pr,opened,6453,"chore(deps): update experiments digest to d8c0d4c",https://github.com/fullsend-ai/fullsend/pull/6453
+2026-08-21,fullsend,pr,opened,6451,"fix(#6450): install prioritize.yml per-repo and document scheduler",https://github.com/fullsend-ai/fullsend/pull/6451
+2026-08-21,fullsend,pr,opened,6449,"fix(#6448): add flock serialization to ImportProfiles",https://github.com/fullsend-ai/fullsend/pull/6449
+2026-08-21,fullsend,pr,opened,6447,"feat(#6445): decouple fullsend CLI from runner image",https://github.com/fullsend-ai/fullsend/pull/6447
+2026-08-21,fullsend,pr,opened,6446,"fix(#5388): write FULLSEND_REVIEW_CLIENT_ID during per-repo install",https://github.com/fullsend-ai/fullsend/pull/6446
+2026-08-21,fullsend,pr,opened,6444,"chore(#5307): add interface documentation sync guidance to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6444
+2026-08-21,fullsend,pr,opened,6443,"docs(#5629): add reusable workflow carve-out for github.workflow in concurrency groups",https://github.com/fullsend-ai/fullsend/pull/6443
+2026-08-21,fullsend,pr,opened,6441,"docs(#6439): add context-aware blocking guidance to go-code.md",https://github.com/fullsend-ai/fullsend/pull/6441
+2026-08-21,fullsend,pr,opened,6437,"fix(#6435): serialize ImportProfile with flock and retry EnsureProvider",https://github.com/fullsend-ai/fullsend/pull/6437
+2026-08-21,fullsend,pr,opened,6436,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.239",https://github.com/fullsend-ai/fullsend/pull/6436
+2026-08-21,fullsend,pr,merged,6449,"fix(#6448): add flock serialization to ImportProfiles",https://github.com/fullsend-ai/fullsend/pull/6449
+2026-08-21,fullsend,pr,merged,6446,"fix(#5388): write FULLSEND_REVIEW_CLIENT_ID during per-repo install",https://github.com/fullsend-ai/fullsend/pull/6446
+2026-08-21,fullsend,pr,merged,6437,"fix(#6435): serialize ImportProfile with flock and retry EnsureProvider",https://github.com/fullsend-ai/fullsend/pull/6437
+2026-08-21,fullsend,pr,merged,6421,"fix(#6420): make ImportProfile concurrency-safe with hash-based caching",https://github.com/fullsend-ai/fullsend/pull/6421
+2026-08-21,fullsend,pr,merged,6416,"fix(#6412): limit sandbox name to 19 characters for OpenShell",https://github.com/fullsend-ai/fullsend/pull/6416
+2026-08-21,fullsend,pr,merged,6414,"chore(deps): update experiments digest to c4c3e79",https://github.com/fullsend-ai/fullsend/pull/6414
+2026-08-21,fullsend,pr,merged,6405,"fix(#6358): load sandbox hook settings via --settings flag",https://github.com/fullsend-ai/fullsend/pull/6405
+2026-08-21,fullsend,pr,merged,6396,"fix(#6386): pin agent fallback to installed workflow version",https://github.com/fullsend-ai/fullsend/pull/6396
+2026-08-21,fullsend,pr,merged,6382,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to a7e505b",https://github.com/fullsend-ai/fullsend/pull/6382
+2026-08-21,fullsend,pr,merged,6355,"refactor(runtime): make sandbox tool hooks and runner capabilities runtime-neutral",https://github.com/fullsend-ai/fullsend/pull/6355
+2026-08-21,fullsend,pr,merged,6325,"chore(deps): update dependency vitest to v4.1.11",https://github.com/fullsend-ai/fullsend/pull/6325
+2026-08-21,fullsend,pr,merged,6230,"chore(#6228): add qodo pr-agent config to disable stale Go test rules",https://github.com/fullsend-ai/fullsend/pull/6230
+2026-08-21,fullsend,pr,merged,6206,"fix(#6205): strip [bot] suffix from bot-login constants in nextwork.py",https://github.com/fullsend-ai/fullsend/pull/6206
+2026-08-21,fullsend,pr,closed,6356,"feat(workflows): extract harness-run into reusable workflow",https://github.com/fullsend-ai/fullsend/pull/6356
+2026-08-21,fullsend,issue,opened,6469,"Expand AGENTS.md doc-update trigger to cover adding new user-facing configuration",https://github.com/fullsend-ai/fullsend/issues/6469
+2026-08-21,fullsend,issue,opened,6464,"Track pi (earendil-works/pi) as a supported agent runtime",https://github.com/fullsend-ai/fullsend/issues/6464
+2026-08-21,fullsend,issue,opened,6463,"Validate matrix field formats in reusable-dispatch pre-computed matrix path",https://github.com/fullsend-ai/fullsend/issues/6463
+2026-08-21,fullsend,issue,opened,6462,"Triage eval case 004-duplicate-issue crashes non-deterministically in CI",https://github.com/fullsend-ai/fullsend/issues/6462
+2026-08-21,fullsend,issue,opened,6460,"GitLab agent template missing RUNNER_TEMP — scribe host_files paths fail",https://github.com/fullsend-ai/fullsend/issues/6460
+2026-08-21,fullsend,issue,opened,6458,"Portable OTLP export for eval measurement scores",https://github.com/fullsend-ai/fullsend/issues/6458
+2026-08-21,fullsend,issue,opened,6456,"Update SKILL.md bot-login references to match GraphQL-format constants from PR #6206",https://github.com/fullsend-ai/fullsend/issues/6456
+2026-08-21,fullsend,issue,opened,6452,"Inconsistent allowlist behavior: base: uses config.yaml, policy: requires harness-level allowed_remote_resources",https://github.com/fullsend-ai/fullsend/issues/6452
+2026-08-21,fullsend,issue,opened,6450,"prioritize agent not installed per-repo; scheduler dispatches to .fullsend instead of source repo",https://github.com/fullsend-ai/fullsend/issues/6450
+2026-08-21,fullsend,issue,opened,6448,"ImportProfiles (batch) still races under parallel execution — no flock like ImportProfile",https://github.com/fullsend-ai/fullsend/issues/6448
+2026-08-21,fullsend,issue,opened,6445,"Decouple fullsend CLI from runner image — install at runtime with version pinning",https://github.com/fullsend-ai/fullsend/issues/6445
+2026-08-21,fullsend,issue,opened,6442,"per-repo installs missing FULLSEND_REVIEW_CLIENT_ID — incremental reviews degraded",https://github.com/fullsend-ai/fullsend/issues/6442
+2026-08-21,fullsend,issue,opened,6440,"Agent execution traces are not signed or attestable",https://github.com/fullsend-ai/fullsend/issues/6440
+2026-08-21,fullsend,issue,opened,6439,"Add context-aware blocking guidance to go-code.md",https://github.com/fullsend-ai/fullsend/issues/6439
+2026-08-21,fullsend,issue,opened,6438,"Review-to-fix dispatch chain fails silently after bot-originated reviews",https://github.com/fullsend-ai/fullsend/issues/6438
+2026-08-21,fullsend,issue,opened,6435,"sandbox: ImportProfile provider race persists after #6421 fix under parallel eval",https://github.com/fullsend-ai/fullsend/issues/6435
+2026-08-21,fullsend,issue,closed,6448,"ImportProfiles (batch) still races under parallel execution — no flock like ImportProfile",https://github.com/fullsend-ai/fullsend/issues/6448
+2026-08-21,fullsend,issue,closed,6442,"per-repo installs missing FULLSEND_REVIEW_CLIENT_ID — incremental reviews degraded",https://github.com/fullsend-ai/fullsend/issues/6442
+2026-08-21,fullsend,issue,closed,6435,"sandbox: ImportProfile provider race persists after #6421 fix under parallel eval",https://github.com/fullsend-ai/fullsend/issues/6435
+2026-08-21,fullsend,issue,closed,6420,"sandbox: ImportProfile delete-then-reimport is not concurrency-safe",https://github.com/fullsend-ai/fullsend/issues/6420
+2026-08-21,fullsend,issue,closed,6412,"sandbox name should be no more than 19 characters",https://github.com/fullsend-ai/fullsend/issues/6412
+2026-08-21,fullsend,issue,closed,6386,"Per-repo agent fallback fetches agents at floating v0 instead of installed workflow version",https://github.com/fullsend-ai/fullsend/issues/6386
+2026-08-21,fullsend,issue,closed,6358,"Sandbox tool hooks are never loaded: settings.json is written to /sandbox/workspace/.claude but Claude Code runs from /sandbox/workspace/<repo>",https://github.com/fullsend-ai/fullsend/issues/6358
+2026-08-21,fullsend,issue,closed,6354,"Runtime-neutral foundation: sandbox hooks contract, runner de-Claude, per-runtime config-key matrix",https://github.com/fullsend-ai/fullsend/issues/6354
+2026-08-21,fullsend,issue,closed,6228,"Update qodo-code-review Go convention pack to remove stale testify rules (TC-001/TC-002)",https://github.com/fullsend-ai/fullsend/issues/6228
+2026-08-21,fullsend,issue,closed,6205,"nextwork.py: bot-login constants use REST-style [bot] suffix, never match GraphQL-sourced logins",https://github.com/fullsend-ai/fullsend/issues/6205
+2026-08-21,fullsend,issue,closed,5388,"Fix empty expected app client_id in pre-fetch-prior-review for per-repo install mode",https://github.com/fullsend-ai/fullsend/issues/5388
+2026-08-21,agents,pr,opened,928,"fix(#914): space before Skill in tools frontmatter",https://github.com/fullsend-ai/agents/pull/928
+2026-08-21,agents,pr,opened,926,"fix(#924): add revert to allowed gitlint commit types",https://github.com/fullsend-ai/agents/pull/926
+2026-08-21,agents,pr,opened,923,"revert(skillsaw): restore issue-labels skill names and create exception",https://github.com/fullsend-ai/agents/pull/923
+2026-08-21,agents,pr,opened,921,"fix(#920): replace hardcoded GitLab host allowlist with dynamic trust sources",https://github.com/fullsend-ai/agents/pull/921
+2026-08-21,agents,pr,opened,918,"feat(#916): add multi-forge support to scribe agent",https://github.com/fullsend-ai/agents/pull/918
+2026-08-21,agents,pr,opened,917,"fix(#914): add Skill to triage and prioritize tools",https://github.com/fullsend-ai/agents/pull/917
+2026-08-21,agents,pr,opened,912,"docs(#911): add build and validation workflow to CLAUDE.md",https://github.com/fullsend-ai/agents/pull/912
+2026-08-21,agents,pr,merged,917,"fix(#914): add Skill to triage and prioritize tools",https://github.com/fullsend-ai/agents/pull/917
+2026-08-21,agents,pr,merged,908,"chore(#904): deduplicate harness config across forge sections",https://github.com/fullsend-ai/agents/pull/908
+2026-08-21,agents,pr,merged,887,"fix(#847): use closing-reference queries for PR-issue matching",https://github.com/fullsend-ai/agents/pull/887
+2026-08-21,agents,pr,merged,876,"chore: check JIRA vars before making api calls",https://github.com/fullsend-ai/agents/pull/876
+2026-08-21,agents,pr,merged,872,"feat(#860): make fix agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/pull/872
+2026-08-21,agents,pr,closed,923,"revert(skillsaw): restore issue-labels skill names and create exception",https://github.com/fullsend-ai/agents/pull/923
+2026-08-21,agents,issue,opened,927,"Add CI test for agent tool-skill declaration consistency",https://github.com/fullsend-ai/agents/issues/927
+2026-08-21,agents,issue,opened,925,"Fix agent should provide architecture-based justification when disagreeing with test-addition findings",https://github.com/fullsend-ai/agents/issues/925
+2026-08-21,agents,issue,opened,924,"Add 'revert' to .gitlint allowed commit types and AGENTS.md",https://github.com/fullsend-ai/agents/issues/924
+2026-08-21,agents,issue,opened,922,"Add GitLab support for risk assessment tier scripts",https://github.com/fullsend-ai/agents/issues/922
+2026-08-21,agents,issue,opened,920,"forge_validate_issue_url hardcodes GitLab host allowlist, blocking other self-hosted instances",https://github.com/fullsend-ai/agents/issues/920
+2026-08-21,agents,issue,opened,919,"Restricted-file detection at triage time should block ready-to-code auto-dispatch, and the code agent should decline instead of opening the PR",https://github.com/fullsend-ai/agents/issues/919
+2026-08-21,agents,issue,opened,916,"Multi-forge: scribe agent",https://github.com/fullsend-ai/agents/issues/916
+2026-08-21,agents,issue,opened,915,"Code-implementation skill should verify documentation and comment consistency after structural changes",https://github.com/fullsend-ai/agents/issues/915
+2026-08-21,agents,issue,opened,914,"Triage and prioritize cannot open listed skills (Skill tool missing from tools:)",https://github.com/fullsend-ai/agents/issues/914
+2026-08-21,agents,issue,opened,913,"Code-implementation skill should add explicit regression-test guidance for bug-fix PRs",https://github.com/fullsend-ai/agents/issues/913
+2026-08-21,agents,issue,opened,911,"CLAUDE.md should document pre-commit and script-build validation workflow",https://github.com/fullsend-ai/agents/issues/911
+2026-08-21,agents,issue,opened,910,"Fix agent's strategy-escalation stays within the current architecture instead of reconsidering it",https://github.com/fullsend-ai/agents/issues/910
+2026-08-21,agents,issue,opened,909,"Pre-commit self-test in code-implementation skill never exercises a hook whose file filter excludes the PR's own diff",https://github.com/fullsend-ai/agents/issues/909
+2026-08-21,agents,issue,closed,914,"Triage and prioritize cannot open listed skills (Skill tool missing from tools:)",https://github.com/fullsend-ai/agents/issues/914
+2026-08-21,agents,issue,closed,904,"chore: deduplicate harness config across forge sections",https://github.com/fullsend-ai/agents/issues/904
+2026-08-21,agents,issue,closed,860,"Make fix agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/860
+2026-08-21,agents,issue,closed,847,"Code agent pre-script PR check matches PRs for unrelated issues",https://github.com/fullsend-ai/agents/issues/847

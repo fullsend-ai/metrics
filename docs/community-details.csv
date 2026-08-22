@@ -1394,3 +1394,10 @@ date,repo,type,event,number,actor,title,url
 2026-08-20,.fullsend,pr,opened_core,178,ggallen,"fix: drop per-org config sync step",https://github.com/fullsend-ai/.fullsend/pull/178
 2026-08-20,.fullsend,pr,opened_core,177,ggallen,"fix: use app token in checkout to fix push auth",https://github.com/fullsend-ai/.fullsend/pull/177
 2026-08-20,.fullsend,pr,opened_core,176,ggallen,"chore: unenroll fullsend from per-org config",https://github.com/fullsend-ai/.fullsend/pull/176
+2026-08-21,fullsend,issue,closed_via_pr_external,6412,benoitf,"sandbox name should be no more than 19 characters",https://github.com/fullsend-ai/fullsend/issues/6412
+2026-08-21,fullsend,pr,opened_core,6468,waynesun09,"fix(#6357): make PostToolUse sanitizers honor Claude Code's hook contract",https://github.com/fullsend-ai/fullsend/pull/6468
+2026-08-21,fullsend,pr,opened_core,6466,waynesun09,"refactor(runtime): register pi as a stub runtime",https://github.com/fullsend-ai/fullsend/pull/6466
+2026-08-21,fullsend,pr,opened_core,6459,ascerra,"feat(#6458): export eval measurement scores via OTLP",https://github.com/fullsend-ai/fullsend/pull/6459
+2026-08-21,fullsend,pr,opened_core,6455,ralphbean,"feat(#6347): add pre-computed matrix input to reusable-dispatch",https://github.com/fullsend-ai/fullsend/pull/6455
+2026-08-21,agents,pr,opened_core,928,ascerra,"fix(#914): space before Skill in tools frontmatter",https://github.com/fullsend-ai/agents/pull/928
+2026-08-21,agents,pr,opened_core,923,ralphbean,"revert(skillsaw): restore issue-labels skill names and create exception",https://github.com/fullsend-ai/agents/pull/923

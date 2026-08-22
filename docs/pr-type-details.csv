@@ -1238,3 +1238,21 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-20,agents,820,feat(#818): make prioritize agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/820
 2026-08-20,agents,817,feat(#816): make retro agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/817
 2026-08-20,agents,722,feat(eval): add measurement manifests for online scoring,feat,,,,https://github.com/fullsend-ai/agents/pull/722
+2026-08-21,fullsend,6449,fix(#6448): add flock serialization to ImportProfiles,fix,core,6448,maruiz93,https://github.com/fullsend-ai/fullsend/pull/6449
+2026-08-21,fullsend,6446,fix(#5388): write FULLSEND_REVIEW_CLIENT_ID during per-repo install,fix,bot,5388,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6446
+2026-08-21,fullsend,6437,fix(#6435): serialize ImportProfile with flock and retry EnsureProvider,fix,core,6435,ggallen,https://github.com/fullsend-ai/fullsend/pull/6437
+2026-08-21,fullsend,6421,fix(#6420): make ImportProfile concurrency-safe with hash-based caching,fix,core,6420,maruiz93,https://github.com/fullsend-ai/fullsend/pull/6421
+2026-08-21,fullsend,6416,fix(#6412): limit sandbox name to 19 characters for OpenShell,fix,external,6412,benoitf,https://github.com/fullsend-ai/fullsend/pull/6416
+2026-08-21,fullsend,6414,chore(deps): update experiments digest to c4c3e79,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6414
+2026-08-21,fullsend,6405,fix(#6358): load sandbox hook settings via --settings flag,fix,core,6358,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6405
+2026-08-21,fullsend,6396,fix(#6386): pin agent fallback to installed workflow version,fix,core,6386,ggallen,https://github.com/fullsend-ai/fullsend/pull/6396
+2026-08-21,fullsend,6382,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to a7e505b,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6382
+2026-08-21,fullsend,6355,refactor(runtime): make sandbox tool hooks and runner capabilities runtime-neutral,other,,,,https://github.com/fullsend-ai/fullsend/pull/6355
+2026-08-21,fullsend,6325,chore(deps): update dependency vitest to v4.1.11,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6325
+2026-08-21,fullsend,6230,chore(#6228): add qodo pr-agent config to disable stale Go test rules,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6230
+2026-08-21,fullsend,6206,fix(#6205): strip [bot] suffix from bot-login constants in nextwork.py,fix,core,6205,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6206
+2026-08-21,agents,917,fix(#914): add Skill to triage and prioritize tools,fix,core,914,ascerra,https://github.com/fullsend-ai/agents/pull/917
+2026-08-21,agents,908,chore(#904): deduplicate harness config across forge sections,chore,,,,https://github.com/fullsend-ai/agents/pull/908
+2026-08-21,agents,887,fix(#847): use closing-reference queries for PR-issue matching,fix,core,847,ggallen,https://github.com/fullsend-ai/agents/pull/887
+2026-08-21,agents,876,chore: check JIRA vars before making api calls,chore,,,,https://github.com/fullsend-ai/agents/pull/876
+2026-08-21,agents,872,feat(#860): make fix agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/872

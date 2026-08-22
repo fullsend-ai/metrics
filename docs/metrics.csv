@@ -625,3 +625,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-20,agents,2,5,0,22,3,0,99.70,34
 2026-08-20,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-20,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-21,fullsend,20,13,1,16,11,0,34.60,83
+2026-08-21,.fullsend,0,0,0,0,0,0,0,3
+2026-08-21,experiments,0,0,0,0,0,0,0,1
+2026-08-21,metrics,0,0,0,0,0,0,0,2
+2026-08-21,agents,7,5,1,13,4,0,23.80,35
+2026-08-21,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-21,autonomy-analysis,0,0,0,0,0,0,0,0
