@@ -1401,3 +1401,11 @@ date,repo,type,event,number,actor,title,url
 2026-08-21,fullsend,pr,opened_core,6455,ralphbean,"feat(#6347): add pre-computed matrix input to reusable-dispatch",https://github.com/fullsend-ai/fullsend/pull/6455
 2026-08-21,agents,pr,opened_core,928,ascerra,"fix(#914): space before Skill in tools frontmatter",https://github.com/fullsend-ai/agents/pull/928
 2026-08-21,agents,pr,opened_core,923,ralphbean,"revert(skillsaw): restore issue-labels skill names and create exception",https://github.com/fullsend-ai/agents/pull/923
+2026-08-22,fullsend,pr,opened_core,6488,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/fullsend/pull/6488
+2026-08-22,fullsend,pr,opened_core,6486,ggallen,"chore: remove pinned agent digests, disable scaffold sync dispatch",https://github.com/fullsend-ai/fullsend/pull/6486
+2026-08-22,.fullsend,pr,opened_core,180,ggallen,"chore: replace prioritize-scheduler with per-repo dispatch",https://github.com/fullsend-ai/.fullsend/pull/180
+2026-08-22,experiments,pr,opened_core,57,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/57
+2026-08-22,experiments,pr,opened_core,54,ggallen,"chore: remove pinned agent digests, rely on CLI fallback",https://github.com/fullsend-ai/experiments/pull/54
+2026-08-22,metrics,pr,opened_core,12,ggallen,"chore: remove pinned agent digests, rely on CLI fallback",https://github.com/fullsend-ai/metrics/pull/12
+2026-08-22,agents,pr,opened_core,943,ggallen,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/agents/pull/943
+2026-08-22,agents,pr,opened_core,936,ggallen,"chore: remove pinned agent digests, disable auto sync dispatch",https://github.com/fullsend-ai/agents/pull/936

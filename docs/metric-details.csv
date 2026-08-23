@@ -11285,3 +11285,107 @@ date,repo,type,event,number,title,url
 2026-08-21,agents,issue,closed,904,"chore: deduplicate harness config across forge sections",https://github.com/fullsend-ai/agents/issues/904
 2026-08-21,agents,issue,closed,860,"Make fix agent multi-forge (GitHub + GitLab)",https://github.com/fullsend-ai/agents/issues/860
 2026-08-21,agents,issue,closed,847,"Code agent pre-script PR check matches PRs for unrelated issues",https://github.com/fullsend-ai/agents/issues/847
+2026-08-22,fullsend,pr,opened,6503,"test(#6501): harden fork-path test fakes",https://github.com/fullsend-ai/fullsend/pull/6503
+2026-08-22,fullsend,pr,opened,6500,"docs(#6499): add credential-redaction invariant to Go contributing guide",https://github.com/fullsend-ai/fullsend/pull/6500
+2026-08-22,fullsend,pr,opened,6498,"refactor(#6496): unify repos install into single convergence loop",https://github.com/fullsend-ai/fullsend/pull/6498
+2026-08-22,fullsend,pr,opened,6495,"feat(#6494): implement validation loop feedback_mode",https://github.com/fullsend-ai/fullsend/pull/6495
+2026-08-22,fullsend,pr,opened,6493,"chore(#6490): thread project_number from scheduler to prioritize thin caller",https://github.com/fullsend-ai/fullsend/pull/6493
+2026-08-22,fullsend,pr,opened,6492,"feat(#6487): report component-level detail in dry-run output",https://github.com/fullsend-ai/fullsend/pull/6492
+2026-08-22,fullsend,pr,opened,6491,"fix(#6489): add exponential backoff to waitForFork",https://github.com/fullsend-ai/fullsend/pull/6491
+2026-08-22,fullsend,pr,opened,6488,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/fullsend/pull/6488
+2026-08-22,fullsend,pr,opened,6486,"chore: remove pinned agent digests, disable scaffold sync dispatch",https://github.com/fullsend-ai/fullsend/pull/6486
+2026-08-22,fullsend,pr,opened,6484,"chore(#6483): use runner :dev tag in GitLab CI scaffolds",https://github.com/fullsend-ai/fullsend/pull/6484
+2026-08-22,fullsend,pr,opened,6482,"fix(#6481): unify component checks between repos status and install",https://github.com/fullsend-ai/fullsend/pull/6482
+2026-08-22,fullsend,pr,opened,6480,"fix(deps): update module github.com/spf13/pflag to v1.0.10",https://github.com/fullsend-ai/fullsend/pull/6480
+2026-08-22,fullsend,pr,opened,6479,"fix(#6477): converge GitLab CI templates during upgrade, fix GOPATH on non-root runners",https://github.com/fullsend-ai/fullsend/pull/6479
+2026-08-22,fullsend,pr,opened,6478,"chore(deps): update dependency nvidia/openshell to v0.0.111",https://github.com/fullsend-ai/fullsend/pull/6478
+2026-08-22,fullsend,pr,opened,6476,"fix(#6475): raise triage eval max_turns from 30 to 35",https://github.com/fullsend-ai/fullsend/pull/6476
+2026-08-22,fullsend,pr,opened,6474,"fix(#6473): retry provider update on concurrent modification errors",https://github.com/fullsend-ai/fullsend/pull/6474
+2026-08-22,fullsend,pr,opened,6472,"fix(#6471): validate config-driven runtimes against ValidRuntimes()",https://github.com/fullsend-ai/fullsend/pull/6472
+2026-08-22,fullsend,pr,merged,6495,"feat(#6494): implement validation loop feedback_mode",https://github.com/fullsend-ai/fullsend/pull/6495
+2026-08-22,fullsend,pr,merged,6493,"chore(#6490): thread project_number from scheduler to prioritize thin caller",https://github.com/fullsend-ai/fullsend/pull/6493
+2026-08-22,fullsend,pr,merged,6492,"feat(#6487): report component-level detail in dry-run output",https://github.com/fullsend-ai/fullsend/pull/6492
+2026-08-22,fullsend,pr,merged,6491,"fix(#6489): add exponential backoff to waitForFork",https://github.com/fullsend-ai/fullsend/pull/6491
+2026-08-22,fullsend,pr,merged,6486,"chore: remove pinned agent digests, disable scaffold sync dispatch",https://github.com/fullsend-ai/fullsend/pull/6486
+2026-08-22,fullsend,pr,merged,6484,"chore(#6483): use runner :dev tag in GitLab CI scaffolds",https://github.com/fullsend-ai/fullsend/pull/6484
+2026-08-22,fullsend,pr,merged,6482,"fix(#6481): unify component checks between repos status and install",https://github.com/fullsend-ai/fullsend/pull/6482
+2026-08-22,fullsend,pr,merged,6479,"fix(#6477): converge GitLab CI templates during upgrade, fix GOPATH on non-root runners",https://github.com/fullsend-ai/fullsend/pull/6479
+2026-08-22,fullsend,pr,merged,6467,"feat(#6464): add the pi runtime (stream parser, Bootstrap/Run, Vertex provider, enablement)",https://github.com/fullsend-ai/fullsend/pull/6467
+2026-08-22,fullsend,pr,merged,6461,"fix(#6460): export RUNNER_TEMP with /tmp fallback in GitLab agent template",https://github.com/fullsend-ai/fullsend/pull/6461
+2026-08-22,fullsend,pr,merged,6451,"fix(#6450): install prioritize.yml per-repo and document scheduler",https://github.com/fullsend-ai/fullsend/pull/6451
+2026-08-22,fullsend,pr,merged,6447,"feat(#6445): decouple fullsend CLI from runner image",https://github.com/fullsend-ai/fullsend/pull/6447
+2026-08-22,fullsend,pr,merged,6001,"fix(post-review): post file-level comments in a separate review",https://github.com/fullsend-ai/fullsend/pull/6001
+2026-08-22,fullsend,pr,closed,6488,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/fullsend/pull/6488
+2026-08-22,fullsend,pr,closed,6468,"fix(#6357): make PostToolUse sanitizers honor Claude Code's hook contract",https://github.com/fullsend-ai/fullsend/pull/6468
+2026-08-22,fullsend,issue,opened,6504,"pi cannot load the Vertex provider extension: /opt is outside the sandbox filesystem policy (every pi Vertex run fails at 0 turns)",https://github.com/fullsend-ai/fullsend/issues/6504
+2026-08-22,fullsend,issue,opened,6502,"Validation feedback is injected into the agent prompt unframed and unsanitized (feedback_mode: append)",https://github.com/fullsend-ai/fullsend/issues/6502
+2026-08-22,fullsend,issue,opened,6501,"Harden fork-path test fakes: CreateFork hangs for the full waitForFork timeout",https://github.com/fullsend-ai/fullsend/issues/6501
+2026-08-22,fullsend,issue,opened,6499,"Add credential-redaction invariant to Go contributing guide for runner features processing external content",https://github.com/fullsend-ai/fullsend/issues/6499
+2026-08-22,fullsend,issue,opened,6497,"functional-tests red on main for six consecutive runs: max_turns judge pass_rate dropped to 0.5",https://github.com/fullsend-ai/fullsend/issues/6497
+2026-08-22,fullsend,issue,opened,6496,"Unify repos install and repos upgrade into a single convergence loop",https://github.com/fullsend-ai/fullsend/issues/6496
+2026-08-22,fullsend,issue,opened,6494,"Run pre-commit inside the code/fix validation loop so a lint block becomes a retry, not a dead end",https://github.com/fullsend-ai/fullsend/issues/6494
+2026-08-22,fullsend,issue,opened,6490,"prioritize thin caller should receive project_number from scheduler, not a repo variable",https://github.com/fullsend-ai/fullsend/issues/6490
+2026-08-22,fullsend,issue,opened,6489,"waitForFork uses fixed poll interval with no backoff, causing CI flake",https://github.com/fullsend-ai/fullsend/issues/6489
+2026-08-22,fullsend,issue,opened,6487,"repos install --dry-run should report what it would fix",https://github.com/fullsend-ai/fullsend/issues/6487
+2026-08-22,fullsend,issue,opened,6485,"docs: run a minimal agent on the pi runtime locally (no fleet repo); verify on Linux and macOS",https://github.com/fullsend-ai/fullsend/issues/6485
+2026-08-22,fullsend,issue,opened,6483,"GitLab CI scaffolds: use fullsend-runner:dev instead of :latest",https://github.com/fullsend-ai/fullsend/issues/6483
+2026-08-22,fullsend,issue,opened,6481,"repos status and repos install use divergent component checks",https://github.com/fullsend-ai/fullsend/issues/6481
+2026-08-22,fullsend,issue,opened,6477,"repos install: GitLab CI templates not converged during upgrade, GOPATH fails on non-root runners",https://github.com/fullsend-ai/fullsend/issues/6477
+2026-08-22,fullsend,issue,opened,6475,"Triage eval max_turns judge regresses to 75% on clean runs (distinct from case crash flakiness)",https://github.com/fullsend-ai/fullsend/issues/6475
+2026-08-22,fullsend,issue,opened,6473,"Add retry with backoff in provider ensure path for concurrent modification conflicts",https://github.com/fullsend-ai/fullsend/issues/6473
+2026-08-22,fullsend,issue,opened,6471,"Config-driven runtime selection doesn't validate against ValidRuntimes() before sandbox bootstrap",https://github.com/fullsend-ai/fullsend/issues/6471
+2026-08-22,fullsend,issue,closed,6497,"functional-tests red on main for six consecutive runs: max_turns judge pass_rate dropped to 0.5",https://github.com/fullsend-ai/fullsend/issues/6497
+2026-08-22,fullsend,issue,closed,6490,"prioritize thin caller should receive project_number from scheduler, not a repo variable",https://github.com/fullsend-ai/fullsend/issues/6490
+2026-08-22,fullsend,issue,closed,6489,"waitForFork uses fixed poll interval with no backoff, causing CI flake",https://github.com/fullsend-ai/fullsend/issues/6489
+2026-08-22,fullsend,issue,closed,6487,"repos install --dry-run should report what it would fix",https://github.com/fullsend-ai/fullsend/issues/6487
+2026-08-22,fullsend,issue,closed,6483,"GitLab CI scaffolds: use fullsend-runner:dev instead of :latest",https://github.com/fullsend-ai/fullsend/issues/6483
+2026-08-22,fullsend,issue,closed,6481,"repos status and repos install use divergent component checks",https://github.com/fullsend-ai/fullsend/issues/6481
+2026-08-22,fullsend,issue,closed,6477,"repos install: GitLab CI templates not converged during upgrade, GOPATH fails on non-root runners",https://github.com/fullsend-ai/fullsend/issues/6477
+2026-08-22,fullsend,issue,closed,6460,"GitLab agent template missing RUNNER_TEMP — scribe host_files paths fail",https://github.com/fullsend-ai/fullsend/issues/6460
+2026-08-22,fullsend,issue,closed,6450,"prioritize agent not installed per-repo; scheduler dispatches to .fullsend instead of source repo",https://github.com/fullsend-ai/fullsend/issues/6450
+2026-08-22,fullsend,issue,closed,6445,"Decouple fullsend CLI from runner image — install at runtime with version pinning",https://github.com/fullsend-ai/fullsend/issues/6445
+2026-08-22,fullsend,issue,closed,6357,"PostToolUse sandbox hooks read `tool_result` but Claude Code sends `tool_response` — sanitizers are inert under Claude Code",https://github.com/fullsend-ai/fullsend/issues/6357
+2026-08-22,fullsend,issue,closed,1050,"Implement validation loop feedback so agents can self-correct",https://github.com/fullsend-ai/fullsend/issues/1050
+2026-08-22,.fullsend,pr,opened,180,"chore: replace prioritize-scheduler with per-repo dispatch",https://github.com/fullsend-ai/.fullsend/pull/180
+2026-08-22,experiments,pr,opened,57,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/57
+2026-08-22,experiments,pr,opened,56,"fix(#55): remove broken qualityflow agent reference",https://github.com/fullsend-ai/experiments/pull/56
+2026-08-22,experiments,pr,opened,54,"chore: remove pinned agent digests, rely on CLI fallback",https://github.com/fullsend-ai/experiments/pull/54
+2026-08-22,experiments,pr,merged,54,"chore: remove pinned agent digests, rely on CLI fallback",https://github.com/fullsend-ai/experiments/pull/54
+2026-08-22,experiments,pr,closed,57,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/experiments/pull/57
+2026-08-22,experiments,issue,opened,55,"Fix broken qualityflow agent reference in .fullsend/config.yaml",https://github.com/fullsend-ai/experiments/issues/55
+2026-08-22,metrics,pr,opened,12,"chore: remove pinned agent digests, rely on CLI fallback",https://github.com/fullsend-ai/metrics/pull/12
+2026-08-22,metrics,pr,merged,12,"chore: remove pinned agent digests, rely on CLI fallback",https://github.com/fullsend-ai/metrics/pull/12
+2026-08-22,agents,pr,opened,948,"feat(#947): adopt feedback_mode: append for code and fix harnesses",https://github.com/fullsend-ai/agents/pull/948
+2026-08-22,agents,pr,opened,946,"fix(#945): run hooks directly when pre-commit cannot fetch repos",https://github.com/fullsend-ai/agents/pull/946
+2026-08-22,agents,pr,opened,943,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/agents/pull/943
+2026-08-22,agents,pr,opened,942,"docs(#940): update notify-agent-sync description to manual-only",https://github.com/fullsend-ai/agents/pull/942
+2026-08-22,agents,pr,opened,939,"docs(#937): document agent definition frontmatter conventions",https://github.com/fullsend-ai/agents/pull/939
+2026-08-22,agents,pr,opened,936,"chore: remove pinned agent digests, disable auto sync dispatch",https://github.com/fullsend-ai/agents/pull/936
+2026-08-22,agents,pr,opened,934,"fix(#933): lower pre-commit time-budget gate from 40% to 10%",https://github.com/fullsend-ai/agents/pull/934
+2026-08-22,agents,pr,opened,930,"docs(#929): add shell scripting defensive patterns to AGENTS.md",https://github.com/fullsend-ai/agents/pull/930
+2026-08-22,agents,pr,merged,936,"chore: remove pinned agent digests, disable auto sync dispatch",https://github.com/fullsend-ai/agents/pull/936
+2026-08-22,agents,pr,merged,928,"fix(#914): space before Skill in tools frontmatter",https://github.com/fullsend-ai/agents/pull/928
+2026-08-22,agents,pr,merged,921,"fix(#920): replace hardcoded GitLab host allowlist with dynamic trust sources",https://github.com/fullsend-ai/agents/pull/921
+2026-08-22,agents,pr,merged,918,"feat(#916): add multi-forge support to scribe agent",https://github.com/fullsend-ai/agents/pull/918
+2026-08-22,agents,pr,closed,943,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/agents/pull/943
+2026-08-22,agents,issue,opened,955,"Retro agent should verify test uses real dependencies before diagnosing infrastructure flakiness",https://github.com/fullsend-ai/agents/issues/955
+2026-08-22,agents,issue,opened,954,"functional-tests-complete goes red when a label is added to a PR whose tests already passed",https://github.com/fullsend-ai/agents/issues/954
+2026-08-22,agents,issue,opened,953,"Adopt feedback_mode: append for review, prioritize, triage and scribe",https://github.com/fullsend-ai/agents/issues/953
+2026-08-22,agents,issue,opened,952,"Adopt feedback_mode: append for the retro agent — closes fullsend#1050's unmet validation criterion",https://github.com/fullsend-ai/agents/issues/952
+2026-08-22,agents,issue,opened,951,"Correctness sub-agent should verify that log messages and code comments accurately describe surrounding behavior",https://github.com/fullsend-ai/agents/issues/951
+2026-08-22,agents,issue,opened,950,"Intent-coherence sub-agent should adversarially verify PR narrative factual claims against linked issue evidence",https://github.com/fullsend-ai/agents/issues/950
+2026-08-22,agents,issue,opened,949,"Run pre-commit inside the code/fix validation loop (agents-side implementation of fullsend#6494)",https://github.com/fullsend-ai/agents/issues/949
+2026-08-22,agents,issue,opened,947,"Adopt validation_loop feedback_mode: append now that the runner consumes it",https://github.com/fullsend-ai/agents/issues/947
+2026-08-22,agents,issue,opened,945,"Code agent skips verification when pre-commit cannot fetch hook repos, instead of running the configured hooks directly",https://github.com/fullsend-ai/agents/issues/945
+2026-08-22,agents,issue,opened,944,"Code agent should proactively update documentation when changing user-facing behavior",https://github.com/fullsend-ai/agents/issues/944
+2026-08-22,agents,issue,opened,941,"Code-review skill should audit all exception-handler exit paths in security hooks for fail-closed behavior",https://github.com/fullsend-ai/agents/issues/941
+2026-08-22,agents,issue,opened,940,"Update AGENTS.md and README.md: notify-agent-sync is now manual-only",https://github.com/fullsend-ai/agents/issues/940
+2026-08-22,agents,issue,opened,938,"CI test for #927 should validate parsed tool lists, not raw frontmatter text",https://github.com/fullsend-ai/agents/issues/938
+2026-08-22,agents,issue,opened,937,"Document agent definition frontmatter conventions including tools: syntax",https://github.com/fullsend-ai/agents/issues/937
+2026-08-22,agents,issue,opened,935,"Enable fleet agents on the pi runtime",https://github.com/fullsend-ai/agents/issues/935
+2026-08-22,agents,issue,opened,933,"Fix-review skill pre-commit gate is too conservative, causing avoidable post-script failures",https://github.com/fullsend-ai/agents/issues/933
+2026-08-22,agents,issue,opened,932,"Review agent: detect validation-resolver function pairing gaps",https://github.com/fullsend-ai/agents/issues/932
+2026-08-22,agents,issue,opened,931,"Configure REVIEW_APP_CLIENT_ID so provenance validation works on re-reviews",https://github.com/fullsend-ai/agents/issues/931
+2026-08-22,agents,issue,opened,929,"Add shell scripting defensive patterns to AGENTS.md for code agents",https://github.com/fullsend-ai/agents/issues/929
+2026-08-22,agents,issue,closed,920,"forge_validate_issue_url hardcodes GitLab host allowlist, blocking other self-hosted instances",https://github.com/fullsend-ai/agents/issues/920
+2026-08-22,agents,issue,closed,916,"Multi-forge: scribe agent",https://github.com/fullsend-ai/agents/issues/916

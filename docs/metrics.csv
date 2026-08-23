@@ -632,3 +632,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-21,agents,7,5,1,13,4,0,23.80,35
 2026-08-21,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-21,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-22,fullsend,17,13,2,17,12,0,2.40,84
+2026-08-22,.fullsend,1,0,0,0,0,0,0,4
+2026-08-22,experiments,3,1,1,1,0,0,0.20,2
+2026-08-22,metrics,1,1,0,0,0,0,0.20,2
+2026-08-22,agents,8,4,1,19,2,0,12.60,36
+2026-08-22,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-22,autonomy-analysis,0,0,0,0,0,0,0,0

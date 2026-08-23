@@ -1256,3 +1256,20 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-21,agents,887,fix(#847): use closing-reference queries for PR-issue matching,fix,core,847,ggallen,https://github.com/fullsend-ai/agents/pull/887
 2026-08-21,agents,876,chore: check JIRA vars before making api calls,chore,,,,https://github.com/fullsend-ai/agents/pull/876
 2026-08-21,agents,872,feat(#860): make fix agent multi-forge (GitHub + GitLab),feat,,,,https://github.com/fullsend-ai/agents/pull/872
+2026-08-22,fullsend,6495,feat(#6494): implement validation loop feedback_mode,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6495
+2026-08-22,fullsend,6493,chore(#6490): thread project_number from scheduler to prioritize thin caller,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6493
+2026-08-22,fullsend,6492,feat(#6487): report component-level detail in dry-run output,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6492
+2026-08-22,fullsend,6491,fix(#6489): add exponential backoff to waitForFork,fix,bot,6489,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6491
+2026-08-22,fullsend,6486,"chore: remove pinned agent digests, disable scaffold sync dispatch",chore,,,,https://github.com/fullsend-ai/fullsend/pull/6486
+2026-08-22,fullsend,6484,chore(#6483): use runner :dev tag in GitLab CI scaffolds,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6484
+2026-08-22,fullsend,6482,fix(#6481): unify component checks between repos status and install,fix,core,6481,ggallen,https://github.com/fullsend-ai/fullsend/pull/6482
+2026-08-22,fullsend,6479,"fix(#6477): converge GitLab CI templates during upgrade, fix GOPATH on non-root runners",fix,core,6477,ggallen,https://github.com/fullsend-ai/fullsend/pull/6479
+2026-08-22,fullsend,6467,"feat(#6464): add the pi runtime (stream parser, Bootstrap/Run, Vertex provider, enablement)",feat,,,,https://github.com/fullsend-ai/fullsend/pull/6467
+2026-08-22,fullsend,6461,fix(#6460): export RUNNER_TEMP with /tmp fallback in GitLab agent template,fix,core,6460,ggallen,https://github.com/fullsend-ai/fullsend/pull/6461
+2026-08-22,fullsend,6451,fix(#6450): install prioritize.yml per-repo and document scheduler,fix,core,6450,ggallen,https://github.com/fullsend-ai/fullsend/pull/6451
+2026-08-22,fullsend,6447,feat(#6445): decouple fullsend CLI from runner image,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6447
+2026-08-22,fullsend,6001,fix(post-review): post file-level comments in a separate review,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/6001
+2026-08-22,agents,936,"chore: remove pinned agent digests, disable auto sync dispatch",chore,,,,https://github.com/fullsend-ai/agents/pull/936
+2026-08-22,agents,928,fix(#914): space before Skill in tools frontmatter,fix,core,914,ascerra,https://github.com/fullsend-ai/agents/pull/928
+2026-08-22,agents,921,fix(#920): replace hardcoded GitLab host allowlist with dynamic trust sources,fix,core,920,ggallen,https://github.com/fullsend-ai/agents/pull/921
+2026-08-22,agents,918,feat(#916): add multi-forge support to scribe agent,feat,,,,https://github.com/fullsend-ai/agents/pull/918
