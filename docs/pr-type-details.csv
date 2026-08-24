@@ -1273,3 +1273,22 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-22,agents,928,fix(#914): space before Skill in tools frontmatter,fix,core,914,ascerra,https://github.com/fullsend-ai/agents/pull/928
 2026-08-22,agents,921,fix(#920): replace hardcoded GitLab host allowlist with dynamic trust sources,fix,core,920,ggallen,https://github.com/fullsend-ai/agents/pull/921
 2026-08-22,agents,918,feat(#916): add multi-forge support to scribe agent,feat,,,,https://github.com/fullsend-ai/agents/pull/918
+2026-08-23,fullsend,6534,feat(#6526): surface runtime/model and make the runtime selectable at setup and per run,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6534
+2026-08-23,fullsend,6524,chore(#6522): move the DeBERTa scanner out of the sandbox image and into the runner image,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6524
+2026-08-23,fullsend,6521,fix(#6518): restore config.yaml agents between pool slot leases,fix,core,6518,ifireball,https://github.com/fullsend-ai/fullsend/pull/6521
+2026-08-23,fullsend,6520,feat(#608): diagnose un-normalized tool names in allowlist hook,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6520
+2026-08-23,fullsend,6519,test(#6517): restore allowed_remote_resources in CleanupScenario,test,,,,https://github.com/fullsend-ai/fullsend/pull/6519
+2026-08-23,fullsend,6515,docs(#6307): add mintcore contributor guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6515
+2026-08-23,fullsend,6510,fix(#6502): frame and sanitize validation feedback in agent prompt,fix,core,6502,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6510
+2026-08-23,fullsend,6508,docs(#6485): add pi runtime local-run guide section,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6508
+2026-08-23,fullsend,6505,fix(#6504): move pi extension path from /opt to /usr/local/share,fix,core,6504,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6505
+2026-08-23,fullsend,6498,refactor(#6496): unify repos install into single convergence loop,other,,,,https://github.com/fullsend-ai/fullsend/pull/6498
+2026-08-23,fullsend,6472,fix(#6471): validate config-driven runtimes against ValidRuntimes(),fix,core,6471,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6472
+2026-08-23,fullsend,6373,fix(#1158): zero PEM block and RSA key internals after JWT signing,fix,core,1158,ifireball,https://github.com/fullsend-ai/fullsend/pull/6373
+2026-08-23,fullsend,6166,fix(#6165): tighten auth_header redactor pattern to prevent JSON corruption,fix,bot,6165,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6166
+2026-08-23,agents,975,"feat(#971): runtime docs, explicit effort in every harness, eval runtime/model overrides",feat,,,,https://github.com/fullsend-ai/agents/pull/975
+2026-08-23,agents,965,feat(#935): add pi runtime plumbing to fleet harnesses,feat,,,,https://github.com/fullsend-ai/agents/pull/965
+2026-08-23,agents,960,feat(#949): run pre-commit inside the code/fix validation loop,feat,,,,https://github.com/fullsend-ai/agents/pull/960
+2026-08-23,agents,948,feat(#947): adopt feedback_mode: append for code and fix harnesses,feat,,,,https://github.com/fullsend-ai/agents/pull/948
+2026-08-23,agents,946,fix(#945): run hooks directly when pre-commit cannot fetch repos,fix,core,945,waynesun09,https://github.com/fullsend-ai/agents/pull/946
+2026-08-23,agents,934,fix(#933): lower pre-commit time-budget gate from 40% to 10%,fix,bot,933,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/934

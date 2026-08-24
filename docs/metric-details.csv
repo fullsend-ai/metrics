@@ -11389,3 +11389,113 @@ date,repo,type,event,number,title,url
 2026-08-22,agents,issue,opened,929,"Add shell scripting defensive patterns to AGENTS.md for code agents",https://github.com/fullsend-ai/agents/issues/929
 2026-08-22,agents,issue,closed,920,"forge_validate_issue_url hardcodes GitLab host allowlist, blocking other self-hosted instances",https://github.com/fullsend-ai/agents/issues/920
 2026-08-22,agents,issue,closed,916,"Multi-forge: scribe agent",https://github.com/fullsend-ai/agents/issues/916
+2026-08-23,fullsend,pr,opened,6542,"fix(#6541): skip SSRF validation for inert pipelines",https://github.com/fullsend-ai/fullsend/pull/6542
+2026-08-23,fullsend,pr,opened,6540,"docs(#6539): one local-run flow — pi is a --runtime flag on the standard examples",https://github.com/fullsend-ai/fullsend/pull/6540
+2026-08-23,fullsend,pr,opened,6537,"fix(#3017): automerge minor GitHub Actions version bumps in Renovate",https://github.com/fullsend-ai/fullsend/pull/6537
+2026-08-23,fullsend,pr,opened,6536,"fix(#6535): skip SSRF validation for URLs in sed/grep/awk patterns",https://github.com/fullsend-ai/fullsend/pull/6536
+2026-08-23,fullsend,pr,opened,6534,"feat(#6526): surface runtime/model and make the runtime selectable at setup and per run",https://github.com/fullsend-ai/fullsend/pull/6534
+2026-08-23,fullsend,pr,opened,6525,"chore(deps): update dependency go to v1.27.0",https://github.com/fullsend-ai/fullsend/pull/6525
+2026-08-23,fullsend,pr,opened,6524,"chore(#6522): move the DeBERTa scanner out of the sandbox image and into the runner image",https://github.com/fullsend-ai/fullsend/pull/6524
+2026-08-23,fullsend,pr,opened,6523,"fix(sandbox): retry provider updates rejected as modified concurrently",https://github.com/fullsend-ai/fullsend/pull/6523
+2026-08-23,fullsend,pr,opened,6521,"fix(#6518): restore config.yaml agents between pool slot leases",https://github.com/fullsend-ai/fullsend/pull/6521
+2026-08-23,fullsend,pr,opened,6520,"feat(#608): diagnose un-normalized tool names in allowlist hook",https://github.com/fullsend-ai/fullsend/pull/6520
+2026-08-23,fullsend,pr,opened,6519,"test(#6517): restore allowed_remote_resources in CleanupScenario",https://github.com/fullsend-ai/fullsend/pull/6519
+2026-08-23,fullsend,pr,opened,6515,"docs(#6307): add mintcore contributor guide",https://github.com/fullsend-ai/fullsend/pull/6515
+2026-08-23,fullsend,pr,opened,6514,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/6514
+2026-08-23,fullsend,pr,opened,6513,"ci(#6512): teach Renovate to track agents gate pin and add drift check",https://github.com/fullsend-ai/fullsend/pull/6513
+2026-08-23,fullsend,pr,opened,6511,"fix(#6509): move runtime resolution before sandbox creation",https://github.com/fullsend-ai/fullsend/pull/6511
+2026-08-23,fullsend,pr,opened,6510,"fix(#6502): frame and sanitize validation feedback in agent prompt",https://github.com/fullsend-ai/fullsend/pull/6510
+2026-08-23,fullsend,pr,opened,6508,"docs(#6485): add pi runtime local-run guide section",https://github.com/fullsend-ai/fullsend/pull/6508
+2026-08-23,fullsend,pr,opened,6505,"fix(#6504): move pi extension path from /opt to /usr/local/share",https://github.com/fullsend-ai/fullsend/pull/6505
+2026-08-23,fullsend,pr,merged,6534,"feat(#6526): surface runtime/model and make the runtime selectable at setup and per run",https://github.com/fullsend-ai/fullsend/pull/6534
+2026-08-23,fullsend,pr,merged,6524,"chore(#6522): move the DeBERTa scanner out of the sandbox image and into the runner image",https://github.com/fullsend-ai/fullsend/pull/6524
+2026-08-23,fullsend,pr,merged,6521,"fix(#6518): restore config.yaml agents between pool slot leases",https://github.com/fullsend-ai/fullsend/pull/6521
+2026-08-23,fullsend,pr,merged,6520,"feat(#608): diagnose un-normalized tool names in allowlist hook",https://github.com/fullsend-ai/fullsend/pull/6520
+2026-08-23,fullsend,pr,merged,6519,"test(#6517): restore allowed_remote_resources in CleanupScenario",https://github.com/fullsend-ai/fullsend/pull/6519
+2026-08-23,fullsend,pr,merged,6515,"docs(#6307): add mintcore contributor guide",https://github.com/fullsend-ai/fullsend/pull/6515
+2026-08-23,fullsend,pr,merged,6510,"fix(#6502): frame and sanitize validation feedback in agent prompt",https://github.com/fullsend-ai/fullsend/pull/6510
+2026-08-23,fullsend,pr,merged,6508,"docs(#6485): add pi runtime local-run guide section",https://github.com/fullsend-ai/fullsend/pull/6508
+2026-08-23,fullsend,pr,merged,6505,"fix(#6504): move pi extension path from /opt to /usr/local/share",https://github.com/fullsend-ai/fullsend/pull/6505
+2026-08-23,fullsend,pr,merged,6498,"refactor(#6496): unify repos install into single convergence loop",https://github.com/fullsend-ai/fullsend/pull/6498
+2026-08-23,fullsend,pr,merged,6472,"fix(#6471): validate config-driven runtimes against ValidRuntimes()",https://github.com/fullsend-ai/fullsend/pull/6472
+2026-08-23,fullsend,pr,merged,6373,"fix(#1158): zero PEM block and RSA key internals after JWT signing",https://github.com/fullsend-ai/fullsend/pull/6373
+2026-08-23,fullsend,pr,merged,6166,"fix(#6165): tighten auth_header redactor pattern to prevent JSON corruption",https://github.com/fullsend-ai/fullsend/pull/6166
+2026-08-23,fullsend,issue,opened,6541,"ssrf_pretool.py still blocks URL literals passed as data to non-network commands (echo/here-string/assignment)",https://github.com/fullsend-ai/fullsend/issues/6541
+2026-08-23,fullsend,issue,opened,6539,"docs: one local-run flow — replace the pi-specific section with --runtime on the standard examples",https://github.com/fullsend-ai/fullsend/issues/6539
+2026-08-23,fullsend,issue,opened,6538,"Call the ML input scan for runs whose model is not measured-resilient (pi/OpenCode on non-Anthropic providers), via the runner image",https://github.com/fullsend-ai/fullsend/issues/6538
+2026-08-23,fullsend,issue,opened,6535,"ssrf_pretool.py blocks sed patterns that merely contain a URL-shaped literal (no outbound request)",https://github.com/fullsend-ai/fullsend/issues/6535
+2026-08-23,fullsend,issue,opened,6532,"Add GPT / Azure OpenAI / Amazon Bedrock providers for pi runtime",https://github.com/fullsend-ai/fullsend/issues/6532
+2026-08-23,fullsend,issue,opened,6533,"Add `providers.allow` config for per-repo provider allowlisting",https://github.com/fullsend-ai/fullsend/issues/6533
+2026-08-23,fullsend,issue,opened,6531,"Implement pi `fullsend-models.js`: cross-provider fallback chain, `phases`, and `budget`",https://github.com/fullsend-ai/fullsend/issues/6531
+2026-08-23,fullsend,issue,opened,6530,"Support per-run overrides from GitHub (slash-command args, `workflow_dispatch` inputs)",https://github.com/fullsend-ai/fullsend/issues/6530
+2026-08-23,fullsend,issue,opened,6529,"Add per-role `models:`/`effort:` to `.fullsend/config.yaml` with `models.aliases` remap",https://github.com/fullsend-ai/fullsend/issues/6529
+2026-08-23,fullsend,issue,opened,6528,"Implement pi `Agent` tool for sub-agent spawning (Track E)",https://github.com/fullsend-ai/fullsend/issues/6528
+2026-08-23,fullsend,issue,opened,6527,"Runtime parity backlog: deferred runtime/model UX items (pi Agent tool, per-role models, per-run overrides, model switching, other clouds)",https://github.com/fullsend-ai/fullsend/issues/6527
+2026-08-23,fullsend,issue,opened,6526,"Surface the selected runtime/model where users look, then make the runtime selectable at setup and per run",https://github.com/fullsend-ai/fullsend/issues/6526
+2026-08-23,fullsend,issue,opened,6522,"DeBERTa model ships in the sandbox image but its only consumer is the host-side CLI — remove the payload from the sandbox; relocation to the runner image is gated on cgo + libtokenizers (follow-up to #6506)",https://github.com/fullsend-ai/fullsend/issues/6522
+2026-08-23,fullsend,issue,opened,6518,"test(behaviour): CleanupScenario does not restore config.yaml agents or allowlist",https://github.com/fullsend-ai/fullsend/issues/6518
+2026-08-23,fullsend,issue,opened,6517,"test(behaviour): allowlist-negative URL dispatch flakes on reused pool slots",https://github.com/fullsend-ai/fullsend/issues/6517
+2026-08-23,fullsend,issue,opened,6516,"mint: default omitted privilege level to read",https://github.com/fullsend-ai/fullsend/issues/6516
+2026-08-23,fullsend,issue,opened,6512,"release: validate-agents startup failure (caller permissions) + agents gate validates a different tree than tag-agents tags",https://github.com/fullsend-ai/fullsend/issues/6512
+2026-08-23,fullsend,issue,opened,6509,"Move runtime resolution above sandbox creation to fail fast on invalid runtime config",https://github.com/fullsend-ai/fullsend/issues/6509
+2026-08-23,fullsend,issue,opened,6507,"Debounce code dispatch when triage is in flight for same issue",https://github.com/fullsend-ai/fullsend/issues/6507
+2026-08-23,fullsend,issue,opened,6506,"DeBERTa model ships in the sandbox image but no build enables the ORT tag — the ML injection scanner is compiled out",https://github.com/fullsend-ai/fullsend/issues/6506
+2026-08-23,fullsend,issue,closed,6527,"Runtime parity backlog: deferred runtime/model UX items (pi Agent tool, per-role models, per-run overrides, model switching, other clouds)",https://github.com/fullsend-ai/fullsend/issues/6527
+2026-08-23,fullsend,issue,closed,6526,"Surface the selected runtime/model where users look, then make the runtime selectable at setup and per run",https://github.com/fullsend-ai/fullsend/issues/6526
+2026-08-23,fullsend,issue,closed,6522,"DeBERTa model ships in the sandbox image but its only consumer is the host-side CLI — remove the payload from the sandbox; relocation to the runner image is gated on cgo + libtokenizers (follow-up to #6506)",https://github.com/fullsend-ai/fullsend/issues/6522
+2026-08-23,fullsend,issue,closed,6518,"test(behaviour): CleanupScenario does not restore config.yaml agents or allowlist",https://github.com/fullsend-ai/fullsend/issues/6518
+2026-08-23,fullsend,issue,closed,6517,"test(behaviour): allowlist-negative URL dispatch flakes on reused pool slots",https://github.com/fullsend-ai/fullsend/issues/6517
+2026-08-23,fullsend,issue,closed,6506,"DeBERTa model ships in the sandbox image but no build enables the ORT tag — the ML injection scanner is compiled out",https://github.com/fullsend-ai/fullsend/issues/6506
+2026-08-23,fullsend,issue,closed,6504,"pi cannot load the Vertex provider extension: /opt is outside the sandbox filesystem policy (every pi Vertex run fails at 0 turns)",https://github.com/fullsend-ai/fullsend/issues/6504
+2026-08-23,fullsend,issue,closed,6502,"Validation feedback is injected into the agent prompt unframed and unsanitized (feedback_mode: append)",https://github.com/fullsend-ai/fullsend/issues/6502
+2026-08-23,fullsend,issue,closed,6494,"Run pre-commit inside the code/fix validation loop so a lint block becomes a retry, not a dead end",https://github.com/fullsend-ai/fullsend/issues/6494
+2026-08-23,fullsend,issue,closed,6485,"docs: run a minimal agent on the pi runtime locally (no fleet repo); verify on Linux and macOS",https://github.com/fullsend-ai/fullsend/issues/6485
+2026-08-23,fullsend,issue,closed,6471,"Config-driven runtime selection doesn't validate against ValidRuntimes() before sandbox bootstrap",https://github.com/fullsend-ai/fullsend/issues/6471
+2026-08-23,fullsend,issue,closed,6307,"docs(mintcore): document platform accessors, load-site construction, and WASM-safe wiring",https://github.com/fullsend-ai/fullsend/issues/6307
+2026-08-23,fullsend,issue,closed,6306,"refactor(mint): internalize mintPEM and deploy-time wiring",https://github.com/fullsend-ai/fullsend/issues/6306
+2026-08-23,fullsend,issue,closed,6165,"auth_header sanitizer pattern produces false positives on auth-related issues and corrupts JSON output",https://github.com/fullsend-ai/fullsend/issues/6165
+2026-08-23,fullsend,issue,closed,1158,"mint: zero PEM material after parsing private key",https://github.com/fullsend-ai/fullsend/issues/1158
+2026-08-23,fullsend,issue,closed,608,"Tool allowlist: diagnose un-normalized (non-Claude-vocabulary) tool names from runtime adapters",https://github.com/fullsend-ai/fullsend/issues/608
+2026-08-23,agents,pr,opened,975,"feat(#971): runtime docs, explicit effort in every harness, eval runtime/model overrides",https://github.com/fullsend-ai/agents/pull/975
+2026-08-23,agents,pr,opened,974,"docs(#935): add runtime support notes to agent docs",https://github.com/fullsend-ai/agents/pull/974
+2026-08-23,agents,pr,opened,967,"fix(eval): raise triage max_turns budget from 30 to 35",https://github.com/fullsend-ai/agents/pull/967
+2026-08-23,agents,pr,opened,965,"feat(#935): add pi runtime plumbing to fleet harnesses",https://github.com/fullsend-ai/agents/pull/965
+2026-08-23,agents,pr,opened,960,"feat(#949): run pre-commit inside the code/fix validation loop",https://github.com/fullsend-ai/agents/pull/960
+2026-08-23,agents,pr,opened,957,"fix(#956): gate the pre-commit fallback on a 300s floor",https://github.com/fullsend-ai/agents/pull/957
+2026-08-23,agents,pr,merged,975,"feat(#971): runtime docs, explicit effort in every harness, eval runtime/model overrides",https://github.com/fullsend-ai/agents/pull/975
+2026-08-23,agents,pr,merged,965,"feat(#935): add pi runtime plumbing to fleet harnesses",https://github.com/fullsend-ai/agents/pull/965
+2026-08-23,agents,pr,merged,960,"feat(#949): run pre-commit inside the code/fix validation loop",https://github.com/fullsend-ai/agents/pull/960
+2026-08-23,agents,pr,merged,948,"feat(#947): adopt feedback_mode: append for code and fix harnesses",https://github.com/fullsend-ai/agents/pull/948
+2026-08-23,agents,pr,merged,946,"fix(#945): run hooks directly when pre-commit cannot fetch repos",https://github.com/fullsend-ai/agents/pull/946
+2026-08-23,agents,pr,merged,934,"fix(#933): lower pre-commit time-budget gate from 40% to 10%",https://github.com/fullsend-ai/agents/pull/934
+2026-08-23,agents,pr,closed,974,"docs(#935): add runtime support notes to agent docs",https://github.com/fullsend-ai/agents/pull/974
+2026-08-23,agents,pr,closed,967,"fix(eval): raise triage max_turns budget from 30 to 35",https://github.com/fullsend-ai/agents/pull/967
+2026-08-23,agents,issue,opened,979,"Review agent should flag incomplete sibling-file coverage in uniform doc additions",https://github.com/fullsend-ai/agents/issues/979
+2026-08-23,agents,issue,opened,978,"Triage agent should verify file-set enumerations against filesystem for uniform-change tasks",https://github.com/fullsend-ai/agents/issues/978
+2026-08-23,agents,issue,opened,977,"Code agent should follow explicit audit/investigation directives in issue descriptions",https://github.com/fullsend-ai/agents/issues/977
+2026-08-23,agents,issue,opened,976,"Post-code guard: detect uncommitted working-tree changes after agent exit",https://github.com/fullsend-ai/agents/issues/976
+2026-08-23,agents,issue,opened,973,"Standardize eval max_turns headroom and document budgeting rationale",https://github.com/fullsend-ai/agents/issues/973
+2026-08-23,agents,issue,opened,972,"Eval: add `--runtime` and `--model` flags to `run-fullsend.sh`",https://github.com/fullsend-ai/agents/issues/972
+2026-08-23,agents,issue,opened,971,"Add runtime documentation: README matrix, per-agent notes, LOCAL.md section",https://github.com/fullsend-ai/agents/issues/971
+2026-08-23,agents,issue,opened,970,"Add explicit `effort:` field to every harness YAML",https://github.com/fullsend-ai/agents/issues/970
+2026-08-23,agents,issue,opened,969,"Fleet runtime UX: effort per harness, runtime docs, eval --runtime/--model",https://github.com/fullsend-ai/agents/issues/969
+2026-08-23,agents,issue,opened,968,"Eval max_turns judge should accommodate inherent LLM turn-count variance",https://github.com/fullsend-ai/agents/issues/968
+2026-08-23,agents,issue,opened,966,"Code agent should add conformance tests for all consumers when introducing a canonical registry",https://github.com/fullsend-ai/agents/issues/966
+2026-08-23,agents,issue,opened,964,"Code agent should infer conventional commit type from changed file paths",https://github.com/fullsend-ai/agents/issues/964
+2026-08-23,agents,issue,opened,963,"Code agent should write tests that exercise the issue's primary behavioral objective",https://github.com/fullsend-ai/agents/issues/963
+2026-08-23,agents,issue,opened,962,"Review agent: verify self-containment claims in documentation guides",https://github.com/fullsend-ai/agents/issues/962
+2026-08-23,agents,issue,opened,961,"Code agent: verify documented behavior claims against source code on docs PRs",https://github.com/fullsend-ai/agents/issues/961
+2026-08-23,agents,issue,opened,959,"Security sub-agent should provide complete remediation checklists for injection findings",https://github.com/fullsend-ai/agents/issues/959
+2026-08-23,agents,issue,opened,958,"Review correctness sub-agent should cross-reference harness time budgets for threshold changes",https://github.com/fullsend-ai/agents/issues/958
+2026-08-23,agents,issue,opened,956,"fix-review can start step 7b too late to finish the STEP C direct-execution fallback",https://github.com/fullsend-ai/agents/issues/956
+2026-08-23,agents,issue,closed,978,"Triage agent should verify file-set enumerations against filesystem for uniform-change tasks",https://github.com/fullsend-ai/agents/issues/978
+2026-08-23,agents,issue,closed,973,"Standardize eval max_turns headroom and document budgeting rationale",https://github.com/fullsend-ai/agents/issues/973
+2026-08-23,agents,issue,closed,972,"Eval: add `--runtime` and `--model` flags to `run-fullsend.sh`",https://github.com/fullsend-ai/agents/issues/972
+2026-08-23,agents,issue,closed,971,"Add runtime documentation: README matrix, per-agent notes, LOCAL.md section",https://github.com/fullsend-ai/agents/issues/971
+2026-08-23,agents,issue,closed,970,"Add explicit `effort:` field to every harness YAML",https://github.com/fullsend-ai/agents/issues/970
+2026-08-23,agents,issue,closed,969,"Fleet runtime UX: effort per harness, runtime docs, eval --runtime/--model",https://github.com/fullsend-ai/agents/issues/969
+2026-08-23,agents,issue,closed,954,"functional-tests-complete goes red when a label is added to a PR whose tests already passed",https://github.com/fullsend-ai/agents/issues/954
+2026-08-23,agents,issue,closed,949,"Run pre-commit inside the code/fix validation loop (agents-side implementation of fullsend#6494)",https://github.com/fullsend-ai/agents/issues/949
+2026-08-23,agents,issue,closed,947,"Adopt validation_loop feedback_mode: append now that the runner consumes it",https://github.com/fullsend-ai/agents/issues/947
+2026-08-23,agents,issue,closed,945,"Code agent skips verification when pre-commit cannot fetch hook repos, instead of running the configured hooks directly",https://github.com/fullsend-ai/agents/issues/945
+2026-08-23,agents,issue,closed,933,"Fix-review skill pre-commit gate is too conservative, causing avoidable post-script failures",https://github.com/fullsend-ai/agents/issues/933

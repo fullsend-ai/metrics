@@ -639,3 +639,10 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-22,agents,8,4,1,19,2,0,12.60,36
 2026-08-22,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-22,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-23,fullsend,18,13,0,20,16,0,2,88
+2026-08-23,.fullsend,0,0,0,0,0,0,0,4
+2026-08-23,experiments,0,0,0,0,0,0,0,2
+2026-08-23,metrics,0,0,0,0,0,0,0,2
+2026-08-23,agents,6,6,2,18,11,0,2.80,36
+2026-08-23,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-23,autonomy-analysis,0,0,0,0,0,0,0,0
