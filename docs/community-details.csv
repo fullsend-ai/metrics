@@ -1412,3 +1412,8 @@ date,repo,type,event,number,actor,title,url
 2026-08-23,fullsend,pr,opened_core,6540,waynesun09,"docs(#6539): one local-run flow — pi is a --runtime flag on the standard examples",https://github.com/fullsend-ai/fullsend/pull/6540
 2026-08-23,fullsend,pr,opened_core,6523,waynesun09,"fix(sandbox): retry provider updates rejected as modified concurrently",https://github.com/fullsend-ai/fullsend/pull/6523
 2026-08-23,agents,pr,opened_core,967,waynesun09,"fix(eval): raise triage max_turns budget from 30 to 35",https://github.com/fullsend-ai/agents/pull/967
+2026-08-24,fullsend,pr,opened_core,6562,ralphbean,"chore(ci): increase max_turns to 45",https://github.com/fullsend-ai/fullsend/pull/6562
+2026-08-24,fullsend,pr,opened_core,6549,ggallen,"ci: trigger scaffold sync on every push to main",https://github.com/fullsend-ai/fullsend/pull/6549
+2026-08-24,agents,pr,opened_core,981,maruiz93,"feat(risk): add GitLab support for risk assessment tier scripts",https://github.com/fullsend-ai/agents/pull/981
+2026-08-24,pi-xai-vertex,pr,opened_core,2,waynesun09,"fix: use ambient ADC auth so a fresh environment works",https://github.com/fullsend-ai/pi-xai-vertex/pull/2
+2026-08-24,pi-xai-vertex,pr,opened_core,1,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-xai-vertex/pull/1

@@ -1292,3 +1292,14 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-23,agents,948,feat(#947): adopt feedback_mode: append for code and fix harnesses,feat,,,,https://github.com/fullsend-ai/agents/pull/948
 2026-08-23,agents,946,fix(#945): run hooks directly when pre-commit cannot fetch repos,fix,core,945,waynesun09,https://github.com/fullsend-ai/agents/pull/946
 2026-08-23,agents,934,fix(#933): lower pre-commit time-budget gate from 40% to 10%,fix,bot,933,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/934
+2026-08-24,fullsend,6569,ci(#6567): remove repo unenrollment phase from e2e test,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6569
+2026-08-24,fullsend,6568,fix(#6564): switch Fedora repos from metalink to baseurl for egress,fix,core,6564,ggallen,https://github.com/fullsend-ai/fullsend/pull/6568
+2026-08-24,fullsend,6562,chore(ci): increase max_turns to 45,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6562
+2026-08-24,fullsend,6555,fix(#6553): make branch-ref convergence idempotent,fix,core,6553,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6555
+2026-08-24,fullsend,6549,ci: trigger scaffold sync on every push to main,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6549
+2026-08-24,fullsend,6536,fix(#6535): skip SSRF validation for URLs in sed/grep/awk patterns,fix,core,6535,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6536
+2026-08-24,fullsend,6513,ci(#6512): fix validate-agents caller permissions and tag the resolved SHA,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6513
+2026-08-24,fullsend,6476,fix(#6475): raise triage eval max_turns from 30 to 35,fix,bot,6475,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6476
+2026-08-24,fullsend,6455,feat(#6347): add pre-computed matrix input to reusable-dispatch,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6455
+2026-08-24,fullsend,6285,feat(harness): implement CEL-guarded overlays (ADR 0088),feat,,,,https://github.com/fullsend-ai/fullsend/pull/6285
+2026-08-24,fullsend,5957,feat(#3697): add emoji reaction status notifications,feat,,,,https://github.com/fullsend-ai/fullsend/pull/5957
