@@ -1303,3 +1303,34 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-24,fullsend,6455,feat(#6347): add pre-computed matrix input to reusable-dispatch,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6455
 2026-08-24,fullsend,6285,feat(harness): implement CEL-guarded overlays (ADR 0088),feat,,,,https://github.com/fullsend-ai/fullsend/pull/6285
 2026-08-24,fullsend,5957,feat(#3697): add emoji reaction status notifications,feat,,,,https://github.com/fullsend-ai/fullsend/pull/5957
+2026-08-25,fullsend,6606,docs(#6605): update prioritize scheduler to use create-github-app-token,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6606
+2026-08-25,fullsend,6594,chore: enable emoji reactions for agent runs on this repo,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6594
+2026-08-25,fullsend,6593,fix(#6592): populate failure detail in status comment,fix,core,6592,ggallen,https://github.com/fullsend-ai/fullsend/pull/6593
+2026-08-25,fullsend,6585,fix(#6582): skip SSRF DNS pre-resolution for egress-allowlisted hosts,fix,core,6582,ggallen,https://github.com/fullsend-ai/fullsend/pull/6585
+2026-08-25,fullsend,6584,chore(deps): update dependency mermaid to ~11.17.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6584
+2026-08-25,fullsend,6583,"feat(#6581): per-agent runtime, model and effort on agents: entries",feat,,,,https://github.com/fullsend-ai/fullsend/pull/6583
+2026-08-25,fullsend,6580,fix(#6576): detect and repair scaffold content drift in converge path,fix,core,6576,ggallen,https://github.com/fullsend-ai/fullsend/pull/6580
+2026-08-25,fullsend,6574,docs: split runtimes.md into a user page and an implementer page,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6574
+2026-08-25,fullsend,6572,feat(#6571): add xai-vertex provider to the pi runtime,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6572
+2026-08-25,fullsend,6559,fix(#6557): detect scaffold content drift in repos status,fix,core,6557,ggallen,https://github.com/fullsend-ai/fullsend/pull/6559
+2026-08-25,fullsend,6552,chore(deps): update dependency @earendil-works/pi-coding-agent to v0.84.3,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6552
+2026-08-25,fullsend,6547,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to a060288,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6547
+2026-08-25,fullsend,6540,docs(#6539): one local-run flow — pi is a --runtime flag on the standard examples,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6540
+2026-08-25,fullsend,6537,fix(#3017): automerge minor GitHub Actions version bumps in Renovate,fix,bot,3017,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6537
+2026-08-25,fullsend,6525,chore(deps): update dependency go to v1.27.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6525
+2026-08-25,fullsend,6523,fix(sandbox): retry provider updates rejected as modified concurrently,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/6523
+2026-08-25,fullsend,6480,fix(deps): update module github.com/spf13/pflag to v1.0.10,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/6480
+2026-08-25,fullsend,6453,chore(deps): update experiments digest to 974c590,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6453
+2026-08-25,fullsend,6444,chore(#5307): add interface documentation sync guidance to AGENTS.md,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6444
+2026-08-25,fullsend,6443,docs(#5629): add reusable workflow carve-out for github.workflow in concurrency groups,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6443
+2026-08-25,fullsend,6436,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.243,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6436
+2026-08-25,fullsend,6432,docs(skills): update writing-user-docs layout to ADR 0023 revision,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6432
+2026-08-25,fullsend,6429,feat(telemetry): implement ADR 0050 Level 3 content capture,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6429
+2026-08-25,fullsend,6403,fix(#5582): strip trailing punctuation from dispatch slash commands,fix,bot,5582,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6403
+2026-08-25,fullsend,6401,chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 2186e04,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6401
+2026-08-25,agents,1031,fix(#1030): use TRIGGER_ENTITY_URL for Jira forge ISSUE_URL mapping,fix,core,1030,ralphbean,https://github.com/fullsend-ai/agents/pull/1031
+2026-08-25,agents,1028,chore(#1027): set JIRA transition vars to literals in triage harness,chore,,,,https://github.com/fullsend-ai/agents/pull/1028
+2026-08-25,agents,1025,chore: repin harness images to the v0.37.0 release builds (ship the xai-vertex pi extension),chore,,,,https://github.com/fullsend-ai/agents/pull/1025
+2026-08-25,agents,1010,fix: use explicit ref for cross-repo checkout and expose agents_sha output,fix,core,1001,waynesun09,https://github.com/fullsend-ai/agents/pull/1010
+2026-08-25,agents,1007,chore: enable emoji reactions for agent runs on this repo,chore,,,,https://github.com/fullsend-ai/agents/pull/1007
+2026-08-25,agents,861,feat(risk): add PR risk assessment scoring to review pipeline,feat,,,,https://github.com/fullsend-ai/agents/pull/861

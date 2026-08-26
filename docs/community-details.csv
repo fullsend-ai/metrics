@@ -1417,3 +1417,20 @@ date,repo,type,event,number,actor,title,url
 2026-08-24,agents,pr,opened_core,981,maruiz93,"feat(risk): add GitLab support for risk assessment tier scripts",https://github.com/fullsend-ai/agents/pull/981
 2026-08-24,pi-xai-vertex,pr,opened_core,2,waynesun09,"fix: use ambient ADC auth so a fresh environment works",https://github.com/fullsend-ai/pi-xai-vertex/pull/2
 2026-08-24,pi-xai-vertex,pr,opened_core,1,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-xai-vertex/pull/1
+2026-08-25,fullsend,issue,opened_external,6604,jasonawant,"Gitlab dispatch-mr-agents job fails: Job `dispatch` not found in parent pipeline or does not have artifacts!",https://github.com/fullsend-ai/fullsend/issues/6604
+2026-08-25,fullsend,issue,opened_external,6602,jasonawant,"Using `fullsend repos install --forge gitlab` within a project will replace existing .gitlab.ci.yml content",https://github.com/fullsend-ai/fullsend/issues/6602
+2026-08-25,fullsend,issue,opened_external,6599,benoitf,"document the recommended way of running an agent every day (nightly job)",https://github.com/fullsend-ai/fullsend/issues/6599
+2026-08-25,fullsend,pr,opened_core,6613,waynesun09,"ci(release): prepare v0.38.0 — bump agents gate pin past agents#1010, tag the gate-validated SHA",https://github.com/fullsend-ai/fullsend/pull/6613
+2026-08-25,fullsend,pr,opened_core,6611,ralphbean,"chore(dispatch): provide TRIGGER_ENTITY_URL in addition to GITHUB_ISSUE_URL",https://github.com/fullsend-ai/fullsend/pull/6611
+2026-08-25,fullsend,pr,opened_core,6594,ralphbean,"chore: enable emoji reactions for agent runs on this repo",https://github.com/fullsend-ai/fullsend/pull/6594
+2026-08-25,fullsend,pr,opened_core,6574,waynesun09,"docs: split runtimes.md into a user page and an implementer page",https://github.com/fullsend-ai/fullsend/pull/6574
+2026-08-25,fullsend,pr,reviewed_external,6601,cgwalters,"docs(#6599): add scheduled agent example guide",https://github.com/fullsend-ai/fullsend/pull/6601
+2026-08-25,fullsend,pr,reviewed_external,6601,cgwalters,"docs(#6599): add scheduled agent example guide",https://github.com/fullsend-ai/fullsend/pull/6601
+2026-08-25,fullsend,pr,reviewed_external,6601,cgwalters,"docs(#6599): add scheduled agent example guide",https://github.com/fullsend-ai/fullsend/pull/6601
+2026-08-25,.fullsend,pr,opened_core,184,ggallen,"fix: reject zero-value stale threshold",https://github.com/fullsend-ai/.fullsend/pull/184
+2026-08-25,.fullsend,pr,opened_core,183,ggallen,"fix: validate parse_threshold numeric input",https://github.com/fullsend-ai/.fullsend/pull/183
+2026-08-25,.fullsend,pr,opened_core,182,ggallen,"fix: add fallbacks for schedule-triggered inputs",https://github.com/fullsend-ai/.fullsend/pull/182
+2026-08-25,.fullsend,pr,opened_core,181,ascerra,"fix(scribe): use dedicated fullsend-ai-scribe App for issues",https://github.com/fullsend-ai/.fullsend/pull/181
+2026-08-25,agents,pr,opened_core,1025,waynesun09,"chore: repin harness images to the v0.37.0 release builds (ship the xai-vertex pi extension)",https://github.com/fullsend-ai/agents/pull/1025
+2026-08-25,agents,pr,opened_core,1010,maruiz93,"fix: use explicit ref for cross-repo checkout and expose agents_sha output",https://github.com/fullsend-ai/agents/pull/1010
+2026-08-25,agents,pr,opened_core,1007,ralphbean,"chore: enable emoji reactions for agent runs on this repo",https://github.com/fullsend-ai/agents/pull/1007

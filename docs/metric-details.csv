@@ -11573,3 +11573,144 @@ date,repo,type,event,number,title,url
 2026-08-24,pi-xai-vertex,pr,opened,2,"fix: use ambient ADC auth so a fresh environment works",https://github.com/fullsend-ai/pi-xai-vertex/pull/2
 2026-08-24,pi-xai-vertex,pr,opened,1,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-xai-vertex/pull/1
 2026-08-24,pi-xai-vertex,pr,merged,2,"fix: use ambient ADC auth so a fresh environment works",https://github.com/fullsend-ai/pi-xai-vertex/pull/2
+2026-08-25,fullsend,pr,opened,6614,"docs(adr): adopt gh-aw safe outputs reference model",https://github.com/fullsend-ai/fullsend/pull/6614
+2026-08-25,fullsend,pr,opened,6613,"ci(release): prepare v0.38.0 — bump agents gate pin past agents#1010, tag the gate-validated SHA",https://github.com/fullsend-ai/fullsend/pull/6613
+2026-08-25,fullsend,pr,opened,6611,"chore(dispatch): provide TRIGGER_ENTITY_URL in addition to GITHUB_ISSUE_URL",https://github.com/fullsend-ai/fullsend/pull/6611
+2026-08-25,fullsend,pr,opened,6606,"docs(#6605): update prioritize scheduler to use create-github-app-token",https://github.com/fullsend-ai/fullsend/pull/6606
+2026-08-25,fullsend,pr,opened,6603,"feat(telemetry): capture tool results in Level 3 content",https://github.com/fullsend-ai/fullsend/pull/6603
+2026-08-25,fullsend,pr,opened,6601,"docs(#6599): add scheduled agent example guide",https://github.com/fullsend-ai/fullsend/pull/6601
+2026-08-25,fullsend,pr,opened,6598,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 66093c6",https://github.com/fullsend-ai/fullsend/pull/6598
+2026-08-25,fullsend,pr,opened,6596,"feat(fix): cap automated review->fix cycles per PR",https://github.com/fullsend-ai/fullsend/pull/6596
+2026-08-25,fullsend,pr,opened,6595,"feat(runner): detect stalled agent runs via event inactivity",https://github.com/fullsend-ai/fullsend/pull/6595
+2026-08-25,fullsend,pr,opened,6594,"chore: enable emoji reactions for agent runs on this repo",https://github.com/fullsend-ai/fullsend/pull/6594
+2026-08-25,fullsend,pr,opened,6593,"fix(#6592): populate failure detail in status comment",https://github.com/fullsend-ai/fullsend/pull/6593
+2026-08-25,fullsend,pr,opened,6591,"feat: list fullsend slash commands in onboarding PR body",https://github.com/fullsend-ai/fullsend/pull/6591
+2026-08-25,fullsend,pr,opened,6590,"feat(review): route trivial diffs to a cheaper model",https://github.com/fullsend-ai/fullsend/pull/6590
+2026-08-25,fullsend,pr,opened,6588,"feat(harness): add a max_cost_usd budget cap for agent runs",https://github.com/fullsend-ai/fullsend/pull/6588
+2026-08-25,fullsend,pr,opened,6587,"feat(review-agent): skip review dispatch that cannot produce a review",https://github.com/fullsend-ai/fullsend/pull/6587
+2026-08-25,fullsend,pr,opened,6585,"fix(#6582): skip SSRF DNS pre-resolution for egress-allowlisted hosts",https://github.com/fullsend-ai/fullsend/pull/6585
+2026-08-25,fullsend,pr,opened,6584,"chore(deps): update dependency mermaid to ~11.17.0",https://github.com/fullsend-ai/fullsend/pull/6584
+2026-08-25,fullsend,pr,opened,6583,"feat(#6581): per-agent runtime, model and effort on agents: entries",https://github.com/fullsend-ai/fullsend/pull/6583
+2026-08-25,fullsend,pr,opened,6580,"fix(#6576): detect and repair scaffold content drift in converge path",https://github.com/fullsend-ai/fullsend/pull/6580
+2026-08-25,fullsend,pr,opened,6579,"fix(#6577): add fable alias to pi model table and validate documented aliases",https://github.com/fullsend-ai/fullsend/pull/6579
+2026-08-25,fullsend,pr,opened,6574,"docs: split runtimes.md into a user page and an implementer page",https://github.com/fullsend-ai/fullsend/pull/6574
+2026-08-25,fullsend,pr,merged,6606,"docs(#6605): update prioritize scheduler to use create-github-app-token",https://github.com/fullsend-ai/fullsend/pull/6606
+2026-08-25,fullsend,pr,merged,6594,"chore: enable emoji reactions for agent runs on this repo",https://github.com/fullsend-ai/fullsend/pull/6594
+2026-08-25,fullsend,pr,merged,6593,"fix(#6592): populate failure detail in status comment",https://github.com/fullsend-ai/fullsend/pull/6593
+2026-08-25,fullsend,pr,merged,6585,"fix(#6582): skip SSRF DNS pre-resolution for egress-allowlisted hosts",https://github.com/fullsend-ai/fullsend/pull/6585
+2026-08-25,fullsend,pr,merged,6584,"chore(deps): update dependency mermaid to ~11.17.0",https://github.com/fullsend-ai/fullsend/pull/6584
+2026-08-25,fullsend,pr,merged,6583,"feat(#6581): per-agent runtime, model and effort on agents: entries",https://github.com/fullsend-ai/fullsend/pull/6583
+2026-08-25,fullsend,pr,merged,6580,"fix(#6576): detect and repair scaffold content drift in converge path",https://github.com/fullsend-ai/fullsend/pull/6580
+2026-08-25,fullsend,pr,merged,6574,"docs: split runtimes.md into a user page and an implementer page",https://github.com/fullsend-ai/fullsend/pull/6574
+2026-08-25,fullsend,pr,merged,6572,"feat(#6571): add xai-vertex provider to the pi runtime",https://github.com/fullsend-ai/fullsend/pull/6572
+2026-08-25,fullsend,pr,merged,6559,"fix(#6557): detect scaffold content drift in repos status",https://github.com/fullsend-ai/fullsend/pull/6559
+2026-08-25,fullsend,pr,merged,6552,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.84.3",https://github.com/fullsend-ai/fullsend/pull/6552
+2026-08-25,fullsend,pr,merged,6547,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to a060288",https://github.com/fullsend-ai/fullsend/pull/6547
+2026-08-25,fullsend,pr,merged,6540,"docs(#6539): one local-run flow — pi is a --runtime flag on the standard examples",https://github.com/fullsend-ai/fullsend/pull/6540
+2026-08-25,fullsend,pr,merged,6537,"fix(#3017): automerge minor GitHub Actions version bumps in Renovate",https://github.com/fullsend-ai/fullsend/pull/6537
+2026-08-25,fullsend,pr,merged,6525,"chore(deps): update dependency go to v1.27.0",https://github.com/fullsend-ai/fullsend/pull/6525
+2026-08-25,fullsend,pr,merged,6523,"fix(sandbox): retry provider updates rejected as modified concurrently",https://github.com/fullsend-ai/fullsend/pull/6523
+2026-08-25,fullsend,pr,merged,6480,"fix(deps): update module github.com/spf13/pflag to v1.0.10",https://github.com/fullsend-ai/fullsend/pull/6480
+2026-08-25,fullsend,pr,merged,6453,"chore(deps): update experiments digest to 974c590",https://github.com/fullsend-ai/fullsend/pull/6453
+2026-08-25,fullsend,pr,merged,6444,"chore(#5307): add interface documentation sync guidance to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6444
+2026-08-25,fullsend,pr,merged,6443,"docs(#5629): add reusable workflow carve-out for github.workflow in concurrency groups",https://github.com/fullsend-ai/fullsend/pull/6443
+2026-08-25,fullsend,pr,merged,6436,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.243",https://github.com/fullsend-ai/fullsend/pull/6436
+2026-08-25,fullsend,pr,merged,6432,"docs(skills): update writing-user-docs layout to ADR 0023 revision",https://github.com/fullsend-ai/fullsend/pull/6432
+2026-08-25,fullsend,pr,merged,6429,"feat(telemetry): implement ADR 0050 Level 3 content capture",https://github.com/fullsend-ai/fullsend/pull/6429
+2026-08-25,fullsend,pr,merged,6403,"fix(#5582): strip trailing punctuation from dispatch slash commands",https://github.com/fullsend-ai/fullsend/pull/6403
+2026-08-25,fullsend,pr,merged,6401,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 2186e04",https://github.com/fullsend-ai/fullsend/pull/6401
+2026-08-25,fullsend,issue,opened,6612,"sandbox: the OpenShell base image ships its own Claude Code (2.1.156) which shadows the CLAUDE_CODE_VERSION pin",https://github.com/fullsend-ai/fullsend/issues/6612
+2026-08-25,fullsend,issue,opened,6610,"Remove GITHUB_ISSUE_URL environment variable after TRIGGER_ENTITY_URL migration",https://github.com/fullsend-ai/fullsend/issues/6610
+2026-08-25,fullsend,issue,opened,6609,"Add TRIGGER_ENTITY_URL to dispatch workflows alongside GITHUB_ISSUE_URL for backwards compatibility",https://github.com/fullsend-ai/fullsend/issues/6609
+2026-08-25,fullsend,issue,opened,6607,"release: automate the fullsend-ai/agents harness image digest repin after each release",https://github.com/fullsend-ai/fullsend/issues/6607
+2026-08-25,fullsend,issue,opened,6605,"docs: update prioritize scheduler example to use create-github-app-token",https://github.com/fullsend-ai/fullsend/issues/6605
+2026-08-25,fullsend,issue,opened,6604,"Gitlab dispatch-mr-agents job fails: Job `dispatch` not found in parent pipeline or does not have artifacts!",https://github.com/fullsend-ai/fullsend/issues/6604
+2026-08-25,fullsend,issue,opened,6602,"Using `fullsend repos install --forge gitlab` within a project will replace existing .gitlab.ci.yml content",https://github.com/fullsend-ai/fullsend/issues/6602
+2026-08-25,fullsend,issue,opened,6600,"Review agent should flag risky version constraints in security dependency fixes",https://github.com/fullsend-ai/fullsend/issues/6600
+2026-08-25,fullsend,issue,opened,6599,"document the recommended way of running an agent every day (nightly job)",https://github.com/fullsend-ai/fullsend/issues/6599
+2026-08-25,fullsend,issue,opened,6597,"Shim version drift blocks review dispatch for bot-authored PRs on ci-failure-tracker",https://github.com/fullsend-ai/fullsend/issues/6597
+2026-08-25,fullsend,issue,opened,6592,"status comment shows bare ❌ Failure with no explanation on pre-script errors",https://github.com/fullsend-ai/fullsend/issues/6592
+2026-08-25,fullsend,issue,opened,6589,"Add CI check for stale tool-allowlist verification comments on Claude Code pin bumps",https://github.com/fullsend-ai/fullsend/issues/6589
+2026-08-25,fullsend,issue,opened,6586,"SSRF hook: move DNS resolution to the host API server",https://github.com/fullsend-ai/fullsend/issues/6586
+2026-08-25,fullsend,issue,opened,6582,"SSRF hook DNS pre-resolution blocks policy-allowlisted internal hosts from sandboxes",https://github.com/fullsend-ai/fullsend/issues/6582
+2026-08-25,fullsend,issue,opened,6581,"config.yaml cannot express per-role model or runtime; repo variables are the only path",https://github.com/fullsend-ai/fullsend/issues/6581
+2026-08-25,fullsend,issue,opened,6578,"Add vendored-dependency sandbox-compatibility checklist to runtime implementation guide",https://github.com/fullsend-ai/fullsend/issues/6578
+2026-08-25,fullsend,issue,opened,6577,"pi: alias 'fable' resolves to a non-existent model id and is silently substituted",https://github.com/fullsend-ai/fullsend/issues/6577
+2026-08-25,fullsend,issue,opened,6576,"repos install (converge) does not detect or repair scaffold content drift",https://github.com/fullsend-ai/fullsend/issues/6576
+2026-08-25,fullsend,issue,opened,6575,"test: minimal opt-in behaviour coverage for Grok on Vertex (xai-vertex), non-blocking",https://github.com/fullsend-ai/fullsend/issues/6575
+2026-08-25,fullsend,issue,closed,6605,"docs: update prioritize scheduler example to use create-github-app-token",https://github.com/fullsend-ai/fullsend/issues/6605
+2026-08-25,fullsend,issue,closed,6592,"status comment shows bare ❌ Failure with no explanation on pre-script errors",https://github.com/fullsend-ai/fullsend/issues/6592
+2026-08-25,fullsend,issue,closed,6581,"config.yaml cannot express per-role model or runtime; repo variables are the only path",https://github.com/fullsend-ai/fullsend/issues/6581
+2026-08-25,fullsend,issue,closed,6576,"repos install (converge) does not detect or repair scaffold content drift",https://github.com/fullsend-ai/fullsend/issues/6576
+2026-08-25,fullsend,issue,closed,6571,"Add xai-vertex provider to the pi runtime (Grok 4.6 on Vertex AI)",https://github.com/fullsend-ai/fullsend/issues/6571
+2026-08-25,fullsend,issue,closed,6570,"Allow forward slash in model identifiers to support provider/model format",https://github.com/fullsend-ai/fullsend/issues/6570
+2026-08-25,fullsend,issue,closed,6557,"repos status does not detect scaffold content drift for branch-ref targets",https://github.com/fullsend-ai/fullsend/issues/6557
+2026-08-25,fullsend,issue,closed,6539,"docs: one local-run flow — replace the pi-specific section with --runtime on the standard examples",https://github.com/fullsend-ai/fullsend/issues/6539
+2026-08-25,fullsend,issue,closed,6529,"Add per-role `models:`/`effort:` to `.fullsend/config.yaml` with `models.aliases` remap",https://github.com/fullsend-ai/fullsend/issues/6529
+2026-08-25,fullsend,issue,closed,5629,"Fix ci-workflows.md: add reusable workflow carve-out for github.workflow",https://github.com/fullsend-ai/fullsend/issues/5629
+2026-08-25,fullsend,issue,closed,5582,"Dispatch command parser should strip trailing punctuation from slash commands",https://github.com/fullsend-ai/fullsend/issues/5582
+2026-08-25,fullsend,issue,closed,5307,"Add AGENTS.md guidance: update interface documentation when extending Go interfaces",https://github.com/fullsend-ai/fullsend/issues/5307
+2026-08-25,fullsend,issue,closed,3017,"Extend Renovate auto-merge to cover minor GitHub Actions version bumps",https://github.com/fullsend-ai/fullsend/issues/3017
+2026-08-25,fullsend,issue,closed,2938,"Fix scaffold_test.go retro test case to match ADR 0055 migration",https://github.com/fullsend-ai/fullsend/issues/2938
+2026-08-25,fullsend,issue,closed,1972,"Review agent: require evidence before dismissing flagged findings as false positives",https://github.com/fullsend-ai/fullsend/issues/1972
+2026-08-25,.fullsend,pr,opened,184,"fix: reject zero-value stale threshold",https://github.com/fullsend-ai/.fullsend/pull/184
+2026-08-25,.fullsend,pr,opened,183,"fix: validate parse_threshold numeric input",https://github.com/fullsend-ai/.fullsend/pull/183
+2026-08-25,.fullsend,pr,opened,182,"fix: add fallbacks for schedule-triggered inputs",https://github.com/fullsend-ai/.fullsend/pull/182
+2026-08-25,.fullsend,pr,opened,181,"fix(scribe): use dedicated fullsend-ai-scribe App for issues",https://github.com/fullsend-ai/.fullsend/pull/181
+2026-08-25,.fullsend,pr,merged,184,"fix: reject zero-value stale threshold",https://github.com/fullsend-ai/.fullsend/pull/184
+2026-08-25,.fullsend,pr,merged,183,"fix: validate parse_threshold numeric input",https://github.com/fullsend-ai/.fullsend/pull/183
+2026-08-25,.fullsend,pr,merged,182,"fix: add fallbacks for schedule-triggered inputs",https://github.com/fullsend-ai/.fullsend/pull/182
+2026-08-25,.fullsend,pr,merged,181,"fix(scribe): use dedicated fullsend-ai-scribe App for issues",https://github.com/fullsend-ai/.fullsend/pull/181
+2026-08-25,.fullsend,pr,merged,180,"chore: replace prioritize-scheduler with per-repo dispatch",https://github.com/fullsend-ai/.fullsend/pull/180
+2026-08-25,metrics,pr,merged,11,"fix: align delivered-pr-types chart colors with bucket cards",https://github.com/fullsend-ai/metrics/pull/11
+2026-08-25,agents,pr,opened,1033,"perf(#1032): use blobless fetch with timeout for pre-review clone deepening",https://github.com/fullsend-ai/agents/pull/1033
+2026-08-25,agents,pr,opened,1031,"fix(#1030): use TRIGGER_ENTITY_URL for Jira forge ISSUE_URL mapping",https://github.com/fullsend-ai/agents/pull/1031
+2026-08-25,agents,pr,opened,1028,"chore(#1027): set JIRA transition vars to literals in triage harness",https://github.com/fullsend-ai/agents/pull/1028
+2026-08-25,agents,pr,opened,1025,"chore: repin harness images to the v0.37.0 release builds (ship the xai-vertex pi extension)",https://github.com/fullsend-ai/agents/pull/1025
+2026-08-25,agents,pr,opened,1024,"feat(#1013): port triage harness from forge to overlays",https://github.com/fullsend-ai/agents/pull/1024
+2026-08-25,agents,pr,opened,1010,"fix: use explicit ref for cross-repo checkout and expose agents_sha output",https://github.com/fullsend-ai/agents/pull/1010
+2026-08-25,agents,pr,opened,1009,"docs(review): skip the challenger when there are no findings",https://github.com/fullsend-ai/agents/pull/1009
+2026-08-25,agents,pr,opened,1008,"feat(review): filter unreviewable content from diff context",https://github.com/fullsend-ai/agents/pull/1008
+2026-08-25,agents,pr,opened,1007,"chore: enable emoji reactions for agent runs on this repo",https://github.com/fullsend-ai/agents/pull/1007
+2026-08-25,agents,pr,opened,1006,"docs(review): fence untrusted text out of prompt structure",https://github.com/fullsend-ai/agents/pull/1006
+2026-08-25,agents,pr,opened,1005,"feat(review): show what each review cost on the review comment",https://github.com/fullsend-ai/agents/pull/1005
+2026-08-25,agents,pr,opened,1004,"docs(review): tell each review dimension what not to flag",https://github.com/fullsend-ai/agents/pull/1004
+2026-08-25,agents,pr,opened,1003,"test(eval): measure review findings, not just review outcomes",https://github.com/fullsend-ai/agents/pull/1003
+2026-08-25,agents,pr,opened,1002,"fix: Do not recommend good first issue on bot-authored issues",https://github.com/fullsend-ai/agents/pull/1002
+2026-08-25,agents,pr,merged,1031,"fix(#1030): use TRIGGER_ENTITY_URL for Jira forge ISSUE_URL mapping",https://github.com/fullsend-ai/agents/pull/1031
+2026-08-25,agents,pr,merged,1028,"chore(#1027): set JIRA transition vars to literals in triage harness",https://github.com/fullsend-ai/agents/pull/1028
+2026-08-25,agents,pr,merged,1025,"chore: repin harness images to the v0.37.0 release builds (ship the xai-vertex pi extension)",https://github.com/fullsend-ai/agents/pull/1025
+2026-08-25,agents,pr,merged,1010,"fix: use explicit ref for cross-repo checkout and expose agents_sha output",https://github.com/fullsend-ai/agents/pull/1010
+2026-08-25,agents,pr,merged,1007,"chore: enable emoji reactions for agent runs on this repo",https://github.com/fullsend-ai/agents/pull/1007
+2026-08-25,agents,pr,merged,861,"feat(risk): add PR risk assessment scoring to review pipeline",https://github.com/fullsend-ai/agents/pull/861
+2026-08-25,agents,pr,closed,1002,"fix: Do not recommend good first issue on bot-authored issues",https://github.com/fullsend-ai/agents/pull/1002
+2026-08-25,agents,issue,opened,1035,"Code agent should validate GitHub Actions trigger semantics when authoring workflows",https://github.com/fullsend-ai/agents/issues/1035
+2026-08-25,agents,issue,opened,1034,"Security sub-agent should verify audit trail for intentional security bypass paths",https://github.com/fullsend-ai/agents/issues/1034
+2026-08-25,agents,issue,opened,1032,"review: pre-review unshallow (#861) adds 1–18 min per run on large repos; breaks fullsend e2e settle window",https://github.com/fullsend-ai/agents/issues/1032
+2026-08-25,agents,issue,opened,1030,"Update the forge.jira env var to use TRIGGER_ENTITY_URL instead of JIRA_ISSUE_URL when setting ISSUE_URL",https://github.com/fullsend-ai/agents/issues/1030
+2026-08-25,agents,issue,opened,1029,"Review orchestrator should not classify config changes introducing new keys as value-only",https://github.com/fullsend-ai/agents/issues/1029
+2026-08-25,agents,issue,opened,1027,"Set JIRA transition vars to literals in the triage harness",https://github.com/fullsend-ai/agents/issues/1027
+2026-08-25,agents,issue,opened,1026,"Code agent loses edits when pre-commit hooks fail in sandbox",https://github.com/fullsend-ai/agents/issues/1026
+2026-08-25,agents,issue,opened,1023,"Correctness sub-agent should verify eval and test fixture expectations are satisfiable",https://github.com/fullsend-ai/agents/issues/1023
+2026-08-25,agents,issue,opened,1022,"Correctness sub-agent should detect edits to generated files and verify test targets",https://github.com/fullsend-ai/agents/issues/1022
+2026-08-25,agents,issue,opened,1021,"Rename ITERATION_CAP and ITERATION_CAP_HUMAN to FIX_ITERATION_CAP and FIX_ITERATION_CAP_HUMAN",https://github.com/fullsend-ai/agents/issues/1021
+2026-08-25,agents,issue,opened,1020,"Document ITERATION_CAP and ITERATION_CAP_HUMAN configuration variables in fix agent docs",https://github.com/fullsend-ai/agents/issues/1020
+2026-08-25,agents,issue,opened,1019,"Port scribe agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1019
+2026-08-25,agents,issue,opened,1018,"Port review agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1018
+2026-08-25,agents,issue,opened,1017,"Port retro agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1017
+2026-08-25,agents,issue,opened,1016,"Port prioritize agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1016
+2026-08-25,agents,issue,opened,1015,"Port fix agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1015
+2026-08-25,agents,issue,opened,1014,"Port code agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1014
+2026-08-25,agents,issue,opened,1013,"Port triage agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1013
+2026-08-25,agents,issue,opened,1012,"Code agent should extract and verify structured requirements from issue body when triage criteria are thin",https://github.com/fullsend-ai/agents/issues/1012
+2026-08-25,agents,issue,opened,1011,"Enable lightweight review agent for backport PRs to release branches, scoped to verification checks",https://github.com/fullsend-ai/agents/issues/1011
+2026-08-25,agents,issue,opened,1001,"functional-tests workflow_call cannot validate cross-repo: checkout uses the caller's workflow_sha",https://github.com/fullsend-ai/agents/issues/1001
+2026-08-25,agents,issue,opened,1000,"Code agent should explore external repository references in issue bodies during planning",https://github.com/fullsend-ai/agents/issues/1000
+2026-08-25,agents,issue,closed,1030,"Update the forge.jira env var to use TRIGGER_ENTITY_URL instead of JIRA_ISSUE_URL when setting ISSUE_URL",https://github.com/fullsend-ai/agents/issues/1030
+2026-08-25,agents,issue,closed,1027,"Set JIRA transition vars to literals in the triage harness",https://github.com/fullsend-ai/agents/issues/1027
+2026-08-25,agents,issue,closed,1001,"functional-tests workflow_call cannot validate cross-repo: checkout uses the caller's workflow_sha",https://github.com/fullsend-ai/agents/issues/1001
+2026-08-25,pi-xai-vertex,pr,opened,4,"docs(#3): document multi-project Vertex provider usage",https://github.com/fullsend-ai/pi-xai-vertex/pull/4
+2026-08-25,pi-xai-vertex,pr,merged,4,"docs(#3): document multi-project Vertex provider usage",https://github.com/fullsend-ai/pi-xai-vertex/pull/4
+2026-08-25,pi-xai-vertex,pr,merged,1,"chore: install fullsend per-repo scaffold on main with per-agent runtime/model in config",https://github.com/fullsend-ai/pi-xai-vertex/pull/1
+2026-08-25,pi-xai-vertex,issue,opened,3,"docs: how to run alongside other Vertex providers, including across separate GCP projects",https://github.com/fullsend-ai/pi-xai-vertex/issues/3
+2026-08-25,pi-xai-vertex,issue,closed,3,"docs: how to run alongside other Vertex providers, including across separate GCP projects",https://github.com/fullsend-ai/pi-xai-vertex/issues/3

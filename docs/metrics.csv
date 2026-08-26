@@ -654,3 +654,11 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-24,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-24,autonomy-analysis,0,0,0,0,0,0,0,0
 2026-08-24,pi-xai-vertex,2,1,0,0,0,2,1,1
+2026-08-25,fullsend,21,25,0,19,15,1,39.70,86
+2026-08-25,.fullsend,4,5,0,0,0,0,0,3
+2026-08-25,experiments,0,0,0,0,0,0,0,2
+2026-08-25,metrics,0,1,0,0,0,0,155.40,1
+2026-08-25,agents,14,6,1,22,3,1,2.80,44
+2026-08-25,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-25,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-25,pi-xai-vertex,1,2,0,1,1,0,1.10,0
