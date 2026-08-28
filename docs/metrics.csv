@@ -662,3 +662,11 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-25,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-25,autonomy-analysis,0,0,0,0,0,0,0,0
 2026-08-25,pi-xai-vertex,1,2,0,1,1,0,1.10,0
+2026-08-27,fullsend,19,20,1,23,22,0,20.80,78
+2026-08-27,.fullsend,0,1,0,0,0,0,2,3
+2026-08-27,experiments,0,0,0,0,0,0,0,2
+2026-08-27,metrics,0,0,0,0,0,0,0,2
+2026-08-27,agents,4,4,0,11,4,0,3.30,48
+2026-08-27,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-27,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-27,pi-xai-vertex,0,0,0,0,0,0,0,0

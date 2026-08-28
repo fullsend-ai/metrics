@@ -11714,3 +11714,112 @@ date,repo,type,event,number,title,url
 2026-08-25,pi-xai-vertex,pr,merged,1,"chore: install fullsend per-repo scaffold on main with per-agent runtime/model in config",https://github.com/fullsend-ai/pi-xai-vertex/pull/1
 2026-08-25,pi-xai-vertex,issue,opened,3,"docs: how to run alongside other Vertex providers, including across separate GCP projects",https://github.com/fullsend-ai/pi-xai-vertex/issues/3
 2026-08-25,pi-xai-vertex,issue,closed,3,"docs: how to run alongside other Vertex providers, including across separate GCP projects",https://github.com/fullsend-ai/pi-xai-vertex/issues/3
+2026-08-27,fullsend,pr,opened,6711,"fix(#6706): store Jira sticky markers in comment entity properties",https://github.com/fullsend-ai/fullsend/pull/6711
+2026-08-27,fullsend,pr,opened,6710,"docs(#6707): add macOS Apple Silicon caveat for OpenShell 0.0.115",https://github.com/fullsend-ai/fullsend/pull/6710
+2026-08-27,fullsend,pr,opened,6709,"ci(#6701): wait for permission propagation after pool repo recreate",https://github.com/fullsend-ai/fullsend/pull/6709
+2026-08-27,fullsend,pr,opened,6705,"fix(#6702): observe GitHub rate-limit state and name it in exhausted-retry errors",https://github.com/fullsend-ai/fullsend/pull/6705
+2026-08-27,fullsend,pr,opened,6703,"fix(#6701): wait for the actor's role on a recreated pool repo",https://github.com/fullsend-ai/fullsend/pull/6703
+2026-08-27,fullsend,pr,opened,6700,"chore(#6699): add .agents/skills symlink for Codex discovery",https://github.com/fullsend-ai/fullsend/pull/6700
+2026-08-27,fullsend,pr,opened,6698,"ci(#6697): make harness-wait timeouts report why the wait failed",https://github.com/fullsend-ai/fullsend/pull/6698
+2026-08-27,fullsend,pr,opened,6696,"fix(#6691)!: keep OpenShell 0.0.111+ sandboxes alive for later exec",https://github.com/fullsend-ai/fullsend/pull/6696
+2026-08-27,fullsend,pr,opened,6695,"feat(#6689)!: run GPT on pi through OpenAI Workload Identity Federation",https://github.com/fullsend-ai/fullsend/pull/6695
+2026-08-27,fullsend,pr,opened,6693,"fix(#6690): add ctx.Err() check before select in polling loops",https://github.com/fullsend-ai/fullsend/pull/6693
+2026-08-27,fullsend,pr,opened,6692,"chore(deps): update dependency cytoscape to v3.34.2",https://github.com/fullsend-ai/fullsend/pull/6692
+2026-08-27,fullsend,pr,opened,6687,"feat(#6686): merge all matching overlays instead of first-match-wins",https://github.com/fullsend-ai/fullsend/pull/6687
+2026-08-27,fullsend,pr,opened,6683,"feat(#2996): add SEO metadata to docs site",https://github.com/fullsend-ai/fullsend/pull/6683
+2026-08-27,fullsend,pr,opened,6680,"docs(adr): resume agent sessions from JSONL transcripts",https://github.com/fullsend-ai/fullsend/pull/6680
+2026-08-27,fullsend,pr,opened,6679,"fix(#6678): preserve per-repo config on re-onboarding",https://github.com/fullsend-ai/fullsend/pull/6679
+2026-08-27,fullsend,pr,opened,6677,"fix(#6674): preserve adopted ref so agent update re-resolves the original branch",https://github.com/fullsend-ai/fullsend/pull/6677
+2026-08-27,fullsend,pr,opened,6676,"fix(pre-fetch): extract the prior SHA with sed, not BSD-incompatible grep -P",https://github.com/fullsend-ai/fullsend/pull/6676
+2026-08-27,fullsend,pr,opened,6675,"test(cli): resolve the temp dir in the agents-repo-fallback path test",https://github.com/fullsend-ai/fullsend/pull/6675
+2026-08-27,fullsend,pr,opened,6673,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.250",https://github.com/fullsend-ai/fullsend/pull/6673
+2026-08-27,fullsend,pr,merged,6700,"chore(#6699): add .agents/skills symlink for Codex discovery",https://github.com/fullsend-ai/fullsend/pull/6700
+2026-08-27,fullsend,pr,merged,6696,"fix(#6691)!: keep OpenShell 0.0.111+ sandboxes alive for later exec",https://github.com/fullsend-ai/fullsend/pull/6696
+2026-08-27,fullsend,pr,merged,6693,"fix(#6690): add ctx.Err() check before select in polling loops",https://github.com/fullsend-ai/fullsend/pull/6693
+2026-08-27,fullsend,pr,merged,6687,"feat(#6686): merge all matching overlays instead of first-match-wins",https://github.com/fullsend-ai/fullsend/pull/6687
+2026-08-27,fullsend,pr,merged,6669,"ci(#6668): add exponential backoff to dispatch polling",https://github.com/fullsend-ai/fullsend/pull/6669
+2026-08-27,fullsend,pr,merged,6665,"ci(#6656): reset pool repo git history on allocation",https://github.com/fullsend-ai/fullsend/pull/6665
+2026-08-27,fullsend,pr,merged,6661,"feat(#6653): merge fullsend CI config into existing .gitlab-ci.yml",https://github.com/fullsend-ai/fullsend/pull/6661
+2026-08-27,fullsend,pr,merged,6652,"docs(#6648): fix role permissions matrix and add agent-role mapping",https://github.com/fullsend-ai/fullsend/pull/6652
+2026-08-27,fullsend,pr,merged,6647,"fix(#6612): make the pinned Claude Code the one that runs in the sandbox",https://github.com/fullsend-ai/fullsend/pull/6647
+2026-08-27,fullsend,pr,merged,6644,"fix(#6637): use case-insensitive comparison for inference status conditions",https://github.com/fullsend-ai/fullsend/pull/6644
+2026-08-27,fullsend,pr,merged,6641,"docs(#6638): fix doc comment guidance for injectable function variables",https://github.com/fullsend-ai/fullsend/pull/6641
+2026-08-27,fullsend,pr,merged,6639,"fix(#6604): bind-mount gitlab-runner into custom executor container",https://github.com/fullsend-ai/fullsend/pull/6639
+2026-08-27,fullsend,pr,merged,6628,"docs(#3024): document secure HTTP client construction for Go",https://github.com/fullsend-ai/fullsend/pull/6628
+2026-08-27,fullsend,pr,merged,6457,"docs(#6456): align SKILL.md bot-login refs with GraphQL-format constants",https://github.com/fullsend-ai/fullsend/pull/6457
+2026-08-27,fullsend,pr,merged,6441,"docs(#6439): add context-aware blocking guidance to go-code.md",https://github.com/fullsend-ai/fullsend/pull/6441
+2026-08-27,fullsend,pr,merged,6303,"fix(#6302): route remaining time.After calls through afterFunc",https://github.com/fullsend-ai/fullsend/pull/6303
+2026-08-27,fullsend,pr,merged,6033,"fix(#739): return error when IAM operation has no name and is not done",https://github.com/fullsend-ai/fullsend/pull/6033
+2026-08-27,fullsend,pr,merged,6014,"test(#5569): make runAgent fixture tests hermetic against ambient credentials",https://github.com/fullsend-ai/fullsend/pull/6014
+2026-08-27,fullsend,pr,merged,5956,"docs(#5954): link per-repo config header to user-facing docs",https://github.com/fullsend-ai/fullsend/pull/5956
+2026-08-27,fullsend,pr,merged,5850,"docs(#5848): add CLI flag documentation sync rule to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/5850
+2026-08-27,fullsend,pr,closed,6680,"docs(adr): resume agent sessions from JSONL transcripts",https://github.com/fullsend-ai/fullsend/pull/6680
+2026-08-27,fullsend,issue,opened,6708,"Add CI check for OPENSHELL_VERSION/SHA consistency in openshell-version.sh",https://github.com/fullsend-ai/fullsend/issues/6708
+2026-08-27,fullsend,issue,opened,6707,"docs: OpenShell 0.0.115 macOS release binaries are Nix-linked and do not start; install guide points Apple Silicon users at it",https://github.com/fullsend-ai/fullsend/issues/6707
+2026-08-27,fullsend,issue,opened,6706,"issues post-comment: hide sticky markers in Jira comment properties",https://github.com/fullsend-ai/fullsend/issues/6706
+2026-08-27,fullsend,issue,opened,6704,"issues: add tracker-neutral issue transitions",https://github.com/fullsend-ai/fullsend/issues/6704
+2026-08-27,fullsend,issue,opened,6702,"behaviourtest: pool-org installation token exhausts GitHub API budget ~10 min into the suite",https://github.com/fullsend-ai/fullsend/issues/6702
+2026-08-27,fullsend,issue,opened,6701,"behaviourtest: wait for permission propagation after pool repo recreate (dispatch sees no role, matrix empty)",https://github.com/fullsend-ai/fullsend/issues/6701
+2026-08-27,fullsend,issue,opened,6699,"Add .agents/skills symlink for Codex skill discovery",https://github.com/fullsend-ai/fullsend/issues/6699
+2026-08-27,fullsend,issue,opened,6697,"E2E behaviour: harness-agent waits time out at 12 min despite a successful run",https://github.com/fullsend-ai/fullsend/issues/6697
+2026-08-27,fullsend,issue,opened,6694,"Suppress or fix LoadWithBase dispatch error for repos using harness base composition",https://github.com/fullsend-ai/fullsend/issues/6694
+2026-08-27,fullsend,issue,opened,6691,"fix(sandbox): keep OpenShell 0.0.111+ sandboxes alive for later exec",https://github.com/fullsend-ai/fullsend/issues/6691
+2026-08-27,fullsend,issue,opened,6690,"Fix race condition in awaitCreation / awaitDeletion causing flaky test",https://github.com/fullsend-ai/fullsend/issues/6690
+2026-08-27,fullsend,issue,opened,6689,"pi runtime: secretless GPT via OpenAI Workload Identity Federation — runner-side exchange, run-scoped OpenShell provider, pi openai gate",https://github.com/fullsend-ai/fullsend/issues/6689
+2026-08-27,fullsend,issue,opened,6688,"DCO checks block bot/agent-authored commits at merge time",https://github.com/fullsend-ai/fullsend/issues/6688
+2026-08-27,fullsend,issue,opened,6686,"Revise the overlays logic to merge all matching conditions",https://github.com/fullsend-ai/fullsend/issues/6686
+2026-08-27,fullsend,issue,opened,6685,"docs: evaluate de-duplicating escalation-ladder and default-vs-custom content",https://github.com/fullsend-ai/fullsend/issues/6685
+2026-08-27,fullsend,issue,opened,6684,"feat(cli): add --gitlab-url flag to `repos install` for GitLab bootstrapping",https://github.com/fullsend-ai/fullsend/issues/6684
+2026-08-27,fullsend,issue,opened,6682,"Support optional vs always-on skill activation modes in harness configuration",https://github.com/fullsend-ai/fullsend/issues/6682
+2026-08-27,fullsend,issue,opened,6681,"Dynamically inject harness-listed skills into agent prompt frontmatter for always-on activation",https://github.com/fullsend-ai/fullsend/issues/6681
+2026-08-27,fullsend,issue,opened,6678,"Re-onboarding with `fullsend` v0.37 removes custom agent configuration",https://github.com/fullsend-ai/fullsend/issues/6678
+2026-08-27,fullsend,issue,opened,6674,"agent update silently switches to default branch when adopted from a non-default ref",https://github.com/fullsend-ai/fullsend/issues/6674
+2026-08-27,fullsend,issue,opened,6672,"jira-poll: built-in harness files lack CEL triggers, causing 0 dispatches",https://github.com/fullsend-ai/fullsend/issues/6672
+2026-08-27,fullsend,issue,opened,6671,"Add user-facing feedback when slash commands are rejected for insufficient permissions",https://github.com/fullsend-ai/fullsend/issues/6671
+2026-08-27,fullsend,issue,opened,6670,"Stop-fix job token lacks permission for collaborator API endpoint",https://github.com/fullsend-ai/fullsend/issues/6670
+2026-08-27,fullsend,issue,closed,6699,"Add .agents/skills symlink for Codex skill discovery",https://github.com/fullsend-ai/fullsend/issues/6699
+2026-08-27,fullsend,issue,closed,6691,"fix(sandbox): keep OpenShell 0.0.111+ sandboxes alive for later exec",https://github.com/fullsend-ai/fullsend/issues/6691
+2026-08-27,fullsend,issue,closed,6690,"Fix race condition in awaitCreation / awaitDeletion causing flaky test",https://github.com/fullsend-ai/fullsend/issues/6690
+2026-08-27,fullsend,issue,closed,6686,"Revise the overlays logic to merge all matching conditions",https://github.com/fullsend-ai/fullsend/issues/6686
+2026-08-27,fullsend,issue,closed,6668,"Add exponential backoff to E2E behaviour test dispatch polling",https://github.com/fullsend-ai/fullsend/issues/6668
+2026-08-27,fullsend,issue,closed,6656,"Investigate fork PR workflow performance regression in behaviour tests",https://github.com/fullsend-ai/fullsend/issues/6656
+2026-08-27,fullsend,issue,closed,6653,"feat: merge fullsend CI config into existing .gitlab-ci.yml instead of overwriting",https://github.com/fullsend-ai/fullsend/issues/6653
+2026-08-27,fullsend,issue,closed,6648,"docs: role permissions matrix lists `fix` as a mint role and omits `e2e`",https://github.com/fullsend-ai/fullsend/issues/6648
+2026-08-27,fullsend,issue,closed,6638,"Fix inaccurate doc comment guidance in go-code.md injectable function variables section",https://github.com/fullsend-ai/fullsend/issues/6638
+2026-08-27,fullsend,issue,closed,6637,"inference status/provision: case-sensitive org names cause inverted health check and WIF condition mismatch",https://github.com/fullsend-ai/fullsend/issues/6637
+2026-08-27,fullsend,issue,closed,6625,"ConfigMap update via oc replace didn't apply wildcards from git config",https://github.com/fullsend-ai/fullsend/issues/6625
+2026-08-27,fullsend,issue,closed,6612,"sandbox: the OpenShell base image ships its own Claude Code (2.1.156) which shadows the CLAUDE_CODE_VERSION pin",https://github.com/fullsend-ai/fullsend/issues/6612
+2026-08-27,fullsend,issue,closed,6604,"Gitlab dispatch-mr-agents job fails: Job `dispatch` not found in parent pipeline or does not have artifacts!",https://github.com/fullsend-ai/fullsend/issues/6604
+2026-08-27,fullsend,issue,closed,6456,"Update SKILL.md bot-login references to match GraphQL-format constants from PR #6206",https://github.com/fullsend-ai/fullsend/issues/6456
+2026-08-27,fullsend,issue,closed,6439,"Add context-aware blocking guidance to go-code.md",https://github.com/fullsend-ai/fullsend/issues/6439
+2026-08-27,fullsend,issue,closed,6380,"Harness-listed team skills do not reliably apply without default-prompt naming",https://github.com/fullsend-ai/fullsend/issues/6380
+2026-08-27,fullsend,issue,closed,6302,"Fix remaining time.After calls not routed through afterFunc in GitHub LiveClient",https://github.com/fullsend-ai/fullsend/issues/6302
+2026-08-27,fullsend,issue,closed,5954,"docs: per-repo config.yaml header cites ""ADR 0033"" with no link, and ADRs aren't user-facing",https://github.com/fullsend-ai/fullsend/issues/5954
+2026-08-27,fullsend,issue,closed,5848,"AGENTS.md: add guidance to update docs/cli/ when changing CLI flag behavior",https://github.com/fullsend-ai/fullsend/issues/5848
+2026-08-27,fullsend,issue,closed,5569,"internal/cli tests using runAgent(""code"", fixtureDir) aren't hermetic — live agents-repo fetch can bypass local fixture",https://github.com/fullsend-ai/fullsend/issues/5569
+2026-08-27,fullsend,issue,closed,3024,"Add AGENTS.md guidance for secure HTTP client construction in Go",https://github.com/fullsend-ai/fullsend/issues/3024
+2026-08-27,fullsend,issue,closed,739,"gcf: handle IAM operation with done:false and empty name",https://github.com/fullsend-ai/fullsend/issues/739
+2026-08-27,.fullsend,pr,merged,185,"chore: remove per-org workflow files, templates, and config",https://github.com/fullsend-ai/.fullsend/pull/185
+2026-08-27,agents,pr,opened,1075,"feat(#1074): add Jira-source overlay to code harness",https://github.com/fullsend-ai/agents/pull/1075
+2026-08-27,agents,pr,opened,1068,"fix(#318): use merge-base for DIFF_BASE after rebase in post-fix",https://github.com/fullsend-ai/agents/pull/1068
+2026-08-27,agents,pr,opened,1066,"feat(#106): reconcile findings that have already been dismissed",https://github.com/fullsend-ai/agents/pull/1066
+2026-08-27,agents,pr,opened,1063,"fix(#1062): reference TARGET_REPO_DIR instead of undefined REPO_DIR",https://github.com/fullsend-ai/agents/pull/1063
+2026-08-27,agents,pr,merged,1068,"fix(#318): use merge-base for DIFF_BASE after rebase in post-fix",https://github.com/fullsend-ai/agents/pull/1068
+2026-08-27,agents,pr,merged,1063,"fix(#1062): reference TARGET_REPO_DIR instead of undefined REPO_DIR",https://github.com/fullsend-ai/agents/pull/1063
+2026-08-27,agents,pr,merged,1050,"fix(#999): provide TARGET_REPO_DIR to validation loop for Signed-off-by check",https://github.com/fullsend-ai/agents/pull/1050
+2026-08-27,agents,pr,merged,1024,"feat(#1013): port triage harness from forge to overlays",https://github.com/fullsend-ai/agents/pull/1024
+2026-08-27,agents,issue,opened,1074,"code agent: read Jira source issues through an event overlay",https://github.com/fullsend-ai/agents/issues/1074
+2026-08-27,agents,issue,opened,1073,"triage: decide how to assign tracker components",https://github.com/fullsend-ai/agents/issues/1073
+2026-08-27,agents,issue,opened,1072,"triage: use fullsend issues transition when closing issues",https://github.com/fullsend-ai/agents/issues/1072
+2026-08-27,agents,issue,opened,1071,"Code agent skill must enforce git commit after staging changes",https://github.com/fullsend-ai/agents/issues/1071
+2026-08-27,agents,issue,opened,1070,"Code-implementation skill should grep for all consumers of deprecated structural keys during migration PRs",https://github.com/fullsend-ai/agents/issues/1070
+2026-08-27,agents,issue,opened,1069,"Review agent should apply medium severity floor for security-gate fail-mode findings",https://github.com/fullsend-ai/agents/issues/1069
+2026-08-27,agents,issue,opened,1067,"Add Jira-compatible CEL triggers to built-in harness files",https://github.com/fullsend-ai/agents/issues/1067
+2026-08-27,agents,issue,opened,1065,"Code agent: sweep same-module docs for stale identifier references when changing constants",https://github.com/fullsend-ai/agents/issues/1065
+2026-08-27,agents,issue,opened,1064,"Review agent should flag key-value name mismatches in harness env pass-through entries",https://github.com/fullsend-ai/agents/issues/1064
+2026-08-27,agents,issue,opened,1062,"Production workflows broken: harness env references undefined REPO_DIR instead of TARGET_REPO_DIR",https://github.com/fullsend-ai/agents/issues/1062
+2026-08-27,agents,issue,opened,1061,"CI test: validate harness env var references resolve in eval scripts",https://github.com/fullsend-ai/agents/issues/1061
+2026-08-27,agents,issue,closed,1062,"Production workflows broken: harness env references undefined REPO_DIR instead of TARGET_REPO_DIR",https://github.com/fullsend-ai/agents/issues/1062
+2026-08-27,agents,issue,closed,1013,"Port triage agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1013
+2026-08-27,agents,issue,closed,999,"Fix agent in-sandbox validation should catch Signed-off-by trailers before post-script",https://github.com/fullsend-ai/agents/issues/999
+2026-08-27,agents,issue,closed,318,"Post-fix SCAN_RANGE must use merge-base after rebase to prevent Signed-off-by false positives",https://github.com/fullsend-ai/agents/issues/318

@@ -1334,3 +1334,27 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-25,agents,1010,fix: use explicit ref for cross-repo checkout and expose agents_sha output,fix,core,1001,waynesun09,https://github.com/fullsend-ai/agents/pull/1010
 2026-08-25,agents,1007,chore: enable emoji reactions for agent runs on this repo,chore,,,,https://github.com/fullsend-ai/agents/pull/1007
 2026-08-25,agents,861,feat(risk): add PR risk assessment scoring to review pipeline,feat,,,,https://github.com/fullsend-ai/agents/pull/861
+2026-08-27,fullsend,6700,chore(#6699): add .agents/skills symlink for Codex discovery,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6700
+2026-08-27,fullsend,6696,fix(#6691)!: keep OpenShell 0.0.111+ sandboxes alive for later exec,fix,core,6691,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6696
+2026-08-27,fullsend,6693,fix(#6690): add ctx.Err() check before select in polling loops,fix,bot,6690,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6693
+2026-08-27,fullsend,6687,feat(#6686): merge all matching overlays instead of first-match-wins,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6687
+2026-08-27,fullsend,6669,ci(#6668): add exponential backoff to dispatch polling,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6669
+2026-08-27,fullsend,6665,ci(#6656): reset pool repo git history on allocation,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6665
+2026-08-27,fullsend,6661,feat(#6653): merge fullsend CI config into existing .gitlab-ci.yml,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6661
+2026-08-27,fullsend,6652,docs(#6648): fix role permissions matrix and add agent-role mapping,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6652
+2026-08-27,fullsend,6647,fix(#6612): make the pinned Claude Code the one that runs in the sandbox,fix,core,6612,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6647
+2026-08-27,fullsend,6644,fix(#6637): use case-insensitive comparison for inference status conditions,fix,bot,6637,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/6644
+2026-08-27,fullsend,6641,docs(#6638): fix doc comment guidance for injectable function variables,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6641
+2026-08-27,fullsend,6639,fix(#6604): bind-mount gitlab-runner into custom executor container,fix,external,6604,jasonawant,https://github.com/fullsend-ai/fullsend/pull/6639
+2026-08-27,fullsend,6628,docs(#3024): document secure HTTP client construction for Go,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6628
+2026-08-27,fullsend,6457,docs(#6456): align SKILL.md bot-login refs with GraphQL-format constants,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6457
+2026-08-27,fullsend,6441,docs(#6439): add context-aware blocking guidance to go-code.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6441
+2026-08-27,fullsend,6303,fix(#6302): route remaining time.After calls through afterFunc,fix,bot,6302,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6303
+2026-08-27,fullsend,6033,fix(#739): return error when IAM operation has no name and is not done,fix,core,739,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6033
+2026-08-27,fullsend,6014,test(#5569): make runAgent fixture tests hermetic against ambient credentials,test,,,,https://github.com/fullsend-ai/fullsend/pull/6014
+2026-08-27,fullsend,5956,docs(#5954): link per-repo config header to user-facing docs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/5956
+2026-08-27,fullsend,5850,docs(#5848): add CLI flag documentation sync rule to AGENTS.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/5850
+2026-08-27,agents,1068,fix(#318): use merge-base for DIFF_BASE after rebase in post-fix,fix,bot,318,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1068
+2026-08-27,agents,1063,fix(#1062): reference TARGET_REPO_DIR instead of undefined REPO_DIR,fix,core,1062,ralphbean,https://github.com/fullsend-ai/agents/pull/1063
+2026-08-27,agents,1050,fix(#999): provide TARGET_REPO_DIR to validation loop for Signed-off-by check,fix,bot,999,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1050
+2026-08-27,agents,1024,feat(#1013): port triage harness from forge to overlays,feat,,,,https://github.com/fullsend-ai/agents/pull/1024

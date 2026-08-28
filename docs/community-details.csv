@@ -1434,3 +1434,10 @@ date,repo,type,event,number,actor,title,url
 2026-08-25,agents,pr,opened_core,1025,waynesun09,"chore: repin harness images to the v0.37.0 release builds (ship the xai-vertex pi extension)",https://github.com/fullsend-ai/agents/pull/1025
 2026-08-25,agents,pr,opened_core,1010,maruiz93,"fix: use explicit ref for cross-repo checkout and expose agents_sha output",https://github.com/fullsend-ai/agents/pull/1010
 2026-08-25,agents,pr,opened_core,1007,ralphbean,"chore: enable emoji reactions for agent runs on this repo",https://github.com/fullsend-ai/agents/pull/1007
+2026-08-27,fullsend,issue,closed_other_external,6625,rrasouli,"ConfigMap update via oc replace didn't apply wildcards from git config",https://github.com/fullsend-ai/fullsend/issues/6625
+2026-08-27,fullsend,issue,closed_via_pr_external,6604,jasonawant,"Gitlab dispatch-mr-agents job fails: Job `dispatch` not found in parent pipeline or does not have artifacts!",https://github.com/fullsend-ai/fullsend/issues/6604
+2026-08-27,fullsend,pr,opened_core,6705,waynesun09,"fix(#6702): observe GitHub rate-limit state and name it in exhausted-retry errors",https://github.com/fullsend-ai/fullsend/pull/6705
+2026-08-27,fullsend,pr,opened_core,6703,waynesun09,"fix(#6701): wait for the actor's role on a recreated pool repo",https://github.com/fullsend-ai/fullsend/pull/6703
+2026-08-27,fullsend,pr,reviewed_external,6679,Roming22,"fix(#6678): preserve per-repo config on re-onboarding",https://github.com/fullsend-ai/fullsend/pull/6679
+2026-08-27,agents,pr,opened_core,1063,ggallen,"fix(#1062): reference TARGET_REPO_DIR instead of undefined REPO_DIR",https://github.com/fullsend-ai/agents/pull/1063
+2026-08-27,agents,pr,reviewed_external,709,guyoron1,"feat(#106): reconcile findings maintainers have already declined",https://github.com/fullsend-ai/agents/pull/709
