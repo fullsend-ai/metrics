@@ -11823,3 +11823,58 @@ date,repo,type,event,number,title,url
 2026-08-27,agents,issue,closed,1013,"Port triage agent from forge to overlays method",https://github.com/fullsend-ai/agents/issues/1013
 2026-08-27,agents,issue,closed,999,"Fix agent in-sandbox validation should catch Signed-off-by trailers before post-script",https://github.com/fullsend-ai/agents/issues/999
 2026-08-27,agents,issue,closed,318,"Post-fix SCAN_RANGE must use merge-base after rebase to prevent Signed-off-by false positives",https://github.com/fullsend-ai/agents/issues/318
+2026-08-28,fullsend,pr,opened,6737,"chore(deps): update dependency nvidia/openshell to v0.0.116",https://github.com/fullsend-ai/fullsend/pull/6737
+2026-08-28,fullsend,pr,opened,6736,"docs(#6735): define cost data contract for runtime-reported inference cost",https://github.com/fullsend-ai/fullsend/pull/6736
+2026-08-28,fullsend,pr,opened,6731,"fix(#6721): skip .gitlab-ci.yml write when fullsend entries present",https://github.com/fullsend-ai/fullsend/pull/6731
+2026-08-28,fullsend,pr,opened,6730,"test(#6729): add GitLab SCM driver for behaviour tests",https://github.com/fullsend-ai/fullsend/pull/6730
+2026-08-28,fullsend,pr,opened,6728,"fix(hack): make lint-docs-links actually run on macOS",https://github.com/fullsend-ai/fullsend/pull/6728
+2026-08-28,fullsend,pr,opened,6727,"chore(deps): update dependency mermaid to v11.17.2",https://github.com/fullsend-ai/fullsend/pull/6727
+2026-08-28,fullsend,pr,opened,6724,"fix(#6718): add stages to root CI and skip workflow creation",https://github.com/fullsend-ai/fullsend/pull/6724
+2026-08-28,fullsend,pr,opened,6723,"fix(#6719): skip dispatch on merged-results pipelines with [skip ci]",https://github.com/fullsend-ai/fullsend/pull/6723
+2026-08-28,fullsend,pr,opened,6722,"fix(#6720): add --no-same-owner to tar extraction in GitLab scaffold",https://github.com/fullsend-ai/fullsend/pull/6722
+2026-08-28,fullsend,pr,merged,6737,"chore(deps): update dependency nvidia/openshell to v0.0.116",https://github.com/fullsend-ai/fullsend/pull/6737
+2026-08-28,fullsend,pr,merged,6731,"fix(#6721): skip .gitlab-ci.yml write when fullsend entries present",https://github.com/fullsend-ai/fullsend/pull/6731
+2026-08-28,fullsend,pr,merged,6724,"fix(#6718): add stages to root CI and skip workflow creation",https://github.com/fullsend-ai/fullsend/pull/6724
+2026-08-28,fullsend,pr,merged,6723,"fix(#6719): skip dispatch on merged-results pipelines with [skip ci]",https://github.com/fullsend-ai/fullsend/pull/6723
+2026-08-28,fullsend,pr,merged,6722,"fix(#6720): add --no-same-owner to tar extraction in GitLab scaffold",https://github.com/fullsend-ai/fullsend/pull/6722
+2026-08-28,fullsend,pr,merged,6698,"ci(#6697): make harness-wait timeouts report why the wait failed",https://github.com/fullsend-ai/fullsend/pull/6698
+2026-08-28,fullsend,pr,merged,6695,"feat(#6689)!: run GPT on pi through OpenAI Workload Identity Federation",https://github.com/fullsend-ai/fullsend/pull/6695
+2026-08-28,fullsend,pr,merged,6565,"fix(#6149): change DefaultUpstreamRef from v0 to main",https://github.com/fullsend-ai/fullsend/pull/6565
+2026-08-28,fullsend,pr,closed,6378,"docs(adr): add ADR 0092 always-on harness skills",https://github.com/fullsend-ai/fullsend/pull/6378
+2026-08-28,fullsend,pr,closed,2790,"chore: exempt go.mod/go.sum from CODEOWNERS review",https://github.com/fullsend-ai/fullsend/pull/2790
+2026-08-28,fullsend,issue,opened,6735,"docs: define how runtime-reported inference cost is aggregated and traced",https://github.com/fullsend-ai/fullsend/issues/6735
+2026-08-28,fullsend,issue,opened,6734,"Configurable artifact storage backend (replace forge-native artifacts)",https://github.com/fullsend-ai/fullsend/issues/6734
+2026-08-28,fullsend,issue,opened,6733,"Set up persistent cold-storage for fullsend team trace data",https://github.com/fullsend-ai/fullsend/issues/6733
+2026-08-28,fullsend,issue,opened,6732,"Support multi-destination trace export for agent telemetry",https://github.com/fullsend-ai/fullsend/issues/6732
+2026-08-28,fullsend,issue,opened,6729,"Add GitLab SCM driver for behaviour tests",https://github.com/fullsend-ai/fullsend/issues/6729
+2026-08-28,fullsend,issue,opened,6725,"Add PR state check to routing layer before dispatching review agent",https://github.com/fullsend-ai/fullsend/issues/6725
+2026-08-28,fullsend,issue,opened,6721,"feat(gitlab): semantic drift detection for fullsend entries in .gitlab-ci.yml",https://github.com/fullsend-ai/fullsend/issues/6721
+2026-08-28,fullsend,issue,opened,6720,"fix(gitlab): tar extraction fails in non-root containers (missing --no-same-owner)",https://github.com/fullsend-ai/fullsend/issues/6720
+2026-08-28,fullsend,issue,opened,6719,"fix(gitlab): dispatch job fires on merged-results pipelines despite [skip ci]",https://github.com/fullsend-ai/fullsend/issues/6719
+2026-08-28,fullsend,issue,opened,6718,"fix(gitlab): MergeGitLabCI drops stages and creates unwanted workflow block",https://github.com/fullsend-ai/fullsend/issues/6718
+2026-08-28,fullsend,issue,opened,6717,"repos install --forge gitlab gaps: missing stages, unnecessary workflow block, skip-ci, tar ownership, and drift detection",https://github.com/fullsend-ai/fullsend/issues/6717
+2026-08-28,fullsend,issue,opened,6716,"OpenShell 0.0.110+ resets model requests whose body mentions the placeholder prefix; fullsend agents cannot read text containing it",https://github.com/fullsend-ai/fullsend/issues/6716
+2026-08-28,fullsend,issue,opened,6714,"Opt-in scribe install: private-only guard, dispatch-ready workflow, no cron until enabled",https://github.com/fullsend-ai/fullsend/issues/6714
+2026-08-28,fullsend,issue,opened,6713,"Scribe: add Jira issue creation support",https://github.com/fullsend-ai/fullsend/issues/6713
+2026-08-28,fullsend,issue,opened,6712,"Scribe: auto-apply ready-for-triage label on created issues",https://github.com/fullsend-ai/fullsend/issues/6712
+2026-08-28,fullsend,issue,closed,6721,"feat(gitlab): semantic drift detection for fullsend entries in .gitlab-ci.yml",https://github.com/fullsend-ai/fullsend/issues/6721
+2026-08-28,fullsend,issue,closed,6720,"fix(gitlab): tar extraction fails in non-root containers (missing --no-same-owner)",https://github.com/fullsend-ai/fullsend/issues/6720
+2026-08-28,fullsend,issue,closed,6719,"fix(gitlab): dispatch job fires on merged-results pipelines despite [skip ci]",https://github.com/fullsend-ai/fullsend/issues/6719
+2026-08-28,fullsend,issue,closed,6718,"fix(gitlab): MergeGitLabCI drops stages and creates unwanted workflow block",https://github.com/fullsend-ai/fullsend/issues/6718
+2026-08-28,fullsend,issue,closed,6717,"repos install --forge gitlab gaps: missing stages, unnecessary workflow block, skip-ci, tar ownership, and drift detection",https://github.com/fullsend-ai/fullsend/issues/6717
+2026-08-28,fullsend,issue,closed,6707,"docs: OpenShell 0.0.115 macOS release binaries are Nix-linked and do not start; install guide points Apple Silicon users at it",https://github.com/fullsend-ai/fullsend/issues/6707
+2026-08-28,fullsend,issue,closed,6697,"E2E behaviour: harness-agent waits time out at 12 min despite a successful run",https://github.com/fullsend-ai/fullsend/issues/6697
+2026-08-28,fullsend,issue,closed,6689,"pi runtime: secretless GPT via OpenAI Workload Identity Federation — runner-side exchange, run-scoped OpenShell provider, pi openai gate",https://github.com/fullsend-ai/fullsend/issues/6689
+2026-08-28,fullsend,issue,closed,6602,"Using `fullsend repos install --forge gitlab` within a project will replace existing .gitlab.ci.yml content",https://github.com/fullsend-ai/fullsend/issues/6602
+2026-08-28,fullsend,issue,closed,6410,"Export agent traces to persistent GCP bucket for cross-team querying",https://github.com/fullsend-ai/fullsend/issues/6410
+2026-08-28,fullsend,issue,closed,6149,"Code agent scaffold template uses @main ref while all other stage workflows use @v0",https://github.com/fullsend-ai/fullsend/issues/6149
+2026-08-28,fullsend,issue,closed,5869,"Make Scribe its own app with dedicated icon",https://github.com/fullsend-ai/fullsend/issues/5869
+2026-08-28,agents,pr,opened,1081,"fix(#1080): allow uninspected request bodies on Vertex AI profile",https://github.com/fullsend-ai/agents/pull/1081
+2026-08-28,agents,pr,opened,1079,"feat(triage): add effort-estimation skill on block_auto_promotion",https://github.com/fullsend-ai/agents/pull/1079
+2026-08-28,agents,pr,opened,1078,"feat(triage): generalize workflow-change block into block_auto_promotion",https://github.com/fullsend-ai/agents/pull/1078
+2026-08-28,agents,pr,merged,1081,"fix(#1080): allow uninspected request bodies on Vertex AI profile",https://github.com/fullsend-ai/agents/pull/1081
+2026-08-28,agents,issue,opened,1082,"Triage agent should validate issue title prefix against type labels it assigns",https://github.com/fullsend-ai/agents/issues/1082
+2026-08-28,agents,issue,opened,1080,"Vertex profile: allow uninspected request bodies on *.googleapis.com so agents survive OpenShell 0.0.110+'s placeholder-prefix guard",https://github.com/fullsend-ai/agents/issues/1080
+2026-08-28,agents,issue,opened,1077,"Risk assessment skill should elevate baseline risk for ADR PRs",https://github.com/fullsend-ai/agents/issues/1077
+2026-08-28,agents,issue,opened,1076,"Review intent-coherence sub-agent should cross-check code-agent PRs against human dispatch directives",https://github.com/fullsend-ai/agents/issues/1076
+2026-08-28,agents,issue,closed,1080,"Vertex profile: allow uninspected request bodies on *.googleapis.com so agents survive OpenShell 0.0.110+'s placeholder-prefix guard",https://github.com/fullsend-ai/agents/issues/1080

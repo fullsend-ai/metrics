@@ -1441,3 +1441,6 @@ date,repo,type,event,number,actor,title,url
 2026-08-27,fullsend,pr,reviewed_external,6679,Roming22,"fix(#6678): preserve per-repo config on re-onboarding",https://github.com/fullsend-ai/fullsend/pull/6679
 2026-08-27,agents,pr,opened_core,1063,ggallen,"fix(#1062): reference TARGET_REPO_DIR instead of undefined REPO_DIR",https://github.com/fullsend-ai/agents/pull/1063
 2026-08-27,agents,pr,reviewed_external,709,guyoron1,"feat(#106): reconcile findings maintainers have already declined",https://github.com/fullsend-ai/agents/pull/709
+2026-08-28,fullsend,issue,closed_other_external,6602,jasonawant,"Using `fullsend repos install --forge gitlab` within a project will replace existing .gitlab.ci.yml content",https://github.com/fullsend-ai/fullsend/issues/6602
+2026-08-28,agents,pr,opened_core,1079,rh-hemartin,"feat(triage): add effort-estimation skill on block_auto_promotion",https://github.com/fullsend-ai/agents/pull/1079
+2026-08-28,agents,pr,opened_core,1078,rh-hemartin,"feat(triage): generalize workflow-change block into block_auto_promotion",https://github.com/fullsend-ai/agents/pull/1078

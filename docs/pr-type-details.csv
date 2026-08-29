@@ -1358,3 +1358,12 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-27,agents,1063,fix(#1062): reference TARGET_REPO_DIR instead of undefined REPO_DIR,fix,core,1062,ralphbean,https://github.com/fullsend-ai/agents/pull/1063
 2026-08-27,agents,1050,fix(#999): provide TARGET_REPO_DIR to validation loop for Signed-off-by check,fix,bot,999,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1050
 2026-08-27,agents,1024,feat(#1013): port triage harness from forge to overlays,feat,,,,https://github.com/fullsend-ai/agents/pull/1024
+2026-08-28,fullsend,6737,chore(deps): update dependency nvidia/openshell to v0.0.116,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6737
+2026-08-28,fullsend,6731,fix(#6721): skip .gitlab-ci.yml write when fullsend entries present,fix,bot,6721,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6731
+2026-08-28,fullsend,6724,fix(#6718): add stages to root CI and skip workflow creation,fix,bot,6718,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6724
+2026-08-28,fullsend,6723,fix(#6719): skip dispatch on merged-results pipelines with [skip ci],fix,bot,6719,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6723
+2026-08-28,fullsend,6722,fix(#6720): add --no-same-owner to tar extraction in GitLab scaffold,fix,bot,6720,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6722
+2026-08-28,fullsend,6698,ci(#6697): make harness-wait timeouts report why the wait failed,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6698
+2026-08-28,fullsend,6695,feat(#6689)!: run GPT on pi through OpenAI Workload Identity Federation,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6695
+2026-08-28,fullsend,6565,fix(#6149): change DefaultUpstreamRef from v0 to main,fix,bot,6149,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6565
+2026-08-28,agents,1081,fix(#1080): allow uninspected request bodies on Vertex AI profile,fix,core,1080,waynesun09,https://github.com/fullsend-ai/agents/pull/1081
