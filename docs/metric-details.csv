@@ -11878,3 +11878,61 @@ date,repo,type,event,number,title,url
 2026-08-28,agents,issue,opened,1077,"Risk assessment skill should elevate baseline risk for ADR PRs",https://github.com/fullsend-ai/agents/issues/1077
 2026-08-28,agents,issue,opened,1076,"Review intent-coherence sub-agent should cross-check code-agent PRs against human dispatch directives",https://github.com/fullsend-ai/agents/issues/1076
 2026-08-28,agents,issue,closed,1080,"Vertex profile: allow uninspected request bodies on *.googleapis.com so agents survive OpenShell 0.0.110+'s placeholder-prefix guard",https://github.com/fullsend-ai/agents/issues/1080
+2026-08-29,fullsend,pr,opened,6772,"docs: clarify mint role vs identity so custom agents work by default",https://github.com/fullsend-ai/fullsend/pull/6772
+2026-08-29,fullsend,pr,opened,6771,"docs: remove internal-only e2e role from the user-facing role matrix",https://github.com/fullsend-ai/fullsend/pull/6771
+2026-08-29,fullsend,pr,opened,6770,"refactor(#6767): route status notifications through tracker.Client",https://github.com/fullsend-ai/fullsend/pull/6770
+2026-08-29,fullsend,pr,opened,6769,"fix(#6760): expose work item keys to harness agents",https://github.com/fullsend-ai/fullsend/pull/6769
+2026-08-29,fullsend,pr,opened,6766,"fix(#6764): fail when agent definition name mismatches requested name",https://github.com/fullsend-ai/fullsend/pull/6766
+2026-08-29,fullsend,pr,opened,6763,"fix(#6762): resolve harness bot identity",https://github.com/fullsend-ai/fullsend/pull/6763
+2026-08-29,fullsend,pr,opened,6761,"docs(#6759): add normative-spec doc-update trigger to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6761
+2026-08-29,fullsend,pr,opened,6758,"docs(#6757): document credential context separation in install pkg",https://github.com/fullsend-ai/fullsend/pull/6758
+2026-08-29,fullsend,pr,opened,6756,"feat(pi): Agent tool for sub-agents on the pi runtime",https://github.com/fullsend-ai/fullsend/pull/6756
+2026-08-29,fullsend,pr,opened,6755,"fix(#5550): match shared vendor review-bot identity in scaffold",https://github.com/fullsend-ai/fullsend/pull/6755
+2026-08-29,fullsend,pr,opened,6754,"feat(pi): harness extensions: for pi extension directories",https://github.com/fullsend-ai/fullsend/pull/6754
+2026-08-29,fullsend,pr,opened,6753,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-08-29,fullsend,pr,opened,6752,"fix(pi): activate grep/find/ls and ship rg + fd in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/6752
+2026-08-29,fullsend,pr,opened,6751,"chore(deps): update dependency vue to v3.5.42",https://github.com/fullsend-ai/fullsend/pull/6751
+2026-08-29,fullsend,pr,opened,6749,"fix(#6748): preserve normalized event through event_payload channel",https://github.com/fullsend-ai/fullsend/pull/6749
+2026-08-29,fullsend,pr,opened,6747,"fix(#6746): emit ::error:: annotations when dispatch skips an agent",https://github.com/fullsend-ai/fullsend/pull/6747
+2026-08-29,fullsend,pr,opened,6745,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.84.4",https://github.com/fullsend-ai/fullsend/pull/6745
+2026-08-29,fullsend,pr,opened,6744,"refactor(#6740): remove automatic needs-info re-triage dispatch",https://github.com/fullsend-ai/fullsend/pull/6744
+2026-08-29,fullsend,pr,opened,6743,"test(#6742): add GitLab CI driver for behaviour tests",https://github.com/fullsend-ai/fullsend/pull/6743
+2026-08-29,fullsend,pr,merged,6755,"fix(#5550): match shared vendor review-bot identity in scaffold",https://github.com/fullsend-ai/fullsend/pull/6755
+2026-08-29,fullsend,pr,merged,6749,"fix(#6748): preserve normalized event through event_payload channel",https://github.com/fullsend-ai/fullsend/pull/6749
+2026-08-29,fullsend,pr,merged,6747,"fix(#6746): emit ::error:: annotations when dispatch skips an agent",https://github.com/fullsend-ai/fullsend/pull/6747
+2026-08-29,fullsend,pr,merged,6745,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.84.4",https://github.com/fullsend-ai/fullsend/pull/6745
+2026-08-29,fullsend,pr,merged,6743,"test(#6742): add GitLab CI driver for behaviour tests",https://github.com/fullsend-ai/fullsend/pull/6743
+2026-08-29,fullsend,pr,merged,6736,"docs(#6735): define cost data contract for runtime-reported inference cost",https://github.com/fullsend-ai/fullsend/pull/6736
+2026-08-29,fullsend,pr,merged,6730,"test(#6729): add GitLab SCM driver for behaviour tests",https://github.com/fullsend-ai/fullsend/pull/6730
+2026-08-29,fullsend,issue,opened,6767,"Route run status notifications to the source issue tracker",https://github.com/fullsend-ai/fullsend/issues/6767
+2026-08-29,fullsend,issue,opened,6765,"triage to identify duplicates",https://github.com/fullsend-ai/fullsend/issues/6765
+2026-08-29,fullsend,issue,opened,6764,"Fail when the requested Claude agent name is unavailable",https://github.com/fullsend-ai/fullsend/issues/6764
+2026-08-29,fullsend,issue,opened,6762,"Resolve bot identity in the precomputed-matrix harness path",https://github.com/fullsend-ai/fullsend/issues/6762
+2026-08-29,fullsend,issue,opened,6760,"Expose FULLSEND_WORK_ITEM_KEY alongside ISSUE_NUMBER",https://github.com/fullsend-ai/fullsend/issues/6760
+2026-08-29,fullsend,issue,opened,6759,"Add normative-spec doc-update trigger to AGENTS.md for event_payload changes",https://github.com/fullsend-ai/fullsend/issues/6759
+2026-08-29,fullsend,issue,opened,6757,"Document credential context separation in behaviourtest pool repo lifecycle",https://github.com/fullsend-ai/fullsend/issues/6757
+2026-08-29,fullsend,issue,opened,6750,"Fix dispatch silently fails outside fullsend-ai org",https://github.com/fullsend-ai/fullsend/issues/6750
+2026-08-29,fullsend,issue,opened,6748,"Preserve the normalized event through harness execution",https://github.com/fullsend-ai/fullsend/issues/6748
+2026-08-29,fullsend,issue,opened,6746,"Emit a GitHub Actions annotation when dispatch skips an agent",https://github.com/fullsend-ai/fullsend/issues/6746
+2026-08-29,fullsend,issue,opened,6742,"test: add GitLab CI driver for behaviour tests",https://github.com/fullsend-ai/fullsend/issues/6742
+2026-08-29,fullsend,issue,opened,6741,"Document platform-specific SCM driver method semantics in behaviour-drivers.md",https://github.com/fullsend-ai/fullsend/issues/6741
+2026-08-29,fullsend,issue,opened,6740,"Remove automatic needs-info re-triage on issue comments",https://github.com/fullsend-ai/fullsend/issues/6740
+2026-08-29,fullsend,issue,opened,6739,"Batch label additions in triage agent to reduce workflow triggers",https://github.com/fullsend-ai/fullsend/issues/6739
+2026-08-29,fullsend,issue,opened,6738,"Skip workflow dispatch for non-slash-command issue comments",https://github.com/fullsend-ai/fullsend/issues/6738
+2026-08-29,fullsend,issue,closed,6750,"Fix dispatch silently fails outside fullsend-ai org",https://github.com/fullsend-ai/fullsend/issues/6750
+2026-08-29,fullsend,issue,closed,6748,"Preserve the normalized event through harness execution",https://github.com/fullsend-ai/fullsend/issues/6748
+2026-08-29,fullsend,issue,closed,6746,"Emit a GitHub Actions annotation when dispatch skips an agent",https://github.com/fullsend-ai/fullsend/issues/6746
+2026-08-29,fullsend,issue,closed,6742,"test: add GitLab CI driver for behaviour tests",https://github.com/fullsend-ai/fullsend/issues/6742
+2026-08-29,fullsend,issue,closed,6739,"Batch label additions in triage agent to reduce workflow triggers",https://github.com/fullsend-ai/fullsend/issues/6739
+2026-08-29,fullsend,issue,closed,6735,"docs: define how runtime-reported inference cost is aggregated and traced",https://github.com/fullsend-ai/fullsend/issues/6735
+2026-08-29,fullsend,issue,closed,6729,"Add GitLab SCM driver for behaviour tests",https://github.com/fullsend-ai/fullsend/issues/6729
+2026-08-29,fullsend,issue,closed,5550,"Fix agent's review-body lookups miss the shared fullsend-ai-review[bot] identity",https://github.com/fullsend-ai/fullsend/issues/5550
+2026-08-29,agents,pr,opened,1085,"feat(#1073): add Jira component assignment to triage pipeline",https://github.com/fullsend-ai/agents/pull/1085
+2026-08-29,agents,pr,opened,1084,"refactor(#1083): select triage overlays from event.source.system",https://github.com/fullsend-ai/agents/pull/1084
+2026-08-29,agents,pr,merged,1049,"fix(#1046): key review verdict on finding actionability, not just severity",https://github.com/fullsend-ai/agents/pull/1049
+2026-08-29,agents,issue,opened,1089,"Fix agent should grep for pattern-wide instances before committing",https://github.com/fullsend-ai/agents/issues/1089
+2026-08-29,agents,issue,opened,1088,"Update stale test scenario name in validate-output-schema-test.sh after actionable verdict logic change",https://github.com/fullsend-ai/agents/issues/1088
+2026-08-29,agents,issue,opened,1087,"Review agent should escalate findings where a feature is silently nullified by user-configurable settings",https://github.com/fullsend-ai/agents/issues/1087
+2026-08-29,agents,issue,opened,1086,"Review agent should escalate intent-deviation findings to CHANGES_REQUESTED on agent-authored PRs",https://github.com/fullsend-ai/agents/issues/1086
+2026-08-29,agents,issue,opened,1083,"triage agent: select overlays from event.source.system",https://github.com/fullsend-ai/agents/issues/1083
+2026-08-29,agents,issue,closed,1046,"Review agent should submit CHANGES_REQUESTED when any finding has a concrete remediation",https://github.com/fullsend-ai/agents/issues/1046

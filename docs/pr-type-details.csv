@@ -1367,3 +1367,11 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-28,fullsend,6695,feat(#6689)!: run GPT on pi through OpenAI Workload Identity Federation,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6695
 2026-08-28,fullsend,6565,fix(#6149): change DefaultUpstreamRef from v0 to main,fix,bot,6149,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6565
 2026-08-28,agents,1081,fix(#1080): allow uninspected request bodies on Vertex AI profile,fix,core,1080,waynesun09,https://github.com/fullsend-ai/agents/pull/1081
+2026-08-29,fullsend,6755,fix(#5550): match shared vendor review-bot identity in scaffold,fix,core,5550,ggallen,https://github.com/fullsend-ai/fullsend/pull/6755
+2026-08-29,fullsend,6749,fix(#6748): preserve normalized event through event_payload channel,fix,core,6748,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6749
+2026-08-29,fullsend,6747,fix(#6746): emit ::error:: annotations when dispatch skips an agent,fix,core,6746,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6747
+2026-08-29,fullsend,6745,chore(deps): update dependency @earendil-works/pi-coding-agent to v0.84.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6745
+2026-08-29,fullsend,6743,test(#6742): add GitLab CI driver for behaviour tests,test,,,,https://github.com/fullsend-ai/fullsend/pull/6743
+2026-08-29,fullsend,6736,docs(#6735): define cost data contract for runtime-reported inference cost,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6736
+2026-08-29,fullsend,6730,test(#6729): add GitLab SCM driver for behaviour tests,test,,,,https://github.com/fullsend-ai/fullsend/pull/6730
+2026-08-29,agents,1049,"fix(#1046): key review verdict on finding actionability, not just severity",fix,core,1046,ggallen,https://github.com/fullsend-ai/agents/pull/1049

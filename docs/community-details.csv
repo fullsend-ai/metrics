@@ -1444,3 +1444,11 @@ date,repo,type,event,number,actor,title,url
 2026-08-28,fullsend,issue,closed_other_external,6602,jasonawant,"Using `fullsend repos install --forge gitlab` within a project will replace existing .gitlab.ci.yml content",https://github.com/fullsend-ai/fullsend/issues/6602
 2026-08-28,agents,pr,opened_core,1079,rh-hemartin,"feat(triage): add effort-estimation skill on block_auto_promotion",https://github.com/fullsend-ai/agents/pull/1079
 2026-08-28,agents,pr,opened_core,1078,rh-hemartin,"feat(triage): generalize workflow-change block into block_auto_promotion",https://github.com/fullsend-ai/agents/pull/1078
+2026-08-29,fullsend,pr,opened_core,6772,waynesun09,"docs: clarify mint role vs identity so custom agents work by default",https://github.com/fullsend-ai/fullsend/pull/6772
+2026-08-29,fullsend,pr,opened_core,6771,waynesun09,"docs: remove internal-only e2e role from the user-facing role matrix",https://github.com/fullsend-ai/fullsend/pull/6771
+2026-08-29,fullsend,pr,opened_core,6769,ralphbean,"fix(#6760): expose work item keys to harness agents",https://github.com/fullsend-ai/fullsend/pull/6769
+2026-08-29,fullsend,pr,opened_core,6763,ralphbean,"fix(#6762): resolve harness bot identity",https://github.com/fullsend-ai/fullsend/pull/6763
+2026-08-29,fullsend,pr,opened_core,6756,waynesun09,"feat(pi): Agent tool for sub-agents on the pi runtime",https://github.com/fullsend-ai/fullsend/pull/6756
+2026-08-29,fullsend,pr,opened_core,6754,waynesun09,"feat(pi): harness extensions: for pi extension directories",https://github.com/fullsend-ai/fullsend/pull/6754
+2026-08-29,fullsend,pr,opened_core,6753,waynesun09,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-08-29,fullsend,pr,opened_core,6752,waynesun09,"fix(pi): activate grep/find/ls and ship rg + fd in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/6752

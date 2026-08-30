@@ -1121,3 +1121,11 @@ date,repo,issues_opened_external,issues_closed_via_pr_external,issues_closed_oth
 2026-08-28,autonomy-readiness,0,0,0,0,0
 2026-08-28,autonomy-analysis,0,0,0,0,0
 2026-08-28,pi-xai-vertex,0,0,0,0,0
+2026-08-29,fullsend,0,0,0,8,0
+2026-08-29,.fullsend,0,0,0,0,0
+2026-08-29,experiments,0,0,0,0,0
+2026-08-29,metrics,0,0,0,0,0
+2026-08-29,agents,0,0,0,0,0
+2026-08-29,autonomy-readiness,0,0,0,0,0
+2026-08-29,autonomy-analysis,0,0,0,0,0
+2026-08-29,pi-xai-vertex,0,0,0,0,0

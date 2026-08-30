@@ -678,3 +678,11 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-28,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-28,autonomy-analysis,0,0,0,0,0,0,0,0
 2026-08-28,pi-xai-vertex,0,0,0,0,0,0,0,0
+2026-08-29,fullsend,19,7,0,15,8,0,12.50,89
+2026-08-29,.fullsend,0,0,0,0,0,0,0,3
+2026-08-29,experiments,0,0,0,0,0,0,0,2
+2026-08-29,metrics,0,0,0,0,0,0,0,2
+2026-08-29,agents,2,1,0,5,1,0,69,51
+2026-08-29,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-08-29,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-08-29,pi-xai-vertex,0,0,0,0,0,0,0,0
