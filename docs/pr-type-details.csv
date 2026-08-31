@@ -1375,3 +1375,6 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-29,fullsend,6736,docs(#6735): define cost data contract for runtime-reported inference cost,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6736
 2026-08-29,fullsend,6730,test(#6729): add GitLab SCM driver for behaviour tests,test,,,,https://github.com/fullsend-ai/fullsend/pull/6730
 2026-08-29,agents,1049,"fix(#1046): key review verdict on finding actionability, not just severity",fix,core,1046,ggallen,https://github.com/fullsend-ai/agents/pull/1049
+2026-08-30,fullsend,6784,fix(#6782): drop ref assertion from OpenAI WIF mappings by default,fix,core,6782,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6784
+2026-08-30,fullsend,6779,feat(#6778): add fullsend inference openai command family,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6779
+2026-08-30,fullsend,6692,chore(deps): update dependency cytoscape to v3.34.2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6692

@@ -1452,3 +1452,4 @@ date,repo,type,event,number,actor,title,url
 2026-08-29,fullsend,pr,opened_core,6754,waynesun09,"feat(pi): harness extensions: for pi extension directories",https://github.com/fullsend-ai/fullsend/pull/6754
 2026-08-29,fullsend,pr,opened_core,6753,waynesun09,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
 2026-08-29,fullsend,pr,opened_core,6752,waynesun09,"fix(pi): activate grep/find/ls and ship rg + fd in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/6752
+2026-08-30,fullsend,pr,opened_core,6777,waynesun09,"docs(#6689): two setup routes and per-repository trust in the OpenAI WIF guide",https://github.com/fullsend-ai/fullsend/pull/6777

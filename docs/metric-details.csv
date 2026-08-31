@@ -11936,3 +11936,24 @@ date,repo,type,event,number,title,url
 2026-08-29,agents,issue,opened,1086,"Review agent should escalate intent-deviation findings to CHANGES_REQUESTED on agent-authored PRs",https://github.com/fullsend-ai/agents/issues/1086
 2026-08-29,agents,issue,opened,1083,"triage agent: select overlays from event.source.system",https://github.com/fullsend-ai/agents/issues/1083
 2026-08-29,agents,issue,closed,1046,"Review agent should submit CHANGES_REQUESTED when any finding has a concrete remediation",https://github.com/fullsend-ai/agents/issues/1046
+2026-08-30,fullsend,pr,opened,6786,"docs(#6785): add text/template sorted map iteration to Go review guidance",https://github.com/fullsend-ai/fullsend/pull/6786
+2026-08-30,fullsend,pr,opened,6784,"fix(#6782): drop ref assertion from OpenAI WIF mappings by default",https://github.com/fullsend-ai/fullsend/pull/6784
+2026-08-30,fullsend,pr,opened,6783,"docs(#6781): promote forge-abstraction to explicit AGENTS.md bullet",https://github.com/fullsend-ai/fullsend/pull/6783
+2026-08-30,fullsend,pr,opened,6780,"fix(#6688): add per-commit bot email detection for DCO classification",https://github.com/fullsend-ai/fullsend/pull/6780
+2026-08-30,fullsend,pr,opened,6779,"feat(#6778): add fullsend inference openai command family",https://github.com/fullsend-ai/fullsend/pull/6779
+2026-08-30,fullsend,pr,opened,6777,"docs(#6689): two setup routes and per-repository trust in the OpenAI WIF guide",https://github.com/fullsend-ai/fullsend/pull/6777
+2026-08-30,fullsend,pr,opened,6776,"chore(deps): update docker/setup-buildx-action action to v4.3.0",https://github.com/fullsend-ai/fullsend/pull/6776
+2026-08-30,fullsend,pr,opened,6775,"chore(deps): update dependency sheeki03/tirith to v0.4.0",https://github.com/fullsend-ai/fullsend/pull/6775
+2026-08-30,fullsend,pr,opened,6774,"fix(#6773): detect and repair missing GitLab pipeline schedules",https://github.com/fullsend-ai/fullsend/pull/6774
+2026-08-30,fullsend,pr,merged,6784,"fix(#6782): drop ref assertion from OpenAI WIF mappings by default",https://github.com/fullsend-ai/fullsend/pull/6784
+2026-08-30,fullsend,pr,merged,6779,"feat(#6778): add fullsend inference openai command family",https://github.com/fullsend-ai/fullsend/pull/6779
+2026-08-30,fullsend,pr,merged,6692,"chore(deps): update dependency cytoscape to v3.34.2",https://github.com/fullsend-ai/fullsend/pull/6692
+2026-08-30,fullsend,issue,opened,6787,"feat(inference): WIF for self-managed forges behind a private issuer — OpenAI enrolment support, and correct ADR 0067",https://github.com/fullsend-ai/fullsend/issues/6787
+2026-08-30,fullsend,issue,opened,6785,"Add text/template sorted map iteration to Go review guidance",https://github.com/fullsend-ai/fullsend/issues/6785
+2026-08-30,fullsend,issue,opened,6782,"OpenAI WIF mapping: drop the ref assertion by default — PR-review-triggered agent runs carry refs/pull/<N>/merge",https://github.com/fullsend-ai/fullsend/issues/6782
+2026-08-30,fullsend,issue,opened,6781,"Promote forge-abstraction to explicit AGENTS.md bullet point",https://github.com/fullsend-ai/fullsend/issues/6781
+2026-08-30,fullsend,issue,opened,6778,"fullsend inference openai: generate the WIF provider/mapping request for admins, import the reply, check the exchange",https://github.com/fullsend-ai/fullsend/issues/6778
+2026-08-30,fullsend,issue,opened,6773,"repos status/install: missing pipeline schedules not reported as drift",https://github.com/fullsend-ai/fullsend/issues/6773
+2026-08-30,fullsend,issue,closed,6782,"OpenAI WIF mapping: drop the ref assertion by default — PR-review-triggered agent runs carry refs/pull/<N>/merge",https://github.com/fullsend-ai/fullsend/issues/6782
+2026-08-30,fullsend,issue,closed,6778,"fullsend inference openai: generate the WIF provider/mapping request for admins, import the reply, check the exchange",https://github.com/fullsend-ai/fullsend/issues/6778
+2026-08-30,agents,issue,opened,1090,"Provide link to mirrored prior result in .github/scripts/check-rollup-result.sh",https://github.com/fullsend-ai/agents/issues/1090
