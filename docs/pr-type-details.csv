@@ -1378,3 +1378,24 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-30,fullsend,6784,fix(#6782): drop ref assertion from OpenAI WIF mappings by default,fix,core,6782,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6784
 2026-08-30,fullsend,6779,feat(#6778): add fullsend inference openai command family,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6779
 2026-08-30,fullsend,6692,chore(deps): update dependency cytoscape to v3.34.2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6692
+2026-08-31,fullsend,6819,fix(#6818): append [skip ci] to GitLab scaffold MR title,fix,core,6818,ggallen,https://github.com/fullsend-ai/fullsend/pull/6819
+2026-08-31,fullsend,6812,fix(#6810): add retry with exponential backoff to FetchURL,fix,core,6810,ggallen,https://github.com/fullsend-ai/fullsend/pull/6812
+2026-08-31,fullsend,6804,fix(#6803): use stage-aware role check for slash commands,fix,core,6803,ggallen,https://github.com/fullsend-ai/fullsend/pull/6804
+2026-08-31,fullsend,6790,chore(deps): update docker/setup-qemu-action action to v4.2.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6790
+2026-08-31,fullsend,6776,chore(deps): update docker/setup-buildx-action action to v4.3.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6776
+2026-08-31,fullsend,6775,chore(deps): update dependency sheeki03/tirith to v0.4.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6775
+2026-08-31,fullsend,6774,fix(#6773): detect and repair missing GitLab pipeline schedules,fix,core,6773,ggallen,https://github.com/fullsend-ai/fullsend/pull/6774
+2026-08-31,fullsend,6769,fix(#6760): expose work item keys to harness agents,fix,core,6760,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6769
+2026-08-31,fullsend,6763,fix(#6762): resolve harness bot identity,fix,core,6762,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6763
+2026-08-31,fullsend,6751,chore(deps): update dependency vue to v3.5.42,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6751
+2026-08-31,fullsend,6744,refactor(#6740): remove automatic needs-info re-triage dispatch,other,,,,https://github.com/fullsend-ai/fullsend/pull/6744
+2026-08-31,fullsend,6727,chore(deps): update dependency mermaid to v11.17.2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6727
+2026-08-31,fullsend,6705,fix(#6702): observe GitHub rate-limit state and name it in exhausted-retry errors,fix,core,6702,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6705
+2026-08-31,fullsend,6683,feat(#2996): add SEO metadata to docs site,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6683
+2026-08-31,fullsend,6677,fix(#6674): preserve adopted ref so agent update re-resolves the original branch,fix,bot,6674,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/6677
+2026-08-31,fullsend,6613,"ci(release): prepare v0.39.0 — bump agents gate pin past agents#1010, tag the gate-validated SHA",ci,,,,https://github.com/fullsend-ai/fullsend/pull/6613
+2026-08-31,agents,1085,feat(#1073): add Jira component assignment to triage pipeline,feat,,,,https://github.com/fullsend-ai/agents/pull/1085
+2026-08-31,agents,1084,refactor(#1083): select triage overlays from event.source.system,other,,,,https://github.com/fullsend-ai/agents/pull/1084
+2026-08-31,agents,1075,feat(#1074): add Jira-source overlay to code harness,feat,,,,https://github.com/fullsend-ai/agents/pull/1075
+2026-08-31,agents,1041,refactor(#1039): consolidate forge-specific policies into shared base,other,,,,https://github.com/fullsend-ai/agents/pull/1041
+2026-08-31,agents,754,"ci(skillsaw): add lint job, Makefile targets, and repo config",ci,,,,https://github.com/fullsend-ai/agents/pull/754

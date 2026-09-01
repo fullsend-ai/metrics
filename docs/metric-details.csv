@@ -11957,3 +11957,107 @@ date,repo,type,event,number,title,url
 2026-08-30,fullsend,issue,closed,6782,"OpenAI WIF mapping: drop the ref assertion by default — PR-review-triggered agent runs carry refs/pull/<N>/merge",https://github.com/fullsend-ai/fullsend/issues/6782
 2026-08-30,fullsend,issue,closed,6778,"fullsend inference openai: generate the WIF provider/mapping request for admins, import the reply, check the exchange",https://github.com/fullsend-ai/fullsend/issues/6778
 2026-08-30,agents,issue,opened,1090,"Provide link to mirrored prior result in .github/scripts/check-rollup-result.sh",https://github.com/fullsend-ai/agents/issues/1090
+2026-08-31,fullsend,pr,opened,6833,"fix(#6831): add authentication preflight to Jira poller",https://github.com/fullsend-ai/fullsend/pull/6833
+2026-08-31,fullsend,pr,opened,6832,"fix(#6828): add retry with backoff for openshell install",https://github.com/fullsend-ai/fullsend/pull/6832
+2026-08-31,fullsend,pr,opened,6827,"ci(#6825): retry CreateBranch on fork replication errors",https://github.com/fullsend-ai/fullsend/pull/6827
+2026-08-31,fullsend,pr,opened,6826,"fix(#6824): fall back to main when agents repo version tag is missing",https://github.com/fullsend-ai/fullsend/pull/6826
+2026-08-31,fullsend,pr,opened,6823,"fix(#6821): add Go-side context deadline and JS-side recovery for WASM mint timeout",https://github.com/fullsend-ai/fullsend/pull/6823
+2026-08-31,fullsend,pr,opened,6820,"ci(#6815): migrate behaviour tests to single-org ephemeral repos",https://github.com/fullsend-ai/fullsend/pull/6820
+2026-08-31,fullsend,pr,opened,6819,"fix(#6818): append [skip ci] to GitLab scaffold MR title",https://github.com/fullsend-ai/fullsend/pull/6819
+2026-08-31,fullsend,pr,opened,6814,"fix(#6148): map <details> blocks to ADF expand nodes in Jira converter",https://github.com/fullsend-ai/fullsend/pull/6814
+2026-08-31,fullsend,pr,opened,6813,"chore(#6811): add GCE-based GitLab runner provisioning scripts",https://github.com/fullsend-ai/fullsend/pull/6813
+2026-08-31,fullsend,pr,opened,6812,"fix(#6810): add retry with exponential backoff to FetchURL",https://github.com/fullsend-ai/fullsend/pull/6812
+2026-08-31,fullsend,pr,opened,6809,"fix(#6678): split scaffold config into base layer and user overlay",https://github.com/fullsend-ai/fullsend/pull/6809
+2026-08-31,fullsend,pr,opened,6808,"fix(#6806): emit fallback ResultEvent when stream ends without result line",https://github.com/fullsend-ai/fullsend/pull/6808
+2026-08-31,fullsend,pr,opened,6805,"chore(deps): update python docker tag to v3.14",https://github.com/fullsend-ai/fullsend/pull/6805
+2026-08-31,fullsend,pr,opened,6804,"fix(#6803): use stage-aware role check for slash commands",https://github.com/fullsend-ai/fullsend/pull/6804
+2026-08-31,fullsend,pr,opened,6801,"fix(#6798): preserve child top-level fields over inherited forge values",https://github.com/fullsend-ai/fullsend/pull/6801
+2026-08-31,fullsend,pr,opened,6799,"feat(#6645): use AND semantics for docs site multi-word search",https://github.com/fullsend-ai/fullsend/pull/6799
+2026-08-31,fullsend,pr,opened,6797,"fix(#6702): use conditional requests for behaviour-suite polling GETs",https://github.com/fullsend-ai/fullsend/pull/6797
+2026-08-31,fullsend,pr,opened,6794,"feat(#2661): warn when repo skills are shadowed",https://github.com/fullsend-ai/fullsend/pull/6794
+2026-08-31,fullsend,pr,opened,6793,"docs(adr): resume agent sessions from JSONL transcripts",https://github.com/fullsend-ai/fullsend/pull/6793
+2026-08-31,fullsend,pr,opened,6790,"chore(deps): update docker/setup-qemu-action action to v4.2.0",https://github.com/fullsend-ai/fullsend/pull/6790
+2026-08-31,fullsend,pr,opened,6789,"ci(#6788): add dummy-playback runtime for replaying canned results",https://github.com/fullsend-ai/fullsend/pull/6789
+2026-08-31,fullsend,pr,merged,6819,"fix(#6818): append [skip ci] to GitLab scaffold MR title",https://github.com/fullsend-ai/fullsend/pull/6819
+2026-08-31,fullsend,pr,merged,6812,"fix(#6810): add retry with exponential backoff to FetchURL",https://github.com/fullsend-ai/fullsend/pull/6812
+2026-08-31,fullsend,pr,merged,6804,"fix(#6803): use stage-aware role check for slash commands",https://github.com/fullsend-ai/fullsend/pull/6804
+2026-08-31,fullsend,pr,merged,6790,"chore(deps): update docker/setup-qemu-action action to v4.2.0",https://github.com/fullsend-ai/fullsend/pull/6790
+2026-08-31,fullsend,pr,merged,6776,"chore(deps): update docker/setup-buildx-action action to v4.3.0",https://github.com/fullsend-ai/fullsend/pull/6776
+2026-08-31,fullsend,pr,merged,6775,"chore(deps): update dependency sheeki03/tirith to v0.4.0",https://github.com/fullsend-ai/fullsend/pull/6775
+2026-08-31,fullsend,pr,merged,6774,"fix(#6773): detect and repair missing GitLab pipeline schedules",https://github.com/fullsend-ai/fullsend/pull/6774
+2026-08-31,fullsend,pr,merged,6769,"fix(#6760): expose work item keys to harness agents",https://github.com/fullsend-ai/fullsend/pull/6769
+2026-08-31,fullsend,pr,merged,6763,"fix(#6762): resolve harness bot identity",https://github.com/fullsend-ai/fullsend/pull/6763
+2026-08-31,fullsend,pr,merged,6751,"chore(deps): update dependency vue to v3.5.42",https://github.com/fullsend-ai/fullsend/pull/6751
+2026-08-31,fullsend,pr,merged,6744,"refactor(#6740): remove automatic needs-info re-triage dispatch",https://github.com/fullsend-ai/fullsend/pull/6744
+2026-08-31,fullsend,pr,merged,6727,"chore(deps): update dependency mermaid to v11.17.2",https://github.com/fullsend-ai/fullsend/pull/6727
+2026-08-31,fullsend,pr,merged,6705,"fix(#6702): observe GitHub rate-limit state and name it in exhausted-retry errors",https://github.com/fullsend-ai/fullsend/pull/6705
+2026-08-31,fullsend,pr,merged,6683,"feat(#2996): add SEO metadata to docs site",https://github.com/fullsend-ai/fullsend/pull/6683
+2026-08-31,fullsend,pr,merged,6677,"fix(#6674): preserve adopted ref so agent update re-resolves the original branch",https://github.com/fullsend-ai/fullsend/pull/6677
+2026-08-31,fullsend,pr,merged,6613,"ci(release): prepare v0.39.0 — bump agents gate pin past agents#1010, tag the gate-validated SHA",https://github.com/fullsend-ai/fullsend/pull/6613
+2026-08-31,fullsend,pr,closed,6679,"fix(#6678): preserve per-repo config on re-onboarding",https://github.com/fullsend-ai/fullsend/pull/6679
+2026-08-31,fullsend,issue,opened,6835,"fix(jirapoll): recognize and filter self-authored events",https://github.com/fullsend-ai/fullsend/issues/6835
+2026-08-31,fullsend,issue,opened,6834,"v0.37 scaffold should generate a default policies/base.yaml for sandbox-enabled agents",https://github.com/fullsend-ai/fullsend/issues/6834
+2026-08-31,fullsend,issue,opened,6831,"fix(jira): fail fast when poller authentication fails",https://github.com/fullsend-ai/fullsend/issues/6831
+2026-08-31,fullsend,issue,opened,6830,"Add dry-run validation for custom agent harness configs",https://github.com/fullsend-ai/fullsend/issues/6830
+2026-08-31,fullsend,issue,opened,6829,"CreateRepo should wait for git-layer readiness; delete pool recycling machinery",https://github.com/fullsend-ai/fullsend/issues/6829
+2026-08-31,fullsend,issue,opened,6828,"Add retry with backoff for openshell binary download in sandbox setup",https://github.com/fullsend-ai/fullsend/issues/6828
+2026-08-31,fullsend,issue,opened,6825,"test(behaviour): fork readiness race persists after initial polling",https://github.com/fullsend-ai/fullsend/issues/6825
+2026-08-31,fullsend,issue,opened,6824,"CLI agent resolution should fall back to main when version tag is missing",https://github.com/fullsend-ai/fullsend/issues/6824
+2026-08-31,fullsend,issue,opened,6822,"Filter low-severity findings from review runs in this repository",https://github.com/fullsend-ai/fullsend/issues/6822
+2026-08-31,fullsend,issue,opened,6821,"Mint WASM isolate poisons permanently after GitHub API timeout, causing cascading 503s",https://github.com/fullsend-ai/fullsend/issues/6821
+2026-08-31,fullsend,issue,opened,6818,"fix(gitlab): scaffold install MR title missing [skip ci] triggers review agent on merged-results pipelines",https://github.com/fullsend-ai/fullsend/issues/6818
+2026-08-31,fullsend,issue,opened,6817,"Add field-addition checklist for AgentEntry covering the interfaces.go merge loop",https://github.com/fullsend-ai/fullsend/issues/6817
+2026-08-31,fullsend,issue,opened,6816,"GitLab MR-event dispatch (fullsend-dispatch.yml) does not pass REPO_FULL_NAME for review stage",https://github.com/fullsend-ai/fullsend/issues/6816
+2026-08-31,fullsend,issue,opened,6815,"e2e: migrate behaviour tests from 12-org pool to single fullsend-ai-test org with repos install",https://github.com/fullsend-ai/fullsend/issues/6815
+2026-08-31,fullsend,issue,opened,6811,"Add GCE-based GitLab runner provisioning script",https://github.com/fullsend-ai/fullsend/issues/6811
+2026-08-31,fullsend,issue,opened,6810,"FetchURL has no retry logic; transient network errors fail entire runs",https://github.com/fullsend-ai/fullsend/issues/6810
+2026-08-31,fullsend,issue,opened,6807,"Code agent dispatch should pre-flight check branch creation permissions",https://github.com/fullsend-ai/fullsend/issues/6807
+2026-08-31,fullsend,issue,opened,6806,"Review agent metrics zeroed when agent process exits with error after writing valid output",https://github.com/fullsend-ai/fullsend/issues/6806
+2026-08-31,fullsend,issue,opened,6803,"routeSlashCommand hardcodes write role for all /fs-* commands; observation stages should accept triage",https://github.com/fullsend-ai/fullsend/issues/6803
+2026-08-31,fullsend,issue,opened,6802,"Define a lightweight collaborator addition process",https://github.com/fullsend-ai/fullsend/issues/6802
+2026-08-31,fullsend,issue,opened,6800,"Move issue-splitting from triage agent prompts to a standalone skill",https://github.com/fullsend-ai/fullsend/issues/6800
+2026-08-31,fullsend,issue,opened,6798,"bug: child harness top-level fields silently overridden by inherited forge-level values",https://github.com/fullsend-ai/fullsend/issues/6798
+2026-08-31,fullsend,issue,opened,6796,"Review agent first dispatch was 14 days after PR creation",https://github.com/fullsend-ai/fullsend/issues/6796
+2026-08-31,fullsend,issue,opened,6795,"Review agent outage: opus alias resolves to policy-denied claude-opus-5 on Vertex AI",https://github.com/fullsend-ai/fullsend/issues/6795
+2026-08-31,fullsend,issue,opened,6792,"Env validator should report all missing variable errors, not just the first",https://github.com/fullsend-ai/fullsend/issues/6792
+2026-08-31,fullsend,issue,opened,6791,"Skip fix dispatch for non-coder bot PRs at routing level",https://github.com/fullsend-ai/fullsend/issues/6791
+2026-08-31,fullsend,issue,opened,6788,"Add dummy-playback runtime for replaying canned agent results",https://github.com/fullsend-ai/fullsend/issues/6788
+2026-08-31,fullsend,issue,closed,6818,"fix(gitlab): scaffold install MR title missing [skip ci] triggers review agent on merged-results pipelines",https://github.com/fullsend-ai/fullsend/issues/6818
+2026-08-31,fullsend,issue,closed,6810,"FetchURL has no retry logic; transient network errors fail entire runs",https://github.com/fullsend-ai/fullsend/issues/6810
+2026-08-31,fullsend,issue,closed,6803,"routeSlashCommand hardcodes write role for all /fs-* commands; observation stages should accept triage",https://github.com/fullsend-ai/fullsend/issues/6803
+2026-08-31,fullsend,issue,closed,6773,"repos status/install: missing pipeline schedules not reported as drift",https://github.com/fullsend-ai/fullsend/issues/6773
+2026-08-31,fullsend,issue,closed,6762,"Resolve bot identity in the precomputed-matrix harness path",https://github.com/fullsend-ai/fullsend/issues/6762
+2026-08-31,fullsend,issue,closed,6760,"Expose FULLSEND_WORK_ITEM_KEY alongside ISSUE_NUMBER",https://github.com/fullsend-ai/fullsend/issues/6760
+2026-08-31,fullsend,issue,closed,6740,"Remove automatic needs-info re-triage on issue comments",https://github.com/fullsend-ai/fullsend/issues/6740
+2026-08-31,fullsend,issue,closed,6674,"agent update silently switches to default branch when adopted from a non-default ref",https://github.com/fullsend-ai/fullsend/issues/6674
+2026-08-31,fullsend,issue,closed,5176,"Support additive policy overrides to avoid full-replacement maintenance burden",https://github.com/fullsend-ai/fullsend/issues/5176
+2026-08-31,fullsend,issue,closed,2996,"Enhance VitePress docs with SEO metadata for better discoverability",https://github.com/fullsend-ai/fullsend/issues/2996
+2026-08-31,agents,pr,opened,1109,"refactor(#1108): use OpenShell providers for Jira credentials",https://github.com/fullsend-ai/agents/pull/1109
+2026-08-31,agents,pr,opened,1103,"docs(#1102): document harness host_files execution order constraints",https://github.com/fullsend-ai/agents/pull/1103
+2026-08-31,agents,pr,opened,1101,"fix(#1099): resolve skillsaw CI failures",https://github.com/fullsend-ai/agents/pull/1101
+2026-08-31,agents,pr,opened,1096,"fix(#2332): respect tool-owned filenames",https://github.com/fullsend-ai/agents/pull/1096
+2026-08-31,agents,pr,opened,1094,"fix(#552): add DCO sign-off prohibition to fix and code agent definitions",https://github.com/fullsend-ai/agents/pull/1094
+2026-08-31,agents,pr,merged,1085,"feat(#1073): add Jira component assignment to triage pipeline",https://github.com/fullsend-ai/agents/pull/1085
+2026-08-31,agents,pr,merged,1084,"refactor(#1083): select triage overlays from event.source.system",https://github.com/fullsend-ai/agents/pull/1084
+2026-08-31,agents,pr,merged,1075,"feat(#1074): add Jira-source overlay to code harness",https://github.com/fullsend-ai/agents/pull/1075
+2026-08-31,agents,pr,merged,1041,"refactor(#1039): consolidate forge-specific policies into shared base",https://github.com/fullsend-ai/agents/pull/1041
+2026-08-31,agents,pr,merged,754,"ci(skillsaw): add lint job, Makefile targets, and repo config",https://github.com/fullsend-ai/agents/pull/754
+2026-08-31,agents,issue,opened,1108,"refactor(jira): use OpenShell providers for triage and code credentials",https://github.com/fullsend-ai/agents/issues/1108
+2026-08-31,agents,issue,opened,1107,"Fix agent bot-triggered mode should carry forward recent human /fs-fix instructions as context",https://github.com/fullsend-ai/agents/issues/1107
+2026-08-31,agents,issue,opened,1106,"Review agent should suppress findings where its own analysis concludes the code is acceptable",https://github.com/fullsend-ai/agents/issues/1106
+2026-08-31,agents,issue,opened,1105,"Filter low-severity findings from review runs in this repository",https://github.com/fullsend-ai/agents/issues/1105
+2026-08-31,agents,issue,opened,1104,"Review agent should flag version/identifier mismatches between PR title, branch name, and commit messages",https://github.com/fullsend-ai/agents/issues/1104
+2026-08-31,agents,issue,opened,1102,"Code-implementation skill should document harness host_files execution order constraints",https://github.com/fullsend-ai/agents/issues/1102
+2026-08-31,agents,issue,opened,1100,"Update retro harness model: claude-sonnet-4-6 unavailable on Vertex, blocking all retro runs",https://github.com/fullsend-ai/agents/issues/1100
+2026-08-31,agents,issue,opened,1099,"Fix skillsaw CI failures",https://github.com/fullsend-ai/agents/issues/1099
+2026-08-31,agents,issue,opened,1098,"Code agent should apply combinatorial coverage for small enumerated input sets in table-driven tests",https://github.com/fullsend-ai/agents/issues/1098
+2026-08-31,agents,issue,opened,1097,"Review correctness sub-agent should check conditional branch completeness for forge-discriminated logic",https://github.com/fullsend-ai/agents/issues/1097
+2026-08-31,agents,issue,opened,1095,"Code agent should verify functional completeness when deleting multi-purpose config files",https://github.com/fullsend-ai/agents/issues/1095
+2026-08-31,agents,issue,opened,1093,"Fix and review agents should check linked issue status before proceeding",https://github.com/fullsend-ai/agents/issues/1093
+2026-08-31,agents,issue,opened,1092,"Add incremental review mode for re-reviews on the same PR",https://github.com/fullsend-ai/agents/issues/1092
+2026-08-31,agents,issue,opened,1091,"Re-review changed_since_prior diff includes unrelated main-branch commits on rebase",https://github.com/fullsend-ai/agents/issues/1091
+2026-08-31,agents,issue,closed,1083,"triage agent: select overlays from event.source.system",https://github.com/fullsend-ai/agents/issues/1083
+2026-08-31,agents,issue,closed,1074,"code agent: read Jira source issues through an event overlay",https://github.com/fullsend-ai/agents/issues/1074
+2026-08-31,agents,issue,closed,1073,"triage: assign tracker components",https://github.com/fullsend-ai/agents/issues/1073
+2026-08-31,agents,issue,closed,1059,"Add explicit DCO exemption guidance to fix agent definition",https://github.com/fullsend-ai/agents/issues/1059
+2026-08-31,agents,issue,closed,1039,"Refactor policies to use a shared base for landlock/filesystem/process and delegate network rules to profiles",https://github.com/fullsend-ai/agents/issues/1039

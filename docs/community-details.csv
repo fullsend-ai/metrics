@@ -1453,3 +1453,6 @@ date,repo,type,event,number,actor,title,url
 2026-08-29,fullsend,pr,opened_core,6753,waynesun09,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
 2026-08-29,fullsend,pr,opened_core,6752,waynesun09,"fix(pi): activate grep/find/ls and ship rg + fd in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/6752
 2026-08-30,fullsend,pr,opened_core,6777,waynesun09,"docs(#6689): two setup routes and per-repository trust in the OpenAI WIF guide",https://github.com/fullsend-ai/fullsend/pull/6777
+2026-08-31,fullsend,issue,opened_external,6816,jasonawant,"GitLab MR-event dispatch (fullsend-dispatch.yml) does not pass REPO_FULL_NAME for review stage",https://github.com/fullsend-ai/fullsend/issues/6816
+2026-08-31,fullsend,pr,opened_core,6797,waynesun09,"fix(#6702): use conditional requests for behaviour-suite polling GETs",https://github.com/fullsend-ai/fullsend/pull/6797
+2026-08-31,fullsend,pr,reviewed_external,6679,Roming22,"fix(#6678): preserve per-repo config on re-onboarding",https://github.com/fullsend-ai/fullsend/pull/6679
