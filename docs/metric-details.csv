@@ -12061,3 +12061,133 @@ date,repo,type,event,number,title,url
 2026-08-31,agents,issue,closed,1073,"triage: assign tracker components",https://github.com/fullsend-ai/agents/issues/1073
 2026-08-31,agents,issue,closed,1059,"Add explicit DCO exemption guidance to fix agent definition",https://github.com/fullsend-ai/agents/issues/1059
 2026-08-31,agents,issue,closed,1039,"Refactor policies to use a shared base for landlock/filesystem/process and delegate network rules to profiles",https://github.com/fullsend-ai/agents/issues/1039
+2026-09-01,fullsend,pr,opened,6890,"fix(#6868): add retry, tar-over-ssh, and IAP bypass for GCE provisioning",https://github.com/fullsend-ai/fullsend/pull/6890
+2026-09-01,fullsend,pr,opened,6889,"fix(#6873): strip ANSI escape codes from openshell gateway list output",https://github.com/fullsend-ai/fullsend/pull/6889
+2026-09-01,fullsend,pr,opened,6888,"fix(#6872): re-register gateway after restart to pick up new TLS certs",https://github.com/fullsend-ai/fullsend/pull/6888
+2026-09-01,fullsend,pr,opened,6887,"fix(#6871): replace placeholder baseurl and disable cisco-openh264 repo",https://github.com/fullsend-ai/fullsend/pull/6887
+2026-09-01,fullsend,pr,opened,6886,"fix(#6870): replace cloud-init with SSH dnf install in GCE script",https://github.com/fullsend-ai/fullsend/pull/6886
+2026-09-01,fullsend,pr,opened,6885,"docs(#6869): document Cloud NAT prerequisite for GCE runner VMs",https://github.com/fullsend-ai/fullsend/pull/6885
+2026-09-01,fullsend,pr,opened,6884,"feat(#6882): add per-repo model alias overrides (models.aliases)",https://github.com/fullsend-ai/fullsend/pull/6884
+2026-09-01,fullsend,pr,opened,6881,"fix(#6867): use --scp-flag for gcloud compute scp calls",https://github.com/fullsend-ai/fullsend/pull/6881
+2026-09-01,fullsend,pr,opened,6880,"docs(#6879): add httptest handler-invocation assertion guideline",https://github.com/fullsend-ai/fullsend/pull/6880
+2026-09-01,fullsend,pr,opened,6878,"fix(#6877): pass behavioral exit reason to post-script",https://github.com/fullsend-ai/fullsend/pull/6878
+2026-09-01,fullsend,pr,opened,6876,"fix(#6156): block closed issue code dispatch",https://github.com/fullsend-ai/fullsend/pull/6876
+2026-09-01,fullsend,pr,opened,6875,"ci(#6864): migrate behaviour tests to single-org ephemeral repos",https://github.com/fullsend-ai/fullsend/pull/6875
+2026-09-01,fullsend,pr,opened,6874,"fix(#6865): export shared GitLab env vars for all agent stages and skip mint",https://github.com/fullsend-ai/fullsend/pull/6874
+2026-09-01,fullsend,pr,opened,6863,"docs(#6860): add normative authorization contract",https://github.com/fullsend-ai/fullsend/pull/6863
+2026-09-01,fullsend,pr,opened,6862,"docs(#6802): add contributor ladder (LADDER.md)",https://github.com/fullsend-ai/fullsend/pull/6862
+2026-09-01,fullsend,pr,opened,6861,"fix(#6546): add retry-with-backoff for transient errors in GCP client",https://github.com/fullsend-ai/fullsend/pull/6861
+2026-09-01,fullsend,pr,opened,6859,"feat(#6681): inject harness skills into agent frontmatter for always-on activation",https://github.com/fullsend-ai/fullsend/pull/6859
+2026-09-01,fullsend,pr,opened,6857,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/6857
+2026-09-01,fullsend,pr,opened,6848,"feat(site): serve a custom 404 page for unmatched URLs",https://github.com/fullsend-ai/fullsend/pull/6848
+2026-09-01,fullsend,pr,opened,6845,"fix(#6844): support wildcard hostnames in SSRF hook egress allowlist",https://github.com/fullsend-ai/fullsend/pull/6845
+2026-09-01,fullsend,pr,opened,6841,"docs(#6840): remove stale e2e role from user-facing docs",https://github.com/fullsend-ai/fullsend/pull/6841
+2026-09-01,fullsend,pr,opened,6839,"docs(#6838): add consumer-completeness touchpoints to runtime checklist",https://github.com/fullsend-ai/fullsend/pull/6839
+2026-09-01,fullsend,pr,opened,6836,"chore(deps): update renovatebot/github-action action to v46.2.5",https://github.com/fullsend-ai/fullsend/pull/6836
+2026-09-01,fullsend,pr,merged,6881,"fix(#6867): use --scp-flag for gcloud compute scp calls",https://github.com/fullsend-ai/fullsend/pull/6881
+2026-09-01,fullsend,pr,merged,6874,"fix(#6865): export shared GitLab env vars for all agent stages and skip mint",https://github.com/fullsend-ai/fullsend/pull/6874
+2026-09-01,fullsend,pr,merged,6861,"fix(#6546): add retry-with-backoff for transient errors in GCP client",https://github.com/fullsend-ai/fullsend/pull/6861
+2026-09-01,fullsend,pr,merged,6836,"chore(deps): update renovatebot/github-action action to v46.2.5",https://github.com/fullsend-ai/fullsend/pull/6836
+2026-09-01,fullsend,pr,merged,6833,"fix(#6831): add authentication preflight to Jira poller",https://github.com/fullsend-ai/fullsend/pull/6833
+2026-09-01,fullsend,pr,merged,6827,"ci(#6825): retry CreateBranch on fork replication errors",https://github.com/fullsend-ai/fullsend/pull/6827
+2026-09-01,fullsend,pr,merged,6813,"chore(#6811): add GCE-based GitLab runner provisioning scripts",https://github.com/fullsend-ai/fullsend/pull/6813
+2026-09-01,fullsend,pr,merged,6805,"chore(deps): update python docker tag to v3.14",https://github.com/fullsend-ai/fullsend/pull/6805
+2026-09-01,fullsend,pr,merged,6794,"feat(#2661): warn when repo skills are shadowed",https://github.com/fullsend-ai/fullsend/pull/6794
+2026-09-01,fullsend,pr,merged,6789,"ci(#6788): add dummy-playback runtime for replaying canned results",https://github.com/fullsend-ai/fullsend/pull/6789
+2026-09-01,fullsend,pr,merged,6772,"docs: clarify mint role vs identity so custom agents work by default",https://github.com/fullsend-ai/fullsend/pull/6772
+2026-09-01,fullsend,pr,merged,6771,"docs: remove internal-only e2e role from the user-facing role matrix",https://github.com/fullsend-ai/fullsend/pull/6771
+2026-09-01,fullsend,pr,merged,6766,"fix(#6764): fail when agent definition name mismatches requested name",https://github.com/fullsend-ai/fullsend/pull/6766
+2026-09-01,fullsend,pr,merged,6753,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-01,fullsend,pr,merged,6752,"fix(pi): activate grep/find/ls and ship rg + fd in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/6752
+2026-09-01,fullsend,pr,merged,6728,"fix(hack): make lint-docs-links actually run on macOS",https://github.com/fullsend-ai/fullsend/pull/6728
+2026-09-01,fullsend,pr,merged,6711,"fix(#6706): store Jira sticky markers in comment entity properties",https://github.com/fullsend-ai/fullsend/pull/6711
+2026-09-01,fullsend,pr,merged,6676,"fix(pre-fetch): extract the prior SHA with sed, not BSD-incompatible grep -P",https://github.com/fullsend-ai/fullsend/pull/6676
+2026-09-01,fullsend,pr,merged,6675,"test(cli): resolve the temp dir in the agents-repo-fallback path test",https://github.com/fullsend-ai/fullsend/pull/6675
+2026-09-01,fullsend,pr,merged,6673,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.252",https://github.com/fullsend-ai/fullsend/pull/6673
+2026-09-01,fullsend,pr,merged,6650,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 4690398",https://github.com/fullsend-ai/fullsend/pull/6650
+2026-09-01,fullsend,pr,merged,6635,"docs(problems): clarify the tool-call risk layer is advisory in-sandbox",https://github.com/fullsend-ai/fullsend/pull/6635
+2026-09-01,fullsend,pr,merged,6633,"docs(problems): add a concrete trust scorecard artifact shape",https://github.com/fullsend-ai/fullsend/pull/6633
+2026-09-01,fullsend,pr,merged,6627,"docs(#3122): require reciprocal backlinks when adding problem docs",https://github.com/fullsend-ai/fullsend/pull/6627
+2026-09-01,fullsend,pr,merged,6598,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 81f0a86",https://github.com/fullsend-ai/fullsend/pull/6598
+2026-09-01,fullsend,pr,merged,6591,"feat: list fullsend slash commands in onboarding PR body",https://github.com/fullsend-ai/fullsend/pull/6591
+2026-09-01,fullsend,pr,merged,6579,"fix(#6577): add fable alias to pi model table and validate documented aliases",https://github.com/fullsend-ai/fullsend/pull/6579
+2026-09-01,fullsend,pr,merged,6514,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/6514
+2026-09-01,fullsend,pr,merged,6010,"refactor(docs): switch to VitePress Plus theme with multi-version builds",https://github.com/fullsend-ai/fullsend/pull/6010
+2026-09-01,fullsend,issue,opened,6883,"pi: per-repo model catalog for Vertex Claude (ids pi's bundled catalog lacks) and a pre-sandbox availability preflight",https://github.com/fullsend-ai/fullsend/issues/6883
+2026-09-01,fullsend,issue,opened,6882,"pi: repo-configurable model aliases for Vertex Claude (models.aliases in .fullsend/config.yaml)",https://github.com/fullsend-ai/fullsend/issues/6882
+2026-09-01,fullsend,issue,opened,6879,"Add httptest handler-invocation assertions to Go testing guidelines",https://github.com/fullsend-ai/fullsend/issues/6879
+2026-09-01,fullsend,issue,opened,6877,"Post-script shows misleading 'No PR created' when agent hits turn limit",https://github.com/fullsend-ai/fullsend/issues/6877
+2026-09-01,fullsend,issue,opened,6873,"fix: ANSI color codes break openshell gateway list grep checks",https://github.com/fullsend-ai/fullsend/issues/6873
+2026-09-01,fullsend,issue,opened,6872,"fix: start_gateway() fails after restart due to stale TLS cert registration",https://github.com/fullsend-ai/fullsend/issues/6872
+2026-09-01,fullsend,issue,opened,6871,"fix: fix_fedora_repos() breaks stock Fedora cloud images and cisco-openh264 repo fails",https://github.com/fullsend-ai/fullsend/issues/6871
+2026-09-01,fullsend,issue,opened,6870,"fix: GCE runner script should use SSH dnf install — Fedora GCE images ignore cloud-init",https://github.com/fullsend-ai/fullsend/issues/6870
+2026-09-01,fullsend,issue,opened,6869,"docs: document Cloud NAT prerequisite for GCE runner VMs with --no-address",https://github.com/fullsend-ai/fullsend/issues/6869
+2026-09-01,fullsend,issue,opened,6868,"fix: IAP tunneling unreliable for rapid successive SSH/SCP connections in GCE provisioning",https://github.com/fullsend-ai/fullsend/issues/6868
+2026-09-01,fullsend,issue,opened,6867,"fix: gcloud compute scp fails — uses --ssh-flag instead of --scp-flag",https://github.com/fullsend-ai/fullsend/issues/6867
+2026-09-01,fullsend,issue,opened,6866,"fix: GCE runner provisioning script bugs found during first real deployment",https://github.com/fullsend-ai/fullsend/issues/6866
+2026-09-01,fullsend,issue,opened,6865,"gitlab: scaffold and run.go missing env vars for code, review, fix, and retro stages",https://github.com/fullsend-ai/fullsend/issues/6865
+2026-09-01,fullsend,issue,opened,6864,"ci: migrate behaviour tests to single-org ephemeral repos",https://github.com/fullsend-ai/fullsend/issues/6864
+2026-09-01,fullsend,issue,opened,6860,"Document the normative authorization model",https://github.com/fullsend-ai/fullsend/issues/6860
+2026-09-01,fullsend,issue,opened,6858,"fix(code): keep CODE_ALLOWED_TARGET_BRANCHES optional",https://github.com/fullsend-ai/fullsend/issues/6858
+2026-09-01,fullsend,issue,opened,6856,"Site is not rebuilt when a new release tag is pushed",https://github.com/fullsend-ai/fullsend/issues/6856
+2026-09-01,fullsend,issue,opened,6855,"Add retry with backoff to pre-flight GitHub API connectivity check",https://github.com/fullsend-ai/fullsend/issues/6855
+2026-09-01,fullsend,issue,opened,6854,"Surface actionable diagnostics when pre-script fails from dispatch version skew",https://github.com/fullsend-ai/fullsend/issues/6854
+2026-09-01,fullsend,issue,opened,6853,"Sandbox pre-flight fails: proxy blocks api.github.com (HTTP 403)",https://github.com/fullsend-ai/fullsend/issues/6853
+2026-09-01,fullsend,issue,opened,6852,"Code agent dispatch should warn when issue already has open agent PRs",https://github.com/fullsend-ai/fullsend/issues/6852
+2026-09-01,fullsend,issue,opened,6851,"Support push-only mode (no PR creation) in code agent config",https://github.com/fullsend-ai/fullsend/issues/6851
+2026-09-01,fullsend,issue,opened,6850,"Install action `__install_only__` mode should not silently resolve CLI to `latest`",https://github.com/fullsend-ai/fullsend/issues/6850
+2026-09-01,fullsend,issue,opened,6849,"fullsend CLI should validate openshell version before passing version-gated flags",https://github.com/fullsend-ai/fullsend/issues/6849
+2026-09-01,fullsend,issue,opened,6847,"docs(jira): add a setup TL;DR to the integration guide",https://github.com/fullsend-ai/fullsend/issues/6847
+2026-09-01,fullsend,issue,opened,6846,"docs(jira): remove obsolete and overly detailed setup guidance",https://github.com/fullsend-ai/fullsend/issues/6846
+2026-09-01,fullsend,issue,opened,6844,"SSRF pre-tool hook silently drops wildcard hostnames from FULLSEND_EGRESS_ALLOWLIST",https://github.com/fullsend-ai/fullsend/issues/6844
+2026-09-01,fullsend,issue,opened,6843,"Add GitHub Actions context-variable scoping pitfalls to CI workflow contributing docs",https://github.com/fullsend-ai/fullsend/issues/6843
+2026-09-01,fullsend,issue,opened,6842,"telemetry: record harness identity and forge pointers on the root run span",https://github.com/fullsend-ai/fullsend/issues/6842
+2026-09-01,fullsend,issue,opened,6840,"Remove stale e2e role references from user-facing docs (bring-your-own-agent.md, mint.md)",https://github.com/fullsend-ai/fullsend/issues/6840
+2026-09-01,fullsend,issue,opened,6838,"Expand runtime-implementation.md checklist with file-level consumer touchpoints",https://github.com/fullsend-ai/fullsend/issues/6838
+2026-09-01,fullsend,issue,opened,6837,"ci: add behaviour test harness for dummy-playback runtime",https://github.com/fullsend-ai/fullsend/issues/6837
+2026-09-01,fullsend,issue,closed,6867,"fix: gcloud compute scp fails — uses --ssh-flag instead of --scp-flag",https://github.com/fullsend-ai/fullsend/issues/6867
+2026-09-01,fullsend,issue,closed,6866,"fix: GCE runner provisioning script bugs found during first real deployment",https://github.com/fullsend-ai/fullsend/issues/6866
+2026-09-01,fullsend,issue,closed,6865,"gitlab: scaffold and run.go missing env vars for code, review, fix, and retro stages",https://github.com/fullsend-ai/fullsend/issues/6865
+2026-09-01,fullsend,issue,closed,6831,"fix(jira): fail fast when poller authentication fails",https://github.com/fullsend-ai/fullsend/issues/6831
+2026-09-01,fullsend,issue,closed,6829,"CreateRepo should wait for git-layer readiness; delete pool recycling machinery",https://github.com/fullsend-ai/fullsend/issues/6829
+2026-09-01,fullsend,issue,closed,6825,"test(behaviour): fork readiness race persists after initial polling",https://github.com/fullsend-ai/fullsend/issues/6825
+2026-09-01,fullsend,issue,closed,6815,"e2e: migrate behaviour tests from 12-org pool to single fullsend-ai-test org with repos install",https://github.com/fullsend-ai/fullsend/issues/6815
+2026-09-01,fullsend,issue,closed,6811,"Add GCE-based GitLab runner provisioning script",https://github.com/fullsend-ai/fullsend/issues/6811
+2026-09-01,fullsend,issue,closed,6800,"Move issue-splitting from triage agent prompts to a standalone skill",https://github.com/fullsend-ai/fullsend/issues/6800
+2026-09-01,fullsend,issue,closed,6788,"Add dummy-playback runtime for replaying canned agent results",https://github.com/fullsend-ai/fullsend/issues/6788
+2026-09-01,fullsend,issue,closed,6764,"Fail when the requested Claude agent name is unavailable",https://github.com/fullsend-ai/fullsend/issues/6764
+2026-09-01,fullsend,issue,closed,6732,"Support multi-destination trace export for agent telemetry",https://github.com/fullsend-ai/fullsend/issues/6732
+2026-09-01,fullsend,issue,closed,6706,"issues post-comment: hide sticky markers in Jira comment properties",https://github.com/fullsend-ai/fullsend/issues/6706
+2026-09-01,fullsend,issue,closed,6624,"Add ConfigMap edit sandbox for testing YAML transformations",https://github.com/fullsend-ai/fullsend/issues/6624
+2026-09-01,fullsend,issue,closed,6577,"pi: alias 'fable' resolves to a non-existent model id and is silently substituted",https://github.com/fullsend-ai/fullsend/issues/6577
+2026-09-01,fullsend,issue,closed,6546,"Add retry-with-backoff to GCP IAM API calls in WIF pool provisioning",https://github.com/fullsend-ai/fullsend/issues/6546
+2026-09-01,fullsend,issue,closed,6080,"[Bug] code agent skips coding due mistake when finding ""a PR that already addresses the issue""",https://github.com/fullsend-ai/fullsend/issues/6080
+2026-09-01,fullsend,issue,closed,5717,"Add multi-version documentation support",https://github.com/fullsend-ai/fullsend/issues/5717
+2026-09-01,fullsend,issue,closed,3122,"Add AGENTS.md guidance: new problem docs should include backlinks from existing docs that reference the topic",https://github.com/fullsend-ai/fullsend/issues/3122
+2026-09-01,fullsend,issue,closed,2661,"Log a warning when a repo skill is shadowed by a personal-level skill",https://github.com/fullsend-ai/fullsend/issues/2661
+2026-09-01,fullsend,issue,closed,2165,"Onboarding PR body should list available fullsend slash commands",https://github.com/fullsend-ai/fullsend/issues/2165
+2026-09-01,agents,pr,opened,1129,"docs(#1128): document bundled-script architecture in AGENTS.md",https://github.com/fullsend-ai/agents/pull/1129
+2026-09-01,agents,pr,opened,1125,"fix(#1123): suppress SC2153 shellcheck warning for ISSUE_URL env var",https://github.com/fullsend-ai/agents/pull/1125
+2026-09-01,agents,pr,opened,1124,"fix(#1122): delegate forge_ensure_label to forge_create_label",https://github.com/fullsend-ai/agents/pull/1124
+2026-09-01,agents,pr,opened,1120,"fix(triage): skip code label for closed issues",https://github.com/fullsend-ai/agents/pull/1120
+2026-09-01,agents,pr,opened,1118,"fix(#1117): allow claude.exe binary in Vertex AI profile",https://github.com/fullsend-ai/agents/pull/1118
+2026-09-01,agents,pr,merged,1124,"fix(#1122): delegate forge_ensure_label to forge_create_label",https://github.com/fullsend-ai/agents/pull/1124
+2026-09-01,agents,pr,merged,1101,"fix(#1099): resolve skillsaw CI failures",https://github.com/fullsend-ai/agents/pull/1101
+2026-09-01,agents,pr,merged,1096,"fix(#2332): respect tool-owned filenames",https://github.com/fullsend-ai/agents/pull/1096
+2026-09-01,agents,issue,opened,1130,"Fix agent should check PR merge status before pushing commits",https://github.com/fullsend-ai/agents/issues/1130
+2026-09-01,agents,issue,opened,1128,"AGENTS.md should document bundled-script function contracts to prevent cross-context breakage",https://github.com/fullsend-ai/agents/issues/1128
+2026-09-01,agents,issue,opened,1127,"Challenger should audit shared factual premises before evaluating individual findings",https://github.com/fullsend-ai/agents/issues/1127
+2026-09-01,agents,issue,opened,1126,"Review correctness sub-agent should cross-check external API paths against training knowledge",https://github.com/fullsend-ai/agents/issues/1126
+2026-09-01,agents,issue,opened,1123,"fix: automatically triage issues created by split actions",https://github.com/fullsend-ai/agents/issues/1123
+2026-09-01,agents,issue,opened,1122,"forge_ensure_label hardcodes gh CLI — fails on GitLab",https://github.com/fullsend-ai/agents/issues/1122
+2026-09-01,agents,issue,opened,1121,"Post-code script should detect staged-but-uncommitted files and fail",https://github.com/fullsend-ai/agents/issues/1121
+2026-09-01,agents,issue,opened,1119,"Review agent should verify duplication findings resolved against full file state, not just the diff",https://github.com/fullsend-ai/agents/issues/1119
+2026-09-01,agents,issue,opened,1116,"Review sub-agent model config should use deployment-agnostic aliases to prevent dispatch failures",https://github.com/fullsend-ai/agents/issues/1116
+2026-09-01,agents,issue,opened,1115,"Scope-authorization sub-agent should recognize concurrent-merge-introduced changes as goal-aligned, not scope-creep",https://github.com/fullsend-ai/agents/issues/1115
+2026-09-01,agents,issue,opened,1114,"Review agent should flag non-conventional commit messages per AGENTS.md section 4",https://github.com/fullsend-ai/agents/issues/1114
+2026-09-01,agents,issue,opened,1113,"Review correctness sub-agent should verify eval fixture test-path specificity",https://github.com/fullsend-ai/agents/issues/1113
+2026-09-01,agents,issue,opened,1112,"Docs-currency sub-agent should cross-validate documented file paths against repo conventions",https://github.com/fullsend-ai/agents/issues/1112
+2026-09-01,agents,issue,opened,1111,"Fix agent should attempt dependency installation and honestly report test execution status",https://github.com/fullsend-ai/agents/issues/1111
+2026-09-01,agents,issue,opened,1110,"Review agent should use COMMENT verdict when all findings are human-only",https://github.com/fullsend-ai/agents/issues/1110
+2026-09-01,agents,issue,closed,1122,"forge_ensure_label hardcodes gh CLI — fails on GitLab",https://github.com/fullsend-ai/agents/issues/1122
+2026-09-01,agents,issue,closed,1099,"Fix skillsaw CI failures",https://github.com/fullsend-ai/agents/issues/1099

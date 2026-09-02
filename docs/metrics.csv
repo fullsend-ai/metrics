@@ -702,3 +702,12 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-08-31,autonomy-readiness,0,0,0,0,0,0,0,0
 2026-08-31,autonomy-analysis,0,0,0,0,0,0,0,0
 2026-08-31,pi-xai-vertex,0,0,0,0,0,0,0,0
+2026-09-01,fullsend,23,29,0,32,21,1,77.30,80
+2026-09-01,.fullsend,0,0,0,0,0,0,0,3
+2026-09-01,experiments,0,0,0,0,0,0,0,2
+2026-09-01,metrics,0,0,0,0,0,0,0,2
+2026-09-01,agents,5,3,0,15,2,1,17,48
+2026-09-01,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-09-01,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-09-01,pi-xai-vertex,0,0,0,0,0,0,0,0
+2026-09-01,adoption-analytics,0,0,0,0,0,0,0,0

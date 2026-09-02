@@ -1456,3 +1456,16 @@ date,repo,type,event,number,actor,title,url
 2026-08-31,fullsend,issue,opened_external,6816,jasonawant,"GitLab MR-event dispatch (fullsend-dispatch.yml) does not pass REPO_FULL_NAME for review stage",https://github.com/fullsend-ai/fullsend/issues/6816
 2026-08-31,fullsend,pr,opened_core,6797,waynesun09,"fix(#6702): use conditional requests for behaviour-suite polling GETs",https://github.com/fullsend-ai/fullsend/pull/6797
 2026-08-31,fullsend,pr,reviewed_external,6679,Roming22,"fix(#6678): preserve per-repo config on re-onboarding",https://github.com/fullsend-ai/fullsend/pull/6679
+2026-09-01,fullsend,issue,closed_other_external,6624,rrasouli,"Add ConfigMap edit sandbox for testing YAML transformations",https://github.com/fullsend-ai/fullsend/issues/6624
+2026-09-01,fullsend,issue,closed_other_external,6080,rrosatti,"[Bug] code agent skips coding due mistake when finding ""a PR that already addresses the issue""",https://github.com/fullsend-ai/fullsend/issues/6080
+2026-09-01,fullsend,pr,opened_core,6848,rh-hemartin,"feat(site): serve a custom 404 page for unmatched URLs",https://github.com/fullsend-ai/fullsend/pull/6848
+2026-09-01,fullsend,pr,reviewed_external,6878,cgwalters,"fix(#6877): pass behavioral exit reason to post-script",https://github.com/fullsend-ai/fullsend/pull/6878
+2026-09-01,fullsend,pr,reviewed_external,6878,cgwalters,"fix(#6877): pass behavioral exit reason to post-script",https://github.com/fullsend-ai/fullsend/pull/6878
+2026-09-01,fullsend,pr,reviewed_external,6813,cgwalters,"chore(#6811): add GCE-based GitLab runner provisioning scripts",https://github.com/fullsend-ai/fullsend/pull/6813
+2026-09-01,fullsend,pr,reviewed_external,6813,cgwalters,"chore(#6811): add GCE-based GitLab runner provisioning scripts",https://github.com/fullsend-ai/fullsend/pull/6813
+2026-09-01,fullsend,pr,reviewed_external,6813,cgwalters,"chore(#6811): add GCE-based GitLab runner provisioning scripts",https://github.com/fullsend-ai/fullsend/pull/6813
+2026-09-01,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-01,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-01,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-01,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-01,fullsend,pr,reviewed_external,6695,cgwalters,"feat(#6689)!: run GPT on pi through OpenAI Workload Identity Federation",https://github.com/fullsend-ai/fullsend/pull/6695
