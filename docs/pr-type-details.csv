@@ -1431,3 +1431,27 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-01,agents,1124,fix(#1122): delegate forge_ensure_label to forge_create_label,fix,core,1122,ggallen,https://github.com/fullsend-ai/agents/pull/1124
 2026-09-01,agents,1101,fix(#1099): resolve skillsaw CI failures,fix,core,1099,ralphbean,https://github.com/fullsend-ai/agents/pull/1101
 2026-09-01,agents,1096,fix(#2332): respect tool-owned filenames,fix,unlinked,2332,,https://github.com/fullsend-ai/agents/pull/1096
+2026-09-02,fullsend,6923,"chore(#6920): pin Codex CLI 0.152.1 in the sandbox image, add a codex runtime stub",chore,,,,https://github.com/fullsend-ai/fullsend/pull/6923
+2026-09-02,fullsend,6908,fix(#6905): capture token telemetry on cancelled Claude runs,fix,bot,6905,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/6908
+2026-09-02,fullsend,6899,refactor(#6842): record harness identity on the root run span,other,,,,https://github.com/fullsend-ai/fullsend/pull/6899
+2026-09-02,fullsend,6898,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.258,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6898
+2026-09-02,fullsend,6896,fix(#6895): use dedicated http.Transport per gcp.Client,fix,bot,6895,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6896
+2026-09-02,fullsend,6894,feat(#6551): support both project-scoped and group-scoped runners in VM scripts,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6894
+2026-09-02,fullsend,6890,"fix(#6868): add retry, tar-over-ssh, and IAP bypass for GCE provisioning",fix,bot,6868,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6890
+2026-09-02,fullsend,6889,fix(#6873): strip ANSI escape codes from openshell gateway list output,fix,bot,6873,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6889
+2026-09-02,fullsend,6888,fix(#6872): re-register gateway after restart to pick up new TLS certs,fix,bot,6872,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6888
+2026-09-02,fullsend,6887,fix(#6871): replace placeholder baseurl and disable cisco-openh264 repo,fix,bot,6871,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6887
+2026-09-02,fullsend,6886,fix(#6870): replace cloud-init with SSH dnf install in GCE script,fix,bot,6870,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/6886
+2026-09-02,fullsend,6885,docs(#6869): document Cloud NAT prerequisite for GCE runner VMs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6885
+2026-09-02,fullsend,6857,chore(deps): update cloudflare-workers,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6857
+2026-09-02,fullsend,6814,fix(#6148): map <details> blocks to ADF expand nodes in Jira converter,fix,core,6148,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6814
+2026-09-02,fullsend,6799,feat(#6645): use AND semantics for docs site multi-word search,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6799
+2026-09-02,fullsend,6786,docs(#6785): add text/template sorted map iteration to Go review guidance,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6786
+2026-09-02,fullsend,6770,refactor(#6767): route status notifications through tracker.Client,other,,,,https://github.com/fullsend-ai/fullsend/pull/6770
+2026-09-02,fullsend,6631,docs(#6630): add guide for creating secure gate binaries,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6631
+2026-09-02,fullsend,6542,fix(#6541): skip SSRF validation for inert pipelines,fix,core,6541,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6542
+2026-09-02,fullsend,5960,fix(#777): verify sandbox policy matches after creation,fix,core,777,maruiz93,https://github.com/fullsend-ai/fullsend/pull/5960
+2026-09-02,fullsend,4905,docs: add crawl-walk-run-fly adoption guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/4905
+2026-09-02,agents,1150,fix(#1148): derive PR title from first commit when agent makes multiple commits,fix,bot,1148,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1150
+2026-09-02,agents,1118,fix(#1117): allow claude.exe binary in Vertex AI profile,fix,bot,1117,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1118
+2026-09-02,agents,1109,refactor(#1108): use OpenShell providers for Jira credentials,other,,,,https://github.com/fullsend-ai/agents/pull/1109

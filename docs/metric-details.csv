@@ -12191,3 +12191,129 @@ date,repo,type,event,number,title,url
 2026-09-01,agents,issue,opened,1110,"Review agent should use COMMENT verdict when all findings are human-only",https://github.com/fullsend-ai/agents/issues/1110
 2026-09-01,agents,issue,closed,1122,"forge_ensure_label hardcodes gh CLI — fails on GitLab",https://github.com/fullsend-ai/agents/issues/1122
 2026-09-01,agents,issue,closed,1099,"Fix skillsaw CI failures",https://github.com/fullsend-ai/agents/issues/1099
+2026-09-02,fullsend,pr,opened,6942,"docs(#6941): add SandboxCodexConfig to CLI internals guide",https://github.com/fullsend-ai/fullsend/pull/6942
+2026-09-02,fullsend,pr,opened,6938,"fix(#6936): persist token telemetry when agents are cancelled",https://github.com/fullsend-ai/fullsend/pull/6938
+2026-09-02,fullsend,pr,opened,6935,"fix(#6932): move seenResult flag after successful unmarshal",https://github.com/fullsend-ai/fullsend/pull/6935
+2026-09-02,fullsend,pr,opened,6930,"feat(#6214): add keep_history config option for sticky comments",https://github.com/fullsend-ai/fullsend/pull/6930
+2026-09-02,fullsend,pr,opened,6927,"feat(config): make the codex runtime selectable",https://github.com/fullsend-ai/fullsend/pull/6927
+2026-09-02,fullsend,pr,opened,6926,"feat(runtime): add the codex agent runtime (ADR 0099, ADR 0100)",https://github.com/fullsend-ai/fullsend/pull/6926
+2026-09-02,fullsend,pr,opened,6925,"feat(run): create the OpenAI run-scoped provider only when the runtime needs it",https://github.com/fullsend-ai/fullsend/pull/6925
+2026-09-02,fullsend,pr,opened,6924,"refactor(runtime): parse codex exec --json streams into agent events",https://github.com/fullsend-ai/fullsend/pull/6924
+2026-09-02,fullsend,pr,opened,6923,"chore(#6920): pin Codex CLI 0.152.1 in the sandbox image, add a codex runtime stub",https://github.com/fullsend-ai/fullsend/pull/6923
+2026-09-02,fullsend,pr,opened,6919,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to e059478",https://github.com/fullsend-ai/fullsend/pull/6919
+2026-09-02,fullsend,pr,opened,6918,"test(hack): add mint-access-patterns harness for workflow-host policy",https://github.com/fullsend-ai/fullsend/pull/6918
+2026-09-02,fullsend,pr,opened,6917,"feat(#6916): publish docs markdown next to HTML",https://github.com/fullsend-ai/fullsend/pull/6917
+2026-09-02,fullsend,pr,opened,6912,"feat(#6787): add --forge, --issuer, --jwks-file to openai request for self-managed forges",https://github.com/fullsend-ai/fullsend/pull/6912
+2026-09-02,fullsend,pr,opened,6910,"refactor(eval): consolidate fixture GitHub queries",https://github.com/fullsend-ai/fullsend/pull/6910
+2026-09-02,fullsend,pr,opened,6909,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-02,fullsend,pr,opened,6908,"fix(#6905): capture token telemetry on cancelled Claude runs",https://github.com/fullsend-ai/fullsend/pull/6908
+2026-09-02,fullsend,pr,opened,6907,"fix(#6904): parse thinking tokens from Claude stream events",https://github.com/fullsend-ai/fullsend/pull/6907
+2026-09-02,fullsend,pr,opened,6901,"fix(#6900): return 404 for unknown site paths instead of 200",https://github.com/fullsend-ai/fullsend/pull/6901
+2026-09-02,fullsend,pr,opened,6899,"refactor(#6842): record harness identity on the root run span",https://github.com/fullsend-ai/fullsend/pull/6899
+2026-09-02,fullsend,pr,opened,6898,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.258",https://github.com/fullsend-ai/fullsend/pull/6898
+2026-09-02,fullsend,pr,opened,6897,"docs: refresh roadmap for September planning",https://github.com/fullsend-ai/fullsend/pull/6897
+2026-09-02,fullsend,pr,opened,6896,"fix(#6895): use dedicated http.Transport per gcp.Client",https://github.com/fullsend-ai/fullsend/pull/6896
+2026-09-02,fullsend,pr,opened,6894,"feat(#6551): support both project-scoped and group-scoped runners in VM scripts",https://github.com/fullsend-ai/fullsend/pull/6894
+2026-09-02,fullsend,pr,merged,6923,"chore(#6920): pin Codex CLI 0.152.1 in the sandbox image, add a codex runtime stub",https://github.com/fullsend-ai/fullsend/pull/6923
+2026-09-02,fullsend,pr,merged,6908,"fix(#6905): capture token telemetry on cancelled Claude runs",https://github.com/fullsend-ai/fullsend/pull/6908
+2026-09-02,fullsend,pr,merged,6899,"refactor(#6842): record harness identity on the root run span",https://github.com/fullsend-ai/fullsend/pull/6899
+2026-09-02,fullsend,pr,merged,6898,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.258",https://github.com/fullsend-ai/fullsend/pull/6898
+2026-09-02,fullsend,pr,merged,6896,"fix(#6895): use dedicated http.Transport per gcp.Client",https://github.com/fullsend-ai/fullsend/pull/6896
+2026-09-02,fullsend,pr,merged,6894,"feat(#6551): support both project-scoped and group-scoped runners in VM scripts",https://github.com/fullsend-ai/fullsend/pull/6894
+2026-09-02,fullsend,pr,merged,6890,"fix(#6868): add retry, tar-over-ssh, and IAP bypass for GCE provisioning",https://github.com/fullsend-ai/fullsend/pull/6890
+2026-09-02,fullsend,pr,merged,6889,"fix(#6873): strip ANSI escape codes from openshell gateway list output",https://github.com/fullsend-ai/fullsend/pull/6889
+2026-09-02,fullsend,pr,merged,6888,"fix(#6872): re-register gateway after restart to pick up new TLS certs",https://github.com/fullsend-ai/fullsend/pull/6888
+2026-09-02,fullsend,pr,merged,6887,"fix(#6871): replace placeholder baseurl and disable cisco-openh264 repo",https://github.com/fullsend-ai/fullsend/pull/6887
+2026-09-02,fullsend,pr,merged,6886,"fix(#6870): replace cloud-init with SSH dnf install in GCE script",https://github.com/fullsend-ai/fullsend/pull/6886
+2026-09-02,fullsend,pr,merged,6885,"docs(#6869): document Cloud NAT prerequisite for GCE runner VMs",https://github.com/fullsend-ai/fullsend/pull/6885
+2026-09-02,fullsend,pr,merged,6857,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/6857
+2026-09-02,fullsend,pr,merged,6814,"fix(#6148): map <details> blocks to ADF expand nodes in Jira converter",https://github.com/fullsend-ai/fullsend/pull/6814
+2026-09-02,fullsend,pr,merged,6799,"feat(#6645): use AND semantics for docs site multi-word search",https://github.com/fullsend-ai/fullsend/pull/6799
+2026-09-02,fullsend,pr,merged,6786,"docs(#6785): add text/template sorted map iteration to Go review guidance",https://github.com/fullsend-ai/fullsend/pull/6786
+2026-09-02,fullsend,pr,merged,6770,"refactor(#6767): route status notifications through tracker.Client",https://github.com/fullsend-ai/fullsend/pull/6770
+2026-09-02,fullsend,pr,merged,6631,"docs(#6630): add guide for creating secure gate binaries",https://github.com/fullsend-ai/fullsend/pull/6631
+2026-09-02,fullsend,pr,merged,6542,"fix(#6541): skip SSRF validation for inert pipelines",https://github.com/fullsend-ai/fullsend/pull/6542
+2026-09-02,fullsend,pr,merged,5960,"fix(#777): verify sandbox policy matches after creation",https://github.com/fullsend-ai/fullsend/pull/5960
+2026-09-02,fullsend,pr,merged,4905,"docs: add crawl-walk-run-fly adoption guide",https://github.com/fullsend-ai/fullsend/pull/4905
+2026-09-02,fullsend,pr,closed,6901,"fix(#6900): return 404 for unknown site paths instead of 200",https://github.com/fullsend-ai/fullsend/pull/6901
+2026-09-02,fullsend,pr,closed,6826,"fix(#6824): fall back to main when agents repo version tag is missing",https://github.com/fullsend-ai/fullsend/pull/6826
+2026-09-02,fullsend,pr,closed,6511,"fix(#6509): move runtime resolution before sandbox creation",https://github.com/fullsend-ai/fullsend/pull/6511
+2026-09-02,fullsend,pr,closed,2791,"docs: ADR 0071 — Auto-merge",https://github.com/fullsend-ai/fullsend/pull/2791
+2026-09-02,fullsend,issue,opened,6941,"Fix docs-currency gap: SandboxCodexConfig missing from CLI internals guide",https://github.com/fullsend-ai/fullsend/issues/6941
+2026-09-02,fullsend,issue,opened,6940,"Cancel in-flight review workflows when a PR is closed without merging",https://github.com/fullsend-ai/fullsend/issues/6940
+2026-09-02,fullsend,issue,opened,6939,"Detect and terminate zombie review agent runs that exceed timeout",https://github.com/fullsend-ai/fullsend/issues/6939
+2026-09-02,fullsend,issue,opened,6937,"Validate custom OpenShell profile schemas at harness resolve time",https://github.com/fullsend-ai/fullsend/issues/6937
+2026-09-02,fullsend,issue,opened,6936,"Persist cost and token telemetry when Review agents are cancelled by GitHub Actions",https://github.com/fullsend-ai/fullsend/issues/6936
+2026-09-02,fullsend,issue,opened,6934,"Overlay condition eval failures should use structured fallback instead of logging opaque errors",https://github.com/fullsend-ai/fullsend/issues/6934
+2026-09-02,fullsend,issue,opened,6933,"Fix fullsend CLI cache write failure in per-repo dispatch job",https://github.com/fullsend-ai/fullsend/issues/6933
+2026-09-02,fullsend,issue,opened,6932,"Move seenResult flag after successful result event unmarshal",https://github.com/fullsend-ai/fullsend/issues/6932
+2026-09-02,fullsend,issue,opened,6931,"Coder agent should skip issues that contain sub-issues (tracking/parent issues)",https://github.com/fullsend-ai/fullsend/issues/6931
+2026-09-02,fullsend,issue,opened,6929,"Per-repo installs: non-OpenAI sandbox profiles not imported from embedded scaffold",https://github.com/fullsend-ai/fullsend/issues/6929
+2026-09-02,fullsend,issue,opened,6922,"Sonnet 4.5 model unavailable on Vertex causes review sub-agent failures and wasted retries",https://github.com/fullsend-ai/fullsend/issues/6922
+2026-09-02,fullsend,issue,opened,6921,"Hash-based WIF provider IDs to remove 32-char truncation constraint",https://github.com/fullsend-ai/fullsend/issues/6921
+2026-09-02,fullsend,issue,opened,6920,"Track Codex (openai/codex) as a supported agent runtime — same secretless GPT path as pi, pinned in the sandbox image",https://github.com/fullsend-ai/fullsend/issues/6920
+2026-09-02,fullsend,issue,opened,6916,"Docs HTML pages have no markdown alternate for agents",https://github.com/fullsend-ai/fullsend/issues/6916
+2026-09-02,fullsend,issue,opened,6915,"roles: [] does not disable an agent — empty role list behaves identically to unset roles",https://github.com/fullsend-ai/fullsend/issues/6915
+2026-09-02,fullsend,issue,opened,6914,"Landing pages live in web/ while Wrangler assets live in cloudflare_site/",https://github.com/fullsend-ai/fullsend/issues/6914
+2026-09-02,fullsend,issue,opened,6913,"refactor: consider improvements to gitlab scaffolding files and jobs",https://github.com/fullsend-ai/fullsend/issues/6913
+2026-09-02,fullsend,issue,opened,6911,"Empty REVIEW_APP_CLIENT_ID silently disables delta review for re-reviews",https://github.com/fullsend-ai/fullsend/issues/6911
+2026-09-02,fullsend,issue,opened,6905,"bug: Claude runtime loses all cost/token telemetry on cancelled runs",https://github.com/fullsend-ai/fullsend/issues/6905
+2026-09-02,fullsend,issue,opened,6904,"Claude runtime parser does not populate ReasoningTokens from Anthropic stream events",https://github.com/fullsend-ai/fullsend/issues/6904
+2026-09-02,fullsend,issue,opened,6903,"Periodic rebase check to auto-close agent PRs superseded by main",https://github.com/fullsend-ai/fullsend/issues/6903
+2026-09-02,fullsend,issue,opened,6902,"Migrate sandbox operations from OpenShell CLI subprocesses to the Go SDK",https://github.com/fullsend-ai/fullsend/issues/6902
+2026-09-02,fullsend,issue,opened,6900,"Unknown site URLs return 200 with the landing page instead of 404",https://github.com/fullsend-ai/fullsend/issues/6900
+2026-09-02,fullsend,issue,opened,6895,"Fix flaky TestDoRequest_RetriesTransientStatusCodes: parallel subtests share http.DefaultTransport",https://github.com/fullsend-ai/fullsend/issues/6895
+2026-09-02,fullsend,issue,opened,6893,"GitLab default agent stages and MLflow trace export are not validated together",https://github.com/fullsend-ai/fullsend/issues/6893
+2026-09-02,fullsend,issue,opened,6892,"Revert and defect rates are not visible for review and auto-merge outcomes",https://github.com/fullsend-ai/fullsend/issues/6892
+2026-09-02,fullsend,issue,opened,6891,"Add pre-flight scope heuristic to adjust review effort/model for trivially-scoped PRs",https://github.com/fullsend-ai/fullsend/issues/6891
+2026-09-02,fullsend,issue,closed,6905,"bug: Claude runtime loses all cost/token telemetry on cancelled runs",https://github.com/fullsend-ai/fullsend/issues/6905
+2026-09-02,fullsend,issue,closed,6895,"Fix flaky TestDoRequest_RetriesTransientStatusCodes: parallel subtests share http.DefaultTransport",https://github.com/fullsend-ai/fullsend/issues/6895
+2026-09-02,fullsend,issue,closed,6873,"fix: ANSI color codes break openshell gateway list grep checks",https://github.com/fullsend-ai/fullsend/issues/6873
+2026-09-02,fullsend,issue,closed,6872,"fix: start_gateway() fails after restart due to stale TLS cert registration",https://github.com/fullsend-ai/fullsend/issues/6872
+2026-09-02,fullsend,issue,closed,6871,"fix: fix_fedora_repos() breaks stock Fedora cloud images and cisco-openh264 repo fails",https://github.com/fullsend-ai/fullsend/issues/6871
+2026-09-02,fullsend,issue,closed,6870,"fix: GCE runner script should use SSH dnf install — Fedora GCE images ignore cloud-init",https://github.com/fullsend-ai/fullsend/issues/6870
+2026-09-02,fullsend,issue,closed,6869,"docs: document Cloud NAT prerequisite for GCE runner VMs with --no-address",https://github.com/fullsend-ai/fullsend/issues/6869
+2026-09-02,fullsend,issue,closed,6868,"fix: IAP tunneling unreliable for rapid successive SSH/SCP connections in GCE provisioning",https://github.com/fullsend-ai/fullsend/issues/6868
+2026-09-02,fullsend,issue,closed,6824,"CLI agent resolution should fall back to main when version tag is missing",https://github.com/fullsend-ai/fullsend/issues/6824
+2026-09-02,fullsend,issue,closed,6785,"Add text/template sorted map iteration to Go review guidance",https://github.com/fullsend-ai/fullsend/issues/6785
+2026-09-02,fullsend,issue,closed,6767,"Route run status notifications to the source issue tracker",https://github.com/fullsend-ai/fullsend/issues/6767
+2026-09-02,fullsend,issue,closed,6645,"Docs search: multi-word queries match each term independently, making overloaded terms unsearchable",https://github.com/fullsend-ai/fullsend/issues/6645
+2026-09-02,fullsend,issue,closed,6630,"docs: guide for creating secure gate binaries for custom endpoint access",https://github.com/fullsend-ai/fullsend/issues/6630
+2026-09-02,fullsend,issue,closed,6551,"Support both project-scoped and group-scoped runners in VM create scripts",https://github.com/fullsend-ai/fullsend/issues/6551
+2026-09-02,fullsend,issue,closed,6509,"Move runtime resolution above sandbox creation to fail fast on invalid runtime config",https://github.com/fullsend-ai/fullsend/issues/6509
+2026-09-02,fullsend,issue,closed,6148,"MarkdownToADF doesn't map <details> history blocks to ADF's expand node on Jira",https://github.com/fullsend-ai/fullsend/issues/6148
+2026-09-02,fullsend,issue,closed,4969,"docs: crawl-walk-run-fly adoption guide",https://github.com/fullsend-ai/fullsend/issues/4969
+2026-09-02,fullsend,issue,closed,987,"Add staleness check before code agent works on aged issues",https://github.com/fullsend-ai/fullsend/issues/987
+2026-09-02,fullsend,issue,closed,777,"Verify active sandbox policy matches intended policy after creation",https://github.com/fullsend-ai/fullsend/issues/777
+2026-09-02,fullsend,issue,closed,234,"Design validation loop and code→review→code orchestration patterns for harness definitions",https://github.com/fullsend-ai/fullsend/issues/234
+2026-09-02,agents,pr,opened,1150,"fix(#1148): derive PR title from first commit when agent makes multiple commits",https://github.com/fullsend-ai/agents/pull/1150
+2026-09-02,agents,pr,merged,1150,"fix(#1148): derive PR title from first commit when agent makes multiple commits",https://github.com/fullsend-ai/agents/pull/1150
+2026-09-02,agents,pr,merged,1118,"fix(#1117): allow claude.exe binary in Vertex AI profile",https://github.com/fullsend-ai/agents/pull/1118
+2026-09-02,agents,pr,merged,1109,"refactor(#1108): use OpenShell providers for Jira credentials",https://github.com/fullsend-ai/agents/pull/1109
+2026-09-02,agents,pr,closed,1125,"fix(#1123): suppress SC2153 shellcheck warning for ISSUE_URL env var",https://github.com/fullsend-ai/agents/pull/1125
+2026-09-02,agents,issue,opened,1154,"Review agent re-review should suppress findings the fix agent previously disagreed with",https://github.com/fullsend-ai/agents/issues/1154
+2026-09-02,agents,issue,opened,1153,"Fix agent should follow existing test tooling patterns when creating new test scripts",https://github.com/fullsend-ai/agents/issues/1153
+2026-09-02,agents,issue,opened,1152,"Fix agent should disagree when remediation depends on unverifiable external system behavior",https://github.com/fullsend-ai/agents/issues/1152
+2026-09-02,agents,issue,opened,1151,"Review sub-agents should qualify remediation that depends on unverified runtime behavior assumptions",https://github.com/fullsend-ai/agents/issues/1151
+2026-09-02,agents,issue,opened,1149,"Code-implementation skill should require pr_body to lead with the issue's primary objective",https://github.com/fullsend-ai/agents/issues/1149
+2026-09-02,agents,issue,opened,1148,"Post-code script should derive PR title from primary commit, not last commit",https://github.com/fullsend-ai/agents/issues/1148
+2026-09-02,agents,issue,opened,1147,"Review agent should apply elevated severity floor for injection-class findings when repo threat model prioritizes injection",https://github.com/fullsend-ai/agents/issues/1147
+2026-09-02,agents,issue,opened,1146,"Review agent should treat fix-agent disagreements backed by documenting tests as resolutions",https://github.com/fullsend-ai/agents/issues/1146
+2026-09-02,agents,issue,opened,1145,"Triage agent should check for recently-merged fixes before dispatching code",https://github.com/fullsend-ai/agents/issues/1145
+2026-09-02,agents,issue,opened,1144,"pr-review: skip challenger dispatch when a review produces no findings",https://github.com/fullsend-ai/agents/issues/1144
+2026-09-02,agents,issue,opened,1143,"pr-review: filter lockfiles, generated, vendored and minified content from the review diff",https://github.com/fullsend-ai/agents/issues/1143
+2026-09-02,agents,issue,opened,1142,"pr-review: fence PR-controlled text against prompt injection",https://github.com/fullsend-ai/agents/issues/1142
+2026-09-02,agents,issue,opened,1141,"Review agent should APPROVE (not REQUEST_CHANGES) when all findings are low-severity style nits",https://github.com/fullsend-ai/agents/issues/1141
+2026-09-02,agents,issue,opened,1140,"Review agent produces inconsistent verdicts on identical code across re-runs",https://github.com/fullsend-ai/agents/issues/1140
+2026-09-02,agents,issue,opened,1139,"Security sub-agent should check deployment-recommendation consistency in security documentation",https://github.com/fullsend-ai/agents/issues/1139
+2026-09-02,agents,issue,opened,1138,"validate-code-output.sh Signed-off-by check scans all branch commits instead of agent-only commits",https://github.com/fullsend-ai/agents/issues/1138
+2026-09-02,agents,issue,opened,1137,"Periodically re-triage aged issues",https://github.com/fullsend-ai/agents/issues/1137
+2026-09-02,agents,issue,opened,1136,"Code agent should flag uncertainty when implementing parsers for external tool output",https://github.com/fullsend-ai/agents/issues/1136
+2026-09-02,agents,issue,opened,1135,"Review agent should detect circular test confidence in external-format parsers",https://github.com/fullsend-ai/agents/issues/1135
+2026-09-02,agents,issue,opened,1134,"Code agent should verify production-behavior preservation when replacing stdlib defaults",https://github.com/fullsend-ai/agents/issues/1134
+2026-09-02,agents,issue,opened,1133,"Retro agent should verify error-source attribution against log evidence before committing to a root cause",https://github.com/fullsend-ai/agents/issues/1133
+2026-09-02,agents,issue,opened,1132,"Add a dedicated auto-merge agent",https://github.com/fullsend-ai/agents/issues/1132
+2026-09-02,agents,issue,opened,1131,"Review agent should detect and suppress self-contradictions across review rounds",https://github.com/fullsend-ai/agents/issues/1131
+2026-09-02,agents,issue,closed,1148,"Post-code script should derive PR title from primary commit, not last commit",https://github.com/fullsend-ai/agents/issues/1148
+2026-09-02,agents,issue,closed,1108,"refactor(jira): use OpenShell providers for triage and code credentials",https://github.com/fullsend-ai/agents/issues/1108
+2026-09-02,agents,issue,closed,1117,"Review agent outage: opus alias resolves to policy-denied claude-opus-5 on Vertex AI",https://github.com/fullsend-ai/agents/issues/1117

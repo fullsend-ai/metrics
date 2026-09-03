@@ -1469,3 +1469,21 @@ date,repo,type,event,number,actor,title,url
 2026-09-01,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
 2026-09-01,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
 2026-09-01,fullsend,pr,reviewed_external,6695,cgwalters,"feat(#6689)!: run GPT on pi through OpenAI Workload Identity Federation",https://github.com/fullsend-ai/fullsend/pull/6695
+2026-09-02,fullsend,issue,opened_external,6915,eranco74,"roles: [] does not disable an agent — empty role list behaves identically to unset roles",https://github.com/fullsend-ai/fullsend/issues/6915
+2026-09-02,fullsend,issue,opened_external,6913,jasonawant,"refactor: consider improvements to gitlab scaffolding files and jobs",https://github.com/fullsend-ai/fullsend/issues/6913
+2026-09-02,fullsend,pr,opened_core,6927,waynesun09,"feat(config): make the codex runtime selectable",https://github.com/fullsend-ai/fullsend/pull/6927
+2026-09-02,fullsend,pr,opened_core,6926,waynesun09,"feat(runtime): add the codex agent runtime (ADR 0099, ADR 0100)",https://github.com/fullsend-ai/fullsend/pull/6926
+2026-09-02,fullsend,pr,opened_core,6925,waynesun09,"feat(run): create the OpenAI run-scoped provider only when the runtime needs it",https://github.com/fullsend-ai/fullsend/pull/6925
+2026-09-02,fullsend,pr,opened_core,6924,waynesun09,"refactor(runtime): parse codex exec --json streams into agent events",https://github.com/fullsend-ai/fullsend/pull/6924
+2026-09-02,fullsend,pr,opened_core,6923,waynesun09,"chore(#6920): pin Codex CLI 0.152.1 in the sandbox image, add a codex runtime stub",https://github.com/fullsend-ai/fullsend/pull/6923
+2026-09-02,fullsend,pr,opened_core,6918,ifireball,"test(hack): add mint-access-patterns harness for workflow-host policy",https://github.com/fullsend-ai/fullsend/pull/6918
+2026-09-02,fullsend,pr,opened_core,6917,rh-hemartin,"feat(#6916): publish docs markdown next to HTML",https://github.com/fullsend-ai/fullsend/pull/6917
+2026-09-02,fullsend,pr,opened_core,6909,ifireball,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-02,fullsend,pr,opened_core,6897,ascerra,"docs: refresh roadmap for September planning",https://github.com/fullsend-ai/fullsend/pull/6897
+2026-09-02,fullsend,pr,reviewed_external,6801,cgwalters,"fix(#6798): preserve child top-level fields over inherited forge values",https://github.com/fullsend-ai/fullsend/pull/6801
+2026-09-02,fullsend,pr,reviewed_external,6801,cgwalters,"fix(#6798): preserve child top-level fields over inherited forge values",https://github.com/fullsend-ai/fullsend/pull/6801
+2026-09-02,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-02,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-02,agents,issue,opened_external,1144,guyoron1,"pr-review: skip challenger dispatch when a review produces no findings",https://github.com/fullsend-ai/agents/issues/1144
+2026-09-02,agents,issue,opened_external,1143,guyoron1,"pr-review: filter lockfiles, generated, vendored and minified content from the review diff",https://github.com/fullsend-ai/agents/issues/1143
+2026-09-02,agents,issue,opened_external,1142,guyoron1,"pr-review: fence PR-controlled text against prompt injection",https://github.com/fullsend-ai/agents/issues/1142
