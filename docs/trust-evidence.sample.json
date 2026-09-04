@@ -1,0 +1,49 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "subject": {"repo": "fullsend-ai/agents", "agent_role": "review", "config_hash": "sha256:aaa", "generated_at": "2026-08-20T00:00:00Z"},
+    "evidence": {
+      "config_health": {"status": "pass", "score": 0.94, "source": "static-analysis", "as_of": "2026-08-20T00:00:00Z"},
+      "behavioral_eval": {"status": "pass", "score": 0.88, "source": "eval-suite@rev", "as_of": "2026-08-20T00:00:00Z"},
+      "audit_integrity": {"status": "pass", "source": "hash-chain-verify", "as_of": "2026-08-20T00:00:00Z"},
+      "track_record": {"status": "partial", "sample_size": 42, "revert_rate": 0.02, "as_of": "2026-08-20T00:00:00Z"},
+      "drift": {"status": "pass", "baseline_config_hash": "sha256:aaa", "as_of": "2026-08-20T00:00:00Z"}
+    },
+    "composition": {"model": "tiered", "target_tier": "auto-merge", "decision": "insufficient", "blocking": ["track_record"], "rationale": "track record sample size below the auto-merge threshold"}
+  },
+  {
+    "schema_version": "0.1.0",
+    "subject": {"repo": "fullsend-ai/agents", "agent_role": "review", "config_hash": "sha256:bbb", "generated_at": "2026-08-24T00:00:00Z"},
+    "evidence": {
+      "config_health": {"status": "pass", "score": 0.96, "source": "static-analysis", "as_of": "2026-08-24T00:00:00Z"},
+      "behavioral_eval": {"status": "pass", "score": 0.90, "source": "eval-suite@rev", "as_of": "2026-08-24T00:00:00Z"},
+      "audit_integrity": {"status": "pass", "source": "hash-chain-verify", "as_of": "2026-08-24T00:00:00Z"},
+      "track_record": {"status": "pass", "sample_size": 210, "revert_rate": 0.01, "as_of": "2026-08-24T00:00:00Z"},
+      "drift": {"status": "pass", "baseline_config_hash": "sha256:bbb", "as_of": "2026-08-24T00:00:00Z"}
+    },
+    "composition": {"model": "tiered", "target_tier": "auto-merge", "decision": "sufficient", "blocking": [], "rationale": "all signals pass at auto-merge thresholds"}
+  },
+  {
+    "schema_version": "0.1.0",
+    "subject": {"repo": "fullsend-ai/agents", "agent_role": "triage", "config_hash": "sha256:ccc", "generated_at": "2026-08-24T00:00:00Z"},
+    "evidence": {
+      "config_health": {"status": "pass", "score": 0.90, "source": "static-analysis", "as_of": "2026-08-24T00:00:00Z"},
+      "behavioral_eval": {"status": "pass", "score": 0.83, "source": "eval-suite@rev", "as_of": "2026-08-24T00:00:00Z"},
+      "audit_integrity": {"status": "pass", "source": "hash-chain-verify", "as_of": "2026-08-24T00:00:00Z"},
+      "drift": {"status": "pass", "baseline_config_hash": "sha256:ccc", "as_of": "2026-08-24T00:00:00Z"}
+    },
+    "composition": {"model": "tiered", "target_tier": "auto-triage", "decision": "sufficient", "blocking": [], "rationale": "static and behavioral pass; track record not required at this tier"}
+  },
+  {
+    "schema_version": "0.1.0",
+    "subject": {"repo": "fullsend-ai/fullsend", "agent_role": "review", "config_hash": "sha256:ddd", "generated_at": "2026-08-22T00:00:00Z"},
+    "evidence": {
+      "config_health": {"status": "fail", "score": 0.40, "source": "static-analysis", "as_of": "2026-08-22T00:00:00Z"},
+      "behavioral_eval": {"status": "pass", "score": 0.80, "source": "eval-suite@rev", "as_of": "2026-08-22T00:00:00Z"},
+      "audit_integrity": {"status": "pass", "source": "hash-chain-verify", "as_of": "2026-08-22T00:00:00Z"},
+      "track_record": {"status": "partial", "sample_size": 12, "revert_rate": 0.08, "as_of": "2026-08-22T00:00:00Z"},
+      "drift": {"status": "pass", "baseline_config_hash": "sha256:ddd", "as_of": "2026-08-22T00:00:00Z"}
+    },
+    "composition": {"model": "tiered", "target_tier": "auto-merge", "decision": "insufficient", "blocking": ["config_health", "track_record"], "rationale": "failing config health scan blocks autonomy"}
+  }
+]
