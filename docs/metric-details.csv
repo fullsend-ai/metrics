@@ -12317,3 +12317,87 @@ date,repo,type,event,number,title,url
 2026-09-02,agents,issue,closed,1148,"Post-code script should derive PR title from primary commit, not last commit",https://github.com/fullsend-ai/agents/issues/1148
 2026-09-02,agents,issue,closed,1108,"refactor(jira): use OpenShell providers for triage and code credentials",https://github.com/fullsend-ai/agents/issues/1108
 2026-09-02,agents,issue,closed,1117,"Review agent outage: opus alias resolves to policy-denied claude-opus-5 on Vertex AI",https://github.com/fullsend-ai/agents/issues/1117
+2026-09-03,fullsend,pr,opened,6989,"docs(#6987): document per-repo config dual-validation pattern",https://github.com/fullsend-ai/fullsend/pull/6989
+2026-09-03,fullsend,pr,opened,6988,"chore(#6738): remove /fullsend retro alias and add shim /fs- filter",https://github.com/fullsend-ai/fullsend/pull/6988
+2026-09-03,fullsend,pr,opened,6986,"ci(release): validate agents before publishing binary",https://github.com/fullsend-ai/fullsend/pull/6986
+2026-09-03,fullsend,pr,opened,6982,"feat(#6979): add --vendor flag and manifest vendor field to repos install",https://github.com/fullsend-ai/fullsend/pull/6982
+2026-09-03,fullsend,pr,opened,6980,"fix(#6977): skip URL-resolved profile import when directory copy exists",https://github.com/fullsend-ai/fullsend/pull/6980
+2026-09-03,fullsend,pr,opened,6976,"docs(adr): ADR 0103 — recorded presets bumped by Renovate via fullsend update",https://github.com/fullsend-ai/fullsend/pull/6976
+2026-09-03,fullsend,pr,opened,6975,"fix(#6971): allow claude.exe and pi on scaffold Vertex profile, warn on profile shadowing",https://github.com/fullsend-ai/fullsend/pull/6975
+2026-09-03,fullsend,pr,opened,6972,"feat(#6966): add `fullsend agent new` to generate a complete custom agent",https://github.com/fullsend-ai/fullsend/pull/6972
+2026-09-03,fullsend,pr,opened,6969,"chore(deps): update dependency go to v1.27.1",https://github.com/fullsend-ai/fullsend/pull/6969
+2026-09-03,fullsend,pr,opened,6960,"feat(#6958): add --inference-wif-provider to repos install, drop --inference-project-number",https://github.com/fullsend-ai/fullsend/pull/6960
+2026-09-03,fullsend,pr,opened,6959,"feat(dispatch)!: steer the in-flight agent run on work-item updates instead of cancelling",https://github.com/fullsend-ai/fullsend/pull/6959
+2026-09-03,fullsend,pr,opened,6956,"docs(adr): adopt entity-first harness evaluation",https://github.com/fullsend-ai/fullsend/pull/6956
+2026-09-03,fullsend,pr,opened,6955,"docs(mint): add the App permission rollout runbook and the contributor rule",https://github.com/fullsend-ai/fullsend/pull/6955
+2026-09-03,fullsend,pr,opened,6954,"fix(#1129): allow consecutive hyphens in GitHub org names",https://github.com/fullsend-ai/fullsend/pull/6954
+2026-09-03,fullsend,pr,opened,6953,"feat(docs): pull agent documentation from fullsend-ai/agents",https://github.com/fullsend-ai/fullsend/pull/6953
+2026-09-03,fullsend,pr,opened,6952,"fix(#6920): withhold unsafe codex tool results",https://github.com/fullsend-ai/fullsend/pull/6952
+2026-09-03,fullsend,pr,opened,6949,"feat(#6948): make nextwork markdown output self-describing and ordered",https://github.com/fullsend-ai/fullsend/pull/6949
+2026-09-03,fullsend,pr,opened,6947,"fix(#1243): close stale onboard PRs for current shims",https://github.com/fullsend-ai/fullsend/pull/6947
+2026-09-03,fullsend,pr,opened,6946,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.260",https://github.com/fullsend-ai/fullsend/pull/6946
+2026-09-03,fullsend,pr,merged,6988,"chore(#6738): remove /fullsend retro alias and add shim /fs- filter",https://github.com/fullsend-ai/fullsend/pull/6988
+2026-09-03,fullsend,pr,merged,6982,"feat(#6979): add --vendor flag and manifest vendor field to repos install",https://github.com/fullsend-ai/fullsend/pull/6982
+2026-09-03,fullsend,pr,merged,6975,"fix(#6971): allow claude.exe and pi on scaffold Vertex profile, warn on profile shadowing",https://github.com/fullsend-ai/fullsend/pull/6975
+2026-09-03,fullsend,pr,merged,6960,"feat(#6958): add --inference-wif-provider to repos install, drop --inference-project-number",https://github.com/fullsend-ai/fullsend/pull/6960
+2026-09-03,fullsend,pr,merged,6927,"feat(config): make the codex runtime selectable",https://github.com/fullsend-ai/fullsend/pull/6927
+2026-09-03,fullsend,pr,merged,6926,"feat(runtime): add the codex agent runtime (ADR 0099, ADR 0100)",https://github.com/fullsend-ai/fullsend/pull/6926
+2026-09-03,fullsend,pr,merged,6925,"feat(run): create the OpenAI run-scoped provider only when the runtime needs it",https://github.com/fullsend-ai/fullsend/pull/6925
+2026-09-03,fullsend,pr,merged,6924,"refactor(runtime): parse codex exec --json streams into agent events",https://github.com/fullsend-ai/fullsend/pull/6924
+2026-09-03,fullsend,pr,merged,6884,"feat(#6882): add per-repo model alias overrides (models.aliases)",https://github.com/fullsend-ai/fullsend/pull/6884
+2026-09-03,fullsend,pr,merged,6654,"feat(#6649)!: add packages read permission to coder and fix roles",https://github.com/fullsend-ai/fullsend/pull/6654
+2026-09-03,fullsend,issue,opened,6991,"Skip re-review when PR diff is unchanged since last approval",https://github.com/fullsend-ai/fullsend/issues/6991
+2026-09-03,fullsend,issue,opened,6990,"Provider profiles (.fullsend/profiles/*.yaml) have no update path — allowlist fixes never reach installed repos",https://github.com/fullsend-ai/fullsend/issues/6990
+2026-09-03,fullsend,issue,opened,6987,"Document the config dual-validation pattern to reduce code-agent rework on new config fields",https://github.com/fullsend-ai/fullsend/issues/6987
+2026-09-03,fullsend,issue,opened,6985,"GitLab CI templates: reference vendored binary when vendor is enabled",https://github.com/fullsend-ai/fullsend/issues/6985
+2026-09-03,fullsend,issue,opened,6983,"Plumb the exec request's stdin through sandbox.ExecContext so agent prompts leave the shell's argv",https://github.com/fullsend-ai/fullsend/issues/6983
+2026-09-03,fullsend,issue,opened,6981,"Scaffold fullsend-vertex-ai profile allows uninspected credentials on api.anthropic.com; the fleet profile does not",https://github.com/fullsend-ai/fullsend/issues/6981
+2026-09-03,fullsend,issue,opened,6979,"repos install: add --vendor flag and manifest vendor field",https://github.com/fullsend-ai/fullsend/issues/6979
+2026-09-03,fullsend,issue,opened,6978,"scaffold: lint drift between internal/scaffold/fullsend-repo/profiles and the fullsend-ai/agents profiles",https://github.com/fullsend-ai/fullsend/issues/6978
+2026-09-03,fullsend,issue,opened,6977,"run: profile precedence between harness-resolved and profiles/ directory copies depends on two independent import caches",https://github.com/fullsend-ai/fullsend/issues/6977
+2026-09-03,fullsend,issue,opened,6974,"E2E test offboard races with in-flight code agent, orphaning PR without review",https://github.com/fullsend-ai/fullsend/issues/6974
+2026-09-03,fullsend,issue,opened,6973,"Skip retro dispatch for fullsend infrastructure branches",https://github.com/fullsend-ai/fullsend/issues/6973
+2026-09-03,fullsend,issue,opened,6971,"sandbox: scaffold Vertex profile lacks **/claude.exe, so every 0.40.0-image Claude run fails with policy_denied",https://github.com/fullsend-ai/fullsend/issues/6971
+2026-09-03,fullsend,issue,opened,6970,"codex runtime: run the review/retro sub-agent rosters through codex's native spawn_agent roles",https://github.com/fullsend-ai/fullsend/issues/6970
+2026-09-03,fullsend,issue,opened,6968,"Review dispatch should skip re-review when diff is unchanged between pushes",https://github.com/fullsend-ai/fullsend/issues/6968
+2026-09-03,fullsend,issue,opened,6967,"Review harness should fallback to previous model version on policy_denied",https://github.com/fullsend-ai/fullsend/issues/6967
+2026-09-03,fullsend,issue,opened,6966,"feat(cli): `fullsend agent new` — generate a complete custom agent from minimal parameters",https://github.com/fullsend-ai/fullsend/issues/6966
+2026-09-03,fullsend,issue,opened,6965,"runner: validation retry resumes the agent session instead of re-running it from a blank session",https://github.com/fullsend-ai/fullsend/issues/6965
+2026-09-03,fullsend,issue,opened,6964,"Validate model availability before review sub-agent dispatch to avoid wasted retries",https://github.com/fullsend-ai/fullsend/issues/6964
+2026-09-03,fullsend,issue,opened,6963,"Surface code agent reasoning when a run produces no file changes",https://github.com/fullsend-ai/fullsend/issues/6963
+2026-09-03,fullsend,issue,opened,6962,"functional-tests: every triage case fails with API Error policy_denied on main since 2026-09-03",https://github.com/fullsend-ai/fullsend/issues/6962
+2026-09-03,fullsend,issue,opened,6961,"Should not have giant hacks to reuse sandbox for validation loop",https://github.com/fullsend-ai/fullsend/issues/6961
+2026-09-03,fullsend,issue,opened,6958,"feat: add --inference-wif-provider to repos install, drop --inference-project-number",https://github.com/fullsend-ai/fullsend/issues/6958
+2026-09-03,fullsend,issue,opened,6957,"Steer the in-flight agent run on work-item updates instead of cancelling it",https://github.com/fullsend-ai/fullsend/issues/6957
+2026-09-03,fullsend,issue,opened,6951,"Release process should ensure agents repo tag exists before CLI binary publication",https://github.com/fullsend-ai/fullsend/issues/6951
+2026-09-03,fullsend,issue,opened,6950,"Review: opt-in incremental re-review with configurable full-review cadence and a mandatory manual full pass",https://github.com/fullsend-ai/fullsend/issues/6950
+2026-09-03,fullsend,issue,opened,6948,"nextwork: make work-item output self-describing and consistently ordered",https://github.com/fullsend-ai/fullsend/issues/6948
+2026-09-03,fullsend,issue,opened,6945,"mint deploy: detect pinned Cloud Run traffic and shift (or fail) instead of reporting success while the old revision keeps serving",https://github.com/fullsend-ai/fullsend/issues/6945
+2026-09-03,fullsend,issue,opened,6944,"Add parity test for setup-agent-env.sh step env vars across dispatch and standalone workflows",https://github.com/fullsend-ai/fullsend/issues/6944
+2026-09-03,fullsend,issue,opened,6943,"Exclude fullsend/* branches from shim PR dispatch to avoid unnecessary agent runs",https://github.com/fullsend-ai/fullsend/issues/6943
+2026-09-03,fullsend,issue,closed,6981,"Scaffold fullsend-vertex-ai profile allows uninspected credentials on api.anthropic.com; the fleet profile does not",https://github.com/fullsend-ai/fullsend/issues/6981
+2026-09-03,fullsend,issue,closed,6979,"repos install: add --vendor flag and manifest vendor field",https://github.com/fullsend-ai/fullsend/issues/6979
+2026-09-03,fullsend,issue,closed,6971,"sandbox: scaffold Vertex profile lacks **/claude.exe, so every 0.40.0-image Claude run fails with policy_denied",https://github.com/fullsend-ai/fullsend/issues/6971
+2026-09-03,fullsend,issue,closed,6962,"functional-tests: every triage case fails with API Error policy_denied on main since 2026-09-03",https://github.com/fullsend-ai/fullsend/issues/6962
+2026-09-03,fullsend,issue,closed,6958,"feat: add --inference-wif-provider to repos install, drop --inference-project-number",https://github.com/fullsend-ai/fullsend/issues/6958
+2026-09-03,fullsend,issue,closed,6882,"pi: repo-configurable model aliases for Vertex Claude (models.aliases in .fullsend/config.yaml)",https://github.com/fullsend-ai/fullsend/issues/6882
+2026-09-03,fullsend,issue,closed,6738,"Skip workflow dispatch for non-slash-command issue comments and remove /fullsend retro alias",https://github.com/fullsend-ai/fullsend/issues/6738
+2026-09-03,agents,pr,opened,1167,"feat(#6966): add a completed reference agent and an authoring skill",https://github.com/fullsend-ai/agents/pull/1167
+2026-09-03,agents,pr,opened,1164,"test(scripts): capture before grep in harness-jira-test to stop SIGPIPE flakes",https://github.com/fullsend-ai/agents/pull/1164
+2026-09-03,agents,pr,opened,1163,"feat(agents): re-check the work item once and act on runner mid-run updates",https://github.com/fullsend-ai/agents/pull/1163
+2026-09-03,agents,pr,opened,1162,"fix(#1138): scope sign-off scan to agent changes",https://github.com/fullsend-ai/agents/pull/1162
+2026-09-03,agents,pr,opened,1160,"chore(harness): repin sandbox and code images to the 0.40.0 release digests",https://github.com/fullsend-ai/agents/pull/1160
+2026-09-03,agents,pr,merged,1160,"chore(harness): repin sandbox and code images to the 0.40.0 release digests",https://github.com/fullsend-ai/agents/pull/1160
+2026-09-03,agents,pr,merged,957,"fix(#956): gate the pre-commit fallback on a 300s floor",https://github.com/fullsend-ai/agents/pull/957
+2026-09-03,agents,issue,opened,1170,"Code agent should document manual steps for files it cannot modify",https://github.com/fullsend-ai/agents/issues/1170
+2026-09-03,agents,issue,opened,1169,"Review orchestrator fails to synthesize sub-agent results into output file",https://github.com/fullsend-ai/agents/issues/1169
+2026-09-03,agents,issue,opened,1168,"Post-triage guard: suppress ready-to-code when triage recommends investigation",https://github.com/fullsend-ai/agents/issues/1168
+2026-09-03,agents,issue,opened,1166,"Triage agent should weight explicit author statements about release status in breaking-change analysis",https://github.com/fullsend-ai/agents/issues/1166
+2026-09-03,agents,issue,opened,1165,"harness-jira-test.sh flakes: yq | grep -q SIGPIPE race under pipefail",https://github.com/fullsend-ai/agents/issues/1165
+2026-09-03,agents,issue,opened,1161,"Review bot label application cancels in-progress functional tests via concurrency group race",https://github.com/fullsend-ai/agents/issues/1161
+2026-09-03,agents,issue,opened,1159,"Fix agent should incorporate human review findings alongside bot review findings",https://github.com/fullsend-ai/agents/issues/1159
+2026-09-03,agents,issue,opened,1158,"Review agent should assess deployment and backward-compatibility impact for infrastructure changes",https://github.com/fullsend-ai/agents/issues/1158
+2026-09-03,agents,issue,opened,1157,"Review agent should be time-aware and reserve margin for output writing on large PRs",https://github.com/fullsend-ai/agents/issues/1157
+2026-09-03,agents,issue,opened,1156,"Correctness sub-agent should detect nil-returning error paths in Go functions",https://github.com/fullsend-ai/agents/issues/1156
+2026-09-03,agents,issue,opened,1155,"Review orchestrator should detect and flag sub-agent dimension drift",https://github.com/fullsend-ai/agents/issues/1155
+2026-09-03,agents,issue,closed,956,"fix-review can start step 7b too late to finish the STEP C direct-execution fallback",https://github.com/fullsend-ai/agents/issues/956

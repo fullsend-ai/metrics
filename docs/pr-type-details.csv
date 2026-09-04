@@ -1455,3 +1455,15 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-02,agents,1150,fix(#1148): derive PR title from first commit when agent makes multiple commits,fix,bot,1148,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1150
 2026-09-02,agents,1118,fix(#1117): allow claude.exe binary in Vertex AI profile,fix,bot,1117,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1118
 2026-09-02,agents,1109,refactor(#1108): use OpenShell providers for Jira credentials,other,,,,https://github.com/fullsend-ai/agents/pull/1109
+2026-09-03,fullsend,6988,chore(#6738): remove /fullsend retro alias and add shim /fs- filter,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6988
+2026-09-03,fullsend,6982,feat(#6979): add --vendor flag and manifest vendor field to repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6982
+2026-09-03,fullsend,6975,"fix(#6971): allow claude.exe and pi on scaffold Vertex profile, warn on profile shadowing",fix,core,6971,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6975
+2026-09-03,fullsend,6960,"feat(#6958): add --inference-wif-provider to repos install, drop --inference-project-number",feat,,,,https://github.com/fullsend-ai/fullsend/pull/6960
+2026-09-03,fullsend,6927,feat(config): make the codex runtime selectable,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6927
+2026-09-03,fullsend,6926,"feat(runtime): add the codex agent runtime (ADR 0099, ADR 0100)",feat,,,,https://github.com/fullsend-ai/fullsend/pull/6926
+2026-09-03,fullsend,6925,feat(run): create the OpenAI run-scoped provider only when the runtime needs it,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6925
+2026-09-03,fullsend,6924,refactor(runtime): parse codex exec --json streams into agent events,other,,,,https://github.com/fullsend-ai/fullsend/pull/6924
+2026-09-03,fullsend,6884,feat(#6882): add per-repo model alias overrides (models.aliases),feat,,,,https://github.com/fullsend-ai/fullsend/pull/6884
+2026-09-03,fullsend,6654,feat(#6649)!: add packages read permission to coder and fix roles,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6654
+2026-09-03,agents,1160,chore(harness): repin sandbox and code images to the 0.40.0 release digests,chore,,,,https://github.com/fullsend-ai/agents/pull/1160
+2026-09-03,agents,957,fix(#956): gate the pre-commit fallback on a 300s floor,fix,core,956,waynesun09,https://github.com/fullsend-ai/agents/pull/957

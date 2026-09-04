@@ -1487,3 +1487,26 @@ date,repo,type,event,number,actor,title,url
 2026-09-02,agents,issue,opened_external,1144,guyoron1,"pr-review: skip challenger dispatch when a review produces no findings",https://github.com/fullsend-ai/agents/issues/1144
 2026-09-02,agents,issue,opened_external,1143,guyoron1,"pr-review: filter lockfiles, generated, vendored and minified content from the review diff",https://github.com/fullsend-ai/agents/issues/1143
 2026-09-02,agents,issue,opened_external,1142,guyoron1,"pr-review: fence PR-controlled text against prompt injection",https://github.com/fullsend-ai/agents/issues/1142
+2026-09-03,fullsend,issue,opened_external,6961,cgwalters,"Should not have giant hacks to reuse sandbox for validation loop",https://github.com/fullsend-ai/fullsend/issues/6961
+2026-09-03,fullsend,issue,opened_external,6950,JoshSalomon,"Review: opt-in incremental re-review with configurable full-review cadence and a mandatory manual full pass",https://github.com/fullsend-ai/fullsend/issues/6950
+2026-09-03,fullsend,pr,opened_core,6986,ralphbean,"ci(release): validate agents before publishing binary",https://github.com/fullsend-ai/fullsend/pull/6986
+2026-09-03,fullsend,pr,opened_core,6976,waynesun09,"docs(adr): ADR 0103 — recorded presets bumped by Renovate via fullsend update",https://github.com/fullsend-ai/fullsend/pull/6976
+2026-09-03,fullsend,pr,opened_core,6972,waynesun09,"feat(#6966): add `fullsend agent new` to generate a complete custom agent",https://github.com/fullsend-ai/fullsend/pull/6972
+2026-09-03,fullsend,pr,opened_core,6959,waynesun09,"feat(dispatch)!: steer the in-flight agent run on work-item updates instead of cancelling",https://github.com/fullsend-ai/fullsend/pull/6959
+2026-09-03,fullsend,pr,opened_core,6956,ifireball,"docs(adr): adopt entity-first harness evaluation",https://github.com/fullsend-ai/fullsend/pull/6956
+2026-09-03,fullsend,pr,opened_core,6955,waynesun09,"docs(mint): add the App permission rollout runbook and the contributor rule",https://github.com/fullsend-ai/fullsend/pull/6955
+2026-09-03,fullsend,pr,opened_core,6953,rh-hemartin,"feat(docs): pull agent documentation from fullsend-ai/agents",https://github.com/fullsend-ai/fullsend/pull/6953
+2026-09-03,fullsend,pr,opened_core,6952,waynesun09,"fix(#6920): withhold unsafe codex tool results",https://github.com/fullsend-ai/fullsend/pull/6952
+2026-09-03,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-03,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-03,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-03,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-03,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-03,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-03,fullsend,pr,reviewed_external,6801,cgwalters,"fix(#6798): resolve base forge/overlays per-layer before merging into child",https://github.com/fullsend-ai/fullsend/pull/6801
+2026-09-03,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-03,fullsend,pr,reviewed_external,6753,cgwalters,"fix(runtime): terminate stray sandbox processes between iterations",https://github.com/fullsend-ai/fullsend/pull/6753
+2026-09-03,agents,pr,opened_core,1167,waynesun09,"feat(#6966): add a completed reference agent and an authoring skill",https://github.com/fullsend-ai/agents/pull/1167
+2026-09-03,agents,pr,opened_core,1164,waynesun09,"test(scripts): capture before grep in harness-jira-test to stop SIGPIPE flakes",https://github.com/fullsend-ai/agents/pull/1164
+2026-09-03,agents,pr,opened_core,1163,waynesun09,"feat(agents): re-check the work item once and act on runner mid-run updates",https://github.com/fullsend-ai/agents/pull/1163
+2026-09-03,agents,pr,opened_core,1160,waynesun09,"chore(harness): repin sandbox and code images to the 0.40.0 release digests",https://github.com/fullsend-ai/agents/pull/1160
