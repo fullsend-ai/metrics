@@ -1467,3 +1467,27 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-03,fullsend,6654,feat(#6649)!: add packages read permission to coder and fix roles,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6654
 2026-09-03,agents,1160,chore(harness): repin sandbox and code images to the 0.40.0 release digests,chore,,,,https://github.com/fullsend-ai/agents/pull/1160
 2026-09-03,agents,957,fix(#956): gate the pre-commit fallback on a 300s floor,fix,core,956,waynesun09,https://github.com/fullsend-ai/agents/pull/957
+2026-09-04,fullsend,7025,"chore(#7018,#7019): vendor the fullsend-owned Claude-on-Vertex extension and bump pi to 0.85.0",chore,,,,https://github.com/fullsend-ai/fullsend/pull/7025
+2026-09-04,fullsend,7024,chore(#7021): bump pi-xai-vertex from 0.2.0 to 0.2.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7024
+2026-09-04,fullsend,7005,docs(#7004): fix inaccurate SecretRedactor description,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7005
+2026-09-04,fullsend,7002,fix(#6999): check exit code in dummy runtime Bootstrap and ClearIterationArtifacts,fix,core,6999,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7002
+2026-09-04,fullsend,6998,fix(#3708): allow release highlights sub-agent,fix,bot,3708,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6998
+2026-09-04,fullsend,6997,docs(#3512): add Go concurrent fan-out errors.Join guidance,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6997
+2026-09-04,fullsend,6996,docs(#3296): fix custom agent examples,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6996
+2026-09-04,fullsend,6995,chore(deps): update experiments digest to 25946a9,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6995
+2026-09-04,fullsend,6993,fix(#6992): thread vendor flag through FetchRemoteScaffold,fix,core,6992,ggallen,https://github.com/fullsend-ai/fullsend/pull/6993
+2026-09-04,fullsend,6989,docs(#6987): document per-repo config dual-validation pattern,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6989
+2026-09-04,fullsend,6986,ci(release): validate agents before publishing binary,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6986
+2026-09-04,fullsend,6969,chore(deps): update dependency go to v1.27.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6969
+2026-09-04,fullsend,6946,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.260,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6946
+2026-09-04,fullsend,6942,docs(#6941): add SandboxCodexConfig to CLI internals guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6942
+2026-09-04,fullsend,6919,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to be70aa4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6919
+2026-09-04,fullsend,6907,fix(#6904): parse thinking tokens from Claude stream events,fix,core,6904,maruiz93,https://github.com/fullsend-ai/fullsend/pull/6907
+2026-09-04,fullsend,6841,docs(#6840): remove stale e2e role from user-facing docs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6841
+2026-09-04,fullsend,6839,docs(#6838): add consumer-completeness touchpoints to runtime checklist,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6839
+2026-09-04,fullsend,6832,fix(#6828): add retry with backoff for openshell install,fix,bot,6828,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6832
+2026-09-04,fullsend,6783,docs(#6781): promote forge-abstraction to explicit AGENTS.md bullet,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6783
+2026-09-04,fullsend,6761,docs(#6759): add normative-spec doc-update trigger to AGENTS.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6761
+2026-09-04,fullsend,6756,feat(pi): Agent tool for sub-agents on the pi runtime,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6756
+2026-09-04,fullsend,6754,feat(harness)!: pi extensions under one plugins: key,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6754
+2026-09-04,fullsend,6500,docs(#6499): add credential-redaction invariant to Go contributing guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6500

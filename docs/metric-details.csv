@@ -12401,3 +12401,112 @@ date,repo,type,event,number,title,url
 2026-09-03,agents,issue,opened,1156,"Correctness sub-agent should detect nil-returning error paths in Go functions",https://github.com/fullsend-ai/agents/issues/1156
 2026-09-03,agents,issue,opened,1155,"Review orchestrator should detect and flag sub-agent dimension drift",https://github.com/fullsend-ai/agents/issues/1155
 2026-09-03,agents,issue,closed,956,"fix-review can start step 7b too late to finish the STEP C direct-execution fallback",https://github.com/fullsend-ai/agents/issues/956
+2026-09-04,fullsend,pr,opened,7033,"fix(#7029): scrub ANTHROPIC_OAUTH_TOKEN for the anthropic-vertex provider",https://github.com/fullsend-ai/fullsend/pull/7033
+2026-09-04,fullsend,pr,opened,7032,"chore(#7019): drop the last ""interim"" and rewrap two comments",https://github.com/fullsend-ai/fullsend/pull/7032
+2026-09-04,fullsend,pr,opened,7030,"feat(#7008): accept .claude-plugin/plugin.json in lock URL stripping",https://github.com/fullsend-ai/fullsend/pull/7030
+2026-09-04,fullsend,pr,opened,7028,"fix(#7020): point fable at claude-fable-5-1 and thread config aliases into sub-agent dispatch",https://github.com/fullsend-ai/fullsend/pull/7028
+2026-09-04,fullsend,pr,opened,7027,"fix(#7026): add Vertex model fallback for aliased pi runs",https://github.com/fullsend-ai/fullsend/pull/7027
+2026-09-04,fullsend,pr,opened,7025,"chore(#7018,#7019): vendor the fullsend-owned Claude-on-Vertex extension and bump pi to 0.85.0",https://github.com/fullsend-ai/fullsend/pull/7025
+2026-09-04,fullsend,pr,opened,7024,"chore(#7021): bump pi-xai-vertex from 0.2.0 to 0.2.1",https://github.com/fullsend-ai/fullsend/pull/7024
+2026-09-04,fullsend,pr,opened,7016,"fix(#7014): add GraphQL endpoint to scaffold GitHub RO profile",https://github.com/fullsend-ai/fullsend/pull/7016
+2026-09-04,fullsend,pr,opened,7013,"chore(deps): update dependency sheeki03/tirith to v0.4.1",https://github.com/fullsend-ai/fullsend/pull/7013
+2026-09-04,fullsend,pr,opened,7012,"fix(#7010): guard reserved sandbox keys against .env.d and host_files bypass",https://github.com/fullsend-ai/fullsend/pull/7012
+2026-09-04,fullsend,pr,opened,7009,"fix(security): mirror credential shapes into the PostToolUse hook, scoped to checkout content",https://github.com/fullsend-ai/fullsend/pull/7009
+2026-09-04,fullsend,pr,opened,7007,"feat(dispatch): let a repository preserve the agent run already in flight",https://github.com/fullsend-ai/fullsend/pull/7007
+2026-09-04,fullsend,pr,opened,7005,"docs(#7004): fix inaccurate SecretRedactor description",https://github.com/fullsend-ai/fullsend/pull/7005
+2026-09-04,fullsend,pr,opened,7002,"fix(#6999): check exit code in dummy runtime Bootstrap and ClearIterationArtifacts",https://github.com/fullsend-ai/fullsend/pull/7002
+2026-09-04,fullsend,pr,opened,6998,"fix(#3708): allow release highlights sub-agent",https://github.com/fullsend-ai/fullsend/pull/6998
+2026-09-04,fullsend,pr,opened,6997,"docs(#3512): add Go concurrent fan-out errors.Join guidance",https://github.com/fullsend-ai/fullsend/pull/6997
+2026-09-04,fullsend,pr,opened,6996,"docs(#3296): fix custom agent examples",https://github.com/fullsend-ai/fullsend/pull/6996
+2026-09-04,fullsend,pr,opened,6995,"chore(deps): update experiments digest to 25946a9",https://github.com/fullsend-ai/fullsend/pull/6995
+2026-09-04,fullsend,pr,opened,6994,"fix(#1362): add ready- prefix filter to per-repo shim template",https://github.com/fullsend-ai/fullsend/pull/6994
+2026-09-04,fullsend,pr,opened,6993,"fix(#6992): thread vendor flag through FetchRemoteScaffold",https://github.com/fullsend-ai/fullsend/pull/6993
+2026-09-04,fullsend,pr,merged,7025,"chore(#7018,#7019): vendor the fullsend-owned Claude-on-Vertex extension and bump pi to 0.85.0",https://github.com/fullsend-ai/fullsend/pull/7025
+2026-09-04,fullsend,pr,merged,7024,"chore(#7021): bump pi-xai-vertex from 0.2.0 to 0.2.1",https://github.com/fullsend-ai/fullsend/pull/7024
+2026-09-04,fullsend,pr,merged,7005,"docs(#7004): fix inaccurate SecretRedactor description",https://github.com/fullsend-ai/fullsend/pull/7005
+2026-09-04,fullsend,pr,merged,7002,"fix(#6999): check exit code in dummy runtime Bootstrap and ClearIterationArtifacts",https://github.com/fullsend-ai/fullsend/pull/7002
+2026-09-04,fullsend,pr,merged,6998,"fix(#3708): allow release highlights sub-agent",https://github.com/fullsend-ai/fullsend/pull/6998
+2026-09-04,fullsend,pr,merged,6997,"docs(#3512): add Go concurrent fan-out errors.Join guidance",https://github.com/fullsend-ai/fullsend/pull/6997
+2026-09-04,fullsend,pr,merged,6996,"docs(#3296): fix custom agent examples",https://github.com/fullsend-ai/fullsend/pull/6996
+2026-09-04,fullsend,pr,merged,6995,"chore(deps): update experiments digest to 25946a9",https://github.com/fullsend-ai/fullsend/pull/6995
+2026-09-04,fullsend,pr,merged,6993,"fix(#6992): thread vendor flag through FetchRemoteScaffold",https://github.com/fullsend-ai/fullsend/pull/6993
+2026-09-04,fullsend,pr,merged,6989,"docs(#6987): document per-repo config dual-validation pattern",https://github.com/fullsend-ai/fullsend/pull/6989
+2026-09-04,fullsend,pr,merged,6986,"ci(release): validate agents before publishing binary",https://github.com/fullsend-ai/fullsend/pull/6986
+2026-09-04,fullsend,pr,merged,6969,"chore(deps): update dependency go to v1.27.1",https://github.com/fullsend-ai/fullsend/pull/6969
+2026-09-04,fullsend,pr,merged,6946,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.260",https://github.com/fullsend-ai/fullsend/pull/6946
+2026-09-04,fullsend,pr,merged,6942,"docs(#6941): add SandboxCodexConfig to CLI internals guide",https://github.com/fullsend-ai/fullsend/pull/6942
+2026-09-04,fullsend,pr,merged,6919,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to be70aa4",https://github.com/fullsend-ai/fullsend/pull/6919
+2026-09-04,fullsend,pr,merged,6907,"fix(#6904): parse thinking tokens from Claude stream events",https://github.com/fullsend-ai/fullsend/pull/6907
+2026-09-04,fullsend,pr,merged,6841,"docs(#6840): remove stale e2e role from user-facing docs",https://github.com/fullsend-ai/fullsend/pull/6841
+2026-09-04,fullsend,pr,merged,6839,"docs(#6838): add consumer-completeness touchpoints to runtime checklist",https://github.com/fullsend-ai/fullsend/pull/6839
+2026-09-04,fullsend,pr,merged,6832,"fix(#6828): add retry with backoff for openshell install",https://github.com/fullsend-ai/fullsend/pull/6832
+2026-09-04,fullsend,pr,merged,6783,"docs(#6781): promote forge-abstraction to explicit AGENTS.md bullet",https://github.com/fullsend-ai/fullsend/pull/6783
+2026-09-04,fullsend,pr,merged,6761,"docs(#6759): add normative-spec doc-update trigger to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/6761
+2026-09-04,fullsend,pr,merged,6756,"feat(pi): Agent tool for sub-agents on the pi runtime",https://github.com/fullsend-ai/fullsend/pull/6756
+2026-09-04,fullsend,pr,merged,6754,"feat(harness)!: pi extensions under one plugins: key",https://github.com/fullsend-ai/fullsend/pull/6754
+2026-09-04,fullsend,pr,merged,6500,"docs(#6499): add credential-redaction invariant to Go contributing guide",https://github.com/fullsend-ai/fullsend/pull/6500
+2026-09-04,fullsend,issue,opened,7031,"sub-agents: per-persona model configuration (`agents[].subagents`), resolved by the runner, dispatched by `subagent_type`",https://github.com/fullsend-ai/fullsend/issues/7031
+2026-09-04,fullsend,issue,opened,7029,"pi: the anthropic-vertex credential scrub misses ANTHROPIC_OAUTH_TOKEN, one of the three names pi's built-in anthropic provider resolves",https://github.com/fullsend-ai/fullsend/issues/7029
+2026-09-04,fullsend,issue,opened,7026,"pi: no automatic fallback when the aliased model is not served in the project — every default run fails instead of degrading",https://github.com/fullsend-ai/fullsend/issues/7026
+2026-09-04,fullsend,issue,opened,7023,"Review/fix status comments collapse 'runtime crashed' and 'output failed schema validation' into one generic 'validation failed after N iteration(s)' message",https://github.com/fullsend-ai/fullsend/issues/7023
+2026-09-04,fullsend,issue,opened,7022,"Sandbox build has no self-referential override for PRs against pi runtime extension repos (pi-xai-vertex, pi-anthropic-vertex)",https://github.com/fullsend-ai/fullsend/issues/7022
+2026-09-04,fullsend,issue,opened,7021,"pi: bump the vendored pi-xai-vertex extension to v0.2.1 (Grok streams abort on Vertex keepalive frames)",https://github.com/fullsend-ai/fullsend/issues/7021
+2026-09-04,fullsend,issue,opened,7020,"pi: the default model alias table still points at the previous Claude generations (sonnet 4-6, opus 4-6)",https://github.com/fullsend-ai/fullsend/issues/7020
+2026-09-04,fullsend,issue,opened,7019,"pi: vendor the fullsend-owned pi-anthropic-vertex extension in place of twoGiants/pi-anthropic-vertex",https://github.com/fullsend-ai/fullsend/issues/7019
+2026-09-04,fullsend,issue,opened,7018,"Bump default Gemini reference from gemini-3.7-flash to gemini-3.8-flash",https://github.com/fullsend-ai/fullsend/issues/7018
+2026-09-04,fullsend,issue,opened,7017,"Review agent process hangs after posting skip on merged PRs",https://github.com/fullsend-ai/fullsend/issues/7017
+2026-09-04,fullsend,issue,opened,7015,"Exclude fullsend/* branches from shim workflow dispatch",https://github.com/fullsend-ai/fullsend/issues/7015
+2026-09-04,fullsend,issue,opened,7014,"Scaffold fullsend-github-ro profile lacks the GraphQL endpoint the fleet profile has; generated agents fail on `gh --json`",https://github.com/fullsend-ai/fullsend/issues/7014
+2026-09-04,fullsend,issue,opened,7011,"This repo's own shim claims to be generated from a file that does not exist",https://github.com/fullsend-ai/fullsend/issues/7011
+2026-09-04,fullsend,issue,opened,7010,"reservedSandboxKeys only guards env.sandbox, not .env.d or host_files dest",https://github.com/fullsend-ai/fullsend/issues/7010
+2026-09-04,fullsend,issue,opened,7008,"Accept .claude-plugin/plugin.json as plugin manifest location in fetch gate",https://github.com/fullsend-ai/fullsend/issues/7008
+2026-09-04,fullsend,issue,opened,7006,"Optional hardening: authenticate steer receipts so a forged one cannot suppress a queued run",https://github.com/fullsend-ai/fullsend/issues/7006
+2026-09-04,fullsend,issue,opened,7004,"Fix inaccurate SecretRedactor description in credential-redaction docs",https://github.com/fullsend-ai/fullsend/issues/7004
+2026-09-04,fullsend,issue,opened,7003,"New app / role required for ci-diagnose agent",https://github.com/fullsend-ai/fullsend/issues/7003
+2026-09-04,fullsend,issue,opened,7001,"Include inheritance context in allowed_remote_resources resolution error",https://github.com/fullsend-ai/fullsend/issues/7001
+2026-09-04,fullsend,issue,opened,7000,"Mint status reconciliation should resolve role from harness config, not agent name",https://github.com/fullsend-ai/fullsend/issues/7000
+2026-09-04,fullsend,issue,opened,6999,"Dummy runtime Bootstrap and ClearIterationArtifacts treat a missing sandbox as success when openshell is installed",https://github.com/fullsend-ai/fullsend/issues/6999
+2026-09-04,fullsend,issue,opened,6992,"repos install --vendor renders shim with cross-repo refs instead of local",https://github.com/fullsend-ai/fullsend/issues/6992
+2026-09-04,fullsend,issue,closed,7021,"pi: bump the vendored pi-xai-vertex extension to v0.2.1 (Grok streams abort on Vertex keepalive frames)",https://github.com/fullsend-ai/fullsend/issues/7021
+2026-09-04,fullsend,issue,closed,7019,"pi: vendor the fullsend-owned pi-anthropic-vertex extension in place of twoGiants/pi-anthropic-vertex",https://github.com/fullsend-ai/fullsend/issues/7019
+2026-09-04,fullsend,issue,closed,7018,"Bump default Gemini reference from gemini-3.7-flash to gemini-3.8-flash",https://github.com/fullsend-ai/fullsend/issues/7018
+2026-09-04,fullsend,issue,closed,7004,"Fix inaccurate SecretRedactor description in credential-redaction docs",https://github.com/fullsend-ai/fullsend/issues/7004
+2026-09-04,fullsend,issue,closed,6999,"Dummy runtime Bootstrap and ClearIterationArtifacts treat a missing sandbox as success when openshell is installed",https://github.com/fullsend-ai/fullsend/issues/6999
+2026-09-04,fullsend,issue,closed,6992,"repos install --vendor renders shim with cross-repo refs instead of local",https://github.com/fullsend-ai/fullsend/issues/6992
+2026-09-04,fullsend,issue,closed,6987,"Document the config dual-validation pattern to reduce code-agent rework on new config fields",https://github.com/fullsend-ai/fullsend/issues/6987
+2026-09-04,fullsend,issue,closed,6941,"Fix docs-currency gap: SandboxCodexConfig missing from CLI internals guide",https://github.com/fullsend-ai/fullsend/issues/6941
+2026-09-04,fullsend,issue,closed,6904,"Claude runtime parser does not populate ReasoningTokens from Anthropic stream events",https://github.com/fullsend-ai/fullsend/issues/6904
+2026-09-04,fullsend,issue,closed,6840,"Remove stale e2e role references from user-facing docs (bring-your-own-agent.md, mint.md)",https://github.com/fullsend-ai/fullsend/issues/6840
+2026-09-04,fullsend,issue,closed,6838,"Expand runtime-implementation.md checklist with file-level consumer touchpoints",https://github.com/fullsend-ai/fullsend/issues/6838
+2026-09-04,fullsend,issue,closed,6828,"Add retry with backoff for openshell binary download in sandbox setup",https://github.com/fullsend-ai/fullsend/issues/6828
+2026-09-04,fullsend,issue,closed,6781,"Promote forge-abstraction to explicit AGENTS.md bullet point",https://github.com/fullsend-ai/fullsend/issues/6781
+2026-09-04,fullsend,issue,closed,6759,"Add normative-spec doc-update trigger to AGENTS.md for event_payload changes",https://github.com/fullsend-ai/fullsend/issues/6759
+2026-09-04,fullsend,issue,closed,6499,"Add credential-redaction invariant to Go contributing guide for runner features processing external content",https://github.com/fullsend-ai/fullsend/issues/6499
+2026-09-04,fullsend,issue,closed,4541,"Create tiered fullsend adoption guide (crawl, walk, run, fly)",https://github.com/fullsend-ai/fullsend/issues/4541
+2026-09-04,fullsend,issue,closed,3708,"Fix cutting-releases skill: add Agent to allowed-tools frontmatter",https://github.com/fullsend-ai/fullsend/issues/3708
+2026-09-04,fullsend,issue,closed,3512,"Add AGENTS.md guidance: Go concurrent fan-out must use errors.Join",https://github.com/fullsend-ai/fullsend/issues/3512
+2026-09-04,fullsend,issue,closed,3296,"Fix elif syntax error and duplicate permissions block in building-custom-agents guide",https://github.com/fullsend-ai/fullsend/issues/3296
+2026-09-04,fullsend,issue,closed,1129,"Follow-up from PR #1113: strings.Contains(org, ""--"") check rejects valid GitHub org names with consecutive hyp...",https://github.com/fullsend-ai/fullsend/issues/1129
+2026-09-04,agents,pr,opened,1181,"fix(#1116): use deployment-agnostic model aliases in review sub-agents",https://github.com/fullsend-ai/agents/pull/1181
+2026-09-04,agents,pr,opened,1178,"fix(#1177): raise review timeout to 45m and reduce context for large PRs",https://github.com/fullsend-ai/agents/pull/1178
+2026-09-04,agents,issue,opened,1180,"Code agent should trace and verify behavioral claims when replacing a dependency",https://github.com/fullsend-ai/agents/issues/1180
+2026-09-04,agents,issue,opened,1179,"Review agent should validate document content against specification hierarchy boundaries",https://github.com/fullsend-ai/agents/issues/1179
+2026-09-04,agents,issue,opened,1177,"review: per-iteration 20-minute budget kills large-PR reviews and retries from scratch",https://github.com/fullsend-ai/agents/issues/1177
+2026-09-04,agents,issue,opened,1176,"Include agent raw token metrics and in the agent eval run results",https://github.com/fullsend-ai/agents/issues/1176
+2026-09-04,agents,issue,opened,1175,"Fix pre-script should skip execution when PR is in merge queue",https://github.com/fullsend-ai/agents/issues/1175
+2026-09-04,agents,issue,opened,1174,"Review agent should classify findings by addressability to enable fix-dispatch gating",https://github.com/fullsend-ai/agents/issues/1174
+2026-09-04,agents,issue,opened,1173,"Retro agent should verify documentation placement against repo conventions when filing issues",https://github.com/fullsend-ai/agents/issues/1173
+2026-09-04,agents,issue,opened,1172,"Review agent should qualify claims about external platform behavior as hypotheses",https://github.com/fullsend-ai/agents/issues/1172
+2026-09-04,agents,issue,opened,1171,"Code agent should evaluate call-site necessity, not just fix arguments",https://github.com/fullsend-ai/agents/issues/1171
+2026-09-04,pi-xai-vertex,pr,opened,8,"chore: release v0.2.1",https://github.com/fullsend-ai/pi-xai-vertex/pull/8
+2026-09-04,pi-xai-vertex,pr,opened,7,"fix: point the sonnet alias at claude-sonnet-5",https://github.com/fullsend-ai/pi-xai-vertex/pull/7
+2026-09-04,pi-xai-vertex,pr,opened,6,"fix(#5): filter Vertex AI keepalive frames from SSE streams",https://github.com/fullsend-ai/pi-xai-vertex/pull/6
+2026-09-04,pi-xai-vertex,pr,merged,8,"chore: release v0.2.1",https://github.com/fullsend-ai/pi-xai-vertex/pull/8
+2026-09-04,pi-xai-vertex,pr,merged,7,"fix: point the sonnet alias at claude-sonnet-5",https://github.com/fullsend-ai/pi-xai-vertex/pull/7
+2026-09-04,pi-xai-vertex,pr,merged,6,"fix(#5): filter Vertex AI keepalive frames from SSE streams",https://github.com/fullsend-ai/pi-xai-vertex/pull/6
+2026-09-04,pi-xai-vertex,issue,opened,9,"Release process has no check to keep package.json/package-lock.json version in sync with the git tag",https://github.com/fullsend-ai/pi-xai-vertex/issues/9
+2026-09-04,pi-xai-vertex,issue,opened,5,"Grok-on-Vertex stream aborts on `data: : keepalive` frames (openai-completions SSE decoder JSON-parses data lines)",https://github.com/fullsend-ai/pi-xai-vertex/issues/5
+2026-09-04,pi-xai-vertex,issue,closed,5,"Grok-on-Vertex stream aborts on `data: : keepalive` frames (openai-completions SSE decoder JSON-parses data lines)",https://github.com/fullsend-ai/pi-xai-vertex/issues/5
+2026-09-04,pi-anthropic-vertex,pr,opened,1,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/1
+2026-09-04,pi-anthropic-vertex,pr,merged,1,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/1
+2026-09-04,pi-anthropic-vertex,issue,opened,2,"Release v0.1.1: compat exhaustiveness witness and tag-triggered CI are on main but unreleased",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/2

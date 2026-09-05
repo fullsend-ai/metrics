@@ -1510,3 +1510,10 @@ date,repo,type,event,number,actor,title,url
 2026-09-03,agents,pr,opened_core,1164,waynesun09,"test(scripts): capture before grep in harness-jira-test to stop SIGPIPE flakes",https://github.com/fullsend-ai/agents/pull/1164
 2026-09-03,agents,pr,opened_core,1163,waynesun09,"feat(agents): re-check the work item once and act on runner mid-run updates",https://github.com/fullsend-ai/agents/pull/1163
 2026-09-03,agents,pr,opened_core,1160,waynesun09,"chore(harness): repin sandbox and code images to the 0.40.0 release digests",https://github.com/fullsend-ai/agents/pull/1160
+2026-09-04,fullsend,issue,opened_external,7003,alice17,"New app / role required for ci-diagnose agent",https://github.com/fullsend-ai/fullsend/issues/7003
+2026-09-04,fullsend,pr,opened_core,7032,waynesun09,"chore(#7019): drop the last ""interim"" and rewrap two comments",https://github.com/fullsend-ai/fullsend/pull/7032
+2026-09-04,fullsend,pr,opened_core,7007,waynesun09,"feat(dispatch): let a repository preserve the agent run already in flight",https://github.com/fullsend-ai/fullsend/pull/7007
+2026-09-04,agents,issue,opened_external,1176,jasonawant,"Include agent raw token metrics and in the agent eval run results",https://github.com/fullsend-ai/agents/issues/1176
+2026-09-04,pi-xai-vertex,pr,opened_core,8,waynesun09,"chore: release v0.2.1",https://github.com/fullsend-ai/pi-xai-vertex/pull/8
+2026-09-04,pi-xai-vertex,pr,opened_core,7,waynesun09,"fix: point the sonnet alias at claude-sonnet-5",https://github.com/fullsend-ai/pi-xai-vertex/pull/7
+2026-09-04,pi-anthropic-vertex,pr,opened_core,1,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/1
