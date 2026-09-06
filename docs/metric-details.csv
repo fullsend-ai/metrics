@@ -12510,3 +12510,50 @@ date,repo,type,event,number,title,url
 2026-09-04,pi-anthropic-vertex,pr,opened,1,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/1
 2026-09-04,pi-anthropic-vertex,pr,merged,1,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/1
 2026-09-04,pi-anthropic-vertex,issue,opened,2,"Release v0.1.1: compat exhaustiveness witness and tag-triggered CI are on main but unreleased",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/2
+2026-09-05,fullsend,pr,opened,7049,"fix(#7042): no retry after a timeout, terminate the agent, export the budget to the sandbox",https://github.com/fullsend-ai/fullsend/pull/7049
+2026-09-05,fullsend,pr,opened,7047,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.85.1",https://github.com/fullsend-ai/fullsend/pull/7047
+2026-09-05,fullsend,pr,opened,7046,"ci(#7045): add security-hook pytest suite to script-test target",https://github.com/fullsend-ai/fullsend/pull/7046
+2026-09-05,fullsend,pr,opened,7044,"fix(#7043): keep analysis_incomplete blocking and fail closed on malformed tirith output",https://github.com/fullsend-ai/fullsend/pull/7044
+2026-09-05,fullsend,pr,opened,7041,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.263",https://github.com/fullsend-ai/fullsend/pull/7041
+2026-09-05,fullsend,pr,opened,7040,"docs(#7039): correct Vertex alias resolution in pinned-binaries table",https://github.com/fullsend-ai/fullsend/pull/7040
+2026-09-05,fullsend,pr,opened,7038,"feat(runtime): per-persona model configuration for pi sub-agents (#7031)",https://github.com/fullsend-ai/fullsend/pull/7038
+2026-09-05,fullsend,pr,opened,7036,"docs(#7035): document provider-qualification invariant for model alias values",https://github.com/fullsend-ai/fullsend/pull/7036
+2026-09-05,fullsend,pr,merged,7049,"fix(#7042): no retry after a timeout, terminate the agent, export the budget to the sandbox",https://github.com/fullsend-ai/fullsend/pull/7049
+2026-09-05,fullsend,pr,merged,7044,"fix(#7043): keep analysis_incomplete blocking and fail closed on malformed tirith output",https://github.com/fullsend-ai/fullsend/pull/7044
+2026-09-05,fullsend,pr,merged,7038,"feat(runtime): per-persona model configuration for pi sub-agents (#7031)",https://github.com/fullsend-ai/fullsend/pull/7038
+2026-09-05,fullsend,pr,merged,7028,"fix(#7020): point fable at claude-fable-5-1 and thread config aliases into sub-agent dispatch",https://github.com/fullsend-ai/fullsend/pull/7028
+2026-09-05,fullsend,issue,opened,7051,"Review agent should verify loop-exit paths preserve post-loop invariants",https://github.com/fullsend-ai/fullsend/issues/7051
+2026-09-05,fullsend,issue,opened,7050,"Suppress status comments for review runs superseded by a newer push",https://github.com/fullsend-ai/fullsend/issues/7050
+2026-09-05,fullsend,issue,opened,7048,"release: open the agents harness image-digest repin PR from the tag build instead of by hand (and tag agents after it lands)",https://github.com/fullsend-ai/fullsend/issues/7048
+2026-09-05,fullsend,issue,opened,7045,"ci: the security-hook Python tests (internal/security/hooks/*_test.py) are not run by any CI job",https://github.com/fullsend-ai/fullsend/issues/7045
+2026-09-05,fullsend,issue,opened,7043,"sandbox hooks: tirith 0.4.0 blocks POSIX `[ … ]` tests and `$( )` inside `$(( ))` as analysis_incomplete (HIGH), breaking documented agent snippets",https://github.com/fullsend-ai/fullsend/issues/7043
+2026-09-05,fullsend,issue,opened,7042,"run: a timed-out validation-loop iteration must not retry from scratch; export the budget and send a wrap-up signal",https://github.com/fullsend-ai/fullsend/issues/7042
+2026-09-05,fullsend,issue,opened,7039,"docs: runtime-implementation.md says ANTHROPIC_DEFAULT_*_MODEL does not steer aliases on Vertex — it does (verified A/B on 2.1.258)",https://github.com/fullsend-ai/fullsend/issues/7039
+2026-09-05,fullsend,issue,opened,7037,"Filter fullsend/onboard branch from shim workflow dispatch",https://github.com/fullsend-ai/fullsend/issues/7037
+2026-09-05,fullsend,issue,opened,7035,"Document provider-qualification patterns for model alias resolution in runtime docs",https://github.com/fullsend-ai/fullsend/issues/7035
+2026-09-05,fullsend,issue,opened,7034,"mint-cf-worker-test is red on main: npm install fails with ""Cannot read properties of null (reading 'edgesOut')""",https://github.com/fullsend-ai/fullsend/issues/7034
+2026-09-05,fullsend,issue,closed,7048,"release: open the agents harness image-digest repin PR from the tag build instead of by hand (and tag agents after it lands)",https://github.com/fullsend-ai/fullsend/issues/7048
+2026-09-05,fullsend,issue,closed,7043,"sandbox hooks: tirith 0.4.0 blocks POSIX `[ … ]` tests and `$( )` inside `$(( ))` as analysis_incomplete (HIGH), breaking documented agent snippets",https://github.com/fullsend-ai/fullsend/issues/7043
+2026-09-05,fullsend,issue,closed,7031,"sub-agents: per-persona model configuration (`agents[].subagents`), resolved by the runner, dispatched by `subagent_type`",https://github.com/fullsend-ai/fullsend/issues/7031
+2026-09-05,fullsend,issue,closed,7020,"pi: the default model alias table still points at the previous Claude generations (sonnet 4-6, opus 4-6)",https://github.com/fullsend-ai/fullsend/issues/7020
+2026-09-05,agents,pr,opened,1194,"chore(#1193): repin harness images to fullsend 0.42.0 digests",https://github.com/fullsend-ai/agents/pull/1194
+2026-09-05,agents,pr,opened,1191,"fix(#1190): rewrite scanner-blocked shell snippets in skill files",https://github.com/fullsend-ai/agents/pull/1191
+2026-09-05,agents,pr,opened,1189,"fix(#1186): pin review sub-agent models to explicit IDs",https://github.com/fullsend-ai/agents/pull/1189
+2026-09-05,agents,pr,opened,1185,"fix(#1184): strip Signed-off-by trailers instead of rejecting",https://github.com/fullsend-ai/agents/pull/1185
+2026-09-05,agents,pr,merged,1185,"fix(#1184): strip Signed-off-by trailers instead of rejecting",https://github.com/fullsend-ai/agents/pull/1185
+2026-09-05,agents,pr,merged,1181,"fix(#1116): use deployment-agnostic model aliases in review sub-agents",https://github.com/fullsend-ai/agents/pull/1181
+2026-09-05,agents,pr,merged,1178,"fix(#1177): size the review budget from the pipeline floor, materialise the PR head once",https://github.com/fullsend-ai/agents/pull/1178
+2026-09-05,agents,issue,opened,1195,"ci: functional-tests self-cancels when the review bot labels the PR mid-run (labeled trigger + per-PR cancel-in-progress)",https://github.com/fullsend-ai/agents/issues/1195
+2026-09-05,agents,issue,opened,1193,"harness: repin sandbox and code images to the 0.42.0 release digests",https://github.com/fullsend-ai/agents/issues/1193
+2026-09-05,agents,issue,opened,1192,"Retro agent should check for recently-merged PRs addressing the same failure before filing issues",https://github.com/fullsend-ai/agents/issues/1192
+2026-09-05,agents,issue,opened,1190,"skills: documented shell snippets are blocked by the sandbox command scanner (time check, GitLab MR-head fetch)",https://github.com/fullsend-ai/agents/issues/1190
+2026-09-05,agents,issue,opened,1188,"Fix agent should consult parent-skill dispatch documentation before applying sibling-file conventions",https://github.com/fullsend-ai/agents/issues/1188
+2026-09-05,agents,issue,opened,1187,"Code agent should complete all required frontmatter fields when adding capabilities to sub-agent persona files",https://github.com/fullsend-ai/agents/issues/1187
+2026-09-05,agents,issue,opened,1186,"Review sub-agent sonnet alias resolves to unavailable model despite fleet pin",https://github.com/fullsend-ai/agents/issues/1186
+2026-09-05,agents,issue,opened,1184,"post-code/post-fix: strip Signed-off-by trailers from agent commits instead of discarding the whole run",https://github.com/fullsend-ai/agents/issues/1184
+2026-09-05,agents,issue,opened,1183,"functional-tests.yml: accept a commit SHA for fullsend_ref so the release gate can be pinned",https://github.com/fullsend-ai/agents/issues/1183
+2026-09-05,agents,issue,opened,1182,"functional-tests.yml: surface whether tests actually ran, so a caller can't be gated on a vacuous pass",https://github.com/fullsend-ai/agents/issues/1182
+2026-09-05,agents,issue,closed,1195,"ci: functional-tests self-cancels when the review bot labels the PR mid-run (labeled trigger + per-PR cancel-in-progress)",https://github.com/fullsend-ai/agents/issues/1195
+2026-09-05,agents,issue,closed,1184,"post-code/post-fix: strip Signed-off-by trailers from agent commits instead of discarding the whole run",https://github.com/fullsend-ai/agents/issues/1184
+2026-09-05,agents,issue,closed,1177,"review: per-iteration 20-minute budget kills large-PR reviews and retries from scratch",https://github.com/fullsend-ai/agents/issues/1177
+2026-09-05,agents,issue,closed,1116,"Review sub-agent model config should use deployment-agnostic aliases to prevent dispatch failures",https://github.com/fullsend-ai/agents/issues/1116
