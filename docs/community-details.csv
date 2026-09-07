@@ -1517,3 +1517,8 @@ date,repo,type,event,number,actor,title,url
 2026-09-04,pi-xai-vertex,pr,opened_core,8,waynesun09,"chore: release v0.2.1",https://github.com/fullsend-ai/pi-xai-vertex/pull/8
 2026-09-04,pi-xai-vertex,pr,opened_core,7,waynesun09,"fix: point the sonnet alias at claude-sonnet-5",https://github.com/fullsend-ai/pi-xai-vertex/pull/7
 2026-09-04,pi-anthropic-vertex,pr,opened_core,1,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/1
+2026-09-06,fullsend,issue,opened_external,7059,shairevivo,"sandbox: EnsureProvider cancellation test depends on process startup timing",https://github.com/fullsend-ai/fullsend/issues/7059
+2026-09-06,fullsend,issue,opened_external,7058,shairevivo,"harnessdispatch: base-composition test repeats macOS TempDir alias failure from #2962",https://github.com/fullsend-ai/fullsend/issues/7058
+2026-09-06,fullsend,pr,opened_core,7064,waynesun09,"docs(#7042): say the budget kill sweeps, best effort, and why",https://github.com/fullsend-ai/fullsend/pull/7064
+2026-09-06,fullsend,pr,opened_core,7056,ifireball,"ci(#6116): always upload behaviour artifacts",https://github.com/fullsend-ai/fullsend/pull/7056
+2026-09-06,fullsend,pr,opened_core,7053,ifireball,"ci(#7034): lock CF worker dependencies",https://github.com/fullsend-ai/fullsend/pull/7053

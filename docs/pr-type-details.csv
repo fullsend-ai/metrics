@@ -1498,3 +1498,6 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-05,agents,1185,fix(#1184): strip Signed-off-by trailers instead of rejecting,fix,core,1184,waynesun09,https://github.com/fullsend-ai/agents/pull/1185
 2026-09-05,agents,1181,fix(#1116): use deployment-agnostic model aliases in review sub-agents,fix,bot,1116,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1181
 2026-09-05,agents,1178,"fix(#1177): size the review budget from the pipeline floor, materialise the PR head once",fix,core,1177,waynesun09,https://github.com/fullsend-ai/agents/pull/1178
+2026-09-06,fullsend,7066,feat(#7065): add --fullsend-binary and --fullsend-source flags to repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7066
+2026-09-06,fullsend,6949,feat(#6948): make nextwork markdown output self-describing and ordered,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6949
+2026-09-06,fullsend,6371,fix(#996): log dropped permissions on role-level downscoping,fix,core,996,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/6371

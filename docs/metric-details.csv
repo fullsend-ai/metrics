@@ -12557,3 +12557,28 @@ date,repo,type,event,number,title,url
 2026-09-05,agents,issue,closed,1184,"post-code/post-fix: strip Signed-off-by trailers from agent commits instead of discarding the whole run",https://github.com/fullsend-ai/agents/issues/1184
 2026-09-05,agents,issue,closed,1177,"review: per-iteration 20-minute budget kills large-PR reviews and retries from scratch",https://github.com/fullsend-ai/agents/issues/1177
 2026-09-05,agents,issue,closed,1116,"Review sub-agent model config should use deployment-agnostic aliases to prevent dispatch failures",https://github.com/fullsend-ai/agents/issues/1116
+2026-09-06,fullsend,pr,opened,7066,"feat(#7065): add --fullsend-binary and --fullsend-source flags to repos install",https://github.com/fullsend-ai/fullsend/pull/7066
+2026-09-06,fullsend,pr,opened,7064,"docs(#7042): say the budget kill sweeps, best effort, and why",https://github.com/fullsend-ai/fullsend/pull/7064
+2026-09-06,fullsend,pr,opened,7063,"feat(#5881): support Cloudflare Access Managed OAuth for GET /v1/status",https://github.com/fullsend-ai/fullsend/pull/7063
+2026-09-06,fullsend,pr,opened,7062,"fix(deps): update module github.com/yuin/goldmark to v1.8.6",https://github.com/fullsend-ai/fullsend/pull/7062
+2026-09-06,fullsend,pr,opened,7061,"test(#7058): cover harness dispatch on macOS",https://github.com/fullsend-ai/fullsend/pull/7061
+2026-09-06,fullsend,pr,opened,7060,"fix(#7059): preserve provider cancellation errors",https://github.com/fullsend-ai/fullsend/pull/7060
+2026-09-06,fullsend,pr,opened,7057,"fix(#1957): align optional project number inputs",https://github.com/fullsend-ai/fullsend/pull/7057
+2026-09-06,fullsend,pr,opened,7056,"ci(#6116): always upload behaviour artifacts",https://github.com/fullsend-ai/fullsend/pull/7056
+2026-09-06,fullsend,pr,opened,7055,"ci(#2618): retry transient issue creation auth failures",https://github.com/fullsend-ai/fullsend/pull/7055
+2026-09-06,fullsend,pr,opened,7053,"ci(#7034): lock CF worker dependencies",https://github.com/fullsend-ai/fullsend/pull/7053
+2026-09-06,fullsend,pr,opened,7052,"fix(deps): update module github.com/knights-analytics/hugot to v0.7.8",https://github.com/fullsend-ai/fullsend/pull/7052
+2026-09-06,fullsend,pr,merged,7066,"feat(#7065): add --fullsend-binary and --fullsend-source flags to repos install",https://github.com/fullsend-ai/fullsend/pull/7066
+2026-09-06,fullsend,pr,merged,6949,"feat(#6948): make nextwork markdown output self-describing and ordered",https://github.com/fullsend-ai/fullsend/pull/6949
+2026-09-06,fullsend,pr,merged,6371,"fix(#996): log dropped permissions on role-level downscoping",https://github.com/fullsend-ai/fullsend/pull/6371
+2026-09-06,fullsend,issue,opened,7065,"Add --fullsend-binary and --fullsend-source flags to repos install",https://github.com/fullsend-ai/fullsend/issues/7065
+2026-09-06,fullsend,issue,opened,7059,"sandbox: EnsureProvider cancellation test depends on process startup timing",https://github.com/fullsend-ai/fullsend/issues/7059
+2026-09-06,fullsend,issue,opened,7058,"harnessdispatch: base-composition test repeats macOS TempDir alias failure from #2962",https://github.com/fullsend-ai/fullsend/issues/7058
+2026-09-06,fullsend,issue,opened,7054,"Route step computes ISSUE_IS_PR=false for fork pull_request_target events, silently blocking all agent dispatch",https://github.com/fullsend-ai/fullsend/issues/7054
+2026-09-06,fullsend,issue,closed,7065,"Add --fullsend-binary and --fullsend-source flags to repos install",https://github.com/fullsend-ai/fullsend/issues/7065
+2026-09-06,fullsend,issue,closed,6948,"nextwork: make work-item output self-describing and consistently ordered",https://github.com/fullsend-ai/fullsend/issues/6948
+2026-09-06,fullsend,issue,closed,996,"mint: log when minted token drops permissions the app has",https://github.com/fullsend-ai/fullsend/issues/996
+2026-09-06,fullsend,issue,closed,741,"OIDC mint: defense-in-depth follow-ups from PR #503 review",https://github.com/fullsend-ai/fullsend/issues/741
+2026-09-06,agents,pr,opened,1196,"fix(#2093): retry empty PR file list before refusing to approve",https://github.com/fullsend-ai/agents/pull/1196
+2026-09-06,agents,issue,opened,1198,"Review agent should detect no-op backwards-compatibility code in pattern-adapted implementations",https://github.com/fullsend-ai/agents/issues/1198
+2026-09-06,agents,issue,opened,1197,"Code agent should evaluate applicability of each component when adapting patterns from similar commands",https://github.com/fullsend-ai/agents/issues/1197
