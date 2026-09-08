@@ -1522,3 +1522,6 @@ date,repo,type,event,number,actor,title,url
 2026-09-06,fullsend,pr,opened_core,7064,waynesun09,"docs(#7042): say the budget kill sweeps, best effort, and why",https://github.com/fullsend-ai/fullsend/pull/7064
 2026-09-06,fullsend,pr,opened_core,7056,ifireball,"ci(#6116): always upload behaviour artifacts",https://github.com/fullsend-ai/fullsend/pull/7056
 2026-09-06,fullsend,pr,opened_core,7053,ifireball,"ci(#7034): lock CF worker dependencies",https://github.com/fullsend-ai/fullsend/pull/7053
+2026-09-07,fullsend,issue,opened_external,7079,yvonnedevlinrh,"test: internal/cli vendor tests assume an amd64 host (EM_X86_64) and fail on arm64",https://github.com/fullsend-ai/fullsend/issues/7079
+2026-09-07,fullsend,issue,opened_external,7078,yvonnedevlinrh,"test: CheckoutBranchRealShellPrefersBranchOverSameNamedTag fails when tag.gpgsign is enabled",https://github.com/fullsend-ai/fullsend/issues/7078
+2026-09-07,fullsend,pr,opened_core,7080,ifireball,"docs(#6407): adopt deterministic entity context staging",https://github.com/fullsend-ai/fullsend/pull/7080

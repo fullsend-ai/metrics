@@ -1501,3 +1501,10 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-06,fullsend,7066,feat(#7065): add --fullsend-binary and --fullsend-source flags to repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7066
 2026-09-06,fullsend,6949,feat(#6948): make nextwork markdown output self-describing and ordered,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6949
 2026-09-06,fullsend,6371,fix(#996): log dropped permissions on role-level downscoping,fix,core,996,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/6371
+2026-09-07,fullsend,7077,ci(#7076): pass --allowed-workflow-files to stage BT mint,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7077
+2026-09-07,fullsend,7070,fix(#7069): add --fullsend-ref flag to github setup command,fix,core,7069,ifireball,https://github.com/fullsend-ai/fullsend/pull/7070
+2026-09-07,fullsend,7056,ci(#6116): always upload behaviour artifacts,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7056
+2026-09-07,fullsend,7053,ci(#7034): lock CF worker dependencies,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7053
+2026-09-07,fullsend,6848,feat(site): serve a custom 404 page for unmatched URLs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6848
+2026-09-07,fullsend,6434,ci(#5115): add STAGE CF mint driver for halfsend post-merge BT,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6434
+2026-09-07,fullsend,6370,feat(#2823): implement named privilege levels under agent roles,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6370

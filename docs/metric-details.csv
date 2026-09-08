@@ -12582,3 +12582,50 @@ date,repo,type,event,number,title,url
 2026-09-06,agents,pr,opened,1196,"fix(#2093): retry empty PR file list before refusing to approve",https://github.com/fullsend-ai/agents/pull/1196
 2026-09-06,agents,issue,opened,1198,"Review agent should detect no-op backwards-compatibility code in pattern-adapted implementations",https://github.com/fullsend-ai/agents/issues/1198
 2026-09-06,agents,issue,opened,1197,"Code agent should evaluate applicability of each component when adapting patterns from similar commands",https://github.com/fullsend-ai/agents/issues/1197
+2026-09-07,fullsend,pr,opened,7085,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/7085
+2026-09-07,fullsend,pr,opened,7080,"docs(#6407): adopt deterministic entity context staging",https://github.com/fullsend-ai/fullsend/pull/7080
+2026-09-07,fullsend,pr,opened,7077,"ci(#7076): pass --allowed-workflow-files to stage BT mint",https://github.com/fullsend-ai/fullsend/pull/7077
+2026-09-07,fullsend,pr,opened,7075,"fix(#827): dismiss stale bot approvals",https://github.com/fullsend-ai/fullsend/pull/7075
+2026-09-07,fullsend,pr,opened,7074,"feat(cli): authenticate mint status against /v1/status with GitHub credentials",https://github.com/fullsend-ai/fullsend/pull/7074
+2026-09-07,fullsend,pr,opened,7073,"fix(#2187): normalize fix instruction line endings",https://github.com/fullsend-ai/fullsend/pull/7073
+2026-09-07,fullsend,pr,opened,7072,"refactor(#4913): github setup reads layered config for install",https://github.com/fullsend-ai/fullsend/pull/7072
+2026-09-07,fullsend,pr,opened,7070,"fix(#7069): add --fullsend-ref flag to github setup command",https://github.com/fullsend-ai/fullsend/pull/7070
+2026-09-07,fullsend,pr,opened,7067,"chore(deps): update renovatebot/github-action action to v46.2.6",https://github.com/fullsend-ai/fullsend/pull/7067
+2026-09-07,fullsend,pr,merged,7077,"ci(#7076): pass --allowed-workflow-files to stage BT mint",https://github.com/fullsend-ai/fullsend/pull/7077
+2026-09-07,fullsend,pr,merged,7070,"fix(#7069): add --fullsend-ref flag to github setup command",https://github.com/fullsend-ai/fullsend/pull/7070
+2026-09-07,fullsend,pr,merged,7056,"ci(#6116): always upload behaviour artifacts",https://github.com/fullsend-ai/fullsend/pull/7056
+2026-09-07,fullsend,pr,merged,7053,"ci(#7034): lock CF worker dependencies",https://github.com/fullsend-ai/fullsend/pull/7053
+2026-09-07,fullsend,pr,merged,6848,"feat(site): serve a custom 404 page for unmatched URLs",https://github.com/fullsend-ai/fullsend/pull/6848
+2026-09-07,fullsend,pr,merged,6434,"ci(#5115): add STAGE CF mint driver for halfsend post-merge BT",https://github.com/fullsend-ai/fullsend/pull/6434
+2026-09-07,fullsend,pr,merged,6370,"feat(#2823): implement named privilege levels under agent roles",https://github.com/fullsend-ai/fullsend/pull/6370
+2026-09-07,fullsend,issue,opened,7084,"CLI: add `fullsend issues link` subcommand for typed issue links",https://github.com/fullsend-ai/fullsend/issues/7084
+2026-09-07,fullsend,issue,opened,7083,"feat: add `fullsend issues create` CLI command",https://github.com/fullsend-ai/fullsend/issues/7083
+2026-09-07,fullsend,issue,opened,7082,"issues get: include issue type and support custom fields in Jira output",https://github.com/fullsend-ai/fullsend/issues/7082
+2026-09-07,fullsend,issue,opened,7081,"CLI: add `fullsend pr get` command to fetch full PR context as JSON",https://github.com/fullsend-ai/fullsend/issues/7081
+2026-09-07,fullsend,issue,opened,7079,"test: internal/cli vendor tests assume an amd64 host (EM_X86_64) and fail on arm64",https://github.com/fullsend-ai/fullsend/issues/7079
+2026-09-07,fullsend,issue,opened,7078,"test: CheckoutBranchRealShellPrefersBranchOverSameNamedTag fails when tag.gpgsign is enabled",https://github.com/fullsend-ai/fullsend/issues/7078
+2026-09-07,fullsend,issue,opened,7076,"fix(e2e): allow all workflow files in the stage BT mint",https://github.com/fullsend-ai/fullsend/issues/7076
+2026-09-07,fullsend,issue,opened,7071,"Docs multi-version build should keep only the latest patch per minor",https://github.com/fullsend-ai/fullsend/issues/7071
+2026-09-07,fullsend,issue,opened,7069,"STAGE behaviour tests fail because github setup rejects --fullsend-ref",https://github.com/fullsend-ai/fullsend/issues/7069
+2026-09-07,fullsend,issue,opened,7068,"Review agent should verify blocking issue state before raising premature-issue-closure findings",https://github.com/fullsend-ai/fullsend/issues/7068
+2026-09-07,fullsend,issue,closed,7081,"CLI: add `fullsend pr get` command to fetch full PR context as JSON",https://github.com/fullsend-ai/fullsend/issues/7081
+2026-09-07,fullsend,issue,closed,7076,"fix(e2e): allow all workflow files in the stage BT mint",https://github.com/fullsend-ai/fullsend/issues/7076
+2026-09-07,fullsend,issue,closed,7069,"STAGE behaviour tests fail because github setup rejects --fullsend-ref",https://github.com/fullsend-ai/fullsend/issues/7069
+2026-09-07,fullsend,issue,closed,7034,"mint-cf-worker-test is red on main: npm install fails with ""Cannot read properties of null (reading 'edgesOut')""",https://github.com/fullsend-ai/fullsend/issues/7034
+2026-09-07,fullsend,issue,closed,6900,"Unknown site URLs return 200 with the landing page instead of 404",https://github.com/fullsend-ai/fullsend/issues/6900
+2026-09-07,fullsend,issue,closed,6304,"refactor(mintcore): resolve platform strategies at deploy build time",https://github.com/fullsend-ai/fullsend/issues/6304
+2026-09-07,fullsend,issue,closed,6209,"Plan per-repo install migration for Konflux repository",https://github.com/fullsend-ai/fullsend/issues/6209
+2026-09-07,fullsend,issue,closed,6116,"test(behaviour): post-run collection path and bulk agent artifact capture",https://github.com/fullsend-ai/fullsend/issues/6116
+2026-09-07,fullsend,issue,closed,5883,"cli: configure Cloudflare Access status auth via mint deploy and mint configure-auth",https://github.com/fullsend-ai/fullsend/issues/5883
+2026-09-07,fullsend,issue,closed,5882,"cli: configure GitHub status auth via mint deploy and mint configure-auth",https://github.com/fullsend-ai/fullsend/issues/5882
+2026-09-07,fullsend,issue,closed,5115,"Deploy STAGE public CF mint at stage-mint.fullsend.sh + halfsend post-merge BT",https://github.com/fullsend-ai/fullsend/issues/5115
+2026-09-07,fullsend,issue,closed,2823,"mint: implement named privilege levels under agent roles",https://github.com/fullsend-ai/fullsend/issues/2823
+2026-09-07,fullsend,issue,closed,1963,"Standalone dev mint server (no GCP required)",https://github.com/fullsend-ai/fullsend/issues/1963
+2026-09-07,fullsend,issue,closed,976,"Fix agent fails silently when it cannot produce output within iteration limit",https://github.com/fullsend-ai/fullsend/issues/976
+2026-09-07,fullsend,issue,closed,957,"Add agent failure notifications to the post-run lifecycle",https://github.com/fullsend-ai/fullsend/issues/957
+2026-09-07,fullsend,issue,closed,837,"Failed review agent runs should update the status comment on the PR",https://github.com/fullsend-ai/fullsend/issues/837
+2026-09-07,agents,pr,closed,408,"fix(#407): add API fallback when pre-fetched review body is empty",https://github.com/fullsend-ai/agents/pull/408
+2026-09-07,agents,issue,opened,1202,"Post-code script should attempt partial push when protected-path files block the full push",https://github.com/fullsend-ai/agents/issues/1202
+2026-09-07,agents,issue,opened,1201,"Review agent should classify findings by required mutation scope to avoid wasting fix iteration budget on sandbox-unfixable items",https://github.com/fullsend-ai/agents/issues/1201
+2026-09-07,agents,issue,opened,1200,"Review agent should verify blocking issue state before raising premature-issue-closure findings",https://github.com/fullsend-ai/agents/issues/1200
+2026-09-07,agents,issue,opened,1199,"Review agent re-review should load prior human review comments as context",https://github.com/fullsend-ai/agents/issues/1199
