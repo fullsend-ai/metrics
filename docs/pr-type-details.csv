@@ -1508,3 +1508,26 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-07,fullsend,6848,feat(site): serve a custom 404 page for unmatched URLs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6848
 2026-09-07,fullsend,6434,ci(#5115): add STAGE CF mint driver for halfsend post-merge BT,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6434
 2026-09-07,fullsend,6370,feat(#2823): implement named privilege levels under agent roles,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6370
+2026-09-08,fullsend,7114,docs(#61): analyze SAFE-MCP framework for relevance to fullsend,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7114
+2026-09-08,fullsend,7113,docs(#7112): add config.yaml reference and maintenance rule,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7113
+2026-09-08,fullsend,7111,docs(#59): add vibe-kanban entry to landscape analysis,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7111
+2026-09-08,fullsend,7110,docs(#52): add OpenClaw to landscape analysis,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7110
+2026-09-08,fullsend,7109,docs(#54): add Goosetown to landscape and update Gas City stats,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7109
+2026-09-08,fullsend,7108,docs(#55): add OpenHands entry to landscape analysis,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7108
+2026-09-08,fullsend,7094,docs(#6817): add AgentEntry merge checklist,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7094
+2026-09-08,fullsend,7091,fix(#7089): use standard token resolution in lookupAppID,fix,core,7089,ifireball,https://github.com/fullsend-ai/fullsend/pull/7091
+2026-09-08,fullsend,7086,docs(#6554): document scaffold-sync bot identity and write path,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7086
+2026-09-08,fullsend,7075,fix(#827): dismiss stale bot approvals,fix,core,827,ggallen,https://github.com/fullsend-ai/fullsend/pull/7075
+2026-09-08,fullsend,7073,fix(#2187): normalize fix instruction line endings,fix,bot,2187,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7073
+2026-09-08,fullsend,7067,chore(deps): update renovatebot/github-action action to v46.2.6,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7067
+2026-09-08,fullsend,7060,fix(#7059): preserve provider cancellation errors,fix,external,7059,shairevivo,https://github.com/fullsend-ai/fullsend/pull/7060
+2026-09-08,fullsend,7041,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.263,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7041
+2026-09-08,fullsend,7013,chore(deps): update dependency sheeki03/tirith to v0.4.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7013
+2026-09-08,fullsend,6930,feat(#6214): add keep_history config option for sticky comments,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6930
+2026-09-08,fullsend,6863,docs(#6860): add normative authorization contract,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6863
+2026-09-08,fullsend,6801,fix(#6798): resolve base forge/overlays per-layer before merging into child,fix,core,6798,ggallen,https://github.com/fullsend-ai/fullsend/pull/6801
+2026-09-08,fullsend,6758,docs(#6757): document credential context separation in install pkg,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6758
+2026-09-08,fullsend,6428,fix(#6425): make isTimeoutError self-contained against context errors,fix,bot,6425,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6428
+2026-09-08,fullsend,6130,ci(#6129): add 429 quota retry to GCP IAM provisioning,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6130
+2026-09-08,fullsend,6085,docs(#6084): add install driver checklist to behaviour-drivers.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6085
+2026-09-08,agents,1194,chore(#1193): repin harness images to fullsend 0.42.0 digests,chore,,,,https://github.com/fullsend-ai/agents/pull/1194

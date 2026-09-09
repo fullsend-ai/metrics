@@ -1525,3 +1525,17 @@ date,repo,type,event,number,actor,title,url
 2026-09-07,fullsend,issue,opened_external,7079,yvonnedevlinrh,"test: internal/cli vendor tests assume an amd64 host (EM_X86_64) and fail on arm64",https://github.com/fullsend-ai/fullsend/issues/7079
 2026-09-07,fullsend,issue,opened_external,7078,yvonnedevlinrh,"test: CheckoutBranchRealShellPrefersBranchOverSameNamedTag fails when tag.gpgsign is enabled",https://github.com/fullsend-ai/fullsend/issues/7078
 2026-09-07,fullsend,pr,opened_core,7080,ifireball,"docs(#6407): adopt deterministic entity context staging",https://github.com/fullsend-ai/fullsend/pull/7080
+2026-09-08,fullsend,issue,closed_via_pr_external,7059,shairevivo,"sandbox: EnsureProvider cancellation test depends on process startup timing",https://github.com/fullsend-ai/fullsend/issues/7059
+2026-09-08,fullsend,issue,closed_other_external,299,waveywaves,"CI enforcement for CLAUDE.md size limits and context file governance",https://github.com/fullsend-ai/fullsend/issues/299
+2026-09-08,fullsend,issue,closed_other_external,296,waveywaves,"Evaluate Langfuse deployment threshold vs structured logging",https://github.com/fullsend-ai/fullsend/issues/296
+2026-09-08,fullsend,issue,closed_other_external,295,waveywaves,"Define quality metrics for autonomous software factory",https://github.com/fullsend-ai/fullsend/issues/295
+2026-09-08,fullsend,issue,closed_other_external,258,clubanderson,"Your framework is cited in the AI Codebase Maturity Model dashboard",https://github.com/fullsend-ai/fullsend/issues/258
+2026-09-08,fullsend,issue,closed_other_external,249,clubanderson,"KubeStellar Console's ACMM dashboard detects Fullsend readiness patterns in any repo",https://github.com/fullsend-ai/fullsend/issues/249
+2026-09-08,fullsend,pr,opened_core,7116,waynesun09,"chore(config): route agents across runtimes and models",https://github.com/fullsend-ai/fullsend/pull/7116
+2026-09-08,fullsend,pr,opened_core,7096,rh-hemartin,"chore(docs): keep latest patch per minor in multi-version builds",https://github.com/fullsend-ai/fullsend/pull/7096
+2026-09-08,fullsend,pr,reviewed_external,7132,flyovers-bot,"fix(#7127): accept nested GitLab group paths in repos install",https://github.com/fullsend-ai/fullsend/pull/7132
+2026-09-08,fullsend,pr,reviewed_external,7087,flyovers-bot,"feat(#6684): add --gitlab-url flag to repos install",https://github.com/fullsend-ai/fullsend/pull/7087
+2026-09-08,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-08,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-08,agents,pr,opened_core,1211,waynesun09,"fix(pr-review): dispatch sub-agents by persona when the runtime registers them",https://github.com/fullsend-ai/agents/pull/1211
+2026-09-08,agents,pr,opened_core,1209,waynesun09,"chore(config): route agents across runtimes and models",https://github.com/fullsend-ai/agents/pull/1209
