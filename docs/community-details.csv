@@ -1539,3 +1539,19 @@ date,repo,type,event,number,actor,title,url
 2026-09-08,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
 2026-09-08,agents,pr,opened_core,1211,waynesun09,"fix(pr-review): dispatch sub-agents by persona when the runtime registers them",https://github.com/fullsend-ai/agents/pull/1211
 2026-09-08,agents,pr,opened_core,1209,waynesun09,"chore(config): route agents across runtimes and models",https://github.com/fullsend-ai/agents/pull/1209
+2026-09-09,fullsend,issue,opened_external,7164,alice17,"action.yml reconcile step uses agent name instead of harness role for --role",https://github.com/fullsend-ai/fullsend/issues/7164
+2026-09-09,fullsend,issue,closed_other_external,7164,alice17,"action.yml reconcile step uses agent name instead of harness role for --role",https://github.com/fullsend-ai/fullsend/issues/7164
+2026-09-09,fullsend,issue,closed_other_external,842,dhshah13,"Document one-command setup in README Quick Start",https://github.com/fullsend-ai/fullsend/issues/842
+2026-09-09,fullsend,issue,closed_other_external,838,dhshah13,"README: add Installation and Usage sections",https://github.com/fullsend-ai/fullsend/issues/838
+2026-09-09,fullsend,issue,closed_other_external,766,dhshah13,"feat: dispatch-layer dedup and per-issue concurrency guard to prevent duplicate agent runs",https://github.com/fullsend-ai/fullsend/issues/766
+2026-09-09,fullsend,issue,closed_other_external,691,amisstea,"Support approving dependency update PRs to enable renovate auto-merge with merge queues",https://github.com/fullsend-ai/fullsend/issues/691
+2026-09-09,fullsend,issue,closed_other_external,651,deboer-tim,"Review bot non-standard re-review",https://github.com/fullsend-ai/fullsend/issues/651
+2026-09-09,fullsend,issue,closed_other_external,629,kelchen123,"Secret access not updated during enrollment",https://github.com/fullsend-ai/fullsend/issues/629
+2026-09-09,fullsend,issue,closed_other_external,596,kelchen123,"Code agent does not apply agents.md instructions",https://github.com/fullsend-ai/fullsend/issues/596
+2026-09-09,fullsend,pr,opened_core,7168,waynesun09,"chore(config): revert per-agent runtime/model routing (#7116)",https://github.com/fullsend-ai/fullsend/pull/7168
+2026-09-09,fullsend,pr,opened_core,7151,ascerra,"docs(adr): define dedicated auto-merge authority boundary",https://github.com/fullsend-ai/fullsend/pull/7151
+2026-09-09,fullsend,pr,opened_core,7133,waynesun09,"fix(web): include Codex in landing page runtimes",https://github.com/fullsend-ai/fullsend/pull/7133
+2026-09-09,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-09,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-09,agents,pr,opened_core,1223,waynesun09,"revert: per-agent runtime/model routing (#1209) — fleet project lacks claude-sonnet-5",https://github.com/fullsend-ai/agents/pull/1223
+2026-09-09,agents,pr,opened_core,1219,ascerra,"refactor: remove legacy code auto-merge path",https://github.com/fullsend-ai/agents/pull/1219

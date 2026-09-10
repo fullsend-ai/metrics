@@ -1531,3 +1531,33 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-08,fullsend,6130,ci(#6129): add 429 quota retry to GCP IAM provisioning,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6130
 2026-09-08,fullsend,6085,docs(#6084): add install driver checklist to behaviour-drivers.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6085
 2026-09-08,agents,1194,chore(#1193): repin harness images to fullsend 0.42.0 digests,chore,,,,https://github.com/fullsend-ai/agents/pull/1194
+2026-09-09,fullsend,7193,fix(#7191): raise pi retry above session 3x2s defaults,fix,core,7191,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7193
+2026-09-09,fullsend,7179,docs(#588): document experiments issue filing policy,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7179
+2026-09-09,fullsend,7173,docs(#482): add OpenAI Symphony to landscape analysis,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7173
+2026-09-09,fullsend,7172,feat(#7171): add high-level RunSuite API to behaviourtest,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7172
+2026-09-09,fullsend,7170,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to de00e16,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7170
+2026-09-09,fullsend,7153,docs(#7152): add git clone step to standalone mint guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7153
+2026-09-09,fullsend,7139,ci(#7138): emit workflow commands to stdout for Actions annotations,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7139
+2026-09-09,fullsend,7133,fix(web): include Codex in landing page runtimes,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7133
+2026-09-09,fullsend,7132,fix(#7127): accept nested GitLab group paths in repos install,fix,core,7127,ralphbean,https://github.com/fullsend-ai/fullsend/pull/7132
+2026-09-09,fullsend,7125,fix(#325): wait for app page before opening browser during install,fix,core,325,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7125
+2026-09-09,fullsend,7119,docs(#244): integrate Oxide RFD 576 insights into problem docs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7119
+2026-09-09,fullsend,7117,docs(#233): add PatchPatrol to landscape analysis,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7117
+2026-09-09,fullsend,7116,chore(config): route agents across runtimes and models,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7116
+2026-09-09,fullsend,7100,test(#6117): collect workflow run logs into debug artifacts,test,,,,https://github.com/fullsend-ai/fullsend/pull/7100
+2026-09-09,fullsend,7099,ci(#7097): add retry logic to source-build git clone step,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7099
+2026-09-09,fullsend,7093,docs(#6843): document GitHub Actions context scoping,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7093
+2026-09-09,fullsend,7087,feat(#6684): add --gitlab-url flag to repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7087
+2026-09-09,fullsend,7057,fix(#1957): align optional project number inputs,fix,bot,1957,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7057
+2026-09-09,fullsend,7055,ci(#2618): retry transient issue creation auth failures,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7055
+2026-09-09,fullsend,6947,fix(#1243): close stale onboard PRs for current shims,fix,bot,1243,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6947
+2026-09-09,fullsend,6897,docs: refresh roadmap for September planning,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6897
+2026-09-09,fullsend,6880,docs(#6879): add httptest handler-invocation assertion guideline,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6880
+2026-09-09,fullsend,6470,docs(#6469): expand doc-update trigger to cover adding new features,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6470
+2026-09-09,fullsend,6465,ci(#6462): add retry with backoff to eval setup-fixture.sh,ci,,,,https://github.com/fullsend-ai/fullsend/pull/6465
+2026-09-09,fullsend,6459,feat(#6458): export eval measurement scores via OTLP,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6459
+2026-09-09,fullsend,6454,fix(#6452): propagate org-level allowed_remote_resources to URL resolution,fix,core,6452,ralphbean,https://github.com/fullsend-ai/fullsend/pull/6454
+2026-09-09,agents,1231,fix(#1228): rebase onto remote before fix-agent push,fix,core,1228,ggallen,https://github.com/fullsend-ai/agents/pull/1231
+2026-09-09,agents,1211,fix(pr-review): dispatch sub-agents by persona when the runtime registers them,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1211
+2026-09-09,agents,1209,chore(config): route agents across runtimes and models,chore,,,,https://github.com/fullsend-ai/agents/pull/1209
+2026-09-09,agents,1196,fix(#2093): retry empty PR file list before refusing to approve,fix,unlinked,2093,,https://github.com/fullsend-ai/agents/pull/1196
