@@ -1561,3 +1561,9 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-09,agents,1211,fix(pr-review): dispatch sub-agents by persona when the runtime registers them,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1211
 2026-09-09,agents,1209,chore(config): route agents across runtimes and models,chore,,,,https://github.com/fullsend-ai/agents/pull/1209
 2026-09-09,agents,1196,fix(#2093): retry empty PR file list before refusing to approve,fix,unlinked,2093,,https://github.com/fullsend-ai/agents/pull/1196
+2026-09-10,fullsend,7221,feat(#7220)!: deliver uninstall file removals via PR,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7221
+2026-09-10,fullsend,7211,feat(#7196): add RUNNER_TOKEN mode to GitLab runner VM scripts,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7211
+2026-09-10,fullsend,7167,fix(#7000): resolve role from harness config for status reconciliation,fix,bot,7000,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7167
+2026-09-10,fullsend,6938,fix(#6936): persist token telemetry when agents are cancelled,fix,core,6936,ascerra,https://github.com/fullsend-ai/fullsend/pull/6938
+2026-09-10,fullsend,6383,docs(glossary): customization vocabulary for agents and skills,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6383
+2026-09-10,fullsend,6314,chore(skills): add user forum What's New recap skill,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6314

@@ -1555,3 +1555,14 @@ date,repo,type,event,number,actor,title,url
 2026-09-09,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
 2026-09-09,agents,pr,opened_core,1223,waynesun09,"revert: per-agent runtime/model routing (#1209) — fleet project lacks claude-sonnet-5",https://github.com/fullsend-ai/agents/pull/1223
 2026-09-09,agents,pr,opened_core,1219,ascerra,"refactor: remove legacy code auto-merge path",https://github.com/fullsend-ai/agents/pull/1219
+2026-09-10,fullsend,pr,opened_core,7222,ggallen,"config: raise code agent timeout to 60 minutes",https://github.com/fullsend-ai/fullsend/pull/7222
+2026-09-10,fullsend,pr,opened_core,7215,rh-hemartin,"fix(#7140): map hyphens to underscores in role identifiers",https://github.com/fullsend-ai/fullsend/pull/7215
+2026-09-10,fullsend,pr,opened_core,7208,ascerra,"fix(#6936): send SIGINT into sandbox so cancelled runs report total_cost_usd",https://github.com/fullsend-ai/fullsend/pull/7208
+2026-09-10,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-10,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-10,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-10,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-10,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-10,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-10,agents,issue,opened_external,1255,deboer-tim,"Code agent should fully use conventional commits as required",https://github.com/fullsend-ai/agents/issues/1255
+2026-09-10,agents,pr,opened_core,1244,ifireball,"feat(behaviour): add isolated dev behaviour tests",https://github.com/fullsend-ai/agents/pull/1244

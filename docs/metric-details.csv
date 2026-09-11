@@ -12962,3 +12962,65 @@ date,repo,type,event,number,title,url
 2026-09-09,agents,issue,opened,1214,"Scribe pre-script: supply feature-level context to prevent filing issues for existing functionality",https://github.com/fullsend-ai/agents/issues/1214
 2026-09-09,agents,issue,opened,1213,"Retro agent should not re-propose unchosen review-agent remediation alternatives as new defect issues",https://github.com/fullsend-ai/agents/issues/1213
 2026-09-09,agents,issue,closed,1228,"Fix agent push fails on GitLab MRs (non-fast-forward from reconstructed branch)",https://github.com/fullsend-ai/agents/issues/1228
+2026-09-10,fullsend,pr,opened,7222,"config: raise code agent timeout to 60 minutes",https://github.com/fullsend-ai/fullsend/pull/7222
+2026-09-10,fullsend,pr,opened,7221,"feat(#7220)!: deliver uninstall file removals via PR",https://github.com/fullsend-ai/fullsend/pull/7221
+2026-09-10,fullsend,pr,opened,7216,"chore(deps): update dependency @types/node to v22.20.2",https://github.com/fullsend-ai/fullsend/pull/7216
+2026-09-10,fullsend,pr,opened,7215,"fix(#7140): map hyphens to underscores in role identifiers",https://github.com/fullsend-ai/fullsend/pull/7215
+2026-09-10,fullsend,pr,opened,7213,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-10,fullsend,pr,opened,7212,"docs(#7210): cite agents.md as the AGENTS.md standard",https://github.com/fullsend-ai/fullsend/pull/7212
+2026-09-10,fullsend,pr,opened,7211,"feat(#7196): add RUNNER_TOKEN mode to GitLab runner VM scripts",https://github.com/fullsend-ai/fullsend/pull/7211
+2026-09-10,fullsend,pr,opened,7208,"fix(#6936): send SIGINT into sandbox so cancelled runs report total_cost_usd",https://github.com/fullsend-ai/fullsend/pull/7208
+2026-09-10,fullsend,pr,opened,7207,"fix(#7206): resolve harness paths relative to the harness file",https://github.com/fullsend-ai/fullsend/pull/7207
+2026-09-10,fullsend,pr,opened,7205,"docs(#7185): align documentation update triggers",https://github.com/fullsend-ai/fullsend/pull/7205
+2026-09-10,fullsend,pr,opened,7204,"fix(#7199): nest auto-discovered sidebar pages",https://github.com/fullsend-ai/fullsend/pull/7204
+2026-09-10,fullsend,pr,opened,7200,"refactor(#7090): centralize CLI GitHub client authentication",https://github.com/fullsend-ai/fullsend/pull/7200
+2026-09-10,fullsend,pr,opened,7198,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 60cd050",https://github.com/fullsend-ai/fullsend/pull/7198
+2026-09-10,fullsend,pr,merged,7221,"feat(#7220)!: deliver uninstall file removals via PR",https://github.com/fullsend-ai/fullsend/pull/7221
+2026-09-10,fullsend,pr,merged,7211,"feat(#7196): add RUNNER_TOKEN mode to GitLab runner VM scripts",https://github.com/fullsend-ai/fullsend/pull/7211
+2026-09-10,fullsend,pr,merged,7167,"fix(#7000): resolve role from harness config for status reconciliation",https://github.com/fullsend-ai/fullsend/pull/7167
+2026-09-10,fullsend,pr,merged,6938,"fix(#6936): persist token telemetry when agents are cancelled",https://github.com/fullsend-ai/fullsend/pull/6938
+2026-09-10,fullsend,pr,merged,6383,"docs(glossary): customization vocabulary for agents and skills",https://github.com/fullsend-ai/fullsend/pull/6383
+2026-09-10,fullsend,pr,merged,6314,"chore(skills): add user forum What's New recap skill",https://github.com/fullsend-ai/fullsend/pull/6314
+2026-09-10,fullsend,pr,closed,7222,"config: raise code agent timeout to 60 minutes",https://github.com/fullsend-ai/fullsend/pull/7222
+2026-09-10,fullsend,pr,closed,7207,"fix(#7206): resolve harness paths relative to the harness file",https://github.com/fullsend-ai/fullsend/pull/7207
+2026-09-10,fullsend,pr,closed,5611,"docs(#2821): add ADR 0074 for human-gated permission adjustments",https://github.com/fullsend-ai/fullsend/pull/5611
+2026-09-10,fullsend,issue,opened,7225,"Reusable dispatch workflow should validate CLI version against agents repo minimum",https://github.com/fullsend-ai/fullsend/issues/7225
+2026-09-10,fullsend,issue,opened,7224,"Add forge.Client capability to update an existing PR's title/body, and use it to resolve scaffold branch-reuse collisions",https://github.com/fullsend-ai/fullsend/issues/7224
+2026-09-10,fullsend,issue,opened,7223,"config: support timeout_minutes on per-agent config.yaml entries",https://github.com/fullsend-ai/fullsend/issues/7223
+2026-09-10,fullsend,issue,opened,7220,"repos uninstall should support PR-based file removal",https://github.com/fullsend-ai/fullsend/issues/7220
+2026-09-10,fullsend,issue,opened,7219,"tirith shell-safety check flags heredoc nested inside command substitution as analysis_incomplete/HIGH",https://github.com/fullsend-ai/fullsend/issues/7219
+2026-09-10,fullsend,issue,opened,7218,"Ephemeral per-job OpenShell gateway on GitLab runners (GitHub-parity; supersedes profile/version/sandbox staleness)",https://github.com/fullsend-ai/fullsend/issues/7218
+2026-09-10,fullsend,issue,opened,7217,"Skip fullsend dispatch early when actor is a known bot",https://github.com/fullsend-ai/fullsend/issues/7217
+2026-09-10,fullsend,issue,opened,7214,"Stale-head redispatch fails silently when triggering push comes from GitHub Actions",https://github.com/fullsend-ai/fullsend/issues/7214
+2026-09-10,fullsend,issue,opened,7210,"Fix incorrect AGENTS.md standard citation in customizing-with-agents-md.md (links to agentskills.io instead of agents.md)",https://github.com/fullsend-ai/fullsend/issues/7210
+2026-09-10,fullsend,issue,opened,7209,"docs: add Getting Started on GitLab user guide",https://github.com/fullsend-ai/fullsend/issues/7209
+2026-09-10,fullsend,issue,opened,7206,"Harness-specified files resolve relative to --fullsend-dir, not the harness file",https://github.com/fullsend-ai/fullsend/issues/7206
+2026-09-10,fullsend,issue,opened,7203,"Create PROD mint deploy workflow triggered on STAGE success (pre-prod-mint.fullsend.sh)",https://github.com/fullsend-ai/fullsend/issues/7203
+2026-09-10,fullsend,issue,opened,7202,"Cut over PROD mint deployment to mint.fullsend.sh",https://github.com/fullsend-ai/fullsend/issues/7202
+2026-09-10,fullsend,issue,opened,7201,"Set up GitHub ""prod"" environment with production App PEM secrets",https://github.com/fullsend-ai/fullsend/issues/7201
+2026-09-10,fullsend,issue,opened,7199,"docs: getMarkdownFiles omits nested pages from auto-discovered sidebars",https://github.com/fullsend-ai/fullsend/issues/7199
+2026-09-10,fullsend,issue,opened,7197,"Skip retro dispatch when no agent stages ran on the PR",https://github.com/fullsend-ai/fullsend/issues/7197
+2026-09-10,fullsend,issue,closed,7220,"repos uninstall should support PR-based file removal",https://github.com/fullsend-ai/fullsend/issues/7220
+2026-09-10,fullsend,issue,closed,7196,"Add RUNNER_TOKEN mode to GitLab runner VM scripts",https://github.com/fullsend-ai/fullsend/issues/7196
+2026-09-10,fullsend,issue,closed,7000,"Mint status reconciliation should resolve role from harness config, not agent name",https://github.com/fullsend-ai/fullsend/issues/7000
+2026-09-10,fullsend,issue,closed,6936,"Persist cost and token telemetry when Review agents are cancelled by GitHub Actions",https://github.com/fullsend-ai/fullsend/issues/6936
+2026-09-10,agents,pr,opened,1261,"fix(#1259): raise code agent timeout from 35 to 60 minutes",https://github.com/fullsend-ai/agents/pull/1261
+2026-09-10,agents,pr,opened,1258,"fix(#1256): fail timeout-killed code runs with uncommitted work",https://github.com/fullsend-ai/agents/pull/1258
+2026-09-10,agents,pr,opened,1257,"fix(#1255): honor conventional-commit area scopes",https://github.com/fullsend-ai/agents/pull/1257
+2026-09-10,agents,pr,opened,1251,"feat(#1250): add discretionary ready-to-code promotion",https://github.com/fullsend-ai/agents/pull/1251
+2026-09-10,agents,pr,opened,1248,"fix(#6858): keep code target branches optional",https://github.com/fullsend-ai/agents/pull/1248
+2026-09-10,agents,pr,opened,1247,"docs(review): list the dispatch skips under Triggers and the fullsend-no-review label",https://github.com/fullsend-ai/agents/pull/1247
+2026-09-10,agents,pr,opened,1246,"feat(review): let a risk score of 1 narrow the dispatch behind an opt-in flag",https://github.com/fullsend-ai/agents/pull/1246
+2026-09-10,agents,pr,opened,1245,"feat(risk): compute tier 1 in the script, floor on security paths, degrade instead of drop, keep history",https://github.com/fullsend-ai/agents/pull/1245
+2026-09-10,agents,pr,opened,1244,"feat(behaviour): add isolated dev behaviour tests",https://github.com/fullsend-ai/agents/pull/1244
+2026-09-10,agents,issue,opened,1260,"Review remediation for base:/source: URL fixes should check allowed_remote_resources coverage",https://github.com/fullsend-ai/agents/issues/1260
+2026-09-10,agents,issue,opened,1259,"Raise code agent timeout_minutes: 35 min kills real runs mid-commit",https://github.com/fullsend-ai/agents/issues/1259
+2026-09-10,agents,issue,opened,1256,"Timeout-killed code runs are reported as ""✅ Success / no changes needed"", discarding staged work",https://github.com/fullsend-ai/agents/issues/1256
+2026-09-10,agents,issue,opened,1255,"Code agent should fully use conventional commits as required",https://github.com/fullsend-ai/agents/issues/1255
+2026-09-10,agents,issue,opened,1254,"Review skill/harness does not consume the REVIEW_SPEC_HIERARCHY env var it defines",https://github.com/fullsend-ai/agents/issues/1254
+2026-09-10,agents,issue,opened,1253,"Flagged follow-up actions on other issues are noted in prose but never performed",https://github.com/fullsend-ai/agents/issues/1253
+2026-09-10,agents,issue,opened,1252,"Triage made two confident-but-false claims: a nonexistent vendor config key, and a false code-agent permission limit",https://github.com/fullsend-ai/agents/issues/1252
+2026-09-10,agents,issue,opened,1250,"triage: add discretionary mode for ready-to-code promotion",https://github.com/fullsend-ai/agents/issues/1250
+2026-09-10,agents,issue,opened,1249,"Review agent should understand fullsend config.yaml role vs agent-name semantics",https://github.com/fullsend-ai/agents/issues/1249
+2026-09-10,agents,issue,opened,1243,"pr-review dimension sub-agents lack Bash/execution tools, blocking dynamic verification (and open issue #778's fix)",https://github.com/fullsend-ai/agents/issues/1243
+2026-09-10,agents,issue,closed,605,"triage: add configurable human-approval gate before ready-to-code auto-dispatch",https://github.com/fullsend-ai/agents/issues/605
