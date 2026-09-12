@@ -1567,3 +1567,9 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-10,fullsend,6938,fix(#6936): persist token telemetry when agents are cancelled,fix,core,6936,ascerra,https://github.com/fullsend-ai/fullsend/pull/6938
 2026-09-10,fullsend,6383,docs(glossary): customization vocabulary for agents and skills,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6383
 2026-09-10,fullsend,6314,chore(skills): add user forum What's New recap skill,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6314
+2026-09-11,fullsend,7234,fix(#7231): remint GitHub App token before post-script,fix,core,7231,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7234
+2026-09-11,fullsend,7205,docs(#7185): align documentation update triggers,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7205
+2026-09-11,fullsend,6972,feat(#6966): add `fullsend agent new` to generate a complete custom agent,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6972
+2026-09-11,agents,1261,fix(#1259): raise code agent timeout from 35 to 60 minutes,fix,core,1259,ggallen,https://github.com/fullsend-ai/agents/pull/1261
+2026-09-11,agents,1258,fix(#1256): fail timeout-killed code runs with uncommitted work,fix,core,1256,ggallen,https://github.com/fullsend-ai/agents/pull/1258
+2026-09-11,agents,1094,fix(#552): add DCO sign-off prohibition to fix and code agent definitions,fix,bot,552,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1094

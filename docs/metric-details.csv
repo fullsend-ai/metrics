@@ -13024,3 +13024,50 @@ date,repo,type,event,number,title,url
 2026-09-10,agents,issue,opened,1249,"Review agent should understand fullsend config.yaml role vs agent-name semantics",https://github.com/fullsend-ai/agents/issues/1249
 2026-09-10,agents,issue,opened,1243,"pr-review dimension sub-agents lack Bash/execution tools, blocking dynamic verification (and open issue #778's fix)",https://github.com/fullsend-ai/agents/issues/1243
 2026-09-10,agents,issue,closed,605,"triage: add configurable human-approval gate before ready-to-code auto-dispatch",https://github.com/fullsend-ai/agents/issues/605
+2026-09-11,fullsend,pr,opened,7250,"fix(#7249): repair malformed pi edit tool arguments",https://github.com/fullsend-ai/fullsend/pull/7250
+2026-09-11,fullsend,pr,opened,7248,"docs(#7247): explain why dispatch HMAC signing is GitLab-specific",https://github.com/fullsend-ai/fullsend/pull/7248
+2026-09-11,fullsend,pr,opened,7244,"fix(#7218): ephemeral per-job OpenShell gateway on GitLab runners",https://github.com/fullsend-ai/fullsend/pull/7244
+2026-09-11,fullsend,pr,opened,7243,"fix(#6966): flatten a rejected status before the generated post-script logs it",https://github.com/fullsend-ai/fullsend/pull/7243
+2026-09-11,fullsend,pr,opened,7241,"fix(#7240): detect caller deadlines via ctx.Err() helper",https://github.com/fullsend-ai/fullsend/pull/7241
+2026-09-11,fullsend,pr,opened,7239,"docs(#6966): point the CLI overview and customizing guide at `fullsend agent new`",https://github.com/fullsend-ai/fullsend/pull/7239
+2026-09-11,fullsend,pr,opened,7234,"fix(#7231): remint GitHub App token before post-script",https://github.com/fullsend-ai/fullsend/pull/7234
+2026-09-11,fullsend,pr,opened,7233,"docs(#7229): record OpenShell exec/stop signal contract in ADR 0030",https://github.com/fullsend-ai/fullsend/pull/7233
+2026-09-11,fullsend,pr,opened,7232,"docs(#7230): document computing cost from token telemetry",https://github.com/fullsend-ai/fullsend/pull/7232
+2026-09-11,fullsend,pr,opened,7227,"docs(#6629): document packages without test files",https://github.com/fullsend-ai/fullsend/pull/7227
+2026-09-11,fullsend,pr,opened,7226,"chore(deps): update docker/setup-qemu-action action to v4.3.0",https://github.com/fullsend-ai/fullsend/pull/7226
+2026-09-11,fullsend,pr,merged,7234,"fix(#7231): remint GitHub App token before post-script",https://github.com/fullsend-ai/fullsend/pull/7234
+2026-09-11,fullsend,pr,merged,7205,"docs(#7185): align documentation update triggers",https://github.com/fullsend-ai/fullsend/pull/7205
+2026-09-11,fullsend,pr,merged,6972,"feat(#6966): add `fullsend agent new` to generate a complete custom agent",https://github.com/fullsend-ai/fullsend/pull/6972
+2026-09-11,fullsend,pr,closed,7208,"fix(#6936): send SIGINT into sandbox so cancelled runs report total_cost_usd",https://github.com/fullsend-ai/fullsend/pull/7208
+2026-09-11,fullsend,issue,opened,7249,"pi runtime: malformed edit tool arguments fail validation and inflate run cost",https://github.com/fullsend-ai/fullsend/issues/7249
+2026-09-11,fullsend,issue,opened,7247,"docs: explain why dispatch HMAC signing is GitLab-specific",https://github.com/fullsend-ai/fullsend/issues/7247
+2026-09-11,fullsend,issue,opened,7246,"eval-measure scores trace health but not run health — add a deterministic tool-call defect scorer",https://github.com/fullsend-ai/fullsend/issues/7246
+2026-09-11,fullsend,issue,opened,7245,"bug(telemetry): resolve Pi provider identity from the effective model",https://github.com/fullsend-ai/fullsend/issues/7245
+2026-09-11,fullsend,issue,opened,7242,"Build Site times out at 10 min on every run since 2026-09-11; cold mvb cache never repopulates because the save only happens on a successful main build",https://github.com/fullsend-ai/fullsend/issues/7242
+2026-09-11,fullsend,issue,opened,7240,"Consolidate hand-rolled context.DeadlineExceeded/Canceled detection into one tested helper",https://github.com/fullsend-ai/fullsend/issues/7240
+2026-09-11,fullsend,issue,opened,7238,"Review dispatch can be silently cancelled on the exact commit that merges, leaving no automated review of the final diff",https://github.com/fullsend-ai/fullsend/issues/7238
+2026-09-11,fullsend,issue,opened,7237,"Skip review dispatch when PR diff is unchanged after rebase",https://github.com/fullsend-ai/fullsend/issues/7237
+2026-09-11,fullsend,issue,opened,7236,"Set blocking check status when review is discarded due to stale HEAD",https://github.com/fullsend-ai/fullsend/issues/7236
+2026-09-11,fullsend,issue,opened,7235,"ci: commit-lint misses skip-CI markers in commit messages, and the marker skips commit-lint itself",https://github.com/fullsend-ai/fullsend/issues/7235
+2026-09-11,fullsend,issue,opened,7231,"Code agent's 60-minute budget equals the GitHub App token lifetime; post-script cannot push on full-budget runs",https://github.com/fullsend-ai/fullsend/issues/7231
+2026-09-11,fullsend,issue,opened,7230,"Document how users compute dollar cost from persisted token telemetry",https://github.com/fullsend-ai/fullsend/issues/7230
+2026-09-11,fullsend,issue,opened,7229,"Record OpenShell's sandbox exec/stop signal contract in an ADR so PR #7208's dead end isn't rediscovered",https://github.com/fullsend-ai/fullsend/issues/7229
+2026-09-11,fullsend,issue,opened,7228,"feat: per-agent allow-list of project skills",https://github.com/fullsend-ai/fullsend/issues/7228
+2026-09-11,fullsend,issue,closed,7231,"Code agent's 60-minute budget equals the GitHub App token lifetime; post-script cannot push on full-budget runs",https://github.com/fullsend-ai/fullsend/issues/7231
+2026-09-11,fullsend,issue,closed,7185,"Reconcile documentation.md and AGENTS.md cross-reference table with the broadened doc-update trigger from PR #6470",https://github.com/fullsend-ai/fullsend/issues/7185
+2026-09-11,fullsend,issue,closed,6966,"feat(cli): `fullsend agent new` — generate a complete custom agent from minimal parameters",https://github.com/fullsend-ai/fullsend/issues/6966
+2026-09-11,fullsend,issue,closed,2367,"feat: add fullsend.runtime trace attribute for multi-runtime observability",https://github.com/fullsend-ai/fullsend/issues/2367
+2026-09-11,fullsend,issue,closed,2093,"post-review.sh fails when GitHub API returns 0 changed_files for open PRs",https://github.com/fullsend-ai/fullsend/issues/2093
+2026-09-11,agents,pr,opened,1266,"feat(#698): add completed triage action",https://github.com/fullsend-ai/agents/pull/1266
+2026-09-11,agents,pr,opened,1265,"fix(#1264): add untrusted-tree git-config checklist to security review",https://github.com/fullsend-ai/agents/pull/1265
+2026-09-11,agents,pr,merged,1261,"fix(#1259): raise code agent timeout from 35 to 60 minutes",https://github.com/fullsend-ai/agents/pull/1261
+2026-09-11,agents,pr,merged,1258,"fix(#1256): fail timeout-killed code runs with uncommitted work",https://github.com/fullsend-ai/agents/pull/1258
+2026-09-11,agents,pr,merged,1094,"fix(#552): add DCO sign-off prohibition to fix and code agent definitions",https://github.com/fullsend-ai/agents/pull/1094
+2026-09-11,agents,issue,opened,1268,"Triage harness overlay conditions fail with eval error when `event` object is absent from CEL context",https://github.com/fullsend-ai/agents/issues/1268
+2026-09-11,agents,issue,opened,1267,"pr-review skill re-raises author-deferred findings at full severity every round instead of carrying them forward as acknowledged",https://github.com/fullsend-ai/agents/issues/1267
+2026-09-11,agents,issue,opened,1264,"Give the security review sub-agent a concrete checklist for git commands run against untrusted extracted trees",https://github.com/fullsend-ai/agents/issues/1264
+2026-09-11,agents,issue,opened,1263,"Extract untrusted-tree git-config pinning into a shared helper and apply it to precommit-gate.lib.sh",https://github.com/fullsend-ai/agents/issues/1263
+2026-09-11,agents,issue,opened,1262,"Fail-closed functional-tests gate gives no PR-facing guidance when a maintainer's `/ok-to-test` comment is a no-op",https://github.com/fullsend-ai/agents/issues/1262
+2026-09-11,agents,issue,closed,1259,"Raise code agent timeout_minutes: 35 min kills real runs mid-commit",https://github.com/fullsend-ai/agents/issues/1259
+2026-09-11,agents,issue,closed,1256,"Timeout-killed code runs are reported as ""✅ Success / no changes needed"", discarding staged work",https://github.com/fullsend-ai/agents/issues/1256
+2026-09-11,agents,issue,closed,552,"Fix and code agent definitions should explicitly prohibit git commit -s and Signed-off-by trailers",https://github.com/fullsend-ai/agents/issues/552

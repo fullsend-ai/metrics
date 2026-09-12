@@ -1566,3 +1566,8 @@ date,repo,type,event,number,actor,title,url
 2026-09-10,fullsend,pr,reviewed_external,6909,cgwalters,"docs(adr): serialize agent runs and coalesce subsequent events",https://github.com/fullsend-ai/fullsend/pull/6909
 2026-09-10,agents,issue,opened_external,1255,deboer-tim,"Code agent should fully use conventional commits as required",https://github.com/fullsend-ai/agents/issues/1255
 2026-09-10,agents,pr,opened_core,1244,ifireball,"feat(behaviour): add isolated dev behaviour tests",https://github.com/fullsend-ai/agents/pull/1244
+2026-09-11,fullsend,issue,opened_external,7246,AshwinUgale,"eval-measure scores trace health but not run health — add a deterministic tool-call defect scorer",https://github.com/fullsend-ai/fullsend/issues/7246
+2026-09-11,fullsend,issue,opened_external,7228,lukaskellerstein,"feat: per-agent allow-list of project skills",https://github.com/fullsend-ai/fullsend/issues/7228
+2026-09-11,fullsend,pr,opened_core,7250,waynesun09,"fix(#7249): repair malformed pi edit tool arguments",https://github.com/fullsend-ai/fullsend/pull/7250
+2026-09-11,fullsend,pr,opened_core,7243,waynesun09,"fix(#6966): flatten a rejected status before the generated post-script logs it",https://github.com/fullsend-ai/fullsend/pull/7243
+2026-09-11,fullsend,pr,opened_core,7239,waynesun09,"docs(#6966): point the CLI overview and customizing guide at `fullsend agent new`",https://github.com/fullsend-ai/fullsend/pull/7239
