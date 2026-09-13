@@ -1571,3 +1571,5 @@ date,repo,type,event,number,actor,title,url
 2026-09-11,fullsend,pr,opened_core,7250,waynesun09,"fix(#7249): repair malformed pi edit tool arguments",https://github.com/fullsend-ai/fullsend/pull/7250
 2026-09-11,fullsend,pr,opened_core,7243,waynesun09,"fix(#6966): flatten a rejected status before the generated post-script logs it",https://github.com/fullsend-ai/fullsend/pull/7243
 2026-09-11,fullsend,pr,opened_core,7239,waynesun09,"docs(#6966): point the CLI overview and customizing guide at `fullsend agent new`",https://github.com/fullsend-ai/fullsend/pull/7239
+2026-09-12,fullsend,pr,opened_core,7261,waynesun09,"docs(runtimes): say what to write in tools: on pi",https://github.com/fullsend-ai/fullsend/pull/7261
+2026-09-12,fullsend,pr,opened_core,7251,waynesun09,"docs(adr): route runtime and model per task from a config policy",https://github.com/fullsend-ai/fullsend/pull/7251

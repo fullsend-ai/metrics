@@ -1573,3 +1573,7 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-11,agents,1261,fix(#1259): raise code agent timeout from 35 to 60 minutes,fix,core,1259,ggallen,https://github.com/fullsend-ai/agents/pull/1261
 2026-09-11,agents,1258,fix(#1256): fail timeout-killed code runs with uncommitted work,fix,core,1256,ggallen,https://github.com/fullsend-ai/agents/pull/1258
 2026-09-11,agents,1094,fix(#552): add DCO sign-off prohibition to fix and code agent definitions,fix,bot,552,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1094
+2026-09-12,fullsend,7260,chore(#7258): make gitlab-runner setup.sh idempotency explicit,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7260
+2026-09-12,fullsend,7256,fix(#7254): omit Compute SA on GCP GitLab runner VMs,fix,core,7254,ggallen,https://github.com/fullsend-ai/fullsend/pull/7256
+2026-09-12,fullsend,7244,fix(#7218): ephemeral per-job OpenShell gateway on GitLab runners,fix,core,7218,ggallen,https://github.com/fullsend-ai/fullsend/pull/7244
+2026-09-12,agents,1270,fix(#1269): add LS to style-conventions and docs-currency,fix,core,1269,waynesun09,https://github.com/fullsend-ai/agents/pull/1270

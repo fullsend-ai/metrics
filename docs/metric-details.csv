@@ -13071,3 +13071,30 @@ date,repo,type,event,number,title,url
 2026-09-11,agents,issue,closed,1259,"Raise code agent timeout_minutes: 35 min kills real runs mid-commit",https://github.com/fullsend-ai/agents/issues/1259
 2026-09-11,agents,issue,closed,1256,"Timeout-killed code runs are reported as ""✅ Success / no changes needed"", discarding staged work",https://github.com/fullsend-ai/agents/issues/1256
 2026-09-11,agents,issue,closed,552,"Fix and code agent definitions should explicitly prohibit git commit -s and Signed-off-by trailers",https://github.com/fullsend-ai/agents/issues/552
+2026-09-12,fullsend,pr,opened,7262,"feat(#7257): add drain_runner_vm helper for GitLab runner VMs",https://github.com/fullsend-ai/fullsend/pull/7262
+2026-09-12,fullsend,pr,opened,7261,"docs(runtimes): say what to write in tools: on pi",https://github.com/fullsend-ai/fullsend/pull/7261
+2026-09-12,fullsend,pr,opened,7260,"chore(#7258): make gitlab-runner setup.sh idempotency explicit",https://github.com/fullsend-ai/fullsend/pull/7260
+2026-09-12,fullsend,pr,opened,7256,"fix(#7254): omit Compute SA on GCP GitLab runner VMs",https://github.com/fullsend-ai/fullsend/pull/7256
+2026-09-12,fullsend,pr,opened,7255,"fix(#7245): resolve Pi gen_ai.system from the effective model",https://github.com/fullsend-ai/fullsend/pull/7255
+2026-09-12,fullsend,pr,opened,7253,"docs(#7252): document EXECUTOR_DIR script flattening",https://github.com/fullsend-ai/fullsend/pull/7253
+2026-09-12,fullsend,pr,opened,7251,"docs(adr): route runtime and model per task from a config policy",https://github.com/fullsend-ai/fullsend/pull/7251
+2026-09-12,fullsend,pr,merged,7260,"chore(#7258): make gitlab-runner setup.sh idempotency explicit",https://github.com/fullsend-ai/fullsend/pull/7260
+2026-09-12,fullsend,pr,merged,7256,"fix(#7254): omit Compute SA on GCP GitLab runner VMs",https://github.com/fullsend-ai/fullsend/pull/7256
+2026-09-12,fullsend,pr,merged,7244,"fix(#7218): ephemeral per-job OpenShell gateway on GitLab runners",https://github.com/fullsend-ai/fullsend/pull/7244
+2026-09-12,fullsend,issue,opened,7263,"Sub-agent dispatch consistently hits hardcoded 900s ceiling for xai-vertex/grok-4.6, even on trivial PRs",https://github.com/fullsend-ai/fullsend/issues/7263
+2026-09-12,fullsend,issue,opened,7258,"GitLab runner setup.sh: make idempotency explicit + hygiene tidy-ups",https://github.com/fullsend-ai/fullsend/issues/7258
+2026-09-12,fullsend,issue,opened,7257,"GitLab runner VMs: graceful drain + fleet-aware delete + `--recreate` (drained recreation as the lifecycle path)",https://github.com/fullsend-ai/fullsend/issues/7257
+2026-09-12,fullsend,issue,opened,7254,"GCP GitLab runners: remove unnecessary over-privileged VM service account (metadata SA-token theft)",https://github.com/fullsend-ai/fullsend/issues/7254
+2026-09-12,fullsend,issue,opened,7252,"Document EXECUTOR_DIR script-flattening constraint in hack/gitlab-runner-vm",https://github.com/fullsend-ai/fullsend/issues/7252
+2026-09-12,fullsend,issue,closed,7258,"GitLab runner setup.sh: make idempotency explicit + hygiene tidy-ups",https://github.com/fullsend-ai/fullsend/issues/7258
+2026-09-12,fullsend,issue,closed,7254,"GCP GitLab runners: remove unnecessary over-privileged VM service account (metadata SA-token theft)",https://github.com/fullsend-ai/fullsend/issues/7254
+2026-09-12,fullsend,issue,closed,7218,"Ephemeral per-job OpenShell gateway on GitLab runners (GitHub-parity; supersedes profile/version/sandbox staleness)",https://github.com/fullsend-ai/fullsend/issues/7218
+2026-09-12,agents,pr,opened,1270,"fix(#1269): add LS to style-conventions and docs-currency",https://github.com/fullsend-ai/agents/pull/1270
+2026-09-12,agents,pr,merged,1270,"fix(#1269): add LS to style-conventions and docs-currency",https://github.com/fullsend-ai/agents/pull/1270
+2026-09-12,agents,pr,closed,538,"fix(#537): add remediation consistency rule to correctness sub-agent",https://github.com/fullsend-ai/agents/pull/538
+2026-09-12,agents,pr,closed,523,"feat(scripts): gate triage-triggered code/fix PRs behind write+ approval",https://github.com/fullsend-ai/agents/pull/523
+2026-09-12,agents,pr,closed,441,"feat(#439): scale review detail to change complexity",https://github.com/fullsend-ai/agents/pull/441
+2026-09-12,agents,issue,opened,1272,"Review agent treats a timed-out correctness/security dimension sub-agent as a Low-severity note instead of an unrun safety check",https://github.com/fullsend-ai/agents/issues/1272
+2026-09-12,agents,issue,opened,1271,"Code agent should skip full convention-discovery sweep when the source issue names the exact file(s) and diff",https://github.com/fullsend-ai/agents/issues/1271
+2026-09-12,agents,issue,opened,1269,"pr-review: style-conventions and docs-currency call Glob without a pattern, failing validation on pi",https://github.com/fullsend-ai/agents/issues/1269
+2026-09-12,agents,issue,closed,1269,"pr-review: style-conventions and docs-currency call Glob without a pattern, failing validation on pi",https://github.com/fullsend-ai/agents/issues/1269
