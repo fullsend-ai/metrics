@@ -13098,3 +13098,12 @@ date,repo,type,event,number,title,url
 2026-09-12,agents,issue,opened,1271,"Code agent should skip full convention-discovery sweep when the source issue names the exact file(s) and diff",https://github.com/fullsend-ai/agents/issues/1271
 2026-09-12,agents,issue,opened,1269,"pr-review: style-conventions and docs-currency call Glob without a pattern, failing validation on pi",https://github.com/fullsend-ai/agents/issues/1269
 2026-09-12,agents,issue,closed,1269,"pr-review: style-conventions and docs-currency call Glob without a pattern, failing validation on pi",https://github.com/fullsend-ai/agents/issues/1269
+2026-09-13,fullsend,pr,opened,7267,"docs(#6578): add vendored dependency checklist",https://github.com/fullsend-ai/fullsend/pull/7267
+2026-09-13,fullsend,pr,opened,7266,"fix(#6834): stop layering a policies/ dir the scaffold never ships",https://github.com/fullsend-ai/fullsend/pull/7266
+2026-09-13,fullsend,pr,opened,7265,"fix(#7264): generate a runtime-aware harness from agent new",https://github.com/fullsend-ai/fullsend/pull/7265
+2026-09-13,fullsend,pr,merged,7262,"feat(#7257): add drain_runner_vm helper for GitLab runner VMs",https://github.com/fullsend-ai/fullsend/pull/7262
+2026-09-13,fullsend,issue,opened,7268,"scaffold and agents repo ship duplicate policies/providers/profiles with no drift guard",https://github.com/fullsend-ai/fullsend/issues/7268
+2026-09-13,fullsend,issue,opened,7264,"agent new --runtime codex generates a Claude-on-Vertex harness (no openai provider, model: opus, GCP host_files)",https://github.com/fullsend-ai/fullsend/issues/7264
+2026-09-13,fullsend,issue,closed,7257,"GitLab runner VMs: graceful drain + fleet-aware delete + `--recreate` (drained recreation as the lifecycle path)",https://github.com/fullsend-ai/fullsend/issues/7257
+2026-09-13,fullsend,issue,closed,6830,"Add dry-run validation for custom agent harness configs",https://github.com/fullsend-ai/fullsend/issues/6830
+2026-09-13,agents,issue,opened,1273,"Fix/code agent writes regression-test mocks that assert call-presence instead of reproducing the actual bug precondition",https://github.com/fullsend-ai/agents/issues/1273

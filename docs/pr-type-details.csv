@@ -1577,3 +1577,4 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-12,fullsend,7256,fix(#7254): omit Compute SA on GCP GitLab runner VMs,fix,core,7254,ggallen,https://github.com/fullsend-ai/fullsend/pull/7256
 2026-09-12,fullsend,7244,fix(#7218): ephemeral per-job OpenShell gateway on GitLab runners,fix,core,7218,ggallen,https://github.com/fullsend-ai/fullsend/pull/7244
 2026-09-12,agents,1270,fix(#1269): add LS to style-conventions and docs-currency,fix,core,1269,waynesun09,https://github.com/fullsend-ai/agents/pull/1270
+2026-09-13,fullsend,7262,feat(#7257): add drain_runner_vm helper for GitLab runner VMs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7262
