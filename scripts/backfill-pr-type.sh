@@ -17,6 +17,7 @@ ensure_pr_type_csv
 export PR_TYPE_REPOS="${PR_TYPE_REPOS:-fullsend,agents}"
 
 python3 "${SCRIPT_DIR}/collect-pr-type.py" --from "$START_DATE" --to "$END_DATE" --force
+python3 "${SCRIPT_DIR}/collect-quality.py" --from "$START_DATE" --to "$END_DATE"
 
 row_count=$(tail -n +2 "$PR_TYPE_FILE" | wc -l)
 detail_count=$(tail -n +2 "$PR_TYPE_DETAILS_FILE" | wc -l)

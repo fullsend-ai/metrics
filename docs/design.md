@@ -176,8 +176,9 @@ The dashboard has grown beyond the original single-page overview:
 | Overview | `docs/index.html`, `docs/dashboard.js` | Core SDLC metrics, community, rework, failures |
 | Drill-down | `docs/details.html` | Per-day detail view (linked from overview charts) |
 | Delivered PR types | `docs/delivered-pr-types.html` | Conventional-commit mix + fix-filer attribution |
+| Quality signals | `docs/quality.html`, `docs/quality.js` | Defect-labeled and revert-event rates |
 
-**Navigation:** `index.html` and `delivered-pr-types.html` share a tab header. `details.html` is a drill-down page reached from overview charts, not a peer tab.
+**Navigation:** `index.html`, `delivered-pr-types.html`, and `quality.html` share a tab header. `details.html` is a drill-down page reached from overview charts, not a peer tab.
 
 **Delivered PR Types defaults:** 90-day range and 28-day smoothing (vs. 30d / none on the overview) because delivery-mix trends are noisy at daily granularity.
 
@@ -189,5 +190,19 @@ Tracks merged PR conventional-commit types and fix-filer attribution for `fullse
 - `docs/pr-type-details.csv` — per-PR drill-down
 - `scripts/collect-pr-type.sh` + `scripts/collect-pr-type.py` — daily collection (wired in `collect.yml`)
 - `scripts/backfill-pr-type.sh` — date-range backfill
+
+### Quality Signals collector
+
+The Quality Signals tab derives GitHub-based defect and revert indicators from the
+PR-type datasets and repository metadata:
+
+- `docs/quality.csv` — daily aggregates per tracked repository
+- `scripts/collect-quality.sh` + `scripts/collect-quality.py` — daily collection (wired after PR types in `collect.yml`)
+- `scripts/backfill-pr-type.sh` — rebuilds quality rows after a PR-type backfill
+
+Defect rows require a defect-labeled linked issue. Revert rows recognize both
+standalone and typed Conventional Commit revert subjects, plus Git's standard
+revert marker, while excluding temporary changes reverted inside the same merged
+PR. These are engineering signals rather than deployment-based DORA metrics.
 
 **Python exception:** Most collectors remain shell + `gh` + `jq`. The PR-type collector uses Python because it needs cross-API orchestration (search windows with adaptive splitting on the 1000-result cap, per-issue author caching, qualified issue-reference parsing, and per-(date, repo) idempotent writes). Python is available on Actions runners without extra setup.
