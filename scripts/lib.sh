@@ -79,6 +79,16 @@ append_failure_detail() {
 METRIC_DETAILS_FILE="docs/metric-details.csv"
 METRIC_DETAILS_HEADER="date,repo,type,event,number,title,url"
 
+QUALITY_FILE="docs/quality.csv"
+QUALITY_HEADER="date,repo,merged_prs,fix_prs,defect_prs,revert_prs,revert_commits,defect_rate,revert_rate"
+
+ensure_quality_csv() {
+  mkdir -p docs
+  if [[ ! -f "$QUALITY_FILE" ]]; then
+    echo "$QUALITY_HEADER" > "$QUALITY_FILE"
+  fi
+}
+
 ensure_metric_details_csv() {
   mkdir -p docs
   if [[ ! -f "$METRIC_DETAILS_FILE" ]]; then

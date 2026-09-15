@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quality Signals — fullsend-ai metrics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body class="page-quality">
+  <header class="page-header">
+    <div>
+      <h1>fullsend-ai metrics</h1>
+      <p class="subtitle">Defect-label and Git-revert signals across fullsend + agents</p>
+    </div>
+    <nav class="page-tabs" aria-label="Dashboard sections">
+      <a href="index.html">Overview</a>
+      <a href="delivered-pr-types.html">Delivered PR Types</a>
+      <a href="quality.html" class="active">Quality Signals</a>
+    </nav>
+  </header>
+
+  <div class="controls" id="controls">
+    <button class="range-btn" data-days="30">30d</button>
+    <button class="range-btn active" data-days="90">90d</button>
+    <button class="range-btn" data-days="180">180d</button>
+    <button class="range-btn" data-days="0">All</button>
+    <select id="repo-filter">
+      <option value="__all__">All repos (fullsend + agents)</option>
+      <option value="fullsend">fullsend</option>
+      <option value="agents">agents</option>
+    </select>
+    <span class="controls-sep"></span>
+    <span class="toggle-label">Smoothing:</span>
+    <button class="smooth-btn" data-days="0">None</button>
+    <button class="smooth-btn active" data-days="28">28d avg</button>
+  </div>
+
+  <div class="stat-hero" id="hero"></div>
+
+  <div class="quality-definition card">
+    <strong>Definitions:</strong> Defect rate = <code>fix</code> PRs linked to an issue with a defect label (<code>bug</code>, <code>defect</code>, <code>regression</code>, <code>incident</code>, <code>production-bug</code>, or <code>type: bug</code>) ÷ merged PRs. Revert rate = PRs titled <code>Revert ...</code> or typed subjects such as <code>fix: revert ...</code>, plus Git commits containing <code>This reverts commit</code>; duplicate evidence and temporary changes reverted within the same merged PR are excluded. These are GitHub signals—not DORA Change Failure Rate, which requires production deployment and rollback/hotfix data.
+  </div>
+
+  <div class="chart-section chart-tall">
+    <h2>Quality signals over time</h2>
+    <p class="subtitle">Smoothed daily rates · oldest → newest</p>
+    <div id="chart-quality"></div>
+  </div>
+
+  <div class="quality-breakdown card">
+    <h2>30-day windows</h2>
+    <div class="quality-row"><span></span><strong>Defect rate</strong><strong>Revert rate</strong><strong>Merged</strong></div>
+    <div id="breakdown"></div>
+  </div>
+
+  <div class="tooltip" id="tooltip"></div>
+  <script src="quality.js"></script>
+</body>
+</html>
