@@ -1573,3 +1573,9 @@ date,repo,type,event,number,actor,title,url
 2026-09-11,fullsend,pr,opened_core,7239,waynesun09,"docs(#6966): point the CLI overview and customizing guide at `fullsend agent new`",https://github.com/fullsend-ai/fullsend/pull/7239
 2026-09-12,fullsend,pr,opened_core,7261,waynesun09,"docs(runtimes): say what to write in tools: on pi",https://github.com/fullsend-ai/fullsend/pull/7261
 2026-09-12,fullsend,pr,opened_core,7251,waynesun09,"docs(adr): route runtime and model per task from a config policy",https://github.com/fullsend-ai/fullsend/pull/7251
+2026-09-14,fullsend,pr,opened_core,7291,ggallen,"docs(adr): add ADR 0116 for dummy-playback runtime",https://github.com/fullsend-ai/fullsend/pull/7291
+2026-09-14,fullsend,pr,opened_core,7272,rh-hemartin,"ci(#7242): raise Build Site timeout so the mvb cache can save",https://github.com/fullsend-ai/fullsend/pull/7272
+2026-09-14,fullsend,pr,opened_core,7271,rh-hemartin,"fix(docs): make robots.txt more permissive",https://github.com/fullsend-ai/fullsend/pull/7271
+2026-09-14,fullsend,pr,reviewed_external,6311,mysticgohan1,"fix: gitignore outputs/ so custom-agent artifacts don't land in PR history",https://github.com/fullsend-ai/fullsend/pull/6311
+2026-09-14,metrics,pr,opened_core,14,ascerra,"feat: add quality signals dashboard tab",https://github.com/fullsend-ai/metrics/pull/14
+2026-09-14,agents,issue,opened_external,1279,deboer-tim,"Package registry authentication in OpenShell image",https://github.com/fullsend-ai/agents/issues/1279

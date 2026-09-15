@@ -13107,3 +13107,77 @@ date,repo,type,event,number,title,url
 2026-09-13,fullsend,issue,closed,7257,"GitLab runner VMs: graceful drain + fleet-aware delete + `--recreate` (drained recreation as the lifecycle path)",https://github.com/fullsend-ai/fullsend/issues/7257
 2026-09-13,fullsend,issue,closed,6830,"Add dry-run validation for custom agent harness configs",https://github.com/fullsend-ai/fullsend/issues/6830
 2026-09-13,agents,issue,opened,1273,"Fix/code agent writes regression-test mocks that assert call-presence instead of reproducing the actual bug precondition",https://github.com/fullsend-ai/agents/issues/1273
+2026-09-14,fullsend,pr,opened,7297,"feat(#7295): accept FULLSEND_OPENAI_API_KEY as a repo secret",https://github.com/fullsend-ai/fullsend/pull/7297
+2026-09-14,fullsend,pr,opened,7296,"fix(#7293): route GitLab MR-open review through poller",https://github.com/fullsend-ai/fullsend/pull/7296
+2026-09-14,fullsend,pr,opened,7294,"fix(#7292): dispatch GitLab bot-applied stage labels",https://github.com/fullsend-ai/fullsend/pull/7294
+2026-09-14,fullsend,pr,opened,7291,"docs(adr): add ADR 0116 for dummy-playback runtime",https://github.com/fullsend-ai/fullsend/pull/7291
+2026-09-14,fullsend,pr,opened,7285,"docs(#7283): drop ADR skill line-count hard stops",https://github.com/fullsend-ai/fullsend/pull/7285
+2026-09-14,fullsend,pr,opened,7282,"test(#7278): forward --config from BT install drivers",https://github.com/fullsend-ai/fullsend/pull/7282
+2026-09-14,fullsend,pr,opened,7280,"fix(#7238): require completed review status",https://github.com/fullsend-ai/fullsend/pull/7280
+2026-09-14,fullsend,pr,opened,7277,"docs(#7276): document hyphen mapping for role-prefixed vars",https://github.com/fullsend-ai/fullsend/pull/7277
+2026-09-14,fullsend,pr,opened,7272,"ci(#7242): raise Build Site timeout so the mvb cache can save",https://github.com/fullsend-ai/fullsend/pull/7272
+2026-09-14,fullsend,pr,opened,7271,"fix(docs): make robots.txt more permissive",https://github.com/fullsend-ai/fullsend/pull/7271
+2026-09-14,fullsend,pr,opened,7269,"chore: bump QualityFlow pin to pick up the output-handling fixes",https://github.com/fullsend-ai/fullsend/pull/7269
+2026-09-14,fullsend,pr,merged,7296,"fix(#7293): route GitLab MR-open review through poller",https://github.com/fullsend-ai/fullsend/pull/7296
+2026-09-14,fullsend,pr,merged,7294,"fix(#7292): dispatch GitLab bot-applied stage labels",https://github.com/fullsend-ai/fullsend/pull/7294
+2026-09-14,fullsend,pr,merged,7285,"docs(#7283): drop ADR skill line-count hard stops",https://github.com/fullsend-ai/fullsend/pull/7285
+2026-09-14,fullsend,pr,merged,7271,"fix(docs): make robots.txt more permissive",https://github.com/fullsend-ai/fullsend/pull/7271
+2026-09-14,fullsend,pr,merged,7250,"fix(#7249): repair malformed pi edit tool arguments",https://github.com/fullsend-ai/fullsend/pull/7250
+2026-09-14,fullsend,pr,merged,7215,"fix(#7140): map hyphens to underscores in role identifiers",https://github.com/fullsend-ai/fullsend/pull/7215
+2026-09-14,fullsend,pr,merged,7200,"refactor(#7090): centralize CLI GitHub client authentication",https://github.com/fullsend-ai/fullsend/pull/7200
+2026-09-14,fullsend,pr,closed,6808,"fix(#6806): emit fallback ResultEvent when stream ends without result line",https://github.com/fullsend-ai/fullsend/pull/6808
+2026-09-14,fullsend,issue,opened,7298,"Code/fix agent sandbox can't fetch pre-commit hook repos (HTTP 403), forcing manual per-hook reimplementation every run",https://github.com/fullsend-ai/fullsend/issues/7298
+2026-09-14,fullsend,issue,opened,7295,"Allow the openai provider to run from a repository secret (FULLSEND_OPENAI_API_KEY) when OpenAI WIF is unavailable",https://github.com/fullsend-ai/fullsend/issues/7295
+2026-09-14,fullsend,issue,opened,7293,"gitlab: review agent fails on MR-open pipelines — protected variable not available on MR ref",https://github.com/fullsend-ai/fullsend/issues/7293
+2026-09-14,fullsend,issue,opened,7292,"gitlab: poller filters bot-applied dispatch labels, blocking triage→code handoff",https://github.com/fullsend-ai/fullsend/issues/7292
+2026-09-14,fullsend,issue,opened,7290,"pre-fetch-prior-review.sh: load the current review plus at most N previous runs (default 3), not the whole sticky comment",https://github.com/fullsend-ai/fullsend/issues/7290
+2026-09-14,fullsend,issue,opened,7289,"Review agent: cap sticky-comment history at N previous runs (config, default 3)",https://github.com/fullsend-ai/fullsend/issues/7289
+2026-09-14,fullsend,issue,opened,7288,"Fix eligibility rejection reports as workflow failure instead of clean skip",https://github.com/fullsend-ai/fullsend/issues/7288
+2026-09-14,fullsend,issue,opened,7287,"Increase harness binary download retry backoff to tolerate extended CDN outages",https://github.com/fullsend-ai/fullsend/issues/7287
+2026-09-14,fullsend,issue,opened,7286,"Write ADR for sandbox token forwarding security boundaries (package read provider)",https://github.com/fullsend-ai/fullsend/issues/7286
+2026-09-14,fullsend,issue,opened,7284,"Suppress lifecycle status comments for cancelled/terminated review runs",https://github.com/fullsend-ai/fullsend/issues/7284
+2026-09-14,fullsend,issue,opened,7283,"Relax the ADR writing skill’s 100-line hard limit",https://github.com/fullsend-ai/fullsend/issues/7283
+2026-09-14,fullsend,issue,opened,7281,"Add early-exit filter in fullsend shim for non-actionable label and comment events",https://github.com/fullsend-ai/fullsend/issues/7281
+2026-09-14,fullsend,issue,opened,7279,"Move pkg/e2etest to internal/ to fix go.mod replace leak for external consumers",https://github.com/fullsend-ai/fullsend/issues/7279
+2026-09-14,fullsend,issue,opened,7278,"BT install drivers: support optional --config flag for config base layer presets",https://github.com/fullsend-ai/fullsend/issues/7278
+2026-09-14,fullsend,issue,opened,7276,"docs/runtimes.md still documents the <ROLE>_FULLSEND_MODEL prefix as the plain role name, not the hyphen-mapped identifier",https://github.com/fullsend-ai/fullsend/issues/7276
+2026-09-14,fullsend,issue,opened,7275,"mintcore.RoleIdentifier is not injective: hyphen/underscore role names collide on shared secrets and allow-lists",https://github.com/fullsend-ai/fullsend/issues/7275
+2026-09-14,fullsend,issue,opened,7274,"Add OpenTelemetry instrumentation for mint execution across backends",https://github.com/fullsend-ai/fullsend/issues/7274
+2026-09-14,fullsend,issue,opened,7273,"Documentation version list (`/v/index.html`) for older versions is stale",https://github.com/fullsend-ai/fullsend/issues/7273
+2026-09-14,fullsend,issue,opened,7270,"Convert TestCLIGitHubAuth_NoDirectCredentialReads to AST-based scanning to close enumeration-gap whack-a-mole",https://github.com/fullsend-ai/fullsend/issues/7270
+2026-09-14,fullsend,issue,closed,7293,"gitlab: review agent fails on MR-open pipelines — protected variable not available on MR ref",https://github.com/fullsend-ai/fullsend/issues/7293
+2026-09-14,fullsend,issue,closed,7292,"gitlab: poller filters bot-applied dispatch labels, blocking triage→code handoff",https://github.com/fullsend-ai/fullsend/issues/7292
+2026-09-14,fullsend,issue,closed,7283,"Relax the ADR writing skill’s 100-line hard limit",https://github.com/fullsend-ai/fullsend/issues/7283
+2026-09-14,fullsend,issue,closed,7249,"pi runtime: malformed edit tool arguments fail validation and inflate run cost",https://github.com/fullsend-ai/fullsend/issues/7249
+2026-09-14,fullsend,issue,closed,7140,"Custom harness dispatch fails when role contains a hyphen",https://github.com/fullsend-ai/fullsend/issues/7140
+2026-09-14,fullsend,issue,closed,7090,"CLI GitHub authentication lacks an enforceable internal abstraction",https://github.com/fullsend-ai/fullsend/issues/7090
+2026-09-14,fullsend,issue,closed,6118,"test(behaviour): collect mint logs into debug artifacts",https://github.com/fullsend-ai/fullsend/issues/6118
+2026-09-14,fullsend,issue,closed,5726,"Update robots.txt to enable agent discovery of documentation and examples",https://github.com/fullsend-ai/fullsend/issues/5726
+2026-09-14,metrics,pr,opened,14,"feat: add quality signals dashboard tab",https://github.com/fullsend-ai/metrics/pull/14
+2026-09-14,agents,pr,opened,1288,"refactor(#1287): omit meta-prompt from challenger spawn",https://github.com/fullsend-ai/agents/pull/1288
+2026-09-14,agents,pr,opened,1285,"fix(#1284): guard Jira overlay CEL against missing source",https://github.com/fullsend-ai/agents/pull/1285
+2026-09-14,agents,pr,opened,1282,"fix(#1280): skip challenger when findings are below threshold",https://github.com/fullsend-ai/agents/pull/1282
+2026-09-14,agents,pr,opened,1277,"docs(#1276): use absolute GitHub URLs for source file links",https://github.com/fullsend-ai/agents/pull/1277
+2026-09-14,agents,pr,opened,1274,"chore: bump QualityFlow pin to pick up the output-handling fixes",https://github.com/fullsend-ai/agents/pull/1274
+2026-09-14,agents,pr,merged,1285,"fix(#1284): guard Jira overlay CEL against missing source",https://github.com/fullsend-ai/agents/pull/1285
+2026-09-14,agents,pr,merged,1277,"docs(#1276): use absolute GitHub URLs for source file links",https://github.com/fullsend-ai/agents/pull/1277
+2026-09-14,agents,pr,closed,583,"docs(#581): document review pipeline propagation requirement",https://github.com/fullsend-ai/agents/pull/583
+2026-09-14,agents,pr,closed,578,"fix(#577): disable in-repo git hooks inside sandbox",https://github.com/fullsend-ai/agents/pull/578
+2026-09-14,agents,pr,closed,463,"fix(#462): add no-content-abbreviation directive to pr-review skill",https://github.com/fullsend-ai/agents/pull/463
+2026-09-14,agents,issue,opened,1290,"Generalize the security checklist's log/command-injection rule beyond GitHub Actions workflow commands",https://github.com/fullsend-ai/agents/issues/1290
+2026-09-14,agents,issue,opened,1289,"code-implementation skill should explicitly name test-assertion idiom as a pattern to match from sibling tests",https://github.com/fullsend-ai/agents/issues/1289
+2026-09-14,agents,issue,opened,1287,"chore(review): test a leaner review fleet and prompt set",https://github.com/fullsend-ai/agents/issues/1287
+2026-09-14,agents,issue,opened,1286,"Document and lint the has()-guard convention for optional overlay event fields",https://github.com/fullsend-ai/agents/issues/1286
+2026-09-14,agents,issue,opened,1284,"code harness: overlay CEL eval error ""no such key: source"" on non-Jira runs",https://github.com/fullsend-ai/agents/issues/1284
+2026-09-14,agents,issue,opened,1283,"finding-agent-runs / github recipe skills point at deprecated .fullsend per-stage workflows",https://github.com/fullsend-ai/agents/issues/1283
+2026-09-14,agents,issue,opened,1281,"Review agent should not re-report findings addressed in intervening commits",https://github.com/fullsend-ai/agents/issues/1281
+2026-09-14,agents,issue,opened,1280,"Withhold below-threshold findings from the challenger dispatch unconditionally, not only under the 80k-token prompt-size guard",https://github.com/fullsend-ai/agents/issues/1280
+2026-09-14,agents,issue,opened,1279,"Package registry authentication in OpenShell image",https://github.com/fullsend-ai/agents/issues/1279
+2026-09-14,agents,issue,opened,1278,"Retro agent should suggest architecture-aware fix approaches in filed issues",https://github.com/fullsend-ai/agents/issues/1278
+2026-09-14,agents,issue,opened,1276,"docs: relative links to harness/policies/profiles/scripts 404 on the published docs site",https://github.com/fullsend-ai/agents/issues/1276
+2026-09-14,agents,issue,opened,1275,"Code agent should use web tools to verify external API contracts when uncertain",https://github.com/fullsend-ai/agents/issues/1275
+2026-09-14,agents,issue,closed,1284,"code harness: overlay CEL eval error ""no such key: source"" on non-Jira runs",https://github.com/fullsend-ai/agents/issues/1284
+2026-09-14,agents,issue,closed,1276,"docs: relative links to harness/policies/profiles/scripts 404 on the published docs site",https://github.com/fullsend-ai/agents/issues/1276
+2026-09-14,agents,issue,closed,1268,"Triage harness overlay conditions fail with eval error when `event` object is absent from CEL context",https://github.com/fullsend-ai/agents/issues/1268
+2026-09-14,pi-xai-vertex,pr,opened,11,"docs(#10): note Grok-on-Vertex prompt caching is best-effort",https://github.com/fullsend-ai/pi-xai-vertex/pull/11
+2026-09-14,pi-xai-vertex,issue,opened,10,"docs: prompt caching on Grok-via-Vertex is best-effort and rarely hits above ~100k tokens",https://github.com/fullsend-ai/pi-xai-vertex/issues/10

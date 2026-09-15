@@ -829,3 +829,13 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-09-13,pi-xai-vertex,0,0,0,0,0,0,0,0
 2026-09-13,adoption-analytics,0,0,0,0,0,0,0,0
 2026-09-13,pi-anthropic-vertex,0,0,0,0,0,0,0,0
+2026-09-14,fullsend,11,7,1,19,8,0,3.60,112
+2026-09-14,.fullsend,0,0,0,0,0,0,0,3
+2026-09-14,experiments,0,0,0,0,0,0,0,2
+2026-09-14,metrics,1,0,0,0,0,0,0,3
+2026-09-14,agents,5,2,3,12,3,0,0.90,51
+2026-09-14,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-09-14,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-09-14,pi-xai-vertex,1,0,0,1,0,0,0,1
+2026-09-14,adoption-analytics,0,0,0,0,0,0,0,0
+2026-09-14,pi-anthropic-vertex,0,0,0,0,0,0,0,0

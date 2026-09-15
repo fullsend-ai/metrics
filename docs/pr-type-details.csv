@@ -1578,3 +1578,12 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-12,fullsend,7244,fix(#7218): ephemeral per-job OpenShell gateway on GitLab runners,fix,core,7218,ggallen,https://github.com/fullsend-ai/fullsend/pull/7244
 2026-09-12,agents,1270,fix(#1269): add LS to style-conventions and docs-currency,fix,core,1269,waynesun09,https://github.com/fullsend-ai/agents/pull/1270
 2026-09-13,fullsend,7262,feat(#7257): add drain_runner_vm helper for GitLab runner VMs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7262
+2026-09-14,fullsend,7296,fix(#7293): route GitLab MR-open review through poller,fix,core,7293,ggallen,https://github.com/fullsend-ai/fullsend/pull/7296
+2026-09-14,fullsend,7294,fix(#7292): dispatch GitLab bot-applied stage labels,fix,core,7292,ggallen,https://github.com/fullsend-ai/fullsend/pull/7294
+2026-09-14,fullsend,7285,docs(#7283): drop ADR skill line-count hard stops,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7285
+2026-09-14,fullsend,7271,fix(docs): make robots.txt more permissive,fix,bot,5726,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/7271
+2026-09-14,fullsend,7250,fix(#7249): repair malformed pi edit tool arguments,fix,core,7249,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7250
+2026-09-14,fullsend,7215,fix(#7140): map hyphens to underscores in role identifiers,fix,core,7140,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7215
+2026-09-14,fullsend,7200,refactor(#7090): centralize CLI GitHub client authentication,other,,,,https://github.com/fullsend-ai/fullsend/pull/7200
+2026-09-14,agents,1285,fix(#1284): guard Jira overlay CEL against missing source,fix,core,1284,ggallen,https://github.com/fullsend-ai/agents/pull/1285
+2026-09-14,agents,1277,docs(#1276): use absolute GitHub URLs for source file links,docs,,,,https://github.com/fullsend-ai/agents/pull/1277
