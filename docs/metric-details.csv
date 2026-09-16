@@ -13181,3 +13181,91 @@ date,repo,type,event,number,title,url
 2026-09-14,agents,issue,closed,1268,"Triage harness overlay conditions fail with eval error when `event` object is absent from CEL context",https://github.com/fullsend-ai/agents/issues/1268
 2026-09-14,pi-xai-vertex,pr,opened,11,"docs(#10): note Grok-on-Vertex prompt caching is best-effort",https://github.com/fullsend-ai/pi-xai-vertex/pull/11
 2026-09-14,pi-xai-vertex,issue,opened,10,"docs: prompt caching on Grok-via-Vertex is best-effort and rarely hits above ~100k tokens",https://github.com/fullsend-ai/pi-xai-vertex/issues/10
+2026-09-15,fullsend,pr,opened,7334,"fix(#7298): pre-provision pre-commit hook envs and add golangci-lint to code sandbox",https://github.com/fullsend-ai/fullsend/pull/7334
+2026-09-15,fullsend,pr,opened,7333,"fix(#7322): remove native GitLab MR dispatch path",https://github.com/fullsend-ai/fullsend/pull/7333
+2026-09-15,fullsend,pr,opened,7331,"docs(#7330): document how to check current ladder membership",https://github.com/fullsend-ai/fullsend/pull/7331
+2026-09-15,fullsend,pr,opened,7329,"docs(contributors): document manual ladder approval",https://github.com/fullsend-ai/fullsend/pull/7329
+2026-09-15,fullsend,pr,opened,7327,"fix(#7323): fall back when GitLab blocks self-approval",https://github.com/fullsend-ai/fullsend/pull/7327
+2026-09-15,fullsend,pr,opened,7326,"fix(#7322): add image to GitLab dispatch no-op jobs",https://github.com/fullsend-ai/fullsend/pull/7326
+2026-09-15,fullsend,pr,opened,7317,"fix(#7313): store GitLab poller state in package registry",https://github.com/fullsend-ai/fullsend/pull/7317
+2026-09-15,fullsend,pr,opened,7316,"ci(slack): notify on contributor requests",https://github.com/fullsend-ai/fullsend/pull/7316
+2026-09-15,fullsend,pr,opened,7312,"feat(#7305): persist setup CLI flags in the overlay",https://github.com/fullsend-ai/fullsend/pull/7312
+2026-09-15,fullsend,pr,opened,7311,"docs(#7307): record PR 6935 as runtime-comparison review evidence",https://github.com/fullsend-ai/fullsend/pull/7311
+2026-09-15,fullsend,pr,opened,7308,"fix(#7306): keep mintcore out of behaviourtest's public graph",https://github.com/fullsend-ai/fullsend/pull/7308
+2026-09-15,fullsend,pr,opened,7302,"refactor(#7279)!: move e2etest out of public pkg/",https://github.com/fullsend-ai/fullsend/pull/7302
+2026-09-15,fullsend,pr,opened,7300,"ci(#7299): validate docs anchors with VitePress slugify",https://github.com/fullsend-ai/fullsend/pull/7300
+2026-09-15,fullsend,pr,merged,7327,"fix(#7323): fall back when GitLab blocks self-approval",https://github.com/fullsend-ai/fullsend/pull/7327
+2026-09-15,fullsend,pr,merged,7316,"ci(slack): notify on contributor requests",https://github.com/fullsend-ai/fullsend/pull/7316
+2026-09-15,fullsend,pr,merged,7302,"refactor(#7279)!: move e2etest out of public pkg/",https://github.com/fullsend-ai/fullsend/pull/7302
+2026-09-15,fullsend,pr,merged,7282,"test(#7278): forward --config from BT install drivers",https://github.com/fullsend-ai/fullsend/pull/7282
+2026-09-15,fullsend,pr,merged,7188,"docs(#7183): fix httptest ServeMux 404 attribution",https://github.com/fullsend-ai/fullsend/pull/7188
+2026-09-15,fullsend,pr,merged,6956,"docs(adr): adopt entity-first harness evaluation",https://github.com/fullsend-ai/fullsend/pull/6956
+2026-09-15,fullsend,pr,merged,6935,"fix(#6932): move seenResult flag after successful unmarshal",https://github.com/fullsend-ai/fullsend/pull/6935
+2026-09-15,fullsend,pr,merged,6862,"docs(#6802): add contributor ladder (LADDER.md)",https://github.com/fullsend-ai/fullsend/pull/6862
+2026-09-15,fullsend,pr,closed,7334,"fix(#7298): pre-provision pre-commit hook envs and add golangci-lint to code sandbox",https://github.com/fullsend-ai/fullsend/pull/7334
+2026-09-15,fullsend,issue,opened,7338,"Review provenance chain discards own prior review due to empty expected app client_id",https://github.com/fullsend-ai/fullsend/issues/7338
+2026-09-15,fullsend,issue,opened,7337,"Remove vestigial GitLab `dispatch` CI stage after native MR dispatch removal (#7322)",https://github.com/fullsend-ai/fullsend/issues/7337
+2026-09-15,fullsend,issue,opened,7332,"GitLab: dispatch fix agent after review requests changes",https://github.com/fullsend-ai/fullsend/issues/7332
+2026-09-15,fullsend,issue,opened,7330,"LADDER.md doesn't explain how to see if you currently have membership in one of the groups.",https://github.com/fullsend-ai/fullsend/issues/7330
+2026-09-15,fullsend,issue,opened,7328,"GitLab: post review findings as inline MR discussions",https://github.com/fullsend-ai/fullsend/issues/7328
+2026-09-15,fullsend,issue,opened,7323,"fix(gitlab): review approve fails with 401 due to self-approval constraint",https://github.com/fullsend-ai/fullsend/issues/7323
+2026-09-15,fullsend,issue,opened,7322,"fix(gitlab): remove native MR dispatch path, route all events through poller",https://github.com/fullsend-ai/fullsend/issues/7322
+2026-09-15,fullsend,issue,opened,7320,"fix(runtime): add credential redaction to OpenCode and pi output artifact streams",https://github.com/fullsend-ai/fullsend/issues/7320
+2026-09-15,fullsend,issue,opened,7319,"Agent squash and rebase operations fail frequently, requiring manual intervention",https://github.com/fullsend-ai/fullsend/issues/7319
+2026-09-15,fullsend,issue,opened,7318,"Deprecate `fullsend github setup` command in favor of `repos install` with repos.yaml",https://github.com/fullsend-ai/fullsend/issues/7318
+2026-09-15,fullsend,issue,opened,7315,"Fix race condition producing duplicate review status comments (Terminated + Success)",https://github.com/fullsend-ai/fullsend/issues/7315
+2026-09-15,fullsend,issue,opened,7314,"Add debounce delay to review dispatch for rapid successive pushes",https://github.com/fullsend-ai/fullsend/issues/7314
+2026-09-15,fullsend,issue,opened,7313,"gitlab: reduce bot PAT from Maintainer to Developer by moving poller state out of CI/CD variables",https://github.com/fullsend-ai/fullsend/issues/7313
+2026-09-15,fullsend,issue,opened,7310,"Pre-filter fix dispatch for bot-authored PRs at the routing level",https://github.com/fullsend-ai/fullsend/issues/7310
+2026-09-15,fullsend,issue,opened,7309,"Skip redundant re-review when Dependabot rebase produces no semantic diff change",https://github.com/fullsend-ai/fullsend/issues/7309
+2026-09-15,fullsend,issue,opened,7307,"Capture PR #6935 as runtime-migration evidence in review-autonomy-evidence.md and add a re-evaluation checkpoint for PR #7116",https://github.com/fullsend-ai/fullsend/issues/7307
+2026-09-15,fullsend,issue,opened,7306,"behaviourtest: keep internal/mintcore out of the public dependency graph",https://github.com/fullsend-ai/fullsend/issues/7306
+2026-09-15,fullsend,issue,opened,7305,"feat(install): apply explicit setup CLI values to the top config layer",https://github.com/fullsend-ai/fullsend/issues/7305
+2026-09-15,fullsend,issue,opened,7304,"feat(config): warn when setup flags pin inherited values",https://github.com/fullsend-ai/fullsend/issues/7304
+2026-09-15,fullsend,issue,opened,7303,"refactor(install): route remaining install consumers through layered config",https://github.com/fullsend-ai/fullsend/issues/7303
+2026-09-15,fullsend,issue,opened,7301,"Define universal CLI-to-layered-config precedence and validation",https://github.com/fullsend-ai/fullsend/issues/7301
+2026-09-15,fullsend,issue,opened,7299,"lint-md-links validates in-page anchor fragments against lychee's slug guess, not VitePress's real renderer",https://github.com/fullsend-ai/fullsend/issues/7299
+2026-09-15,fullsend,issue,closed,7323,"fix(gitlab): review approve fails with 401 due to self-approval constraint",https://github.com/fullsend-ai/fullsend/issues/7323
+2026-09-15,fullsend,issue,closed,7279,"Move pkg/e2etest to internal/ to fix go.mod replace leak for external consumers",https://github.com/fullsend-ai/fullsend/issues/7279
+2026-09-15,fullsend,issue,closed,7278,"BT install drivers: support optional --config flag for config base layer presets",https://github.com/fullsend-ai/fullsend/issues/7278
+2026-09-15,fullsend,issue,closed,7183,"Fix imprecise httptest/ServeMux 404 attribution in go-code.md's httptest handler-invocation guideline",https://github.com/fullsend-ai/fullsend/issues/7183
+2026-09-15,fullsend,issue,closed,6932,"Move seenResult flag after successful result event unmarshal",https://github.com/fullsend-ai/fullsend/issues/6932
+2026-09-15,fullsend,issue,closed,6802,"Define a lightweight collaborator addition process",https://github.com/fullsend-ai/fullsend/issues/6802
+2026-09-15,fullsend,issue,closed,4913,"feat(install): github setup reads layered config instead of install flags (ADR 0069)",https://github.com/fullsend-ai/fullsend/issues/4913
+2026-09-15,fullsend,issue,closed,1786,"Store inference config as repo variables instead of secrets to enable status checks and re-run fallback",https://github.com/fullsend-ai/fullsend/issues/1786
+2026-09-15,fullsend,issue,closed,1341,"[feature-squad] /fs-refine slash commands only work for GitHub issues, not Jira",https://github.com/fullsend-ai/fullsend/issues/1341
+2026-09-15,agents,pr,opened,1315,"test(#1312): isolate pointer-regex from length-threshold",https://github.com/fullsend-ai/agents/pull/1315
+2026-09-15,agents,pr,opened,1313,"fix(#1309): let review findings authorize protected-path edits",https://github.com/fullsend-ai/agents/pull/1313
+2026-09-15,agents,pr,opened,1311,"fix(#1307): detect pointer-only review bodies in fix fallback",https://github.com/fullsend-ai/agents/pull/1311
+2026-09-15,agents,pr,opened,1310,"fix(#1309): require human /fs-fix for protected-path edits",https://github.com/fullsend-ai/agents/pull/1310
+2026-09-15,agents,pr,opened,1305,"fix(#1303): stage before running staged-file linters",https://github.com/fullsend-ai/agents/pull/1305
+2026-09-15,agents,pr,opened,1301,"fix(#407): recover review findings from issue comments",https://github.com/fullsend-ai/agents/pull/1301
+2026-09-15,agents,pr,opened,1296,"feat(#565): honor human rebase requests in the fix agent",https://github.com/fullsend-ai/agents/pull/1296
+2026-09-15,agents,pr,opened,1292,"docs(#1291): note conditional challenger skip in review timing",https://github.com/fullsend-ai/agents/pull/1292
+2026-09-15,agents,pr,merged,1311,"fix(#1307): detect pointer-only review bodies in fix fallback",https://github.com/fullsend-ai/agents/pull/1311
+2026-09-15,agents,pr,merged,1301,"fix(#407): recover review findings from issue comments",https://github.com/fullsend-ai/agents/pull/1301
+2026-09-15,agents,pr,merged,1266,"feat(#698): add completed triage action",https://github.com/fullsend-ai/agents/pull/1266
+2026-09-15,agents,pr,merged,1009,"docs(review): skip the challenger when there are no findings",https://github.com/fullsend-ai/agents/pull/1009
+2026-09-15,agents,issue,opened,1314,"Retro-filed issues should commit to one recommended option instead of presenting unranked alternatives",https://github.com/fullsend-ai/agents/issues/1314
+2026-09-15,agents,issue,opened,1312,"Add a fixture that isolates the pointer-regex clause in review-body-fallback-test.sh from the byte-length-threshold clause",https://github.com/fullsend-ai/agents/issues/1312
+2026-09-15,agents,issue,opened,1309,"agents/fix.md gives contradictory rules for when a bot-triggered fix run may edit protected-path files",https://github.com/fullsend-ai/agents/issues/1309
+2026-09-15,agents,issue,opened,1308,"Review agent should flag avoidable failure paths, not just verify their recovery handling, in defensive/fallback code",https://github.com/fullsend-ai/agents/issues/1308
+2026-09-15,agents,issue,opened,1307,"Broaden #407's fallback trigger to detect pointer-only review bodies, not just empty ones",https://github.com/fullsend-ai/agents/issues/1307
+2026-09-15,agents,issue,opened,1306,"Gate #1300 (sandbox network tightening for fix agent) on the entity-context-staging golden path (fullsend#6407 / fullsend#7080)",https://github.com/fullsend-ai/agents/issues/1306
+2026-09-15,agents,issue,opened,1304,"Triage-run label reset should strip stale ready-for-merge/ready-for-review/requires-manual-review from a linked open PR, not just issue-scoped labels",https://github.com/fullsend-ai/agents/issues/1304
+2026-09-15,agents,issue,opened,1303,"code-implementation skill shouldn't enforce lint before staging",https://github.com/fullsend-ai/agents/issues/1303
+2026-09-15,agents,issue,opened,1302,"Code agent edits but doesn't commit any files",https://github.com/fullsend-ai/agents/issues/1302
+2026-09-15,agents,issue,opened,1300,"Sandbox network policy for fix agent permits the exact forge-API call the fix-review skill's step 2a prohibits",https://github.com/fullsend-ai/agents/issues/1300
+2026-09-15,agents,issue,opened,1299,"Cut a release past PR #1094 so tag-pinned consumers get the DCO/Signed-off-by fix",https://github.com/fullsend-ai/agents/issues/1299
+2026-09-15,agents,issue,opened,1298,"Extend trivial/mechanical fast-path work (agents#301) to the code agent, not just review",https://github.com/fullsend-ai/agents/issues/1298
+2026-09-15,agents,issue,opened,1297,"Fix agent's bot-iteration-cap escalation should enumerate outstanding findings and stay visible until resolved or acknowledged",https://github.com/fullsend-ai/agents/issues/1297
+2026-09-15,agents,issue,opened,1295,"Code agent should verify boundary-crossing fixes (e.g. external `go get`) from outside the boundary, not just in-repo tests",https://github.com/fullsend-ai/agents/issues/1295
+2026-09-15,agents,issue,opened,1294,"Review agent should detect non-converging review loops and suppress low-severity new findings",https://github.com/fullsend-ai/agents/issues/1294
+2026-09-15,agents,issue,opened,1293,"Enforce cumulative review-fix iteration cap that persists across human interventions",https://github.com/fullsend-ai/agents/issues/1293
+2026-09-15,agents,issue,opened,1291,"docs/review.md's phase table doesn't reflect the new conditional challenger skip introduced by PR #1009",https://github.com/fullsend-ai/agents/issues/1291
+2026-09-15,agents,issue,closed,1307,"Broaden #407's fallback trigger to detect pointer-only review bodies, not just empty ones",https://github.com/fullsend-ai/agents/issues/1307
+2026-09-15,agents,issue,closed,1302,"Code agent edits but doesn't commit any files",https://github.com/fullsend-ai/agents/issues/1302
+2026-09-15,agents,issue,closed,698,"Triage agent: add `completed` action to close issues as done",https://github.com/fullsend-ai/agents/issues/698
+2026-09-15,agents,issue,closed,407,"Fix-review skill should fetch review findings from GitHub API when pre-fetched review body is empty",https://github.com/fullsend-ai/agents/issues/407
+2026-09-15,pi-xai-vertex,pr,merged,11,"docs(#10): note Grok-on-Vertex prompt caching is not supported",https://github.com/fullsend-ai/pi-xai-vertex/pull/11
+2026-09-15,pi-xai-vertex,issue,closed,10,"docs: prompt caching on Grok-via-Vertex is best-effort and rarely hits above ~100k tokens",https://github.com/fullsend-ai/pi-xai-vertex/issues/10

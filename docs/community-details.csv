@@ -1579,3 +1579,11 @@ date,repo,type,event,number,actor,title,url
 2026-09-14,fullsend,pr,reviewed_external,6311,mysticgohan1,"fix: gitignore outputs/ so custom-agent artifacts don't land in PR history",https://github.com/fullsend-ai/fullsend/pull/6311
 2026-09-14,metrics,pr,opened_core,14,ascerra,"feat: add quality signals dashboard tab",https://github.com/fullsend-ai/metrics/pull/14
 2026-09-14,agents,issue,opened_external,1279,deboer-tim,"Package registry authentication in OpenShell image",https://github.com/fullsend-ai/agents/issues/1279
+2026-09-15,fullsend,issue,opened_external,7332,jasonawant,"GitLab: dispatch fix agent after review requests changes",https://github.com/fullsend-ai/fullsend/issues/7332
+2026-09-15,fullsend,issue,opened_external,7328,jasonawant,"GitLab: post review findings as inline MR discussions",https://github.com/fullsend-ai/fullsend/issues/7328
+2026-09-15,fullsend,issue,opened_external,7320,yvonnedevlinrh,"fix(runtime): add credential redaction to OpenCode and pi output artifact streams",https://github.com/fullsend-ai/fullsend/issues/7320
+2026-09-15,fullsend,pr,opened_core,7329,ralphbean,"docs(contributors): document manual ladder approval",https://github.com/fullsend-ai/fullsend/pull/7329
+2026-09-15,fullsend,pr,opened_core,7316,ralphbean,"ci(slack): notify on contributor requests",https://github.com/fullsend-ai/fullsend/pull/7316
+2026-09-15,agents,issue,opened_external,1303,deboer-tim,"code-implementation skill shouldn't enforce lint before staging",https://github.com/fullsend-ai/agents/issues/1303
+2026-09-15,agents,issue,opened_external,1302,deboer-tim,"Code agent edits but doesn't commit any files",https://github.com/fullsend-ai/agents/issues/1302
+2026-09-15,agents,issue,closed_other_external,1302,deboer-tim,"Code agent edits but doesn't commit any files",https://github.com/fullsend-ai/agents/issues/1302

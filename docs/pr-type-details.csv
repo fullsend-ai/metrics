@@ -1587,3 +1587,15 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-14,fullsend,7200,refactor(#7090): centralize CLI GitHub client authentication,other,,,,https://github.com/fullsend-ai/fullsend/pull/7200
 2026-09-14,agents,1285,fix(#1284): guard Jira overlay CEL against missing source,fix,core,1284,ggallen,https://github.com/fullsend-ai/agents/pull/1285
 2026-09-14,agents,1277,docs(#1276): use absolute GitHub URLs for source file links,docs,,,,https://github.com/fullsend-ai/agents/pull/1277
+2026-09-15,fullsend,7327,fix(#7323): fall back when GitLab blocks self-approval,fix,core,7323,ggallen,https://github.com/fullsend-ai/fullsend/pull/7327
+2026-09-15,fullsend,7316,ci(slack): notify on contributor requests,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7316
+2026-09-15,fullsend,7302,refactor(#7279)!: move e2etest out of public pkg/,other,,,,https://github.com/fullsend-ai/fullsend/pull/7302
+2026-09-15,fullsend,7282,test(#7278): forward --config from BT install drivers,test,,,,https://github.com/fullsend-ai/fullsend/pull/7282
+2026-09-15,fullsend,7188,docs(#7183): fix httptest ServeMux 404 attribution,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7188
+2026-09-15,fullsend,6956,docs(adr): adopt entity-first harness evaluation,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6956
+2026-09-15,fullsend,6935,fix(#6932): move seenResult flag after successful unmarshal,fix,bot,6932,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6935
+2026-09-15,fullsend,6862,docs(#6802): add contributor ladder (LADDER.md),docs,,,,https://github.com/fullsend-ai/fullsend/pull/6862
+2026-09-15,agents,1311,fix(#1307): detect pointer-only review bodies in fix fallback,fix,bot,1307,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1311
+2026-09-15,agents,1301,fix(#407): recover review findings from issue comments,fix,bot,407,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1301
+2026-09-15,agents,1266,feat(#698): add completed triage action,feat,,,,https://github.com/fullsend-ai/agents/pull/1266
+2026-09-15,agents,1009,docs(review): skip the challenger when there are no findings,docs,,,,https://github.com/fullsend-ai/agents/pull/1009
