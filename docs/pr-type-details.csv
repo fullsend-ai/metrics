@@ -1599,3 +1599,19 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-15,agents,1301,fix(#407): recover review findings from issue comments,fix,bot,407,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1301
 2026-09-15,agents,1266,feat(#698): add completed triage action,feat,,,,https://github.com/fullsend-ai/agents/pull/1266
 2026-09-15,agents,1009,docs(review): skip the challenger when there are no findings,docs,,,,https://github.com/fullsend-ai/agents/pull/1009
+2026-09-16,fullsend,7385,fix(#7378): remove migrated repos from per-org config,fix,core,7378,ggallen,https://github.com/fullsend-ai/fullsend/pull/7385
+2026-09-16,fullsend,7383,feat(#7379): seed GitLab poll-state branches at install/converge,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7383
+2026-09-16,fullsend,7374,refactor(#7362): persist poller state on HMAC-signed branches,other,,,,https://github.com/fullsend-ai/fullsend/pull/7374
+2026-09-16,fullsend,7368,refactor(#7361): add force-re-root commit to forge.Client,other,,,,https://github.com/fullsend-ai/fullsend/pull/7368
+2026-09-16,fullsend,7352,fix(#7350): inherit trigger from base harness,fix,core,7350,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7352
+2026-09-16,fullsend,7341,chore(#7337): remove vestigial GitLab dispatch CI stage,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7341
+2026-09-16,fullsend,7333,fix(#7322): remove native GitLab MR dispatch path,fix,core,7322,ggallen,https://github.com/fullsend-ai/fullsend/pull/7333
+2026-09-16,fullsend,7308,fix(#7306): keep mintcore out of behaviourtest's public graph,fix,core,7306,ifireball,https://github.com/fullsend-ai/fullsend/pull/7308
+2026-09-16,fullsend,7255,fix(#7245)!: resolve Pi gen_ai.system from the effective model,fix,core,7245,ascerra,https://github.com/fullsend-ai/fullsend/pull/7255
+2026-09-16,fullsend,7115,docs(#102): add trust cross-references to ADR-0002,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7115
+2026-09-16,fullsend,7098,fix(#7095)!: skip unlisted directory profiles during import,fix,core,7095,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7098
+2026-09-16,fullsend,6909,docs(adr): serialize agent runs and coalesce subsequent events,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6909
+2026-09-16,fullsend,6845,fix(#6844): support wildcard hostnames in SSRF hook egress allowlist,fix,bot,6844,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/6845
+2026-09-16,agents,1315,test(#1312): isolate pointer-regex from length-threshold,test,,,,https://github.com/fullsend-ai/agents/pull/1315
+2026-09-16,agents,1313,fix(#1309): let review findings authorize protected-path edits,fix,bot,1309,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1313
+2026-09-16,agents,1296,feat(#565): honor human rebase requests in the fix agent,feat,,,,https://github.com/fullsend-ai/agents/pull/1296

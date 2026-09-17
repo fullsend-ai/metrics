@@ -1587,3 +1587,14 @@ date,repo,type,event,number,actor,title,url
 2026-09-15,agents,issue,opened_external,1303,deboer-tim,"code-implementation skill shouldn't enforce lint before staging",https://github.com/fullsend-ai/agents/issues/1303
 2026-09-15,agents,issue,opened_external,1302,deboer-tim,"Code agent edits but doesn't commit any files",https://github.com/fullsend-ai/agents/issues/1302
 2026-09-15,agents,issue,closed_other_external,1302,deboer-tim,"Code agent edits but doesn't commit any files",https://github.com/fullsend-ai/agents/issues/1302
+2026-09-16,fullsend,pr,opened_core,7377,waynesun09,"feat(harness)!: steer the running agent by default",https://github.com/fullsend-ai/fullsend/pull/7377
+2026-09-16,fullsend,pr,opened_core,7376,waynesun09,"fix(cli): authenticate the steer receipt with the job token",https://github.com/fullsend-ai/fullsend/pull/7376
+2026-09-16,fullsend,pr,opened_core,7353,rh-hemartin,"chore(role): add a new role `ci-watch`",https://github.com/fullsend-ai/fullsend/pull/7353
+2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-16,agents,issue,closed_via_pr_external,565,deboer-tim,"Fix agent won't rebase / inconsistent behaviour",https://github.com/fullsend-ai/agents/issues/565
