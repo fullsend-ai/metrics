@@ -29,3 +29,17 @@ Core-team roster comes from `docs/community-config.json` (same list as community
 ```
 
 See [docs/design.md](docs/design.md) for the full design spec.
+
+## Quality Signals
+
+The [Quality Signals](https://fullsend-ai.github.io/metrics/quality.html) tab
+reports two GitHub PR-based proxies for `fullsend` and `agents`:
+
+- **Defect-labeled rate:** `fix` PRs linked to an issue with a defect label divided by merged PRs.
+- **Revert event rate:** PRs titled `Revert ...` or typed subjects such as `fix: revert ...`, plus Git commits containing `This reverts commit`; duplicate evidence and temporary changes reverted within the same merged PR are excluded before division by merged PRs.
+
+The defect-labeled rate is an explicit-label proxy; it does not prove
+preventability or distinguish a review-escaped bug from a missed requirement.
+These are leading indicators, not DORA Change Failure Rate. DORA requires
+production deployment and rollback/hotfix evidence. The daily workflow derives
+`docs/quality.csv` from the PR-type datasets and GitHub issue/commit metadata.

@@ -22,6 +22,7 @@
   --type-chore: #8e8e93;
   --type-other: #5c5c5e;
   --radius: 10px;
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 @media (prefers-color-scheme: light) {
@@ -71,6 +72,49 @@ body {
 
 body.page-delivered {
   max-width: 1040px;
+}
+
+body.page-quality {
+  max-width: 1120px;
+}
+
+.quality-definition {
+  margin: 1rem 0;
+  color: var(--fg-light);
+  font-size: 0.85rem;
+}
+
+.quality-definition code {
+  color: var(--fg);
+  font-family: var(--mono);
+}
+
+.quality-breakdown h2 {
+  margin-bottom: 0.75rem;
+}
+
+.quality-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding: 0.7rem 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.quality-row strong:nth-child(2) { color: var(--negative); }
+.quality-row strong:nth-child(3) { color: var(--chart-2); }
+
+.chart-focus {
+  stroke: var(--fg-light);
+  stroke-dasharray: 3 3;
+  opacity: 0.7;
+}
+
+@media (max-width: 680px) {
+  .quality-row { grid-template-columns: 1fr 1fr 1fr; }
+  .quality-row span:last-child { grid-column: 1 / -1; }
 }
 
 /* --- Top page tabs --- */
