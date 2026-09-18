@@ -1615,3 +1615,34 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-16,agents,1315,test(#1312): isolate pointer-regex from length-threshold,test,,,,https://github.com/fullsend-ai/agents/pull/1315
 2026-09-16,agents,1313,fix(#1309): let review findings authorize protected-path edits,fix,bot,1309,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1313
 2026-09-16,agents,1296,feat(#565): honor human rebase requests in the fix agent,feat,,,,https://github.com/fullsend-ai/agents/pull/1296
+2026-09-17,fullsend,7420,fix(#2560): recreate stale scaffold branch on install re-run,fix,core,2560,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7420
+2026-09-17,fullsend,7418,fix(#7417): reuse GitLab init MR on reinstall,fix,core,7417,ggallen,https://github.com/fullsend-ai/fullsend/pull/7418
+2026-09-17,fullsend,7416,fix(#7332): align GitLab review-to-fix marker,fix,external,7332,jasonawant,https://github.com/fullsend-ai/fullsend/pull/7416
+2026-09-17,fullsend,7412,fix(#7409): trust GitLab private CA in poll and agent jobs,fix,core,7409,ggallen,https://github.com/fullsend-ai/fullsend/pull/7412
+2026-09-17,fullsend,7410,docs(#7367): document HMAC poll-state store and fail-closed rules,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7410
+2026-09-17,fullsend,7408,fix(#7405): steer create-vm errors to drain-safe delete,fix,core,7405,ggallen,https://github.com/fullsend-ai/fullsend/pull/7408
+2026-09-17,fullsend,7400,chore(#7381): delete poll-state branches; bot PAT Developer(30),chore,,,,https://github.com/fullsend-ai/fullsend/pull/7400
+2026-09-17,fullsend,7395,chore(#7380): retire GitLab poll-state CI/CD variables,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7395
+2026-09-17,fullsend,7394,feat(#2826): mint per-stage tokens from privilege_levels,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7394
+2026-09-17,fullsend,7386,docs(observability): raise run-health trace scoring as an open question,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7386
+2026-09-17,fullsend,7375,fix(#7371): recover when OpenShell drops providers v2 flag,fix,core,7371,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7375
+2026-09-17,fullsend,7370,fix(#7363): surface pre-script hard-failure messages,fix,bot,7363,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7370
+2026-09-17,fullsend,7351,fix(#7348): fail dispatch when no harness can be loaded,fix,core,7348,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7351
+2026-09-17,fullsend,7342,feat(#7328): post GitLab review findings as inline discussions,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7342
+2026-09-17,fullsend,7312,feat(#7305): persist setup CLI flags in the overlay,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7312
+2026-09-17,fullsend,7272,ci(#7242): raise Build Site timeout so the mvb cache can save,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7272
+2026-09-17,fullsend,7269,chore: bump QualityFlow pin to pick up the output-handling fixes,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7269
+2026-09-17,fullsend,7267,docs(#6578): add vendored dependency checklist,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7267
+2026-09-17,fullsend,7253,docs(#7252): document EXECUTOR_DIR script flattening,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7253
+2026-09-17,fullsend,7227,docs(#6629): document packages without test files,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7227
+2026-09-17,fullsend,7226,chore(deps): update docker/setup-qemu-action action to v4.4.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7226
+2026-09-17,fullsend,7204,fix(#7199): nest auto-discovered sidebar pages,fix,core,7199,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7204
+2026-09-17,fullsend,7124,fix(#326): detect empty repo in enrollment and emit actionable error,fix,core,326,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7124
+2026-09-17,fullsend,7062,fix(deps): update module github.com/yuin/goldmark to v1.8.6,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7062
+2026-09-17,fullsend,7061,fix(#7058): canonicalize symlinks in harness base-path containment check,fix,external,7058,shairevivo,https://github.com/fullsend-ai/fullsend/pull/7061
+2026-09-17,fullsend,7009,"fix(security): mirror credential shapes into the PostToolUse hook, scoped to checkout content",fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7009
+2026-09-17,agents,1335,feat(#1332): honor human squash and redo requests in the fix agent,feat,,,,https://github.com/fullsend-ai/agents/pull/1335
+2026-09-17,agents,1257,fix(#1255): honor conventional-commit area scopes,fix,external,1255,deboer-tim,https://github.com/fullsend-ai/agents/pull/1257
+2026-09-17,agents,1248,fix(#6858): keep code target branches optional,fix,unlinked,6858,,https://github.com/fullsend-ai/agents/pull/1248
+2026-09-17,agents,991,fix(#990): add critical commit-before-exit rule to skill,fix,bot,990,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/991
+2026-09-17,agents,835,docs(#832): prohibit unsubstantiated verification claims in review output,docs,,,,https://github.com/fullsend-ai/agents/pull/835

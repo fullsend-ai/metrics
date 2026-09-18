@@ -13371,3 +13371,134 @@ date,repo,type,event,number,title,url
 2026-09-16,agents,issue,closed,1312,"Add a fixture that isolates the pointer-regex clause in review-body-fallback-test.sh from the byte-length-threshold clause",https://github.com/fullsend-ai/agents/issues/1312
 2026-09-16,agents,issue,closed,1309,"agents/fix.md gives contradictory rules for when a bot-triggered fix run may edit protected-path files",https://github.com/fullsend-ai/agents/issues/1309
 2026-09-16,agents,issue,closed,565,"Fix agent won't rebase / inconsistent behaviour",https://github.com/fullsend-ai/agents/issues/565
+2026-09-17,fullsend,pr,opened,7432,"docs(#7430): expand destructive-op ownership checklist",https://github.com/fullsend-ai/fullsend/pull/7432
+2026-09-17,fullsend,pr,opened,7431,"docs(#7429): document codecov 80% target vs 75% floor",https://github.com/fullsend-ai/fullsend/pull/7431
+2026-09-17,fullsend,pr,opened,7428,"docs(#7427): check in-flight ADRs for decision duplication",https://github.com/fullsend-ai/fullsend/pull/7428
+2026-09-17,fullsend,pr,opened,7426,"docs(#6864): add ADRs 0114-0115 for ephemeral repo lifecycle and pool coordination",https://github.com/fullsend-ai/fullsend/pull/7426
+2026-09-17,fullsend,pr,opened,7423,"fix(#7422): bump Tirith pin from 0.4.1 to 0.4.2",https://github.com/fullsend-ai/fullsend/pull/7423
+2026-09-17,fullsend,pr,opened,7420,"fix(#2560): recreate stale scaffold branch on install re-run",https://github.com/fullsend-ai/fullsend/pull/7420
+2026-09-17,fullsend,pr,opened,7419,"docs(adr): ADR 0107 — capture tool-call results in the run trace",https://github.com/fullsend-ai/fullsend/pull/7419
+2026-09-17,fullsend,pr,opened,7418,"fix(#7417): reuse GitLab init MR on reinstall",https://github.com/fullsend-ai/fullsend/pull/7418
+2026-09-17,fullsend,pr,opened,7416,"fix(#7332): align GitLab review-to-fix marker",https://github.com/fullsend-ai/fullsend/pull/7416
+2026-09-17,fullsend,pr,opened,7412,"fix(#7409): trust GitLab private CA in poll and agent jobs",https://github.com/fullsend-ai/fullsend/pull/7412
+2026-09-17,fullsend,pr,opened,7411,"docs(adr): follow-up automation after an agent run is a user-owned workflow",https://github.com/fullsend-ai/fullsend/pull/7411
+2026-09-17,fullsend,pr,opened,7410,"docs(#7367): document HMAC poll-state store and fail-closed rules",https://github.com/fullsend-ai/fullsend/pull/7410
+2026-09-17,fullsend,pr,opened,7408,"fix(#7405): steer create-vm errors to drain-safe delete",https://github.com/fullsend-ai/fullsend/pull/7408
+2026-09-17,fullsend,pr,opened,7404,"docs(#7402): document silent-fallback error swallowing",https://github.com/fullsend-ai/fullsend/pull/7404
+2026-09-17,fullsend,pr,opened,7403,"fix(#7384): skip automatic review-handoff label dispatch",https://github.com/fullsend-ai/fullsend/pull/7403
+2026-09-17,fullsend,pr,opened,7400,"chore(#7381): delete poll-state branches; bot PAT Developer(30)",https://github.com/fullsend-ai/fullsend/pull/7400
+2026-09-17,fullsend,pr,opened,7398,"test(#6120): delete leased pool repos after each scenario",https://github.com/fullsend-ai/fullsend/pull/7398
+2026-09-17,fullsend,pr,opened,7397,"ci(site): simplify site workflows into a single one",https://github.com/fullsend-ai/fullsend/pull/7397
+2026-09-17,fullsend,pr,opened,7395,"chore(#7380): retire GitLab poll-state CI/CD variables",https://github.com/fullsend-ai/fullsend/pull/7395
+2026-09-17,fullsend,pr,opened,7394,"feat(#2826): mint per-stage tokens from privilege_levels",https://github.com/fullsend-ai/fullsend/pull/7394
+2026-09-17,fullsend,pr,merged,7420,"fix(#2560): recreate stale scaffold branch on install re-run",https://github.com/fullsend-ai/fullsend/pull/7420
+2026-09-17,fullsend,pr,merged,7418,"fix(#7417): reuse GitLab init MR on reinstall",https://github.com/fullsend-ai/fullsend/pull/7418
+2026-09-17,fullsend,pr,merged,7416,"fix(#7332): align GitLab review-to-fix marker",https://github.com/fullsend-ai/fullsend/pull/7416
+2026-09-17,fullsend,pr,merged,7412,"fix(#7409): trust GitLab private CA in poll and agent jobs",https://github.com/fullsend-ai/fullsend/pull/7412
+2026-09-17,fullsend,pr,merged,7410,"docs(#7367): document HMAC poll-state store and fail-closed rules",https://github.com/fullsend-ai/fullsend/pull/7410
+2026-09-17,fullsend,pr,merged,7408,"fix(#7405): steer create-vm errors to drain-safe delete",https://github.com/fullsend-ai/fullsend/pull/7408
+2026-09-17,fullsend,pr,merged,7400,"chore(#7381): delete poll-state branches; bot PAT Developer(30)",https://github.com/fullsend-ai/fullsend/pull/7400
+2026-09-17,fullsend,pr,merged,7395,"chore(#7380): retire GitLab poll-state CI/CD variables",https://github.com/fullsend-ai/fullsend/pull/7395
+2026-09-17,fullsend,pr,merged,7394,"feat(#2826): mint per-stage tokens from privilege_levels",https://github.com/fullsend-ai/fullsend/pull/7394
+2026-09-17,fullsend,pr,merged,7386,"docs(observability): raise run-health trace scoring as an open question",https://github.com/fullsend-ai/fullsend/pull/7386
+2026-09-17,fullsend,pr,merged,7375,"fix(#7371): recover when OpenShell drops providers v2 flag",https://github.com/fullsend-ai/fullsend/pull/7375
+2026-09-17,fullsend,pr,merged,7370,"fix(#7363): surface pre-script hard-failure messages",https://github.com/fullsend-ai/fullsend/pull/7370
+2026-09-17,fullsend,pr,merged,7351,"fix(#7348): fail dispatch when no harness can be loaded",https://github.com/fullsend-ai/fullsend/pull/7351
+2026-09-17,fullsend,pr,merged,7342,"feat(#7328): post GitLab review findings as inline discussions",https://github.com/fullsend-ai/fullsend/pull/7342
+2026-09-17,fullsend,pr,merged,7312,"feat(#7305): persist setup CLI flags in the overlay",https://github.com/fullsend-ai/fullsend/pull/7312
+2026-09-17,fullsend,pr,merged,7272,"ci(#7242): raise Build Site timeout so the mvb cache can save",https://github.com/fullsend-ai/fullsend/pull/7272
+2026-09-17,fullsend,pr,merged,7269,"chore: bump QualityFlow pin to pick up the output-handling fixes",https://github.com/fullsend-ai/fullsend/pull/7269
+2026-09-17,fullsend,pr,merged,7267,"docs(#6578): add vendored dependency checklist",https://github.com/fullsend-ai/fullsend/pull/7267
+2026-09-17,fullsend,pr,merged,7253,"docs(#7252): document EXECUTOR_DIR script flattening",https://github.com/fullsend-ai/fullsend/pull/7253
+2026-09-17,fullsend,pr,merged,7227,"docs(#6629): document packages without test files",https://github.com/fullsend-ai/fullsend/pull/7227
+2026-09-17,fullsend,pr,merged,7226,"chore(deps): update docker/setup-qemu-action action to v4.4.0",https://github.com/fullsend-ai/fullsend/pull/7226
+2026-09-17,fullsend,pr,merged,7204,"fix(#7199): nest auto-discovered sidebar pages",https://github.com/fullsend-ai/fullsend/pull/7204
+2026-09-17,fullsend,pr,merged,7124,"fix(#326): detect empty repo in enrollment and emit actionable error",https://github.com/fullsend-ai/fullsend/pull/7124
+2026-09-17,fullsend,pr,merged,7062,"fix(deps): update module github.com/yuin/goldmark to v1.8.6",https://github.com/fullsend-ai/fullsend/pull/7062
+2026-09-17,fullsend,pr,merged,7061,"fix(#7058): canonicalize symlinks in harness base-path containment check",https://github.com/fullsend-ai/fullsend/pull/7061
+2026-09-17,fullsend,pr,merged,7009,"fix(security): mirror credential shapes into the PostToolUse hook, scoped to checkout content",https://github.com/fullsend-ai/fullsend/pull/7009
+2026-09-17,fullsend,issue,opened,7430,"Expand forge-abstraction.md's destructive-operation checklist: branch writes, cross-repo identity, and silent-skip signaling",https://github.com/fullsend-ai/fullsend/issues/7430
+2026-09-17,fullsend,issue,opened,7429,"Codecov patch-coverage comment and enforced gate use two different thresholds with no cross-reference",https://github.com/fullsend-ai/fullsend/issues/7429
+2026-09-17,fullsend,issue,opened,7427,"writing-adrs skill's pre-flight check only catches ADR number collisions, not topic/decision duplication",https://github.com/fullsend-ai/fullsend/issues/7427
+2026-09-17,fullsend,issue,opened,7424,"GitLab: evaluate bot identity separation for MR approvals and credential lifecycle cost",https://github.com/fullsend-ai/fullsend/issues/7424
+2026-09-17,fullsend,issue,opened,7422,"sandbox: bump Tirith pin 0.4.1 → 0.4.2 (fixes bare bracket-test false positive)",https://github.com/fullsend-ai/fullsend/issues/7422
+2026-09-17,fullsend,issue,opened,7421,"Track the GitLab fullsend-fix human-opt-in parity gap as its own issue instead of only in docs/agents/fix.md",https://github.com/fullsend-ai/fullsend/issues/7421
+2026-09-17,fullsend,issue,opened,7417,"GitLab: repeated install creates incomplete upgrade MR while initialization MR is open",https://github.com/fullsend-ai/fullsend/issues/7417
+2026-09-17,fullsend,issue,opened,7415,"telemetry: prove a larger OTLP attribute size on the backend, then raise the Level 3 content bounds (total first)",https://github.com/fullsend-ai/fullsend/issues/7415
+2026-09-17,fullsend,issue,opened,7414,"telemetry: pi and codex parsers drop tool call ids and results — Level 3 tool I/O and execute_tool spans are Claude-only",https://github.com/fullsend-ai/fullsend/issues/7414
+2026-09-17,fullsend,issue,opened,7413,"Runner-written run summary artifact so chained workflows skip the gate and the full download",https://github.com/fullsend-ai/fullsend/issues/7413
+2026-09-17,fullsend,issue,opened,7409,"GitLab: private-CA instances fail polling and need end-to-end job and sandbox trust",https://github.com/fullsend-ai/fullsend/issues/7409
+2026-09-17,fullsend,issue,opened,7407,"Simplify site build/deployment flow into a single file",https://github.com/fullsend-ai/fullsend/issues/7407
+2026-09-17,fullsend,issue,opened,7406,"docs: add CA injection guidance for GitLab Kubernetes executor on OpenShift",https://github.com/fullsend-ai/fullsend/issues/7406
+2026-09-17,fullsend,issue,opened,7405,"GitLab runner create scripts: fix ""delete it first"" message to steer to drain-safe delete + tidy recreation comment",https://github.com/fullsend-ai/fullsend/issues/7405
+2026-09-17,fullsend,issue,opened,7402,"Codify the silent-fallback error-swallowing anti-pattern in docs/contributing/go-code.md",https://github.com/fullsend-ai/fullsend/issues/7402
+2026-09-17,fullsend,issue,opened,7401,"Support label-based review skip in reusable dispatch",https://github.com/fullsend-ai/fullsend/issues/7401
+2026-09-17,fullsend,issue,opened,7399,"Skip fix agent dispatch for non-coder bot PRs in the routing layer",https://github.com/fullsend-ai/fullsend/issues/7399
+2026-09-17,fullsend,issue,opened,7396,"runner: isolate stage credentials from the parent process environment",https://github.com/fullsend-ai/fullsend/issues/7396
+2026-09-17,fullsend,issue,opened,7393,"Review agent job should exit promptly after pre-review skip",https://github.com/fullsend-ai/fullsend/issues/7393
+2026-09-17,fullsend,issue,opened,7392,"Skip retro dispatch for bot PRs with no agent activity",https://github.com/fullsend-ai/fullsend/issues/7392
+2026-09-17,fullsend,issue,closed,7417,"GitLab: repeated install creates incomplete upgrade MR while initialization MR is open",https://github.com/fullsend-ai/fullsend/issues/7417
+2026-09-17,fullsend,issue,closed,7409,"GitLab: private-CA instances fail polling and need end-to-end job and sandbox trust",https://github.com/fullsend-ai/fullsend/issues/7409
+2026-09-17,fullsend,issue,closed,7405,"GitLab runner create scripts: fix ""delete it first"" message to steer to drain-safe delete + tidy recreation comment",https://github.com/fullsend-ai/fullsend/issues/7405
+2026-09-17,fullsend,issue,closed,7381,"gitlab poller state (3c/3): uninstall branch deletion + bot PAT -> Developer(30)",https://github.com/fullsend-ai/fullsend/issues/7381
+2026-09-17,fullsend,issue,closed,7380,"gitlab poller state (3b/3): retire 7 legacy state vars + orphan-detector handling (migrate-then-delete)",https://github.com/fullsend-ai/fullsend/issues/7380
+2026-09-17,fullsend,issue,closed,7371,"Openshell will remove the providers v2 flag",https://github.com/fullsend-ai/fullsend/issues/7371
+2026-09-17,fullsend,issue,closed,7367,"gitlab poller state (4/4): documentation (ADR 0067, infra-reference, repos.md, architecture, ADR 0028)",https://github.com/fullsend-ai/fullsend/issues/7367
+2026-09-17,fullsend,issue,closed,7366,"gitlab poller state (3/4): install/uninstall branch lifecycle, legacy-var migration + orphan handling, bot PAT -> Developer(30)",https://github.com/fullsend-ai/fullsend/issues/7366
+2026-09-17,fullsend,issue,closed,7363,"Pre-script hard-failure messages (e.g. bot fix-iteration cap) are swallowed before reaching the PR status comment",https://github.com/fullsend-ai/fullsend/issues/7363
+2026-09-17,fullsend,issue,closed,7348,"`fullsend dispatch` prints an error but it does not fail",https://github.com/fullsend-ai/fullsend/issues/7348
+2026-09-17,fullsend,issue,closed,7343,"gitlab: reduce bot PAT from Maintainer to Developer via branch-backed poller state",https://github.com/fullsend-ai/fullsend/issues/7343
+2026-09-17,fullsend,issue,closed,7332,"GitLab: dispatch fix agent after review requests changes",https://github.com/fullsend-ai/fullsend/issues/7332
+2026-09-17,fullsend,issue,closed,7328,"GitLab: post review findings as inline MR discussions",https://github.com/fullsend-ai/fullsend/issues/7328
+2026-09-17,fullsend,issue,closed,7305,"feat(install): apply explicit setup CLI values to the top config layer",https://github.com/fullsend-ai/fullsend/issues/7305
+2026-09-17,fullsend,issue,closed,7252,"Document EXECUTOR_DIR script-flattening constraint in hack/gitlab-runner-vm",https://github.com/fullsend-ai/fullsend/issues/7252
+2026-09-17,fullsend,issue,closed,7242,"Build Site times out at 10 min on every run since 2026-09-11; cold mvb cache never repopulates because the save only happens on a successful main build",https://github.com/fullsend-ai/fullsend/issues/7242
+2026-09-17,fullsend,issue,closed,7199,"docs: getMarkdownFiles omits nested pages from auto-discovered sidebars",https://github.com/fullsend-ai/fullsend/issues/7199
+2026-09-17,fullsend,issue,closed,7058,"harnessdispatch: base-composition test repeats macOS TempDir alias failure from #2962",https://github.com/fullsend-ai/fullsend/issues/7058
+2026-09-17,fullsend,issue,closed,6629,"Update go-code.md coverage procedure to mention zero-test-file packages",https://github.com/fullsend-ai/fullsend/issues/6629
+2026-09-17,fullsend,issue,closed,6578,"Add vendored-dependency sandbox-compatibility checklist to runtime implementation guide",https://github.com/fullsend-ai/fullsend/issues/6578
+2026-09-17,fullsend,issue,closed,2826,"harness: separate permission profiles per run phase",https://github.com/fullsend-ai/fullsend/issues/2826
+2026-09-17,fullsend,issue,closed,2667,"Review agent should poll CI status before finalizing review (fuse timer)",https://github.com/fullsend-ai/fullsend/issues/2667
+2026-09-17,fullsend,issue,closed,2560,"fix: delete stale scaffold branch before re-creating on install re-run",https://github.com/fullsend-ai/fullsend/issues/2560
+2026-09-17,fullsend,issue,closed,369,"Review agent should check CI status before approving PRs",https://github.com/fullsend-ai/fullsend/issues/369
+2026-09-17,fullsend,issue,closed,326,"Enrollment fails with cryptic error when target repo is empty",https://github.com/fullsend-ai/fullsend/issues/326
+2026-09-17,agents,pr,opened,1358,"docs(#1356): quote CC spec in scope classification",https://github.com/fullsend-ai/agents/pull/1358
+2026-09-17,agents,pr,opened,1355,"fix(#850): protect .gitignore from auto-approval",https://github.com/fullsend-ai/agents/pull/1355
+2026-09-17,agents,pr,opened,1345,"fix(#1343): retry post-code git push on transient 5xx",https://github.com/fullsend-ai/agents/pull/1345
+2026-09-17,agents,pr,opened,1342,"feat(#1341): check existing practice before proposing governance rules",https://github.com/fullsend-ai/agents/pull/1342
+2026-09-17,agents,pr,opened,1335,"feat(#1332): honor human squash and redo requests in the fix agent",https://github.com/fullsend-ai/agents/pull/1335
+2026-09-17,agents,pr,opened,1334,"feat(#1333): inspect project CI during fix-agent context gathering",https://github.com/fullsend-ai/agents/pull/1334
+2026-09-17,agents,pr,merged,1335,"feat(#1332): honor human squash and redo requests in the fix agent",https://github.com/fullsend-ai/agents/pull/1335
+2026-09-17,agents,pr,merged,1257,"fix(#1255): honor conventional-commit area scopes",https://github.com/fullsend-ai/agents/pull/1257
+2026-09-17,agents,pr,merged,1248,"fix(#6858): keep code target branches optional",https://github.com/fullsend-ai/agents/pull/1248
+2026-09-17,agents,pr,merged,991,"fix(#990): add critical commit-before-exit rule to skill",https://github.com/fullsend-ai/agents/pull/991
+2026-09-17,agents,pr,merged,835,"docs(#832): prohibit unsubstantiated verification claims in review output",https://github.com/fullsend-ai/agents/pull/835
+2026-09-17,agents,issue,opened,1357,"Baseline-ceiling regeneration should check against unmodified-main's measurement before accepting a bump",https://github.com/fullsend-ai/agents/issues/1357
+2026-09-17,agents,issue,opened,1356,"Embed literal Conventional Commits spec text in code-implementation skill's area-scope classification step",https://github.com/fullsend-ai/agents/issues/1356
+2026-09-17,agents,issue,opened,1354,"docs-currency sub-agent (and orchestrator's ad hoc doc checks) can't detect same-identifier, changed-semantics doc staleness",https://github.com/fullsend-ai/agents/issues/1354
+2026-09-17,agents,issue,opened,1353,"Sticky re-review comments should surface the specific facts re-verified, not just ""unchanged""",https://github.com/fullsend-ai/agents/issues/1353
+2026-09-17,agents,issue,opened,1352,"risk-assessment test_file_ratio heuristic misclassifies test-helper library files (e.g. lib_test.sh)",https://github.com/fullsend-ai/agents/issues/1352
+2026-09-17,agents,issue,opened,1351,"Skill snippets use shell idioms Tirith blocks (bracket tests + nested arithmetic), forcing mid-run rewrites",https://github.com/fullsend-ai/agents/issues/1351
+2026-09-17,agents,issue,opened,1350,"Stale bot should exempt PRs with requires-manual-review label",https://github.com/fullsend-ai/agents/issues/1350
+2026-09-17,agents,issue,opened,1349,"Risk-assessment PR comment discards structured churn/fix-revert signals, making claims unverifiable",https://github.com/fullsend-ai/agents/issues/1349
+2026-09-17,agents,issue,opened,1348,"Human fix-iteration-cap message in pre-fix.sh should distinguish a hard cap-stop from a generic pre-script failure",https://github.com/fullsend-ai/agents/issues/1348
+2026-09-17,agents,issue,opened,1347,"Fix agent should update corresponding docs/specs in the same commit when it expands fix scope to an analogous code path",https://github.com/fullsend-ai/agents/issues/1347
+2026-09-17,agents,issue,opened,1346,"Code agent should cross-check adjacent code for existing security patterns before adding new output-surfacing paths",https://github.com/fullsend-ai/agents/issues/1346
+2026-09-17,agents,issue,opened,1344,"Triage post-script should not promote /fs-code when code agent is not configured",https://github.com/fullsend-ai/agents/issues/1344
+2026-09-17,agents,issue,opened,1343,"post-code.sh git push step gives up after one immediate retry on transient GitHub 5xx errors",https://github.com/fullsend-ai/agents/issues/1343
+2026-09-17,agents,issue,opened,1341,"Retro agent should validate proposed governance rules against existing codebase patterns",https://github.com/fullsend-ai/agents/issues/1341
+2026-09-17,agents,issue,opened,1340,"Surface the actual pre-script failure reason in fix-agent PR status comments instead of a generic exit status",https://github.com/fullsend-ai/agents/issues/1340
+2026-09-17,agents,issue,opened,1339,"Add a regression test matrix for the fix agent's commit-preservation safety check (fix-ops.lib.sh)",https://github.com/fullsend-ai/agents/issues/1339
+2026-09-17,agents,issue,opened,1338,"Code agent should match command-flag conventions within the file being edited",https://github.com/fullsend-ai/agents/issues/1338
+2026-09-17,agents,issue,opened,1337,"Review/code agents don't require a tracking issue or removal condition for literal-error-text compatibility shims",https://github.com/fullsend-ai/agents/issues/1337
+2026-09-17,agents,issue,opened,1336,"Code-implementation skill should check for documented filesystem hazards (e.g. symlinks) before writing recursive directory-walk code",https://github.com/fullsend-ai/agents/issues/1336
+2026-09-17,agents,issue,opened,1333,"Fix agent should inspect repository CI jobs while gathering PR context",https://github.com/fullsend-ai/agents/issues/1333
+2026-09-17,agents,issue,closed,1351,"Skill snippets use shell idioms Tirith blocks (bracket tests + nested arithmetic), forcing mid-run rewrites",https://github.com/fullsend-ai/agents/issues/1351
+2026-09-17,agents,issue,closed,1344,"Triage post-script should not promote /fs-code when code agent is not configured",https://github.com/fullsend-ai/agents/issues/1344
+2026-09-17,agents,issue,closed,1329,"Fix agent's disagreement output should surface existing tracking issues for declined capability requests",https://github.com/fullsend-ai/agents/issues/1329
+2026-09-17,agents,issue,closed,1255,"Code agent should fully use conventional commits as required",https://github.com/fullsend-ai/agents/issues/1255
+2026-09-17,agents,issue,closed,990,"Code-implementation skill should add a critical commit-before-exit rule",https://github.com/fullsend-ai/agents/issues/990
+2026-09-17,agents,issue,closed,844,"AGENTS.md should include altitude guidance for skill documentation",https://github.com/fullsend-ai/agents/issues/844
+2026-09-17,agents,issue,closed,833,"Review agent should check PR CI status before finalizing verdict",https://github.com/fullsend-ai/agents/issues/833
+2026-09-17,agents,issue,closed,832,"Review agent should not produce unsubstantiated verification claims",https://github.com/fullsend-ai/agents/issues/832
+2026-09-17,agents,issue,closed,1332,"Fix agent should rewrite commits when a human explicitly requests redo or squash",https://github.com/fullsend-ai/agents/issues/1332

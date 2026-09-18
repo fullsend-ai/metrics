@@ -1598,3 +1598,12 @@ date,repo,type,event,number,actor,title,url
 2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
 2026-09-16,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
 2026-09-16,agents,issue,closed_via_pr_external,565,deboer-tim,"Fix agent won't rebase / inconsistent behaviour",https://github.com/fullsend-ai/agents/issues/565
+2026-09-17,fullsend,issue,opened_external,7415,dhshah13,"telemetry: prove a larger OTLP attribute size on the backend, then raise the Level 3 content bounds (total first)",https://github.com/fullsend-ai/fullsend/issues/7415
+2026-09-17,fullsend,issue,opened_external,7414,dhshah13,"telemetry: pi and codex parsers drop tool call ids and results — Level 3 tool I/O and execute_tool spans are Claude-only",https://github.com/fullsend-ai/fullsend/issues/7414
+2026-09-17,fullsend,issue,closed_via_pr_external,7332,jasonawant,"GitLab: dispatch fix agent after review requests changes",https://github.com/fullsend-ai/fullsend/issues/7332
+2026-09-17,fullsend,issue,closed_via_pr_external,7328,jasonawant,"GitLab: post review findings as inline MR discussions",https://github.com/fullsend-ai/fullsend/issues/7328
+2026-09-17,fullsend,issue,closed_via_pr_external,7058,shairevivo,"harnessdispatch: base-composition test repeats macOS TempDir alias failure from #2962",https://github.com/fullsend-ai/fullsend/issues/7058
+2026-09-17,fullsend,pr,opened_core,7426,ggallen,"docs(#6864): add ADRs 0114-0115 for ephemeral repo lifecycle and pool coordination",https://github.com/fullsend-ai/fullsend/pull/7426
+2026-09-17,fullsend,pr,opened_core,7411,waynesun09,"docs(adr): follow-up automation after an agent run is a user-owned workflow",https://github.com/fullsend-ai/fullsend/pull/7411
+2026-09-17,fullsend,pr,opened_core,7397,rh-hemartin,"ci(site): simplify site workflows into a single one",https://github.com/fullsend-ai/fullsend/pull/7397
+2026-09-17,agents,issue,closed_via_pr_external,1255,deboer-tim,"Code agent should fully use conventional commits as required",https://github.com/fullsend-ai/agents/issues/1255
