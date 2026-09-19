@@ -1607,3 +1607,14 @@ date,repo,type,event,number,actor,title,url
 2026-09-17,fullsend,pr,opened_core,7411,waynesun09,"docs(adr): follow-up automation after an agent run is a user-owned workflow",https://github.com/fullsend-ai/fullsend/pull/7411
 2026-09-17,fullsend,pr,opened_core,7397,rh-hemartin,"ci(site): simplify site workflows into a single one",https://github.com/fullsend-ai/fullsend/pull/7397
 2026-09-17,agents,issue,closed_via_pr_external,1255,deboer-tim,"Code agent should fully use conventional commits as required",https://github.com/fullsend-ai/agents/issues/1255
+2026-09-18,fullsend,issue,opened_external,7472,jasonawant,"docs(gitlab): use a bounded project ID for the inference WIF subject",https://github.com/fullsend-ai/fullsend/issues/7472
+2026-09-18,fullsend,pr,opened_core,7484,waynesun09,"ci(e2e): verify ok-to-test labeler permission",https://github.com/fullsend-ai/fullsend/pull/7484
+2026-09-18,fullsend,pr,opened_core,7483,waynesun09,"feat(#7481): make GCP inference settings optional for repositories that run inference on OpenAI",https://github.com/fullsend-ai/fullsend/pull/7483
+2026-09-18,fullsend,pr,opened_core,7461,waynesun09,"feat(harness)!: steer by default, opt out with steer.enabled: false",https://github.com/fullsend-ai/fullsend/pull/7461
+2026-09-18,fullsend,pr,opened_core,7456,waynesun09,"feat(cli): receipt the absorbed update under the job token, and skip the queued run",https://github.com/fullsend-ai/fullsend/pull/7456
+2026-09-18,fullsend,pr,opened_core,7451,waynesun09,"feat(steer)!: learn of later events by listing the platform's own run records",https://github.com/fullsend-ai/fullsend/pull/7451
+2026-09-18,fullsend,pr,opened_core,7447,waynesun09,"refactor(steerwatch): verify follow-up run provenance and split the delta by authority",https://github.com/fullsend-ai/fullsend/pull/7447
+2026-09-18,fullsend,pr,opened_core,7437,rh-hemartin,"chore(ci): bring back previous site build/deploy workflows",https://github.com/fullsend-ai/fullsend/pull/7437
+2026-09-18,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-18,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-18,agents,issue,opened_external,1371,deboer-tim,"Fix agent doesn't respect tools and breaks PR",https://github.com/fullsend-ai/agents/issues/1371

@@ -1646,3 +1646,18 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-17,agents,1248,fix(#6858): keep code target branches optional,fix,unlinked,6858,,https://github.com/fullsend-ai/agents/pull/1248
 2026-09-17,agents,991,fix(#990): add critical commit-before-exit rule to skill,fix,bot,990,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/991
 2026-09-17,agents,835,docs(#832): prohibit unsubstantiated verification claims in review output,docs,,,,https://github.com/fullsend-ai/agents/pull/835
+2026-09-18,fullsend,7473,refactor(#7470): extract shared configuration preset handling,other,,,,https://github.com/fullsend-ai/fullsend/pull/7473
+2026-09-18,fullsend,7460,fix(#7453): pin user systemd env for GitLab OpenShell gateway,fix,core,7453,ggallen,https://github.com/fullsend-ai/fullsend/pull/7460
+2026-09-18,fullsend,7454,feat(eval-measure): add EM-002 run_health scorer for tool-call defects,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7454
+2026-09-18,fullsend,7442,fix(#7438): resolve merge-conflict markers in vitepress config,fix,bot,7438,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7442
+2026-09-18,fullsend,7432,docs(#7430): expand destructive-op ownership checklist,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7432
+2026-09-18,fullsend,7431,docs(#7429): document codecov 80% target vs 75% floor,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7431
+2026-09-18,fullsend,7297,feat(#7295): accept FULLSEND_OPENAI_API_KEY as a repo secret,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7297
+2026-09-18,fullsend,7212,docs(#7210): cite agents.md as the AGENTS.md standard,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7212
+2026-09-18,fullsend,7106,chore(deps): update dependency stylelint to v17.15.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7106
+2026-09-18,fullsend,7096,chore(docs): keep latest patch per minor in multi-version builds,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7096
+2026-09-18,fullsend,7033,fix(#7029): scrub ANTHROPIC_OAUTH_TOKEN for the anthropic-vertex provider,fix,core,7029,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7033
+2026-09-18,fullsend,6603,feat(telemetry): capture tool results in Level 3 content and emit execute_tool spans,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6603
+2026-09-18,fullsend,6503,test(#6501): harden fork-path test fakes,test,,,,https://github.com/fullsend-ai/fullsend/pull/6503
+2026-09-18,agents,1358,docs(#1356): quote CC spec in scope classification,docs,,,,https://github.com/fullsend-ai/agents/pull/1358
+2026-09-18,agents,1355,fix(#850): protect .gitignore from auto-approval,fix,bot,850,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1355
