@@ -1661,3 +1661,4 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-18,fullsend,6503,test(#6501): harden fork-path test fakes,test,,,,https://github.com/fullsend-ai/fullsend/pull/6503
 2026-09-18,agents,1358,docs(#1356): quote CC spec in scope classification,docs,,,,https://github.com/fullsend-ai/agents/pull/1358
 2026-09-18,agents,1355,fix(#850): protect .gitignore from auto-approval,fix,bot,850,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1355
+2026-09-19,fullsend,7476,feat(#7471): converge configuration presets in repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7476

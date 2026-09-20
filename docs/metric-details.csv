@@ -13612,3 +13612,19 @@ date,repo,type,event,number,title,url
 2026-09-18,agents,issue,closed,1365,"chore(review): consolidate review output sections and omit empty sections",https://github.com/fullsend-ai/agents/issues/1365
 2026-09-18,agents,issue,closed,1356,"Embed literal Conventional Commits spec text in code-implementation skill's area-scope classification step",https://github.com/fullsend-ai/agents/issues/1356
 2026-09-18,agents,issue,closed,850,"Add .gitignore to REVIEW_PROTECTED_PATHS as defense-in-depth",https://github.com/fullsend-ai/agents/issues/850
+2026-09-19,fullsend,pr,opened,7485,"chore(deps): update experiments digest to 3f1614f",https://github.com/fullsend-ai/fullsend/pull/7485
+2026-09-19,fullsend,pr,merged,7476,"feat(#7471): converge configuration presets in repos install",https://github.com/fullsend-ai/fullsend/pull/7476
+2026-09-19,fullsend,issue,opened,7493,"Skip retro dispatch for platform-managed onboarding branches",https://github.com/fullsend-ai/fullsend/issues/7493
+2026-09-19,fullsend,issue,opened,7492,"e2e: dummy review fixture's placeholder head_sha races against a live PR head in the fork-sync scenario, causing a false stale-head exit",https://github.com/fullsend-ai/fullsend/issues/7492
+2026-09-19,fullsend,issue,opened,7491,"behaviour: google-github-actions/auth download from codeload.github.com times out intermittently",https://github.com/fullsend-ai/fullsend/issues/7491
+2026-09-19,fullsend,issue,opened,7490,"behaviour: preview mint worker returns 500 then 503 during app-token minting under CI load",https://github.com/fullsend-ai/fullsend/issues/7490
+2026-09-19,fullsend,issue,opened,7489,"behaviour: pool repo recreate races with visibility/Actions-readiness, causing 404s and 'workflow not visible' timeouts",https://github.com/fullsend-ai/fullsend/issues/7489
+2026-09-19,fullsend,issue,opened,7488,"e2e: TestAdminInstallUninstall reds with repeated 'Create issue attempt N failed with status 401' across multiple pool orgs",https://github.com/fullsend-ai/fullsend/issues/7488
+2026-09-19,fullsend,issue,opened,7487,"Behaviour/e2e reds on the steering stack: four infra signatures with run ids",https://github.com/fullsend-ai/fullsend/issues/7487
+2026-09-19,fullsend,issue,opened,7486,"Skip retro dispatch on bot-authored infrastructure PRs",https://github.com/fullsend-ai/fullsend/issues/7486
+2026-09-19,fullsend,issue,closed,7487,"Behaviour/e2e reds on the steering stack: four infra signatures with run ids",https://github.com/fullsend-ai/fullsend/issues/7487
+2026-09-19,fullsend,issue,closed,7471,"Add configuration preset convergence to repos install",https://github.com/fullsend-ai/fullsend/issues/7471
+2026-09-19,fullsend,issue,closed,7444,"Support config presets in repos install and share the implementation with github setup",https://github.com/fullsend-ai/fullsend/issues/7444
+2026-09-19,agents,pr,opened,1386,"feat(harness): add jsonschema preflight check to validation loops",https://github.com/fullsend-ai/agents/pull/1386
+2026-09-19,agents,pr,closed,668,"fix(#667): add regex pattern decomposition guidance to review sub-agents",https://github.com/fullsend-ai/agents/pull/668
+2026-09-19,agents,issue,opened,1385,"Code agent should proactively consult repo-documented security conventions (not just nearby code) before writing new URL-fetching logic",https://github.com/fullsend-ai/agents/issues/1385
