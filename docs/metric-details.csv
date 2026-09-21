@@ -13628,3 +13628,31 @@ date,repo,type,event,number,title,url
 2026-09-19,agents,pr,opened,1386,"feat(harness): add jsonschema preflight check to validation loops",https://github.com/fullsend-ai/agents/pull/1386
 2026-09-19,agents,pr,closed,668,"fix(#667): add regex pattern decomposition guidance to review sub-agents",https://github.com/fullsend-ai/agents/pull/668
 2026-09-19,agents,issue,opened,1385,"Code agent should proactively consult repo-documented security conventions (not just nearby code) before writing new URL-fetching logic",https://github.com/fullsend-ai/agents/issues/1385
+2026-09-20,fullsend,pr,opened,7510,"feat(#7499): route GitLab jobs by registered role identity",https://github.com/fullsend-ai/fullsend/pull/7510
+2026-09-20,fullsend,pr,opened,7508,"feat(#7498): provision GitLab built-in and custom role credentials",https://github.com/fullsend-ai/fullsend/pull/7508
+2026-09-20,fullsend,pr,opened,7507,"chore(deps): update dependency sheeki03/tirith to v0.4.2",https://github.com/fullsend-ai/fullsend/pull/7507
+2026-09-20,fullsend,pr,opened,7506,"refactor(#7497): define extensible GitLab role-credential contract",https://github.com/fullsend-ai/fullsend/pull/7506
+2026-09-20,fullsend,pr,opened,7503,"refactor(#7497): define GitLab role-credential contract",https://github.com/fullsend-ai/fullsend/pull/7503
+2026-09-20,fullsend,pr,merged,7508,"feat(#7498): provision GitLab built-in and custom role credentials",https://github.com/fullsend-ai/fullsend/pull/7508
+2026-09-20,fullsend,pr,merged,7506,"refactor(#7497): define extensible GitLab role-credential contract",https://github.com/fullsend-ai/fullsend/pull/7506
+2026-09-20,fullsend,pr,merged,7485,"chore(deps): update experiments digest to 3f1614f",https://github.com/fullsend-ai/fullsend/pull/7485
+2026-09-20,fullsend,pr,merged,7459,"chore(deps): update dependency prettier to v3.9.8",https://github.com/fullsend-ai/fullsend/pull/7459
+2026-09-20,fullsend,pr,merged,7216,"chore(deps): update dependency @types/node to v22.20.4",https://github.com/fullsend-ai/fullsend/pull/7216
+2026-09-20,fullsend,issue,opened,7509,"Generalize the secret-masking check in GitLab role registry parsing to prevent per-field omissions",https://github.com/fullsend-ai/fullsend/issues/7509
+2026-09-20,fullsend,issue,opened,7505,"Review status badge can finalize as '✅ Success' while real findings are silently dropped when the PR closes mid-posting",https://github.com/fullsend-ai/fullsend/issues/7505
+2026-09-20,fullsend,issue,opened,7504,"Detect and flag linked-issue edits that land after code/review dispatch has already started",https://github.com/fullsend-ai/fullsend/issues/7504
+2026-09-20,fullsend,issue,opened,7502,"Document the extensible GitLab role identity model and credential lifecycle",https://github.com/fullsend-ai/fullsend/issues/7502
+2026-09-20,fullsend,issue,opened,7501,"Verify extensible GitLab role migration and retire shared-token fallback",https://github.com/fullsend-ai/fullsend/issues/7501
+2026-09-20,fullsend,issue,opened,7500,"Implement rotation, recovery, and rollback for GitLab role credentials",https://github.com/fullsend-ai/fullsend/issues/7500
+2026-09-20,fullsend,issue,opened,7499,"Route GitLab jobs and forge operations by registered role identity",https://github.com/fullsend-ai/fullsend/issues/7499
+2026-09-20,fullsend,issue,opened,7498,"Provision and migrate built-in and custom GitLab role credentials",https://github.com/fullsend-ai/fullsend/issues/7498
+2026-09-20,fullsend,issue,opened,7497,"Define extensible role-aware GitLab credential contract and migration gates",https://github.com/fullsend-ai/fullsend/issues/7497
+2026-09-20,fullsend,issue,opened,7496,"Implement extensible GitLab role identity model with backward-compatible migration",https://github.com/fullsend-ai/fullsend/issues/7496
+2026-09-20,fullsend,issue,opened,7495,"Document GitLab bot identity separation options as an open problem doc (poller/analyst/coder vs. alternatives)",https://github.com/fullsend-ai/fullsend/issues/7495
+2026-09-20,fullsend,issue,opened,7494,"GitLab: extend self-approval fallback to cover bot-contributed commits on human-authored MRs",https://github.com/fullsend-ai/fullsend/issues/7494
+2026-09-20,fullsend,issue,closed,7505,"Review status badge can finalize as '✅ Success' while real findings are silently dropped when the PR closes mid-posting",https://github.com/fullsend-ai/fullsend/issues/7505
+2026-09-20,fullsend,issue,closed,7498,"Provision and migrate built-in and custom GitLab role credentials",https://github.com/fullsend-ai/fullsend/issues/7498
+2026-09-20,fullsend,issue,closed,7497,"Define extensible role-aware GitLab credential contract and migration gates",https://github.com/fullsend-ai/fullsend/issues/7497
+2026-09-20,fullsend,issue,closed,7495,"Document GitLab bot identity separation options as an open problem doc (poller/analyst/coder vs. alternatives)",https://github.com/fullsend-ai/fullsend/issues/7495
+2026-09-20,fullsend,issue,closed,7494,"GitLab: extend self-approval fallback to cover bot-contributed commits on human-authored MRs",https://github.com/fullsend-ai/fullsend/issues/7494
+2026-09-20,fullsend,issue,closed,7424,"GitLab: evaluate bot identity separation for MR approvals and credential lifecycle cost",https://github.com/fullsend-ai/fullsend/issues/7424
