@@ -1667,3 +1667,16 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-20,fullsend,7485,chore(deps): update experiments digest to 3f1614f,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7485
 2026-09-20,fullsend,7459,chore(deps): update dependency prettier to v3.9.8,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7459
 2026-09-20,fullsend,7216,chore(deps): update dependency @types/node to v22.20.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7216
+2026-09-21,fullsend,7537,fix(#7536): include GitLab CA-trust script in remote scaffold,fix,core,7536,ggallen,https://github.com/fullsend-ai/fullsend/pull/7537
+2026-09-21,fullsend,7533,feat(#7528)!: rename repos.yaml preset fields to config_base,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7533
+2026-09-21,fullsend,7516,chore(deps): update dependency cytoscape to v3.34.3,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7516
+2026-09-21,fullsend,7515,docs(#7513): add fallback terminology checklist item,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7515
+2026-09-21,fullsend,7514,feat(#7500): rotate GitLab role credentials with recovery,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7514
+2026-09-21,fullsend,7512,docs(#7511): add GitLab credential-routing security checklist,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7512
+2026-09-21,fullsend,7510,feat(#7499): route GitLab jobs by registered role identity,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7510
+2026-09-21,fullsend,7482,fix(#7479): treat a failed stray-process awk as a failed listing,fix,core,7479,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7482
+2026-09-21,fullsend,7469,docs(#7465): note #6957 off-by-default criteria superseded,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7469
+2026-09-21,fullsend,7369,fix(#7345): render GFM tables as native Jira ADF tables,fix,bot,7345,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/7369
+2026-09-21,fullsend,7331,docs(#7330): document how to check current ladder membership,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7331
+2026-09-21,fullsend,7213,docs(#7209): add GitLab getting-started guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7213
+2026-09-21,agents,1251,feat(#1250): add discretionary ready-to-code promotion,feat,,,,https://github.com/fullsend-ai/agents/pull/1251

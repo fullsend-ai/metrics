@@ -1618,3 +1618,7 @@ date,repo,type,event,number,actor,title,url
 2026-09-18,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
 2026-09-18,fullsend,pr,reviewed_external,7213,jasonawant,"docs(#7209): add GitLab getting-started guide",https://github.com/fullsend-ai/fullsend/pull/7213
 2026-09-18,agents,issue,opened_external,1371,deboer-tim,"Fix agent doesn't respect tools and breaks PR",https://github.com/fullsend-ai/agents/issues/1371
+2026-09-21,fullsend,pr,opened_core,7531,ralphbean,"docs(adr): add fullsend-ai/platform decision",https://github.com/fullsend-ai/fullsend/pull/7531
+2026-09-21,fullsend,pr,opened_core,7525,ggallen,"docs(adr): record declarative repos config overlays",https://github.com/fullsend-ai/fullsend/pull/7525
+2026-09-21,agents,issue,opened_external,1395,jflowers,"harness-jira-test.sh: pipefail + grep -q SIGPIPE race causes false ""JIRA_TOKEN missing"" failures",https://github.com/fullsend-ai/agents/issues/1395
+2026-09-21,agents,issue,closed_other_external,1395,jflowers,"harness-jira-test.sh: pipefail + grep -q SIGPIPE race causes false ""JIRA_TOKEN missing"" failures",https://github.com/fullsend-ai/agents/issues/1395
