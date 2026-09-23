@@ -1680,3 +1680,17 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-21,fullsend,7331,docs(#7330): document how to check current ladder membership,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7331
 2026-09-21,fullsend,7213,docs(#7209): add GitLab getting-started guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7213
 2026-09-21,agents,1251,feat(#1250): add discretionary ready-to-code promotion,feat,,,,https://github.com/fullsend-ai/agents/pull/1251
+2026-09-22,fullsend,7562,feat(#7524)!: cut over GitLab role identities on ordinary install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7562
+2026-09-22,fullsend,7557,feat(#7524)!: cut over GitLab role identities on ordinary install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7557
+2026-09-22,fullsend,7542,chore(deps): update codecov/codecov-action action to v7.1.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7542
+2026-09-22,fullsend,7530,feat(#7501)!: add GitLab role readiness and guarded credential cutover,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7530
+2026-09-22,fullsend,7526,chore(deps): update dependency vue to v3.5.43,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7526
+2026-09-22,fullsend,7484,ci(e2e): verify ok-to-test labeler permission,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7484
+2026-09-22,fullsend,7266,fix(#6834): stop layering a policies/ dir the scaffold never ships,fix,bot,6834,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7266
+2026-09-22,fullsend,7192,feat(#6649): preserve workflow token for GitHub Packages providers,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7192
+2026-09-22,fullsend,7027,fix(#7026): add Vertex model fallback for aliased pi runs,fix,core,7026,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7027
+2026-09-22,fullsend,6952,fix(#6920): withhold unsafe codex tool results,fix,core,6920,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6952
+2026-09-22,agents,1403,"Revert ""feat(harness): add jsonschema preflight check to validation loops""",other,,,,https://github.com/fullsend-ai/agents/pull/1403
+2026-09-22,agents,1386,feat(harness): add jsonschema preflight check to validation loops,feat,,,,https://github.com/fullsend-ai/agents/pull/1386
+2026-09-22,agents,1334,feat(#1333): inspect project CI during fix-agent context gathering,feat,,,,https://github.com/fullsend-ai/agents/pull/1334
+2026-09-22,agents,1164,test(scripts): capture before grep in harness-jira-test to stop SIGPIPE flakes,test,,,,https://github.com/fullsend-ai/agents/pull/1164

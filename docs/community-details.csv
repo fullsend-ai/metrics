@@ -1622,3 +1622,11 @@ date,repo,type,event,number,actor,title,url
 2026-09-21,fullsend,pr,opened_core,7525,ggallen,"docs(adr): record declarative repos config overlays",https://github.com/fullsend-ai/fullsend/pull/7525
 2026-09-21,agents,issue,opened_external,1395,jflowers,"harness-jira-test.sh: pipefail + grep -q SIGPIPE race causes false ""JIRA_TOKEN missing"" failures",https://github.com/fullsend-ai/agents/issues/1395
 2026-09-21,agents,issue,closed_other_external,1395,jflowers,"harness-jira-test.sh: pipefail + grep -q SIGPIPE race causes false ""JIRA_TOKEN missing"" failures",https://github.com/fullsend-ai/agents/issues/1395
+2026-09-22,fullsend,issue,opened_external,7552,deboer-tim,"Workflow run should have clear reason for no dispatch",https://github.com/fullsend-ai/fullsend/issues/7552
+2026-09-22,fullsend,issue,closed_other_external,1997,Omeramsc,"post-code: notify issue when pre-commit block prevents PR creation",https://github.com/fullsend-ai/fullsend/issues/1997
+2026-09-22,agents,issue,opened_external,1408,deboer-tim,"Triage shouldn't remove/readd the same label",https://github.com/fullsend-ai/agents/issues/1408
+2026-09-22,agents,issue,opened_external,1405,deboer-tim,"Re-triage doesn't respond if there's no change",https://github.com/fullsend-ai/agents/issues/1405
+2026-09-22,agents,pr,opened_core,1404,rh-hemartin,"chore(code): Remove GH_TOKEN from env, provider will provide it",https://github.com/fullsend-ai/agents/pull/1404
+2026-09-22,agents,pr,opened_core,1403,rh-hemartin,"Revert ""feat(harness): add jsonschema preflight check to validation loops""",https://github.com/fullsend-ai/agents/pull/1403
+2026-09-22,agents,pr,reviewed_external,1373,deboer-tim,"fix(#1371): honor repo lint tools in the fix-review skill",https://github.com/fullsend-ai/agents/pull/1373
+2026-09-22,agents,pr,reviewed_external,1373,deboer-tim,"fix(#1371): honor repo lint tools in the fix-review skill",https://github.com/fullsend-ai/agents/pull/1373
