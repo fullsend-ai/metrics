@@ -1630,3 +1630,15 @@ date,repo,type,event,number,actor,title,url
 2026-09-22,agents,pr,opened_core,1403,rh-hemartin,"Revert ""feat(harness): add jsonschema preflight check to validation loops""",https://github.com/fullsend-ai/agents/pull/1403
 2026-09-22,agents,pr,reviewed_external,1373,deboer-tim,"fix(#1371): honor repo lint tools in the fix-review skill",https://github.com/fullsend-ai/agents/pull/1373
 2026-09-22,agents,pr,reviewed_external,1373,deboer-tim,"fix(#1371): honor repo lint tools in the fix-review skill",https://github.com/fullsend-ai/agents/pull/1373
+2026-09-23,fullsend,issue,opened_external,7577,jasonawant,"GitLab scaffold omits GOOGLE_CLOUD_PROJECT, preventing Pi Gemini agents from using Vertex ADC",https://github.com/fullsend-ai/fullsend/issues/7577
+2026-09-23,fullsend,issue,closed_other_external,4839,deboer-tim,"Skills for developing an agent",https://github.com/fullsend-ai/fullsend/issues/4839
+2026-09-23,fullsend,pr,opened_core,7620,waynesun09,"fix(scaffold): stop decoding the contents API 404 body in reconcile-repos",https://github.com/fullsend-ai/fullsend/pull/7620
+2026-09-23,fullsend,pr,opened_core,7618,waynesun09,"docs(problems): add agentic SDLC adoption and org communication",https://github.com/fullsend-ai/fullsend/pull/7618
+2026-09-23,fullsend,pr,opened_core,7592,rh-hemartin,"feat(runtime): TRACEPARENT is now injected in the runtime env",https://github.com/fullsend-ai/fullsend/pull/7592
+2026-09-23,fullsend,pr,opened_core,7582,waynesun09,"fix(binary): strip symbols from the vendored cross-compile (#7581)",https://github.com/fullsend-ai/fullsend/pull/7582
+2026-09-23,agents,issue,closed_other_external,430,durandom,"post-review: out-of-hunk findings included in inline comments cause 422",https://github.com/fullsend-ai/agents/issues/430
+2026-09-23,auto-merge,pr,opened_core,8,ascerra,"feat: make Auto-Merge SCM-native",https://github.com/fullsend-ai/auto-merge/pull/8
+2026-09-23,auto-merge,pr,opened_core,7,ascerra,"test: exercise option 2 attestation flow",https://github.com/fullsend-ai/auto-merge/pull/7
+2026-09-23,auto-merge,pr,opened_core,6,ascerra,"feat: make review attestation the semantic authority",https://github.com/fullsend-ai/auto-merge/pull/6
+2026-09-23,auto-merge,pr,opened_core,5,ascerra,"docs: clarify failed validation status",https://github.com/fullsend-ai/auto-merge/pull/5
+2026-09-23,auto-merge,pr,opened_core,4,ascerra,"docs(#3): clarify successful validation",https://github.com/fullsend-ai/auto-merge/pull/4

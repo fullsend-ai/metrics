@@ -1694,3 +1694,25 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-22,agents,1386,feat(harness): add jsonschema preflight check to validation loops,feat,,,,https://github.com/fullsend-ai/agents/pull/1386
 2026-09-22,agents,1334,feat(#1333): inspect project CI during fix-agent context gathering,feat,,,,https://github.com/fullsend-ai/agents/pull/1334
 2026-09-22,agents,1164,test(scripts): capture before grep in harness-jira-test to stop SIGPIPE flakes,test,,,,https://github.com/fullsend-ai/agents/pull/1164
+2026-09-23,fullsend,7620,fix(scaffold): stop decoding the contents API 404 body in reconcile-repos,fix,core,7619,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7620
+2026-09-23,fullsend,7591,fix(#7590): print mint 422 hint from curl status,fix,core,7590,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7591
+2026-09-23,fullsend,7588,fix(#3548): treat formal review submit as best-effort,fix,bot,3548,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7588
+2026-09-23,fullsend,7584,fix(#3250): treat SHA-pinned dispatch refs as equivalent to named refs,fix,bot,3250,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7584
+2026-09-23,fullsend,7582,fix(binary): strip symbols from the vendored cross-compile (#7581),fix,core,7581,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7582
+2026-09-23,fullsend,7579,docs(#3018): document mint deploy-time version stamping,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7579
+2026-09-23,fullsend,7575,fix(#7574): skip fail-fast on superseded failed harness run,fix,bot,7574,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7575
+2026-09-23,fullsend,7573,fix(#7572): override remaining review personas off sonnet,fix,bot,7572,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7573
+2026-09-23,fullsend,7569,docs(#2662): replace stale skill overload terminology,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7569
+2026-09-23,fullsend,7566,"fix(#7563): fetch generated agent work items by number, not URL",fix,core,7563,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7566
+2026-09-23,fullsend,7534,docs(#1134): document UploadDir in sandbox operations table,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7534
+2026-09-23,fullsend,7529,docs(#1122): correct FULLSEND_PER_REPO_INSTALL variable name,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7529
+2026-09-23,fullsend,7523,fix(#7522): inject FULLSEND_VALIDATED_ITERATION_DIR as absolute,fix,core,7522,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7523
+2026-09-23,fullsend,7507,chore(deps): update dependency sheeki03/tirith to v0.4.2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7507
+2026-09-23,fullsend,7445,feat(#5433): re-pin local harness base URLs on agent update,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7445
+2026-09-23,fullsend,7433,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 5b963df,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7433
+2026-09-23,fullsend,7064,"docs(#7042): say the budget kill sweeps, best effort, and why",docs,,,,https://github.com/fullsend-ai/fullsend/pull/7064
+2026-09-23,fullsend,7040,docs(#7039): correct Vertex alias resolution in pinned-binaries table,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7040
+2026-09-23,fullsend,6051,feat(#6042): support Prow OWNERS file authorization for slash commands,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6051
+2026-09-23,agents,1409,fix(#1407): stop injecting forge tokens into the sandbox,fix,core,1407,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1409
+2026-09-23,agents,1397,fix(#989): use REST API instead of gh issue edit for PR labels,fix,bot,989,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1397
+2026-09-23,agents,1377,fix(#44): harden vouch enforcement,fix,bot,44,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1377
