@@ -1642,3 +1642,24 @@ date,repo,type,event,number,actor,title,url
 2026-09-23,auto-merge,pr,opened_core,6,ascerra,"feat: make review attestation the semantic authority",https://github.com/fullsend-ai/auto-merge/pull/6
 2026-09-23,auto-merge,pr,opened_core,5,ascerra,"docs: clarify failed validation status",https://github.com/fullsend-ai/auto-merge/pull/5
 2026-09-23,auto-merge,pr,opened_core,4,ascerra,"docs(#3): clarify successful validation",https://github.com/fullsend-ai/auto-merge/pull/4
+2026-09-24,fullsend,issue,opened_external,7677,deboer-tim,"Excessive PR checks are affecting usability",https://github.com/fullsend-ai/fullsend/issues/7677
+2026-09-24,fullsend,issue,opened_external,7674,deboer-tim,"Mount repository into sandbox instead of copying",https://github.com/fullsend-ai/fullsend/issues/7674
+2026-09-24,fullsend,issue,opened_external,7673,deboer-tim,"Improve performance by installing environment outside of sandbox",https://github.com/fullsend-ai/fullsend/issues/7673
+2026-09-24,fullsend,issue,closed_other_external,7673,deboer-tim,"Improve performance by installing environment outside of sandbox",https://github.com/fullsend-ai/fullsend/issues/7673
+2026-09-24,fullsend,issue,closed_other_external,7003,alice17,"New app / role required for ci-diagnose agent",https://github.com/fullsend-ai/fullsend/issues/7003
+2026-09-24,fullsend,issue,closed_other_external,6816,jasonawant,"GitLab MR-event dispatch (fullsend-dispatch.yml) does not pass REPO_FULL_NAME for review stage",https://github.com/fullsend-ai/fullsend/issues/6816
+2026-09-24,fullsend,issue,closed_via_pr_external,560,arewm,"Coordinated inauthentic contributions (""claws"") as a threat vector — gap in contribution volume and security threat model",https://github.com/fullsend-ai/fullsend/issues/560
+2026-09-24,fullsend,pr,opened_core,7659,rh-hemartin,"fix(dispatch): an empty role list is honored in dispatch",https://github.com/fullsend-ai/fullsend/pull/7659
+2026-09-24,agents,issue,closed_other_external,1144,guyoron1,"pr-review: skip challenger dispatch when a review produces no findings",https://github.com/fullsend-ai/agents/issues/1144
+2026-09-24,agents,pr,opened_core,1476,ifireball,"test(behaviour): show scenario output",https://github.com/fullsend-ai/agents/pull/1476
+2026-09-24,agents,pr,opened_core,1473,ifireball,"fix(behaviour): use checkout action for pinned fullsend",https://github.com/fullsend-ai/agents/pull/1473
+2026-09-24,agents,pr,reviewed_external,1459,dustinCodes84600,"fix(#342): refuse code-agent force-push that drops human commits",https://github.com/fullsend-ai/agents/pull/1459
+2026-09-24,auto-merge,pr,opened_core,20,ascerra,"test: exercise merge queue submission",https://github.com/fullsend-ai/auto-merge/pull/20
+2026-09-24,auto-merge,pr,opened_core,19,ascerra,"docs: clarify review authority boundary",https://github.com/fullsend-ai/auto-merge/pull/19
+2026-09-24,auto-merge,pr,opened_core,17,ascerra,"test: exercise mismatched issue intent",https://github.com/fullsend-ai/auto-merge/pull/17
+2026-09-24,auto-merge,pr,opened_core,15,ascerra,"test: exercise linked issue evidence",https://github.com/fullsend-ai/auto-merge/pull/15
+2026-09-24,auto-merge,pr,opened_core,13,ascerra,"test: exercise semantic evidence package",https://github.com/fullsend-ai/auto-merge/pull/13
+2026-09-24,auto-merge,pr,opened_core,12,ascerra,"test: exercise review rationale evidence",https://github.com/fullsend-ai/auto-merge/pull/12
+2026-09-24,auto-merge,pr,opened_core,11,ascerra,"test: exercise autonomous auto-merge agent",https://github.com/fullsend-ai/auto-merge/pull/11
+2026-09-24,auto-merge,pr,opened_core,10,ascerra,"refactor: make Auto-Merge independent of queue CI",https://github.com/fullsend-ai/auto-merge/pull/10
+2026-09-24,auto-merge,pr,opened_core,9,ascerra,"test: prove SCM-native merge queue",https://github.com/fullsend-ai/auto-merge/pull/9

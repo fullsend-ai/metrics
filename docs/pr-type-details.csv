@@ -1716,3 +1716,27 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-23,agents,1409,fix(#1407): stop injecting forge tokens into the sandbox,fix,core,1407,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1409
 2026-09-23,agents,1397,fix(#989): use REST API instead of gh issue edit for PR labels,fix,bot,989,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1397
 2026-09-23,agents,1377,fix(#44): harden vouch enforcement,fix,bot,44,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1377
+2026-09-24,fullsend,7697,fix(#7696): resolve GitLab runner UID in systemd drop-in,fix,core,7696,ggallen,https://github.com/fullsend-ai/fullsend/pull/7697
+2026-09-24,fullsend,7671,fix(#7665): converge GitLab poller protected-ref pipeline access,fix,core,7665,ggallen,https://github.com/fullsend-ai/fullsend/pull/7671
+2026-09-24,fullsend,7670,fix(#7667): fail GitLab poll cycle on dispatch errors,fix,core,7667,ggallen,https://github.com/fullsend-ai/fullsend/pull/7670
+2026-09-24,fullsend,7669,fix(#7663): prune unused Podman images on GitLab runners,fix,core,7663,ggallen,https://github.com/fullsend-ai/fullsend/pull/7669
+2026-09-24,fullsend,7666,test(#7651): guard converge scaffold commits against duplicate paths,test,,,,https://github.com/fullsend-ai/fullsend/pull/7666
+2026-09-24,fullsend,7664,fix(#7661): skip unused forge credentials on filtered install,fix,core,7661,ggallen,https://github.com/fullsend-ai/fullsend/pull/7664
+2026-09-24,fullsend,7653,chore(deps): update docker/setup-buildx-action action to v4.4.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7653
+2026-09-24,fullsend,7652,fix(#7648): converge inactive GitLab schedules and stale dispatch,fix,core,7648,ggallen,https://github.com/fullsend-ai/fullsend/pull/7652
+2026-09-24,fullsend,7650,fix(#7649): persist poll state in a single commit per cycle,fix,core,7649,ggallen,https://github.com/fullsend-ai/fullsend/pull/7650
+2026-09-24,fullsend,7647,fix(#7645): dedupe GitLab scaffold paths during converge,fix,core,7645,ggallen,https://github.com/fullsend-ai/fullsend/pull/7647
+2026-09-24,fullsend,7643,fix(#5448): merge validation_loop fields during composition,fix,core,5448,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/7643
+2026-09-24,fullsend,7626,fix(#7621): select GitLab role tokens in CI scaffolds,fix,core,7621,ggallen,https://github.com/fullsend-ai/fullsend/pull/7626
+2026-09-24,fullsend,7599,feat(#7593): inject TRACEPARENT into the runtime environment,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7599
+2026-09-24,fullsend,7585,chore(deps): update docker/build-push-action action to v7.4.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7585
+2026-09-24,fullsend,7545,test(#2002): skip live GitHub CDN download unless opted in,test,,,,https://github.com/fullsend-ai/fullsend/pull/7545
+2026-09-24,fullsend,7411,docs(adr): criteria for adding a built-in agent role,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7411
+2026-09-24,fullsend,7178,docs(#560): name coordinated inauthentic contributions as a threat,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7178
+2026-09-24,fullsend,7047,chore(deps): update dependency @earendil-works/pi-coding-agent to v0.87.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7047
+2026-09-24,fullsend,6917,feat(#6916): publish docs markdown next to HTML,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6917
+2026-09-24,fullsend,6311,fix: gitignore outputs/ so custom-agent artifacts don't land in PR history,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/6311
+2026-09-24,agents,1476,test(behaviour): show scenario output,test,,,,https://github.com/fullsend-ai/agents/pull/1476
+2026-09-24,agents,1473,fix(behaviour): use checkout action for pinned fullsend,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1473
+2026-09-24,agents,1418,feat(harness): add shared jsonschema preflight check to validation loops,feat,,,,https://github.com/fullsend-ai/agents/pull/1418
+2026-09-24,agents,1244,feat(behaviour): add isolated dev behaviour tests,feat,,,,https://github.com/fullsend-ai/agents/pull/1244
