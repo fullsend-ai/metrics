@@ -1663,3 +1663,23 @@ date,repo,type,event,number,actor,title,url
 2026-09-24,auto-merge,pr,opened_core,11,ascerra,"test: exercise autonomous auto-merge agent",https://github.com/fullsend-ai/auto-merge/pull/11
 2026-09-24,auto-merge,pr,opened_core,10,ascerra,"refactor: make Auto-Merge independent of queue CI",https://github.com/fullsend-ai/auto-merge/pull/10
 2026-09-24,auto-merge,pr,opened_core,9,ascerra,"test: prove SCM-native merge queue",https://github.com/fullsend-ai/auto-merge/pull/9
+2026-09-25,fullsend,issue,opened_external,7740,jasonawant,"GitLab role-aware poller token cannot read slash-poll watermark CI variables",https://github.com/fullsend-ai/fullsend/issues/7740
+2026-09-25,fullsend,issue,opened_external,7738,jasonawant,"GitLab role-aware poller does not pass the selected credential to fullsend poll",https://github.com/fullsend-ai/fullsend/issues/7738
+2026-09-25,fullsend,issue,opened_external,7728,kylebuch8,"docs: Get Started button in navigation has color contrast issues in dark mode",https://github.com/fullsend-ai/fullsend/issues/7728
+2026-09-25,fullsend,issue,opened_external,7725,jflowers,"internal/runtime codex adapter block() fails open when stderr is closed on pyenv-built CPython",https://github.com/fullsend-ai/fullsend/issues/7725
+2026-09-25,fullsend,issue,opened_external,7723,jflowers,"internal/harness TestFetchBaseSkill_DefaultTreeFetcherUsed isn't hermetic — runs a real git fetch that blocks on the osxkeychain credential helper",https://github.com/fullsend-ai/fullsend/issues/7723
+2026-09-25,fullsend,issue,closed_other_external,7740,jasonawant,"GitLab role-aware poller token cannot read slash-poll watermark CI variables",https://github.com/fullsend-ai/fullsend/issues/7740
+2026-09-25,fullsend,issue,closed_other_external,7738,jasonawant,"GitLab role-aware poller does not pass the selected credential to fullsend poll",https://github.com/fullsend-ai/fullsend/issues/7738
+2026-09-25,fullsend,issue,closed_via_pr_external,7728,kylebuch8,"docs: Get Started button in navigation has color contrast issues in dark mode",https://github.com/fullsend-ai/fullsend/issues/7728
+2026-09-25,fullsend,issue,closed_other_external,7674,deboer-tim,"Mount repository into sandbox instead of copying",https://github.com/fullsend-ai/fullsend/issues/7674
+2026-09-25,fullsend,issue,closed_via_pr_external,7577,jasonawant,"GitLab scaffold omits GOOGLE_CLOUD_PROJECT, preventing Pi Gemini agents from using Vertex ADC",https://github.com/fullsend-ai/fullsend/issues/7577
+2026-09-25,fullsend,issue,closed_via_pr_external,7472,jasonawant,"docs(gitlab): use a bounded project ID for the inference WIF subject",https://github.com/fullsend-ai/fullsend/issues/7472
+2026-09-25,fullsend,issue,closed_other_external,6913,jasonawant,"refactor: consider improvements to gitlab scaffolding files and jobs",https://github.com/fullsend-ai/fullsend/issues/6913
+2026-09-25,fullsend,pr,opened_core,7717,ascerra,"status: render structured pre-script checks",https://github.com/fullsend-ai/fullsend/pull/7717
+2026-09-25,fullsend,pr,reviewed_external,7726,jflowers,"fix(#7725): keep codex hook block at exit 2 with closed stderr",https://github.com/fullsend-ai/fullsend/pull/7726
+2026-09-25,fullsend,pr,reviewed_external,7726,jflowers,"fix(#7725): keep codex hook block at exit 2 with closed stderr",https://github.com/fullsend-ai/fullsend/pull/7726
+2026-09-25,fullsend,pr,reviewed_external,7724,jflowers,"test(#7723): make DefaultTreeFetcherUsed hermetic",https://github.com/fullsend-ai/fullsend/pull/7724
+2026-09-25,auto-merge,pr,opened_core,26,ascerra,"test: exercise fast review path",https://github.com/fullsend-ai/auto-merge/pull/26
+2026-09-25,auto-merge,pr,opened_core,24,ascerra,"test: require explicit merge group proof",https://github.com/fullsend-ai/auto-merge/pull/24
+2026-09-25,auto-merge,pr,opened_core,23,ascerra,"test: exercise structured auto-merge receipt",https://github.com/fullsend-ai/auto-merge/pull/23
+2026-09-25,auto-merge,pr,opened_core,22,ascerra,"feat: explain auto-merge prerequisite decisions",https://github.com/fullsend-ai/auto-merge/pull/22

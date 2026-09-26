@@ -1740,3 +1740,23 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-24,agents,1473,fix(behaviour): use checkout action for pinned fullsend,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1473
 2026-09-24,agents,1418,feat(harness): add shared jsonschema preflight check to validation loops,feat,,,,https://github.com/fullsend-ai/agents/pull/1418
 2026-09-24,agents,1244,feat(behaviour): add isolated dev behaviour tests,feat,,,,https://github.com/fullsend-ai/agents/pull/1244
+2026-09-25,fullsend,7731,docs(#7728): exclude nav CTA from generic link color in dark mode,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7731
+2026-09-25,fullsend,7722,fix(#7721): keep codex rollouts with every line type codex writes,fix,core,7721,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7722
+2026-09-25,fullsend,7720,docs(#7716): correct fleet OpenAI provider claim on Codex,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7720
+2026-09-25,fullsend,7713,chore(#7707): drop obsolete GitLab dispatch marker file,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7713
+2026-09-25,fullsend,7710,refactor(#7706): extract GitLab scaffold job shell into scripts,other,,,,https://github.com/fullsend-ai/fullsend/pull/7710
+2026-09-25,fullsend,7705,docs(#7472): map GitLab WIF subject to project ID,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7705
+2026-09-25,fullsend,7703,test(#7644): guard GitLab CI scaffold env-var names,test,,,,https://github.com/fullsend-ai/fullsend/pull/7703
+2026-09-25,fullsend,7702,fix(#7577): export GOOGLE_CLOUD_PROJECT in GitLab agent jobs,fix,external,7577,jasonawant,https://github.com/fullsend-ai/fullsend/pull/7702
+2026-09-25,fullsend,7690,docs(#7686): caveat Grok Vertex cost-effectiveness for long runs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7690
+2026-09-25,fullsend,7688,fix(#6835): filter self-authored Jira poller events as bot,fix,core,6835,ralphbean,https://github.com/fullsend-ai/fullsend/pull/7688
+2026-09-25,fullsend,7625,test(#7560): cover live plugin lock URL shape,test,,,,https://github.com/fullsend-ai/fullsend/pull/7625
+2026-09-25,fullsend,7525,docs(adr): record managed repository configuration in repos.yaml,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7525
+2026-09-25,fullsend,7437,chore(ci): bring back previous site build/deploy workflows,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7437
+2026-09-25,fullsend,7329,docs(contributors): document manual ladder approval,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7329
+2026-09-25,fullsend,7088,chore(deps): update dependency @openai/codex to v0.157.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7088
+2026-09-25,fullsend,6859,feat(#6681): inject harness skills into agent frontmatter for always-on activation,feat,,,,https://github.com/fullsend-ai/fullsend/pull/6859
+2026-09-25,agents,1506,fix(#1505): declare openai on fleet harnesses,fix,core,1505,waynesun09,https://github.com/fullsend-ai/agents/pull/1506
+2026-09-25,agents,1490,fix(#1123): dispatch triage for split-created sub-issues,fix,core,1123,ralphbean,https://github.com/fullsend-ai/agents/pull/1490
+2026-09-25,agents,1380,feat(eval): enable EM-002 run_health scorer for all stock agents,feat,,,,https://github.com/fullsend-ai/agents/pull/1380
+2026-09-25,agents,1274,chore: bump QualityFlow pin to pick up the output-handling fixes,chore,,,,https://github.com/fullsend-ai/agents/pull/1274

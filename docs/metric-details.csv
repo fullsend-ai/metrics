@@ -14471,3 +14471,112 @@ date,repo,type,event,number,title,url
 2026-09-24,auto-merge,issue,opened,14,"Test linked issue context for Auto-Merge",https://github.com/fullsend-ai/auto-merge/issues/14
 2026-09-24,auto-merge,issue,closed,18,"Clarify Review Agent authority in the example docs",https://github.com/fullsend-ai/auto-merge/issues/18
 2026-09-24,auto-merge,issue,closed,14,"Test linked issue context for Auto-Merge",https://github.com/fullsend-ai/auto-merge/issues/14
+2026-09-25,fullsend,pr,opened,7742,"fix(#7741): local run --forge docs; pin codex project trust and read AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/7742
+2026-09-25,fullsend,pr,opened,7737,"docs(#7736): cite cache_read_input_tokens in Grok Vertex caveat",https://github.com/fullsend-ai/fullsend/pull/7737
+2026-09-25,fullsend,pr,opened,7735,"docs(#7734): warn Jira poller credentials must be a service account",https://github.com/fullsend-ai/fullsend/pull/7735
+2026-09-25,fullsend,pr,opened,7733,"docs(#7732): add Tirith rewrite for heredoc commit messages",https://github.com/fullsend-ai/fullsend/pull/7733
+2026-09-25,fullsend,pr,opened,7731,"docs(#7728): exclude nav CTA from generic link color in dark mode",https://github.com/fullsend-ai/fullsend/pull/7731
+2026-09-25,fullsend,pr,opened,7726,"fix(#7725): keep codex hook block at exit 2 with closed stderr",https://github.com/fullsend-ai/fullsend/pull/7726
+2026-09-25,fullsend,pr,opened,7724,"test(#7723): make DefaultTreeFetcherUsed hermetic",https://github.com/fullsend-ai/fullsend/pull/7724
+2026-09-25,fullsend,pr,opened,7722,"fix(#7721): keep codex rollouts with every line type codex writes",https://github.com/fullsend-ai/fullsend/pull/7722
+2026-09-25,fullsend,pr,opened,7720,"docs(#7716): correct fleet OpenAI provider claim on Codex",https://github.com/fullsend-ai/fullsend/pull/7720
+2026-09-25,fullsend,pr,opened,7718,"feat(#7481): allow OpenAI-only repositories without GCP configuration",https://github.com/fullsend-ai/fullsend/pull/7718
+2026-09-25,fullsend,pr,opened,7717,"status: render structured pre-script checks",https://github.com/fullsend-ai/fullsend/pull/7717
+2026-09-25,fullsend,pr,opened,7715,"fix(deps): update module github.com/cucumber/godog to v0.16.0",https://github.com/fullsend-ai/fullsend/pull/7715
+2026-09-25,fullsend,pr,opened,7713,"chore(#7707): drop obsolete GitLab dispatch marker file",https://github.com/fullsend-ai/fullsend/pull/7713
+2026-09-25,fullsend,pr,opened,7712,"fix(#7481): preserve OpenAI route during scaffold repair",https://github.com/fullsend-ai/fullsend/pull/7712
+2026-09-25,fullsend,pr,opened,7710,"refactor(#7706): extract GitLab scaffold job shell into scripts",https://github.com/fullsend-ai/fullsend/pull/7710
+2026-09-25,fullsend,pr,opened,7708,"fix(#7481): preserve OpenAI route during scaffold repair",https://github.com/fullsend-ai/fullsend/pull/7708
+2026-09-25,fullsend,pr,opened,7705,"docs(#7472): map GitLab WIF subject to project ID",https://github.com/fullsend-ai/fullsend/pull/7705
+2026-09-25,fullsend,pr,opened,7703,"test(#7644): guard GitLab CI scaffold env-var names",https://github.com/fullsend-ai/fullsend/pull/7703
+2026-09-25,fullsend,pr,opened,7702,"fix(#7577): export GOOGLE_CLOUD_PROJECT in GitLab agent jobs",https://github.com/fullsend-ai/fullsend/pull/7702
+2026-09-25,fullsend,pr,opened,7700,"fix(#6945): pin Cloud Run traffic after mint code deploy",https://github.com/fullsend-ai/fullsend/pull/7700
+2026-09-25,fullsend,pr,opened,7699,"chore(deps): update renovatebot/github-action action to v46.3.4",https://github.com/fullsend-ai/fullsend/pull/7699
+2026-09-25,fullsend,pr,merged,7731,"docs(#7728): exclude nav CTA from generic link color in dark mode",https://github.com/fullsend-ai/fullsend/pull/7731
+2026-09-25,fullsend,pr,merged,7722,"fix(#7721): keep codex rollouts with every line type codex writes",https://github.com/fullsend-ai/fullsend/pull/7722
+2026-09-25,fullsend,pr,merged,7720,"docs(#7716): correct fleet OpenAI provider claim on Codex",https://github.com/fullsend-ai/fullsend/pull/7720
+2026-09-25,fullsend,pr,merged,7713,"chore(#7707): drop obsolete GitLab dispatch marker file",https://github.com/fullsend-ai/fullsend/pull/7713
+2026-09-25,fullsend,pr,merged,7710,"refactor(#7706): extract GitLab scaffold job shell into scripts",https://github.com/fullsend-ai/fullsend/pull/7710
+2026-09-25,fullsend,pr,merged,7705,"docs(#7472): map GitLab WIF subject to project ID",https://github.com/fullsend-ai/fullsend/pull/7705
+2026-09-25,fullsend,pr,merged,7703,"test(#7644): guard GitLab CI scaffold env-var names",https://github.com/fullsend-ai/fullsend/pull/7703
+2026-09-25,fullsend,pr,merged,7702,"fix(#7577): export GOOGLE_CLOUD_PROJECT in GitLab agent jobs",https://github.com/fullsend-ai/fullsend/pull/7702
+2026-09-25,fullsend,pr,merged,7690,"docs(#7686): caveat Grok Vertex cost-effectiveness for long runs",https://github.com/fullsend-ai/fullsend/pull/7690
+2026-09-25,fullsend,pr,merged,7688,"fix(#6835): filter self-authored Jira poller events as bot",https://github.com/fullsend-ai/fullsend/pull/7688
+2026-09-25,fullsend,pr,merged,7625,"test(#7560): cover live plugin lock URL shape",https://github.com/fullsend-ai/fullsend/pull/7625
+2026-09-25,fullsend,pr,merged,7525,"docs(adr): record managed repository configuration in repos.yaml",https://github.com/fullsend-ai/fullsend/pull/7525
+2026-09-25,fullsend,pr,merged,7437,"chore(ci): bring back previous site build/deploy workflows",https://github.com/fullsend-ai/fullsend/pull/7437
+2026-09-25,fullsend,pr,merged,7329,"docs(contributors): document manual ladder approval",https://github.com/fullsend-ai/fullsend/pull/7329
+2026-09-25,fullsend,pr,merged,7088,"chore(deps): update dependency @openai/codex to v0.157.0",https://github.com/fullsend-ai/fullsend/pull/7088
+2026-09-25,fullsend,pr,merged,6859,"feat(#6681): inject harness skills into agent frontmatter for always-on activation",https://github.com/fullsend-ai/fullsend/pull/6859
+2026-09-25,fullsend,pr,closed,7708,"fix(#7481): preserve OpenAI route during scaffold repair",https://github.com/fullsend-ai/fullsend/pull/7708
+2026-09-25,fullsend,issue,opened,7741,"Local run docs need --forge github; codex runtime should pin project trust and read AGENTS.md",https://github.com/fullsend-ai/fullsend/issues/7741
+2026-09-25,fullsend,issue,opened,7740,"GitLab role-aware poller token cannot read slash-poll watermark CI variables",https://github.com/fullsend-ai/fullsend/issues/7740
+2026-09-25,fullsend,issue,opened,7739,"Fix eligibility check exits non-zero when correctly skipping bot-authored PRs",https://github.com/fullsend-ai/fullsend/issues/7739
+2026-09-25,fullsend,issue,opened,7738,"GitLab role-aware poller does not pass the selected credential to fullsend poll",https://github.com/fullsend-ai/fullsend/issues/7738
+2026-09-25,fullsend,issue,opened,7736,"docs/runtimes/pi.md 'Prompt caching' section misstates PR #7664 metrics as evidence of no cache reuse",https://github.com/fullsend-ai/fullsend/issues/7736
+2026-09-25,fullsend,issue,opened,7734,"Jira integration guide doesn't warn that JIRA_USER_EMAIL/JIRA_TOKEN must be a dedicated service account",https://github.com/fullsend-ai/fullsend/issues/7734
+2026-09-25,fullsend,issue,opened,7732,"Add heredoc/multi-line-text recipe to the Tirith shell-dialect rewrite table in runtime-implementation.md",https://github.com/fullsend-ai/fullsend/issues/7732
+2026-09-25,fullsend,issue,opened,7729,"Scope-coherence sub-agent should suppress findings that describe the PR's stated intent",https://github.com/fullsend-ai/fullsend/issues/7729
+2026-09-25,fullsend,issue,opened,7728,"docs: Get Started button in navigation has color contrast issues in dark mode",https://github.com/fullsend-ai/fullsend/issues/7728
+2026-09-25,fullsend,issue,opened,7725,"internal/runtime codex adapter block() fails open when stderr is closed on pyenv-built CPython",https://github.com/fullsend-ai/fullsend/issues/7725
+2026-09-25,fullsend,issue,opened,7723,"internal/harness TestFetchBaseSkill_DefaultTreeFetcherUsed isn't hermetic — runs a real git fetch that blocks on the osxkeychain credential helper",https://github.com/fullsend-ai/fullsend/issues/7723
+2026-09-25,fullsend,issue,opened,7721,"codex: transcript extraction discards codex-cli 0.152.1 rollouts (unknown ""world_state"" envelope)",https://github.com/fullsend-ai/fullsend/issues/7721
+2026-09-25,fullsend,issue,opened,7719,"Allow config.yaml to override harness CEL triggers",https://github.com/fullsend-ai/fullsend/issues/7719
+2026-09-25,fullsend,issue,opened,7716,"docs(codex): ""The fleet's agents already carry both"" is false — no agents harness declares providers/openai.yaml",https://github.com/fullsend-ai/fullsend/issues/7716
+2026-09-25,fullsend,issue,opened,7714,"Vouch-gate closes PRs after third-party review already ran, causing wasted review spend and duplicate-PR churn",https://github.com/fullsend-ai/fullsend/issues/7714
+2026-09-25,fullsend,issue,opened,7709,"Document the site-build/site-deploy cancel-in-progress exception in ci-workflows.md",https://github.com/fullsend-ai/fullsend/issues/7709
+2026-09-25,fullsend,issue,opened,7707,"Remove obsolete GitLab dispatch marker file",https://github.com/fullsend-ai/fullsend/issues/7707
+2026-09-25,fullsend,issue,opened,7706,"Extract inline shell from GitLab scaffold jobs into lintable scripts",https://github.com/fullsend-ai/fullsend/issues/7706
+2026-09-25,fullsend,issue,opened,7704,"Extend scaffold env-var consistency guard to the GitHub Actions scaffold (currently GitLab-only)",https://github.com/fullsend-ai/fullsend/issues/7704
+2026-09-25,fullsend,issue,opened,7701,"Fix dispatch should skip cleanly for non-coder-bot PRs instead of failing",https://github.com/fullsend-ai/fullsend/issues/7701
+2026-09-25,fullsend,issue,closed,7740,"GitLab role-aware poller token cannot read slash-poll watermark CI variables",https://github.com/fullsend-ai/fullsend/issues/7740
+2026-09-25,fullsend,issue,closed,7738,"GitLab role-aware poller does not pass the selected credential to fullsend poll",https://github.com/fullsend-ai/fullsend/issues/7738
+2026-09-25,fullsend,issue,closed,7728,"docs: Get Started button in navigation has color contrast issues in dark mode",https://github.com/fullsend-ai/fullsend/issues/7728
+2026-09-25,fullsend,issue,closed,7721,"codex: transcript extraction discards codex-cli 0.152.1 rollouts (unknown ""world_state"" envelope)",https://github.com/fullsend-ai/fullsend/issues/7721
+2026-09-25,fullsend,issue,closed,7716,"docs(codex): ""The fleet's agents already carry both"" is false — no agents harness declares providers/openai.yaml",https://github.com/fullsend-ai/fullsend/issues/7716
+2026-09-25,fullsend,issue,closed,7707,"Remove obsolete GitLab dispatch marker file",https://github.com/fullsend-ai/fullsend/issues/7707
+2026-09-25,fullsend,issue,closed,7706,"Extract inline shell from GitLab scaffold jobs into lintable scripts",https://github.com/fullsend-ai/fullsend/issues/7706
+2026-09-25,fullsend,issue,closed,7686,"docs/runtimes/pi.md's 'Grok is the cost-effective coder' framing doesn't hold for iterative multi-file coding tasks — no prompt-cache reuse observed",https://github.com/fullsend-ai/fullsend/issues/7686
+2026-09-25,fullsend,issue,closed,7675,"Establish contributor license agreement (CLA) for the project",https://github.com/fullsend-ai/fullsend/issues/7675
+2026-09-25,fullsend,issue,closed,7674,"Mount repository into sandbox instead of copying",https://github.com/fullsend-ai/fullsend/issues/7674
+2026-09-25,fullsend,issue,closed,7644,"Add a canonical env-var consistency test for GitLab CI scaffold templates",https://github.com/fullsend-ai/fullsend/issues/7644
+2026-09-25,fullsend,issue,closed,7577,"GitLab scaffold omits GOOGLE_CLOUD_PROJECT, preventing Pi Gemini agents from using Vertex ADC",https://github.com/fullsend-ai/fullsend/issues/7577
+2026-09-25,fullsend,issue,closed,7560,"Test the live plugin lock URL shape in lockTreeDirName; refresh stale pre-#6754 comments",https://github.com/fullsend-ai/fullsend/issues/7560
+2026-09-25,fullsend,issue,closed,7472,"docs(gitlab): use a bounded project ID for the inference WIF subject",https://github.com/fullsend-ai/fullsend/issues/7472
+2026-09-25,fullsend,issue,closed,6913,"refactor: consider improvements to gitlab scaffolding files and jobs",https://github.com/fullsend-ai/fullsend/issues/6913
+2026-09-25,fullsend,issue,closed,6835,"fix(jirapoll): recognize and filter self-authored events",https://github.com/fullsend-ai/fullsend/issues/6835
+2026-09-25,agents,pr,opened,1508,"fix(#1507)!: switch triage auto-code to discretionary",https://github.com/fullsend-ai/agents/pull/1508
+2026-09-25,agents,pr,opened,1506,"fix(#1505): declare openai on fleet harnesses",https://github.com/fullsend-ai/agents/pull/1506
+2026-09-25,agents,pr,opened,1502,"fix(#1382): skip Vertex credential mounts for OpenAI runs",https://github.com/fullsend-ai/agents/pull/1502
+2026-09-25,agents,pr,opened,1501,"feat(#1500): dispatch review and retro children on Codex",https://github.com/fullsend-ai/agents/pull/1501
+2026-09-25,agents,pr,opened,1499,"docs(#1497): document GitHub Actions rerun workflow pinning",https://github.com/fullsend-ai/agents/pull/1499
+2026-09-25,agents,pr,opened,1494,"feat(#1493): skip coder on issues with sub-issues",https://github.com/fullsend-ai/agents/pull/1494
+2026-09-25,agents,pr,merged,1506,"fix(#1505): declare openai on fleet harnesses",https://github.com/fullsend-ai/agents/pull/1506
+2026-09-25,agents,pr,merged,1490,"fix(#1123): dispatch triage for split-created sub-issues",https://github.com/fullsend-ai/agents/pull/1490
+2026-09-25,agents,pr,merged,1380,"feat(eval): enable EM-002 run_health scorer for all stock agents",https://github.com/fullsend-ai/agents/pull/1380
+2026-09-25,agents,pr,merged,1274,"chore: bump QualityFlow pin to pick up the output-handling fixes",https://github.com/fullsend-ai/agents/pull/1274
+2026-09-25,agents,issue,opened,1509,"Triage/code agents should search for in-flight version-bump PRs using the pinned-dependency identifier, not just bug-symptom keywords",https://github.com/fullsend-ai/agents/issues/1509
+2026-09-25,agents,issue,opened,1507,"Switch fullsend-ai/agents's own triage harness to discretionary ready-to-code promotion",https://github.com/fullsend-ai/agents/issues/1507
+2026-09-25,agents,issue,opened,1505,"Declare the OpenAI provider on the fleet harnesses",https://github.com/fullsend-ai/agents/issues/1505
+2026-09-25,agents,issue,opened,1504,"Signed-off-by trailer from a human identity survived on bot-authored commits despite existing stripping safeguard",https://github.com/fullsend-ai/agents/issues/1504
+2026-09-25,agents,issue,opened,1503,"Fix agent defaults to the narrowest patch even when the reviewer explicitly offers a structural alternative",https://github.com/fullsend-ai/agents/issues/1503
+2026-09-25,agents,issue,opened,1500,"feat(review,retro): support Codex native sub-agent dispatch alongside fullsend #6970",https://github.com/fullsend-ai/agents/issues/1500
+2026-09-25,agents,issue,opened,1498,"Prompt for a tracking issue when a review finding is knowingly merged as an accepted risk",https://github.com/fullsend-ai/agents/issues/1498
+2026-09-25,agents,issue,opened,1497,"Document that merge-queue reruns of already-queued workflow runs don't pick up post-merge CI fixes",https://github.com/fullsend-ai/agents/issues/1497
+2026-09-25,agents,issue,opened,1496,"Triage agent can close an issue as duplicate without citing the duplicate in the posted comment",https://github.com/fullsend-ai/agents/issues/1496
+2026-09-25,agents,issue,opened,1495,"Clarify pr-head vs target-repo file-access convention in review sub-agent context packages",https://github.com/fullsend-ai/agents/issues/1495
+2026-09-25,agents,issue,closed,1505,"Declare the OpenAI provider on the fleet harnesses",https://github.com/fullsend-ai/agents/issues/1505
+2026-09-25,agents,issue,closed,1123,"fix: automatically triage issues created by split actions",https://github.com/fullsend-ai/agents/issues/1123
+2026-09-25,auto-merge,pr,opened,26,"test: exercise fast review path",https://github.com/fullsend-ai/auto-merge/pull/26
+2026-09-25,auto-merge,pr,opened,24,"test: require explicit merge group proof",https://github.com/fullsend-ai/auto-merge/pull/24
+2026-09-25,auto-merge,pr,opened,23,"test: exercise structured auto-merge receipt",https://github.com/fullsend-ai/auto-merge/pull/23
+2026-09-25,auto-merge,pr,opened,22,"feat: explain auto-merge prerequisite decisions",https://github.com/fullsend-ai/auto-merge/pull/22
+2026-09-25,auto-merge,pr,merged,26,"test: exercise fast review path",https://github.com/fullsend-ai/auto-merge/pull/26
+2026-09-25,auto-merge,pr,merged,23,"test: exercise structured auto-merge receipt",https://github.com/fullsend-ai/auto-merge/pull/23
+2026-09-25,auto-merge,pr,merged,22,"feat: explain auto-merge prerequisite decisions",https://github.com/fullsend-ai/auto-merge/pull/22
+2026-09-25,auto-merge,pr,merged,20,"test: exercise merge queue submission",https://github.com/fullsend-ai/auto-merge/pull/20
+2026-09-25,auto-merge,pr,closed,13,"test: exercise semantic evidence package",https://github.com/fullsend-ai/auto-merge/pull/13
+2026-09-25,auto-merge,pr,closed,12,"test: exercise review rationale evidence",https://github.com/fullsend-ai/auto-merge/pull/12
+2026-09-25,auto-merge,issue,opened,25,"Authorize merge-group proof CI check",https://github.com/fullsend-ai/auto-merge/issues/25
+2026-09-25,auto-merge,issue,opened,21,"Test native merge queue submission",https://github.com/fullsend-ai/auto-merge/issues/21
+2026-09-25,auto-merge,issue,closed,21,"Test native merge queue submission",https://github.com/fullsend-ai/auto-merge/issues/21

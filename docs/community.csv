@@ -1384,3 +1384,14 @@ date,repo,issues_opened_external,issues_closed_via_pr_external,issues_closed_oth
 2026-09-24,adoption-analytics,0,0,0,0,0
 2026-09-24,pi-anthropic-vertex,0,0,0,0,0
 2026-09-24,auto-merge,0,0,0,9,0
+2026-09-25,fullsend,5,3,4,1,3
+2026-09-25,.fullsend,0,0,0,0,0
+2026-09-25,experiments,0,0,0,0,0
+2026-09-25,metrics,0,0,0,0,0
+2026-09-25,agents,0,0,0,0,0
+2026-09-25,autonomy-readiness,0,0,0,0,0
+2026-09-25,autonomy-analysis,0,0,0,0,0
+2026-09-25,pi-xai-vertex,0,0,0,0,0
+2026-09-25,adoption-analytics,0,0,0,0,0
+2026-09-25,pi-anthropic-vertex,0,0,0,0,0
+2026-09-25,auto-merge,0,0,0,4,0
