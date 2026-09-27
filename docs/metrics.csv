@@ -952,3 +952,14 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-09-25,adoption-analytics,0,0,0,0,0,0,0,0
 2026-09-25,pi-anthropic-vertex,0,0,0,0,0,0,0,0
 2026-09-25,auto-merge,4,4,2,2,1,0,0.30,0
+2026-09-26,fullsend,9,8,0,11,9,0,4.10,141
+2026-09-26,.fullsend,0,0,0,0,0,0,0,3
+2026-09-26,experiments,0,0,0,0,0,0,0,2
+2026-09-26,metrics,0,0,0,0,0,0,0,2
+2026-09-26,agents,1,0,0,3,0,0,0,82
+2026-09-26,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-09-26,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-09-26,pi-xai-vertex,0,0,0,0,0,0,0,0
+2026-09-26,adoption-analytics,0,0,0,0,0,0,0,0
+2026-09-26,pi-anthropic-vertex,3,2,0,2,0,1,0.10,0
+2026-09-26,auto-merge,0,0,0,0,0,0,0,0

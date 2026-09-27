@@ -14580,3 +14580,51 @@ date,repo,type,event,number,title,url
 2026-09-25,auto-merge,issue,opened,25,"Authorize merge-group proof CI check",https://github.com/fullsend-ai/auto-merge/issues/25
 2026-09-25,auto-merge,issue,opened,21,"Test native merge queue submission",https://github.com/fullsend-ai/auto-merge/issues/21
 2026-09-25,auto-merge,issue,closed,21,"Test native merge queue submission",https://github.com/fullsend-ai/auto-merge/issues/21
+2026-09-26,fullsend,pr,opened,7762,"feat(#7761): split GitLab runner tags by job class",https://github.com/fullsend-ai/fullsend/pull/7762
+2026-09-26,fullsend,pr,opened,7760,"test(#7633): cover managed config through repos CLI",https://github.com/fullsend-ai/fullsend/pull/7760
+2026-09-26,fullsend,pr,opened,7759,"docs(#7758): record hybrid GitLab webhook+poller dispatch",https://github.com/fullsend-ai/fullsend/pull/7759
+2026-09-26,fullsend,pr,opened,7757,"docs(#7756): document AgentEntries last-writer-wins convention",https://github.com/fullsend-ai/fullsend/pull/7757
+2026-09-26,fullsend,pr,opened,7755,"feat(#7749)!: add managed-config pre-write safety gate",https://github.com/fullsend-ai/fullsend/pull/7755
+2026-09-26,fullsend,pr,opened,7754,"chore(deps): update dependency fullsend-ai/pi-anthropic-vertex to v0.1.1 - autoclosed",https://github.com/fullsend-ai/fullsend/pull/7754
+2026-09-26,fullsend,pr,opened,7753,"fix(#7750): bump pi-anthropic-vertex to v0.1.1 for Vertex org policy",https://github.com/fullsend-ai/fullsend/pull/7753
+2026-09-26,fullsend,pr,opened,7747,"chore(deps): update dependency @openai/codex to v0.157.1",https://github.com/fullsend-ai/fullsend/pull/7747
+2026-09-26,fullsend,pr,opened,7744,"docs(#7743): document GitLab runner hub assignment",https://github.com/fullsend-ai/fullsend/pull/7744
+2026-09-26,fullsend,pr,merged,7760,"test(#7633): cover managed config through repos CLI",https://github.com/fullsend-ai/fullsend/pull/7760
+2026-09-26,fullsend,pr,merged,7755,"feat(#7749)!: add managed-config pre-write safety gate",https://github.com/fullsend-ai/fullsend/pull/7755
+2026-09-26,fullsend,pr,merged,7753,"fix(#7750): bump pi-anthropic-vertex to v0.1.1 for Vertex org policy",https://github.com/fullsend-ai/fullsend/pull/7753
+2026-09-26,fullsend,pr,merged,7744,"docs(#7743): document GitLab runner hub assignment",https://github.com/fullsend-ai/fullsend/pull/7744
+2026-09-26,fullsend,pr,merged,7742,"fix(#7741): local run --forge docs; pin codex project trust and read AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/7742
+2026-09-26,fullsend,pr,merged,7699,"chore(deps): update renovatebot/github-action action to v46.3.4",https://github.com/fullsend-ai/fullsend/pull/7699
+2026-09-26,fullsend,pr,merged,7638,"feat(#7632)!: integrate managed repository configuration with install and drift",https://github.com/fullsend-ai/fullsend/pull/7638
+2026-09-26,fullsend,pr,merged,7636,"feat(#7631): add repos.yaml managed repository configuration and layered resolution",https://github.com/fullsend-ai/fullsend/pull/7636
+2026-09-26,fullsend,issue,opened,7761,"Split GitLab runner_tags into agent_runner_tags + control_runner_tags for per-job-class routing",https://github.com/fullsend-ai/fullsend/issues/7761
+2026-09-26,fullsend,issue,opened,7758,"Update ADR 0067: adopt hybrid GitLab dispatch (webhook fast-path + poller backstop)",https://github.com/fullsend-ai/fullsend/issues/7758
+2026-09-26,fullsend,issue,opened,7756,"Document the last-writer-wins AgentEntries convention in docs/contributing/go-code.md",https://github.com/fullsend-ai/fullsend/issues/7756
+2026-09-26,fullsend,issue,opened,7752,"Investigate Grok SSE keepalive fix regression or deployment gap",https://github.com/fullsend-ai/fullsend/issues/7752
+2026-09-26,fullsend,issue,opened,7751,"Move to OpenShell 0.1.1",https://github.com/fullsend-ai/fullsend/issues/7751
+2026-09-26,fullsend,issue,opened,7750,"pi 0.87.1: Claude on Vertex fails with a structured_outputs 400 where an org policy restricts partner-model features; bump pi-anthropic-vertex",https://github.com/fullsend-ai/fullsend/issues/7750
+2026-09-26,fullsend,issue,opened,7749,"Implement ADR-0122 pre-write safety gate and complete managed-configuration rename",https://github.com/fullsend-ai/fullsend/issues/7749
+2026-09-26,fullsend,issue,opened,7748,"OpenAI credential refresh timer stops during host sleep, key expires",https://github.com/fullsend-ai/fullsend/issues/7748
+2026-09-26,fullsend,issue,opened,7746,"Add a CI check for compile-time optional-interface assertions and runtime-interface-contract docs sync in internal/runtime",https://github.com/fullsend-ai/fullsend/issues/7746
+2026-09-26,fullsend,issue,opened,7745,"Auto-file or require a tracking issue when a merge comment defers outstanding bot CHANGES_REQUESTED findings to a follow-up",https://github.com/fullsend-ai/fullsend/issues/7745
+2026-09-26,fullsend,issue,opened,7743,"docs: document GitLab runner hub assignment",https://github.com/fullsend-ai/fullsend/issues/7743
+2026-09-26,fullsend,issue,closed,7750,"pi 0.87.1: Claude on Vertex fails with a structured_outputs 400 where an org policy restricts partner-model features; bump pi-anthropic-vertex",https://github.com/fullsend-ai/fullsend/issues/7750
+2026-09-26,fullsend,issue,closed,7749,"Implement ADR-0122 pre-write safety gate and complete managed-configuration rename",https://github.com/fullsend-ai/fullsend/issues/7749
+2026-09-26,fullsend,issue,closed,7745,"Auto-file or require a tracking issue when a merge comment defers outstanding bot CHANGES_REQUESTED findings to a follow-up",https://github.com/fullsend-ai/fullsend/issues/7745
+2026-09-26,fullsend,issue,closed,7743,"docs: document GitLab runner hub assignment",https://github.com/fullsend-ai/fullsend/issues/7743
+2026-09-26,fullsend,issue,closed,7741,"Local run docs need --forge github; codex runtime should pin project trust and read AGENTS.md",https://github.com/fullsend-ai/fullsend/issues/7741
+2026-09-26,fullsend,issue,closed,7633,"Add ADR-0122 integration coverage and repository configuration documentation",https://github.com/fullsend-ai/fullsend/issues/7633
+2026-09-26,fullsend,issue,closed,7632,"Integrate managed repository configuration with install, convergence, and drift",https://github.com/fullsend-ai/fullsend/issues/7632
+2026-09-26,fullsend,issue,closed,7631,"Add repos.yaml managed repository configuration and layered resolution",https://github.com/fullsend-ai/fullsend/issues/7631
+2026-09-26,fullsend,issue,closed,7630,"Epic: Implement ADR-0122 managed repository configuration",https://github.com/fullsend-ai/fullsend/issues/7630
+2026-09-26,agents,pr,opened,1513,"fix(#1512)!: declare profile credentials for OpenShell 0.1",https://github.com/fullsend-ai/agents/pull/1513
+2026-09-26,agents,issue,opened,1512,"Declare provider credentials in profiles and drop _NOOP_* placeholders for OpenShell 0.1",https://github.com/fullsend-ai/agents/issues/1512
+2026-09-26,agents,issue,opened,1511,"Triage agent invents a false 'my prior request was a misreading' narrative when re-triage is triggered by a human editing the issue body",https://github.com/fullsend-ai/agents/issues/1511
+2026-09-26,agents,issue,opened,1510,"Review's intent-coherence check should re-validate PR terminology against the referenced ADR's current merged text, not just at triage time",https://github.com/fullsend-ai/agents/issues/1510
+2026-09-26,pi-anthropic-vertex,pr,opened,7,"fix: support pi 0.87.1, run CI against it, dispatch agents from fullsend main",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/7
+2026-09-26,pi-anthropic-vertex,pr,opened,4,"fix: release 0.1.1",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/4
+2026-09-26,pi-anthropic-vertex,pr,opened,3,"fix: resend without strict tools when Vertex refuses them by org policy",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/3
+2026-09-26,pi-anthropic-vertex,pr,merged,4,"fix: release 0.1.1",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/4
+2026-09-26,pi-anthropic-vertex,pr,merged,3,"fix: resend without strict tools when Vertex refuses them by org policy",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/3
+2026-09-26,pi-anthropic-vertex,issue,opened,6,"Consider switching review agent model away from xai-vertex/grok-4.6",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/6
+2026-09-26,pi-anthropic-vertex,issue,opened,5,"ci: move the pi matrix to 0.87.1, fullsend's sandbox pin",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/5

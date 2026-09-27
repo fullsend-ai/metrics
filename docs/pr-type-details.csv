@@ -1760,3 +1760,11 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-25,agents,1490,fix(#1123): dispatch triage for split-created sub-issues,fix,core,1123,ralphbean,https://github.com/fullsend-ai/agents/pull/1490
 2026-09-25,agents,1380,feat(eval): enable EM-002 run_health scorer for all stock agents,feat,,,,https://github.com/fullsend-ai/agents/pull/1380
 2026-09-25,agents,1274,chore: bump QualityFlow pin to pick up the output-handling fixes,chore,,,,https://github.com/fullsend-ai/agents/pull/1274
+2026-09-26,fullsend,7760,test(#7633): cover managed config through repos CLI,test,,,,https://github.com/fullsend-ai/fullsend/pull/7760
+2026-09-26,fullsend,7755,feat(#7749)!: add managed-config pre-write safety gate,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7755
+2026-09-26,fullsend,7753,fix(#7750): bump pi-anthropic-vertex to v0.1.1 for Vertex org policy,fix,core,7750,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7753
+2026-09-26,fullsend,7744,docs(#7743): document GitLab runner hub assignment,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7744
+2026-09-26,fullsend,7742,fix(#7741): local run --forge docs; pin codex project trust and read AGENTS.md,fix,core,7741,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7742
+2026-09-26,fullsend,7699,chore(deps): update renovatebot/github-action action to v46.3.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7699
+2026-09-26,fullsend,7638,feat(#7632)!: integrate managed repository configuration with install and drift,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7638
+2026-09-26,fullsend,7636,feat(#7631): add repos.yaml managed repository configuration and layered resolution,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7636
