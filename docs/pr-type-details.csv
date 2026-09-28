@@ -1768,3 +1768,10 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-26,fullsend,7699,chore(deps): update renovatebot/github-action action to v46.3.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7699
 2026-09-26,fullsend,7638,feat(#7632)!: integrate managed repository configuration with install and drift,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7638
 2026-09-26,fullsend,7636,feat(#7631): add repos.yaml managed repository configuration and layered resolution,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7636
+2026-09-27,fullsend,7778,ci(#7777): use org-level roles for behaviour-test actors,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7778
+2026-09-27,fullsend,7762,feat(#7761): split GitLab runner tags by job class,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7762
+2026-09-27,fullsend,7398,test(#6120): delete leased pool repos after each scenario,test,,,,https://github.com/fullsend-ai/fullsend/pull/7398
+2026-09-27,fullsend,7074,feat(cli)!: authenticate mint status against /v1/status with GitHub credentials,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7074
+2026-09-27,fullsend,6823,fix(#6821): add Go-side context deadline and JS-side recovery for WASM mint timeout,fix,core,6821,ggallen,https://github.com/fullsend-ai/fullsend/pull/6823
+2026-09-27,agents,1494,feat(#1493): skip coder on issues with sub-issues,feat,,,,https://github.com/fullsend-ai/agents/pull/1494
+2026-09-27,agents,1415,feat(#1413): resolve outdated review threads on re-review,feat,,,,https://github.com/fullsend-ai/agents/pull/1415

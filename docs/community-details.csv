@@ -1687,3 +1687,4 @@ date,repo,type,event,number,actor,title,url
 2026-09-26,pi-anthropic-vertex,pr,opened_core,7,waynesun09,"fix: support pi 0.87.1, run CI against it, dispatch agents from fullsend main",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/7
 2026-09-26,pi-anthropic-vertex,pr,opened_core,4,waynesun09,"fix: release 0.1.1",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/4
 2026-09-26,pi-anthropic-vertex,pr,opened_core,3,waynesun09,"fix: resend without strict tools when Vertex refuses them by org policy",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/3
+2026-09-27,fullsend,pr,opened_core,7765,ifireball,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765

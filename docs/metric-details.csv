@@ -14628,3 +14628,54 @@ date,repo,type,event,number,title,url
 2026-09-26,pi-anthropic-vertex,pr,merged,3,"fix: resend without strict tools when Vertex refuses them by org policy",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/3
 2026-09-26,pi-anthropic-vertex,issue,opened,6,"Consider switching review agent model away from xai-vertex/grok-4.6",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/6
 2026-09-26,pi-anthropic-vertex,issue,opened,5,"ci: move the pi matrix to 0.87.1, fullsend's sandbox pin",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/5
+2026-09-27,fullsend,pr,opened,7780,"feat(#7767): add GitLab trigger-token and webhook CRUD",https://github.com/fullsend-ai/fullsend/pull/7780
+2026-09-27,fullsend,pr,opened,7779,"fix(deps): update module github.com/google/cel-go to v0.30.0",https://github.com/fullsend-ai/fullsend/pull/7779
+2026-09-27,fullsend,pr,opened,7778,"ci(#7777): use org-level roles for behaviour-test actors",https://github.com/fullsend-ai/fullsend/pull/7778
+2026-09-27,fullsend,pr,opened,7765,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-09-27,fullsend,pr,opened,7763,"chore(deps): update dependency nvidia/openshell to v0.1.1",https://github.com/fullsend-ai/fullsend/pull/7763
+2026-09-27,fullsend,pr,merged,7778,"ci(#7777): use org-level roles for behaviour-test actors",https://github.com/fullsend-ai/fullsend/pull/7778
+2026-09-27,fullsend,pr,merged,7762,"feat(#7761): split GitLab runner tags by job class",https://github.com/fullsend-ai/fullsend/pull/7762
+2026-09-27,fullsend,pr,merged,7398,"test(#6120): delete leased pool repos after each scenario",https://github.com/fullsend-ai/fullsend/pull/7398
+2026-09-27,fullsend,pr,merged,7074,"feat(cli)!: authenticate mint status against /v1/status with GitHub credentials",https://github.com/fullsend-ai/fullsend/pull/7074
+2026-09-27,fullsend,pr,merged,6823,"fix(#6821): add Go-side context deadline and JS-side recovery for WASM mint timeout",https://github.com/fullsend-ai/fullsend/pull/6823
+2026-09-27,fullsend,pr,closed,7754,"chore(deps): update dependency fullsend-ai/pi-anthropic-vertex to v0.1.1 - autoclosed",https://github.com/fullsend-ai/fullsend/pull/7754
+2026-09-27,fullsend,issue,opened,7782,"Remove GitLab identity migration machinery and retain only the three built-in roles",https://github.com/fullsend-ai/fullsend/issues/7782
+2026-09-27,fullsend,issue,opened,7781,"run: per-iteration agent budgets are bounded by the one-hour App installation token; a steered run is clipped to 50 minutes",https://github.com/fullsend-ai/fullsend/issues/7781
+2026-09-27,fullsend,issue,opened,7777,"Use organization-level roles for behaviour-test actors in ephemeral pool orgs",https://github.com/fullsend-ai/fullsend/issues/7777
+2026-09-27,fullsend,issue,opened,7776,"ADR 0125: end-to-end validation + docs currency for hybrid GitLab dispatch",https://github.com/fullsend-ai/fullsend/issues/7776
+2026-09-27,fullsend,issue,opened,7775,"ADR 0125: uninstall — webhook/trigger teardown + scaffold/var cleanup",https://github.com/fullsend-ai/fullsend/issues/7775
+2026-09-27,fullsend,issue,opened,7774,"ADR 0125: convergence + drift + status surface for the webhook fast-path",https://github.com/fullsend-ai/fullsend/issues/7774
+2026-09-27,fullsend,issue,opened,7773,"ADR 0125: gitlab-webhook CLI driver wiring → dispatch spine → CreatePipeline",https://github.com/fullsend-ai/fullsend/issues/7773
+2026-09-27,fullsend,issue,opened,7772,"ADR 0125: install-time webhook + trigger-token provisioning (always-managed)",https://github.com/fullsend-ai/fullsend/issues/7772
+2026-09-27,fullsend,issue,opened,7771,"ADR 0125: dispatcher CI scaffold — include, job, run-dispatcher-job.sh, trigger admit rule",https://github.com/fullsend-ai/fullsend/issues/7771
+2026-09-27,fullsend,issue,opened,7770,"ADR 0125: gitlab-webhook event builder + two-dispatch-stacks resolution",https://github.com/fullsend-ai/fullsend/issues/7770
+2026-09-27,fullsend,issue,opened,7769,"ADR 0125: in-job security gate hardening (agent + poll scripts)",https://github.com/fullsend-ai/fullsend/issues/7769
+2026-09-27,fullsend,issue,opened,7768,"ADR 0125: conflict-detecting (CAS) poll-state persist for concurrent writers",https://github.com/fullsend-ai/fullsend/issues/7768
+2026-09-27,fullsend,issue,opened,7767,"ADR 0125: GitLab forge primitives — pipeline trigger-token + project-webhook CRUD",https://github.com/fullsend-ai/fullsend/issues/7767
+2026-09-27,fullsend,issue,opened,7766,"Epic: ADR 0125 — hybrid GitLab dispatch (webhook fast-path + poller backstop)",https://github.com/fullsend-ai/fullsend/issues/7766
+2026-09-27,fullsend,issue,opened,7764,"Define a forge-portable bot identity and authorization contract",https://github.com/fullsend-ai/fullsend/issues/7764
+2026-09-27,fullsend,issue,closed,7777,"Use organization-level roles for behaviour-test actors in ephemeral pool orgs",https://github.com/fullsend-ai/fullsend/issues/7777
+2026-09-27,fullsend,issue,closed,7761,"Split GitLab runner_tags into agent_runner_tags + control_runner_tags for per-job-class routing",https://github.com/fullsend-ai/fullsend/issues/7761
+2026-09-27,fullsend,issue,closed,6821,"Mint WASM isolate poisons permanently after GitHub API timeout, causing cascading 503s",https://github.com/fullsend-ai/fullsend/issues/6821
+2026-09-27,fullsend,issue,closed,6120,"test(behaviour): delete leased pool repos after scenarios and recreate on acquire",https://github.com/fullsend-ai/fullsend/issues/6120
+2026-09-27,fullsend,issue,closed,5884,"cli: mint status GitHub auth against /v1/status",https://github.com/fullsend-ai/fullsend/issues/5884
+2026-09-27,agents,pr,opened,1520,"feat(#1518): reconcile forge-reported merge conflicts",https://github.com/fullsend-ai/agents/pull/1520
+2026-09-27,agents,pr,opened,1519,"fix(#1517): warn when sub-issue check fail-opens",https://github.com/fullsend-ai/agents/pull/1519
+2026-09-27,agents,pr,opened,1516,"test(#1515): cover reviewThreads pagination in post-review tests",https://github.com/fullsend-ai/agents/pull/1516
+2026-09-27,agents,pr,merged,1494,"feat(#1493): skip coder on issues with sub-issues",https://github.com/fullsend-ai/agents/pull/1494
+2026-09-27,agents,pr,merged,1415,"feat(#1413): resolve outdated review threads on re-review",https://github.com/fullsend-ai/agents/pull/1415
+2026-09-27,agents,issue,opened,1526,"Review/fix agents should flag infra-permission-scope-expansion fixes for human confirmation instead of auto-implementing them",https://github.com/fullsend-ai/agents/issues/1526
+2026-09-27,agents,issue,opened,1525,"[fix-agent] Extract structured-output contract into standalone skill",https://github.com/fullsend-ai/agents/issues/1525
+2026-09-27,agents,issue,opened,1524,"[fix-agent] Extract verification procedure into standalone skill",https://github.com/fullsend-ai/agents/issues/1524
+2026-09-27,agents,issue,opened,1523,"[fix-agent] Extract project-CI inspection into standalone skill",https://github.com/fullsend-ai/agents/issues/1523
+2026-09-27,agents,issue,opened,1522,"[fix-agent] Extract history-rewrite procedure into standalone skill",https://github.com/fullsend-ai/agents/issues/1522
+2026-09-27,agents,issue,opened,1521,"[Epic] Decompose fix-agent skills to stay below the skillsaw budget",https://github.com/fullsend-ai/agents/issues/1521
+2026-09-27,agents,issue,opened,1518,"Fix agent should reconcile forge-reported merge conflicts with the target branch",https://github.com/fullsend-ai/agents/issues/1518
+2026-09-27,agents,issue,opened,1517,"forge_has_sub_issues() fail-open path is indistinguishable from a confirmed zero, and untested",https://github.com/fullsend-ai/agents/issues/1517
+2026-09-27,agents,issue,opened,1515,"post-review-test.sh mocks never exercise the reviewThreads pagination loop added in PR #1415",https://github.com/fullsend-ai/agents/issues/1515
+2026-09-27,agents,issue,opened,1514,"Fix agent should reconcile linked-issue acceptance criteria when a human's /fs-fix comment changes documented design intent",https://github.com/fullsend-ai/agents/issues/1514
+2026-09-27,agents,issue,closed,1413,"Review agent should resolve open threads when its comments become outdated",https://github.com/fullsend-ai/agents/issues/1413
+2026-09-27,agents,issue,closed,1493,"Coder agent should skip issues that contain sub-issues (tracking/parent issues)",https://github.com/fullsend-ai/agents/issues/1493
+2026-09-27,pi-anthropic-vertex,pr,merged,7,"fix: support pi 0.87.1, run CI against it, dispatch agents from fullsend main",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/7
+2026-09-27,pi-anthropic-vertex,issue,opened,8,"Revert fullsend-managed workflow pins from floating `@main` back to a pinned SHA",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/8
+2026-09-27,pi-anthropic-vertex,issue,closed,5,"ci: move the pi matrix to 0.87.1, fullsend's sandbox pin",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/5
