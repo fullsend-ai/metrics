@@ -1688,3 +1688,14 @@ date,repo,type,event,number,actor,title,url
 2026-09-26,pi-anthropic-vertex,pr,opened_core,4,waynesun09,"fix: release 0.1.1",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/4
 2026-09-26,pi-anthropic-vertex,pr,opened_core,3,waynesun09,"fix: resend without strict tools when Vertex refuses them by org policy",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/3
 2026-09-27,fullsend,pr,opened_core,7765,ifireball,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-09-28,fullsend,issue,opened_external,7796,deboer-tim,"Disruptive retriage",https://github.com/fullsend-ai/fullsend/issues/7796
+2026-09-28,fullsend,issue,opened_external,7790,ccronca,"fix(gitlab): fix agent sandbox missing MR source branch",https://github.com/fullsend-ai/fullsend/issues/7790
+2026-09-28,fullsend,issue,closed_other_external,7790,ccronca,"fix(gitlab): fix agent sandbox missing MR source branch",https://github.com/fullsend-ai/fullsend/issues/7790
+2026-09-28,fullsend,issue,closed_via_pr_external,7725,jflowers,"internal/runtime codex adapter block() fails open when stderr is closed on pyenv-built CPython",https://github.com/fullsend-ai/fullsend/issues/7725
+2026-09-28,fullsend,issue,closed_via_pr_external,7723,jflowers,"internal/harness TestFetchBaseSkill_DefaultTreeFetcherUsed isn't hermetic — runs a real git fetch that blocks on the osxkeychain credential helper",https://github.com/fullsend-ai/fullsend/issues/7723
+2026-09-28,fullsend,issue,closed_other_external,6915,eranco74,"roles: [] does not disable an agent — empty role list behaves identically to unset roles",https://github.com/fullsend-ai/fullsend/issues/6915
+2026-09-28,fullsend,pr,opened_core,7786,rh-hemartin,"feat(workflow)!: config's `roles` key do not gate execution anymore",https://github.com/fullsend-ai/fullsend/pull/7786
+2026-09-28,fullsend,pr,reviewed_external,7726,jflowers,"fix(#7725): keep codex hook block at exit 2 with closed stderr",https://github.com/fullsend-ai/fullsend/pull/7726
+2026-09-28,fullsend,pr,reviewed_external,7726,jflowers,"fix(#7725): keep codex hook block at exit 2 with closed stderr",https://github.com/fullsend-ai/fullsend/pull/7726
+2026-09-28,fullsend,pr,reviewed_external,7233,Aliciapet11,"feat(#7229)!: move to OpenShell 0.1.1",https://github.com/fullsend-ai/fullsend/pull/7233
+2026-09-28,agents,pr,opened_core,1543,waynesun09,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543

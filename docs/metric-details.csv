@@ -14679,3 +14679,87 @@ date,repo,type,event,number,title,url
 2026-09-27,pi-anthropic-vertex,pr,merged,7,"fix: support pi 0.87.1, run CI against it, dispatch agents from fullsend main",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/7
 2026-09-27,pi-anthropic-vertex,issue,opened,8,"Revert fullsend-managed workflow pins from floating `@main` back to a pinned SHA",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/8
 2026-09-27,pi-anthropic-vertex,issue,closed,5,"ci: move the pi matrix to 0.87.1, fullsend's sandbox pin",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/5
+2026-09-28,fullsend,pr,opened,7813,"refactor(#7798): add GitLab pipeline-variable override-role methods",https://github.com/fullsend-ai/fullsend/pull/7813
+2026-09-28,fullsend,pr,opened,7812,"fix(#7768): CAS poll-state persist for concurrent writers",https://github.com/fullsend-ai/fullsend/pull/7812
+2026-09-28,fullsend,pr,opened,7811,"feat(#7782)!: require GitLab role credentials at runtime",https://github.com/fullsend-ai/fullsend/pull/7811
+2026-09-28,fullsend,pr,opened,7809,"feat(#6970)!: support native Codex review and retro children",https://github.com/fullsend-ai/fullsend/pull/7809
+2026-09-28,fullsend,pr,opened,7808,"docs(adr): route runtime and model per task from a config policy",https://github.com/fullsend-ai/fullsend/pull/7808
+2026-09-28,fullsend,pr,opened,7806,"chore(#7805): temporarily disable retro agent in this repo",https://github.com/fullsend-ai/fullsend/pull/7806
+2026-09-28,fullsend,pr,opened,7802,"chore(deps): update renovatebot/github-action action to v46.3.5",https://github.com/fullsend-ai/fullsend/pull/7802
+2026-09-28,fullsend,pr,opened,7797,"fix(#7790): check out GitLab MR source before fix sandbox",https://github.com/fullsend-ai/fullsend/pull/7797
+2026-09-28,fullsend,pr,opened,7795,"docs(#7794): extend forge-abstraction to CI scaffold scripts",https://github.com/fullsend-ai/fullsend/pull/7795
+2026-09-28,fullsend,pr,opened,7793,"fix(gitlab): fetch MR source branch for fix agent sandbox",https://github.com/fullsend-ai/fullsend/pull/7793
+2026-09-28,fullsend,pr,opened,7791,"fix(gitlab): fetch MR source branch for fix agent sandbox",https://github.com/fullsend-ai/fullsend/pull/7791
+2026-09-28,fullsend,pr,opened,7789,"docs(#7788): comment empty ALLOWED_ORGS as valid per-repo state",https://github.com/fullsend-ai/fullsend/pull/7789
+2026-09-28,fullsend,pr,opened,7786,"feat(workflow)!: config's `roles` key do not gate execution anymore",https://github.com/fullsend-ai/fullsend/pull/7786
+2026-09-28,fullsend,pr,opened,7785,"docs(#7784): document tri-state config field semantics",https://github.com/fullsend-ai/fullsend/pull/7785
+2026-09-28,fullsend,pr,merged,7813,"refactor(#7798): add GitLab pipeline-variable override-role methods",https://github.com/fullsend-ai/fullsend/pull/7813
+2026-09-28,fullsend,pr,merged,7812,"fix(#7768): CAS poll-state persist for concurrent writers",https://github.com/fullsend-ai/fullsend/pull/7812
+2026-09-28,fullsend,pr,merged,7811,"feat(#7782)!: require GitLab role credentials at runtime",https://github.com/fullsend-ai/fullsend/pull/7811
+2026-09-28,fullsend,pr,merged,7806,"chore(#7805): temporarily disable retro agent in this repo",https://github.com/fullsend-ai/fullsend/pull/7806
+2026-09-28,fullsend,pr,merged,7797,"fix(#7790): check out GitLab MR source before fix sandbox",https://github.com/fullsend-ai/fullsend/pull/7797
+2026-09-28,fullsend,pr,merged,7780,"feat(#7767): add GitLab trigger-token and webhook CRUD",https://github.com/fullsend-ai/fullsend/pull/7780
+2026-09-28,fullsend,pr,merged,7779,"fix(deps): update module github.com/google/cel-go to v0.30.0",https://github.com/fullsend-ai/fullsend/pull/7779
+2026-09-28,fullsend,pr,merged,7759,"docs(#7758): record hybrid GitLab webhook+poller dispatch",https://github.com/fullsend-ai/fullsend/pull/7759
+2026-09-28,fullsend,pr,merged,7726,"fix(#7725): keep codex hook block at exit 2 with closed stderr",https://github.com/fullsend-ai/fullsend/pull/7726
+2026-09-28,fullsend,pr,merged,7724,"test(#7723): make DefaultTreeFetcherUsed hermetic",https://github.com/fullsend-ai/fullsend/pull/7724
+2026-09-28,fullsend,pr,merged,7693,"fix(#6855): retry sandbox GitHub preflight on transient 403",https://github.com/fullsend-ai/fullsend/pull/7693
+2026-09-28,fullsend,pr,merged,7691,"docs(#6847): add a setup overview to the Jira integration guide",https://github.com/fullsend-ai/fullsend/pull/7691
+2026-09-28,fullsend,pr,merged,7678,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 2e39015",https://github.com/fullsend-ai/fullsend/pull/7678
+2026-09-28,fullsend,pr,merged,7623,"chore(deps): update dependency prettier to v3.9.9",https://github.com/fullsend-ai/fullsend/pull/7623
+2026-09-28,fullsend,pr,merged,7617,"docs(guides): add --forge flag to local-run triage example",https://github.com/fullsend-ai/fullsend/pull/7617
+2026-09-28,fullsend,pr,merged,7586,"feat(#7559)!: remove GitLab role migration fallback",https://github.com/fullsend-ai/fullsend/pull/7586
+2026-09-28,fullsend,pr,closed,7791,"fix(gitlab): fetch MR source branch for fix agent sandbox",https://github.com/fullsend-ai/fullsend/pull/7791
+2026-09-28,fullsend,pr,closed,7659,"fix(dispatch): an empty role list is honored in dispatch",https://github.com/fullsend-ai/fullsend/pull/7659
+2026-09-28,fullsend,issue,opened,7815,"Add per-call timeout/retry for the review orchestrator's primary model call, not just sub-agent dispatches",https://github.com/fullsend-ai/fullsend/issues/7815
+2026-09-28,fullsend,issue,opened,7814,"fix(gitlab): support fork and cross-project MRs in fix-agent scripts",https://github.com/fullsend-ai/fullsend/issues/7814
+2026-09-28,fullsend,issue,opened,7810,"Automate enforcement of the XxxFn test-seam naming convention (3rd recurrence of the same gap)",https://github.com/fullsend-ai/fullsend/issues/7810
+2026-09-28,fullsend,issue,opened,7807,"Fix-iteration counter derived from live commit recount causes mislabeled iterations and inaccurate bot-cap escalation",https://github.com/fullsend-ai/fullsend/issues/7807
+2026-09-28,fullsend,issue,opened,7805,"Temporarily disable automatic retro in fullsend and agents",https://github.com/fullsend-ai/fullsend/issues/7805
+2026-09-28,fullsend,issue,opened,7804,"Add a static model/runtime pairing check to .fullsend/config.yaml validation",https://github.com/fullsend-ai/fullsend/issues/7804
+2026-09-28,fullsend,issue,opened,7803,"Skip retro dispatch when no prior agent activity occurred on the PR",https://github.com/fullsend-ai/fullsend/issues/7803
+2026-09-28,fullsend,issue,opened,7801,"Reduce PR agent execution latency with a mailbox pattern",https://github.com/fullsend-ai/fullsend/issues/7801
+2026-09-28,fullsend,issue,opened,7800,"Establish ADR review standards for visual diagrams and schemas",https://github.com/fullsend-ai/fullsend/issues/7800
+2026-09-28,fullsend,issue,opened,7799,"Review dispatch under pull_request_target resolves subagent models from stale (pre-PR) config when the PR itself edits .fullsend/config.yaml",https://github.com/fullsend-ai/fullsend/issues/7799
+2026-09-28,fullsend,issue,opened,7798,"GitLab forge primitive: read/set project `ci_pipeline_variables_minimum_override_role`",https://github.com/fullsend-ai/fullsend/issues/7798
+2026-09-28,fullsend,issue,opened,7796,"Disruptive retriage",https://github.com/fullsend-ai/fullsend/issues/7796
+2026-09-28,fullsend,issue,opened,7794,"Extend forge-abstraction doc scope from action.yml to GitLab (and other forge) CI scaffold scripts",https://github.com/fullsend-ai/fullsend/issues/7794
+2026-09-28,fullsend,issue,opened,7790,"fix(gitlab): fix agent sandbox missing MR source branch",https://github.com/fullsend-ai/fullsend/issues/7790
+2026-09-28,fullsend,issue,opened,7788,"Link ADR-0044/ADR-0078 directly in provisioner.go's EnsureOrgInMint/RemoveOrgFromMint comments",https://github.com/fullsend-ai/fullsend/issues/7788
+2026-09-28,fullsend,issue,opened,7787,"Investigate and possibly update OpenShell to v0.1.1",https://github.com/fullsend-ai/fullsend/issues/7787
+2026-09-28,fullsend,issue,opened,7784,"Document canonical inherit/override semantics for tri-state per-repo config fields (absent vs. null vs. empty)",https://github.com/fullsend-ai/fullsend/issues/7784
+2026-09-28,fullsend,issue,opened,7783,"Remove roles gating for execution",https://github.com/fullsend-ai/fullsend/issues/7783
+2026-09-28,fullsend,issue,closed,7805,"Temporarily disable automatic retro in fullsend and agents",https://github.com/fullsend-ai/fullsend/issues/7805
+2026-09-28,fullsend,issue,closed,7798,"GitLab forge primitive: read/set project `ci_pipeline_variables_minimum_override_role`",https://github.com/fullsend-ai/fullsend/issues/7798
+2026-09-28,fullsend,issue,closed,7790,"fix(gitlab): fix agent sandbox missing MR source branch",https://github.com/fullsend-ai/fullsend/issues/7790
+2026-09-28,fullsend,issue,closed,7787,"Investigate and possibly update OpenShell to v0.1.1",https://github.com/fullsend-ai/fullsend/issues/7787
+2026-09-28,fullsend,issue,closed,7768,"ADR 0125: conflict-detecting (CAS) poll-state persist for concurrent writers",https://github.com/fullsend-ai/fullsend/issues/7768
+2026-09-28,fullsend,issue,closed,7767,"ADR 0125: GitLab forge primitives — pipeline trigger-token + project-webhook CRUD",https://github.com/fullsend-ai/fullsend/issues/7767
+2026-09-28,fullsend,issue,closed,7758,"Update ADR 0067: adopt hybrid GitLab dispatch (webhook fast-path + poller backstop)",https://github.com/fullsend-ai/fullsend/issues/7758
+2026-09-28,fullsend,issue,closed,7725,"internal/runtime codex adapter block() fails open when stderr is closed on pyenv-built CPython",https://github.com/fullsend-ai/fullsend/issues/7725
+2026-09-28,fullsend,issue,closed,7723,"internal/harness TestFetchBaseSkill_DefaultTreeFetcherUsed isn't hermetic — runs a real git fetch that blocks on the osxkeychain credential helper",https://github.com/fullsend-ai/fullsend/issues/7723
+2026-09-28,fullsend,issue,closed,7559,"Remove obsolete GitLab role migration machinery from Fullsend",https://github.com/fullsend-ai/fullsend/issues/7559
+2026-09-28,fullsend,issue,closed,6915,"roles: [] does not disable an agent — empty role list behaves identically to unset roles",https://github.com/fullsend-ai/fullsend/issues/6915
+2026-09-28,fullsend,issue,closed,6855,"Add retry with backoff to pre-flight GitHub API connectivity check",https://github.com/fullsend-ai/fullsend/issues/6855
+2026-09-28,fullsend,issue,closed,6847,"docs(jira): add a setup TL;DR to the integration guide",https://github.com/fullsend-ai/fullsend/issues/6847
+2026-09-28,fullsend,issue,closed,2433,"EnsureOrgInMint missing data consistency guard after role-only ROLE_APP_IDS migration",https://github.com/fullsend-ai/fullsend/issues/2433
+2026-09-28,experiments,pr,opened,58,"experiment: mutation testing for eval coverage (muteval on 0016)",https://github.com/fullsend-ai/experiments/pull/58
+2026-09-28,agents,pr,opened,1543,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-09-28,agents,pr,opened,1542,"feat(#1500)!: support native Codex review and retro dispatch",https://github.com/fullsend-ai/agents/pull/1542
+2026-09-28,agents,pr,opened,1541,"chore(#1538): temporarily disable retro agent in this repo",https://github.com/fullsend-ai/agents/pull/1541
+2026-09-28,agents,pr,merged,1541,"chore(#1538): temporarily disable retro agent in this repo",https://github.com/fullsend-ai/agents/pull/1541
+2026-09-28,agents,issue,opened,1540,"post-fix.sh's history-rewrite-safe-rebase guard uses an under-inclusive keyword list, silently reverting human-requested commit folds",https://github.com/fullsend-ai/agents/issues/1540
+2026-09-28,agents,issue,opened,1539,"Review agent doesn't verify security fixes against the external consumer contract described in the issue",https://github.com/fullsend-ai/agents/issues/1539
+2026-09-28,agents,issue,opened,1538,"Temporarily disable the retro agent for this repository",https://github.com/fullsend-ai/agents/issues/1538
+2026-09-28,agents,issue,opened,1537,"Code agent's config.yaml verification checks model-string syntax but not runtime/model pairing",https://github.com/fullsend-ai/agents/issues/1537
+2026-09-28,agents,issue,opened,1536,"Protected-path justification check should verify cited incident evidence against the target repo's own workflow history",https://github.com/fullsend-ai/agents/issues/1536
+2026-09-28,agents,issue,opened,1535,"Strip `ready-to-code` from originating issue when a bot PR is closed without merging",https://github.com/fullsend-ai/agents/issues/1535
+2026-09-28,agents,issue,opened,1534,"Review agent sub-agent roster has no step for checking AGENTS.md architectural conventions on non-Go files",https://github.com/fullsend-ai/agents/issues/1534
+2026-09-28,agents,issue,opened,1533,"Re-land REVIEW_RISK_ROUTING_ENABLED dispatch-narrowing (PR #1246 closed unmerged)",https://github.com/fullsend-ai/agents/issues/1533
+2026-09-28,agents,issue,opened,1532,"Add functional test coverage for REVIEW_RISK_ROUTING_ENABLED dispatch narrowing before it reaches default-on",https://github.com/fullsend-ai/agents/issues/1532
+2026-09-28,agents,issue,opened,1531,"Onboard proven external contributors via OWNERS-file reviewers to unblock automated review dispatch",https://github.com/fullsend-ai/agents/issues/1531
+2026-09-28,agents,issue,opened,1530,"Triage agent: check for open agent-authored PRs on target files before routing to ready-to-code",https://github.com/fullsend-ai/agents/issues/1530
+2026-09-28,agents,issue,opened,1529,"Code agent pre-flight: detect open PRs with overlapping file changes before creating a new PR",https://github.com/fullsend-ai/agents/issues/1529
+2026-09-28,agents,issue,opened,1528,"Code agent: pre-flight check for open bot PRs touching the same files before creating a new PR",https://github.com/fullsend-ai/agents/issues/1528
+2026-09-28,agents,issue,opened,1527,"Code agent should file partial PRs when an issue spans restricted and non-restricted file changes",https://github.com/fullsend-ai/agents/issues/1527
+2026-09-28,agents,issue,closed,1538,"Temporarily disable the retro agent for this repository",https://github.com/fullsend-ai/agents/issues/1538

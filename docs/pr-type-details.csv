@@ -1775,3 +1775,20 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-27,fullsend,6823,fix(#6821): add Go-side context deadline and JS-side recovery for WASM mint timeout,fix,core,6821,ggallen,https://github.com/fullsend-ai/fullsend/pull/6823
 2026-09-27,agents,1494,feat(#1493): skip coder on issues with sub-issues,feat,,,,https://github.com/fullsend-ai/agents/pull/1494
 2026-09-27,agents,1415,feat(#1413): resolve outdated review threads on re-review,feat,,,,https://github.com/fullsend-ai/agents/pull/1415
+2026-09-28,fullsend,7813,refactor(#7798): add GitLab pipeline-variable override-role methods,other,,,,https://github.com/fullsend-ai/fullsend/pull/7813
+2026-09-28,fullsend,7812,fix(#7768): CAS poll-state persist for concurrent writers,fix,core,7768,ggallen,https://github.com/fullsend-ai/fullsend/pull/7812
+2026-09-28,fullsend,7811,feat(#7782)!: require GitLab role credentials at runtime,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7811
+2026-09-28,fullsend,7806,chore(#7805): temporarily disable retro agent in this repo,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7806
+2026-09-28,fullsend,7797,fix(#7790): check out GitLab MR source before fix sandbox,fix,external,7790,ccronca,https://github.com/fullsend-ai/fullsend/pull/7797
+2026-09-28,fullsend,7780,feat(#7767): add GitLab trigger-token and webhook CRUD,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7780
+2026-09-28,fullsend,7779,fix(deps): update module github.com/google/cel-go to v0.30.0,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7779
+2026-09-28,fullsend,7759,docs(#7758): record hybrid GitLab webhook+poller dispatch,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7759
+2026-09-28,fullsend,7726,fix(#7725): keep codex hook block at exit 2 with closed stderr,fix,external,7725,jflowers,https://github.com/fullsend-ai/fullsend/pull/7726
+2026-09-28,fullsend,7724,test(#7723): make DefaultTreeFetcherUsed hermetic,test,,,,https://github.com/fullsend-ai/fullsend/pull/7724
+2026-09-28,fullsend,7693,fix(#6855): retry sandbox GitHub preflight on transient 403,fix,bot,6855,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7693
+2026-09-28,fullsend,7691,docs(#6847): add a setup overview to the Jira integration guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7691
+2026-09-28,fullsend,7678,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 2e39015,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7678
+2026-09-28,fullsend,7623,chore(deps): update dependency prettier to v3.9.9,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7623
+2026-09-28,fullsend,7617,docs(guides): add --forge flag to local-run triage example,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7617
+2026-09-28,fullsend,7586,feat(#7559)!: remove GitLab role migration fallback,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7586
+2026-09-28,agents,1541,chore(#1538): temporarily disable retro agent in this repo,chore,,,,https://github.com/fullsend-ai/agents/pull/1541
