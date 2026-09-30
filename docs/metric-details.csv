@@ -14763,3 +14763,72 @@ date,repo,type,event,number,title,url
 2026-09-28,agents,issue,opened,1528,"Code agent: pre-flight check for open bot PRs touching the same files before creating a new PR",https://github.com/fullsend-ai/agents/issues/1528
 2026-09-28,agents,issue,opened,1527,"Code agent should file partial PRs when an issue spans restricted and non-restricted file changes",https://github.com/fullsend-ai/agents/issues/1527
 2026-09-28,agents,issue,closed,1538,"Temporarily disable the retro agent for this repository",https://github.com/fullsend-ai/agents/issues/1538
+2026-09-29,fullsend,pr,opened,7847,"fix(#7751): unblock behaviour on OpenShell 0.1 and retry its profile-not-found error",https://github.com/fullsend-ai/fullsend/pull/7847
+2026-09-29,fullsend,pr,opened,7846,"refactor(#7782)!: complete GitLab identity migration cleanup",https://github.com/fullsend-ai/fullsend/pull/7846
+2026-09-29,fullsend,pr,opened,7845,"ci(#7751): start the Podman API socket with systemd in functional-tests",https://github.com/fullsend-ai/fullsend/pull/7845
+2026-09-29,fullsend,pr,opened,7844,"fix(#6179): skip per-repo WIF writes when the provider already matches",https://github.com/fullsend-ai/fullsend/pull/7844
+2026-09-29,fullsend,pr,opened,7843,"test(#6179): reuse per-repo inference WIF provider across pool leases",https://github.com/fullsend-ai/fullsend/pull/7843
+2026-09-29,fullsend,pr,opened,7842,"docs(adr): route model and effort per task through harness overlays",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-09-29,fullsend,pr,opened,7841,"ci(#7838): retry fork creation on stale name collision",https://github.com/fullsend-ai/fullsend/pull/7841
+2026-09-29,fullsend,pr,opened,7840,"ci(#7839): recreate pool repos after stale delete GetRepo",https://github.com/fullsend-ai/fullsend/pull/7840
+2026-09-29,fullsend,pr,opened,7836,"fix(deps): update module github.com/stretchr/testify to v1.12.1",https://github.com/fullsend-ai/fullsend/pull/7836
+2026-09-29,fullsend,pr,opened,7833,"fix(#7830): keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-09-29,fullsend,pr,opened,7832,"fix(#7831): chunk long Codex skill reads in the runtime note",https://github.com/fullsend-ai/fullsend/pull/7832
+2026-09-29,fullsend,pr,opened,7829,"fix(codex): turn off codex's native multi-agent tools",https://github.com/fullsend-ai/fullsend/pull/7829
+2026-09-29,fullsend,pr,opened,7827,"docs(adr): runner-owned policy for native Codex children",https://github.com/fullsend-ai/fullsend/pull/7827
+2026-09-29,fullsend,pr,opened,7826,"fix(#7822): map GitLab 400 branch-exists on commits API",https://github.com/fullsend-ai/fullsend/pull/7826
+2026-09-29,fullsend,pr,opened,7821,"docs(agents): add migration guide",https://github.com/fullsend-ai/fullsend/pull/7821
+2026-09-29,fullsend,pr,opened,7820,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 290ba65",https://github.com/fullsend-ai/fullsend/pull/7820
+2026-09-29,fullsend,pr,opened,7819,"fix(codex): expand harness hook variables when re-asserting them",https://github.com/fullsend-ai/fullsend/pull/7819
+2026-09-29,fullsend,pr,opened,7818,"feat(#7782)!: remove GitLab migration gate runtime machinery",https://github.com/fullsend-ai/fullsend/pull/7818
+2026-09-29,fullsend,pr,opened,7817,"fix(#7769): pin GitLab job identity to CI_JOB_TOKEN record",https://github.com/fullsend-ai/fullsend/pull/7817
+2026-09-29,fullsend,pr,opened,7816,"feat(#7814): check out GitLab fork and cross-project MR sources",https://github.com/fullsend-ai/fullsend/pull/7816
+2026-09-29,fullsend,pr,merged,7845,"ci(#7751): start the Podman API socket with systemd in functional-tests",https://github.com/fullsend-ai/fullsend/pull/7845
+2026-09-29,fullsend,pr,merged,7818,"feat(#7782)!: remove GitLab migration gate runtime machinery",https://github.com/fullsend-ai/fullsend/pull/7818
+2026-09-29,fullsend,pr,merged,7531,"docs(adr): define tenant configuration from repos.yaml",https://github.com/fullsend-ai/fullsend/pull/7531
+2026-09-29,fullsend,pr,merged,7291,"docs(adr): add ADR 0116 for dummy-playback runtime",https://github.com/fullsend-ai/fullsend/pull/7291
+2026-09-29,fullsend,pr,merged,7233,"feat(#7229)!: move to OpenShell 0.1.2",https://github.com/fullsend-ai/fullsend/pull/7233
+2026-09-29,fullsend,pr,closed,7763,"chore(deps): update dependency nvidia/openshell to v0.1.2",https://github.com/fullsend-ai/fullsend/pull/7763
+2026-09-29,fullsend,issue,opened,7839,"behaviourtest: pool repo reset can proceed before deletion propagates",https://github.com/fullsend-ai/fullsend/issues/7839
+2026-09-29,fullsend,issue,opened,7838,"behaviourtest: fork cleanup can leave target name unavailable for the next scenario",https://github.com/fullsend-ai/fullsend/issues/7838
+2026-09-29,fullsend,issue,opened,7837,"Pause Renovate's OpenShell package group while a breaking migration PR is in flight",https://github.com/fullsend-ai/fullsend/issues/7837
+2026-09-29,fullsend,issue,opened,7835,"Add concurrency group to retro dispatch to prevent simultaneous duplicate retro runs for the same PR",https://github.com/fullsend-ai/fullsend/issues/7835
+2026-09-29,fullsend,issue,opened,7834,"Honor GitHub effective permissions when role_name is custom",https://github.com/fullsend-ai/fullsend/issues/7834
+2026-09-29,fullsend,issue,opened,7831,"codex runtime: long SKILL.md reads lose their middle to output truncation",https://github.com/fullsend-ai/fullsend/issues/7831
+2026-09-29,fullsend,issue,opened,7830,"Forge skills that share a directory basename replace each other: review loses issue-labels",https://github.com/fullsend-ai/fullsend/issues/7830
+2026-09-29,fullsend,issue,opened,7828,"codex runtime: native multi-agent tools are on, so child runs go unmetered and unseen",https://github.com/fullsend-ai/fullsend/issues/7828
+2026-09-29,fullsend,issue,opened,7825,"GitLab: detect /fs-* commands in MR discussion replies",https://github.com/fullsend-ai/fullsend/issues/7825
+2026-09-29,fullsend,issue,opened,7824,"feat(runtime/opencode): implement hook adapter plugin for sandbox security enforcement",https://github.com/fullsend-ai/fullsend/issues/7824
+2026-09-29,fullsend,issue,opened,7823,"feat(runtime/opencode): auto-append @default suffix for Vertex model aliases",https://github.com/fullsend-ai/fullsend/issues/7823
+2026-09-29,fullsend,issue,opened,7822,"fix(gitlab): handle 400 'branch already exists' from commits API in commitFilesImpl",https://github.com/fullsend-ai/fullsend/issues/7822
+2026-09-29,fullsend,issue,closed,7807,"Fix-iteration counter derived from live commit recount causes mislabeled iterations and inaccurate bot-cap escalation",https://github.com/fullsend-ai/fullsend/issues/7807
+2026-09-29,fullsend,issue,closed,7751,"Move to OpenShell 0.1.1",https://github.com/fullsend-ai/fullsend/issues/7751
+2026-09-29,fullsend,issue,closed,7229,"Record OpenShell's sandbox exec/stop signal contract in an ADR so PR #7208's dead end isn't rediscovered",https://github.com/fullsend-ai/fullsend/issues/7229
+2026-09-29,fullsend,issue,closed,5419,"Post-script commit-range checks should be audited for rebase safety",https://github.com/fullsend-ai/fullsend/issues/5419
+2026-09-29,fullsend,issue,closed,4931,"Functional tests use stale agents v0 tag, miss post-triage fixes",https://github.com/fullsend-ai/fullsend/issues/4931
+2026-09-29,fullsend,issue,closed,3157,"AGENTS.md: document that agent/skill content has moved to fullsend-ai/agents",https://github.com/fullsend-ai/fullsend/issues/3157
+2026-09-29,fullsend,issue,closed,2090,"Review post-script: fix 403/401 errors when resolving bot and authenticated user identity",https://github.com/fullsend-ai/fullsend/issues/2090
+2026-09-29,fullsend,issue,closed,1114,"Follow-up from PR #1111: The literal HTML comment pattern inside the Failure output code fence was not escaped...",https://github.com/fullsend-ai/fullsend/issues/1114
+2026-09-29,fullsend,issue,closed,436,"chore: drop all __pycache__ files and add __pycache__ to .gitignore so they don't come back",https://github.com/fullsend-ai/fullsend/issues/436
+2026-09-29,fullsend,issue,closed,378,"docs: guide for developing and testing agent definitions",https://github.com/fullsend-ai/fullsend/issues/378
+2026-09-29,agents,pr,opened,1557,"ci(#1512): start the Podman API socket with systemd in functional-tests",https://github.com/fullsend-ai/agents/pull/1557
+2026-09-29,agents,pr,opened,1556,"refactor(#1523): extract project-CI inspection into a skill",https://github.com/fullsend-ai/agents/pull/1556
+2026-09-29,agents,pr,opened,1553,"fix(#1551): require terminal-state coverage for wait/poll loops",https://github.com/fullsend-ai/agents/pull/1553
+2026-09-29,agents,pr,opened,1549,"refactor(#1522): extract fix-agent history rewrite into a skill",https://github.com/fullsend-ai/agents/pull/1549
+2026-09-29,agents,pr,opened,1548,"docs(#1547): add merge-commit secret-scanning checklist",https://github.com/fullsend-ai/agents/pull/1548
+2026-09-29,agents,pr,merged,1557,"ci(#1512): start the Podman API socket with systemd in functional-tests",https://github.com/fullsend-ai/agents/pull/1557
+2026-09-29,agents,pr,merged,1549,"refactor(#1522): extract fix-agent history rewrite into a skill",https://github.com/fullsend-ai/agents/pull/1549
+2026-09-29,agents,pr,merged,1520,"feat(#1518): reconcile forge-reported merge conflicts",https://github.com/fullsend-ai/agents/pull/1520
+2026-09-29,agents,pr,merged,1513,"fix(#1512)!: declare profile credentials for OpenShell 0.1",https://github.com/fullsend-ai/agents/pull/1513
+2026-09-29,agents,issue,opened,1555,"pr-review skill: enforce parallel Agent tool call dispatch for Gemini review orchestrators",https://github.com/fullsend-ai/agents/issues/1555
+2026-09-29,agents,issue,opened,1554,"Review agent should verify new evidence/state-authority code against already-stated trust-boundary invariants in cited spec docs",https://github.com/fullsend-ai/agents/issues/1554
+2026-09-29,agents,issue,opened,1552,"Codex child-dispatch: completed-empty results must be treated as terminal, not 'still running' (blocked on #1500 / ADR 0126)",https://github.com/fullsend-ai/agents/issues/1552
+2026-09-29,agents,issue,opened,1551,"Review skill: add terminal-state enumeration check for wait/poll loops over child/subprocess/agent status",https://github.com/fullsend-ai/agents/issues/1551
+2026-09-29,agents,issue,opened,1550,"Codex dispatch child-lifecycle: distinguish terminal-but-empty from still-running, and add a review check for unenumerated terminal states",https://github.com/fullsend-ai/agents/issues/1550
+2026-09-29,agents,issue,opened,1547,"Fix agent lacks an upfront threat-model checklist for secret-scanning merge commits",https://github.com/fullsend-ai/agents/issues/1547
+2026-09-29,agents,issue,opened,1546,"Code agent should commit checkpoints during long multi-file tasks instead of losing all work to timeout-induced discard",https://github.com/fullsend-ai/agents/issues/1546
+2026-09-29,agents,issue,opened,1545,"Triage agent should propose phased scope for multi-package removal/cleanup issues before dispatching /fs-code",https://github.com/fullsend-ai/agents/issues/1545
+2026-09-29,agents,issue,closed,1550,"Codex dispatch child-lifecycle: distinguish terminal-but-empty from still-running, and add a review check for unenumerated terminal states",https://github.com/fullsend-ai/agents/issues/1550
+2026-09-29,agents,issue,closed,1522,"[fix-agent] Extract history-rewrite procedure into standalone skill",https://github.com/fullsend-ai/agents/issues/1522
+2026-09-29,agents,issue,closed,1518,"Fix agent should reconcile forge-reported merge conflicts with the target branch",https://github.com/fullsend-ai/agents/issues/1518
+2026-09-29,agents,issue,closed,1512,"Declare provider credentials in profiles and drop _NOOP_* placeholders for OpenShell 0.1",https://github.com/fullsend-ai/agents/issues/1512

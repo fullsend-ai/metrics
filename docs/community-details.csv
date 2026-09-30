@@ -1699,3 +1699,15 @@ date,repo,type,event,number,actor,title,url
 2026-09-28,fullsend,pr,reviewed_external,7726,jflowers,"fix(#7725): keep codex hook block at exit 2 with closed stderr",https://github.com/fullsend-ai/fullsend/pull/7726
 2026-09-28,fullsend,pr,reviewed_external,7233,Aliciapet11,"feat(#7229)!: move to OpenShell 0.1.1",https://github.com/fullsend-ai/fullsend/pull/7233
 2026-09-28,agents,pr,opened_core,1543,waynesun09,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-09-29,fullsend,issue,opened_external,7831,dhshah13,"codex runtime: long SKILL.md reads lose their middle to output truncation",https://github.com/fullsend-ai/fullsend/issues/7831
+2026-09-29,fullsend,issue,opened_external,7830,dhshah13,"Forge skills that share a directory basename replace each other: review loses issue-labels",https://github.com/fullsend-ai/fullsend/issues/7830
+2026-09-29,fullsend,issue,opened_external,7828,dhshah13,"codex runtime: native multi-agent tools are on, so child runs go unmetered and unseen",https://github.com/fullsend-ai/fullsend/issues/7828
+2026-09-29,fullsend,issue,opened_external,7824,yvonnedevlinrh,"feat(runtime/opencode): implement hook adapter plugin for sandbox security enforcement",https://github.com/fullsend-ai/fullsend/issues/7824
+2026-09-29,fullsend,issue,opened_external,7823,yvonnedevlinrh,"feat(runtime/opencode): auto-append @default suffix for Vertex model aliases",https://github.com/fullsend-ai/fullsend/issues/7823
+2026-09-29,fullsend,issue,opened_external,7822,ccronca,"fix(gitlab): handle 400 'branch already exists' from commits API in commitFilesImpl",https://github.com/fullsend-ai/fullsend/issues/7822
+2026-09-29,fullsend,pr,opened_core,7847,waynesun09,"fix(#7751): unblock behaviour on OpenShell 0.1 and retry its profile-not-found error",https://github.com/fullsend-ai/fullsend/pull/7847
+2026-09-29,fullsend,pr,opened_core,7845,waynesun09,"ci(#7751): start the Podman API socket with systemd in functional-tests",https://github.com/fullsend-ai/fullsend/pull/7845
+2026-09-29,fullsend,pr,opened_core,7844,waynesun09,"fix(#6179): skip per-repo WIF writes when the provider already matches",https://github.com/fullsend-ai/fullsend/pull/7844
+2026-09-29,fullsend,pr,opened_core,7843,waynesun09,"test(#6179): reuse per-repo inference WIF provider across pool leases",https://github.com/fullsend-ai/fullsend/pull/7843
+2026-09-29,fullsend,pr,opened_core,7821,rh-hemartin,"docs(agents): add migration guide",https://github.com/fullsend-ai/fullsend/pull/7821
+2026-09-29,agents,pr,opened_core,1557,waynesun09,"ci(#1512): start the Podman API socket with systemd in functional-tests",https://github.com/fullsend-ai/agents/pull/1557

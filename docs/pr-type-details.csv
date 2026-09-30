@@ -1792,3 +1792,12 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-28,fullsend,7617,docs(guides): add --forge flag to local-run triage example,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7617
 2026-09-28,fullsend,7586,feat(#7559)!: remove GitLab role migration fallback,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7586
 2026-09-28,agents,1541,chore(#1538): temporarily disable retro agent in this repo,chore,,,,https://github.com/fullsend-ai/agents/pull/1541
+2026-09-29,fullsend,7845,ci(#7751): start the Podman API socket with systemd in functional-tests,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7845
+2026-09-29,fullsend,7818,feat(#7782)!: remove GitLab migration gate runtime machinery,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7818
+2026-09-29,fullsend,7531,docs(adr): define tenant configuration from repos.yaml,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7531
+2026-09-29,fullsend,7291,docs(adr): add ADR 0116 for dummy-playback runtime,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7291
+2026-09-29,fullsend,7233,feat(#7229)!: move to OpenShell 0.1.2,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7233
+2026-09-29,agents,1557,ci(#1512): start the Podman API socket with systemd in functional-tests,ci,,,,https://github.com/fullsend-ai/agents/pull/1557
+2026-09-29,agents,1549,refactor(#1522): extract fix-agent history rewrite into a skill,other,,,,https://github.com/fullsend-ai/agents/pull/1549
+2026-09-29,agents,1520,feat(#1518): reconcile forge-reported merge conflicts,feat,,,,https://github.com/fullsend-ai/agents/pull/1520
+2026-09-29,agents,1513,fix(#1512)!: declare profile credentials for OpenShell 0.1,fix,core,1512,waynesun09,https://github.com/fullsend-ai/agents/pull/1513
