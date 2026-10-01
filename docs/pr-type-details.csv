@@ -1801,3 +1801,17 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-29,agents,1549,refactor(#1522): extract fix-agent history rewrite into a skill,other,,,,https://github.com/fullsend-ai/agents/pull/1549
 2026-09-29,agents,1520,feat(#1518): reconcile forge-reported merge conflicts,feat,,,,https://github.com/fullsend-ai/agents/pull/1520
 2026-09-29,agents,1513,fix(#1512)!: declare profile credentials for OpenShell 0.1,fix,core,1512,waynesun09,https://github.com/fullsend-ai/agents/pull/1513
+2026-09-30,fullsend,7866,ci(#7860): retry github setup on post-create 404,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7866
+2026-09-30,fullsend,7865,fix(#7862): retry GitHub preflight on EOF and reset,fix,core,7862,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7865
+2026-09-30,fullsend,7863,fix(#7861): retry get commit after repo create race,fix,core,7861,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7863
+2026-09-30,fullsend,7853,chore(deps): update dependency @earendil-works/pi-coding-agent to v0.99.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7853
+2026-09-30,fullsend,7847,fix(#7751): unblock behaviour on OpenShell 0.1 and retry its profile-not-found error,fix,core,7751,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7847
+2026-09-30,fullsend,7846,refactor(#7782)!: complete GitLab identity migration cleanup,other,,,,https://github.com/fullsend-ai/fullsend/pull/7846
+2026-09-30,fullsend,7844,fix(#6179): skip per-repo WIF writes when the provider already matches,fix,core,6179,ralphbean,https://github.com/fullsend-ai/fullsend/pull/7844
+2026-09-30,fullsend,7843,test(#6179): reuse per-repo inference WIF provider across pool leases,test,,,,https://github.com/fullsend-ai/fullsend/pull/7843
+2026-09-30,fullsend,7840,ci(#7839): recreate pool repos after stale delete GetRepo,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7840
+2026-09-30,fullsend,7826,fix(#7822): map GitLab 400 branch-exists on commits API,fix,external,7822,ccronca,https://github.com/fullsend-ai/fullsend/pull/7826
+2026-09-30,fullsend,7819,fix(codex): expand harness hook variables when re-asserting them,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7819
+2026-09-30,fullsend,7718,feat(#7481): allow OpenAI-only repositories without GCP configuration,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7718
+2026-09-30,fullsend,6797,fix(#6702): use conditional requests for behaviour-suite polling GETs,fix,core,6702,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6797
+2026-09-30,agents,1561,chore(deps): bump fullsend to d8cbb9744 for the OpenShell 0.1.2 behaviour fix,chore,,,,https://github.com/fullsend-ai/agents/pull/1561

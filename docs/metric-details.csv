@@ -14832,3 +14832,63 @@ date,repo,type,event,number,title,url
 2026-09-29,agents,issue,closed,1522,"[fix-agent] Extract history-rewrite procedure into standalone skill",https://github.com/fullsend-ai/agents/issues/1522
 2026-09-29,agents,issue,closed,1518,"Fix agent should reconcile forge-reported merge conflicts with the target branch",https://github.com/fullsend-ai/agents/issues/1518
 2026-09-29,agents,issue,closed,1512,"Declare provider credentials in profiles and drop _NOOP_* placeholders for OpenShell 0.1",https://github.com/fullsend-ai/agents/issues/1512
+2026-09-30,fullsend,pr,opened,7881,"docs(#7502): document GitLab role identity model",https://github.com/fullsend-ai/fullsend/pull/7881
+2026-09-30,fullsend,pr,opened,7879,"fix(#6702): copy the 304 cached body, dedupe decode error prefix, align test names",https://github.com/fullsend-ai/fullsend/pull/7879
+2026-09-30,fullsend,pr,opened,7878,"feat(#6792): report all unresolved host variables",https://github.com/fullsend-ai/fullsend/pull/7878
+2026-09-30,fullsend,pr,opened,7877,"feat(adr-corner): add ADR pull request inventory",https://github.com/fullsend-ai/fullsend/pull/7877
+2026-09-30,fullsend,pr,opened,7876,"test(behaviour): save logs of failed harness runs before the lease ends",https://github.com/fullsend-ai/fullsend/pull/7876
+2026-09-30,fullsend,pr,opened,7874,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/7874
+2026-09-30,fullsend,pr,opened,7873,"ci(e2e): add dummy-playback behavior coverage",https://github.com/fullsend-ai/fullsend/pull/7873
+2026-09-30,fullsend,pr,opened,7871,"test(#7079): use amd64 ELF fixture in vendor tests",https://github.com/fullsend-ai/fullsend/pull/7871
+2026-09-30,fullsend,pr,opened,7870,"test(#7078): isolate checkout-branch seed git from host signing",https://github.com/fullsend-ai/fullsend/pull/7870
+2026-09-30,fullsend,pr,opened,7869,"ci(e2e): add dummy-playback behavior coverage",https://github.com/fullsend-ai/fullsend/pull/7869
+2026-09-30,fullsend,pr,opened,7866,"ci(#7860): retry github setup on post-create 404",https://github.com/fullsend-ai/fullsend/pull/7866
+2026-09-30,fullsend,pr,opened,7865,"fix(#7862): retry GitHub preflight on EOF and reset",https://github.com/fullsend-ai/fullsend/pull/7865
+2026-09-30,fullsend,pr,opened,7864,"fix(workflow): remove enabled/disabled agent gate from workflow",https://github.com/fullsend-ai/fullsend/pull/7864
+2026-09-30,fullsend,pr,opened,7863,"fix(#7861): retry get commit after repo create race",https://github.com/fullsend-ai/fullsend/pull/7863
+2026-09-30,fullsend,pr,opened,7859,"docs(config): inventory which source wins for each setting",https://github.com/fullsend-ai/fullsend/pull/7859
+2026-09-30,fullsend,pr,opened,7853,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.99.1",https://github.com/fullsend-ai/fullsend/pull/7853
+2026-09-30,fullsend,pr,opened,7852,"fix(#7849)!: fail before sandbox create when harness has no policy",https://github.com/fullsend-ai/fullsend/pull/7852
+2026-09-30,fullsend,pr,opened,7848,"fix(#7834): honor effective GitHub permissions",https://github.com/fullsend-ai/fullsend/pull/7848
+2026-09-30,fullsend,pr,merged,7866,"ci(#7860): retry github setup on post-create 404",https://github.com/fullsend-ai/fullsend/pull/7866
+2026-09-30,fullsend,pr,merged,7865,"fix(#7862): retry GitHub preflight on EOF and reset",https://github.com/fullsend-ai/fullsend/pull/7865
+2026-09-30,fullsend,pr,merged,7863,"fix(#7861): retry get commit after repo create race",https://github.com/fullsend-ai/fullsend/pull/7863
+2026-09-30,fullsend,pr,merged,7853,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.99.1",https://github.com/fullsend-ai/fullsend/pull/7853
+2026-09-30,fullsend,pr,merged,7847,"fix(#7751): unblock behaviour on OpenShell 0.1 and retry its profile-not-found error",https://github.com/fullsend-ai/fullsend/pull/7847
+2026-09-30,fullsend,pr,merged,7846,"refactor(#7782)!: complete GitLab identity migration cleanup",https://github.com/fullsend-ai/fullsend/pull/7846
+2026-09-30,fullsend,pr,merged,7844,"fix(#6179): skip per-repo WIF writes when the provider already matches",https://github.com/fullsend-ai/fullsend/pull/7844
+2026-09-30,fullsend,pr,merged,7843,"test(#6179): reuse per-repo inference WIF provider across pool leases",https://github.com/fullsend-ai/fullsend/pull/7843
+2026-09-30,fullsend,pr,merged,7840,"ci(#7839): recreate pool repos after stale delete GetRepo",https://github.com/fullsend-ai/fullsend/pull/7840
+2026-09-30,fullsend,pr,merged,7826,"fix(#7822): map GitLab 400 branch-exists on commits API",https://github.com/fullsend-ai/fullsend/pull/7826
+2026-09-30,fullsend,pr,merged,7819,"fix(codex): expand harness hook variables when re-asserting them",https://github.com/fullsend-ai/fullsend/pull/7819
+2026-09-30,fullsend,pr,merged,7718,"feat(#7481): allow OpenAI-only repositories without GCP configuration",https://github.com/fullsend-ai/fullsend/pull/7718
+2026-09-30,fullsend,pr,merged,6797,"fix(#6702): use conditional requests for behaviour-suite polling GETs",https://github.com/fullsend-ai/fullsend/pull/6797
+2026-09-30,fullsend,issue,opened,7882,"Add GitHub --app-set support to repos install",https://github.com/fullsend-ai/fullsend/issues/7882
+2026-09-30,fullsend,issue,opened,7880,"Filter fullsend/* lifecycle branches from shim dispatch",https://github.com/fullsend-ai/fullsend/issues/7880
+2026-09-30,fullsend,issue,opened,7875,"docs(adr): default DCO sign-off for user-behalf Fullsend CLI PRs",https://github.com/fullsend-ai/fullsend/issues/7875
+2026-09-30,fullsend,issue,opened,7872,"Detect scaffold-shim / pinned-reusable-workflow secret contract drift in probe/converge/drift",https://github.com/fullsend-ai/fullsend/issues/7872
+2026-09-30,fullsend,issue,opened,7868,"behaviourtest: evaluate unique per-lease pool repo names vs stable names (WIF trade-off)",https://github.com/fullsend-ai/fullsend/issues/7868
+2026-09-30,fullsend,issue,opened,7867,"Review agent should reduce governance-finding severity on human-authored PRs",https://github.com/fullsend-ai/fullsend/issues/7867
+2026-09-30,fullsend,issue,opened,7862,"Pre-flight GitHub check fails on EOF under OpenShell 0.1.x (not retried)",https://github.com/fullsend-ai/fullsend/issues/7862
+2026-09-30,fullsend,issue,opened,7861,"behaviourtest: committing to a new harness-hosting repo can 404 on get commit",https://github.com/fullsend-ai/fullsend/issues/7861
+2026-09-30,fullsend,issue,opened,7860,"behaviourtest: github setup can 404 on a just-created pool repo",https://github.com/fullsend-ai/fullsend/issues/7860
+2026-09-30,fullsend,issue,opened,7858,"Exclude fullsend/* platform branches from dispatch to avoid unnecessary agent runs",https://github.com/fullsend-ai/fullsend/issues/7858
+2026-09-30,fullsend,issue,opened,7857,"Enabled gate at workflow level can be dropped",https://github.com/fullsend-ai/fullsend/issues/7857
+2026-09-30,fullsend,issue,opened,7856,"Companion-PR retro skip (#5151) is no longer preventing retro dispatches",https://github.com/fullsend-ai/fullsend/issues/7856
+2026-09-30,fullsend,issue,opened,7855,"Review dispatch should block merge if review hasn't completed",https://github.com/fullsend-ai/fullsend/issues/7855
+2026-09-30,fullsend,issue,opened,7854,"Skip or reduce review dispatch for bot lockfile-only dependency PRs",https://github.com/fullsend-ai/fullsend/issues/7854
+2026-09-30,fullsend,issue,opened,7851,"GitLab forge: add pipeline-input support to pipeline creation",https://github.com/fullsend-ai/fullsend/issues/7851
+2026-09-30,fullsend,issue,opened,7850,"GitLab dispatch: replace user-defined pipeline variables with inputs and signed dispatch records",https://github.com/fullsend-ai/fullsend/issues/7850
+2026-09-30,fullsend,issue,opened,7849,"run: fail early when a sandbox harness names no policy (OpenShell 0.1)",https://github.com/fullsend-ai/fullsend/issues/7849
+2026-09-30,fullsend,issue,closed,7862,"Pre-flight GitHub check fails on EOF under OpenShell 0.1.x (not retried)",https://github.com/fullsend-ai/fullsend/issues/7862
+2026-09-30,fullsend,issue,closed,7861,"behaviourtest: committing to a new harness-hosting repo can 404 on get commit",https://github.com/fullsend-ai/fullsend/issues/7861
+2026-09-30,fullsend,issue,closed,7860,"behaviourtest: github setup can 404 on a just-created pool repo",https://github.com/fullsend-ai/fullsend/issues/7860
+2026-09-30,fullsend,issue,closed,7839,"behaviourtest: pool repo reset can proceed before deletion propagates",https://github.com/fullsend-ai/fullsend/issues/7839
+2026-09-30,fullsend,issue,closed,7822,"fix(gitlab): handle 400 'branch already exists' from commits API in commitFilesImpl",https://github.com/fullsend-ai/fullsend/issues/7822
+2026-09-30,fullsend,issue,closed,7782,"Remove GitLab identity migration machinery and retain only the three built-in roles",https://github.com/fullsend-ai/fullsend/issues/7782
+2026-09-30,agents,pr,opened,1561,"chore(deps): bump fullsend to d8cbb9744 for the OpenShell 0.1.2 behaviour fix",https://github.com/fullsend-ai/agents/pull/1561
+2026-09-30,agents,pr,opened,1560,"fix(review): add Bash permissions to correctness agent",https://github.com/fullsend-ai/agents/pull/1560
+2026-09-30,agents,pr,opened,1559,"feat(#1243): grant scoped Bash to the correctness sub-agent",https://github.com/fullsend-ai/agents/pull/1559
+2026-09-30,agents,pr,merged,1561,"chore(deps): bump fullsend to d8cbb9744 for the OpenShell 0.1.2 behaviour fix",https://github.com/fullsend-ai/agents/pull/1561
+2026-09-30,agents,issue,opened,1562,"Functional tests fail on GitHub's repo-creation rate limit; dropped from required checks",https://github.com/fullsend-ai/agents/issues/1562
+2026-09-30,agents,issue,opened,1558,"Retro agent should inspect PR CI history and merge-queue runs for flaky tests",https://github.com/fullsend-ai/agents/issues/1558

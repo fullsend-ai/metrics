@@ -1711,3 +1711,14 @@ date,repo,type,event,number,actor,title,url
 2026-09-29,fullsend,pr,opened_core,7843,waynesun09,"test(#6179): reuse per-repo inference WIF provider across pool leases",https://github.com/fullsend-ai/fullsend/pull/7843
 2026-09-29,fullsend,pr,opened_core,7821,rh-hemartin,"docs(agents): add migration guide",https://github.com/fullsend-ai/fullsend/pull/7821
 2026-09-29,agents,pr,opened_core,1557,waynesun09,"ci(#1512): start the Podman API socket with systemd in functional-tests",https://github.com/fullsend-ai/agents/pull/1557
+2026-09-30,fullsend,issue,closed_via_pr_external,7822,ccronca,"fix(gitlab): handle 400 'branch already exists' from commits API in commitFilesImpl",https://github.com/fullsend-ai/fullsend/issues/7822
+2026-09-30,fullsend,pr,opened_core,7879,waynesun09,"fix(#6702): copy the 304 cached body, dedupe decode error prefix, align test names",https://github.com/fullsend-ai/fullsend/pull/7879
+2026-09-30,fullsend,pr,opened_core,7877,ifireball,"feat(adr-corner): add ADR pull request inventory",https://github.com/fullsend-ai/fullsend/pull/7877
+2026-09-30,fullsend,pr,opened_core,7876,waynesun09,"test(behaviour): save logs of failed harness runs before the lease ends",https://github.com/fullsend-ai/fullsend/pull/7876
+2026-09-30,fullsend,pr,opened_core,7873,ggallen,"ci(e2e): add dummy-playback behavior coverage",https://github.com/fullsend-ai/fullsend/pull/7873
+2026-09-30,fullsend,pr,opened_core,7869,ggallen,"ci(e2e): add dummy-playback behavior coverage",https://github.com/fullsend-ai/fullsend/pull/7869
+2026-09-30,fullsend,pr,opened_core,7864,rh-hemartin,"fix(workflow): remove enabled/disabled agent gate from workflow",https://github.com/fullsend-ai/fullsend/pull/7864
+2026-09-30,fullsend,pr,opened_core,7848,ascerra,"fix(#7834): honor effective GitHub permissions",https://github.com/fullsend-ai/fullsend/pull/7848
+2026-09-30,fullsend,pr,reviewed_external,7864,jflowers,"fix(workflow): remove enabled/disabled agent gate from workflow",https://github.com/fullsend-ai/fullsend/pull/7864
+2026-09-30,agents,pr,opened_core,1561,waynesun09,"chore(deps): bump fullsend to d8cbb9744 for the OpenShell 0.1.2 behaviour fix",https://github.com/fullsend-ai/agents/pull/1561
+2026-09-30,agents,pr,opened_core,1560,rh-hemartin,"fix(review): add Bash permissions to correctness agent",https://github.com/fullsend-ai/agents/pull/1560
