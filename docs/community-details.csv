@@ -1722,3 +1722,24 @@ date,repo,type,event,number,actor,title,url
 2026-09-30,fullsend,pr,reviewed_external,7864,jflowers,"fix(workflow): remove enabled/disabled agent gate from workflow",https://github.com/fullsend-ai/fullsend/pull/7864
 2026-09-30,agents,pr,opened_core,1561,waynesun09,"chore(deps): bump fullsend to d8cbb9744 for the OpenShell 0.1.2 behaviour fix",https://github.com/fullsend-ai/agents/pull/1561
 2026-09-30,agents,pr,opened_core,1560,rh-hemartin,"fix(review): add Bash permissions to correctness agent",https://github.com/fullsend-ai/agents/pull/1560
+2026-10-01,fullsend,issue,opened_external,7905,jflowers,"Remove stale `.golangci.yml` and `go-lint` Makefile target",https://github.com/fullsend-ai/fullsend/issues/7905
+2026-10-01,fullsend,issue,opened_external,7903,TomasTomecek,"prioritize.yml scaffold template: workflow_dispatch inputs missing required description fields",https://github.com/fullsend-ai/fullsend/issues/7903
+2026-10-01,fullsend,issue,opened_external,7892,ccronca,"poll state CAS broken on self-hosted GitLab EE: start_sha rejected for existing branches",https://github.com/fullsend-ai/fullsend/issues/7892
+2026-10-01,fullsend,issue,closed_via_pr_external,7892,ccronca,"poll state CAS broken on self-hosted GitLab EE: start_sha rejected for existing branches",https://github.com/fullsend-ai/fullsend/issues/7892
+2026-10-01,fullsend,issue,closed_via_pr_external,7079,yvonnedevlinrh,"test: internal/cli vendor tests assume an amd64 host (EM_X86_64) and fail on arm64",https://github.com/fullsend-ai/fullsend/issues/7079
+2026-10-01,fullsend,pr,opened_core,7951,waynesun09,"ci(release): pin agents functional tests to the OpenShell 0.1 workflow",https://github.com/fullsend-ai/fullsend/pull/7951
+2026-10-01,fullsend,pr,opened_core,7944,ascerra,"ci(adr): attribute Slack notifications to the merger",https://github.com/fullsend-ai/fullsend/pull/7944
+2026-10-01,fullsend,pr,opened_core,7922,waynesun09,"fix(sandbox): wait out OpenShell 0.1.2's first settings poll before network use",https://github.com/fullsend-ai/fullsend/pull/7922
+2026-10-01,fullsend,pr,opened_core,7917,waynesun09,"feat(#6966)!: replace stale findings on ok via issues post-comment --only-if-exists",https://github.com/fullsend-ai/fullsend/pull/7917
+2026-10-01,fullsend,pr,opened_core,7916,waynesun09,"feat(cli)!: verify the comment author before issues post-comment edits",https://github.com/fullsend-ai/fullsend/pull/7916
+2026-10-01,fullsend,pr,opened_core,7915,waynesun09,"feat(#6966): make the review role's repo read-only in agent new",https://github.com/fullsend-ai/fullsend/pull/7915
+2026-10-01,fullsend,pr,opened_core,7914,waynesun09,"fix(#6966): keep model output in the generated post-script from issuing workflow commands",https://github.com/fullsend-ai/fullsend/pull/7914
+2026-10-01,fullsend,pr,opened_core,7913,rh-hemartin,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",https://github.com/fullsend-ai/fullsend/pull/7913
+2026-10-01,fullsend,pr,opened_core,7900,rh-hemartin,"chore(#7052): revert knight-analytics/hugot upgrade",https://github.com/fullsend-ai/fullsend/pull/7900
+2026-10-01,fullsend,pr,opened_core,7899,rh-hemartin,"ci(images): build images when touch Go mod or sum files",https://github.com/fullsend-ai/fullsend/pull/7899
+2026-10-01,fullsend,pr,opened_core,7887,ggallen,"feat(#7882): add GitHub --app-set support to repos install",https://github.com/fullsend-ai/fullsend/pull/7887
+2026-10-01,fullsend,pr,reviewed_external,7871,yvonnedevlinrh,"test(#7079): use amd64 ELF fixture in vendor tests",https://github.com/fullsend-ai/fullsend/pull/7871
+2026-10-01,fullsend,pr,reviewed_external,7870,yvonnedevlinrh,"test(#7078): isolate checkout-branch seed git from host signing",https://github.com/fullsend-ai/fullsend/pull/7870
+2026-10-01,fullsend,pr,reviewed_external,7864,jflowers,"refactorworkflow)!: remove enabled/disabled agent gate from workflow",https://github.com/fullsend-ai/fullsend/pull/7864
+2026-10-01,agents,pr,opened_core,1564,rh-hemartin,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",https://github.com/fullsend-ai/agents/pull/1564
+2026-10-01,agents,pr,opened_core,1563,rh-hemartin,"fix(review): remove restricted Bash permissions",https://github.com/fullsend-ai/agents/pull/1563

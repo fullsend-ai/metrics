@@ -14892,3 +14892,141 @@ date,repo,type,event,number,title,url
 2026-09-30,agents,pr,merged,1561,"chore(deps): bump fullsend to d8cbb9744 for the OpenShell 0.1.2 behaviour fix",https://github.com/fullsend-ai/agents/pull/1561
 2026-09-30,agents,issue,opened,1562,"Functional tests fail on GitHub's repo-creation rate limit; dropped from required checks",https://github.com/fullsend-ai/agents/issues/1562
 2026-09-30,agents,issue,opened,1558,"Retro agent should inspect PR CI history and merge-queue runs for flaky tests",https://github.com/fullsend-ai/agents/issues/1558
+2026-10-01,fullsend,pr,opened,7951,"ci(release): pin agents functional tests to the OpenShell 0.1 workflow",https://github.com/fullsend-ai/fullsend/pull/7951
+2026-10-01,fullsend,pr,opened,7950,"fix(#7949): stop leaking injected status/instance values into logs",https://github.com/fullsend-ai/fullsend/pull/7950
+2026-10-01,fullsend,pr,opened,7947,"add ADR for custom entrypoints",https://github.com/fullsend-ai/fullsend/pull/7947
+2026-10-01,fullsend,pr,opened,7946,"feat(#7814): gate GitLab fix fork/cross-project MRs on a protected-branch check",https://github.com/fullsend-ai/fullsend/pull/7946
+2026-10-01,fullsend,pr,opened,7945,"refactor(#7850)!: carry GitLab dispatch via pipeline inputs, not variables",https://github.com/fullsend-ai/fullsend/pull/7945
+2026-10-01,fullsend,pr,opened,7944,"ci(adr): attribute Slack notifications to the merger",https://github.com/fullsend-ai/fullsend/pull/7944
+2026-10-01,fullsend,pr,opened,7943,"test(#6837): add playback driver and SCM review listing to behaviourtest infra",https://github.com/fullsend-ai/fullsend/pull/7943
+2026-10-01,fullsend,pr,opened,7938,"fix(#7935): remove leftover models_cache.json before codex runs",https://github.com/fullsend-ai/fullsend/pull/7938
+2026-10-01,fullsend,pr,opened,7936,"fix(#7884): sticky.Post never edits a comment when identity is unresolved",https://github.com/fullsend-ai/fullsend/pull/7936
+2026-10-01,fullsend,pr,opened,7934,"chore(#7933): re-verify codex re-check table at 0.159.3",https://github.com/fullsend-ai/fullsend/pull/7934
+2026-10-01,fullsend,pr,opened,7932,"refactor(#7931)!: remove GitLab identity-migration compatibility",https://github.com/fullsend-ai/fullsend/pull/7932
+2026-10-01,fullsend,pr,opened,7928,"fix(#5480): recognize custom app-set review bot in dispatch",https://github.com/fullsend-ai/fullsend/pull/7928
+2026-10-01,fullsend,pr,opened,7926,"refactor(#7851): add GitLab pipeline-input support to pipeline creation",https://github.com/fullsend-ai/fullsend/pull/7926
+2026-10-01,fullsend,pr,opened,7925,"fix(#7892): retry GitLab CAS commit without start_sha on existing branch",https://github.com/fullsend-ai/fullsend/pull/7925
+2026-10-01,fullsend,pr,opened,7923,"chore(#7904): fix stale GitLab role-migration gate comments",https://github.com/fullsend-ai/fullsend/pull/7923
+2026-10-01,fullsend,pr,opened,7922,"fix(sandbox): wait out OpenShell 0.1.2's first settings poll before network use",https://github.com/fullsend-ai/fullsend/pull/7922
+2026-10-01,fullsend,pr,opened,7921,"chore(#7901): track Go toolchain version pin with Renovate",https://github.com/fullsend-ai/fullsend/pull/7921
+2026-10-01,fullsend,pr,opened,7920,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 454c3b2",https://github.com/fullsend-ai/fullsend/pull/7920
+2026-10-01,fullsend,pr,opened,7919,"feat(review): stamp finding ids on inline comments",https://github.com/fullsend-ai/fullsend/pull/7919
+2026-10-01,fullsend,pr,opened,7917,"feat(#6966)!: replace stale findings on ok via issues post-comment --only-if-exists",https://github.com/fullsend-ai/fullsend/pull/7917
+2026-10-01,fullsend,pr,opened,7916,"feat(cli)!: verify the comment author before issues post-comment edits",https://github.com/fullsend-ai/fullsend/pull/7916
+2026-10-01,fullsend,pr,opened,7915,"feat(#6966): make the review role's repo read-only in agent new",https://github.com/fullsend-ai/fullsend/pull/7915
+2026-10-01,fullsend,pr,opened,7914,"fix(#6966): keep model output in the generated post-script from issuing workflow commands",https://github.com/fullsend-ai/fullsend/pull/7914
+2026-10-01,fullsend,pr,opened,7913,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",https://github.com/fullsend-ai/fullsend/pull/7913
+2026-10-01,fullsend,pr,opened,7909,"feat(status)!: default to emoji reactions instead of status comments",https://github.com/fullsend-ai/fullsend/pull/7909
+2026-10-01,fullsend,pr,opened,7907,"feat(review): fetch human-resolved review threads before agent runs",https://github.com/fullsend-ai/fullsend/pull/7907
+2026-10-01,fullsend,pr,opened,7900,"chore(#7052): revert knight-analytics/hugot upgrade",https://github.com/fullsend-ai/fullsend/pull/7900
+2026-10-01,fullsend,pr,opened,7899,"ci(images): build images when touch Go mod or sum files",https://github.com/fullsend-ai/fullsend/pull/7899
+2026-10-01,fullsend,pr,opened,7888,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.99.2",https://github.com/fullsend-ai/fullsend/pull/7888
+2026-10-01,fullsend,pr,opened,7887,"feat(#7882): add GitHub --app-set support to repos install",https://github.com/fullsend-ai/fullsend/pull/7887
+2026-10-01,fullsend,pr,merged,7951,"ci(release): pin agents functional tests to the OpenShell 0.1 workflow",https://github.com/fullsend-ai/fullsend/pull/7951
+2026-10-01,fullsend,pr,merged,7944,"ci(adr): attribute Slack notifications to the merger",https://github.com/fullsend-ai/fullsend/pull/7944
+2026-10-01,fullsend,pr,merged,7938,"fix(#7935): remove leftover models_cache.json before codex runs",https://github.com/fullsend-ai/fullsend/pull/7938
+2026-10-01,fullsend,pr,merged,7936,"fix(#7884): sticky.Post never edits a comment when identity is unresolved",https://github.com/fullsend-ai/fullsend/pull/7936
+2026-10-01,fullsend,pr,merged,7934,"chore(#7933): re-verify codex re-check table at 0.159.3",https://github.com/fullsend-ai/fullsend/pull/7934
+2026-10-01,fullsend,pr,merged,7932,"refactor(#7931)!: remove GitLab identity-migration compatibility",https://github.com/fullsend-ai/fullsend/pull/7932
+2026-10-01,fullsend,pr,merged,7928,"fix(#5480): recognize custom app-set review bot in dispatch",https://github.com/fullsend-ai/fullsend/pull/7928
+2026-10-01,fullsend,pr,merged,7926,"refactor(#7851): add GitLab pipeline-input support to pipeline creation",https://github.com/fullsend-ai/fullsend/pull/7926
+2026-10-01,fullsend,pr,merged,7925,"fix(#7892): retry GitLab CAS commit without start_sha on existing branch",https://github.com/fullsend-ai/fullsend/pull/7925
+2026-10-01,fullsend,pr,merged,7923,"chore(#7904): fix stale GitLab role-migration gate comments",https://github.com/fullsend-ai/fullsend/pull/7923
+2026-10-01,fullsend,pr,merged,7922,"fix(sandbox): wait out OpenShell 0.1.2's first settings poll before network use",https://github.com/fullsend-ai/fullsend/pull/7922
+2026-10-01,fullsend,pr,merged,7920,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 454c3b2",https://github.com/fullsend-ai/fullsend/pull/7920
+2026-10-01,fullsend,pr,merged,7917,"feat(#6966)!: replace stale findings on ok via issues post-comment --only-if-exists",https://github.com/fullsend-ai/fullsend/pull/7917
+2026-10-01,fullsend,pr,merged,7916,"feat(cli)!: verify the comment author before issues post-comment edits",https://github.com/fullsend-ai/fullsend/pull/7916
+2026-10-01,fullsend,pr,merged,7915,"feat(#6966): make the review role's repo read-only in agent new",https://github.com/fullsend-ai/fullsend/pull/7915
+2026-10-01,fullsend,pr,merged,7914,"fix(#6966): keep model output in the generated post-script from issuing workflow commands",https://github.com/fullsend-ai/fullsend/pull/7914
+2026-10-01,fullsend,pr,merged,7913,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",https://github.com/fullsend-ai/fullsend/pull/7913
+2026-10-01,fullsend,pr,merged,7900,"chore(#7052): revert knight-analytics/hugot upgrade",https://github.com/fullsend-ai/fullsend/pull/7900
+2026-10-01,fullsend,pr,merged,7899,"ci(images): build images when touch Go mod or sum files",https://github.com/fullsend-ai/fullsend/pull/7899
+2026-10-01,fullsend,pr,merged,7888,"chore(deps): update dependency @earendil-works/pi-coding-agent to v0.99.2",https://github.com/fullsend-ai/fullsend/pull/7888
+2026-10-01,fullsend,pr,merged,7887,"feat(#7882): add GitHub --app-set support to repos install",https://github.com/fullsend-ai/fullsend/pull/7887
+2026-10-01,fullsend,pr,merged,7881,"docs(#7502): document GitLab role identity model",https://github.com/fullsend-ai/fullsend/pull/7881
+2026-10-01,fullsend,pr,merged,7879,"fix(#6702): copy the 304 cached body, dedupe decode error prefix, align test names",https://github.com/fullsend-ai/fullsend/pull/7879
+2026-10-01,fullsend,pr,merged,7876,"test(behaviour): save logs of failed harness runs before the lease ends",https://github.com/fullsend-ai/fullsend/pull/7876
+2026-10-01,fullsend,pr,merged,7874,"chore(deps): update cloudflare-workers",https://github.com/fullsend-ai/fullsend/pull/7874
+2026-10-01,fullsend,pr,merged,7871,"test(#7079): use amd64 ELF fixture in vendor tests",https://github.com/fullsend-ai/fullsend/pull/7871
+2026-10-01,fullsend,pr,merged,7827,"docs(adr): fullsend-owned mechanism for Codex sub-agents",https://github.com/fullsend-ai/fullsend/pull/7827
+2026-10-01,fullsend,pr,merged,7820,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 290ba65",https://github.com/fullsend-ai/fullsend/pull/7820
+2026-10-01,fullsend,pr,merged,7817,"fix(#7769): pin GitLab job identity to CI_JOB_TOKEN record",https://github.com/fullsend-ai/fullsend/pull/7817
+2026-10-01,fullsend,pr,merged,7816,"feat(#7814): check out GitLab fork and cross-project MR sources",https://github.com/fullsend-ai/fullsend/pull/7816
+2026-10-01,fullsend,pr,merged,7747,"chore(deps): update dependency @openai/codex to v0.159.3",https://github.com/fullsend-ai/fullsend/pull/7747
+2026-10-01,fullsend,pr,merged,7618,"docs(problems): add agentic SDLC adoption and org communication",https://github.com/fullsend-ai/fullsend/pull/7618
+2026-10-01,fullsend,pr,merged,7239,"docs(#6966): point the CLI overview and customizing guide at `fullsend agent new`",https://github.com/fullsend-ai/fullsend/pull/7239
+2026-10-01,fullsend,pr,merged,7198,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to ef337e7",https://github.com/fullsend-ai/fullsend/pull/7198
+2026-10-01,fullsend,pr,merged,7134,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.286",https://github.com/fullsend-ai/fullsend/pull/7134
+2026-10-01,fullsend,pr,merged,7052,"fix(deps): update module github.com/knights-analytics/hugot to v0.8.0",https://github.com/fullsend-ai/fullsend/pull/7052
+2026-10-01,fullsend,pr,closed,7243,"feat(#6966)!: flatten rejected status, replace stale findings on ok, mount review repo read-only",https://github.com/fullsend-ai/fullsend/pull/7243
+2026-10-01,fullsend,issue,opened,7949,"agent new: generated post-script and validator echo untrusted values that can carry legacy ##[ workflow commands; locale default keeps LC_ALL=C",https://github.com/fullsend-ai/fullsend/issues/7949
+2026-10-01,fullsend,issue,opened,7948,"behaviour tests: harden credential redaction in saved failure logs and document the failed-run return",https://github.com/fullsend-ai/fullsend/issues/7948
+2026-10-01,fullsend,issue,opened,7942,"ci: integrate playback behavior tests",https://github.com/fullsend-ai/fullsend/issues/7942
+2026-10-01,fullsend,issue,opened,7941,"ci: add dummy-playback behavior scenarios and fixtures",https://github.com/fullsend-ai/fullsend/issues/7941
+2026-10-01,fullsend,issue,opened,7940,"runtime: harden dummy-playback runtime",https://github.com/fullsend-ai/fullsend/issues/7940
+2026-10-01,fullsend,issue,opened,7939,"ci: track dummy-playback behavior test rollout",https://github.com/fullsend-ai/fullsend/issues/7939
+2026-10-01,fullsend,issue,opened,7937,"Exclude fullsend/* branches from PR-triggered agent dispatches in the shim template",https://github.com/fullsend-ai/fullsend/issues/7937
+2026-10-01,fullsend,issue,opened,7935,"codex runtime: start each run without a cached model catalog",https://github.com/fullsend-ai/fullsend/issues/7935
+2026-10-01,fullsend,issue,opened,7933,"codex 0.159.3: walk the CODEX_VERSION re-check table, regen fixture, update provenance docs",https://github.com/fullsend-ai/fullsend/issues/7933
+2026-10-01,fullsend,issue,opened,7931,"GitLab identity: remove all migration compatibility and legacy cleanup",https://github.com/fullsend-ai/fullsend/issues/7931
+2026-10-01,fullsend,issue,opened,7930,"Expand shim branch filter to exclude all fullsend/ prefixed branches",https://github.com/fullsend-ai/fullsend/issues/7930
+2026-10-01,fullsend,issue,opened,7929,"Shim workflow branch filter does not exclude fullsend/onboard and fullsend/offboard branches",https://github.com/fullsend-ai/fullsend/issues/7929
+2026-10-01,fullsend,issue,opened,7927,"readonly_repo: symlinks to paths outside the repository stay writable",https://github.com/fullsend-ai/fullsend/issues/7927
+2026-10-01,fullsend,issue,opened,7924,"Route human pull_request_review events (not just the bot's own changes_requested) to a lightweight review pass before merge",https://github.com/fullsend-ai/fullsend/issues/7924
+2026-10-01,fullsend,issue,opened,7912,"OpenShell 1.3 policy changes break current sandbox setup and build stability",https://github.com/fullsend-ai/fullsend/issues/7912
+2026-10-01,fullsend,issue,opened,7911,"Design configurable automerge agent with LLM evaluation and deterministic rule support",https://github.com/fullsend-ai/fullsend/issues/7911
+2026-10-01,fullsend,issue,opened,7910,"Skip dispatch for fullsend/onboard and fullsend/offboard scaffold branches",https://github.com/fullsend-ai/fullsend/issues/7910
+2026-10-01,fullsend,issue,opened,7908,"docs(glossary): disambiguate ""harness"" vs. runtime and describe fullsend as a meta-harness",https://github.com/fullsend-ai/fullsend/issues/7908
+2026-10-01,fullsend,issue,opened,7905,"Remove stale `.golangci.yml` and `go-lint` Makefile target",https://github.com/fullsend-ai/fullsend/issues/7905
+2026-10-01,fullsend,issue,opened,7904,"GitLab identity rollout: eliminate remaining migration-era references",https://github.com/fullsend-ai/fullsend/issues/7904
+2026-10-01,fullsend,issue,opened,7903,"prioritize.yml scaffold template: workflow_dispatch inputs missing required description fields",https://github.com/fullsend-ai/fullsend/issues/7903
+2026-10-01,fullsend,issue,opened,7902,"Scaffold workflow templates use single space before inline comments, violating yamllint defaults",https://github.com/fullsend-ai/fullsend/issues/7902
+2026-10-01,fullsend,issue,opened,7901,"Golang version not being bumped on images",https://github.com/fullsend-ai/fullsend/issues/7901
+2026-10-01,fullsend,issue,opened,7898,"Risk scoring test_file_ratio inflates score for inherently untestable file types",https://github.com/fullsend-ai/fullsend/issues/7898
+2026-10-01,fullsend,issue,opened,7897,"Fix eligibility check should exit 0 when intentionally skipping bot PRs",https://github.com/fullsend-ai/fullsend/issues/7897
+2026-10-01,fullsend,issue,opened,7896,"Image smoke test should be run when there are changes to go.mod",https://github.com/fullsend-ai/fullsend/issues/7896
+2026-10-01,fullsend,issue,opened,7895,"Prevent forks of fullsend enabled repositories to run the forked workflow",https://github.com/fullsend-ai/fullsend/issues/7895
+2026-10-01,fullsend,issue,opened,7894,"Skip retro dispatch for fullsend scaffold branches",https://github.com/fullsend-ai/fullsend/issues/7894
+2026-10-01,fullsend,issue,opened,7893,"Skip agent dispatch for fullsend infrastructure branches (onboard/offboard)",https://github.com/fullsend-ai/fullsend/issues/7893
+2026-10-01,fullsend,issue,opened,7892,"poll state CAS broken on self-hosted GitLab EE: start_sha rejected for existing branches",https://github.com/fullsend-ai/fullsend/issues/7892
+2026-10-01,fullsend,issue,opened,7891,"Dispatch script should skip disabled workflows instead of failing fatally",https://github.com/fullsend-ai/fullsend/issues/7891
+2026-10-01,fullsend,issue,opened,7890,"Move third-party bot check to fix dispatch condition to avoid wasted CI runs",https://github.com/fullsend-ai/fullsend/issues/7890
+2026-10-01,fullsend,issue,opened,7889,"Risk scoring should discount bot-authored dependency-file churn",https://github.com/fullsend-ai/fullsend/issues/7889
+2026-10-01,fullsend,issue,opened,7886,"issues post-comment: verify the comment author before editing, and fail closed on an unresolvable identity",https://github.com/fullsend-ai/fullsend/issues/7886
+2026-10-01,fullsend,issue,opened,7885,"Post-script should suppress ready-for-merge on superseded-by-companion PRs",https://github.com/fullsend-ai/fullsend/issues/7885
+2026-10-01,fullsend,issue,opened,7884,"sticky.Post: never edit a marker comment when the poster's identity cannot be resolved",https://github.com/fullsend-ai/fullsend/issues/7884
+2026-10-01,fullsend,issue,opened,7883,"scaffold + agent new: mirror agents#1513's OpenShell 0.1 credential declarations for github-ro",https://github.com/fullsend-ai/fullsend/issues/7883
+2026-10-01,fullsend,issue,closed,7935,"codex runtime: start each run without a cached model catalog",https://github.com/fullsend-ai/fullsend/issues/7935
+2026-10-01,fullsend,issue,closed,7933,"codex 0.159.3: walk the CODEX_VERSION re-check table, regen fixture, update provenance docs",https://github.com/fullsend-ai/fullsend/issues/7933
+2026-10-01,fullsend,issue,closed,7931,"GitLab identity: remove all migration compatibility and legacy cleanup",https://github.com/fullsend-ai/fullsend/issues/7931
+2026-10-01,fullsend,issue,closed,7904,"GitLab identity rollout: eliminate remaining migration-era references",https://github.com/fullsend-ai/fullsend/issues/7904
+2026-10-01,fullsend,issue,closed,7896,"Image smoke test should be run when there are changes to go.mod",https://github.com/fullsend-ai/fullsend/issues/7896
+2026-10-01,fullsend,issue,closed,7892,"poll state CAS broken on self-hosted GitLab EE: start_sha rejected for existing branches",https://github.com/fullsend-ai/fullsend/issues/7892
+2026-10-01,fullsend,issue,closed,7886,"issues post-comment: verify the comment author before editing, and fail closed on an unresolvable identity",https://github.com/fullsend-ai/fullsend/issues/7886
+2026-10-01,fullsend,issue,closed,7884,"sticky.Post: never edit a marker comment when the poster's identity cannot be resolved",https://github.com/fullsend-ai/fullsend/issues/7884
+2026-10-01,fullsend,issue,closed,7882,"Add GitHub --app-set support to repos install",https://github.com/fullsend-ai/fullsend/issues/7882
+2026-10-01,fullsend,issue,closed,7851,"GitLab forge: add pipeline-input support to pipeline creation",https://github.com/fullsend-ai/fullsend/issues/7851
+2026-10-01,fullsend,issue,closed,7769,"ADR 0125: in-job security gate hardening (agent + poll scripts)",https://github.com/fullsend-ai/fullsend/issues/7769
+2026-10-01,fullsend,issue,closed,7639,"Recurring 3rd-time outage: add preflight validation for GitHub App credential variables used by cron/dispatch workflows",https://github.com/fullsend-ai/fullsend/issues/7639
+2026-10-01,fullsend,issue,closed,7502,"Document the extensible GitLab role identity model and credential lifecycle",https://github.com/fullsend-ai/fullsend/issues/7502
+2026-10-01,fullsend,issue,closed,7079,"test: internal/cli vendor tests assume an amd64 host (EM_X86_64) and fail on arm64",https://github.com/fullsend-ai/fullsend/issues/7079
+2026-10-01,fullsend,issue,closed,6236,"fullsend issues post-comment: findMarkedTrackerComment should filter by comment author to prevent marker spoofing",https://github.com/fullsend-ai/fullsend/issues/6236
+2026-10-01,agents,pr,opened,1568,"refactor(#1524): extract fix-agent verification into a skill",https://github.com/fullsend-ai/agents/pull/1568
+2026-10-01,agents,pr,opened,1564,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",https://github.com/fullsend-ai/agents/pull/1564
+2026-10-01,agents,pr,opened,1563,"fix(review): remove restricted Bash permissions",https://github.com/fullsend-ai/agents/pull/1563
+2026-10-01,agents,pr,merged,1568,"refactor(#1524): extract fix-agent verification into a skill",https://github.com/fullsend-ai/agents/pull/1568
+2026-10-01,agents,pr,merged,1564,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",https://github.com/fullsend-ai/agents/pull/1564
+2026-10-01,agents,pr,merged,1563,"fix(review): remove restricted Bash permissions",https://github.com/fullsend-ai/agents/pull/1563
+2026-10-01,agents,pr,merged,1560,"fix(review): add Bash permissions to correctness agent",https://github.com/fullsend-ai/agents/pull/1560
+2026-10-01,agents,pr,merged,1556,"refactor(#1523): extract project-CI inspection into a skill",https://github.com/fullsend-ai/agents/pull/1556
+2026-10-01,agents,pr,merged,1502,"fix(#1382): skip Vertex credential mounts for OpenAI runs",https://github.com/fullsend-ai/agents/pull/1502
+2026-10-01,agents,pr,merged,1232,"fix(#3864): preserve prior review remediations",https://github.com/fullsend-ai/agents/pull/1232
+2026-10-01,agents,pr,merged,1167,"feat(#6966): add a completed reference agent and an authoring skill",https://github.com/fullsend-ai/agents/pull/1167
+2026-10-01,agents,issue,opened,1569,"examples/link-check: check unchanged targets at the PR head, and complete the closing-fence rule",https://github.com/fullsend-ai/agents/issues/1569
+2026-10-01,agents,issue,opened,1567,"post-review: a low-severity sub-agent-failure finding does not suppress the prior-review projection",https://github.com/fullsend-ai/agents/issues/1567
+2026-10-01,agents,issue,opened,1566,"post-review: cross-check the model-written prior-review head SHA before trusting it",https://github.com/fullsend-ai/agents/issues/1566
+2026-10-01,agents,issue,opened,1565,"Re-review: bind the prior-review projection to a host-verified head SHA, and identify dimension failures structurally",https://github.com/fullsend-ai/agents/issues/1565
+2026-10-01,agents,issue,closed,1565,"Re-review: bind the prior-review projection to a host-verified head SHA, and identify dimension failures structurally",https://github.com/fullsend-ai/agents/issues/1565
+2026-10-01,agents,issue,closed,1524,"[fix-agent] Extract verification procedure into standalone skill",https://github.com/fullsend-ai/agents/issues/1524
+2026-10-01,agents,issue,closed,1523,"[fix-agent] Extract project-CI inspection into standalone skill",https://github.com/fullsend-ai/agents/issues/1523
+2026-10-01,agents,issue,closed,1243,"pr-review dimension sub-agents lack Bash/execution tools, blocking dynamic verification (and open issue #778's fix)",https://github.com/fullsend-ai/agents/issues/1243

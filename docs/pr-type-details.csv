@@ -1815,3 +1815,47 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-09-30,fullsend,7718,feat(#7481): allow OpenAI-only repositories without GCP configuration,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7718
 2026-09-30,fullsend,6797,fix(#6702): use conditional requests for behaviour-suite polling GETs,fix,core,6702,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6797
 2026-09-30,agents,1561,chore(deps): bump fullsend to d8cbb9744 for the OpenShell 0.1.2 behaviour fix,chore,,,,https://github.com/fullsend-ai/agents/pull/1561
+2026-10-01,fullsend,7951,ci(release): pin agents functional tests to the OpenShell 0.1 workflow,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7951
+2026-10-01,fullsend,7944,ci(adr): attribute Slack notifications to the merger,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7944
+2026-10-01,fullsend,7938,fix(#7935): remove leftover models_cache.json before codex runs,fix,core,7935,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7938
+2026-10-01,fullsend,7936,fix(#7884): sticky.Post never edits a comment when identity is unresolved,fix,core,7884,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7936
+2026-10-01,fullsend,7934,chore(#7933): re-verify codex re-check table at 0.159.3,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7934
+2026-10-01,fullsend,7932,refactor(#7931)!: remove GitLab identity-migration compatibility,other,,,,https://github.com/fullsend-ai/fullsend/pull/7932
+2026-10-01,fullsend,7928,fix(#5480): recognize custom app-set review bot in dispatch,fix,core,5480,ggallen,https://github.com/fullsend-ai/fullsend/pull/7928
+2026-10-01,fullsend,7926,refactor(#7851): add GitLab pipeline-input support to pipeline creation,other,,,,https://github.com/fullsend-ai/fullsend/pull/7926
+2026-10-01,fullsend,7925,fix(#7892): retry GitLab CAS commit without start_sha on existing branch,fix,external,7892,ccronca,https://github.com/fullsend-ai/fullsend/pull/7925
+2026-10-01,fullsend,7923,chore(#7904): fix stale GitLab role-migration gate comments,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7923
+2026-10-01,fullsend,7922,fix(sandbox): wait out OpenShell 0.1.2's first settings poll before network use,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7922
+2026-10-01,fullsend,7920,chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 454c3b2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7920
+2026-10-01,fullsend,7917,feat(#6966)!: replace stale findings on ok via issues post-comment --only-if-exists,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7917
+2026-10-01,fullsend,7916,feat(cli)!: verify the comment author before issues post-comment edits,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7916
+2026-10-01,fullsend,7915,feat(#6966): make the review role's repo read-only in agent new,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7915
+2026-10-01,fullsend,7914,fix(#6966): keep model output in the generated post-script from issuing workflow commands,fix,core,6966,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7914
+2026-10-01,fullsend,7913,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",chore,,,,https://github.com/fullsend-ai/fullsend/pull/7913
+2026-10-01,fullsend,7900,chore(#7052): revert knight-analytics/hugot upgrade,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7900
+2026-10-01,fullsend,7899,ci(images): build images when touch Go mod or sum files,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7899
+2026-10-01,fullsend,7888,chore(deps): update dependency @earendil-works/pi-coding-agent to v0.99.2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7888
+2026-10-01,fullsend,7887,feat(#7882): add GitHub --app-set support to repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7887
+2026-10-01,fullsend,7881,docs(#7502): document GitLab role identity model,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7881
+2026-10-01,fullsend,7879,"fix(#6702): copy the 304 cached body, dedupe decode error prefix, align test names",fix,core,6702,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7879
+2026-10-01,fullsend,7876,test(behaviour): save logs of failed harness runs before the lease ends,test,,,,https://github.com/fullsend-ai/fullsend/pull/7876
+2026-10-01,fullsend,7874,chore(deps): update cloudflare-workers,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7874
+2026-10-01,fullsend,7871,test(#7079): use amd64 ELF fixture in vendor tests,test,,,,https://github.com/fullsend-ai/fullsend/pull/7871
+2026-10-01,fullsend,7827,docs(adr): fullsend-owned mechanism for Codex sub-agents,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7827
+2026-10-01,fullsend,7820,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 290ba65,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7820
+2026-10-01,fullsend,7817,fix(#7769): pin GitLab job identity to CI_JOB_TOKEN record,fix,core,7769,ggallen,https://github.com/fullsend-ai/fullsend/pull/7817
+2026-10-01,fullsend,7816,feat(#7814): check out GitLab fork and cross-project MR sources,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7816
+2026-10-01,fullsend,7747,chore(deps): update dependency @openai/codex to v0.159.3,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7747
+2026-10-01,fullsend,7618,docs(problems): add agentic SDLC adoption and org communication,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7618
+2026-10-01,fullsend,7239,docs(#6966): point the CLI overview and customizing guide at `fullsend agent new`,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7239
+2026-10-01,fullsend,7198,chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to ef337e7,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7198
+2026-10-01,fullsend,7134,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.286,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7134
+2026-10-01,fullsend,7052,fix(deps): update module github.com/knights-analytics/hugot to v0.8.0,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7052
+2026-10-01,agents,1568,refactor(#1524): extract fix-agent verification into a skill,other,,,,https://github.com/fullsend-ai/agents/pull/1568
+2026-10-01,agents,1564,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",chore,,,,https://github.com/fullsend-ai/agents/pull/1564
+2026-10-01,agents,1563,fix(review): remove restricted Bash permissions,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1563
+2026-10-01,agents,1560,fix(review): add Bash permissions to correctness agent,fix,bot,1243,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1560
+2026-10-01,agents,1556,refactor(#1523): extract project-CI inspection into a skill,other,,,,https://github.com/fullsend-ai/agents/pull/1556
+2026-10-01,agents,1502,fix(#1382): skip Vertex credential mounts for OpenAI runs,fix,bot,1382,fullsend-ai-triage[bot],https://github.com/fullsend-ai/agents/pull/1502
+2026-10-01,agents,1232,fix(#3864): preserve prior review remediations,fix,unlinked,3864,,https://github.com/fullsend-ai/agents/pull/1232
+2026-10-01,agents,1167,feat(#6966): add a completed reference agent and an authoring skill,feat,,,,https://github.com/fullsend-ai/agents/pull/1167
