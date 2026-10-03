@@ -1859,3 +1859,33 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-01,agents,1502,fix(#1382): skip Vertex credential mounts for OpenAI runs,fix,bot,1382,fullsend-ai-triage[bot],https://github.com/fullsend-ai/agents/pull/1502
 2026-10-01,agents,1232,fix(#3864): preserve prior review remediations,fix,unlinked,3864,,https://github.com/fullsend-ai/agents/pull/1232
 2026-10-01,agents,1167,feat(#6966): add a completed reference agent and an authoring skill,feat,,,,https://github.com/fullsend-ai/agents/pull/1167
+2026-10-02,fullsend,8008,fix(#8007): restore missing permissions in embedded profiles,fix,core,8007,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8008
+2026-10-02,fullsend,8003,"chore(config): move opus/sonnet aliases to 5.5, run code on opus",chore,,,,https://github.com/fullsend-ai/fullsend/pull/8003
+2026-10-02,fullsend,8002,docs(#7999): split agent new into a walkthrough and a reference,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8002
+2026-10-02,fullsend,7996,test(#7993)!: extract shared behaviour-test driver infrastructure,test,,,,https://github.com/fullsend-ai/fullsend/pull/7996
+2026-10-02,fullsend,7995,feat(#7268)!: resolve every built-in provider from the fullsend binary,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7995
+2026-10-02,fullsend,7986,fix(#7981): create openai provider for pi sub-agents under any parent,fix,core,7981,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7986
+2026-10-02,fullsend,7977,docs(#7972): fix stale Vertex-only claims in agent new docs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7977
+2026-10-02,fullsend,7976,fix(#7883)!: declare GH_TOKEN on the scaffold GitHub providers and profiles,fix,core,7883,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7976
+2026-10-02,fullsend,7970,"docs(#7908): disambiguate harness, agent spec, and meta-harness",docs,,,,https://github.com/fullsend-ai/fullsend/pull/7970
+2026-10-02,fullsend,7967,fix(#7965): fall back to Poller PAT when JOB-TOKEN 404s on GitLab EE,fix,external,7965,ccronca,https://github.com/fullsend-ai/fullsend/pull/7967
+2026-10-02,fullsend,7958,fix(#7940): route dummy-playback forge calls through forge.Client,fix,core,7940,ggallen,https://github.com/fullsend-ai/fullsend/pull/7958
+2026-10-02,fullsend,7956,docs(#7954): make RC -> agents repin -> final the release flow,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7956
+2026-10-02,fullsend,7955,ci(release): pin GoReleaser's current tag to the pushed ref,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7955
+2026-10-02,fullsend,7946,feat(#7814): gate GitLab fix fork/cross-project MRs on a protected-branch check,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7946
+2026-10-02,fullsend,7943,test(#6837): add playback driver and SCM review listing to behaviourtest infra,test,,,,https://github.com/fullsend-ai/fullsend/pull/7943
+2026-10-02,fullsend,7921,chore(#7901): track Go toolchain version pin with Renovate,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7921
+2026-10-02,fullsend,7878,feat(#6792): report all unresolved host variables,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7878
+2026-10-02,fullsend,7870,test(#7078): isolate checkout-branch seed git from host signing,test,,,,https://github.com/fullsend-ai/fullsend/pull/7870
+2026-10-02,fullsend,7802,chore(deps): update renovatebot/github-action action to v46.3.6,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7802
+2026-10-02,fullsend,7682,"docs(adr): add ADR 0127, 0128, and 0129 for harness schema versioning and preflight checks",docs,,,,https://github.com/fullsend-ai/fullsend/pull/7682
+2026-10-02,fullsend,7679,docs: add OWNERS file authorization guide and cross-references,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7679
+2026-10-02,fullsend,7265,fix(#7264)!: generate a runtime-aware harness from agent new,fix,core,7264,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7265
+2026-10-02,fullsend,7261,docs(runtimes): say what to write in tools: on pi,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7261
+2026-10-02,fullsend,7016,fix(#7014): add GraphQL endpoint to scaffold GitHub RO profile,fix,core,7014,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7016
+2026-10-02,agents,1597,chore(deps): bump fullsend to e9690f264 for built-in provider resolution,chore,,,,https://github.com/fullsend-ai/agents/pull/1597
+2026-10-02,agents,1593,fix(#675): accept evidence-backed empty challenger adjudication,fix,bot,675,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1593
+2026-10-02,agents,1576,ci(functional-tests): add a tier input and a nightly full-suite run,ci,,,,https://github.com/fullsend-ai/agents/pull/1576
+2026-10-02,agents,1575,feat(#1573): add a release tier to eval/run-functional.sh,feat,,,,https://github.com/fullsend-ai/agents/pull/1575
+2026-10-02,agents,1571,refactor(#1525): extract structured-output contract into a skill,other,,,,https://github.com/fullsend-ai/agents/pull/1571
+2026-10-02,agents,1570,chore(harness): pin fleet images to the v0.44.0-rc.2 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1570

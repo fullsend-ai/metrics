@@ -1743,3 +1743,26 @@ date,repo,type,event,number,actor,title,url
 2026-10-01,fullsend,pr,reviewed_external,7864,jflowers,"refactorworkflow)!: remove enabled/disabled agent gate from workflow",https://github.com/fullsend-ai/fullsend/pull/7864
 2026-10-01,agents,pr,opened_core,1564,rh-hemartin,"chore(inference): xAI Grok causing problems, switching to OpenAI GPT Sol",https://github.com/fullsend-ai/agents/pull/1564
 2026-10-01,agents,pr,opened_core,1563,rh-hemartin,"fix(review): remove restricted Bash permissions",https://github.com/fullsend-ai/agents/pull/1563
+2026-10-02,fullsend,issue,opened_external,7997,jasonawant,"feat(telemetry): support Langfuse-native trace and generation reporting from OTLP",https://github.com/fullsend-ai/fullsend/issues/7997
+2026-10-02,fullsend,issue,opened_external,7965,ccronca,"pin-ci-job-identity.sh: GET /api/v4/projects/:id returns 404 with JOB-TOKEN on self-hosted GitLab EE",https://github.com/fullsend-ai/fullsend/issues/7965
+2026-10-02,fullsend,issue,closed_via_pr_external,7965,ccronca,"pin-ci-job-identity.sh: GET /api/v4/projects/:id returns 404 with JOB-TOKEN on self-hosted GitLab EE",https://github.com/fullsend-ai/fullsend/issues/7965
+2026-10-02,fullsend,issue,closed_via_pr_external,7078,yvonnedevlinrh,"test: CheckoutBranchRealShellPrefersBranchOverSameNamedTag fails when tag.gpgsign is enabled",https://github.com/fullsend-ai/fullsend/issues/7078
+2026-10-02,fullsend,pr,opened_core,8003,waynesun09,"chore(config): move opus/sonnet aliases to 5.5, run code on opus",https://github.com/fullsend-ai/fullsend/pull/8003
+2026-10-02,fullsend,pr,opened_core,7975,waynesun09,"ci(release): run the agents functional-test gate in release tier",https://github.com/fullsend-ai/fullsend/pull/7975
+2026-10-02,fullsend,pr,opened_core,7955,waynesun09,"ci(release): pin GoReleaser's current tag to the pushed ref",https://github.com/fullsend-ai/fullsend/pull/7955
+2026-10-02,fullsend,pr,reviewed_external,7970,jctanner,"docs(#7908): disambiguate harness, agent spec, and meta-harness",https://github.com/fullsend-ai/fullsend/pull/7970
+2026-10-02,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-02,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-02,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-02,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-02,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-02,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-02,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-02,fullsend,pr,reviewed_external,7103,trevor-vaughan,"feat(runtime): implement OpenCodeRuntime",https://github.com/fullsend-ai/fullsend/pull/7103
+2026-10-02,fullsend,pr,reviewed_external,7103,trevor-vaughan-ai,"feat(runtime): implement OpenCodeRuntime",https://github.com/fullsend-ai/fullsend/pull/7103
+2026-10-02,fullsend,pr,reviewed_external,7103,trevor-vaughan-ai,"feat(runtime): implement OpenCodeRuntime",https://github.com/fullsend-ai/fullsend/pull/7103
+2026-10-02,agents,pr,opened_core,1597,waynesun09,"chore(deps): bump fullsend to e9690f264 for built-in provider resolution",https://github.com/fullsend-ai/agents/pull/1597
+2026-10-02,agents,pr,opened_core,1595,waynesun09,"chore(config): move opus/sonnet aliases to 5.5, run code on opus",https://github.com/fullsend-ai/agents/pull/1595
+2026-10-02,agents,pr,opened_core,1576,waynesun09,"ci(functional-tests): add a tier input and a nightly full-suite run",https://github.com/fullsend-ai/agents/pull/1576
+2026-10-02,agents,pr,opened_core,1574,waynesun09,"ci(eval): skip the review suite in the fullsend release gate",https://github.com/fullsend-ai/agents/pull/1574
+2026-10-02,agents,pr,opened_core,1570,waynesun09,"chore(harness): pin fleet images to the v0.44.0-rc.2 release builds",https://github.com/fullsend-ai/agents/pull/1570

@@ -15030,3 +15030,162 @@ date,repo,type,event,number,title,url
 2026-10-01,agents,issue,closed,1524,"[fix-agent] Extract verification procedure into standalone skill",https://github.com/fullsend-ai/agents/issues/1524
 2026-10-01,agents,issue,closed,1523,"[fix-agent] Extract project-CI inspection into standalone skill",https://github.com/fullsend-ai/agents/issues/1523
 2026-10-01,agents,issue,closed,1243,"pr-review dimension sub-agents lack Bash/execution tools, blocking dynamic verification (and open issue #778's fix)",https://github.com/fullsend-ai/agents/issues/1243
+2026-10-02,fullsend,pr,opened,8019,"fix(#8018): retry provider create on OpenShell 0.1.2 profile error",https://github.com/fullsend-ai/fullsend/pull/8019
+2026-10-02,fullsend,pr,opened,8017,"fix(#8016): treat literal heredoc bodies as data in SSRF hook",https://github.com/fullsend-ai/fullsend/pull/8017
+2026-10-02,fullsend,pr,opened,8015,"feat(#8010)!: require explicit inference.auth selection in repos manifests",https://github.com/fullsend-ai/fullsend/pull/8015
+2026-10-02,fullsend,pr,opened,8008,"fix(#8007): restore missing permissions in embedded profiles",https://github.com/fullsend-ai/fullsend/pull/8008
+2026-10-02,fullsend,pr,opened,8005,"test(#8004): use bare vertex-ai in behaviour fixtures, explain ADR 0075",https://github.com/fullsend-ai/fullsend/pull/8005
+2026-10-02,fullsend,pr,opened,8003,"chore(config): move opus/sonnet aliases to 5.5, run code on opus",https://github.com/fullsend-ai/fullsend/pull/8003
+2026-10-02,fullsend,pr,opened,8002,"docs(#7999): split agent new into a walkthrough and a reference",https://github.com/fullsend-ai/fullsend/pull/8002
+2026-10-02,fullsend,pr,opened,8001,"docs(#8000): clarify preflight_check ${VAR} expansion is a denylist",https://github.com/fullsend-ai/fullsend/pull/8001
+2026-10-02,fullsend,pr,opened,7996,"test(#7993)!: extract shared behaviour-test driver infrastructure",https://github.com/fullsend-ai/fullsend/pull/7996
+2026-10-02,fullsend,pr,opened,7995,"feat(#7268)!: resolve every built-in provider from the fullsend binary",https://github.com/fullsend-ai/fullsend/pull/7995
+2026-10-02,fullsend,pr,opened,7994,"chore(deps): update dependency @types/node to v22.20.5",https://github.com/fullsend-ai/fullsend/pull/7994
+2026-10-02,fullsend,pr,opened,7991,"docs(#7990): fix stale WIF/credential-file refs in agent guide",https://github.com/fullsend-ai/fullsend/pull/7991
+2026-10-02,fullsend,pr,opened,7987,"fix(#7984): refuse agent set moves that leave the harness stale",https://github.com/fullsend-ai/fullsend/pull/7987
+2026-10-02,fullsend,pr,opened,7986,"fix(#7981): create openai provider for pi sub-agents under any parent",https://github.com/fullsend-ai/fullsend/pull/7986
+2026-10-02,fullsend,pr,opened,7985,"fix(#7980): validate Vertex credentials for OpenAI-parent sub-agents",https://github.com/fullsend-ai/fullsend/pull/7985
+2026-10-02,fullsend,pr,opened,7983,"fix(#7973): verify gateway content before trusting a reimported profile",https://github.com/fullsend-ai/fullsend/pull/7983
+2026-10-02,fullsend,pr,opened,7978,"fix(#6951): retry agents tag resolution, fall back to main",https://github.com/fullsend-ai/fullsend/pull/7978
+2026-10-02,fullsend,pr,opened,7977,"docs(#7972): fix stale Vertex-only claims in agent new docs",https://github.com/fullsend-ai/fullsend/pull/7977
+2026-10-02,fullsend,pr,opened,7976,"fix(#7883)!: declare GH_TOKEN on the scaffold GitHub providers and profiles",https://github.com/fullsend-ai/fullsend/pull/7976
+2026-10-02,fullsend,pr,opened,7975,"ci(release): run the agents functional-test gate in release tier",https://github.com/fullsend-ai/fullsend/pull/7975
+2026-10-02,fullsend,pr,opened,7970,"docs(#7908): disambiguate harness, agent spec, and meta-harness",https://github.com/fullsend-ai/fullsend/pull/7970
+2026-10-02,fullsend,pr,opened,7969,"fix(#7968): read checksum list from stdin on macOS sha256sum",https://github.com/fullsend-ai/fullsend/pull/7969
+2026-10-02,fullsend,pr,opened,7967,"fix(#7965): fall back to Poller PAT when JOB-TOKEN 404s on GitLab EE",https://github.com/fullsend-ai/fullsend/pull/7967
+2026-10-02,fullsend,pr,opened,7966,"feat(#7169): add fullsend lint command to validate .fullsend config without running an agent",https://github.com/fullsend-ai/fullsend/pull/7966
+2026-10-02,fullsend,pr,opened,7963,"chore(#7905): remove stale .golangci.yml and go-lint target",https://github.com/fullsend-ai/fullsend/pull/7963
+2026-10-02,fullsend,pr,opened,7960,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.288",https://github.com/fullsend-ai/fullsend/pull/7960
+2026-10-02,fullsend,pr,opened,7958,"fix(#7940): route dummy-playback forge calls through forge.Client",https://github.com/fullsend-ai/fullsend/pull/7958
+2026-10-02,fullsend,pr,opened,7957,"test(#7941): add dummy-playback behaviour scenario and fixtures",https://github.com/fullsend-ai/fullsend/pull/7957
+2026-10-02,fullsend,pr,opened,7956,"docs(#7954): make RC -> agents repin -> final the release flow",https://github.com/fullsend-ai/fullsend/pull/7956
+2026-10-02,fullsend,pr,opened,7955,"ci(release): pin GoReleaser's current tag to the pushed ref",https://github.com/fullsend-ai/fullsend/pull/7955
+2026-10-02,fullsend,pr,merged,8008,"fix(#8007): restore missing permissions in embedded profiles",https://github.com/fullsend-ai/fullsend/pull/8008
+2026-10-02,fullsend,pr,merged,8003,"chore(config): move opus/sonnet aliases to 5.5, run code on opus",https://github.com/fullsend-ai/fullsend/pull/8003
+2026-10-02,fullsend,pr,merged,8002,"docs(#7999): split agent new into a walkthrough and a reference",https://github.com/fullsend-ai/fullsend/pull/8002
+2026-10-02,fullsend,pr,merged,7996,"test(#7993)!: extract shared behaviour-test driver infrastructure",https://github.com/fullsend-ai/fullsend/pull/7996
+2026-10-02,fullsend,pr,merged,7995,"feat(#7268)!: resolve every built-in provider from the fullsend binary",https://github.com/fullsend-ai/fullsend/pull/7995
+2026-10-02,fullsend,pr,merged,7986,"fix(#7981): create openai provider for pi sub-agents under any parent",https://github.com/fullsend-ai/fullsend/pull/7986
+2026-10-02,fullsend,pr,merged,7977,"docs(#7972): fix stale Vertex-only claims in agent new docs",https://github.com/fullsend-ai/fullsend/pull/7977
+2026-10-02,fullsend,pr,merged,7976,"fix(#7883)!: declare GH_TOKEN on the scaffold GitHub providers and profiles",https://github.com/fullsend-ai/fullsend/pull/7976
+2026-10-02,fullsend,pr,merged,7970,"docs(#7908): disambiguate harness, agent spec, and meta-harness",https://github.com/fullsend-ai/fullsend/pull/7970
+2026-10-02,fullsend,pr,merged,7967,"fix(#7965): fall back to Poller PAT when JOB-TOKEN 404s on GitLab EE",https://github.com/fullsend-ai/fullsend/pull/7967
+2026-10-02,fullsend,pr,merged,7958,"fix(#7940): route dummy-playback forge calls through forge.Client",https://github.com/fullsend-ai/fullsend/pull/7958
+2026-10-02,fullsend,pr,merged,7956,"docs(#7954): make RC -> agents repin -> final the release flow",https://github.com/fullsend-ai/fullsend/pull/7956
+2026-10-02,fullsend,pr,merged,7955,"ci(release): pin GoReleaser's current tag to the pushed ref",https://github.com/fullsend-ai/fullsend/pull/7955
+2026-10-02,fullsend,pr,merged,7946,"feat(#7814): gate GitLab fix fork/cross-project MRs on a protected-branch check",https://github.com/fullsend-ai/fullsend/pull/7946
+2026-10-02,fullsend,pr,merged,7943,"test(#6837): add playback driver and SCM review listing to behaviourtest infra",https://github.com/fullsend-ai/fullsend/pull/7943
+2026-10-02,fullsend,pr,merged,7921,"chore(#7901): track Go toolchain version pin with Renovate",https://github.com/fullsend-ai/fullsend/pull/7921
+2026-10-02,fullsend,pr,merged,7878,"feat(#6792): report all unresolved host variables",https://github.com/fullsend-ai/fullsend/pull/7878
+2026-10-02,fullsend,pr,merged,7870,"test(#7078): isolate checkout-branch seed git from host signing",https://github.com/fullsend-ai/fullsend/pull/7870
+2026-10-02,fullsend,pr,merged,7802,"chore(deps): update renovatebot/github-action action to v46.3.6",https://github.com/fullsend-ai/fullsend/pull/7802
+2026-10-02,fullsend,pr,merged,7682,"docs(adr): add ADR 0127, 0128, and 0129 for harness schema versioning and preflight checks",https://github.com/fullsend-ai/fullsend/pull/7682
+2026-10-02,fullsend,pr,merged,7679,"docs: add OWNERS file authorization guide and cross-references",https://github.com/fullsend-ai/fullsend/pull/7679
+2026-10-02,fullsend,pr,merged,7265,"fix(#7264)!: generate a runtime-aware harness from agent new",https://github.com/fullsend-ai/fullsend/pull/7265
+2026-10-02,fullsend,pr,merged,7261,"docs(runtimes): say what to write in tools: on pi",https://github.com/fullsend-ai/fullsend/pull/7261
+2026-10-02,fullsend,pr,merged,7016,"fix(#7014): add GraphQL endpoint to scaffold GitHub RO profile",https://github.com/fullsend-ai/fullsend/pull/7016
+2026-10-02,fullsend,issue,opened,8018,"Provider-create retry misses OpenShell 0.1.2's ""profile ... was not found in the requested scope"" error",https://github.com/fullsend-ai/fullsend/issues/8018
+2026-10-02,fullsend,issue,opened,8016,"SSRF hook blocks Bash commands that merely contain a github.com URL (sandbox DNS resolves it to 198.18.0.0/15)",https://github.com/fullsend-ai/fullsend/issues/8016
+2026-10-02,fullsend,issue,opened,8014,"Skip dispatch for fullsend-managed branches (onboard/offboard)",https://github.com/fullsend-ai/fullsend/issues/8014
+2026-10-02,fullsend,issue,opened,8013,"Rename Vertex credential flags on repos subcommands to vertex-prefixed names",https://github.com/fullsend-ai/fullsend/issues/8013
+2026-10-02,fullsend,issue,opened,8012,"Make repos status and uninstall use the selected inference authentication",https://github.com/fullsend-ai/fullsend/issues/8012
+2026-10-02,fullsend,issue,opened,8011,"Provision and converge repos inference credentials for the selected authentication",https://github.com/fullsend-ai/fullsend/issues/8011
+2026-10-02,fullsend,issue,opened,8010,"Require explicit inference authentication selection in repos manifests",https://github.com/fullsend-ai/fullsend/issues/8010
+2026-10-02,fullsend,issue,opened,8009,"Make repos inference credential management authentication-aware",https://github.com/fullsend-ai/fullsend/issues/8009
+2026-10-02,fullsend,issue,opened,8007,"Embedded package-registries and gitleaks profiles miss permissions the fleet copies have",https://github.com/fullsend-ai/fullsend/issues/8007
+2026-10-02,fullsend,issue,opened,8006,"run: point to the built-in provider migration when a reserved-name repo copy fails provider create",https://github.com/fullsend-ai/fullsend/issues/8006
+2026-10-02,fullsend,issue,opened,8004,"Follow-up to #7268: behaviour fixtures to bare provider names; rationale in the ADR 0075 note",https://github.com/fullsend-ai/fullsend/issues/8004
+2026-10-02,fullsend,issue,opened,8000,"docs(harness-reference): preflight_check ${VAR} expansion wording implies an allowlist",https://github.com/fullsend-ai/fullsend/issues/8000
+2026-10-02,fullsend,issue,opened,7999,"docs: split agent new into a walkthrough (bring-your-own-agent) and a reference (cli/agent.md)",https://github.com/fullsend-ai/fullsend/issues/7999
+2026-10-02,fullsend,issue,opened,7998,"Extend shim branch filter to skip all fullsend/* infrastructure branches",https://github.com/fullsend-ai/fullsend/issues/7998
+2026-10-02,fullsend,issue,opened,7997,"feat(telemetry): support Langfuse-native trace and generation reporting from OTLP",https://github.com/fullsend-ai/fullsend/issues/7997
+2026-10-02,fullsend,issue,opened,7993,"ci: extract shared behaviour-test dispatch and SCM infrastructure",https://github.com/fullsend-ai/fullsend/issues/7993
+2026-10-02,fullsend,issue,opened,7992,"pi/run: host diagnostics print repo-controlled persona and model text unescaped (workflow-command injection, low)",https://github.com/fullsend-ai/fullsend/issues/7992
+2026-10-02,fullsend,issue,opened,7990,"docs: building-custom-agents describes WIF/prepare-credentials steps and an env file that no longer exist",https://github.com/fullsend-ai/fullsend/issues/7990
+2026-10-02,fullsend,issue,opened,7989,"Reusable workflow dispatch fails silently (zero jobs) on rapid-fire pull_request_review events for fork PRs",https://github.com/fullsend-ai/fullsend/issues/7989
+2026-10-02,fullsend,issue,opened,7988,"run: run-scope every credential-bearing provider so concurrent runs on a shared gateway cannot overwrite each other's token",https://github.com/fullsend-ai/fullsend/issues/7988
+2026-10-02,fullsend,issue,opened,7984,"agent set --runtime does not reshape the generated harness",https://github.com/fullsend-ai/fullsend/issues/7984
+2026-10-02,fullsend,issue,opened,7982,"run: detect provider/profile credential mismatch before provider create and name the file to fix",https://github.com/fullsend-ai/fullsend/issues/7982
+2026-10-02,fullsend,issue,opened,7981,"pi: OpenAI sub-agents/personas require an OpenAI parent model; not validated, fails at bootstrap",https://github.com/fullsend-ai/fullsend/issues/7981
+2026-10-02,fullsend,issue,opened,7980,"pi: Vertex sub-agent under an OpenAI parent fails mid-run when GOOGLE_APPLICATION_CREDENTIALS is unset",https://github.com/fullsend-ai/fullsend/issues/7980
+2026-10-02,fullsend,issue,opened,7979,"agent subcommands: default --fullsend-dir to .fullsend",https://github.com/fullsend-ai/fullsend/issues/7979
+2026-10-02,fullsend,issue,opened,7974,"ci(release): block on agents gate pin drift only when the workflow_call interface changed",https://github.com/fullsend-ai/fullsend/issues/7974
+2026-10-02,fullsend,issue,opened,7973,"sandbox: ImportProfile treats ""already exists"" as success and keeps a stale in-use profile",https://github.com/fullsend-ai/fullsend/issues/7973
+2026-10-02,fullsend,issue,opened,7972,"docs: agent new pages assume Vertex and carry stale local-run claims (v0.44.0)",https://github.com/fullsend-ai/fullsend/issues/7972
+2026-10-02,fullsend,issue,opened,7971,"agent new --runtime codex generates a Vertex-only agent that cannot run on codex",https://github.com/fullsend-ai/fullsend/issues/7971
+2026-10-02,fullsend,issue,opened,7968,"cutting-releases: install-binary.sh checksum step fails on macOS 26 (Darwin sha256sum -c needs '-')",https://github.com/fullsend-ai/fullsend/issues/7968
+2026-10-02,fullsend,issue,opened,7965,"pin-ci-job-identity.sh: GET /api/v4/projects/:id returns 404 with JOB-TOKEN on self-hosted GitLab EE",https://github.com/fullsend-ai/fullsend/issues/7965
+2026-10-02,fullsend,issue,opened,7964,"Why there are profiles/providers in the scaffold? Are they used?",https://github.com/fullsend-ai/fullsend/issues/7964
+2026-10-02,fullsend,issue,opened,7962,"OpenAI injects a temporal profile causing confusion",https://github.com/fullsend-ai/fullsend/issues/7962
+2026-10-02,fullsend,issue,opened,7961,"Offboard dispatch should not remove workflow file while agent runs are in flight",https://github.com/fullsend-ai/fullsend/issues/7961
+2026-10-02,fullsend,issue,opened,7959,"ci(release): run the agents functional-test gate in release tier",https://github.com/fullsend-ai/fullsend/issues/7959
+2026-10-02,fullsend,issue,opened,7954,"docs(release): make RC → agents image repin → final the cutting-releases process",https://github.com/fullsend-ai/fullsend/issues/7954
+2026-10-02,fullsend,issue,opened,7953,"ci: retire admin e2e suite and update test documentation",https://github.com/fullsend-ai/fullsend/issues/7953
+2026-10-02,fullsend,issue,opened,7952,"feat(gitlab): enable fork and cross-project fix push-back after agents support",https://github.com/fullsend-ai/fullsend/issues/7952
+2026-10-02,fullsend,issue,closed,8007,"Embedded package-registries and gitleaks profiles miss permissions the fleet copies have",https://github.com/fullsend-ai/fullsend/issues/8007
+2026-10-02,fullsend,issue,closed,7999,"docs: split agent new into a walkthrough (bring-your-own-agent) and a reference (cli/agent.md)",https://github.com/fullsend-ai/fullsend/issues/7999
+2026-10-02,fullsend,issue,closed,7993,"ci: extract shared behaviour-test dispatch and SCM infrastructure",https://github.com/fullsend-ai/fullsend/issues/7993
+2026-10-02,fullsend,issue,closed,7981,"pi: OpenAI sub-agents/personas require an OpenAI parent model; not validated, fails at bootstrap",https://github.com/fullsend-ai/fullsend/issues/7981
+2026-10-02,fullsend,issue,closed,7972,"docs: agent new pages assume Vertex and carry stale local-run claims (v0.44.0)",https://github.com/fullsend-ai/fullsend/issues/7972
+2026-10-02,fullsend,issue,closed,7971,"agent new --runtime codex generates a Vertex-only agent that cannot run on codex",https://github.com/fullsend-ai/fullsend/issues/7971
+2026-10-02,fullsend,issue,closed,7968,"cutting-releases: install-binary.sh checksum step fails on macOS 26 (Darwin sha256sum -c needs '-')",https://github.com/fullsend-ai/fullsend/issues/7968
+2026-10-02,fullsend,issue,closed,7965,"pin-ci-job-identity.sh: GET /api/v4/projects/:id returns 404 with JOB-TOKEN on self-hosted GitLab EE",https://github.com/fullsend-ai/fullsend/issues/7965
+2026-10-02,fullsend,issue,closed,7964,"Why there are profiles/providers in the scaffold? Are they used?",https://github.com/fullsend-ai/fullsend/issues/7964
+2026-10-02,fullsend,issue,closed,7962,"OpenAI injects a temporal profile causing confusion",https://github.com/fullsend-ai/fullsend/issues/7962
+2026-10-02,fullsend,issue,closed,7954,"docs(release): make RC → agents image repin → final the cutting-releases process",https://github.com/fullsend-ai/fullsend/issues/7954
+2026-10-02,fullsend,issue,closed,7940,"runtime: harden dummy-playback runtime",https://github.com/fullsend-ai/fullsend/issues/7940
+2026-10-02,fullsend,issue,closed,7908,"docs(glossary): disambiguate ""harness"" vs. runtime and describe fullsend as a meta-harness",https://github.com/fullsend-ai/fullsend/issues/7908
+2026-10-02,fullsend,issue,closed,7901,"Golang version not being bumped on images",https://github.com/fullsend-ai/fullsend/issues/7901
+2026-10-02,fullsend,issue,closed,7883,"scaffold + agent new: mirror agents#1513's OpenShell 0.1 credential declarations for github-ro",https://github.com/fullsend-ai/fullsend/issues/7883
+2026-10-02,fullsend,issue,closed,7855,"Review dispatch should block merge if review hasn't completed",https://github.com/fullsend-ai/fullsend/issues/7855
+2026-10-02,fullsend,issue,closed,7268,"scaffold and agents repo ship duplicate policies/providers/profiles with no drift guard",https://github.com/fullsend-ai/fullsend/issues/7268
+2026-10-02,fullsend,issue,closed,7264,"agent new --runtime codex generates a Claude-on-Vertex harness (no openai provider, model: opus, GCP host_files)",https://github.com/fullsend-ai/fullsend/issues/7264
+2026-10-02,fullsend,issue,closed,7078,"test: CheckoutBranchRealShellPrefersBranchOverSameNamedTag fails when tag.gpgsign is enabled",https://github.com/fullsend-ai/fullsend/issues/7078
+2026-10-02,fullsend,issue,closed,7014,"Scaffold fullsend-github-ro profile lacks the GraphQL endpoint the fleet profile has; generated agents fail on `gh --json`",https://github.com/fullsend-ai/fullsend/issues/7014
+2026-10-02,fullsend,issue,closed,6990,"Provider profiles (.fullsend/profiles/*.yaml) have no update path — allowlist fixes never reach installed repos",https://github.com/fullsend-ai/fullsend/issues/6990
+2026-10-02,fullsend,issue,closed,6978,"scaffold: lint drift between internal/scaffold/fullsend-repo/profiles and the fullsend-ai/agents profiles",https://github.com/fullsend-ai/fullsend/issues/6978
+2026-10-02,fullsend,issue,closed,6837,"ci: add dummy-playback behavior-test infrastructure",https://github.com/fullsend-ai/fullsend/issues/6837
+2026-10-02,fullsend,issue,closed,6792,"Env validator should report all missing variable errors, not just the first",https://github.com/fullsend-ai/fullsend/issues/6792
+2026-10-02,fullsend,issue,closed,6607,"release: automate the fullsend-ai/agents harness image digest repin after each release",https://github.com/fullsend-ai/fullsend/issues/6607
+2026-10-02,fullsend,issue,closed,5568,"runner: extend preflight_check to pre_script/post_script (not just validation_loop)",https://github.com/fullsend-ai/fullsend/issues/5568
+2026-10-02,fullsend,issue,closed,5480,"Custom --app-set review bot is not recognized by fix dispatch",https://github.com/fullsend-ai/fullsend/issues/5480
+2026-10-02,agents,pr,opened,1597,"chore(deps): bump fullsend to e9690f264 for built-in provider resolution",https://github.com/fullsend-ai/agents/pull/1597
+2026-10-02,agents,pr,opened,1596,"refactor(#1592): switch fleet harnesses to bare built-in providers",https://github.com/fullsend-ai/agents/pull/1596
+2026-10-02,agents,pr,opened,1595,"chore(config): move opus/sonnet aliases to 5.5, run code on opus",https://github.com/fullsend-ai/agents/pull/1595
+2026-10-02,agents,pr,opened,1594,"fix(#675): protect sub-agent-failure findings and require full adjudication accounting",https://github.com/fullsend-ai/agents/pull/1594
+2026-10-02,agents,pr,opened,1593,"fix(#675): accept evidence-backed empty challenger adjudication",https://github.com/fullsend-ai/agents/pull/1593
+2026-10-02,agents,pr,opened,1590,"fix(#1585): make GitLab PR-list lookup fail open on API errors",https://github.com/fullsend-ai/agents/pull/1590
+2026-10-02,agents,pr,opened,1589,"fix(#1584): derive pre-code bot logins from FULLSEND_APP_SET",https://github.com/fullsend-ai/agents/pull/1589
+2026-10-02,agents,pr,opened,1588,"fix(#1583): keep runner setup after pre-code force/no-token bypass",https://github.com/fullsend-ai/agents/pull/1588
+2026-10-02,agents,pr,opened,1587,"fix(#1581): capture score.py exit status for RESULT line",https://github.com/fullsend-ai/agents/pull/1587
+2026-10-02,agents,pr,opened,1586,"fix(#1577): match GraphQL bot authors by bare login, not REST ""[bot]"" suffix",https://github.com/fullsend-ai/agents/pull/1586
+2026-10-02,agents,pr,opened,1576,"ci(functional-tests): add a tier input and a nightly full-suite run",https://github.com/fullsend-ai/agents/pull/1576
+2026-10-02,agents,pr,opened,1575,"feat(#1573): add a release tier to eval/run-functional.sh",https://github.com/fullsend-ai/agents/pull/1575
+2026-10-02,agents,pr,opened,1574,"ci(eval): skip the review suite in the fullsend release gate",https://github.com/fullsend-ai/agents/pull/1574
+2026-10-02,agents,pr,opened,1571,"refactor(#1525): extract structured-output contract into a skill",https://github.com/fullsend-ai/agents/pull/1571
+2026-10-02,agents,pr,opened,1570,"chore(harness): pin fleet images to the v0.44.0-rc.2 release builds",https://github.com/fullsend-ai/agents/pull/1570
+2026-10-02,agents,pr,merged,1597,"chore(deps): bump fullsend to e9690f264 for built-in provider resolution",https://github.com/fullsend-ai/agents/pull/1597
+2026-10-02,agents,pr,merged,1593,"fix(#675): accept evidence-backed empty challenger adjudication",https://github.com/fullsend-ai/agents/pull/1593
+2026-10-02,agents,pr,merged,1576,"ci(functional-tests): add a tier input and a nightly full-suite run",https://github.com/fullsend-ai/agents/pull/1576
+2026-10-02,agents,pr,merged,1575,"feat(#1573): add a release tier to eval/run-functional.sh",https://github.com/fullsend-ai/agents/pull/1575
+2026-10-02,agents,pr,merged,1571,"refactor(#1525): extract structured-output contract into a skill",https://github.com/fullsend-ai/agents/pull/1571
+2026-10-02,agents,pr,merged,1570,"chore(harness): pin fleet images to the v0.44.0-rc.2 release builds",https://github.com/fullsend-ai/agents/pull/1570
+2026-10-02,agents,issue,opened,1592,"Fleet harnesses: switch to fullsend's built-in providers/profiles by bare name and delete the duplicates",https://github.com/fullsend-ai/agents/issues/1592
+2026-10-02,agents,issue,opened,1591,"eval: require a release: true case for every agent with an eval config",https://github.com/fullsend-ai/agents/issues/1591
+2026-10-02,agents,issue,opened,1585,"gitlab-code-ops: forge_list_prs_for_issue returns exit 1 on first-page failure, causing hard pre-script failure",https://github.com/fullsend-ai/agents/issues/1585
+2026-10-02,agents,issue,opened,1584,"pre-code: hardcoded bot logins do not support custom FULLSEND_APP_SET identities",https://github.com/fullsend-ai/agents/issues/1584
+2026-10-02,agents,issue,opened,1583,"pre-code: early exit 0 on force override or missing token bypasses pre-commit tool installation",https://github.com/fullsend-ai/agents/issues/1583
+2026-10-02,agents,issue,opened,1582,"functional-tests: confirm release-tier gate cost is under $5 per attempt",https://github.com/fullsend-ai/agents/issues/1582
+2026-10-02,agents,issue,opened,1581,"eval/run-functional.sh: score.py failure under set -e skips the 'RESULT' summary line",https://github.com/fullsend-ai/agents/issues/1581
+2026-10-02,agents,issue,opened,1580,"functional-tests: decide whether max_turns/max_cost budgets should gate the release tier",https://github.com/fullsend-ai/agents/issues/1580
+2026-10-02,agents,issue,opened,1579,"eval: move non-canary release-tier cases to --runtime dummy-playback",https://github.com/fullsend-ai/agents/issues/1579
+2026-10-02,agents,issue,opened,1578,"functional-tests: follow-ups to the release tier (dummy-playback release cases, budget policy, score summary)",https://github.com/fullsend-ai/agents/issues/1578
+2026-10-02,agents,issue,opened,1577,"forge_list_prs_for_issue: GraphQL query compares coder bot login against REST-style ""[bot]"" suffix, treating bot PRs as human PRs",https://github.com/fullsend-ai/agents/issues/1577
+2026-10-02,agents,issue,opened,1573,"functional-tests: add a `release` tier so the fullsend release gate runs a fast smoke check, not the full live-model suite",https://github.com/fullsend-ai/agents/issues/1573
+2026-10-02,agents,issue,opened,1572,"feat(gitlab): push fix commits to fork and cross-project MR sources",https://github.com/fullsend-ai/agents/issues/1572
+2026-10-02,agents,issue,closed,1578,"functional-tests: follow-ups to the release tier (dummy-playback release cases, budget policy, score summary)",https://github.com/fullsend-ai/agents/issues/1578
+2026-10-02,agents,issue,closed,1573,"functional-tests: add a `release` tier so the fullsend release gate runs a fast smoke check, not the full live-model suite",https://github.com/fullsend-ai/agents/issues/1573
+2026-10-02,agents,issue,closed,1525,"[fix-agent] Extract structured-output contract into standalone skill",https://github.com/fullsend-ai/agents/issues/1525
+2026-10-02,agents,issue,closed,1521,"[Epic] Decompose fix-agent skills to stay below the skillsaw budget",https://github.com/fullsend-ai/agents/issues/1521
+2026-10-02,agents,issue,closed,1226,"harness: repin sandbox and code images to the 0.43.0 release digests",https://github.com/fullsend-ai/agents/issues/1226
+2026-10-02,agents,issue,closed,675,"Challenger empty-result fallback prevents valid exoneration of single-finding reviews",https://github.com/fullsend-ai/agents/issues/675
