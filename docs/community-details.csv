@@ -1766,3 +1766,4 @@ date,repo,type,event,number,actor,title,url
 2026-10-02,agents,pr,opened_core,1576,waynesun09,"ci(functional-tests): add a tier input and a nightly full-suite run",https://github.com/fullsend-ai/agents/pull/1576
 2026-10-02,agents,pr,opened_core,1574,waynesun09,"ci(eval): skip the review suite in the fullsend release gate",https://github.com/fullsend-ai/agents/pull/1574
 2026-10-02,agents,pr,opened_core,1570,waynesun09,"chore(harness): pin fleet images to the v0.44.0-rc.2 release builds",https://github.com/fullsend-ai/agents/pull/1570
+2026-10-03,agents,pr,opened_core,1600,waynesun09,"chore(eval): run the functional evals on Sonnet 5.5",https://github.com/fullsend-ai/agents/pull/1600

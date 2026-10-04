@@ -1889,3 +1889,18 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-02,agents,1575,feat(#1573): add a release tier to eval/run-functional.sh,feat,,,,https://github.com/fullsend-ai/agents/pull/1575
 2026-10-02,agents,1571,refactor(#1525): extract structured-output contract into a skill,other,,,,https://github.com/fullsend-ai/agents/pull/1571
 2026-10-02,agents,1570,chore(harness): pin fleet images to the v0.44.0-rc.2 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1570
+2026-10-03,fullsend,8053,test(#8052): use a valid octal spelling in SSRF IP-literal test,test,,,,https://github.com/fullsend-ai/fullsend/pull/8053
+2026-10-03,fullsend,8049,fix(#8046): count claude sub-agent tokens via result modelUsage,fix,core,8046,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8049
+2026-10-03,fullsend,8045,test(#8042): select inference auth in reinstated dispatch test,test,,,,https://github.com/fullsend-ai/fullsend/pull/8045
+2026-10-03,fullsend,8022,ci(#7942): run playback behaviour tests in CI,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8022
+2026-10-03,fullsend,8021,feat(#7771): add GitLab webhook dispatcher CI scaffold,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8021
+2026-10-03,fullsend,8020,refactor(#7770): add GitLab webhook event builder on the poll stack,other,,,,https://github.com/fullsend-ai/fullsend/pull/8020
+2026-10-03,fullsend,8019,fix(#8018): retry provider create on OpenShell 0.1.2 profile error,fix,core,8018,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8019
+2026-10-03,fullsend,8017,fix(#8016): defer OpenShell policy-DNS answers in the SSRF hook,fix,core,8016,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8017
+2026-10-03,fullsend,8015,feat(#8010)!: require explicit inference.auth selection in repos manifests,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8015
+2026-10-03,fullsend,7960,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.288,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7960
+2026-10-03,fullsend,7957,test(#7941): add dummy-playback behaviour scenario and fixtures,test,,,,https://github.com/fullsend-ai/fullsend/pull/7957
+2026-10-03,fullsend,7945,"refactor(#7850)!: carry GitLab dispatch via pipeline inputs, not variables",other,,,,https://github.com/fullsend-ai/fullsend/pull/7945
+2026-10-03,agents,1599,fix(#1598): bound the review judge input; run the evals on Sonnet 5.5,fix,core,1598,waynesun09,https://github.com/fullsend-ai/agents/pull/1599
+2026-10-03,agents,1596,refactor(#1592): switch fleet harnesses to bare built-in providers,other,,,,https://github.com/fullsend-ai/agents/pull/1596
+2026-10-03,agents,1594,fix(#675): protect sub-agent-failure findings and require full adjudication accounting,fix,bot,675,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1594
