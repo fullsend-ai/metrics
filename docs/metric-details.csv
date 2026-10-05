@@ -15268,3 +15268,53 @@ date,repo,type,event,number,title,url
 2026-10-03,agents,issue,closed,1605,"post-review: label_actions values can keep ""::"" after normalisation",https://github.com/fullsend-ai/agents/issues/1605
 2026-10-03,agents,issue,closed,1598,"Review eval LLM judge prompt exceeds the 1M-token limit, reported as a quality regression",https://github.com/fullsend-ai/agents/issues/1598
 2026-10-03,agents,issue,closed,1592,"Fleet harnesses: switch to fullsend's built-in providers/profiles by bare name and delete the duplicates",https://github.com/fullsend-ai/agents/issues/1592
+2026-10-04,fullsend,pr,opened,8074,"fix(#8073): accept an oversized agent_end from a pi sub-agent",https://github.com/fullsend-ai/fullsend/pull/8074
+2026-10-04,fullsend,pr,opened,8072,"feat(#7772): provision GitLab webhook fast-path at install time",https://github.com/fullsend-ai/fullsend/pull/8072
+2026-10-04,fullsend,pr,opened,8071,"refactor(#8064)!: remove per-org CLI commands and install branching",https://github.com/fullsend-ai/fullsend/pull/8071
+2026-10-04,fullsend,pr,opened,8062,"chore(deps): update dependency golang to v1.27.1",https://github.com/fullsend-ai/fullsend/pull/8062
+2026-10-04,fullsend,pr,opened,8061,"ci(#8060): increase e2e stale-lock timeout to 30 minutes",https://github.com/fullsend-ai/fullsend/pull/8061
+2026-10-04,fullsend,pr,opened,8059,"refactor(#8013)!: rename repos install Vertex flags to --vertex-*",https://github.com/fullsend-ai/fullsend/pull/8059
+2026-10-04,fullsend,pr,opened,8058,"feat(#8047): warn when Claude Code reports plugin_errors at startup",https://github.com/fullsend-ai/fullsend/pull/8058
+2026-10-04,fullsend,pr,opened,8057,"ci(dispatch): skip retro for scaffold PRs",https://github.com/fullsend-ai/fullsend/pull/8057
+2026-10-04,fullsend,pr,opened,8056,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.289",https://github.com/fullsend-ai/fullsend/pull/8056
+2026-10-04,fullsend,pr,opened,8055,"feat(#8012)!: make repos status and uninstall use selected inference auth",https://github.com/fullsend-ai/fullsend/pull/8055
+2026-10-04,fullsend,pr,merged,8061,"ci(#8060): increase e2e stale-lock timeout to 30 minutes",https://github.com/fullsend-ai/fullsend/pull/8061
+2026-10-04,fullsend,pr,merged,8059,"refactor(#8013)!: rename repos install Vertex flags to --vertex-*",https://github.com/fullsend-ai/fullsend/pull/8059
+2026-10-04,fullsend,pr,merged,8055,"feat(#8012)!: make repos status and uninstall use selected inference auth",https://github.com/fullsend-ai/fullsend/pull/8055
+2026-10-04,fullsend,pr,merged,8054,"ci(#7953): retire admin e2e suite and update test docs",https://github.com/fullsend-ai/fullsend/pull/8054
+2026-10-04,fullsend,pr,merged,8044,"feat(#8011)!: provision repos inference credentials by selected auth",https://github.com/fullsend-ai/fullsend/pull/8044
+2026-10-04,fullsend,pr,merged,8026,"feat(#7773): wire gitlab-webhook poll driver to the dispatch spine",https://github.com/fullsend-ai/fullsend/pull/8026
+2026-10-04,fullsend,issue,opened,8073,"pi: oversized agent_end events falsely fail completed sub-agents",https://github.com/fullsend-ai/fullsend/issues/8073
+2026-10-04,fullsend,issue,opened,8070,"Complete the per-org removal sweep and verification",https://github.com/fullsend-ai/fullsend/issues/8070
+2026-10-04,fullsend,issue,opened,8069,"Remove per-org tests and update active documentation",https://github.com/fullsend-ai/fullsend/issues/8069
+2026-10-04,fullsend,issue,opened,8068,"Remove remaining per-org mint and runtime authorization paths",https://github.com/fullsend-ai/fullsend/issues/8068
+2026-10-04,fullsend,issue,opened,8067,"Remove per-org scaffolds and workflow mode branching",https://github.com/fullsend-ai/fullsend/issues/8067
+2026-10-04,fullsend,issue,opened,8066,"Remove per-org installation layers and forge operations",https://github.com/fullsend-ai/fullsend/issues/8066
+2026-10-04,fullsend,issue,opened,8065,"Remove org-specific configuration models and loading",https://github.com/fullsend-ai/fullsend/issues/8065
+2026-10-04,fullsend,issue,opened,8064,"Remove per-org CLI commands and installation branching",https://github.com/fullsend-ai/fullsend/issues/8064
+2026-10-04,fullsend,issue,opened,8063,"Remove deprecated per-org installation mode completely",https://github.com/fullsend-ai/fullsend/issues/8063
+2026-10-04,fullsend,issue,opened,8060,"ci: increase e2e stale-lock timeout to 30 minutes",https://github.com/fullsend-ai/fullsend/issues/8060
+2026-10-04,fullsend,issue,closed,8060,"ci: increase e2e stale-lock timeout to 30 minutes",https://github.com/fullsend-ai/fullsend/issues/8060
+2026-10-04,fullsend,issue,closed,8051,"Review dispatch has no retry after transient workflow failures",https://github.com/fullsend-ai/fullsend/issues/8051
+2026-10-04,fullsend,issue,closed,8041,"Extend scaffold branch filter to cover fullsend/onboard and fullsend/offboard",https://github.com/fullsend-ai/fullsend/issues/8041
+2026-10-04,fullsend,issue,closed,8033,"Filter fullsend management branches from shim workflow dispatch",https://github.com/fullsend-ai/fullsend/issues/8033
+2026-10-04,fullsend,issue,closed,8013,"Rename Vertex credential flags on repos subcommands to vertex-prefixed names",https://github.com/fullsend-ai/fullsend/issues/8013
+2026-10-04,fullsend,issue,closed,8012,"Make repos status and uninstall use the selected inference authentication",https://github.com/fullsend-ai/fullsend/issues/8012
+2026-10-04,fullsend,issue,closed,8011,"Provision and converge repos inference credentials for the selected authentication",https://github.com/fullsend-ai/fullsend/issues/8011
+2026-10-04,fullsend,issue,closed,8009,"Make repos inference credential management authentication-aware",https://github.com/fullsend-ai/fullsend/issues/8009
+2026-10-04,fullsend,issue,closed,7961,"Offboard dispatch should not remove workflow file while agent runs are in flight",https://github.com/fullsend-ai/fullsend/issues/7961
+2026-10-04,fullsend,issue,closed,7953,"ci: retire admin e2e suite and update test documentation",https://github.com/fullsend-ai/fullsend/issues/7953
+2026-10-04,fullsend,issue,closed,7939,"ci: track dummy-playback behavior test rollout",https://github.com/fullsend-ai/fullsend/issues/7939
+2026-10-04,fullsend,issue,closed,7773,"ADR 0125: gitlab-webhook CLI driver wiring → dispatch spine → CreatePipeline",https://github.com/fullsend-ai/fullsend/issues/7773
+2026-10-04,fullsend,issue,closed,7546,"Review agent should be dispatched for agent-authored PRs",https://github.com/fullsend-ai/fullsend/issues/7546
+2026-10-04,fullsend,issue,closed,5990,"e2e: convert admin install/uninstall suite from org mode to per-repo mode",https://github.com/fullsend-ai/fullsend/issues/5990
+2026-10-04,agents,pr,opened,1613,"fix(#1612): propagate failed task outcome for action=failure",https://github.com/fullsend-ai/agents/pull/1613
+2026-10-04,agents,pr,opened,1611,"feat(review)!: add risk verdict gate to review post-processing",https://github.com/fullsend-ai/agents/pull/1611
+2026-10-04,agents,pr,opened,1610,"feat(#1558): add retro-ci-analysis skill for PR CI and merge-queue evidence",https://github.com/fullsend-ai/agents/pull/1610
+2026-10-04,agents,pr,opened,1608,"feat(review): persist finding ids and dispositions",https://github.com/fullsend-ai/agents/pull/1608
+2026-10-04,agents,pr,merged,1613,"fix(#1612): propagate failed task outcome for action=failure",https://github.com/fullsend-ai/agents/pull/1613
+2026-10-04,agents,pr,merged,1606,"fix(#633): refuse '::' in label_actions labels, encode warning values",https://github.com/fullsend-ai/agents/pull/1606
+2026-10-04,agents,issue,opened,1612,"post-review: explicit action=failure incorrectly reports successful review completion",https://github.com/fullsend-ai/agents/issues/1612
+2026-10-04,agents,issue,opened,1609,"Nightly functional tests failing",https://github.com/fullsend-ai/agents/issues/1609
+2026-10-04,agents,issue,closed,1612,"post-review: explicit action=failure incorrectly reports successful review completion",https://github.com/fullsend-ai/agents/issues/1612
+2026-10-04,agents,issue,closed,633,"Harden label_actions sanitizer in post-review.sh against GHA workflow-command injection",https://github.com/fullsend-ai/agents/issues/633

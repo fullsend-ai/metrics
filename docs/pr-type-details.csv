@@ -1904,3 +1904,11 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-03,agents,1599,fix(#1598): bound the review judge input; run the evals on Sonnet 5.5,fix,core,1598,waynesun09,https://github.com/fullsend-ai/agents/pull/1599
 2026-10-03,agents,1596,refactor(#1592): switch fleet harnesses to bare built-in providers,other,,,,https://github.com/fullsend-ai/agents/pull/1596
 2026-10-03,agents,1594,fix(#675): protect sub-agent-failure findings and require full adjudication accounting,fix,bot,675,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1594
+2026-10-04,fullsend,8061,ci(#8060): increase e2e stale-lock timeout to 30 minutes,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8061
+2026-10-04,fullsend,8059,refactor(#8013)!: rename repos install Vertex flags to --vertex-*,other,,,,https://github.com/fullsend-ai/fullsend/pull/8059
+2026-10-04,fullsend,8055,feat(#8012)!: make repos status and uninstall use selected inference auth,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8055
+2026-10-04,fullsend,8054,ci(#7953): retire admin e2e suite and update test docs,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8054
+2026-10-04,fullsend,8044,feat(#8011)!: provision repos inference credentials by selected auth,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8044
+2026-10-04,fullsend,8026,feat(#7773): wire gitlab-webhook poll driver to the dispatch spine,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8026
+2026-10-04,agents,1613,fix(#1612): propagate failed task outcome for action=failure,fix,core,1612,ggallen,https://github.com/fullsend-ai/agents/pull/1613
+2026-10-04,agents,1606,"fix(#633): refuse '::' in label_actions labels, encode warning values",fix,bot,633,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1606
