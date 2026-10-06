@@ -1767,3 +1767,19 @@ date,repo,type,event,number,actor,title,url
 2026-10-02,agents,pr,opened_core,1574,waynesun09,"ci(eval): skip the review suite in the fullsend release gate",https://github.com/fullsend-ai/agents/pull/1574
 2026-10-02,agents,pr,opened_core,1570,waynesun09,"chore(harness): pin fleet images to the v0.44.0-rc.2 release builds",https://github.com/fullsend-ai/agents/pull/1570
 2026-10-03,agents,pr,opened_core,1600,waynesun09,"chore(eval): run the functional evals on Sonnet 5.5",https://github.com/fullsend-ai/agents/pull/1600
+2026-10-05,fullsend,issue,opened_external,8089,jflowers,"feat(review): add review-voice convention pack to /uf.review-pr",https://github.com/fullsend-ai/fullsend/issues/8089
+2026-10-05,fullsend,issue,opened_external,8081,jflowers,"Recognize risk_gated marker from agents post-review for formal review posting",https://github.com/fullsend-ai/fullsend/issues/8081
+2026-10-05,fullsend,issue,closed_other_external,8089,jflowers,"feat(review): add review-voice convention pack to /uf.review-pr",https://github.com/fullsend-ai/fullsend/issues/8089
+2026-10-05,fullsend,pr,reviewed_external,7842,jflowers,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-05,fullsend,pr,reviewed_external,7832,dhshah13,"fix(#7831): chunk long Codex skill reads in the runtime note",https://github.com/fullsend-ai/fullsend/pull/7832
+2026-10-05,fullsend,pr,reviewed_external,7832,dhshah13,"fix(#7831): chunk long Codex skill reads in the runtime note",https://github.com/fullsend-ai/fullsend/pull/7832
+2026-10-05,fullsend,pr,reviewed_external,7765,jflowers,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-10-05,fullsend,pr,reviewed_external,7765,jflowers,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-10-05,fullsend,pr,reviewed_external,7765,jflowers,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-10-05,fullsend,pr,reviewed_external,7765,jflowers,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-10-05,fullsend,pr,reviewed_external,7765,jflowers,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-10-05,fullsend,pr,reviewed_external,7735,jasonawant,"docs(#7734): warn Jira poller credentials must be a service account",https://github.com/fullsend-ai/fullsend/pull/7735
+2026-10-05,fullsend,pr,reviewed_external,7103,trevor-vaughan,"feat(runtime): implement OpenCodeRuntime",https://github.com/fullsend-ai/fullsend/pull/7103
+2026-10-05,fullsend,pr,reviewed_external,3812,jasonawant,"docs(adr): ADR 0079 — Jira project setup via fullsend CLI",https://github.com/fullsend-ai/fullsend/pull/3812
+2026-10-05,agents,issue,opened_external,1617,jflowers,"Wire risk assessment score into review verdict gate",https://github.com/fullsend-ai/agents/issues/1617
+2026-10-05,agents,pr,reviewed_external,1163,jflowers,"feat(agents): re-check the work item once and act on runner mid-run updates",https://github.com/fullsend-ai/agents/pull/1163

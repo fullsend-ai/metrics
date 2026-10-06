@@ -15318,3 +15318,38 @@ date,repo,type,event,number,title,url
 2026-10-04,agents,issue,opened,1609,"Nightly functional tests failing",https://github.com/fullsend-ai/agents/issues/1609
 2026-10-04,agents,issue,closed,1612,"post-review: explicit action=failure incorrectly reports successful review completion",https://github.com/fullsend-ai/agents/issues/1612
 2026-10-04,agents,issue,closed,633,"Harden label_actions sanitizer in post-review.sh against GHA workflow-command injection",https://github.com/fullsend-ai/agents/issues/633
+2026-10-05,fullsend,pr,opened,8088,"refactor(#8065)!: remove org-specific config models and loading",https://github.com/fullsend-ai/fullsend/pull/8088
+2026-10-05,fullsend,pr,opened,8087,"chore(deps): update dependency stylelint to v17.16.0",https://github.com/fullsend-ai/fullsend/pull/8087
+2026-10-05,fullsend,pr,opened,8086,"refactor(#8066)!: remove per-org installation layers and forge methods",https://github.com/fullsend-ai/fullsend/pull/8086
+2026-10-05,fullsend,pr,opened,8077,"feat(#7895): skip fullsend in forks of enrolled repos",https://github.com/fullsend-ai/fullsend/pull/8077
+2026-10-05,fullsend,pr,opened,8075,"chore(deps): update renovatebot/github-action action to v46.3.7",https://github.com/fullsend-ai/fullsend/pull/8075
+2026-10-05,fullsend,pr,merged,8086,"refactor(#8066)!: remove per-org installation layers and forge methods",https://github.com/fullsend-ai/fullsend/pull/8086
+2026-10-05,fullsend,pr,merged,8074,"fix(#8073): accept an oversized agent_end from a pi sub-agent",https://github.com/fullsend-ai/fullsend/pull/8074
+2026-10-05,fullsend,pr,merged,8071,"refactor(#8064)!: remove per-org CLI commands and install branching",https://github.com/fullsend-ai/fullsend/pull/8071
+2026-10-05,fullsend,pr,merged,7985,"fix(#7980)!: refuse Vertex sub-agents that have no credentials",https://github.com/fullsend-ai/fullsend/pull/7985
+2026-10-05,fullsend,pr,merged,7877,"feat(adr-corner): add ADR pull request inventory",https://github.com/fullsend-ai/fullsend/pull/7877
+2026-10-05,fullsend,pr,merged,7859,"docs(config): inventory which source wins for each setting",https://github.com/fullsend-ai/fullsend/pull/7859
+2026-10-05,fullsend,issue,opened,8092,"Standardize PR-test approval environments and operational readiness",https://github.com/fullsend-ai/fullsend/issues/8092
+2026-10-05,fullsend,issue,opened,8091,"Standardize PR-test authorization and approved-commit handling",https://github.com/fullsend-ai/fullsend/issues/8091
+2026-10-05,fullsend,issue,opened,8090,"docs: say in LADDER.md who can apply ok-to-test, and what to do when the gate removes it",https://github.com/fullsend-ai/fullsend/issues/8090
+2026-10-05,fullsend,issue,opened,8089,"feat(review): add review-voice convention pack to /uf.review-pr",https://github.com/fullsend-ai/fullsend/issues/8089
+2026-10-05,fullsend,issue,opened,8084,"Skip retro dispatch when no agents participated in the PR workflow",https://github.com/fullsend-ai/fullsend/issues/8084
+2026-10-05,fullsend,issue,opened,8083,"Migrate GitLab role bots to service accounts and let Poller own native triggers",https://github.com/fullsend-ai/fullsend/issues/8083
+2026-10-05,fullsend,issue,opened,8081,"Recognize risk_gated marker from agents post-review for formal review posting",https://github.com/fullsend-ai/fullsend/issues/8081
+2026-10-05,fullsend,issue,opened,8080,"Auto-close superseded fullsend onboarding PRs when a newer onboarding PR merges",https://github.com/fullsend-ai/fullsend/issues/8080
+2026-10-05,fullsend,issue,opened,8079,"Agent GitHub token lacks checks:read/statuses:read, so retro (and other roles) cannot verify CI outcomes on any PR",https://github.com/fullsend-ai/fullsend/issues/8079
+2026-10-05,fullsend,issue,opened,8078,"prescript Relay should work on GitLab as well",https://github.com/fullsend-ai/fullsend/issues/8078
+2026-10-05,fullsend,issue,opened,8076,"Retro dispatch should account for in-progress review agent",https://github.com/fullsend-ai/fullsend/issues/8076
+2026-10-05,fullsend,issue,closed,8089,"feat(review): add review-voice convention pack to /uf.review-pr",https://github.com/fullsend-ai/fullsend/issues/8089
+2026-10-05,fullsend,issue,closed,8073,"pi: oversized agent_end events falsely fail completed sub-agents",https://github.com/fullsend-ai/fullsend/issues/8073
+2026-10-05,fullsend,issue,closed,8066,"Remove per-org installation layers and forge operations",https://github.com/fullsend-ai/fullsend/issues/8066
+2026-10-05,fullsend,issue,closed,8064,"Remove per-org CLI commands and installation branching",https://github.com/fullsend-ai/fullsend/issues/8064
+2026-10-05,fullsend,issue,closed,7980,"pi: Vertex sub-agent under an OpenAI parent fails mid-run when GOOGLE_APPLICATION_CREDENTIALS is unset",https://github.com/fullsend-ai/fullsend/issues/7980
+2026-10-05,fullsend,issue,closed,1628,"Org upgrade via sync-scaffold does not create FULLSEND_MINT_URL (OIDC migration gap)",https://github.com/fullsend-ai/fullsend/issues/1628
+2026-10-05,agents,pr,opened,1615,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-05,agents,pr,merged,1586,"fix(#1577): match GraphQL bot authors by bare login, not REST ""[bot]"" suffix",https://github.com/fullsend-ai/agents/pull/1586
+2026-10-05,agents,issue,opened,1620,"Align agents PR-test policy and operational readiness",https://github.com/fullsend-ai/agents/issues/1620
+2026-10-05,agents,issue,opened,1619,"Fix agent cannot remediate 'missing-breaking-change-marker' review findings",https://github.com/fullsend-ai/agents/issues/1619
+2026-10-05,agents,issue,opened,1618,"Scribe: replace all-zero Slack reports with an explicit no-meeting-notes message",https://github.com/fullsend-ai/agents/issues/1618
+2026-10-05,agents,issue,opened,1617,"Wire risk assessment score into review verdict gate",https://github.com/fullsend-ai/agents/issues/1617
+2026-10-05,agents,issue,closed,1577,"forge_list_prs_for_issue: GraphQL query compares coder bot login against REST-style ""[bot]"" suffix, treating bot PRs as human PRs",https://github.com/fullsend-ai/agents/issues/1577

@@ -1912,3 +1912,10 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-04,fullsend,8026,feat(#7773): wire gitlab-webhook poll driver to the dispatch spine,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8026
 2026-10-04,agents,1613,fix(#1612): propagate failed task outcome for action=failure,fix,core,1612,ggallen,https://github.com/fullsend-ai/agents/pull/1613
 2026-10-04,agents,1606,"fix(#633): refuse '::' in label_actions labels, encode warning values",fix,bot,633,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1606
+2026-10-05,fullsend,8086,refactor(#8066)!: remove per-org installation layers and forge methods,other,,,,https://github.com/fullsend-ai/fullsend/pull/8086
+2026-10-05,fullsend,8074,fix(#8073): accept an oversized agent_end from a pi sub-agent,fix,core,8073,ggallen,https://github.com/fullsend-ai/fullsend/pull/8074
+2026-10-05,fullsend,8071,refactor(#8064)!: remove per-org CLI commands and install branching,other,,,,https://github.com/fullsend-ai/fullsend/pull/8071
+2026-10-05,fullsend,7985,fix(#7980)!: refuse Vertex sub-agents that have no credentials,fix,core,7980,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7985
+2026-10-05,fullsend,7877,feat(adr-corner): add ADR pull request inventory,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7877
+2026-10-05,fullsend,7859,docs(config): inventory which source wins for each setting,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7859
+2026-10-05,agents,1586,"fix(#1577): match GraphQL bot authors by bare login, not REST ""[bot]"" suffix",fix,core,1577,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1586
