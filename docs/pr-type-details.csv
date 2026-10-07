@@ -1919,3 +1919,29 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-05,fullsend,7877,feat(adr-corner): add ADR pull request inventory,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7877
 2026-10-05,fullsend,7859,docs(config): inventory which source wins for each setting,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7859
 2026-10-05,agents,1586,"fix(#1577): match GraphQL bot authors by bare login, not REST ""[bot]"" suffix",fix,core,1577,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1586
+2026-10-06,fullsend,8126,chore(#8125): run review parent on sonnet and challenger on opus,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8126
+2026-10-06,fullsend,8114,docs(#8069): remove per-org tests and update active documentation,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8114
+2026-10-06,fullsend,8110,refactor(#8068)!: remove per-org mint runtime authorization paths,other,,,,https://github.com/fullsend-ai/fullsend/pull/8110
+2026-10-06,fullsend,8097,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 8106afc,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8097
+2026-10-06,fullsend,8094,refactor(#8067)!: remove per-org scaffolds and workflow branching,other,,,,https://github.com/fullsend-ai/fullsend/pull/8094
+2026-10-06,fullsend,8088,refactor(#8065)!: remove org-specific config models and loading,other,,,,https://github.com/fullsend-ai/fullsend/pull/8088
+2026-10-06,fullsend,8087,chore(deps): update dependency stylelint to v17.16.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8087
+2026-10-06,fullsend,8075,chore(deps): update renovatebot/github-action action to v46.3.7,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8075
+2026-10-06,fullsend,8072,feat(#7772): prepare GitLab webhook provisioning and safety checks,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8072
+2026-10-06,fullsend,8058,feat(#8047): warn when Claude Code reports plugin_errors at startup,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8058
+2026-10-06,fullsend,8028,"feat(#7979): default --fullsend-dir to .fullsend for agent, run, lock",feat,,,,https://github.com/fullsend-ai/fullsend/pull/8028
+2026-10-06,fullsend,7994,chore(deps): update dependency @types/node to v22.20.5,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7994
+2026-10-06,fullsend,7919,feat(review): stamp finding ids on inline comments,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7919
+2026-10-06,fullsend,7848,fix(#7834): honor effective GitHub permissions,fix,bot,7834,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/7848
+2026-10-06,fullsend,7842,docs(adr): let overlays set any harness field and route models,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-06,fullsend,7841,ci(#7838): retry fork creation on stale name collision,ci,,,,https://github.com/fullsend-ai/fullsend/pull/7841
+2026-10-06,fullsend,7832,fix(#7831): chunk long Codex skill reads in the runtime note,fix,external,7831,dhshah13,https://github.com/fullsend-ai/fullsend/pull/7832
+2026-10-06,fullsend,7829,fix(codex): turn off codex's native multi-agent tools,fix,external,7828,dhshah13,https://github.com/fullsend-ai/fullsend/pull/7829
+2026-10-06,fullsend,7715,fix(deps): update module github.com/cucumber/godog to v0.16.0,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7715
+2026-10-06,fullsend,7601,feat(#7304): warn when setup flags pin inherited values,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7601
+2026-10-06,fullsend,7549,perf(#2353): stream vendored binaries instead of buffering,perf,,,,https://github.com/fullsend-ai/fullsend/pull/7549
+2026-10-06,agents,1627,"chore(#1626): run review parent on Sonnet 5.5, challenger on Opus 5.5",chore,,,,https://github.com/fullsend-ai/agents/pull/1627
+2026-10-06,agents,1611,feat(review)!: add risk verdict gate to review post-processing,feat,,,,https://github.com/fullsend-ai/agents/pull/1611
+2026-10-06,agents,1590,fix(#1585): make GitLab PR-list lookup fail open on API errors,fix,core,1585,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1590
+2026-10-06,agents,1589,fix(#1584): derive pre-code bot logins from FULLSEND_APP_SET,fix,core,1584,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1589
+2026-10-06,agents,1588,fix(#1583): keep runner setup after pre-code force/no-token bypass,fix,core,1583,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1588

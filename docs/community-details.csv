@@ -1783,3 +1783,19 @@ date,repo,type,event,number,actor,title,url
 2026-10-05,fullsend,pr,reviewed_external,3812,jasonawant,"docs(adr): ADR 0079 — Jira project setup via fullsend CLI",https://github.com/fullsend-ai/fullsend/pull/3812
 2026-10-05,agents,issue,opened_external,1617,jflowers,"Wire risk assessment score into review verdict gate",https://github.com/fullsend-ai/agents/issues/1617
 2026-10-05,agents,pr,reviewed_external,1163,jflowers,"feat(agents): re-check the work item once and act on runner mid-run updates",https://github.com/fullsend-ai/agents/pull/1163
+2026-10-06,fullsend,issue,opened_external,8111,mfrancisc,"dispatch: kill_switch check on GitHub and GitLab ignores config.base.yaml",https://github.com/fullsend-ai/fullsend/issues/8111
+2026-10-06,fullsend,issue,closed_via_pr_external,7831,dhshah13,"codex runtime: long SKILL.md reads lose their middle to output truncation",https://github.com/fullsend-ai/fullsend/issues/7831
+2026-10-06,fullsend,issue,closed_via_pr_external,7828,dhshah13,"codex runtime: native multi-agent tools are on, so child runs go unmetered and unseen",https://github.com/fullsend-ai/fullsend/issues/7828
+2026-10-06,fullsend,pr,reviewed_external,8028,shairevivo,"feat(#7979): default --fullsend-dir to .fullsend for agent, run, lock",https://github.com/fullsend-ai/fullsend/pull/8028
+2026-10-06,fullsend,pr,reviewed_external,7909,Benkapner,"feat(status)!: default to emoji reactions instead of status comments",https://github.com/fullsend-ai/fullsend/pull/7909
+2026-10-06,fullsend,pr,reviewed_external,7909,Benkapner,"feat(status)!: default to emoji reactions instead of status comments",https://github.com/fullsend-ai/fullsend/pull/7909
+2026-10-06,fullsend,pr,reviewed_external,7907,Benkapner,"feat(review): fetch human-resolved review threads before agent runs",https://github.com/fullsend-ai/fullsend/pull/7907
+2026-10-06,fullsend,pr,reviewed_external,7907,Benkapner,"feat(review): fetch human-resolved review threads before agent runs",https://github.com/fullsend-ai/fullsend/pull/7907
+2026-10-06,fullsend,pr,reviewed_external,7907,Benkapner,"feat(review): fetch human-resolved review threads before agent runs",https://github.com/fullsend-ai/fullsend/pull/7907
+2026-10-06,fullsend,pr,reviewed_external,7786,mfrancisc,"feat(workflow)!: config's `roles` key do not gate execution anymore",https://github.com/fullsend-ai/fullsend/pull/7786
+2026-10-06,experiments,issue,opened_external,60,jwm4,"pre-commit fails or rewrites files outside a change set, so clean PRs need --no-verify or drag in other experiments",https://github.com/fullsend-ai/experiments/issues/60
+2026-10-06,agents,issue,opened_external,1625,deboer-tim,"Shift left PR reviews",https://github.com/fullsend-ai/agents/issues/1625
+2026-10-06,agents,issue,opened_external,1621,jflowers,"review: expose REVIEW_GIT_FETCH_DEPTH (or derived signal) to sandbox for skipped/degraded distinction",https://github.com/fullsend-ai/agents/issues/1621
+2026-10-06,agents,issue,closed_via_pr_external,1617,jflowers,"Wire risk assessment score into review verdict gate",https://github.com/fullsend-ai/agents/issues/1617
+2026-10-06,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-06,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615

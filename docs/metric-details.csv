@@ -15353,3 +15353,93 @@ date,repo,type,event,number,title,url
 2026-10-05,agents,issue,opened,1618,"Scribe: replace all-zero Slack reports with an explicit no-meeting-notes message",https://github.com/fullsend-ai/agents/issues/1618
 2026-10-05,agents,issue,opened,1617,"Wire risk assessment score into review verdict gate",https://github.com/fullsend-ai/agents/issues/1617
 2026-10-05,agents,issue,closed,1577,"forge_list_prs_for_issue: GraphQL query compares coder bot login against REST-style ""[bot]"" suffix, treating bot PRs as human PRs",https://github.com/fullsend-ai/agents/issues/1577
+2026-10-06,fullsend,pr,opened,8126,"chore(#8125): run review parent on sonnet and challenger on opus",https://github.com/fullsend-ai/fullsend/pull/8126
+2026-10-06,fullsend,pr,opened,8124,"test(#8123): retry transient 404 in playback dispatch check",https://github.com/fullsend-ai/fullsend/pull/8124
+2026-10-06,fullsend,pr,opened,8122,"refactor(codex): deny native child spawns outside runner policy",https://github.com/fullsend-ai/fullsend/pull/8122
+2026-10-06,fullsend,pr,opened,8121,"feat(#8117): support openai-wif inference auth in repos install",https://github.com/fullsend-ai/fullsend/pull/8121
+2026-10-06,fullsend,pr,opened,8120,"refactor(#8070)!: remove per-org mint enrollment and stale per-org references",https://github.com/fullsend-ai/fullsend/pull/8120
+2026-10-06,fullsend,pr,opened,8114,"docs(#8069): remove per-org tests and update active documentation",https://github.com/fullsend-ai/fullsend/pull/8114
+2026-10-06,fullsend,pr,opened,8113,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to d517b3c",https://github.com/fullsend-ai/fullsend/pull/8113
+2026-10-06,fullsend,pr,opened,8110,"refactor(#8068)!: remove per-org mint runtime authorization paths",https://github.com/fullsend-ai/fullsend/pull/8110
+2026-10-06,fullsend,pr,opened,8097,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 8106afc",https://github.com/fullsend-ai/fullsend/pull/8097
+2026-10-06,fullsend,pr,opened,8094,"refactor(#8067)!: remove per-org scaffolds and workflow branching",https://github.com/fullsend-ai/fullsend/pull/8094
+2026-10-06,fullsend,pr,opened,8093,"feat(#8083): provision GitLab role service accounts and Poller-owned trigger",https://github.com/fullsend-ai/fullsend/pull/8093
+2026-10-06,fullsend,pr,merged,8126,"chore(#8125): run review parent on sonnet and challenger on opus",https://github.com/fullsend-ai/fullsend/pull/8126
+2026-10-06,fullsend,pr,merged,8114,"docs(#8069): remove per-org tests and update active documentation",https://github.com/fullsend-ai/fullsend/pull/8114
+2026-10-06,fullsend,pr,merged,8110,"refactor(#8068)!: remove per-org mint runtime authorization paths",https://github.com/fullsend-ai/fullsend/pull/8110
+2026-10-06,fullsend,pr,merged,8097,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 8106afc",https://github.com/fullsend-ai/fullsend/pull/8097
+2026-10-06,fullsend,pr,merged,8094,"refactor(#8067)!: remove per-org scaffolds and workflow branching",https://github.com/fullsend-ai/fullsend/pull/8094
+2026-10-06,fullsend,pr,merged,8088,"refactor(#8065)!: remove org-specific config models and loading",https://github.com/fullsend-ai/fullsend/pull/8088
+2026-10-06,fullsend,pr,merged,8087,"chore(deps): update dependency stylelint to v17.16.0",https://github.com/fullsend-ai/fullsend/pull/8087
+2026-10-06,fullsend,pr,merged,8075,"chore(deps): update renovatebot/github-action action to v46.3.7",https://github.com/fullsend-ai/fullsend/pull/8075
+2026-10-06,fullsend,pr,merged,8072,"feat(#7772): prepare GitLab webhook provisioning and safety checks",https://github.com/fullsend-ai/fullsend/pull/8072
+2026-10-06,fullsend,pr,merged,8058,"feat(#8047): warn when Claude Code reports plugin_errors at startup",https://github.com/fullsend-ai/fullsend/pull/8058
+2026-10-06,fullsend,pr,merged,8028,"feat(#7979): default --fullsend-dir to .fullsend for agent, run, lock",https://github.com/fullsend-ai/fullsend/pull/8028
+2026-10-06,fullsend,pr,merged,7994,"chore(deps): update dependency @types/node to v22.20.5",https://github.com/fullsend-ai/fullsend/pull/7994
+2026-10-06,fullsend,pr,merged,7919,"feat(review): stamp finding ids on inline comments",https://github.com/fullsend-ai/fullsend/pull/7919
+2026-10-06,fullsend,pr,merged,7848,"fix(#7834): honor effective GitHub permissions",https://github.com/fullsend-ai/fullsend/pull/7848
+2026-10-06,fullsend,pr,merged,7842,"docs(adr): let overlays set any harness field and route models",https://github.com/fullsend-ai/fullsend/pull/7842
+2026-10-06,fullsend,pr,merged,7841,"ci(#7838): retry fork creation on stale name collision",https://github.com/fullsend-ai/fullsend/pull/7841
+2026-10-06,fullsend,pr,merged,7832,"fix(#7831): chunk long Codex skill reads in the runtime note",https://github.com/fullsend-ai/fullsend/pull/7832
+2026-10-06,fullsend,pr,merged,7829,"fix(codex): turn off codex's native multi-agent tools",https://github.com/fullsend-ai/fullsend/pull/7829
+2026-10-06,fullsend,pr,merged,7715,"fix(deps): update module github.com/cucumber/godog to v0.16.0",https://github.com/fullsend-ai/fullsend/pull/7715
+2026-10-06,fullsend,pr,merged,7601,"feat(#7304): warn when setup flags pin inherited values",https://github.com/fullsend-ai/fullsend/pull/7601
+2026-10-06,fullsend,pr,merged,7549,"perf(#2353): stream vendored binaries instead of buffering",https://github.com/fullsend-ai/fullsend/pull/7549
+2026-10-06,fullsend,issue,opened,8127,"Gate re-review dispatch on semantic diff change for rebased PRs",https://github.com/fullsend-ai/fullsend/issues/8127
+2026-10-06,fullsend,issue,opened,8125,"Review: run the parent on Sonnet 5.5 and the challenger on Opus 5.5",https://github.com/fullsend-ai/fullsend/issues/8125
+2026-10-06,fullsend,issue,opened,8123,"playback: transient 404 listing workflow run jobs fails thenAgentIsTriggered without retry",https://github.com/fullsend-ai/fullsend/issues/8123
+2026-10-06,fullsend,issue,opened,8119,"Harden collaborator-permission jq: wrongly typed flags and warning sanitization",https://github.com/fullsend-ai/fullsend/issues/8119
+2026-10-06,fullsend,issue,opened,8117,"Support OpenAI Workload Identity authentication in repos install, converge, and status",https://github.com/fullsend-ai/fullsend/issues/8117
+2026-10-06,fullsend,issue,opened,8118,"Allow standalone prioritize workflows to run on OpenAI without GCP credentials",https://github.com/fullsend-ai/fullsend/issues/8118
+2026-10-06,fullsend,issue,opened,8116,"Opt-in custom_roles authorization provider for GitHub custom repository roles",https://github.com/fullsend-ai/fullsend/issues/8116
+2026-10-06,fullsend,issue,opened,8112,"Review agent should not override repo-level skip guidance based on dispatch signal",https://github.com/fullsend-ai/fullsend/issues/8112
+2026-10-06,fullsend,issue,opened,8111,"dispatch: kill_switch check on GitHub and GitLab ignores config.base.yaml",https://github.com/fullsend-ai/fullsend/issues/8111
+2026-10-06,fullsend,issue,opened,8107,"Throttle review dispatch for bot-authored dependency PRs on synchronize events",https://github.com/fullsend-ai/fullsend/issues/8107
+2026-10-06,fullsend,issue,opened,8106,"Review agent routing skips human-authored PRs without matching conditions",https://github.com/fullsend-ai/fullsend/issues/8106
+2026-10-06,fullsend,issue,opened,8105,"Fix eligibility check should skip gracefully for non-eligible bot PRs",https://github.com/fullsend-ai/fullsend/issues/8105
+2026-10-06,fullsend,issue,opened,8104,"Debounce triage dispatch on rapid issue opened/edited events; make reconcile-status authoritative when GH job conclusion is cancelled",https://github.com/fullsend-ai/fullsend/issues/8104
+2026-10-06,fullsend,issue,opened,8103,"Track autonomy readiness: review agent caught 2 real bugs in CI workflows that human reviewer missed on konflux-ci/may#189",https://github.com/fullsend-ai/fullsend/issues/8103
+2026-10-06,fullsend,issue,opened,8102,"Route job should skip fix dispatch for non-coder bot PRs without fullsend-fix label",https://github.com/fullsend-ai/fullsend/issues/8102
+2026-10-06,fullsend,issue,opened,8101,"risk-tier1 ci_workflow_changed fires on Dockerfile digest-only changes",https://github.com/fullsend-ai/fullsend/issues/8101
+2026-10-06,fullsend,issue,opened,8100,"Review agent should validate agent-behavior directives against harness config",https://github.com/fullsend-ai/fullsend/issues/8100
+2026-10-06,fullsend,issue,opened,8099,"Deduplicate review runs when PR diff is unchanged after rebase",https://github.com/fullsend-ai/fullsend/issues/8099
+2026-10-06,fullsend,issue,opened,8096,"Adjust risk score model to account for bot-driven file churn",https://github.com/fullsend-ai/fullsend/issues/8096
+2026-10-06,fullsend,issue,opened,8095,"Use a lighter review path for bot-authored dependency-only PRs",https://github.com/fullsend-ai/fullsend/issues/8095
+2026-10-06,fullsend,issue,closed,8125,"Review: run the parent on Sonnet 5.5 and the challenger on Opus 5.5",https://github.com/fullsend-ai/fullsend/issues/8125
+2026-10-06,fullsend,issue,closed,8107,"Throttle review dispatch for bot-authored dependency PRs on synchronize events",https://github.com/fullsend-ai/fullsend/issues/8107
+2026-10-06,fullsend,issue,closed,8106,"Review agent routing skips human-authored PRs without matching conditions",https://github.com/fullsend-ai/fullsend/issues/8106
+2026-10-06,fullsend,issue,closed,8105,"Fix eligibility check should skip gracefully for non-eligible bot PRs",https://github.com/fullsend-ai/fullsend/issues/8105
+2026-10-06,fullsend,issue,closed,8069,"Remove per-org tests and update active documentation",https://github.com/fullsend-ai/fullsend/issues/8069
+2026-10-06,fullsend,issue,closed,8068,"Remove remaining per-org mint and runtime authorization paths",https://github.com/fullsend-ai/fullsend/issues/8068
+2026-10-06,fullsend,issue,closed,8067,"Remove per-org scaffolds and workflow mode branching",https://github.com/fullsend-ai/fullsend/issues/8067
+2026-10-06,fullsend,issue,closed,8065,"Remove org-specific configuration models and loading",https://github.com/fullsend-ai/fullsend/issues/8065
+2026-10-06,fullsend,issue,closed,8047,"claude runtime: warn when Claude Code reports plugin_errors at startup",https://github.com/fullsend-ai/fullsend/issues/8047
+2026-10-06,fullsend,issue,closed,7979,"agent subcommands: default --fullsend-dir to .fullsend",https://github.com/fullsend-ai/fullsend/issues/7979
+2026-10-06,fullsend,issue,closed,7895,"Prevent forks of fullsend enabled repositories to run the forked workflow",https://github.com/fullsend-ai/fullsend/issues/7895
+2026-10-06,fullsend,issue,closed,7838,"behaviourtest: fork cleanup can leave target name unavailable for the next scenario",https://github.com/fullsend-ai/fullsend/issues/7838
+2026-10-06,fullsend,issue,closed,7834,"Honor GitHub effective permissions when role_name is custom",https://github.com/fullsend-ai/fullsend/issues/7834
+2026-10-06,fullsend,issue,closed,7831,"codex runtime: long SKILL.md reads lose their middle to output truncation",https://github.com/fullsend-ai/fullsend/issues/7831
+2026-10-06,fullsend,issue,closed,7828,"codex runtime: native multi-agent tools are on, so child runs go unmetered and unseen",https://github.com/fullsend-ai/fullsend/issues/7828
+2026-10-06,fullsend,issue,closed,7481,"Make the GCP/Vertex inference settings optional when a repository runs inference on OpenAI (WIF or static key)",https://github.com/fullsend-ai/fullsend/issues/7481
+2026-10-06,fullsend,issue,closed,7304,"feat(config): warn when setup flags pin inherited values",https://github.com/fullsend-ai/fullsend/issues/7304
+2026-10-06,fullsend,issue,closed,2887,"Remove install_mode input from per-repo shim template",https://github.com/fullsend-ai/fullsend/issues/2887
+2026-10-06,fullsend,issue,closed,2353,"Vendor upload: avoid loading entire binary into memory",https://github.com/fullsend-ai/fullsend/issues/2353
+2026-10-06,experiments,pr,opened,59,"feat(0028): code agent on feature-scale epics, graded without reference solutions",https://github.com/fullsend-ai/experiments/pull/59
+2026-10-06,experiments,issue,opened,60,"pre-commit fails or rewrites files outside a change set, so clean PRs need --no-verify or drag in other experiments",https://github.com/fullsend-ai/experiments/issues/60
+2026-10-06,agents,pr,opened,1627,"chore(#1626): run review parent on Sonnet 5.5, challenger on Opus 5.5",https://github.com/fullsend-ai/agents/pull/1627
+2026-10-06,agents,pr,opened,1624,"fix(#1621): force degraded risk status on failed Tier 2 deepen",https://github.com/fullsend-ai/agents/pull/1624
+2026-10-06,agents,pr,opened,1622,"feat(eval): code-rhai, a reference-free eval of the code agent on RHAI epics",https://github.com/fullsend-ai/agents/pull/1622
+2026-10-06,agents,pr,merged,1627,"chore(#1626): run review parent on Sonnet 5.5, challenger on Opus 5.5",https://github.com/fullsend-ai/agents/pull/1627
+2026-10-06,agents,pr,merged,1611,"feat(review)!: add risk verdict gate to review post-processing",https://github.com/fullsend-ai/agents/pull/1611
+2026-10-06,agents,pr,merged,1590,"fix(#1585): make GitLab PR-list lookup fail open on API errors",https://github.com/fullsend-ai/agents/pull/1590
+2026-10-06,agents,pr,merged,1589,"fix(#1584): derive pre-code bot logins from FULLSEND_APP_SET",https://github.com/fullsend-ai/agents/pull/1589
+2026-10-06,agents,pr,merged,1588,"fix(#1583): keep runner setup after pre-code force/no-token bypass",https://github.com/fullsend-ai/agents/pull/1588
+2026-10-06,agents,issue,opened,1626,"Review: run the parent on Sonnet 5.5 and the challenger on Opus 5.5",https://github.com/fullsend-ai/agents/issues/1626
+2026-10-06,agents,issue,opened,1625,"Shift left PR reviews",https://github.com/fullsend-ai/agents/issues/1625
+2026-10-06,agents,issue,opened,1623,"Review agent should not override target-repo skip guidance on the basis of being dispatched",https://github.com/fullsend-ai/agents/issues/1623
+2026-10-06,agents,issue,opened,1621,"review: expose REVIEW_GIT_FETCH_DEPTH (or derived signal) to sandbox for skipped/degraded distinction",https://github.com/fullsend-ai/agents/issues/1621
+2026-10-06,agents,issue,closed,1626,"Review: run the parent on Sonnet 5.5 and the challenger on Opus 5.5",https://github.com/fullsend-ai/agents/issues/1626
+2026-10-06,agents,issue,closed,1617,"Wire risk assessment score into review verdict gate",https://github.com/fullsend-ai/agents/issues/1617
+2026-10-06,agents,issue,closed,1585,"gitlab-code-ops: forge_list_prs_for_issue returns exit 1 on first-page failure, causing hard pre-script failure",https://github.com/fullsend-ai/agents/issues/1585
+2026-10-06,agents,issue,closed,1584,"pre-code: hardcoded bot logins do not support custom FULLSEND_APP_SET identities",https://github.com/fullsend-ai/agents/issues/1584
+2026-10-06,agents,issue,closed,1583,"pre-code: early exit 0 on force override or missing token bypasses pre-commit tool installation",https://github.com/fullsend-ai/agents/issues/1583
