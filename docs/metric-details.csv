@@ -15443,3 +15443,72 @@ date,repo,type,event,number,title,url
 2026-10-06,agents,issue,closed,1585,"gitlab-code-ops: forge_list_prs_for_issue returns exit 1 on first-page failure, causing hard pre-script failure",https://github.com/fullsend-ai/agents/issues/1585
 2026-10-06,agents,issue,closed,1584,"pre-code: hardcoded bot logins do not support custom FULLSEND_APP_SET identities",https://github.com/fullsend-ai/agents/issues/1584
 2026-10-06,agents,issue,closed,1583,"pre-code: early exit 0 on force override or missing token bypasses pre-commit tool installation",https://github.com/fullsend-ai/agents/issues/1583
+2026-10-07,fullsend,pr,opened,8166,"fix(runner): include OpenSSL for Scribe OAuth signing",https://github.com/fullsend-ai/fullsend/pull/8166
+2026-10-07,fullsend,pr,opened,8164,"fix(#8163): provision 30 GiB GCP runner disks and grow root to fill",https://github.com/fullsend-ai/fullsend/pull/8164
+2026-10-07,fullsend,pr,opened,8162,"fix(#8160): reconcile stale custom-executor paths on setup re-run",https://github.com/fullsend-ai/fullsend/pull/8162
+2026-10-07,fullsend,pr,opened,8159,"refactor(#8070)!: remove per-org mint enrollment and ALLOWED_ORGS",https://github.com/fullsend-ai/fullsend/pull/8159
+2026-10-07,fullsend,pr,opened,8158,"docs(adr): define actor-attributed data security boundary",https://github.com/fullsend-ai/fullsend/pull/8158
+2026-10-07,fullsend,pr,opened,8156,"fix(#8154)!: stop leaking Jira and OTLP header secrets to host scripts",https://github.com/fullsend-ai/fullsend/pull/8156
+2026-10-07,fullsend,pr,opened,8155,"fix(#8153): set explicit modes on the GitLab runner CA hook",https://github.com/fullsend-ai/fullsend/pull/8155
+2026-10-07,fullsend,pr,opened,8152,"refactor(#8070)!: remove org-level mint enrollment and ALLOWED_ORGS",https://github.com/fullsend-ai/fullsend/pull/8152
+2026-10-07,fullsend,pr,opened,8151,"feat(#7689): pass declared runner secrets to host-side scripts",https://github.com/fullsend-ai/fullsend/pull/8151
+2026-10-07,fullsend,pr,opened,8150,"fix(#8148): make OpenShift runner provisioning finish in one invocation",https://github.com/fullsend-ai/fullsend/pull/8150
+2026-10-07,fullsend,pr,opened,8149,"fix(#8146): strip fullsend GitLab credentials from host-side scripts",https://github.com/fullsend-ai/fullsend/pull/8149
+2026-10-07,fullsend,pr,opened,8147,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to f6b3340",https://github.com/fullsend-ai/fullsend/pull/8147
+2026-10-07,fullsend,pr,opened,8141,"fix(#8111): consult config.base.yaml for kill_switch in GitHub and GitLab dispatch",https://github.com/fullsend-ai/fullsend/pull/8141
+2026-10-07,fullsend,pr,opened,8134,"refactor(#8070): remove remaining per-org vendor, layer and status paths",https://github.com/fullsend-ai/fullsend/pull/8134
+2026-10-07,fullsend,pr,opened,8133,"refactor(workflow)!: remove existing-pr gate on the workflow",https://github.com/fullsend-ai/fullsend/pull/8133
+2026-10-07,fullsend,pr,opened,8131,"docs(#8129): move agents/topics docs to docs/guides/user",https://github.com/fullsend-ai/fullsend/pull/8131
+2026-10-07,fullsend,pr,opened,8128,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 7b34500",https://github.com/fullsend-ai/fullsend/pull/8128
+2026-10-07,fullsend,pr,merged,8164,"fix(#8163): provision 30 GiB GCP runner disks and grow root to fill",https://github.com/fullsend-ai/fullsend/pull/8164
+2026-10-07,fullsend,pr,merged,8162,"fix(#8160): reconcile stale custom-executor paths on setup re-run",https://github.com/fullsend-ai/fullsend/pull/8162
+2026-10-07,fullsend,pr,merged,8155,"fix(#8153): set explicit modes on the GitLab runner CA hook",https://github.com/fullsend-ai/fullsend/pull/8155
+2026-10-07,fullsend,pr,merged,8150,"fix(#8148): make OpenShift runner provisioning finish in one invocation",https://github.com/fullsend-ai/fullsend/pull/8150
+2026-10-07,fullsend,pr,merged,8134,"refactor(#8070): remove remaining per-org vendor, layer and status paths",https://github.com/fullsend-ai/fullsend/pull/8134
+2026-10-07,fullsend,pr,merged,8131,"docs(#8129): move agents/topics docs to docs/guides/user",https://github.com/fullsend-ai/fullsend/pull/8131
+2026-10-07,fullsend,pr,merged,8128,"chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 7b34500",https://github.com/fullsend-ai/fullsend/pull/8128
+2026-10-07,fullsend,pr,merged,8124,"test(#8123): retry transient 404 in playback dispatch check",https://github.com/fullsend-ai/fullsend/pull/8124
+2026-10-07,fullsend,pr,merged,8120,"refactor(#8070)!: remove per-org mint enrollment and stale per-org references",https://github.com/fullsend-ai/fullsend/pull/8120
+2026-10-07,fullsend,pr,merged,8113,"chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to d517b3c",https://github.com/fullsend-ai/fullsend/pull/8113
+2026-10-07,fullsend,pr,merged,8056,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.292",https://github.com/fullsend-ai/fullsend/pull/8056
+2026-10-07,fullsend,pr,merged,7765,"docs(authorization)!: define bot identity resolution contract",https://github.com/fullsend-ai/fullsend/pull/7765
+2026-10-07,fullsend,pr,closed,7969,"fix(#7968): read checksum list from stdin on macOS sha256sum",https://github.com/fullsend-ai/fullsend/pull/7969
+2026-10-07,fullsend,pr,closed,6953,"chore(docs): pull agent documentation from fullsend-ai/agents",https://github.com/fullsend-ai/fullsend/pull/6953
+2026-10-07,fullsend,issue,opened,8167,"GCP runner --resume should mirror OpenShift's general provisioning repair workflow",https://github.com/fullsend-ai/fullsend/issues/8167
+2026-10-07,fullsend,issue,opened,8165,"Redaction: redact script output before trimming, and handle partly overlapping secrets",https://github.com/fullsend-ai/fullsend/issues/8165
+2026-10-07,fullsend,issue,opened,8163,"GCP runner provisioning should use 30 GiB disks and make their full capacity available",https://github.com/fullsend-ai/fullsend/issues/8163
+2026-10-07,fullsend,issue,opened,8161,"Track autonomy readiness: 100% agent-human agreement on Go module digest bumps in release-service",https://github.com/fullsend-ai/fullsend/issues/8161
+2026-10-07,fullsend,issue,opened,8160,"Runner setup reruns should reconcile stale custom-executor paths",https://github.com/fullsend-ai/fullsend/issues/8160
+2026-10-07,fullsend,issue,opened,8157,"Code agent CVE bump should target the maximum required fix version across all known advisories and defer companion backport PRs until master is confirmed",https://github.com/fullsend-ai/fullsend/issues/8157
+2026-10-07,fullsend,issue,opened,8154,"GitHub: named workflow secrets (JIRA_TOKEN, OTEL headers) reach every host-side script unfiltered",https://github.com/fullsend-ai/fullsend/issues/8154
+2026-10-07,fullsend,issue,opened,8153,"GitLab runner CA hook permissions can prevent rootless Podman jobs from starting",https://github.com/fullsend-ai/fullsend/issues/8153
+2026-10-07,fullsend,issue,opened,8148,"OpenShift runner provisioning should complete with one script invocation",https://github.com/fullsend-ai/fullsend/issues/8148
+2026-10-07,fullsend,issue,opened,8146,"GitLab: host-side scripts inherit fullsend's own credentials (OIDC token, role PATs)",https://github.com/fullsend-ai/fullsend/issues/8146
+2026-10-07,fullsend,issue,opened,8145,"Require write-level authorization for privileged PR tests",https://github.com/fullsend-ai/fullsend/issues/8145
+2026-10-07,fullsend,issue,opened,8144,"Risk assessment ci_workflow_changed should recognize .tekton/ as CI pipeline paths",https://github.com/fullsend-ai/fullsend/issues/8144
+2026-10-07,fullsend,issue,opened,8143,"config: set documented agent variables (e.g. REVIEW_FINDING_SEVERITY_THRESHOLD) from config.yaml agent entries",https://github.com/fullsend-ai/fullsend/issues/8143
+2026-10-07,fullsend,issue,opened,8142,"behaviourtest: harden CountHarnessDispatches callers against transient 404 and unbounded settle time",https://github.com/fullsend-ai/fullsend/issues/8142
+2026-10-07,fullsend,issue,opened,8140,"Investigate and fix broken review provenance chain ('unverifiable-wrong-app')",https://github.com/fullsend-ai/fullsend/issues/8140
+2026-10-07,fullsend,issue,opened,8139,"Skip fix dispatch when review findings are human-gate-only",https://github.com/fullsend-ai/fullsend/issues/8139
+2026-10-07,fullsend,issue,opened,8138,"Require explicit human authorization to override issue-level scope constraints in code dispatch",https://github.com/fullsend-ai/fullsend/issues/8138
+2026-10-07,fullsend,issue,opened,8137,"Investigate and fix haiku model's JSON schema validation failures in review/fix agent",https://github.com/fullsend-ai/fullsend/issues/8137
+2026-10-07,fullsend,issue,opened,8136,"Add scope-constraint enforcement to prevent code agent from acting on analysis-only issues",https://github.com/fullsend-ai/fullsend/issues/8136
+2026-10-07,fullsend,issue,opened,8135,"Add file-type-based routing to use lighter review for config-only PRs",https://github.com/fullsend-ai/fullsend/issues/8135
+2026-10-07,fullsend,issue,opened,8132,"Risk script does not count `_test.rego` files as test code, inflating TEST_FILE_RATIO",https://github.com/fullsend-ai/fullsend/issues/8132
+2026-10-07,fullsend,issue,opened,8130,"Fix agent eligibility skip should not produce a failure workflow conclusion",https://github.com/fullsend-ai/fullsend/issues/8130
+2026-10-07,fullsend,issue,opened,8129,"Move docs/agents/topics to docs/guides/user",https://github.com/fullsend-ai/fullsend/issues/8129
+2026-10-07,fullsend,issue,closed,8163,"GCP runner provisioning should use 30 GiB disks and make their full capacity available",https://github.com/fullsend-ai/fullsend/issues/8163
+2026-10-07,fullsend,issue,closed,8160,"Runner setup reruns should reconcile stale custom-executor paths",https://github.com/fullsend-ai/fullsend/issues/8160
+2026-10-07,fullsend,issue,closed,8153,"GitLab runner CA hook permissions can prevent rootless Podman jobs from starting",https://github.com/fullsend-ai/fullsend/issues/8153
+2026-10-07,fullsend,issue,closed,8148,"OpenShift runner provisioning should complete with one script invocation",https://github.com/fullsend-ai/fullsend/issues/8148
+2026-10-07,fullsend,issue,closed,8129,"Move docs/agents/topics to docs/guides/user",https://github.com/fullsend-ai/fullsend/issues/8129
+2026-10-07,fullsend,issue,closed,8123,"playback: transient 404 listing workflow run jobs fails thenAgentIsTriggered without retry",https://github.com/fullsend-ai/fullsend/issues/8123
+2026-10-07,fullsend,issue,closed,8092,"Require independent environment approval before credential-bearing PR tests start",https://github.com/fullsend-ai/fullsend/issues/8092
+2026-10-07,fullsend,issue,closed,8091,"Authorize Fullsend PR tests for the exact commit being tested",https://github.com/fullsend-ai/fullsend/issues/8091
+2026-10-07,fullsend,issue,closed,7764,"Define a forge-portable bot identity and authorization contract",https://github.com/fullsend-ai/fullsend/issues/7764
+2026-10-07,agents,pr,opened,1632,"feat(review): add user-experience review dimension",https://github.com/fullsend-ai/agents/pull/1632
+2026-10-07,agents,issue,opened,1634,"review: close remaining finding-ledger gaps from #1608",https://github.com/fullsend-ai/agents/issues/1634
+2026-10-07,agents,issue,opened,1631,"Require write-level author and labeler authorization for privileged PR tests",https://github.com/fullsend-ai/agents/issues/1631
+2026-10-07,agents,issue,opened,1629,"Review agent gives no escalation signal when a protected-path gate blocks a PR across many consecutive review passes",https://github.com/fullsend-ai/agents/issues/1629
+2026-10-07,agents,issue,opened,1628,"Review agent doesn't check CODEOWNERS coverage when a PR adds a new top-level path or submodule",https://github.com/fullsend-ai/agents/issues/1628
+2026-10-07,agents,issue,closed,1620,"Apply Fullsend PR-test authorization rules to agents local workflows",https://github.com/fullsend-ai/agents/issues/1620

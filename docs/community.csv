@@ -1516,3 +1516,14 @@ date,repo,issues_opened_external,issues_closed_via_pr_external,issues_closed_oth
 2026-10-06,adoption-analytics,0,0,0,0,0
 2026-10-06,pi-anthropic-vertex,0,0,0,0,0
 2026-10-06,auto-merge,0,0,0,0,0
+2026-10-07,fullsend,0,0,0,3,2
+2026-10-07,.fullsend,0,0,0,0,0
+2026-10-07,experiments,0,0,0,0,0
+2026-10-07,metrics,0,0,0,0,0
+2026-10-07,agents,0,0,0,0,16
+2026-10-07,autonomy-readiness,0,0,0,0,0
+2026-10-07,autonomy-analysis,0,0,0,0,0
+2026-10-07,pi-xai-vertex,0,0,0,0,0
+2026-10-07,adoption-analytics,0,0,0,0,0
+2026-10-07,pi-anthropic-vertex,0,0,0,0,0
+2026-10-07,auto-merge,0,0,0,0,0

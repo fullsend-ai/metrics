@@ -1945,3 +1945,15 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-06,agents,1590,fix(#1585): make GitLab PR-list lookup fail open on API errors,fix,core,1585,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1590
 2026-10-06,agents,1589,fix(#1584): derive pre-code bot logins from FULLSEND_APP_SET,fix,core,1584,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1589
 2026-10-06,agents,1588,fix(#1583): keep runner setup after pre-code force/no-token bypass,fix,core,1583,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1588
+2026-10-07,fullsend,8164,fix(#8163): provision 30 GiB GCP runner disks and grow root to fill,fix,core,8163,ggallen,https://github.com/fullsend-ai/fullsend/pull/8164
+2026-10-07,fullsend,8162,fix(#8160): reconcile stale custom-executor paths on setup re-run,fix,core,8160,ggallen,https://github.com/fullsend-ai/fullsend/pull/8162
+2026-10-07,fullsend,8155,fix(#8153): set explicit modes on the GitLab runner CA hook,fix,core,8153,ascerra,https://github.com/fullsend-ai/fullsend/pull/8155
+2026-10-07,fullsend,8150,fix(#8148): make OpenShift runner provisioning finish in one invocation,fix,core,8148,ggallen,https://github.com/fullsend-ai/fullsend/pull/8150
+2026-10-07,fullsend,8134,"refactor(#8070): remove remaining per-org vendor, layer and status paths",other,,,,https://github.com/fullsend-ai/fullsend/pull/8134
+2026-10-07,fullsend,8131,docs(#8129): move agents/topics docs to docs/guides/user,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8131
+2026-10-07,fullsend,8128,chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 7b34500,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8128
+2026-10-07,fullsend,8124,test(#8123): retry transient 404 in playback dispatch check,test,,,,https://github.com/fullsend-ai/fullsend/pull/8124
+2026-10-07,fullsend,8120,refactor(#8070)!: remove per-org mint enrollment and stale per-org references,other,,,,https://github.com/fullsend-ai/fullsend/pull/8120
+2026-10-07,fullsend,8113,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to d517b3c,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8113
+2026-10-07,fullsend,8056,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.292,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8056
+2026-10-07,fullsend,7765,docs(authorization)!: define bot identity resolution contract,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7765
