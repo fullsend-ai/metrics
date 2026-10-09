@@ -1957,3 +1957,20 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-07,fullsend,8113,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to d517b3c,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8113
 2026-10-07,fullsend,8056,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.292,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8056
 2026-10-07,fullsend,7765,docs(authorization)!: define bot identity resolution contract,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7765
+2026-10-08,fullsend,8203,refactor(#8070): clear remaining stale per-org references,other,,,,https://github.com/fullsend-ai/fullsend/pull/8203
+2026-10-08,fullsend,8188,chore(#8187): group ubi10 digest bumps into a weekly Monday PR,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8188
+2026-10-08,fullsend,8177,fix(shim): don't let --force break first-time fullsend-no-fix label creation,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8177
+2026-10-08,fullsend,8171,chore(deps): update registry.access.redhat.com/ubi10/ubi docker digest to 3ef7bff,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8171
+2026-10-08,fullsend,8170,fix(#8169): use HTTPS for Fedora repo baseurls in runner provisioning,fix,core,8169,ggallen,https://github.com/fullsend-ai/fullsend/pull/8170
+2026-10-08,fullsend,8168,feat(#8167): add --resume to create-gcp-vm.sh for runner repair,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8168
+2026-10-08,fullsend,8159,refactor(#8070)!: remove per-org mint enrollment and ALLOWED_ORGS,other,,,,https://github.com/fullsend-ai/fullsend/pull/8159
+2026-10-08,fullsend,8156,fix(#8154)!: stop leaking Jira and OTLP header secrets to host scripts,fix,core,8154,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8156
+2026-10-08,fullsend,8147,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to f6b3340,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8147
+2026-10-08,fullsend,8122,refactor(codex): deny native child spawns outside runner policy,other,,,,https://github.com/fullsend-ai/fullsend/pull/8122
+2026-10-08,fullsend,8121,feat(#8117): support OpenAI WIF repository installations,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8121
+2026-10-08,fullsend,8040,test(#8037): save logs and a failure summary for every failed behaviour scenario,test,,,,https://github.com/fullsend-ai/fullsend/pull/8040
+2026-10-08,fullsend,7983,fix(#7973): verify gateway content before trusting a reimported profile,fix,core,7973,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7983
+2026-10-08,fullsend,7963,chore(#7905): remove stale .golangci.yml and go-lint target,chore,,,,https://github.com/fullsend-ai/fullsend/pull/7963
+2026-10-08,fullsend,7907,feat(review): add forge-backed review thread fetching,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7907
+2026-10-08,fullsend,7836,fix(deps): update module github.com/stretchr/testify to v1.12.1,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7836
+2026-10-08,agents,1608,feat(review): persist finding ids and dispositions,feat,,,,https://github.com/fullsend-ai/agents/pull/1608

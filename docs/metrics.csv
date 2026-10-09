@@ -1084,3 +1084,14 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-10-07,adoption-analytics,0,0,0,0,0,0,0,0
 2026-10-07,pi-anthropic-vertex,0,0,0,0,0,0,0,0
 2026-10-07,auto-merge,0,0,0,0,0,0,0,0
+2026-10-08,fullsend,23,16,2,21,17,0,17.30,146
+2026-10-08,.fullsend,0,0,0,0,0,0,0,3
+2026-10-08,experiments,0,0,0,0,0,0,0,4
+2026-10-08,metrics,0,0,0,0,0,0,0,2
+2026-10-08,agents,2,1,0,6,0,0,95.30,89
+2026-10-08,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-10-08,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-10-08,pi-xai-vertex,0,0,0,0,0,0,0,0
+2026-10-08,adoption-analytics,0,0,0,0,0,0,0,0
+2026-10-08,pi-anthropic-vertex,0,0,0,0,0,0,0,0
+2026-10-08,auto-merge,0,0,0,0,0,0,0,0

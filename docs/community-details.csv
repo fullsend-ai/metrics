@@ -1820,3 +1820,13 @@ date,repo,type,event,number,actor,title,url
 2026-10-07,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
 2026-10-07,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
 2026-10-07,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-08,fullsend,issue,opened_external,8211,jwm4,"sandbox: a second consecutive local run fails importing an unchanged profile",https://github.com/fullsend-ai/fullsend/issues/8211
+2026-10-08,fullsend,issue,opened_external,8201,yvonnedevlinrh,"chore(ci): add Renovate tracking for OPENCODE_VERSION in Containerfile",https://github.com/fullsend-ai/fullsend/issues/8201
+2026-10-08,fullsend,issue,opened_external,8174,csoceanu,"Normalize review-thread position metadata across GitHub and GitLab",https://github.com/fullsend-ai/fullsend/issues/8174
+2026-10-08,fullsend,issue,opened_external,8173,csoceanu,"Preserve uncertainty for custom GitHub roles in review-thread metadata",https://github.com/fullsend-ai/fullsend/issues/8173
+2026-10-08,fullsend,issue,closed_via_pr_external,7905,jflowers,"Remove stale `.golangci.yml` and `go-lint` Makefile target",https://github.com/fullsend-ai/fullsend/issues/7905
+2026-10-08,fullsend,issue,closed_other_external,7677,deboer-tim,"Excessive PR checks are affecting usability",https://github.com/fullsend-ai/fullsend/issues/7677
+2026-10-08,fullsend,pr,opened_core,8197,rh-hemartin,"docs(#8196): document dispatch inputs in building custom agents guide",https://github.com/fullsend-ai/fullsend/pull/8197
+2026-10-08,fullsend,pr,opened_core,8190,ifireball,"ci(#7555): notify users when agent launch is unauthorized",https://github.com/fullsend-ai/fullsend/pull/8190
+2026-10-08,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-08,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
