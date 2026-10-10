@@ -1974,3 +1974,31 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-08,fullsend,7907,feat(review): add forge-backed review thread fetching,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7907
 2026-10-08,fullsend,7836,fix(deps): update module github.com/stretchr/testify to v1.12.1,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7836
 2026-10-08,agents,1608,feat(review): persist finding ids and dispositions,feat,,,,https://github.com/fullsend-ai/agents/pull/1608
+2026-10-09,fullsend,8283,build(#8282): bump pi-inference-gateway to v0.1.1 in the sandbox image,other,,,,https://github.com/fullsend-ai/fullsend/pull/8283
+2026-10-09,fullsend,8279,docs(#8278): per-model gateway settings with pi-inference-gateway v0.1.1,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8279
+2026-10-09,fullsend,8277,fix(#8276): retry OIDC token fetch for about a minute,fix,core,8276,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8277
+2026-10-09,fullsend,8275,docs(#8274): add inference gateway section for local pi runs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8275
+2026-10-09,fullsend,8273,fix(#8255): stop echoing OTLP endpoint values in validation errors,fix,core,8255,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8273
+2026-10-09,fullsend,8271,build(#8262): ship pi-inference-gateway extension in sandbox image,other,,,,https://github.com/fullsend-ai/fullsend/pull/8271
+2026-10-09,fullsend,8267,chore(deps): update dependency @earendil-works/pi-coding-agent to v1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8267
+2026-10-09,fullsend,8266,refactor(#8238): add GitLab webhook poller scaffolding and deferral seam,other,,,,https://github.com/fullsend-ai/fullsend/pull/8266
+2026-10-09,fullsend,8260,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.295,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8260
+2026-10-09,fullsend,8258,feat(#8235)!: adopt fail-closed GitLab project lease for credential and webhook writes,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8258
+2026-10-09,fullsend,8257,refactor(#8236): add inert GitLab service-account types and readers,other,,,,https://github.com/fullsend-ai/fullsend/pull/8257
+2026-10-09,fullsend,8250,fix(#8232)!: add GitLab forge primitives and require masked role tokens,fix,core,8232,ggallen,https://github.com/fullsend-ai/fullsend/pull/8250
+2026-10-09,fullsend,8249,refactor(#8233): tolerant GitLab rotation-state reader and final schema,other,,,,https://github.com/fullsend-ai/fullsend/pull/8249
+2026-10-09,fullsend,8248,docs(#8234): document rolling-out GitLab service-account lifecycle,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8248
+2026-10-09,fullsend,8247,fix(workflows): default missing app set,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8247
+2026-10-09,fullsend,8229,chore(deps): update actions/upload-artifact action to v7.0.2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8229
+2026-10-09,fullsend,8227,feat(#8217): add DCO signoff to repos install with manifest inheritance,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8227
+2026-10-09,fullsend,8216,fix(#8215)!: resolve symlinks before gitfetch containment check,fix,core,8215,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8216
+2026-10-09,fullsend,8213,refactor(codex): name child transcripts by role,other,,,,https://github.com/fullsend-ai/fullsend/pull/8213
+2026-10-09,fullsend,8212,fix(#8211): ignore gateway-defaulted fields when matching profiles,fix,external,8211,jwm4,https://github.com/fullsend-ai/fullsend/pull/8212
+2026-10-09,fullsend,8200,chore(deps): update actions/download-artifact action to v8.0.2,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8200
+2026-10-09,fullsend,8195,"fix(#6082): restore core review for .gitmodules, anchor exemptions",fix,bot,6082,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/8195
+2026-10-09,fullsend,8191,fix(#8189): resolve slash-containing branches in agent add URLs,fix,core,8189,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/8191
+2026-10-09,fullsend,8184,fix(#7137): run host-side scripts with PYTHONDONTWRITEBYTECODE=1,fix,bot,7137,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/8184
+2026-10-09,fullsend,8181,feat(#7084): add fullsend issues link subcommand for typed issue links,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8181
+2026-10-09,fullsend,8180,feat(#7082): add issue type and --fields custom fields to issues get,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8180
+2026-10-09,fullsend,6878,fix(#6877): pass behavioral exit reason to post-script,fix,core,6877,ggallen,https://github.com/fullsend-ai/fullsend/pull/6878
+2026-10-09,agents,1645,chore(harness): pin fleet images to the v0.46.0-rc.2 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1645

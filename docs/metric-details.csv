@@ -15600,3 +15600,171 @@ date,repo,type,event,number,title,url
 2026-10-08,agents,issue,opened,1639,"Code agent should search for existing open PRs before implementing side-effect infrastructure fixes",https://github.com/fullsend-ai/agents/issues/1639
 2026-10-08,agents,issue,opened,1638,"Enforce subagent dispatch time budgeting and guaranteed synthesis margin in retro agent",https://github.com/fullsend-ai/agents/issues/1638
 2026-10-08,agents,issue,opened,1637,"Retro agent should implement time-budget checkpoints to synthesize and write output before runner timeout",https://github.com/fullsend-ai/agents/issues/1637
+2026-10-09,fullsend,pr,opened,8284,"docs(#7480): ADR 0137 inference gateway as a credential route",https://github.com/fullsend-ai/fullsend/pull/8284
+2026-10-09,fullsend,pr,opened,8283,"build(#8282): bump pi-inference-gateway to v0.1.1 in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/8283
+2026-10-09,fullsend,pr,opened,8279,"docs(#8278): per-model gateway settings with pi-inference-gateway v0.1.1",https://github.com/fullsend-ai/fullsend/pull/8279
+2026-10-09,fullsend,pr,opened,8277,"fix(#8276): retry OIDC token fetch for about a minute",https://github.com/fullsend-ai/fullsend/pull/8277
+2026-10-09,fullsend,pr,opened,8275,"docs(#8274): add inference gateway section for local pi runs",https://github.com/fullsend-ai/fullsend/pull/8275
+2026-10-09,fullsend,pr,opened,8273,"fix(#8255): stop echoing OTLP endpoint values in validation errors",https://github.com/fullsend-ai/fullsend/pull/8273
+2026-10-09,fullsend,pr,opened,8271,"build(#8262): ship pi-inference-gateway extension in sandbox image",https://github.com/fullsend-ai/fullsend/pull/8271
+2026-10-09,fullsend,pr,opened,8269,"refactor(#8237): add inert GitLab service-account convergence engine",https://github.com/fullsend-ai/fullsend/pull/8269
+2026-10-09,fullsend,pr,opened,8268,"refactor(#8239): add inert GitLab poller-generation state machine",https://github.com/fullsend-ai/fullsend/pull/8268
+2026-10-09,fullsend,pr,opened,8267,"chore(deps): update dependency @earendil-works/pi-coding-agent to v1",https://github.com/fullsend-ai/fullsend/pull/8267
+2026-10-09,fullsend,pr,opened,8266,"refactor(#8238): add GitLab webhook poller scaffolding and deferral seam",https://github.com/fullsend-ai/fullsend/pull/8266
+2026-10-09,fullsend,pr,opened,8265,"chore(deps): update dependency go to v1.27.2",https://github.com/fullsend-ai/fullsend/pull/8265
+2026-10-09,fullsend,pr,opened,8264,"docs(#8256): document that fullsend role implies retro and prioritize",https://github.com/fullsend-ai/fullsend/pull/8264
+2026-10-09,fullsend,pr,opened,8263,"fix(#8218)!: manage both repo config files by default",https://github.com/fullsend-ai/fullsend/pull/8263
+2026-10-09,fullsend,pr,opened,8261,"fix(#8259): verify Claude hooks.json and hook scripts before each launch",https://github.com/fullsend-ai/fullsend/pull/8261
+2026-10-09,fullsend,pr,opened,8260,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.295",https://github.com/fullsend-ai/fullsend/pull/8260
+2026-10-09,fullsend,pr,opened,8258,"feat(#8235)!: adopt fail-closed GitLab project lease for credential and webhook writes",https://github.com/fullsend-ai/fullsend/pull/8258
+2026-10-09,fullsend,pr,opened,8257,"refactor(#8236): add inert GitLab service-account types and readers",https://github.com/fullsend-ai/fullsend/pull/8257
+2026-10-09,fullsend,pr,opened,8251,"ci(test): add mint provenance repro marker",https://github.com/fullsend-ai/fullsend/pull/8251
+2026-10-09,fullsend,pr,opened,8250,"fix(#8232)!: add GitLab forge primitives and require masked role tokens",https://github.com/fullsend-ai/fullsend/pull/8250
+2026-10-09,fullsend,pr,opened,8249,"refactor(#8233): tolerant GitLab rotation-state reader and final schema",https://github.com/fullsend-ai/fullsend/pull/8249
+2026-10-09,fullsend,pr,opened,8248,"docs(#8234): document rolling-out GitLab service-account lifecycle",https://github.com/fullsend-ai/fullsend/pull/8248
+2026-10-09,fullsend,pr,opened,8247,"fix(workflows): default missing app set",https://github.com/fullsend-ai/fullsend/pull/8247
+2026-10-09,fullsend,pr,opened,8231,"fix(ci): require write permission for PR test authorization",https://github.com/fullsend-ai/fullsend/pull/8231
+2026-10-09,fullsend,pr,opened,8229,"chore(deps): update actions/upload-artifact action to v7.0.2",https://github.com/fullsend-ai/fullsend/pull/8229
+2026-10-09,fullsend,pr,opened,8228,"feat: start workflow definitions from the runner",https://github.com/fullsend-ai/fullsend/pull/8228
+2026-10-09,fullsend,pr,opened,8227,"feat(#8217): add DCO signoff to repos install with manifest inheritance",https://github.com/fullsend-ai/fullsend/pull/8227
+2026-10-09,fullsend,pr,opened,8226,"feat: fetch, lock and deliver workflow definitions pinned in a harness",https://github.com/fullsend-ai/fullsend/pull/8226
+2026-10-09,fullsend,pr,opened,8225,"docs(adr): make workflow-definition repos harness resources",https://github.com/fullsend-ai/fullsend/pull/8225
+2026-10-09,fullsend,pr,opened,8223,"fix(#8221): remove stale vendored assets when repos install disables vendoring",https://github.com/fullsend-ai/fullsend/pull/8223
+2026-10-09,fullsend,pr,opened,8222,"fix(#8218): preserve existing unmanaged config.yaml on fresh install",https://github.com/fullsend-ai/fullsend/pull/8222
+2026-10-09,fullsend,pr,opened,8216,"fix(#8215)!: resolve symlinks before gitfetch containment check",https://github.com/fullsend-ai/fullsend/pull/8216
+2026-10-09,fullsend,pr,merged,8283,"build(#8282): bump pi-inference-gateway to v0.1.1 in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/8283
+2026-10-09,fullsend,pr,merged,8279,"docs(#8278): per-model gateway settings with pi-inference-gateway v0.1.1",https://github.com/fullsend-ai/fullsend/pull/8279
+2026-10-09,fullsend,pr,merged,8277,"fix(#8276): retry OIDC token fetch for about a minute",https://github.com/fullsend-ai/fullsend/pull/8277
+2026-10-09,fullsend,pr,merged,8275,"docs(#8274): add inference gateway section for local pi runs",https://github.com/fullsend-ai/fullsend/pull/8275
+2026-10-09,fullsend,pr,merged,8273,"fix(#8255): stop echoing OTLP endpoint values in validation errors",https://github.com/fullsend-ai/fullsend/pull/8273
+2026-10-09,fullsend,pr,merged,8271,"build(#8262): ship pi-inference-gateway extension in sandbox image",https://github.com/fullsend-ai/fullsend/pull/8271
+2026-10-09,fullsend,pr,merged,8267,"chore(deps): update dependency @earendil-works/pi-coding-agent to v1",https://github.com/fullsend-ai/fullsend/pull/8267
+2026-10-09,fullsend,pr,merged,8266,"refactor(#8238): add GitLab webhook poller scaffolding and deferral seam",https://github.com/fullsend-ai/fullsend/pull/8266
+2026-10-09,fullsend,pr,merged,8260,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.295",https://github.com/fullsend-ai/fullsend/pull/8260
+2026-10-09,fullsend,pr,merged,8258,"feat(#8235)!: adopt fail-closed GitLab project lease for credential and webhook writes",https://github.com/fullsend-ai/fullsend/pull/8258
+2026-10-09,fullsend,pr,merged,8257,"refactor(#8236): add inert GitLab service-account types and readers",https://github.com/fullsend-ai/fullsend/pull/8257
+2026-10-09,fullsend,pr,merged,8250,"fix(#8232)!: add GitLab forge primitives and require masked role tokens",https://github.com/fullsend-ai/fullsend/pull/8250
+2026-10-09,fullsend,pr,merged,8249,"refactor(#8233): tolerant GitLab rotation-state reader and final schema",https://github.com/fullsend-ai/fullsend/pull/8249
+2026-10-09,fullsend,pr,merged,8248,"docs(#8234): document rolling-out GitLab service-account lifecycle",https://github.com/fullsend-ai/fullsend/pull/8248
+2026-10-09,fullsend,pr,merged,8247,"fix(workflows): default missing app set",https://github.com/fullsend-ai/fullsend/pull/8247
+2026-10-09,fullsend,pr,merged,8229,"chore(deps): update actions/upload-artifact action to v7.0.2",https://github.com/fullsend-ai/fullsend/pull/8229
+2026-10-09,fullsend,pr,merged,8227,"feat(#8217): add DCO signoff to repos install with manifest inheritance",https://github.com/fullsend-ai/fullsend/pull/8227
+2026-10-09,fullsend,pr,merged,8216,"fix(#8215)!: resolve symlinks before gitfetch containment check",https://github.com/fullsend-ai/fullsend/pull/8216
+2026-10-09,fullsend,pr,merged,8213,"refactor(codex): name child transcripts by role",https://github.com/fullsend-ai/fullsend/pull/8213
+2026-10-09,fullsend,pr,merged,8212,"fix(#8211): ignore gateway-defaulted fields when matching profiles",https://github.com/fullsend-ai/fullsend/pull/8212
+2026-10-09,fullsend,pr,merged,8200,"chore(deps): update actions/download-artifact action to v8.0.2",https://github.com/fullsend-ai/fullsend/pull/8200
+2026-10-09,fullsend,pr,merged,8195,"fix(#6082): restore core review for .gitmodules, anchor exemptions",https://github.com/fullsend-ai/fullsend/pull/8195
+2026-10-09,fullsend,pr,merged,8191,"fix(#8189): resolve slash-containing branches in agent add URLs",https://github.com/fullsend-ai/fullsend/pull/8191
+2026-10-09,fullsend,pr,merged,8184,"fix(#7137): run host-side scripts with PYTHONDONTWRITEBYTECODE=1",https://github.com/fullsend-ai/fullsend/pull/8184
+2026-10-09,fullsend,pr,merged,8181,"feat(#7084): add fullsend issues link subcommand for typed issue links",https://github.com/fullsend-ai/fullsend/pull/8181
+2026-10-09,fullsend,pr,merged,8180,"feat(#7082): add issue type and --fields custom fields to issues get",https://github.com/fullsend-ai/fullsend/pull/8180
+2026-10-09,fullsend,pr,merged,6878,"fix(#6877): pass behavioral exit reason to post-script",https://github.com/fullsend-ai/fullsend/pull/6878
+2026-10-09,fullsend,issue,opened,8282,"sandbox: bump pi-inference-gateway to v0.1.1",https://github.com/fullsend-ai/fullsend/issues/8282
+2026-10-09,fullsend,issue,opened,8281,"secret_redact_posttool should skip redacting private key fixtures in test files or with allowlist pragma",https://github.com/fullsend-ai/fullsend/issues/8281
+2026-10-09,fullsend,issue,opened,8280,"pi gateway route: pi-inference-gateway v0.1.1 + agentgateway + forge OIDC (WIF), dogfood in fullsend-ai",https://github.com/fullsend-ai/fullsend/issues/8280
+2026-10-09,fullsend,issue,opened,8278,"docs: per-model gateway settings with pi-inference-gateway v0.1.1",https://github.com/fullsend-ai/fullsend/issues/8278
+2026-10-09,fullsend,issue,opened,8276,"mintclient: OIDC token fetch gives up after ~30 s, so a one-minute endpoint 503 fails agent runs",https://github.com/fullsend-ai/fullsend/issues/8276
+2026-10-09,fullsend,issue,opened,8274,"docs: running fullsend locally on pi through an inference gateway",https://github.com/fullsend-ai/fullsend/issues/8274
+2026-10-09,fullsend,issue,opened,8272,"sandbox: install agent CLIs from a committed lockfile",https://github.com/fullsend-ai/fullsend/issues/8272
+2026-10-09,fullsend,issue,opened,8270,"docs: Claude Code runtime page says ANTHROPIC_* variables are unset, but values set in the harness file are honoured",https://github.com/fullsend-ai/fullsend/issues/8270
+2026-10-09,fullsend,issue,opened,8262,"sandbox: ship pi-inference-gateway as a default pi extension in the image",https://github.com/fullsend-ai/fullsend/issues/8262
+2026-10-09,fullsend,issue,opened,8259,"Claude runtime does not check hooks.json or hook scripts between validation iterations",https://github.com/fullsend-ai/fullsend/issues/8259
+2026-10-09,fullsend,issue,opened,8256,"Retro dispatch does not respect roles configuration",https://github.com/fullsend-ai/fullsend/issues/8256
+2026-10-09,fullsend,issue,opened,8255,"telemetry: don't echo OTLP endpoint values in validation errors",https://github.com/fullsend-ai/fullsend/issues/8255
+2026-10-09,fullsend,issue,opened,8254,"Extend retro skip to all PRs with no agent activity, not just bot PRs",https://github.com/fullsend-ai/fullsend/issues/8254
+2026-10-09,fullsend,issue,opened,8253,"Review agent not triggered when code agent pre-applies ready-for-review label at PR creation",https://github.com/fullsend-ai/fullsend/issues/8253
+2026-10-09,fullsend,issue,opened,8252,"Dual dispatch paths (Code + Harness run) fire concurrently, creating duplicate PRs for same issue",https://github.com/fullsend-ai/fullsend/issues/8252
+2026-10-09,fullsend,issue,opened,8246,"refactor(gitlab)!: remove legacy unversioned rotation-state support",https://github.com/fullsend-ai/fullsend/issues/8246
+2026-10-09,fullsend,issue,opened,8245,"test(gitlab): live validation (EE/CE + GitLab.com Free) + #7776 ""Fast-path fires"" E2E",https://github.com/fullsend-ai/fullsend/issues/8245
+2026-10-09,fullsend,issue,opened,8244,"feat(gitlab): generation retirement, bounded Free-tier quota, uninstall cleanup",https://github.com/fullsend-ai/fullsend/issues/8244
+2026-10-09,fullsend,issue,opened,8243,"feat(gitlab)!: live fresh-identity poller handoff adapter (enable webhook fast-path)",https://github.com/fullsend-ai/fullsend/issues/8243
+2026-10-09,fullsend,issue,opened,8242,"feat(gitlab)!: activate service-account lifecycle + flip rotation-state writer to versioned format",https://github.com/fullsend-ai/fullsend/issues/8242
+2026-10-09,fullsend,issue,opened,8241,"feat(gitlab): lease-guarded uninstall orchestration + poller reconcile",https://github.com/fullsend-ai/fullsend/issues/8241
+2026-10-09,fullsend,issue,opened,8240,"feat(gitlab): trigger ownership + lifecycle package",https://github.com/fullsend-ai/fullsend/issues/8240
+2026-10-09,fullsend,issue,opened,8239,"feat(gitlab): durable poller-generation state machine (inert scaffolding, #8210 stage 1)",https://github.com/fullsend-ai/fullsend/issues/8239
+2026-10-09,fullsend,issue,opened,8238,"feat(gitlab): webhook poller scaffolding + fail-closed deferral seam (no verifier)",https://github.com/fullsend-ai/fullsend/issues/8238
+2026-10-09,fullsend,issue,opened,8237,"feat(gitlab): service-account convergence engine + verify-before-publish (inert until activation)",https://github.com/fullsend-ai/fullsend/issues/8237
+2026-10-09,fullsend,issue,opened,8236,"feat(gitlab): service-account types, inert readers, and managed-name helpers",https://github.com/fullsend-ai/fullsend/issues/8236
+2026-10-09,fullsend,issue,opened,8235,"feat(gitlab)!: adopt fail-closed CI-variable project lease in rotation/provisioning",https://github.com/fullsend-ai/fullsend/issues/8235
+2026-10-09,fullsend,issue,opened,8234,"docs(gitlab): service-account lifecycle + handoff docs and ADR annotations",https://github.com/fullsend-ai/fullsend/issues/8234
+2026-10-09,fullsend,issue,opened,8233,"feat(gitlab): tolerant rotation-state reader + final generation-aware schema (writer unchanged)",https://github.com/fullsend-ai/fullsend/issues/8233
+2026-10-09,fullsend,issue,opened,8232,"feat(gitlab): forge primitives — service-account CRUD + CI-variable project lease",https://github.com/fullsend-ai/fullsend/issues/8232
+2026-10-09,fullsend,issue,opened,8230,"dispatch: role enablement ignores config.base.yaml and mismatches Go roles semantics",https://github.com/fullsend-ai/fullsend/issues/8230
+2026-10-09,fullsend,issue,opened,8224,"Parent-PR retro skip (superseded-by-companion) has regressed",https://github.com/fullsend-ai/fullsend/issues/8224
+2026-10-09,fullsend,issue,opened,8221,"Remove stale vendored assets when repos install disables vendoring",https://github.com/fullsend-ai/fullsend/issues/8221
+2026-10-09,fullsend,issue,opened,8220,"Align repos install infrastructure values with layered config during setup migration",https://github.com/fullsend-ai/fullsend/issues/8220
+2026-10-09,fullsend,issue,opened,8219,"Provide migration path for github setup's one-repo config flags in repos install",https://github.com/fullsend-ai/fullsend/issues/8219
+2026-10-09,fullsend,issue,opened,8218,"Manage both config files by default in repos install and status",https://github.com/fullsend-ai/fullsend/issues/8218
+2026-10-09,fullsend,issue,opened,8217,"Add DCO signoff to repos install for GitHub and GitLab, with inherited repos.yaml setting",https://github.com/fullsend-ai/fullsend/issues/8217
+2026-10-09,fullsend,issue,opened,8215,"gitfetch: resolve symlinks before the containment check in tree fetches",https://github.com/fullsend-ai/fullsend/issues/8215
+2026-10-09,fullsend,issue,closed,8282,"sandbox: bump pi-inference-gateway to v0.1.1",https://github.com/fullsend-ai/fullsend/issues/8282
+2026-10-09,fullsend,issue,closed,8278,"docs: per-model gateway settings with pi-inference-gateway v0.1.1",https://github.com/fullsend-ai/fullsend/issues/8278
+2026-10-09,fullsend,issue,closed,8276,"mintclient: OIDC token fetch gives up after ~30 s, so a one-minute endpoint 503 fails agent runs",https://github.com/fullsend-ai/fullsend/issues/8276
+2026-10-09,fullsend,issue,closed,8274,"docs: running fullsend locally on pi through an inference gateway",https://github.com/fullsend-ai/fullsend/issues/8274
+2026-10-09,fullsend,issue,closed,8262,"sandbox: ship pi-inference-gateway as a default pi extension in the image",https://github.com/fullsend-ai/fullsend/issues/8262
+2026-10-09,fullsend,issue,closed,8255,"telemetry: don't echo OTLP endpoint values in validation errors",https://github.com/fullsend-ai/fullsend/issues/8255
+2026-10-09,fullsend,issue,closed,8254,"Extend retro skip to all PRs with no agent activity, not just bot PRs",https://github.com/fullsend-ai/fullsend/issues/8254
+2026-10-09,fullsend,issue,closed,8253,"Review agent not triggered when code agent pre-applies ready-for-review label at PR creation",https://github.com/fullsend-ai/fullsend/issues/8253
+2026-10-09,fullsend,issue,closed,8238,"feat(gitlab): webhook poller scaffolding + fail-closed deferral seam (no verifier)",https://github.com/fullsend-ai/fullsend/issues/8238
+2026-10-09,fullsend,issue,closed,8236,"feat(gitlab): service-account types, inert readers, and managed-name helpers",https://github.com/fullsend-ai/fullsend/issues/8236
+2026-10-09,fullsend,issue,closed,8235,"feat(gitlab)!: adopt fail-closed CI-variable project lease in rotation/provisioning",https://github.com/fullsend-ai/fullsend/issues/8235
+2026-10-09,fullsend,issue,closed,8234,"docs(gitlab): service-account lifecycle + handoff docs and ADR annotations",https://github.com/fullsend-ai/fullsend/issues/8234
+2026-10-09,fullsend,issue,closed,8233,"feat(gitlab): tolerant rotation-state reader + final generation-aware schema (writer unchanged)",https://github.com/fullsend-ai/fullsend/issues/8233
+2026-10-09,fullsend,issue,closed,8232,"feat(gitlab): forge primitives — service-account CRUD + CI-variable project lease",https://github.com/fullsend-ai/fullsend/issues/8232
+2026-10-09,fullsend,issue,closed,8217,"Add DCO signoff to repos install for GitHub and GitLab, with inherited repos.yaml setting",https://github.com/fullsend-ai/fullsend/issues/8217
+2026-10-09,fullsend,issue,closed,8215,"gitfetch: resolve symlinks before the containment check in tree fetches",https://github.com/fullsend-ai/fullsend/issues/8215
+2026-10-09,fullsend,issue,closed,8211,"sandbox: a second consecutive local run fails importing an unchanged profile",https://github.com/fullsend-ai/fullsend/issues/8211
+2026-10-09,fullsend,issue,closed,8189,"`fullsend agent add` failing",https://github.com/fullsend-ai/fullsend/issues/8189
+2026-10-09,fullsend,issue,closed,8070,"Complete the per-org removal sweep and verification",https://github.com/fullsend-ai/fullsend/issues/8070
+2026-10-09,fullsend,issue,closed,8063,"Remove deprecated per-org installation mode completely",https://github.com/fullsend-ai/fullsend/issues/8063
+2026-10-09,fullsend,issue,closed,7137,"CacheGetDir integrity check fails when CPython writes __pycache__/*.pyc into URL-sourced script directories",https://github.com/fullsend-ai/fullsend/issues/7137
+2026-10-09,fullsend,issue,closed,7084,"CLI: add `fullsend issues link` subcommand for typed issue links",https://github.com/fullsend-ai/fullsend/issues/7084
+2026-10-09,fullsend,issue,closed,7082,"issues get: include issue type and support custom fields in Jira output",https://github.com/fullsend-ai/fullsend/issues/7082
+2026-10-09,fullsend,issue,closed,6877,"Post-script shows misleading 'No PR created' when agent hits turn limit",https://github.com/fullsend-ai/fullsend/issues/6877
+2026-10-09,fullsend,issue,closed,6082,"Retain code-owner review for .gitmodules to prevent submodule-swap auto-merge",https://github.com/fullsend-ai/fullsend/issues/6082
+2026-10-09,agents,pr,opened,1645,"chore(harness): pin fleet images to the v0.46.0-rc.2 release builds",https://github.com/fullsend-ai/agents/pull/1645
+2026-10-09,agents,pr,opened,1643,"fix(ci): require write permission for PR test authorization",https://github.com/fullsend-ai/agents/pull/1643
+2026-10-09,agents,pr,merged,1645,"chore(harness): pin fleet images to the v0.46.0-rc.2 release builds",https://github.com/fullsend-ai/agents/pull/1645
+2026-10-09,agents,issue,opened,1646,"Review agent should flag prompt bloat and disproportionate token cost on context-file changes (AGENTS.md, CLAUDE.md)",https://github.com/fullsend-ai/agents/issues/1646
+2026-10-09,agents,issue,opened,1644,"harness: repin sandbox and code images to the 0.46.0-rc.2 release digests",https://github.com/fullsend-ai/agents/issues/1644
+2026-10-09,agents,issue,closed,1644,"harness: repin sandbox and code images to the 0.46.0-rc.2 release digests",https://github.com/fullsend-ai/agents/issues/1644
+2026-10-09,pi-inference-gateway,pr,opened,21,"fix(#20): redact escaped and encoded credentials in error bodies",https://github.com/fullsend-ai/pi-inference-gateway/pull/21
+2026-10-09,pi-inference-gateway,pr,opened,19,"fix(#17): pair credential env/file keys in the overlay merge",https://github.com/fullsend-ai/pi-inference-gateway/pull/19
+2026-10-09,pi-inference-gateway,pr,opened,18,"chore: release v0.1.1",https://github.com/fullsend-ai/pi-inference-gateway/pull/18
+2026-10-09,pi-inference-gateway,pr,opened,16,"feat(#15): read config from the extension's own directory",https://github.com/fullsend-ai/pi-inference-gateway/pull/16
+2026-10-09,pi-inference-gateway,pr,opened,14,"feat(#12): query OpenAI- and Anthropic-format model lists",https://github.com/fullsend-ai/pi-inference-gateway/pull/14
+2026-10-09,pi-inference-gateway,pr,opened,13,"fix(#9): document offline models in CI; show untyped error bodies",https://github.com/fullsend-ai/pi-inference-gateway/pull/13
+2026-10-09,pi-inference-gateway,pr,opened,11,"fix(#10): name baseUrlEnv, not its value, in env/file conflict",https://github.com/fullsend-ai/pi-inference-gateway/pull/11
+2026-10-09,pi-inference-gateway,pr,opened,8,"feat(#3): baseUrlEnv and a local overlay config file",https://github.com/fullsend-ai/pi-inference-gateway/pull/8
+2026-10-09,pi-inference-gateway,pr,opened,7,"docs: slim the README into a landing page, move reference to docs/",https://github.com/fullsend-ai/pi-inference-gateway/pull/7
+2026-10-09,pi-inference-gateway,pr,opened,5,"docs: recommend which API to use per model family",https://github.com/fullsend-ai/pi-inference-gateway/pull/5
+2026-10-09,pi-inference-gateway,pr,opened,1,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-inference-gateway/pull/1
+2026-10-09,pi-inference-gateway,pr,merged,21,"fix(#20): redact escaped and encoded credentials in error bodies",https://github.com/fullsend-ai/pi-inference-gateway/pull/21
+2026-10-09,pi-inference-gateway,pr,merged,18,"chore: release v0.1.1",https://github.com/fullsend-ai/pi-inference-gateway/pull/18
+2026-10-09,pi-inference-gateway,pr,merged,16,"feat(#15): read config from the extension's own directory",https://github.com/fullsend-ai/pi-inference-gateway/pull/16
+2026-10-09,pi-inference-gateway,pr,merged,14,"feat(#12): query OpenAI- and Anthropic-format model lists",https://github.com/fullsend-ai/pi-inference-gateway/pull/14
+2026-10-09,pi-inference-gateway,pr,merged,13,"fix(#9): document offline models in CI; show untyped error bodies",https://github.com/fullsend-ai/pi-inference-gateway/pull/13
+2026-10-09,pi-inference-gateway,pr,merged,11,"fix(#10): name baseUrlEnv, not its value, in env/file conflict",https://github.com/fullsend-ai/pi-inference-gateway/pull/11
+2026-10-09,pi-inference-gateway,pr,merged,8,"feat(#3): baseUrlEnv and a local overlay config file",https://github.com/fullsend-ai/pi-inference-gateway/pull/8
+2026-10-09,pi-inference-gateway,pr,merged,7,"docs: slim the README into a landing page, move reference to docs/",https://github.com/fullsend-ai/pi-inference-gateway/pull/7
+2026-10-09,pi-inference-gateway,pr,merged,5,"docs: recommend which API to use per model family",https://github.com/fullsend-ai/pi-inference-gateway/pull/5
+2026-10-09,pi-inference-gateway,pr,merged,1,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-inference-gateway/pull/1
+2026-10-09,pi-inference-gateway,issue,opened,20,"discovery: redact escaped and re-encoded credential forms in error bodies",https://github.com/fullsend-ai/pi-inference-gateway/issues/20
+2026-10-09,pi-inference-gateway,issue,opened,17,"config: pair credential env/file keys in the overlay merge",https://github.com/fullsend-ai/pi-inference-gateway/issues/17
+2026-10-09,pi-inference-gateway,issue,opened,15,"config: also read inference-gateway.json from the extension's own directory",https://github.com/fullsend-ai/pi-inference-gateway/issues/15
+2026-10-09,pi-inference-gateway,issue,opened,12,"discovery: query both the OpenAI- and Anthropic-format model lists; fix the Praxis docs wording",https://github.com/fullsend-ai/pi-inference-gateway/issues/12
+2026-10-09,pi-inference-gateway,issue,opened,10,"config: follow-ups from the baseUrlEnv/overlay review (#8)",https://github.com/fullsend-ai/pi-inference-gateway/issues/10
+2026-10-09,pi-inference-gateway,issue,opened,9,"docs: models under PI_OFFLINE on a fresh config dir; show plain bodies without content-type",https://github.com/fullsend-ai/pi-inference-gateway/issues/9
+2026-10-09,pi-inference-gateway,issue,opened,6,"release: tag and publish v0.1.0",https://github.com/fullsend-ai/pi-inference-gateway/issues/6
+2026-10-09,pi-inference-gateway,issue,opened,4,"docs: slim the README into a landing page and move reference material to docs/",https://github.com/fullsend-ai/pi-inference-gateway/issues/4
+2026-10-09,pi-inference-gateway,issue,opened,3,"config: baseUrlEnv and a local overlay file for shared dotfiles setups",https://github.com/fullsend-ai/pi-inference-gateway/issues/3
+2026-10-09,pi-inference-gateway,issue,opened,2,"docs: recommend which API to use per model family",https://github.com/fullsend-ai/pi-inference-gateway/issues/2
+2026-10-09,pi-inference-gateway,issue,closed,20,"discovery: redact escaped and re-encoded credential forms in error bodies",https://github.com/fullsend-ai/pi-inference-gateway/issues/20
+2026-10-09,pi-inference-gateway,issue,closed,15,"config: also read inference-gateway.json from the extension's own directory",https://github.com/fullsend-ai/pi-inference-gateway/issues/15
+2026-10-09,pi-inference-gateway,issue,closed,12,"discovery: query both the OpenAI- and Anthropic-format model lists; fix the Praxis docs wording",https://github.com/fullsend-ai/pi-inference-gateway/issues/12
+2026-10-09,pi-inference-gateway,issue,closed,10,"config: follow-ups from the baseUrlEnv/overlay review (#8)",https://github.com/fullsend-ai/pi-inference-gateway/issues/10
+2026-10-09,pi-inference-gateway,issue,closed,9,"docs: models under PI_OFFLINE on a fresh config dir; show plain bodies without content-type",https://github.com/fullsend-ai/pi-inference-gateway/issues/9
+2026-10-09,pi-inference-gateway,issue,closed,6,"release: tag and publish v0.1.0",https://github.com/fullsend-ai/pi-inference-gateway/issues/6
+2026-10-09,pi-inference-gateway,issue,closed,4,"docs: slim the README into a landing page and move reference material to docs/",https://github.com/fullsend-ai/pi-inference-gateway/issues/4
+2026-10-09,pi-inference-gateway,issue,closed,3,"config: baseUrlEnv and a local overlay file for shared dotfiles setups",https://github.com/fullsend-ai/pi-inference-gateway/issues/3
+2026-10-09,pi-inference-gateway,issue,closed,2,"docs: recommend which API to use per model family",https://github.com/fullsend-ai/pi-inference-gateway/issues/2

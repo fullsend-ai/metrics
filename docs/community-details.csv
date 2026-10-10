@@ -1830,3 +1830,13 @@ date,repo,type,event,number,actor,title,url
 2026-10-08,fullsend,pr,opened_core,8190,ifireball,"ci(#7555): notify users when agent launch is unauthorized",https://github.com/fullsend-ai/fullsend/pull/8190
 2026-10-08,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
 2026-10-08,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-09,fullsend,issue,opened_external,8270,jwm4,"docs: Claude Code runtime page says ANTHROPIC_* variables are unset, but values set in the harness file are honoured",https://github.com/fullsend-ai/fullsend/issues/8270
+2026-10-09,fullsend,issue,opened_external,8230,mfrancisc,"dispatch: role enablement ignores config.base.yaml and mismatches Go roles semantics",https://github.com/fullsend-ai/fullsend/issues/8230
+2026-10-09,fullsend,issue,closed_via_pr_external,8211,jwm4,"sandbox: a second consecutive local run fails importing an unchanged profile",https://github.com/fullsend-ai/fullsend/issues/8211
+2026-10-09,fullsend,pr,opened_core,8251,ralphbean,"ci(test): add mint provenance repro marker",https://github.com/fullsend-ai/fullsend/pull/8251
+2026-10-09,fullsend,pr,opened_core,8228,waynesun09,"feat: start workflow definitions from the runner",https://github.com/fullsend-ai/fullsend/pull/8228
+2026-10-09,fullsend,pr,opened_core,8226,waynesun09,"feat: fetch, lock and deliver workflow definitions pinned in a harness",https://github.com/fullsend-ai/fullsend/pull/8226
+2026-10-09,fullsend,pr,opened_core,8225,waynesun09,"docs(adr): make workflow-definition repos harness resources",https://github.com/fullsend-ai/fullsend/pull/8225
+2026-10-09,fullsend,pr,reviewed_external,8212,jwm4,"fix(#8211): ignore gateway-defaulted fields when matching profiles",https://github.com/fullsend-ai/fullsend/pull/8212
+2026-10-09,pi-inference-gateway,pr,opened_core,18,waynesun09,"chore: release v0.1.1",https://github.com/fullsend-ai/pi-inference-gateway/pull/18
+2026-10-09,pi-inference-gateway,pr,opened_core,1,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-inference-gateway/pull/1
