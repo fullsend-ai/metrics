@@ -1840,3 +1840,5 @@ date,repo,type,event,number,actor,title,url
 2026-10-09,fullsend,pr,reviewed_external,8212,jwm4,"fix(#8211): ignore gateway-defaulted fields when matching profiles",https://github.com/fullsend-ai/fullsend/pull/8212
 2026-10-09,pi-inference-gateway,pr,opened_core,18,waynesun09,"chore: release v0.1.1",https://github.com/fullsend-ai/pi-inference-gateway/pull/18
 2026-10-09,pi-inference-gateway,pr,opened_core,1,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-inference-gateway/pull/1
+2026-10-10,fullsend,issue,closed_other_external,6649,fbricon,"Add read:packages rights to fix and code agents' Github token",https://github.com/fullsend-ai/fullsend/issues/6649
+2026-10-10,pi-inference-gateway,pr,opened_core,24,waynesun09,"chore: release v0.1.2",https://github.com/fullsend-ai/pi-inference-gateway/pull/24

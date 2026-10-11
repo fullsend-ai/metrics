@@ -15768,3 +15768,91 @@ date,repo,type,event,number,title,url
 2026-10-09,pi-inference-gateway,issue,closed,4,"docs: slim the README into a landing page and move reference material to docs/",https://github.com/fullsend-ai/pi-inference-gateway/issues/4
 2026-10-09,pi-inference-gateway,issue,closed,3,"config: baseUrlEnv and a local overlay file for shared dotfiles setups",https://github.com/fullsend-ai/pi-inference-gateway/issues/3
 2026-10-09,pi-inference-gateway,issue,closed,2,"docs: recommend which API to use per model family",https://github.com/fullsend-ai/pi-inference-gateway/issues/2
+2026-10-10,fullsend,pr,opened,8315,"docs(#8312): document the inference gateway route for operators and owners",https://github.com/fullsend-ai/fullsend/pull/8315
+2026-10-10,fullsend,pr,opened,8314,"fix(#8311): keep a stale credential seed from replacing a newer one",https://github.com/fullsend-ai/fullsend/pull/8314
+2026-10-10,fullsend,pr,opened,8313,"feat(#8242)!: activate GitLab role service-account lifecycle",https://github.com/fullsend-ai/fullsend/pull/8313
+2026-10-10,fullsend,pr,opened,8310,"feat(#8294): run Claude Code on the inference gateway route for gateway/ models",https://github.com/fullsend-ai/fullsend/pull/8310
+2026-10-10,fullsend,pr,opened,8309,"feat(#8295): route codex gateway/ models through a runner-owned provider",https://github.com/fullsend-ai/fullsend/pull/8309
+2026-10-10,fullsend,pr,opened,8308,"ci(#8307): declare no-real-model gateway capabilities in CI",https://github.com/fullsend-ai/fullsend/pull/8308
+2026-10-10,fullsend,pr,opened,8306,"fix(#8305)!: fail run when agent fails without a validation loop",https://github.com/fullsend-ai/fullsend/pull/8306
+2026-10-10,fullsend,pr,opened,8304,"refactor(#8241): reconcile the GitLab Poller during uninstall",https://github.com/fullsend-ai/fullsend/pull/8304
+2026-10-10,fullsend,pr,opened,8302,"build(#8301): bump pi-inference-gateway to v0.1.2 in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/8302
+2026-10-10,fullsend,pr,opened,8300,"feat(#8280): add api-key auth mode to the inference gateway route",https://github.com/fullsend-ai/fullsend/pull/8300
+2026-10-10,fullsend,pr,opened,8299,"chore(deps): update dependency nvidia/openshell to v0.1.3",https://github.com/fullsend-ai/fullsend/pull/8299
+2026-10-10,fullsend,pr,opened,8298,"refactor(#8240): add inert GitLab trigger-owner lifecycle package",https://github.com/fullsend-ai/fullsend/pull/8298
+2026-10-10,fullsend,pr,opened,8297,"feat(#8280): wire the inference gateway route into fullsend run",https://github.com/fullsend-ai/fullsend/pull/8297
+2026-10-10,fullsend,pr,opened,8293,"feat(#8280): add gateway status command and runner route parts",https://github.com/fullsend-ai/fullsend/pull/8293
+2026-10-10,fullsend,pr,opened,8292,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.296",https://github.com/fullsend-ai/fullsend/pull/8292
+2026-10-10,fullsend,pr,opened,8290,"docs(#8288): correct Poller generation verification order",https://github.com/fullsend-ai/fullsend/pull/8290
+2026-10-10,fullsend,pr,opened,8287,"feat(#8280): add inference.gateway config block and setup flags",https://github.com/fullsend-ai/fullsend/pull/8287
+2026-10-10,fullsend,pr,opened,8286,"test(#8285): add setup script for the e2e inference test gateway",https://github.com/fullsend-ai/fullsend/pull/8286
+2026-10-10,fullsend,pr,merged,8315,"docs(#8312): document the inference gateway route for operators and owners",https://github.com/fullsend-ai/fullsend/pull/8315
+2026-10-10,fullsend,pr,merged,8308,"ci(#8307): declare no-real-model gateway capabilities in CI",https://github.com/fullsend-ai/fullsend/pull/8308
+2026-10-10,fullsend,pr,merged,8304,"refactor(#8241): reconcile the GitLab Poller during uninstall",https://github.com/fullsend-ai/fullsend/pull/8304
+2026-10-10,fullsend,pr,merged,8302,"build(#8301): bump pi-inference-gateway to v0.1.2 in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/8302
+2026-10-10,fullsend,pr,merged,8300,"feat(#8280): add api-key auth mode to the inference gateway route",https://github.com/fullsend-ai/fullsend/pull/8300
+2026-10-10,fullsend,pr,merged,8298,"refactor(#8240): add inert GitLab trigger-owner lifecycle package",https://github.com/fullsend-ai/fullsend/pull/8298
+2026-10-10,fullsend,pr,merged,8297,"feat(#8280): wire the inference gateway route into fullsend run",https://github.com/fullsend-ai/fullsend/pull/8297
+2026-10-10,fullsend,pr,merged,8293,"feat(#8280): add gateway status command and runner route parts",https://github.com/fullsend-ai/fullsend/pull/8293
+2026-10-10,fullsend,pr,merged,8292,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.296",https://github.com/fullsend-ai/fullsend/pull/8292
+2026-10-10,fullsend,pr,merged,8290,"docs(#8288): correct Poller generation verification order",https://github.com/fullsend-ai/fullsend/pull/8290
+2026-10-10,fullsend,pr,merged,8287,"feat(#8280): add inference.gateway config block and setup flags",https://github.com/fullsend-ai/fullsend/pull/8287
+2026-10-10,fullsend,pr,merged,8286,"test(#8285): add setup script for the e2e inference test gateway",https://github.com/fullsend-ai/fullsend/pull/8286
+2026-10-10,fullsend,pr,merged,8284,"docs(#7480): ADR 0137 inference gateway as a credential route",https://github.com/fullsend-ai/fullsend/pull/8284
+2026-10-10,fullsend,pr,merged,8269,"refactor(#8237): add inert GitLab service-account convergence engine",https://github.com/fullsend-ai/fullsend/pull/8269
+2026-10-10,fullsend,pr,merged,8268,"refactor(#8239): add inert GitLab poller-generation state machine",https://github.com/fullsend-ai/fullsend/pull/8268
+2026-10-10,fullsend,pr,merged,8265,"chore(deps): update dependency go to v1.27.2",https://github.com/fullsend-ai/fullsend/pull/8265
+2026-10-10,fullsend,pr,merged,8263,"feat(#8218)!: manage both repo config files by default",https://github.com/fullsend-ai/fullsend/pull/8263
+2026-10-10,fullsend,pr,merged,6910,"refactor(eval): consolidate fixture GitHub queries",https://github.com/fullsend-ai/fullsend/pull/6910
+2026-10-10,fullsend,issue,opened,8317,"docs: move the gateway operator page's full files out and validate its config blocks in CI",https://github.com/fullsend-ai/fullsend/issues/8317
+2026-10-10,fullsend,issue,opened,8316,"Claude Code gateway route (oidc): recover from a stale apiKeyHelper value after a long tool call",https://github.com/fullsend-ai/fullsend/issues/8316
+2026-10-10,fullsend,issue,opened,8312,"docs: inference gateway walkthroughs for operators and repository owners",https://github.com/fullsend-ai/fullsend/issues/8312
+2026-10-10,fullsend,issue,opened,8311,"runtime: an iteration-start credential seed can overwrite a newer re-seed",https://github.com/fullsend-ai/fullsend/issues/8311
+2026-10-10,fullsend,issue,opened,8307,"e2e: run the inference gateway behaviour tests in CI",https://github.com/fullsend-ai/fullsend/issues/8307
+2026-10-10,fullsend,issue,opened,8305,"fullsend run exits 0 when the agent fails and the harness has no validation loop",https://github.com/fullsend-ai/fullsend/issues/8305
+2026-10-10,fullsend,issue,opened,8303,"inference gateway: allow a path prefix in inference.gateway.url",https://github.com/fullsend-ai/fullsend/issues/8303
+2026-10-10,fullsend,issue,opened,8301,"sandbox: bump pi-inference-gateway to v0.1.2",https://github.com/fullsend-ai/fullsend/issues/8301
+2026-10-10,fullsend,issue,opened,8296,"eval: capture-fixture.sh writes an empty fixture when gh returns empty stdout",https://github.com/fullsend-ai/fullsend/issues/8296
+2026-10-10,fullsend,issue,opened,8295,"codex runtime: use the inference gateway route (ADR 0137) through a runner-owned gateway provider",https://github.com/fullsend-ai/fullsend/issues/8295
+2026-10-10,fullsend,issue,opened,8294,"claude runtime: use the inference gateway route (ADR 0137) for gateway/ models",https://github.com/fullsend-ai/fullsend/issues/8294
+2026-10-10,fullsend,issue,opened,8291,"Add a comment-resolution status check for fullsend-ai-review findings",https://github.com/fullsend-ai/fullsend/issues/8291
+2026-10-10,fullsend,issue,opened,8289,"ci: image builds fail on Docker Hub rate limits via setup-qemu; build arm64 on native runners instead",https://github.com/fullsend-ai/fullsend/issues/8289
+2026-10-10,fullsend,issue,opened,8288,"docs(gitlab): correct Poller generation verification order",https://github.com/fullsend-ai/fullsend/issues/8288
+2026-10-10,fullsend,issue,opened,8285,"test(e2e): durable agentgateway test gateway for inference gateway behaviour tests",https://github.com/fullsend-ai/fullsend/issues/8285
+2026-10-10,fullsend,issue,closed,8312,"docs: inference gateway walkthroughs for operators and repository owners",https://github.com/fullsend-ai/fullsend/issues/8312
+2026-10-10,fullsend,issue,closed,8307,"e2e: run the inference gateway behaviour tests in CI",https://github.com/fullsend-ai/fullsend/issues/8307
+2026-10-10,fullsend,issue,closed,8301,"sandbox: bump pi-inference-gateway to v0.1.2",https://github.com/fullsend-ai/fullsend/issues/8301
+2026-10-10,fullsend,issue,closed,8288,"docs(gitlab): correct Poller generation verification order",https://github.com/fullsend-ai/fullsend/issues/8288
+2026-10-10,fullsend,issue,closed,8285,"test(e2e): durable agentgateway test gateway for inference gateway behaviour tests",https://github.com/fullsend-ai/fullsend/issues/8285
+2026-10-10,fullsend,issue,closed,8241,"feat(gitlab): lease-guarded uninstall orchestration + poller reconcile",https://github.com/fullsend-ai/fullsend/issues/8241
+2026-10-10,fullsend,issue,closed,8240,"feat(gitlab): trigger ownership + lifecycle package",https://github.com/fullsend-ai/fullsend/issues/8240
+2026-10-10,fullsend,issue,closed,8239,"feat(gitlab): durable poller-generation state machine (inert scaffolding, #8210 stage 1)",https://github.com/fullsend-ai/fullsend/issues/8239
+2026-10-10,fullsend,issue,closed,8237,"feat(gitlab): service-account convergence engine + verify-before-publish (inert until activation)",https://github.com/fullsend-ai/fullsend/issues/8237
+2026-10-10,fullsend,issue,closed,7959,"ci(release): run the agents functional-test gate in release tier",https://github.com/fullsend-ai/fullsend/issues/7959
+2026-10-10,fullsend,issue,closed,7480,"Support an LLM inference gateway as a credential route, starting with the openai provider",https://github.com/fullsend-ai/fullsend/issues/7480
+2026-10-10,fullsend,issue,closed,6649,"Add read:packages rights to fix and code agents' Github token",https://github.com/fullsend-ai/fullsend/issues/6649
+2026-10-10,fullsend,issue,closed,2427,"eval: merge duplicate gh issue view calls in capture-fixture.sh",https://github.com/fullsend-ai/fullsend/issues/2427
+2026-10-10,agents,pr,opened,1650,"test(#1601): add a nightly verdict over the last 3 eval runs",https://github.com/fullsend-ai/agents/pull/1650
+2026-10-10,agents,pr,opened,1649,"test(#1601): make eval behaviour checks and quality judges report-only",https://github.com/fullsend-ai/agents/pull/1649
+2026-10-10,agents,pr,opened,1648,"chore(harness): pin fleet images to the v0.46.1-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/1648
+2026-10-10,agents,pr,merged,1650,"test(#1601): add a nightly verdict over the last 3 eval runs",https://github.com/fullsend-ai/agents/pull/1650
+2026-10-10,agents,pr,merged,1649,"test(#1601): make eval behaviour checks and quality judges report-only",https://github.com/fullsend-ai/agents/pull/1649
+2026-10-10,agents,pr,merged,1648,"chore(harness): pin fleet images to the v0.46.1-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/1648
+2026-10-10,agents,issue,opened,1647,"harness: repin sandbox and code images to the 0.46.1-rc.1 release digests",https://github.com/fullsend-ai/agents/issues/1647
+2026-10-10,agents,issue,closed,1647,"harness: repin sandbox and code images to the 0.46.1-rc.1 release digests",https://github.com/fullsend-ai/agents/issues/1647
+2026-10-10,agents,issue,closed,1601,"Run live-model behaviour checks and quality judges nightly, report-only",https://github.com/fullsend-ai/agents/issues/1601
+2026-10-10,pi-inference-gateway,pr,opened,31,"docs(#29): add tokenFile walkthrough and JWT gateway notes",https://github.com/fullsend-ai/pi-inference-gateway/pull/31
+2026-10-10,pi-inference-gateway,pr,opened,30,"docs(#25): state when the config file is agent-unwritable",https://github.com/fullsend-ai/pi-inference-gateway/pull/30
+2026-10-10,pi-inference-gateway,pr,opened,24,"chore: release v0.1.2",https://github.com/fullsend-ai/pi-inference-gateway/pull/24
+2026-10-10,pi-inference-gateway,pr,opened,23,"feat(#22): name one exact config file with INFERENCE_GATEWAY_CONFIG_FILE",https://github.com/fullsend-ai/pi-inference-gateway/pull/23
+2026-10-10,pi-inference-gateway,pr,merged,24,"chore: release v0.1.2",https://github.com/fullsend-ai/pi-inference-gateway/pull/24
+2026-10-10,pi-inference-gateway,pr,merged,23,"feat(#22): name one exact config file with INFERENCE_GATEWAY_CONFIG_FILE",https://github.com/fullsend-ai/pi-inference-gateway/pull/23
+2026-10-10,pi-inference-gateway,pr,merged,19,"fix(#17): pair credential env/file keys in the overlay merge",https://github.com/fullsend-ai/pi-inference-gateway/pull/19
+2026-10-10,pi-inference-gateway,issue,opened,29,"docs: tokenFile walkthrough and JWT gateway deployment notes",https://github.com/fullsend-ai/pi-inference-gateway/issues/29
+2026-10-10,pi-inference-gateway,issue,opened,28,"tokenFile: refresher recipe and a long-run rotation test",https://github.com/fullsend-ai/pi-inference-gateway/issues/28
+2026-10-10,pi-inference-gateway,issue,opened,27,"tokenFile: re-read and retry once on 401; guard against torn reads",https://github.com/fullsend-ai/pi-inference-gateway/issues/27
+2026-10-10,pi-inference-gateway,issue,opened,26,"test: env provider still registers when INFERENCE_GATEWAY_CONFIG_FILE is bad",https://github.com/fullsend-ai/pi-inference-gateway/issues/26
+2026-10-10,pi-inference-gateway,issue,opened,25,"docs: state the conditions for ""a file the agent cannot write"" (INFERENCE_GATEWAY_CONFIG_FILE)",https://github.com/fullsend-ai/pi-inference-gateway/issues/25
+2026-10-10,pi-inference-gateway,issue,opened,22,"config: let a host name one exact config file (INFERENCE_GATEWAY_CONFIG_FILE)",https://github.com/fullsend-ai/pi-inference-gateway/issues/22
+2026-10-10,pi-inference-gateway,issue,closed,22,"config: let a host name one exact config file (INFERENCE_GATEWAY_CONFIG_FILE)",https://github.com/fullsend-ai/pi-inference-gateway/issues/22
+2026-10-10,pi-inference-gateway,issue,closed,17,"config: pair credential env/file keys in the overlay merge",https://github.com/fullsend-ai/pi-inference-gateway/issues/17
