@@ -24,14 +24,18 @@
   }
 
   function showTooltip(event, html) {
-    tooltip.html(html)
-      .style("left", `${event.pageX + 12}px`)
-      .style("top", `${event.pageY - 12}px`)
-      .style("opacity", 1);
+    tooltip.html(html).style("opacity", 1);
+    // Flip to the cursor's left when the tooltip would run off the page.
+    const width = tooltip.node().offsetWidth;
+    const overflows = event.pageX + 12 + width > window.scrollX + document.documentElement.clientWidth;
+    tooltip
+      .style("left", `${overflows ? event.pageX - 12 - width : event.pageX + 12}px`)
+      .style("top", `${event.pageY - 12}px`);
   }
 
   function hideTooltip() {
-    tooltip.style("opacity", 0);
+    // Park it off-page: a hidden tooltip left in place can widen the page.
+    tooltip.style("opacity", 0).style("left", "-9999px");
   }
 
   try {
@@ -129,7 +133,7 @@
     }
     const width = Math.max(container.node().getBoundingClientRect().width || 900, 640);
     const height = 340;
-    const margin = { top: 16, right: 20, bottom: 42, left: 50 };
+    const margin = { top: 16, right: 20, bottom: 28, left: 50 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
     const svg = container.append("svg").attr("viewBox", `0 0 ${width} ${height}`);
@@ -154,10 +158,11 @@
         .attr("stroke-width", 2.5).attr("aria-label", label)
         .attr("d", d3.line().x(row => x(parseDate(row.date))).y(row => y(row[key])).curve(d3.curveMonotoneX));
     });
-    series.forEach(([, label, color], index) => {
-      const item = svg.append("g").attr("transform", `translate(${margin.left + index * 145},${height - 8})`);
-      item.append("line").attr("x2", 16).attr("stroke", color).attr("stroke-width", 3);
-      item.append("text").attr("x", 22).attr("y", 4).text(label);
+    const legend = container.append("div").attr("class", "chart-legend");
+    series.forEach(([, label, color]) => {
+      const item = legend.append("span").attr("class", "chart-legend-item");
+      item.append("span").attr("class", "swatch").style("background", color);
+      item.append("span").text(label);
     });
 
     const bisect = d3.bisector(row => parseDate(row.date)).center;

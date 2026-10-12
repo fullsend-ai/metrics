@@ -134,12 +134,16 @@
   }
 
   function showTooltip(event, html) {
-    tooltip.html(html)
-      .style("left", (event.pageX + 12) + "px")
-      .style("top", (event.pageY - 12) + "px")
-      .style("opacity", 1);
+    tooltip.html(html).style("opacity", 1);
+    // Flip to the cursor's left when the tooltip would run off the page.
+    const width = tooltip.node().offsetWidth;
+    const overflows = event.pageX + 12 + width > window.scrollX + document.documentElement.clientWidth;
+    tooltip
+      .style("left", (overflows ? event.pageX - 12 - width : event.pageX + 12) + "px")
+      .style("top", (event.pageY - 12) + "px");
   }
-  function hideTooltip() { tooltip.style("opacity", 0); }
+  // Park it off-page: a hidden tooltip left in place can widen the page.
+  function hideTooltip() { tooltip.style("opacity", 0).style("left", "-9999px"); }
 
   function chartDims(container, height) {
     const width = Math.max(container.node().getBoundingClientRect().width || 960, 640);
