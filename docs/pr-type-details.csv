@@ -2023,3 +2023,23 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-10,agents,1650,test(#1601): add a nightly verdict over the last 3 eval runs,test,,,,https://github.com/fullsend-ai/agents/pull/1650
 2026-10-10,agents,1649,test(#1601): make eval behaviour checks and quality judges report-only,test,,,,https://github.com/fullsend-ai/agents/pull/1649
 2026-10-10,agents,1648,chore(harness): pin fleet images to the v0.46.1-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1648
+2026-10-11,fullsend,8352,fix(#8351): make docs heading anchors GitHub-compatible,fix,core,8351,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8352
+2026-10-11,fullsend,8350,docs(#8349): move auth and gateway pages to User Guides,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8350
+2026-10-11,fullsend,8347,docs(#8344): say who runs each inference setup step,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8347
+2026-10-11,fullsend,8346,chore(#8345): turn off the e2e test gateway's management listeners,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8346
+2026-10-11,fullsend,8342,"docs(#8340): add ""How fullsend authenticates"" concept page",docs,,,,https://github.com/fullsend-ai/fullsend/pull/8342
+2026-10-11,fullsend,8338,feat(#8303): allow a path prefix in inference.gateway.url,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8338
+2026-10-11,fullsend,8337,docs(#8317): move gateway guide files out and validate its config blocks,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8337
+2026-10-11,fullsend,8336,docs(#8335): move the inference gateway walkthrough to its own page,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8336
+2026-10-11,fullsend,8333,fix(#8332): keep a rolling window of six versioned doc copies,fix,core,8332,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8333
+2026-10-11,fullsend,8331,feat(#8330)!: unify repos.yaml config fields across all scopes,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8331
+2026-10-11,fullsend,8327,test(#6027): add triage actor SCM surface and actor smoke scenario,test,,,,https://github.com/fullsend-ai/fullsend/pull/8327
+2026-10-11,fullsend,8322,test(#8320): add change control to the e2e gateway setup script,test,,,,https://github.com/fullsend-ai/fullsend/pull/8322
+2026-10-11,fullsend,8321,fix(#8316): recover Claude Code from a stale gateway placeholder,fix,core,8316,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8321
+2026-10-11,fullsend,8318,"ci(#8289): build image arm64 legs on native runners, drop QEMU",ci,,,,https://github.com/fullsend-ai/fullsend/pull/8318
+2026-10-11,fullsend,8314,fix(#8311): keep a stale credential seed from replacing a newer one,fix,core,8311,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8314
+2026-10-11,fullsend,8310,feat(#8294): run Claude Code on the inference gateway route for gateway/ models,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8310
+2026-10-11,fullsend,8309,feat(#8295): route codex gateway/ models through a runner-owned provider,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8309
+2026-10-11,fullsend,8306,fix(#8305)!: fail run when agent fails without a validation loop,fix,core,8305,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8306
+2026-10-11,agents,1658,chore(harness): pin fleet images to the v0.47.1-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1658
+2026-10-11,agents,1652,chore(harness): pin fleet images to the v0.47.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1652
