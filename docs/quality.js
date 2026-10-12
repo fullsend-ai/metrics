@@ -228,6 +228,18 @@
   const color = (name, fallback) => getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback;
   const pct = value => `${(value * 100).toFixed(1)}%`;
   const tooltip = d3.select("#tooltip");
+  // Park it off-page when hidden: a hidden tooltip left in place can widen the page.
+  const hideTooltip = () => tooltip.style("opacity", 0).style("left", "-9999px");
+
+  function showTooltip(event, html) {
+    tooltip.html(html).style("opacity", 1);
+    // Flip to the cursor's left when the tooltip would run off the page.
+    const width = tooltip.node().offsetWidth;
+    const overflows = event.pageX + 12 + width > window.scrollX + document.documentElement.clientWidth;
+    tooltip
+      .style("left", `${overflows ? event.pageX - 12 - width : event.pageX + 12}px`)
+      .style("top", `${event.pageY - 12}px`);
+  }
   let selectedRepo = "__all__";
   let raw = [];
 
@@ -289,7 +301,7 @@
     }
     const width = Math.max(container.node().getBoundingClientRect().width || 900, 640);
     const height = 320;
-    const margin = { top: 16, right: 20, bottom: 42, left: 50 };
+    const margin = { top: 16, right: 20, bottom: 28, left: 50 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
     const svg = container.append("svg").attr("viewBox", `0 0 ${width} ${height}`);
@@ -302,20 +314,39 @@
       .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat("%b %d")));
     group.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5).tickFormat(value => `${(value * 100).toFixed(0)}%`));
 
-    series.forEach(([label, items, stroke], index) => {
+    series.forEach(([label, items, stroke]) => {
       group.append("path").datum(items).attr("fill", "none").attr("stroke", stroke).attr("stroke-width", 2.5)
         .attr("aria-label", label)
         .attr("d", d3.line().x(d => x(d.date)).y(d => y(d.rate)).curve(d3.curveMonotoneX));
       group.selectAll(null).data(items).enter().append("circle")
-        .attr("cx", d => x(d.date)).attr("cy", d => y(d.rate)).attr("r", 4).attr("fill", stroke)
-        .on("mousemove", (event, d) => tooltip
-          .html(`<strong>${label} · week of ${d.week}</strong><br>Escaped-fix rate: ${pct(d.rate)}<br>`
-            + `Fixed within 30 days: ${d.escaped} of ${d.merged} merged<br>Severe: ${d.severe} · Unjudged candidates: ${d.unjudged}`)
-          .style("left", `${event.pageX + 12}px`).style("top", `${event.pageY - 12}px`).style("opacity", 1))
-        .on("mouseleave", () => tooltip.style("opacity", 0));
-      const item = svg.append("g").attr("transform", `translate(${margin.left + index * 120},${height - 8})`);
-      item.append("line").attr("x2", 16).attr("stroke", stroke).attr("stroke-width", 3);
-      item.append("text").attr("x", 22).attr("y", 4).attr("fill", color("--fg-light", "#8fa1bc")).text(label);
+        .attr("cx", d => x(d.date)).attr("cy", d => y(d.rate)).attr("r", 4).attr("fill", stroke);
+    });
+
+    // Hover anywhere: a guide line snaps to the nearest week and the tooltip lists every series.
+    const weeks = Array.from(d3.group(points, d => d.week).values(), rows => rows[0]);
+    const byWeek = new Map(series.flatMap(([label, items]) => items.map(d => [`${d.week}|${label}`, d])));
+    const guide = group.append("line").attr("class", "chart-focus")
+      .attr("y1", 0).attr("y2", innerHeight).style("display", "none");
+    group.append("rect").attr("width", innerWidth).attr("height", innerHeight)
+      .attr("fill", "none").attr("pointer-events", "all")
+      .on("mousemove", event => {
+        const at = x.invert(d3.pointer(event)[0]);
+        const week = d3.least(weeks, d => Math.abs(d.date - at));
+        guide.attr("x1", x(week.date)).attr("x2", x(week.date)).style("display", null);
+        const lines = series
+          .map(([label]) => [label, byWeek.get(`${week.week}|${label}`)])
+          .filter(([, d]) => d)
+          .map(([label, d]) => `${label}: ${pct(d.rate)} (${d.escaped} of ${d.merged} merged, ${d.severe} severe`
+            + `${d.unjudged ? `, ${d.unjudged} unjudged` : ""})`);
+        showTooltip(event, `<strong>Week of ${week.week}</strong><br>${lines.join("<br>")}`);
+      })
+      .on("mouseleave", () => { guide.style("display", "none"); hideTooltip(); });
+
+    const legend = container.append("div").attr("class", "chart-legend");
+    series.forEach(([label, , stroke]) => {
+      const item = legend.append("span").attr("class", "chart-legend-item");
+      item.append("span").attr("class", "swatch").style("background", stroke);
+      item.append("span").text(label);
     });
   }
 
