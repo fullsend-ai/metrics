@@ -2,7 +2,7 @@
 """Find PRs that had to be fixed by a later PR and compute the 30-day escaped-fix rate.
 
 1. Candidates: a later merged PR in fullsend/agents that names an earlier
-   merged PR (#N, owner/repo#N or a PR link) in its title, body or the issue
+   merged PR (#N, agents#N, owner/repo#N or a PR link) in its title, body or the issues
    it closes, uses causal wording ("broke", "regression", "caused by",
    "introduced in", "fixes ... from #N"), or reverts it. Pairs more than 30 days apart are dropped. Written to
    docs/fix-candidates.csv.
@@ -53,10 +53,11 @@ VERDICTS = {"defect_from_original", "later_change", "not_related", "unknown"}
 
 URL_REF = re.compile(r"github\.com/fullsend-ai/([\w.-]+)/pull/(\d+)", re.I)
 QUALIFIED_REF = re.compile(r"(?<![\w/.-])fullsend-ai/([\w.-]+)#(\d+)", re.I)
+SHORT_REF = re.compile(rf"(?<![\w/.-])({'|'.join(REPOS)})#(\d+)\b", re.I)  # agents#N, fullsend#N
 LOCAL_REF = re.compile(r"(?<![\w/&#])#(\d+)\b")
 CAUSAL = re.compile(
     r"\b(?:broke|breaks|broken by|regression|regressed|caused by|introduced (?:in|by)"
-    r"|fix(?:es|ed)?\b[^\n]{0,80}?\bfrom\s+(?:fullsend-ai/[\w.-]+)?#\d+)",
+    r"|fix(?:es|ed)?\b[^\n]{0,80}?\bfrom\s+(?:(?:fullsend-ai/)?(?:fullsend|agents))?#\d+)",
     re.I,
 )
 CAUSAL_SHA = re.compile(
@@ -100,6 +101,7 @@ def references(repo: str, text: str) -> set[str]:
     """Return repo#N keys for every fullsend/agents PR or issue number named in text."""
     refs = {f"{r.lower()}#{n}" for r, n in URL_REF.findall(text)}
     refs |= {f"{r.lower()}#{n}" for r, n in QUALIFIED_REF.findall(text)}
+    refs |= {f"{r.lower()}#{n}" for r, n in SHORT_REF.findall(text)}
     refs |= {f"{repo}#{n}" for n in LOCAL_REF.findall(text)}
     return {ref for ref in refs if ref.split("#")[0] in REPOS}
 
@@ -155,36 +157,60 @@ def pair_rows(fixes: list[dict], merged: dict[str, dict], sha_to_pr, linked_text
     return rows
 
 
-def gh_sha_lookup():
+def gh_get(pr_type, path: str):
+    """GET an API path with collect-pr-type's rate-limit retries; None when it does not exist.
+
+    Any other failure raises, so collect() stops before it rewrites a day's
+    candidates from incomplete data, and the workflow run fails visibly.
+    """
+    try:
+        return pr_type.gh_json(["api", path])
+    except RuntimeError as err:
+        if "HTTP 404" in str(err) or "HTTP 422" in str(err):  # unknown issue or commit
+            return None
+        raise
+
+
+def gh_sha_lookup(pr_type):
     cache: dict[tuple[str, str], str | None] = {}
 
     def lookup(repo: str, sha: str) -> str | None:
         if (repo, sha) not in cache:
-            result = subprocess.run(
-                ["gh", "api", f"repos/{ORG}/{repo}/commits/{sha}/pulls",
-                 "--jq", "[.[] | select(.merged_at != null) | .number][0]"],
-                capture_output=True, text=True,
-            )
-            number = result.stdout.strip() if result.returncode == 0 else ""
-            cache[(repo, sha)] = f"{repo}#{number}" if number.isdigit() else None
+            pulls = gh_get(pr_type, f"repos/{ORG}/{repo}/commits/{sha}/pulls") or []
+            numbers = [pull["number"] for pull in pulls if pull.get("merged_at")]
+            cache[(repo, sha)] = f"{repo}#{numbers[0]}" if numbers else None
         return cache[(repo, sha)]
 
     return lookup
 
 
-def gh_linked_issue_text(pr_type):
+def closing_refs(pr_type, repo: str, title: str, body: str) -> list[tuple[str, int]]:
+    """Every (repo, number) a PR says it closes, in order: collect-pr-type keeps only the first."""
+    refs = []
+    match = pr_type.ISSUE_TITLE.match(title.strip())
+    if match:
+        refs.append((repo, int(match.group(1))))
+    refs += [(r.lower(), int(n)) for r, n in pr_type.ISSUE_BODY_QUALIFIED.findall(body)]
+    refs += [(repo, int(n)) for n in pr_type.ISSUE_BODY_LOCAL.findall(body)]
+    return [ref for ref in dict.fromkeys(refs) if ref[0] in REPOS]
+
+
+def gh_linked_issue_text(pr_type, get=None):
+    get = get or (lambda path: gh_get(pr_type, path))
+
     def linked_text(pr: dict) -> str:
         title = pr.get("title") or ""
-        ref = None if DEPS_TITLE.match(title) else pr_type.extract_issue_ref(pr["repo"], title, pr.get("body"))
-        if not ref or ref[0] not in REPOS:
+        if DEPS_TITLE.match(title):
             return ""
-        result = subprocess.run(
-            ["gh", "api", f"repos/{ORG}/{ref[0]}/issues/{ref[1]}", "--jq", '.title + "\\n" + (.body // "")'],
-            capture_output=True, text=True,
-        )
-        # Bare #N in the issue refers to the issue's own repo.
-        text = result.stdout if result.returncode == 0 else ""
-        return text if ref[0] == pr["repo"] else LOCAL_REF.sub(f"{ORG}/{ref[0]}#\\1", text)
+        texts = []
+        for issue_repo, number in closing_refs(pr_type, pr["repo"], title, pr.get("body") or ""):
+            issue = get(f"repos/{ORG}/{issue_repo}/issues/{number}")
+            if not issue:
+                continue
+            text = f"{issue.get('title') or ''}\n{issue.get('body') or ''}"
+            # Bare #N in the issue refers to the issue's own repo.
+            texts.append(text if issue_repo == pr["repo"] else LOCAL_REF.sub(f"{ORG}/{issue_repo}#\\1", text))
+        return "\n".join(texts)
 
     return linked_text
 
@@ -199,7 +225,7 @@ def collect(start: date, end: date) -> None:
             pr["repo"] = repo
             merged[f"{repo}#{pr['number']}"] = pr
     fixes = [pr for pr in merged.values() if start.isoformat() <= pr["closedAt"][:10] <= end.isoformat()]
-    new_rows = pair_rows(fixes, merged, gh_sha_lookup(), gh_linked_issue_text(pr_type))
+    new_rows = pair_rows(fixes, merged, gh_sha_lookup(pr_type), gh_linked_issue_text(pr_type))
     kept = [row for row in read(CANDIDATES) if not start.isoformat() <= row["fix_merged_at"][:10] <= end.isoformat()]
     rows = sorted(kept + new_rows, key=lambda row: (row["fix_merged_at"], row["fix"], row["original"]))
     write(CANDIDATES, CANDIDATE_HEADER, rows)

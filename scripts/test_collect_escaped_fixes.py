@@ -59,8 +59,45 @@ class TestDetect(unittest.TestCase):
         )
         self.assertEqual(found, {"fullsend#8": "revert"})
 
+    def test_repo_shorthand(self):
+        body = "Regressed in agents#20; see fullsend#30, other/agents#5 and myagents#6"
+        found = mod.detect(pr("fullsend", 99, "", body=body), {}, no_sha)
+        self.assertEqual(found, {"agents#20": "causal+named", "fullsend#30": "causal+named"})
+
     def test_dependency_bumps_skipped(self):
         self.assertEqual(mod.detect(pr("fullsend", 9, "", title="chore(deps): bump x", body="#3"), {}, no_sha), {})
+
+
+class TestLinkedIssues(unittest.TestCase):
+    def setUp(self):
+        self.pr_type = mod._load_pr_type()
+
+    def test_reads_every_closed_issue(self):
+        issues = {
+            "repos/fullsend-ai/fullsend/issues/5": {"title": "first", "body": "nothing here"},
+            "repos/fullsend-ai/agents/issues/6": {"title": "second", "body": "broken by #40"},
+        }
+        linked = mod.gh_linked_issue_text(self.pr_type, issues.get)
+        fix = pr("fullsend", 50, "", title="fix(#5): x", body="Closes fullsend-ai/agents#6")
+        found = mod.detect(fix, {}, no_sha, linked(fix))
+        self.assertIn("agents#40", found)
+
+    def test_lookup_failure_raises_instead_of_dropping_evidence(self):
+        def fail(args):
+            raise RuntimeError("gh: Bad Gateway (HTTP 502)")
+        self.pr_type.gh_json = fail
+        linked = mod.gh_linked_issue_text(self.pr_type)
+        with self.assertRaises(RuntimeError):
+            linked(pr("fullsend", 50, "", title="fix(#5): x"))
+        with self.assertRaises(RuntimeError):
+            mod.gh_sha_lookup(self.pr_type)("fullsend", "abc1234")
+
+    def test_missing_issue_or_commit_is_not_an_error(self):
+        def missing(args):
+            raise RuntimeError("gh: Not Found (HTTP 404)")
+        self.pr_type.gh_json = missing
+        self.assertEqual(mod.gh_linked_issue_text(self.pr_type)(pr("fullsend", 50, "", title="fix(#5): x")), "")
+        self.assertIsNone(mod.gh_sha_lookup(self.pr_type)("fullsend", "abc1234"))
 
 
 class TestPairWindow(unittest.TestCase):
