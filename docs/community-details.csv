@@ -1851,3 +1851,94 @@ date,repo,type,event,number,actor,title,url
 2026-10-11,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
 2026-10-11,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
 2026-10-11,pi-inference-gateway,pr,opened_core,35,waynesun09,"chore: release v0.1.3",https://github.com/fullsend-ai/pi-inference-gateway/pull/35
+2026-10-12,fullsend,issue,opened_external,8381,dhshah13,"Resolve child skill identities before the base merge",https://github.com/fullsend-ai/fullsend/issues/8381
+2026-10-12,fullsend,issue,opened_external,8379,gklein,"forge: 17 FakeClient read methods return internal storage instead of copies",https://github.com/fullsend-ai/fullsend/issues/8379
+2026-10-12,fullsend,issue,opened_external,8378,gklein,"forge: TestFakeClient_ErrorInjection covers 53 of 130 FakeClient methods",https://github.com/fullsend-ai/fullsend/issues/8378
+2026-10-12,fullsend,issue,opened_external,8371,mfrancisc,"check-e2e-authorization.sh policy duplicated between fullsend and agents with no drift guard",https://github.com/fullsend-ai/fullsend/issues/8371
+2026-10-12,fullsend,issue,opened_external,8370,jwm4,"gateway route: Messages-dialect models fail against a gateway that authenticates /v1/messages by x-api-key",https://github.com/fullsend-ai/fullsend/issues/8370
+2026-10-12,fullsend,issue,opened_external,8369,jwm4,"agent new: default sandbox image is stale, so a generated pi agent on a gateway/ model fails with ""Model not found""",https://github.com/fullsend-ai/fullsend/issues/8369
+2026-10-12,fullsend,issue,opened_external,8367,gwenneg,"repos install: GitHub scaffold commits are unsigned with user tokens and rejected by rulesets requiring verified signatures",https://github.com/fullsend-ai/fullsend/issues/8367
+2026-10-12,fullsend,issue,closed_other_external,8230,mfrancisc,"dispatch: role enablement ignores config.base.yaml and mismatches Go roles semantics",https://github.com/fullsend-ai/fullsend/issues/8230
+2026-10-12,fullsend,pr,opened_core,8362,ifireball,"chore(e2e): align pool provisioning with test apps",https://github.com/fullsend-ai/fullsend/pull/8362
+2026-10-12,fullsend,pr,reviewed_external,8231,mfrancisc,"fix(ci): require write permission for PR test authorization",https://github.com/fullsend-ai/fullsend/pull/8231
+2026-10-12,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,agents,issue,opened_external,1664,jflowers,"test: add automated skill→harness env var reachability test",https://github.com/fullsend-ai/agents/issues/1664
+2026-10-12,agents,issue,opened_external,1663,jflowers,"chore: store Dewey learning for skill→harness env var reachability gotcha",https://github.com/fullsend-ai/agents/issues/1663
+2026-10-12,agents,issue,closed_other_external,1663,jflowers,"chore: store Dewey learning for skill→harness env var reachability gotcha",https://github.com/fullsend-ai/agents/issues/1663
+2026-10-12,agents,issue,closed_via_pr_external,1621,jflowers,"review: expose REVIEW_GIT_FETCH_DEPTH (or derived signal) to sandbox for skipped/degraded distinction",https://github.com/fullsend-ai/agents/issues/1621
+2026-10-12,agents,pr,reviewed_external,1643,mfrancisc,"fix(ci): require write permission for PR test authorization",https://github.com/fullsend-ai/agents/pull/1643

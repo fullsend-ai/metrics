@@ -1131,3 +1131,15 @@ date,repo,prs_opened,prs_merged,prs_closed,issues_opened,issues_closed,releases,
 2026-10-11,pi-anthropic-vertex,0,0,0,0,0,0,0,0
 2026-10-11,auto-merge,0,0,0,0,0,0,0,0
 2026-10-11,pi-inference-gateway,4,6,0,0,5,1,0.30,0
+2026-10-12,fullsend,14,5,0,15,6,0,17.70,154
+2026-10-12,.fullsend,0,0,0,0,0,0,0,3
+2026-10-12,experiments,0,0,0,0,0,0,0,4
+2026-10-12,metrics,2,0,0,0,0,0,0,4
+2026-10-12,agents,5,3,0,3,3,0,142.20,92
+2026-10-12,autonomy-readiness,0,0,0,0,0,0,0,0
+2026-10-12,autonomy-analysis,0,0,0,0,0,0,0,0
+2026-10-12,pi-xai-vertex,0,0,0,0,0,0,0,0
+2026-10-12,adoption-analytics,0,0,0,0,0,0,0,0
+2026-10-12,pi-anthropic-vertex,0,0,0,0,0,0,0,0
+2026-10-12,auto-merge,0,0,0,0,0,0,0,0
+2026-10-12,pi-inference-gateway,0,0,0,0,0,0,0,0

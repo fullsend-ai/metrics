@@ -2043,3 +2043,11 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-11,fullsend,8306,fix(#8305)!: fail run when agent fails without a validation loop,fix,core,8305,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8306
 2026-10-11,agents,1658,chore(harness): pin fleet images to the v0.47.1-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1658
 2026-10-11,agents,1652,chore(harness): pin fleet images to the v0.47.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1652
+2026-10-12,fullsend,8358,test(#5613)!: cover unauthorized-actor fork PR denial on harness-dispatch,test,,,,https://github.com/fullsend-ai/fullsend/pull/8358
+2026-10-12,fullsend,8354,fix(#8353): paginate review-body pre-fetch and wire it into the fix job,fix,core,8353,ggallen,https://github.com/fullsend-ai/fullsend/pull/8354
+2026-10-12,fullsend,8348,chore(#8035): remove this repo's eval/triage functional-test suite,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8348
+2026-10-12,fullsend,8324,chore(tooling): add optional Atlassian CLI to mise,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8324
+2026-10-12,fullsend,7852,fix(#7849)!: fail before sandbox create when harness has no policy,fix,core,7849,waynesun09,https://github.com/fullsend-ai/fullsend/pull/7852
+2026-10-12,agents,1636,fix(review): gate re-review severity transitions,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1636
+2026-10-12,agents,1624,fix(#1621): force degraded risk status on failed Tier 2 deepen,fix,external,1621,jflowers,https://github.com/fullsend-ai/agents/pull/1624
+2026-10-12,agents,1615,fix(#1614): escalate severity for multi-issue scope bundling,fix,bot,1614,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1615
