@@ -136,10 +136,12 @@
   function showTooltip(event, html) {
     tooltip.html(html).style("opacity", 1);
     // Flip to the cursor's left when the tooltip would run off the page.
+    // Keep it inside the viewport on narrow screens.
     const width = tooltip.node().offsetWidth;
-    const overflows = event.pageX + 12 + width > window.scrollX + document.documentElement.clientWidth;
+    const right = window.scrollX + document.documentElement.clientWidth;
+    const left = event.pageX + 12 + width > right ? event.pageX - 12 - width : event.pageX + 12;
     tooltip
-      .style("left", (overflows ? event.pageX - 12 - width : event.pageX + 12) + "px")
+      .style("left", Math.max(window.scrollX + 4, Math.min(left, right - width - 4)) + "px")
       .style("top", (event.pageY - 12) + "px");
   }
   // Park it off-page: a hidden tooltip left in place can widen the page.
@@ -306,7 +308,7 @@
     render();
   });
 
-  window.addEventListener("resize", () => render());
+  window.addEventListener("resize", () => { hideTooltip(); render(); });
   // Cards use live CSS vars; charts need a re-resolve + redraw when the scheme flips.
   const colorScheme = window.matchMedia("(prefers-color-scheme: light)");
   if (typeof colorScheme.addEventListener === "function") {

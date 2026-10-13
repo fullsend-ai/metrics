@@ -64,10 +64,12 @@
   function showTooltip(event, html) {
     tooltip.html(html).style("opacity", 1);
     // Flip to the cursor's left when the tooltip would run off the page.
+    // Keep it inside the viewport on narrow screens.
     const width = tooltip.node().offsetWidth;
-    const overflows = event.pageX + 12 + width > window.scrollX + document.documentElement.clientWidth;
+    const right = window.scrollX + document.documentElement.clientWidth;
+    const left = event.pageX + 12 + width > right ? event.pageX - 12 - width : event.pageX + 12;
     tooltip
-      .style("left", (overflows ? event.pageX - 12 - width : event.pageX + 12) + "px")
+      .style("left", Math.max(window.scrollX + 4, Math.min(left, right - width - 4)) + "px")
       .style("top", (event.pageY - 12) + "px");
   }
 
@@ -112,15 +114,25 @@
   function toggleFocus(chartId, seriesName) {
     focusedSeries[chartId] = focusedSeries[chartId] === seriesName ? null : seriesName;
     render();
+    // render() replaced the legend buttons; keep keyboard focus on the one pressed.
+    const buttons = document.querySelectorAll(`.chart-legend[data-chart="${chartId}"] button`);
+    const pressed = [...buttons].find(b => b.dataset.series === seriesName);
+    if (pressed) pressed.focus();
   }
 
   function makeLegend(g, chartId, items) {
     const container = d3.select(g.node().ownerSVGElement.parentNode);
     container.select(".chart-legend").remove();
-    const legend = container.append("div").attr("class", "chart-legend");
+    // The focused series can drop out when the range or repo changes: clear it and redraw.
+    if (focusedSeries[chartId] && !items.some(item => item.name === focusedSeries[chartId])) {
+      focusedSeries[chartId] = null;
+      queueMicrotask(render);
+    }
+    const legend = container.append("div").attr("class", "chart-legend").attr("data-chart", chartId);
     items.forEach(item => {
       const button = legend.append("button")
         .attr("type", "button")
+        .attr("data-series", item.name)
         .attr("class", "chart-legend-item")
         .classed("dimmed", !isFocused(chartId, item.name))
         .attr("aria-pressed", focusedSeries[chartId] === item.name)
@@ -1234,7 +1246,8 @@
   let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(render, 150);
+    // The redraw removes the hovered chart without a mouseleave, so hide the tooltip first.
+    resizeTimer = setTimeout(() => { hideTooltip(); render(); }, 150);
   });
 
   // --- ToC scroll spy ---
