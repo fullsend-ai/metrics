@@ -2051,3 +2051,20 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-12,agents,1636,fix(review): gate re-review severity transitions,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1636
 2026-10-12,agents,1624,fix(#1621): force degraded risk status on failed Tier 2 deepen,fix,external,1621,jflowers,https://github.com/fullsend-ai/agents/pull/1624
 2026-10-12,agents,1615,fix(#1614): escalate severity for multi-issue scope bundling,fix,bot,1614,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1615
+2026-10-13,fullsend,8406,fix(#8405): accept unreadable GitLab variable scopes for the fast path,fix,core,8405,ggallen,https://github.com/fullsend-ai/fullsend/pull/8406
+2026-10-13,fullsend,8397,feat(#8243)!: hand off GitLab webhook trigger to a fresh Poller generation,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8397
+2026-10-13,fullsend,8396,docs(#8386): clarify GitLab repos status inventory and Poller checks,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8396
+2026-10-13,fullsend,8388,test(#8387): add GitHub mint scope and workflow-host behaviour tests,test,,,,https://github.com/fullsend-ai/fullsend/pull/8388
+2026-10-13,fullsend,8376,test(#1135): cover UploadDir in-tree symlink preservation,test,,,,https://github.com/fullsend-ai/fullsend/pull/8376
+2026-10-13,fullsend,8373,test(prior-review): cover HTML-comment-wrapped Head SHA extraction,test,,,,https://github.com/fullsend-ai/fullsend/pull/8373
+2026-10-13,fullsend,8365,docs(#1788): document fix-agent control labels in bugfix guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8365
+2026-10-13,fullsend,8362,chore(e2e): align pool provisioning with test apps,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8362
+2026-10-13,fullsend,8361,fix(#7903): add missing workflow_dispatch input descriptions to prioritize scaffold,fix,external,7903,TomasTomecek,https://github.com/fullsend-ai/fullsend/pull/8361
+2026-10-13,fullsend,8360,refactor(tracker): Interface scaffolding for future Move functionality,other,,,,https://github.com/fullsend-ai/fullsend/pull/8360
+2026-10-13,fullsend,8328,fix(#5184): skip .fullsend-cache in scaffold embed walks,fix,core,5184,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/8328
+2026-10-13,fullsend,8313,feat(#8242)!: activate GitLab role service-account lifecycle,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8313
+2026-10-13,fullsend,8158,docs(adr): define actor-attributed data security boundary,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8158
+2026-10-13,agents,1671,fix(#1669): accept nested GitLab paths in review-result repo,fix,bot,1669,fullsend-ai-triage[bot],https://github.com/fullsend-ai/agents/pull/1671
+2026-10-13,agents,1668,test(schemas): cover review per-action required fields,test,,,,https://github.com/fullsend-ai/agents/pull/1668
+2026-10-13,agents,1665,test(scripts): add skill env var reachability test,test,,,,https://github.com/fullsend-ai/agents/pull/1665
+2026-10-13,agents,1635,feat(review): honor verified human-resolved findings,feat,,,,https://github.com/fullsend-ai/agents/pull/1635

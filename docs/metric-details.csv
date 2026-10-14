@@ -16012,3 +16012,68 @@ date,repo,type,event,number,title,url
 2026-10-12,agents,issue,closed,1663,"chore: store Dewey learning for skill→harness env var reachability gotcha",https://github.com/fullsend-ai/agents/issues/1663
 2026-10-12,agents,issue,closed,1621,"review: expose REVIEW_GIT_FETCH_DEPTH (or derived signal) to sandbox for skipped/degraded distinction",https://github.com/fullsend-ai/agents/issues/1621
 2026-10-12,agents,issue,closed,1614,"Review agent should escalate scope-bundling to medium severity when PR spans distinct problem domains",https://github.com/fullsend-ai/agents/issues/1614
+2026-10-13,fullsend,pr,opened,8406,"fix(#8405): accept unreadable GitLab variable scopes for the fast path",https://github.com/fullsend-ai/fullsend/pull/8406
+2026-10-13,fullsend,pr,opened,8400,"fix(#8192): read mint_url from config.yaml/config.base.yaml in fullsend run",https://github.com/fullsend-ai/fullsend/pull/8400
+2026-10-13,fullsend,pr,opened,8399,"chore(deps): update dependency vue to v3.5.44",https://github.com/fullsend-ai/fullsend/pull/8399
+2026-10-13,fullsend,pr,opened,8397,"feat(#8243)!: hand off GitLab webhook trigger to a fresh Poller generation",https://github.com/fullsend-ai/fullsend/pull/8397
+2026-10-13,fullsend,pr,opened,8396,"docs(#8386): clarify GitLab repos status inventory and Poller checks",https://github.com/fullsend-ai/fullsend/pull/8396
+2026-10-13,fullsend,pr,opened,8394,"chore(#8392): provision mint-status team in e2e org setup",https://github.com/fullsend-ai/fullsend/pull/8394
+2026-10-13,fullsend,pr,opened,8391,"docs(#6030): add sibling-subcommand doc guidance to AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/8391
+2026-10-13,fullsend,pr,opened,8388,"test(#8387): add GitHub mint scope and workflow-host behaviour tests",https://github.com/fullsend-ai/fullsend/pull/8388
+2026-10-13,fullsend,pr,opened,8385,"chore(deps): update actions/create-github-app-token digest to 64ab729",https://github.com/fullsend-ai/fullsend/pull/8385
+2026-10-13,fullsend,pr,opened,8384,"refactor(codex): generate native role files for skill personas",https://github.com/fullsend-ai/fullsend/pull/8384
+2026-10-13,fullsend,pr,merged,8406,"fix(#8405): accept unreadable GitLab variable scopes for the fast path",https://github.com/fullsend-ai/fullsend/pull/8406
+2026-10-13,fullsend,pr,merged,8397,"feat(#8243)!: hand off GitLab webhook trigger to a fresh Poller generation",https://github.com/fullsend-ai/fullsend/pull/8397
+2026-10-13,fullsend,pr,merged,8396,"docs(#8386): clarify GitLab repos status inventory and Poller checks",https://github.com/fullsend-ai/fullsend/pull/8396
+2026-10-13,fullsend,pr,merged,8388,"test(#8387): add GitHub mint scope and workflow-host behaviour tests",https://github.com/fullsend-ai/fullsend/pull/8388
+2026-10-13,fullsend,pr,merged,8376,"test(#1135): cover UploadDir in-tree symlink preservation",https://github.com/fullsend-ai/fullsend/pull/8376
+2026-10-13,fullsend,pr,merged,8373,"test(prior-review): cover HTML-comment-wrapped Head SHA extraction",https://github.com/fullsend-ai/fullsend/pull/8373
+2026-10-13,fullsend,pr,merged,8365,"docs(#1788): document fix-agent control labels in bugfix guide",https://github.com/fullsend-ai/fullsend/pull/8365
+2026-10-13,fullsend,pr,merged,8362,"chore(e2e): align pool provisioning with test apps",https://github.com/fullsend-ai/fullsend/pull/8362
+2026-10-13,fullsend,pr,merged,8361,"fix(#7903): add missing workflow_dispatch input descriptions to prioritize scaffold",https://github.com/fullsend-ai/fullsend/pull/8361
+2026-10-13,fullsend,pr,merged,8360,"refactor(tracker): Interface scaffolding for future Move functionality",https://github.com/fullsend-ai/fullsend/pull/8360
+2026-10-13,fullsend,pr,merged,8328,"fix(#5184): skip .fullsend-cache in scaffold embed walks",https://github.com/fullsend-ai/fullsend/pull/8328
+2026-10-13,fullsend,pr,merged,8313,"feat(#8242)!: activate GitLab role service-account lifecycle",https://github.com/fullsend-ai/fullsend/pull/8313
+2026-10-13,fullsend,pr,merged,8158,"docs(adr): define actor-attributed data security boundary",https://github.com/fullsend-ai/fullsend/pull/8158
+2026-10-13,fullsend,issue,opened,8405,"GitLab webhook fast path requires privileged variable-scope access for project installs",https://github.com/fullsend-ai/fullsend/issues/8405
+2026-10-13,fullsend,issue,opened,8404,"Dispatch routing never re-triggers Review stage after a PR author dismisses the bot's CHANGES_REQUESTED review without new commits",https://github.com/fullsend-ai/fullsend/issues/8404
+2026-10-13,fullsend,issue,opened,8403,"runtime: share the sub-agent runtime notes between pi and Codex",https://github.com/fullsend-ai/fullsend/issues/8403
+2026-10-13,fullsend,issue,opened,8402,"Dispatch should reject or no-op cleanly when /fs-triage is invoked on a PR comment, instead of failing with a raw 403",https://github.com/fullsend-ai/fullsend/issues/8402
+2026-10-13,fullsend,issue,opened,8401,"jira-poll: avoid requiring Administer Projects permission for actor authorization",https://github.com/fullsend-ai/fullsend/issues/8401
+2026-10-13,fullsend,issue,opened,8398,"Update the author-fullsend-augmentations skill caveat for declared-name skill identity",https://github.com/fullsend-ai/fullsend/issues/8398
+2026-10-13,fullsend,issue,opened,8395,"behaviourtest: cover user-token signed scaffold commits under a required_signatures ruleset",https://github.com/fullsend-ai/fullsend/issues/8395
+2026-10-13,fullsend,issue,opened,8393,"test(behaviour): verify CLI mint status with GitHub user-token auth",https://github.com/fullsend-ai/fullsend/issues/8393
+2026-10-13,fullsend,issue,opened,8392,"ops(e2e): provision mint-status team membership in halfsend orgs",https://github.com/fullsend-ai/fullsend/issues/8392
+2026-10-13,fullsend,issue,opened,8390,"review: agent-result.json repo field fails schema validation for nested GitLab group paths",https://github.com/fullsend-ai/fullsend/issues/8390
+2026-10-13,fullsend,issue,opened,8389,"Dispatch should skip re-review when the head commit was already reviewed",https://github.com/fullsend-ai/fullsend/issues/8389
+2026-10-13,fullsend,issue,opened,8387,"test(behaviour): add GitHub BT coverage for mint scope and workflow-host authorization",https://github.com/fullsend-ai/fullsend/issues/8387
+2026-10-13,fullsend,issue,opened,8386,"docs(gitlab): clarify role inventory and Poller access checks in repos status",https://github.com/fullsend-ai/fullsend/issues/8386
+2026-10-13,fullsend,issue,closed,8405,"GitLab webhook fast path requires privileged variable-scope access for project installs",https://github.com/fullsend-ai/fullsend/issues/8405
+2026-10-13,fullsend,issue,closed,8390,"review: agent-result.json repo field fails schema validation for nested GitLab group paths",https://github.com/fullsend-ai/fullsend/issues/8390
+2026-10-13,fullsend,issue,closed,8387,"test(behaviour): add GitHub BT coverage for mint scope and workflow-host authorization",https://github.com/fullsend-ai/fullsend/issues/8387
+2026-10-13,fullsend,issue,closed,8386,"docs(gitlab): clarify role inventory and Poller access checks in repos status",https://github.com/fullsend-ai/fullsend/issues/8386
+2026-10-13,fullsend,issue,closed,8243,"feat(gitlab)!: live fresh-identity poller handoff adapter (enable webhook fast-path)",https://github.com/fullsend-ai/fullsend/issues/8243
+2026-10-13,fullsend,issue,closed,8242,"feat(gitlab)!: activate service-account lifecycle + flip rotation-state writer to versioned format",https://github.com/fullsend-ai/fullsend/issues/8242
+2026-10-13,fullsend,issue,closed,7903,"prioritize.yml scaffold template: workflow_dispatch inputs missing required description fields",https://github.com/fullsend-ai/fullsend/issues/7903
+2026-10-13,fullsend,issue,closed,5885,"cli: mint status Cloudflare Access auth against /v1/status",https://github.com/fullsend-ai/fullsend/issues/5885
+2026-10-13,fullsend,issue,closed,5881,"mint: support Cloudflare Access Managed OAuth for GET /v1/status",https://github.com/fullsend-ai/fullsend/issues/5881
+2026-10-13,fullsend,issue,closed,5184,"github setup commits .fullsend-cache/ to config repos via embedded scaffold",https://github.com/fullsend-ai/fullsend/issues/5184
+2026-10-13,fullsend,issue,closed,1788,"docs: update bugfix-workflow guide to document fix agent and /fs-fix commands",https://github.com/fullsend-ai/fullsend/issues/1788
+2026-10-13,fullsend,issue,closed,1135,"Follow-up from PR #1079: TestUploadDir_OpenshellNotInPath only exercises the error path. The happy path (tarba...",https://github.com/fullsend-ai/fullsend/issues/1135
+2026-10-13,fullsend,issue,closed,1031,"test(prior-review): pre-fetch-prior-review.sh SHA extraction regex has no test coverage",https://github.com/fullsend-ai/fullsend/issues/1031
+2026-10-13,fullsend,issue,closed,922,"test(schemas): add validation tests for review actions `request-changes`, `comment`, and `failure`",https://github.com/fullsend-ai/fullsend/issues/922
+2026-10-13,agents,pr,opened,1674,"fix(#1673): isolate public-text secret scans",https://github.com/fullsend-ai/agents/pull/1674
+2026-10-13,agents,pr,opened,1671,"fix(#1669): accept nested GitLab paths in review-result repo",https://github.com/fullsend-ai/agents/pull/1671
+2026-10-13,agents,pr,opened,1668,"test(schemas): cover review per-action required fields",https://github.com/fullsend-ai/agents/pull/1668
+2026-10-13,agents,pr,merged,1671,"fix(#1669): accept nested GitLab paths in review-result repo",https://github.com/fullsend-ai/agents/pull/1671
+2026-10-13,agents,pr,merged,1668,"test(schemas): cover review per-action required fields",https://github.com/fullsend-ai/agents/pull/1668
+2026-10-13,agents,pr,merged,1665,"test(scripts): add skill env var reachability test",https://github.com/fullsend-ai/agents/pull/1665
+2026-10-13,agents,pr,merged,1635,"feat(review): honor verified human-resolved findings",https://github.com/fullsend-ai/agents/pull/1635
+2026-10-13,agents,issue,opened,1673,"Harden secret scanning of agent-authored issue context and PR descriptions",https://github.com/fullsend-ai/agents/issues/1673
+2026-10-13,agents,issue,opened,1672,"pr-risk-assessment skill path is not runtime-neutral",https://github.com/fullsend-ai/agents/issues/1672
+2026-10-13,agents,issue,opened,1670,"Add intra-run multi-pass convergence loop to review orchestrator",https://github.com/fullsend-ai/agents/issues/1670
+2026-10-13,agents,issue,opened,1669,"review-result schema: `repo` pattern rejects nested GitLab group paths",https://github.com/fullsend-ai/agents/issues/1669
+2026-10-13,agents,issue,opened,1667,"test(schemas): add negative tests for review-result per-action required fields",https://github.com/fullsend-ai/agents/issues/1667
+2026-10-13,agents,issue,closed,1669,"review-result schema: `repo` pattern rejects nested GitLab group paths",https://github.com/fullsend-ai/agents/issues/1669
+2026-10-13,agents,issue,closed,1667,"test(schemas): add negative tests for review-result per-action required fields",https://github.com/fullsend-ai/agents/issues/1667
+2026-10-13,agents,issue,closed,1664,"test: add automated skill→harness env var reachability test",https://github.com/fullsend-ai/agents/issues/1664

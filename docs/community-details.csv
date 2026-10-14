@@ -1942,3 +1942,52 @@ date,repo,type,event,number,actor,title,url
 2026-10-12,agents,issue,closed_other_external,1663,jflowers,"chore: store Dewey learning for skill→harness env var reachability gotcha",https://github.com/fullsend-ai/agents/issues/1663
 2026-10-12,agents,issue,closed_via_pr_external,1621,jflowers,"review: expose REVIEW_GIT_FETCH_DEPTH (or derived signal) to sandbox for skipped/degraded distinction",https://github.com/fullsend-ai/agents/issues/1621
 2026-10-12,agents,pr,reviewed_external,1643,mfrancisc,"fix(ci): require write permission for PR test authorization",https://github.com/fullsend-ai/agents/pull/1643
+2026-10-13,fullsend,issue,opened_external,8401,jasonawant,"jira-poll: avoid requiring Administer Projects permission for actor authorization",https://github.com/fullsend-ai/fullsend/issues/8401
+2026-10-13,fullsend,issue,opened_external,8398,dhshah13,"Update the author-fullsend-augmentations skill caveat for declared-name skill identity",https://github.com/fullsend-ai/fullsend/issues/8398
+2026-10-13,fullsend,issue,opened_external,8395,gwenneg,"behaviourtest: cover user-token signed scaffold commits under a required_signatures ruleset",https://github.com/fullsend-ai/fullsend/issues/8395
+2026-10-13,fullsend,issue,opened_external,8390,ccronca,"review: agent-result.json repo field fails schema validation for nested GitLab group paths",https://github.com/fullsend-ai/fullsend/issues/8390
+2026-10-13,fullsend,issue,closed_other_external,8390,ccronca,"review: agent-result.json repo field fails schema validation for nested GitLab group paths",https://github.com/fullsend-ai/fullsend/issues/8390
+2026-10-13,fullsend,issue,closed_via_pr_external,7903,TomasTomecek,"prioritize.yml scaffold template: workflow_dispatch inputs missing required description fields",https://github.com/fullsend-ai/fullsend/issues/7903
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,agents,issue,opened_external,1673,shairevivo,"Harden secret scanning of agent-authored issue context and PR descriptions",https://github.com/fullsend-ai/agents/issues/1673
+2026-10-13,agents,issue,opened_external,1672,jflowers,"pr-risk-assessment skill path is not runtime-neutral",https://github.com/fullsend-ai/agents/issues/1672
+2026-10-13,agents,issue,opened_external,1670,jflowers,"Add intra-run multi-pass convergence loop to review orchestrator",https://github.com/fullsend-ai/agents/issues/1670
+2026-10-13,agents,issue,opened_external,1667,gklein,"test(schemas): add negative tests for review-result per-action required fields",https://github.com/fullsend-ai/agents/issues/1667
+2026-10-13,agents,issue,closed_via_pr_external,1667,gklein,"test(schemas): add negative tests for review-result per-action required fields",https://github.com/fullsend-ai/agents/issues/1667
+2026-10-13,agents,issue,closed_via_pr_external,1664,jflowers,"test: add automated skill→harness env var reachability test",https://github.com/fullsend-ai/agents/issues/1664
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
