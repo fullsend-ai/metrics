@@ -16077,3 +16077,82 @@ date,repo,type,event,number,title,url
 2026-10-13,agents,issue,closed,1669,"review-result schema: `repo` pattern rejects nested GitLab group paths",https://github.com/fullsend-ai/agents/issues/1669
 2026-10-13,agents,issue,closed,1667,"test(schemas): add negative tests for review-result per-action required fields",https://github.com/fullsend-ai/agents/issues/1667
 2026-10-13,agents,issue,closed,1664,"test: add automated skill→harness env var reachability test",https://github.com/fullsend-ai/agents/issues/1664
+2026-10-14,fullsend,pr,opened,8445,"feat(#8443): record model fallback reasons and unify fallback warnings",https://github.com/fullsend-ai/fullsend/pull/8445
+2026-10-14,fullsend,pr,opened,8444,"feat(#8219)!: make repos.yaml the only source of install settings",https://github.com/fullsend-ai/fullsend/pull/8444
+2026-10-14,fullsend,pr,opened,8442,"docs(#8440): add model and effort tuning guidance to adoption guide",https://github.com/fullsend-ai/fullsend/pull/8442
+2026-10-14,fullsend,pr,opened,8441,"feat(#8437): manage GitLab trigger account and protected-ref resources",https://github.com/fullsend-ai/fullsend/pull/8441
+2026-10-14,fullsend,pr,opened,8435,"feat(#8434)!: replace repos set-default with schema-aware repos set",https://github.com/fullsend-ai/fullsend/pull/8435
+2026-10-14,fullsend,pr,opened,8433,"refactor(#8430): add GitLab deploy-key transport for protected branches",https://github.com/fullsend-ai/fullsend/pull/8433
+2026-10-14,fullsend,pr,opened,8431,"feat(#8426)!: default Claude aliases to 5.5 with automatic fallback",https://github.com/fullsend-ai/fullsend/pull/8431
+2026-10-14,fullsend,pr,opened,8428,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-14,fullsend,pr,opened,8425,"fix(dispatch): count prior fix commits by their Authored-by trailer too",https://github.com/fullsend-ai/fullsend/pull/8425
+2026-10-14,fullsend,pr,opened,8423,"docs(#8420): specify normalized entity v1 for ADR 0098",https://github.com/fullsend-ai/fullsend/pull/8423
+2026-10-14,fullsend,pr,opened,8422,"docs(#8421): record entity-source discovery requirements for ADR 0098",https://github.com/fullsend-ai/fullsend/pull/8422
+2026-10-14,fullsend,pr,opened,8417,"chore(#8416): drop legacy hosted-mint check from e2e org setup",https://github.com/fullsend-ai/fullsend/pull/8417
+2026-10-14,fullsend,pr,opened,8415,"feat(#8413): add GitHub bot-role lookup and behaviour matrix",https://github.com/fullsend-ai/fullsend/pull/8415
+2026-10-14,fullsend,pr,opened,8411,"feat(#8409)!: grant replacement GitLab Poller its protected-branch access",https://github.com/fullsend-ai/fullsend/pull/8411
+2026-10-14,fullsend,pr,opened,8410,"feat(#8244): retire superseded GitLab Poller generation on install",https://github.com/fullsend-ai/fullsend/pull/8410
+2026-10-14,fullsend,pr,opened,8408,"feat(#8407)!: drop GitLab inherited-variable acceptance gate",https://github.com/fullsend-ai/fullsend/pull/8408
+2026-10-14,fullsend,pr,merged,8442,"docs(#8440): add model and effort tuning guidance to adoption guide",https://github.com/fullsend-ai/fullsend/pull/8442
+2026-10-14,fullsend,pr,merged,8435,"feat(#8434)!: replace repos set-default with schema-aware repos set",https://github.com/fullsend-ai/fullsend/pull/8435
+2026-10-14,fullsend,pr,merged,8433,"refactor(#8430): add GitLab deploy-key transport for protected branches",https://github.com/fullsend-ai/fullsend/pull/8433
+2026-10-14,fullsend,pr,merged,8431,"feat(#8426)!: default Claude aliases to 5.5 with automatic fallback",https://github.com/fullsend-ai/fullsend/pull/8431
+2026-10-14,fullsend,pr,merged,8408,"feat(#8407)!: drop GitLab inherited-variable acceptance gate",https://github.com/fullsend-ai/fullsend/pull/8408
+2026-10-14,fullsend,pr,merged,8394,"chore(#8392): provision mint-status team in e2e org setup",https://github.com/fullsend-ai/fullsend/pull/8394
+2026-10-14,fullsend,pr,merged,8377,"test(#2983): run every FakeClient method concurrently and fix aliasing races",https://github.com/fullsend-ai/fullsend/pull/8377
+2026-10-14,fullsend,pr,merged,8339,"fix(#7902): two spaces before inline version comments",https://github.com/fullsend-ai/fullsend/pull/8339
+2026-10-14,fullsend,pr,merged,7080,"docs(#6407): adopt deterministic entity context staging",https://github.com/fullsend-ai/fullsend/pull/7080
+2026-10-14,fullsend,pr,closed,8375,"docs(#8219): document the github setup to repos install migration",https://github.com/fullsend-ai/fullsend/pull/8375
+2026-10-14,fullsend,issue,opened,8443,"runtime: model fallback UX and hygiene follow-ups from #8431",https://github.com/fullsend-ai/fullsend/issues/8443
+2026-10-14,fullsend,issue,opened,8440,"docs(adoption): add model and effort tuning guidance to the Walk stage",https://github.com/fullsend-ai/fullsend/issues/8440
+2026-10-14,fullsend,issue,opened,8439,"Review dispatch should no-op when head SHA already has a current (non-dismissed) review",https://github.com/fullsend-ai/fullsend/issues/8439
+2026-10-14,fullsend,issue,opened,8438,"GitLab: activate protected-branch webhook and schedule dispatch",https://github.com/fullsend-ai/fullsend/issues/8438
+2026-10-14,fullsend,issue,opened,8437,"GitLab: converge trigger-only service account and protected-ref resources",https://github.com/fullsend-ai/fullsend/issues/8437
+2026-10-14,fullsend,issue,opened,8436,"Publish an official MacOS Homebrew tap from the release pipeline",https://github.com/fullsend-ai/fullsend/issues/8436
+2026-10-14,fullsend,issue,opened,8434,"Replace repos set-default with schema-aware repos set for any repos.yaml path",https://github.com/fullsend-ai/fullsend/issues/8434
+2026-10-14,fullsend,issue,opened,8432,"Skip review dispatch when PR has zero changed files",https://github.com/fullsend-ai/fullsend/issues/8432
+2026-10-14,fullsend,issue,opened,8430,"GitLab: enable protected-branch dispatch on Free without per-user merge grants",https://github.com/fullsend-ai/fullsend/issues/8430
+2026-10-14,fullsend,issue,opened,8429,"NFKC sanitizer's ""characters affected"" count overreports by orders of magnitude",https://github.com/fullsend-ai/fullsend/issues/8429
+2026-10-14,fullsend,issue,opened,8427,"docs: clarify review-first contribution paths and evidence for role requests in LADDER.md",https://github.com/fullsend-ai/fullsend/issues/8427
+2026-10-14,fullsend,issue,opened,8426,"runtime: default Claude aliases to the 5.5 series, with automatic fallback when the Vertex project does not serve them",https://github.com/fullsend-ai/fullsend/issues/8426
+2026-10-14,fullsend,issue,opened,8424,"Risk-assessment agent: cache verdict when driving signals are unchanged across commits",https://github.com/fullsend-ai/fullsend/issues/8424
+2026-10-14,fullsend,issue,opened,8421,"Clarify entity-source discovery requirements for ADR 0098",https://github.com/fullsend-ai/fullsend/issues/8421
+2026-10-14,fullsend,issue,opened,8420,"Specify normalized entity v1 for ADR 0098",https://github.com/fullsend-ai/fullsend/issues/8420
+2026-10-14,fullsend,issue,opened,8418,"Implement ADR 0098 entity-first harness evaluation",https://github.com/fullsend-ai/fullsend/issues/8418
+2026-10-14,fullsend,issue,opened,8416,"test setup: remove legacy hosted-mint checks and configuration",https://github.com/fullsend-ai/fullsend/issues/8416
+2026-10-14,fullsend,issue,opened,8414,"Consolidate platform actor authorization into one behavior matrix",https://github.com/fullsend-ai/fullsend/issues/8414
+2026-10-14,fullsend,issue,opened,8413,"Add GitHub bot-role lookup behavior matrix for ADR 0107",https://github.com/fullsend-ai/fullsend/issues/8413
+2026-10-14,fullsend,issue,opened,8412,"Security hook `tirith_check` emits HIGH `analysis_incomplete` blocks on unparseable bash fragments",https://github.com/fullsend-ai/fullsend/issues/8412
+2026-10-14,fullsend,issue,opened,8409,"GitLab replacement Poller needs a manual protected-branch grant to activate webhook",https://github.com/fullsend-ai/fullsend/issues/8409
+2026-10-14,fullsend,issue,opened,8407,"GitLab webhook: remove inherited-variable acceptance gate and setting",https://github.com/fullsend-ai/fullsend/issues/8407
+2026-10-14,fullsend,issue,closed,8440,"docs(adoption): add model and effort tuning guidance to the Walk stage",https://github.com/fullsend-ai/fullsend/issues/8440
+2026-10-14,fullsend,issue,closed,8434,"Replace repos set-default with schema-aware repos set for any repos.yaml path",https://github.com/fullsend-ai/fullsend/issues/8434
+2026-10-14,fullsend,issue,closed,8426,"runtime: default Claude aliases to the 5.5 series, with automatic fallback when the Vertex project does not serve them",https://github.com/fullsend-ai/fullsend/issues/8426
+2026-10-14,fullsend,issue,closed,8409,"GitLab replacement Poller needs a manual protected-branch grant to activate webhook",https://github.com/fullsend-ai/fullsend/issues/8409
+2026-10-14,fullsend,issue,closed,8407,"GitLab webhook: remove inherited-variable acceptance gate and setting",https://github.com/fullsend-ai/fullsend/issues/8407
+2026-10-14,fullsend,issue,closed,8392,"ops(e2e): provision mint-status team membership in halfsend orgs",https://github.com/fullsend-ai/fullsend/issues/8392
+2026-10-14,fullsend,issue,closed,7902,"Scaffold workflow templates use single space before inline comments, violating yamllint defaults",https://github.com/fullsend-ai/fullsend/issues/7902
+2026-10-14,fullsend,issue,closed,2983,"Require thread safety test coverage when adding new forge.Client methods",https://github.com/fullsend-ai/fullsend/issues/2983
+2026-10-14,rfe-creator,pr,opened,225,"submit: a Jira parent with no task in the workspace is a hierarchy link, not a split",https://github.com/fullsend-ai/rfe-creator/pull/225
+2026-10-14,rfe-creator,pr,merged,225,"submit: a Jira parent with no task in the workspace is a hierarchy link, not a split",https://github.com/fullsend-ai/rfe-creator/pull/225
+2026-10-14,rfe-creator,pr,merged,221,"User guide: working with work item types (AISDLC-222)",https://github.com/fullsend-ai/rfe-creator/pull/221
+2026-10-14,agent-eval-harness,pr,opened,254,"fix(score): confine agent judges deny-by-default",https://github.com/fullsend-ai/agent-eval-harness/pull/254
+2026-10-14,agent-eval-harness,pr,opened,252,"ci: key the publish guards on the fork flag, not the repo slug",https://github.com/fullsend-ai/agent-eval-harness/pull/252
+2026-10-14,agent-eval-harness,pr,opened,251,"feat(judge): carry the verdict as a structured output, with the forced tool call as the fallback (spec 015)",https://github.com/fullsend-ai/agent-eval-harness/pull/251
+2026-10-14,agent-eval-harness,pr,opened,250,"fix(judge): step the tool_choice ladder down on a 400 that names tool_choice",https://github.com/fullsend-ai/agent-eval-harness/pull/250
+2026-10-14,agent-eval-harness,pr,merged,250,"fix(judge): step the tool_choice ladder down on a 400 that names tool_choice",https://github.com/fullsend-ai/agent-eval-harness/pull/250
+2026-10-14,agent-eval-harness,issue,opened,253,"Agent judges are not confined: Read/Write unscoped, MCP uncovered, no evidence a deny fired",https://github.com/fullsend-ai/agent-eval-harness/issues/253
+2026-10-14,strat-creator,pr,opened,84,"Add 3.8 label and target versions to pipeline config",https://github.com/fullsend-ai/strat-creator/pull/84
+2026-10-14,strat-creator,pr,merged,84,"Add 3.8 label and target versions to pipeline config",https://github.com/fullsend-ai/strat-creator/pull/84
+2026-10-14,strat-creator,pr,merged,76,"types: add the rfe-strategy descriptor, its schema and a validator",https://github.com/fullsend-ai/strat-creator/pull/76
+2026-10-14,odh-test-gen,pr,opened,73,"Preserve auto_revised across review reassessment",https://github.com/fullsend-ai/odh-test-gen/pull/73
+2026-10-14,odh-test-gen,pr,merged,73,"Preserve auto_revised across review reassessment",https://github.com/fullsend-ai/odh-test-gen/pull/73
+2026-10-14,odh-test-gen,issue,closed,71,"Preserve auto_revised across review reassessment",https://github.com/fullsend-ai/odh-test-gen/issues/71
+2026-10-14,agents,pr,opened,1679,"docs(agents): require direct review-thread replies",https://github.com/fullsend-ai/agents/pull/1679
+2026-10-14,agents,pr,opened,1678,"feat(#1676): add Jira issue creation support to scribe",https://github.com/fullsend-ai/agents/pull/1678
+2026-10-14,agents,pr,opened,1677,"refactor(skills): migrate pr-risk-assessment from CLAUDE_CONFIG_DIR to FULLSEND_SKILLS_DIR",https://github.com/fullsend-ai/agents/pull/1677
+2026-10-14,agents,pr,opened,1675,"feat(#357)!: create agent commits through the GitHub API so they are signed",https://github.com/fullsend-ai/agents/pull/1675
+2026-10-14,agents,pr,merged,1660,"fix(#1655): have triage verify fix-target files exist in the repo",https://github.com/fullsend-ai/agents/pull/1660
+2026-10-14,agents,pr,closed,1679,"docs(agents): require direct review-thread replies",https://github.com/fullsend-ai/agents/pull/1679
+2026-10-14,agents,issue,closed,1655,"Triage agent should verify fix-target files exist in the current repo before recommending changes",https://github.com/fullsend-ai/agents/issues/1655
+2026-10-14,auto-merge,pr,opened,27,"Spike: trial repository readiness and read-only PR policy assessment",https://github.com/fullsend-ai/auto-merge/pull/27

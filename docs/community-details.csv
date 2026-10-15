@@ -1991,3 +1991,27 @@ date,repo,type,event,number,actor,title,url
 2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
 2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
 2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-14,fullsend,issue,opened_external,8436,gklein,"Publish an official MacOS Homebrew tap from the release pipeline",https://github.com/fullsend-ai/fullsend/issues/8436
+2026-10-14,agent-eval-harness,issue,opened_external,253,astefanutti,"Agent judges are not confined: Read/Write unscoped, MCP uncovered, no evidence a deny fired",https://github.com/fullsend-ai/agent-eval-harness/issues/253
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,odh-test-gen,issue,closed_via_pr_external,71,fege,"Preserve auto_revised across review reassessment",https://github.com/fullsend-ai/odh-test-gen/issues/71
+2026-10-14,odh-test-gen,pr,reviewed_external,70,amastbau,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/odh-test-gen/pull/70
+2026-10-14,agents,pr,opened_core,1679,ggallen,"docs(agents): require direct review-thread replies",https://github.com/fullsend-ai/agents/pull/1679
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,auto-merge,pr,opened_core,27,ascerra,"Spike: trial repository readiness and read-only PR policy assessment",https://github.com/fullsend-ai/auto-merge/pull/27

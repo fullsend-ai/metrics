@@ -2068,3 +2068,13 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-13,agents,1668,test(schemas): cover review per-action required fields,test,,,,https://github.com/fullsend-ai/agents/pull/1668
 2026-10-13,agents,1665,test(scripts): add skill env var reachability test,test,,,,https://github.com/fullsend-ai/agents/pull/1665
 2026-10-13,agents,1635,feat(review): honor verified human-resolved findings,feat,,,,https://github.com/fullsend-ai/agents/pull/1635
+2026-10-14,fullsend,8442,docs(#8440): add model and effort tuning guidance to adoption guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8442
+2026-10-14,fullsend,8435,feat(#8434)!: replace repos set-default with schema-aware repos set,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8435
+2026-10-14,fullsend,8433,refactor(#8430): add GitLab deploy-key transport for protected branches,other,,,,https://github.com/fullsend-ai/fullsend/pull/8433
+2026-10-14,fullsend,8431,feat(#8426)!: default Claude aliases to 5.5 with automatic fallback,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8431
+2026-10-14,fullsend,8408,feat(#8407)!: drop GitLab inherited-variable acceptance gate,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8408
+2026-10-14,fullsend,8394,chore(#8392): provision mint-status team in e2e org setup,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8394
+2026-10-14,fullsend,8377,test(#2983): run every FakeClient method concurrently and fix aliasing races,test,,,,https://github.com/fullsend-ai/fullsend/pull/8377
+2026-10-14,fullsend,8339,fix(#7902): two spaces before inline version comments,fix,bot,7902,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/8339
+2026-10-14,fullsend,7080,docs(#6407): adopt deterministic entity context staging,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7080
+2026-10-14,agents,1660,fix(#1655): have triage verify fix-target files exist in the repo,fix,bot,1655,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1660
