@@ -1515,3 +1515,12 @@ date,bot,items_touched,items_reworked,rework_rate
 2026-10-14,qodo-code-review[bot],6,6,1.000
 2026-10-14,renovate-fullsend[bot],6,6,1.000
 2026-10-14,__aggregate__,183,148,0.809
+2026-10-15,fullsend-ai-coder[bot],13,12,0.923
+2026-10-15,fullsend-ai-retro[bot],10,5,0.500
+2026-10-15,fullsend-ai-review[bot],18,17,0.944
+2026-10-15,fullsend-ai-triage[bot],7,7,1.000
+2026-10-15,gemara-auto-merge-pilot-lab[bot],1,1,1.000
+2026-10-15,github-actions[bot],7,4,0.571
+2026-10-15,github-merge-queue[bot],9,0,0.000
+2026-10-15,qodo-code-review[bot],16,13,0.812
+2026-10-15,__aggregate__,81,59,0.728

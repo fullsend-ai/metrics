@@ -2015,3 +2015,46 @@ date,repo,type,event,number,actor,title,url
 2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
 2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
 2026-10-14,auto-merge,pr,opened_core,27,ascerra,"Spike: trial repository readiness and read-only PR policy assessment",https://github.com/fullsend-ai/auto-merge/pull/27
+2026-10-15,fullsend,issue,opened_external,8471,jwm4,"docs(adr): record an opt-in x-api-key credential header for Messages-dialect gateway models (amends ADR 0137 and ADR 0138)",https://github.com/fullsend-ai/fullsend/issues/8471
+2026-10-15,fullsend,issue,opened_external,8465,jflowers,"Machine-checkable sandbox env-var contract (manifest of exported/reserved sandbox variables)",https://github.com/fullsend-ai/fullsend/issues/8465
+2026-10-15,fullsend,issue,opened_external,8452,gklein,"docs: cli-internals command tree lists removed admin subcommands",https://github.com/fullsend-ai/fullsend/issues/8452
+2026-10-15,fullsend,issue,closed_via_pr_external,8452,gklein,"docs: cli-internals command tree lists removed admin subcommands",https://github.com/fullsend-ai/fullsend/issues/8452
+2026-10-15,fullsend,issue,closed_via_pr_external,8381,dhshah13,"Resolve child skill identities before the base merge",https://github.com/fullsend-ai/fullsend/issues/8381
+2026-10-15,fullsend,issue,closed_via_pr_external,8111,mfrancisc,"dispatch: kill_switch check on GitHub and GitLab ignores config.base.yaml",https://github.com/fullsend-ai/fullsend/issues/8111
+2026-10-15,fullsend,issue,closed_via_pr_external,7830,dhshah13,"Forge skills that share a directory basename replace each other: review loses issue-labels",https://github.com/fullsend-ai/fullsend/issues/7830
+2026-10-15,fullsend,pr,opened_core,8473,waynesun09,"feat(runtime): implement OpenCodeRuntime",https://github.com/fullsend-ai/fullsend/pull/8473
+2026-10-15,fullsend,pr,opened_core,8467,ascerra,"ci(gemara): prototype repo-restricted App-token writer",https://github.com/fullsend-ai/fullsend/pull/8467
+2026-10-15,fullsend,pr,reviewed_external,8472,jwm4,"docs(#8471): record opt-in x-api-key gateway header for Messages models",https://github.com/fullsend-ai/fullsend/pull/8472
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-15,rfe-creator,pr,reviewed_external,226,astefanutti,"Add OpenRouter model evaluation profiles for Qwen, Nemotron",https://github.com/fullsend-ai/rfe-creator/pull/226
+2026-10-15,rfe-creator,pr,reviewed_external,226,astefanutti,"Add OpenRouter model evaluation profiles for Qwen, Nemotron",https://github.com/fullsend-ai/rfe-creator/pull/226
+2026-10-15,agent-eval-harness,issue,closed_via_pr_external,239,jwm4,"Agent judge allowed_tools does not restrict tools on the Claude Code runner",https://github.com/fullsend-ai/agent-eval-harness/issues/239
+2026-10-15,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-15,test-creator,pr,reviewed_external,70,amastbau,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/test-creator/pull/70
+2026-10-15,test-creator,pr,reviewed_external,70,ederign,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/test-creator/pull/70
+2026-10-15,test-creator,pr,reviewed_external,70,amastbau,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/test-creator/pull/70
+2026-10-15,agents,issue,opened_external,1690,csoceanu,"Review projection rejects findings with non-canonical categories",https://github.com/fullsend-ai/agents/issues/1690
+2026-10-15,agents,issue,opened_external,1680,Benkapner,"Proposal: maintainer-controlled fix-loop budgets per PR",https://github.com/fullsend-ai/agents/issues/1680
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,auto-merge,pr,opened_core,38,ascerra,"docs: prove automatic Review to Gemara merge flow",https://github.com/fullsend-ai/auto-merge/pull/38
+2026-10-15,auto-merge,pr,opened_core,37,ascerra,"Accept automatic Fullsend review evidence in Gemara pilot",https://github.com/fullsend-ai/auto-merge/pull/37
+2026-10-15,auto-merge,pr,opened_core,36,ascerra,"docs: prove Gemara holds an out-of-cohort change",https://github.com/fullsend-ai/auto-merge/pull/36
+2026-10-15,auto-merge,pr,opened_core,35,ascerra,"docs: exercise the eligible Gemara pilot cohort",https://github.com/fullsend-ai/auto-merge/pull/35
+2026-10-15,auto-merge,pr,opened_core,34,ascerra,"Fix Gemara writer environment secret forwarding",https://github.com/fullsend-ai/auto-merge/pull/34
+2026-10-15,auto-merge,pr,opened_core,32,ascerra,"Enable a guarded Gemara documentation auto-merge pilot",https://github.com/fullsend-ai/auto-merge/pull/32
+2026-10-15,auto-merge,pr,opened_core,31,ascerra,"Simplify workflows around Gemara shadow and live paths",https://github.com/fullsend-ai/auto-merge/pull/31
+2026-10-15,auto-merge,pr,opened_core,30,ascerra,"test: exercise the live Gemara-controlled merge path",https://github.com/fullsend-ai/auto-merge/pull/30
+2026-10-15,auto-merge,pr,opened_core,29,ascerra,"Trial: observe a hold when required CI fails",https://github.com/fullsend-ai/auto-merge/pull/29
+2026-10-15,auto-merge,pr,opened_core,28,ascerra,"Trial: documentation-only Gemara shadow observation",https://github.com/fullsend-ai/auto-merge/pull/28

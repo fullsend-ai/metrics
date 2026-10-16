@@ -2078,3 +2078,19 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-14,fullsend,8339,fix(#7902): two spaces before inline version comments,fix,bot,7902,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/8339
 2026-10-14,fullsend,7080,docs(#6407): adopt deterministic entity context staging,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7080
 2026-10-14,agents,1660,fix(#1655): have triage verify fix-target files exist in the repo,fix,bot,1655,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1660
+2026-10-15,fullsend,8470,docs(#8468): document uploaded-JWKS WIF for private GitLab issuers,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8470
+2026-10-15,fullsend,8454,test(#8393): verify CLI mint status with GitHub user-token auth,test,,,,https://github.com/fullsend-ai/fullsend/pull/8454
+2026-10-15,fullsend,8453,docs(#8452): remove stale admin subcommands from CLI command tree,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8453
+2026-10-15,fullsend,8450,chore(#4808): track the OpenShell version in the local agents guide,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8450
+2026-10-15,fullsend,8449,fix(#8448): verify org roles via the role's user list,fix,core,8448,ifireball,https://github.com/fullsend-ai/fullsend/pull/8449
+2026-10-15,fullsend,8447,ci(gitlint): allow style commit type,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8447
+2026-10-15,fullsend,8445,feat(#8443): record model fallback reasons and unify fallback warnings,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8445
+2026-10-15,fullsend,8444,feat(#8219)!: make repos.yaml the only source of install settings,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8444
+2026-10-15,fullsend,8441,feat(#8437): manage GitLab trigger account and protected-ref resources,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8441
+2026-10-15,fullsend,8417,chore(#8416): drop legacy hosted-mint check from e2e org setup,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8417
+2026-10-15,fullsend,8384,refactor(codex): generate native role files for skill personas,other,,,,https://github.com/fullsend-ai/fullsend/pull/8384
+2026-10-15,fullsend,8208,fix(#8006): add migration hints to provider setup failures,fix,core,8006,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8208
+2026-10-15,fullsend,8141,fix(#8111): consult config.base.yaml for kill_switch in GitHub and GitLab dispatch,fix,external,8111,mfrancisc,https://github.com/fullsend-ai/fullsend/pull/8141
+2026-10-15,fullsend,7833,fix(#7830)!: keep nested forge skills that share a basename,fix,external,7830,dhshah13,https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-15,fullsend,7535,feat(telemetry): record the retry prompt and tool arguments in Level 3 content,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7535
+2026-10-15,agents,1662,feat(triage): add move action to result schema,feat,,,,https://github.com/fullsend-ai/agents/pull/1662
