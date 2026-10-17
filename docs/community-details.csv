@@ -2058,3 +2058,63 @@ date,repo,type,event,number,actor,title,url
 2026-10-15,auto-merge,pr,opened_core,30,ascerra,"test: exercise the live Gemara-controlled merge path",https://github.com/fullsend-ai/auto-merge/pull/30
 2026-10-15,auto-merge,pr,opened_core,29,ascerra,"Trial: observe a hold when required CI fails",https://github.com/fullsend-ai/auto-merge/pull/29
 2026-10-15,auto-merge,pr,opened_core,28,ascerra,"Trial: documentation-only Gemara shadow observation",https://github.com/fullsend-ai/auto-merge/pull/28
+2026-10-16,fullsend,issue,opened_external,8505,tpouyer,"Add proxy and CA configuration inputs to the fullsend GitHub Action",https://github.com/fullsend-ai/fullsend/issues/8505
+2026-10-16,fullsend,issue,opened_external,8503,tpouyer,"Harden sandbox environment policy for alternate Git and TLS controls",https://github.com/fullsend-ai/fullsend/issues/8503
+2026-10-16,fullsend,issue,opened_external,8495,AshwinUgale,"eval-measure: add EM-003 to tell recovered tool errors from ignored ones, using Level 3 content",https://github.com/fullsend-ai/fullsend/issues/8495
+2026-10-16,fullsend,issue,opened_external,8486,gklein,"test: setup-e2e-inference-gateway_test.sh --help check races SIGPIPE under pipefail",https://github.com/fullsend-ai/fullsend/issues/8486
+2026-10-16,fullsend,issue,opened_external,8479,gklein,"feat: add a CI-matching container (hack/ci-local) so local test runs predict CI, especially on macOS",https://github.com/fullsend-ai/fullsend/issues/8479
+2026-10-16,fullsend,issue,closed_via_pr_external,8486,gklein,"test: setup-e2e-inference-gateway_test.sh --help check races SIGPIPE under pipefail",https://github.com/fullsend-ai/fullsend/issues/8486
+2026-10-16,fullsend,issue,closed_via_pr_external,8471,jwm4,"docs(adr): record an opt-in x-api-key credential header for Messages-dialect gateway models (amends ADR 0137 and ADR 0138)",https://github.com/fullsend-ai/fullsend/issues/8471
+2026-10-16,fullsend,issue,closed_via_pr_external,8369,jwm4,"agent new: default sandbox image is stale, so a generated pi agent on a gateway/ model fails with ""Model not found""",https://github.com/fullsend-ai/fullsend/issues/8369
+2026-10-16,fullsend,pr,opened_core,8517,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/fullsend/pull/8517
+2026-10-16,fullsend,pr,opened_core,8515,waynesun09,"ci: dispatch the scaffold sync on release instead of every push",https://github.com/fullsend-ai/fullsend/pull/8515
+2026-10-16,fullsend,pr,opened_core,8500,waynesun09,"fix(cli): remove the OpenShell first-poll settle wait",https://github.com/fullsend-ai/fullsend/pull/8500
+2026-10-16,fullsend,pr,reviewed_external,8472,jwm4,"docs(#8471): record opt-in x-api-key gateway header for Messages models",https://github.com/fullsend-ai/fullsend/pull/8472
+2026-10-16,fullsend,pr,reviewed_external,8446,jwm4,"fix(#8369): repin agent new default images to the v0.48.0 fleet",https://github.com/fullsend-ai/fullsend/pull/8446
+2026-10-16,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-16,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-16,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-16,assess-rfe,pr,opened_core,11,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/assess-rfe/pull/11
+2026-10-16,assess-rfe,pr,reviewed_external,11,ederign,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/assess-rfe/pull/11
+2026-10-16,assess-rfe,pr,reviewed_external,11,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/assess-rfe/pull/11
+2026-10-16,rfe-creator,pr,opened_core,229,waynesun09,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,rfe-creator,pr,opened_core,228,waynesun09,"chore: hand .fullsend/config.yaml to the fullsend fleet manifest",https://github.com/fullsend-ai/rfe-creator/pull/228
+2026-10-16,rfe-creator,pr,reviewed_external,229,ederign,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,rfe-creator,pr,reviewed_external,229,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,rfe-creator,pr,reviewed_external,229,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,.fullsend,pr,opened_core,189,waynesun09,"fix(manifest): drop the QualityFlow harness from the experiments entry",https://github.com/fullsend-ai/.fullsend/pull/189
+2026-10-16,.fullsend,pr,opened_core,188,waynesun09,"ci: trigger scaffold sync from the fullsend release dispatch",https://github.com/fullsend-ai/.fullsend/pull/188
+2026-10-16,.fullsend,pr,opened_core,187,waynesun09,"chore: fleet manifest for all fullsend-ai per-repo installs",https://github.com/fullsend-ai/.fullsend/pull/187
+2026-10-16,.fullsend,pr,opened_core,186,waynesun09,"ci: run scaffold sync on release and schedule, deliver as pull requests",https://github.com/fullsend-ai/.fullsend/pull/186
+2026-10-16,agent-eval-harness,issue,opened_external,258,jwm4,"Stage agent-judge inputs by copying, not by loading every declared output file into memory",https://github.com/fullsend-ai/agent-eval-harness/issues/258
+2026-10-16,agent-eval-harness,pr,opened_core,257,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,agent-eval-harness,pr,reviewed_external,257,ederign,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,agent-eval-harness,pr,reviewed_external,257,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,agent-eval-harness,pr,reviewed_external,257,astefanutti,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,strat-creator,pr,opened_core,86,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/strat-creator/pull/86
+2026-10-16,strat-creator,pr,reviewed_external,86,ederign,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/strat-creator/pull/86
+2026-10-16,strat-creator,pr,reviewed_external,86,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/strat-creator/pull/86
+2026-10-16,experiments,issue,closed_via_pr_external,60,jwm4,"pre-commit fails or rewrites files outside a change set, so clean PRs need --no-verify or drag in other experiments",https://github.com/fullsend-ai/experiments/issues/60
+2026-10-16,experiments,pr,opened_core,63,waynesun09,"chore: remove the QualityFlow harness from the fullsend config",https://github.com/fullsend-ai/experiments/pull/63
+2026-10-16,experiments,pr,opened_core,62,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/experiments/pull/62
+2026-10-16,experiments,pr,reviewed_external,61,jwm4,"fix(pre-commit): scope ty hook to staged files",https://github.com/fullsend-ai/experiments/pull/61
+2026-10-16,epic-creator,pr,opened_core,41,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/epic-creator/pull/41
+2026-10-16,epic-creator,pr,reviewed_external,41,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/epic-creator/pull/41
+2026-10-16,test-creator,issue,opened_external,76,mfleader,"`test-plan-create-cases` on a bug fix: I kept 3 of 11 cases",https://github.com/fullsend-ai/test-creator/issues/76
+2026-10-16,test-creator,pr,opened_core,75,waynesun09,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-16,test-creator,pr,opened_core,74,waynesun09,"chore: hand .fullsend/config.yaml to the fullsend fleet manifest",https://github.com/fullsend-ai/test-creator/pull/74
+2026-10-16,test-creator,pr,reviewed_external,75,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-16,test-creator,pr,reviewed_external,75,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-16,metrics,pr,opened_core,17,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/metrics/pull/17
+2026-10-16,agents,pr,opened_core,1697,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/agents/pull/1697
+2026-10-16,pi-xai-vertex,pr,opened_core,12,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/pi-xai-vertex/pull/12
+2026-10-16,pi-anthropic-vertex,pr,opened_core,9,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/9
+2026-10-16,auto-merge,pr,opened_core,47,ascerra,"Make pinned Review skill examples compatible with Tirith",https://github.com/fullsend-ai/auto-merge/pull/47
+2026-10-16,auto-merge,pr,opened_core,46,ascerra,"Declare pinned provider profiles for vendored Review",https://github.com/fullsend-ai/auto-merge/pull/46
+2026-10-16,auto-merge,pr,opened_core,45,ascerra,"Set App prefix required by pinned Review harness",https://github.com/fullsend-ai/auto-merge/pull/45
+2026-10-16,auto-merge,pr,opened_core,44,ascerra,"Preserve trusted authentication for vendored Fullsend Review",https://github.com/fullsend-ai/auto-merge/pull/44
+2026-10-16,auto-merge,pr,opened_core,43,ascerra,"Test hosted vendored Fullsend Review evidence",https://github.com/fullsend-ai/auto-merge/pull/43
+2026-10-16,auto-merge,pr,opened_core,42,ascerra,"Exercise native Review evidence with vendored Fullsend",https://github.com/fullsend-ai/auto-merge/pull/42
+2026-10-16,auto-merge,pr,opened_core,41,ascerra,"docs: verify renamed Gemara auto-merge workflows",https://github.com/fullsend-ai/auto-merge/pull/41
+2026-10-16,auto-merge,pr,opened_core,39,ascerra,"Clarify Gemara auto-merge layout and harden integrity checks",https://github.com/fullsend-ai/auto-merge/pull/39
+2026-10-16,pi-inference-gateway,pr,opened_core,36,waynesun09,"chore: adopt .fullsend/config.yaml into the fleet manifest, drop the base copy",https://github.com/fullsend-ai/pi-inference-gateway/pull/36
