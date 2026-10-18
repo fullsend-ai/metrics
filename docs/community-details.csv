@@ -2118,3 +2118,8 @@ date,repo,type,event,number,actor,title,url
 2026-10-16,auto-merge,pr,opened_core,41,ascerra,"docs: verify renamed Gemara auto-merge workflows",https://github.com/fullsend-ai/auto-merge/pull/41
 2026-10-16,auto-merge,pr,opened_core,39,ascerra,"Clarify Gemara auto-merge layout and harden integrity checks",https://github.com/fullsend-ai/auto-merge/pull/39
 2026-10-16,pi-inference-gateway,pr,opened_core,36,waynesun09,"chore: adopt .fullsend/config.yaml into the fleet manifest, drop the base copy",https://github.com/fullsend-ai/pi-inference-gateway/pull/36
+2026-10-17,fullsend,issue,closed_via_pr_external,8370,jwm4,"gateway route: Messages-dialect models fail against a gateway that authenticates /v1/messages by x-api-key",https://github.com/fullsend-ai/fullsend/issues/8370
+2026-10-17,fullsend,issue,closed_via_pr_external,8367,gwenneg,"repos install: GitHub scaffold commits are unsigned with user tokens and rejected by rulesets requiring verified signatures",https://github.com/fullsend-ai/fullsend/issues/8367
+2026-10-17,fullsend,issue,closed_via_pr_external,7823,yvonnedevlinrh,"feat(runtime/opencode): auto-append @default suffix for Vertex model aliases",https://github.com/fullsend-ai/fullsend/issues/7823
+2026-10-17,fullsend,pr,opened_core,8536,waynesun09,"fix(shim): keep the live per-repo shim identical to its template",https://github.com/fullsend-ai/fullsend/pull/8536
+2026-10-17,auto-merge,pr,opened_core,48,ascerra,"fix(review): supply readonly GitHub gateway credential",https://github.com/fullsend-ai/auto-merge/pull/48

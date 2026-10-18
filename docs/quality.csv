@@ -301,3 +301,5 @@ date,repo,merged_prs,fix_prs,defect_prs,revert_prs,revert_commits,defect_rate,re
 2026-10-15,fullsend,15,4,3,0,0,0.2000,0.0000
 2026-10-16,agents,1,0,0,0,0,0.0000,0.0000
 2026-10-16,fullsend,17,5,5,0,0,0.2941,0.0000
+2026-10-17,agents,1,0,0,0,0,0.0000,0.0000
+2026-10-17,fullsend,10,7,5,0,0,0.5000,0.0000

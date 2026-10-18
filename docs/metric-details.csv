@@ -16385,3 +16385,50 @@ date,repo,type,event,number,title,url
 2026-10-16,auto-merge,issue,opened,40,"Clarify Gemara auto-merge layout and protected workflow references",https://github.com/fullsend-ai/auto-merge/issues/40
 2026-10-16,auto-merge,issue,closed,40,"Clarify Gemara auto-merge layout and protected workflow references",https://github.com/fullsend-ai/auto-merge/issues/40
 2026-10-16,pi-inference-gateway,pr,opened,36,"chore: adopt .fullsend/config.yaml into the fleet manifest, drop the base copy",https://github.com/fullsend-ai/pi-inference-gateway/pull/36
+2026-10-17,fullsend,pr,opened,8540,"fix(#8539): neutralize fullsend markers on the Jira sticky path",https://github.com/fullsend-ai/fullsend/pull/8540
+2026-10-17,fullsend,pr,opened,8538,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.302",https://github.com/fullsend-ai/fullsend/pull/8538
+2026-10-17,fullsend,pr,opened,8537,"feat(#8511): skip and report repos that need adoption in repos install",https://github.com/fullsend-ai/fullsend/pull/8537
+2026-10-17,fullsend,pr,opened,8536,"fix(shim): keep the live per-repo shim identical to its template",https://github.com/fullsend-ai/fullsend/pull/8536
+2026-10-17,fullsend,pr,opened,8535,"test(#8529): pin dispatch concurrency literally and fail on unpinned jobs",https://github.com/fullsend-ai/fullsend/pull/8535
+2026-10-17,fullsend,pr,opened,8534,"fix(#8530)!: mint replaces GITHUB_TOKEN as well as GH_TOKEN",https://github.com/fullsend-ai/fullsend/pull/8534
+2026-10-17,fullsend,pr,opened,8533,"fix(cli): remove the OpenShell first-poll settle wait",https://github.com/fullsend-ai/fullsend/pull/8533
+2026-10-17,fullsend,pr,opened,8532,"fix(#8528): neutralize fullsend markers in agent comment bodies",https://github.com/fullsend-ai/fullsend/pull/8532
+2026-10-17,fullsend,pr,opened,8527,"ci(#8523): run behaviour shards on separate CI runners",https://github.com/fullsend-ai/fullsend/pull/8527
+2026-10-17,fullsend,pr,opened,8526,"fix(#8525): report failed output extraction instead of no output",https://github.com/fullsend-ai/fullsend/pull/8526
+2026-10-17,fullsend,pr,opened,8522,"chore(deps): update experiments digest to 09c2dbc",https://github.com/fullsend-ai/fullsend/pull/8522
+2026-10-17,fullsend,pr,merged,8537,"feat(#8511): skip and report repos that need adoption in repos install",https://github.com/fullsend-ai/fullsend/pull/8537
+2026-10-17,fullsend,pr,merged,8535,"test(#8529): pin dispatch concurrency literally and fail on unpinned jobs",https://github.com/fullsend-ai/fullsend/pull/8535
+2026-10-17,fullsend,pr,merged,8534,"fix(#8530)!: mint replaces GITHUB_TOKEN as well as GH_TOKEN",https://github.com/fullsend-ai/fullsend/pull/8534
+2026-10-17,fullsend,pr,merged,8533,"fix(cli): remove the OpenShell first-poll settle wait",https://github.com/fullsend-ai/fullsend/pull/8533
+2026-10-17,fullsend,pr,merged,8532,"fix(#8528): neutralize fullsend markers in agent comment bodies",https://github.com/fullsend-ai/fullsend/pull/8532
+2026-10-17,fullsend,pr,merged,8526,"fix(#8525): report failed output extraction instead of no output",https://github.com/fullsend-ai/fullsend/pull/8526
+2026-10-17,fullsend,pr,merged,8518,"fix(#8516): retry preset fetch once and fail unloadable presets per repo",https://github.com/fullsend-ai/fullsend/pull/8518
+2026-10-17,fullsend,pr,merged,8510,"feat(#8370): add messages_auth_header to send the gateway key as x-api-key",https://github.com/fullsend-ai/fullsend/pull/8510
+2026-10-17,fullsend,pr,merged,8506,"fix(#7823): append @default to bare Vertex ids in OpenCode model spec",https://github.com/fullsend-ai/fullsend/pull/8506
+2026-10-17,fullsend,pr,merged,8368,"fix(#8367): sign GitHub scaffold commits with createCommitOnBranch",https://github.com/fullsend-ai/fullsend/pull/8368
+2026-10-17,fullsend,pr,closed,8500,"fix(cli): remove the OpenShell first-poll settle wait",https://github.com/fullsend-ai/fullsend/pull/8500
+2026-10-17,fullsend,issue,opened,8539,"Neutralize fullsend marker syntax in agent-written Jira sticky and status comments",https://github.com/fullsend-ai/fullsend/issues/8539
+2026-10-17,fullsend,issue,opened,8531,"Remove the OpenShell first-poll settle wait now that fullsend pins 0.1.4",https://github.com/fullsend-ai/fullsend/issues/8531
+2026-10-17,fullsend,issue,opened,8530,"Agent token mint should replace GITHUB_TOKEN as well as GH_TOKEN",https://github.com/fullsend-ai/fullsend/issues/8530
+2026-10-17,fullsend,issue,opened,8529,"Alignment test: pin harness-run concurrency, check the literal YAML bool, fail on unpinned stage jobs",https://github.com/fullsend-ai/fullsend/issues/8529
+2026-10-17,fullsend,issue,opened,8528,"Neutralize fullsend marker syntax in agent-authored sticky and status comment bodies",https://github.com/fullsend-ai/fullsend/issues/8528
+2026-10-17,fullsend,issue,opened,8525,"ExtractOutputFiles reports 'no output' when the openshell exec itself failed",https://github.com/fullsend-ai/fullsend/issues/8525
+2026-10-17,fullsend,issue,opened,8524,"Check remote agent sources from the PR head when a PR changes .fullsend/config.yaml",https://github.com/fullsend-ai/fullsend/issues/8524
+2026-10-17,fullsend,issue,opened,8523,"test(behaviour): split suite across pool orgs and CI runners",https://github.com/fullsend-ai/fullsend/issues/8523
+2026-10-17,fullsend,issue,closed,8531,"Remove the OpenShell first-poll settle wait now that fullsend pins 0.1.4",https://github.com/fullsend-ai/fullsend/issues/8531
+2026-10-17,fullsend,issue,closed,8530,"Agent token mint should replace GITHUB_TOKEN as well as GH_TOKEN",https://github.com/fullsend-ai/fullsend/issues/8530
+2026-10-17,fullsend,issue,closed,8529,"Alignment test: pin harness-run concurrency, check the literal YAML bool, fail on unpinned stage jobs",https://github.com/fullsend-ai/fullsend/issues/8529
+2026-10-17,fullsend,issue,closed,8528,"Neutralize fullsend marker syntax in agent-authored sticky and status comment bodies",https://github.com/fullsend-ai/fullsend/issues/8528
+2026-10-17,fullsend,issue,closed,8525,"ExtractOutputFiles reports 'no output' when the openshell exec itself failed",https://github.com/fullsend-ai/fullsend/issues/8525
+2026-10-17,fullsend,issue,closed,8511,"repos install: one unadopted repository fails the whole run before any per-repo work",https://github.com/fullsend-ai/fullsend/issues/8511
+2026-10-17,fullsend,issue,closed,8370,"gateway route: Messages-dialect models fail against a gateway that authenticates /v1/messages by x-api-key",https://github.com/fullsend-ai/fullsend/issues/8370
+2026-10-17,fullsend,issue,closed,8367,"repos install: GitHub scaffold commits are unsigned with user tokens and rejected by rulesets requiring verified signatures",https://github.com/fullsend-ai/fullsend/issues/8367
+2026-10-17,fullsend,issue,closed,7823,"feat(runtime/opencode): auto-append @default suffix for Vertex model aliases",https://github.com/fullsend-ai/fullsend/issues/7823
+2026-10-17,experiments,pr,merged,63,"chore: remove the QualityFlow harness from the fullsend config",https://github.com/fullsend-ai/experiments/pull/63
+2026-10-17,agents,pr,opened,1699,"chore(harness): pin fleet images to the v0.48.1-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/1699
+2026-10-17,agents,pr,merged,1699,"chore(harness): pin fleet images to the v0.48.1-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/1699
+2026-10-17,agents,pr,closed,446,"feat(#2095): add verified/unchecked variable fields to review findings schema",https://github.com/fullsend-ai/agents/pull/446
+2026-10-17,agents,issue,opened,1698,"Repin fleet harness images to the v0.48.1-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/1698
+2026-10-17,agents,issue,closed,1698,"Repin fleet harness images to the v0.48.1-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/1698
+2026-10-17,auto-merge,pr,opened,48,"fix(review): supply readonly GitHub gateway credential",https://github.com/fullsend-ai/auto-merge/pull/48
+2026-10-17,auto-merge,pr,merged,48,"fix(review): supply readonly GitHub gateway credential",https://github.com/fullsend-ai/auto-merge/pull/48

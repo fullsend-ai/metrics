@@ -2112,3 +2112,14 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-16,fullsend,8151,feat(#7689): pass declared runner secrets to host-side scripts,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8151
 2026-10-16,fullsend,7103,feat(runtime): implement OpenCodeRuntime,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7103
 2026-10-16,agents,1694,chore(harness): pin fleet images to the v0.48.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1694
+2026-10-17,fullsend,8537,feat(#8511): skip and report repos that need adoption in repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8537
+2026-10-17,fullsend,8535,test(#8529): pin dispatch concurrency literally and fail on unpinned jobs,test,,,,https://github.com/fullsend-ai/fullsend/pull/8535
+2026-10-17,fullsend,8534,fix(#8530)!: mint replaces GITHUB_TOKEN as well as GH_TOKEN,fix,core,8530,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8534
+2026-10-17,fullsend,8533,fix(cli): remove the OpenShell first-poll settle wait,fix,core,8531,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8533
+2026-10-17,fullsend,8532,fix(#8528): neutralize fullsend markers in agent comment bodies,fix,core,8528,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8532
+2026-10-17,fullsend,8526,fix(#8525): report failed output extraction instead of no output,fix,core,8525,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8526
+2026-10-17,fullsend,8518,fix(#8516): retry preset fetch once and fail unloadable presets per repo,fix,core,8516,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8518
+2026-10-17,fullsend,8510,feat(#8370): add messages_auth_header to send the gateway key as x-api-key,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8510
+2026-10-17,fullsend,8506,fix(#7823): append @default to bare Vertex ids in OpenCode model spec,fix,external,7823,yvonnedevlinrh,https://github.com/fullsend-ai/fullsend/pull/8506
+2026-10-17,fullsend,8368,fix(#8367): sign GitHub scaffold commits with createCommitOnBranch,fix,external,8367,gwenneg,https://github.com/fullsend-ai/fullsend/pull/8368
+2026-10-17,agents,1699,chore(harness): pin fleet images to the v0.48.1-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1699
