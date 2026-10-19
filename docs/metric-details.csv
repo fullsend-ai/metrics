@@ -16432,3 +16432,41 @@ date,repo,type,event,number,title,url
 2026-10-17,agents,issue,closed,1698,"Repin fleet harness images to the v0.48.1-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/1698
 2026-10-17,auto-merge,pr,opened,48,"fix(review): supply readonly GitHub gateway credential",https://github.com/fullsend-ai/auto-merge/pull/48
 2026-10-17,auto-merge,pr,merged,48,"fix(review): supply readonly GitHub gateway credential",https://github.com/fullsend-ai/auto-merge/pull/48
+2026-10-18,fullsend,pr,opened,8552,"feat(#7274): trace Cloudflare mints deployed by fullsend mint deploy",https://github.com/fullsend-ai/fullsend/pull/8552
+2026-10-18,fullsend,pr,opened,8550,"chore(deps): update dependency cytoscape to v3.34.4",https://github.com/fullsend-ai/fullsend/pull/8550
+2026-10-18,fullsend,pr,opened,8548,"feat(#8509)!: route GitLab webhook through trigger account",https://github.com/fullsend-ai/fullsend/pull/8548
+2026-10-18,fullsend,pr,opened,8547,"feat(#7274): trace mint requests with OpenTelemetry spans",https://github.com/fullsend-ai/fullsend/pull/8547
+2026-10-18,fullsend,pr,opened,8546,"fix(#8544): keep review-findings-v2 projection marker live",https://github.com/fullsend-ai/fullsend/pull/8546
+2026-10-18,fullsend,pr,opened,8545,"fix(#8543): warn about GitLab source-build settings and installer CLI minimum",https://github.com/fullsend-ai/fullsend/pull/8545
+2026-10-18,fullsend,pr,opened,8542,"ci(#8541): collect BT traces with a job-scoped OTel Collector",https://github.com/fullsend-ai/fullsend/pull/8542
+2026-10-18,fullsend,pr,merged,8547,"feat(#7274): trace mint requests with OpenTelemetry spans",https://github.com/fullsend-ai/fullsend/pull/8547
+2026-10-18,fullsend,pr,merged,8545,"fix(#8543): warn about GitLab source-build settings and installer CLI minimum",https://github.com/fullsend-ai/fullsend/pull/8545
+2026-10-18,fullsend,pr,merged,8542,"ci(#8541): collect BT traces with a job-scoped OTel Collector",https://github.com/fullsend-ai/fullsend/pull/8542
+2026-10-18,fullsend,pr,merged,8538,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.302",https://github.com/fullsend-ai/fullsend/pull/8538
+2026-10-18,fullsend,pr,merged,8519,"feat(#8508)!: run GitLab polling schedules as trigger account",https://github.com/fullsend-ai/fullsend/pull/8519
+2026-10-18,fullsend,issue,opened,8553,"GitLab: recover missed issue-open triage during scheduled polling",https://github.com/fullsend-ai/fullsend/issues/8553
+2026-10-18,fullsend,issue,opened,8551,"Maintainer nomination: dhshah13",https://github.com/fullsend-ai/fullsend/issues/8551
+2026-10-18,fullsend,issue,opened,8549,"Review dispatch skips PRs from non-GitHub-App bot accounts",https://github.com/fullsend-ai/fullsend/issues/8549
+2026-10-18,fullsend,issue,opened,8544,"NeutralizeMarkers exposes review-findings-v2 projection markers",https://github.com/fullsend-ai/fullsend/issues/8544
+2026-10-18,fullsend,issue,opened,8543,"GitLab: warn about source-build settings and schedule-transfer CLI compatibility",https://github.com/fullsend-ai/fullsend/issues/8543
+2026-10-18,fullsend,issue,opened,8541,"BT: collect traces from tested workflows with a job-scoped OTel Collector",https://github.com/fullsend-ai/fullsend/issues/8541
+2026-10-18,fullsend,issue,closed,8543,"GitLab: warn about source-build settings and schedule-transfer CLI compatibility",https://github.com/fullsend-ai/fullsend/issues/8543
+2026-10-18,fullsend,issue,closed,8541,"BT: collect traces from tested workflows with a job-scoped OTel Collector",https://github.com/fullsend-ai/fullsend/issues/8541
+2026-10-18,fullsend,issue,closed,8508,"GitLab: own managed polling schedules with the trigger-only account",https://github.com/fullsend-ai/fullsend/issues/8508
+2026-10-18,fullsend,issue,closed,8432,"Skip review dispatch when PR has zero changed files",https://github.com/fullsend-ai/fullsend/issues/8432
+2026-10-18,fullsend,issue,closed,7910,"Skip dispatch for fullsend/onboard and fullsend/offboard scaffold branches",https://github.com/fullsend-ai/fullsend/issues/7910
+2026-10-18,fullsend,issue,closed,7897,"Fix eligibility check should exit 0 when intentionally skipping bot PRs",https://github.com/fullsend-ai/fullsend/issues/7897
+2026-10-18,fullsend,issue,closed,7894,"Skip retro dispatch for fullsend scaffold branches",https://github.com/fullsend-ai/fullsend/issues/7894
+2026-10-18,fullsend,issue,closed,7893,"Skip agent dispatch for fullsend infrastructure branches (onboard/offboard)",https://github.com/fullsend-ai/fullsend/issues/7893
+2026-10-18,fullsend,issue,closed,7891,"Dispatch script should skip disabled workflows instead of failing fatally",https://github.com/fullsend-ai/fullsend/issues/7891
+2026-10-18,fullsend,issue,closed,7890,"Move third-party bot check to fix dispatch condition to avoid wasted CI runs",https://github.com/fullsend-ai/fullsend/issues/7890
+2026-10-18,fullsend,issue,closed,7880,"Filter fullsend/* lifecycle branches from shim dispatch",https://github.com/fullsend-ai/fullsend/issues/7880
+2026-10-18,agent-eval-harness,issue,opened,259,"after_each hook failures never reach run_result.json or the judges, so evals re-implement ""the case did not run cleanly"" by hand",https://github.com/fullsend-ai/agent-eval-harness/issues/259
+2026-10-18,agents,pr,opened,1705,"fix(#1567): key projection suppression off failed sub-agent name",https://github.com/fullsend-ai/agents/pull/1705
+2026-10-18,agents,pr,opened,1703,"fix(#1702): record PR discovery failures in issue fixture capture",https://github.com/fullsend-ai/agents/pull/1703
+2026-10-18,agents,pr,opened,1700,"feat(#1433): name the eval case behind each failed check",https://github.com/fullsend-ai/agents/pull/1700
+2026-10-18,agents,issue,opened,1704,"Support running selected functional-eval cases locally",https://github.com/fullsend-ai/agents/issues/1704
+2026-10-18,agents,issue,opened,1702,"eval: distinguish PR discovery failures from an empty PR list",https://github.com/fullsend-ai/agents/issues/1702
+2026-10-18,agents,issue,opened,1701,"eval: preserve first-attempt artifacts when retrying failed cases",https://github.com/fullsend-ai/agents/issues/1701
+2026-10-18,auto-merge,pr,opened,49,"docs: make current Gemara state and proof clear",https://github.com/fullsend-ai/auto-merge/pull/49
+2026-10-18,auto-merge,pr,merged,49,"docs: make current Gemara state and proof clear",https://github.com/fullsend-ai/auto-merge/pull/49

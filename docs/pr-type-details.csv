@@ -2123,3 +2123,8 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-17,fullsend,8506,fix(#7823): append @default to bare Vertex ids in OpenCode model spec,fix,external,7823,yvonnedevlinrh,https://github.com/fullsend-ai/fullsend/pull/8506
 2026-10-17,fullsend,8368,fix(#8367): sign GitHub scaffold commits with createCommitOnBranch,fix,external,8367,gwenneg,https://github.com/fullsend-ai/fullsend/pull/8368
 2026-10-17,agents,1699,chore(harness): pin fleet images to the v0.48.1-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1699
+2026-10-18,fullsend,8547,feat(#7274): trace mint requests with OpenTelemetry spans,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8547
+2026-10-18,fullsend,8545,fix(#8543): warn about GitLab source-build settings and installer CLI minimum,fix,core,8543,ggallen,https://github.com/fullsend-ai/fullsend/pull/8545
+2026-10-18,fullsend,8542,ci(#8541): collect BT traces with a job-scoped OTel Collector,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8542
+2026-10-18,fullsend,8538,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.302,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8538
+2026-10-18,fullsend,8519,feat(#8508)!: run GitLab polling schedules as trigger account,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8519

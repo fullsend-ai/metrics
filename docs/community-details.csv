@@ -2123,3 +2123,19 @@ date,repo,type,event,number,actor,title,url
 2026-10-17,fullsend,issue,closed_via_pr_external,7823,yvonnedevlinrh,"feat(runtime/opencode): auto-append @default suffix for Vertex model aliases",https://github.com/fullsend-ai/fullsend/issues/7823
 2026-10-17,fullsend,pr,opened_core,8536,waynesun09,"fix(shim): keep the live per-repo shim identical to its template",https://github.com/fullsend-ai/fullsend/pull/8536
 2026-10-17,auto-merge,pr,opened_core,48,ascerra,"fix(review): supply readonly GitHub gateway credential",https://github.com/fullsend-ai/auto-merge/pull/48
+2026-10-18,fullsend,issue,opened_external,8551,dhshah13,"Maintainer nomination: dhshah13",https://github.com/fullsend-ai/fullsend/issues/8551
+2026-10-18,fullsend,issue,opened_external,8544,csoceanu,"NeutralizeMarkers exposes review-findings-v2 projection markers",https://github.com/fullsend-ai/fullsend/issues/8544
+2026-10-18,fullsend,pr,reviewed_external,8546,Benkapner,"fix(#8544): keep review-findings-v2 projection marker live",https://github.com/fullsend-ai/fullsend/pull/8546
+2026-10-18,agent-eval-harness,issue,opened_external,259,jwm4,"after_each hook failures never reach run_result.json or the judges, so evals re-implement ""the case did not run cleanly"" by hand",https://github.com/fullsend-ai/agent-eval-harness/issues/259
+2026-10-18,agents,issue,opened_external,1704,Benkapner,"Support running selected functional-eval cases locally",https://github.com/fullsend-ai/agents/issues/1704
+2026-10-18,agents,issue,opened_external,1702,Benkapner,"eval: distinguish PR discovery failures from an empty PR list",https://github.com/fullsend-ai/agents/issues/1702
+2026-10-18,agents,issue,opened_external,1701,Benkapner,"eval: preserve first-attempt artifacts when retrying failed cases",https://github.com/fullsend-ai/agents/issues/1701
+2026-10-18,agents,pr,reviewed_external,1703,Benkapner,"fix(#1702): record PR discovery failures in issue fixture capture",https://github.com/fullsend-ai/agents/pull/1703
+2026-10-18,agents,pr,reviewed_external,1703,Benkapner,"fix(#1702): record PR discovery failures in issue fixture capture",https://github.com/fullsend-ai/agents/pull/1703
+2026-10-18,agents,pr,reviewed_external,1703,Benkapner,"fix(#1702): record PR discovery failures in issue fixture capture",https://github.com/fullsend-ai/agents/pull/1703
+2026-10-18,agents,pr,reviewed_external,1691,csoceanu,"fix(#1690): restrict review finding categories to canonical taxonomy",https://github.com/fullsend-ai/agents/pull/1691
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,auto-merge,pr,opened_core,49,ascerra,"docs: make current Gemara state and proof clear",https://github.com/fullsend-ai/auto-merge/pull/49
