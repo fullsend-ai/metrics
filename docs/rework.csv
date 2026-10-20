@@ -1554,3 +1554,15 @@ date,bot,items_touched,items_reworked,rework_rate
 2026-10-18,github-merge-queue[bot],4,0,0.000
 2026-10-18,renovate-fullsend[bot],7,7,1.000
 2026-10-18,__aggregate__,125,105,0.840
+2026-10-19,codecov[bot],21,0,0.000
+2026-10-19,fullsend-ai-coder[bot],59,58,0.983
+2026-10-19,fullsend-ai-retro[bot],4,2,0.500
+2026-10-19,fullsend-ai-review[bot],52,52,1.000
+2026-10-19,fullsend-ai-scribe[bot],7,2,0.286
+2026-10-19,fullsend-ai-triage[bot],35,30,0.857
+2026-10-19,gemara-auto-merge-pilot-lab[bot],2,2,1.000
+2026-10-19,github-actions[bot],34,26,0.765
+2026-10-19,github-merge-queue[bot],22,6,0.273
+2026-10-19,qodo-code-review[bot],9,6,0.667
+2026-10-19,renovate-fullsend[bot],8,8,1.000
+2026-10-19,__aggregate__,253,192,0.759

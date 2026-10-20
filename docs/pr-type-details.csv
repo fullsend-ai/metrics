@@ -2128,3 +2128,22 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-18,fullsend,8542,ci(#8541): collect BT traces with a job-scoped OTel Collector,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8542
 2026-10-18,fullsend,8538,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.302,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8538
 2026-10-18,fullsend,8519,feat(#8508)!: run GitLab polling schedules as trigger account,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8519
+2026-10-19,fullsend,8586,fix(#8585): back off OpenAI refresh rounds and stop on fatal errors,fix,core,8585,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8586
+2026-10-19,fullsend,8583,fix(#8580): retry FORBIDDEN stale-head createCommitOnBranch errors,fix,core,8580,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8583
+2026-10-19,fullsend,8565,fix(#8498)!: read the agent-writable .env as data at launch,fix,core,8498,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8565
+2026-10-19,fullsend,8562,docs(#8561): simplify content capture section in trace user guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8562
+2026-10-19,fullsend,8560,feat(#7274): trace GCP Cloud Function mints deployed by fullsend mint deploy,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8560
+2026-10-19,fullsend,8557,docs(#8555): align GitLab issue-open triage and ledger guidance,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8557
+2026-10-19,fullsend,8554,feat(#8553): recover missed GitLab issue opens in the poller,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8554
+2026-10-19,fullsend,8552,feat(#7274): trace Cloudflare mints deployed by fullsend mint deploy,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8552
+2026-10-19,fullsend,8550,chore(deps): update dependency cytoscape to v3.34.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8550
+2026-10-19,fullsend,8548,feat(#8509)!: route GitLab webhook through trigger account,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8548
+2026-10-19,fullsend,8546,fix(#8544): keep review-findings-v2 projection marker live,fix,external,8544,csoceanu,https://github.com/fullsend-ai/fullsend/pull/8546
+2026-10-19,fullsend,8540,fix(#8539): neutralize fullsend markers on the Jira sticky path,fix,core,8539,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8540
+2026-10-19,fullsend,8536,fix(shim): keep the live per-repo shim identical to its template,fix,core,8513,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8536
+2026-10-19,fullsend,8410,feat(#8244): retire superseded GitLab Poller generation on install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8410
+2026-10-19,fullsend,8178,fix(#7748): refresh OpenAI credential on wall clock after host sleep,fix,external,7748,jwm4,https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-19,fullsend,8133,refactor(workflow)!: remove existing-pr gate on the workflow,other,,,,https://github.com/fullsend-ai/fullsend/pull/8133
+2026-10-19,agents,1708,fix(#1707): pass GitLab token via curl config in forge skills,fix,core,1707,ggallen,https://github.com/fullsend-ai/agents/pull/1708
+2026-10-19,agents,1691,fix(#1690): restrict review finding categories to canonical taxonomy,fix,external,1690,csoceanu,https://github.com/fullsend-ai/agents/pull/1691
+2026-10-19,agents,1191,fix(#1190): rewrite scanner-blocked shell snippets in skill files,fix,core,1190,waynesun09,https://github.com/fullsend-ai/agents/pull/1191

@@ -2139,3 +2139,28 @@ date,repo,type,event,number,actor,title,url
 2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
 2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
 2026-10-18,auto-merge,pr,opened_core,49,ascerra,"docs: make current Gemara state and proof clear",https://github.com/fullsend-ai/auto-merge/pull/49
+2026-10-19,fullsend,issue,closed_via_pr_external,8544,csoceanu,"NeutralizeMarkers exposes review-findings-v2 projection markers",https://github.com/fullsend-ai/fullsend/issues/8544
+2026-10-19,fullsend,issue,closed_via_pr_external,7748,jwm4,"OpenAI credential refresh timer stops during host sleep, key expires",https://github.com/fullsend-ai/fullsend/issues/7748
+2026-10-19,fullsend,pr,opened_core,8576,waynesun09,"test(e2e): use a canonical category in the review playback fixture",https://github.com/fullsend-ai/fullsend/pull/8576
+2026-10-19,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-19,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-19,rfe-creator,pr,reviewed_external,229,astefanutti,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-19,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-19,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-53: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-19,epic-creator,pr,reviewed_external,40,guyoron1,"AISDLC-61: Add descriptor-driven planning, submission and recovery",https://github.com/fullsend-ai/epic-creator/pull/40
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,agents,issue,opened_external,1712,jwm4,"eval: bump agent-eval-harness to v1.56.3 and harden the shared eval scripts",https://github.com/fullsend-ai/agents/issues/1712
+2026-10-19,agents,issue,opened_external,1709,Benkapner,"review: keep dismissed_by_human when only the category changes at the same file:line",https://github.com/fullsend-ai/agents/issues/1709
+2026-10-19,agents,issue,closed_via_pr_external,1690,csoceanu,"Review projection rejects findings with non-canonical categories",https://github.com/fullsend-ai/agents/issues/1690
+2026-10-19,agents,pr,reviewed_external,1710,Benkapner,"fix(#1709): keep dismissed_by_human when only the category changes",https://github.com/fullsend-ai/agents/pull/1710
+2026-10-19,agents,pr,reviewed_external,1710,Benkapner,"fix(#1709): keep dismissed_by_human when only the category changes",https://github.com/fullsend-ai/agents/pull/1710
+2026-10-19,agents,pr,reviewed_external,1710,Benkapner,"fix(#1709): keep dismissed_by_human when only the category changes",https://github.com/fullsend-ai/agents/pull/1710
+2026-10-19,agents,pr,reviewed_external,1691,csoceanu,"fix(#1690): restrict review finding categories to canonical taxonomy",https://github.com/fullsend-ai/agents/pull/1691
+2026-10-19,agents,pr,reviewed_external,1691,csoceanu,"fix(#1690): restrict review finding categories to canonical taxonomy",https://github.com/fullsend-ai/agents/pull/1691
+2026-10-19,auto-merge,pr,opened_core,52,ascerra,"Isolate shared Gemara Review assessment from publisher",https://github.com/fullsend-ai/auto-merge/pull/52
+2026-10-19,auto-merge,pr,opened_core,51,ascerra,"Exercise installed Fullsend Review baseline",https://github.com/fullsend-ai/auto-merge/pull/51
+2026-10-19,auto-merge,pr,opened_core,50,ascerra,"Prove Python post-script Review evidence",https://github.com/fullsend-ai/auto-merge/pull/50
