@@ -283,7 +283,7 @@
       <div class="stat"><div class="val" style="color:${color("--negative", "#f87171")}">${pct(total.rate)}</div><div class="lbl">Escaped-fix rate (all closed weeks)</div></div>
       <div class="stat"><div class="val">${total.escaped}</div><div class="lbl">PRs fixed within 30 days</div></div>
       <div class="stat"><div class="val">${total.severe}</div><div class="lbl">Severe</div></div>
-      <div class="stat"><div class="val-sm">${total.unjudged} unjudged · ${total.merged} merged</div><div class="lbl">Coverage</div></div>`;
+      <div class="stat"><div class="val-sm">${total.unjudged} unjudged or unknown · ${total.merged} merged</div><div class="lbl">Coverage</div></div>`;
   }
 
   function renderChart(rows) {
@@ -339,7 +339,7 @@
           .map(([label]) => [label, byWeek.get(`${week.week}|${label}`)])
           .filter(([, d]) => d)
           .map(([label, d]) => `${label}: ${pct(d.rate)} (${d.escaped} of ${d.merged} merged, ${d.severe} severe`
-            + `${d.unjudged ? `, ${d.unjudged} unjudged` : ""})`);
+            + `${d.unjudged ? `, ${d.unjudged} unjudged or unknown` : ""})`);
         showTooltip(event, `<strong>Week of ${week.week}</strong><br>${lines.join("<br>")}`);
       })
       .on("mouseleave", () => { guide.style("display", "none"); hideTooltip(); });

@@ -9,7 +9,8 @@
 2. Judgments: every candidate pair gets a row in docs/fix-judgments.csv,
    "unjudged" until a person or the optional FIX_JUDGE_CMD hook fills it in.
 3. Rate: docs/escaped-fixes.csv, per week (by the earlier PR's merge date),
-   repo and PR type, only for weeks whose 30-day window has closed. Merged
+   repo and PR type, only for weeks whose 30-day window has closed; unjudged
+   and "unknown" pairs are both counted as open. Merged
    PR counts and types come from docs/pr-type-details.csv.
 
 FIX_JUDGE_CMD (optional): a shell command run once per unjudged pair. It gets
@@ -17,7 +18,8 @@ a JSON object on stdin (fix, original, fix_url, original_url, fix_diff,
 original_diff) and must print {"verdict": ..., "severity": ...,
 "judged_by": ...} where verdict is one of defect_from_original,
 later_change, not_related, unknown and severity is low, medium, high or "".
-Unset means no judging.
+Unset means no judging. The payload is untrusted PR text: an LLM judge must treat
+it as data, and a person's verdict in fix-judgments.csv overrides it.
 """
 from __future__ import annotations
 
@@ -292,7 +294,7 @@ def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as
         judgment = verdicts.get((row["fix"], row["original"]), {"verdict": "unjudged", "severity": ""})
         if judgment["verdict"] == "defect_from_original":
             escaped[row["original"]] = escaped.get(row["original"], False) or judgment["severity"] == "high"
-        elif judgment["verdict"] == "unjudged":
+        elif judgment["verdict"] in ("unjudged", "unknown"):  # still open, so it shows in coverage
             unjudged[row["original"]] += 1
 
     totals: dict[tuple[str, str, str], list[int]] = defaultdict(lambda: [0, 0, 0, 0])

@@ -54,7 +54,7 @@ closed.
 |------|---------|
 | `docs/fix-candidates.csv` | Later PR → earlier PR pairs: the later PR (or the issue it closes) names the earlier PR, uses causal wording ("broke", "regression", "caused by", "introduced in"), or reverts it |
 | `docs/fix-judgments.csv` | Verdict per pair (`defect_from_original`, `later_change`, `not_related`, `unknown`, or `unjudged`); seeded from an offline replay, editable by hand |
-| `docs/escaped-fixes.csv` | Per week × repo × PR type: merged PRs, PRs with a confirmed fix, severe, unjudged candidates, rate |
+| `docs/escaped-fixes.csv` | Per week × repo × PR type: merged PRs, PRs with a confirmed fix, severe, open candidates (`unjudged` or `unknown`), rate |
 | `scripts/collect-escaped-fixes.sh` | Daily (wired into `.github/workflows/collect.yml`, after PR types) |
 | `scripts/backfill-escaped-fixes.sh` | Date-range backfill; keeps existing judgments |
 
@@ -63,7 +63,9 @@ is a real fix about a third of the time), so each pair needs a verdict. To
 judge new pairs automatically, set `FIX_JUDGE_CMD` to a command that reads the
 pair and both diffs as JSON on stdin and prints
 `{"verdict": ..., "severity": ..., "judged_by": ...}`; unset, nothing is judged
-and pairs stay `unjudged`. After editing judgments by hand, recompute with
+and pairs stay `unjudged`. The JSON carries untrusted PR text and diffs: if the
+judge is an LLM, its prompt must treat the payload as data, never as
+instructions, and a person's verdict always overrides it. After editing judgments by hand, recompute with
 `python3 scripts/collect-escaped-fixes.py --rebuild`.
 
 The rate is a lower bound: fixes that never mention the earlier PR are missed.

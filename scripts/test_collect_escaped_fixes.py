@@ -131,7 +131,7 @@ class TestRates(unittest.TestCase):
         self.judgments = [
             {"fix": "fullsend#10", "original": "fullsend#1", "verdict": "defect_from_original", "severity": "high"},
             {"fix": "fullsend#11", "original": "fullsend#1", "verdict": "defect_from_original", "severity": "low"},
-            {"fix": "fullsend#12", "original": "fullsend#2", "verdict": "later_change", "severity": ""},
+            {"fix": "fullsend#12", "original": "fullsend#2", "verdict": "unknown", "severity": ""},
             {"fix": "fullsend#14", "original": "fullsend#4", "verdict": "defect_from_original", "severity": ""},
         ]
 
@@ -142,7 +142,7 @@ class TestRates(unittest.TestCase):
         total = by_key[("2026-06-01", "all")]
         self.assertEqual(
             (total["merged_prs"], total["escaped_prs"], total["severe_prs"], total["unjudged_candidates"]),
-            (3, 1, 1, 1),
+            (3, 1, 1, 2),  # fullsend#2 unknown + fullsend#3 unjudged
         )
         self.assertEqual(total["escaped_fix_rate"], "0.3333")
         self.assertEqual(by_key[("2026-06-01", "feat")]["escaped_fix_rate"], "0.5000")
