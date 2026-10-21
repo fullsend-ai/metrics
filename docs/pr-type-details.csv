@@ -2147,3 +2147,34 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-19,agents,1708,fix(#1707): pass GitLab token via curl config in forge skills,fix,core,1707,ggallen,https://github.com/fullsend-ai/agents/pull/1708
 2026-10-19,agents,1691,fix(#1690): restrict review finding categories to canonical taxonomy,fix,external,1690,csoceanu,https://github.com/fullsend-ai/agents/pull/1691
 2026-10-19,agents,1191,fix(#1190): rewrite scanner-blocked shell snippets in skill files,fix,core,1190,waynesun09,https://github.com/fullsend-ai/agents/pull/1191
+2026-10-20,fullsend,8637,fix(#8635): take hook settings from the runner after .env on all runtimes,fix,core,8635,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8637
+2026-10-20,fullsend,8633,fix(#8626)!: pin the CLI binaries and their node on the trusted PATH,fix,core,8626,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8633
+2026-10-20,fullsend,8632,test(config): stop pinning legacy fullsend role,test,,,,https://github.com/fullsend-ai/fullsend/pull/8632
+2026-10-20,fullsend,8630,docs(#8629): correct normative GitLab webhook implementation status,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8630
+2026-10-20,fullsend,8628,feat(#8627): record source manifest URL in managed config.yaml,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8628
+2026-10-20,fullsend,8623,test(#8620): coordinate shared e2e-lock with legacy suites,test,,,,https://github.com/fullsend-ai/fullsend/pull/8623
+2026-10-20,fullsend,8618,chore(#8617): refresh Go checksums on Renovate GO_VERSION bumps,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8618
+2026-10-20,fullsend,8615,test(#8378): cover all FakeClient methods in error injection,test,,,,https://github.com/fullsend-ai/fullsend/pull/8615
+2026-10-20,fullsend,8614,docs(#8613): document wrapping Markdown prose at about 80 columns,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8614
+2026-10-20,fullsend,8609,fix(#8594): re-check slot ownership before resending rate-limited DELETE,fix,bot,8594,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/8609
+2026-10-20,fullsend,8608,fix(#8596): treat a 429 APIError interrupted by context as non-transient,fix,bot,8596,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/8608
+2026-10-20,fullsend,8606,fix(#8593): recover own slot repo after an ambiguous create in Claim,fix,bot,8593,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/8606
+2026-10-20,fullsend,8605,fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,8603,fix(#8602): move schedules to the rotated GitLab trigger account,fix,core,8602,ggallen,https://github.com/fullsend-ai/fullsend/pull/8603
+2026-10-20,fullsend,8599,fix(#8597): surface ctx cancellation before rate-limit check in org pool,fix,bot,8597,fullsend-ai-triage[bot],https://github.com/fullsend-ai/fullsend/pull/8599
+2026-10-20,fullsend,8591,fix(#8575)!: harden and tidy the .env-as-data launch loader,fix,core,8575,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8591
+2026-10-20,fullsend,8590,fix(#8574)!: read .env as data in the OpenCode launch and runner probes,fix,core,8574,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8590
+2026-10-20,fullsend,8589,fix(#8577): run pi hook scripts with the python3 pinned before .env,fix,core,8577,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8589
+2026-10-20,fullsend,8587,fix(#8584): refresh the gateway token on the wall clock after host sleep,fix,core,8584,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8587
+2026-10-20,fullsend,8582,test(#8578): add cross-org repo slot allocator for the behaviour pool,test,,,,https://github.com/fullsend-ai/fullsend/pull/8582
+2026-10-20,fullsend,8570,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.304,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8570
+2026-10-20,fullsend,8569,refactor(codex): count native child tokens in run metrics,other,,,,https://github.com/fullsend-ai/fullsend/pull/8569
+2026-10-20,fullsend,8566,fix(#8564)!: let GitLab runners serve multiple OpenShell pins,fix,core,8564,ggallen,https://github.com/fullsend-ai/fullsend/pull/8566
+2026-10-20,fullsend,8496,fix(#3373)!: block credential-class env.sandbox names; case-fold runner-secret refusal,fix,core,3373,maruiz93,https://github.com/fullsend-ai/fullsend/pull/8496
+2026-10-20,fullsend,8326,chore(#4076): hold OpenShell release bumps for 2 days,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8326
+2026-10-20,fullsend,8231,ci(e2e): require write permission for PR test authorization,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8231
+2026-10-20,agents,1723,fix(#1722): supply eval clone username from credential helper,fix,core,1722,waynesun09,https://github.com/fullsend-ai/agents/pull/1723
+2026-10-20,agents,1719,fix(#1718): clear ready-for-merge at review run start,fix,core,1718,waynesun09,https://github.com/fullsend-ai/agents/pull/1719
+2026-10-20,agents,1653,fix(review): keep finding ids out of posted markdown,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1653
+2026-10-20,agents,1643,ci(e2e): require write permission for PR test authorization,ci,,,,https://github.com/fullsend-ai/agents/pull/1643
+2026-10-20,agents,1632,feat(review): add user-experience review dimension,feat,,,,https://github.com/fullsend-ai/agents/pull/1632

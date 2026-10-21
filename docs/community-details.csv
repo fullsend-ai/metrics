@@ -2164,3 +2164,74 @@ date,repo,type,event,number,actor,title,url
 2026-10-19,auto-merge,pr,opened_core,52,ascerra,"Isolate shared Gemara Review assessment from publisher",https://github.com/fullsend-ai/auto-merge/pull/52
 2026-10-19,auto-merge,pr,opened_core,51,ascerra,"Exercise installed Fullsend Review baseline",https://github.com/fullsend-ai/auto-merge/pull/51
 2026-10-19,auto-merge,pr,opened_core,50,ascerra,"Prove Python post-script Review evidence",https://github.com/fullsend-ai/auto-merge/pull/50
+2026-10-20,fullsend,issue,opened_external,8627,stoniko,"repos install: managed config files do not reference the repos.yaml they were generated from",https://github.com/fullsend-ai/fullsend/issues/8627
+2026-10-20,fullsend,issue,opened_external,8601,ianw,"Unable to set masked variable FULLLSEND_GCP_PROJECT_ID (gitlab api: 400 value: [is invalid]) if project-id < 8 characters",https://github.com/fullsend-ai/fullsend/issues/8601
+2026-10-20,fullsend,issue,opened_external,8600,ianw,"gitlab: Check branch creation regex to avoid possible 400 error when creating fullsend branches",https://github.com/fullsend-ai/fullsend/issues/8600
+2026-10-20,fullsend,issue,closed_via_pr_external,8378,gklein,"forge: TestFakeClient_ErrorInjection covers 53 of 130 FakeClient methods",https://github.com/fullsend-ai/fullsend/issues/8378
+2026-10-20,fullsend,pr,opened_core,8632,ggallen,"test(config): stop pinning legacy fullsend role",https://github.com/fullsend-ai/fullsend/pull/8632
+2026-10-20,fullsend,pr,opened_core,8616,ifireball,"docs(adr): define poll and entity-bound run lifecycles",https://github.com/fullsend-ai/fullsend/pull/8616
+2026-10-20,fullsend,pr,opened_core,8605,waynesun09,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8615,gklein,"test(#8378): cover all FakeClient methods in error injection",https://github.com/fullsend-ai/fullsend/pull/8615
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,rfe-creator,issue,opened_external,237,astefanutti,"Sweep the stale opendatahub-io references left by the org migration",https://github.com/fullsend-ai/rfe-creator/issues/237
+2026-10-20,rfe-creator,issue,opened_external,235,astefanutti,"Baseline comparison: the rfe eval through fullsend versus claude-code",https://github.com/fullsend-ai/rfe-creator/issues/235
+2026-10-20,rfe-creator,issue,opened_external,234,astefanutti,"Eval profile selecting the fullsend runner, with the developer path documented",https://github.com/fullsend-ai/rfe-creator/issues/234
+2026-10-20,rfe-creator,issue,opened_external,233,astefanutti,"Eval child harness: rfe-creator-eval over the production package, no Jira access, models injected",https://github.com/fullsend-ai/rfe-creator/issues/233
+2026-10-20,rfe-creator,pr,reviewed_external,229,astefanutti,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-20,rfe-creator,pr,reviewed_external,196,astefanutti,"Add vLLM vs vLLM-Omni upstream boundary guidance to RFE skills",https://github.com/fullsend-ai/rfe-creator/pull/196
+2026-10-20,.fullsend,pr,opened_core,190,ggallen,"chore(repos)!: simplify fleet defaults and overrides",https://github.com/fullsend-ai/.fullsend/pull/190
+2026-10-20,agent-eval-harness,issue,opened_external,262,astefanutti,"fullsend runner: record fullsend, OpenShell, image and harness provenance with each run",https://github.com/fullsend-ai/agent-eval-harness/issues/262
+2026-10-20,agent-eval-harness,issue,opened_external,261,astefanutti,"fullsend runner: execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/issues/261
+2026-10-20,agent-eval-harness,issue,closed_via_pr_external,253,astefanutti,"Agent judges are not confined: Read/Write unscoped, MCP uncovered, no evidence a deny fired",https://github.com/fullsend-ai/agent-eval-harness/issues/253
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-20,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-20,epic-creator,issue,opened_external,44,ravelley,"Clean-checkout test failure and missing automated pytest execution",https://github.com/fullsend-ai/epic-creator/issues/44
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,test-creator,issue,closed_via_pr_external,72,fege,"Citation gate leaves review score table stale after score cap",https://github.com/fullsend-ai/test-creator/issues/72
+2026-10-20,test-creator,pr,reviewed_external,77,fege,"fix(#72): sync review score table after citation gate cap",https://github.com/fullsend-ai/test-creator/pull/77
+2026-10-20,test-creator,pr,reviewed_external,77,fege,"fix(#72): sync review score table after citation gate cap",https://github.com/fullsend-ai/test-creator/pull/77
+2026-10-20,test-creator,pr,reviewed_external,77,fege,"fix(#72): sync review score table after citation gate cap",https://github.com/fullsend-ai/test-creator/pull/77
+2026-10-20,agents,issue,opened_external,1715,ederign,"fix(retro): make issue-creation failures non-fatal so the summary is still posted",https://github.com/fullsend-ai/agents/issues/1715
+2026-10-20,agents,pr,reviewed_external,1716,ederign,"fix(#1715): make retro issue-creation failures non-fatal",https://github.com/fullsend-ai/agents/pull/1716
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-20,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
