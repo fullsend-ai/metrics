@@ -2178,3 +2178,34 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-20,agents,1653,fix(review): keep finding ids out of posted markdown,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1653
 2026-10-20,agents,1643,ci(e2e): require write permission for PR test authorization,ci,,,,https://github.com/fullsend-ai/agents/pull/1643
 2026-10-20,agents,1632,feat(review): add user-experience review dimension,feat,,,,https://github.com/fullsend-ai/agents/pull/1632
+2026-10-21,fullsend,8686,build(#8685): bump pi-inference-gateway to v0.1.4 in the sandbox image,other,,,,https://github.com/fullsend-ai/fullsend/pull/8686
+2026-10-21,fullsend,8684,fix(#8683): allow curl in generated GitLab forge profile,fix,core,8683,ggallen,https://github.com/fullsend-ai/fullsend/pull/8684
+2026-10-21,fullsend,8677,docs(#8675): update GitLab webhook validation status with CE evidence,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8677
+2026-10-21,fullsend,8664,fix(jira): treat whitespace-only description as empty in CreateIssue,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8664
+2026-10-21,fullsend,8655,fix(#8652): classify CreateRepo errors before ownership lookup,fix,core,8652,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8655
+2026-10-21,fullsend,8653,fix(#8568): make sandbox download retries idempotent,fix,bot,8568,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/8653
+2026-10-21,fullsend,8649,fix(release): prepend highlights via a checked script and group breaking changes,fix,bot,8366,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/8649
+2026-10-21,fullsend,8645,chore(deps): update dependency @anthropic-ai/claude-code to v2.1.306,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8645
+2026-10-21,fullsend,8643,fix(#8600): check GitLab push rule branch regex before install,fix,external,8600,ianw,https://github.com/fullsend-ai/fullsend/pull/8643
+2026-10-21,fullsend,8642,fix(#8641): pin runner-owned settings in the claude --settings document,fix,core,8641,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8642
+2026-10-21,fullsend,8640,fix(#8601): fall back to unmasked on generic GitLab value error,fix,external,8601,ianw,https://github.com/fullsend-ai/fullsend/pull/8640
+2026-10-21,fullsend,8639,test(#8621): reclaim abandoned repo slots inside the slot allocator,test,,,,https://github.com/fullsend-ai/fullsend/pull/8639
+2026-10-21,fullsend,8638,fix(#8636): let bare issue-update dispatcher jobs finish as no-ops,fix,core,8636,ggallen,https://github.com/fullsend-ai/fullsend/pull/8638
+2026-10-21,fullsend,8625,fix(skills): use a spec-valid name for the filing-issues skill,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8625
+2026-10-21,fullsend,8588,fix(#8504): include agents in default issue targets,fix,bot,8504,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/8588
+2026-10-21,fullsend,8517,chore: mark .fullsend/config.yaml as managed by the fleet manifest,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8517
+2026-10-21,fullsend,8499,feat(#7083): add fullsend issues create command,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8499
+2026-10-21,fullsend,8491,docs(#8490): require forge scope and code-cited claims in ADRs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8491
+2026-10-21,fullsend,8489,chore(#8479): add hack/ci-local to run CI checks in a CI-matching container,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8489
+2026-10-21,fullsend,8451,fix(#7118): mark admin install as deprecated in cobra,fix,core,7118,ralphbean,https://github.com/fullsend-ai/fullsend/pull/8451
+2026-10-21,fullsend,8425,fix(dispatch): count prior fix commits by their Authored-by trailer too,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8425
+2026-10-21,fullsend,8355,chore(deps): update ubi10 base images,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8355
+2026-10-21,fullsend,8343,refactor(#4663): move version/commitSHA into internal/buildinfo,other,,,,https://github.com/fullsend-ai/fullsend/pull/8343
+2026-10-21,fullsend,8334,chore(deps): update dependency vite to v6.4.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8334
+2026-10-21,fullsend,8323,chore(deps): update dependency prettier to v3.9.10,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8323
+2026-10-21,fullsend,8197,docs(#8196): document dispatch inputs in building custom agents guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8197
+2026-10-21,fullsend,7280,fix(#7238): surface incomplete reviews,fix,bot,7238,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/7280
+2026-10-21,agents,1733,fix(#1732): keep custom HTTPS ports in GitLab triage and scribe,fix,core,1732,ggallen,https://github.com/fullsend-ai/agents/pull/1733
+2026-10-21,agents,1724,fix(#1717): scrub more finding-id shapes without broken Markdown,fix,core,1717,waynesun09,https://github.com/fullsend-ai/agents/pull/1724
+2026-10-21,agents,1716,fix(#1715): make retro issue-creation failures non-fatal,fix,external,1715,ederign,https://github.com/fullsend-ai/agents/pull/1716
+2026-10-21,agents,1659,fix(#1656): escalate cross-repo fix targets instead of restructuring,fix,bot,1656,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1659

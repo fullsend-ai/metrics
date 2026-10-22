@@ -16710,3 +16710,151 @@ date,repo,type,event,number,title,url
 2026-10-20,agents,issue,closed,1722,"Functional tests: ephemeral-repo push fails with 'could not read Username' on ubuntu-24.04 image 20261018",https://github.com/fullsend-ai/agents/issues/1722
 2026-10-20,agents,issue,closed,1718,"pre-review: clear ready-for-merge at review run start (ADR 0002, fullsend#5417)",https://github.com/fullsend-ai/agents/issues/1718
 2026-10-20,agents,issue,closed,1631,"Require write-level author and labeler authorization for privileged PR tests",https://github.com/fullsend-ai/agents/issues/1631
+2026-10-21,fullsend,pr,opened,8687,"fix(#8683): add GitLab forge host to the attached credential profile",https://github.com/fullsend-ai/fullsend/pull/8687
+2026-10-21,fullsend,pr,opened,8686,"build(#8685): bump pi-inference-gateway to v0.1.4 in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/8686
+2026-10-21,fullsend,pr,opened,8684,"fix(#8683): allow curl in generated GitLab forge profile",https://github.com/fullsend-ai/fullsend/pull/8684
+2026-10-21,fullsend,pr,opened,8682,"test(#8680): stub getenforce in the ci-local suite",https://github.com/fullsend-ai/fullsend/pull/8682
+2026-10-21,fullsend,pr,opened,8679,"refactor(envmanifest): add sandbox environment contract manifest",https://github.com/fullsend-ai/fullsend/pull/8679
+2026-10-21,fullsend,pr,opened,8678,"docs(#4885): document Jira auth model, token rotation, migration",https://github.com/fullsend-ai/fullsend/pull/8678
+2026-10-21,fullsend,pr,opened,8677,"docs(#8675): update GitLab webhook validation status with CE evidence",https://github.com/fullsend-ai/fullsend/pull/8677
+2026-10-21,fullsend,pr,opened,8670,"chore(deps): update dependency go to v1.27.3",https://github.com/fullsend-ai/fullsend/pull/8670
+2026-10-21,fullsend,pr,opened,8668,"refactor(e2eauth): add Go e2e gate policy and forge APIs (1/3)",https://github.com/fullsend-ai/fullsend/pull/8668
+2026-10-21,fullsend,pr,opened,8666,"docs(#8245): update GitLab webhook validation status",https://github.com/fullsend-ai/fullsend/pull/8666
+2026-10-21,fullsend,pr,opened,8664,"fix(jira): treat whitespace-only description as empty in CreateIssue",https://github.com/fullsend-ai/fullsend/pull/8664
+2026-10-21,fullsend,pr,opened,8659,"fix(#8646): open GitLab scaffold MRs from forks correctly",https://github.com/fullsend-ai/fullsend/pull/8659
+2026-10-21,fullsend,pr,opened,8657,"test(#8651): cut sleeps and serial hotspots from slow unit tests",https://github.com/fullsend-ai/fullsend/pull/8657
+2026-10-21,fullsend,pr,opened,8656,"test(#8654): back off and recreate on Actions settle timeout",https://github.com/fullsend-ai/fullsend/pull/8656
+2026-10-21,fullsend,pr,opened,8655,"fix(#8652): classify CreateRepo errors before ownership lookup",https://github.com/fullsend-ai/fullsend/pull/8655
+2026-10-21,fullsend,pr,opened,8653,"fix(#8568): make sandbox download retries idempotent",https://github.com/fullsend-ai/fullsend/pull/8653
+2026-10-21,fullsend,pr,opened,8650,"test(#8622)!: wire cross-org repo slots into behaviour and playback",https://github.com/fullsend-ai/fullsend/pull/8650
+2026-10-21,fullsend,pr,opened,8649,"fix(release): prepend highlights via a checked script and group breaking changes",https://github.com/fullsend-ai/fullsend/pull/8649
+2026-10-21,fullsend,pr,opened,8645,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.306",https://github.com/fullsend-ai/fullsend/pull/8645
+2026-10-21,fullsend,pr,opened,8643,"fix(#8600): check GitLab push rule branch regex before install",https://github.com/fullsend-ai/fullsend/pull/8643
+2026-10-21,fullsend,pr,opened,8642,"fix(#8641): pin runner-owned settings in the claude --settings document",https://github.com/fullsend-ai/fullsend/pull/8642
+2026-10-21,fullsend,pr,opened,8640,"fix(#8601): fall back to unmasked on generic GitLab value error",https://github.com/fullsend-ai/fullsend/pull/8640
+2026-10-21,fullsend,pr,merged,8686,"build(#8685): bump pi-inference-gateway to v0.1.4 in the sandbox image",https://github.com/fullsend-ai/fullsend/pull/8686
+2026-10-21,fullsend,pr,merged,8684,"fix(#8683): allow curl in generated GitLab forge profile",https://github.com/fullsend-ai/fullsend/pull/8684
+2026-10-21,fullsend,pr,merged,8677,"docs(#8675): update GitLab webhook validation status with CE evidence",https://github.com/fullsend-ai/fullsend/pull/8677
+2026-10-21,fullsend,pr,merged,8664,"fix(jira): treat whitespace-only description as empty in CreateIssue",https://github.com/fullsend-ai/fullsend/pull/8664
+2026-10-21,fullsend,pr,merged,8655,"fix(#8652): classify CreateRepo errors before ownership lookup",https://github.com/fullsend-ai/fullsend/pull/8655
+2026-10-21,fullsend,pr,merged,8653,"fix(#8568): make sandbox download retries idempotent",https://github.com/fullsend-ai/fullsend/pull/8653
+2026-10-21,fullsend,pr,merged,8649,"fix(release): prepend highlights via a checked script and group breaking changes",https://github.com/fullsend-ai/fullsend/pull/8649
+2026-10-21,fullsend,pr,merged,8645,"chore(deps): update dependency @anthropic-ai/claude-code to v2.1.306",https://github.com/fullsend-ai/fullsend/pull/8645
+2026-10-21,fullsend,pr,merged,8643,"fix(#8600): check GitLab push rule branch regex before install",https://github.com/fullsend-ai/fullsend/pull/8643
+2026-10-21,fullsend,pr,merged,8642,"fix(#8641): pin runner-owned settings in the claude --settings document",https://github.com/fullsend-ai/fullsend/pull/8642
+2026-10-21,fullsend,pr,merged,8640,"fix(#8601): fall back to unmasked on generic GitLab value error",https://github.com/fullsend-ai/fullsend/pull/8640
+2026-10-21,fullsend,pr,merged,8639,"test(#8621): reclaim abandoned repo slots inside the slot allocator",https://github.com/fullsend-ai/fullsend/pull/8639
+2026-10-21,fullsend,pr,merged,8638,"fix(#8636): let bare issue-update dispatcher jobs finish as no-ops",https://github.com/fullsend-ai/fullsend/pull/8638
+2026-10-21,fullsend,pr,merged,8625,"fix(skills): use a spec-valid name for the filing-issues skill",https://github.com/fullsend-ai/fullsend/pull/8625
+2026-10-21,fullsend,pr,merged,8588,"fix(#8504): include agents in default issue targets",https://github.com/fullsend-ai/fullsend/pull/8588
+2026-10-21,fullsend,pr,merged,8517,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/fullsend/pull/8517
+2026-10-21,fullsend,pr,merged,8499,"feat(#7083): add fullsend issues create command",https://github.com/fullsend-ai/fullsend/pull/8499
+2026-10-21,fullsend,pr,merged,8491,"docs(#8490): require forge scope and code-cited claims in ADRs",https://github.com/fullsend-ai/fullsend/pull/8491
+2026-10-21,fullsend,pr,merged,8489,"chore(#8479): add hack/ci-local to run CI checks in a CI-matching container",https://github.com/fullsend-ai/fullsend/pull/8489
+2026-10-21,fullsend,pr,merged,8451,"fix(#7118): mark admin install as deprecated in cobra",https://github.com/fullsend-ai/fullsend/pull/8451
+2026-10-21,fullsend,pr,merged,8425,"fix(dispatch): count prior fix commits by their Authored-by trailer too",https://github.com/fullsend-ai/fullsend/pull/8425
+2026-10-21,fullsend,pr,merged,8355,"chore(deps): update ubi10 base images",https://github.com/fullsend-ai/fullsend/pull/8355
+2026-10-21,fullsend,pr,merged,8343,"refactor(#4663): move version/commitSHA into internal/buildinfo",https://github.com/fullsend-ai/fullsend/pull/8343
+2026-10-21,fullsend,pr,merged,8334,"chore(deps): update dependency vite to v6.4.4",https://github.com/fullsend-ai/fullsend/pull/8334
+2026-10-21,fullsend,pr,merged,8323,"chore(deps): update dependency prettier to v3.9.10",https://github.com/fullsend-ai/fullsend/pull/8323
+2026-10-21,fullsend,pr,merged,8197,"docs(#8196): document dispatch inputs in building custom agents guide",https://github.com/fullsend-ai/fullsend/pull/8197
+2026-10-21,fullsend,pr,merged,7280,"fix(#7238): surface incomplete reviews",https://github.com/fullsend-ai/fullsend/pull/7280
+2026-10-21,fullsend,issue,opened,8685,"sandbox: bump pi-inference-gateway to v0.1.4",https://github.com/fullsend-ai/fullsend/issues/8685
+2026-10-21,fullsend,issue,opened,8683,"GitLab: stock triage cannot access custom forge host from OpenShell sandbox",https://github.com/fullsend-ai/fullsend/issues/8683
+2026-10-21,fullsend,issue,opened,8681,"test(behaviour): share public preview mints across orgs and preinstall Wrangler",https://github.com/fullsend-ai/fullsend/issues/8681
+2026-10-21,fullsend,issue,opened,8680,"ci-local_test.sh fails the default-checkout case on SELinux-enforcing hosts",https://github.com/fullsend-ai/fullsend/issues/8680
+2026-10-21,fullsend,issue,opened,8675,"docs(gitlab): update normative webhook validation status with CE evidence",https://github.com/fullsend-ai/fullsend/issues/8675
+2026-10-21,fullsend,issue,opened,8673,"Skip retro dispatch for human-authored PRs where no fullsend agent stage ran",https://github.com/fullsend-ai/fullsend/issues/8673
+2026-10-21,fullsend,issue,opened,8672,"Workflow dispatch still builds --mint-url from the stale FULLSEND_MINT_URL variable, not the config file",https://github.com/fullsend-ai/fullsend/issues/8672
+2026-10-21,fullsend,issue,opened,8671,"docs: add a Maintainer Request discussion and a /vouch-maintainer command",https://github.com/fullsend-ai/fullsend/issues/8671
+2026-10-21,fullsend,issue,opened,8669,"status: cancelled built-in review leaves the start reaction when the HEAD lookup fails",https://github.com/fullsend-ai/fullsend/issues/8669
+2026-10-21,fullsend,issue,opened,8667,"telemetry: add unified parent span for sandbox-create and agent sub-spans in multi-step workflows",https://github.com/fullsend-ai/fullsend/issues/8667
+2026-10-21,fullsend,issue,opened,8665,"Fix dispatch should exit 0 (not 1) when correctly skipping a bot PR",https://github.com/fullsend-ai/fullsend/issues/8665
+2026-10-21,fullsend,issue,opened,8661,"Show a random one-line end-user tip on every docs site page",https://github.com/fullsend-ai/fullsend/issues/8661
+2026-10-21,fullsend,issue,opened,8660,"Cancel in-progress review runs when a PR is merged",https://github.com/fullsend-ai/fullsend/issues/8660
+2026-10-21,fullsend,issue,opened,8654,"behaviour: pool allocation times out waiting for Actions to index fullsend.yaml",https://github.com/fullsend-ai/fullsend/issues/8654
+2026-10-21,fullsend,issue,opened,8652,"behaviour pool: classify CreateRepo errors in slot allocator Claim before the ownership lookup and backoff",https://github.com/fullsend-ai/fullsend/issues/8652
+2026-10-21,fullsend,issue,opened,8651,"test: internal/cli, repos, scaffold, and runtime dominate the ~7m45s CI unit-test step",https://github.com/fullsend-ai/fullsend/issues/8651
+2026-10-21,fullsend,issue,opened,8648,"Replace deprecated GITHUB_ISSUE_URL with FULLSEND_WORK_ITEM_URL in the local-run user guides",https://github.com/fullsend-ai/fullsend/issues/8648
+2026-10-21,fullsend,issue,opened,8647,"issues create: whitespace-only --body fails Jira issue creation with ADF conversion error",https://github.com/fullsend-ai/fullsend/issues/8647
+2026-10-21,fullsend,issue,opened,8646,"gitlab: fullsend/scaffold-install MR creation appears to drop leading parts of source fork branch specifier",https://github.com/fullsend-ai/fullsend/issues/8646
+2026-10-21,fullsend,issue,opened,8644,"Skip automatic code re-dispatch when existing coder PR already covers the issue",https://github.com/fullsend-ai/fullsend/issues/8644
+2026-10-21,fullsend,issue,opened,8641,"runtime/claude: pin runner-owned settings in the generated --settings document on every run",https://github.com/fullsend-ai/fullsend/issues/8641
+2026-10-21,fullsend,issue,closed,8685,"sandbox: bump pi-inference-gateway to v0.1.4",https://github.com/fullsend-ai/fullsend/issues/8685
+2026-10-21,fullsend,issue,closed,8675,"docs(gitlab): update normative webhook validation status with CE evidence",https://github.com/fullsend-ai/fullsend/issues/8675
+2026-10-21,fullsend,issue,closed,8652,"behaviour pool: classify CreateRepo errors in slot allocator Claim before the ownership lookup and backoff",https://github.com/fullsend-ai/fullsend/issues/8652
+2026-10-21,fullsend,issue,closed,8641,"runtime/claude: pin runner-owned settings in the generated --settings document on every run",https://github.com/fullsend-ai/fullsend/issues/8641
+2026-10-21,fullsend,issue,closed,8636,"fix(gitlab): let bare issue-update dispatcher jobs finish as no-ops",https://github.com/fullsend-ai/fullsend/issues/8636
+2026-10-21,fullsend,issue,closed,8621,"test(behaviour): reclaim abandoned repo slots inside install driver",https://github.com/fullsend-ai/fullsend/issues/8621
+2026-10-21,fullsend,issue,closed,8601,"Unable to set masked variable FULLLSEND_GCP_PROJECT_ID (gitlab api: 400 value: [is invalid]) if project-id < 8 characters",https://github.com/fullsend-ai/fullsend/issues/8601
+2026-10-21,fullsend,issue,closed,8600,"gitlab: Check branch creation regex to avoid possible 400 error when creating fullsend branches",https://github.com/fullsend-ai/fullsend/issues/8600
+2026-10-21,fullsend,issue,closed,8568,"Sandbox repo-extraction retry is not idempotent — identical hard-link EEXIST failure repeats across all retry attempts",https://github.com/fullsend-ai/fullsend/issues/8568
+2026-10-21,fullsend,issue,closed,8504,"Include fullsend-ai/agents in default create_issues.allow_targets for per-repo scaffold and config generator",https://github.com/fullsend-ai/fullsend/issues/8504
+2026-10-21,fullsend,issue,closed,8490,"ADR guidance: require an explicit forge scope and code-cited descriptions of current behavior, and tell reviewers to verify both",https://github.com/fullsend-ai/fullsend/issues/8490
+2026-10-21,fullsend,issue,closed,8479,"feat: add a CI-matching container (hack/ci-local) so local test runs predict CI, especially on macOS",https://github.com/fullsend-ai/fullsend/issues/8479
+2026-10-21,fullsend,issue,closed,8366,"v0.33.0 release notes contain an unexpanded `$(cat /tmp/release-body-existing.txt)` placeholder and lost the changelog, including the #5552 breaking scaffold removal",https://github.com/fullsend-ai/fullsend/issues/8366
+2026-10-21,fullsend,issue,closed,8196,"Document dispatch inputs in building custom agents guide",https://github.com/fullsend-ai/fullsend/issues/8196
+2026-10-21,fullsend,issue,closed,7489,"behaviour: pool repo recreate races with visibility/Actions-readiness, causing 404s and 'workflow not visible' timeouts",https://github.com/fullsend-ai/fullsend/issues/7489
+2026-10-21,fullsend,issue,closed,7118,"Add a Cobra deprecation marker to `fullsend admin install`",https://github.com/fullsend-ai/fullsend/issues/7118
+2026-10-21,fullsend,issue,closed,7083,"feat: add `fullsend issues create` CLI command",https://github.com/fullsend-ai/fullsend/issues/7083
+2026-10-21,fullsend,issue,closed,4663,"Move version/commitSHA vars out of internal/cli into a leaf package",https://github.com/fullsend-ai/fullsend/issues/4663
+2026-10-21,rfe-creator,pr,opened,245,"docs(#243): split the type reference, neutral README, one --type line",https://github.com/fullsend-ai/rfe-creator/pull/245
+2026-10-21,rfe-creator,pr,opened,244,"Doc checks: README lists the registered types; user guide names the resolution rules in the registry's order",https://github.com/fullsend-ai/rfe-creator/pull/244
+2026-10-21,rfe-creator,pr,opened,242,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,opened,240,"test(#232): pin the fullsend harness models and credentials",https://github.com/fullsend-ai/rfe-creator/pull/240
+2026-10-21,rfe-creator,pr,merged,244,"Doc checks: README lists the registered types; user guide names the resolution rules in the registry's order",https://github.com/fullsend-ai/rfe-creator/pull/244
+2026-10-21,rfe-creator,pr,merged,242,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,merged,239,"chore(#237): point functional config at the fullsend-ai org",https://github.com/fullsend-ai/rfe-creator/pull/239
+2026-10-21,rfe-creator,issue,opened,243,"Reference hygiene: stable field reference, type-neutral README, one wording for --type",https://github.com/fullsend-ai/rfe-creator/issues/243
+2026-10-21,rfe-creator,issue,opened,241,"Needs-attention reason stays stale after a revision fixes what feasibility flagged",https://github.com/fullsend-ai/rfe-creator/issues/241
+2026-10-21,rfe-creator,issue,closed,241,"Needs-attention reason stays stale after a revision fixes what feasibility flagged",https://github.com/fullsend-ai/rfe-creator/issues/241
+2026-10-21,rfe-creator,issue,closed,237,"Sweep the stale opendatahub-io references left by the org migration",https://github.com/fullsend-ai/rfe-creator/issues/237
+2026-10-21,.fullsend,pr,opened,192,"feat(repos): register Epic Creator's custom agent",https://github.com/fullsend-ai/.fullsend/pull/192
+2026-10-21,.fullsend,pr,opened,191,"feat(repos): register Epic Creator's custom agent",https://github.com/fullsend-ai/.fullsend/pull/191
+2026-10-21,agent-eval-harness,pr,opened,267,"fix(deps): keep litellm below 1.107 on the harbor path",https://github.com/fullsend-ai/agent-eval-harness/pull/267
+2026-10-21,agent-eval-harness,pr,opened,266,"fix(score): step Anthropic judges down to tool_choice auto on a 400",https://github.com/fullsend-ai/agent-eval-harness/pull/266
+2026-10-21,agent-eval-harness,pr,merged,267,"fix(deps): keep litellm below 1.107 on the harbor path",https://github.com/fullsend-ai/agent-eval-harness/pull/267
+2026-10-21,agent-eval-harness,pr,merged,251,"feat(judge): carry the verdict as a structured output, with the forced tool call as the fallback",https://github.com/fullsend-ai/agent-eval-harness/pull/251
+2026-10-21,agent-eval-harness,issue,opened,265,"Anthropic judge path: step down to tool_choice auto when the model rejects forced tool choice",https://github.com/fullsend-ai/agent-eval-harness/issues/265
+2026-10-21,agent-eval-harness,issue,closed,265,"Anthropic judge path: step down to tool_choice auto when the model rejects forced tool choice",https://github.com/fullsend-ai/agent-eval-harness/issues/265
+2026-10-21,epic-creator,pr,merged,43,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-21,epic-creator,issue,closed,44,"Clean-checkout test failure and missing automated pytest execution",https://github.com/fullsend-ai/epic-creator/issues/44
+2026-10-21,agents,pr,opened,1741,"chore(harness): pin fleet images to the v0.49.0-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/1741
+2026-10-21,agents,pr,opened,1739,"Agent/1676 scribe jira issue creation integration",https://github.com/fullsend-ai/agents/pull/1739
+2026-10-21,agents,pr,opened,1737,"fix(#1736): delete the ephemeral repo when setup-fixture.sh fails after creating it",https://github.com/fullsend-ai/agents/pull/1737
+2026-10-21,agents,pr,opened,1734,"feat(#1730): enforce pre-filing duplicate search with related_issues receipt",https://github.com/fullsend-ai/agents/pull/1734
+2026-10-21,agents,pr,opened,1733,"fix(#1732): keep custom HTTPS ports in GitLab triage and scribe",https://github.com/fullsend-ai/agents/pull/1733
+2026-10-21,agents,pr,opened,1731,"feat(#1730): enforce pre-filing duplicate search with related_issues receipt",https://github.com/fullsend-ai/agents/pull/1731
+2026-10-21,agents,pr,opened,1729,"fix(#1728): honor config.base.yaml create_issues in retro and triage",https://github.com/fullsend-ai/agents/pull/1729
+2026-10-21,agents,pr,opened,1727,"feat(review): enable UXD review by default",https://github.com/fullsend-ai/agents/pull/1727
+2026-10-21,agents,pr,opened,1726,"fix(#1725): clear stale category labels on re-triage",https://github.com/fullsend-ai/agents/pull/1726
+2026-10-21,agents,pr,merged,1733,"fix(#1732): keep custom HTTPS ports in GitLab triage and scribe",https://github.com/fullsend-ai/agents/pull/1733
+2026-10-21,agents,pr,merged,1724,"fix(#1717): scrub more finding-id shapes without broken Markdown",https://github.com/fullsend-ai/agents/pull/1724
+2026-10-21,agents,pr,merged,1716,"fix(#1715): make retro issue-creation failures non-fatal",https://github.com/fullsend-ai/agents/pull/1716
+2026-10-21,agents,pr,merged,1659,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,closed,1731,"feat(#1730): enforce pre-filing duplicate search with related_issues receipt",https://github.com/fullsend-ai/agents/pull/1731
+2026-10-21,agents,issue,opened,1740,"Repin fleet harness images to the v0.49.0-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/1740
+2026-10-21,agents,issue,opened,1738,"Switch skill-env-reachability-test.sh from hand-maintained SANDBOX_RUNTIME_VARS to the released-tag sandbox env manifest",https://github.com/fullsend-ai/agents/issues/1738
+2026-10-21,agents,issue,opened,1736,"eval: 965 leftover `eval-*` repos on the `halfsend` account, and a one-off cleanup",https://github.com/fullsend-ai/agents/issues/1736
+2026-10-21,agents,issue,opened,1735,"Feature: Fullsend CI Failure Root-Cause Analysis, Learning, and HITL Jira Escalation",https://github.com/fullsend-ai/agents/issues/1735
+2026-10-21,agents,issue,opened,1732,"GitLab triage and scribe lose custom HTTPS ports",https://github.com/fullsend-ai/agents/issues/1732
+2026-10-21,agents,issue,opened,1728,"Retro and Triage ignore issue-target permissions declared in config presets",https://github.com/fullsend-ai/agents/issues/1728
+2026-10-21,agents,issue,opened,1725,"post-triage: re-categorization leaves stale category label on the issue",https://github.com/fullsend-ai/agents/issues/1725
+2026-10-21,agents,issue,closed,1732,"GitLab triage and scribe lose custom HTTPS ports",https://github.com/fullsend-ai/agents/issues/1732
+2026-10-21,agents,issue,closed,1717,"review: post-review id scrub leaves broken Markdown for some id shapes",https://github.com/fullsend-ai/agents/issues/1717
+2026-10-21,agents,issue,closed,1715,"fix(retro): make issue-creation failures non-fatal so the summary is still posted",https://github.com/fullsend-ai/agents/issues/1715
+2026-10-21,agents,issue,closed,1604,"Request Vertex AI org policy update to allow claude-sonnet-5-5 structured outputs for eval judges",https://github.com/fullsend-ai/agents/issues/1604
+2026-10-21,agents,issue,closed,1656,"Code agent should escalate when the fix target is in a different repository instead of restructuring the current repo",https://github.com/fullsend-ai/agents/issues/1656
+2026-10-21,auto-merge,pr,opened,56,"Explain how to run the example validator",https://github.com/fullsend-ai/auto-merge/pull/56
+2026-10-21,auto-merge,pr,opened,54,"Demonstrate automatic merge with the 90% shared quality policy",https://github.com/fullsend-ai/auto-merge/pull/54
+2026-10-21,auto-merge,pr,opened,53,"Demonstrate the shared review-quality hold",https://github.com/fullsend-ai/auto-merge/pull/53
+2026-10-21,auto-merge,pr,merged,56,"Explain how to run the example validator",https://github.com/fullsend-ai/auto-merge/pull/56
+2026-10-21,auto-merge,pr,merged,52,"Isolate shared Gemara Review assessment from publisher",https://github.com/fullsend-ai/auto-merge/pull/52
+2026-10-21,auto-merge,issue,opened,55,"Clarify how to validate the example",https://github.com/fullsend-ai/auto-merge/issues/55
+2026-10-21,pi-inference-gateway,pr,opened,39,"chore: release v0.1.4",https://github.com/fullsend-ai/pi-inference-gateway/pull/39
+2026-10-21,pi-inference-gateway,pr,opened,38,"feat(#37): match pi's catalog for mid-path and snapshot model ids",https://github.com/fullsend-ai/pi-inference-gateway/pull/38
+2026-10-21,pi-inference-gateway,pr,merged,39,"chore: release v0.1.4",https://github.com/fullsend-ai/pi-inference-gateway/pull/39
+2026-10-21,pi-inference-gateway,pr,merged,38,"feat(#37): match pi's catalog for mid-path and snapshot model ids",https://github.com/fullsend-ai/pi-inference-gateway/pull/38
+2026-10-21,pi-inference-gateway,pr,merged,36,"chore: adopt .fullsend/config.yaml into the fleet manifest, drop the base copy",https://github.com/fullsend-ai/pi-inference-gateway/pull/36
+2026-10-21,pi-inference-gateway,issue,opened,37,"discovery: match pi's catalog for mid-path, snapshot-suffixed and mixed-case model ids",https://github.com/fullsend-ai/pi-inference-gateway/issues/37
+2026-10-21,pi-inference-gateway,issue,closed,37,"discovery: match pi's catalog for mid-path, snapshot-suffixed and mixed-case model ids",https://github.com/fullsend-ai/pi-inference-gateway/issues/37

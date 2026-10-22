@@ -1576,3 +1576,16 @@ date,bot,items_touched,items_reworked,rework_rate
 2026-10-20,qodo-code-review[bot],12,12,1.000
 2026-10-20,renovate-fullsend[bot],8,8,1.000
 2026-10-20,__aggregate__,299,232,0.776
+2026-10-21,codecov[bot],21,0,0.000
+2026-10-21,fullsend-ai-coder[bot],63,59,0.937
+2026-10-21,fullsend-ai-retro[bot],3,0,0.000
+2026-10-21,fullsend-ai-review[bot],73,70,0.959
+2026-10-21,fullsend-ai-scribe[bot],5,3,0.600
+2026-10-21,fullsend-ai-triage[bot],35,31,0.886
+2026-10-21,gemara-auto-merge-pilot-lab[bot],1,1,1.000
+2026-10-21,github-actions[bot],35,25,0.714
+2026-10-21,github-merge-queue[bot],34,6,0.176
+2026-10-21,openshift-ci[bot],1,0,0.000
+2026-10-21,qodo-code-review[bot],21,20,0.952
+2026-10-21,renovate-fullsend[bot],8,8,1.000
+2026-10-21,__aggregate__,300,223,0.743
