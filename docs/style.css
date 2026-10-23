@@ -346,6 +346,31 @@ body.page-quality {
   flex-shrink: 0;
 }
 
+button.chart-legend-item {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.chart-legend-item.dimmed { opacity: 0.35; }
+.chart-legend-item .swatch.dot { border-radius: 50%; }
+.chart-legend-item .swatch.dash {
+  width: 16px;
+  height: 0;
+  border-top: 3px dashed;
+  border-radius: 0;
+}
+
+.tooltip-swatch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  margin-right: 0.35rem;
+}
+
 /* --- Floating ToC --- */
 
 .toc {
@@ -550,6 +575,7 @@ h1 {
   opacity: 0;
   transition: opacity 0.1s;
   z-index: 10;
+  max-width: calc(100vw - 16px);
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
