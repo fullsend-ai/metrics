@@ -2209,3 +2209,28 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-21,agents,1724,fix(#1717): scrub more finding-id shapes without broken Markdown,fix,core,1717,waynesun09,https://github.com/fullsend-ai/agents/pull/1724
 2026-10-21,agents,1716,fix(#1715): make retro issue-creation failures non-fatal,fix,external,1715,ederign,https://github.com/fullsend-ai/agents/pull/1716
 2026-10-21,agents,1659,fix(#1656): escalate cross-repo fix targets instead of restructuring,fix,bot,1656,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1659
+2026-10-22,fullsend,8728,fix(#8725): skip built-in agents in GitHub CEL dispatch,fix,core,8725,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8728
+2026-10-22,fullsend,8713,fix(#8710): bound GitLab YAML merge-key lookup work,fix,core,8710,ggallen,https://github.com/fullsend-ai/fullsend/pull/8713
+2026-10-22,fullsend,8706,fix(#8688): keep blank lines when rewriting .gitlab-ci.yml,fix,external,8688,ianw,https://github.com/fullsend-ai/fullsend/pull/8706
+2026-10-22,fullsend,8704,docs(contributing): slim AGENTS.md to SSOT links and document gate API pitfalls,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8704
+2026-10-22,fullsend,8703,ci(lint): trigger pr-title-lint on pull request title edits,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8703
+2026-10-22,fullsend,8700,fix(agentnew): use work item URL in generated agents,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8700
+2026-10-22,fullsend,8696,test(#8681): share public preview mints across pool orgs,test,,,,https://github.com/fullsend-ai/fullsend/pull/8696
+2026-10-22,fullsend,8687,fix(#8683): add GitLab forge host to the attached credential profile,fix,core,8683,ggallen,https://github.com/fullsend-ai/fullsend/pull/8687
+2026-10-22,fullsend,8670,chore(deps): update dependency go to v1.27.3,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8670
+2026-10-22,fullsend,8657,test(#8651): cut sleeps and serial hotspots from slow unit tests,test,,,,https://github.com/fullsend-ai/fullsend/pull/8657
+2026-10-22,fullsend,8650,test(#8622)!: wire cross-org repo slots into behaviour and playback,test,,,,https://github.com/fullsend-ai/fullsend/pull/8650
+2026-10-22,fullsend,8616,docs(adr): define poll and entity-bound run lifecycles,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8616
+2026-10-22,fullsend,8460,docs(#8090): say who can apply ok-to-test and what to do when the gate removes it,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8460
+2026-10-22,fullsend,8415,feat(#8413): add GitHub bot-role lookup and behaviour matrix,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8415
+2026-10-22,agents,1757,feat(#1756): add the CEL dispatch trigger to the review harness,feat,,,,https://github.com/fullsend-ai/agents/pull/1757
+2026-10-22,agents,1747,ci(lint): trigger commit-lint on pull request title edits,ci,,,,https://github.com/fullsend-ai/agents/pull/1747
+2026-10-22,agents,1741,chore(harness): pin fleet images to the v0.49.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1741
+2026-10-22,agents,1737,fix(#1736): delete the ephemeral repo when setup-fixture.sh fails after creating it,fix,external,1736,jwm4,https://github.com/fullsend-ai/agents/pull/1737
+2026-10-22,agents,1734,feat(#1730): enforce pre-filing duplicate search with related_issues receipt,feat,,,,https://github.com/fullsend-ai/agents/pull/1734
+2026-10-22,agents,1727,feat(review): enable UXD review by default,feat,,,,https://github.com/fullsend-ai/agents/pull/1727
+2026-10-22,agents,1726,fix(#1725): clear stale category labels on re-triage,fix,core,1725,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1726
+2026-10-22,agents,1700,feat(#1433): name the eval case behind each failed check,feat,,,,https://github.com/fullsend-ai/agents/pull/1700
+2026-10-22,agents,1696,chore(#1591)!: require release coverage for evaluated agents,chore,,,,https://github.com/fullsend-ai/agents/pull/1696
+2026-10-22,agents,1688,feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap,feat,,,,https://github.com/fullsend-ai/agents/pull/1688
+2026-10-22,agents,1364,fix(#1361): retry PR creation and failure comments on 5xx,fix,bot,1361,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1364

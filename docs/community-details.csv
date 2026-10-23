@@ -2356,3 +2356,46 @@ date,repo,type,event,number,actor,title,url
 2026-10-21,auto-merge,pr,opened_core,54,ascerra,"Demonstrate automatic merge with the 90% shared quality policy",https://github.com/fullsend-ai/auto-merge/pull/54
 2026-10-21,auto-merge,pr,opened_core,53,ascerra,"Demonstrate the shared review-quality hold",https://github.com/fullsend-ai/auto-merge/pull/53
 2026-10-21,pi-inference-gateway,pr,opened_core,39,waynesun09,"chore: release v0.1.4",https://github.com/fullsend-ai/pi-inference-gateway/pull/39
+2026-10-22,fullsend,issue,opened_external,8731,ianw,"gitlab: Warning that exclusion from tirgger pipelines cannot be established on job that includes from external",https://github.com/fullsend-ai/fullsend/issues/8731
+2026-10-22,fullsend,issue,opened_external,8723,jflowers,"Harness.Lint() should flag values that violate their declared field type",https://github.com/fullsend-ai/fullsend/issues/8723
+2026-10-22,fullsend,issue,opened_external,8722,jflowers,"Add top-level preflight_check to Harness, running before pre_script and sandbox creation",https://github.com/fullsend-ai/fullsend/issues/8722
+2026-10-22,fullsend,issue,opened_external,8721,jflowers,"Preflight check credential safety: allowlisted environment, pre-expansion rejection, redacted diagnostics",https://github.com/fullsend-ai/fullsend/issues/8721
+2026-10-22,fullsend,issue,opened_external,8720,jflowers,"Epic: implement ADRs 0127, 0128, and 0129 (harness schema versioning and preflight checks)",https://github.com/fullsend-ai/fullsend/issues/8720
+2026-10-22,fullsend,issue,opened_external,8697,amastbau,"[adlc-jira] Prefer the user’s configured Jira integration over `acli`",https://github.com/fullsend-ai/fullsend/issues/8697
+2026-10-22,fullsend,issue,opened_external,8691,ianw,"gitlab: Warning that exclusion from trigger pipelines cannot be established on job that excludes trigger pipelines",https://github.com/fullsend-ai/fullsend/issues/8691
+2026-10-22,fullsend,issue,opened_external,8689,ianw,"Re-running install (convergence?) does not apply gitlab.agent_runner_tags",https://github.com/fullsend-ai/fullsend/issues/8689
+2026-10-22,fullsend,issue,opened_external,8688,ianw,"gitlab: repos install rewrites gitlab-ci.yml without vertical whitespace",https://github.com/fullsend-ai/fullsend/issues/8688
+2026-10-22,fullsend,issue,closed_via_pr_external,8688,ianw,"gitlab: repos install rewrites gitlab-ci.yml without vertical whitespace",https://github.com/fullsend-ai/fullsend/issues/8688
+2026-10-22,fullsend,pr,opened_core,8729,waynesun09,"feat(#8726): let a CEL trigger decide review routing",https://github.com/fullsend-ai/fullsend/pull/8729
+2026-10-22,fullsend,pr,opened_core,8699,rh-hemartin,"feat(cli): add 'fullsend lint' command to validate config",https://github.com/fullsend-ai/fullsend/pull/8699
+2026-10-22,fullsend,pr,opened_core,8698,ifireball,"docs(adr): coalesce entity-source discovery queries",https://github.com/fullsend-ai/fullsend/pull/8698
+2026-10-22,fullsend,pr,opened_core,8694,ifireball,"docs(adr): define selective CEL acquisition and harness admission",https://github.com/fullsend-ai/fullsend/pull/8694
+2026-10-22,fullsend,pr,reviewed_external,8705,dhshah13,"chore(gitlint): enforce DCO sign-off trailer in commit-msg hook",https://github.com/fullsend-ai/fullsend/pull/8705
+2026-10-22,fullsend,pr,reviewed_external,8702,Benkapner,"docs(adr): define repository-less agent execution",https://github.com/fullsend-ai/fullsend/pull/8702
+2026-10-22,fullsend,pr,reviewed_external,8702,Benkapner,"docs(adr): define repository-less agent execution",https://github.com/fullsend-ai/fullsend/pull/8702
+2026-10-22,fullsend,pr,reviewed_external,7589,jflowers,"fix(#3737): paginate and fail-open inflight ADR listing",https://github.com/fullsend-ai/fullsend/pull/7589
+2026-10-22,fullsend,pr,reviewed_external,7589,jflowers,"fix(#3737): paginate and fail-open inflight ADR listing",https://github.com/fullsend-ai/fullsend/pull/7589
+2026-10-22,fullsend,pr,reviewed_external,7589,jflowers,"fix(#3737): paginate and fail-open inflight ADR listing",https://github.com/fullsend-ai/fullsend/pull/7589
+2026-10-22,rfe-creator,issue,opened_external,251,astefanutti,"Auto-approve policy: a split recommendation blocks the Approved transition",https://github.com/fullsend-ai/rfe-creator/issues/251
+2026-10-22,rfe-creator,issue,opened_external,250,astefanutti,"Barrier discipline: the no-improvise contract in the skill, AGENTS.md and the recovery banner, pinned by test",https://github.com/fullsend-ai/rfe-creator/issues/250
+2026-10-22,rfe-creator,issue,opened_external,249,astefanutti,"Submit hold: a per-pass completion marker so an interrupted second revision is held",https://github.com/fullsend-ai/rfe-creator/issues/249
+2026-10-22,rfe-creator,issue,opened_external,248,astefanutti,"Layout guard: make the skip condition decidable so a checkout runs no layout call",https://github.com/fullsend-ai/rfe-creator/issues/248
+2026-10-22,rfe-creator,issue,opened_external,247,astefanutti,"launch_wave: write the wave to a file and print a listing that fits in one tool result",https://github.com/fullsend-ai/rfe-creator/issues/247
+2026-10-22,rfe-creator,issue,closed_via_pr_external,243,astefanutti,"Reference hygiene: stable field reference, type-neutral README, one wording for --type",https://github.com/fullsend-ai/rfe-creator/issues/243
+2026-10-22,agent-eval-harness,pr,reviewed_external,263,ravelley,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-22,strat-creator,pr,reviewed_external,85,stoniko,"Run strategy creation through a hardened Claude Workflow",https://github.com/fullsend-ai/strat-creator/pull/85
+2026-10-22,epic-creator,pr,reviewed_external,46,ederign,"AISDLC-428: Align Jira provider naming with RFE Creator",https://github.com/fullsend-ai/epic-creator/pull/46
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,39,ederign,"Fix Epic Creator skipping strategies linked to non-Epics",https://github.com/fullsend-ai/epic-creator/pull/39
+2026-10-22,test-creator,issue,opened_external,79,fege,"bootstrap.sh can place the .odh-test-gen symlink inside the generated run directory",https://github.com/fullsend-ai/test-creator/issues/79
+2026-10-22,test-creator,pr,reviewed_external,78,ederign,"docs: add AGENTS.md and CONTRIBUTING.md, de-duplicate command listings",https://github.com/fullsend-ai/test-creator/pull/78
+2026-10-22,test-creator,pr,reviewed_external,78,amastbau,"docs: add AGENTS.md and CONTRIBUTING.md, de-duplicate command listings",https://github.com/fullsend-ai/test-creator/pull/78
+2026-10-22,agents,issue,opened_external,1753,jflowers,"Adopt top-level preflight_check and verify consumer rollout",https://github.com/fullsend-ai/agents/issues/1753
+2026-10-22,agents,issue,opened_external,1752,jflowers,"CI should block harness changes on fullsend lint SeverityError",https://github.com/fullsend-ai/agents/issues/1752
+2026-10-22,agents,issue,opened_external,1746,rrasouli,"Configurable CI failure analysis agent with feedback and escalation",https://github.com/fullsend-ai/agents/issues/1746
+2026-10-22,agents,issue,closed_other_external,1735,rrasouli,"Feature: Fullsend CI Failure Root-Cause Analysis, Learning, and HITL Jira Escalation",https://github.com/fullsend-ai/agents/issues/1735
+2026-10-22,agents,issue,closed_via_pr_external,1680,Benkapner,"Proposal: maintainer-controlled fix-loop budgets per PR",https://github.com/fullsend-ai/agents/issues/1680
+2026-10-22,agents,pr,opened_core,1755,waynesun09,"feat(review): add CEL dispatch trigger to the review harness",https://github.com/fullsend-ai/agents/pull/1755
