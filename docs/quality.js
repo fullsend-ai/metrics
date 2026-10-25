@@ -23,12 +23,17 @@
     return new Date(`${value}T00:00:00Z`);
   }
 
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
   function showTooltip(event, html) {
-    tooltip.html(html).style("opacity", 1);
+    const clientWidth = document.documentElement.clientWidth;
+    // Measure at the natural width: in place, its width shrinks to the space left before the edge.
+    tooltip.html(html).style("left", "0px").style("max-width", (clientWidth - 8) + "px")
+      .style("opacity", 1).attr("aria-hidden", "false");
     // Flip to the cursor's left when the tooltip would run off the page.
     // Keep it inside the viewport on narrow screens.
     const width = tooltip.node().offsetWidth;
-    const right = window.scrollX + document.documentElement.clientWidth;
+    const right = window.scrollX + clientWidth;
     const left = event.pageX + 12 + width > right ? event.pageX - 12 - width : event.pageX + 12;
     tooltip
       .style("left", `${Math.max(window.scrollX + 4, Math.min(left, right - width - 4))}px`)
@@ -37,7 +42,7 @@
 
   function hideTooltip() {
     // Park it off-page: a hidden tooltip left in place can widen the page.
-    tooltip.style("opacity", 0).style("left", "-9999px");
+    tooltip.style("opacity", 0).style("left", "-9999px").attr("aria-hidden", "true");
   }
 
   try {
@@ -178,7 +183,7 @@
         const index = Math.max(0, Math.min(rows.length - 1, bisect(rows, x.invert(mouseX))));
         const row = rows[index];
         focus.attr("transform", `translate(${x(parseDate(row.date))},0)`);
-        const html = `<strong>${row.date}</strong><br>`
+        const html = `<strong>${esc(row.date)}</strong><br>`
           + `Defect-labeled: ${(row.defectRate * 100).toFixed(1)}%<br>`
           + `Revert events: ${(row.revertRate * 100).toFixed(1)}%<br>`
           + `Merged PRs: ${row.merged}`;
@@ -224,6 +229,12 @@
     selectedRepo = event.target.value;
     render();
   });
-  window.addEventListener("resize", () => { hideTooltip(); render(); });
+  let renderedWidth = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (window.innerWidth === renderedWidth) return;  // height-only (mobile address bar)
+    renderedWidth = window.innerWidth;
+    hideTooltip();
+    render();
+  });
   render();
 })();

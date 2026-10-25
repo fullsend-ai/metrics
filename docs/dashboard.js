@@ -61,12 +61,17 @@
       .call(d3.axisLeft(scale).ticks(5).tickSize(-innerW).tickFormat(""));
   }
 
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
   function showTooltip(event, html) {
-    tooltip.html(html).style("opacity", 1);
+    const clientWidth = document.documentElement.clientWidth;
+    // Measure at the natural width: in place, its width shrinks to the space left before the edge.
+    tooltip.html(html).style("left", "0px").style("max-width", (clientWidth - 8) + "px")
+      .style("opacity", 1).attr("aria-hidden", "false");
     // Flip to the cursor's left when the tooltip would run off the page.
     // Keep it inside the viewport on narrow screens.
     const width = tooltip.node().offsetWidth;
-    const right = window.scrollX + document.documentElement.clientWidth;
+    const right = window.scrollX + clientWidth;
     const left = event.pageX + 12 + width > right ? event.pageX - 12 - width : event.pageX + 12;
     tooltip
       .style("left", Math.max(window.scrollX + 4, Math.min(left, right - width - 4)) + "px")
@@ -75,7 +80,7 @@
 
   function hideTooltip() {
     // Park it off-page: a hidden tooltip left in place can widen the page.
-    tooltip.style("opacity", 0).style("left", "-9999px");
+    tooltip.style("opacity", 0).style("left", "-9999px").attr("aria-hidden", "true");
   }
 
   function doraLine(g, y, value, label, color, innerW) {
@@ -166,9 +171,9 @@
           .filter(s => isFocused(chartId, s.name))
           .map(s => [s.color, s.text(day)])
           .filter(([, text]) => text != null)
-          .map(([color, text]) => `<span class="tooltip-swatch" style="background:${color}"></span>${text}`);
+          .map(([color, text]) => `<span class="tooltip-swatch" style="background:${color}"></span>${esc(text)}`);
         guide.attr("x1", x(new Date(day))).attr("x2", x(new Date(day))).style("display", null);
-        showTooltip(event, `<strong>${day}</strong><br>${lines.join("<br>")}`);
+        showTooltip(event, `<strong>${esc(day)}</strong><br>${lines.join("<br>")}`);
       })
       .on("mouseleave", () => { guide.style("display", "none"); hideTooltip(); })
       .on("click", drill ? event => { window.location.href = "details.html?date=" + nearest(event); } : null);
@@ -1244,10 +1249,17 @@
 
   render();
   let resizeTimer;
+  let renderedWidth = window.innerWidth;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
     // The redraw removes the hovered chart without a mouseleave, so hide the tooltip first.
-    resizeTimer = setTimeout(() => { hideTooltip(); render(); }, 150);
+    // Height-only resizes (a mobile address bar) skip it, which also keeps the table's sort.
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth === renderedWidth) return;
+      renderedWidth = window.innerWidth;
+      hideTooltip();
+      render();
+    }, 150);
   });
 
   // --- ToC scroll spy ---
