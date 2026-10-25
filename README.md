@@ -55,18 +55,20 @@ closed.
 | `docs/fix-candidates.csv` | Later PR → earlier PR pairs: the later PR (or the issue it closes) names the earlier PR, uses causal wording ("broke", "regression", "caused by", "introduced in"), or reverts it |
 | `docs/fix-judgments.csv` | Verdict per pair (`defect_from_original`, `later_change`, `not_related`, `unknown`, or `unjudged`); seeded from an offline replay, editable by hand |
 | `docs/escaped-fixes.csv` | Per week × repo × PR type: merged PRs, PRs with a confirmed fix, severe, open candidates (`unjudged` or `unknown`), rate |
-| `scripts/collect-escaped-fixes.sh` | Daily (wired into `.github/workflows/collect.yml`, after PR types) |
+| `docs/fix-candidates-through.txt` | Last day collected without a gap; a week closes only once this date and the PR-type data have both passed its 30-day window |
+| `scripts/collect-escaped-fixes.sh` | Daily (wired into `.github/workflows/collect.yml`, after PR types); collects every day since the date above, so a failed run is caught up |
 | `scripts/backfill-escaped-fixes.sh` | Date-range backfill; keeps existing judgments |
 
 Only `defect_from_original` counts. Detection alone is noisy (a named reference
 is a real fix about a third of the time), so each pair needs a verdict. To
 judge new pairs automatically, set `FIX_JUDGE_CMD` to a command that reads the
 pair and both diffs as JSON on stdin and prints
-`{"verdict": ..., "severity": ..., "judged_by": ...}`; unset, nothing is judged
-and pairs stay `unjudged`. The JSON carries untrusted PR text and diffs: if the
+`{"verdict": ..., "severity": ...}`; its verdicts are recorded as
+`judged_by` `ai (FIX_JUDGE_CMD)`, and a pair whose diff can't be downloaded stays
+`unjudged`. Unset, nothing is judged and pairs stay `unjudged`. The JSON carries untrusted PR text and diffs: if the
 judge is an LLM, its prompt must treat the payload as data, never as
 instructions, and a person's verdict always overrides it. After editing judgments by hand, recompute with
 `python3 scripts/collect-escaped-fixes.py --rebuild`.
 
 The rate is a lower bound: fixes that never mention the earlier PR are missed.
-Verdicts are AI judgments unless `judged_by` names a person.
+Verdicts are AI judgments unless `judged_by` names a person, which only a hand edit can set.

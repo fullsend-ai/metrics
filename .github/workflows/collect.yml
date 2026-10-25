@@ -85,6 +85,9 @@ jobs:
           fi
 
       - name: Collect escaped-fix metrics
+        # A failure here leaves its CSVs unchanged and must not stop the other metrics from being committed;
+        # the next run catches up the missed days.
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           INPUT_DATE: ${{ github.event.inputs.date }}

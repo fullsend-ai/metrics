@@ -15,11 +15,19 @@
 
 FIX_JUDGE_CMD (optional): a shell command run once per unjudged pair. It gets
 a JSON object on stdin (fix, original, fix_url, original_url, fix_diff,
-original_diff) and must print {"verdict": ..., "severity": ...,
-"judged_by": ...} where verdict is one of defect_from_original,
-later_change, not_related, unknown and severity is low, medium, high or "".
-Unset means no judging. The payload is untrusted PR text: an LLM judge must treat
-it as data, and a person's verdict in fix-judgments.csv overrides it.
+original_diff) and must print a JSON object {"verdict": ..., "severity": ...}
+where verdict is one of defect_from_original, later_change, not_related,
+unknown and severity is low, medium, high or "". Its verdicts are always
+recorded as judged_by "ai (FIX_JUDGE_CMD)"; a person's verdict is entered in
+fix-judgments.csv directly and overrides it. A pair whose diff cannot be
+downloaded stays unjudged. Unset means no judging. The payload is untrusted PR
+text: an LLM judge must treat it as data.
+
+Coverage: docs/fix-candidates-through.txt holds the last date through which
+fixes have been collected without a gap. A week only counts as closed once
+both the PR-type data and this date have passed its 30-day window, and the
+daily run (--catch-up) collects every day since that date, so a failed or
+skipped day is picked up the next day.
 """
 from __future__ import annotations
 
@@ -32,7 +40,7 @@ import re
 import subprocess
 import sys
 from collections import defaultdict
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -44,6 +52,7 @@ JUDGMENTS = ROOT / "docs" / "fix-judgments.csv"
 OUTPUT = ROOT / "docs" / "escaped-fixes.csv"
 DETAILS = ROOT / "docs" / "pr-type-details.csv"
 AGGREGATE = ROOT / "docs" / "pr-type.csv"
+THROUGH = ROOT / "docs" / "fix-candidates-through.txt"
 
 CANDIDATE_HEADER = ["fix", "original", "detected_by", "days_between", "fix_merged_at", "original_merged_at"]
 JUDGMENT_HEADER = ["fix", "original", "verdict", "severity", "judged_by", "judged_at"]
@@ -52,6 +61,9 @@ OUTPUT_HEADER = [
     "unjudged_candidates", "escaped_fix_rate",
 ]
 VERDICTS = {"defect_from_original", "later_change", "not_related", "unknown"}
+SEVERITIES = {"low", "medium", "high", ""}
+HOOK_JUDGE = "ai (FIX_JUDGE_CMD)"
+MISSING = ("HTTP 404", "HTTP 410", "HTTP 422", "HTTP 451")  # unknown, deleted, invalid or blocked
 
 URL_REF = re.compile(r"github\.com/fullsend-ai/([\w.-]+)/pull/(\d+)", re.I)
 QUALIFIED_REF = re.compile(r"(?<![\w/.-])fullsend-ai/([\w.-]+)#(\d+)", re.I)
@@ -64,13 +76,15 @@ CAUSAL = re.compile(
 )
 CAUSAL_SHA = re.compile(
     r"\b(?:broke|broken by|regressed (?:in|by)|regression (?:in|from)|caused by|introduced (?:in|by))"
-    r"\s+(?:commit\s+)?`?([0-9a-f]{7,40})\b",
+    r"\s+(?:commit\s+)?`?(?:fullsend-ai/([\w.-]+)@)?([0-9a-f]{7,40})\b",
     re.I,
 )
 # Same revert subject rule as collect-quality.py.
 REVERT_TITLE = re.compile(r"^\s*(?:(?:[a-z][\w-]*)(?:\([^)]*\))?!?:\s*)?revert(?:\b|!|:)", re.I)
 REVERT_QUOTED = re.compile(r"revert\w*\s+\"(.+)\"", re.I)
-REVERT_SHA = re.compile(r"\bThis reverts commit\s+([0-9a-f]{7,40})\b", re.I)
+REVERT_SHA = re.compile(r"\bThis reverts commit\s+(?:fullsend-ai/([\w.-]+)@)?([0-9a-f]{7,40})\b", re.I)
+# "Fixes https://github.com/fullsend-ai/agents/issues/20" closes that issue too.
+ISSUE_URL = re.compile(r"(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+https?://github\.com/fullsend-ai/([\w.-]+)/issues/(\d+)", re.I)
 DEPS_TITLE = re.compile(r"^\s*\w+\(deps\)", re.I)  # dependency bumps quote upstream changelogs
 
 
@@ -122,8 +136,8 @@ def detect(pr: dict, by_title: dict[tuple[str, str], str], sha_to_pr, linked_tex
     found = dict.fromkeys(references(repo, text), "named")
     if CAUSAL.search(text):
         found = dict.fromkeys(found, "causal+named")
-        for sha in CAUSAL_SHA.findall(text):
-            key = sha_to_pr(repo, sha)
+        for sha_repo, sha in CAUSAL_SHA.findall(text):
+            key = sha_to_pr(sha_repo.lower() or repo, sha)
             if key:
                 found.setdefault(key, "causal")
     if REVERT_TITLE.match(title):
@@ -131,8 +145,8 @@ def detect(pr: dict, by_title: dict[tuple[str, str], str], sha_to_pr, linked_tex
         quoted = REVERT_QUOTED.search(title)
         if quoted and (repo, quoted.group(1).strip()) in by_title:
             reverted.add(by_title[(repo, quoted.group(1).strip())])
-        for sha in REVERT_SHA.findall(text):
-            key = sha_to_pr(repo, sha)
+        for sha_repo, sha in REVERT_SHA.findall(text):
+            key = sha_to_pr(sha_repo.lower() or repo, sha)
             if key:
                 reverted.add(key)
         found.update(dict.fromkeys(reverted, "revert"))
@@ -168,7 +182,7 @@ def gh_get(pr_type, path: str):
     try:
         return pr_type.gh_json(["api", path])
     except RuntimeError as err:
-        if "HTTP 404" in str(err) or "HTTP 422" in str(err):  # unknown issue or commit
+        if any(code in str(err) for code in MISSING):
             return None
         raise
 
@@ -194,7 +208,19 @@ def closing_refs(pr_type, repo: str, title: str, body: str) -> list[tuple[str, i
         refs.append((repo, int(match.group(1))))
     refs += [(r.lower(), int(n)) for r, n in pr_type.ISSUE_BODY_QUALIFIED.findall(body)]
     refs += [(repo, int(n)) for n in pr_type.ISSUE_BODY_LOCAL.findall(body)]
+    refs += [(r.lower(), int(n)) for r, n in ISSUE_URL.findall(body)]
     return [ref for ref in dict.fromkeys(refs) if ref[0] in REPOS]
+
+
+def qualify(text: str, repo: str) -> str:
+    """Pin bare #N and unqualified causal/revert commit SHAs in text to repo."""
+    def pin(match: re.Match) -> str:
+        if match.group(1):
+            return match.group(0)
+        cut = match.start(2) - match.start(0)
+        return f"{match.group(0)[:cut]}{ORG}/{repo}@{match.group(0)[cut:]}"
+    text = LOCAL_REF.sub(f"{ORG}/{repo}#\\1", text)
+    return REVERT_SHA.sub(pin, CAUSAL_SHA.sub(pin, text))
 
 
 def gh_linked_issue_text(pr_type, get=None):
@@ -210,15 +236,19 @@ def gh_linked_issue_text(pr_type, get=None):
             if not issue:
                 continue
             text = f"{issue.get('title') or ''}\n{issue.get('body') or ''}"
-            # Bare #N in the issue refers to the issue's own repo.
-            texts.append(text if issue_repo == pr["repo"] else LOCAL_REF.sub(f"{ORG}/{issue_repo}#\\1", text))
+            # Bare #N and commit SHAs in the issue refer to the issue's own repo.
+            texts.append(text if issue_repo == pr["repo"] else qualify(text, issue_repo))
         return "\n".join(texts)
 
     return linked_text
 
 
+def read_through() -> date | None:
+    return date.fromisoformat(THROUGH.read_text().strip()) if THROUGH.exists() else None
+
+
 def collect(start: date, end: date) -> None:
-    """Replace candidate rows for fixes merged in [start, end]."""
+    """Replace candidate rows for fixes merged in [start, end]; advance THROUGH when the range adjoins it."""
     pr_type = _load_pr_type()
     merged: dict[str, dict] = {}
     for repo in REPOS:
@@ -231,6 +261,12 @@ def collect(start: date, end: date) -> None:
     kept = [row for row in read(CANDIDATES) if not start.isoformat() <= row["fix_merged_at"][:10] <= end.isoformat()]
     rows = sorted(kept + new_rows, key=lambda row: (row["fix_merged_at"], row["fix"], row["original"]))
     write(CANDIDATES, CANDIDATE_HEADER, rows)
+    through = read_through()
+    if through is None or start <= through + timedelta(days=1):
+        THROUGH.write_text(f"{max(end, through or end).isoformat()}\n")
+    else:
+        print(f"  warning: collected from {start}, after a gap since {through}; weeks stay open until it is filled",
+              file=sys.stderr)
     print(f"  {len(fixes)} merged PRs checked, {len(new_rows)} candidate pairs")
 
 
@@ -247,10 +283,16 @@ def sync_judgments(candidates: list[dict], judgments: list[dict]) -> list[dict]:
     return judgments
 
 
-def pr_diff(key: str) -> str:
+def pr_diff(key: str) -> str | None:
+    """The PR's diff, or None when it could not be downloaded."""
     repo, number = key.split("#")
     result = subprocess.run(["gh", "pr", "diff", number, "--repo", f"{ORG}/{repo}"], capture_output=True, text=True)
-    return result.stdout
+    return result.stdout if result.returncode == 0 else None
+
+
+def log_safe(text: str) -> str:
+    """One line with no control characters or workflow commands (::name::), for the Actions log."""
+    return re.sub(r"[\x00-\x1f\x7f]+", " ", text).replace("::", ": :")[:200]
 
 
 def judge(candidates: list[dict], judgments: list[dict]) -> None:
@@ -267,20 +309,22 @@ def judge(candidates: list[dict], judgments: list[dict]) -> None:
             repo, number = row[side].split("#")
             payload[f"{side}_url"] = f"https://github.com/{ORG}/{repo}/pull/{number}"
             payload[f"{side}_diff"] = pr_diff(row[side])
+        if payload["fix_diff"] is None or payload["original_diff"] is None:
+            print(f"  judge skipped {row['fix']} -> {row['original']}: a diff could not be downloaded", file=sys.stderr)
+            continue
         result = subprocess.run(command, shell=True, input=json.dumps(payload), capture_output=True, text=True)
         try:
             answer = json.loads(result.stdout) if result.returncode == 0 else {}
         except json.JSONDecodeError:
             answer = {}
-        if answer.get("verdict") not in VERDICTS:
-            print(f"  judge skipped {row['fix']} -> {row['original']}: {result.stderr.strip()[:200]}", file=sys.stderr)
+        if not isinstance(answer, dict):
+            answer = {}
+        severity = str(answer.get("severity") or "").strip().lower()
+        if answer.get("verdict") not in VERDICTS or severity not in SEVERITIES:
+            print(f"  judge skipped {row['fix']} -> {row['original']}: {log_safe(result.stderr.strip())}", file=sys.stderr)
             continue
-        row.update(
-            verdict=answer["verdict"],
-            severity=answer.get("severity") or "",
-            judged_by=answer.get("judged_by") or "ai (FIX_JUDGE_CMD)",
-            judged_at=date.today().isoformat(),
-        )
+        # judged_by is fixed: hook output never claims to be a person's verdict.
+        row.update(verdict=answer["verdict"], severity=severity, judged_by=HOOK_JUDGE, judged_at=date.today().isoformat())
 
 
 def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as_of: date) -> list[dict]:
@@ -328,7 +372,12 @@ def rebuild() -> None:
     dates = [row["date"] for row in read(AGGREGATE)]
     if not dates:
         raise SystemExit("pr-type.csv is empty; run collect-pr-type.sh first")
-    rows = rates(candidates, judgments, read(DETAILS), date.fromisoformat(max(dates)))
+    as_of = date.fromisoformat(max(dates))
+    through = read_through()
+    if through is None or through < as_of:
+        print(f"  fix candidates collected through {through}: weeks close by that date, not {as_of}", file=sys.stderr)
+        as_of = min(as_of, through or date.min)
+    rows = rates(candidates, judgments, read(DETAILS), as_of)
     write(OUTPUT, OUTPUT_HEADER, rows)
     print(f"  {len(rows)} weekly rows in {OUTPUT.name}")
 
@@ -338,9 +387,17 @@ def main() -> None:
     parser.add_argument("--date", help="Collect fixes merged on one YYYY-MM-DD date.")
     parser.add_argument("--from", dest="start", help="Start date for an inclusive YYYY-MM-DD range.")
     parser.add_argument("--to", dest="end", help="End date for an inclusive YYYY-MM-DD range.")
+    parser.add_argument("--catch-up", action="store_true",
+                        help="Collect every day after docs/fix-candidates-through.txt up to yesterday (UTC).")
     parser.add_argument("--rebuild", action="store_true", help="Only re-judge and recompute rates (no GitHub search).")
     args = parser.parse_args()
-    if args.date:
+    if args.catch_up:
+        through, yesterday = read_through(), datetime.now(timezone.utc).date() - timedelta(days=1)
+        if through is None:
+            parser.error("no docs/fix-candidates-through.txt: run backfill-escaped-fixes.sh first")
+        if through < yesterday:
+            collect(through + timedelta(days=1), yesterday)
+    elif args.date:
         collect(date.fromisoformat(args.date), date.fromisoformat(args.date))
     elif args.start:
         start = date.fromisoformat(args.start)
@@ -349,7 +406,7 @@ def main() -> None:
             parser.error("--from must not be later than --to")
         collect(start, end)
     elif not args.rebuild:
-        parser.error("one of --date, --from or --rebuild is required")
+        parser.error("one of --catch-up, --date, --from or --rebuild is required")
     rebuild()
 
 

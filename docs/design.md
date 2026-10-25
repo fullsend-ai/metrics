@@ -229,8 +229,9 @@ from a later PR within 30 days:
   type), only for weeks whose 30-day window has closed; merged-PR counts and
   types come from `docs/pr-type-details.csv`
 - `scripts/collect-escaped-fixes.sh` + `scripts/collect-escaped-fixes.py` —
-  daily collection (wired after PR types in `collect.yml`);
-  `scripts/backfill-escaped-fixes.sh` for a date range
+  daily collection (wired after PR types in `collect.yml`), catching up every
+  day since `docs/fix-candidates-through.txt`; `scripts/backfill-escaped-fixes.sh`
+  for a date range
 
 Detection is deliberately split from judging. An offline replay of 2,233
 merged PRs judged 1,089 candidate pairs from the code: a named reference with

@@ -225,18 +225,29 @@
 (async function () {
   "use strict";
 
-  const color = (name, fallback) => getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback;
+  function themeColor(name, fallback) {
+    const value = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return value || fallback;
+  }
+
   const pct = value => `${(value * 100).toFixed(1)}%`;
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   const tooltip = d3.select("#tooltip");
-  // Park it off-page when hidden: a hidden tooltip left in place can widen the page.
-  const hideTooltip = () => tooltip.style("opacity", 0).style("left", "-9999px");
+
+  function hideTooltip() {
+    // Park it off-page: a hidden tooltip left in place can widen the page.
+    tooltip.style("opacity", 0).style("left", "-9999px").attr("aria-hidden", "true");
+  }
 
   function showTooltip(event, html) {
-    tooltip.html(html).style("opacity", 1);
+    const clientWidth = document.documentElement.clientWidth;
+    // Measure at the natural width: in place, its width shrinks to the space left before the edge.
+    tooltip.html(html).style("left", "0px").style("max-width", (clientWidth - 8) + "px")
+      .style("opacity", 1).attr("aria-hidden", "false");
     // Flip to the cursor's left when the tooltip would run off the page,
     // and keep it inside the viewport on narrow screens.
     const width = tooltip.node().offsetWidth;
-    const right = window.scrollX + document.documentElement.clientWidth;
+    const right = window.scrollX + clientWidth;
     const left = event.pageX + 12 + width > right ? event.pageX - 12 - width : event.pageX + 12;
     tooltip
       .style("left", `${Math.max(window.scrollX + 4, Math.min(left, right - width - 4))}px`)
@@ -280,7 +291,7 @@
   function renderStats(rows) {
     const total = sum(rows.filter(d => d.type === "all"));
     document.getElementById("escaped-hero").innerHTML = `
-      <div class="stat"><div class="val" style="color:${color("--negative", "#f87171")}">${pct(total.rate)}</div><div class="lbl">Escaped-fix rate (all closed weeks)</div></div>
+      <div class="stat"><div class="val" style="color:${themeColor("--negative", "#f87171")}">${pct(total.rate)}</div><div class="lbl">Escaped-fix rate (all closed weeks)</div></div>
       <div class="stat"><div class="val">${total.escaped}</div><div class="lbl">PRs fixed within 30 days</div></div>
       <div class="stat"><div class="val">${total.severe}</div><div class="lbl">Severe</div></div>
       <div class="stat"><div class="val-sm">${total.unjudged} unjudged or unknown · ${total.merged} merged</div><div class="lbl">Coverage</div></div>`;
@@ -291,10 +302,10 @@
     container.selectAll("*").remove();
     const all = rows.filter(d => d.type === "all");
     const series = (selectedRepo === "__all__"
-      ? [["All repos", all, color("--accent", "#c4ff0e")],
-        ["fullsend", all.filter(d => d.repo === "fullsend"), color("--chart-1", "#5cb3ff")],
-        ["agents", all.filter(d => d.repo === "agents"), color("--chart-3", "#ff8f5c")]]
-      : [[selectedRepo, all, color("--chart-1", "#5cb3ff")]])
+      ? [["All repos", all, themeColor("--accent", "#c4ff0e")],
+        ["fullsend", all.filter(d => d.repo === "fullsend"), themeColor("--chart-1", "#5cb3ff")],
+        ["agents", all.filter(d => d.repo === "agents"), themeColor("--chart-3", "#ff8f5c")]]
+      : [[selectedRepo, all, themeColor("--chart-1", "#5cb3ff")]])
       .map(([label, items, stroke]) => [label, weekly(items), stroke]);
     const points = series.flatMap(([, items]) => items);
     if (!points.length) {
@@ -338,9 +349,9 @@
         const lines = series
           .map(([label]) => [label, byWeek.get(`${week.week}|${label}`)])
           .filter(([, d]) => d)
-          .map(([label, d]) => `${label}: ${pct(d.rate)} (${d.escaped} of ${d.merged} merged, ${d.severe} severe`
+          .map(([label, d]) => `${esc(label)}: ${pct(d.rate)} (${d.escaped} of ${d.merged} merged, ${d.severe} severe`
             + `${d.unjudged ? `, ${d.unjudged} unjudged or unknown` : ""})`);
-        showTooltip(event, `<strong>Week of ${week.week}</strong><br>${lines.join("<br>")}`);
+        showTooltip(event, `<strong>Week of ${esc(week.week)}</strong><br>${lines.join("<br>")}`);
       })
       .on("mouseleave", () => { guide.style("display", "none"); hideTooltip(); });
 
