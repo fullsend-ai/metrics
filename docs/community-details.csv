@@ -1842,3 +1842,560 @@ date,repo,type,event,number,actor,title,url
 2026-10-09,pi-inference-gateway,pr,opened_core,1,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/pi-inference-gateway/pull/1
 2026-10-10,fullsend,issue,closed_other_external,6649,fbricon,"Add read:packages rights to fix and code agents' Github token",https://github.com/fullsend-ai/fullsend/issues/6649
 2026-10-10,pi-inference-gateway,pr,opened_core,24,waynesun09,"chore: release v0.1.2",https://github.com/fullsend-ai/pi-inference-gateway/pull/24
+2026-10-11,fullsend,issue,closed_via_pr_external,8270,jwm4,"docs: Claude Code runtime page says ANTHROPIC_* variables are unset, but values set in the harness file are honoured",https://github.com/fullsend-ai/fullsend/issues/8270
+2026-10-11,fullsend,pr,opened_core,8324,ifireball,"chore(tooling): add optional Atlassian CLI to mise",https://github.com/fullsend-ai/fullsend/pull/8324
+2026-10-11,fullsend,pr,opened_core,8318,waynesun09,"ci(#8289): build image arm64 legs on native runners, drop QEMU",https://github.com/fullsend-ai/fullsend/pull/8318
+2026-10-11,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-11,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-11,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-11,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-11,agents,pr,reviewed_external,1615,shairevivo,"fix(#1614): escalate severity for multi-issue scope bundling",https://github.com/fullsend-ai/agents/pull/1615
+2026-10-11,pi-inference-gateway,pr,opened_core,35,waynesun09,"chore: release v0.1.3",https://github.com/fullsend-ai/pi-inference-gateway/pull/35
+2026-10-12,fullsend,issue,opened_external,8381,dhshah13,"Resolve child skill identities before the base merge",https://github.com/fullsend-ai/fullsend/issues/8381
+2026-10-12,fullsend,issue,opened_external,8379,gklein,"forge: 17 FakeClient read methods return internal storage instead of copies",https://github.com/fullsend-ai/fullsend/issues/8379
+2026-10-12,fullsend,issue,opened_external,8378,gklein,"forge: TestFakeClient_ErrorInjection covers 53 of 130 FakeClient methods",https://github.com/fullsend-ai/fullsend/issues/8378
+2026-10-12,fullsend,issue,opened_external,8371,mfrancisc,"check-e2e-authorization.sh policy duplicated between fullsend and agents with no drift guard",https://github.com/fullsend-ai/fullsend/issues/8371
+2026-10-12,fullsend,issue,opened_external,8370,jwm4,"gateway route: Messages-dialect models fail against a gateway that authenticates /v1/messages by x-api-key",https://github.com/fullsend-ai/fullsend/issues/8370
+2026-10-12,fullsend,issue,opened_external,8369,jwm4,"agent new: default sandbox image is stale, so a generated pi agent on a gateway/ model fails with ""Model not found""",https://github.com/fullsend-ai/fullsend/issues/8369
+2026-10-12,fullsend,issue,opened_external,8367,gwenneg,"repos install: GitHub scaffold commits are unsigned with user tokens and rejected by rulesets requiring verified signatures",https://github.com/fullsend-ai/fullsend/issues/8367
+2026-10-12,fullsend,issue,closed_other_external,8230,mfrancisc,"dispatch: role enablement ignores config.base.yaml and mismatches Go roles semantics",https://github.com/fullsend-ai/fullsend/issues/8230
+2026-10-12,fullsend,pr,opened_core,8362,ifireball,"chore(e2e): align pool provisioning with test apps",https://github.com/fullsend-ai/fullsend/pull/8362
+2026-10-12,fullsend,pr,reviewed_external,8231,mfrancisc,"fix(ci): require write permission for PR test authorization",https://github.com/fullsend-ai/fullsend/pull/8231
+2026-10-12,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-12,agents,issue,opened_external,1664,jflowers,"test: add automated skill→harness env var reachability test",https://github.com/fullsend-ai/agents/issues/1664
+2026-10-12,agents,issue,opened_external,1663,jflowers,"chore: store Dewey learning for skill→harness env var reachability gotcha",https://github.com/fullsend-ai/agents/issues/1663
+2026-10-12,agents,issue,closed_other_external,1663,jflowers,"chore: store Dewey learning for skill→harness env var reachability gotcha",https://github.com/fullsend-ai/agents/issues/1663
+2026-10-12,agents,issue,closed_via_pr_external,1621,jflowers,"review: expose REVIEW_GIT_FETCH_DEPTH (or derived signal) to sandbox for skipped/degraded distinction",https://github.com/fullsend-ai/agents/issues/1621
+2026-10-12,agents,pr,reviewed_external,1643,mfrancisc,"fix(ci): require write permission for PR test authorization",https://github.com/fullsend-ai/agents/pull/1643
+2026-10-13,fullsend,issue,opened_external,8401,jasonawant,"jira-poll: avoid requiring Administer Projects permission for actor authorization",https://github.com/fullsend-ai/fullsend/issues/8401
+2026-10-13,fullsend,issue,opened_external,8398,dhshah13,"Update the author-fullsend-augmentations skill caveat for declared-name skill identity",https://github.com/fullsend-ai/fullsend/issues/8398
+2026-10-13,fullsend,issue,opened_external,8395,gwenneg,"behaviourtest: cover user-token signed scaffold commits under a required_signatures ruleset",https://github.com/fullsend-ai/fullsend/issues/8395
+2026-10-13,fullsend,issue,opened_external,8390,ccronca,"review: agent-result.json repo field fails schema validation for nested GitLab group paths",https://github.com/fullsend-ai/fullsend/issues/8390
+2026-10-13,fullsend,issue,closed_other_external,8390,ccronca,"review: agent-result.json repo field fails schema validation for nested GitLab group paths",https://github.com/fullsend-ai/fullsend/issues/8390
+2026-10-13,fullsend,issue,closed_via_pr_external,7903,TomasTomecek,"prioritize.yml scaffold template: workflow_dispatch inputs missing required description fields",https://github.com/fullsend-ai/fullsend/issues/7903
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-13,agents,issue,opened_external,1673,shairevivo,"Harden secret scanning of agent-authored issue context and PR descriptions",https://github.com/fullsend-ai/agents/issues/1673
+2026-10-13,agents,issue,opened_external,1672,jflowers,"pr-risk-assessment skill path is not runtime-neutral",https://github.com/fullsend-ai/agents/issues/1672
+2026-10-13,agents,issue,opened_external,1670,jflowers,"Add intra-run multi-pass convergence loop to review orchestrator",https://github.com/fullsend-ai/agents/issues/1670
+2026-10-13,agents,issue,opened_external,1667,gklein,"test(schemas): add negative tests for review-result per-action required fields",https://github.com/fullsend-ai/agents/issues/1667
+2026-10-13,agents,issue,closed_via_pr_external,1667,gklein,"test(schemas): add negative tests for review-result per-action required fields",https://github.com/fullsend-ai/agents/issues/1667
+2026-10-13,agents,issue,closed_via_pr_external,1664,jflowers,"test: add automated skill→harness env var reachability test",https://github.com/fullsend-ai/agents/issues/1664
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-13,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-14,fullsend,issue,opened_external,8436,gklein,"Publish an official MacOS Homebrew tap from the release pipeline",https://github.com/fullsend-ai/fullsend/issues/8436
+2026-10-14,agent-eval-harness,issue,opened_external,253,astefanutti,"Agent judges are not confined: Read/Write unscoped, MCP uncovered, no evidence a deny fired",https://github.com/fullsend-ai/agent-eval-harness/issues/253
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-14,odh-test-gen,issue,closed_via_pr_external,71,fege,"Preserve auto_revised across review reassessment",https://github.com/fullsend-ai/odh-test-gen/issues/71
+2026-10-14,odh-test-gen,pr,reviewed_external,70,amastbau,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/odh-test-gen/pull/70
+2026-10-14,agents,pr,opened_core,1679,ggallen,"docs(agents): require direct review-thread replies",https://github.com/fullsend-ai/agents/pull/1679
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,agents,pr,reviewed_external,1543,jflowers,"fix(harness): declare steering explicitly on every fleet harness with a pre-script",https://github.com/fullsend-ai/agents/pull/1543
+2026-10-14,auto-merge,pr,opened_core,27,ascerra,"Spike: trial repository readiness and read-only PR policy assessment",https://github.com/fullsend-ai/auto-merge/pull/27
+2026-10-15,fullsend,issue,opened_external,8471,jwm4,"docs(adr): record an opt-in x-api-key credential header for Messages-dialect gateway models (amends ADR 0137 and ADR 0138)",https://github.com/fullsend-ai/fullsend/issues/8471
+2026-10-15,fullsend,issue,opened_external,8465,jflowers,"Machine-checkable sandbox env-var contract (manifest of exported/reserved sandbox variables)",https://github.com/fullsend-ai/fullsend/issues/8465
+2026-10-15,fullsend,issue,opened_external,8452,gklein,"docs: cli-internals command tree lists removed admin subcommands",https://github.com/fullsend-ai/fullsend/issues/8452
+2026-10-15,fullsend,issue,closed_via_pr_external,8452,gklein,"docs: cli-internals command tree lists removed admin subcommands",https://github.com/fullsend-ai/fullsend/issues/8452
+2026-10-15,fullsend,issue,closed_via_pr_external,8381,dhshah13,"Resolve child skill identities before the base merge",https://github.com/fullsend-ai/fullsend/issues/8381
+2026-10-15,fullsend,issue,closed_via_pr_external,8111,mfrancisc,"dispatch: kill_switch check on GitHub and GitLab ignores config.base.yaml",https://github.com/fullsend-ai/fullsend/issues/8111
+2026-10-15,fullsend,issue,closed_via_pr_external,7830,dhshah13,"Forge skills that share a directory basename replace each other: review loses issue-labels",https://github.com/fullsend-ai/fullsend/issues/7830
+2026-10-15,fullsend,pr,opened_core,8473,waynesun09,"feat(runtime): implement OpenCodeRuntime",https://github.com/fullsend-ai/fullsend/pull/8473
+2026-10-15,fullsend,pr,opened_core,8467,ascerra,"ci(gemara): prototype repo-restricted App-token writer",https://github.com/fullsend-ai/fullsend/pull/8467
+2026-10-15,fullsend,pr,reviewed_external,8472,jwm4,"docs(#8471): record opt-in x-api-key gateway header for Messages models",https://github.com/fullsend-ai/fullsend/pull/8472
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-15,fullsend,pr,reviewed_external,7833,dhshah13,"fix(#7830)!: keep nested forge skills that share a basename",https://github.com/fullsend-ai/fullsend/pull/7833
+2026-10-15,rfe-creator,pr,reviewed_external,226,astefanutti,"Add OpenRouter model evaluation profiles for Qwen, Nemotron",https://github.com/fullsend-ai/rfe-creator/pull/226
+2026-10-15,rfe-creator,pr,reviewed_external,226,astefanutti,"Add OpenRouter model evaluation profiles for Qwen, Nemotron",https://github.com/fullsend-ai/rfe-creator/pull/226
+2026-10-15,agent-eval-harness,issue,closed_via_pr_external,239,jwm4,"Agent judge allowed_tools does not restrict tools on the Claude Code runner",https://github.com/fullsend-ai/agent-eval-harness/issues/239
+2026-10-15,agent-eval-harness,pr,reviewed_external,240,astefanutti,"fix(score): deny shell, network and sub-agent tools to judges run through Claude Code",https://github.com/fullsend-ai/agent-eval-harness/pull/240
+2026-10-15,test-creator,pr,reviewed_external,70,amastbau,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/test-creator/pull/70
+2026-10-15,test-creator,pr,reviewed_external,70,ederign,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/test-creator/pull/70
+2026-10-15,test-creator,pr,reviewed_external,70,amastbau,"AISDLC-285: Add native Fullsend producer",https://github.com/fullsend-ai/test-creator/pull/70
+2026-10-15,agents,issue,opened_external,1690,csoceanu,"Review projection rejects findings with non-canonical categories",https://github.com/fullsend-ai/agents/issues/1690
+2026-10-15,agents,issue,opened_external,1680,Benkapner,"Proposal: maintainer-controlled fix-loop budgets per PR",https://github.com/fullsend-ai/agents/issues/1680
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,agents,pr,reviewed_external,1688,Benkapner,"feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap",https://github.com/fullsend-ai/agents/pull/1688
+2026-10-15,auto-merge,pr,opened_core,38,ascerra,"docs: prove automatic Review to Gemara merge flow",https://github.com/fullsend-ai/auto-merge/pull/38
+2026-10-15,auto-merge,pr,opened_core,37,ascerra,"Accept automatic Fullsend review evidence in Gemara pilot",https://github.com/fullsend-ai/auto-merge/pull/37
+2026-10-15,auto-merge,pr,opened_core,36,ascerra,"docs: prove Gemara holds an out-of-cohort change",https://github.com/fullsend-ai/auto-merge/pull/36
+2026-10-15,auto-merge,pr,opened_core,35,ascerra,"docs: exercise the eligible Gemara pilot cohort",https://github.com/fullsend-ai/auto-merge/pull/35
+2026-10-15,auto-merge,pr,opened_core,34,ascerra,"Fix Gemara writer environment secret forwarding",https://github.com/fullsend-ai/auto-merge/pull/34
+2026-10-15,auto-merge,pr,opened_core,32,ascerra,"Enable a guarded Gemara documentation auto-merge pilot",https://github.com/fullsend-ai/auto-merge/pull/32
+2026-10-15,auto-merge,pr,opened_core,31,ascerra,"Simplify workflows around Gemara shadow and live paths",https://github.com/fullsend-ai/auto-merge/pull/31
+2026-10-15,auto-merge,pr,opened_core,30,ascerra,"test: exercise the live Gemara-controlled merge path",https://github.com/fullsend-ai/auto-merge/pull/30
+2026-10-15,auto-merge,pr,opened_core,29,ascerra,"Trial: observe a hold when required CI fails",https://github.com/fullsend-ai/auto-merge/pull/29
+2026-10-15,auto-merge,pr,opened_core,28,ascerra,"Trial: documentation-only Gemara shadow observation",https://github.com/fullsend-ai/auto-merge/pull/28
+2026-10-16,fullsend,issue,opened_external,8505,tpouyer,"Add proxy and CA configuration inputs to the fullsend GitHub Action",https://github.com/fullsend-ai/fullsend/issues/8505
+2026-10-16,fullsend,issue,opened_external,8503,tpouyer,"Harden sandbox environment policy for alternate Git and TLS controls",https://github.com/fullsend-ai/fullsend/issues/8503
+2026-10-16,fullsend,issue,opened_external,8495,AshwinUgale,"eval-measure: add EM-003 to tell recovered tool errors from ignored ones, using Level 3 content",https://github.com/fullsend-ai/fullsend/issues/8495
+2026-10-16,fullsend,issue,opened_external,8486,gklein,"test: setup-e2e-inference-gateway_test.sh --help check races SIGPIPE under pipefail",https://github.com/fullsend-ai/fullsend/issues/8486
+2026-10-16,fullsend,issue,opened_external,8479,gklein,"feat: add a CI-matching container (hack/ci-local) so local test runs predict CI, especially on macOS",https://github.com/fullsend-ai/fullsend/issues/8479
+2026-10-16,fullsend,issue,closed_via_pr_external,8486,gklein,"test: setup-e2e-inference-gateway_test.sh --help check races SIGPIPE under pipefail",https://github.com/fullsend-ai/fullsend/issues/8486
+2026-10-16,fullsend,issue,closed_via_pr_external,8471,jwm4,"docs(adr): record an opt-in x-api-key credential header for Messages-dialect gateway models (amends ADR 0137 and ADR 0138)",https://github.com/fullsend-ai/fullsend/issues/8471
+2026-10-16,fullsend,issue,closed_via_pr_external,8369,jwm4,"agent new: default sandbox image is stale, so a generated pi agent on a gateway/ model fails with ""Model not found""",https://github.com/fullsend-ai/fullsend/issues/8369
+2026-10-16,fullsend,pr,opened_core,8517,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/fullsend/pull/8517
+2026-10-16,fullsend,pr,opened_core,8515,waynesun09,"ci: dispatch the scaffold sync on release instead of every push",https://github.com/fullsend-ai/fullsend/pull/8515
+2026-10-16,fullsend,pr,opened_core,8500,waynesun09,"fix(cli): remove the OpenShell first-poll settle wait",https://github.com/fullsend-ai/fullsend/pull/8500
+2026-10-16,fullsend,pr,reviewed_external,8472,jwm4,"docs(#8471): record opt-in x-api-key gateway header for Messages models",https://github.com/fullsend-ai/fullsend/pull/8472
+2026-10-16,fullsend,pr,reviewed_external,8446,jwm4,"fix(#8369): repin agent new default images to the v0.48.0 fleet",https://github.com/fullsend-ai/fullsend/pull/8446
+2026-10-16,fullsend,pr,reviewed_external,8428,jwm4,"docs(#8427): clarify review-first paths and role request evidence",https://github.com/fullsend-ai/fullsend/pull/8428
+2026-10-16,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-16,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-16,assess-rfe,pr,opened_core,11,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/assess-rfe/pull/11
+2026-10-16,assess-rfe,pr,reviewed_external,11,ederign,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/assess-rfe/pull/11
+2026-10-16,assess-rfe,pr,reviewed_external,11,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/assess-rfe/pull/11
+2026-10-16,rfe-creator,pr,opened_core,229,waynesun09,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,rfe-creator,pr,opened_core,228,waynesun09,"chore: hand .fullsend/config.yaml to the fullsend fleet manifest",https://github.com/fullsend-ai/rfe-creator/pull/228
+2026-10-16,rfe-creator,pr,reviewed_external,229,ederign,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,rfe-creator,pr,reviewed_external,229,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,rfe-creator,pr,reviewed_external,229,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-16,.fullsend,pr,opened_core,189,waynesun09,"fix(manifest): drop the QualityFlow harness from the experiments entry",https://github.com/fullsend-ai/.fullsend/pull/189
+2026-10-16,.fullsend,pr,opened_core,188,waynesun09,"ci: trigger scaffold sync from the fullsend release dispatch",https://github.com/fullsend-ai/.fullsend/pull/188
+2026-10-16,.fullsend,pr,opened_core,187,waynesun09,"chore: fleet manifest for all fullsend-ai per-repo installs",https://github.com/fullsend-ai/.fullsend/pull/187
+2026-10-16,.fullsend,pr,opened_core,186,waynesun09,"ci: run scaffold sync on release and schedule, deliver as pull requests",https://github.com/fullsend-ai/.fullsend/pull/186
+2026-10-16,agent-eval-harness,issue,opened_external,258,jwm4,"Stage agent-judge inputs by copying, not by loading every declared output file into memory",https://github.com/fullsend-ai/agent-eval-harness/issues/258
+2026-10-16,agent-eval-harness,pr,opened_core,257,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,agent-eval-harness,pr,reviewed_external,257,ederign,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,agent-eval-harness,pr,reviewed_external,257,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,agent-eval-harness,pr,reviewed_external,257,astefanutti,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/agent-eval-harness/pull/257
+2026-10-16,strat-creator,pr,opened_core,86,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/strat-creator/pull/86
+2026-10-16,strat-creator,pr,reviewed_external,86,ederign,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/strat-creator/pull/86
+2026-10-16,strat-creator,pr,reviewed_external,86,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/strat-creator/pull/86
+2026-10-16,experiments,issue,closed_via_pr_external,60,jwm4,"pre-commit fails or rewrites files outside a change set, so clean PRs need --no-verify or drag in other experiments",https://github.com/fullsend-ai/experiments/issues/60
+2026-10-16,experiments,pr,opened_core,63,waynesun09,"chore: remove the QualityFlow harness from the fullsend config",https://github.com/fullsend-ai/experiments/pull/63
+2026-10-16,experiments,pr,opened_core,62,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/experiments/pull/62
+2026-10-16,experiments,pr,reviewed_external,61,jwm4,"fix(pre-commit): scope ty hook to staged files",https://github.com/fullsend-ai/experiments/pull/61
+2026-10-16,epic-creator,pr,opened_core,41,waynesun09,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/epic-creator/pull/41
+2026-10-16,epic-creator,pr,reviewed_external,41,jwm4,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/epic-creator/pull/41
+2026-10-16,test-creator,issue,opened_external,76,mfleader,"`test-plan-create-cases` on a bug fix: I kept 3 of 11 cases",https://github.com/fullsend-ai/test-creator/issues/76
+2026-10-16,test-creator,pr,opened_core,75,waynesun09,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-16,test-creator,pr,opened_core,74,waynesun09,"chore: hand .fullsend/config.yaml to the fullsend fleet manifest",https://github.com/fullsend-ai/test-creator/pull/74
+2026-10-16,test-creator,pr,reviewed_external,75,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-16,test-creator,pr,reviewed_external,75,jwm4,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-16,metrics,pr,opened_core,17,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/metrics/pull/17
+2026-10-16,agents,pr,opened_core,1697,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/agents/pull/1697
+2026-10-16,pi-xai-vertex,pr,opened_core,12,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/pi-xai-vertex/pull/12
+2026-10-16,pi-anthropic-vertex,pr,opened_core,9,waynesun09,"chore: mark .fullsend/config.yaml as managed by the fleet manifest",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/9
+2026-10-16,auto-merge,pr,opened_core,47,ascerra,"Make pinned Review skill examples compatible with Tirith",https://github.com/fullsend-ai/auto-merge/pull/47
+2026-10-16,auto-merge,pr,opened_core,46,ascerra,"Declare pinned provider profiles for vendored Review",https://github.com/fullsend-ai/auto-merge/pull/46
+2026-10-16,auto-merge,pr,opened_core,45,ascerra,"Set App prefix required by pinned Review harness",https://github.com/fullsend-ai/auto-merge/pull/45
+2026-10-16,auto-merge,pr,opened_core,44,ascerra,"Preserve trusted authentication for vendored Fullsend Review",https://github.com/fullsend-ai/auto-merge/pull/44
+2026-10-16,auto-merge,pr,opened_core,43,ascerra,"Test hosted vendored Fullsend Review evidence",https://github.com/fullsend-ai/auto-merge/pull/43
+2026-10-16,auto-merge,pr,opened_core,42,ascerra,"Exercise native Review evidence with vendored Fullsend",https://github.com/fullsend-ai/auto-merge/pull/42
+2026-10-16,auto-merge,pr,opened_core,41,ascerra,"docs: verify renamed Gemara auto-merge workflows",https://github.com/fullsend-ai/auto-merge/pull/41
+2026-10-16,auto-merge,pr,opened_core,39,ascerra,"Clarify Gemara auto-merge layout and harden integrity checks",https://github.com/fullsend-ai/auto-merge/pull/39
+2026-10-16,pi-inference-gateway,pr,opened_core,36,waynesun09,"chore: adopt .fullsend/config.yaml into the fleet manifest, drop the base copy",https://github.com/fullsend-ai/pi-inference-gateway/pull/36
+2026-10-17,fullsend,issue,closed_via_pr_external,8370,jwm4,"gateway route: Messages-dialect models fail against a gateway that authenticates /v1/messages by x-api-key",https://github.com/fullsend-ai/fullsend/issues/8370
+2026-10-17,fullsend,issue,closed_via_pr_external,8367,gwenneg,"repos install: GitHub scaffold commits are unsigned with user tokens and rejected by rulesets requiring verified signatures",https://github.com/fullsend-ai/fullsend/issues/8367
+2026-10-17,fullsend,issue,closed_via_pr_external,7823,yvonnedevlinrh,"feat(runtime/opencode): auto-append @default suffix for Vertex model aliases",https://github.com/fullsend-ai/fullsend/issues/7823
+2026-10-17,fullsend,pr,opened_core,8536,waynesun09,"fix(shim): keep the live per-repo shim identical to its template",https://github.com/fullsend-ai/fullsend/pull/8536
+2026-10-17,auto-merge,pr,opened_core,48,ascerra,"fix(review): supply readonly GitHub gateway credential",https://github.com/fullsend-ai/auto-merge/pull/48
+2026-10-18,fullsend,issue,opened_external,8551,dhshah13,"Maintainer nomination: dhshah13",https://github.com/fullsend-ai/fullsend/issues/8551
+2026-10-18,fullsend,issue,opened_external,8544,csoceanu,"NeutralizeMarkers exposes review-findings-v2 projection markers",https://github.com/fullsend-ai/fullsend/issues/8544
+2026-10-18,fullsend,pr,reviewed_external,8546,Benkapner,"fix(#8544): keep review-findings-v2 projection marker live",https://github.com/fullsend-ai/fullsend/pull/8546
+2026-10-18,agent-eval-harness,issue,opened_external,259,jwm4,"after_each hook failures never reach run_result.json or the judges, so evals re-implement ""the case did not run cleanly"" by hand",https://github.com/fullsend-ai/agent-eval-harness/issues/259
+2026-10-18,agents,issue,opened_external,1704,Benkapner,"Support running selected functional-eval cases locally",https://github.com/fullsend-ai/agents/issues/1704
+2026-10-18,agents,issue,opened_external,1702,Benkapner,"eval: distinguish PR discovery failures from an empty PR list",https://github.com/fullsend-ai/agents/issues/1702
+2026-10-18,agents,issue,opened_external,1701,Benkapner,"eval: preserve first-attempt artifacts when retrying failed cases",https://github.com/fullsend-ai/agents/issues/1701
+2026-10-18,agents,pr,reviewed_external,1703,Benkapner,"fix(#1702): record PR discovery failures in issue fixture capture",https://github.com/fullsend-ai/agents/pull/1703
+2026-10-18,agents,pr,reviewed_external,1703,Benkapner,"fix(#1702): record PR discovery failures in issue fixture capture",https://github.com/fullsend-ai/agents/pull/1703
+2026-10-18,agents,pr,reviewed_external,1703,Benkapner,"fix(#1702): record PR discovery failures in issue fixture capture",https://github.com/fullsend-ai/agents/pull/1703
+2026-10-18,agents,pr,reviewed_external,1691,csoceanu,"fix(#1690): restrict review finding categories to canonical taxonomy",https://github.com/fullsend-ai/agents/pull/1691
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-18,auto-merge,pr,opened_core,49,ascerra,"docs: make current Gemara state and proof clear",https://github.com/fullsend-ai/auto-merge/pull/49
+2026-10-19,fullsend,issue,closed_via_pr_external,8544,csoceanu,"NeutralizeMarkers exposes review-findings-v2 projection markers",https://github.com/fullsend-ai/fullsend/issues/8544
+2026-10-19,fullsend,issue,closed_via_pr_external,7748,jwm4,"OpenAI credential refresh timer stops during host sleep, key expires",https://github.com/fullsend-ai/fullsend/issues/7748
+2026-10-19,fullsend,pr,opened_core,8576,waynesun09,"test(e2e): use a canonical category in the review playback fixture",https://github.com/fullsend-ai/fullsend/pull/8576
+2026-10-19,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-19,fullsend,pr,reviewed_external,8178,jwm4,"fix(#7748): refresh OpenAI credential on wall clock after host sleep",https://github.com/fullsend-ai/fullsend/pull/8178
+2026-10-19,rfe-creator,pr,reviewed_external,229,astefanutti,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-19,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-19,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-53: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-19,epic-creator,pr,reviewed_external,40,guyoron1,"AISDLC-61: Add descriptor-driven planning, submission and recovery",https://github.com/fullsend-ai/epic-creator/pull/40
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,test-creator,pr,reviewed_external,75,fege,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/test-creator/pull/75
+2026-10-19,agents,issue,opened_external,1712,jwm4,"eval: bump agent-eval-harness to v1.56.3 and harden the shared eval scripts",https://github.com/fullsend-ai/agents/issues/1712
+2026-10-19,agents,issue,opened_external,1709,Benkapner,"review: keep dismissed_by_human when only the category changes at the same file:line",https://github.com/fullsend-ai/agents/issues/1709
+2026-10-19,agents,issue,closed_via_pr_external,1690,csoceanu,"Review projection rejects findings with non-canonical categories",https://github.com/fullsend-ai/agents/issues/1690
+2026-10-19,agents,pr,reviewed_external,1710,Benkapner,"fix(#1709): keep dismissed_by_human when only the category changes",https://github.com/fullsend-ai/agents/pull/1710
+2026-10-19,agents,pr,reviewed_external,1710,Benkapner,"fix(#1709): keep dismissed_by_human when only the category changes",https://github.com/fullsend-ai/agents/pull/1710
+2026-10-19,agents,pr,reviewed_external,1710,Benkapner,"fix(#1709): keep dismissed_by_human when only the category changes",https://github.com/fullsend-ai/agents/pull/1710
+2026-10-19,agents,pr,reviewed_external,1691,csoceanu,"fix(#1690): restrict review finding categories to canonical taxonomy",https://github.com/fullsend-ai/agents/pull/1691
+2026-10-19,agents,pr,reviewed_external,1691,csoceanu,"fix(#1690): restrict review finding categories to canonical taxonomy",https://github.com/fullsend-ai/agents/pull/1691
+2026-10-19,auto-merge,pr,opened_core,52,ascerra,"Isolate shared Gemara Review assessment from publisher",https://github.com/fullsend-ai/auto-merge/pull/52
+2026-10-19,auto-merge,pr,opened_core,51,ascerra,"Exercise installed Fullsend Review baseline",https://github.com/fullsend-ai/auto-merge/pull/51
+2026-10-19,auto-merge,pr,opened_core,50,ascerra,"Prove Python post-script Review evidence",https://github.com/fullsend-ai/auto-merge/pull/50
+2026-10-20,fullsend,issue,opened_external,8627,stoniko,"repos install: managed config files do not reference the repos.yaml they were generated from",https://github.com/fullsend-ai/fullsend/issues/8627
+2026-10-20,fullsend,issue,opened_external,8601,ianw,"Unable to set masked variable FULLLSEND_GCP_PROJECT_ID (gitlab api: 400 value: [is invalid]) if project-id < 8 characters",https://github.com/fullsend-ai/fullsend/issues/8601
+2026-10-20,fullsend,issue,opened_external,8600,ianw,"gitlab: Check branch creation regex to avoid possible 400 error when creating fullsend branches",https://github.com/fullsend-ai/fullsend/issues/8600
+2026-10-20,fullsend,issue,closed_via_pr_external,8378,gklein,"forge: TestFakeClient_ErrorInjection covers 53 of 130 FakeClient methods",https://github.com/fullsend-ai/fullsend/issues/8378
+2026-10-20,fullsend,pr,opened_core,8632,ggallen,"test(config): stop pinning legacy fullsend role",https://github.com/fullsend-ai/fullsend/pull/8632
+2026-10-20,fullsend,pr,opened_core,8616,ifireball,"docs(adr): define poll and entity-bound run lifecycles",https://github.com/fullsend-ai/fullsend/pull/8616
+2026-10-20,fullsend,pr,opened_core,8605,waynesun09,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8615,gklein,"test(#8378): cover all FakeClient methods in error injection",https://github.com/fullsend-ai/fullsend/pull/8615
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,fullsend,pr,reviewed_external,8605,dhshah13,"fix(hooks)!: resolve the hook interpreter and hook PATH from directories the agent cannot write",https://github.com/fullsend-ai/fullsend/pull/8605
+2026-10-20,rfe-creator,issue,opened_external,237,astefanutti,"Sweep the stale opendatahub-io references left by the org migration",https://github.com/fullsend-ai/rfe-creator/issues/237
+2026-10-20,rfe-creator,issue,opened_external,235,astefanutti,"Baseline comparison: the rfe eval through fullsend versus claude-code",https://github.com/fullsend-ai/rfe-creator/issues/235
+2026-10-20,rfe-creator,issue,opened_external,234,astefanutti,"Eval profile selecting the fullsend runner, with the developer path documented",https://github.com/fullsend-ai/rfe-creator/issues/234
+2026-10-20,rfe-creator,issue,opened_external,233,astefanutti,"Eval child harness: rfe-creator-eval over the production package, no Jira access, models injected",https://github.com/fullsend-ai/rfe-creator/issues/233
+2026-10-20,rfe-creator,pr,reviewed_external,229,astefanutti,"chore: enable fullsend fleet agents and upgrade the custom harness",https://github.com/fullsend-ai/rfe-creator/pull/229
+2026-10-20,rfe-creator,pr,reviewed_external,196,astefanutti,"Add vLLM vs vLLM-Omni upstream boundary guidance to RFE skills",https://github.com/fullsend-ai/rfe-creator/pull/196
+2026-10-20,.fullsend,pr,opened_core,190,ggallen,"chore(repos)!: simplify fleet defaults and overrides",https://github.com/fullsend-ai/.fullsend/pull/190
+2026-10-20,agent-eval-harness,issue,opened_external,262,astefanutti,"fullsend runner: record fullsend, OpenShell, image and harness provenance with each run",https://github.com/fullsend-ai/agent-eval-harness/issues/262
+2026-10-20,agent-eval-harness,issue,opened_external,261,astefanutti,"fullsend runner: execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/issues/261
+2026-10-20,agent-eval-harness,issue,closed_via_pr_external,253,astefanutti,"Agent judges are not confined: Read/Write unscoped, MCP uncovered, no evidence a deny fired",https://github.com/fullsend-ai/agent-eval-harness/issues/253
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-20,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-20,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-20,epic-creator,issue,opened_external,44,ravelley,"Clean-checkout test failure and missing automated pytest execution",https://github.com/fullsend-ai/epic-creator/issues/44
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-20,test-creator,issue,closed_via_pr_external,72,fege,"Citation gate leaves review score table stale after score cap",https://github.com/fullsend-ai/test-creator/issues/72
+2026-10-20,test-creator,pr,reviewed_external,77,fege,"fix(#72): sync review score table after citation gate cap",https://github.com/fullsend-ai/test-creator/pull/77
+2026-10-20,test-creator,pr,reviewed_external,77,fege,"fix(#72): sync review score table after citation gate cap",https://github.com/fullsend-ai/test-creator/pull/77
+2026-10-20,test-creator,pr,reviewed_external,77,fege,"fix(#72): sync review score table after citation gate cap",https://github.com/fullsend-ai/test-creator/pull/77
+2026-10-20,agents,issue,opened_external,1715,ederign,"fix(retro): make issue-creation failures non-fatal so the summary is still posted",https://github.com/fullsend-ai/agents/issues/1715
+2026-10-20,agents,pr,reviewed_external,1716,ederign,"fix(#1715): make retro issue-creation failures non-fatal",https://github.com/fullsend-ai/agents/pull/1716
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1661,shairevivo,"feat(#1654): scope review to own commits on stacked/cherry-picked PRs",https://github.com/fullsend-ai/agents/pull/1661
+2026-10-20,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-20,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,fullsend,issue,opened_external,8672,mfrancisc,"Workflow dispatch still builds --mint-url from the stale FULLSEND_MINT_URL variable, not the config file",https://github.com/fullsend-ai/fullsend/issues/8672
+2026-10-21,fullsend,issue,opened_external,8671,dhshah13,"docs: add a Maintainer Request discussion and a /vouch-maintainer command",https://github.com/fullsend-ai/fullsend/issues/8671
+2026-10-21,fullsend,issue,opened_external,8646,ianw,"gitlab: fullsend/scaffold-install MR creation appears to drop leading parts of source fork branch specifier",https://github.com/fullsend-ai/fullsend/issues/8646
+2026-10-21,fullsend,issue,closed_via_pr_external,8601,ianw,"Unable to set masked variable FULLLSEND_GCP_PROJECT_ID (gitlab api: 400 value: [is invalid]) if project-id < 8 characters",https://github.com/fullsend-ai/fullsend/issues/8601
+2026-10-21,fullsend,issue,closed_via_pr_external,8600,ianw,"gitlab: Check branch creation regex to avoid possible 400 error when creating fullsend branches",https://github.com/fullsend-ai/fullsend/issues/8600
+2026-10-21,fullsend,issue,closed_via_pr_external,8479,gklein,"feat: add a CI-matching container (hack/ci-local) so local test runs predict CI, especially on macOS",https://github.com/fullsend-ai/fullsend/issues/8479
+2026-10-21,fullsend,pr,opened_core,8666,ggallen,"docs(#8245): update GitLab webhook validation status",https://github.com/fullsend-ai/fullsend/pull/8666
+2026-10-21,fullsend,pr,reviewed_external,8653,csoceanu,"fix(#8568): make sandbox download retries idempotent",https://github.com/fullsend-ai/fullsend/pull/8653
+2026-10-21,fullsend,pr,reviewed_external,8653,csoceanu,"fix(#8568): make sandbox download retries idempotent",https://github.com/fullsend-ai/fullsend/pull/8653
+2026-10-21,fullsend,pr,reviewed_external,8343,shairevivo,"refactor(#4663): move version/commitSHA into internal/buildinfo",https://github.com/fullsend-ai/fullsend/pull/8343
+2026-10-21,rfe-creator,issue,opened_external,243,astefanutti,"Reference hygiene: stable field reference, type-neutral README, one wording for --type",https://github.com/fullsend-ai/rfe-creator/issues/243
+2026-10-21,rfe-creator,issue,opened_external,241,astefanutti,"Needs-attention reason stays stale after a revision fixes what feasibility flagged",https://github.com/fullsend-ai/rfe-creator/issues/241
+2026-10-21,rfe-creator,issue,closed_via_pr_external,241,astefanutti,"Needs-attention reason stays stale after a revision fixes what feasibility flagged",https://github.com/fullsend-ai/rfe-creator/issues/241
+2026-10-21,rfe-creator,issue,closed_via_pr_external,237,astefanutti,"Sweep the stale opendatahub-io references left by the org migration",https://github.com/fullsend-ai/rfe-creator/issues/237
+2026-10-21,rfe-creator,pr,reviewed_external,245,astefanutti,"docs(#243): split the type reference, neutral README, one --type line",https://github.com/fullsend-ai/rfe-creator/pull/245
+2026-10-21,rfe-creator,pr,reviewed_external,245,astefanutti,"docs(#243): split the type reference, neutral README, one --type line",https://github.com/fullsend-ai/rfe-creator/pull/245
+2026-10-21,rfe-creator,pr,reviewed_external,245,astefanutti,"docs(#243): split the type reference, neutral README, one --type line",https://github.com/fullsend-ai/rfe-creator/pull/245
+2026-10-21,rfe-creator,pr,reviewed_external,245,astefanutti,"docs(#243): split the type reference, neutral README, one --type line",https://github.com/fullsend-ai/rfe-creator/pull/245
+2026-10-21,rfe-creator,pr,reviewed_external,242,astefanutti,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,reviewed_external,242,astefanutti,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,reviewed_external,242,astefanutti,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,reviewed_external,242,astefanutti,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,reviewed_external,242,astefanutti,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,reviewed_external,242,astefanutti,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,rfe-creator,pr,reviewed_external,242,astefanutti,"fix(#241): clear a feasibility flag a passing revision addressed",https://github.com/fullsend-ai/rfe-creator/pull/242
+2026-10-21,agent-eval-harness,pr,opened_core,267,waynesun09,"fix(deps): keep litellm below 1.107 on the harbor path",https://github.com/fullsend-ai/agent-eval-harness/pull/267
+2026-10-21,agent-eval-harness,pr,reviewed_external,267,astefanutti,"fix(deps): keep litellm below 1.107 on the harbor path",https://github.com/fullsend-ai/agent-eval-harness/pull/267
+2026-10-21,agent-eval-harness,pr,reviewed_external,266,astefanutti,"fix(score): step Anthropic judges down to tool_choice auto on a 400",https://github.com/fullsend-ai/agent-eval-harness/pull/266
+2026-10-21,agent-eval-harness,pr,reviewed_external,266,astefanutti,"fix(score): step Anthropic judges down to tool_choice auto on a 400",https://github.com/fullsend-ai/agent-eval-harness/pull/266
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,263,astefanutti,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,astefanutti,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,agent-eval-harness,pr,reviewed_external,260,jwm4,"fix(score): stage agent-judge outputs by copying, not via memory",https://github.com/fullsend-ai/agent-eval-harness/pull/260
+2026-10-21,epic-creator,issue,closed_via_pr_external,44,ravelley,"Clean-checkout test failure and missing automated pytest execution",https://github.com/fullsend-ai/epic-creator/issues/44
+2026-10-21,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-21,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-21,epic-creator,pr,reviewed_external,43,ederign,"ci: add pytest checks and align workspace cache",https://github.com/fullsend-ai/epic-creator/pull/43
+2026-10-21,agents,issue,opened_external,1738,jflowers,"Switch skill-env-reachability-test.sh from hand-maintained SANDBOX_RUNTIME_VARS to the released-tag sandbox env manifest",https://github.com/fullsend-ai/agents/issues/1738
+2026-10-21,agents,issue,opened_external,1736,jwm4,"eval: 965 leftover `eval-*` repos on the `halfsend` account, and a one-off cleanup",https://github.com/fullsend-ai/agents/issues/1736
+2026-10-21,agents,issue,opened_external,1735,rrasouli,"Feature: Fullsend CI Failure Root-Cause Analysis, Learning, and HITL Jira Escalation",https://github.com/fullsend-ai/agents/issues/1735
+2026-10-21,agents,issue,opened_external,1728,ederign,"Retro and Triage ignore issue-target permissions declared in config presets",https://github.com/fullsend-ai/agents/issues/1728
+2026-10-21,agents,issue,closed_via_pr_external,1715,ederign,"fix(retro): make issue-creation failures non-fatal so the summary is still posted",https://github.com/fullsend-ai/agents/issues/1715
+2026-10-21,agents,pr,reviewed_external,1716,ederign,"fix(#1715): make retro issue-creation failures non-fatal",https://github.com/fullsend-ai/agents/pull/1716
+2026-10-21,agents,pr,reviewed_external,1678,andrewevansrh,"feat(#1676): add Jira issue creation support to scribe",https://github.com/fullsend-ai/agents/pull/1678
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1659,shairevivo,"fix(#1656): escalate cross-repo fix targets instead of restructuring",https://github.com/fullsend-ai/agents/pull/1659
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,agents,pr,reviewed_external,1364,jwm4,"fix(#1361): retry PR creation and failure comments on 5xx",https://github.com/fullsend-ai/agents/pull/1364
+2026-10-21,auto-merge,pr,opened_core,54,ascerra,"Demonstrate automatic merge with the 90% shared quality policy",https://github.com/fullsend-ai/auto-merge/pull/54
+2026-10-21,auto-merge,pr,opened_core,53,ascerra,"Demonstrate the shared review-quality hold",https://github.com/fullsend-ai/auto-merge/pull/53
+2026-10-21,pi-inference-gateway,pr,opened_core,39,waynesun09,"chore: release v0.1.4",https://github.com/fullsend-ai/pi-inference-gateway/pull/39
+2026-10-22,fullsend,issue,opened_external,8731,ianw,"gitlab: Warning that exclusion from tirgger pipelines cannot be established on job that includes from external",https://github.com/fullsend-ai/fullsend/issues/8731
+2026-10-22,fullsend,issue,opened_external,8723,jflowers,"Harness.Lint() should flag values that violate their declared field type",https://github.com/fullsend-ai/fullsend/issues/8723
+2026-10-22,fullsend,issue,opened_external,8722,jflowers,"Add top-level preflight_check to Harness, running before pre_script and sandbox creation",https://github.com/fullsend-ai/fullsend/issues/8722
+2026-10-22,fullsend,issue,opened_external,8721,jflowers,"Preflight check credential safety: allowlisted environment, pre-expansion rejection, redacted diagnostics",https://github.com/fullsend-ai/fullsend/issues/8721
+2026-10-22,fullsend,issue,opened_external,8720,jflowers,"Epic: implement ADRs 0127, 0128, and 0129 (harness schema versioning and preflight checks)",https://github.com/fullsend-ai/fullsend/issues/8720
+2026-10-22,fullsend,issue,opened_external,8697,amastbau,"[adlc-jira] Prefer the user’s configured Jira integration over `acli`",https://github.com/fullsend-ai/fullsend/issues/8697
+2026-10-22,fullsend,issue,opened_external,8691,ianw,"gitlab: Warning that exclusion from trigger pipelines cannot be established on job that excludes trigger pipelines",https://github.com/fullsend-ai/fullsend/issues/8691
+2026-10-22,fullsend,issue,opened_external,8689,ianw,"Re-running install (convergence?) does not apply gitlab.agent_runner_tags",https://github.com/fullsend-ai/fullsend/issues/8689
+2026-10-22,fullsend,issue,opened_external,8688,ianw,"gitlab: repos install rewrites gitlab-ci.yml without vertical whitespace",https://github.com/fullsend-ai/fullsend/issues/8688
+2026-10-22,fullsend,issue,closed_via_pr_external,8688,ianw,"gitlab: repos install rewrites gitlab-ci.yml without vertical whitespace",https://github.com/fullsend-ai/fullsend/issues/8688
+2026-10-22,fullsend,pr,opened_core,8729,waynesun09,"feat(#8726): let a CEL trigger decide review routing",https://github.com/fullsend-ai/fullsend/pull/8729
+2026-10-22,fullsend,pr,opened_core,8699,rh-hemartin,"feat(cli): add 'fullsend lint' command to validate config",https://github.com/fullsend-ai/fullsend/pull/8699
+2026-10-22,fullsend,pr,opened_core,8698,ifireball,"docs(adr): coalesce entity-source discovery queries",https://github.com/fullsend-ai/fullsend/pull/8698
+2026-10-22,fullsend,pr,opened_core,8694,ifireball,"docs(adr): define selective CEL acquisition and harness admission",https://github.com/fullsend-ai/fullsend/pull/8694
+2026-10-22,fullsend,pr,reviewed_external,8705,dhshah13,"chore(gitlint): enforce DCO sign-off trailer in commit-msg hook",https://github.com/fullsend-ai/fullsend/pull/8705
+2026-10-22,fullsend,pr,reviewed_external,8702,Benkapner,"docs(adr): define repository-less agent execution",https://github.com/fullsend-ai/fullsend/pull/8702
+2026-10-22,fullsend,pr,reviewed_external,8702,Benkapner,"docs(adr): define repository-less agent execution",https://github.com/fullsend-ai/fullsend/pull/8702
+2026-10-22,fullsend,pr,reviewed_external,7589,jflowers,"fix(#3737): paginate and fail-open inflight ADR listing",https://github.com/fullsend-ai/fullsend/pull/7589
+2026-10-22,fullsend,pr,reviewed_external,7589,jflowers,"fix(#3737): paginate and fail-open inflight ADR listing",https://github.com/fullsend-ai/fullsend/pull/7589
+2026-10-22,fullsend,pr,reviewed_external,7589,jflowers,"fix(#3737): paginate and fail-open inflight ADR listing",https://github.com/fullsend-ai/fullsend/pull/7589
+2026-10-22,rfe-creator,issue,opened_external,251,astefanutti,"Auto-approve policy: a split recommendation blocks the Approved transition",https://github.com/fullsend-ai/rfe-creator/issues/251
+2026-10-22,rfe-creator,issue,opened_external,250,astefanutti,"Barrier discipline: the no-improvise contract in the skill, AGENTS.md and the recovery banner, pinned by test",https://github.com/fullsend-ai/rfe-creator/issues/250
+2026-10-22,rfe-creator,issue,opened_external,249,astefanutti,"Submit hold: a per-pass completion marker so an interrupted second revision is held",https://github.com/fullsend-ai/rfe-creator/issues/249
+2026-10-22,rfe-creator,issue,opened_external,248,astefanutti,"Layout guard: make the skip condition decidable so a checkout runs no layout call",https://github.com/fullsend-ai/rfe-creator/issues/248
+2026-10-22,rfe-creator,issue,opened_external,247,astefanutti,"launch_wave: write the wave to a file and print a listing that fits in one tool result",https://github.com/fullsend-ai/rfe-creator/issues/247
+2026-10-22,rfe-creator,issue,closed_via_pr_external,243,astefanutti,"Reference hygiene: stable field reference, type-neutral README, one wording for --type",https://github.com/fullsend-ai/rfe-creator/issues/243
+2026-10-22,agent-eval-harness,pr,reviewed_external,263,ravelley,"feat(runner): execute the skill under test through fullsend run",https://github.com/fullsend-ai/agent-eval-harness/pull/263
+2026-10-22,strat-creator,pr,reviewed_external,85,stoniko,"Run strategy creation through a hardened Claude Workflow",https://github.com/fullsend-ai/strat-creator/pull/85
+2026-10-22,epic-creator,pr,reviewed_external,46,ederign,"AISDLC-428: Align Jira provider naming with RFE Creator",https://github.com/fullsend-ai/epic-creator/pull/46
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,42,Aliciapet11,"AISDLC-428: Add local Fullsend harness for Epic Creator",https://github.com/fullsend-ai/epic-creator/pull/42
+2026-10-22,epic-creator,pr,reviewed_external,39,ederign,"Fix Epic Creator skipping strategies linked to non-Epics",https://github.com/fullsend-ai/epic-creator/pull/39
+2026-10-22,test-creator,issue,opened_external,79,fege,"bootstrap.sh can place the .odh-test-gen symlink inside the generated run directory",https://github.com/fullsend-ai/test-creator/issues/79
+2026-10-22,test-creator,pr,reviewed_external,78,ederign,"docs: add AGENTS.md and CONTRIBUTING.md, de-duplicate command listings",https://github.com/fullsend-ai/test-creator/pull/78
+2026-10-22,test-creator,pr,reviewed_external,78,amastbau,"docs: add AGENTS.md and CONTRIBUTING.md, de-duplicate command listings",https://github.com/fullsend-ai/test-creator/pull/78
+2026-10-22,agents,issue,opened_external,1753,jflowers,"Adopt top-level preflight_check and verify consumer rollout",https://github.com/fullsend-ai/agents/issues/1753
+2026-10-22,agents,issue,opened_external,1752,jflowers,"CI should block harness changes on fullsend lint SeverityError",https://github.com/fullsend-ai/agents/issues/1752
+2026-10-22,agents,issue,opened_external,1746,rrasouli,"Configurable CI failure analysis agent with feedback and escalation",https://github.com/fullsend-ai/agents/issues/1746
+2026-10-22,agents,issue,closed_other_external,1735,rrasouli,"Feature: Fullsend CI Failure Root-Cause Analysis, Learning, and HITL Jira Escalation",https://github.com/fullsend-ai/agents/issues/1735
+2026-10-22,agents,issue,closed_via_pr_external,1680,Benkapner,"Proposal: maintainer-controlled fix-loop budgets per PR",https://github.com/fullsend-ai/agents/issues/1680
+2026-10-22,agents,pr,opened_core,1755,waynesun09,"feat(review): add CEL dispatch trigger to the review harness",https://github.com/fullsend-ai/agents/pull/1755
