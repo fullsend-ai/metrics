@@ -7,21 +7,18 @@
    "introduced in", "fixes ... from #N"), or reverts it. Pairs more than 30 days apart are dropped. Written to
    docs/fix-candidates.csv.
 2. Judgments: every candidate pair gets a row in docs/fix-judgments.csv,
-   "unjudged" until a person or the optional FIX_JUDGE_CMD hook fills it in.
+   "unjudged" until a person or the fix-judge agent fills it in.
 3. Rate: docs/escaped-fixes.csv, per week (by the earlier PR's merge date),
    repo and PR type, only for weeks whose 30-day window has closed; unjudged
    and "unknown" pairs are both counted as open. Merged
    PR counts and types come from docs/pr-type-details.csv.
 
-FIX_JUDGE_CMD (optional): a shell command run once per unjudged pair. It gets
-a JSON object on stdin (fix, original, fix_url, original_url, fix_diff,
-original_diff) and must print a JSON object {"verdict": ..., "severity": ...}
-where verdict is one of defect_from_original, later_change, not_related,
-unknown and severity is low, medium, high or "". Its verdicts are always
-recorded as judged_by "ai (FIX_JUDGE_CMD)"; a person's verdict is entered in
-fix-judgments.csv directly and overrides it. A pair whose diff cannot be
-downloaded stays unjudged. Unset means no judging. The payload is untrusted PR
-text: an LLM judge must treat it as data.
+Judging: the fix-judge Fullsend agent (.fullsend/harness/fix-judge.yaml, run
+daily by .github/workflows/fix-judge.yml) reads unjudged pairs and posts its
+verdicts; --import-judgments writes them here. It fills only pairs that are
+still candidates and still unjudged, so a re-run or a stale result changes
+nothing. Its verdicts are recorded as judged_by "ai (fix-judge agent)"; a
+person's verdict is entered in fix-judgments.csv directly and overrides it.
 
 Coverage: docs/fix-candidates-through.txt holds the last date through which
 fixes have been collected without a gap. A week only counts as closed once
@@ -35,9 +32,7 @@ import argparse
 import csv
 import importlib.util
 import json
-import os
 import re
-import subprocess
 import sys
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
@@ -62,7 +57,7 @@ OUTPUT_HEADER = [
 ]
 VERDICTS = {"defect_from_original", "later_change", "not_related", "unknown"}
 SEVERITIES = {"low", "medium", "high", ""}
-HOOK_JUDGE = "ai (FIX_JUDGE_CMD)"
+AGENT_JUDGE = "ai (fix-judge agent)"
 MISSING = ("HTTP 404", "HTTP 410", "HTTP 422", "HTTP 451")  # unknown, deleted, invalid or blocked
 
 URL_REF = re.compile(r"github\.com/fullsend-ai/([\w.-]+)/pull/(\d+)", re.I)
@@ -283,48 +278,32 @@ def sync_judgments(candidates: list[dict], judgments: list[dict]) -> list[dict]:
     return judgments
 
 
-def pr_diff(key: str) -> str | None:
-    """The PR's diff, or None when it could not be downloaded."""
-    repo, number = key.split("#")
-    result = subprocess.run(["gh", "pr", "diff", number, "--repo", f"{ORG}/{repo}"], capture_output=True, text=True)
-    return result.stdout if result.returncode == 0 else None
+def import_judgments(candidates: list[dict], judgments: list[dict], answers: object) -> int:
+    """Fill unjudged candidate pairs from the fix-judge agent's verdicts; return how many were filled.
 
-
-def log_safe(text: str) -> str:
-    """One line with no control characters or workflow commands (::name::), for the Actions log."""
-    return re.sub(r"[\x00-\x1f\x7f]+", " ", text).replace("::", ": :")[:200]
-
-
-def judge(candidates: list[dict], judgments: list[dict]) -> None:
-    """Fill unjudged candidate pairs from FIX_JUDGE_CMD; no-op when it is unset."""
-    command = os.environ.get("FIX_JUDGE_CMD")
-    if not command:
-        return
+    answers is model output: anything malformed, unknown or already judged is skipped.
+    """
     pairs = {(row["fix"], row["original"]) for row in candidates}
-    for row in judgments:
-        if row["verdict"] != "unjudged" or (row["fix"], row["original"]) not in pairs:
+    rows = {(row["fix"], row["original"]): row for row in judgments}
+    filled = skipped = 0
+    for answer in answers if isinstance(answers, list) else []:
+        fields = [answer.get(k, "") for k in ("fix", "original", "verdict", "severity")] if isinstance(answer, dict) else []
+        if len(fields) != 4 or not all(isinstance(f, str) for f in fields):
+            skipped += 1
             continue
-        payload = {"fix": row["fix"], "original": row["original"]}
-        for side in ("fix", "original"):
-            repo, number = row[side].split("#")
-            payload[f"{side}_url"] = f"https://github.com/{ORG}/{repo}/pull/{number}"
-            payload[f"{side}_diff"] = pr_diff(row[side])
-        if payload["fix_diff"] is None or payload["original_diff"] is None:
-            print(f"  judge skipped {row['fix']} -> {row['original']}: a diff could not be downloaded", file=sys.stderr)
+        fix, original, verdict, severity = fields
+        row = rows.get((fix, original)) if (fix, original) in pairs else None
+        if row is None or row["verdict"] != "unjudged" or verdict not in VERDICTS or severity not in SEVERITIES:
+            skipped += 1
             continue
-        result = subprocess.run(command, shell=True, input=json.dumps(payload), capture_output=True, text=True)
-        try:
-            answer = json.loads(result.stdout) if result.returncode == 0 else {}
-        except json.JSONDecodeError:
-            answer = {}
-        if not isinstance(answer, dict):
-            answer = {}
-        severity = str(answer.get("severity") or "").strip().lower()
-        if answer.get("verdict") not in VERDICTS or severity not in SEVERITIES:
-            print(f"  judge skipped {row['fix']} -> {row['original']}: {log_safe(result.stderr.strip())}", file=sys.stderr)
-            continue
-        # judged_by is fixed: hook output never claims to be a person's verdict.
-        row.update(verdict=answer["verdict"], severity=severity, judged_by=HOOK_JUDGE, judged_at=date.today().isoformat())
+        if verdict != "defect_from_original":
+            severity = ""
+        # judged_by is fixed: agent output never claims to be a person's verdict.
+        row.update(verdict=verdict, severity=severity, judged_by=AGENT_JUDGE, judged_at=date.today().isoformat())
+        filled += 1
+    if skipped:
+        print(f"  skipped {skipped} verdicts: malformed, not a candidate, or already judged", file=sys.stderr)
+    return filled
 
 
 def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as_of: date) -> list[dict]:
@@ -364,10 +343,13 @@ def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as
     ]
 
 
-def rebuild() -> None:
+def rebuild(answers_file: str | None = None) -> None:
     candidates = read(CANDIDATES)
     judgments = sync_judgments(candidates, read(JUDGMENTS))
-    judge(candidates, judgments)
+    if answers_file:
+        payload = json.loads(Path(answers_file).read_text())
+        filled = import_judgments(candidates, judgments, payload.get("judgments") if isinstance(payload, dict) else None)
+        print(f"  {filled} verdicts imported")
     write(JUDGMENTS, JUDGMENT_HEADER, judgments)
     dates = [row["date"] for row in read(AGGREGATE)]
     if not dates:
@@ -389,7 +371,9 @@ def main() -> None:
     parser.add_argument("--to", dest="end", help="End date for an inclusive YYYY-MM-DD range.")
     parser.add_argument("--catch-up", action="store_true",
                         help="Collect every day after docs/fix-candidates-through.txt up to yesterday (UTC).")
-    parser.add_argument("--rebuild", action="store_true", help="Only re-judge and recompute rates (no GitHub search).")
+    parser.add_argument("--rebuild", action="store_true", help="Only recompute rates (no GitHub search).")
+    parser.add_argument("--import-judgments", metavar="FILE",
+                        help="Import the fix-judge agent's {\"judgments\": [...]} JSON, then recompute rates.")
     args = parser.parse_args()
     if args.catch_up:
         through, yesterday = read_through(), datetime.now(timezone.utc).date() - timedelta(days=1)
@@ -405,9 +389,9 @@ def main() -> None:
         if start > end:
             parser.error("--from must not be later than --to")
         collect(start, end)
-    elif not args.rebuild:
-        parser.error("one of --catch-up, --date, --from or --rebuild is required")
-    rebuild()
+    elif not (args.rebuild or args.import_judgments):
+        parser.error("one of --catch-up, --date, --from, --rebuild or --import-judgments is required")
+    rebuild(args.import_judgments)
 
 
 if __name__ == "__main__":

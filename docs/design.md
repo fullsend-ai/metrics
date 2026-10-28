@@ -239,5 +239,5 @@ causal wording was a real fix 66% of the time, a named reference alone 29%,
 causal wording alone 37%, and a shared changed file 10%. The shared-file
 source is left out (too noisy to judge daily), which makes the rate a lower
 bound. The replay's verdicts seed `fix-judgments.csv`; new pairs are judged
-by the optional `FIX_JUDGE_CMD` hook or by hand. No model provider or secret
-is built in.
+by the `fix-judge` Fullsend agent (daily, read-only, verdicts re-validated by
+a separate writeback job) or by hand.

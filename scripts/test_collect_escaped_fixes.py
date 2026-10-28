@@ -3,10 +3,6 @@
 from __future__ import annotations
 
 import importlib.util
-import json
-import os
-import shlex
-import sys
 import tempfile
 import unittest
 from datetime import date
@@ -197,40 +193,41 @@ class TestRates(unittest.TestCase):
         )
 
 
-def hook(answer: object, code: int = 0) -> str:
-    """A FIX_JUDGE_CMD that prints answer, writes a workflow command to stderr and exits with code."""
-    script = f"import sys; sys.stdin.read(); print({json.dumps(json.dumps(answer))}); " \
-             f"sys.stderr.write('::warning::x\\n'); sys.exit({code})"
-    return f"{shlex.quote(sys.executable)} -c {shlex.quote(script)}"
-
-
-class TestJudge(unittest.TestCase):
+class TestImportJudgments(unittest.TestCase):
     def setUp(self):
-        self.candidates = [{"fix": "fullsend#10", "original": "fullsend#1"}]
+        self.candidates = [{"fix": "fullsend#10", "original": "fullsend#1"}, {"fix": "fullsend#11", "original": "fullsend#2"}]
+        self.judgments = [
+            {"fix": "fullsend#10", "original": "fullsend#1", "verdict": "unjudged", "severity": "", "judged_by": "", "judged_at": ""},
+            {"fix": "fullsend#11", "original": "fullsend#2", "verdict": "not_related", "severity": "", "judged_by": "Guy", "judged_at": "2026-10-01"},
+        ]
 
-    def run_judge(self, command, diff="diff --git a b"):
-        judgments = [{"fix": "fullsend#10", "original": "fullsend#1", "verdict": "unjudged",
-                      "severity": "", "judged_by": "", "judged_at": ""}]
-        with mock.patch.dict(os.environ, {"FIX_JUDGE_CMD": command}), mock.patch.object(mod, "pr_diff", lambda key: diff):
-            mod.judge(self.candidates, judgments)
-        return judgments[0]
+    def test_fills_an_unjudged_pair_as_the_agent(self):
+        n = mod.import_judgments(self.candidates, self.judgments, [
+            {"fix": "fullsend#10", "original": "fullsend#1", "verdict": "defect_from_original", "severity": "high",
+             "judged_by": "Guy", "reason": "x"}])
+        row = self.judgments[0]
+        self.assertEqual((n, row["verdict"], row["severity"], row["judged_by"]),
+                         (1, "defect_from_original", "high", mod.AGENT_JUDGE))
 
-    def test_verdict_is_recorded_as_ai_with_normalized_severity(self):
-        row = self.run_judge(hook({"verdict": "defect_from_original", "severity": "High", "judged_by": "Guy"}))
-        self.assertEqual((row["verdict"], row["severity"], row["judged_by"]),
-                         ("defect_from_original", "high", "ai (FIX_JUDGE_CMD)"))
+    def test_never_overwrites_a_verdict_or_invents_a_pair(self):
+        n = mod.import_judgments(self.candidates, self.judgments, [
+            {"fix": "fullsend#11", "original": "fullsend#2", "verdict": "defect_from_original", "severity": "high"},
+            {"fix": "fullsend#12", "original": "fullsend#3", "verdict": "not_related", "severity": ""}])
+        self.assertEqual((n, self.judgments[1]["verdict"], self.judgments[1]["judged_by"]), (0, "not_related", "Guy"))
 
     def test_bad_answers_leave_the_pair_unjudged(self):
-        for answer in (["defect_from_original"], "x", 3, {"verdict": "defect_from_original", "severity": "critical"},
-                       {"verdict": "maybe"}):
-            self.assertEqual(self.run_judge(hook(answer))["verdict"], "unjudged", answer)
-        self.assertEqual(self.run_judge(hook({"verdict": "not_related"}, code=1))["verdict"], "unjudged")
+        pair = {"fix": "fullsend#10", "original": "fullsend#1"}
+        for answers in ("x", {"a": 1}, [3, "x", None], [dict(pair, verdict=[])], [dict(pair, verdict={})],
+                        [dict(pair, verdict="maybe")], [dict(pair, verdict="not_related", severity="critical")],
+                        [dict(pair, verdict="not_related", severity=["high"])], [{"fix": ["fullsend#10"], "original": "fullsend#1",
+                                                                                   "verdict": "not_related"}]):
+            self.assertEqual(mod.import_judgments(self.candidates, self.judgments, answers), 0, answers)
+        self.assertEqual(self.judgments[0]["verdict"], "unjudged")
 
-    def test_failed_diff_download_leaves_the_pair_unjudged(self):
-        self.assertEqual(self.run_judge(hook({"verdict": "not_related"}), diff=None)["verdict"], "unjudged")
-
-    def test_log_safe(self):
-        self.assertEqual(mod.log_safe("::add-mask::secret\nline\x1b[0m"), ": :add-mask: :secret line [0m")
+    def test_severity_only_kept_for_a_defect(self):
+        mod.import_judgments(self.candidates, self.judgments, [
+            {"fix": "fullsend#10", "original": "fullsend#1", "verdict": "later_change", "severity": "high"}])
+        self.assertEqual(self.judgments[0]["severity"], "")
 
 
 class TestCollect(unittest.TestCase):

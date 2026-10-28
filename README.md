@@ -58,16 +58,18 @@ closed.
 | `docs/fix-candidates-through.txt` | Last day collected without a gap; a week closes only once this date and the PR-type data have both passed its 30-day window |
 | `scripts/collect-escaped-fixes.sh` | Daily (wired into `.github/workflows/collect.yml`, after PR types); collects every day since the date above, so a failed run is caught up |
 | `scripts/backfill-escaped-fixes.sh` | Date-range backfill; keeps existing judgments |
+| `.fullsend/harness/fix-judge.yaml`, `.github/workflows/fix-judge.yml` | The judge agent and its daily run, after `collect.yml` |
 
 Only `defect_from_original` counts. Detection alone is noisy (a named reference
-is a real fix about a third of the time), so each pair needs a verdict. To
-judge new pairs automatically, set `FIX_JUDGE_CMD` to a command that reads the
-pair and both diffs as JSON on stdin and prints
-`{"verdict": ..., "severity": ...}`; its verdicts are recorded as
-`judged_by` `ai (FIX_JUDGE_CMD)`, and a pair whose diff can't be downloaded stays
-`unjudged`. Unset, nothing is judged and pairs stay `unjudged`. The JSON carries untrusted PR text and diffs: if the
-judge is an LLM, its prompt must treat the payload as data, never as
-instructions, and a person's verdict always overrides it. After editing judgments by hand, recompute with
+is a real fix about a third of the time), so each pair needs a verdict. The
+`fix-judge` Fullsend agent judges new pairs daily
+(`.github/workflows/fix-judge.yml`, up to 20 a run): it reads both PRs, posts
+its verdicts as a comment on the tracking issue set in the `FIX_JUDGE_ISSUE`
+repository variable, and a writeback job imports them with
+`scripts/collect-escaped-fixes.py --import-judgments`. Its verdicts are recorded
+as `judged_by` `ai (fix-judge agent)`. Pairs it skips stay `unjudged` and are
+counted as open on the page. A person's verdict, entered in `fix-judgments.csv`
+by hand, always overrides it; recompute afterwards with
 `python3 scripts/collect-escaped-fixes.py --rebuild`.
 
 The rate is a lower bound: fixes that never mention the earlier PR are missed.
