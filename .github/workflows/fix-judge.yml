@@ -1,0 +1,134 @@
+name: Judge escaped-fix candidates
+
+# Runs the fix-judge agent on pending pairs in docs/fix-judgments.csv, then
+# writes its verdicts back. The agent only reads: it posts its verdicts as a
+# sticky comment on the tracking issue (vars.FIX_JUDGE_ISSUE), and the
+# writeback job, which alone can push, re-validates them before committing.
+# A pair the agent skips or a failed run stays unjudged for the next run, and
+# the Quality Signals page counts it as open.
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # after collect.yml (06:00) has added the day's candidates
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: fix-judge
+  cancel-in-progress: false
+
+env:
+  JUDGMENTS_MARKER: "<!-- fullsend:fix-judge-judgments -->"
+  # The GitHub App the harness posts as (slug fullsend-ai-triage). Only its
+  # comments are read back, so a planted comment can't inject verdicts.
+  JUDGE_LOGIN: "fullsend-ai-triage[bot]"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      has_work: ${{ steps.pending.outputs.has_work }}
+      matrix: ${{ steps.pending.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count pending pairs
+        id: pending
+        env:
+          TRACKING_ISSUE: ${{ vars.FIX_JUDGE_ISSUE }}
+        run: |
+          set -euo pipefail
+          if [[ ! "${TRACKING_ISSUE}" =~ ^[0-9]+$ ]]; then
+            echo "::error::Set the FIX_JUDGE_ISSUE repository variable to the tracking issue number"
+            exit 1
+          fi
+          PENDING=$(python3 -c "import csv; print(sum(r['verdict'] == 'unjudged' for r in csv.DictReader(open('docs/fix-judgments.csv'))))")
+          echo "pending=${PENDING}"
+          if [[ "${PENDING}" -eq 0 ]]; then
+            echo "has_work=false" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+          echo "has_work=true" >> "${GITHUB_OUTPUT}"
+          PAYLOAD=$(jq -nc --arg url "https://github.com/${GITHUB_REPOSITORY}/issues/${TRACKING_ISSUE}" \
+            --argjson n "${TRACKING_ISSUE}" '{issue: {html_url: $url, number: $n}}')
+          MATRIX=$(jq -nc --arg repo "${GITHUB_REPOSITORY}" --arg payload "${PAYLOAD}" \
+            '{include: [{agent: "fix-judge", source_repo: $repo, role: "triage", event_payload: $payload, status_repo: "", status_number: ""}]}')
+          echo "matrix=${MATRIX}" >> "${GITHUB_OUTPUT}"
+
+  judge:
+    needs: prepare
+    if: needs.prepare.outputs.has_work == 'true'
+    # reusable-dispatch is checked against the permissions of all its jobs, so
+    # this is the shim's set (fullsend.yaml). The agent itself runs as the
+    # triage role, read-only on contents.
+    permissions:
+      actions: write
+      id-token: write
+      contents: write
+      issues: write
+      packages: read
+      pull-requests: write
+    uses: fullsend-ai/fullsend/.github/workflows/reusable-dispatch.yml@main
+    with:
+      matrix: ${{ needs.prepare.outputs.matrix }}
+      mint_url: ${{ vars.FULLSEND_MINT_URL }}
+      gcp_region: ${{ vars.FULLSEND_GCP_REGION }}
+      install_mode: per-repo
+      runner_image: ubuntu-24.04
+    secrets:
+      FULLSEND_GCP_WIF_PROVIDER: ${{ secrets.FULLSEND_GCP_WIF_PROVIDER }}
+      FULLSEND_GCP_PROJECT_ID: ${{ secrets.FULLSEND_GCP_PROJECT_ID }}
+      FULLSEND_OPENAI_API_KEY: ${{ secrets.FULLSEND_OPENAI_API_KEY }}
+      FULLSEND_INFERENCE_GATEWAY_API_KEY: ${{ secrets.FULLSEND_INFERENCE_GATEWAY_API_KEY }}
+      OTEL_EXPORTER_OTLP_TRACES_HEADERS: ${{ secrets.OTEL_EXPORTER_OTLP_TRACES_HEADERS }}
+
+  writeback:
+    needs: [prepare, judge]
+    if: needs.prepare.outputs.has_work == 'true' && needs.judge.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read the verdicts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TRACKING_ISSUE: ${{ vars.FIX_JUDGE_ISSUE }}
+        run: |
+          set -euo pipefail
+          gh api "repos/${GITHUB_REPOSITORY}/issues/${TRACKING_ISSUE}/comments" --paginate \
+            --jq "[.[] | select(.user.login == env.JUDGE_LOGIN and (.body | contains(env.JUDGMENTS_MARKER))) | .body] | last // empty" \
+            > comment.md
+          # The verdicts are the one line after the marker's ```json fence.
+          python3 - <<'PY'
+          import json, os
+          lines = open("comment.md").read().splitlines()
+          marker = os.environ["JUDGMENTS_MARKER"]
+          at = lines.index(marker) if marker in lines else -1
+          if at < 0 or lines[at + 1:at + 2] != ["```json"]:
+              raise SystemExit("no verdicts in the fix-judge comment")
+          json.dump(json.loads(lines[at + 2]), open("judgments.json", "w"))
+          PY
+
+      - name: Import and commit
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # collect.yml rewrites the same CSVs, so on a rejected push start again
+          # from the new main; the import only fills pairs that are still unjudged.
+          for _ in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 scripts/collect-escaped-fixes.py --import-judgments judgments.json
+            git add docs/fix-judgments.csv docs/escaped-fixes.csv
+            git diff --staged --quiet && exit 0
+            git commit -q -m "metrics: judge escaped-fix candidates"
+            git push && exit 0
+            sleep 10
+          done
+          exit 1
