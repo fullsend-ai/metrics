@@ -256,6 +256,13 @@
   let selectedRepo = "__all__";
   let raw = [];
 
+  // One message in place of the chart; the hero and type table are cleared so no stale numbers remain.
+  function showStatus(message) {
+    document.getElementById("escaped-hero").innerHTML = "";
+    document.getElementById("escaped-types").innerHTML = "";
+    document.getElementById("chart-escaped").innerHTML = `<p class='subtitle' role='status'>${esc(message)}</p>`;
+  }
+
   try {
     raw = await d3.csv("escaped-fixes.csv", d => ({
       week: d.week,
@@ -267,7 +274,7 @@
       unjudged: +d.unjudged_candidates,
     }));
   } catch (error) {
-    document.getElementById("chart-escaped").innerHTML = "<p class='subtitle'>Escaped-fix data is temporarily unavailable.</p>";
+    showStatus("Escaped-fix data could not be loaded. Reload the page, or read docs/escaped-fixes.csv in the repository.");
     return;
   }
 
@@ -281,6 +288,12 @@
       unjudged: d3.sum(rows, d => d.unjudged),
       rate: merged ? escaped / merged : 0,
     };
+  }
+
+  function weeklyRange(points) {
+    const [first, last] = d3.extent(points, d => d.date);
+    const format = d3.utcFormat("%b %d, %Y");
+    return `weeks of ${format(first)} to ${format(last)}`;
   }
 
   function weekly(rows) {
@@ -302,14 +315,14 @@
     container.selectAll("*").remove();
     const all = rows.filter(d => d.type === "all");
     const series = (selectedRepo === "__all__"
-      ? [["All repos", all, themeColor("--accent", "#c4ff0e")],
-        ["fullsend", all.filter(d => d.repo === "fullsend"), themeColor("--chart-1", "#5cb3ff")],
-        ["agents", all.filter(d => d.repo === "agents"), themeColor("--chart-3", "#ff8f5c")]]
-      : [[selectedRepo, all, themeColor("--chart-1", "#5cb3ff")]])
-      .map(([label, items, stroke]) => [label, weekly(items), stroke]);
+      ? [["All repos", all, themeColor("--accent", "#c4ff0e"), null],
+        ["fullsend", all.filter(d => d.repo === "fullsend"), themeColor("--chart-1", "#5cb3ff"), "7 4"],
+        ["agents", all.filter(d => d.repo === "agents"), themeColor("--chart-3", "#ff8f5c"), "2 3"]]
+      : [[selectedRepo, all, themeColor("--chart-1", "#5cb3ff"), null]])
+      .map(([label, items, stroke, dash]) => [label, weekly(items), stroke, dash]);
     const points = series.flatMap(([, items]) => items);
     if (!points.length) {
-      container.html("<p class='subtitle'>No closed weeks yet.</p>");
+      container.html("<p class='subtitle' role='status'>No closed weeks yet.</p>");
       return;
     }
     const width = Math.max(container.node().getBoundingClientRect().width || 900, 640);
@@ -317,7 +330,10 @@
     const margin = { top: 16, right: 20, bottom: 28, left: 50 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
-    const svg = container.append("svg").attr("viewBox", `0 0 ${width} ${height}`);
+    // Weekly values are in the hover tooltip; the label gives screen readers the period's rate per series.
+    const summary = series.map(([label, items]) => `${label} ${pct(sum(items).rate)}`).join(", ");
+    const svg = container.append("svg").attr("viewBox", `0 0 ${width} ${height}`).attr("role", "img")
+      .attr("aria-label", `Weekly escaped-fix rate, ${weeklyRange(points)}. Over the period: ${summary}.`);
     const group = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
     const x = d3.scaleTime().domain(d3.extent(points, d => d.date)).range([0, innerWidth]);
     const y = d3.scaleLinear().domain([0, Math.max(0.1, d3.max(points, d => d.rate))]).nice().range([innerHeight, 0]);
@@ -327,8 +343,9 @@
       .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat("%b %d")));
     group.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5).tickFormat(value => `${(value * 100).toFixed(0)}%`));
 
-    series.forEach(([label, items, stroke]) => {
+    series.forEach(([label, items, stroke, dash]) => {
       group.append("path").datum(items).attr("fill", "none").attr("stroke", stroke).attr("stroke-width", 2.5)
+        .attr("stroke-dasharray", dash)
         .attr("aria-label", label)
         .attr("d", d3.line().x(d => x(d.date)).y(d => y(d.rate)).curve(d3.curveMonotoneX));
       group.selectAll(null).data(items).enter().append("circle")
@@ -356,15 +373,22 @@
       .on("mouseleave", () => { guide.style("display", "none"); hideTooltip(); });
 
     const legend = container.append("div").attr("class", "chart-legend");
-    series.forEach(([label, , stroke]) => {
+    series.forEach(([label, , stroke, dash]) => {
       const item = legend.append("span").attr("class", "chart-legend-item");
-      item.append("span").attr("class", "swatch").style("background", stroke);
+      // The swatch repeats the line's dash pattern, so series differ by more than colour.
+      item.append("svg").attr("width", 22).attr("height", 8).attr("aria-hidden", "true")
+        .append("line").attr("x1", 0).attr("x2", 22).attr("y1", 4).attr("y2", 4)
+        .attr("stroke", stroke).attr("stroke-width", 2.5).attr("stroke-dasharray", dash);
       item.append("span").text(label);
     });
   }
 
   function renderTypes(rows) {
     const byType = d3.rollup(rows.filter(d => d.type !== "all"), sum, d => d.type);
+    if (!byType.size) {
+      document.getElementById("escaped-types").innerHTML = "<div class='quality-row'><span>No closed weeks yet</span></div>";
+      return;
+    }
     document.getElementById("escaped-types").innerHTML = Array.from(byType)
       .sort((a, b) => b[1].merged - a[1].merged)
       .map(([type, t]) => `<div class="quality-row"><span>${type}</span><strong>${pct(t.rate)}</strong>`

@@ -47,8 +47,13 @@ if ! python3 -c "import jsonschema" 2>/dev/null; then
 fi
 
 if ! python3 -c "
-import json, sys
+import json, re, sys
 from jsonschema import validate, ValidationError
+
+# Messages quote model output: drop control characters and '::' so a value
+# can't split the log line or start a workflow command.
+def clean(value):
+    return re.sub(r'[\x00-\x1f\x7f]', ' ', str(value)).replace('::', ': ')
 
 with open(sys.argv[1]) as f:
     instance = json.load(f)
@@ -58,9 +63,9 @@ try:
     validate(instance=instance, schema=schema)
     print('PASS: output validated against schema')
 except ValidationError as e:
-    print(f'FAIL: schema validation error: {e.message}')
+    print(f'FAIL: schema validation error: {clean(e.message)}')
     if e.path:
-        print(f'  at: {\".\".join(str(p) for p in e.path)}')
+        print(f'  at: {clean(\".\".join(str(p) for p in e.path))}')
     if 'properties' in e.schema:
         allowed = ', '.join(sorted(e.schema['properties'].keys()))
         print(f'  allowed properties: {allowed}')

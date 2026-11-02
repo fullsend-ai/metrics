@@ -55,10 +55,10 @@ closed.
 | `docs/fix-candidates.csv` | Later PR → earlier PR pairs: the later PR (or the issue it closes) names the earlier PR, uses causal wording ("broke", "regression", "caused by", "introduced in"), or reverts it |
 | `docs/fix-judgments.csv` | Verdict per pair (`defect_from_original`, `later_change`, `not_related`, `unknown`, or `unjudged`); seeded from an offline replay, editable by hand |
 | `docs/escaped-fixes.csv` | Per week × repo × PR type: merged PRs, PRs with a confirmed fix, severe, open candidates (`unjudged` or `unknown`), rate |
-| `docs/fix-candidates-through.txt` | Last day collected without a gap; a week closes only once this date and the PR-type data have both passed its 30-day window |
+| `docs/fix-candidates-through.txt` | Last day collected without a gap; a week closes only once this date and the PR-type data have both passed its 30-day window, and it is left out while a day of it is missing from `docs/pr-type.csv` |
 | `scripts/collect-escaped-fixes.sh` | Daily (wired into `.github/workflows/collect.yml`, after PR types); collects every day since the date above, so a failed run is caught up |
 | `scripts/backfill-escaped-fixes.sh` | Date-range backfill; keeps existing judgments |
-| `.fullsend/harness/fix-judge.yaml`, `.github/workflows/fix-judge.yml` | The judge agent and its daily run, after `collect.yml` |
+| `.fullsend/harness/fix-judge.yaml`, `.github/workflows/fix-judge.yml` | The judge agent and its daily run, after `collect.yml`. The agent is registered for this repo in the org's `repos.yaml` ([fullsend-ai/.fullsend#205](https://github.com/fullsend-ai/.fullsend/pull/205)), which generates `.fullsend/config.yaml` |
 
 Only `defect_from_original` counts. Detection alone is noisy (a named reference
 is a real fix about a third of the time), so each pair needs a verdict. The

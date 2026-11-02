@@ -104,12 +104,14 @@ jobs:
           gh api "repos/${GITHUB_REPOSITORY}/issues/${TRACKING_ISSUE}/comments" --paginate \
             --jq "[.[] | select(.user.login == env.JUDGE_LOGIN and (.body | contains(env.JUDGMENTS_MARKER))) | .body] | last // empty" \
             > comment.md
-          # The verdicts are the one line after the marker's ```json fence.
+          # The verdicts are the one line after the marker's ```json fence. The
+          # post-script writes the marker after the model's free-form comment, so
+          # take its last occurrence: a marker forged inside the comment comes first.
           python3 - <<'PY'
           import json, os
           lines = open("comment.md").read().splitlines()
           marker = os.environ["JUDGMENTS_MARKER"]
-          at = lines.index(marker) if marker in lines else -1
+          at = len(lines) - 1 - lines[::-1].index(marker) if marker in lines else -1
           if at < 0 or lines[at + 1:at + 2] != ["```json"]:
               raise SystemExit("no verdicts in the fix-judge comment")
           json.dump(json.loads(lines[at + 2]), open("judgments.json", "w"))

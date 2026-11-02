@@ -24,7 +24,8 @@ Coverage: docs/fix-candidates-through.txt holds the last date through which
 fixes have been collected without a gap. A week only counts as closed once
 both the PR-type data and this date have passed its 30-day window, and the
 daily run (--catch-up) collects every day since that date, so a failed or
-skipped day is picked up the next day.
+skipped day is picked up the next day. A week is also left out while a day of
+it is missing from docs/pr-type.csv, since its merged PRs would be missing.
 """
 from __future__ import annotations
 
@@ -58,6 +59,7 @@ OUTPUT_HEADER = [
 VERDICTS = {"defect_from_original", "later_change", "not_related", "unknown"}
 SEVERITIES = {"low", "medium", "high", ""}
 AGENT_JUDGE = "ai (fix-judge agent)"
+MAX_JUDGMENTS = 20  # the result schema's maxItems; the agent takes 20 pairs a run
 MISSING = ("HTTP 404", "HTTP 410", "HTTP 422", "HTTP 451")  # unknown, deleted, invalid or blocked
 
 URL_REF = re.compile(r"github\.com/fullsend-ai/([\w.-]+)/pull/(\d+)", re.I)
@@ -281,12 +283,14 @@ def sync_judgments(candidates: list[dict], judgments: list[dict]) -> list[dict]:
 def import_judgments(candidates: list[dict], judgments: list[dict], answers: object) -> int:
     """Fill unjudged candidate pairs from the fix-judge agent's verdicts; return how many were filled.
 
-    answers is model output: anything malformed, unknown or already judged is skipped.
+    answers is model output: anything malformed, unknown or already judged is skipped,
+    and so is everything past the first MAX_JUDGMENTS.
     """
     pairs = {(row["fix"], row["original"]) for row in candidates}
     rows = {(row["fix"], row["original"]): row for row in judgments}
-    filled = skipped = 0
-    for answer in answers if isinstance(answers, list) else []:
+    answers = answers if isinstance(answers, list) else []
+    filled, skipped = 0, max(0, len(answers) - MAX_JUDGMENTS)
+    for answer in answers[:MAX_JUDGMENTS]:
         fields = [answer.get(k, "") for k in ("fix", "original", "verdict", "severity")] if isinstance(answer, dict) else []
         if len(fields) != 4 or not all(isinstance(f, str) for f in fields):
             skipped += 1
@@ -302,12 +306,36 @@ def import_judgments(candidates: list[dict], judgments: list[dict], answers: obj
         row.update(verdict=verdict, severity=severity, judged_by=AGENT_JUDGE, judged_at=date.today().isoformat())
         filled += 1
     if skipped:
-        print(f"  skipped {skipped} verdicts: malformed, not a candidate, or already judged", file=sys.stderr)
+        print(f"  skipped {skipped} verdicts: malformed, not a candidate, already judged or over the limit",
+              file=sys.stderr)
     return filled
 
 
-def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as_of: date) -> list[dict]:
-    """Weekly escaped-fix rate by original merge week, repo and PR type ("all" = every type)."""
+def gap_weeks(aggregate: list[dict]) -> set[tuple[str, str]]:
+    """(week, repo) pairs with a day missing from pr-type.csv after that repo's first collected day.
+
+    pr-type.csv has a row for every collected day, even one with no merged PRs,
+    so a missing day means its merged PRs are missing from the denominator.
+    """
+    days: dict[str, set[date]] = defaultdict(set)
+    for row in aggregate:
+        days[row["repo"]].add(date.fromisoformat(row["date"]))
+    gaps = set()
+    for repo, seen in days.items():
+        day, last = min(seen), max(seen)
+        while day <= last:
+            if day not in seen:
+                gaps.add(((day - timedelta(days=day.weekday())).isoformat(), repo))
+            day += timedelta(days=1)
+    return gaps
+
+
+def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as_of: date,
+          gaps: set[tuple[str, str]] | frozenset = frozenset()) -> list[dict]:
+    """Weekly escaped-fix rate by original merge week, repo and PR type ("all" = every type).
+
+    Weeks in gaps are left out until the missing PR-type days are collected.
+    """
     verdicts = {(row["fix"], row["original"]): row for row in judgments}
     escaped: dict[str, bool] = {}  # original -> severe
     unjudged: dict[str, int] = defaultdict(int)
@@ -328,6 +356,8 @@ def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as
         week = merged_on - timedelta(days=merged_on.weekday())
         if week + timedelta(days=6 + WINDOW_DAYS) > as_of:
             continue  # a fix for this week's PRs could still land
+        if (week.isoformat(), pr["repo"]) in gaps:
+            continue
         key = f"{pr['repo']}#{pr['number']}"
         for pr_type in ("all", pr["pr_type"]):
             bucket = totals[(week.isoformat(), pr["repo"], pr_type)]
@@ -351,15 +381,18 @@ def rebuild(answers_file: str | None = None) -> None:
         filled = import_judgments(candidates, judgments, payload.get("judgments") if isinstance(payload, dict) else None)
         print(f"  {filled} verdicts imported")
     write(JUDGMENTS, JUDGMENT_HEADER, judgments)
-    dates = [row["date"] for row in read(AGGREGATE)]
-    if not dates:
+    aggregate = read(AGGREGATE)
+    if not aggregate:
         raise SystemExit("pr-type.csv is empty; run collect-pr-type.sh first")
-    as_of = date.fromisoformat(max(dates))
+    as_of = date.fromisoformat(max(row["date"] for row in aggregate))
     through = read_through()
     if through is None or through < as_of:
         print(f"  fix candidates collected through {through}: weeks close by that date, not {as_of}", file=sys.stderr)
         as_of = min(as_of, through or date.min)
-    rows = rates(candidates, judgments, read(DETAILS), as_of)
+    gaps = gap_weeks(aggregate)
+    for week, repo in sorted(gaps):
+        print(f"  {repo} week of {week} left out: a day is missing from pr-type.csv", file=sys.stderr)
+    rows = rates(candidates, judgments, read(DETAILS), as_of, gaps)
     write(OUTPUT, OUTPUT_HEADER, rows)
     print(f"  {len(rows)} weekly rows in {OUTPUT.name}")
 

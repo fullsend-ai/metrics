@@ -1334,6 +1334,26 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-08-25,agents,1010,fix: use explicit ref for cross-repo checkout and expose agents_sha output,fix,core,1001,waynesun09,https://github.com/fullsend-ai/agents/pull/1010
 2026-08-25,agents,1007,chore: enable emoji reactions for agent runs on this repo,chore,,,,https://github.com/fullsend-ai/agents/pull/1007
 2026-08-25,agents,861,feat(risk): add PR risk assessment scoring to review pipeline,feat,,,,https://github.com/fullsend-ai/agents/pull/861
+2026-08-26,fullsend,6623,chore(deps): update experiments digest to bfd42ed,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6623
+2026-08-26,fullsend,6620,fix(#6617): stop flagging legitimate GitLab variables as orphans,fix,core,6617,ggallen,https://github.com/fullsend-ai/fullsend/pull/6620
+2026-08-26,fullsend,6619,fix(#6618): emit progress warnings for orphan files and variables,fix,core,6618,ggallen,https://github.com/fullsend-ai/fullsend/pull/6619
+2026-08-26,fullsend,6616,fix(#6615): auto-add GitLab forge host to sandbox egress allowlist and proxy profile,fix,core,6615,ggallen,https://github.com/fullsend-ai/fullsend/pull/6616
+2026-08-26,fullsend,6611,chore(dispatch): provide FULLSEND_WORK_ITEM_URL in addition to GITHUB_ISSUE_URL,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6611
+2026-08-26,fullsend,6427,docs(#6424): add Timeout() / context.DeadlineExceeded pitfall to Go guidelines,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6427
+2026-08-26,fullsend,6388,docs(#6385): add Cursor Origin entry to landscape doc,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6388
+2026-08-26,fullsend,6333,docs(#6330): reorganize agent customization guides,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6333
+2026-08-26,fullsend,6327,docs(#6326): simplify BYO Agent guide by extracting reference content,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6327
+2026-08-26,fullsend,6301,fix(#6299): detect zero-test-file packages in coverage skill,fix,bot,6299,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6301
+2026-08-26,fullsend,6234,docs(#6231): require runtime discovery for agent/skill inventory refs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6234
+2026-08-26,fullsend,6200,docs(#6197): document Fn suffix convention for injectable function variables,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6200
+2026-08-26,fullsend,6164,docs(#6163): add staging warning to go-code.md coverage procedure,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6164
+2026-08-26,fullsend,6069,docs(#6064): document fstest-* account permission scope,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6069
+2026-08-26,fullsend,5942,fix(#5075): detect timeout exhaustion in run runner for non-validation-loop agents,fix,bot,5075,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/5942
+2026-08-26,fullsend,5904,docs(#5903): document that poller gap > 24h silently drops events,docs,,,,https://github.com/fullsend-ai/fullsend/pull/5904
+2026-08-26,fullsend,5891,docs(#5890): generalize mint embed sync guidance in go-code.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/5891
+2026-08-26,fullsend,5518,docs: add applied agent-eval-tools doc,docs,,,,https://github.com/fullsend-ai/fullsend/pull/5518
+2026-08-26,agents,1054,refactor(#1053): replace TRIGGER_ENTITY_URL with FULLSEND_WORK_ITEM_URL,other,,,,https://github.com/fullsend-ai/agents/pull/1054
+2026-08-26,agents,1038,fix(#1037): add re-review anchoring and coherence check to risk assessment,fix,core,1037,maruiz93,https://github.com/fullsend-ai/agents/pull/1038
 2026-08-27,fullsend,6700,chore(#6699): add .agents/skills symlink for Codex discovery,chore,,,,https://github.com/fullsend-ai/fullsend/pull/6700
 2026-08-27,fullsend,6696,fix(#6691)!: keep OpenShell 0.0.111+ sandboxes alive for later exec,fix,core,6691,waynesun09,https://github.com/fullsend-ai/fullsend/pull/6696
 2026-08-27,fullsend,6693,fix(#6690): add ctx.Err() check before select in polling loops,fix,bot,6690,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/6693

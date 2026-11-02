@@ -181,6 +181,19 @@ class TestRates(unittest.TestCase):
         self.assertFalse(mod.rates(self.candidates, self.judgments, self.details, date(2026, 7, 6)))
         self.assertTrue(mod.rates(self.candidates, self.judgments, self.details, date(2026, 7, 7)))
 
+    def test_week_with_a_missing_day_is_left_out(self):
+        # 2026-06-02 is missing for fullsend; its week holds the confirmed escape fullsend#1.
+        aggregate = [{"date": f"2026-06-{day:02d}", "repo": repo} for day in range(1, 15)
+                     for repo in ("fullsend", "agents") if (day, repo) != (2, "fullsend")]
+        gaps = mod.gap_weeks(aggregate)
+        self.assertEqual(gaps, {("2026-06-01", "fullsend")})
+        rows = mod.rates(self.candidates, self.judgments, self.details, date(2026, 7, 20), gaps)
+        self.assertEqual({r["week"] for r in rows}, {"2026-06-08"})
+
+    def test_days_before_the_first_collected_day_are_not_gaps(self):
+        aggregate = [{"date": f"2026-06-{day:02d}", "repo": "fullsend"} for day in range(3, 15)]
+        self.assertEqual(mod.gap_weeks(aggregate), set())
+
     def test_sync_adds_unjudged_and_drops_stale(self):
         judgments = mod.sync_judgments(
             self.candidates[:1],
@@ -222,6 +235,13 @@ class TestImportJudgments(unittest.TestCase):
                         [dict(pair, verdict="not_related", severity=["high"])], [{"fix": ["fullsend#10"], "original": "fullsend#1",
                                                                                    "verdict": "not_related"}]):
             self.assertEqual(mod.import_judgments(self.candidates, self.judgments, answers), 0, answers)
+        self.assertEqual(self.judgments[0]["verdict"], "unjudged")
+
+    def test_only_the_first_twenty_verdicts_count(self):
+        decoys = [{"fix": f"fullsend#{n}", "original": "fullsend#0", "verdict": "not_related", "severity": ""}
+                  for n in range(100, 120)]
+        real = {"fix": "fullsend#10", "original": "fullsend#1", "verdict": "not_related", "severity": ""}
+        self.assertEqual(mod.import_judgments(self.candidates, self.judgments, decoys + [real]), 0)
         self.assertEqual(self.judgments[0]["verdict"], "unjudged")
 
     def test_severity_only_kept_for_a_defect(self):
@@ -284,7 +304,7 @@ class TestCollect(unittest.TestCase):
         self.assertFalse(mod.THROUGH.exists())
 
     def test_weeks_close_by_the_collected_date_not_the_pr_type_date(self):
-        mod.write(mod.AGGREGATE, ["date"], [{"date": "2026-08-01"}])
+        mod.write(mod.AGGREGATE, ["date", "repo"], [{"date": "2026-08-01", "repo": "fullsend"}])
         mod.write(mod.DETAILS, ["date", "repo", "number", "pr_type"],
                   [{"date": "2026-06-01", "repo": "fullsend", "number": "1", "pr_type": "feat"}])
         mod.THROUGH.write_text("2026-07-06\n")  # one day short of the week of 2026-06-01 closing

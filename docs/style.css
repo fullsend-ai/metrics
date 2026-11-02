@@ -337,6 +337,11 @@ body.page-quality {
   gap: 0.35rem;
   font-size: 0.75rem;
   color: var(--fg-light);
+  white-space: nowrap;
+}
+
+.chart-legend-item svg {
+  flex-shrink: 0;
 }
 
 .chart-legend-item .swatch {
