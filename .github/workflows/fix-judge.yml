@@ -107,9 +107,11 @@ jobs:
           # The verdicts are the one line after the marker's ```json fence. The
           # post-script writes the marker after the model's free-form comment, so
           # take its last occurrence: a marker forged inside the comment comes first.
+          # Split on LF only: splitlines() also breaks on U+2028, which JSON strings
+          # can carry raw, so a forged marker could hide inside a verdict's reason.
           python3 - <<'PY'
           import json, os
-          lines = open("comment.md").read().splitlines()
+          lines = open("comment.md", newline="").read().replace("\r\n", "\n").split("\n")
           marker = os.environ["JUDGMENTS_MARKER"]
           at = len(lines) - 1 - lines[::-1].index(marker) if marker in lines else -1
           if at < 0 or lines[at + 1:at + 2] != ["```json"]:
