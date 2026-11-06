@@ -337,6 +337,11 @@ body.page-quality {
   gap: 0.35rem;
   font-size: 0.75rem;
   color: var(--fg-light);
+  white-space: nowrap;
+}
+
+.chart-legend-item svg {
+  flex-shrink: 0;
 }
 
 .chart-legend-item .swatch {
@@ -550,6 +555,7 @@ h1 {
   opacity: 0;
   transition: opacity 0.1s;
   z-index: 10;
+  max-width: calc(100vw - 16px);
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
