@@ -129,7 +129,7 @@ A single HTML page served by GitHub Pages (from the `docs/` directory on `main`)
 **Interactivity:**
 - Time range selector (last 7d / 30d / 90d / all)
 - Per-repo filter (dropdown or clickable legend)
-- Hover tooltips on chart data points
+- Hover crosshair: a guide line snaps to the nearest day and the tooltip lists each shown series; on drillable charts a click opens that day in details
 
 ### DORA Tier Reference Lines
 
