@@ -391,7 +391,7 @@
     }
     document.getElementById("escaped-types").innerHTML = Array.from(byType)
       .sort((a, b) => b[1].merged - a[1].merged)
-      .map(([type, t]) => `<div class="quality-row"><span>${type}</span><strong>${pct(t.rate)}</strong>`
+      .map(([type, t]) => `<div class="quality-row"><span>${esc(type)}</span><strong>${pct(t.rate)}</strong>`
         + `<strong>${t.escaped} (${t.severe} severe)</strong><span>${t.merged}</span></div>`)
       .join("");
   }
