@@ -330,7 +330,7 @@
     const margin = { top: 16, right: 20, bottom: 28, left: 50 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
-    // Weekly values are in the hover tooltip; the label gives screen readers the period's rate per series.
+    // Weekly values are in the hover tooltip and the table below; the label gives the period's rate per series.
     const summary = series.map(([label, items]) => `${label} ${pct(sum(items).rate)}`).join(", ");
     const svg = container.append("svg").attr("viewBox", `0 0 ${width} ${height}`).attr("role", "img")
       .attr("aria-label", `Weekly escaped-fix rate, ${weeklyRange(points)}. Over the period: ${summary}.`);
@@ -381,6 +381,19 @@
         .attr("stroke", stroke).attr("stroke-width", 2.5).attr("stroke-dasharray", dash);
       item.append("span").text(label);
     });
+
+    // The same weekly values as the hover tooltip, for keyboard, touch and screen-reader users.
+    const table = container.append("details").attr("class", "details-panel");
+    table.append("summary").text("Weekly values");
+    const head = table.append("table").append("thead").append("tr");
+    ["Week", "Series", "Rate", "Escaped", "Merged", "Severe", "Unjudged or unknown"].forEach(h => head.append("th").text(h));
+    const body = table.select("table").append("tbody");
+    weeks.forEach(week => series.forEach(([label]) => {
+      const d = byWeek.get(`${week.week}|${label}`);
+      if (!d) return;
+      const row = body.append("tr");
+      [week.week, label, pct(d.rate), d.escaped, d.merged, d.severe, d.unjudged].forEach(v => row.append("td").text(v));
+    }));
   }
 
   function renderTypes(rows) {
