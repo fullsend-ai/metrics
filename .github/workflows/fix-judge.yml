@@ -1,9 +1,10 @@
 name: Judge escaped-fix candidates
 
 # Runs the fix-judge agent on pending pairs in docs/fix-judgments.csv, then
-# writes its verdicts back. The agent only reads: it posts its verdicts as a
-# sticky comment on the tracking issue (vars.FIX_JUDGE_ISSUE), and the
-# writeback job, which alone can push, re-validates them before committing.
+# writes its verdicts back. The agent only reads: its post-script posts a
+# summary comment on the tracking issue (vars.FIX_JUDGE_ISSUE) and leaves the
+# verdicts in the run's fullsend-fix-judge artifact, and the writeback job,
+# which alone can push, re-validates them before committing.
 # A pair the agent skips or a failed run stays unjudged for the next run, and
 # the Quality Signals page counts it as open.
 
@@ -17,12 +18,6 @@ permissions: {}
 concurrency:
   group: fix-judge
   cancel-in-progress: false
-
-env:
-  JUDGMENTS_MARKER: "<!-- fullsend:fix-judge-judgments -->"
-  # The GitHub App the harness posts as (slug fullsend-ai-triage). Only its
-  # comments are read back, so a planted comment can't inject verdicts.
-  JUDGE_LOGIN: "fullsend-ai-triage[bot]"
 
 jobs:
   prepare:
@@ -91,33 +86,27 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: read
     steps:
       - uses: actions/checkout@v4
 
+      # reusable-dispatch uploads the agent's run directory under this name,
+      # in this workflow run, so nobody outside the run can supply it.
+      - uses: actions/download-artifact@v4
+        with:
+          name: fullsend-fix-judge
+          path: artifact
+
       - name: Read the verdicts
-        env:
-          GH_TOKEN: ${{ github.token }}
-          TRACKING_ISSUE: ${{ vars.FIX_JUDGE_ISSUE }}
         run: |
           set -euo pipefail
-          gh api "repos/${GITHUB_REPOSITORY}/issues/${TRACKING_ISSUE}/comments" --paginate \
-            --jq "[.[] | select(.user.login == env.JUDGE_LOGIN and (.body | contains(env.JUDGMENTS_MARKER))) | .body] | last // empty" \
-            > comment.md
-          # The verdicts are the one line after the marker's ```json fence. The
-          # post-script writes the marker after the model's free-form comment, so
-          # take its last occurrence: a marker forged inside the comment comes first.
-          # Split on LF only: splitlines() also breaks on U+2028, which JSON strings
-          # can carry raw, so a forged marker could hide inside a verdict's reason.
-          python3 - <<'PY'
-          import json, os
-          lines = open("comment.md", newline="").read().replace("\r\n", "\n").split("\n")
-          marker = os.environ["JUDGMENTS_MARKER"]
-          at = len(lines) - 1 - lines[::-1].index(marker) if marker in lines else -1
-          if at < 0 or lines[at + 1:at + 2] != ["```json"]:
-              raise SystemExit("no verdicts in the fix-judge comment")
-          json.dump(json.loads(lines[at + 2]), open("judgments.json", "w"))
-          PY
+          # The post-script writes the file at the top of the run directory; the
+          # agent's own output sits deeper, under iteration-<N>/output.
+          mapfile -t found < <(find artifact -mindepth 2 -maxdepth 2 -type f -name fix-judge-verdicts.json)
+          if [[ ${#found[@]} -ne 1 ]]; then
+            echo "::error::expected one fix-judge-verdicts.json in the artifact, found ${#found[@]}"
+            exit 1
+          fi
+          cp "${found[0]}" judgments.json
 
       - name: Import and commit
         run: |

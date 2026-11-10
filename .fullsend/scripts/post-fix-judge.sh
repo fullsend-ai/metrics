@@ -24,9 +24,12 @@
 # body is piped on stdin rather than interpolated into a command. comment may
 # be missing or empty when status is ok, because nothing new is posted then.
 #
-# The verdicts go below JUDGMENTS_MARKER as one line of JSON. The writeback job
-# in .github/workflows/fix-judge.yml reads them from this comment and
-# re-validates every field before anything is written to the CSV.
+# The verdicts go to VERDICTS_FILE in the run directory, which the dispatch
+# uploads as the fullsend-fix-judge artifact. The writeback job in
+# .github/workflows/fix-judge.yml downloads it and re-validates every field
+# before anything is written to the CSV. The comment is only for people: it
+# can't carry the verdicts, since post-comment escapes every other
+# "<!-- fullsend:" marker in the body.
 
 set -euo pipefail
 
@@ -40,7 +43,7 @@ export LC_ALL="${LC_ALL:-C.UTF-8}"
 : "${GH_TOKEN:?GH_TOKEN must be set}"
 
 MARKER="<!-- fullsend:fix-judge-agent -->"
-JUDGMENTS_MARKER="<!-- fullsend:fix-judge-judgments -->"
+VERDICTS_FILE="${PWD}/fix-judge-verdicts.json"
 MAX_SUMMARY_CHARS=200
 MAX_COMMENT_CHARS=16384
 
@@ -117,8 +120,9 @@ if (( ${#summary} > MAX_SUMMARY_CHARS )); then
   echo "post-fix-judge: summary exceeds ${MAX_SUMMARY_CHARS} characters" >&2
   exit 1
 fi
-# jq -c keeps the verdicts on one line: newlines inside strings stay escaped.
-judgments=$(jq -c '{judgments: (if (.judgments | type) == "array" then .judgments else [] end)}' "${RESULT_FILE}")
+# Written before anything is posted, and for every status, so a failed post
+# still leaves the verdicts for the writeback job.
+jq '{judgments: (if (.judgments | type) == "array" then .judgments else [] end)}' "${RESULT_FILE}" > "${VERDICTS_FILE}"
 # Truncate to MAX_COMMENT_CHARS *including* the marker, so the result never
 # exceeds the cap the schema declares.
 TRUNCATION_MARKER=$'\n\n_(truncated)_'
@@ -196,8 +200,7 @@ if [[ "${POST_FIX_JUDGE_DRY_RUN:-}" == "1" ]]; then
   stop_token=$(od -An -N16 -tx1 /dev/urandom | tr -d ' \n')
   [[ ${#stop_token} -eq 32 ]] || { echo "post-fix-judge: could not generate a stop-commands token" >&2; exit 1; }
   printf '::stop-commands::%s\n' "${stop_token}"
-  # shellcheck disable=SC2016  # the backticks are a literal Markdown fence
-  printf '**%s**\n\n%s\n\n%s\n```json\n%s\n```\n' "${summary}" "${comment}" "${JUDGMENTS_MARKER}" "${judgments}"
+  printf '**%s**\n\n%s\n' "${summary}" "${comment}"
   printf '::%s::\n' "${stop_token}"
   echo "post-fix-judge: dry run, not posting" >&2
   exit 0
@@ -206,8 +209,7 @@ fi
 # fullsend issues post-comment is the repo's sticky-comment primitive: it
 # finds this agent's previous comment by marker and its own author and edits
 # it in place, so re-runs do not flood the work item.
-# shellcheck disable=SC2016  # the backticks are a literal Markdown fence
-printf '**%s**\n\n%s\n\n%s\n```json\n%s\n```\n' "${summary}" "${comment}" "${JUDGMENTS_MARKER}" "${judgments}" \
+printf '**%s**\n\n%s\n' "${summary}" "${comment}" \
   | fullsend issues post-comment \
       --tracker github \
       --project "${REPO}" \
