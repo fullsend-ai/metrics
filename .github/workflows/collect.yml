@@ -12,6 +12,10 @@ on:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    # Shared with the fix-judge writeback job: both push to main, so they never run at once.
+    concurrency:
+      group: metrics-push
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
@@ -84,6 +88,21 @@ jobs:
             ./scripts/collect-quality.sh
           fi
 
+      - name: Collect escaped-fix metrics
+        id: escaped
+        # A failure here leaves its CSVs unchanged and must not stop the other metrics from being committed;
+        # the next run catches up the missed days. The last step fails the run so the failure is seen.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_DATE: ${{ github.event.inputs.date }}
+        run: |
+          if [[ -n "$INPUT_DATE" ]]; then
+            ./scripts/collect-escaped-fixes.sh "$INPUT_DATE"
+          else
+            ./scripts/collect-escaped-fixes.sh
+          fi
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
@@ -91,3 +110,9 @@ jobs:
           git add docs/
           git diff --staged --quiet || git commit -m "metrics: $(date -d yesterday +%Y-%m-%d)"
           git push
+
+      - name: Report a failed escaped-fix step
+        if: steps.escaped.outcome == 'failure'
+        run: |
+          echo "::error::Collect escaped-fix metrics failed; the other metrics were committed, and the next run catches up the missed days"
+          exit 1

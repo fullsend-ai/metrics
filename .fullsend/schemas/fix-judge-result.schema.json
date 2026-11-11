@@ -1,0 +1,102 @@
+{
+  "$id": "https://fullsend.sh/schemas/fix-judge-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Structured output from the fix-judge agent: verdicts posted by scripts/post-fix-judge.sh and imported into docs/fix-judgments.csv by .github/workflows/fix-judge.yml.",
+  "if": {
+    "properties": {
+      "status": {
+        "enum": [
+          "findings",
+          "error"
+        ]
+      }
+    },
+    "required": [
+      "status"
+    ]
+  },
+  "properties": {
+    "comment": {
+      "maxLength": 16384,
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "findings",
+        "error"
+      ],
+      "type": "string"
+    },
+    "summary": {
+      "maxLength": 200,
+      "minLength": 1,
+      "pattern": "^[^\\r\\n]*$",
+      "type": "string"
+    },
+    "judgments": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fix",
+          "original",
+          "verdict",
+          "severity",
+          "reason"
+        ],
+        "properties": {
+          "fix": {
+            "type": "string",
+            "pattern": "^(fullsend|agents)#[0-9]+$"
+          },
+          "original": {
+            "type": "string",
+            "pattern": "^(fullsend|agents)#[0-9]+$"
+          },
+          "verdict": {
+            "enum": [
+              "defect_from_original",
+              "later_change",
+              "not_related",
+              "unknown"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              ""
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300,
+            "pattern": "^[^\\r\\n]*$"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "status",
+    "summary"
+  ],
+  "then": {
+    "properties": {
+      "comment": {
+        "minLength": 1
+      }
+    },
+    "required": [
+      "comment"
+    ]
+  },
+  "title": "fix-judge Agent Result",
+  "type": "object"
+}
