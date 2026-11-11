@@ -340,8 +340,11 @@ body.page-quality {
   white-space: nowrap;
 }
 
+/* .chart-section svg sets width: 100% for charts; the legend swatch keeps its own 22px. */
+.chart-section .chart-legend-item svg,
 .chart-legend-item svg {
   flex-shrink: 0;
+  width: 22px;
 }
 
 .chart-legend-item .swatch {

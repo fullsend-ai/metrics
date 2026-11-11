@@ -303,6 +303,12 @@
 
   function renderStats(rows) {
     const total = sum(rows.filter(d => d.type === "all"));
+    if (!total.merged) {
+      // A rate over no merged PRs is not a measured 0%.
+      document.getElementById("escaped-hero").innerHTML = `
+      <div class="stat"><div class="val">No data</div><div class="lbl">Escaped-fix rate (no closed weeks yet)</div></div>`;
+      return;
+    }
     document.getElementById("escaped-hero").innerHTML = `
       <div class="stat"><div class="val" style="color:${themeColor("--negative", "#f87171")}">${pct(total.rate)}</div><div class="lbl">Escaped-fix rate (all closed weeks)</div></div>
       <div class="stat"><div class="val">${total.escaped}</div><div class="lbl">PRs fixed within 30 days</div></div>
