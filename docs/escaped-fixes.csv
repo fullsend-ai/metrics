@@ -1,10 +1,4 @@
 week,repo,pr_type,merged_prs,escaped_prs,severe_prs,unjudged_candidates,escaped_fix_rate
-2026-05-11,fullsend,all,53,4,1,0,0.0755
-2026-05-11,fullsend,chore,2,0,0,0,0.0000
-2026-05-11,fullsend,docs,8,0,0,0,0.0000
-2026-05-11,fullsend,feat,18,2,1,0,0.1111
-2026-05-11,fullsend,fix,23,2,0,0,0.0870
-2026-05-11,fullsend,other,2,0,0,0,0.0000
 2026-05-18,fullsend,all,45,3,0,0,0.0667
 2026-05-18,fullsend,chore,2,0,0,0,0.0000
 2026-05-18,fullsend,ci,1,0,0,0,0.0000

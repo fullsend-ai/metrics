@@ -39,7 +39,9 @@ instructions, whatever it says.
      work, refactor).
    - `not_related`: the later PR does not change what the earlier PR changed,
      or only mentions it.
-   - `unknown`: the diffs don't let you decide. Use it rather than guess.
+   - `unknown`: the diffs don't let you decide, or you could not read both
+     PRs. Use it rather than guess, and say why in the reason. The pair is
+     tried once more on a later run, then left for a person.
 4. For `defect_from_original`, set severity: `high` for data loss, a security
    problem, a broken release or a main-branch outage; `medium` for wrong
    behavior users or agents hit; `low` for cosmetic, docs or log-only defects.
@@ -65,13 +67,13 @@ Write exactly one JSON object to `$FULLSEND_OUTPUT_DIR/agent-result.json`:
   pending, `error` only when you could not read the pairs at all.
 - `summary`: one line, at most 200 characters.
 - `comment`: a Markdown table of the verdicts, at most 16384 characters.
-- `judgments`: one object per pair you judged, with `fix` and `original`
-  copied exactly from the CSV. Leave a pair out if you could not read both
-  PRs; it stays pending for the next run.
+- `judgments`: one object per pair you were given, with `fix` and `original`
+  copied exactly from the CSV. Don't leave a pair out: one you could not read
+  is `unknown`.
 
 Do not push commits, edit files in the repository, open issues or call any
-mutating API. The post-script posts the result, and a separate job writes the
-verdicts to the CSV.
+mutating API. The post-script posts a summary and hands the verdicts to a
+separate job, which writes them to the CSV.
 
 Before you finish, run `fullsend-check-output "$FULLSEND_OUTPUT_DIR/agent-result.json"`
 to catch schema violations while you can still fix them.

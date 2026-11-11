@@ -14,11 +14,15 @@
    PR counts and types come from docs/pr-type-details.csv.
 
 Judging: the fix-judge Fullsend agent (.fullsend/harness/fix-judge.yaml, run
-daily by .github/workflows/fix-judge.yml) reads unjudged pairs and posts its
-verdicts; --import-judgments writes them here. It fills only pairs that are
-still candidates and still unjudged, so a re-run or a stale result changes
-nothing. Its verdicts are recorded as judged_by "ai (fix-judge agent)"; a
-person's verdict is entered in fix-judgments.csv directly and overrides it.
+daily by .github/workflows/fix-judge.yml) reads unjudged pairs and returns
+its verdicts; --import-judgments writes them here, with the agent's reason. It
+fills only pairs that are still candidates and still unjudged, so a re-run or
+a stale result changes nothing. Its verdicts are recorded as judged_by
+"ai (fix-judge agent)"; a person's verdict is entered in fix-judgments.csv
+directly and overrides it. The agent's first "unknown" for a pair leaves it
+unjudged, with attempts 1, so the next run tries it again; a second "unknown"
+is recorded, which takes the pair out of the agent's queue and leaves it for a
+person. It still counts as open until a person judges it.
 
 Coverage: docs/fix-candidates-through.txt holds the last date through which
 fixes have been collected without a gap. A week only counts as closed once
@@ -51,7 +55,7 @@ AGGREGATE = ROOT / "docs" / "pr-type.csv"
 THROUGH = ROOT / "docs" / "fix-candidates-through.txt"
 
 CANDIDATE_HEADER = ["fix", "original", "detected_by", "days_between", "fix_merged_at", "original_merged_at"]
-JUDGMENT_HEADER = ["fix", "original", "verdict", "severity", "judged_by", "judged_at"]
+JUDGMENT_HEADER = ["fix", "original", "verdict", "severity", "judged_by", "judged_at", "reason", "attempts"]
 OUTPUT_HEADER = [
     "week", "repo", "pr_type", "merged_prs", "escaped_prs", "severe_prs",
     "unjudged_candidates", "escaped_fix_rate",
@@ -60,6 +64,7 @@ VERDICTS = {"defect_from_original", "later_change", "not_related", "unknown"}
 SEVERITIES = {"low", "medium", "high", ""}
 AGENT_JUDGE = "ai (fix-judge agent)"
 MAX_JUDGMENTS = 20  # the result schema's maxItems; the agent takes 20 pairs a run
+MAX_REASON = 300  # the result schema's maxLength for reason
 MISSING = ("HTTP 404", "HTTP 410", "HTTP 422", "HTTP 451")  # unknown, deleted, invalid or blocked
 
 URL_REF = re.compile(r"github\.com/fullsend-ai/([\w.-]+)/pull/(\d+)", re.I)
@@ -284,12 +289,13 @@ def import_judgments(candidates: list[dict], judgments: list[dict], answers: obj
     """Fill unjudged candidate pairs from the fix-judge agent's verdicts; return how many were filled.
 
     answers is model output: anything malformed, unknown or already judged is skipped,
-    and so is everything past the first MAX_JUDGMENTS.
+    and so is everything past the first MAX_JUDGMENTS. A first "unknown" is not
+    recorded: the pair stays unjudged with attempts 1, for one more try.
     """
     pairs = {(row["fix"], row["original"]) for row in candidates}
     rows = {(row["fix"], row["original"]): row for row in judgments}
     answers = answers if isinstance(answers, list) else []
-    filled, skipped = 0, max(0, len(answers) - MAX_JUDGMENTS)
+    filled, retried, skipped = 0, 0, max(0, len(answers) - MAX_JUDGMENTS)
     for answer in answers[:MAX_JUDGMENTS]:
         fields = [answer.get(k, "") for k in ("fix", "original", "verdict", "severity")] if isinstance(answer, dict) else []
         if len(fields) != 4 or not all(isinstance(f, str) for f in fields):
@@ -302,17 +308,28 @@ def import_judgments(candidates: list[dict], judgments: list[dict], answers: obj
             continue
         if verdict != "defect_from_original":
             severity = ""
+        reason = answer.get("reason")
+        reason = " ".join(reason.split())[:MAX_REASON] if isinstance(reason, str) else ""
+        if reason[:1] in ("=", "+", "-", "@"):
+            reason = "'" + reason  # a spreadsheet would run it as a formula
+        if verdict == "unknown" and not row.get("attempts"):
+            row.update(reason=reason, attempts="1")
+            retried += 1
+            continue
         # judged_by is fixed: agent output never claims to be a person's verdict.
-        row.update(verdict=verdict, severity=severity, judged_by=AGENT_JUDGE, judged_at=date.today().isoformat())
+        row.update(verdict=verdict, severity=severity, judged_by=AGENT_JUDGE, judged_at=date.today().isoformat(),
+                   reason=reason)
         filled += 1
     if skipped:
         print(f"  skipped {skipped} verdicts: malformed, not a candidate, already judged or over the limit",
               file=sys.stderr)
+    if retried:
+        print(f"  {retried} pairs judged unknown for the first time stay unjudged for one more try", file=sys.stderr)
     return filled
 
 
 def gap_weeks(aggregate: list[dict]) -> set[tuple[str, str]]:
-    """(week, repo) pairs with a day missing from pr-type.csv after that repo's first collected day.
+    """(week, repo) pairs with a day missing from pr-type.csv from that repo's first collected week.
 
     pr-type.csv has a row for every collected day, even one with no merged PRs,
     so a missing day means its merged PRs are missing from the denominator.
@@ -322,7 +339,10 @@ def gap_weeks(aggregate: list[dict]) -> set[tuple[str, str]]:
         days[row["repo"]].add(date.fromisoformat(row["date"]))
     gaps = set()
     for repo, seen in days.items():
-        day, last = min(seen), max(seen)
+        # From the Monday of the first collected week: days before the first one
+        # in that week are missing too, so a partial first week is left out.
+        first, last = min(seen), max(seen)
+        day = first - timedelta(days=first.weekday())
         while day <= last:
             if day not in seen:
                 gaps.add(((day - timedelta(days=day.weekday())).isoformat(), repo))

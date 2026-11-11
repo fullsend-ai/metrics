@@ -190,9 +190,14 @@ class TestRates(unittest.TestCase):
         rows = mod.rates(self.candidates, self.judgments, self.details, date(2026, 7, 20), gaps)
         self.assertEqual({r["week"] for r in rows}, {"2026-06-08"})
 
-    def test_days_before_the_first_collected_day_are_not_gaps(self):
-        aggregate = [{"date": f"2026-06-{day:02d}", "repo": "fullsend"} for day in range(3, 15)]
+    def test_collection_from_a_monday_has_no_gaps(self):
+        aggregate = [{"date": f"2026-06-{day:02d}", "repo": "fullsend"} for day in range(1, 15)]
         self.assertEqual(mod.gap_weeks(aggregate), set())
+
+    def test_partial_first_week_is_a_gap(self):
+        # Collection starts on Wednesday 2026-06-03, so that week's Monday and Tuesday are missing.
+        aggregate = [{"date": f"2026-06-{day:02d}", "repo": "fullsend"} for day in range(3, 15)]
+        self.assertEqual(mod.gap_weeks(aggregate), {("2026-06-01", "fullsend")})
 
     def test_sync_adds_unjudged_and_drops_stale(self):
         judgments = mod.sync_judgments(
@@ -243,6 +248,21 @@ class TestImportJudgments(unittest.TestCase):
         real = {"fix": "fullsend#10", "original": "fullsend#1", "verdict": "not_related", "severity": ""}
         self.assertEqual(mod.import_judgments(self.candidates, self.judgments, decoys + [real]), 0)
         self.assertEqual(self.judgments[0]["verdict"], "unjudged")
+
+    def test_reason_is_kept_on_one_line_and_never_a_formula(self):
+        mod.import_judgments(self.candidates, self.judgments, [
+            {"fix": "fullsend#10", "original": "fullsend#1", "verdict": "not_related", "severity": "",
+             "reason": "=HYPERLINK(\"x\")\n  only docs"}])
+        self.assertEqual(self.judgments[0]["reason"], "'=HYPERLINK(\"x\") only docs")
+
+    def test_unknown_is_tried_once_more_then_left_for_a_person(self):
+        unknown = [{"fix": "fullsend#10", "original": "fullsend#1", "verdict": "unknown", "severity": "",
+                    "reason": "diff too large to read"}]
+        self.assertEqual(mod.import_judgments(self.candidates, self.judgments, unknown), 0)
+        self.assertEqual((self.judgments[0]["verdict"], self.judgments[0]["attempts"]), ("unjudged", "1"))
+        self.assertEqual(mod.import_judgments(self.candidates, self.judgments, unknown), 1)
+        self.assertEqual((self.judgments[0]["verdict"], self.judgments[0]["judged_by"], self.judgments[0]["reason"]),
+                         ("unknown", mod.AGENT_JUDGE, "diff too large to read"))
 
     def test_severity_only_kept_for_a_defect(self):
         mod.import_judgments(self.candidates, self.judgments, [
