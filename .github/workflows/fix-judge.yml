@@ -84,6 +84,10 @@ jobs:
     needs: [prepare, judge]
     if: needs.prepare.outputs.has_work == 'true' && needs.judge.result == 'success'
     runs-on: ubuntu-latest
+    # Shared with collect.yml's collect job: both push to main, so they never run at once.
+    concurrency:
+      group: metrics-push
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
@@ -113,15 +117,17 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # collect.yml rewrites the same CSVs, so on a rejected push start again
-          # from the new main; the import only fills pairs that are still unjudged.
+          # collect.yml can't run meanwhile (shared concurrency group), but a person
+          # can push; on a rejected push start again from the new main. The import
+          # only fills pairs that are still unjudged.
           for _ in 1 2 3; do
             git fetch -q origin main && git reset -q --hard origin/main
             python3 scripts/collect-escaped-fixes.py --import-judgments judgments.json
             git add docs/fix-judgments.csv docs/escaped-fixes.csv
             git diff --staged --quiet && exit 0
             git commit -q -m "metrics: judge escaped-fix candidates"
-            git push && exit 0
+            # A manual run can be dispatched from another branch; the verdicts always go to main.
+            git push origin HEAD:main && exit 0
             sleep 10
           done
           exit 1
