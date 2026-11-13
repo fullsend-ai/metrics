@@ -148,6 +148,15 @@ def is_public_repo(name: str, cache: dict = _REPO_PUBLIC) -> bool:
     return cache[name]
 
 
+def public_only(names: list[str]) -> list[str]:
+    """Keep only public repos from an explicit list; skipped names are reported, not read."""
+    kept = [n for n in names if is_public_repo(n)]
+    for n in names:
+        if n not in kept:
+            print(f"  skipping {n}: not a public repo", file=sys.stderr)
+    return kept
+
+
 def _search_merged(repo: str, start: date, end: date) -> list[dict]:
     cmd = [
         "search", "prs",
@@ -373,9 +382,9 @@ def main():
     ensure_csvs()
 
     if os.environ.get("PR_TYPE_REPOS"):
-        repos = [r.strip() for r in os.environ["PR_TYPE_REPOS"].split(",") if r.strip()]
+        repos = public_only([r.strip() for r in os.environ["PR_TYPE_REPOS"].split(",") if r.strip()])
     elif args.repos:
-        repos = args.repos
+        repos = public_only(args.repos)
     else:
         repos = list_repos()
 

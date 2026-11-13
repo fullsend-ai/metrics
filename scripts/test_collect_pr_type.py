@@ -87,6 +87,18 @@ class TestRepoVisibility(unittest.TestCase):
         mod.gh_json = self.fake_gh
         self.assertEqual(mod.list_repos(), ["pub"])
 
+    def test_explicit_repo_lists_keep_only_public(self):
+        mod.gh_json = self.fake_gh
+        real = mod.is_public_repo
+        visibility = {}
+        mod.is_public_repo = lambda name: real(name, visibility)
+        try:
+            names = ["pub", "priv", "internal", "unknown", "missing"]
+            self.assertEqual(mod.public_only(names), ["pub"])
+            self.assertEqual(mod.public_only(["priv"]), [])
+        finally:
+            mod.is_public_repo = real
+
     def test_issue_author_skips_non_public_repos(self):
         mod.gh_json = self.fake_gh
         visibility = {}
