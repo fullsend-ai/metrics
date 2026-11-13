@@ -125,8 +125,27 @@ def gh_json(args: list[str], retries: int = 5):
 
 
 def list_repos() -> list[str]:
+    """Public, non-archived, non-fork org repos, whichever token runs this."""
     data = gh_json(["api", f"/orgs/{ORG}/repos", "--paginate"])
-    return sorted(r["name"] for r in data if not r.get("archived") and not r.get("fork"))
+    return sorted(
+        r["name"] for r in data
+        if r.get("visibility") == "public" and not r.get("archived") and not r.get("fork")
+    )
+
+
+_REPO_PUBLIC: dict[str, bool] = {}
+
+
+def is_public_repo(name: str, cache: dict = _REPO_PUBLIC) -> bool:
+    """True if ORG/name is public. Failed lookups count as not public and are not cached."""
+    if name in cache:
+        return cache[name]
+    try:
+        visibility = gh_json(["api", f"repos/{ORG}/{name}", "--jq", "{visibility: .visibility}"], retries=3)
+    except RuntimeError:
+        return False
+    cache[name] = bool(visibility) and visibility.get("visibility") == "public"
+    return cache[name]
 
 
 def _search_merged(repo: str, start: date, end: date) -> list[dict]:
@@ -171,7 +190,11 @@ def fetch_issue_author(issue_repo: str, number: int, pr_repo: str, cache: dict) 
     if key in cache:
         return cache[key]
     # Only probe the referenced repo, then the PR's repo when they differ.
+    # A PR body can name any org repo; skip non-public ones so the result does
+    # not depend on whether the token can see private or internal repos.
     for name in dict.fromkeys([issue_repo, pr_repo]):
+        if not is_public_repo(name):
+            continue
         try:
             data = gh_json([
                 "api", f"repos/{ORG}/{name}/issues/{number}",
