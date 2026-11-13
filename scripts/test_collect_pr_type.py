@@ -187,6 +187,15 @@ class TestForceReplaceRange(unittest.TestCase):
                 agg_line("2026-05-02", "agents"),
             ] + self.after))
 
+    def test_empty_replacement_leaves_unterminated_last_record_untouched(self):
+        # Last record is out of range and has no trailing newline; the range
+        # collects no rows, so the file must stay byte-identical.
+        details = DETAILS_HEADER + "".join(self.d_before + self.d_inside) + \
+            detail_line("2026-05-04", "agents", 4).rstrip("\r\n")
+        self.details.write_text(details, newline="")
+        self.run_force("2026-05-10", "2026-05-11")
+        self.assertEqual(self.read(self.details), details)
+
 
 if __name__ == "__main__":
     unittest.main()

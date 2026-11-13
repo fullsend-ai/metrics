@@ -343,9 +343,10 @@ def replace_range(path: Path, start: date, end: date, repos: list[str],
     for r in new_rows:
         w.writerow(r)
     new_text = buf.getvalue()
-    if insert_at > 0 and not kept[insert_at - 1].endswith("\n"):
-        kept[insert_at - 1] += "\r\n"
-    kept.insert(insert_at, new_text)
+    if new_text:
+        if insert_at > 0 and not kept[insert_at - 1].endswith("\n"):
+            kept[insert_at - 1] += "\r\n"
+        kept.insert(insert_at, new_text)
 
     fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=f".{path.name}.", suffix=".tmp")
     try:
