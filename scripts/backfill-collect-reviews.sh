@@ -10,6 +10,12 @@ COUNTS_FILE="$3"
 
 ensure_community_csv
 
+# Stage detail rows and append them only once every API call has succeeded,
+# so a failed call stops the scan without leaving partial review data behind.
+OUT_COMMUNITY_DETAILS_FILE="$COMMUNITY_DETAILS_FILE"
+COMMUNITY_DETAILS_FILE=$(mktemp)
+trap 'rm -f "$COMMUNITY_DETAILS_FILE"' EXIT
+
 CORE_TEAM=$(core_team_list)
 IGNORED_BOTS=$(ignored_bots_list)
 
@@ -19,6 +25,12 @@ declare -A review_counts
 for repo in $repos; do
   full_repo="${ORG}/${repo}"
   echo "  ${full_repo}: scanning all PRs for review activity..."
+
+  # Capture the PR list first: a failure inside "done < <(...)" would be
+  # invisible to set -e and read as a repo with no PRs.
+  prs=$(gh api "/repos/${full_repo}/pulls" --method GET --paginate \
+    -f state=all -f per_page=100 \
+    --jq '.[] | [.number, .user.login, .title, .html_url] | @tsv')
 
   while IFS=$'\t' read -r number pr_author title url; do
     [[ -z "$number" ]] && continue
@@ -37,10 +49,10 @@ for repo in $repos; do
       key="${event_date},${repo}"
       review_counts["$key"]=$(( ${review_counts["$key"]:-0} + 1 ))
     done <<< "$events"
-  done < <(gh api "/repos/${full_repo}/pulls" --method GET --paginate \
-    -f state=all -f per_page=100 \
-    --jq '.[] | [.number, .user.login, .title, .html_url] | @tsv' 2>/dev/null || true)
+  done <<< "$prs"
 done
+
+cat "$COMMUNITY_DETAILS_FILE" >> "$OUT_COMMUNITY_DETAILS_FILE"
 
 : > "$COUNTS_FILE"
 for key in "${!review_counts[@]}"; do
