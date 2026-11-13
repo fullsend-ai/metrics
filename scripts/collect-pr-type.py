@@ -136,20 +136,37 @@ def list_repos() -> list[str]:
 _REPO_PUBLIC: dict[str, bool] = {}
 
 
+def is_not_found(err: str) -> bool:
+    low = err.lower()
+    return "http 404" in low or "not found" in low
+
+
 def is_public_repo(name: str, cache: dict = _REPO_PUBLIC) -> bool:
-    """True if ORG/name is public. Failed lookups count as not public and are not cached."""
+    """True if ORG/name is public, False if confirmed non-public (404 or other visibility).
+
+    Operational failures (5xx, exhausted rate limits, network errors) raise
+    RuntimeError instead of reading as "not public", so callers cannot mistake
+    an outage for a non-public repo. Failed lookups are not cached.
+    """
     if name in cache:
         return cache[name]
     try:
         visibility = gh_json(["api", f"repos/{ORG}/{name}", "--jq", "{visibility: .visibility}"], retries=3)
-    except RuntimeError:
-        return False
+    except RuntimeError as e:
+        if is_not_found(str(e)):
+            cache[name] = False
+            return False
+        raise
     cache[name] = bool(visibility) and visibility.get("visibility") == "public"
     return cache[name]
 
 
 def public_only(names: list[str]) -> list[str]:
-    """Keep only public repos from an explicit list; skipped names are reported, not read."""
+    """Keep only public repos from an explicit list; skipped names are reported, not read.
+
+    Raises RuntimeError if a visibility lookup fails for a reason other than
+    the repo being confirmed non-public.
+    """
     kept = [n for n in names if is_public_repo(n)]
     for n in names:
         if n not in kept:
@@ -202,9 +219,9 @@ def fetch_issue_author(issue_repo: str, number: int, pr_repo: str, cache: dict) 
     # A PR body can name any org repo; skip non-public ones so the result does
     # not depend on whether the token can see private or internal repos.
     for name in dict.fromkeys([issue_repo, pr_repo]):
-        if not is_public_repo(name):
-            continue
         try:
+            if not is_public_repo(name):
+                continue
             data = gh_json([
                 "api", f"repos/{ORG}/{name}/issues/{number}",
                 "--jq", "{login: .user.login, type: .user.type}",

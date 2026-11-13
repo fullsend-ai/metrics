@@ -3,8 +3,11 @@
 from __future__ import annotations
 
 import importlib.util
+import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 spec = importlib.util.spec_from_file_location(
     "collect_pr_type", Path(__file__).parent / "collect-pr-type.py"
@@ -112,6 +115,62 @@ class TestRepoVisibility(unittest.TestCase):
             mod.is_public_repo = real
         issue_calls = [c for c in self.calls if "/issues/" in c]
         self.assertEqual(issue_calls, ["repos/fullsend-ai/pub/issues/5"])
+
+    def test_failed_visibility_lookup_propagates(self):
+        def failing(args, retries=5):
+            raise RuntimeError("HTTP 502: Bad Gateway")
+        mod.gh_json = failing
+        with self.assertRaises(RuntimeError):
+            mod.is_public_repo("pub", {})
+        with self.assertRaises(RuntimeError):
+            mod.public_only(["pub"])
+
+    def test_not_found_lookup_is_non_public(self):
+        def missing(args, retries=5):
+            raise RuntimeError("gh: Not Found (HTTP 404)")
+        mod.gh_json = missing
+        cache = {}
+        self.assertFalse(mod.is_public_repo("gone", cache))
+        self.assertEqual(cache, {"gone": False})
+
+    def test_issue_author_tolerates_failed_visibility_lookup(self):
+        def failing(args, retries=5):
+            raise RuntimeError("HTTP 502: Bad Gateway")
+        mod.gh_json = failing
+        real = mod.is_public_repo
+        mod.is_public_repo = lambda name: real(name, {})
+        try:
+            self.assertEqual(mod.fetch_issue_author("pub", 5, "pub", {}), (None, None))
+        finally:
+            mod.is_public_repo = real
+
+    def test_force_does_not_wipe_csvs_when_visibility_lookup_fails(self):
+        def failing(args, retries=5):
+            raise RuntimeError("HTTP 502: Bad Gateway")
+        mod.gh_json = failing
+        with tempfile.TemporaryDirectory() as d:
+            agg = Path(d) / "pr-type.csv"
+            det = Path(d) / "pr-type-details.csv"
+            agg.write_text("existing\n")
+            det.write_text("existing\n")
+            saved = (mod.PR_TYPE_FILE, mod.PR_TYPE_DETAILS_FILE, mod.ensure_csvs,
+                     mod.load_config, mod.os.environ.get("PR_TYPE_REPOS"))
+            mod.PR_TYPE_FILE, mod.PR_TYPE_DETAILS_FILE = agg, det
+            mod.ensure_csvs = lambda: None
+            mod.load_config = lambda: (set(), set())
+            mod.os.environ["PR_TYPE_REPOS"] = "pub"
+            try:
+                with mock.patch.object(sys, "argv", ["collect-pr-type.py", "--force", "--date", "2026-11-10"]):
+                    with self.assertRaises(RuntimeError):
+                        mod.main()
+            finally:
+                mod.PR_TYPE_FILE, mod.PR_TYPE_DETAILS_FILE, mod.ensure_csvs, mod.load_config = saved[:4]
+                if saved[4] is None:
+                    mod.os.environ.pop("PR_TYPE_REPOS", None)
+                else:
+                    mod.os.environ["PR_TYPE_REPOS"] = saved[4]
+            self.assertEqual(agg.read_text(), "existing\n")
+            self.assertEqual(det.read_text(), "existing\n")
 
 
 if __name__ == "__main__":
