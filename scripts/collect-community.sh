@@ -15,12 +15,24 @@ if grep -q "^${TARGET_DATE}," "$COMMUNITY_FILE" 2>/dev/null; then
   exit 0
 fi
 
+# Stage this run's rows and append them to the real CSVs only once every API
+# call has succeeded. A failed call stops the script; it must not leave a
+# partial day behind, which the skip check above would then treat as complete.
+STAGE_DIR=$(mktemp -d)
+trap 'rm -rf "$STAGE_DIR"' EXIT
+OUT_COMMUNITY_FILE="$COMMUNITY_FILE"
+OUT_COMMUNITY_DETAILS_FILE="$COMMUNITY_DETAILS_FILE"
+COMMUNITY_FILE="${STAGE_DIR}/community.csv"
+COMMUNITY_DETAILS_FILE="${STAGE_DIR}/community-details.csv"
+: > "$COMMUNITY_FILE"
+: > "$COMMUNITY_DETAILS_FILE"
+
 CORE_TEAM=$(core_team_list)
 IGNORED_BOTS=$(ignored_bots_list)
 
 # Classify how a closed issue was resolved: "pr" if the closing event's
 # closer was a merged pull request, "other" otherwise (manual close,
-# rejected, duplicate, etc).
+# rejected, duplicate, etc). Returns non-zero if the API call fails.
 classify_close() {
   local repo="$1" number="$2"
   gh api graphql \
@@ -47,7 +59,7 @@ classify_close() {
       (.data.repository.issue.timelineItems.nodes[0].closer // null) as $c
       | if ($c != null and $c.__typename == "PullRequest" and ($c.merged // false))
         then "pr" else "other" end
-    ' 2>/dev/null || echo "other"
+    '
 }
 
 repos=$(list_repos)
@@ -56,7 +68,12 @@ for repo in $repos; do
   full_repo="${ORG}/${repo}"
   echo "  ${full_repo}..."
 
+  # Search results are captured before each loop rather than read through
+  # "done < <(...)": set -e cannot see a failure inside process substitution,
+  # so a failed search would be read as an empty result and counted as zero.
   issues_opened_external=0
+  results=$(search_issues "repo:${full_repo} is:issue created:${TARGET_DATE}" \
+    '.items[] | [.number, .user.login, .user.type, .title, .html_url] | @tsv')
   while IFS=$'\t' read -r number login user_type title url; do
     [[ -z "$number" ]] && continue
     [[ "$number" =~ ^[0-9]+$ ]] || continue
@@ -65,12 +82,13 @@ for repo in $repos; do
     is_core "$login" && continue
     issues_opened_external=$(( issues_opened_external + 1 ))
     append_community_detail "$TARGET_DATE" "$repo" "issue" "opened_external" "$number" "$login" "$title" "$url"
-  done < <(search_issues "repo:${full_repo} is:issue created:${TARGET_DATE}" \
-    '.items[] | [.number, .user.login, .user.type, .title, .html_url] | @tsv')
+  done <<< "$results"
   sleep 2
 
   issues_closed_via_pr_external=0
   issues_closed_other_external=0
+  results=$(search_issues "repo:${full_repo} is:issue is:closed closed:${TARGET_DATE}" \
+    '.items[] | [.number, .user.login, .user.type, .title, .html_url] | @tsv')
   while IFS=$'\t' read -r number login user_type title url; do
     [[ -z "$number" ]] && continue
     [[ "$number" =~ ^[0-9]+$ ]] || continue
@@ -78,26 +96,27 @@ for repo in $repos; do
     is_ignored_bot "$login" && continue
     is_core "$login" && continue
 
-    if [[ "$(classify_close "$repo" "$number")" == "pr" ]]; then
+    closed_by=$(classify_close "$repo" "$number")
+    if [[ "$closed_by" == "pr" ]]; then
       issues_closed_via_pr_external=$(( issues_closed_via_pr_external + 1 ))
       append_community_detail "$TARGET_DATE" "$repo" "issue" "closed_via_pr_external" "$number" "$login" "$title" "$url"
     else
       issues_closed_other_external=$(( issues_closed_other_external + 1 ))
       append_community_detail "$TARGET_DATE" "$repo" "issue" "closed_other_external" "$number" "$login" "$title" "$url"
     fi
-  done < <(search_issues "repo:${full_repo} is:issue is:closed closed:${TARGET_DATE}" \
-    '.items[] | [.number, .user.login, .user.type, .title, .html_url] | @tsv')
+  done <<< "$results"
   sleep 2
 
   prs_opened_core=0
+  results=$(search_issues "repo:${full_repo} is:pr created:${TARGET_DATE}" \
+    '.items[] | [.number, .user.login, .title, .html_url] | @tsv')
   while IFS=$'\t' read -r number login title url; do
     [[ -z "$number" ]] && continue
     [[ "$number" =~ ^[0-9]+$ ]] || continue
     is_core "$login" || continue
     prs_opened_core=$(( prs_opened_core + 1 ))
     append_community_detail "$TARGET_DATE" "$repo" "pr" "opened_core" "$number" "$login" "$title" "$url"
-  done < <(search_issues "repo:${full_repo} is:pr created:${TARGET_DATE}" \
-    '.items[] | [.number, .user.login, .title, .html_url] | @tsv')
+  done <<< "$results"
   sleep 2
 
   # PR review activity: reviews can land on a PR long after it was opened.
@@ -110,6 +129,8 @@ for repo in $repos; do
     pr_reviews_external="${pr_reviews_external:-0}"
   else
     pr_reviews_external=0
+    results=$(search_issues "repo:${full_repo} is:pr updated:>=${TARGET_DATE}" \
+      '.items[] | [.number, .user.login, .title, .html_url] | @tsv')
     while IFS=$'\t' read -r number pr_author title url; do
       [[ -z "$number" ]] && continue
       [[ "$number" =~ ^[0-9]+$ ]] || continue
@@ -126,8 +147,7 @@ for repo in $repos; do
         pr_reviews_external=$(( pr_reviews_external + 1 ))
         append_community_detail "$TARGET_DATE" "$repo" "pr" "reviewed_external" "$number" "$reviewer" "$title" "$url"
       done <<< "$events"
-    done < <(search_issues "repo:${full_repo} is:pr updated:>=${TARGET_DATE}" \
-      '.items[] | [.number, .user.login, .title, .html_url] | @tsv')
+    done <<< "$results"
   fi
 
   append_community_row "$TARGET_DATE" "$repo" "$issues_opened_external" \
@@ -135,4 +155,7 @@ for repo in $repos; do
     "$prs_opened_core" "$pr_reviews_external"
 done
 
-echo "Done. Community metrics for ${TARGET_DATE} written to ${COMMUNITY_FILE}."
+cat "$COMMUNITY_FILE" >> "$OUT_COMMUNITY_FILE"
+cat "$COMMUNITY_DETAILS_FILE" >> "$OUT_COMMUNITY_DETAILS_FILE"
+
+echo "Done. Community metrics for ${TARGET_DATE} written to ${OUT_COMMUNITY_FILE}."
