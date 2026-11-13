@@ -196,16 +196,61 @@ def public_only(names: list[str]) -> list[str]:
     return kept
 
 
-def _search_merged(repo: str, start: date, end: date) -> list[dict]:
+class SearchCapReached(RuntimeError):
+    """A search window matched SEARCH_CAP or more results; split it and retry."""
+
+
+SEARCH_PAGE_SIZE = 100
+SEARCH_ATTEMPTS = 3
+
+
+def _search_page(query: str, page: int) -> dict:
+    """One page of the plain search endpoint, retried while results are incomplete.
+
+    `gh search prs` sends advanced_search=true, which returns HTTP 502 far more
+    often, so this calls /search/issues directly.
+    """
     cmd = [
-        "search", "prs",
-        "--repo", f"{ORG}/{repo}",
-        "--merged",
-        "--merged-at", f"{start.isoformat()}..{end.isoformat()}",
-        "--json", "title,closedAt,number,body,url",
-        "--limit", str(SEARCH_CAP),
+        "api", "/search/issues", "--method", "GET",
+        "-f", f"q={query}",
+        "-f", f"per_page={SEARCH_PAGE_SIZE}",
+        "-f", f"page={page}",
     ]
-    return gh_json(cmd) or []
+    for attempt in range(1, SEARCH_ATTEMPTS + 1):
+        data = gh_json(cmd) or {}
+        if not data.get("incomplete_results"):
+            return data
+        if attempt < SEARCH_ATTEMPTS:
+            wait = min(5 * 2 ** (attempt - 1), 60)
+            print(f"  incomplete search results (attempt {attempt}/{SEARCH_ATTEMPTS}), sleep {wait}s", file=sys.stderr)
+            time.sleep(wait)
+    raise RuntimeError(f"search returned incomplete results after {SEARCH_ATTEMPTS} attempts: {query}")
+
+
+def _search_merged(repo: str, start: date, end: date) -> list[dict]:
+    """Merged PRs in [start, end] as dicts with title, closedAt, number, body, url.
+
+    Raises SearchCapReached when the window matches SEARCH_CAP or more results.
+    """
+    query = f"repo:{ORG}/{repo} is:pr is:merged merged:{start.isoformat()}..{end.isoformat()}"
+    prs: list[dict] = []
+    page = 1
+    while True:
+        data = _search_page(query, page)
+        if (data.get("total_count") or 0) >= SEARCH_CAP:
+            raise SearchCapReached(f"{query} matched {data['total_count']} results")
+        items = data.get("items") or []
+        for item in items:
+            prs.append({
+                "title": item.get("title") or "",
+                "closedAt": item.get("closed_at"),
+                "number": item["number"],
+                "body": item.get("body") or "",
+                "url": item.get("html_url"),
+            })
+        if len(items) < SEARCH_PAGE_SIZE or len(prs) >= (data.get("total_count") or 0):
+            return prs
+        page += 1
 
 
 def fetch_merged_range(repo: str, start: date, end: date) -> list[dict]:
@@ -217,9 +262,12 @@ def fetch_merged_range(repo: str, start: date, end: date) -> list[dict]:
     by_number: dict[int, dict] = {}
 
     def collect(chunk_start: date, chunk_end: date) -> None:
-        data = _search_merged(repo, chunk_start, chunk_end)
+        try:
+            data = _search_merged(repo, chunk_start, chunk_end)
+        except SearchCapReached:
+            data = None
         time.sleep(2.5)
-        if len(data) >= SEARCH_CAP:
+        if data is None:
             if chunk_start >= chunk_end:
                 raise RuntimeError(
                     f"Search cap exceeded for {repo} on {chunk_start} "
