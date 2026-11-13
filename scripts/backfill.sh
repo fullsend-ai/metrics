@@ -10,6 +10,7 @@ END_DATE="${2:-$(date -d yesterday +%Y-%m-%d)}"
 echo "Backfilling metrics from ${START_DATE} to ${END_DATE}..."
 
 ensure_csv
+existing_lines=$(wc -l < "$DATA_FILE")
 
 repos=$(list_repos)
 
@@ -104,11 +105,7 @@ for repo in $repos; do
   echo "  Done: ${full_repo}"
 done
 
-# Sort the CSV by date,repo (keep header first).
-header=$(head -1 "$DATA_FILE")
-tail -n +2 "$DATA_FILE" | sort -t, -k1,1 -k2,2 > /tmp/metrics_sorted.csv
-echo "$header" > "$DATA_FILE"
-cat /tmp/metrics_sorted.csv >> "$DATA_FILE"
-rm -f /tmp/metrics_sorted.csv
+# Merge the new rows in by date,repo; existing rows stay where they are.
+merge_appended_rows "$DATA_FILE" "$existing_lines" -k1,1 -k2,2
 
 echo "Backfill complete. $(( $(wc -l < "$DATA_FILE") - 1 )) rows in ${DATA_FILE}."

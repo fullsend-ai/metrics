@@ -25,6 +25,36 @@ append_row() {
   echo "$1,$2,$3,$4,$5,$6,$7,$8,$9,${10}" >> "$DATA_FILE"
 }
 
+# Merge the rows a backfill appended to a CSV into the rows that were already
+# there, without moving or changing any existing row.
+#
+# Usage: merge_appended_rows FILE EXISTING_LINES KEY...
+#   FILE            CSV file whose first line is the header.
+#   EXISTING_LINES  Line count of FILE (header included) before the backfill
+#                   started appending. Lines after it are the new rows.
+#   KEY...          sort(1) key options on comma-separated fields,
+#                   e.g. -k1,1 -k2,2 for date then repo.
+#
+# Order: the new rows are sorted among themselves by KEY, then each one is
+# inserted before the first existing row whose key sorts after it. Existing
+# rows keep their order, even if the file is not fully sorted. Rows with equal
+# keys keep their input order, existing rows first. Keys compare byte by byte
+# (LC_ALL=C), so the result is the same in every locale.
+merge_appended_rows() {
+  local file="$1" existing_lines="$2"
+  shift 2
+  local tmp
+  tmp=$(mktemp -d)
+  head -n "$existing_lines" "$file" | tail -n +2 > "$tmp/existing"
+  tail -n +"$(( existing_lines + 1 ))" "$file" | LC_ALL=C sort -s -t, "$@" > "$tmp/new"
+  {
+    head -n 1 "$file"
+    LC_ALL=C sort -m -s -t, "$@" "$tmp/existing" "$tmp/new"
+  } > "$tmp/merged"
+  cat "$tmp/merged" > "$file"
+  rm -rf "$tmp"
+}
+
 REWORK_FILE="docs/rework.csv"
 REWORK_DETAILS_FILE="docs/rework-details.csv"
 REWORK_HEADER="date,bot,items_touched,items_reworked,rework_rate"
