@@ -207,8 +207,12 @@ pr_review_events() {
 search_issues() {
   local query="$1" jq_filter="$2"
   local attempt output
+  # A 200 response can still carry incomplete_results=true (the search timed
+  # out and the page is truncated); make jq fail so it is retried like an
+  # error instead of being accepted as complete.
+  local guarded_filter="if .incomplete_results then error(\"incomplete_results\") else (${jq_filter}) end"
   for attempt in 1 2 3 4 5; do
-    if output=$(gh api "/search/issues" --method GET --paginate -f q="$query" --jq "$jq_filter" 2>&1); then
+    if output=$(gh api "/search/issues" --method GET --paginate -f q="$query" -f per_page=100 --jq "$guarded_filter" 2>&1); then
       printf '%s\n' "$output"
       return 0
     fi
@@ -217,6 +221,66 @@ search_issues() {
   done
   echo "search_issues: giving up after 5 attempts (query: ${query})" >&2
   return 1
+}
+
+# The search API returns at most this many results per query and silently
+# drops the rest.
+SEARCH_CAP=1000
+
+# Print the total_count of a search query, with one request and no
+# pagination. Retries with backoff like search_issues, and treats an
+# incomplete_results response as a failed attempt.
+search_total_count() {
+  local query="$1"
+  local attempt output
+  for attempt in 1 2 3 4 5; do
+    if output=$(gh api "/search/issues" --method GET -f q="$query" -f per_page=1 --jq 'if .incomplete_results then error("incomplete_results") else .total_count end' 2>&1); then
+      printf '%s\n' "$output"
+      return 0
+    fi
+    echo "search_total_count: query failed (attempt ${attempt}/5): ${output}" >&2
+    sleep $(( attempt * 20 ))
+  done
+  echo "search_total_count: giving up after 5 attempts (query: ${query})" >&2
+  return 1
+}
+
+# Print "number<TAB>html_url" for every issue/PR in REPO (owner/name) whose
+# updated date is in [START, END] (YYYY-MM-DD, inclusive, UTC), once per
+# item. The range is split in half until each window is under SEARCH_CAP,
+# as fetch_merged_range in collect-pr-type.py does. Windows are timestamps,
+# not days, because a bulk edit can update more than SEARCH_CAP items in
+# one day. Fails, rather than return a truncated list, if a single second
+# still reaches the cap.
+search_updated_range() {
+  local repo="$1" start="$2" end="$3"
+  local rows start_s end_s
+  start_s=$(date -u -d "${start}T00:00:00Z" +%s)
+  end_s=$(date -u -d "${end}T23:59:59Z" +%s)
+  rows=$(_search_updated_window "$repo" "$start_s" "$end_s") || return 1
+  printf '%s\n' "$rows" | awk -F'\t' 'NF && !seen[$1]++'
+}
+
+# Search one window of epoch seconds [START_S, END_S], inclusive.
+_search_updated_window() {
+  local repo="$1" start_s="$2" end_s="$3"
+  local from to query count mid
+  from=$(date -u -d "@${start_s}" +%Y-%m-%dT%H:%M:%SZ)
+  to=$(date -u -d "@${end_s}" +%Y-%m-%dT%H:%M:%SZ)
+  query="repo:${repo} updated:${from}..${to}"
+  count=$(search_total_count "$query") || return 1
+  if (( count >= SEARCH_CAP )); then
+    if (( start_s >= end_s )); then
+      echo "search_updated_range: search cap exceeded for ${repo} at ${from} (${count} items updated in one second)" >&2
+      return 1
+    fi
+    mid=$(( start_s + (end_s - start_s) / 2 ))
+    _search_updated_window "$repo" "$start_s" "$mid" || return 1
+    _search_updated_window "$repo" "$(( mid + 1 ))" "$end_s" || return 1
+    return 0
+  fi
+  (( count == 0 )) && return 0
+  search_issues "$query" '.items[] | [.number, .html_url] | @tsv' || return 1
 }
 
 # Compute median from a newline-separated list of numbers on stdin.

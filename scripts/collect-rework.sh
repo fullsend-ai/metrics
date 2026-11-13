@@ -41,20 +41,18 @@ email_to_bot() {
 }
 
 repos=$(list_repos)
+SEARCH_END=$(date -u -d tomorrow +%Y-%m-%d)
 
 for repo in $repos; do
   full_repo="${ORG}/${repo}"
   echo "  ${full_repo}: searching for updated items..."
 
   # Find issues/PRs updated on or after the target date.
-  # Using >= instead of exact match because GitHub's updated: qualifier
-  # checks the current updated_at field, not historical updates. An item
-  # active on TARGET_DATE but updated again later would be missed by an
-  # exact match.
-  items=$(gh api "/search/issues" \
-    --method GET --paginate \
-    -f q="repo:${full_repo} updated:>=${TARGET_DATE}" \
-    --jq '.items[] | [.number, .html_url] | @tsv' 2>/dev/null || true)
+  # Using a range up to now instead of exact match because GitHub's updated:
+  # qualifier checks the current updated_at field, not historical updates.
+  # An item active on TARGET_DATE but updated again later would be missed
+  # by an exact match. The range is split into windows under the search cap.
+  items=$(search_updated_range "$full_repo" "$TARGET_DATE" "$SEARCH_END")
 
   [[ -z "$items" ]] && continue
 
