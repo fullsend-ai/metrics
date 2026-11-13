@@ -208,7 +208,7 @@ collect_agent_runs() {
         case "$conclusion" in skipped|action_required) continue ;; esac
 
         jobs=$(gh_api_retry "/repos/${ORG}/${repo}/actions/runs/${run_id}/jobs?per_page=100" \
-          --jq '.jobs[] | select(.status == "completed" and .conclusion != "skipped") | [.name, .conclusion] | @tsv') || return 1
+          --paginate --jq '.jobs[] | select(.status == "completed" and .conclusion != "skipped") | [.name, .conclusion] | @tsv') || return 1
 
         while IFS=$'\t' read -r job_name job_conclusion; do
           [[ -z "$job_name" ]] && continue
