@@ -10,6 +10,7 @@ END_DATE="${2:-$(date -d yesterday +%Y-%m-%d)}"
 echo "Backfilling metric details from ${START_DATE} to ${END_DATE}..."
 
 ensure_metric_details_csv
+existing_lines=$(wc -l < "$METRIC_DETAILS_FILE")
 
 repos=$(list_repos)
 
@@ -72,11 +73,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
   current=$(date -d "${current} + 1 day" +%Y-%m-%d)
 done
 
-# Sort by date (keep header first).
-header=$(head -1 "$METRIC_DETAILS_FILE")
-tail -n +2 "$METRIC_DETAILS_FILE" | sort -t, -k1,1 > /tmp/md_sorted.csv
-echo "$header" > "$METRIC_DETAILS_FILE"
-cat /tmp/md_sorted.csv >> "$METRIC_DETAILS_FILE"
-rm -f /tmp/md_sorted.csv
+# Merge the new rows in by date; existing rows stay where they are.
+merge_appended_rows "$METRIC_DETAILS_FILE" "$existing_lines" -k1,1
 
 echo "Backfill complete. $(( $(wc -l < "$METRIC_DETAILS_FILE") - 1 )) detail rows."

@@ -76,6 +76,8 @@ Rate limit considerations:
 - Backfilling ~400 days = ~40 hours at full serial speed
 - The backfill script will checkpoint progress so it can resume if interrupted
 
+Row order: `backfill.sh`, `backfill-metric-details.sh`, `backfill-failure-details.sh`, and `backfill-rework.sh` never re-sort a whole CSV. They sort only the rows they add, by date (and repo or bot for the summary files), and merge them in with `merge_appended_rows` in `scripts/lib.sh`. Existing rows keep their position. Keys compare byte by byte (`LC_ALL=C`) and rows with equal keys keep their input order, so the result does not depend on the locale.
+
 ### GitHub Action (`collect.yml`)
 
 ```yaml

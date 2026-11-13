@@ -205,6 +205,9 @@ if [[ -f "$REWORK_DETAILS_FILE" ]]; then
   cat "$TMPDIR_WORK/details_keep" >> "$REWORK_DETAILS_FILE"
 fi
 
+rework_existing_lines=$(wc -l < "$REWORK_FILE")
+details_existing_lines=$(wc -l < "$REWORK_DETAILS_FILE")
+
 # Process each date in the range.
 current="$START_DATE"
 while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
@@ -302,15 +305,8 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
   current=$(date -d "${current} + 1 day" +%Y-%m-%d)
 done
 
-# Sort output files by date.
-header=$(head -1 "$REWORK_FILE")
-tail -n +2 "$REWORK_FILE" | sort -t, -k1,1 -k2,2 > "$TMPDIR_WORK/rework_sorted"
-echo "$header" > "$REWORK_FILE"
-cat "$TMPDIR_WORK/rework_sorted" >> "$REWORK_FILE"
-
-header=$(head -1 "$REWORK_DETAILS_FILE")
-tail -n +2 "$REWORK_DETAILS_FILE" | sort -t, -k1,1 > "$TMPDIR_WORK/details_sorted"
-echo "$header" > "$REWORK_DETAILS_FILE"
-cat "$TMPDIR_WORK/details_sorted" >> "$REWORK_DETAILS_FILE"
+# Merge the new rows in by date; rows outside the range stay where they are.
+merge_appended_rows "$REWORK_FILE" "$rework_existing_lines" -k1,1 -k2,2
+merge_appended_rows "$REWORK_DETAILS_FILE" "$details_existing_lines" -k1,1
 
 echo "Backfill complete. $(( $(wc -l < "$REWORK_FILE") - 1 )) summary rows in ${REWORK_FILE}."
