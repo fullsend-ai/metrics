@@ -108,6 +108,135 @@ append_failure_detail() {
   echo "$1,$2,$3,$4,$5,$6" >> "$FAILURE_DETAILS_FILE"
 }
 
+# Agents run inline in each repo's fullsend shim workflow, which calls the
+# reusable dispatch workflow. Each agent role is a job named
+# "<shim job> / <Role>" (e.g. "dispatch / Code"); harness agents run as
+# "<shim job> / Harness run (<agent>)". Jobs for roles that did not run are
+# reported with conclusion "skipped".
+AGENT_DISPATCH_WORKFLOW=".github/workflows/fullsend.yaml"
+AGENT_ROLES=(
+  "Code"
+  "Fix"
+  "Review"
+  "Triage"
+  "Prioritize"
+  "Retro"
+)
+# The runs API returns at most this many results per query.
+RUNS_RESULT_CAP=1000
+GH_RETRY_SLEEP="${GH_RETRY_SLEEP:-10}"
+
+# Run `gh api` with retries. Prints the output on success; after the last
+# failed attempt returns 1, so an API error is never read as an empty result.
+gh_api_retry() {
+  local attempt output err
+  err=$(mktemp)
+  for attempt in 1 2 3; do
+    if output=$(gh api "$@" 2>"$err"); then
+      rm -f "$err"
+      [[ -n "$output" ]] && printf '%s\n' "$output"
+      return 0
+    fi
+    echo "gh api $1: failed (attempt ${attempt}/3): $(cat "$err")" >&2
+    (( attempt < 3 )) && sleep $(( attempt * GH_RETRY_SLEEP ))
+  done
+  rm -f "$err"
+  return 1
+}
+
+# Print the agent role for a dispatch job name, or return 1 if the job is
+# not an agent job (Route, Harness dispatch, stop-fix, ...).
+agent_role_for_job() {
+  local short="${1##* / }" role
+  for role in "${AGENT_ROLES[@]}"; do
+    if [[ "$short" == "$role" ]]; then
+      echo "$role"
+      return 0
+    fi
+  done
+  if [[ "$short" =~ ^Harness\ run\ \(([a-z][a-z0-9_-]*)\)$ ]]; then
+    echo "${BASH_REMATCH[1]}"
+    return 0
+  fi
+  return 1
+}
+
+# Print one TSV line per agent job that finished in a repo's fullsend
+# dispatch workflow for runs created on DATE (UTC):
+#   role, repo, run_id, status (success|failure), run_url
+# Returns 1 if any API call fails, if no repo has the dispatch workflow, or
+# if a day's runs cannot all be listed, so the caller never records a
+# partial or failed lookup as data.
+collect_agent_runs() {
+  local date="$1"
+  local repos repo wf_id total fetched window runs jobs role status hour
+  local run_id conclusion run_url job_name job_conclusion
+  local found_workflow=0
+  local -a windows
+
+  repos=$(list_repos) || { echo "collect_agent_runs: could not list ${ORG} repos" >&2; return 1; }
+
+  while IFS= read -r repo; do
+    [[ -z "$repo" ]] && continue
+    wf_id=$(gh_api_retry "/repos/${ORG}/${repo}/actions/workflows" --paginate \
+      --jq ".workflows[] | select(.path == \"${AGENT_DISPATCH_WORKFLOW}\") | .id") || return 1
+    [[ -z "$wf_id" ]] && continue
+    found_workflow=1
+
+    total=$(gh_api_retry "/repos/${ORG}/${repo}/actions/workflows/${wf_id}/runs?per_page=1&status=completed&created=${date}" \
+      --jq '.total_count') || return 1
+    (( total == 0 )) && continue
+
+    # Split busy days into hourly windows to stay under the result cap.
+    windows=("$date")
+    if (( total > RUNS_RESULT_CAP )); then
+      windows=()
+      for hour in $(seq -w 0 23); do
+        windows+=("${date}T${hour}:00:00Z..${date}T${hour}:59:59Z")
+      done
+    fi
+
+    fetched=0
+    for window in "${windows[@]}"; do
+      runs=$(gh_api_retry "/repos/${ORG}/${repo}/actions/workflows/${wf_id}/runs?per_page=100&status=completed&created=${window}" \
+        --paginate --jq '.workflow_runs[] | [(.id | tostring), .conclusion, .html_url] | @tsv') || return 1
+
+      while IFS=$'\t' read -r run_id conclusion run_url; do
+        [[ -z "$run_id" ]] && continue
+        fetched=$(( fetched + 1 ))
+        # Skipped runs never started a job; action_required runs await approval.
+        case "$conclusion" in skipped|action_required) continue ;; esac
+
+        jobs=$(gh_api_retry "/repos/${ORG}/${repo}/actions/runs/${run_id}/jobs?per_page=100" \
+          --jq '.jobs[] | select(.status == "completed" and .conclusion != "skipped") | [.name, .conclusion] | @tsv') || return 1
+
+        while IFS=$'\t' read -r job_name job_conclusion; do
+          [[ -z "$job_name" ]] && continue
+          role=$(agent_role_for_job "$job_name") || continue
+          # Cancelled jobs (usually superseded by a newer run of the same
+          # role) neither succeeded nor failed, so they are not counted.
+          case "$job_conclusion" in
+            success) status="success" ;;
+            failure|timed_out|startup_failure) status="failure" ;;
+            *) continue ;;
+          esac
+          printf '%s\t%s\t%s\t%s\t%s\n' "$role" "$repo" "$run_id" "$status" "$run_url"
+        done <<< "$jobs"
+      done <<< "$runs"
+    done
+
+    if (( fetched < total )); then
+      echo "collect_agent_runs: listed ${fetched} of ${total} ${repo} runs for ${date}; an hourly window may exceed the ${RUNS_RESULT_CAP}-result cap" >&2
+      return 1
+    fi
+  done <<< "$repos"
+
+  if (( found_workflow == 0 )); then
+    echo "collect_agent_runs: no ${ORG} repo has ${AGENT_DISPATCH_WORKFLOW}; agent runs cannot be found" >&2
+    return 1
+  fi
+}
+
 METRIC_DETAILS_FILE="docs/metric-details.csv"
 METRIC_DETAILS_HEADER="date,repo,type,event,number,title,url"
 
