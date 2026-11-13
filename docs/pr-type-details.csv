@@ -2557,3 +2557,27 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-11,fullsend,8955,fix(#8952)!: mint replaces gh enterprise token variables too,fix,external,8952,jctanner,https://github.com/fullsend-ai/fullsend/pull/8955
 2026-11-11,fullsend,8928,fix(#8841): fall back to fork default branch for unsynced GitLab forks,fix,external,8841,ianw,https://github.com/fullsend-ai/fullsend/pull/8928
 2026-11-11,agents,1964,feat(scribe): send explicit no-meeting-notes Slack message on empty s…,feat,,,,https://github.com/fullsend-ai/agents/pull/1964
+2026-11-12,fullsend,9385,"docs(#9382): document Jira rerun, --force and change of direction",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9385
+2026-11-12,fullsend,9365,fix(#7360)!: inherit readonly_repo through base: composition,fix,bot,7360,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/9365
+2026-11-12,fullsend,9362,test(#9348): skip runtime launch tests a macOS host cannot run,test,,,,https://github.com/fullsend-ai/fullsend/pull/9362
+2026-11-12,fullsend,9360,feat(#9267): provision inference WIF for GitLab projects,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9360
+2026-11-12,fullsend,9351,"test(#9350)!: create behaviour labels via the label API, not an issue",test,,,,https://github.com/fullsend-ai/fullsend/pull/9351
+2026-11-12,fullsend,9349,test(#9347): run runtime cache tests against small test-only limits,test,,,,https://github.com/fullsend-ai/fullsend/pull/9349
+2026-11-12,fullsend,9344,chore(behaviourtest): declare runner-secret-overlay-guard capability,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9344
+2026-11-12,fullsend,9342,feat(#9288): add optional Jira run-start label,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9342
+2026-11-12,fullsend,9333,feat(#9122)!: config limits what the run artifact publishes,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9333
+2026-11-12,fullsend,9331,fix(sandbox)!: require checkout root .git and reject new shallow boundaries,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9331
+2026-11-12,fullsend,9322,fix(repos)!: treat piped manifests as read-only and guard repos.yaml writes,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9322
+2026-11-12,fullsend,9321,refactor(#9060): add the trace_context config block and trace key types,other,,,,https://github.com/fullsend-ai/fullsend/pull/9321
+2026-11-12,fullsend,9319,fix(cli): refuse replay of a policy URL pinned to another revision,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9319
+2026-11-12,fullsend,9313,refactor(#9276): add revisioned cache for partial normalized entities,other,,,,https://github.com/fullsend-ai/fullsend/pull/9313
+2026-11-12,fullsend,9312,refactor(#9311): add GitHub conversation kind to trace context v1,other,,,,https://github.com/fullsend-ai/fullsend/pull/9312
+2026-11-12,fullsend,9305,fix(#9303): retry GitHub submitted-too-quickly 403 on fork creation,fix,core,9303,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9305
+2026-11-12,fullsend,9304,ci(test): give go test a 20m per-package timeout,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9304
+2026-11-12,fullsend,9301,docs(#9213): point the guides to fullsend self-update,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9301
+2026-11-12,fullsend,9286,fix(#9248): clarify GitLab dispatch deferral diagnostics,fix,external,9248,ianw,https://github.com/fullsend-ai/fullsend/pull/9286
+2026-11-12,fullsend,9026,"docs(#9004): ADR 0157, require a jira authorization entry for jira-poll",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9026
+2026-11-12,fullsend,8801,ci(#8036): classify behaviour-suite infra failures and retry failed scenarios once,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8801
+2026-11-12,fullsend,8656,test(#8654): back off and claim a fresh repo on an Actions settle timeout,test,,,,https://github.com/fullsend-ai/fullsend/pull/8656
+2026-11-12,agents,1976,"ci(#1975): move functional, behaviour and vouch workflows off pull_request_target",ci,,,,https://github.com/fullsend-ai/agents/pull/1976
+2026-11-12,agents,1969,feat(scribe): include meeting title in Slack notification,feat,,,,https://github.com/fullsend-ai/agents/pull/1969
