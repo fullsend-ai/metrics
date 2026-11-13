@@ -25,11 +25,13 @@ GH_STUB = textwrap.dedent(
     import json, os, subprocess, sys
     args = sys.argv[1:]
     assert args[0] == "api", args
-    endpoint, jq_filter, rest = None, ".", args[1:]
+    endpoint, jq_filter, paginate, rest = None, ".", False, args[1:]
     while rest:
         arg = rest.pop(0)
         if arg == "--jq":
             jq_filter = rest.pop(0)
+        elif arg == "--paginate":
+            paginate = True
         elif arg.startswith("-"):
             continue
         elif endpoint is None:
@@ -40,14 +42,23 @@ GH_STUB = textwrap.dedent(
     with open(os.path.join(stub_dir, "responses.json")) as f:
         responses = json.load(f)
     response = responses.get(endpoint, {"__error__": "gh: Not Found (HTTP 404)"})
-    if isinstance(response, dict) and "__error__" in response:
-        print(response["__error__"], file=sys.stderr)
-        sys.exit(1)
-    result = subprocess.run(["jq", "-r", jq_filter], input=json.dumps(response),
-                            capture_output=True, text=True)
-    sys.stdout.write(result.stdout)
-    sys.stderr.write(result.stderr)
-    sys.exit(result.returncode)
+    # {"__pages__": [...]} models a multi-page response: it is only served to a
+    # --paginate request (jq runs on each page, as in gh); without --paginate
+    # only the first page comes back.
+    if isinstance(response, dict) and "__pages__" in response:
+        pages = response["__pages__"] if paginate else response["__pages__"][:1]
+    else:
+        pages = [response]
+    for page in pages:
+        if isinstance(page, dict) and "__error__" in page:
+            print(page["__error__"], file=sys.stderr)
+            sys.exit(1)
+        result = subprocess.run(["jq", "-r", jq_filter], input=json.dumps(page),
+                                capture_output=True, text=True)
+        sys.stdout.write(result.stdout)
+        sys.stderr.write(result.stderr)
+        if result.returncode:
+            sys.exit(result.returncode)
     """
 )
 
@@ -91,7 +102,7 @@ def repo_responses(repo, run_list, job_map, wf_id=7, total=None):
         f"/repos/{ORG}/{repo}/actions/workflows": workflows(wf_id=wf_id),
         runs_endpoint(repo, wf_id, per_page=1): {"total_count": len(run_list) if total is None else total},
         runs_endpoint(repo, wf_id): {"workflow_runs": run_list},
-        **{f"/repos/{ORG}/{repo}/actions/runs/{rid}/jobs?per_page=100": j for rid, j in job_map.items()},
+        **{f"/repos/{ORG}/{repo}/actions/runs/{rid}/jobs?per_page=100&filter=all": j for rid, j in job_map.items()},
     }
 
 
@@ -155,10 +166,10 @@ class CollectFailuresTest(unittest.TestCase):
             f"{DATE},Triage,agents,10,success,https://github.com/{ORG}/agents/actions/runs/10",
         ]))
         # A cancelled agent job (superseded run) is neither a success nor a failure.
-        self.assertIn(f"/repos/{ORG}/agents/actions/runs/11/jobs?per_page=100", self.calls())
+        self.assertIn(f"/repos/{ORG}/agents/actions/runs/11/jobs?per_page=100&filter=all", self.calls())
         # Skipped and approval-pending runs never started a job.
-        self.assertNotIn(f"/repos/{ORG}/fullsend/actions/runs/4/jobs?per_page=100", self.calls())
-        self.assertNotIn(f"/repos/{ORG}/fullsend/actions/runs/5/jobs?per_page=100", self.calls())
+        self.assertNotIn(f"/repos/{ORG}/fullsend/actions/runs/4/jobs?per_page=100&filter=all", self.calls())
+        self.assertNotIn(f"/repos/{ORG}/fullsend/actions/runs/5/jobs?per_page=100&filter=all", self.calls())
 
     def test_warns_and_writes_nothing_when_no_agent_job_ran(self):
         responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
@@ -186,7 +197,53 @@ class CollectFailuresTest(unittest.TestCase):
         self.assertEqual(self.csv("failures.csv"), ["date,workflow,runs,failures,failure_rate"])
         self.assertEqual(self.csv("failure-details.csv"), ["date,workflow,repo,run_id,status,url"])
         # Retried before giving up.
-        self.assertEqual(self.calls().count(f"/repos/{ORG}/agents/actions/runs/10/jobs?per_page=100"), 3)
+        self.assertEqual(self.calls().count(f"/repos/{ORG}/agents/actions/runs/10/jobs?per_page=100&filter=all"), 3)
+
+    def job_page(self, name, conclusion):
+        return {"jobs": [{"name": name, "status": "completed", "conclusion": conclusion}]}
+
+    def test_counts_jobs_on_later_pages(self):
+        responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
+        responses.update(repo_responses("fullsend", [run(1, "failure")], {
+            1: {"__pages__": [jobs(("Code", "success")), self.job_page("dispatch / Review", "failure")]},
+        }))
+
+        result = self.collect(responses)
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(self.csv("failures.csv")[1:], [
+            f"{DATE},Code,1,0,0.000",
+            f"{DATE},Review,1,1,1.000",
+        ])
+
+    def test_later_page_error_exhausts_retries_and_writes_nothing(self):
+        responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
+        responses.update(repo_responses("fullsend", [run(1, "success")], {
+            1: {"__pages__": [jobs(("Code", "failure")), {"__error__": "gh: Server Error (HTTP 502)"}]},
+        }))
+
+        result = self.collect(responses)
+
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        self.assertIn("HTTP 502", result.stderr)
+        self.assertEqual(self.csv("failures.csv"), ["date,workflow,runs,failures,failure_rate"])
+        self.assertEqual(self.csv("failure-details.csv"), ["date,workflow,repo,run_id,status,url"])
+        self.assertEqual(self.calls().count(f"/repos/{ORG}/fullsend/actions/runs/1/jobs?per_page=100&filter=all"), 3)
+
+    def test_failed_attempt_before_a_successful_rerun_is_counted(self):
+        # With filter=all the jobs endpoint lists every attempt of a rerun job.
+        responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
+        responses.update(repo_responses("fullsend", [run(1, "success")], {
+            1: {"jobs": [
+                {"name": "dispatch / Code", "status": "completed", "conclusion": "failure"},
+                {"name": "dispatch / Code", "status": "completed", "conclusion": "success"},
+            ]},
+        }))
+
+        result = self.collect(responses)
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(self.csv("failures.csv")[1:], [f"{DATE},Code,2,1,0.500"])
 
     def test_fails_when_no_repo_has_the_dispatch_workflow(self):
         responses = {
