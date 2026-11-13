@@ -16,41 +16,43 @@ repos=$(list_repos)
 for repo in $repos; do
   full_repo="${ORG}/${repo}"
   echo "Fetching bulk data for ${full_repo}..."
+  # Every fetch below must succeed before any row is written: a failed call
+  # stops the backfill instead of being bucketed as a day with no activity.
 
   # Fetch all merged PRs in the date range (for merge count + lead time).
   merged_prs=$(gh api "/search/issues" \
     --method GET --paginate \
     -f q="repo:${full_repo} is:pr is:merged merged:${START_DATE}..${END_DATE}" \
-    --jq '.items[] | {date: (.pull_request.merged_at[:10]), created: .created_at, merged: .pull_request.merged_at}' 2>/dev/null || true)
+    --jq '.items[] | {date: (.pull_request.merged_at[:10]), created: .created_at, merged: .pull_request.merged_at}')
 
   # Fetch all opened PRs in the date range.
   opened_prs=$(gh api "/search/issues" \
     --method GET --paginate \
     -f q="repo:${full_repo} is:pr created:${START_DATE}..${END_DATE}" \
-    --jq '.items[] | .created_at[:10]' 2>/dev/null || true)
+    --jq '.items[] | .created_at[:10]')
 
   # Fetch all closed PRs in the date range (includes merged).
   closed_prs=$(gh api "/search/issues" \
     --method GET --paginate \
     -f q="repo:${full_repo} is:pr is:closed closed:${START_DATE}..${END_DATE}" \
-    --jq '.items[] | .closed_at[:10]' 2>/dev/null || true)
+    --jq '.items[] | .closed_at[:10]')
 
   # Fetch all opened issues in the date range.
   opened_issues=$(gh api "/search/issues" \
     --method GET --paginate \
     -f q="repo:${full_repo} is:issue created:${START_DATE}..${END_DATE}" \
-    --jq '.items[] | .created_at[:10]' 2>/dev/null || true)
+    --jq '.items[] | .created_at[:10]')
 
   # Fetch all closed issues in the date range.
   closed_issues=$(gh api "/search/issues" \
     --method GET --paginate \
     -f q="repo:${full_repo} is:issue is:closed closed:${START_DATE}..${END_DATE}" \
-    --jq '.items[] | .closed_at[:10]' 2>/dev/null || true)
+    --jq '.items[] | .closed_at[:10]')
 
   # Fetch all releases in the date range.
   all_releases=$(gh api "/repos/${full_repo}/releases" \
     --paginate \
-    --jq ".[] | select(.published_at >= \"${START_DATE}\" and .published_at <= \"${END_DATE}T23:59:59Z\") | .published_at[:10]" 2>/dev/null || true)
+    --jq ".[] | select(.published_at >= \"${START_DATE}\" and .published_at <= \"${END_DATE}T23:59:59Z\") | .published_at[:10]")
 
   # Iterate each day and bucket the results.
   current="$START_DATE"

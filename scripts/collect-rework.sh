@@ -29,7 +29,7 @@ CONFIG_FILE="docs/rework-config.json"
 EMAIL_MAP="$TMPDIR_WORK/email_map"
 if [[ -f "$CONFIG_FILE" ]]; then
   # Build a TSV of email→bot from the config.
-  jq -r '.commitEmailToBot // {} | to_entries[] | [.key, .value] | @tsv' "$CONFIG_FILE" > "$EMAIL_MAP" 2>/dev/null || true
+  jq -r '.commitEmailToBot // {} | to_entries[] | [.key, .value] | @tsv' "$CONFIG_FILE" > "$EMAIL_MAP"
 fi
 
 # Lookup function: map a commit email to a bot name, or return empty.
@@ -51,10 +51,11 @@ for repo in $repos; do
   # checks the current updated_at field, not historical updates. An item
   # active on TARGET_DATE but updated again later would be missed by an
   # exact match.
+  # A failed API call here or below stops the script before any row is written.
   items=$(gh api "/search/issues" \
     --method GET --paginate \
     -f q="repo:${full_repo} updated:>=${TARGET_DATE}" \
-    --jq '.items[] | [.number, .html_url] | @tsv' 2>/dev/null || true)
+    --jq '.items[] | [.number, .html_url] | @tsv')
 
   [[ -z "$items" ]] && continue
 
@@ -79,7 +80,7 @@ for repo in $repos; do
         end |
         select(.ts != null) |
         [.type, (.bot // .email), .ts] | @tsv
-      ' 2>/dev/null || true)
+      ')
 
     [[ -z "$timeline" ]] && continue
 
@@ -170,7 +171,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
   select(.actor.type == "Bot") |
   [$c.repository.name, $c.number, .actor.login, .createdAt, $c.url] |
   @tsv
-' 2>/dev/null || true)
+')
 
 if [[ -n "$project_items" ]]; then
   while IFS=$'\t' read -r repo number bot ts item_url; do

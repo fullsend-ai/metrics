@@ -30,10 +30,11 @@ AGENT_WORKFLOWS=(
   "Classify GitHub Issues"
 )
 
-# Fetch all completed workflow runs for the target date.
+# Fetch all completed workflow runs for the target date. A failed call stops
+# the script; only a successful empty response means there were no runs.
 runs=$(gh api "/repos/${AGENT_REPO}/actions/runs?per_page=100&created=${TARGET_DATE}" \
   --paginate \
-  --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion, (.id | tostring), .html_url] | @tsv' 2>/dev/null || true)
+  --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion, (.id | tostring), .html_url] | @tsv')
 
 if [[ -z "$runs" ]]; then
   echo "No workflow runs found for ${TARGET_DATE}."

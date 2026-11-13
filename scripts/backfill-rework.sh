@@ -24,7 +24,7 @@ trap 'rm -rf "$TMPDIR_WORK"' EXIT
 
 EMAIL_MAP="$TMPDIR_WORK/email_map"
 if [[ -f "$CONFIG_FILE" ]]; then
-  jq -r '.commitEmailToBot // {} | to_entries[] | [.key, .value] | @tsv' "$CONFIG_FILE" > "$EMAIL_MAP" 2>/dev/null || true
+  jq -r '.commitEmailToBot // {} | to_entries[] | [.key, .value] | @tsv' "$CONFIG_FILE" > "$EMAIL_MAP"
 fi
 
 email_to_bot() {
@@ -45,11 +45,12 @@ for repo in $repos; do
   full_repo="${ORG}/${repo}"
 
   # Find ALL issues/PRs updated since START_DATE (single broad search).
+  # A failed API call here or below stops the script before any row is written.
   echo "  ${full_repo}: finding items updated since ${START_DATE}..."
   items=$(gh api "/search/issues" \
     --method GET --paginate \
     -f q="repo:${full_repo} updated:>=${START_DATE}" \
-    --jq '.items[] | [.number, .html_url] | @tsv' 2>/dev/null || true)
+    --jq '.items[] | [.number, .html_url] | @tsv')
 
   [[ -z "$items" ]] && continue
 
@@ -72,7 +73,7 @@ for repo in $repos; do
         end |
         select(.ts != null) |
         [.type, (.bot // .email), .ts] | @tsv
-      ' 2>/dev/null || true)
+      ')
 
     [[ -z "$timeline" ]] && continue
 
@@ -162,7 +163,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
   select(.actor.type == "Bot") |
   [$c.repository.name, $c.number, .actor.login, .createdAt, $c.url] |
   @tsv
-' 2>/dev/null || true)
+')
 
 if [[ -n "$project_items" ]]; then
   while IFS=$'\t' read -r repo number bot ts item_url; do

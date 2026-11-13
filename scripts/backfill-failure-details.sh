@@ -41,7 +41,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
   echo "  ${current}: fetching workflow runs..."
   runs=$(gh api "/repos/${AGENT_REPO}/actions/runs?per_page=100&created=${current}" \
     --paginate \
-    --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion, (.id | tostring), .html_url] | @tsv' 2>/dev/null || true)
+    --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion, (.id | tostring), .html_url] | @tsv')
 
   if [[ -n "$runs" ]]; then
     while IFS=$'\t' read -r name conclusion run_id run_url; do
