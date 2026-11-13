@@ -2399,3 +2399,40 @@ date,repo,type,event,number,actor,title,url
 2026-10-22,agents,issue,closed_other_external,1735,rrasouli,"Feature: Fullsend CI Failure Root-Cause Analysis, Learning, and HITL Jira Escalation",https://github.com/fullsend-ai/agents/issues/1735
 2026-10-22,agents,issue,closed_via_pr_external,1680,Benkapner,"Proposal: maintainer-controlled fix-loop budgets per PR",https://github.com/fullsend-ai/agents/issues/1680
 2026-10-22,agents,pr,opened_core,1755,waynesun09,"feat(review): add CEL dispatch trigger to the review harness",https://github.com/fullsend-ai/agents/pull/1755
+2026-11-12,fullsend,issue,opened_external,9398,dhshah13,"docs: tracing guides do not match the code",https://github.com/fullsend-ai/fullsend/issues/9398
+2026-11-12,fullsend,issue,opened_external,9392,dhshah13,"repos uninstall stops deleting a repository's variables and secrets at the first failed delete",https://github.com/fullsend-ai/fullsend/issues/9392
+2026-11-12,fullsend,issue,opened_external,9389,jwm4,"ADR: let a bot-added label start agents on Jira",https://github.com/fullsend-ai/fullsend/issues/9389
+2026-11-12,fullsend,issue,opened_external,9372,dhshah13,"TestRunAgent_URLRefsNoOrgConfig calls api.github.com and hangs when the call is rate limited",https://github.com/fullsend-ai/fullsend/issues/9372
+2026-11-12,fullsend,issue,opened_external,9369,eshulman2,"Expose Jira issue type to harness CEL triggers",https://github.com/fullsend-ai/fullsend/issues/9369
+2026-11-12,fullsend,issue,closed_via_pr_external,9288,jwm4,"Jira-sourced runs: add a configurable tracking label to the Jira issue when a run starts",https://github.com/fullsend-ai/fullsend/issues/9288
+2026-11-12,fullsend,issue,closed_via_pr_external,9248,ianw,"gitlab: trigger dispatch not installing due to workflow branch rules",https://github.com/fullsend-ai/fullsend/issues/9248
+2026-11-12,fullsend,issue,closed_via_pr_external,9213,gwenneg,"docs: guides don't mention `fullsend self-update` for updating the CLI",https://github.com/fullsend-ai/fullsend/issues/9213
+2026-11-12,fullsend,issue,closed_via_pr_external,9210,dhshah13,"ci: internal/runtime tests hit go test's default 10m timeout on ubuntu runners",https://github.com/fullsend-ai/fullsend/issues/9210
+2026-11-12,fullsend,issue,closed_via_pr_external,9004,jwm4,"ADR: deprecate running the jira-poll driver with no jira authorization entry",https://github.com/fullsend-ai/fullsend/issues/9004
+2026-11-12,fullsend,pr,opened_core,9396,ralphbean,"feat(harness): support OCI image mounts",https://github.com/fullsend-ai/fullsend/pull/9396
+2026-11-12,fullsend,pr,opened_core,9395,ralphbean,"docs(adr): compose multiple images into agent sandboxes",https://github.com/fullsend-ai/fullsend/pull/9395
+2026-11-12,fullsend,pr,opened_core,9381,waynesun09,"docs(adr): add ADR 0171, poll for fork PRs from authorized authors",https://github.com/fullsend-ai/fullsend/pull/9381
+2026-11-12,fullsend,pr,opened_core,9354,waynesun09,"ci(#9353): cancel workflow runs of discarded merge-queue groups",https://github.com/fullsend-ai/fullsend/pull/9354
+2026-11-12,fullsend,pr,reviewed_external,9056,jctanner,"fix(#9038): address configured GitHub host in run fallback and status",https://github.com/fullsend-ai/fullsend/pull/9056
+2026-11-12,fullsend,pr,reviewed_external,9056,jctanner,"fix(#9038): address configured GitHub host in run fallback and status",https://github.com/fullsend-ai/fullsend/pull/9056
+2026-11-12,fullsend,pr,reviewed_external,7864,jflowers,"refactor(workflow)!: remove enabled/disabled agent gate from workflow",https://github.com/fullsend-ai/fullsend/pull/7864
+2026-11-12,rfe-creator,issue,opened_external,299,astefanutti,"needs_attention does not follow the reviewer's own stated concern (RHAIRFE-3899 title/body mismatch approved unflagged)",https://github.com/fullsend-ai/rfe-creator/issues/299
+2026-11-12,agent-eval-harness,issue,opened_external,311,ravelley,"Treat fully skipped conditional judges as not applicable for thresholds",https://github.com/fullsend-ai/agent-eval-harness/issues/311
+2026-11-12,agent-eval-harness,issue,opened_external,310,theobarberbany,"eval-run: a CI wrapper can't confirm from run_result.json that it ran the config and cases it asked for",https://github.com/fullsend-ai/agent-eval-harness/issues/310
+2026-11-12,agent-eval-harness,issue,closed_via_pr_external,298,Aliciapet11,"Harbor: export persisted Claude session transcripts for OpenRouter generation IDs",https://github.com/fullsend-ai/agent-eval-harness/issues/298
+2026-11-12,strat-creator,issue,opened_external,119,jctanner,"review-composition capture rejects elaborated Recommendation lines the specialist templates invite — one report silently fails the whole batch (RHAISTRAT-3123, job 17978100781)",https://github.com/fullsend-ai/strat-creator/issues/119
+2026-11-12,strat-creator,issue,opened_external,115,jctanner,"Bump the CI fullsend pin from 0.47.1 to 0.55.0 (Workflow progress rendering, #8908)",https://github.com/fullsend-ai/strat-creator/issues/115
+2026-11-12,strat-creator,issue,opened_external,113,jctanner,"Verified-write read-back never succeeds for descriptions containing empty table cells — canonical_adf must drop empty text nodes (UncertainWrite, RHAISTRAT-2003)",https://github.com/fullsend-ai/strat-creator/issues/113
+2026-11-12,strat-creator,issue,closed_other_external,119,jctanner,"review-composition capture rejects elaborated Recommendation lines the specialist templates invite — one report silently fails the whole batch (RHAISTRAT-3123, job 17978100781)",https://github.com/fullsend-ai/strat-creator/issues/119
+2026-11-12,strat-creator,issue,closed_other_external,115,jctanner,"Bump the CI fullsend pin from 0.47.1 to 0.55.0 (Workflow progress rendering, #8908)",https://github.com/fullsend-ai/strat-creator/issues/115
+2026-11-12,strat-creator,issue,closed_other_external,113,jctanner,"Verified-write read-back never succeeds for descriptions containing empty table cells — canonical_adf must drop empty text nodes (UncertainWrite, RHAISTRAT-2003)",https://github.com/fullsend-ai/strat-creator/issues/113
+2026-11-12,strat-creator,pr,reviewed_external,120,jctanner,"fix(#119): accept an elaborated Recommendation verdict line",https://github.com/fullsend-ai/strat-creator/pull/120
+2026-11-12,epic-creator,issue,opened_external,63,ravelley,"Handle non-canonical epic components before submission",https://github.com/fullsend-ai/epic-creator/issues/63
+2026-11-12,epic-creator,pr,reviewed_external,64,ravelley,"fix(#63): check epic components before submission",https://github.com/fullsend-ai/epic-creator/pull/64
+2026-11-12,epic-creator,pr,reviewed_external,64,ravelley,"fix(#63): check epic components before submission",https://github.com/fullsend-ai/epic-creator/pull/64
+2026-11-12,epic-creator,pr,reviewed_external,62,csoceanu,"feat(AISDLC-719): map drafted epics to target repositories with a dedicated subagent",https://github.com/fullsend-ai/epic-creator/pull/62
+2026-11-12,epic-creator,pr,reviewed_external,62,Benkapner,"feat(AISDLC-719): map drafted epics to target repositories with a dedicated subagent",https://github.com/fullsend-ai/epic-creator/pull/62
+2026-11-12,epic-creator,pr,reviewed_external,54,astefanutti,"Skip the first revise for strategies whose review is a clean pass",https://github.com/fullsend-ai/epic-creator/pull/54
+2026-11-12,agents,pr,opened_core,1980,waynesun09,"test: /ok-to-test fork-path validation (do not merge)",https://github.com/fullsend-ai/agents/pull/1980
+2026-11-12,org,issue,opened_external,60,ravelley,"Grant standard team access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/60
+2026-11-12,org,pr,opened_core,59,ralphbean,"chore(ci): require semgrep",https://github.com/fullsend-ai/org/pull/59
