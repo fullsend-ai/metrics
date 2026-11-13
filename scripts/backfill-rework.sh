@@ -40,16 +40,15 @@ ALL_TOUCHES="$TMPDIR_WORK/all_touches"
 touch "$ALL_TOUCHES"
 
 repos=$(list_repos)
+SEARCH_END=$(date -u -d tomorrow +%Y-%m-%d)
 
 for repo in $repos; do
   full_repo="${ORG}/${repo}"
 
-  # Find ALL issues/PRs updated since START_DATE (single broad search).
+  # Find ALL issues/PRs updated since START_DATE, split into date windows
+  # that stay under the search cap.
   echo "  ${full_repo}: finding items updated since ${START_DATE}..."
-  items=$(gh api "/search/issues" \
-    --method GET --paginate \
-    -f q="repo:${full_repo} updated:>=${START_DATE}" \
-    --jq '.items[] | [.number, .html_url] | @tsv' 2>/dev/null || true)
+  items=$(search_updated_range "$full_repo" "$START_DATE" "$SEARCH_END")
 
   [[ -z "$items" ]] && continue
 
@@ -186,22 +185,15 @@ total_touches=$(wc -l < "$ALL_TOUCHES")
 echo "Phase 1 complete: ${total_touches} total bot touches found."
 echo "Phase 2: Computing daily rework metrics..."
 
-# Clear existing data for the date range so we can rewrite it.
-if [[ -f "$REWORK_FILE" ]]; then
-  header=$(head -1 "$REWORK_FILE")
-  tail -n +2 "$REWORK_FILE" | awk -F, -v s="$START_DATE" -v e="$END_DATE" \
-    '$1 < s || $1 > e' > "$TMPDIR_WORK/rework_keep"
-  echo "$header" > "$REWORK_FILE"
-  cat "$TMPDIR_WORK/rework_keep" >> "$REWORK_FILE"
-fi
-
-if [[ -f "$REWORK_DETAILS_FILE" ]]; then
-  header=$(head -1 "$REWORK_DETAILS_FILE")
-  tail -n +2 "$REWORK_DETAILS_FILE" | awk -F, -v s="$START_DATE" -v e="$END_DATE" \
-    'substr($1,1,10) < s || substr($1,1,10) > e' > "$TMPDIR_WORK/details_keep"
-  echo "$header" > "$REWORK_DETAILS_FILE"
-  cat "$TMPDIR_WORK/details_keep" >> "$REWORK_DETAILS_FILE"
-fi
+# Write the rows for the date range to temp files; the output files are
+# only rewritten once every day has been computed. Rows before and after
+# the range are kept in their existing order.
+REWORK_OUT="$REWORK_FILE"
+REWORK_DETAILS_OUT="$REWORK_DETAILS_FILE"
+REWORK_FILE="$TMPDIR_WORK/rework_new"
+REWORK_DETAILS_FILE="$TMPDIR_WORK/details_new"
+: > "$REWORK_FILE"
+: > "$REWORK_DETAILS_FILE"
 
 # Process each date in the range.
 current="$START_DATE"
@@ -300,15 +292,22 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
   current=$(date -d "${current} + 1 day" +%Y-%m-%d)
 done
 
-# Sort output files by date.
-header=$(head -1 "$REWORK_FILE")
-tail -n +2 "$REWORK_FILE" | sort -t, -k1,1 -k2,2 > "$TMPDIR_WORK/rework_sorted"
-echo "$header" > "$REWORK_FILE"
-cat "$TMPDIR_WORK/rework_sorted" >> "$REWORK_FILE"
+# Sort only the new rows by date and put them between the rows kept from
+# before and after the range, so rows outside the range are left unchanged.
+{
+  head -1 "$REWORK_OUT"
+  tail -n +2 "$REWORK_OUT" | awk -F, -v s="$START_DATE" '$1 < s'
+  sort -t, -k1,1 -k2,2 "$REWORK_FILE"
+  tail -n +2 "$REWORK_OUT" | awk -F, -v e="$END_DATE" '$1 > e'
+} > "$TMPDIR_WORK/rework_merged"
+cat "$TMPDIR_WORK/rework_merged" > "$REWORK_OUT"
 
-header=$(head -1 "$REWORK_DETAILS_FILE")
-tail -n +2 "$REWORK_DETAILS_FILE" | sort -t, -k1,1 > "$TMPDIR_WORK/details_sorted"
-echo "$header" > "$REWORK_DETAILS_FILE"
-cat "$TMPDIR_WORK/details_sorted" >> "$REWORK_DETAILS_FILE"
+{
+  head -1 "$REWORK_DETAILS_OUT"
+  tail -n +2 "$REWORK_DETAILS_OUT" | awk -F, -v s="$START_DATE" 'substr($1,1,10) < s'
+  sort -t, -k1,1 "$REWORK_DETAILS_FILE"
+  tail -n +2 "$REWORK_DETAILS_OUT" | awk -F, -v e="$END_DATE" 'substr($1,1,10) > e'
+} > "$TMPDIR_WORK/details_merged"
+cat "$TMPDIR_WORK/details_merged" > "$REWORK_DETAILS_OUT"
 
-echo "Backfill complete. $(( $(wc -l < "$REWORK_FILE") - 1 )) summary rows in ${REWORK_FILE}."
+echo "Backfill complete. $(( $(wc -l < "$REWORK_OUT") - 1 )) summary rows in ${REWORK_OUT}."
