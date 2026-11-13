@@ -2254,3 +2254,306 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-10-22,agents,1696,chore(#1591)!: require release coverage for evaluated agents,chore,,,,https://github.com/fullsend-ai/agents/pull/1696
 2026-10-22,agents,1688,feat(#1680): add fullsend-fix-budget/N label to lower the automatic fix cap,feat,,,,https://github.com/fullsend-ai/agents/pull/1688
 2026-10-22,agents,1364,fix(#1361): retry PR creation and failure comments on 5xx,fix,bot,1361,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1364
+2026-10-23,fullsend,8774,test(#8773): fetch checkout_branch refs on the runner via a bundle,test,,,,https://github.com/fullsend-ai/fullsend/pull/8774
+2026-10-23,fullsend,8770,test(#8767): expand <issue> and <repo> in write_fixture content,test,,,,https://github.com/fullsend-ai/fullsend/pull/8770
+2026-10-23,fullsend,8766,test(#8765): cover fix dispatch actor roles and review bot identity,test,,,,https://github.com/fullsend-ai/fullsend/pull/8766
+2026-10-23,fullsend,8762,"fix(#8761): treat 422 ""Reference does not exist"" on ref delete as not found",fix,core,8761,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8762
+2026-10-23,fullsend,8760,test(#8758)!: add forge-state assertion steps for agent scenarios,test,,,,https://github.com/fullsend-ai/fullsend/pull/8760
+2026-10-23,fullsend,8759,fix(#8757): deliver App installation scaffold PRs upstream,fix,core,8757,ggallen,https://github.com/fullsend-ai/fullsend/pull/8759
+2026-10-23,fullsend,8752,fix(#8750): disable Claude Code nonessential traffic on every route,fix,core,8750,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8752
+2026-10-23,fullsend,8748,fix(#8721)!: enforce credential-safe allowlist for preflight_check,fix,external,8721,jflowers,https://github.com/fullsend-ai/fullsend/pull/8748
+2026-10-23,fullsend,8737,"feat(#8736): let config triggers route retro, triage and prioritize",feat,,,,https://github.com/fullsend-ai/fullsend/pull/8737
+2026-10-23,fullsend,8734,fix(#8689): converge GitLab runner tags without a resolvable ref,fix,external,8689,ianw,https://github.com/fullsend-ai/fullsend/pull/8734
+2026-10-23,fullsend,8733,feat(#8726): let agents[].trigger decide when review runs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8733
+2026-10-23,fullsend,8732,fix(#8730): refuse pre-0.1 OpenShell job images on GitLab runners,fix,core,8730,ggallen,https://github.com/fullsend-ai/fullsend/pull/8732
+2026-10-23,fullsend,8727,feat(#8724): apply per-harness permission threshold on the CEL path,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8727
+2026-10-23,fullsend,8707,fix(#8691): resolve extends and !reference in GitLab trigger job scan,fix,external,8691,ianw,https://github.com/fullsend-ai/fullsend/pull/8707
+2026-10-23,fullsend,8699,feat(cli): add 'fullsend lint' command to validate config,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8699
+2026-10-23,fullsend,7232,docs(#7230): document computing cost from token telemetry,docs,,,,https://github.com/fullsend-ai/fullsend/pull/7232
+2026-10-23,agents,1773,"test(#1766): add fix, retro and prioritize post-script scenarios",test,,,,https://github.com/fullsend-ai/agents/pull/1773
+2026-10-23,agents,1772,fix(#1771): stop triage when the sandbox denies a request,fix,core,1771,ggallen,https://github.com/fullsend-ai/agents/pull/1772
+2026-10-23,agents,1767,test(#1764): bump fullsend and run the code branch-namespace scenarios,test,,,,https://github.com/fullsend-ai/agents/pull/1767
+2026-10-23,agents,1763,chore(harness): pin fleet images to the v0.50.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1763
+2026-10-23,agents,1759,"feat(#1758): add CEL dispatch triggers to retro, triage and prioritize",feat,,,,https://github.com/fullsend-ai/agents/pull/1759
+2026-10-23,agents,1697,chore: mark .fullsend/config.yaml as managed by the fleet manifest,chore,,,,https://github.com/fullsend-ai/agents/pull/1697
+2026-10-24,fullsend,8793,test(#8792): add step asserting a stage was skipped by its pre-script,test,,,,https://github.com/fullsend-ai/fullsend/pull/8793
+2026-10-24,fullsend,8791,chore: update fullsend per-repo installation,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8791
+2026-10-24,fullsend,8788,test(#8787): stop git background maintenance in checkout_branch,test,,,,https://github.com/fullsend-ai/fullsend/pull/8788
+2026-10-24,fullsend,8786,fix(#8785): ignore source-manifest line in managed config drift,fix,core,8785,ggallen,https://github.com/fullsend-ai/fullsend/pull/8786
+2026-10-24,fullsend,8784,refactor(#8246)!: remove legacy unversioned rotation-state support,other,,,,https://github.com/fullsend-ai/fullsend/pull/8784
+2026-10-24,fullsend,8783,docs(#8782): update normalized-event GitLab webhook validation status,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8783
+2026-10-24,fullsend,8781,fix(#8780): silence SC2016 for stop-fix jq program in shim template,fix,core,8780,ggallen,https://github.com/fullsend-ai/fullsend/pull/8781
+2026-10-24,fullsend,8779,fix(#8777): poll inference status after provisioning a fresh slot,fix,core,8777,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8779
+2026-10-24,fullsend,8778,docs(#8768): show how to check agents[].trigger with fullsend lint,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8778
+2026-10-24,agents,1785,test(#1784): assert the closed-PR review skip stops the stage,test,,,,https://github.com/fullsend-ai/agents/pull/1785
+2026-10-24,agents,1783,fix(#1782): skip review stage on closed PR or skipped author,fix,core,1782,waynesun09,https://github.com/fullsend-ai/agents/pull/1783
+2026-10-24,agents,1781,test(#1778): add offline tests for pre-fix and pre-retro,test,,,,https://github.com/fullsend-ai/agents/pull/1781
+2026-10-24,agents,1780,test(#1779): cover the pre-review skip on a closed pull request,test,,,,https://github.com/fullsend-ai/agents/pull/1780
+2026-10-24,agents,1777,test(#1776): bump fullsend to main 6d925afef for status retry,test,,,,https://github.com/fullsend-ai/agents/pull/1777
+2026-10-24,agents,1775,chore: update fullsend per-repo installation,chore,,,,https://github.com/fullsend-ai/agents/pull/1775
+2026-10-24,agents,1774,test(#1765): add triage and review post-script outcome scenarios,test,,,,https://github.com/fullsend-ai/agents/pull/1774
+2026-10-25,fullsend,8808,fix(#8807): retain Analyst changes-requested notes in GitLab polling,fix,core,8807,ggallen,https://github.com/fullsend-ai/fullsend/pull/8808
+2026-10-25,fullsend,8806,fix(#8804): ignore GitLab note-edit webhooks in the dispatcher,fix,core,8804,ggallen,https://github.com/fullsend-ai/fullsend/pull/8806
+2026-10-25,fullsend,8803,fix(#8802): report pending GitLab webhook repair blocked by Poller retirement,fix,core,8802,ggallen,https://github.com/fullsend-ai/fullsend/pull/8803
+2026-10-25,fullsend,8800,docs(#8799): align GitLab dispatch docs with shipped fast-path,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8800
+2026-10-25,fullsend,8797,docs(#8796): note uninstall keeps pipeline-variable restriction,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8797
+2026-10-25,fullsend,8795,feat(#7774): report GitLab webhook fast-path readiness in repos status,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8795
+2026-10-25,fullsend,8794,test(#7775): cover GitLab uninstall fast-path teardown end to end,test,,,,https://github.com/fullsend-ai/fullsend/pull/8794
+2026-10-25,fullsend,8399,chore(deps): update dependency vue to v3.5.44,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8399
+2026-10-26,fullsend,8831,refactor(#8032)!: remove legacy GitLab poll-state variable migration,other,,,,https://github.com/fullsend-ai/fullsend/pull/8831
+2026-10-26,fullsend,8823,chore(#8031)!: remove retired GitLab webhook-dispatch scaffold migrations,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8823
+2026-10-26,fullsend,8822,refactor(#8030)!: remove legacy GitLab pipeline-variable dispatch path,other,,,,https://github.com/fullsend-ai/fullsend/pull/8822
+2026-10-26,fullsend,8819,chore: update fullsend per-repo installation,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8819
+2026-10-26,fullsend,8816,ci(dispatch): enable mint OIDC for dispatch jobs,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8816
+2026-10-26,fullsend,8811,chore(deps): update ubi10 base images,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8811
+2026-10-26,fullsend,8790,docs(#8789): connect Gemara auto-merge lab findings to problem docs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8790
+2026-10-26,fullsend,8755,fix(#8754): treat object-form profile binaries as their scalar export,fix,external,8754,ravelley,https://github.com/fullsend-ai/fullsend/pull/8755
+2026-10-26,fullsend,8753,chore(deps): update dependency sigstore/cosign to v3.1.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8753
+2026-10-26,fullsend,8716,docs(#8715): keep implementation out of ADR pull requests,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8716
+2026-10-26,fullsend,8712,refactor(codex): fail a run on a spawn the guard did not admit,other,,,,https://github.com/fullsend-ai/fullsend/pull/8712
+2026-10-26,fullsend,8695,docs(#8648): document work item URL transition,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8695
+2026-10-26,fullsend,8522,chore(deps): update experiments digest to df59d05,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8522
+2026-10-26,fullsend,8183,fix(scaffold): add pull_request fallback to prioritize concurrency key,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8183
+2026-10-26,fullsend,7786,feat(workflow)!: config's `roles` key do not gate execution anymore,feat,,,,https://github.com/fullsend-ai/fullsend/pull/7786
+2026-10-26,agents,1793,fix(#1323): skip pre-push replay when origin/branch is an ancestor,fix,bot,1323,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1793
+2026-10-26,agents,1787,chore: update fullsend per-repo installation,chore,,,,https://github.com/fullsend-ai/agents/pull/1787
+2026-10-26,agents,1770,ci(behaviour): upload redacted behaviour debug artifacts,ci,,,,https://github.com/fullsend-ai/agents/pull/1770
+2026-10-26,agents,1739,feat(scribe): add Jira issue creation support,feat,,,,https://github.com/fullsend-ai/agents/pull/1739
+2026-10-26,agents,1710,fix(#1709): keep dismissed_by_human when only the category changes,fix,external,1709,Benkapner,https://github.com/fullsend-ai/agents/pull/1710
+2026-10-26,agents,1703,fix(#1702): record PR discovery failures in issue fixture capture,fix,external,1702,Benkapner,https://github.com/fullsend-ai/agents/pull/1703
+2026-10-26,agents,1675,feat(#357): create agent commits through the GitHub API so they are signed,feat,,,,https://github.com/fullsend-ai/agents/pull/1675
+2026-10-26,agents,1674,fix(#1673): isolate public-text secret scans,fix,external,1673,shairevivo,https://github.com/fullsend-ai/agents/pull/1674
+2026-10-27,fullsend,8876,docs(#8874): record accepted ADR 0125 base-URL and replay gates,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8876
+2026-10-27,fullsend,8870,docs(#8868): align identity-pin trust-model comment with ADR 0131,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8870
+2026-10-27,fullsend,8862,fix(#8861): bound preflight teardown with cmd.WaitDelay,fix,external,8861,jflowers,https://github.com/fullsend-ai/fullsend/pull/8862
+2026-10-27,fullsend,8854,docs(#8853): forbid committing agent-session spec and plan files,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8854
+2026-10-27,fullsend,8851,docs(#8844): move per-agent CEL trigger recipes to the reference,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8851
+2026-10-27,fullsend,8849,docs(#8845): deduplicate agent roles table and status notifications,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8849
+2026-10-27,fullsend,8848,docs(#8843): move reserved env.sandbox names to harness reference,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8848
+2026-10-27,fullsend,8847,docs(#8846): trim customizing overview AGENTS.md and Skills sections,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8847
+2026-10-27,fullsend,8840,chore(deps): update dependency vite to v6.4.5,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8840
+2026-10-27,fullsend,8837,docs(#8835): record ADR 0125 security-gate status with evidence,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8837
+2026-10-27,fullsend,8832,feat(#8810): use existing GitLab WIF providers with SA impersonation,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8832
+2026-10-27,fullsend,8745,fix(#8743): resolve agents-repo fallback from cache under --offline,fix,core,8743,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/8745
+2026-10-27,fullsend,8739,docs(ladder): document org-wide scope of the contributor ladder,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8739
+2026-10-27,fullsend,8690,chore(deps): update docker.io/library/ubuntu:24.04 docker digest to 24737ce,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8690
+2026-10-27,fullsend,8659,fix(#8646): open GitLab scaffold MRs from forks correctly,fix,external,8646,ianw,https://github.com/fullsend-ai/fullsend/pull/8659
+2026-10-27,fullsend,8024,chore(deps): update cloudflare-workers,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8024
+2026-10-27,fullsend,6634,docs(problems): clarify escalation threshold configuration trade-offs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/6634
+2026-10-27,agents,1817,chore(harness): pin fleet images to the v0.51.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1817
+2026-10-27,agents,1748,chore(hooks): validate DCO sign-off matching git author in commit-msg,chore,,,,https://github.com/fullsend-ai/agents/pull/1748
+2026-10-27,agents,1622,chore(eval)!: bump agent-eval-harness to v1.56.3 and harden the shared eval scripts,chore,,,,https://github.com/fullsend-ai/agents/pull/1622
+2026-10-28,fullsend,8889,test(config): drop repo overlay test pinning operational state,test,,,,https://github.com/fullsend-ai/fullsend/pull/8889
+2026-10-28,fullsend,8881,ci(release): link the agents release notes from every release,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8881
+2026-10-28,fullsend,8879,chore(deps): update renovatebot/github-action action to v46.3.10,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8879
+2026-10-28,fullsend,8878,fix(#8865)!: pin GitLab runner image to fullsend_ref instead of :dev,fix,core,8865,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8878
+2026-10-28,fullsend,8872,fix(lint)!: fail on path-shaped preflight_check values per ADR 0128,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8872
+2026-10-28,fullsend,8867,docs(#8866): drop forge-specific rationale from top-level fields,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8867
+2026-10-28,fullsend,8850,docs(#8842): fold building-custom-agents into Bring Your Own Agent,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8850
+2026-10-28,fullsend,8828,chore(deps): update experiments digest to 6a349bb,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8828
+2026-10-28,fullsend,8826,docs(ladder): request triage/write roles via issues in fullsend-ai/org,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8826
+2026-10-28,fullsend,8698,docs(adr): coalesce entity-source discovery queries,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8698
+2026-10-28,fullsend,8694,docs(adr): define selective CEL acquisition and harness admission,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8694
+2026-10-28,agents,1831,chore(harness): pin fleet images to the v0.52.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1831
+2026-10-28,agents,1823,ci(release): generate release notes from the previous final release,ci,,,,https://github.com/fullsend-ai/agents/pull/1823
+2026-10-28,agents,1822,chore(review): align GitLab dismissal fixtures with normalized positions,chore,,,,https://github.com/fullsend-ai/agents/pull/1822
+2026-10-29,fullsend,8900,fix(lock)!: refuse to overwrite an unreadable lock file,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8900
+2026-10-29,fullsend,8897,docs(adr): state the aim and choice in ADRs,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8897
+2026-10-29,fullsend,8896,test(#5877): assert install/uninstall variable and secret parity,test,,,,https://github.com/fullsend-ai/fullsend/pull/8896
+2026-10-29,fullsend,8895,fix(deps): update module github.com/cucumber/messages/go/v34 to v34.2.1,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8895
+2026-10-29,fullsend,8888,chore(deps): update experiments digest to b10796e,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8888
+2026-10-29,fullsend,8836,feat(codex)!: run sub-agents as native Codex children,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8836
+2026-10-29,fullsend,8751,docs(adr): add ADR 0152 for hook interpreter and PATH trust,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8751
+2026-10-29,fullsend,8693,fix(#8174)!: normalize review-thread position fields across forges,fix,external,8174,csoceanu,https://github.com/fullsend-ai/fullsend/pull/8693
+2026-10-29,fullsend,8400,fix(#8192): read mint_url from config.yaml/config.base.yaml in fullsend run,fix,core,8192,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/8400
+2026-10-29,agents,1834,test(code): exercise the real push-retry instead of mirrored logic,test,,,,https://github.com/fullsend-ai/agents/pull/1834
+2026-10-29,agents,1832,fix(code): recover the PR when create succeeds but the response is lost,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1832
+2026-10-30,fullsend,8960,fix(#8954)!: carry GitLab /fs-fix comment body at canonical path,fix,external,8954,jasonawant,https://github.com/fullsend-ai/fullsend/pull/8960
+2026-10-30,fullsend,8957,test(#8921): verify Jira work items through the PR/MR lifecycle,test,,,,https://github.com/fullsend-ai/fullsend/pull/8957
+2026-10-30,fullsend,8956,feat(#7681): re-review GitLab MRs when new commits are pushed,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8956
+2026-10-30,fullsend,8953,docs(inference): recommend an inference gateway for OpenAI API key users on GitHub,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8953
+2026-10-30,fullsend,8951,chore(#8948): move the durable E2E inference gateway to agentgateway v1.7.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8951
+2026-10-30,fullsend,8950,fix(#8915): remove the public document graph,fix,core,8915,ralphbean,https://github.com/fullsend-ai/fullsend/pull/8950
+2026-10-30,fullsend,8945,"docs(gateway): move gateway guides to agentgateway v1.7.0, link org reference",docs,,,,https://github.com/fullsend-ai/fullsend/pull/8945
+2026-10-30,fullsend,8943,docs(#8920): describe Jira triage and code results in Jira guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8943
+2026-10-30,fullsend,8929,fix(#8887): keep terminal-phase sandbox creation diagnostics,fix,external,8887,astefanutti,https://github.com/fullsend-ai/fullsend/pull/8929
+2026-10-30,fullsend,8927,chore(#8884): point CODEOWNERS wildcard to maintainers team,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8927
+2026-10-30,fullsend,8925,chore(deps): update actions/create-github-app-token action to v3.3.0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8925
+2026-10-30,fullsend,8924,feat(#8919): dispatch Jira work items to GitLab agent pipelines,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8924
+2026-10-30,fullsend,8922,feat(#2264): derive Jira work-item identity in fullsend run,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8922
+2026-10-30,fullsend,8905,chore(deps): update docker.io/library/ubuntu:24.04 docker digest to fe81560,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8905
+2026-10-30,fullsend,8904,docs(#8902): drop inline ADR citations from user-facing guides,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8904
+2026-10-30,fullsend,8892,feat(#8401): authorize Jira poll actors without project admin,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8892
+2026-10-30,fullsend,8864,chore(deps): update dependency vitest to v4.1.12,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8864
+2026-10-30,fullsend,8572,fix(#8173): verify review-thread roles only when authoritative,fix,external,8173,csoceanu,https://github.com/fullsend-ai/fullsend/pull/8572
+2026-10-30,fullsend,8385,chore(deps): update actions/create-github-app-token digest to 64ab729,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8385
+2026-10-30,agents,1855,chore(harness): pin fleet images to the v0.53.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1855
+2026-10-30,agents,1849,feat(#1500): dispatch sub-agents in waves on Codex,feat,,,,https://github.com/fullsend-ai/agents/pull/1849
+2026-10-30,agents,1847,fix(#1845): scan commit identity in post-fix secret check,fix,core,1845,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1847
+2026-10-30,agents,1843,feat(#1841): write triage and code results to the originating Jira issue,feat,,,,https://github.com/fullsend-ai/agents/pull/1843
+2026-10-30,agents,1842,feat(#1067): add CEL dispatch triggers to code and fix harnesses,feat,,,,https://github.com/fullsend-ai/agents/pull/1842
+2026-10-30,agents,1827,feat(#1800): disclose findings hidden by the severity threshold,feat,,,,https://github.com/fullsend-ai/agents/pull/1827
+2026-10-30,agents,1825,fix(#1824): attribute review findings to the evaluated run,fix,external,1824,Benkapner,https://github.com/fullsend-ai/agents/pull/1825
+2026-10-30,agents,1802,fix(#1801): scan only added lines in post-fix merge secret checks,fix,external,1801,ravelley,https://github.com/fullsend-ai/agents/pull/1802
+2026-10-30,agents,1749,docs(agents): align AGENTS.md with COMMITS.md and CONTRIBUTING.md SSOT,docs,,,,https://github.com/fullsend-ai/agents/pull/1749
+2026-10-31,fullsend,8970,feat(#6158): stage skill file overrides and write a persona manifest,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8970
+2026-10-31,fullsend,8966,chore(deps): update renovatebot/github-action action to v46.3.11,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8966
+2026-10-31,fullsend,8964,chore(#8963): apply daily Fedora updates on GitLab runner VMs,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8964
+2026-10-31,fullsend,8962,docs(#6672): document built-in Jira triggers in the Jira guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8962
+2026-10-31,agents,1858,"feat(#1857)!: select pr-review personas from frontmatter, drop REVIEW_UX_ENABLED",feat,,,,https://github.com/fullsend-ai/agents/pull/1858
+2026-11-01,fullsend,8982,fix(#8981)!: keep direct skill overrides deduplicated against a dep,fix,core,8981,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8982
+2026-11-01,fullsend,8980,fix(#8979)!: pin a URL base's relative files to the lock entry,fix,core,8979,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8980
+2026-11-01,fullsend,8978,fix(#8977): keep child values when replaying a URL base's lock entries,fix,core,8977,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8978
+2026-11-01,fullsend,8976,fix(#8974): tidy skill override edge cases in staging and lock replay,fix,core,8974,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8976
+2026-11-01,fullsend,8975,fix(#8973): error when a map-form skill matches two base URL skills,fix,core,8973,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8975
+2026-11-01,fullsend,8967,fix(deps): update module github.com/yuin/goldmark to v1.8.7,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/8967
+2026-11-01,agents,1860,test(#1859): bump fullsend and run the custom-persona review scenario,test,,,,https://github.com/fullsend-ai/agents/pull/1860
+2026-11-01,agents,1856,fix(#1853): tighten the Codex wave after maintainer review,fix,external,1853,dhshah13,https://github.com/fullsend-ai/agents/pull/1856
+2026-11-01,agents,1751,fix(#1701): preserve first-attempt artifacts when retrying cases,fix,external,1701,Benkapner,https://github.com/fullsend-ai/agents/pull/1751
+2026-11-01,agents,1705,fix(#1567): key projection suppression off failed sub-agent name,fix,bot,1567,fullsend-ai-triage[bot],https://github.com/fullsend-ai/agents/pull/1705
+2026-11-02,fullsend,9034,fix(#9019): write the ghcr.io auth file directly and correct the private-image docs,fix,external,9019,tpouyer,https://github.com/fullsend-ai/fullsend/pull/9034
+2026-11-02,fullsend,9020,chore(deps): update experiments digest to e7514f0,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9020
+2026-11-02,fullsend,9016,docs(#7734): use dedicated non-human account wording in Jira guide,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9016
+2026-11-02,fullsend,9015,feat(#9014): deliver the GitLab normalized event to fullsend run,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9015
+2026-11-02,fullsend,9008,chore(deps): update registry.access.redhat.com/ubi10/go-toolset docker digest to 5d2ab83,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9008
+2026-11-02,fullsend,8999,feat(#8997): allow fullsend lint to check a single agent,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8999
+2026-11-02,fullsend,8995,feat(cli): add JSON output to fullsend lint,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8995
+2026-11-02,fullsend,8994,feat(#8894): forward bot slash comments to dispatch,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8994
+2026-11-02,fullsend,8993,fix(#8992): keep harness unchanged when lock replay fails,fix,core,8992,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8993
+2026-11-02,fullsend,8989,chore(deps): update cloudflare-workers,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8989
+2026-11-02,fullsend,8987,fix(#8984): stop locked runs adding URL base host_files as skills,fix,core,8984,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8987
+2026-11-02,fullsend,8972,docs(#8971): keep code-pinned links out of ADR bodies,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8972
+2026-11-02,fullsend,8949,chore(deps): update experiments digest to 767ccbc,chore,,,,https://github.com/fullsend-ai/fullsend/pull/8949
+2026-11-02,fullsend,8933,fix(#8742): lint GITHUB_ISSUE_URL in consumed overlays and forge,fix,core,8742,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/8933
+2026-11-02,fullsend,8824,feat(#8414)!: resolve bot roles in gha-event dispatch,feat,,,,https://github.com/fullsend-ai/fullsend/pull/8824
+2026-11-02,agents,1819,fix(#1818): keep finding ids on their stamped review threads,fix,external,1818,csoceanu,https://github.com/fullsend-ai/agents/pull/1819
+2026-11-03,fullsend,9082,feat(#9074)!: replace create_issues with tracker mappings,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9082
+2026-11-03,fullsend,9066,feat(cli): publish JSON Schema for lint output,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9066
+2026-11-03,fullsend,9058,docs(#7709): document site workflows cancel-in-progress exception,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9058
+2026-11-03,fullsend,9057,chore(deps): update dependency semver to v7.8.6,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9057
+2026-11-03,fullsend,9025,fix(#9023): skip redundant Jira sticky-marker property writes,fix,bot,9023,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/9025
+2026-11-03,fullsend,9021,feat(#9019): support private ghcr.io harness images,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9021
+2026-11-03,fullsend,8996,fix(#8923): add HSTS header to mint responses,fix,core,8923,ralphbean,https://github.com/fullsend-ai/fullsend/pull/8996
+2026-11-03,fullsend,8932,fix(#8744): report reserved env.sandbox keys in fullsend lint,fix,core,8744,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/8932
+2026-11-03,fullsend,8891,docs(adr): correlate work-item and BT scenario traces,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8891
+2026-11-03,agents,1884,chore(harness): pin fleet images to the v0.54.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1884
+2026-11-03,agents,1875,refactor(#1861): keep each eval attempt in attempts/<n> with final.json,other,,,,https://github.com/fullsend-ai/agents/pull/1875
+2026-11-03,agents,1874,feat(#1271): scale code-agent discovery to precisely scoped issues,feat,,,,https://github.com/fullsend-ai/agents/pull/1874
+2026-11-03,agents,1840,fix(scripts): support BSD sed,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1840
+2026-11-03,agents,1836,fix(#1833): compare GitHub owner logins case-insensitively in PR recovery,fix,external,1833,Benkapner,https://github.com/fullsend-ai/agents/pull/1836
+2026-11-03,agents,1661,feat(#1654): scope review to own commits on stacked/cherry-picked PRs,feat,,,,https://github.com/fullsend-ai/agents/pull/1661
+2026-11-04,fullsend,9093,"docs(#9092): use lowercase ""fullsend"" in docs prose",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9093
+2026-11-04,fullsend,9091,feat(#9035): define Jira tracker config contract,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9091
+2026-11-04,fullsend,9090,chore(deps): update cloudflare-workers,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9090
+2026-11-04,fullsend,9089,feat(#9075)!: migrate legacy tracker config in repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9089
+2026-11-04,fullsend,9087,"docs(adr): add ADR 0159, Codex sub-agents on collaboration V2",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9087
+2026-11-04,fullsend,9072,chore(deps): update renovatebot/github-action action to v46.3.12,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9072
+2026-11-04,fullsend,9011,feat(#6842): record forge and CI pointers on the root run span,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9011
+2026-11-04,fullsend,8809,ci(e2e): surface rate-limit state in harness-wait timeouts,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8809
+2026-11-04,agents,1898,test(scripts): create Git info directory in public text fixture,test,,,,https://github.com/fullsend-ai/agents/pull/1898
+2026-11-04,agents,1897,test(scripts): isolate HOME in post-fix push-rebase fixtures,test,,,,https://github.com/fullsend-ai/agents/pull/1897
+2026-11-04,agents,1892,fix(#1885): drop duplicate risk-assessment marker from comment,fix,bot,1885,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1892
+2026-11-04,agents,1889,fix(#1881)!: honor tracker allowed targets in retro and triage,fix,core,1881,ggallen,https://github.com/fullsend-ai/agents/pull/1889
+2026-11-04,agents,1888,fix(#1881)!: migrate agents config to tracker mapping,fix,core,1881,ggallen,https://github.com/fullsend-ai/agents/pull/1888
+2026-11-04,agents,1880,fix(#1795): run scribe content gates before gates that log content,fix,core,1795,waynesun09,https://github.com/fullsend-ai/agents/pull/1880
+2026-11-05,fullsend,9134,chore(#9133): use import-not-found rule name in ty hook,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9134
+2026-11-05,fullsend,9118,feat(#9077)!: load jira-poll settings from tracker.jira config,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9118
+2026-11-05,fullsend,9115,refactor(#9007): add shared Jira client for scoped API tokens,other,,,,https://github.com/fullsend-ai/fullsend/pull/9115
+2026-11-05,fullsend,9110,feat(#9076): converge Jira polling credentials in repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9110
+2026-11-05,fullsend,9106,chore(#9100): bump pi to 1.5.0 for the undici 8.12.3 crash fix,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9106
+2026-11-05,fullsend,9105,chore(deps): update experiments digest to 86ce7d9,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9105
+2026-11-05,fullsend,8942,docs(#8940): add plain-language style section to documentation.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8942
+2026-11-05,fullsend,8913,fix(#8908): render Claude Workflow progress,fix,external,8908,jctanner,https://github.com/fullsend-ai/fullsend/pull/8913
+2026-11-05,fullsend,8910,docs(#8909): document inactive maintainer removal policy,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8910
+2026-11-05,fullsend,8877,feat(#235)!: implement harness schema_version (ADR 0127 Decision 1),feat,,,,https://github.com/fullsend-ai/fullsend/pull/8877
+2026-11-05,agents,1904,fix(#1903): use literal GitLab host in gitlab-forge requests,fix,external,1903,ccronca,https://github.com/fullsend-ai/agents/pull/1904
+2026-11-05,agents,1891,test(#1890): add deterministic state and review action checks,test,,,,https://github.com/fullsend-ai/agents/pull/1891
+2026-11-05,agents,1863,feat(#519): let the fix agent update stale PR/MR title and body,feat,,,,https://github.com/fullsend-ai/agents/pull/1863
+2026-11-05,agents,1839,fix(#1838): accept null summaries for omitted scribe topics,fix,core,1838,ascerra,https://github.com/fullsend-ai/agents/pull/1839
+2026-11-05,agents,1381,fix(#1379): bound scribe Slack webhook and drop bc,fix,core,1379,ascerra,https://github.com/fullsend-ai/agents/pull/1381
+2026-11-06,fullsend,9175,docs(#9174): tighten trace-context v1 wording held back from #9084,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9175
+2026-11-06,fullsend,9169,feat(#9116): add actor.is_entity_assignee to NormalizedEvent v1,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9169
+2026-11-06,fullsend,9168,test(#9154): count API calls by quota counter,test,,,,https://github.com/fullsend-ai/fullsend/pull/9168
+2026-11-06,fullsend,9156,"chore(#9153): match the e2e gateway pool by org id and one regex, guard config size",chore,,,,https://github.com/fullsend-ai/fullsend/pull/9156
+2026-11-06,fullsend,9155,test(#9154): log quota during slot waits,test,,,,https://github.com/fullsend-ai/fullsend/pull/9155
+2026-11-06,fullsend,9148,docs(jira-integration): scope poll workflow's job-level permissions,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9148
+2026-11-06,fullsend,9147,"feat(#7414): pass pi tool call ids, arguments and results through",feat,,,,https://github.com/fullsend-ai/fullsend/pull/9147
+2026-11-06,fullsend,9144,feat(#9109): manage GitHub Jira polling workflow,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9144
+2026-11-06,fullsend,9143,feat(#9108): manage the GitLab Jira poll schedule in repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9143
+2026-11-06,fullsend,9142,ci(e2e): expand DEV pool to 22 orgs,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9142
+2026-11-06,fullsend,9141,test(#9140): count GitHub API calls by caller in behaviour suites,test,,,,https://github.com/fullsend-ai/fullsend/pull/9141
+2026-11-06,fullsend,9131,docs(ladder): add the Admin role above Maintainer,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9131
+2026-11-06,fullsend,9129,ci(#9128): harden behaviour-test dispatch and jobs-listing reads,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9129
+2026-11-06,fullsend,9126,feat(#9078)!: build Jira issue and status clients from tracker.jira,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9126
+2026-11-06,fullsend,9125,feat(#9079)!: scope Jira secret access in agent runs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9125
+2026-11-06,fullsend,9114,chore(#9113): bump pi-anthropic-vertex to v0.2.1 and pi-xai-vertex to v0.3.1,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9114
+2026-11-06,fullsend,9107,fix(harness): refuse shadowed .event/.runtime in the secret guard,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9107
+2026-11-06,fullsend,9101,fix(#9098): post config load errors to the status comment,fix,bot,9098,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/9101
+2026-11-06,fullsend,9088,chore(#9085): bump codex to 0.166.0 and re-verify the re-check table,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9088
+2026-11-06,fullsend,9086,docs(adr): add ADR 0158 on overlay runtime-fetch grants,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9086
+2026-11-06,fullsend,9084,refactor(telemetry): establish authenticated trace-context foundation,other,,,,https://github.com/fullsend-ai/fullsend/pull/9084
+2026-11-06,fullsend,9003,fix(#8961): prevent repeated-agent artifact collisions,fix,external,8961,jwm4,https://github.com/fullsend-ai/fullsend/pull/9003
+2026-11-06,fullsend,8917,ci(semgrep): add strict SAST scanning,ci,,,,https://github.com/fullsend-ai/fullsend/pull/8917
+2026-11-06,fullsend,8679,refactor(envmanifest): publish sandbox env variable contract as JSON Schema,other,,,,https://github.com/fullsend-ai/fullsend/pull/8679
+2026-11-06,fullsend,8668,refactor(e2eauth): add Go e2e gate policy and forge APIs (1/3),other,,,,https://github.com/fullsend-ai/fullsend/pull/8668
+2026-11-06,agents,1915,fix(post-fix): align history traversal with run boundaries,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1915
+2026-11-06,agents,1913,fix(scripts): use consistent history reads,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/1913
+2026-11-06,agents,1910,fix(#1909): dispatch the pr-review challenger in the foreground,fix,core,1909,maruiz93,https://github.com/fullsend-ai/agents/pull/1910
+2026-11-06,agents,1907,chore: point CODEOWNERS wildcard to maintainers team,chore,,,,https://github.com/fullsend-ai/agents/pull/1907
+2026-11-06,agents,1906,ci(e2e): use expanded dev pool in agents tests,ci,,,,https://github.com/fullsend-ai/agents/pull/1906
+2026-11-06,agents,1905,test(post-fix): isolate HOME for the entire test suite,test,,,,https://github.com/fullsend-ai/agents/pull/1905
+2026-11-06,agents,1878,"fix(#1876): send Jira REST calls to JIRA_API_URL, not the site URL",fix,external,1876,jwm4,https://github.com/fullsend-ai/agents/pull/1878
+2026-11-07,fullsend,9184,test(#9181): seed Jira poll workflow in install creds test,test,,,,https://github.com/fullsend-ai/fullsend/pull/9184
+2026-11-07,fullsend,9183,feat(#9176): support Jira OAuth credentials across GitHub and GitLab,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9183
+2026-11-07,fullsend,9180,test(#9178): bound secondary backoff assertion by jitter max,test,,,,https://github.com/fullsend-ai/fullsend/pull/9180
+2026-11-07,fullsend,9102,feat(cli)!: add stable diagnostic codes to lint JSON output,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9102
+2026-11-07,fullsend,9055,fix(#9046): load harness .env in dummy runtime behaviour ops,fix,external,9046,jctanner,https://github.com/fullsend-ai/fullsend/pull/9055
+2026-11-07,agents,1914,feat(#1900)!: support bot and service-account Jira authentication,feat,,,,https://github.com/fullsend-ai/agents/pull/1914
+2026-11-07,agents,1912,fix(#1911): skip Jira code runs on human PRs or child issues,fix,core,1911,waynesun09,https://github.com/fullsend-ai/agents/pull/1912
+2026-11-08,fullsend,9192,chore(deps): update sigstore/cosign-installer action to v4.1.3,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9192
+2026-11-08,fullsend,9190,docs(behaviour): explain the two quota counters,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9190
+2026-11-08,fullsend,9103,feat(#9071): fill head_sha for every GitLab merge request event,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9103
+2026-11-09,fullsend,9229,ci(#9226): pin uvx and npx tool versions in hooks and Makefile,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9229
+2026-11-09,fullsend,9219,feat(#9218)!: set JIRA_API_URL and JIRA_BASE_URL for Jira-sourced runs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9219
+2026-11-09,fullsend,9204,fix(#9203): retry runtime dependency downloads with longer backoff,fix,external,9203,csoceanu,https://github.com/fullsend-ai/fullsend/pull/9204
+2026-11-09,fullsend,9202,chore(deps): update ubi10 base images,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9202
+2026-11-09,fullsend,9201,chore(e2e): run e2e suites when reusable-prioritize.yml changes,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9201
+2026-11-09,fullsend,9196,chore(deps): update cloudflare-workers,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9196
+2026-11-09,fullsend,9195,fix(#9048): remove the build-time gopls cache from the code image,fix,external,9048,jctanner,https://github.com/fullsend-ai/fullsend/pull/9195
+2026-11-09,fullsend,9194,fix(cli): respect cancellation in fetch-skill,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9194
+2026-11-09,fullsend,9193,fix(cli): report invalid config forge as a lint diagnostic,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9193
+2026-11-09,fullsend,9189,chore(deps): update dependency vue to v3.5.45,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9189
+2026-11-09,fullsend,9186,feat(#7414): report pi calls cut off before they end as unanswered,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9186
+2026-11-09,fullsend,9049,fix(#9044): skip local sandbox host setup for remote OpenShell gateway,fix,external,9044,jctanner,https://github.com/fullsend-ai/fullsend/pull/9049
+2026-11-09,fullsend,9024,"docs(adr): add ADR 0156, separate the Jira API URL from the site URL",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9024
+2026-11-09,agents,1921,fix(#1920): let the code agent download images attached to issues,fix,bot,1920,fullsend-ai-triage[bot],https://github.com/fullsend-ai/agents/pull/1921
+2026-11-09,agents,1918,fix(#1169): write a provisional review result before synthesis,fix,bot,1169,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1918
+2026-11-10,fullsend,9290,refactor(codex): resolve the parent's collaboration version and say why V2 stays off,other,,,,https://github.com/fullsend-ai/fullsend/pull/9290
+2026-11-10,fullsend,9287,fix(#9250): name replacement Poller and explain branch-access fix,fix,external,9250,ianw,https://github.com/fullsend-ai/fullsend/pull/9287
+2026-11-10,fullsend,9284,fix(#8731): accept own rules over included extends targets,fix,external,8731,ianw,https://github.com/fullsend-ai/fullsend/pull/9284
+2026-11-10,fullsend,9246,ci(#9245): move fullsend's own workflows off pull_request_target,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9246
+2026-11-10,fullsend,9222,docs(#7175): document the scribe agent under docs/agents/,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9222
+2026-11-10,fullsend,9209,chore(#9208): bump fd to 10.5.2 with matching sandbox checksums,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9209
+2026-11-10,fullsend,9200,feat(cli): add self-update command,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9200
+2026-11-10,fullsend,9191,fix(jirapoll)!: skip an event that fails validation,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9191
+2026-11-10,fullsend,9177,refactor(codex): report every mapped multi-agent call as Agent in the manifest mirror and matcher,other,,,,https://github.com/fullsend-ai/fullsend/pull/9177
+2026-11-10,fullsend,9166,docs(adr): add ADR 0160 on Jira poll candidate selection,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9166
+2026-11-10,fullsend,9070,fix(#9068): upgrade previous-contract GitLab root inputs,fix,external,9068,dhshah13,https://github.com/fullsend-ai/fullsend/pull/9070
+2026-11-10,fullsend,9027,fix(#8912)!: gate close-event retro by write access,fix,core,8912,ralphbean,https://github.com/fullsend-ai/fullsend/pull/9027
+2026-11-10,fullsend,8965,docs(adr): let agent entries carry harness overrides,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8965
+2026-11-10,fullsend,8935,fix(#8165): redact script output before trimming and merge overlaps,fix,core,8165,waynesun09,https://github.com/fullsend-ai/fullsend/pull/8935
+2026-11-10,fullsend,8423,docs(#8420): specify normalized entity v1 for ADR 0098,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8423
+2026-11-10,agents,1956,chore(harness): pin fleet images to the v0.55.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/1956
+2026-11-10,agents,1949,fix(#1948): use literal GitLab host in review request URLs,fix,core,1948,ggallen,https://github.com/fullsend-ai/agents/pull/1949
+2026-11-10,agents,1945,fix(#1931): separate fix-agent attribution from Next steps list,fix,bot,1931,fullsend-ai-triage[bot],https://github.com/fullsend-ai/agents/pull/1945
+2026-11-10,agents,1902,refactor(#1015): port fix harness from forge block to overlays,other,,,,https://github.com/fullsend-ai/agents/pull/1902
+2026-11-11,fullsend,9308,chore(deps): update dependency go to v1.27.4,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9308
+2026-11-11,fullsend,9291,fix(cli)!: check allowed_remote_resources when fetch can start,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9291
+2026-11-11,fullsend,9282,fix(#9280): retry transient create-tree 422s when committing files,fix,core,9280,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9282
+2026-11-11,fullsend,9273,refactor(#9271): add ADR 0148 actor-verdict cache and in-memory backend,other,,,,https://github.com/fullsend-ai/fullsend/pull/9273
+2026-11-11,fullsend,9182,"docs(adr): add ADR 0161, repo config limits what a run artifact publishes",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9182
+2026-11-11,fullsend,9097,docs(adr): configure Vault-backed runner secrets,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9097
+2026-11-11,fullsend,9053,fix(#9040): admit fullsend-ai repos on the configured GitHub host,fix,external,9040,jctanner,https://github.com/fullsend-ai/fullsend/pull/9053
+2026-11-11,fullsend,8955,fix(#8952)!: mint replaces gh enterprise token variables too,fix,external,8952,jctanner,https://github.com/fullsend-ai/fullsend/pull/8955
+2026-11-11,fullsend,8928,fix(#8841): fall back to fork default branch for unsynced GitLab forks,fix,external,8841,ianw,https://github.com/fullsend-ai/fullsend/pull/8928
+2026-11-11,agents,1964,feat(scribe): send explicit no-meeting-notes Slack message on empty s…,feat,,,,https://github.com/fullsend-ai/agents/pull/1964
