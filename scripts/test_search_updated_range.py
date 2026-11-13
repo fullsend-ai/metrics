@@ -16,10 +16,13 @@ LIB = Path(__file__).parent / "lib.sh"
 # Stands in for `gh api /search/issues`. Items come from FAKE_ITEMS as
 # [number, [updated timestamps...]]; an item matches a window if any of its
 # timestamps falls in it. Like the real API, paginated results stop at 1000.
+# It returns the JSON search response and applies --jq with the real jq, so a
+# jq error makes it exit non-zero as gh does. FAKE_INCOMPLETE=N marks the
+# first N responses incomplete_results=true (a successful HTTP 200).
 FAKE_GH = textwrap.dedent(
     """\
     #!/usr/bin/env python3
-    import json, os, re, sys
+    import json, os, re, subprocess, sys
     args = sys.argv[1:]
     fields = {}
     for i, a in enumerate(args):
@@ -31,11 +34,27 @@ FAKE_GH = textwrap.dedent(
     start, end = re.search(r"updated:(\\S+)\\.\\.(\\S+)", fields["q"]).groups()
     items = [n for n, dates in json.loads(os.environ["FAKE_ITEMS"])
              if any(start <= d <= end for d in dates)]
-    if fields.get("per_page") == "1":
-        print(len(items))
-    else:
-        for n in items[:1000]:
-            print(f"{n}\\thttps://github.com/o/r/issues/{n}")
+    incomplete = False
+    budget = int(os.environ.get("FAKE_INCOMPLETE", "0"))
+    counter = os.environ["FAKE_LOG"] + ".responses"
+    seen = len(open(counter).read().splitlines()) if os.path.exists(counter) else 0
+    with open(counter, "a") as c:
+        c.write("x\\n")
+    if seen < budget:
+        incomplete = True
+    shown = items[:1] if fields.get("per_page") == "1" else items[:1000]
+    body = {
+        "total_count": len(items),
+        "incomplete_results": incomplete,
+        "items": [{"number": n, "html_url": f"https://github.com/o/r/issues/{n}"}
+                  for n in shown],
+    }
+    jq = args[args.index("--jq") + 1]
+    r = subprocess.run(["jq", "-r", jq], input=json.dumps(body),
+                       capture_output=True, text=True)
+    sys.stdout.write(r.stdout)
+    sys.stderr.write(r.stderr)
+    sys.exit(r.returncode)
     """
 )
 
@@ -59,6 +78,10 @@ class TestSearchUpdatedRange(unittest.TestCase):
         gh = bindir / "gh"
         gh.write_text(FAKE_GH)
         gh.chmod(0o755)
+        # No real backoff in tests: retries would sleep for minutes.
+        sleep = bindir / "sleep"
+        sleep.write_text("#!/bin/sh\nexit 0\n")
+        sleep.chmod(0o755)
         self.log = Path(self.tmp.name) / "log"
         self.log.touch()
         self.path = f"{bindir}{os.pathsep}{os.environ['PATH']}"
@@ -66,9 +89,9 @@ class TestSearchUpdatedRange(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
-    def run_search(self, items, start, end):
+    def run_search(self, items, start, end, incomplete=0):
         env = dict(os.environ, PATH=self.path, FAKE_ITEMS=json.dumps(items),
-                   FAKE_LOG=str(self.log))
+                   FAKE_LOG=str(self.log), FAKE_INCOMPLETE=str(incomplete))
         return subprocess.run(
             ["bash", "-c", f'source "{LIB}"; search_updated_range o/r {start} {end}'],
             env=env, capture_output=True, text=True, timeout=60,
@@ -118,6 +141,33 @@ class TestSearchUpdatedRange(unittest.TestCase):
         r = self.run_search(items, "2026-10-01", "2026-10-02")
         self.assertNotEqual(r.returncode, 0)
         self.assertIn("search cap exceeded", r.stderr)
+        self.assertEqual(r.stdout, "")
+
+    def test_incomplete_count_probe_is_retried(self):
+        items = spread(date(2026, 10, 1), 1, 5)
+        r = self.run_search(items, "2026-10-01", "2026-10-01", incomplete=1)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertEqual(len(r.stdout.splitlines()), 5)
+        self.assertIn("incomplete_results", r.stderr)
+
+    def test_incomplete_item_page_is_retried(self):
+        items = spread(date(2026, 10, 1), 1, 5)
+        env = dict(os.environ, PATH=self.path, FAKE_ITEMS=json.dumps(items),
+                   FAKE_LOG=str(self.log), FAKE_INCOMPLETE="2")
+        query = "repo:o/r updated:2026-10-01T00:00:00Z..2026-10-01T23:59:59Z"
+        r = subprocess.run(
+            ["bash", "-c", f'source "{LIB}"; search_issues "{query}" ".items[] | .number"'],
+            env=env, capture_output=True, text=True, timeout=60,
+        )
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertEqual(len(r.stdout.splitlines()), 5)
+        self.assertEqual(r.stderr.count("incomplete_results"), 2)
+
+    def test_persistently_incomplete_results_fail(self):
+        items = spread(date(2026, 10, 1), 1, 5)
+        r = self.run_search(items, "2026-10-01", "2026-10-01", incomplete=100)
+        self.assertNotEqual(r.returncode, 0)
+        self.assertIn("giving up", r.stderr)
         self.assertEqual(r.stdout, "")
 
     def test_empty_range(self):

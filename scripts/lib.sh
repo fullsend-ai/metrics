@@ -207,8 +207,12 @@ pr_review_events() {
 search_issues() {
   local query="$1" jq_filter="$2"
   local attempt output
+  # A 200 response can still carry incomplete_results=true (the search timed
+  # out and the page is truncated); make jq fail so it is retried like an
+  # error instead of being accepted as complete.
+  local guarded_filter="if .incomplete_results then error(\"incomplete_results\") else (${jq_filter}) end"
   for attempt in 1 2 3 4 5; do
-    if output=$(gh api "/search/issues" --method GET --paginate -f q="$query" -f per_page=100 --jq "$jq_filter" 2>&1); then
+    if output=$(gh api "/search/issues" --method GET --paginate -f q="$query" -f per_page=100 --jq "$guarded_filter" 2>&1); then
       printf '%s\n' "$output"
       return 0
     fi
@@ -224,12 +228,13 @@ search_issues() {
 SEARCH_CAP=1000
 
 # Print the total_count of a search query, with one request and no
-# pagination. Retries with backoff like search_issues.
+# pagination. Retries with backoff like search_issues, and treats an
+# incomplete_results response as a failed attempt.
 search_total_count() {
   local query="$1"
   local attempt output
   for attempt in 1 2 3 4 5; do
-    if output=$(gh api "/search/issues" --method GET -f q="$query" -f per_page=1 --jq '.total_count' 2>&1); then
+    if output=$(gh api "/search/issues" --method GET -f q="$query" -f per_page=1 --jq 'if .incomplete_results then error("incomplete_results") else .total_count end' 2>&1); then
       printf '%s\n' "$output"
       return 0
     fi
