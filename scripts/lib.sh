@@ -12,12 +12,14 @@ ensure_csv() {
   fi
 }
 
-# List all non-archived, non-fork repos in the org.
+# List all public, non-archived, non-fork repos in the org.
 # Returns one repo name per line (e.g. "fullsend").
+# The visibility filter keeps private and internal repos out of the public
+# CSVs when a token that can see them (e.g. a maintainer's login) runs this.
 list_repos() {
   gh api "/orgs/${ORG}/repos" \
     --paginate \
-    --jq '.[] | select(.archived == false and .fork == false) | .name'
+    --jq '.[] | select(.visibility == "public" and .archived == false and .fork == false) | .name'
 }
 
 # Append a row to the CSV. Arguments: all column values in order.
