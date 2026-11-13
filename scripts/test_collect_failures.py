@@ -19,6 +19,8 @@ WF_PATH = ".github/workflows/fullsend.yaml"
 # Answers each `gh api ENDPOINT [--paginate] [--jq FILTER]` from a JSON map of
 # endpoint -> response; {"__error__": msg} fails like gh does. An endpoint
 # missing from the map is an error, so the tests catch unexpected calls.
+# A `gh api graphql` call is looked up as "graphql:ids=ID,ID,..." (the
+# `ids[]` fields) or "graphql:id=ID" (the `id` field).
 GH_STUB = textwrap.dedent(
     """\
     #!/usr/bin/env python3
@@ -26,16 +28,25 @@ GH_STUB = textwrap.dedent(
     args = sys.argv[1:]
     assert args[0] == "api", args
     endpoint, jq_filter, paginate, rest = None, ".", False, args[1:]
+    ids, node_id = [], None
     while rest:
         arg = rest.pop(0)
         if arg == "--jq":
             jq_filter = rest.pop(0)
         elif arg == "--paginate":
             paginate = True
+        elif arg in ("-f", "-F"):
+            name, _, value = rest.pop(0).partition("=")
+            if name == "ids[]":
+                ids.append(value)
+            elif name == "id":
+                node_id = value
         elif arg.startswith("-"):
             continue
         elif endpoint is None:
             endpoint = arg
+    if endpoint == "graphql":
+        endpoint = "graphql:ids=" + ",".join(ids) if ids else "graphql:id=" + str(node_id)
     stub_dir = os.environ["GH_STUB_DIR"]
     with open(os.path.join(stub_dir, "calls.log"), "a") as log:
         log.write(endpoint + "\\n")
@@ -64,7 +75,7 @@ GH_STUB = textwrap.dedent(
 
 
 def repo_list(*names):
-    return [{"name": n, "archived": False, "fork": False} for n in names]
+    return [{"name": n, "visibility": "public", "archived": False, "fork": False} for n in names]
 
 
 def workflows(path=WF_PATH, wf_id=7):
@@ -73,23 +84,35 @@ def workflows(path=WF_PATH, wf_id=7):
 
 def run(run_id, conclusion, repo="fullsend"):
     return {"id": run_id, "conclusion": conclusion,
-            "html_url": f"https://github.com/{ORG}/{repo}/actions/runs/{run_id}"}
+            "html_url": f"https://github.com/{ORG}/{repo}/actions/runs/{run_id}",
+            "check_suite_node_id": suite_id(run_id)}
+
+
+def suite_id(run_id):
+    return f"CS_{run_id}"
+
+
+def check_run(name, conclusion):
+    return {"name": name, "status": "COMPLETED", "conclusion": conclusion}
 
 
 def jobs(*active):
-    """Dispatch jobs for one run; `active` maps role job -> conclusion."""
+    """Check runs of one dispatch run; `active` maps role job -> conclusion."""
     names = ["Route", "Harness dispatch", "Code", "Fix", "Review", "Triage", "Retro", "Prioritize"]
-    result = [{"name": "stop-fix", "status": "completed", "conclusion": "skipped"},
-              {"name": "dispatch / Harness run (${{ matrix.agent }})", "status": "completed",
-               "conclusion": "skipped"}]
+    result = [check_run("stop-fix", "SKIPPED"),
+              check_run("dispatch / Harness run (${{ matrix.agent }})", "SKIPPED")]
     active = dict(active)
     for name in names:
-        default = "success" if name in ("Route", "Harness dispatch") else "skipped"
-        result.append({"name": f"dispatch / {name}", "status": "completed",
-                       "conclusion": active.pop(name, default)})
+        default = "SUCCESS" if name in ("Route", "Harness dispatch") else "SKIPPED"
+        result.append(check_run(f"dispatch / {name}", active.pop(name, default).upper()))
     for name, conclusion in active.items():
-        result.append({"name": f"dispatch / {name}", "status": "completed", "conclusion": conclusion})
-    return {"jobs": result}
+        result.append(check_run(f"dispatch / {name}", conclusion.upper()))
+    return result
+
+
+def paged(*pages):
+    """Check runs of a suite whose `checkRuns` span several pages."""
+    return {"__paged__": list(pages)}
 
 
 def runs_endpoint(repo, wf_id=7, per_page=100, window=DATE):
@@ -97,13 +120,44 @@ def runs_endpoint(repo, wf_id=7, per_page=100, window=DATE):
             f"?per_page={per_page}&status=completed&created={window}")
 
 
+def batch_key(run_ids):
+    return "graphql:ids=" + ",".join(suite_id(r) for r in run_ids)
+
+
+def check_runs_page(nodes, has_next=False):
+    return {"pageInfo": {"hasNextPage": has_next, "endCursor": "c"}, "nodes": nodes}
+
+
 def repo_responses(repo, run_list, job_map, wf_id=7, total=None):
-    return {
+    """Responses for one repo. `job_map` maps each started run's id to its check
+    runs (a list), paged(...), None (suite not found) or {"__error__": msg}."""
+    started = [r["id"] for r in run_list if r["conclusion"] not in ("skipped", "action_required")]
+    responses = {
         f"/repos/{ORG}/{repo}/actions/workflows": workflows(wf_id=wf_id),
         runs_endpoint(repo, wf_id, per_page=1): {"total_count": len(run_list) if total is None else total},
         runs_endpoint(repo, wf_id): {"workflow_runs": run_list},
-        **{f"/repos/{ORG}/{repo}/actions/runs/{rid}/jobs?per_page=100&filter=all": j for rid, j in job_map.items()},
     }
+    for start in range(0, len(started), 100):
+        batch = started[start:start + 100]
+        errors = [job_map[r] for r in batch if isinstance(job_map[r], dict) and "__error__" in job_map[r]]
+        if errors:
+            responses[batch_key(batch)] = errors[0]
+            continue
+        nodes = []
+        for rid in batch:
+            value = job_map[rid]
+            if value is None:
+                nodes.append(None)
+            elif isinstance(value, dict):  # paged: the batch holds only the first page
+                nodes.append({"checkRuns": check_runs_page(value["__paged__"][0], has_next=True)})
+                pages = [{"__error__": p["__error__"]} if isinstance(p, dict) else
+                         {"data": {"node": {"checkRuns": check_runs_page(p, has_next=i < len(value["__paged__"]) - 1)}}}
+                         for i, p in enumerate(value["__paged__"])]
+                responses[f"graphql:id={suite_id(rid)}"] = {"__pages__": pages}
+            else:
+                nodes.append({"checkRuns": check_runs_page(value)})
+        responses[batch_key(batch)] = {"data": {"nodes": nodes}}
+    return responses
 
 
 class CollectFailuresTest(unittest.TestCase):
@@ -165,11 +219,11 @@ class CollectFailuresTest(unittest.TestCase):
             f"{DATE},fix-judge,fullsend,6,failure,https://github.com/{ORG}/fullsend/actions/runs/6",
             f"{DATE},Triage,agents,10,success,https://github.com/{ORG}/agents/actions/runs/10",
         ]))
-        # A cancelled agent job (superseded run) is neither a success nor a failure.
-        self.assertIn(f"/repos/{ORG}/agents/actions/runs/11/jobs?per_page=100&filter=all", self.calls())
-        # Skipped and approval-pending runs never started a job.
-        self.assertNotIn(f"/repos/{ORG}/fullsend/actions/runs/4/jobs?per_page=100&filter=all", self.calls())
-        self.assertNotIn(f"/repos/{ORG}/fullsend/actions/runs/5/jobs?per_page=100&filter=all", self.calls())
+        # One query per repo; skipped and approval-pending runs never started a
+        # job, so their suites are not asked for. A cancelled agent job
+        # (superseded run) is neither a success nor a failure.
+        self.assertEqual([c for c in self.calls() if c.startswith("graphql")],
+                         [batch_key([1, 2, 3, 6]), batch_key([10, 11])])
 
     def test_warns_and_writes_nothing_when_no_agent_job_ran(self):
         responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
@@ -197,29 +251,29 @@ class CollectFailuresTest(unittest.TestCase):
         self.assertEqual(self.csv("failures.csv"), ["date,workflow,runs,failures,failure_rate"])
         self.assertEqual(self.csv("failure-details.csv"), ["date,workflow,repo,run_id,status,url"])
         # Retried before giving up.
-        self.assertEqual(self.calls().count(f"/repos/{ORG}/agents/actions/runs/10/jobs?per_page=100&filter=all"), 3)
-
-    def job_page(self, name, conclusion):
-        return {"jobs": [{"name": name, "status": "completed", "conclusion": conclusion}]}
+        self.assertEqual(self.calls().count(batch_key([10])), 3)
 
     def test_counts_jobs_on_later_pages(self):
         responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
-        responses.update(repo_responses("fullsend", [run(1, "failure")], {
-            1: {"__pages__": [jobs(("Code", "success")), self.job_page("dispatch / Review", "failure")]},
+        responses.update(repo_responses("fullsend", [run(1, "failure"), run(2, "success")], {
+            1: paged(jobs(("Code", "success")), [check_run("dispatch / Review", "FAILURE")]),
+            2: jobs(("Code", "success")),
         }))
 
         result = self.collect(responses)
 
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertEqual(self.csv("failures.csv")[1:], [
-            f"{DATE},Code,1,0,0.000",
+            f"{DATE},Code,2,0,0.000",
             f"{DATE},Review,1,1,1.000",
         ])
+        # Run 1 comes from the paginated query only, so its first page is not counted twice.
+        self.assertEqual(self.calls().count(f"graphql:id={suite_id(1)}"), 1)
 
     def test_later_page_error_exhausts_retries_and_writes_nothing(self):
         responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
         responses.update(repo_responses("fullsend", [run(1, "success")], {
-            1: {"__pages__": [jobs(("Code", "failure")), {"__error__": "gh: Server Error (HTTP 502)"}]},
+            1: paged(jobs(("Code", "failure")), {"__error__": "gh: Server Error (HTTP 502)"}),
         }))
 
         result = self.collect(responses)
@@ -228,16 +282,39 @@ class CollectFailuresTest(unittest.TestCase):
         self.assertIn("HTTP 502", result.stderr)
         self.assertEqual(self.csv("failures.csv"), ["date,workflow,runs,failures,failure_rate"])
         self.assertEqual(self.csv("failure-details.csv"), ["date,workflow,repo,run_id,status,url"])
-        self.assertEqual(self.calls().count(f"/repos/{ORG}/fullsend/actions/runs/1/jobs?per_page=100&filter=all"), 3)
+        self.assertEqual(self.calls().count(f"graphql:id={suite_id(1)}"), 3)
+
+    def test_runs_are_looked_up_in_batches_of_100(self):
+        run_list = [run(i, "success") for i in range(1, 102)]
+        responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
+        responses.update(repo_responses("fullsend", run_list, {i: jobs(("Code", "success")) for i in range(1, 102)}))
+
+        result = self.collect(responses)
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(self.csv("failures.csv")[1:], [f"{DATE},Code,101,0,0.000"])
+        self.assertEqual([c for c in self.calls() if c.startswith("graphql")],
+                         [batch_key(range(1, 101)), batch_key([101])])
+
+    def test_missing_check_suite_fails_and_writes_nothing(self):
+        responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
+        responses.update(repo_responses("fullsend", [run(1, "success"), run(2, "failure")], {
+            1: jobs(("Code", "success")),
+            2: None,
+        }))
+
+        result = self.collect(responses)
+
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        self.assertIn("check suites missing", result.stderr)
+        self.assertEqual(self.csv("failures.csv"), ["date,workflow,runs,failures,failure_rate"])
+        self.assertEqual(self.csv("failure-details.csv"), ["date,workflow,repo,run_id,status,url"])
 
     def test_failed_attempt_before_a_successful_rerun_is_counted(self):
-        # With filter=all the jobs endpoint lists every attempt of a rerun job.
+        # With checkType ALL the check suite lists every attempt of a rerun job.
         responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
         responses.update(repo_responses("fullsend", [run(1, "success")], {
-            1: {"jobs": [
-                {"name": "dispatch / Code", "status": "completed", "conclusion": "failure"},
-                {"name": "dispatch / Code", "status": "completed", "conclusion": "success"},
-            ]},
+            1: [check_run("dispatch / Code", "FAILURE"), check_run("dispatch / Code", "SUCCESS")],
         }))
 
         result = self.collect(responses)
@@ -269,12 +346,15 @@ class CollectFailuresTest(unittest.TestCase):
 
     def test_busy_day_is_listed_in_hourly_windows(self):
         responses = {f"/orgs/{ORG}/repos": repo_list("fullsend")}
-        responses.update(repo_responses("fullsend", [], {1: jobs(("Review", "success"))}, total=1001))
-        del responses[runs_endpoint("fullsend")]
+        hourly = {}
         for hour in range(24):
             window = f"{DATE}T{hour:02d}:00:00Z..{DATE}T{hour:02d}:59:59Z"
-            runs = [run(1, "success")] + [run(100 + hour * 50 + i, "skipped") for i in range(41)] \
+            hourly[window] = [run(1, "success")] + [run(100 + hour * 50 + i, "skipped") for i in range(41)] \
                 if hour == 0 else [run(100 + hour * 50 + i, "skipped") for i in range(42)]
+        all_runs = [r for runs in hourly.values() for r in runs]
+        responses.update(repo_responses("fullsend", all_runs, {1: jobs(("Review", "success"))}, total=1001))
+        del responses[runs_endpoint("fullsend")]
+        for window, runs in hourly.items():
             responses[runs_endpoint("fullsend", window=window)] = {"workflow_runs": runs}
 
         result = self.collect(responses)
