@@ -6,9 +6,10 @@ Writes docs/pr-type.csv (daily aggregates) and docs/pr-type-details.csv
 perf/other, and for fix PRs traces the linked issue author to core /
 external / bot / unlinked using docs/community-config.json.
 
-Uses month-sized search windows during backfill to stay within the GitHub
-Search API secondary rate limit (~30 req/min). Issue author lookups use the
-REST core quota (5000/hr).
+Searches in SEARCH_CHUNK_DAYS windows, because larger windows with PR bodies
+time out (HTTP 504, stream CANCEL), and pauses between searches to stay
+within the GitHub Search API secondary rate limit (~30 req/min). Issue author
+lookups use the REST core quota (5000/hr).
 """
 from __future__ import annotations
 
@@ -52,6 +53,18 @@ PR_TYPE_DETAILS_HEADER = [
 ]
 
 RATE_LIMIT_MARKERS = ("rate limit", "secondary rate limit")
+# GitHub 5xx responses and dropped HTTP/2 streams or connections are transient.
+# Any other failure (404, permission 403, bad query) is raised at once.
+HTTP_5XX = re.compile(r"\bHTTP 5\d\d\b")
+TRANSIENT_MARKERS = (
+    "stream error", "cancel", "connection reset", "connection refused",
+    "unexpected eof", "timeout", "timed out", "bad gateway",
+    "service unavailable", "gateway timeout", "internal server error",
+)
+# Days per merged-PR search window. A 20-day window with PR bodies timed out;
+# a few days stays well under one 100-result page on the busiest repo.
+SEARCH_CHUNK_DAYS = 3
+SEARCH_CAP = 1000
 
 
 def load_config():
@@ -106,7 +119,13 @@ def is_rate_limited(err: str) -> bool:
     return any(marker in low for marker in RATE_LIMIT_MARKERS)
 
 
+def is_transient(err: str) -> bool:
+    low = err.lower()
+    return bool(HTTP_5XX.search(err)) or any(marker in low for marker in TRANSIENT_MARKERS)
+
+
 def gh_json(args: list[str], retries: int = 5):
+    """Run gh with bounded retries for rate limits, 5xx and stream errors."""
     last_err = ""
     for attempt in range(1, retries + 1):
         r = subprocess.run(["gh", *args], capture_output=True, text=True)
@@ -114,13 +133,16 @@ def gh_json(args: list[str], retries: int = 5):
             return json.loads(r.stdout) if r.stdout.strip() else None
         last_err = r.stderr.strip()
         if is_rate_limited(last_err):
-            wait = attempt * 25
-            print(f"  rate limited (attempt {attempt}/{retries}), sleep {wait}s", file=sys.stderr)
+            reason, wait = "rate limited", attempt * 25
+        elif is_transient(last_err):
+            reason, wait = "transient error", min(5 * 2 ** (attempt - 1), 60)
+        else:
+            raise RuntimeError(last_err or f"gh failed: {' '.join(args)}")
+        if attempt < retries:
+            print(f"  {reason} (attempt {attempt}/{retries}), sleep {wait}s", file=sys.stderr)
             time.sleep(wait)
-            continue
-        raise RuntimeError(last_err or f"gh failed: {' '.join(args)}")
     raise RuntimeError(
-        f"rate limit retries exhausted: {last_err}; args: {' '.join(args)}"
+        f"retries exhausted: {last_err}; args: {' '.join(args)}"
     )
 
 
@@ -181,18 +203,23 @@ def _search_merged(repo: str, start: date, end: date) -> list[dict]:
         "--merged",
         "--merged-at", f"{start.isoformat()}..{end.isoformat()}",
         "--json", "title,closedAt,number,body,url",
-        "--limit", "1000",
+        "--limit", str(SEARCH_CAP),
     ]
     return gh_json(cmd) or []
 
 
 def fetch_merged_range(repo: str, start: date, end: date) -> list[dict]:
-    """Fetch all merged PRs in [start, end] inclusive, splitting on the 1000 cap."""
+    """Fetch all merged PRs in [start, end] inclusive.
+
+    Searches SEARCH_CHUNK_DAYS windows and splits a window again if it
+    reaches the 1000-result cap, so results are never silently truncated.
+    """
     by_number: dict[int, dict] = {}
 
     def collect(chunk_start: date, chunk_end: date) -> None:
         data = _search_merged(repo, chunk_start, chunk_end)
-        if len(data) >= 1000:
+        time.sleep(2.5)
+        if len(data) >= SEARCH_CAP:
             if chunk_start >= chunk_end:
                 raise RuntimeError(
                     f"Search cap exceeded for {repo} on {chunk_start} "
@@ -206,8 +233,8 @@ def fetch_merged_range(repo: str, start: date, end: date) -> list[dict]:
         for pr in data:
             by_number[pr["number"]] = pr
 
-    collect(start, end)
-    time.sleep(2.5)
+    for chunk_start, chunk_end in date_chunks(start, end):
+        collect(chunk_start, chunk_end)
     return list(by_number.values())
 
 
@@ -262,11 +289,11 @@ def existing_detail_keys() -> set[tuple[str, str, str]]:
         }
 
 
-def month_chunks(start: date, end: date):
-    """Yield (chunk_start, chunk_end) covering [start, end] in ~30-day pieces."""
+def date_chunks(start: date, end: date, days: int = SEARCH_CHUNK_DAYS):
+    """Yield (chunk_start, chunk_end) covering [start, end] in `days`-day pieces."""
     cur = start
     while cur <= end:
-        chunk_end = min(cur + timedelta(days=29), end)
+        chunk_end = min(cur + timedelta(days=days - 1), end)
         yield cur, chunk_end
         cur = chunk_end + timedelta(days=1)
 
@@ -350,7 +377,7 @@ def collect_range(start: date, end: date, repos: list[str], core, ignored_bots,
 
     for repo in repos:
         print(f"Fetching {ORG}/{repo} {start} → {end}...")
-        for chunk_start, chunk_end in month_chunks(start, end):
+        for chunk_start, chunk_end in date_chunks(start, end):
             print(f"  chunk {chunk_start}..{chunk_end}")
             prs = fetch_merged_range(repo, chunk_start, chunk_end)
             print(f"    {len(prs)} merged PRs")
