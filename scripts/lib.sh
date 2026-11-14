@@ -404,10 +404,11 @@ is_ignored_bot() {
 }
 
 # Print "login\ttimestamp" for every review, inline review comment, and
-# conversation comment on a PR, excluding bot authors.
+# conversation comment on a PR, excluding bot authors. Returns non-zero if
+# the API call fails, so callers never mistake an error for "no reviews".
 pr_review_events() {
   local repo="$1" number="$2"
-  gh api graphql \
+  gh_api_retry graphql \
     -f owner="${ORG}" -f name="${repo}" -F number="${number}" \
     -f query='
       query($owner: String!, $name: String!, $number: Int!) {
@@ -441,7 +442,7 @@ pr_review_events() {
           | select(.author != null and .author.__typename != "Bot")
           | {login: .author.login, ts: .createdAt} ]
       | .[] | select(.ts != null) | [.login, .ts] | @tsv
-    ' 2>/dev/null || true
+    '
 }
 
 # Run a GitHub issue/PR search query, printing matching rows via the given

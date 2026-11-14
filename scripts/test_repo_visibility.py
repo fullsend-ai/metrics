@@ -83,6 +83,8 @@ class TestShellVisibility(unittest.TestCase):
             **os.environ,
             "PATH": f"{bin_dir}{os.pathsep}{os.environ['PATH']}",
             "GH_FIXTURES": str(fixtures),
+            # The board filter only runs when the project query is enabled.
+            "REWORK_INCLUDE_PROJECTS": "1",
         }
 
     def run_bash(self, *args):

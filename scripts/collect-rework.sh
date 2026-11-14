@@ -29,7 +29,7 @@ CONFIG_FILE="docs/rework-config.json"
 EMAIL_MAP="$TMPDIR_WORK/email_map"
 if [[ -f "$CONFIG_FILE" ]]; then
   # Build a TSV of email→bot from the config.
-  jq -r '.commitEmailToBot // {} | to_entries[] | [.key, .value] | @tsv' "$CONFIG_FILE" > "$EMAIL_MAP" 2>/dev/null || true
+  jq -r '.commitEmailToBot // {} | to_entries[] | [.key, .value] | @tsv' "$CONFIG_FILE" > "$EMAIL_MAP"
 fi
 
 # Lookup function: map a commit email to a bot name, or return empty.
@@ -62,7 +62,7 @@ for repo in $repos; do
   while IFS=$'\t' read -r number item_url; do
     # Fetch full timeline for this issue/PR.
     # Extract bot touches from actor/user-based events AND committed events.
-    timeline=$(gh api "/repos/${full_repo}/issues/${number}/timeline" \
+    timeline=$(gh_api_retry "/repos/${full_repo}/issues/${number}/timeline" \
       --paginate \
       -H "Accept: application/vnd.github.mockingbird-preview+json" \
       --jq '
@@ -77,7 +77,7 @@ for repo in $repos; do
         end |
         select(.ts != null) |
         [.type, (.bot // .email), .ts] | @tsv
-      ' 2>/dev/null || true)
+      ')
 
     [[ -z "$timeline" ]] && continue
 
@@ -102,8 +102,12 @@ done
 
 # Fetch project board activity via GraphQL. Org boards can hold items from
 # private or internal repos, so keep only items from public repos.
+# Opt-in: the Actions GITHUB_TOKEN cannot read org projects, so CI skips
+# this query. With REWORK_INCLUDE_PROJECTS=1 a failed call fails the step.
+project_items=""
+if [[ "${REWORK_INCLUDE_PROJECTS:-}" == "1" ]]; then
 echo "  Fetching project board activity..."
-project_items=$(gh api graphql -f org="$ORG" -f query='
+project_items=$(gh_api_retry graphql -f org="$ORG" -f query='
   query($org: String!) {
     organization(login: $org) {
       projectsV2(first: 10) {
@@ -170,7 +174,10 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
   select(.actor.type == "Bot") |
   [$c.repository.name, $c.number, .actor.login, .createdAt, $c.url] |
   @tsv
-' 2>/dev/null || true)
+')
+else
+  echo "  Skipping project board activity (set REWORK_INCLUDE_PROJECTS=1 to include it)."
+fi
 
 if [[ -n "$project_items" ]]; then
   while IFS=$'\t' read -r repo number bot ts item_url; do
