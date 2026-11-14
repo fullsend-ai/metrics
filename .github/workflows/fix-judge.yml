@@ -49,7 +49,7 @@ jobs:
           echo "has_work=true" >> "${GITHUB_OUTPUT}"
           PAYLOAD=$(jq -nc --arg url "https://github.com/${GITHUB_REPOSITORY}/issues/${TRACKING_ISSUE}" \
             --argjson n "${TRACKING_ISSUE}" '{issue: {html_url: $url, number: $n}}')
-          MATRIX=$(jq -nc --arg repo "${GITHUB_REPOSITORY}" --arg payload "${PAYLOAD}" \
+          MATRIX=$(jq -nc --arg repo "${GITHUB_REPOSITORY}" --argjson payload "${PAYLOAD}" \
             '{include: [{agent: "fix-judge", source_repo: $repo, role: "triage", event_payload: $payload, status_repo: "", status_number: ""}]}')
           echo "matrix=${MATRIX}" >> "${GITHUB_OUTPUT}"
 
