@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import importlib.util
+import subprocess
 import sys
 import tempfile
 import unittest
+from datetime import date, timedelta
 from pathlib import Path
 from unittest import mock
 
@@ -171,6 +173,201 @@ class TestRepoVisibility(unittest.TestCase):
                     mod.os.environ["PR_TYPE_REPOS"] = saved[4]
             self.assertEqual(agg.read_text(), "existing\n")
             self.assertEqual(det.read_text(), "existing\n")
+
+
+def gh_result(returncode=0, stdout="", stderr=""):
+    return subprocess.CompletedProcess(["gh"], returncode, stdout=stdout, stderr=stderr)
+
+
+STREAM_CANCEL = 'Post "https://api.github.com/graphql": stream error: stream ID 3; CANCEL'
+GATEWAY_TIMEOUT = "HTTP 504: Gateway Timeout (https://api.github.com/search/issues)"
+
+
+class TestGhJsonRetry(unittest.TestCase):
+    def setUp(self):
+        patcher = mock.patch.object(mod.time, "sleep")
+        self.sleep = patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def run_gh(self, *results, retries=5):
+        with mock.patch.object(mod.subprocess, "run", side_effect=list(results)) as run:
+            try:
+                return mod.gh_json(["api", "x"], retries=retries), run.call_count
+            except RuntimeError as err:
+                return err, run.call_count
+
+    def test_transient_detection(self):
+        self.assertTrue(mod.is_transient(GATEWAY_TIMEOUT))
+        self.assertTrue(mod.is_transient("HTTP 502: Server Error"))
+        self.assertTrue(mod.is_transient(STREAM_CANCEL))
+        self.assertTrue(mod.is_transient("read tcp: connection reset by peer"))
+        self.assertFalse(mod.is_transient("HTTP 404: Not Found"))
+        self.assertFalse(mod.is_transient("HTTP 422: Validation Failed"))
+
+    def test_retries_5xx_and_stream_errors_then_succeeds(self):
+        data, calls = self.run_gh(
+            gh_result(1, stderr=GATEWAY_TIMEOUT),
+            gh_result(1, stderr=STREAM_CANCEL),
+            gh_result(0, stdout='[{"number": 1}]'),
+        )
+        self.assertEqual(data, [{"number": 1}])
+        self.assertEqual(calls, 3)
+        self.assertEqual(self.sleep.call_count, 2)
+
+    def test_persistent_5xx_raises_after_limit(self):
+        err, calls = self.run_gh(*[gh_result(1, stderr=GATEWAY_TIMEOUT)] * 3, retries=3)
+        self.assertIsInstance(err, RuntimeError)
+        self.assertIn("504", str(err))
+        self.assertEqual(calls, 3)
+        self.assertEqual(self.sleep.call_count, 2)
+
+    def test_not_found_is_not_retried(self):
+        err, calls = self.run_gh(gh_result(1, stderr="HTTP 404: Not Found"))
+        self.assertIsInstance(err, RuntimeError)
+        self.assertEqual(calls, 1)
+        self.sleep.assert_not_called()
+
+
+class TestDateChunks(unittest.TestCase):
+    def test_contiguous_bounded_and_complete(self):
+        start, end = date(2026, 10, 23), date(2026, 11, 11)
+        chunks = list(mod.date_chunks(start, end))
+        self.assertEqual(chunks[0][0], start)
+        self.assertEqual(chunks[-1][1], end)
+        for chunk_start, chunk_end in chunks:
+            self.assertLessEqual((chunk_end - chunk_start).days + 1, mod.SEARCH_CHUNK_DAYS)
+        for (_, prev_end), (next_start, _) in zip(chunks, chunks[1:]):
+            self.assertEqual(next_start, prev_end + timedelta(days=1))
+
+    def test_single_day(self):
+        day = date(2026, 11, 1)
+        self.assertEqual(list(mod.date_chunks(day, day)), [(day, day)])
+
+
+class TestFetchMergedRange(unittest.TestCase):
+    def setUp(self):
+        patcher = mock.patch.object(mod.time, "sleep")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def test_searches_small_windows_over_a_20_day_range(self):
+        windows = []
+
+        def search(repo, start, end):
+            windows.append((start, end))
+            return [{"number": start.toordinal()}]
+
+        with mock.patch.object(mod, "_search_merged", side_effect=search):
+            prs = mod.fetch_merged_range("fullsend", date(2026, 10, 23), date(2026, 11, 11))
+        self.assertTrue(all((e - s).days + 1 <= mod.SEARCH_CHUNK_DAYS for s, e in windows))
+        self.assertEqual(len(prs), len(windows))
+
+    def test_window_at_cap_is_subdivided(self):
+        start, end = date(2026, 11, 1), date(2026, 11, 2)
+        windows = []
+
+        def search(repo, chunk_start, chunk_end):
+            windows.append((chunk_start, chunk_end))
+            if chunk_start != chunk_end:
+                raise mod.SearchCapReached("cap")
+            return [{"number": chunk_start.day}]
+
+        with mock.patch.object(mod, "date_chunks", return_value=[(start, end)]), \
+                mock.patch.object(mod, "_search_merged", side_effect=search):
+            prs = mod.fetch_merged_range("fullsend", start, end)
+        self.assertEqual(windows, [(start, end), (start, start), (end, end)])
+        self.assertEqual(sorted(pr["number"] for pr in prs), [1, 2])
+
+    def test_single_day_at_cap_raises(self):
+        day = date(2026, 11, 1)
+        with mock.patch.object(mod, "_search_merged", side_effect=mod.SearchCapReached("cap")):
+            with self.assertRaises(RuntimeError):
+                mod.fetch_merged_range("fullsend", day, day)
+
+
+def search_response(items, total_count=None, incomplete=False):
+    return {
+        "total_count": len(items) if total_count is None else total_count,
+        "incomplete_results": incomplete,
+        "items": items,
+    }
+
+
+def search_item(number):
+    return {
+        "number": number,
+        "title": f"fix: pr {number}",
+        "body": None,
+        "closed_at": "2026-11-10T12:00:00Z",
+        "html_url": f"https://github.com/fullsend-ai/fullsend/pull/{number}",
+        "state": "closed",
+    }
+
+
+class TestSearchMerged(unittest.TestCase):
+    def setUp(self):
+        patcher = mock.patch.object(mod.time, "sleep")
+        self.sleep = patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def search(self, *responses):
+        with mock.patch.object(mod, "gh_json", side_effect=list(responses)) as gh:
+            try:
+                return mod._search_merged("fullsend", date(2026, 11, 8), date(2026, 11, 10)), gh
+            except RuntimeError as err:
+                return err, gh
+
+    def test_uses_plain_search_endpoint_not_gh_search(self):
+        prs, gh = self.search(search_response([search_item(1)]))
+        args = gh.call_args.args[0]
+        self.assertEqual(args[:2], ["api", "/search/issues"])
+        self.assertNotIn("search", args[:1])
+        self.assertIn("GET", args)
+        self.assertIn(
+            "q=repo:fullsend-ai/fullsend is:pr is:merged merged:2026-11-08..2026-11-10", args
+        )
+        self.assertIn("per_page=100", args)
+
+    def test_maps_fields_for_callers(self):
+        prs, _ = self.search(search_response([search_item(7)]))
+        self.assertEqual(prs, [{
+            "title": "fix: pr 7",
+            "closedAt": "2026-11-10T12:00:00Z",
+            "number": 7,
+            "body": "",
+            "url": "https://github.com/fullsend-ai/fullsend/pull/7",
+        }])
+
+    def test_pages_until_total_count_collected(self):
+        first = [search_item(n) for n in range(100)]
+        second = [search_item(n) for n in range(100, 130)]
+        prs, gh = self.search(
+            search_response(first, total_count=130),
+            search_response(second, total_count=130),
+        )
+        self.assertEqual(len(prs), 130)
+        self.assertEqual(gh.call_count, 2)
+        self.assertIn("page=2", gh.call_args.args[0])
+
+    def test_total_count_at_cap_raises_search_cap_reached(self):
+        err, gh = self.search(search_response([search_item(1)], total_count=mod.SEARCH_CAP))
+        self.assertIsInstance(err, mod.SearchCapReached)
+        self.assertEqual(gh.call_count, 1)
+
+    def test_incomplete_results_retried_then_succeeds(self):
+        prs, gh = self.search(
+            search_response([], incomplete=True),
+            search_response([search_item(3)]),
+        )
+        self.assertEqual([pr["number"] for pr in prs], [3])
+        self.assertEqual(gh.call_count, 2)
+        self.assertEqual(self.sleep.call_count, 1)
+
+    def test_persistent_incomplete_results_raise(self):
+        err, gh = self.search(*[search_response([search_item(1)], incomplete=True)] * mod.SEARCH_ATTEMPTS)
+        self.assertIsInstance(err, RuntimeError)
+        self.assertNotIsInstance(err, mod.SearchCapReached)
+        self.assertEqual(gh.call_count, mod.SEARCH_ATTEMPTS)
 
 
 if __name__ == "__main__":
