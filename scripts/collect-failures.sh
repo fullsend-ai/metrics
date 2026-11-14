@@ -16,58 +16,44 @@ if grep -q "^${TARGET_DATE}," "$FAILURE_FILE" 2>/dev/null; then
   exit 0
 fi
 
-AGENT_REPO="fullsend-ai/.fullsend"
-
-# Agent workflow names (exclude Dispatch, Repo Maintenance, Prioritize Scheduler).
-AGENT_WORKFLOWS=(
-  "Code"
-  "Fix"
-  "Review"
-  "Triage"
-  "Prioritize"
-  "Retro"
-  "Scribe"
-  "Classify GitHub Issues"
-)
-
-# Fetch all completed workflow runs for the target date.
-runs=$(gh api "/repos/${AGENT_REPO}/actions/runs?per_page=100&created=${TARGET_DATE}" \
-  --paginate \
-  --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion, (.id | tostring), .html_url] | @tsv' 2>/dev/null || true)
+# Agents run in each repo's fullsend dispatch workflow (see lib.sh).
+# Collect everything before writing, so a failed lookup writes nothing.
+if ! runs=$(collect_agent_runs "$TARGET_DATE"); then
+  echo "::error::Could not collect agent runs for ${TARGET_DATE}; nothing was written."
+  exit 1
+fi
 
 if [[ -z "$runs" ]]; then
-  echo "No workflow runs found for ${TARGET_DATE}."
+  echo "::warning::No agent jobs ran in any ${ORG} repo's ${AGENT_DISPATCH_WORKFLOW} on ${TARGET_DATE}. Agents normally run every day: check whether the dispatch workflow or its job names changed."
   exit 0
 fi
 
-# Build an associative array of agent workflow names for fast lookup.
-declare -A is_agent
-for wf in "${AGENT_WORKFLOWS[@]}"; do
-  is_agent["$wf"]=1
-done
-
-# Count runs and failures per workflow.
+# Count runs and failures per role.
 declare -A total_runs
 declare -A failed_runs
+roles=("${AGENT_ROLES[@]}")
 
-while IFS=$'\t' read -r name conclusion run_id run_url; do
-  [[ -z "${is_agent[$name]+x}" ]] && continue
-  total_runs["$name"]=$(( ${total_runs["$name"]:-0} + 1 ))
-  if [[ "$conclusion" == "failure" ]]; then
-    failed_runs["$name"]=$(( ${failed_runs["$name"]:-0} + 1 ))
-    append_failure_detail "$TARGET_DATE" "$name" ".fullsend" "$run_id" "failure" "$run_url"
-  else
-    append_failure_detail "$TARGET_DATE" "$name" ".fullsend" "$run_id" "success" "$run_url"
+while IFS=$'\t' read -r role repo run_id status run_url; do
+  if [[ -z "${total_runs["$role"]+x}" ]]; then
+    total_runs["$role"]=0
+    failed_runs["$role"]=0
+    # Harness agents are not in AGENT_ROLES; report them after the roles.
+    [[ " ${AGENT_ROLES[*]} " == *" ${role} "* ]] || roles+=("$role")
   fi
+  total_runs["$role"]=$(( ${total_runs["$role"]} + 1 ))
+  if [[ "$status" == "failure" ]]; then
+    failed_runs["$role"]=$(( ${failed_runs["$role"]} + 1 ))
+  fi
+  append_failure_detail "$TARGET_DATE" "$role" "$repo" "$run_id" "$status" "$run_url"
 done <<< "$runs"
 
 # Write rows.
-for wf in "${AGENT_WORKFLOWS[@]}"; do
-  count=${total_runs["$wf"]:-0}
+for role in "${roles[@]}"; do
+  count=${total_runs["$role"]:-0}
   (( count == 0 )) && continue
-  fails=${failed_runs["$wf"]:-0}
+  fails=${failed_runs["$role"]}
   rate=$(awk "BEGIN { printf \"%.3f\", ${fails} / ${count} }")
-  append_failure_row "$TARGET_DATE" "$wf" "$count" "$fails" "$rate"
+  append_failure_row "$TARGET_DATE" "$role" "$count" "$fails" "$rate"
 done
 
 echo "Done. Failure metrics for ${TARGET_DATE} written."

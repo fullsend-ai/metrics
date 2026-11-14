@@ -3426,3 +3426,84 @@ date,repo,type,event,number,actor,title,url
 2026-11-12,agents,pr,opened_core,1980,waynesun09,"test: /ok-to-test fork-path validation (do not merge)",https://github.com/fullsend-ai/agents/pull/1980
 2026-11-12,org,issue,opened_external,60,ravelley,"Grant standard team access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/60
 2026-11-12,org,pr,opened_core,59,ralphbean,"chore(ci): require semgrep",https://github.com/fullsend-ai/org/pull/59
+2026-11-13,fullsend,issue,opened_external,9458,pixelsoccupied,"Auto-run fix on agent PRs that become conflicting after a merge to main",https://github.com/fullsend-ai/fullsend/issues/9458
+2026-11-13,fullsend,issue,opened_external,9457,shreyankg,"Retro on sgupta-prophile PR #10 timed out after seven subagents without a result",https://github.com/fullsend-ai/fullsend/issues/9457
+2026-11-13,fullsend,issue,opened_external,9456,Benkapner,"cli: single-agent lint reports the wrong agents[] index",https://github.com/fullsend-ai/fullsend/issues/9456
+2026-11-13,fullsend,issue,opened_external,9453,jasonawant,"ADR: Commit to Jira work-item tracker feature parity with native forge issues",https://github.com/fullsend-ai/fullsend/issues/9453
+2026-11-13,fullsend,issue,opened_external,9452,jasonawant,"ADR: Commit to GitLab feature parity and establish test parity gates",https://github.com/fullsend-ai/fullsend/issues/9452
+2026-11-13,fullsend,issue,opened_external,9451,jasonawant,"docs: Document platform capability and boundary matrix (GitHub, GitLab, Jira)",https://github.com/fullsend-ai/fullsend/issues/9451
+2026-11-13,fullsend,issue,opened_external,9426,ravelley,"make go-test fails on macOS/arm64 in repos and scaffold tests",https://github.com/fullsend-ai/fullsend/issues/9426
+2026-11-13,fullsend,issue,opened_external,9423,dhshah13,"gitlab: install: fullsend include replaces the stage list when the root has no stages:",https://github.com/fullsend-ai/fullsend/issues/9423
+2026-11-13,fullsend,issue,opened_external,9421,tpouyer,"Route step-time CommitFile calls on the leased repo through commitVerified",https://github.com/fullsend-ai/fullsend/issues/9421
+2026-11-13,fullsend,issue,opened_external,9416,jflowers,"ADR: unique behaviour-test repo names, mint workflow-host trust, and org-scoped WIF for test orgs",https://github.com/fullsend-ai/fullsend/issues/9416
+2026-11-13,fullsend,issue,opened_external,9415,jflowers,"test(behaviour): name the leasing scenario in slot repo descriptions",https://github.com/fullsend-ai/fullsend/issues/9415
+2026-11-13,fullsend,issue,opened_external,9414,jflowers,"test(behaviour): add filler repos to the DEV pool orgs to raise the e2e installation limit to 12,500",https://github.com/fullsend-ai/fullsend/issues/9414
+2026-11-13,fullsend,issue,opened_external,9412,fbricon,"Code agent: session ends one step before `git commit`, reports success, loses the work, and eval scores `trace_fitness = pass`",https://github.com/fullsend-ai/fullsend/issues/9412
+2026-11-13,fullsend,issue,opened_external,9411,gwenneg,"feat(jira): forward FULLSEND_JIRA_TOKEN and FULLSEND_JIRA_EMAIL to the sandbox jira-ro provider",https://github.com/fullsend-ai/fullsend/issues/9411
+2026-11-13,fullsend,issue,opened_external,9410,gwenneg,"fullsend.yaml scaffold (dispatch job) doesn't forward JIRA_TOKEN/JIRA_USER_EMAIL, breaking the jira-ro sandbox provider",https://github.com/fullsend-ai/fullsend/issues/9410
+2026-11-13,fullsend,issue,opened_external,9409,astefanutti,"OTLP trace export drops a batch on a closed keep-alive connection (EOF is not retried)",https://github.com/fullsend-ai/fullsend/issues/9409
+2026-11-13,fullsend,issue,opened_external,9404,ianw,"gitlab: install: workflow rules installed after existing ""when: never"" rule",https://github.com/fullsend-ai/fullsend/issues/9404
+2026-11-13,fullsend,issue,opened_external,9401,ianw,"gitlab: install on a large repo stalls walking repository/commits and repository/tree responses",https://github.com/fullsend-ai/fullsend/issues/9401
+2026-11-13,fullsend,issue,closed_via_pr_external,9411,gwenneg,"feat(jira): forward FULLSEND_JIRA_TOKEN and FULLSEND_JIRA_EMAIL to the sandbox jira-ro provider",https://github.com/fullsend-ai/fullsend/issues/9411
+2026-11-13,fullsend,issue,closed_other_external,9410,gwenneg,"fullsend.yaml scaffold (dispatch job) doesn't forward JIRA_TOKEN/JIRA_USER_EMAIL, breaking the jira-ro sandbox provider",https://github.com/fullsend-ai/fullsend/issues/9410
+2026-11-13,fullsend,issue,closed_via_pr_external,9404,ianw,"gitlab: install: workflow rules installed after existing ""when: never"" rule",https://github.com/fullsend-ai/fullsend/issues/9404
+2026-11-13,fullsend,issue,closed_via_pr_external,9401,ianw,"gitlab: install on a large repo stalls walking repository/commits and repository/tree responses",https://github.com/fullsend-ai/fullsend/issues/9401
+2026-11-13,fullsend,issue,closed_via_pr_external,9369,eshulman2,"Expose Jira issue type to harness CEL triggers",https://github.com/fullsend-ai/fullsend/issues/9369
+2026-11-13,fullsend,issue,closed_via_pr_external,9251,ianw,"gitlab: skip the redundant CLI reinstall when the runner image already matches fullsend_ref",https://github.com/fullsend-ai/fullsend/issues/9251
+2026-11-13,fullsend,issue,closed_other_external,9099,astefanutti,"Fleet sync renders the `tracker` config mapping before any release parses it; release-pinned consumers fail to load the managed config",https://github.com/fullsend-ai/fullsend/issues/9099
+2026-11-13,fullsend,pr,opened_core,9438,ralphbean,"feat(config): import pinned config layers",https://github.com/fullsend-ai/fullsend/pull/9438
+2026-11-13,fullsend,pr,opened_core,9428,ralphbean,"docs(adr): compose pinned configuration imports",https://github.com/fullsend-ai/fullsend/pull/9428
+2026-11-13,fullsend,pr,opened_core,9405,ggallen,"feat(#6864): behaviour tests on single-org ephemeral repos + lock pool (ADR 0163/0164)",https://github.com/fullsend-ai/fullsend/pull/9405
+2026-11-13,fullsend,pr,reviewed_external,9435,Benkapner,"docs(#9430): propose structured evidence for review findings",https://github.com/fullsend-ai/fullsend/pull/9435
+2026-11-13,fullsend,pr,reviewed_external,9435,Benkapner,"docs(#9430): propose structured evidence for review findings",https://github.com/fullsend-ai/fullsend/pull/9435
+2026-11-13,fullsend,pr,reviewed_external,9428,Benkapner,"docs(adr): compose pinned configuration imports",https://github.com/fullsend-ai/fullsend/pull/9428
+2026-11-13,fullsend,pr,reviewed_external,9428,Benkapner,"docs(adr): compose pinned configuration imports",https://github.com/fullsend-ai/fullsend/pull/9428
+2026-11-13,fullsend,pr,reviewed_external,9428,Benkapner,"docs(adr): compose pinned configuration imports",https://github.com/fullsend-ai/fullsend/pull/9428
+2026-11-13,fullsend,pr,reviewed_external,9428,Benkapner,"docs(adr): compose pinned configuration imports",https://github.com/fullsend-ai/fullsend/pull/9428
+2026-11-13,fullsend,pr,reviewed_external,9428,Benkapner,"docs(adr): compose pinned configuration imports",https://github.com/fullsend-ai/fullsend/pull/9428
+2026-11-13,fullsend,pr,reviewed_external,9338,ravelley,"feat(#9337): add --no-github-workflow-commands to fullsend run",https://github.com/fullsend-ai/fullsend/pull/9338
+2026-11-13,rfe-creator,issue,closed_via_pr_external,299,astefanutti,"needs_attention does not follow the reviewer's own stated concern (RHAIRFE-3899 title/body mismatch approved unflagged)",https://github.com/fullsend-ai/rfe-creator/issues/299
+2026-11-13,rfe-creator,pr,reviewed_external,301,astefanutti,"fix(#299): needs_attention follows the review's own stated concern",https://github.com/fullsend-ai/rfe-creator/pull/301
+2026-11-13,.fullsend,issue,opened_external,219,dhshah13,"Sync Scaffold loses the repos.yaml edits that repos install makes",https://github.com/fullsend-ai/.fullsend/issues/219
+2026-11-13,.fullsend,issue,closed_other_external,219,dhshah13,"Sync Scaffold loses the repos.yaml edits that repos install makes",https://github.com/fullsend-ai/.fullsend/issues/219
+2026-11-13,agent-eval-harness,issue,opened_external,317,ravelley,"Show per-case judge failures in evaluation logs",https://github.com/fullsend-ai/agent-eval-harness/issues/317
+2026-11-13,agent-eval-harness,issue,opened_external,315,ravelley,"Reduce agent instruction file to leave room under lint budget",https://github.com/fullsend-ai/agent-eval-harness/issues/315
+2026-11-13,agent-eval-harness,issue,opened_external,313,ravelley,"Fail the run when a selected case workspace is missing",https://github.com/fullsend-ai/agent-eval-harness/issues/313
+2026-11-13,agent-eval-harness,issue,closed_other_external,317,ravelley,"Show per-case judge failures in evaluation logs",https://github.com/fullsend-ai/agent-eval-harness/issues/317
+2026-11-13,agent-eval-harness,issue,closed_via_pr_external,315,ravelley,"Reduce agent instruction file to leave room under lint budget",https://github.com/fullsend-ai/agent-eval-harness/issues/315
+2026-11-13,agent-eval-harness,pr,reviewed_external,318,ravelley,"feat(#317): log per-case judge failures after scoring",https://github.com/fullsend-ai/agent-eval-harness/pull/318
+2026-11-13,agent-eval-harness,pr,reviewed_external,312,ravelley,"feat(eval-run): treat all-skipped conditional judges as N/A",https://github.com/fullsend-ai/agent-eval-harness/pull/312
+2026-11-13,agent-eval-harness,pr,reviewed_external,312,ravelley,"feat(eval-run): treat all-skipped conditional judges as N/A",https://github.com/fullsend-ai/agent-eval-harness/pull/312
+2026-11-13,strat-creator,issue,opened_external,121,jctanner,"push_strategy.py: first push of a manually-created STRAT drops the SME Input section (freshness guard aborts, whole batch review skipped) — AISDLC-655",https://github.com/fullsend-ai/strat-creator/issues/121
+2026-11-13,strat-creator,issue,closed_via_pr_external,121,jctanner,"push_strategy.py: first push of a manually-created STRAT drops the SME Input section (freshness guard aborts, whole batch review skipped) — AISDLC-655",https://github.com/fullsend-ai/strat-creator/issues/121
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,strat-creator,pr,reviewed_external,122,jctanner,"fix(#121): keep SME input on first push of a manual STRAT",https://github.com/fullsend-ai/strat-creator/pull/122
+2026-11-13,epic-creator,pr,reviewed_external,56,ravelley,"feat(repository-planning)!: assign repositories before publishing Epics",https://github.com/fullsend-ai/epic-creator/pull/56
+2026-11-13,metrics,pr,opened_core,24,ascerra,"metrics: backfill 2026-10-23 to 2026-11-11",https://github.com/fullsend-ai/metrics/pull/24
+2026-11-13,agents,issue,opened_external,2011,Benkapner,"eval: fail release case selection when yq cannot read annotations",https://github.com/fullsend-ai/agents/issues/2011
+2026-11-13,agents,issue,opened_external,1993,karelhala,"Fix agent: reread linked Jira issue when requested",https://github.com/fullsend-ai/agents/issues/1993
+2026-11-13,agents,pr,reviewed_external,2002,Benkapner,"feat(gitlab): implement forge_resolve_outdated_review_threads via discussions api",https://github.com/fullsend-ai/agents/pull/2002
+2026-11-13,agents,pr,reviewed_external,2002,Benkapner,"feat(gitlab): implement forge_resolve_outdated_review_threads via discussions api",https://github.com/fullsend-ai/agents/pull/2002
+2026-11-13,agents,pr,reviewed_external,2001,Benkapner,"fix(scripts): prevent sigpipe exit 141 in post-code commit subject extraction",https://github.com/fullsend-ai/agents/pull/2001
+2026-11-13,agents,pr,reviewed_external,2001,Benkapner,"fix(scripts): prevent sigpipe exit 141 in post-code commit subject extraction",https://github.com/fullsend-ai/agents/pull/2001
+2026-11-13,agents,pr,reviewed_external,1938,Benkapner,"fix(#1937): skip label-triggered code runs when a coder PR is open",https://github.com/fullsend-ai/agents/pull/1938
+2026-11-13,agents,pr,reviewed_external,1938,Benkapner,"fix(#1937): skip label-triggered code runs when a coder PR is open",https://github.com/fullsend-ai/agents/pull/1938
+2026-11-13,agents,pr,reviewed_external,1925,Benkapner,"fix(#1924): report attachment download failures instead of hiding them",https://github.com/fullsend-ai/agents/pull/1925
+2026-11-13,agents,pr,reviewed_external,1925,Benkapner,"fix(#1924): report attachment download failures instead of hiding them",https://github.com/fullsend-ai/agents/pull/1925
+2026-11-13,org,issue,opened_external,64,ederign,"Write request: ederign",https://github.com/fullsend-ai/org/issues/64
+2026-11-13,org,issue,closed_via_pr_external,64,ederign,"Write request: ederign",https://github.com/fullsend-ai/org/issues/64
+2026-11-13,org,issue,closed_other_external,60,ravelley,"Grant standard team access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/60
+2026-11-13,react-shopping-cart,issue,opened_external,86,ederign,"Test fullsend issue transition command.",https://github.com/fullsend-ai/react-shopping-cart/issues/86
+2026-11-13,react-shopping-cart,issue,closed_other_external,86,ederign,"Test fullsend issue transition command.",https://github.com/fullsend-ai/react-shopping-cart/issues/86

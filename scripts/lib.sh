@@ -108,6 +108,219 @@ append_failure_detail() {
   echo "$1,$2,$3,$4,$5,$6" >> "$FAILURE_DETAILS_FILE"
 }
 
+# Agents run inline in each repo's fullsend shim workflow, which calls the
+# reusable dispatch workflow. Each agent role is a job named
+# "<shim job> / <Role>" (e.g. "dispatch / Code"); harness agents run as
+# "<shim job> / Harness run (<agent>)". Jobs for roles that did not run are
+# reported with conclusion "skipped".
+AGENT_DISPATCH_WORKFLOW=".github/workflows/fullsend.yaml"
+AGENT_ROLES=(
+  "Code"
+  "Fix"
+  "Review"
+  "Triage"
+  "Prioritize"
+  "Retro"
+)
+# The runs API returns at most this many results per query.
+RUNS_RESULT_CAP=1000
+GH_RETRY_SLEEP="${GH_RETRY_SLEEP:-10}"
+
+# Run `gh api` with retries. Prints the output on success; after the last
+# failed attempt returns 1, so an API error is never read as an empty result.
+gh_api_retry() {
+  local attempt output err
+  err=$(mktemp)
+  for attempt in 1 2 3; do
+    if output=$(gh api "$@" 2>"$err"); then
+      rm -f "$err"
+      [[ -n "$output" ]] && printf '%s\n' "$output"
+      return 0
+    fi
+    echo "gh api $1: failed (attempt ${attempt}/3): $(cat "$err")" >&2
+    (( attempt < 3 )) && sleep $(( attempt * GH_RETRY_SLEEP ))
+  done
+  rm -f "$err"
+  return 1
+}
+
+# Print the agent role for a dispatch job name, or return 1 if the job is
+# not an agent job (Route, Harness dispatch, stop-fix, ...).
+agent_role_for_job() {
+  local short="${1##* / }" role
+  for role in "${AGENT_ROLES[@]}"; do
+    if [[ "$short" == "$role" ]]; then
+      echo "$role"
+      return 0
+    fi
+  done
+  if [[ "$short" =~ ^Harness\ run\ \(([a-z][a-z0-9_-]*)\)$ ]]; then
+    echo "${BASH_REMATCH[1]}"
+    return 0
+  fi
+  return 1
+}
+
+# Runs whose jobs are looked up in one GraphQL query.
+JOBS_BATCH_SIZE=100
+
+# A check run is a job of a workflow run, named like the job. checkType: ALL
+# also returns the earlier attempts of rerun jobs, so a failure that a rerun
+# later turned green is still counted. Only finished, non-skipped check runs
+# are kept.
+CHECK_RUNS_FINISHED='select(.status == "COMPLETED" and .conclusion != "SKIPPED")'
+
+# Print "INDEX<TAB>job name<TAB>CONCLUSION" for every finished check run of
+# the check suites with the given node ids; INDEX is the position of the
+# suite in the arguments. Fetches up to JOBS_BATCH_SIZE suites per query and
+# follows `checkRuns` pagination for a suite with more than 100 check runs.
+# Returns 1 if a call fails or a suite is not found.
+fetch_check_run_batch() {
+  local -a ids=("$@") args=()
+  local id response idx
+  for id in "${ids[@]}"; do
+    args+=(-f "ids[]=${id}")
+  done
+
+  response=$(gh_api_retry graphql "${args[@]}" -f query='
+    query($ids: [ID!]!) {
+      nodes(ids: $ids) {
+        ... on CheckSuite {
+          checkRuns(first: 100, filterBy: {checkType: ALL}) {
+            pageInfo { hasNextPage }
+            nodes { name status conclusion }
+          }
+        }
+      }
+    }' --jq '.data.nodes') || return 1
+
+  if ! jq -e --argjson n "${#ids[@]}" \
+      'length == $n and all(.[]; . != null and .checkRuns != null)' <<< "$response" > /dev/null; then
+    echo "fetch_check_run_batch: check suites missing from the response" >&2
+    return 1
+  fi
+
+  jq -r "to_entries[]
+    | select(.value.checkRuns.pageInfo.hasNextPage | not)
+    | .key as \$i | .value.checkRuns.nodes[]
+    | ${CHECK_RUNS_FINISHED}
+    | [\$i, .name, .conclusion] | @tsv" <<< "$response"
+
+  for idx in $(jq -r 'to_entries[] | select(.value.checkRuns.pageInfo.hasNextPage) | .key' <<< "$response"); do
+    gh_api_retry graphql --paginate -f id="${ids[idx]}" -f query='
+      query($id: ID!, $endCursor: String) {
+        node(id: $id) {
+          ... on CheckSuite {
+            checkRuns(first: 100, after: $endCursor, filterBy: {checkType: ALL}) {
+              pageInfo { hasNextPage endCursor }
+              nodes { name status conclusion }
+            }
+          }
+        }
+      }' --jq ".data.node.checkRuns.nodes[] | ${CHECK_RUNS_FINISHED} | [${idx}, .name, .conclusion] | @tsv" \
+      || return 1
+  done
+}
+
+# Print the TSV line for one agent job (see collect_agent_runs), or nothing
+# if the job is not an agent job or neither succeeded nor failed.
+# Usage: emit_agent_job REPO RUN_ID RUN_URL JOB_NAME CONCLUSION
+emit_agent_job() {
+  local repo="$1" run_id="$2" run_url="$3" job_name="$4" conclusion="$5"
+  local role status
+  role=$(agent_role_for_job "$job_name") || return 0
+  # Cancelled jobs (usually superseded by a newer run of the same role)
+  # neither succeeded nor failed, so they are not counted.
+  case "${conclusion,,}" in
+    success) status="success" ;;
+    failure|timed_out|startup_failure) status="failure" ;;
+    *) return 0 ;;
+  esac
+  printf '%s\t%s\t%s\t%s\t%s\n' "$role" "$repo" "$run_id" "$status" "$run_url"
+}
+
+# Print one TSV line per agent job that finished in a repo's fullsend
+# dispatch workflow for runs created on DATE (UTC):
+#   role, repo, run_id, status (success|failure), run_url
+# Jobs come from the check suite of each run (one GraphQL query per
+# JOBS_BATCH_SIZE runs) instead of one REST call per run.
+# Returns 1 if any API call fails, if no repo has the dispatch workflow, or
+# if a day's runs cannot all be listed, so the caller never records a
+# partial or failed lookup as data.
+collect_agent_runs() {
+  local date="$1"
+  local repos repo wf_id total fetched window runs hour offset idx batch_jobs
+  local run_id conclusion run_url suite_id job_name job_conclusion
+  local found_workflow=0
+  local -a windows suite_ids suite_run_ids suite_run_urls
+
+  repos=$(list_repos) || { echo "collect_agent_runs: could not list ${ORG} repos" >&2; return 1; }
+
+  while IFS= read -r repo; do
+    [[ -z "$repo" ]] && continue
+    wf_id=$(gh_api_retry "/repos/${ORG}/${repo}/actions/workflows" --paginate \
+      --jq ".workflows[] | select(.path == \"${AGENT_DISPATCH_WORKFLOW}\") | .id") || return 1
+    [[ -z "$wf_id" ]] && continue
+    found_workflow=1
+
+    total=$(gh_api_retry "/repos/${ORG}/${repo}/actions/workflows/${wf_id}/runs?per_page=1&status=completed&created=${date}" \
+      --jq '.total_count') || return 1
+    (( total == 0 )) && continue
+
+    # Split busy days into hourly windows to stay under the result cap.
+    windows=("$date")
+    if (( total > RUNS_RESULT_CAP )); then
+      windows=()
+      for hour in $(seq -w 0 23); do
+        windows+=("${date}T${hour}:00:00Z..${date}T${hour}:59:59Z")
+      done
+    fi
+
+    fetched=0
+    suite_ids=()
+    suite_run_ids=()
+    suite_run_urls=()
+    for window in "${windows[@]}"; do
+      runs=$(gh_api_retry "/repos/${ORG}/${repo}/actions/workflows/${wf_id}/runs?per_page=100&status=completed&created=${window}" \
+        --paginate --jq '.workflow_runs[] | [(.id | tostring), .conclusion, .html_url, .check_suite_node_id] | @tsv') || return 1
+
+      while IFS=$'\t' read -r run_id conclusion run_url suite_id; do
+        [[ -z "$run_id" ]] && continue
+        fetched=$(( fetched + 1 ))
+        # Skipped runs never started a job; action_required runs await approval.
+        case "$conclusion" in skipped|action_required) continue ;; esac
+        if [[ -z "$suite_id" || "$suite_id" == "null" ]]; then
+          echo "collect_agent_runs: ${repo} run ${run_id} has no check_suite_node_id" >&2
+          return 1
+        fi
+        suite_ids+=("$suite_id")
+        suite_run_ids+=("$run_id")
+        suite_run_urls+=("$run_url")
+      done <<< "$runs"
+    done
+
+    if (( fetched < total )); then
+      echo "collect_agent_runs: listed ${fetched} of ${total} ${repo} runs for ${date}; an hourly window may exceed the ${RUNS_RESULT_CAP}-result cap" >&2
+      return 1
+    fi
+
+    # Look up the jobs of up to JOBS_BATCH_SIZE runs per GraphQL query.
+    for (( offset = 0; offset < ${#suite_ids[@]}; offset += JOBS_BATCH_SIZE )); do
+      batch_jobs=$(fetch_check_run_batch "${suite_ids[@]:offset:JOBS_BATCH_SIZE}") || return 1
+      while IFS=$'\t' read -r idx job_name job_conclusion; do
+        [[ -z "$idx" ]] && continue
+        emit_agent_job "$repo" "${suite_run_ids[offset + idx]}" "${suite_run_urls[offset + idx]}" \
+          "$job_name" "$job_conclusion"
+      done <<< "$batch_jobs"
+    done
+  done <<< "$repos"
+
+  if (( found_workflow == 0 )); then
+    echo "collect_agent_runs: no ${ORG} repo has ${AGENT_DISPATCH_WORKFLOW}; agent runs cannot be found" >&2
+    return 1
+  fi
+}
+
 METRIC_DETAILS_FILE="docs/metric-details.csv"
 METRIC_DETAILS_HEADER="date,repo,type,event,number,title,url"
 
