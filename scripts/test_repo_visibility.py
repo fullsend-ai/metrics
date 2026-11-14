@@ -70,7 +70,8 @@ class TestShellVisibility(unittest.TestCase):
         fixtures.mkdir()
         (fixtures / "repos.json").write_text(json.dumps(ORG_REPOS))
         (fixtures / "graphql.json").write_text(json.dumps(BOARD))
-        (fixtures / "other.json").write_text(json.dumps({"items": []}))
+        (fixtures / "other.json").write_text(json.dumps(
+            {"total_count": 0, "incomplete_results": False, "items": []}))
         bin_dir = self.tmp / "bin"
         bin_dir.mkdir()
         gh = bin_dir / "gh"
