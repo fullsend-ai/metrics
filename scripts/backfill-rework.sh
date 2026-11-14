@@ -95,6 +95,10 @@ done
 
 # Fetch project board activity via GraphQL. Org boards can hold items from
 # private or internal repos, so keep only items from public repos.
+# Opt-in: the Actions GITHUB_TOKEN cannot read org projects, so CI skips
+# this query. With REWORK_INCLUDE_PROJECTS=1 a failed call fails the step.
+project_items=""
+if [[ "${REWORK_INCLUDE_PROJECTS:-}" == "1" ]]; then
 echo "  Fetching project board activity..."
 project_items=$(gh_api_retry graphql -f org="$ORG" -f query='
   query($org: String!) {
@@ -164,6 +168,9 @@ project_items=$(gh_api_retry graphql -f org="$ORG" -f query='
   [$c.repository.name, $c.number, .actor.login, .createdAt, $c.url] |
   @tsv
 ')
+else
+  echo "  Skipping project board activity (set REWORK_INCLUDE_PROJECTS=1 to include it)."
+fi
 
 if [[ -n "$project_items" ]]; then
   while IFS=$'\t' read -r repo number bot ts item_url; do

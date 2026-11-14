@@ -24,6 +24,10 @@ RATE_LIMITED = "rate-limited"
 ZERO_COUNT = [".total_count", 0, "0"]
 # collect_agent_runs finds the dispatch workflow, then counts its runs.
 DISPATCH_WORKFLOW = ["/actions/workflows", 0, "1"]
+# The project-board query is opt-in; this enables it for a run.
+PROJECTS_ON = {"REWORK_INCLUDE_PROJECTS": "1"}
+# One bot event from the project-board GraphQL query (repo, number, bot, ts, url).
+PROJECT_TOUCH = ["graphql", 0, f"demo\t5\tboard-bot[bot]\t{DATE}T10:00:00Z\thttps://example.test/5"]
 
 STUB = textwrap.dedent(
     """\
@@ -80,10 +84,13 @@ class ScriptCase(unittest.TestCase):
     def tearDown(self):
         self._tmp.cleanup()
 
-    def run_script(self, name: str, *args: str, rules: list | None = None) -> subprocess.CompletedProcess:
+    def run_script(self, name: str, *args: str, rules: list | None = None,
+                   extra_env: dict | None = None) -> subprocess.CompletedProcess:
         env = dict(os.environ, PATH=self.path, GH_STUB_RULES=json.dumps(rules or []), GH_RETRY_SLEEP="0",
                    GH_STUB_STATE=str(self.stub_state))
         env.pop("COMMUNITY_REVIEW_COUNTS_FILE", None)
+        env.pop("REWORK_INCLUDE_PROJECTS", None)
+        env.update(extra_env or {})
         return subprocess.run(
             ["bash", str(SCRIPTS / name), *args],
             cwd=self.work, env=env, capture_output=True, text=True, timeout=120,
@@ -204,9 +211,28 @@ class TestRework(ScriptCase):
         result = self.run_script("collect-rework.sh", DATE, rules=[self.COUNT, self.ITEM, fail("/timeline")])
         self.assert_failed_without_rows(result, "rework.csv", "rework-details.csv")
 
-    def test_collect_project_board_failure_fails(self):
-        result = self.run_script("collect-rework.sh", DATE, rules=[fail("graphql")])
+    def test_collect_project_board_failure_fails_when_enabled(self):
+        result = self.run_script("collect-rework.sh", DATE, rules=[fail("graphql")],
+                                 extra_env=PROJECTS_ON)
         self.assert_failed_without_rows(result, "rework.csv", "rework-details.csv")
+
+    def test_collect_skips_project_board_by_default(self):
+        # The board query would fail, but it must not even run.
+        for extra_env in (None, {"REWORK_INCLUDE_PROJECTS": "0"}):
+            with self.subTest(extra_env=extra_env):
+                result = self.run_script("collect-rework.sh", DATE, rules=[fail("graphql"), PROJECT_TOUCH],
+                                         extra_env=extra_env)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertIn("Skipping project board activity", result.stdout)
+                self.assertNotIn("Fetching project board activity", result.stdout)
+                self.assertEqual(self.data_lines("rework.csv"), [])
+
+    def test_collect_records_project_board_activity_when_enabled(self):
+        result = self.run_script("collect-rework.sh", DATE, rules=[PROJECT_TOUCH], extra_env=PROJECTS_ON)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Fetching project board activity", result.stdout)
+        self.assertNotIn("Skipping project board activity", result.stdout)
+        self.assertIn(f"{DATE},board-bot[bot],1,0,0.000", self.data_lines("rework.csv"))
 
     def test_collect_empty_result_succeeds(self):
         result = self.run_script("collect-rework.sh", DATE)
@@ -215,6 +241,27 @@ class TestRework(ScriptCase):
     def test_backfill_search_failure_fails(self):
         result = self.run_script("backfill-rework.sh", DATE, DATE, rules=[fail("/search/issues")])
         self.assert_failed_without_rows(result, "rework.csv", "rework-details.csv")
+
+    def test_backfill_project_board_failure_fails_when_enabled(self):
+        result = self.run_script("backfill-rework.sh", DATE, DATE, rules=[fail("graphql")],
+                                 extra_env=PROJECTS_ON)
+        self.assert_failed_without_rows(result, "rework.csv", "rework-details.csv")
+
+    def test_backfill_skips_project_board_by_default(self):
+        for extra_env in (None, {"REWORK_INCLUDE_PROJECTS": "0"}):
+            with self.subTest(extra_env=extra_env):
+                result = self.run_script("backfill-rework.sh", DATE, DATE, rules=[fail("graphql"), PROJECT_TOUCH],
+                                         extra_env=extra_env)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertIn("Skipping project board activity", result.stdout)
+                self.assertNotIn("Fetching project board activity", result.stdout)
+                self.assertEqual(self.data_lines("rework.csv"), [])
+
+    def test_backfill_records_project_board_activity_when_enabled(self):
+        result = self.run_script("backfill-rework.sh", DATE, DATE, rules=[PROJECT_TOUCH], extra_env=PROJECTS_ON)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Fetching project board activity", result.stdout)
+        self.assertIn(f"{DATE},board-bot[bot],1,0,0.000", self.data_lines("rework.csv"))
 
 
 class TestCommunity(ScriptCase):
