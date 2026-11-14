@@ -61,15 +61,26 @@
       .call(d3.axisLeft(scale).ticks(5).tickSize(-innerW).tickFormat(""));
   }
 
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
   function showTooltip(event, html) {
-    tooltip.html(html)
-      .style("left", (event.pageX + 12) + "px")
-      .style("top", (event.pageY - 12) + "px")
-      .style("opacity", 1);
+    const clientWidth = document.documentElement.clientWidth;
+    // Measure at the natural width: in place, its width shrinks to the space left before the edge.
+    tooltip.html(html).style("left", "0px").style("max-width", (clientWidth - 8) + "px")
+      .style("opacity", 1).attr("aria-hidden", "false");
+    // Flip to the cursor's left when the tooltip would run off the page.
+    // Keep it inside the viewport on narrow screens.
+    const width = tooltip.node().offsetWidth;
+    const right = window.scrollX + clientWidth;
+    const left = event.pageX + 12 + width > right ? event.pageX - 12 - width : event.pageX + 12;
+    tooltip
+      .style("left", Math.max(window.scrollX + 4, Math.min(left, right - width - 4)) + "px")
+      .style("top", (event.pageY - 12) + "px");
   }
 
   function hideTooltip() {
-    tooltip.style("opacity", 0);
+    // Park it off-page: a hidden tooltip left in place can widen the page.
+    tooltip.style("opacity", 0).style("left", "-9999px").attr("aria-hidden", "true");
   }
 
   function doraLine(g, y, value, label, color, innerW) {
@@ -108,34 +119,64 @@
   function toggleFocus(chartId, seriesName) {
     focusedSeries[chartId] = focusedSeries[chartId] === seriesName ? null : seriesName;
     render();
+    // render() replaced the legend buttons; keep keyboard focus on the one pressed.
+    const buttons = document.querySelectorAll(`.chart-legend[data-chart="${chartId}"] button`);
+    const pressed = [...buttons].find(b => b.dataset.series === seriesName);
+    if (pressed) pressed.focus();
   }
 
   function makeLegend(g, chartId, items) {
-    const legend = g.append("g").attr("transform", "translate(0, -8)");
-    items.forEach((item, i) => {
-      const offset = i * (item.spacing || 120);
-      const group = legend.append("g")
-        .attr("transform", `translate(${offset}, 0)`)
-        .style("cursor", "pointer")
+    const container = d3.select(g.node().ownerSVGElement.parentNode);
+    container.select(".chart-legend").remove();
+    // The focused series can drop out when the range or repo changes: clear it and redraw.
+    if (focusedSeries[chartId] && !items.some(item => item.name === focusedSeries[chartId])) {
+      focusedSeries[chartId] = null;
+      queueMicrotask(render);
+    }
+    const legend = container.append("div").attr("class", "chart-legend").attr("data-chart", chartId);
+    items.forEach(item => {
+      const button = legend.append("button")
+        .attr("type", "button")
+        .attr("data-series", item.name)
+        .attr("class", "chart-legend-item")
+        .classed("dimmed", !isFocused(chartId, item.name))
+        .attr("aria-pressed", focusedSeries[chartId] === item.name)
         .on("click", () => toggleFocus(chartId, item.name));
-      const dimmed = !isFocused(chartId, item.name);
-      if (item.dash) {
-        group.append("line").attr("x1", 0).attr("x2", 16).attr("y1", 0).attr("y2", 0)
-          .attr("stroke", item.color).attr("stroke-width", item.width || 2)
-          .attr("stroke-dasharray", item.dash).attr("opacity", dimmed ? 0.3 : 1);
-      } else if (item.dot) {
-        group.append("circle").attr("cx", 8).attr("cy", 0).attr("r", 4)
-          .attr("fill", item.color).attr("opacity", dimmed ? 0.3 : 1);
-      } else {
-        group.append("line").attr("x1", 0).attr("x2", 16).attr("y1", 0).attr("y2", 0)
-          .attr("stroke", item.color).attr("stroke-width", item.width || 2)
-          .attr("opacity", dimmed ? 0.3 : 1);
-      }
-      group.append("text").attr("x", 20).attr("y", 4)
-        .attr("font-size", "0.6875rem")
-        .attr("fill", dimmed ? "var(--border)" : "var(--fg-light)")
-        .text(item.label);
+      const swatch = button.append("span").attr("class", "swatch");
+      if (item.dash) swatch.classed("dash", true).style("border-color", item.color);
+      else swatch.classed("dot", !!item.dot).style("background", item.color);
+      button.append("span").text(item.label);
     });
+  }
+
+  const num = v => Number.isInteger(v) ? v : v.toFixed(1);
+
+  // Hover anywhere on a chart: a guide line snaps to the nearest day and the
+  // tooltip lists each shown series on that day. With drill, a click opens
+  // that day in details.html.
+  function addCrosshair(g, dims, x, chartId, days, series, drill) {
+    const nearest = event => {
+      const at = x.invert(d3.pointer(event)[0]);
+      return d3.least(days, day => Math.abs(new Date(day) - at));
+    };
+    const guide = g.append("line").attr("class", "chart-focus")
+      .attr("y1", 0).attr("y2", dims.innerH).style("display", "none");
+    g.append("rect")
+      .attr("width", dims.innerW).attr("height", dims.innerH)
+      .attr("fill", "none").attr("pointer-events", "all")
+      .style("cursor", drill ? "pointer" : null)
+      .on("mousemove", event => {
+        const day = nearest(event);
+        const lines = series
+          .filter(s => isFocused(chartId, s.name))
+          .map(s => [s.color, s.text(day)])
+          .filter(([, text]) => text != null)
+          .map(([color, text]) => `<span class="tooltip-swatch" style="background:${color}"></span>${esc(text)}`);
+        guide.attr("x1", x(new Date(day))).attr("x2", x(new Date(day))).style("display", null);
+        showTooltip(event, `<strong>${esc(day)}</strong><br>${lines.join("<br>")}`);
+      })
+      .on("mouseleave", () => { guide.style("display", "none"); hideTooltip(); })
+      .on("click", drill ? event => { window.location.href = "details.html?date=" + nearest(event); } : null);
   }
 
   // --- Load CSV ---
@@ -620,26 +661,15 @@
       .attr("stroke-width", 2)
       .attr("opacity", seriesOpacity("frequency", "releases"));
 
-    g.selectAll(".merge-dot")
-      .data(daily)
-      .join("circle")
-      .attr("cx", d => x(new Date(d.date)))
-      .attr("cy", d => y(d.prs_merged))
-      .attr("r", 3)
-      .attr("fill", "var(--chart-1)")
-      .attr("opacity", 0)
-      .on("mouseover", function (event, d) {
-        d3.select(this).attr("opacity", 1).attr("r", 5);
-        showTooltip(event, `<strong>${d.date}</strong><br>Merges: ${d.prs_merged}<br>Releases: ${d.releases}`);
-      })
-      .on("mouseout", function () {
-        d3.select(this).attr("opacity", 0).attr("r", 3);
-        hideTooltip();
-      });
+    const byDay = new Map(daily.map(d => [d.date, d]));
+    addCrosshair(g, dims, x, "frequency", [...byDay.keys()], [
+      { name: "merges", color: "var(--chart-1)", text: day => `Merges: ${num(byDay.get(day).prs_merged)}` },
+      { name: "releases", color: "var(--chart-2)", text: day => `Releases: ${byDay.get(day).releases}` },
+    ]);
 
     makeLegend(g, "frequency", [
       { name: "merges", label: "Merges/day", color: "var(--chart-1)" },
-      { name: "releases", label: "Release", color: "var(--chart-2)", dot: true, spacing: 100 },
+      { name: "releases", label: "Release", color: "var(--chart-2)", dot: true },
     ]);
   }
 
@@ -683,22 +713,10 @@
         .y(d => y(d.pr_lead_time_median_hours))
         .curve(d3.curveMonotoneX));
 
-    g.selectAll(".lt-dot")
-      .data(withData)
-      .join("circle")
-      .attr("cx", d => x(new Date(d.date)))
-      .attr("cy", d => y(d.pr_lead_time_median_hours))
-      .attr("r", 3)
-      .attr("fill", "var(--chart-3)")
-      .attr("opacity", 0)
-      .on("mouseover", function (event, d) {
-        d3.select(this).attr("opacity", 1).attr("r", 5);
-        showTooltip(event, `<strong>${d.date}</strong><br>Median lead time: ${d.pr_lead_time_median_hours.toFixed(1)}h`);
-      })
-      .on("mouseout", function () {
-        d3.select(this).attr("opacity", 0).attr("r", 3);
-        hideTooltip();
-      });
+    const byDay = new Map(withData.map(d => [d.date, d]));
+    addCrosshair(g, dims, x, "leadtime", [...byDay.keys()], [
+      { name: "leadtime", color: "var(--chart-3)", text: day => `Median lead time: ${byDay.get(day).pr_lead_time_median_hours.toFixed(1)}h` },
+    ]);
 
     makeLegend(g, "leadtime", [
       { name: "leadtime", label: "Lead time", color: "var(--chart-3)" },
@@ -736,30 +754,13 @@
           .curve(d3.curveMonotoneX));
     });
 
-    keys.forEach((key, i) => {
-      g.selectAll(`.pr-dot-${i}`)
-        .data(daily)
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d[key]))
-        .attr("r", 3)
-        .attr("fill", colors[i])
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", 1).attr("r", 5);
-          showTooltip(event, `<strong>${d.date}</strong><br>Opened: ${d.prs_opened}<br>Merged: ${d.prs_merged}<br>Closed: ${d.prs_closed}`);
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        })
-        .on("click", function (event, d) {
-          window.location.href = "details.html?date=" + d.date;
-        });
-    });
+    const byDay = new Map(daily.map(d => [d.date, d]));
+    addCrosshair(g, dims, x, "pr-volume", [...byDay.keys()], keys.map((key, i) => ({
+      name: labels[i], color: colors[i], text: day => `${labels[i]}: ${num(byDay.get(day)[key])}`,
+    })), true);
 
     makeLegend(g, "pr-volume", labels.map((label, i) => ({
-      name: label, label, color: colors[i], spacing: 80,
+      name: label, label, color: colors[i],
     })));
   }
 
@@ -805,30 +806,13 @@
           .curve(d3.curveMonotoneX));
     });
 
-    keys.forEach((key, i) => {
-      g.selectAll(`.iss-dot-${i}`)
-        .data(daily)
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d[key]))
-        .attr("r", 3)
-        .attr("fill", colors[i])
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", 1).attr("r", 5);
-          showTooltip(event, `<strong>${d.date}</strong><br>Opened: ${d.issues_opened}<br>Closed: ${d.issues_closed}`);
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        })
-        .on("click", function (event, d) {
-          window.location.href = "details.html?date=" + d.date;
-        });
-    });
+    const byDay = new Map(daily.map(d => [d.date, d]));
+    addCrosshair(g, dims, x, "issue-volume", [...byDay.keys()], keys.map((key, i) => ({
+      name: labels[i], color: colors[i], text: day => `${labels[i]}: ${num(byDay.get(day)[key])}`,
+    })), true);
 
     makeLegend(g, "issue-volume", labels.map((label, i) => ({
-      name: label, label, color: colors[i], spacing: 80,
+      name: label, label, color: colors[i],
     })));
   }
 
@@ -869,22 +853,10 @@
         .y(d => y(d.prs_open))
         .curve(d3.curveMonotoneX));
 
-    g.selectAll(".wip-dot")
-      .data(withData)
-      .join("circle")
-      .attr("cx", d => x(new Date(d.date)))
-      .attr("cy", d => y(d.prs_open))
-      .attr("r", 3)
-      .attr("fill", "var(--chart-4)")
-      .attr("opacity", 0)
-      .on("mouseover", function (event, d) {
-        d3.select(this).attr("opacity", 1).attr("r", 5);
-        showTooltip(event, `<strong>${d.date}</strong><br>Open PRs: ${Math.round(d.prs_open)}`);
-      })
-      .on("mouseout", function () {
-        d3.select(this).attr("opacity", 0).attr("r", 3);
-        hideTooltip();
-      });
+    const byDay = new Map(withData.map(d => [d.date, d]));
+    addCrosshair(g, dims, x, "pr-wip", [...byDay.keys()], [
+      { name: "open", color: "var(--chart-4)", text: day => `Open PRs: ${Math.round(byDay.get(day).prs_open)}` },
+    ]);
 
     makeLegend(g, "pr-wip", [
       { name: "open", label: "Open PRs", color: "var(--chart-4)" },
@@ -926,27 +898,15 @@
           .x(d => x(new Date(d.date)))
           .y(d => y(d.runs))
           .curve(d3.curveMonotoneX));
-
-      g.selectAll(`.rv-dot-${wf.replace(/[^a-zA-Z0-9]/g, "_")}`)
-        .data(wfData)
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d.runs))
-        .attr("r", 3)
-        .attr("fill", color)
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", seriesOpacity("run-volume", wf)).attr("r", 5);
-          showTooltip(event,
-            `<strong>${d.date}</strong><br>` +
-            `${d.workflow}: ${d.runs} runs, ${d.failures} failed`
-          );
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        });
     });
+
+    const byKey = new Map(data.map(d => [`${d.date}|${d.workflow}`, d]));
+    addCrosshair(g, dims, x, "run-volume", [...new Set(data.map(d => d.date))], workflows.map(wf => ({
+      name: wf, color: workflowColors(wf), text: day => {
+        const d = byKey.get(`${day}|${wf}`);
+        return d ? `${wf}: ${d.runs} runs, ${d.failures} failed` : null;
+      },
+    })));
 
     makeLegend(g, "run-volume", workflows.map(wf => ({
       name: wf, label: wf, color: workflowColors(wf),
@@ -990,31 +950,16 @@
           .x(d => x(new Date(d.date)))
           .y(d => y(d.failure_rate))
           .curve(d3.curveMonotoneX));
-
-      g.selectAll(`.fr-dot-${wf.replace(/[^a-zA-Z0-9]/g, "_")}`)
-        .data(wfData.filter(d => !isNaN(d.failure_rate)))
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d.failure_rate))
-        .attr("r", 3)
-        .attr("fill", color)
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", seriesOpacity("failure-rate", wf)).attr("r", 5);
-          showTooltip(event,
-            `<strong>${d.date}</strong><br>` +
-            `${d.workflow}: ${(d.failure_rate * 100).toFixed(1)}% failure<br>` +
-            `${d.failures}/${d.runs} runs failed`
-          );
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        })
-        .on("click", function (event, d) {
-          window.location.href = "details.html?date=" + d.date;
-        });
     });
+
+    const byKey = new Map(data.map(d => [`${d.date}|${d.workflow}`, d]));
+    addCrosshair(g, dims, x, "failure-rate", [...new Set(data.map(d => d.date))], workflows.map(wf => ({
+      name: wf, color: workflowColors(wf), text: day => {
+        const d = byKey.get(`${day}|${wf}`);
+        return d && !isNaN(d.failure_rate)
+          ? `${wf}: ${(d.failure_rate * 100).toFixed(1)}% (${d.failures}/${d.runs} failed)` : null;
+      },
+    })), true);
 
     makeLegend(g, "failure-rate", workflows.map(wf => ({
       name: wf, label: wf, color: workflowColors(wf),
@@ -1072,7 +1017,7 @@
   // --- Rework Rate Chart ---
   function renderReworkRateChart(data) {
     const container = d3.select("#chart-rework-rate");
-    if (data.length === 0) { container.select("svg").remove(); container.prepend("p").text("No data"); return; }
+    if (data.length === 0) { container.html("<p>No data</p>"); return; }
     container.select("p").remove();
     const dims = chartDimensions(container);
     const g = createSvg(container, dims);
@@ -1111,33 +1056,19 @@
           .x(d => x(new Date(d.date)))
           .y(d => y(d.rework_rate))
           .curve(d3.curveMonotoneX));
-
-      g.selectAll(`.rr-dot-${bot.replace(/[^a-zA-Z0-9]/g, "_")}`)
-        .data(botData.filter(d => !isNaN(d.rework_rate)))
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d.rework_rate))
-        .attr("r", 3)
-        .attr("fill", color)
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", seriesOpacity("rework-rate", legendName)).attr("r", 5);
-          showTooltip(event,
-            `<strong>${d.date}</strong><br>` +
-            `Bot: ${d.bot}<br>` +
-            `Touched: ${d.items_touched}<br>` +
-            `Reworked: ${d.items_reworked}<br>` +
-            `Rate: ${(d.rework_rate * 100).toFixed(1)}%`
-          );
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        })
-        .on("click", function (event, d) {
-          window.location.href = "details.html?date=" + d.date;
-        });
     });
+
+    const byKey = new Map(data.map(d => [`${d.date}|${d.bot}`, d]));
+    addCrosshair(g, dims, x, "rework-rate", [...new Set(data.map(d => d.date))], bots.map(bot => {
+      const name = bot === "__aggregate__" ? "Aggregate" : bot;
+      return {
+        name, color: bot === "__aggregate__" ? "var(--fg)" : botColors(bot), text: day => {
+          const d = byKey.get(`${day}|${bot}`);
+          return d && !isNaN(d.rework_rate)
+            ? `${name}: ${(d.rework_rate * 100).toFixed(1)}% (${d.items_reworked}/${d.items_touched})` : null;
+        },
+      };
+    }), true);
 
     const displayBots = bots.filter(b => b !== "__aggregate__");
     makeLegend(g, "rework-rate", [
@@ -1151,7 +1082,7 @@
   // --- Bot Activity Chart ---
   function renderBotActivityChart(data) {
     const container = d3.select("#chart-bot-activity");
-    if (data.length === 0) { container.select("svg").remove(); container.prepend("p").text("No data"); return; }
+    if (data.length === 0) { container.html("<p>No data</p>"); return; }
     container.select("p").remove();
     const dims = chartDimensions(container);
     const g = createSvg(container, dims);
@@ -1186,32 +1117,18 @@
           .x(d => x(new Date(d.date)))
           .y(d => y(d.items_touched))
           .curve(d3.curveMonotoneX));
-
-      g.selectAll(`.ba-dot-${bot.replace(/[^a-zA-Z0-9]/g, "_")}`)
-        .data(botData)
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d.items_touched))
-        .attr("r", 3)
-        .attr("fill", color)
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", seriesOpacity("bot-activity", legendName)).attr("r", 5);
-          showTooltip(event,
-            `<strong>${d.date}</strong><br>` +
-            `Bot: ${d.bot}<br>` +
-            `Items touched: ${d.items_touched}<br>` +
-            `Reworked: ${d.items_reworked}`
-          );
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        })
-        .on("click", function (event, d) {
-          window.location.href = "details.html?date=" + d.date;
-        });
     });
+
+    const byKey = new Map(data.map(d => [`${d.date}|${d.bot}`, d]));
+    addCrosshair(g, dims, x, "bot-activity", [...new Set(data.map(d => d.date))], bots.map(bot => {
+      const name = bot === "__aggregate__" ? "Aggregate" : bot;
+      return {
+        name, color: bot === "__aggregate__" ? "var(--fg)" : botColors(bot), text: day => {
+          const d = byKey.get(`${day}|${bot}`);
+          return d ? `${name}: ${d.items_touched} touched, ${d.items_reworked} reworked` : null;
+        },
+      };
+    }), true);
 
     const displayBots = bots.filter(b => b !== "__aggregate__");
     makeLegend(g, "bot-activity", [
@@ -1256,35 +1173,13 @@
           .curve(d3.curveMonotoneX));
     });
 
-    keys.forEach((key, i) => {
-      g.selectAll(`.ci-dot-${i}`)
-        .data(daily)
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d[key]))
-        .attr("r", 3)
-        .attr("fill", colors[i])
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", 1).attr("r", 5);
-          showTooltip(event,
-            `<strong>${d.date}</strong><br>` +
-            `Opened: ${d.issues_opened_external}<br>` +
-            `Closed via PR: ${d.issues_closed_via_pr_external}<br>` +
-            `Closed other: ${d.issues_closed_other_external}`
-          );
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        })
-        .on("click", function (event, d) {
-          window.location.href = "details.html?date=" + d.date;
-        });
-    });
+    const byDay = new Map(daily.map(d => [d.date, d]));
+    addCrosshair(g, dims, x, "community-issues", [...byDay.keys()], keys.map((key, i) => ({
+      name: labels[i], color: colors[i], text: day => `${labels[i]}: ${num(byDay.get(day)[key])}`,
+    })), true);
 
     makeLegend(g, "community-issues", labels.map((label, i) => ({
-      name: label, label, color: colors[i], spacing: 160,
+      name: label, label, color: colors[i],
     })));
   }
 
@@ -1320,34 +1215,13 @@
           .curve(d3.curveMonotoneX));
     });
 
-    keys.forEach((key, i) => {
-      g.selectAll(`.cp-dot-${i}`)
-        .data(daily)
-        .join("circle")
-        .attr("cx", d => x(new Date(d.date)))
-        .attr("cy", d => y(d[key]))
-        .attr("r", 3)
-        .attr("fill", colors[i])
-        .attr("opacity", 0)
-        .on("mouseover", function (event, d) {
-          d3.select(this).attr("opacity", 1).attr("r", 5);
-          showTooltip(event,
-            `<strong>${d.date}</strong><br>` +
-            `Opened by core team: ${d.prs_opened_core}<br>` +
-            `External reviews: ${d.pr_reviews_external}`
-          );
-        })
-        .on("mouseout", function () {
-          d3.select(this).attr("opacity", 0).attr("r", 3);
-          hideTooltip();
-        })
-        .on("click", function (event, d) {
-          window.location.href = "details.html?date=" + d.date;
-        });
-    });
+    const byDay = new Map(daily.map(d => [d.date, d]));
+    addCrosshair(g, dims, x, "community-prs", [...byDay.keys()], keys.map((key, i) => ({
+      name: labels[i], color: colors[i], text: day => `${labels[i]}: ${num(byDay.get(day)[key])}`,
+    })), true);
 
     makeLegend(g, "community-prs", labels.map((label, i) => ({
-      name: label, label, color: colors[i], spacing: 160,
+      name: label, label, color: colors[i],
     })));
   }
 
@@ -1374,6 +1248,19 @@
   }
 
   render();
+  let resizeTimer;
+  let renderedWidth = window.innerWidth;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    // The redraw removes the hovered chart without a mouseleave, so hide the tooltip first.
+    // Height-only resizes (a mobile address bar) skip it, which also keeps the table's sort.
+    resizeTimer = setTimeout(() => {
+      if (window.innerWidth === renderedWidth) return;
+      renderedWidth = window.innerWidth;
+      hideTooltip();
+      render();
+    }, 150);
+  });
 
   // --- ToC scroll spy ---
   const tocLinks = document.querySelectorAll(".toc a");
