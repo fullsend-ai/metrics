@@ -20,6 +20,8 @@ SCRIPTS = Path(__file__).resolve().parent
 DATE = "2026-11-01"
 RATE_LIMITED = "rate-limited"
 ZERO_COUNT = [".total_count", 0, "0"]
+# collect_agent_runs finds the dispatch workflow, then counts its runs.
+DISPATCH_WORKFLOW = ["/actions/workflows", 0, "1"]
 
 STUB = textwrap.dedent(
     """\
@@ -54,13 +56,17 @@ class ScriptCase(unittest.TestCase):
         stub = bin_dir / "gh"
         stub.write_text(STUB)
         stub.chmod(0o755)
+        # No real backoff in tests: retries would sleep for minutes.
+        sleep = bin_dir / "sleep"
+        sleep.write_text("#!/bin/sh\nexit 0\n")
+        sleep.chmod(0o755)
         self.path = f"{bin_dir}{os.pathsep}{os.environ['PATH']}"
 
     def tearDown(self):
         self._tmp.cleanup()
 
     def run_script(self, name: str, *args: str, rules: list | None = None) -> subprocess.CompletedProcess:
-        env = dict(os.environ, PATH=self.path, GH_STUB_RULES=json.dumps(rules or []))
+        env = dict(os.environ, PATH=self.path, GH_STUB_RULES=json.dumps(rules or []), GH_RETRY_SLEEP="0")
         env.pop("COMMUNITY_REVIEW_COUNTS_FILE", None)
         return subprocess.run(
             ["bash", str(SCRIPTS / name), *args],
@@ -144,25 +150,27 @@ class TestBackfillMetricDetails(ScriptCase):
 
 class TestFailures(ScriptCase):
     def test_collect_failure_is_not_no_runs(self):
-        result = self.run_script("collect-failures.sh", DATE, rules=[fail("/actions/runs")])
+        result = self.run_script("collect-failures.sh", DATE, rules=[fail("/actions/workflows")])
         self.assert_failed_without_rows(result, "failures.csv", "failure-details.csv")
-        self.assertNotIn("No workflow runs found", result.stdout)
+        self.assertNotIn("No agent jobs ran", result.stdout + result.stderr)
 
     def test_collect_empty_result_succeeds(self):
-        result = self.run_script("collect-failures.sh", DATE)
+        result = self.run_script("collect-failures.sh", DATE, rules=[ZERO_COUNT, DISPATCH_WORKFLOW])
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn("No workflow runs found", result.stdout)
+        self.assertIn("No agent jobs ran", result.stdout + result.stderr)
 
     def test_backfill_details_failure_fails(self):
-        result = self.run_script("backfill-failure-details.sh", DATE, DATE, rules=[fail("/actions/runs")])
+        result = self.run_script("backfill-failure-details.sh", DATE, DATE, rules=[fail("/actions/workflows")])
         self.assert_failed_without_rows(result, "failure-details.csv")
 
 
 class TestRework(ScriptCase):
-    ITEM = ["updated:>=", 0, "5\thttps://example.test/5"]
+    # search_updated_range counts the matches (per_page=1), then lists them.
+    COUNT = ["per_page=1 --jq", 0, "1"]
+    ITEM = ["per_page=100", 0, "5\thttps://example.test/5"]
 
     def test_collect_timeline_failure_fails(self):
-        result = self.run_script("collect-rework.sh", DATE, rules=[self.ITEM, fail("/timeline")])
+        result = self.run_script("collect-rework.sh", DATE, rules=[self.COUNT, self.ITEM, fail("/timeline")])
         self.assert_failed_without_rows(result, "rework.csv", "rework-details.csv")
 
     def test_collect_project_board_failure_fails(self):
@@ -174,7 +182,7 @@ class TestRework(ScriptCase):
         self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_backfill_search_failure_fails(self):
-        result = self.run_script("backfill-rework.sh", DATE, DATE, rules=[fail("updated:>=")])
+        result = self.run_script("backfill-rework.sh", DATE, DATE, rules=[fail("/search/issues")])
         self.assert_failed_without_rows(result, "rework.csv", "rework-details.csv")
 
 
