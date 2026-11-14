@@ -125,6 +125,13 @@ class TestLinkedIssues(unittest.TestCase):
             self.assertIsNone(mod.gh_sha_lookup(self.pr_type)("fullsend", "abc1234"))
 
 
+    def test_sha_lookup_ignores_repos_outside_the_collected_set(self):
+        def fail(args):
+            raise AssertionError(f"unexpected request: {args}")
+        self.pr_type.gh_json = fail
+        self.assertIsNone(mod.gh_sha_lookup(self.pr_type)("private-repo", "abc1234"))
+
+
 class TestPairWindow(unittest.TestCase):
     def test_only_earlier_merged_prs_within_30_days(self):
         merged = {

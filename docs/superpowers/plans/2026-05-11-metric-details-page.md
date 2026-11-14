@@ -1,5 +1,7 @@
 # Metric Details Page Implementation Plan
 
+> **Superseded in part:** the failure-collection queries below (`AGENT_REPO`, `AGENT_WORKFLOWS`, `is_agent`) describe the old central `.fullsend` workflow collection. It was replaced by `collect_agent_runs` in `scripts/lib.sh` (PR #38 / issue #29), which reads each repo's dispatch workflow. This plan is kept as a historical record.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Add a details page that shows the full audit trail (every event) behind each dashboard metric for a given date or date range, plus collect and backfill event-level data for all metrics.

@@ -14,11 +14,13 @@ from __future__ import annotations
 
 import argparse
 import csv
+import io
 import json
 import os
 import re
 import subprocess
 import sys
+import tempfile
 import time
 from collections import defaultdict
 from datetime import date, datetime, timedelta
@@ -125,8 +127,53 @@ def gh_json(args: list[str], retries: int = 5):
 
 
 def list_repos() -> list[str]:
+    """Public, non-archived, non-fork org repos, whichever token runs this."""
     data = gh_json(["api", f"/orgs/{ORG}/repos", "--paginate"])
-    return sorted(r["name"] for r in data if not r.get("archived") and not r.get("fork"))
+    return sorted(
+        r["name"] for r in data
+        if r.get("visibility") == "public" and not r.get("archived") and not r.get("fork")
+    )
+
+
+_REPO_PUBLIC: dict[str, bool] = {}
+
+
+def is_not_found(err: str) -> bool:
+    low = err.lower()
+    return "http 404" in low or "not found" in low
+
+
+def is_public_repo(name: str, cache: dict = _REPO_PUBLIC) -> bool:
+    """True if ORG/name is public, False if confirmed non-public (404 or other visibility).
+
+    Operational failures (5xx, exhausted rate limits, network errors) raise
+    RuntimeError instead of reading as "not public", so callers cannot mistake
+    an outage for a non-public repo. Failed lookups are not cached.
+    """
+    if name in cache:
+        return cache[name]
+    try:
+        visibility = gh_json(["api", f"repos/{ORG}/{name}", "--jq", "{visibility: .visibility}"], retries=3)
+    except RuntimeError as e:
+        if is_not_found(str(e)):
+            cache[name] = False
+            return False
+        raise
+    cache[name] = bool(visibility) and visibility.get("visibility") == "public"
+    return cache[name]
+
+
+def public_only(names: list[str]) -> list[str]:
+    """Keep only public repos from an explicit list; skipped names are reported, not read.
+
+    Raises RuntimeError if a visibility lookup fails for a reason other than
+    the repo being confirmed non-public.
+    """
+    kept = [n for n in names if is_public_repo(n)]
+    for n in names:
+        if n not in kept:
+            print(f"  skipping {n}: not a public repo", file=sys.stderr)
+    return kept
 
 
 def _search_merged(repo: str, start: date, end: date) -> list[dict]:
@@ -171,8 +218,12 @@ def fetch_issue_author(issue_repo: str, number: int, pr_repo: str, cache: dict) 
     if key in cache:
         return cache[key]
     # Only probe the referenced repo, then the PR's repo when they differ.
+    # A PR body can name any org repo; skip non-public ones so the result does
+    # not depend on whether the token can see private or internal repos.
     for name in dict.fromkeys([issue_repo, pr_repo]):
         try:
+            if not is_public_repo(name):
+                continue
             data = gh_json([
                 "api", f"repos/{ORG}/{name}/issues/{number}",
                 "--jq", "{login: .user.login, type: .user.type}",
@@ -289,8 +340,83 @@ def write_zero_row(day_s: str, repo: str):
         csv.writer(f).writerow([day_s, repo, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
 
+def _raw_records(f):
+    """Yield (parsed_row, raw_text) for each CSV record, keeping the exact bytes."""
+    buf: list[str] = []
+
+    def lines():
+        for line in f:
+            buf.append(line)
+            yield line
+
+    for row in csv.reader(lines()):
+        raw = "".join(buf)
+        buf.clear()
+        yield row, raw
+
+
+def _in_range(day_s: str, start: date, end: date) -> bool:
+    try:
+        return start <= date.fromisoformat(day_s) <= end
+    except ValueError:
+        return False
+
+
+def replace_range(path: Path, start: date, end: date, repos: list[str],
+                  new_rows: list[list]) -> None:
+    """Replace rows dated within [start, end] for `repos` with `new_rows`.
+
+    Every other line is copied verbatim (no re-sorting), so rows outside the
+    range stay byte-identical. New rows go where the replaced rows were, or
+    before the first later-dated row if the range had no rows. The file is
+    written to a temp file and renamed into place.
+    """
+    repo_set = set(repos)
+    end_s = end.isoformat()
+    kept: list[str] = []
+    insert_at = None
+    with path.open(newline="") as f:
+        for i, (row, raw) in enumerate(_raw_records(f)):
+            if i > 0 and len(row) >= 2 and row[1] in repo_set and _in_range(row[0], start, end):
+                if insert_at is None:
+                    insert_at = len(kept)
+                continue
+            if i > 0 and insert_at is None and row and row[0] > end_s:
+                insert_at = len(kept)
+            kept.append(raw)
+    if insert_at is None:
+        insert_at = len(kept)
+
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    for r in new_rows:
+        w.writerow(r)
+    new_text = buf.getvalue()
+    if new_text:
+        if insert_at > 0 and not kept[insert_at - 1].endswith("\n"):
+            kept[insert_at - 1] += "\r\n"
+        kept.insert(insert_at, new_text)
+
+    fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=f".{path.name}.", suffix=".tmp")
+    try:
+        with os.fdopen(fd, "w", newline="") as out:
+            out.write("".join(kept))
+        os.chmod(tmp, path.stat().st_mode & 0o777)
+        os.replace(tmp, path)
+    except BaseException:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+        raise
+
+
 def collect_range(start: date, end: date, repos: list[str], core, ignored_bots,
-                  skip_existing: bool) -> int:
+                  skip_existing: bool, replace: bool = False) -> int:
+    """Collect [start, end] and write rows to the CSVs.
+
+    With replace=True, everything is fetched first; only then are the
+    in-range rows for `repos` swapped out (see replace_range). A failed
+    fetch leaves both files untouched.
+    """
     existing_rows = existing_day_repo() if skip_existing else set()
     existing_details = existing_detail_keys() if skip_existing else set()
     author_cache = {}
@@ -310,6 +436,23 @@ def collect_range(start: date, end: date, repos: list[str], core, ignored_bots,
                 all_day_rows[(day_s, repo)] = row
                 total_prs += n
             all_details.extend(details)
+
+    if replace:
+        agg_rows = []
+        cur = start
+        while cur <= end:
+            day_s = cur.isoformat()
+            for repo in repos:
+                agg_rows.append(all_day_rows.get(
+                    (day_s, repo), [day_s, repo, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]))
+            cur += timedelta(days=1)
+        detail_rows = [
+            [d[k] for k in PR_TYPE_DETAILS_HEADER]
+            for d in sorted(all_details, key=lambda d: d["date"])
+        ]
+        replace_range(PR_TYPE_FILE, start, end, repos, agg_rows)
+        replace_range(PR_TYPE_DETAILS_FILE, start, end, repos, detail_rows)
+        return total_prs
 
     cur = start
     while cur <= end:
@@ -343,16 +486,19 @@ def main():
     p.add_argument("--from", dest="date_from", help="Backfill start YYYY-MM-DD")
     p.add_argument("--to", dest="date_to", help="Backfill end YYYY-MM-DD (inclusive)")
     p.add_argument("--repos", nargs="*", help="Limit to these repo names")
-    p.add_argument("--force", action="store_true", help="Wipe and re-collect range")
+    p.add_argument(
+        "--force", action="store_true",
+        help="Re-collect the range and replace only its rows; rows outside it are kept",
+    )
     args = p.parse_args()
 
     core, ignored_bots = load_config()
     ensure_csvs()
 
     if os.environ.get("PR_TYPE_REPOS"):
-        repos = [r.strip() for r in os.environ["PR_TYPE_REPOS"].split(",") if r.strip()]
+        repos = public_only([r.strip() for r in os.environ["PR_TYPE_REPOS"].split(",") if r.strip()])
     elif args.repos:
-        repos = args.repos
+        repos = public_only(args.repos)
     else:
         repos = list_repos()
 
@@ -365,14 +511,9 @@ def main():
     else:
         start = end = yesterday
 
-    if args.force:
-        with PR_TYPE_FILE.open("w", newline="") as f:
-            csv.writer(f).writerow(PR_TYPE_HEADER)
-        with PR_TYPE_DETAILS_FILE.open("w", newline="") as f:
-            csv.writer(f).writerow(PR_TYPE_DETAILS_HEADER)
-
     print(f"Collecting PR type metrics {start} → {end} for {repos}...")
-    total = collect_range(start, end, repos, core, ignored_bots, skip_existing=not args.force)
+    total = collect_range(start, end, repos, core, ignored_bots,
+                          skip_existing=not args.force, replace=args.force)
 
     rows = sum(1 for _ in open(PR_TYPE_FILE)) - 1
     details = sum(1 for _ in open(PR_TYPE_DETAILS_FILE)) - 1

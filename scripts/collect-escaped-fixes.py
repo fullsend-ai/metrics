@@ -193,6 +193,9 @@ def gh_sha_lookup(pr_type):
     cache: dict[tuple[str, str], str | None] = {}
 
     def lookup(repo: str, sha: str) -> str | None:
+        # A PR body can name any org repo; only read the repos this collector covers.
+        if repo not in REPOS:
+            return None
         if (repo, sha) not in cache:
             pulls = gh_get(pr_type, f"repos/{ORG}/{repo}/commits/{sha}/pulls") or []
             numbers = [pull["number"] for pull in pulls if pull.get("merged_at")]

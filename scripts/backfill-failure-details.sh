@@ -10,24 +10,7 @@ END_DATE="${2:-$(date -d yesterday +%Y-%m-%d)}"
 echo "Backfilling failure details from ${START_DATE} to ${END_DATE}..."
 
 ensure_failure_details_csv
-
-AGENT_REPO="fullsend-ai/.fullsend"
-
-AGENT_WORKFLOWS=(
-  "Code"
-  "Fix"
-  "Review"
-  "Triage"
-  "Prioritize"
-  "Retro"
-  "Scribe"
-  "Classify GitHub Issues"
-)
-
-declare -A is_agent
-for wf in "${AGENT_WORKFLOWS[@]}"; do
-  is_agent["$wf"]=1
-done
+existing_lines=$(wc -l < "$FAILURE_DETAILS_FILE")
 
 current="$START_DATE"
 while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
@@ -38,19 +21,18 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
     continue
   fi
 
-  echo "  ${current}: fetching workflow runs..."
-  runs=$(gh api "/repos/${AGENT_REPO}/actions/runs?per_page=100&created=${current}" \
-    --paginate \
-    --jq '.workflow_runs[] | select(.status == "completed") | [.name, .conclusion, (.id | tostring), .html_url] | @tsv' 2>/dev/null || true)
+  # Agents run in each repo's fullsend dispatch workflow (see lib.sh).
+  echo "  ${current}: fetching agent runs..."
+  if ! runs=$(collect_agent_runs "$current"); then
+    echo "::error::Could not collect agent runs for ${current}; stopping. Rows for earlier dates are kept."
+    exit 1
+  fi
 
-  if [[ -n "$runs" ]]; then
-    while IFS=$'\t' read -r name conclusion run_id run_url; do
-      [[ -z "${is_agent[$name]+x}" ]] && continue
-      if [[ "$conclusion" == "failure" ]]; then
-        append_failure_detail "$current" "$name" ".fullsend" "$run_id" "failure" "$run_url"
-      else
-        append_failure_detail "$current" "$name" ".fullsend" "$run_id" "success" "$run_url"
-      fi
+  if [[ -z "$runs" ]]; then
+    echo "::warning::No agent jobs ran in any ${ORG} repo's ${AGENT_DISPATCH_WORKFLOW} on ${current}."
+  else
+    while IFS=$'\t' read -r role repo run_id status run_url; do
+      append_failure_detail "$current" "$role" "$repo" "$run_id" "$status" "$run_url"
     done <<< "$runs"
   fi
 
@@ -58,11 +40,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
   current=$(date -d "${current} + 1 day" +%Y-%m-%d)
 done
 
-# Sort by date (keep header first).
-header=$(head -1 "$FAILURE_DETAILS_FILE")
-tail -n +2 "$FAILURE_DETAILS_FILE" | sort -t, -k1,1 > /tmp/fd_sorted.csv
-echo "$header" > "$FAILURE_DETAILS_FILE"
-cat /tmp/fd_sorted.csv >> "$FAILURE_DETAILS_FILE"
-rm -f /tmp/fd_sorted.csv
+# Merge the new rows in by date; existing rows stay where they are.
+merge_appended_rows "$FAILURE_DETAILS_FILE" "$existing_lines" -k1,1
 
 echo "Backfill complete. $(( $(wc -l < "$FAILURE_DETAILS_FILE") - 1 )) detail rows."

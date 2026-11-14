@@ -93,7 +93,8 @@ for repo in $repos; do
   done <<< "$items"
 done
 
-# Fetch project board activity via GraphQL.
+# Fetch project board activity via GraphQL. Org boards can hold items from
+# private or internal repos, so keep only items from public repos.
 echo "  Fetching project board activity..."
 project_items=$(gh api graphql -f org="$ORG" -f query='
   query($org: String!) {
@@ -106,7 +107,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
               content {
                 ... on Issue {
                   number
-                  repository { name }
+                  repository { name visibility }
                   url
                   timelineItems(first: 100, itemTypes: [ADDED_TO_PROJECT_EVENT, MOVED_COLUMNS_IN_PROJECT_EVENT, REMOVED_FROM_PROJECT_EVENT]) {
                     nodes {
@@ -127,7 +128,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
                 }
                 ... on PullRequest {
                   number
-                  repository { name }
+                  repository { name visibility }
                   url
                   timelineItems(first: 100, itemTypes: [ADDED_TO_PROJECT_EVENT, MOVED_COLUMNS_IN_PROJECT_EVENT, REMOVED_FROM_PROJECT_EVENT]) {
                     nodes {
@@ -156,6 +157,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
 ' --jq '
   .data.organization.projectsV2.nodes[].items.nodes[] |
   select(.content != null) |
+  select(.content.repository.visibility == "PUBLIC") |
   .content as $c |
   .content.timelineItems.nodes[] |
   select(.actor.type == "Bot") |
@@ -297,7 +299,7 @@ done
 {
   head -1 "$REWORK_OUT"
   tail -n +2 "$REWORK_OUT" | awk -F, -v s="$START_DATE" '$1 < s'
-  sort -t, -k1,1 -k2,2 "$REWORK_FILE"
+  LC_ALL=C sort -s -t, -k1,1 -k2,2 "$REWORK_FILE"
   tail -n +2 "$REWORK_OUT" | awk -F, -v e="$END_DATE" '$1 > e'
 } > "$TMPDIR_WORK/rework_merged"
 cat "$TMPDIR_WORK/rework_merged" > "$REWORK_OUT"
@@ -305,7 +307,7 @@ cat "$TMPDIR_WORK/rework_merged" > "$REWORK_OUT"
 {
   head -1 "$REWORK_DETAILS_OUT"
   tail -n +2 "$REWORK_DETAILS_OUT" | awk -F, -v s="$START_DATE" 'substr($1,1,10) < s'
-  sort -t, -k1,1 "$REWORK_DETAILS_FILE"
+  LC_ALL=C sort -s -t, -k1,1 "$REWORK_DETAILS_FILE"
   tail -n +2 "$REWORK_DETAILS_OUT" | awk -F, -v e="$END_DATE" 'substr($1,1,10) > e'
 } > "$TMPDIR_WORK/details_merged"
 cat "$TMPDIR_WORK/details_merged" > "$REWORK_DETAILS_OUT"
