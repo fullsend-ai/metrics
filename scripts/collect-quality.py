@@ -41,23 +41,44 @@ def read(path: Path) -> list[dict[str, str]]:
 
 
 RATE_LIMIT_MARKERS = ("rate limit", "secondary rate limit", "api rate limit")
+# GitHub 5xx responses and dropped HTTP/2 streams or connections are transient.
+# Any other failure (404, permission 403, bad query) is raised at once.
+HTTP_5XX = re.compile(r"\bHTTP 5\d\d\b")
+TRANSIENT_MARKERS = (
+    "stream error", "cancel", "connection reset", "connection refused",
+    "unexpected eof", "timeout", "timed out", "bad gateway",
+    "service unavailable", "gateway timeout", "internal server error",
+)
+
+
+def is_rate_limited(err: str) -> bool:
+    low = err.lower()
+    return any(marker in low for marker in RATE_LIMIT_MARKERS)
+
+
+def is_transient(err: str) -> bool:
+    low = err.lower()
+    return bool(HTTP_5XX.search(err)) or any(marker in low for marker in TRANSIENT_MARKERS)
 
 
 def gh_json(args: list[str], retries: int = 5):
-    """Run gh with bounded retries for GitHub rate-limit responses."""
+    """Run gh with bounded retries for rate limits, 5xx and stream errors."""
     last_error = ""
     for attempt in range(1, retries + 1):
         result = subprocess.run(["gh", *args], capture_output=True, text=True)
         if result.returncode == 0:
             return json.loads(result.stdout) if result.stdout.strip() else []
         last_error = result.stderr.strip()
-        if not any(marker in last_error.lower() for marker in RATE_LIMIT_MARKERS):
+        if is_rate_limited(last_error):
+            reason, delay = "rate limited", attempt * 25
+        elif is_transient(last_error):
+            reason, delay = "transient error", min(5 * 2 ** (attempt - 1), 60)
+        else:
             raise RuntimeError(last_error or "gh command failed")
         if attempt < retries:
-            delay = attempt * 25
-            print(f"  rate limited (attempt {attempt}/{retries}), sleep {delay}s", file=sys.stderr)
+            print(f"  {reason} (attempt {attempt}/{retries}), sleep {delay}s", file=sys.stderr)
             time.sleep(delay)
-    raise RuntimeError(f"rate limit retries exhausted: {last_error}")
+    raise RuntimeError(f"retries exhausted: {last_error}")
 
 
 def issue_is_defect(repo: str, number: str, cache: dict[tuple[str, str], bool]) -> bool:
@@ -79,18 +100,6 @@ def issue_is_defect(repo: str, number: str, cache: dict[tuple[str, str], bool]) 
     labels = {str(label.get("name", "")).strip().lower() for label in issue.get("labels", [])}
     cache[key] = bool(labels & DEFECT_LABELS)
     return cache[key]
-
-
-def labeled_issue_numbers(repo: str) -> set[str]:
-    """Bulk-load defect-labeled issue numbers for an occasional backfill."""
-    numbers: set[str] = set()
-    for label in DEFECT_LABELS:
-        issues = gh_json([
-            "search", "issues", "--repo", f"{ORG}/{repo}",
-            "--label", label, "--json", "number", "--limit", "1000",
-        ])
-        numbers.update(str(issue["number"]) for issue in issues)
-    return numbers
 
 
 def paginated_items(args: list[str]) -> list[dict]:
@@ -172,7 +181,6 @@ def rebuild(target_dates: set[str]) -> None:
     dates = target_dates or {row["date"] for row in aggregate}
     git_reverts = git_revert_counts(min(dates), max(dates))
     labels_cache: dict[tuple[str, str], bool] = {}
-    bulk_labels = {repo: labeled_issue_numbers(repo) for repo in REPOS} if len(dates) > 1 else {}
     existing = {
         (row["date"], row["repo"]): {key: row.get(key, "") for key in HEADER}
         for row in read(OUTPUT)
@@ -187,10 +195,9 @@ def rebuild(target_dates: set[str]) -> None:
         key = (row["date"], row["repo"])
         merged = sum(int(row[name]) for name in TYPES)
         fixes = fix_rows[key]
-        if bulk_labels:
-            defect_prs = sum(item.get("issue_number", "") in bulk_labels[row["repo"]] for item in fixes)
-        else:
-            defect_prs = sum(issue_is_defect(row["repo"], item.get("issue_number", ""), labels_cache) for item in fixes)
+        # Look each linked issue up directly in range mode too. A label search
+        # is capped at 1,000 results and times out on large labels.
+        defect_prs = sum(issue_is_defect(row["repo"], item.get("issue_number", ""), labels_cache) for item in fixes)
         titled = titled_reverts[key]
         commits = git_reverts[key]
         events = max(titled, commits)
