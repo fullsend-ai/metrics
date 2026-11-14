@@ -37,7 +37,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
     full_repo="${ORG}/${repo}"
 
     # PRs opened
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:pr created:${current}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -45,7 +45,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
     done
 
     # PRs merged
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:pr is:merged merged:${current}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -53,7 +53,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
     done
 
     # PRs closed (non-merge)
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:pr is:closed is:unmerged closed:${current}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -61,7 +61,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
     done
 
     # Issues opened
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:issue created:${current}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -69,7 +69,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
     done
 
     # Issues closed
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:issue is:closed closed:${current}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do

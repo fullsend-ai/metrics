@@ -27,11 +27,12 @@ METRIC_DETAILS_FILE="${STAGE_DIR}/metric-details.csv"
 : > "$DATA_FILE"
 : > "$METRIC_DETAILS_FILE"
 
-# Print the total_count of a search query. Fails if the API call fails or
-# does not return a non-negative integer: an error is never counted as zero.
+# Print the total_count of a search query. Fails if the API call still fails
+# after search_total_count's retries or does not return a non-negative
+# integer: an error is never counted as zero.
 search_count() {
   local query="$1" count
-  if ! count=$(gh api "/search/issues" --method GET -f q="$query" --jq '.total_count'); then
+  if ! count=$(search_total_count "$query"); then
     echo "search_count: API call failed (query: ${query})" >&2
     return 1
   fi
@@ -51,7 +52,7 @@ for repo in $repos; do
   prs_opened=$(search_count "repo:${full_repo} is:pr created:${TARGET_DATE}")
 
   if (( prs_opened > 0 )); then
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:pr created:${TARGET_DATE}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -62,7 +63,7 @@ for repo in $repos; do
   prs_merged=$(search_count "repo:${full_repo} is:pr is:merged merged:${TARGET_DATE}")
 
   if (( prs_merged > 0 )); then
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:pr is:merged merged:${TARGET_DATE}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -75,7 +76,7 @@ for repo in $repos; do
   if (( prs_closed < 0 )); then prs_closed=0; fi
 
   if (( prs_closed > 0 )); then
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:pr is:closed is:unmerged closed:${TARGET_DATE}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -86,7 +87,7 @@ for repo in $repos; do
   issues_opened=$(search_count "repo:${full_repo} is:issue created:${TARGET_DATE}")
 
   if (( issues_opened > 0 )); then
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:issue created:${TARGET_DATE}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -97,7 +98,7 @@ for repo in $repos; do
   issues_closed=$(search_count "repo:${full_repo} is:issue is:closed closed:${TARGET_DATE}")
 
   if (( issues_closed > 0 )); then
-    gh api "/search/issues" --method GET --paginate \
+    gh_api_retry "/search/issues" --method GET --paginate \
       -f q="repo:${full_repo} is:issue is:closed closed:${TARGET_DATE}" \
       --jq '.items[] | [.number, .title, .html_url] | @tsv' | \
     while IFS=$'\t' read -r number title url; do
@@ -107,7 +108,7 @@ for repo in $repos; do
 
   # --paginate applies the filter to each page, so sum the per-page counts.
   # Draft releases have no published_at; treat them as not published today.
-  release_counts=$(gh api "/repos/${full_repo}/releases" \
+  release_counts=$(gh_api_retry "/repos/${full_repo}/releases" \
     --paginate \
     --jq "[.[] | select((.published_at // \"\") | startswith(\"${TARGET_DATE}\"))] | length")
   releases=$(awk '{ total += $1 } END { print total + 0 }' <<< "$release_counts")
@@ -116,11 +117,11 @@ for repo in $repos; do
 
   lead_time_median="0"
   if (( prs_merged > 0 )); then
-    lead_times=$(gh api "/search/issues" \
+    lead_times=$(gh_api_retry "/search/issues" \
       --method GET \
       -f q="repo:${full_repo} is:pr is:merged merged:${TARGET_DATE}" \
       --jq '.items[].pull_request.url' | while read -r pr_url; do
-        gh api "$pr_url" --jq '
+        gh_api_retry "$pr_url" --jq '
           (((.merged_at | fromdateiso8601) - (.created_at | fromdateiso8601)) / 3600)
           | . * 10 | round / 10
         ' || exit 1

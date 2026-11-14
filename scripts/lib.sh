@@ -408,7 +408,7 @@ is_ignored_bot() {
 # the API call fails, so callers never mistake an error for "no reviews".
 pr_review_events() {
   local repo="$1" number="$2"
-  gh api graphql \
+  gh_api_retry graphql \
     -f owner="${ORG}" -f name="${repo}" -F number="${number}" \
     -f query='
       query($owner: String!, $name: String!, $number: Int!) {

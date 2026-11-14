@@ -35,7 +35,7 @@ IGNORED_BOTS=$(ignored_bots_list)
 # rejected, duplicate, etc). Returns non-zero if the API call fails.
 classify_close() {
   local repo="$1" number="$2"
-  gh api graphql \
+  gh_api_retry graphql \
     -f owner="${ORG}" -f name="${repo}" -F number="${number}" \
     -f query='
       query($owner: String!, $name: String!, $number: Int!) {

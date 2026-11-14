@@ -28,7 +28,7 @@ for repo in $repos; do
 
   # Capture the PR list first: a failure inside "done < <(...)" would be
   # invisible to set -e and read as a repo with no PRs.
-  prs=$(gh api "/repos/${full_repo}/pulls" --method GET --paginate \
+  prs=$(gh_api_retry "/repos/${full_repo}/pulls" --method GET --paginate \
     -f state=all -f per_page=100 \
     --jq '.[] | [.number, .user.login, .title, .html_url] | @tsv')
 

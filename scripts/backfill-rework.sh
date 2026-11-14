@@ -56,7 +56,7 @@ for repo in $repos; do
   echo "  ${full_repo}: fetching timelines for ${item_count} items..."
 
   while IFS=$'\t' read -r number item_url; do
-    timeline=$(gh api "/repos/${full_repo}/issues/${number}/timeline" \
+    timeline=$(gh_api_retry "/repos/${full_repo}/issues/${number}/timeline" \
       --paginate \
       -H "Accept: application/vnd.github.mockingbird-preview+json" \
       --jq '
@@ -96,7 +96,7 @@ done
 # Fetch project board activity via GraphQL. Org boards can hold items from
 # private or internal repos, so keep only items from public repos.
 echo "  Fetching project board activity..."
-project_items=$(gh api graphql -f org="$ORG" -f query='
+project_items=$(gh_api_retry graphql -f org="$ORG" -f query='
   query($org: String!) {
     organization(login: $org) {
       projectsV2(first: 10) {

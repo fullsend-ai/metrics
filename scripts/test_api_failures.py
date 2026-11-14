@@ -4,7 +4,9 @@
 Each test runs a real collector script in a temporary directory with a stub
 `gh` on PATH. The stub answers from a list of (substring, exit code, stdout)
 rules matched against its arguments; the first match wins and anything
-unmatched succeeds with empty output (a legitimately empty result).
+unmatched succeeds with empty output (a legitimately empty result). A rule
+may carry a fourth item, N: its first N matching calls fail like a rate limit
+before it answers normally, which models a transient error.
 """
 from __future__ import annotations
 
@@ -29,8 +31,14 @@ STUB = textwrap.dedent(
     import json, os, sys
     args = " ".join(sys.argv[1:])
     rules = [["/orgs/fullsend-ai/repos", 0, "demo"]] + json.loads(os.environ.get("GH_STUB_RULES", "[]"))
-    for needle, code, out in rules:
+    for i, (needle, code, out, *flaky) in enumerate(rules):
         if needle in args:
+            if flaky:
+                state = os.path.join(os.environ["GH_STUB_STATE"], str(i))
+                seen = int(open(state).read()) if os.path.exists(state) else 0
+                open(state, "w").write(str(seen + 1))
+                if seen < flaky[0]:
+                    out, code = "%s", 1
             if out == "%s":
                 # Real gh prints the error body on stdout and the message on stderr.
                 print('{"message":"API rate limit exceeded","status":"403"}')
@@ -39,12 +47,17 @@ STUB = textwrap.dedent(
                 print(out)
             sys.exit(code)
     """
-    % RATE_LIMITED
+    % (RATE_LIMITED, RATE_LIMITED)
 )
 
 
 def fail(needle: str) -> list:
     return [needle, 1, RATE_LIMITED]
+
+
+def fail_once(needle: str, out: str) -> list:
+    """Fail the first matching call with a rate limit, then answer with `out`."""
+    return [needle, 0, out, 1]
 
 
 class ScriptCase(unittest.TestCase):
@@ -61,12 +74,15 @@ class ScriptCase(unittest.TestCase):
         sleep.write_text("#!/bin/sh\nexit 0\n")
         sleep.chmod(0o755)
         self.path = f"{bin_dir}{os.pathsep}{os.environ['PATH']}"
+        self.stub_state = self.work / "stub-state"
+        self.stub_state.mkdir()
 
     def tearDown(self):
         self._tmp.cleanup()
 
     def run_script(self, name: str, *args: str, rules: list | None = None) -> subprocess.CompletedProcess:
-        env = dict(os.environ, PATH=self.path, GH_STUB_RULES=json.dumps(rules or []), GH_RETRY_SLEEP="0")
+        env = dict(os.environ, PATH=self.path, GH_STUB_RULES=json.dumps(rules or []), GH_RETRY_SLEEP="0",
+                   GH_STUB_STATE=str(self.stub_state))
         env.pop("COMMUNITY_REVIEW_COUNTS_FILE", None)
         return subprocess.run(
             ["bash", str(SCRIPTS / name), *args],
@@ -115,6 +131,21 @@ class TestCollect(ScriptCase):
         ]
         result = self.run_script("collect.sh", DATE, rules=rules)
         self.assert_failed_without_rows(result, "metrics.csv", "metric-details.csv")
+
+    def test_call_that_fails_once_is_retried_and_the_row_is_written(self):
+        rules = [
+            fail_once("is:pr is:open", "4"),
+            fail_once(f"--paginate -f q=repo:fullsend-ai/demo is:pr created:{DATE}", "7\tA title\thttps://example.test/7"),
+            fail_once("/releases", "1"),
+            [".total_count", 0, "1"],
+        ]
+        result = self.run_script("collect.sh", DATE, rules=rules)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(self.data_lines("metrics.csv"), [f"{DATE},demo,1,1,0,1,1,1,0,4"])
+        self.assertIn(f'{DATE},demo,pr,opened,7,"A title",https://example.test/7', self.data_lines("metric-details.csv"))
+        # One failed attempt for each of the three flaky calls was retried.
+        self.assertEqual(result.stderr.count("(attempt 1/"), 3, result.stderr)
+        self.assertNotIn("(attempt 2/", result.stderr)
 
     def test_empty_result_is_a_real_zero(self):
         result = self.run_script("collect.sh", DATE, rules=[ZERO_COUNT])
@@ -194,6 +225,17 @@ class TestCommunity(ScriptCase):
         ]
         result = self.run_script("collect-community.sh", DATE, rules=rules)
         self.assert_failed_without_rows(result, "community.csv", "community-details.csv")
+
+    def test_close_classification_that_fails_once_is_retried(self):
+        rules = [
+            ["is:issue is:closed", 0, "5\talice\tUser\tA title\thttps://example.test/5"],
+            fail_once("graphql", "pr"),
+        ]
+        result = self.run_script("collect-community.sh", DATE, rules=rules)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("rate limit", result.stderr.lower())
+        self.assertEqual(len(self.data_lines("community.csv")), 1)
+        self.assertEqual(len(self.data_lines("community-details.csv")), 1)
 
     def test_failed_review_fetch_fails(self):
         rules = [
