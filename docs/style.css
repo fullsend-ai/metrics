@@ -337,6 +337,14 @@ body.page-quality {
   gap: 0.35rem;
   font-size: 0.75rem;
   color: var(--fg-light);
+  white-space: nowrap;
+}
+
+/* .chart-section svg sets width: 100% for charts; the legend swatch keeps its own 22px. */
+.chart-section .chart-legend-item svg,
+.chart-legend-item svg {
+  flex-shrink: 0;
+  width: 22px;
 }
 
 .chart-legend-item .swatch {

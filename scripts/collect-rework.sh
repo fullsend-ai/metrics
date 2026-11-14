@@ -102,7 +102,8 @@ for repo in $repos; do
   done <<< "$items"
 done
 
-# Fetch project board activity via GraphQL.
+# Fetch project board activity via GraphQL. Org boards can hold items from
+# private or internal repos, so keep only items from public repos.
 echo "  Fetching project board activity..."
 project_items=$(gh api graphql -f org="$ORG" -f query='
   query($org: String!) {
@@ -115,7 +116,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
               content {
                 ... on Issue {
                   number
-                  repository { name }
+                  repository { name visibility }
                   url
                   timelineItems(first: 100, itemTypes: [ADDED_TO_PROJECT_EVENT, MOVED_COLUMNS_IN_PROJECT_EVENT, REMOVED_FROM_PROJECT_EVENT]) {
                     nodes {
@@ -136,7 +137,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
                 }
                 ... on PullRequest {
                   number
-                  repository { name }
+                  repository { name visibility }
                   url
                   timelineItems(first: 100, itemTypes: [ADDED_TO_PROJECT_EVENT, MOVED_COLUMNS_IN_PROJECT_EVENT, REMOVED_FROM_PROJECT_EVENT]) {
                     nodes {
@@ -165,6 +166,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
 ' --jq '
   .data.organization.projectsV2.nodes[].items.nodes[] |
   select(.content != null) |
+  select(.content.repository.visibility == "PUBLIC") |
   .content as $c |
   .content.timelineItems.nodes[] |
   select(.actor.type == "Bot") |

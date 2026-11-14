@@ -94,7 +94,8 @@ for repo in $repos; do
   done <<< "$items"
 done
 
-# Fetch project board activity via GraphQL.
+# Fetch project board activity via GraphQL. Org boards can hold items from
+# private or internal repos, so keep only items from public repos.
 echo "  Fetching project board activity..."
 project_items=$(gh api graphql -f org="$ORG" -f query='
   query($org: String!) {
@@ -107,7 +108,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
               content {
                 ... on Issue {
                   number
-                  repository { name }
+                  repository { name visibility }
                   url
                   timelineItems(first: 100, itemTypes: [ADDED_TO_PROJECT_EVENT, MOVED_COLUMNS_IN_PROJECT_EVENT, REMOVED_FROM_PROJECT_EVENT]) {
                     nodes {
@@ -128,7 +129,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
                 }
                 ... on PullRequest {
                   number
-                  repository { name }
+                  repository { name visibility }
                   url
                   timelineItems(first: 100, itemTypes: [ADDED_TO_PROJECT_EVENT, MOVED_COLUMNS_IN_PROJECT_EVENT, REMOVED_FROM_PROJECT_EVENT]) {
                     nodes {
@@ -157,6 +158,7 @@ project_items=$(gh api graphql -f org="$ORG" -f query='
 ' --jq '
   .data.organization.projectsV2.nodes[].items.nodes[] |
   select(.content != null) |
+  select(.content.repository.visibility == "PUBLIC") |
   .content as $c |
   .content.timelineItems.nodes[] |
   select(.actor.type == "Bot") |
@@ -202,6 +204,9 @@ if [[ -f "$REWORK_DETAILS_FILE" ]]; then
   echo "$header" > "$REWORK_DETAILS_FILE"
   cat "$TMPDIR_WORK/details_keep" >> "$REWORK_DETAILS_FILE"
 fi
+
+rework_existing_lines=$(wc -l < "$REWORK_FILE")
+details_existing_lines=$(wc -l < "$REWORK_DETAILS_FILE")
 
 # Process each date in the range.
 current="$START_DATE"
@@ -300,15 +305,8 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
   current=$(date -d "${current} + 1 day" +%Y-%m-%d)
 done
 
-# Sort output files by date.
-header=$(head -1 "$REWORK_FILE")
-tail -n +2 "$REWORK_FILE" | sort -t, -k1,1 -k2,2 > "$TMPDIR_WORK/rework_sorted"
-echo "$header" > "$REWORK_FILE"
-cat "$TMPDIR_WORK/rework_sorted" >> "$REWORK_FILE"
-
-header=$(head -1 "$REWORK_DETAILS_FILE")
-tail -n +2 "$REWORK_DETAILS_FILE" | sort -t, -k1,1 > "$TMPDIR_WORK/details_sorted"
-echo "$header" > "$REWORK_DETAILS_FILE"
-cat "$TMPDIR_WORK/details_sorted" >> "$REWORK_DETAILS_FILE"
+# Merge the new rows in by date; rows outside the range stay where they are.
+merge_appended_rows "$REWORK_FILE" "$rework_existing_lines" -k1,1 -k2,2
+merge_appended_rows "$REWORK_DETAILS_FILE" "$details_existing_lines" -k1,1
 
 echo "Backfill complete. $(( $(wc -l < "$REWORK_FILE") - 1 )) summary rows in ${REWORK_FILE}."
