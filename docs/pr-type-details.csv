@@ -2581,3 +2581,38 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-12,fullsend,8656,test(#8654): back off and claim a fresh repo on an Actions settle timeout,test,,,,https://github.com/fullsend-ai/fullsend/pull/8656
 2026-11-12,agents,1976,"ci(#1975): move functional, behaviour and vouch workflows off pull_request_target",ci,,,,https://github.com/fullsend-ai/agents/pull/1976
 2026-11-12,agents,1969,feat(scribe): include meeting title in Slack notification,feat,,,,https://github.com/fullsend-ai/agents/pull/1969
+2026-11-13,fullsend,9447,perf(#9251): skip the GitLab CLI download when the image matches the pin,perf,,,,https://github.com/fullsend-ai/fullsend/pull/9447
+2026-11-13,fullsend,9437,feat(issues): add tracker-neutral issue transitions,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9437
+2026-11-13,fullsend,9429,feat(jira)!: retire the JIRA_TOKEN and JIRA_USER_EMAIL secrets,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9429
+2026-11-13,fullsend,9425,fix(#9404): add GitLab workflow rules before a catch-all when: never,fix,external,9404,ianw,https://github.com/fullsend-ai/fullsend/pull/9425
+2026-11-13,fullsend,9417,feat(#9411)!: forward FULLSEND_JIRA_TOKEN and FULLSEND_JIRA_EMAIL to jira-ro,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9417
+2026-11-13,fullsend,9407,docs(#9406): update the same-branch Jira rerun row after agents#1467,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9407
+2026-11-13,fullsend,9403,fix(#9401): avoid full history and tree walks on large GitLab repos,fix,external,9401,ianw,https://github.com/fullsend-ai/fullsend/pull/9403
+2026-11-13,fullsend,9391,"fix(#9060)!: reserve the trace signing key in runs, GitLab jobs and uninstall",fix,core,9060,ifireball,https://github.com/fullsend-ai/fullsend/pull/9391
+2026-11-13,fullsend,9376,feat(#9364): add repos --verbose to show withheld API errors,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9376
+2026-11-13,fullsend,9375,fix(#9367): name the GitLab UI setting in override-role errors,fix,core,9367,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/9375
+2026-11-13,fullsend,9370,feat(jira): expose issue type to CEL triggers,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9370
+2026-11-13,fullsend,9366,fix(#9363): report refused poller merge grant instead of token failure,fix,core,9363,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/9366
+2026-11-13,fullsend,9355,"chore(cli): cite PR #9291, not a commit hash, in three test comments",chore,,,,https://github.com/fullsend-ai/fullsend/pull/9355
+2026-11-13,fullsend,9352,feat(#9343): decouple GitLab webhook activation from schedule merge access,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9352
+2026-11-13,fullsend,9346,docs(#2513): warn that private Jira data can leak via public artifacts,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9346
+2026-11-13,fullsend,9341,"fix(harness): skip GitLab skipped-job traces, share log-note markers",fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9341
+2026-11-13,fullsend,9332,fix(#9327): redact scheme-prefixed secrets in the PostToolUse hook,fix,core,9327,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9332
+2026-11-13,fullsend,9306,feat(poll)!: bound transported event fields; refuse oversized commands,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9306
+2026-11-13,fullsend,9295,fix(#9292)!: render managed config in the pinned fullsend_ref schema,fix,core,9292,ggallen,https://github.com/fullsend-ai/fullsend/pull/9295
+2026-11-13,fullsend,9275,fix(review): skip unchanged synchronize diffs,fix,bot,8619,fullsend-ai-retro[bot],https://github.com/fullsend-ai/fullsend/pull/9275
+2026-11-13,fullsend,9188,fix(#9187): export COMMENT_BODY for GitLab Jira agent runs,fix,core,9187,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9188
+2026-11-13,fullsend,9173,test(#9172): use non-numeric sentinel for inherited analyst ID,test,,,,https://github.com/fullsend-ai/fullsend/pull/9173
+2026-11-13,fullsend,9151,chore(#9121): refresh Containerfile SHA256 pins on Renovate bumps,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9151
+2026-11-13,fullsend,8944,docs(problems): examine private context in public agent workflows,docs,,,,https://github.com/fullsend-ai/fullsend/pull/8944
+2026-11-13,fullsend,8934,fix(#8747): flag path-shaped preflight_check after ${VAR} expansion,fix,core,8747,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/8934
+2026-11-13,fullsend,7518,fix(jirapoll)!: unmarshal EventPayload as structured JSON in DispatchRecord,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/7518
+2026-11-13,agents,2008,fix(#1848): avoid publishing empty fixture snapshots,fix,bot,1848,fullsend-ai-triage[bot],https://github.com/fullsend-ai/agents/pull/2008
+2026-11-13,agents,1997,fix(#1995): make the Jira skill snippets parse under the sandbox hook,fix,core,1995,waynesun09,https://github.com/fullsend-ai/agents/pull/1997
+2026-11-13,agents,1992,feat(#1990)!: read FULLSEND_JIRA_TOKEN in the jira-ro provider,feat,,,,https://github.com/fullsend-ai/agents/pull/1992
+2026-11-13,agents,1991,fix(#1989): treat GitLab service accounts as bots in fix cap check,fix,core,1989,ralphbean,https://github.com/fullsend-ai/agents/pull/1991
+2026-11-13,agents,1984,fix(#1983): set signed-push upstream without the fetch refspec,fix,core,1983,waynesun09,https://github.com/fullsend-ai/agents/pull/1984
+2026-11-13,agents,1977,fix(post-scripts): broaden PEM redaction to cover PGP private-key blocks,fix,core,239,waynesun09,https://github.com/fullsend-ai/agents/pull/1977
+2026-11-13,agents,1971,feat(#1500): dispatch Codex children on collaboration V2,feat,,,,https://github.com/fullsend-ai/agents/pull/1971
+2026-11-13,agents,1941,fix(#1939): have triage inventory issue content before asking,fix,core,1939,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1941
+2026-11-13,agents,1467,fix(#409): fetch and check authors before the lease retry in post-code,fix,bot,409,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1467
