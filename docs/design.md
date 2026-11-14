@@ -178,7 +178,7 @@ The dashboard has grown beyond the original single-page overview:
 | Overview | `docs/index.html`, `docs/dashboard.js` | Core SDLC metrics, community, rework, failures |
 | Drill-down | `docs/details.html` | Per-day detail view (linked from overview charts) |
 | Delivered PR types | `docs/delivered-pr-types.html` | Conventional-commit mix + fix-filer attribution |
-| Quality signals | `docs/quality.html`, `docs/quality.js` | Defect-labeled and revert-event rates, 30-day escaped-fix rate |
+| Quality signals | `docs/quality.html`, `docs/quality.js` | 30-day escaped-fix rate (shown first), then defect-labeled and revert-event rates |
 
 **Navigation:** `index.html`, `delivered-pr-types.html`, and `quality.html` share a tab header. `details.html` is a drill-down page reached from overview charts, not a peer tab.
 

@@ -93,6 +93,11 @@ body.page-quality {
   margin-bottom: 0.75rem;
 }
 
+/* Heading of the second group on the Quality Signals page, below the escaped-fix sections. */
+.quality-group {
+  margin-top: 3rem;
+}
+
 .quality-row {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
