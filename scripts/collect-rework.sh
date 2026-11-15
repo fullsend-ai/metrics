@@ -266,15 +266,10 @@ while IFS=$'\t' read -r bot repo number ts item_url; do
   if [[ "$is_rework" == "true" ]]; then
     printf '%s\t%s\t%s\t%s\t%s\n' "$bot" "$repo" "$number" "$ts" "$item_url" >> "$REWORK_ITEMS"
   fi
-done < "$TOUCHES_DEDUPED"
 
-# Write rework-details.csv rows for ALL touches (not just rework).
-while IFS=$'\t' read -r bot repo number ts item_url; do
-  if has_item_touch "$REWORK_ITEMS" "$bot" "$repo" "$number"; then
-    append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "true"
-  else
-    append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "false"
-  fi
+  # Write a rework-details.csv row for every touch, not just rework, with
+  # this touch's own flag: a bot's first touch of an item is not rework.
+  append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "$is_rework"
 done < "$TOUCHES_DEDUPED"
 
 # Build rework.csv summary rows.

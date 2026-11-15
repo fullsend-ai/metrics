@@ -80,14 +80,6 @@ append_rework_detail() {
   echo "$1,$2,$3,$4,$5,$6" >> "$REWORK_DETAILS_FILE"
 }
 
-# Succeed if the tab-separated FILE has a line whose first three fields are
-# BOT, REPO and NUMBER. Compares plain strings: a regex would read the
-# "[bot]" in bot logins as a character class and never match them.
-has_item_touch() {
-  [[ -s "$1" ]] && awk -F'\t' -v b="$2" -v r="$3" -v n="$4" \
-    '$1 == b && $2 == r && $3 == n { found = 1; exit } END { exit !found }' "$1"
-}
-
 FAILURE_FILE="docs/failures.csv"
 FAILURE_HEADER="date,workflow,runs,failures,failure_rate"
 

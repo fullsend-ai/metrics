@@ -245,31 +245,30 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
   REWORK="$TMPDIR_WORK/rework"
   : > "$REWORK"
   while IFS=$'\t' read -r bot repo number ts item_url; do
+    is_rework=false
+
     # Search the complete touch history for earlier touches by this bot on this item.
     prior_match=$(awk -F'\t' -v b="$bot" -v r="$repo" -v n="$number" -v d="$current" \
       '$1==b && $2==r && $3==n && substr($4,1,10) < d { found=1; exit } END { print found+0 }' "$ALL_TOUCHES")
 
     if (( prior_match > 0 )); then
-      printf '%s\t%s\t%s\t%s\t%s\n' "$bot" "$repo" "$number" "$ts" "$item_url" >> "$REWORK"
-    fi
-
-    # Also check earlier same-day touches.
-    if (( prior_match == 0 )); then
+      is_rework=true
+    else
+      # Also check earlier same-day touches.
       earlier_same_day=$(awk -F'\t' -v b="$bot" -v r="$repo" -v n="$number" -v t="$ts" \
         '$1==b && $2==r && $3==n && $4 < t { found=1; exit } END { print found+0 }' "$DEDUPED")
       if (( earlier_same_day > 0 )); then
-        printf '%s\t%s\t%s\t%s\t%s\n' "$bot" "$repo" "$number" "$ts" "$item_url" >> "$REWORK"
+        is_rework=true
       fi
     fi
-  done < "$DEDUPED"
 
-  # Write rework-details.csv rows for ALL touches (not just rework).
-  while IFS=$'\t' read -r bot repo number ts item_url; do
-    if has_item_touch "$REWORK" "$bot" "$repo" "$number"; then
-      append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "true"
-    else
-      append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "false"
+    if [[ "$is_rework" == "true" ]]; then
+      printf '%s\t%s\t%s\t%s\t%s\n' "$bot" "$repo" "$number" "$ts" "$item_url" >> "$REWORK"
     fi
+
+    # Write a rework-details.csv row for every touch, not just rework, with
+    # this touch's own flag: a bot's first touch of an item is not rework.
+    append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "$is_rework"
   done < "$DEDUPED"
 
   # Build rework.csv summary rows.
