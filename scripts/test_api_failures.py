@@ -263,6 +263,35 @@ class TestRework(ScriptCase):
         self.assertIn("Fetching project board activity", result.stdout)
         self.assertIn(f"{DATE},board-bot[bot],1,0,0.000", self.data_lines("rework.csv"))
 
+    # The coder bot touches item 5 twice, an hour apart, so the item is rework
+    # for it; the review bot touches it once, so it is not. Bot logins end in
+    # "[bot]", which must be matched as text, not as a regex character class.
+    TIMELINE = ["/timeline", 0, "\n".join([
+        f"bot\tfullsend-ai-coder[bot]\t{DATE}T10:00:00Z",
+        f"bot\tfullsend-ai-review[bot]\t{DATE}T10:30:00Z",
+        f"bot\tfullsend-ai-coder[bot]\t{DATE}T11:00:00Z",
+    ])]
+
+    def assert_rework_flags(self, result):
+        self.assertEqual(result.returncode, 0, result.stderr)
+        summary = self.data_lines("rework.csv")
+        self.assertIn(f"{DATE},fullsend-ai-coder[bot],1,1,1.000", summary)
+        self.assertIn(f"{DATE},fullsend-ai-review[bot],1,0,0.000", summary)
+        flags = sorted((row.split(",")[1], row.split(",")[-1]) for row in self.data_lines("rework-details.csv"))
+        self.assertEqual(flags, [
+            ("fullsend-ai-coder[bot]", "true"),
+            ("fullsend-ai-coder[bot]", "true"),
+            ("fullsend-ai-review[bot]", "false"),
+        ])
+
+    def test_collect_flags_detail_rows_of_reworked_items(self):
+        self.assert_rework_flags(
+            self.run_script("collect-rework.sh", DATE, rules=[self.COUNT, self.ITEM, self.TIMELINE]))
+
+    def test_backfill_flags_detail_rows_of_reworked_items(self):
+        self.assert_rework_flags(
+            self.run_script("backfill-rework.sh", DATE, DATE, rules=[self.COUNT, self.ITEM, self.TIMELINE]))
+
 
 class TestCommunity(ScriptCase):
     def test_failed_close_classification_is_not_other(self):

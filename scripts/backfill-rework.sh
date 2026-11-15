@@ -265,7 +265,7 @@ while [[ "$current" < "$END_DATE" || "$current" == "$END_DATE" ]]; do
 
   # Write rework-details.csv rows for ALL touches (not just rework).
   while IFS=$'\t' read -r bot repo number ts item_url; do
-    if [[ -s "$REWORK" ]] && grep -qP "^${bot}\t${repo}\t${number}\t" "$REWORK" 2>/dev/null; then
+    if has_item_touch "$REWORK" "$bot" "$repo" "$number"; then
       append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "true"
     else
       append_rework_detail "$ts" "$bot" "$repo" "$number" "$item_url" "false"

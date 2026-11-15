@@ -197,11 +197,17 @@
   }
 
   // --- Rework section ---
-  const reworkCount = rework.filter(d => d.is_rework).length;
+  // Count items per bot per day, as rework.csv and the Overview do. A bot can
+  // touch an item several times a day, and every row of a reworked item is
+  // flagged, so a count of rows would overstate the rate.
+  const itemKey = d => [d.datetime.substring(0, 10), d.bot, d.repo, d.item].join("\t");
+  const touchedItems = new Set(rework.map(itemKey)).size;
+  const reworkedItems = new Set(rework.filter(d => d.is_rework).map(itemKey)).size;
   const reworkBots = new Set(rework.map(d => d.bot)).size;
-  const reworkRate = rework.length > 0 ? (reworkCount / rework.length * 100).toFixed(1) : "0.0";
+  const reworkRate = touchedItems > 0 ? (reworkedItems / touchedItems * 100).toFixed(1) : "0.0";
   document.getElementById("rework-summary").textContent =
-    rework.length + " items touched by " + reworkBots + " bots, " + reworkCount + " rework items (" + reworkRate + "%)";
+    rework.length + " touches by " + reworkBots + " bots on " + touchedItems + " items, " +
+    reworkedItems + " reworked (" + reworkRate + "%)";
 
   makeTable("rework-table", rework, d => buildRow([
     { text: d.datetime.substring(0, 19).replace("T", " ") },
