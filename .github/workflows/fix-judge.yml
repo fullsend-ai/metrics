@@ -123,7 +123,8 @@ jobs:
           for _ in 1 2 3; do
             git fetch -q origin main && git reset -q --hard origin/main
             python3 scripts/collect-escaped-fixes.py --import-judgments judgments.json
-            git add docs/fix-judgments.csv docs/escaped-fixes.csv
+            python3 scripts/collect-fix-likelihood.py --rebuild
+            git add docs/fix-judgments.csv docs/escaped-fixes.csv docs/fix-likelihood.csv docs/fix-likelihood-check.csv
             git diff --staged --quiet && exit 0
             git commit -q -m "metrics: judge escaped-fix candidates"
             # A manual run can be dispatched from another branch; the verdicts always go to main.

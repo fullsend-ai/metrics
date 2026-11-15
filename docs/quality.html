@@ -45,6 +45,14 @@
     <div id="escaped-types"></div>
   </div>
 
+  <div class="quality-breakdown card">
+    <h2>Fix likelihood by band (all closed weeks)</h2>
+    <p class="subtitle">Band at merge time: size within the repository, plus whether it is a riskier kind of change (<code>feat</code>, <code>ci</code> or untyped). Fixed = a later PR fixed a medium- or high-severity defect from it within 30 days. Advisory: the bands show where review should look hardest, and never approve or merge a PR.</p>
+    <div class="quality-row"><span></span><strong>Fix rate</strong><strong>Fixed</strong><strong>Merged</strong></div>
+    <div id="likelihood-bands"></div>
+    <p class="subtitle" id="likelihood-check"></p>
+  </div>
+
   <h2 class="section-label quality-group">Defect-label and revert signals</h2>
 
   <div class="controls">

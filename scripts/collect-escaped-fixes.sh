@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Daily escaped-fix candidates + 30-day rate, after collect-pr-type.sh has run.
+# Daily escaped-fix candidates + 30-day rate, then the fix-likelihood bands, after collect-pr-type.sh has run.
 # Usage: ./scripts/collect-escaped-fixes.sh [YYYY-MM-DD]
 # With no date it collects every day since docs/fix-candidates-through.txt, so a failed day is picked up next time.
 set -euo pipefail
@@ -11,3 +11,5 @@ else
   echo "Collecting escaped-fix candidates since the last collected day..."
   python3 "${SCRIPT_DIR}/collect-escaped-fixes.py" --catch-up
 fi
+echo "Banding merged PRs by fix likelihood..."
+python3 "${SCRIPT_DIR}/collect-fix-likelihood.py"
