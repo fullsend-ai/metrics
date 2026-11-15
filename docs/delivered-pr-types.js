@@ -133,13 +133,24 @@
     return t;
   }
 
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
   function showTooltip(event, html) {
-    tooltip.html(html)
-      .style("left", (event.pageX + 12) + "px")
-      .style("top", (event.pageY - 12) + "px")
-      .style("opacity", 1);
+    const clientWidth = document.documentElement.clientWidth;
+    // Measure at the natural width: in place, its width shrinks to the space left before the edge.
+    tooltip.html(html).style("left", "0px").style("max-width", (clientWidth - 8) + "px")
+      .style("opacity", 1).attr("aria-hidden", "false");
+    // Flip to the cursor's left when the tooltip would run off the page.
+    // Keep it inside the viewport on narrow screens.
+    const width = tooltip.node().offsetWidth;
+    const right = window.scrollX + clientWidth;
+    const left = event.pageX + 12 + width > right ? event.pageX - 12 - width : event.pageX + 12;
+    tooltip
+      .style("left", Math.max(window.scrollX + 4, Math.min(left, right - width - 4)) + "px")
+      .style("top", (event.pageY - 12) + "px");
   }
-  function hideTooltip() { tooltip.style("opacity", 0); }
+  // Park it off-page: a hidden tooltip left in place can widen the page.
+  function hideTooltip() { tooltip.style("opacity", 0).style("left", "-9999px").attr("aria-hidden", "true"); }
 
   function chartDims(container, height) {
     const width = Math.max(container.node().getBoundingClientRect().width || 960, 640);
@@ -211,9 +222,9 @@
       const lines = keys.map(k => {
         const label = labels ? labels[k] : k;
         const val = d[k] || 0;
-        return `${label}: ${Number.isInteger(val) ? val : val.toFixed(1)}`;
+        return `${esc(label)}: ${Number.isInteger(val) ? val : val.toFixed(1)}`;
       }).join("<br>");
-      showTooltip(event, `<strong>${d.date}</strong><br>${lines}`);
+      showTooltip(event, `<strong>${esc(d.date)}</strong><br>${lines}`);
     }).on("mouseleave", () => {
       guide.style("opacity", 0);
       hideTooltip();
@@ -302,7 +313,13 @@
     render();
   });
 
-  window.addEventListener("resize", () => render());
+  let renderedWidth = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (window.innerWidth === renderedWidth) return;  // height-only (mobile address bar)
+    renderedWidth = window.innerWidth;
+    hideTooltip();
+    render();
+  });
   // Cards use live CSS vars; charts need a re-resolve + redraw when the scheme flips.
   const colorScheme = window.matchMedia("(prefers-color-scheme: light)");
   if (typeof colorScheme.addEventListener === "function") {
