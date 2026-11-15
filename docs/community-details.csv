@@ -593,7 +593,6 @@ date,repo,type,event,number,actor,title,url
 2026-05-28,fullsend,pr,opened_core,1633,ifireball,"docs: accept ADR 0013",https://github.com/fullsend-ai/fullsend/pull/1633
 2026-05-28,fullsend,pr,opened_core,1632,ifireball,"docs: accept ADR 0014",https://github.com/fullsend-ai/fullsend/pull/1632
 2026-05-28,fullsend,pr,opened_core,1631,ifireball,"docs: accept ADR 0012",https://github.com/fullsend-ai/fullsend/pull/1631
-2026-05-28,features,issue,opened_external,49,alanonthegit,"Align packages.redhat.com with images.redhat.com — look & feel, UX, and feature parity",https://github.com/fullsend-ai/features/issues/49
 2026-05-29,fullsend,issue,opened_external,1684,jhutar,"feat: experiment with ""caveman"" mode for token efficiency",https://github.com/fullsend-ai/fullsend/issues/1684
 2026-05-29,fullsend,issue,closed_other_external,1684,jhutar,"feat: experiment with ""caveman"" mode for token efficiency",https://github.com/fullsend-ai/fullsend/issues/1684
 2026-05-29,fullsend,pr,opened_core,1709,waynesun09,"feat(skill): add pre-flight and post-flight release procedures",https://github.com/fullsend-ai/fullsend/pull/1709
@@ -629,7 +628,6 @@ date,repo,type,event,number,actor,title,url
 2026-06-02,fullsend,pr,opened_core,1783,ggallen,"feat: extract mintcore shared library with JWKSVerifier and status endpoint",https://github.com/fullsend-ai/fullsend/pull/1783
 2026-06-02,fullsend,pr,opened_core,1780,ifireball,"feat(runtime): abstract Claude Code behind pluggable agent runtime",https://github.com/fullsend-ai/fullsend/pull/1780
 2026-06-02,fullsend,pr,opened_core,1779,waynesun09,"fix(scaffold): preserve user-added headers across shim reconciliation",https://github.com/fullsend-ai/fullsend/pull/1779
-2026-06-02,features,pr,opened_core,90,ascerra,"fix: emit hardBreak nodes for newlines in ADF text nodes",https://github.com/fullsend-ai/features/pull/90
 2026-06-03,fullsend,issue,opened_external,1838,deboer-tim,"Configurable GitHub Assignee",https://github.com/fullsend-ai/fullsend/issues/1838
 2026-06-03,fullsend,issue,opened_external,1831,anandf,"/fs-review on a merged PR gives no feedback",https://github.com/fullsend-ai/fullsend/issues/1831
 2026-06-03,fullsend,issue,opened_external,1830,deboer-tim,"Triage agent action needs to be updated from node 20",https://github.com/fullsend-ai/fullsend/issues/1830
@@ -674,7 +672,6 @@ date,repo,type,event,number,actor,title,url
 2026-06-05,fullsend,pr,opened_core,1936,rh-hemartin,"feat(web): add landing page, move doc graph to /graph.html",https://github.com/fullsend-ai/fullsend/pull/1936
 2026-06-05,fullsend,pr,opened_core,1923,ggallen,"feat: add transitive dependency resolution to URL resolver",https://github.com/fullsend-ai/fullsend/pull/1923
 2026-06-05,.fullsend,pr,opened_core,78,ralphbean,"chore: update customer-research skill for June 2026",https://github.com/fullsend-ai/.fullsend/pull/78
-2026-06-05,features,pr,opened_core,91,ascerra,"feat(explore): add impact radius and specificity to exploration prompt",https://github.com/fullsend-ai/features/pull/91
 2026-06-06,fullsend,issue,opened_external,1973,Omeramsc,"code agent: silent success when agent stays on main: no issue comment",https://github.com/fullsend-ai/fullsend/issues/1973
 2026-06-06,fullsend,issue,closed_other_external,1973,Omeramsc,"code agent: silent success when agent stays on main: no issue comment",https://github.com/fullsend-ai/fullsend/issues/1973
 2026-06-06,fullsend,pr,opened_core,1976,ralphbean,"feat(scaffold): add managed-by headers to installed scaffold files",https://github.com/fullsend-ai/fullsend/pull/1976
@@ -696,7 +693,6 @@ date,repo,type,event,number,actor,title,url
 2026-06-08,fullsend,pr,opened_core,2022,ggallen,"feat(cli): wire --max-depth and --max-resources flags for transitive resolution",https://github.com/fullsend-ai/fullsend/pull/2022
 2026-06-08,fullsend,pr,opened_core,2015,ifireball,"refactor(cli): share Linux binary acquisition for run and vendoring",https://github.com/fullsend-ai/fullsend/pull/2015
 2026-06-08,.fullsend,pr,opened_core,79,ggallen,"chore: remove vendored fullsend binary",https://github.com/fullsend-ai/.fullsend/pull/79
-2026-06-08,features,pr,opened_core,92,ascerra,"feat(explore): improve web research phase with community patterns",https://github.com/fullsend-ai/features/pull/92
 2026-06-09,fullsend,issue,opened_external,2086,yftacherzog,"suggestion: set assignee for fullsend PRs",https://github.com/fullsend-ai/fullsend/issues/2086
 2026-06-09,fullsend,issue,opened_external,2060,Omeramsc,"post-code: golangci-lint pre-commit fails when repo go.mod exceeds runner Go toolchain",https://github.com/fullsend-ai/fullsend/issues/2060
 2026-06-09,fullsend,issue,opened_external,2056,BorekZnovustvoritel,"Search for related open pull requests seems broken",https://github.com/fullsend-ai/fullsend/issues/2056
@@ -742,7 +738,6 @@ date,repo,type,event,number,actor,title,url
 2026-06-11,fullsend,pr,opened_core,2158,ifireball,"fix(e2e): use event author_association for trusted member gate",https://github.com/fullsend-ai/fullsend/pull/2158
 2026-06-11,fullsend,pr,opened_core,2154,rh-hemartin,"feat(cli): download from sandbox into different directory",https://github.com/fullsend-ai/fullsend/pull/2154
 2026-06-11,fullsend,pr,opened_core,2146,ggallen,"fix: update status comment on cancellation instead of orphaning it",https://github.com/fullsend-ai/fullsend/pull/2146
-2026-06-11,features,pr,opened_core,93,ascerra,"Strengthen critique agent to verify assumptions, not just structure",https://github.com/fullsend-ai/features/pull/93
 2026-06-12,fullsend,issue,opened_external,2207,BorekZnovustvoritel,"dispatch: no effort-based gating before auto-promoting issues to coder",https://github.com/fullsend-ai/fullsend/issues/2207
 2026-06-12,fullsend,issue,opened_external,2206,BorekZnovustvoritel,"code: no structured bail-out when coder lacks sufficient context",https://github.com/fullsend-ai/fullsend/issues/2206
 2026-06-12,fullsend,issue,opened_external,2205,BorekZnovustvoritel,"triage: no action to close issues as not-planned",https://github.com/fullsend-ai/fullsend/issues/2205
@@ -1040,7 +1035,6 @@ date,repo,type,event,number,actor,title,url
 2026-07-08,fullsend,pr,opened_core,3638,rh-hemartin,"fix(retro): prohibit filing ""evidence for"" issues",https://github.com/fullsend-ai/fullsend/pull/3638
 2026-07-08,fullsend,pr,opened_core,3610,ralphbean,"fix(skills): check open PRs for in-flight ADR numbers",https://github.com/fullsend-ai/fullsend/pull/3610
 2026-07-08,fullsend,pr,opened_core,3550,ralphbean,"chore: gitignore superpowers plan files",https://github.com/fullsend-ai/fullsend/pull/3550
-2026-07-08,features,pr,opened_core,94,ggallen,"chore: add agents repo to allowed_remote_resources",https://github.com/fullsend-ai/features/pull/94
 2026-07-08,agents,pr,opened_core,80,ralphbean,"ci(script-test): install yq in test workflow",https://github.com/fullsend-ai/agents/pull/80
 2026-07-08,agents,pr,opened_core,78,ralphbean,"ci(functional-tests): add config.yaml for local agent resolution",https://github.com/fullsend-ai/agents/pull/78
 2026-07-08,agents,pr,opened_core,76,ralphbean,"ci(functional-tests): fix OpenShell CLI asset name",https://github.com/fullsend-ai/agents/pull/76
