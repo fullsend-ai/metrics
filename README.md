@@ -46,8 +46,8 @@ production deployment and rollback/hotfix evidence. The daily workflow derives
 
 ### 30-day escaped-fix rate
 
-Also on the Quality Signals tab: of the PRs merged in a week, the share that a
-later PR had to fix within 30 days. Weeks appear once their 30-day window has
+Shown first on the Quality Signals tab: of the PRs merged in a week, the share
+that a later PR had to fix within 30 days. Weeks appear once their 30-day window has
 closed.
 
 | File | Purpose |
