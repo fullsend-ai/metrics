@@ -2616,3 +2616,28 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-13,agents,1971,feat(#1500): dispatch Codex children on collaboration V2,feat,,,,https://github.com/fullsend-ai/agents/pull/1971
 2026-11-13,agents,1941,fix(#1939): have triage inventory issue content before asking,fix,core,1939,rh-hemartin,https://github.com/fullsend-ai/agents/pull/1941
 2026-11-13,agents,1467,fix(#409): fetch and check authors before the lease retry in post-code,fix,bot,409,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1467
+2026-11-14,fullsend,9494,fix(jira): limit the minted Jira token to the run's own site,fix,core,9492,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9494
+2026-11-14,fullsend,9489,feat(#9486): let a repository tighten tirith scanning with .tirith/policy.yaml,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9489
+2026-11-14,fullsend,9488,fix(#9487): redact scheme-prefixed credentials in both redactors,fix,core,9487,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9488
+2026-11-14,fullsend,9483,fix(gitlab): limit GITLAB_TOKEN profiles to the run's GitLab host,fix,core,9480,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9483
+2026-11-14,fullsend,9482,fix(#9481): run the tirith scanner in an environment the hook builds,fix,core,9481,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9482
+2026-11-14,fullsend,9474,fix(#9472): classify GitHub server errors as infrastructure,fix,core,9472,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9474
+2026-11-14,fullsend,9470,ci(#9469): mark post-install 404s infra and stop echoing step errors,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9470
+2026-11-14,fullsend,9467,fix(#9465): fail GitLab agent job on unpinned CI_SERVER origin,fix,core,9465,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9467
+2026-11-14,fullsend,9463,fix(#9461): bump tirith to 0.5.0; hook runs offline and blocks approval verdicts,fix,core,9461,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9463
+2026-11-14,fullsend,9296,fix(forge): resolve the config allowlist the same way in every loader,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9296
+2026-11-14,fullsend,9233,feat(#9220): mint the sandbox's Jira token from OAuth 2.0 client credentials,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9233
+2026-11-14,fullsend,9179,fix(runtime): preserve MCP tools and permissions in pi agents,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9179
+2026-11-14,fullsend,9051,"fix(#9041): honour GITHUB_API_URL in token-scope, reconcile, eval",fix,external,9041,jctanner,https://github.com/fullsend-ai/fullsend/pull/9051
+2026-11-14,fullsend,9050,fix(#9039): honour GITHUB_API_URL in github setup and github set,fix,external,9039,jctanner,https://github.com/fullsend-ai/fullsend/pull/9050
+2026-11-14,agents,2030,chore(harness): pin fleet images to the v0.56.1-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/2030
+2026-11-14,agents,2026,feat(jira): accept a service account's OAuth 2.0 client credentials,feat,,,,https://github.com/fullsend-ai/agents/pull/2026
+2026-11-14,agents,2021,chore(harness): pin fleet images to the v0.56.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/2021
+2026-11-14,agents,2013,fix(#1500): treat fullsend's withheld notice as a final V2 result,fix,core,1500,waynesun09,https://github.com/fullsend-ai/agents/pull/2013
+2026-11-14,agents,2006,test(eval): don't score a review run that only posted a notice,test,,,,https://github.com/fullsend-ai/agents/pull/2006
+2026-11-14,agents,2000,fix(#1999): rewrite skill bash snippets the sandbox hook blocks,fix,core,1999,waynesun09,https://github.com/fullsend-ai/agents/pull/2000
+2026-11-14,agents,1873,fix(#1866): use GITHUB_SERVER_URL host in GitHub ops URL handling,fix,external,1866,jctanner,https://github.com/fullsend-ai/agents/pull/1873
+2026-11-14,agents,1872,test(#1868): cover the push remote on the configured GitHub host,test,,,,https://github.com/fullsend-ai/agents/pull/1872
+2026-11-14,agents,1871,fix(#1865): accept triage issue URLs on the run's GitHub host,fix,external,1865,jctanner,https://github.com/fullsend-ai/agents/pull/1871
+2026-11-14,agents,1870,fix(#1864): tell triage and review agents their inputs are env vars,fix,external,1864,jctanner,https://github.com/fullsend-ai/agents/pull/1870
+2026-11-14,agents,1869,fix(#1867): restrict triage duplicate targets to open issues,fix,external,1867,jctanner,https://github.com/fullsend-ai/agents/pull/1869

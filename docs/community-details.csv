@@ -3507,3 +3507,17 @@ date,repo,type,event,number,actor,title,url
 2026-11-13,org,issue,closed_other_external,60,ravelley,"Grant standard team access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/60
 2026-11-13,react-shopping-cart,issue,opened_external,86,ederign,"Test fullsend issue transition command.",https://github.com/fullsend-ai/react-shopping-cart/issues/86
 2026-11-13,react-shopping-cart,issue,closed_other_external,86,ederign,"Test fullsend issue transition command.",https://github.com/fullsend-ai/react-shopping-cart/issues/86
+2026-11-14,fullsend,issue,opened_external,9478,tpouyer,"Follow-ups put run-agent-job.sh in the agents repo, but it lives here, and nothing tests that its fetchers pick the newest note",https://github.com/fullsend-ai/fullsend/issues/9478
+2026-11-14,fullsend,issue,opened_external,9468,north-echo,"Code agent reads issue comments directly, skipping the ADR 0133 filter",https://github.com/fullsend-ai/fullsend/issues/9468
+2026-11-14,fullsend,issue,closed_via_pr_external,9220,jwm4,"Jira: mint and refresh the sandbox Jira provider credential from OAuth 2.0 client credentials",https://github.com/fullsend-ai/fullsend/issues/9220
+2026-11-14,fullsend,issue,closed_via_pr_external,9041,jctanner,"cli: token-scope check, `reconcile-status` and `eval-measure` address api.github.com on other GitHub hosts",https://github.com/fullsend-ai/fullsend/issues/9041
+2026-11-14,fullsend,issue,closed_via_pr_external,9039,jctanner,"cli: `fullsend github setup` and `github set` address api.github.com on other GitHub hosts",https://github.com/fullsend-ai/fullsend/issues/9039
+2026-11-14,fullsend,pr,opened_core,9485,ascerra,"docs(glossary): define agent and correct outdated entries",https://github.com/fullsend-ai/fullsend/pull/9485
+2026-11-14,metrics,pr,opened_core,41,ascerra,"feat(dashboard): show the escaped-fix rate first on Quality Signals",https://github.com/fullsend-ai/metrics/pull/41
+2026-11-14,metrics,pr,opened_core,40,ascerra,"fix(fix-judge): pass event_payload to the harness as a JSON object",https://github.com/fullsend-ai/metrics/pull/40
+2026-11-14,agents,issue,closed_via_pr_external,1926,jwm4,"Jira agents: accept a service account's OAuth 2.0 client credentials",https://github.com/fullsend-ai/agents/issues/1926
+2026-11-14,agents,issue,closed_via_pr_external,1868,jctanner,"ops libraries: forge_set_push_remote pushes to github.com regardless of the configured host",https://github.com/fullsend-ai/agents/issues/1868
+2026-11-14,agents,issue,closed_via_pr_external,1867,jctanner,"triage: duplicate rule counts only open issues, but the triage tooling also shows closed issues",https://github.com/fullsend-ai/agents/issues/1867
+2026-11-14,agents,issue,closed_via_pr_external,1866,jctanner,"ops libraries: review, code, fix and other GitHub stages assume github.com URLs",https://github.com/fullsend-ai/agents/issues/1866
+2026-11-14,agents,issue,closed_via_pr_external,1865,jctanner,"triage: tracker_validate_issue_url rejects issue URLs on GitHub hosts other than github.com",https://github.com/fullsend-ai/agents/issues/1865
+2026-11-14,agents,issue,closed_via_pr_external,1864,jctanner,"triage, review: agent definitions do not say their inputs are environment variables, so the model sometimes asks for them",https://github.com/fullsend-ai/agents/issues/1864
