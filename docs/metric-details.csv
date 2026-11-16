@@ -19423,3 +19423,76 @@ date,repo,type,event,number,title,url
 2026-11-14,react-shopping-cart,pr,merged,91,"chore: pin triage harness to the v0.56.0 agents release",https://github.com/fullsend-ai/react-shopping-cart/pull/91
 2026-11-14,react-shopping-cart,pr,merged,90,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/react-shopping-cart/pull/90
 2026-11-14,react-shopping-cart,pr,merged,89,"chore: limit Jira run artifacts to metadata and re-pin Jira poll caller to fullsend v0.56.0",https://github.com/fullsend-ai/react-shopping-cart/pull/89
+2026-11-15,fullsend,pr,opened,9521,"feat(#9509)!: add harness input_source and allow_forge_write",https://github.com/fullsend-ai/fullsend/pull/9521
+2026-11-15,fullsend,pr,opened,9520,"feat(#9510): print each provider's resolved profile",https://github.com/fullsend-ai/fullsend/pull/9520
+2026-11-15,fullsend,pr,opened,9515,"feat(#9508)!: require allow_durable for durable credential host_files",https://github.com/fullsend-ai/fullsend/pull/9515
+2026-11-15,fullsend,pr,opened,9514,"feat(#9511): warn on GitLab provider credentials from CI/CD variables",https://github.com/fullsend-ai/fullsend/pull/9514
+2026-11-15,fullsend,pr,opened,9507,"fix(#9449): recognize oversized Pi agent_end events",https://github.com/fullsend-ai/fullsend/pull/9507
+2026-11-15,fullsend,pr,opened,9506,"docs(#9402): compare the /fs-* refusal with the Jira body ladder",https://github.com/fullsend-ai/fullsend/pull/9506
+2026-11-15,fullsend,pr,opened,9505,"docs(adr): replace ADR 0160 with a search-based Jira queue",https://github.com/fullsend-ai/fullsend/pull/9505
+2026-11-15,fullsend,pr,opened,9504,"fix(#9503): warn when jira-poll has no agent to dispatch",https://github.com/fullsend-ai/fullsend/pull/9504
+2026-11-15,fullsend,pr,opened,9502,"test(#9501): count only responses in Jira 401 no-retry tests",https://github.com/fullsend-ai/fullsend/pull/9502
+2026-11-15,fullsend,pr,opened,9500,"fix(#9493): apply repo tirith policy on GitLab MRs and shallow checkouts",https://github.com/fullsend-ai/fullsend/pull/9500
+2026-11-15,fullsend,pr,merged,9515,"feat(#9508)!: require allow_durable for durable credential host_files",https://github.com/fullsend-ai/fullsend/pull/9515
+2026-11-15,fullsend,pr,merged,9502,"test(#9501): count only responses in Jira 401 no-retry tests",https://github.com/fullsend-ai/fullsend/pull/9502
+2026-11-15,fullsend,pr,merged,9499,"fix(#9497): classify GitHub 5xx and stream resets in setup as infra",https://github.com/fullsend-ai/fullsend/pull/9499
+2026-11-15,fullsend,pr,merged,9496,"test(#9495): match runs created in the trigger's own second",https://github.com/fullsend-ai/fullsend/pull/9496
+2026-11-15,fullsend,pr,merged,9216,"chore(deps): update dependency vite to v6.4.6",https://github.com/fullsend-ai/fullsend/pull/9216
+2026-11-15,fullsend,pr,merged,9145,"chore(deps): update experiments digest to d429212",https://github.com/fullsend-ai/fullsend/pull/9145
+2026-11-15,fullsend,pr,merged,9056,"fix(#9038): address configured GitHub host in run fallback and status",https://github.com/fullsend-ai/fullsend/pull/9056
+2026-11-15,fullsend,pr,merged,9052,"fix(#9037): parse raw-content URLs on configured GitHub hosts",https://github.com/fullsend-ai/fullsend/pull/9052
+2026-11-15,fullsend,issue,opened,9519,"harness: classify the uploaded host_files snapshot and refuse unclassifiable sources",https://github.com/fullsend-ai/fullsend/issues/9519
+2026-11-15,fullsend,issue,opened,9518,"Configurable Jira status sync: move the work item as the pipeline runs and merges",https://github.com/fullsend-ai/fullsend/issues/9518
+2026-11-15,fullsend,issue,opened,9517,"sticky: remove the history folding and keep_history now that every result is a new comment",https://github.com/fullsend-ai/fullsend/issues/9517
+2026-11-15,fullsend,issue,opened,9516,"jira/adf: reword the comments that cite sticky.BuildUpdatedBody when the history folding is removed",https://github.com/fullsend-ai/fullsend/issues/9516
+2026-11-15,fullsend,issue,opened,9513,"dispatch: derive a run's input_source from the matched event",https://github.com/fullsend-ai/fullsend/issues/9513
+2026-11-15,fullsend,issue,opened,9512,"design: content check for mounted host files on proxied egress",https://github.com/fullsend-ai/fullsend/issues/9512
+2026-11-15,fullsend,issue,opened,9511,"GitLab: prefer OIDC-minted credentials over CI/CD variables for provider credentials",https://github.com/fullsend-ai/fullsend/issues/9511
+2026-11-15,fullsend,issue,opened,9510,"run report: show the resolved egress preset per provider",https://github.com/fullsend-ai/fullsend/issues/9510
+2026-11-15,fullsend,issue,opened,9509,"harness: declare where a run's input text comes from",https://github.com/fullsend-ai/fullsend/issues/9509
+2026-11-15,fullsend,issue,opened,9508,"harness: flag host_files mounts of credentials the run cannot revoke",https://github.com/fullsend-ai/fullsend/issues/9508
+2026-11-15,fullsend,issue,opened,9503,"jira-poll: dispatches nothing unless agents are registered in config, and the installer registers none",https://github.com/fullsend-ai/fullsend/issues/9503
+2026-11-15,fullsend,issue,opened,9501,"test(jira): TestToken_UnauthorizedIsNotRetried is flaky on a transient-transport retry",https://github.com/fullsend-ai/fullsend/issues/9501
+2026-11-15,fullsend,issue,closed,9508,"harness: flag host_files mounts of credentials the run cannot revoke",https://github.com/fullsend-ai/fullsend/issues/9508
+2026-11-15,fullsend,issue,closed,9501,"test(jira): TestToken_UnauthorizedIsNotRetried is flaky on a transient-transport retry",https://github.com/fullsend-ai/fullsend/issues/9501
+2026-11-15,fullsend,issue,closed,9498,"e2e: redact and upload behaviour/playback debug artifacts only on failing runs",https://github.com/fullsend-ai/fullsend/issues/9498
+2026-11-15,fullsend,issue,closed,9497,"behaviourtest: GitHub 5xx and transport errors during repo setup classify as scenario, so the infra retry never runs",https://github.com/fullsend-ai/fullsend/issues/9497
+2026-11-15,fullsend,issue,closed,9495,"behaviourtest: runs and artifacts created in the same second as the trigger are missed",https://github.com/fullsend-ai/fullsend/issues/9495
+2026-11-15,fullsend,issue,closed,9038,"run: agents-repo fallback and the run's status comment address github.com on other GitHub hosts",https://github.com/fullsend-ai/fullsend/issues/9038
+2026-11-15,metrics,pr,opened,45,"feat(quality): band merged PRs by fix likelihood, checked per repository",https://github.com/fullsend-ai/metrics/pull/45
+2026-11-15,metrics,pr,opened,43,"fix(rework): flag the detail rows of reworked items",https://github.com/fullsend-ai/metrics/pull/43
+2026-11-15,metrics,pr,opened,42,"fix(data): keep only public repositories in the dashboard data",https://github.com/fullsend-ai/metrics/pull/42
+2026-11-15,metrics,pr,merged,43,"fix(rework): flag the detail rows of reworked items",https://github.com/fullsend-ai/metrics/pull/43
+2026-11-15,metrics,pr,merged,42,"fix(data): keep only public repositories in the dashboard data",https://github.com/fullsend-ai/metrics/pull/42
+2026-11-15,metrics,pr,merged,41,"feat(dashboard): show the escaped-fix rate first on Quality Signals",https://github.com/fullsend-ai/metrics/pull/41
+2026-11-15,metrics,issue,opened,44,"feat(quality): track PR fix likelihood by band, checked per repository",https://github.com/fullsend-ai/metrics/issues/44
+2026-11-15,agents,pr,opened,2044,"fix(triage): carry open and ruled-out causes across re-triage runs",https://github.com/fullsend-ai/agents/pull/2044
+2026-11-15,agents,pr,opened,2041,"fix(#2019): derive GitLab label request values from PR_URL",https://github.com/fullsend-ai/agents/pull/2041
+2026-11-15,agents,pr,opened,2040,"fix(#1965): clarify the /fs-code hint after triage auto-promotion",https://github.com/fullsend-ai/agents/pull/2040
+2026-11-15,agents,pr,opened,2039,"docs(local): use the fullsend pin for the OpenShell version",https://github.com/fullsend-ai/agents/pull/2039
+2026-11-15,agents,pr,opened,2037,"fix(gitlab)!: post triage and prioritize results as new notes",https://github.com/fullsend-ai/agents/pull/2037
+2026-11-15,agents,pr,opened,2036,"fix(examples): post the link-check all-clear as a new comment",https://github.com/fullsend-ai/agents/pull/2036
+2026-11-15,agents,pr,merged,2034,"fix(#2033): deepen the review clone from the configured GitHub host",https://github.com/fullsend-ai/agents/pull/2034
+2026-11-15,agents,issue,opened,2043,"eval(triage): cover reviving, folding and non-GitHub paths of the carried cause lists",https://github.com/fullsend-ai/agents/issues/2043
+2026-11-15,agents,issue,opened,2042,"Triage re-runs: carry the prior analysis and its refutations reliably across trackers",https://github.com/fullsend-ai/agents/issues/2042
+2026-11-15,agents,issue,opened,2038,"Code agent should fan out the same fix across multiple release branches named in the issue",https://github.com/fullsend-ai/agents/issues/2038
+2026-11-15,agents,issue,opened,2035,"Instruct triage agent to propose verification commands instead of synthetic unit tests for declarative configuration and hygiene changes",https://github.com/fullsend-ai/agents/issues/2035
+2026-11-15,agents,issue,closed,2033,"pre-review: deepen the review clone from the configured GitHub host",https://github.com/fullsend-ai/agents/issues/2033
+2026-11-15,react-shopping-cart,pr,opened,100,"docs(auto-merge): cite issue #98 as the README.md allowance authority",https://github.com/fullsend-ai/react-shopping-cart/pull/100
+2026-11-15,react-shopping-cart,pr,opened,97,"ci(auto-merge): allow the root README.md in the path allowlist",https://github.com/fullsend-ai/react-shopping-cart/pull/97
+2026-11-15,react-shopping-cart,pr,opened,96,"feat(TSTAPP-1): add Red Hat brand filter",https://github.com/fullsend-ai/react-shopping-cart/pull/96
+2026-11-15,react-shopping-cart,pr,opened,94,"fix: register the code agent so Jira /fs-code dispatches",https://github.com/fullsend-ai/react-shopping-cart/pull/94
+2026-11-15,react-shopping-cart,pr,opened,93,"chore: pin triage harness to the v0.56.1 agents release",https://github.com/fullsend-ai/react-shopping-cart/pull/93
+2026-11-15,react-shopping-cart,pr,opened,92,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/react-shopping-cart/pull/92
+2026-11-15,react-shopping-cart,pr,merged,100,"docs(auto-merge): cite issue #98 as the README.md allowance authority",https://github.com/fullsend-ai/react-shopping-cart/pull/100
+2026-11-15,react-shopping-cart,pr,merged,97,"ci(auto-merge): allow the root README.md in the path allowlist",https://github.com/fullsend-ai/react-shopping-cart/pull/97
+2026-11-15,react-shopping-cart,pr,merged,96,"feat(TSTAPP-1): add Red Hat brand filter",https://github.com/fullsend-ai/react-shopping-cart/pull/96
+2026-11-15,react-shopping-cart,pr,merged,94,"fix: register the code agent so Jira /fs-code dispatches",https://github.com/fullsend-ai/react-shopping-cart/pull/94
+2026-11-15,react-shopping-cart,pr,merged,93,"chore: pin triage harness to the v0.56.1 agents release",https://github.com/fullsend-ai/react-shopping-cart/pull/93
+2026-11-15,react-shopping-cart,pr,merged,92,"chore: initialize fullsend per-repo installation",https://github.com/fullsend-ai/react-shopping-cart/pull/92
+2026-11-15,react-shopping-cart,issue,opened,99,"Make auto-merge.yml header cite issue #98 and update issue #11's authorization record for the firebase.json and README.md amendments",https://github.com/fullsend-ai/react-shopping-cart/issues/99
+2026-11-15,react-shopping-cart,issue,opened,98,"Authorize the root README.md in the auto-merge path allowlist",https://github.com/fullsend-ai/react-shopping-cart/issues/98
+2026-11-15,react-shopping-cart,issue,opened,95,"Accept Jira project-role authorization for /fs-code dispatch (demo)",https://github.com/fullsend-ai/react-shopping-cart/issues/95
+2026-11-15,react-shopping-cart,issue,closed,99,"Make auto-merge.yml header cite issue #98 and update issue #11's authorization record for the firebase.json and README.md amendments",https://github.com/fullsend-ai/react-shopping-cart/issues/99
+2026-11-15,react-shopping-cart,issue,closed,98,"Authorize the root README.md in the auto-merge path allowlist",https://github.com/fullsend-ai/react-shopping-cart/issues/98
+2026-11-15,react-shopping-cart,issue,closed,95,"Accept Jira project-role authorization for /fs-code dispatch (demo)",https://github.com/fullsend-ai/react-shopping-cart/issues/95

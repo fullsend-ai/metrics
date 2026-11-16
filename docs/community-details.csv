@@ -3515,3 +3515,25 @@ date,repo,type,event,number,actor,title,url
 2026-11-14,agents,issue,closed_via_pr_external,1866,jctanner,"ops libraries: review, code, fix and other GitHub stages assume github.com URLs",https://github.com/fullsend-ai/agents/issues/1866
 2026-11-14,agents,issue,closed_via_pr_external,1865,jctanner,"triage: tracker_validate_issue_url rejects issue URLs on GitHub hosts other than github.com",https://github.com/fullsend-ai/agents/issues/1865
 2026-11-14,agents,issue,closed_via_pr_external,1864,jctanner,"triage, review: agent definitions do not say their inputs are environment variables, so the model sometimes asks for them",https://github.com/fullsend-ai/agents/issues/1864
+2026-11-15,fullsend,issue,opened_external,9518,shairevivo,"Configurable Jira status sync: move the work item as the pipeline runs and merges",https://github.com/fullsend-ai/fullsend/issues/9518
+2026-11-15,fullsend,issue,opened_external,9517,tpouyer,"sticky: remove the history folding and keep_history now that every result is a new comment",https://github.com/fullsend-ai/fullsend/issues/9517
+2026-11-15,fullsend,issue,opened_external,9516,tpouyer,"jira/adf: reword the comments that cite sticky.BuildUpdatedBody when the history folding is removed",https://github.com/fullsend-ai/fullsend/issues/9516
+2026-11-15,fullsend,issue,opened_external,9503,shairevivo,"jira-poll: dispatches nothing unless agents are registered in config, and the installer registers none",https://github.com/fullsend-ai/fullsend/issues/9503
+2026-11-15,fullsend,issue,closed_via_pr_external,9038,jctanner,"run: agents-repo fallback and the run's status comment address github.com on other GitHub hosts",https://github.com/fullsend-ai/fullsend/issues/9038
+2026-11-15,epic-creator,pr,reviewed_external,61,MichaelYochpaz,"feat(AISDLC-432): protect Jira submissions",https://github.com/fullsend-ai/epic-creator/pull/61
+2026-11-15,metrics,issue,opened_external,44,guyoron1,"feat(quality): track PR fix likelihood by band, checked per repository",https://github.com/fullsend-ai/metrics/issues/44
+2026-11-15,metrics,pr,opened_core,43,ascerra,"fix(rework): flag the detail rows of reworked items",https://github.com/fullsend-ai/metrics/pull/43
+2026-11-15,metrics,pr,opened_core,42,ascerra,"fix(data): keep only public repositories in the dashboard data",https://github.com/fullsend-ai/metrics/pull/42
+2026-11-15,agents,issue,opened_external,2043,tpouyer,"eval(triage): cover reviving, folding and non-GitHub paths of the carried cause lists",https://github.com/fullsend-ai/agents/issues/2043
+2026-11-15,agents,issue,opened_external,2042,tpouyer,"Triage re-runs: carry the prior analysis and its refutations reliably across trackers",https://github.com/fullsend-ai/agents/issues/2042
+2026-11-15,agents,pr,reviewed_external,2041,Benkapner,"fix(#2019): derive GitLab label request values from PR_URL",https://github.com/fullsend-ai/agents/pull/2041
+2026-11-15,agents,pr,reviewed_external,2037,Benkapner,"fix(gitlab)!: post triage and prioritize results as new notes",https://github.com/fullsend-ai/agents/pull/2037
+2026-11-15,agents,pr,reviewed_external,2037,Benkapner,"fix(gitlab)!: post triage and prioritize results as new notes",https://github.com/fullsend-ai/agents/pull/2037
+2026-11-15,agents,pr,reviewed_external,1938,csoceanu,"fix(#1937): skip label-triggered code runs when a coder PR is open",https://github.com/fullsend-ai/agents/pull/1938
+2026-11-15,agents,pr,reviewed_external,1916,csoceanu,"feat(prioritize): add dark Jira forge for RICE field writes",https://github.com/fullsend-ai/agents/pull/1916
+2026-11-15,react-shopping-cart,issue,opened_external,98,shairevivo,"Authorize the root README.md in the auto-merge path allowlist",https://github.com/fullsend-ai/react-shopping-cart/issues/98
+2026-11-15,react-shopping-cart,issue,opened_external,95,shairevivo,"Accept Jira project-role authorization for /fs-code dispatch (demo)",https://github.com/fullsend-ai/react-shopping-cart/issues/95
+2026-11-15,react-shopping-cart,issue,closed_other_external,98,shairevivo,"Authorize the root README.md in the auto-merge path allowlist",https://github.com/fullsend-ai/react-shopping-cart/issues/98
+2026-11-15,react-shopping-cart,issue,closed_via_pr_external,95,shairevivo,"Accept Jira project-role authorization for /fs-code dispatch (demo)",https://github.com/fullsend-ai/react-shopping-cart/issues/95
+2026-11-15,react-shopping-cart,pr,reviewed_external,96,shairevivo,"feat(TSTAPP-1): add Red Hat brand filter",https://github.com/fullsend-ai/react-shopping-cart/pull/96
+2026-11-15,react-shopping-cart,pr,reviewed_external,96,shairevivo,"feat(TSTAPP-1): add Red Hat brand filter",https://github.com/fullsend-ai/react-shopping-cart/pull/96

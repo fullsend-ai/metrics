@@ -2641,3 +2641,12 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-14,agents,1871,fix(#1865): accept triage issue URLs on the run's GitHub host,fix,external,1865,jctanner,https://github.com/fullsend-ai/agents/pull/1871
 2026-11-14,agents,1870,fix(#1864): tell triage and review agents their inputs are env vars,fix,external,1864,jctanner,https://github.com/fullsend-ai/agents/pull/1870
 2026-11-14,agents,1869,fix(#1867): restrict triage duplicate targets to open issues,fix,external,1867,jctanner,https://github.com/fullsend-ai/agents/pull/1869
+2026-11-15,fullsend,9515,feat(#9508)!: require allow_durable for durable credential host_files,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9515
+2026-11-15,fullsend,9502,test(#9501): count only responses in Jira 401 no-retry tests,test,,,,https://github.com/fullsend-ai/fullsend/pull/9502
+2026-11-15,fullsend,9499,fix(#9497): classify GitHub 5xx and stream resets in setup as infra,fix,core,9497,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9499
+2026-11-15,fullsend,9496,test(#9495): match runs created in the trigger's own second,test,,,,https://github.com/fullsend-ai/fullsend/pull/9496
+2026-11-15,fullsend,9216,chore(deps): update dependency vite to v6.4.6,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9216
+2026-11-15,fullsend,9145,chore(deps): update experiments digest to d429212,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9145
+2026-11-15,fullsend,9056,fix(#9038): address configured GitHub host in run fallback and status,fix,external,9038,jctanner,https://github.com/fullsend-ai/fullsend/pull/9056
+2026-11-15,fullsend,9052,fix(#9037): parse raw-content URLs on configured GitHub hosts,fix,external,9037,jctanner,https://github.com/fullsend-ai/fullsend/pull/9052
+2026-11-15,agents,2034,fix(#2033): deepen the review clone from the configured GitHub host,fix,core,2033,waynesun09,https://github.com/fullsend-ai/agents/pull/2034
