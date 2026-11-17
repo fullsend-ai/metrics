@@ -4,8 +4,9 @@
 Band, from what was known when the PR merged:
 - size: the PR's changed lines (additions + deletions), placed in thirds of the
   same repository's PRs merged in earlier weeks;
-- riskier kind of change: a feat, ci or untyped ("other") PR, from
-  docs/pr-type-details.csv. A PR without a conventional type counts as riskier.
+- riskier kind of change: a feat, ci or build PR, or one with no conventional
+  prefix, from the titles in docs/pr-type-details.csv. A typed refactor, chore,
+  docs, test, fix or perf PR is not riskier.
 lower = a small or middle size and not riskier; higher = a big size and
 riskier; middle = everything else. With fewer than MIN_HISTORY earlier PRs the
 band is unable_to_assess, never lower.
@@ -21,8 +22,9 @@ docs/escaped-fixes.csv):
 - docs/fix-likelihood-check.csv: per repo and for all repos, whether the bands
   rank the fixed PRs first: AUC of the bands ordered by size inside, and the
   share of fixed PRs among the riskiest 30% of PRs. Every band uses only earlier
-  PRs, so this checks the rule on PRs it was not fitted on. PRs with an open
-  candidate are left out. Under MIN_FIXES fixed PRs it reports too few to judge.
+  PRs, so this checks the rule on PRs it was not fitted on. PRs whose outcome is
+  still open (no confirmed fix, and an unjudged or unknown candidate) are left
+  out; a PR with a confirmed fix is checked even if another candidate is open. Under MIN_FIXES fixed PRs it reports too few to judge.
 
 The bands are advisory: they show where review should look hardest, and never
 approve or merge a PR.
@@ -36,6 +38,7 @@ import argparse
 import bisect
 import importlib.util
 import math
+import re
 import statistics
 import sys
 from collections import defaultdict
@@ -60,7 +63,8 @@ CHECK = ef.ROOT / "docs" / "fix-likelihood-check.csv"
 SIZE_HEADER = ["repo", "number", "changed_lines"]
 OUTPUT_HEADER = ["week", "repo", "band", "merged_prs", "fixed_prs", "unjudged_candidates", "fix_rate"]
 CHECK_HEADER = ["repo", "checked_prs", "fixed_prs", "left_out_open", "auc", "fixed_in_riskiest_30pct"]
-RISKIER = {"feat", "ci", "other", ""}
+RISKIER = {"feat", "ci", "build"}  # title prefixes; no conventional prefix also counts
+PREFIX = re.compile(r"^(\w+)(?:\([^)]+\))?!?:")
 BAND = {("small", False): "lower", ("middle", False): "lower", ("small", True): "middle",
         ("middle", True): "middle", ("big", False): "middle", ("big", True): "higher"}
 RANK = {"lower": 0, "middle": 1, "higher": 2}
@@ -71,6 +75,13 @@ BATCH = 50  # PRs per GraphQL query
 
 def key(pr: dict) -> str:
     return f"{pr['repo']}#{pr['number']}"
+
+
+def riskier(pr: dict) -> bool:
+    """feat, ci or build by title prefix, or no conventional prefix at all."""
+    # pr_type folds refactor and build into "other", so read the prefix itself.
+    match = PREFIX.match(pr.get("title", "").strip())
+    return match is None or match.group(1).lower() in RISKIER
 
 
 def monday(day: str) -> date:
@@ -121,7 +132,7 @@ def bands(details: list[dict], sizes: dict[str, int]) -> dict[str, tuple[str, fl
                     out[key(pr)] = ("unable_to_assess", 0.0)
                     continue
                 third = "small" if size <= cuts[0] else "middle" if size <= cuts[1] else "big"
-                out[key(pr)] = (BAND[(third, pr["pr_type"] in RISKIER)], bisect.bisect_right(earlier, size) / len(earlier))
+                out[key(pr)] = (BAND[(third, riskier(pr))], bisect.bisect_right(earlier, size) / len(earlier))
             for pr in by_week[week]:
                 bisect.insort(earlier, sizes[key(pr)])
     return out

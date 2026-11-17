@@ -83,7 +83,8 @@ needed a fix, and whether the bands rank those PRs first in each repository.
 
 - **Size:** changed lines (additions + deletions), in thirds of the same
   repository's PRs merged in earlier weeks.
-- **Riskier kind of change:** a `feat`, `ci` or untyped (`other`) PR.
+- **Riskier kind of change:** a `feat`, `ci` or `build` PR, or one with no
+  conventional prefix (by title; a typed `refactor` is not riskier).
 - `lower` = small or middle size, not riskier; `higher` = big and riskier;
   `middle` = everything else. With fewer than 50 earlier PRs the band is
   `unable_to_assess`, never `lower`.
@@ -91,8 +92,8 @@ needed a fix, and whether the bands rank those PRs first in each repository.
 The outcome is a later PR that fixed a medium- or high-severity defect from the
 PR within 30 days (`docs/fix-judgments.csv`), for the same closed weeks as the
 escaped-fix rate. The check uses only PRs whose band came from earlier PRs, so
-the rule is tested on PRs it was not fitted on; PRs with an open candidate are
-left out, and a repository with fewer than 20 fixed PRs reports
+the rule is tested on PRs it was not fitted on; PRs whose outcome is still open
+(no confirmed fix, and an open candidate) are left out, and a repository with fewer than 20 fixed PRs reports
 `too_few_fixes`. An offline study of nine repositories found that size and
 kind of change rank later fixes about as well as anything else it tried, and
 weakly in some repositories, which is why the check is per repository. The bands
@@ -103,5 +104,5 @@ or merge a PR.
 |------|---------|
 | `docs/pr-size.csv` | Changed lines per merged PR, fetched once over GraphQL |
 | `docs/fix-likelihood.csv` | Per week × repo × band: merged PRs, PRs with a medium+ fix, open candidates, rate |
-| `docs/fix-likelihood-check.csv` | Per repo and all repos: PRs checked, fixed PRs, PRs left out for open candidates, AUC of the bands ordered by size inside, share of fixed PRs in the riskiest 30% |
+| `docs/fix-likelihood-check.csv` | Per repo and all repos: PRs checked, fixed PRs, PRs left out because their outcome is still open, AUC of the bands ordered by size inside, share of fixed PRs in the riskiest 30% |
 | `scripts/collect-fix-likelihood.py` | Run by `collect-escaped-fixes.sh` after the escaped-fix rate, and by the judge writeback with `--rebuild` |

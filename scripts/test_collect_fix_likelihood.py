@@ -14,14 +14,14 @@ mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 
 
-def history(repo="fullsend", weeks=6, per_week=10, pr_type="fix"):
+def history(repo="fullsend", weeks=6, per_week=10, title="fix: x"):
     """per_week PRs a week, sizes 1..weeks*per_week, all before 2026-06-01."""
     start = date(2026, 6, 1) - timedelta(weeks=weeks)
     details, sizes = [], {}
     for n in range(weeks * per_week):
         number = n + 1
         details.append({"date": (start + timedelta(weeks=n // per_week)).isoformat(),
-                        "repo": repo, "number": str(number), "pr_type": pr_type})
+                        "repo": repo, "number": str(number), "title": title})
         sizes[f"{repo}#{number}"] = number
     return details, sizes
 
@@ -34,20 +34,22 @@ class TestBands(unittest.TestCase):
 
     def test_size_third_and_riskier_type(self):
         details, sizes = history()  # 60 earlier PRs of size 1..60: cuts at about 20 and 40
-        new = [("small-feat", 5, "feat"), ("big-fix", 55, "fix"), ("big-feat", 55, "feat"),
-               ("mid-fix", 30, "fix"), ("big-untyped", 55, "other")]
-        for i, (_, size, pr_type) in enumerate(new):
-            details.append({"date": "2026-06-01", "repo": "fullsend", "number": str(100 + i), "pr_type": pr_type})
+        new = [("small-feat", 5, "feat: x"), ("big-fix", 55, "fix(api): x"), ("big-feat", 55, "feat(ui)!: x"),
+               ("mid-fix", 30, "fix: x"), ("big-untyped", 55, "Add a thing"), ("big-refactor", 55, "refactor: x"),
+               ("big-build", 55, "build(deps): x")]
+        for i, (_, size, title) in enumerate(new):
+            details.append({"date": "2026-06-01", "repo": "fullsend", "number": str(100 + i), "title": title})
             sizes[f"fullsend#{100 + i}"] = size
         banded = mod.bands(details, sizes)
         got = {name: banded[f"fullsend#{100 + i}"][0] for i, (name, _, _) in enumerate(new)}
         self.assertEqual(got, {"small-feat": "middle", "big-fix": "middle", "big-feat": "higher",
-                               "mid-fix": "lower", "big-untyped": "higher"})
+                               "mid-fix": "lower", "big-untyped": "higher", "big-refactor": "middle",
+                               "big-build": "higher"})
 
     def test_same_week_prs_are_not_their_own_history(self):
         details, sizes = history(weeks=5)  # exactly MIN_HISTORY earlier PRs
-        details.append({"date": "2026-06-01", "repo": "fullsend", "number": "900", "pr_type": "fix"})
-        details.append({"date": "2026-06-02", "repo": "fullsend", "number": "901", "pr_type": "fix"})
+        details.append({"date": "2026-06-01", "repo": "fullsend", "number": "900", "title": "fix: x"})
+        details.append({"date": "2026-06-02", "repo": "fullsend", "number": "901", "title": "fix: x"})
         sizes["fullsend#900"] = sizes["fullsend#901"] = 1000
         banded = mod.bands(details, sizes)
         self.assertEqual(banded["fullsend#900"], banded["fullsend#901"])
@@ -58,7 +60,7 @@ class TestBands(unittest.TestCase):
         other, other_sizes = history(repo="agents")
         details += other
         sizes.update({k: v * 100 for k, v in other_sizes.items()})
-        details.append({"date": "2026-06-01", "repo": "agents", "number": "999", "pr_type": "feat"})
+        details.append({"date": "2026-06-01", "repo": "agents", "number": "999", "title": "feat: x"})
         sizes["agents#999"] = 500  # big in fullsend's terms, small in agents'
         self.assertEqual(mod.bands(details, sizes)["agents#999"][0], "middle")
 
