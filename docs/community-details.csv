@@ -3537,3 +3537,39 @@ date,repo,type,event,number,actor,title,url
 2026-11-15,react-shopping-cart,issue,closed_via_pr_external,95,shairevivo,"Accept Jira project-role authorization for /fs-code dispatch (demo)",https://github.com/fullsend-ai/react-shopping-cart/issues/95
 2026-11-15,react-shopping-cart,pr,reviewed_external,96,shairevivo,"feat(TSTAPP-1): add Red Hat brand filter",https://github.com/fullsend-ai/react-shopping-cart/pull/96
 2026-11-15,react-shopping-cart,pr,reviewed_external,96,shairevivo,"feat(TSTAPP-1): add Red Hat brand filter",https://github.com/fullsend-ai/react-shopping-cart/pull/96
+2026-11-16,fullsend,issue,opened_external,9568,tpouyer,"reusable-dispatch: export FULLSEND_APP_SET to the triage agent step",https://github.com/fullsend-ai/fullsend/issues/9568
+2026-11-16,fullsend,issue,opened_external,9564,Benkapner,"agent set --effort writes an inherited model to config.yaml",https://github.com/fullsend-ai/fullsend/issues/9564
+2026-11-16,fullsend,issue,opened_external,9559,AshwinUgale,"telemetry: record model-call retries on the agent span",https://github.com/fullsend-ai/fullsend/issues/9559
+2026-11-16,fullsend,issue,opened_external,9556,tpouyer,"harness: tests and doc tidy-ups for URL-fetched api_servers[].script",https://github.com/fullsend-ai/fullsend/issues/9556
+2026-11-16,fullsend,issue,opened_external,9533,astefanutti,"docs: tracing-with-mlflow recommends OTEL_RESOURCE_ATTRIBUTES slicing, which MLflow drops at ingest",https://github.com/fullsend-ai/fullsend/issues/9533
+2026-11-16,fullsend,issue,opened_external,9532,astefanutti,"telemetry: MLflow computes negative cost for fullsend traces (emit mlflow.llm.cost)",https://github.com/fullsend-ai/fullsend/issues/9532
+2026-11-16,fullsend,issue,opened_external,9530,mfrancisc,"cli: print effective layered configuration after composition",https://github.com/fullsend-ai/fullsend/issues/9530
+2026-11-16,fullsend,issue,opened_external,9529,nellyc,"scaffold: GitLab upgrade drops runner tags from dispatcher and poller jobs",https://github.com/fullsend-ai/fullsend/issues/9529
+2026-11-16,fullsend,issue,closed_other_external,9518,shairevivo,"Jira status: close on merge, and gate transitions by issue type",https://github.com/fullsend-ai/fullsend/issues/9518
+2026-11-16,fullsend,pr,reviewed_external,9523,aoguntayo,"chore(deps): update ubi10 base images",https://github.com/fullsend-ai/fullsend/pull/9523
+2026-11-16,fullsend,pr,reviewed_external,9436,ravelley,"test(#9426): make repos and scaffold tests pass on macOS/arm64",https://github.com/fullsend-ai/fullsend/pull/9436
+2026-11-16,fullsend,pr,reviewed_external,9436,ravelley,"test(#9426): make repos and scaffold tests pass on macOS/arm64",https://github.com/fullsend-ai/fullsend/pull/9436
+2026-11-16,fullsend,pr,reviewed_external,9390,jwm4,"docs(#9389): ADR 0172, let bot-added labels start agents on Jira",https://github.com/fullsend-ai/fullsend/pull/9390
+2026-11-16,fullsend,pr,reviewed_external,9264,jwm4,"docs(adr): define control-repository saga journals",https://github.com/fullsend-ai/fullsend/pull/9264
+2026-11-16,fullsend,pr,reviewed_external,9264,jwm4,"docs(adr): define control-repository saga journals",https://github.com/fullsend-ai/fullsend/pull/9264
+2026-11-16,agent-eval-harness,issue,opened_external,320,astefanutti,"thresholds: no way to require that a conditional judge actually applied",https://github.com/fullsend-ai/agent-eval-harness/issues/320
+2026-11-16,agent-eval-harness,issue,closed_other_external,311,ravelley,"Treat fully skipped conditional judges as not applicable for thresholds",https://github.com/fullsend-ai/agent-eval-harness/issues/311
+2026-11-16,agent-eval-harness,pr,reviewed_external,312,astefanutti,"feat(eval-run): treat all-skipped conditional judges as N/A",https://github.com/fullsend-ai/agent-eval-harness/pull/312
+2026-11-16,experiments,pr,opened_core,71,maruiz93,"feat(0030): add GitHub MCP credential injection experiment",https://github.com/fullsend-ai/experiments/pull/71
+2026-11-16,epic-creator,pr,reviewed_external,61,astefanutti,"feat(AISDLC-432): protect Jira submissions",https://github.com/fullsend-ai/epic-creator/pull/61
+2026-11-16,agents,issue,opened_external,2055,AshwinUgale,"eval: replace the LLM quality judges with a deterministic prior-finding check",https://github.com/fullsend-ai/agents/issues/2055
+2026-11-16,agents,issue,opened_external,2053,tpouyer,"triage: pick the trusted prior analysis with a script, not a multi-API prompt procedure",https://github.com/fullsend-ai/agents/issues/2053
+2026-11-16,agents,issue,opened_external,2050,tpouyer,"pr-review: trust the same review App names as the review scripts, not a hard-coded slug",https://github.com/fullsend-ai/agents/issues/2050
+2026-11-16,agents,pr,reviewed_external,2051,Benkapner,"fix(#2050): find the prior risk assessment by FULLSEND_SLUG",https://github.com/fullsend-ai/agents/pull/2051
+2026-11-16,agents,pr,reviewed_external,2051,Benkapner,"fix(#2050): find the prior risk assessment by FULLSEND_SLUG",https://github.com/fullsend-ai/agents/pull/2051
+2026-11-16,agents,pr,reviewed_external,2051,tpouyer,"fix(#2050): find the prior risk assessment by FULLSEND_SLUG",https://github.com/fullsend-ai/agents/pull/2051
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-16,agents,pr,reviewed_external,1501,dhshah13,"feat(#1500): dispatch review and retro children on Codex",https://github.com/fullsend-ai/agents/pull/1501

@@ -2650,3 +2650,9 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-15,fullsend,9056,fix(#9038): address configured GitHub host in run fallback and status,fix,external,9038,jctanner,https://github.com/fullsend-ai/fullsend/pull/9056
 2026-11-15,fullsend,9052,fix(#9037): parse raw-content URLs on configured GitHub hosts,fix,external,9037,jctanner,https://github.com/fullsend-ai/fullsend/pull/9052
 2026-11-15,agents,2034,fix(#2033): deepen the review clone from the configured GitHub host,fix,core,2033,waynesun09,https://github.com/fullsend-ai/agents/pull/2034
+2026-11-16,fullsend,9554,chore(#9553): limit pre-commit semgrep hook to Go files,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9554
+2026-11-16,fullsend,9523,chore(deps): update ubi10 base images,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9523
+2026-11-16,fullsend,9520,feat(#9510): print each provider's resolved profile,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9520
+2026-11-16,fullsend,9514,feat(#9511): warn on GitLab provider credentials from CI/CD variables,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9514
+2026-11-16,fullsend,9314,docs(#9310): align entity-context-snapshot v2 with normalized entity,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9314
+2026-11-16,fullsend,9061,"chore(e2e): split org pool setup into manual, enroll, and CI scripts",chore,,,,https://github.com/fullsend-ai/fullsend/pull/9061
