@@ -255,3 +255,17 @@ week,repo,pr_type,merged_prs,escaped_prs,severe_prs,unjudged_candidates,escaped_
 2026-10-05,fullsend,other,22,1,0,10,0.0455
 2026-10-05,fullsend,perf,1,0,0,0,0.0000
 2026-10-05,fullsend,test,5,0,0,1,0.0000
+2026-10-12,agents,all,11,0,0,16,0.0000
+2026-10-12,agents,chore,2,0,0,14,0.0000
+2026-10-12,agents,feat,2,0,0,1,0.0000
+2026-10-12,agents,fix,5,0,0,1,0.0000
+2026-10-12,agents,test,2,0,0,0,0.0000
+2026-10-12,fullsend,all,74,0,0,31,0.0000
+2026-10-12,fullsend,chore,10,0,0,4,0.0000
+2026-10-12,fullsend,ci,2,0,0,0,0.0000
+2026-10-12,fullsend,docs,9,0,0,1,0.0000
+2026-10-12,fullsend,feat,15,0,0,12,0.0000
+2026-10-12,fullsend,fix,23,0,0,8,0.0000
+2026-10-12,fullsend,other,6,0,0,4,0.0000
+2026-10-12,fullsend,perf,1,0,0,0,0.0000
+2026-10-12,fullsend,test,8,0,0,2,0.0000

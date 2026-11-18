@@ -2656,3 +2656,19 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-16,fullsend,9514,feat(#9511): warn on GitLab provider credentials from CI/CD variables,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9514
 2026-11-16,fullsend,9314,docs(#9310): align entity-context-snapshot v2 with normalized entity,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9314
 2026-11-16,fullsend,9061,"chore(e2e): split org pool setup into manual, enroll, and CI scripts",chore,,,,https://github.com/fullsend-ai/fullsend/pull/9061
+2026-11-17,fullsend,9604,feat(#9123): config limits what the live progress log shows,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9604
+2026-11-17,fullsend,9593,feat(#9591): enable required GCP APIs in inference provision,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9593
+2026-11-17,fullsend,9576,chore(deps): update renovatebot/github-action action to v46.3.14,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9576
+2026-11-17,fullsend,9575,fix(#9568): export FULLSEND_APP_SET to the triage agent step,fix,external,9568,tpouyer,https://github.com/fullsend-ai/fullsend/pull/9575
+2026-11-17,fullsend,9506,docs(#9402): compare the /fs-* refusal with the Jira body ladder,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9506
+2026-11-17,fullsend,9490,test(#9478): pin newest-wins for the GitLab note fetchers,test,,,,https://github.com/fullsend-ai/fullsend/pull/9490
+2026-11-17,fullsend,9485,docs(glossary): define agent and correct outdated entries,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9485
+2026-11-17,fullsend,9477,feat(#9060)!: provision and rotate GitHub trace signing keys in repos install,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9477
+2026-11-17,fullsend,9459,fix(#9456): report original agents[] index in scoped lint,fix,external,9456,Benkapner,https://github.com/fullsend-ai/fullsend/pull/9459
+2026-11-17,fullsend,9444,feat(codex)!: delegate from collaboration V2 parents,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9444
+2026-11-17,fullsend,9227,"docs(adr): add ADR 0164, run the shim on pull_request for same-repo PRs",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9227
+2026-11-17,fullsend,9215,"docs(adr): add ADR 0163, repo config limits the live progress log",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9215
+2026-11-17,agents,2039,docs(local): use the fullsend pin for the OpenShell version,docs,,,,https://github.com/fullsend-ai/agents/pull/2039
+2026-11-17,agents,2036,fix(examples): post the link-check all-clear as a new comment,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/2036
+2026-11-17,agents,2005,feat(code): add optional Jira workflow transitions,feat,,,,https://github.com/fullsend-ai/agents/pull/2005
+2026-11-17,agents,1916,feat(prioritize): add dark Jira forge for RICE field writes,feat,,,,https://github.com/fullsend-ai/agents/pull/1916

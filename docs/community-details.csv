@@ -3573,3 +3573,44 @@ date,repo,type,event,number,actor,title,url
 2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
 2026-11-16,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
 2026-11-16,agents,pr,reviewed_external,1501,dhshah13,"feat(#1500): dispatch review and retro children on Codex",https://github.com/fullsend-ai/agents/pull/1501
+2026-11-17,fullsend,issue,opened_external,9657,dhshah13,"codex: review and retro departed from their instructions in local runs",https://github.com/fullsend-ai/fullsend/issues/9657
+2026-11-17,fullsend,issue,opened_external,9635,jflowers,"feat(inference): GitLab WIF binding won't match companion project jobs",https://github.com/fullsend-ai/fullsend/issues/9635
+2026-11-17,fullsend,issue,opened_external,9634,jflowers,"feat(repos): no uninstall path for GitLab companion project installs",https://github.com/fullsend-ai/fullsend/issues/9634
+2026-11-17,fullsend,issue,opened_external,9633,jflowers,"feat(repos): GitLab install can't put Fullsend in a companion project",https://github.com/fullsend-ai/fullsend/issues/9633
+2026-11-17,fullsend,issue,opened_external,9632,jflowers,"gitlab: validate companion project mode on GitLab.com before we build it",https://github.com/fullsend-ai/fullsend/issues/9632
+2026-11-17,fullsend,issue,opened_external,9602,tpouyer,"Let harness scripts resolve a bot's registered role (ADR 0107)",https://github.com/fullsend-ai/fullsend/issues/9602
+2026-11-17,fullsend,issue,opened_external,9596,Dannyb48,"repos install flags the managed Jira credential as an orphan variable",https://github.com/fullsend-ai/fullsend/issues/9596
+2026-11-17,fullsend,issue,opened_external,9594,mfrancisc,"inference deprovision: revoke roles/aiplatform.user for repo-scoped teardown when safe",https://github.com/fullsend-ai/fullsend/issues/9594
+2026-11-17,fullsend,issue,opened_external,9572,dhshah13,"repos: a glob carve-out copies a different glob entry than selection matched when the repository name differs in case",https://github.com/fullsend-ai/fullsend/issues/9572
+2026-11-17,fullsend,issue,opened_external,9571,dhshah13,"repos install: convergence lists glob orgs again after the preflights",https://github.com/fullsend-ai/fullsend/issues/9571
+2026-11-17,fullsend,issue,opened_external,9570,dhshah13,"repos install: a trace key recorded before convergence stays retained when the run stops before its key step",https://github.com/fullsend-ai/fullsend/issues/9570
+2026-11-17,fullsend,issue,opened_external,9569,jctanner,"action: operator lock for OPENSHELL_GATEWAY_ENDPOINT on shared runner pools (bearer-token exfiltration)",https://github.com/fullsend-ai/fullsend/issues/9569
+2026-11-17,fullsend,issue,closed_via_pr_external,9568,tpouyer,"reusable-dispatch: export FULLSEND_APP_SET to the triage agent step",https://github.com/fullsend-ai/fullsend/issues/9568
+2026-11-17,fullsend,issue,closed_via_pr_external,9478,tpouyer,"Follow-ups put run-agent-job.sh in the agents repo, but it lives here, and nothing tests that its fetchers pick the newest note",https://github.com/fullsend-ai/fullsend/issues/9478
+2026-11-17,fullsend,issue,closed_via_pr_external,9456,Benkapner,"cli: single-agent lint reports the wrong agents[] index",https://github.com/fullsend-ai/fullsend/issues/9456
+2026-11-17,fullsend,issue,closed_other_external,8627,stoniko,"repos install: managed config files do not reference the repos.yaml they were generated from",https://github.com/fullsend-ai/fullsend/issues/8627
+2026-11-17,fullsend,pr,opened_core,9628,ralphbean,"docs(adr): clarify when to file a decision record",https://github.com/fullsend-ai/fullsend/pull/9628
+2026-11-17,fullsend,pr,opened_core,9625,waynesun09,"feat(run): bind the GitHub provider profiles and OIDC host to a configured GitHub server",https://github.com/fullsend-ai/fullsend/pull/9625
+2026-11-17,fullsend,pr,opened_core,9624,waynesun09,"fix(cli): retry the sandbox GitHub pre-flight until policy DNS is ready",https://github.com/fullsend-ai/fullsend/pull/9624
+2026-11-17,fullsend,pr,opened_core,9616,waynesun09,"feat(mint): honour a configured GitHub API and issuer in the standalone mint",https://github.com/fullsend-ai/fullsend/pull/9616
+2026-11-17,fullsend,pr,opened_core,9613,waynesun09,"test(behaviour): verify probe OIDC tokens from the JWKS n and e",https://github.com/fullsend-ai/fullsend/pull/9613
+2026-11-17,rfe-creator,issue,opened_external,302,astefanutti,"Review recommendation `reclassify`: hold a misfiled item instead of splitting, revising or approving it",https://github.com/fullsend-ai/rfe-creator/issues/302
+2026-11-17,agent-eval-harness,issue,opened_external,323,ravelley,"Apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/issues/323
+2026-11-17,agent-eval-harness,issue,opened_external,321,astefanutti,"A missing case workspace must count as lost evidence, not just a failed case",https://github.com/fullsend-ai/agent-eval-harness/issues/321
+2026-11-17,agent-eval-harness,issue,closed_other_external,313,ravelley,"Fail the run when a selected case workspace is missing",https://github.com/fullsend-ai/agent-eval-harness/issues/313
+2026-11-17,agent-eval-harness,issue,closed_via_pr_external,292,astefanutti,"collect.py: unify the batch and per-case collection loops, and close the TOCTOU with no-follow descriptors",https://github.com/fullsend-ai/agent-eval-harness/issues/292
+2026-11-17,agent-eval-harness,pr,reviewed_external,324,ravelley,"feat(score): apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/pull/324
+2026-11-17,agent-eval-harness,pr,reviewed_external,314,astefanutti,"fix(eval-run): fail the run when a case workspace is missing",https://github.com/fullsend-ai/agent-eval-harness/pull/314
+2026-11-17,agent-eval-harness,pr,reviewed_external,255,astefanutti,"[WIP]feat(agent-eval-optimize): cap-evolve integration",https://github.com/fullsend-ai/agent-eval-harness/pull/255
+2026-11-17,strat-creator,issue,opened_external,125,zanetworker,"clone_issue.py leaves Release Type and Product Documentation Required empty, so every auto-created STRAT fails Release Quality Gate 1",https://github.com/fullsend-ai/strat-creator/issues/125
+2026-11-17,epic-creator,pr,reviewed_external,65,jctanner,"feat(eval): add quick-mode cases and align runner settings",https://github.com/fullsend-ai/epic-creator/pull/65
+2026-11-17,epic-creator,pr,reviewed_external,61,MichaelYochpaz,"feat(AISDLC-432): protect Jira submissions",https://github.com/fullsend-ai/epic-creator/pull/61
+2026-11-17,epic-creator,pr,reviewed_external,56,jctanner,"feat(repository-planning)!: assign repositories before publishing Epics",https://github.com/fullsend-ai/epic-creator/pull/56
+2026-11-17,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-17,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-17,agents,pr,reviewed_external,2005,shairevivo,"feat(code): add optional Jira workflow transitions",https://github.com/fullsend-ai/agents/pull/2005
+2026-11-17,org,issue,opened_external,66,shairevivo,"Adding Tony Kay from Red Hat demo team",https://github.com/fullsend-ai/org/issues/66
+2026-11-17,org,pr,opened_core,67,waynesun09,"chore(rulesets): build at most 3 fullsend merge groups at once",https://github.com/fullsend-ai/org/pull/67
+2026-11-17,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
+2026-11-17,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
+2026-11-17,react-shopping-cart,pr,reviewed_external,102,shairevivo,"feat(TSTAPP-3): add Pullover Heather Grey Hoodie Unisex",https://github.com/fullsend-ai/react-shopping-cart/pull/102

@@ -373,3 +373,5 @@ date,repo,feat,fix,docs,ci,chore,test,perf,other,fix_core,fix_external,fix_bot,f
 2026-11-15,agents,0,1,0,0,0,0,0,0,1,0,0,0
 2026-11-16,fullsend,2,0,1,0,3,0,0,0,0,0,0,0
 2026-11-16,agents,0,0,0,0,0,0,0,0,0,0,0,0
+2026-11-17,fullsend,4,2,4,0,1,1,0,0,0,2,0,0
+2026-11-17,agents,2,1,1,0,0,0,0,0,0,0,0,1
