@@ -3614,3 +3614,65 @@ date,repo,type,event,number,actor,title,url
 2026-11-17,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
 2026-11-17,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
 2026-11-17,react-shopping-cart,pr,reviewed_external,102,shairevivo,"feat(TSTAPP-3): add Pullover Heather Grey Hoodie Unisex",https://github.com/fullsend-ai/react-shopping-cart/pull/102
+2026-11-18,fullsend,issue,opened_external,9677,Dannyb48,"feat(jirapoll): let a poll cover more than one Jira project",https://github.com/fullsend-ai/fullsend/issues/9677
+2026-11-18,fullsend,issue,opened_external,9667,dhshah13,"fix agent: /fs-fix instruction is cut silently at 4,096 characters, docs promise 10,000 bytes",https://github.com/fullsend-ai/fullsend/issues/9667
+2026-11-18,fullsend,issue,closed_via_pr_external,9532,astefanutti,"telemetry: MLflow computes negative cost for fullsend traces (emit mlflow.llm.cost)",https://github.com/fullsend-ai/fullsend/issues/9532
+2026-11-18,fullsend,issue,closed_via_pr_external,9426,ravelley,"make go-test fails on macOS/arm64 in repos and scaffold tests",https://github.com/fullsend-ai/fullsend/issues/9426
+2026-11-18,fullsend,issue,closed_via_pr_external,9298,ravelley,"Review-body pre-fetch tests fail on macOS due to padded byte counts",https://github.com/fullsend-ai/fullsend/issues/9298
+2026-11-18,fullsend,pr,opened_core,9680,ifireball,"ci(#9645): add Forgejo behaviour workflow",https://github.com/fullsend-ai/fullsend/pull/9680
+2026-11-18,fullsend,pr,opened_core,9662,rh-hemartin,"ci(e2e): configure pool orgs in a dedicated workflow",https://github.com/fullsend-ai/fullsend/pull/9662
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9658,dhshah13,"fix(#9657): tighten codex dispatch note and cap wait_agent timeouts",https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,pr,reviewed_external,9595,mfrancisc,"fix(#9594)!: revoke repo aiplatform.user binding on deprovision",https://github.com/fullsend-ai/fullsend/pull/9595
+2026-11-18,rfe-creator,issue,opened_external,304,astefanutti,"Eval: case-007's dictated stack does not survive the create step, so its revise path and flag-clear are never exercised",https://github.com/fullsend-ai/rfe-creator/issues/304
+2026-11-18,rfe-creator,issue,closed_via_pr_external,302,astefanutti,"Review recommendation `reclassify`: hold a misfiled item instead of splitting, revising or approving it",https://github.com/fullsend-ai/rfe-creator/issues/302
+2026-11-18,.fullsend,pr,opened_core,221,waynesun09,"fix: run the pi extension repos on the fleet defaults",https://github.com/fullsend-ai/.fullsend/pull/221
+2026-11-18,.fullsend,pr,reviewed_external,221,jctanner,"fix: run the pi extension repos on the fleet defaults",https://github.com/fullsend-ai/.fullsend/pull/221
+2026-11-18,.fullsend,pr,reviewed_external,221,jctanner,"fix: run the pi extension repos on the fleet defaults",https://github.com/fullsend-ai/.fullsend/pull/221
+2026-11-18,agent-eval-harness,issue,opened_external,332,ravelley,"Run each eval case as its own CI job with a direct fullsend invocation",https://github.com/fullsend-ai/agent-eval-harness/issues/332
+2026-11-18,agent-eval-harness,issue,opened_external,331,astefanutti,"Rate limits want a per-provider concurrency cap, not a case count (measure first)",https://github.com/fullsend-ai/agent-eval-harness/issues/331
+2026-11-18,agent-eval-harness,issue,opened_external,330,astefanutti,"Scoring should be resumable: skip cases already scored in summary.yaml",https://github.com/fullsend-ai/agent-eval-harness/issues/330
+2026-11-18,agent-eval-harness,issue,opened_external,329,astefanutti,"Judging concurrency needs a config-level override, not only a CLI flag",https://github.com/fullsend-ai/agent-eval-harness/issues/329
+2026-11-18,agent-eval-harness,issue,closed_other_external,321,astefanutti,"A missing case workspace must count as lost evidence, not just a failed case",https://github.com/fullsend-ai/agent-eval-harness/issues/321
+2026-11-18,agent-eval-harness,issue,closed_other_external,310,theobarberbany,"eval-run: a CI wrapper can't confirm from run_result.json that it ran the config and cases it asked for",https://github.com/fullsend-ai/agent-eval-harness/issues/310
+2026-11-18,agent-eval-harness,pr,reviewed_external,333,ravelley,"docs(#332): add ADR 0006 for per-case CI jobs with direct fullsend",https://github.com/fullsend-ai/agent-eval-harness/pull/333
+2026-11-18,agent-eval-harness,pr,reviewed_external,325,astefanutti,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-18,agent-eval-harness,pr,reviewed_external,324,astefanutti,"feat(score): apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/pull/324
+2026-11-18,agent-eval-harness,pr,reviewed_external,324,astefanutti,"feat(score): apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/pull/324
+2026-11-18,agent-eval-harness,pr,reviewed_external,324,ravelley,"feat(score): apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/pull/324
+2026-11-18,agent-eval-harness,pr,reviewed_external,324,ravelley,"feat(score): apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/pull/324
+2026-11-18,agent-eval-harness,pr,reviewed_external,322,astefanutti,"fix(#321): record a missing case workspace as lost evidence",https://github.com/fullsend-ai/agent-eval-harness/pull/322
+2026-11-18,github-emulator,issue,opened_external,25,jctanner,"Web UI: branch selector only lists the first 100 branches",https://github.com/fullsend-ai/github-emulator/issues/25
+2026-11-18,github-emulator,issue,closed_other_external,25,jctanner,"Web UI: branch selector only lists the first 100 branches",https://github.com/fullsend-ai/github-emulator/issues/25
+2026-11-18,github-emulator,pr,opened_core,38,waynesun09,"Serve the Actions results service so upload/download-artifact v4+ work",https://github.com/fullsend-ai/github-emulator/pull/38
+2026-11-18,github-emulator,pr,opened_core,37,waynesun09,"Run workflow semantics as GitHub does: container jobs, unresolved and skipped reusable calls, needs on a caller, emulator-hosted actions, jobs list",https://github.com/fullsend-ai/github-emulator/pull/37
+2026-11-18,github-emulator,pr,opened_core,36,waynesun09,"Read contents with one git process; answer the raw media type, 1 MiB limit and raw.githubusercontent.com as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/36
+2026-11-18,github-emulator,pr,opened_core,35,waynesun09,"Fill the github context and runner environment as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/35
+2026-11-18,github-emulator,pr,opened_core,34,waynesun09,"Speak the upstream runner's protocol: job outputs, per-job logs, gh host, annotations",https://github.com/fullsend-ai/github-emulator/pull/34
+2026-11-18,github-emulator,pr,opened_core,33,waynesun09,"Keep SQLite's writer lock short and survive contention under parallel runners",https://github.com/fullsend-ai/github-emulator/pull/33
+2026-11-18,github-emulator,pr,opened_core,32,waynesun09,"Match GitHub's REST answers fullsend relies on: contents preconditions, duplicates, compare, permissions, rate limit, teams",https://github.com/fullsend-ai/github-emulator/pull/32
+2026-11-18,github-emulator,pr,opened_core,31,waynesun09,"Check job tokens, caller roles and runner scope on Actions routes as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/31
+2026-11-18,github-emulator,pr,opened_core,30,waynesun09,"Add repository hygiene: locked hash-checked installs, pre-commit, secret scanning, runner TLS verification",https://github.com/fullsend-ai/github-emulator/pull/30
+2026-11-18,github-emulator,pr,opened_core,29,waynesun09,"Keep runner jobs in step with the runner: one claim, delivered cancellations, requeued lost hand-outs",https://github.com/fullsend-ai/github-emulator/pull/29
+2026-11-18,github-emulator,pr,opened_core,28,waynesun09,"Close GraphQL gaps gh and fullsend hit: Actor authors, closing references, stateReason, sub-issues",https://github.com/fullsend-ai/github-emulator/pull/28
+2026-11-18,github-emulator,pr,opened_core,27,waynesun09,"Narrow installation tokens by repository_ids; match GitHub's Actions OIDC tokens and discovery",https://github.com/fullsend-ai/github-emulator/pull/27
+2026-11-18,github-emulator,pr,opened_core,24,waynesun09,"Let runners register in parallel with one registration token",https://github.com/fullsend-ai/github-emulator/pull/24
+2026-11-18,github-emulator,pr,reviewed_external,7,jctanner,"fix: Show commits link and branch selector for non-default branches",https://github.com/fullsend-ai/github-emulator/pull/7
+2026-11-18,epic-creator,pr,reviewed_external,61,MichaelYochpaz,"fix: avoid ambiguous retries on Jira epic creates",https://github.com/fullsend-ai/epic-creator/pull/61
+2026-11-18,epic-creator,pr,reviewed_external,61,MichaelYochpaz,"fix: avoid ambiguous retries on Jira epic creates",https://github.com/fullsend-ai/epic-creator/pull/61
+2026-11-18,agents,issue,opened_external,2100,alexeykazakov,"Stale `ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-4-6` pin breaks review sub-agents on 5.5-only Vertex projects",https://github.com/fullsend-ai/agents/issues/2100
+2026-11-18,agents,issue,opened_external,2087,dhshah13,"fix agent: /fs-fix instruction is cut silently at 4,096 characters, docs promise 10,000 bytes",https://github.com/fullsend-ai/agents/issues/2087
+2026-11-18,agents,issue,opened_external,2082,tpouyer,"triage: never let the agent's label_actions add ready-for-triage",https://github.com/fullsend-ai/agents/issues/2082
+2026-11-18,agents,issue,closed_other_external,2087,dhshah13,"fix agent: /fs-fix instruction is cut silently at 4,096 characters, docs promise 10,000 bytes",https://github.com/fullsend-ai/agents/issues/2087
+2026-11-18,agents,issue,closed_other_external,2053,tpouyer,"triage: pick the trusted prior analysis with a script, not a multi-API prompt procedure",https://github.com/fullsend-ai/agents/issues/2053
+2026-11-18,agents,pr,reviewed_external,2051,tpouyer,"fix(#2050): find the prior risk assessment by FULLSEND_SLUG",https://github.com/fullsend-ai/agents/pull/2051
+2026-11-18,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
+2026-11-18,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107

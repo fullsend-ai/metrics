@@ -2672,3 +2672,20 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-17,agents,2036,fix(examples): post the link-check all-clear as a new comment,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/2036
 2026-11-17,agents,2005,feat(code): add optional Jira workflow transitions,feat,,,,https://github.com/fullsend-ai/agents/pull/2005
 2026-11-17,agents,1916,feat(prioritize): add dark Jira forge for RICE field writes,feat,,,,https://github.com/fullsend-ai/agents/pull/1916
+2026-11-18,fullsend,9679,docs(#9678): define Entity in the glossary,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9679
+2026-11-18,fullsend,9673,fix(#9672): commit scaffold files when GitHub tree listing is truncated,fix,bot,9672,redhat-chai-bot,https://github.com/fullsend-ai/fullsend/pull/9673
+2026-11-18,fullsend,9659,test(#9644): add Forgejo behaviour-test driver stubs and selection,test,,,,https://github.com/fullsend-ai/fullsend/pull/9659
+2026-11-18,fullsend,9658,fix(#9657): tighten codex dispatch note and cap wait_agent timeouts,fix,external,9657,dhshah13,https://github.com/fullsend-ai/fullsend/pull/9658
+2026-11-18,fullsend,9606,fix(deps): update module github.com/cucumber/gherkin/go/v42 to v42.0.1,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9606
+2026-11-18,fullsend,9563,fix(#9532)!: include cached tokens in gen_ai.usage.input_tokens,fix,external,9532,astefanutti,https://github.com/fullsend-ai/fullsend/pull/9563
+2026-11-18,fullsend,9549,fix(#9537): export TARGET_REPO_DIR as an absolute path,fix,core,9537,ascerra,https://github.com/fullsend-ai/fullsend/pull/9549
+2026-11-18,fullsend,9521,feat(#9509)!: add harness input_source and allow_forge_write,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9521
+2026-11-18,fullsend,9436,test(#9426): make repos and scaffold tests pass on macOS/arm64,test,,,,https://github.com/fullsend-ai/fullsend/pull/9436
+2026-11-18,fullsend,9422,feat(#8143)!: let agents entries carry a harness: block (ADR 0162),feat,,,,https://github.com/fullsend-ai/fullsend/pull/9422
+2026-11-18,fullsend,9387,fix(#9386)!: emit gen_ai.usage.reasoning.output_tokens,fix,core,9386,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9387
+2026-11-18,fullsend,9299,fix(#9298): trim padded wc byte count in review-body pre-fetch,fix,external,9298,ravelley,https://github.com/fullsend-ai/fullsend/pull/9299
+2026-11-18,fullsend,9258,fix(#9255): accept an inference gateway route without inference.auth,fix,core,9255,rh-hemartin,https://github.com/fullsend-ai/fullsend/pull/9258
+2026-11-18,agents,2086,"fix(prioritize): pick Jira Impact by number schema, not name alone",fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/2086
+2026-11-18,agents,2085,feat(prioritize): write Jira RICE dimension fields and map Confidence,feat,,,,https://github.com/fullsend-ai/agents/pull/2085
+2026-11-18,agents,2078,feat(#2076): honor skip-triage and configured skip labels in triage,feat,,,,https://github.com/fullsend-ai/agents/pull/2078
+2026-11-18,agents,1917,fix(#1789): honor repository scope conventions,fix,bot,1789,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1917
