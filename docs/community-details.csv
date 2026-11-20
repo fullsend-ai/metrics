@@ -3676,3 +3676,71 @@ date,repo,type,event,number,actor,title,url
 2026-11-18,agents,pr,reviewed_external,2051,tpouyer,"fix(#2050): find the prior risk assessment by FULLSEND_SLUG",https://github.com/fullsend-ai/agents/pull/2051
 2026-11-18,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
 2026-11-18,react-shopping-cart,pr,reviewed_external,107,ederign,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
+2026-11-19,fullsend,issue,opened_external,9708,Dannyb48,"gitlab: a deferred trigger account skips the dispatch gate, so unrelated jobs in scheduled pipelines are never reported",https://github.com/fullsend-ai/fullsend/issues/9708
+2026-11-19,fullsend,issue,opened_external,9705,Dannyb48,"repos status reports protected-ref-pipeline drift before install",https://github.com/fullsend-ai/fullsend/issues/9705
+2026-11-19,fullsend,issue,opened_external,9696,csoceanu,"cli: expose review-thread reply and resolution operations to runner post-scripts",https://github.com/fullsend-ai/fullsend/issues/9696
+2026-11-19,fullsend,issue,opened_external,9695,csoceanu,"gitlab: expose current versus outdated MR discussion positions",https://github.com/fullsend-ai/fullsend/issues/9695
+2026-11-19,fullsend,issue,opened_external,9689,ianw,"gitlab: clarify ""GitLab polling schedules stay installer-owned on the Poller route""",https://github.com/fullsend-ai/fullsend/issues/9689
+2026-11-19,fullsend,issue,opened_external,9683,Benkapner,"cli: lock --all deletes lock entries for config-registered agents when agent discovery fails",https://github.com/fullsend-ai/fullsend/issues/9683
+2026-11-19,fullsend,issue,closed_via_pr_external,9705,Dannyb48,"repos status reports protected-ref-pipeline drift before install",https://github.com/fullsend-ai/fullsend/issues/9705
+2026-11-19,fullsend,issue,closed_other_external,8885,jflowers,"preflight command timeout does not bound the child process group",https://github.com/fullsend-ai/fullsend/issues/8885
+2026-11-19,fullsend,pr,opened_core,9704,rh-hemartin,"feat(release): gather release notes from release-note blocks in PR bodies",https://github.com/fullsend-ai/fullsend/pull/9704
+2026-11-19,fullsend,pr,opened_core,9691,rh-hemartin,"docs(#9597): add ADR 0175 for GitLab pipeline-variable opt-in",https://github.com/fullsend-ai/fullsend/pull/9691
+2026-11-19,fullsend,pr,reviewed_external,9590,jwm4,"docs(#9586): add entity-source discovery v1 normative protocol",https://github.com/fullsend-ai/fullsend/pull/9590
+2026-11-19,fullsend,pr,reviewed_external,9590,jwm4,"docs(#9586): add entity-source discovery v1 normative protocol",https://github.com/fullsend-ai/fullsend/pull/9590
+2026-11-19,fullsend,pr,reviewed_external,9590,jwm4,"docs(#9586): add entity-source discovery v1 normative protocol",https://github.com/fullsend-ai/fullsend/pull/9590
+2026-11-19,fullsend,pr,reviewed_external,9395,eshulman2,"docs(adr): compose multiple images into agent sandboxes",https://github.com/fullsend-ai/fullsend/pull/9395
+2026-11-19,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-19,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-19,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-19,agent-eval-harness,issue,opened_external,337,ravelley,"Stop guard loses active executor when run directory is reused concurrently",https://github.com/fullsend-ai/agent-eval-harness/issues/337
+2026-11-19,agent-eval-harness,issue,opened_external,335,astefanutti,"The per-config runs directory is still derived by hand in eval-anova and eval-compare",https://github.com/fullsend-ai/agent-eval-harness/issues/335
+2026-11-19,agent-eval-harness,issue,closed_other_external,323,ravelley,"Apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/issues/323
+2026-11-19,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-19,agent-eval-harness,pr,reviewed_external,325,ravelley,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-19,agent-eval-harness,pr,reviewed_external,325,astefanutti,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-19,agent-eval-harness,pr,reviewed_external,325,ravelley,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-19,agent-eval-harness,pr,reviewed_external,325,ravelley,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-19,agent-eval-harness,pr,reviewed_external,325,ravelley,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-19,agent-eval-harness,pr,reviewed_external,324,ravelley,"feat(score): apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/pull/324
+2026-11-19,agent-eval-harness,pr,reviewed_external,324,astefanutti,"feat(score): apply case parallelism to judging",https://github.com/fullsend-ai/agent-eval-harness/pull/324
+2026-11-19,github-emulator,pr,reviewed_external,49,jctanner,"Bump minimatch and typescript-eslint in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/49
+2026-11-19,github-emulator,pr,reviewed_external,48,jctanner,"Bump @vitest/mocker and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/48
+2026-11-19,github-emulator,pr,reviewed_external,47,jctanner,"Bump vite from 7.3.6 to 7.3.8 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/47
+2026-11-19,github-emulator,pr,reviewed_external,46,jctanner,"Bump tinypool and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/46
+2026-11-19,github-emulator,pr,reviewed_external,45,jctanner,"Bump source-map-js from 1.2.1 to 1.2.3 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/45
+2026-11-19,github-emulator,pr,reviewed_external,44,jctanner,"fix(#43): verify runner credentials on token exchange and deregister",https://github.com/fullsend-ai/github-emulator/pull/44
+2026-11-19,github-emulator,pr,reviewed_external,41,jctanner,"fix(#40): allocate user and organization ids from one sequence",https://github.com/fullsend-ai/github-emulator/pull/41
+2026-11-19,github-emulator,pr,reviewed_external,38,jctanner,"Serve the Actions results service so upload/download-artifact v4+ work",https://github.com/fullsend-ai/github-emulator/pull/38
+2026-11-19,github-emulator,pr,reviewed_external,37,jctanner,"Run workflow semantics as GitHub does: container jobs, unresolved and skipped reusable calls, needs on a caller, emulator-hosted actions, jobs list",https://github.com/fullsend-ai/github-emulator/pull/37
+2026-11-19,github-emulator,pr,reviewed_external,37,jctanner,"Run workflow semantics as GitHub does: container jobs, unresolved and skipped reusable calls, needs on a caller, emulator-hosted actions, jobs list",https://github.com/fullsend-ai/github-emulator/pull/37
+2026-11-19,github-emulator,pr,reviewed_external,36,jctanner,"Read contents with one git process; answer the raw media type, 1 MiB limit and raw.githubusercontent.com as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/36
+2026-11-19,github-emulator,pr,reviewed_external,35,jctanner,"Fill the github context and runner environment as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/35
+2026-11-19,github-emulator,pr,reviewed_external,35,jctanner,"Fill the github context and runner environment as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/35
+2026-11-19,github-emulator,pr,reviewed_external,34,jctanner,"Speak the upstream runner's protocol: job outputs, per-job logs, gh host, annotations",https://github.com/fullsend-ai/github-emulator/pull/34
+2026-11-19,github-emulator,pr,reviewed_external,33,jctanner,"Keep SQLite's writer lock short and survive contention under parallel runners",https://github.com/fullsend-ai/github-emulator/pull/33
+2026-11-19,github-emulator,pr,reviewed_external,33,jctanner,"Keep SQLite's writer lock short and survive contention under parallel runners",https://github.com/fullsend-ai/github-emulator/pull/33
+2026-11-19,github-emulator,pr,reviewed_external,33,jctanner,"Keep SQLite's writer lock short and survive contention under parallel runners",https://github.com/fullsend-ai/github-emulator/pull/33
+2026-11-19,github-emulator,pr,reviewed_external,32,jctanner,"Match GitHub's REST answers fullsend relies on: contents preconditions, duplicates, compare, permissions, rate limit, teams",https://github.com/fullsend-ai/github-emulator/pull/32
+2026-11-19,github-emulator,pr,reviewed_external,32,jctanner,"Match GitHub's REST answers fullsend relies on: contents preconditions, duplicates, compare, permissions, rate limit, teams",https://github.com/fullsend-ai/github-emulator/pull/32
+2026-11-19,github-emulator,pr,reviewed_external,32,jctanner,"Match GitHub's REST answers fullsend relies on: contents preconditions, duplicates, compare, permissions, rate limit, teams",https://github.com/fullsend-ai/github-emulator/pull/32
+2026-11-19,github-emulator,pr,reviewed_external,32,jctanner,"Match GitHub's REST answers fullsend relies on: contents preconditions, duplicates, compare, permissions, rate limit, teams",https://github.com/fullsend-ai/github-emulator/pull/32
+2026-11-19,github-emulator,pr,reviewed_external,31,jctanner,"Check job tokens, caller roles and runner scope on Actions routes as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/31
+2026-11-19,github-emulator,pr,reviewed_external,30,jctanner,"Add repository hygiene: locked hash-checked installs, pre-commit, secret scanning, runner TLS verification",https://github.com/fullsend-ai/github-emulator/pull/30
+2026-11-19,github-emulator,pr,reviewed_external,29,jctanner,"Keep runner jobs in step with the runner: one claim, delivered cancellations, requeued lost hand-outs",https://github.com/fullsend-ai/github-emulator/pull/29
+2026-11-19,github-emulator,pr,reviewed_external,29,jctanner,"Keep runner jobs in step with the runner: one claim, delivered cancellations, requeued lost hand-outs",https://github.com/fullsend-ai/github-emulator/pull/29
+2026-11-19,github-emulator,pr,reviewed_external,29,jctanner,"Keep runner jobs in step with the runner: one claim, delivered cancellations, requeued lost hand-outs",https://github.com/fullsend-ai/github-emulator/pull/29
+2026-11-19,github-emulator,pr,reviewed_external,29,jctanner,"Keep runner jobs in step with the runner: one claim, delivered cancellations, requeued lost hand-outs",https://github.com/fullsend-ai/github-emulator/pull/29
+2026-11-19,github-emulator,pr,reviewed_external,28,jctanner,"Close GraphQL gaps gh and fullsend hit: Actor authors, closing references, stateReason, sub-issues",https://github.com/fullsend-ai/github-emulator/pull/28
+2026-11-19,github-emulator,pr,reviewed_external,27,jctanner,"Narrow installation tokens by repository_ids; match GitHub's Actions OIDC tokens and discovery",https://github.com/fullsend-ai/github-emulator/pull/27
+2026-11-19,github-emulator,pr,reviewed_external,24,jctanner,"Let runners register in parallel with one registration token",https://github.com/fullsend-ai/github-emulator/pull/24
+2026-11-19,github-emulator,pr,reviewed_external,24,jctanner,"Let runners register in parallel with one registration token",https://github.com/fullsend-ai/github-emulator/pull/24
+2026-11-19,github-emulator,pr,reviewed_external,24,jctanner,"Let runners register in parallel with one registration token",https://github.com/fullsend-ai/github-emulator/pull/24
+2026-11-19,strat-creator,pr,reviewed_external,126,ederign,"fix: Add RHOAI 3.7 EA1 target version",https://github.com/fullsend-ai/strat-creator/pull/126
+2026-11-19,strat-creator,pr,reviewed_external,126,ederign,"fix: Add RHOAI 3.7 EA1 target version",https://github.com/fullsend-ai/strat-creator/pull/126
+2026-11-19,epic-creator,pr,reviewed_external,64,ravelley,"fix(#63): check epic components before submission",https://github.com/fullsend-ai/epic-creator/pull/64
+2026-11-19,agents,issue,opened_external,2111,csoceanu,"review(gitlab): preserve finding IDs across shifted discussion lines",https://github.com/fullsend-ai/agents/issues/2111
+2026-11-19,agents,issue,closed_via_pr_external,2082,tpouyer,"triage: never let the agent's label_actions add ready-for-triage",https://github.com/fullsend-ai/agents/issues/2082
+2026-11-19,agents,pr,reviewed_external,2101,alexeykazakov,"fix(#2100)!: pin the sonnet alias to claude-sonnet-5-5 on Vertex",https://github.com/fullsend-ai/agents/pull/2101
+2026-11-19,org,issue,opened_external,69,ravelley,"Grant theobarberbany read access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/69
+2026-11-19,org,issue,closed_other_external,69,ravelley,"Grant theobarberbany read access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/69

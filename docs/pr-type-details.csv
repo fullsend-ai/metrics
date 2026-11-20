@@ -2689,3 +2689,22 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-18,agents,2085,feat(prioritize): write Jira RICE dimension fields and map Confidence,feat,,,,https://github.com/fullsend-ai/agents/pull/2085
 2026-11-18,agents,2078,feat(#2076): honor skip-triage and configured skip labels in triage,feat,,,,https://github.com/fullsend-ai/agents/pull/2078
 2026-11-18,agents,1917,fix(#1789): honor repository scope conventions,fix,bot,1789,fullsend-ai-retro[bot],https://github.com/fullsend-ai/agents/pull/1917
+2026-11-19,fullsend,9717,fix(#9714): deliver full shim template on GitHub ref upgrade,fix,core,9714,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9717
+2026-11-19,fullsend,9711,fix(#9708): report unrelated CI work when the trigger account defers,fix,external,9708,Dannyb48,https://github.com/fullsend-ai/fullsend/pull/9711
+2026-11-19,fullsend,9710,fix(#9705): skip protected-ref-pipeline drift before install,fix,external,9705,Dannyb48,https://github.com/fullsend-ai/fullsend/pull/9710
+2026-11-19,fullsend,9709,fix(#9690): stop OS update drain stalling when gitlab-runner restarts,fix,core,9690,ggallen,https://github.com/fullsend-ai/fullsend/pull/9709
+2026-11-19,fullsend,9702,docs(#9701): reflect ADR 0175 opt-in in architecture.md,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9702
+2026-11-19,fullsend,9691,docs(#9597): add ADR 0175 for GitLab pipeline-variable opt-in,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9691
+2026-11-19,fullsend,9688,fix(#9685): ignore GitLab merge request update webhooks,fix,core,9685,ggallen,https://github.com/fullsend-ai/fullsend/pull/9688
+2026-11-19,fullsend,9687,fix(#9686): skip gateway SQLite files when staging OpenShell config,fix,core,9686,ggallen,https://github.com/fullsend-ai/fullsend/pull/9687
+2026-11-19,fullsend,9682,fix(#9681): prune unused digest-only Podman images on runners,fix,core,9681,ggallen,https://github.com/fullsend-ai/fullsend/pull/9682
+2026-11-19,fullsend,9680,ci(#9645): add Forgejo behaviour workflow,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9680
+2026-11-19,fullsend,9676,fix(#9675): fail prepare when the Podman secret store is unusable,fix,core,9675,ascerra,https://github.com/fullsend-ai/fullsend/pull/9676
+2026-11-19,fullsend,9625,feat(run): bind the GitHub provider profiles and OIDC host to a configured GitHub server,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9625
+2026-11-19,fullsend,9624,fix(cli): retry the sandbox GitHub pre-flight until policy DNS is ready,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9624
+2026-11-19,fullsend,9616,feat(mint): honour a configured GitHub API and issuer in the standalone mint,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9616
+2026-11-19,fullsend,9316,feat(#9315): resolve runner secrets from Vault connections,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9316
+2026-11-19,fullsend,9230,fix(dispatch)!: move the shim from pull_request_target to pull_request,fix,core,9224,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9230
+2026-11-19,fullsend,9206,fix(actions): report failures before the agent starts,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9206
+2026-11-19,agents,2084,fix(triage): refuse ready-for-triage in label_actions,fix,external,2082,tpouyer,https://github.com/fullsend-ai/agents/pull/2084
+2026-11-19,agents,2001,fix(scripts): prevent sigpipe exit 141 in post-code commit subject extraction,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/2001
