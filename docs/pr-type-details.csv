@@ -2708,3 +2708,23 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-19,fullsend,9206,fix(actions): report failures before the agent starts,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9206
 2026-11-19,agents,2084,fix(triage): refuse ready-for-triage in label_actions,fix,external,2082,tpouyer,https://github.com/fullsend-ai/agents/pull/2084
 2026-11-19,agents,2001,fix(scripts): prevent sigpipe exit 141 in post-code commit subject extraction,fix,unlinked,,,https://github.com/fullsend-ai/agents/pull/2001
+2026-11-20,fullsend,9763,fix(#9759): fetch ONNX Runtime from NuGet in the runner image,fix,core,9759,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9763
+2026-11-20,fullsend,9762,ci(#9757): accept `/ok-to-test <sha> live` in the e2e gate,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9762
+2026-11-20,fullsend,9761,test(#9754): check shards.txt against the behaviour feature files,test,,,,https://github.com/fullsend-ai/fullsend/pull/9761
+2026-11-20,fullsend,9760,ci(#9755): run agents behaviour suite on GitHub emulator,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9760
+2026-11-20,fullsend,9747,chore(#9743): bump pi to 1.6.0 for undici 8.12.4 and Gemini 4 models,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9747
+2026-11-20,fullsend,9742,fix(#9708): report unrelated CI work in repos status,fix,external,9708,Dannyb48,https://github.com/fullsend-ai/fullsend/pull/9742
+2026-11-20,fullsend,9740,ci(e2e): pull requests get behaviour and playback from the GitHub emulator,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9740
+2026-11-20,fullsend,9734,test(#9732): run the behaviour suite against a GitHub emulator,test,,,,https://github.com/fullsend-ai/fullsend/pull/9734
+2026-11-20,fullsend,9731,test(#9729): verify probe OIDC tokens from the JWKS n and e,test,,,,https://github.com/fullsend-ai/fullsend/pull/9731
+2026-11-20,fullsend,9725,test(#9724): move pool bootstrap details behind the install driver,test,,,,https://github.com/fullsend-ai/fullsend/pull/9725
+2026-11-20,fullsend,9721,fix(dispatch): read job.workflow_sha through the trusted expression in the startup-failure fallback,fix,core,9720,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9721
+2026-11-20,fullsend,9718,docs(#9715): document bare github setup re-run as single-repo upgrade,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9718
+2026-11-20,fullsend,9700,feat(#9315): scaffold GitLab Vault ID token and add OpenBao BT driver,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9700
+2026-11-20,fullsend,9693,feat(#9692): route Claude Code persona dispatch via agents[].subagents,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9693
+2026-11-20,fullsend,9605,refactor(#9581): add entity/event CEL eligibility decision seam,other,,,,https://github.com/fullsend-ai/fullsend/pull/9605
+2026-11-20,fullsend,9081,fix(#6970): stop advising claude for review and retro on codex,fix,core,6970,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9081
+2026-11-20,agents,2144,chore(harness): pin fleet images to the v0.57.1-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/2144
+2026-11-20,agents,2142,ci(#2141): let the behaviour suite run in shards on the GitHub emulator,ci,,,,https://github.com/fullsend-ai/agents/pull/2142
+2026-11-20,agents,2131,chore(#2130)!: pin the fleet sonnet alias to claude-sonnet-5-5,chore,,,,https://github.com/fullsend-ai/agents/pull/2131
+2026-11-20,agents,2128,chore(harness): pin fleet images to the v0.57.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/2128

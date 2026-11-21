@@ -20191,3 +20191,252 @@ date,repo,type,event,number,title,url
 2026-11-19,org,issue,opened,69,"Grant theobarberbany read access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/69
 2026-11-19,org,issue,closed,69,"Grant theobarberbany read access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/69
 2026-11-19,react-shopping-cart,pr,merged,107,"feat(TSTAPP-6): add the Hydro Flask 21 oz Standard Mouth water bottle",https://github.com/fullsend-ai/react-shopping-cart/pull/107
+2026-11-20,coverport,pr,opened,193,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/coverport/pull/193
+2026-11-20,coverport,pr,opened,192,"chore(fullsend): remove the config.yaml written by the old konflux-ci manifest",https://github.com/fullsend-ai/coverport/pull/192
+2026-11-20,coverport,pr,opened,191,"chore(deps): bump golang.org/x/net from 0.38.0 to 0.55.0 in /cli",https://github.com/fullsend-ai/coverport/pull/191
+2026-11-20,coverport,pr,merged,193,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/coverport/pull/193
+2026-11-20,coverport,pr,merged,192,"chore(fullsend): remove the config.yaml written by the old konflux-ci manifest",https://github.com/fullsend-ai/coverport/pull/192
+2026-11-20,fullsend,pr,opened,9768,"docs(#9767): document moving the GitHub emulator pin",https://github.com/fullsend-ai/fullsend/pull/9768
+2026-11-20,fullsend,pr,opened,9765,"test: scratch PR for the /ok-to-test live check (do not merge)",https://github.com/fullsend-ai/fullsend/pull/9765
+2026-11-20,fullsend,pr,opened,9764,"chore(sandbox): bump codex to 0.170.0 and re-verify the re-check table",https://github.com/fullsend-ai/fullsend/pull/9764
+2026-11-20,fullsend,pr,opened,9763,"fix(#9759): fetch ONNX Runtime from NuGet in the runner image",https://github.com/fullsend-ai/fullsend/pull/9763
+2026-11-20,fullsend,pr,opened,9762,"ci(#9757): accept `/ok-to-test <sha> live` in the e2e gate",https://github.com/fullsend-ai/fullsend/pull/9762
+2026-11-20,fullsend,pr,opened,9761,"test(#9754): check shards.txt against the behaviour feature files",https://github.com/fullsend-ai/fullsend/pull/9761
+2026-11-20,fullsend,pr,opened,9760,"ci(#9755): run agents behaviour suite on GitHub emulator",https://github.com/fullsend-ai/fullsend/pull/9760
+2026-11-20,fullsend,pr,opened,9758,"feat(jirapoll): skip Jira poll candidates with no new activity",https://github.com/fullsend-ai/fullsend/pull/9758
+2026-11-20,fullsend,pr,opened,9753,"docs: update review etiquette",https://github.com/fullsend-ai/fullsend/pull/9753
+2026-11-20,fullsend,pr,opened,9750,"chore(deps): update dependency @earendil-works/pi-coding-agent to v1.6.0 - autoclosed",https://github.com/fullsend-ai/fullsend/pull/9750
+2026-11-20,fullsend,pr,opened,9748,"fix(#9744): flag empty success result after a trailing tool result",https://github.com/fullsend-ai/fullsend/pull/9748
+2026-11-20,fullsend,pr,opened,9747,"chore(#9743): bump pi to 1.6.0 for undici 8.12.4 and Gemini 4 models",https://github.com/fullsend-ai/fullsend/pull/9747
+2026-11-20,fullsend,pr,opened,9742,"fix(#9708): report unrelated CI work in repos status",https://github.com/fullsend-ai/fullsend/pull/9742
+2026-11-20,fullsend,pr,opened,9741,"fix(#9727): scan source=api pipelines for unrelated GitLab work",https://github.com/fullsend-ai/fullsend/pull/9741
+2026-11-20,fullsend,pr,opened,9740,"ci(e2e): pull requests get behaviour and playback from the GitHub emulator",https://github.com/fullsend-ai/fullsend/pull/9740
+2026-11-20,fullsend,pr,opened,9739,"docs(#9733): explain config.tracker in managed configuration",https://github.com/fullsend-ai/fullsend/pull/9739
+2026-11-20,fullsend,pr,opened,9734,"test(#9732): run the behaviour suite against a GitHub emulator",https://github.com/fullsend-ai/fullsend/pull/9734
+2026-11-20,fullsend,pr,opened,9731,"test(#9729): verify probe OIDC tokens from the JWKS n and e",https://github.com/fullsend-ai/fullsend/pull/9731
+2026-11-20,fullsend,pr,opened,9728,"feat(#9597): add allow_insecure_pipeline_variables GitLab opt-in (ADR 0175)",https://github.com/fullsend-ai/fullsend/pull/9728
+2026-11-20,fullsend,pr,merged,9763,"fix(#9759): fetch ONNX Runtime from NuGet in the runner image",https://github.com/fullsend-ai/fullsend/pull/9763
+2026-11-20,fullsend,pr,merged,9762,"ci(#9757): accept `/ok-to-test <sha> live` in the e2e gate",https://github.com/fullsend-ai/fullsend/pull/9762
+2026-11-20,fullsend,pr,merged,9761,"test(#9754): check shards.txt against the behaviour feature files",https://github.com/fullsend-ai/fullsend/pull/9761
+2026-11-20,fullsend,pr,merged,9760,"ci(#9755): run agents behaviour suite on GitHub emulator",https://github.com/fullsend-ai/fullsend/pull/9760
+2026-11-20,fullsend,pr,merged,9747,"chore(#9743): bump pi to 1.6.0 for undici 8.12.4 and Gemini 4 models",https://github.com/fullsend-ai/fullsend/pull/9747
+2026-11-20,fullsend,pr,merged,9742,"fix(#9708): report unrelated CI work in repos status",https://github.com/fullsend-ai/fullsend/pull/9742
+2026-11-20,fullsend,pr,merged,9740,"ci(e2e): pull requests get behaviour and playback from the GitHub emulator",https://github.com/fullsend-ai/fullsend/pull/9740
+2026-11-20,fullsend,pr,merged,9734,"test(#9732): run the behaviour suite against a GitHub emulator",https://github.com/fullsend-ai/fullsend/pull/9734
+2026-11-20,fullsend,pr,merged,9731,"test(#9729): verify probe OIDC tokens from the JWKS n and e",https://github.com/fullsend-ai/fullsend/pull/9731
+2026-11-20,fullsend,pr,merged,9725,"test(#9724): move pool bootstrap details behind the install driver",https://github.com/fullsend-ai/fullsend/pull/9725
+2026-11-20,fullsend,pr,merged,9721,"fix(dispatch): read job.workflow_sha through the trusted expression in the startup-failure fallback",https://github.com/fullsend-ai/fullsend/pull/9721
+2026-11-20,fullsend,pr,merged,9718,"docs(#9715): document bare github setup re-run as single-repo upgrade",https://github.com/fullsend-ai/fullsend/pull/9718
+2026-11-20,fullsend,pr,merged,9700,"feat(#9315): scaffold GitLab Vault ID token and add OpenBao BT driver",https://github.com/fullsend-ai/fullsend/pull/9700
+2026-11-20,fullsend,pr,merged,9693,"feat(#9692): route Claude Code persona dispatch via agents[].subagents",https://github.com/fullsend-ai/fullsend/pull/9693
+2026-11-20,fullsend,pr,merged,9605,"refactor(#9581): add entity/event CEL eligibility decision seam",https://github.com/fullsend-ai/fullsend/pull/9605
+2026-11-20,fullsend,pr,merged,9081,"fix(#6970): stop advising claude for review and retro on codex",https://github.com/fullsend-ai/fullsend/pull/9081
+2026-11-20,fullsend,issue,opened,9767,"Move the GitHub emulator pin to 2026.11.20.2 and document how to move it",https://github.com/fullsend-ai/fullsend/issues/9767
+2026-11-20,fullsend,issue,opened,9766,"Jira poller: an unparseable lastCheck fails every quiet poll cycle",https://github.com/fullsend-ai/fullsend/issues/9766
+2026-11-20,fullsend,issue,opened,9759,"runner image: ONNX Runtime download 404s, fullsend-runner:0.57.0 never published",https://github.com/fullsend-ai/fullsend/issues/9759
+2026-11-20,fullsend,issue,opened,9757,"e2e: let a maintainer run the live behaviour suites on a pull request (`/ok-to-test <sha> live`)",https://github.com/fullsend-ai/fullsend/issues/9757
+2026-11-20,fullsend,issue,opened,9756,"Hidden fullsend ci command for the emulator behaviour job",https://github.com/fullsend-ai/fullsend/issues/9756
+2026-11-20,fullsend,issue,opened,9755,"Run the agents repository's behaviour suite on the GitHub emulator",https://github.com/fullsend-ai/fullsend/issues/9755
+2026-11-20,fullsend,issue,opened,9754,"Add a unit test that checks `shards.txt` against the behaviour feature files",https://github.com/fullsend-ai/fullsend/issues/9754
+2026-11-20,fullsend,issue,opened,9752,"preflight: warn when invalid env.runner keys are dropped from the preflight_check environment",https://github.com/fullsend-ai/fullsend/issues/9752
+2026-11-20,fullsend,issue,opened,9751,"Jira poller: fresh requests wait behind handled tickets and can be missed under load",https://github.com/fullsend-ai/fullsend/issues/9751
+2026-11-20,fullsend,issue,opened,9749,"Pre/post scripts get no spans in the run trace",https://github.com/fullsend-ai/fullsend/issues/9749
+2026-11-20,fullsend,issue,opened,9746,"jira-poll on GitHub: a hand-off that does not reach the dispatch job loses the whole batch, and the run stays green",https://github.com/fullsend-ai/fullsend/issues/9746
+2026-11-20,fullsend,issue,opened,9745,"eval-measure: add a deliverables dimension to trace_fitness so lost-work runs cannot pass",https://github.com/fullsend-ai/fullsend/issues/9745
+2026-11-20,fullsend,issue,opened,9744,"Runtime: flag empty-result success terminal turn with no assistant turn after last tool result",https://github.com/fullsend-ai/fullsend/issues/9744
+2026-11-20,fullsend,issue,opened,9743,"sandbox: bump pi to 1.6.0 (undici 8.12.4, Gemini 4 Carbon/Hydrogen/Neon on Vertex)",https://github.com/fullsend-ai/fullsend/issues/9743
+2026-11-20,fullsend,issue,opened,9738,"docs: pull requests get behaviour and playback from the GitHub emulator; live suites run in the merge queue",https://github.com/fullsend-ai/fullsend/issues/9738
+2026-11-20,fullsend,issue,opened,9737,"Extend infrastructure-failure auto-retry with backoff to the triage stage (transient gateway 401 stranded issue hybridx/react-contact-app#13 for ~4 hours)",https://github.com/fullsend-ai/fullsend/issues/9737
+2026-11-20,fullsend,issue,opened,9736,"Gate bot-triggered fix dispatch on a standing human approval (bot review verdicts reignited the loop after approval on PR hybridx/react-contact-app#23)",https://github.com/fullsend-ai/fullsend/issues/9736
+2026-11-20,fullsend,issue,opened,9735,"Behaviour suite on the GitHub emulator: diagnostics and consistency follow-ups",https://github.com/fullsend-ai/fullsend/issues/9735
+2026-11-20,fullsend,issue,opened,9733,"repos.yaml: better document tracker setup",https://github.com/fullsend-ai/fullsend/issues/9733
+2026-11-20,fullsend,issue,opened,9732,"test(behaviour): run the behaviour suite against a GitHub emulator (ENVIRONMENT=github-emulator)",https://github.com/fullsend-ai/fullsend/issues/9732
+2026-11-20,fullsend,issue,opened,9730,"Docs site is 38 files under the Cloudflare Workers Free static asset limit",https://github.com/fullsend-ai/fullsend/issues/9730
+2026-11-20,fullsend,issue,opened,9729,"Behaviour probes: verify OIDC tokens from the JWKS n and e, not only x5c",https://github.com/fullsend-ai/fullsend/issues/9729
+2026-11-20,fullsend,issue,opened,9727,"gitlab: the unrelated-work check never evaluates source=api, the route the poll job dispatches the agent through",https://github.com/fullsend-ai/fullsend/issues/9727
+2026-11-20,fullsend,issue,opened,9726,"gitlab: allow setting variables for control/agent runners",https://github.com/fullsend-ai/fullsend/issues/9726
+2026-11-20,fullsend,issue,closed,9759,"runner image: ONNX Runtime download 404s, fullsend-runner:0.57.0 never published",https://github.com/fullsend-ai/fullsend/issues/9759
+2026-11-20,fullsend,issue,closed,9757,"e2e: let a maintainer run the live behaviour suites on a pull request (`/ok-to-test <sha> live`)",https://github.com/fullsend-ai/fullsend/issues/9757
+2026-11-20,fullsend,issue,closed,9755,"Run the agents repository's behaviour suite on the GitHub emulator",https://github.com/fullsend-ai/fullsend/issues/9755
+2026-11-20,fullsend,issue,closed,9754,"Add a unit test that checks `shards.txt` against the behaviour feature files",https://github.com/fullsend-ai/fullsend/issues/9754
+2026-11-20,fullsend,issue,closed,9743,"sandbox: bump pi to 1.6.0 (undici 8.12.4, Gemini 4 Carbon/Hydrogen/Neon on Vertex)",https://github.com/fullsend-ai/fullsend/issues/9743
+2026-11-20,fullsend,issue,closed,9738,"docs: pull requests get behaviour and playback from the GitHub emulator; live suites run in the merge queue",https://github.com/fullsend-ai/fullsend/issues/9738
+2026-11-20,fullsend,issue,closed,9732,"test(behaviour): run the behaviour suite against a GitHub emulator (ENVIRONMENT=github-emulator)",https://github.com/fullsend-ai/fullsend/issues/9732
+2026-11-20,fullsend,issue,closed,9729,"Behaviour probes: verify OIDC tokens from the JWKS n and e, not only x5c",https://github.com/fullsend-ai/fullsend/issues/9729
+2026-11-20,fullsend,issue,closed,9724,"test(behaviour): move pool configuration behind the install driver",https://github.com/fullsend-ai/fullsend/issues/9724
+2026-11-20,fullsend,issue,closed,9720,"TestWorkflowSHAUsesAreTrusted fails on main after #9206",https://github.com/fullsend-ai/fullsend/issues/9720
+2026-11-20,fullsend,issue,closed,9715,"Upgrade a single repository without a manifest",https://github.com/fullsend-ai/fullsend/issues/9715
+2026-11-20,fullsend,issue,closed,9708,"gitlab: a deferred trigger account skips the dispatch gate, so unrelated jobs in scheduled pipelines are never reported",https://github.com/fullsend-ai/fullsend/issues/9708
+2026-11-20,fullsend,issue,closed,9692,"claude runtime: read agents[].subagents and route persona dispatch like pi does",https://github.com/fullsend-ai/fullsend/issues/9692
+2026-11-20,fullsend,issue,closed,9581,"Implement shared entity/event CEL eligibility evaluation (ADR 0098)",https://github.com/fullsend-ai/fullsend/issues/9581
+2026-11-20,fullsend,issue,closed,9412,"Code agent: session ends one step before `git commit`, reports success, loses the work, and eval scores `trace_fitness = pass`",https://github.com/fullsend-ai/fullsend/issues/9412
+2026-11-20,fullsend,issue,closed,9085,"codex runtime: delegate from collaboration V2 parents and bump Codex past 0.159.3",https://github.com/fullsend-ai/fullsend/issues/9085
+2026-11-20,fullsend,issue,closed,6970,"codex runtime: run the review/retro sub-agent rosters through codex's native spawn_agent roles",https://github.com/fullsend-ai/fullsend/issues/6970
+2026-11-20,rfe-creator,pr,opened,311,"Name the project and the parent-key prefix through the launch block, not in the Initiative prose (AISDLC-851)",https://github.com/fullsend-ai/rfe-creator/pull/311
+2026-11-20,rfe-creator,pr,opened,310,"Accept a single-member family's name at every type boundary; derive the last type-keyed tables",https://github.com/fullsend-ai/rfe-creator/pull/310
+2026-11-20,rfe-creator,pr,opened,308,"Add type families to the registry: abstract families, extends members, behaviour-neutral",https://github.com/fullsend-ai/rfe-creator/pull/308
+2026-11-20,rfe-creator,pr,merged,308,"Add type families to the registry: abstract families, extends members, behaviour-neutral",https://github.com/fullsend-ai/rfe-creator/pull/308
+2026-11-20,rfe-creator,issue,opened,309,"Split initiative into the family and the member initiative-rhaistrat; accept the family name for the sole member",https://github.com/fullsend-ai/rfe-creator/issues/309
+2026-11-20,rfe-creator,issue,opened,307,"Type families in the registry: abstract family and extends, behaviour-neutral",https://github.com/fullsend-ai/rfe-creator/issues/307
+2026-11-20,rfe-creator,issue,closed,307,"Type families in the registry: abstract family and extends, behaviour-neutral",https://github.com/fullsend-ai/rfe-creator/issues/307
+2026-11-20,rfe-creator,issue,closed,304,"Eval: case-007's dictated stack does not survive the create step, so its revise path and flag-clear are never exercised",https://github.com/fullsend-ai/rfe-creator/issues/304
+2026-11-20,rfe-creator,issue,closed,235,"Baseline comparison: the rfe eval through fullsend versus claude-code",https://github.com/fullsend-ai/rfe-creator/issues/235
+2026-11-20,.fullsend,pr,opened,228,"feat(repos): register the codecov forks in the fleet manifest",https://github.com/fullsend-ai/.fullsend/pull/228
+2026-11-20,.fullsend,pr,opened,227,"feat(repos): register the OrgPulse repositories in the fleet manifest",https://github.com/fullsend-ai/.fullsend/pull/227
+2026-11-20,.fullsend,pr,opened,226,"Add devlake configuration to repos.yaml",https://github.com/fullsend-ai/.fullsend/pull/226
+2026-11-20,.fullsend,pr,opened,225,"chore(repos): register fullsend-ai/coverport in the fleet manifest",https://github.com/fullsend-ai/.fullsend/pull/225
+2026-11-20,.fullsend,pr,opened,224,"chore(mlflow-assessments): register the renamed judge harness files",https://github.com/fullsend-ai/.fullsend/pull/224
+2026-11-20,.fullsend,pr,merged,228,"feat(repos): register the codecov forks in the fleet manifest",https://github.com/fullsend-ai/.fullsend/pull/228
+2026-11-20,.fullsend,pr,merged,227,"feat(repos): register the OrgPulse repositories in the fleet manifest",https://github.com/fullsend-ai/.fullsend/pull/227
+2026-11-20,.fullsend,pr,merged,226,"Add devlake configuration to repos.yaml",https://github.com/fullsend-ai/.fullsend/pull/226
+2026-11-20,.fullsend,pr,merged,225,"chore(repos): register fullsend-ai/coverport in the fleet manifest",https://github.com/fullsend-ai/.fullsend/pull/225
+2026-11-20,.fullsend,pr,merged,224,"chore(mlflow-assessments): register the renamed judge harness files",https://github.com/fullsend-ai/.fullsend/pull/224
+2026-11-20,.fullsend,issue,opened,223,"Update mlflow-assessments judge harness paths in repos.yaml after rename",https://github.com/fullsend-ai/.fullsend/issues/223
+2026-11-20,.fullsend,issue,closed,223,"Update mlflow-assessments judge harness paths in repos.yaml after rename",https://github.com/fullsend-ai/.fullsend/issues/223
+2026-11-20,agent-eval-harness,pr,opened,347,"refactor: share case result serialization",https://github.com/fullsend-ai/agent-eval-harness/pull/347
+2026-11-20,agent-eval-harness,pr,opened,346,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,opened,344,"feat(eval-anova): resolve the per-config runs dir in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/344
+2026-11-20,agent-eval-harness,pr,opened,343,"fix(eval): release the Fullsend Actions mask redaction",https://github.com/fullsend-ai/agent-eval-harness/pull/343
+2026-11-20,agent-eval-harness,pr,opened,342,"fix(config): validate execution parallelism keys at load",https://github.com/fullsend-ai/agent-eval-harness/pull/342
+2026-11-20,agent-eval-harness,pr,opened,340,"fix(eval-run): keep skills' own state out of preflight's clean",https://github.com/fullsend-ai/agent-eval-harness/pull/340
+2026-11-20,agent-eval-harness,pr,merged,347,"refactor: share case result serialization",https://github.com/fullsend-ai/agent-eval-harness/pull/347
+2026-11-20,agent-eval-harness,pr,merged,343,"fix(eval): release the Fullsend Actions mask redaction",https://github.com/fullsend-ai/agent-eval-harness/pull/343
+2026-11-20,agent-eval-harness,pr,merged,342,"fix(config): validate execution parallelism keys at load",https://github.com/fullsend-ai/agent-eval-harness/pull/342
+2026-11-20,agent-eval-harness,pr,merged,340,"fix(eval-run): keep skills' own state out of preflight's clean",https://github.com/fullsend-ai/agent-eval-harness/pull/340
+2026-11-20,agent-eval-harness,pr,merged,336,"feat(score): add execution.judge_parallelism config override",https://github.com/fullsend-ai/agent-eval-harness/pull/336
+2026-11-20,agent-eval-harness,pr,merged,325,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-20,agent-eval-harness,issue,opened,345,"eval-run: the agent under test can read the eval's own answer keys",https://github.com/fullsend-ai/agent-eval-harness/issues/345
+2026-11-20,agent-eval-harness,issue,opened,341,"Numeric execution config values are not validated at load, and the two phases disagree",https://github.com/fullsend-ai/agent-eval-harness/issues/341
+2026-11-20,agent-eval-harness,issue,opened,339,"preflight reports its own state file as stale, and the documented remedy deletes it",https://github.com/fullsend-ai/agent-eval-harness/issues/339
+2026-11-20,agent-eval-harness,issue,closed,341,"Numeric execution config values are not validated at load, and the two phases disagree",https://github.com/fullsend-ai/agent-eval-harness/issues/341
+2026-11-20,agent-eval-harness,issue,closed,339,"preflight reports its own state file as stale, and the documented remedy deletes it",https://github.com/fullsend-ai/agent-eval-harness/issues/339
+2026-11-20,agent-eval-harness,issue,closed,329,"Judging concurrency needs a config-level override, not only a CLI flag",https://github.com/fullsend-ai/agent-eval-harness/issues/329
+2026-11-20,agent-eval-harness,issue,closed,309,"eval-run: orchestrator picks the run directory, and the scorer looks somewhere else",https://github.com/fullsend-ai/agent-eval-harness/issues/309
+2026-11-20,github-emulator,pr,opened,104,"fix(#102): keep dependabot from moving runner images off 24.04",https://github.com/fullsend-ai/github-emulator/pull/104
+2026-11-20,github-emulator,pr,opened,103,"fix(#101): answer a deleted job's end report without a 500",https://github.com/fullsend-ai/github-emulator/pull/103
+2026-11-20,github-emulator,pr,opened,100,"fix(#99): answer GET jobrequests and keep a finished job's first end",https://github.com/fullsend-ai/github-emulator/pull/100
+2026-11-20,github-emulator,pr,opened,96,"fix(#94): make a job token's GraphQL viewer github-actions[bot]",https://github.com/fullsend-ai/github-emulator/pull/96
+2026-11-20,github-emulator,pr,opened,95,"fix(#93): limit search results to repositories the caller can read",https://github.com/fullsend-ai/github-emulator/pull/95
+2026-11-20,github-emulator,pr,opened,92,"fix(#91): run pull_request workflows beside pull_request_target",https://github.com/fullsend-ai/github-emulator/pull/92
+2026-11-20,github-emulator,pr,opened,90,"docs(#89): add a guide to running the stack inside a CI job",https://github.com/fullsend-ai/github-emulator/pull/90
+2026-11-20,github-emulator,pr,opened,85,"fix(#82): fail make smoke on API errors, allow re-runs",https://github.com/fullsend-ai/github-emulator/pull/85
+2026-11-20,github-emulator,pr,opened,84,"fix(#81): point compose actions-runner at http://github-emulator:8000",https://github.com/fullsend-ai/github-emulator/pull/84
+2026-11-20,github-emulator,pr,opened,83,"Add scripts that run the emulator and its runners in one CI job",https://github.com/fullsend-ai/github-emulator/pull/83
+2026-11-20,github-emulator,pr,opened,79,"Docs: reader-first README and guides for development, API usage, Actions runners and configuration; fix make smoke",https://github.com/fullsend-ai/github-emulator/pull/79
+2026-11-20,github-emulator,pr,opened,77,"Let a job token revoke itself; serve a finished job's uploaded step logs",https://github.com/fullsend-ai/github-emulator/pull/77
+2026-11-20,github-emulator,pr,merged,100,"fix(#99): answer GET jobrequests and keep a finished job's first end",https://github.com/fullsend-ai/github-emulator/pull/100
+2026-11-20,github-emulator,pr,merged,96,"fix(#94): make a job token's GraphQL viewer github-actions[bot]",https://github.com/fullsend-ai/github-emulator/pull/96
+2026-11-20,github-emulator,pr,merged,95,"fix(#93): limit search results to repositories the caller can read",https://github.com/fullsend-ai/github-emulator/pull/95
+2026-11-20,github-emulator,pr,merged,92,"fix(#91): run pull_request workflows beside pull_request_target",https://github.com/fullsend-ai/github-emulator/pull/92
+2026-11-20,github-emulator,pr,merged,90,"docs(#89): add a guide to running the stack inside a CI job",https://github.com/fullsend-ai/github-emulator/pull/90
+2026-11-20,github-emulator,pr,merged,85,"fix(#82): fail make smoke on API errors, allow re-runs",https://github.com/fullsend-ai/github-emulator/pull/85
+2026-11-20,github-emulator,pr,merged,84,"fix(#81): point compose actions-runner at http://github-emulator:8000",https://github.com/fullsend-ai/github-emulator/pull/84
+2026-11-20,github-emulator,pr,merged,83,"Add scripts that run the emulator and its runners in one CI job",https://github.com/fullsend-ai/github-emulator/pull/83
+2026-11-20,github-emulator,pr,merged,79,"Docs: reader-first README and guides for development, API usage, Actions runners and configuration; fix make smoke",https://github.com/fullsend-ai/github-emulator/pull/79
+2026-11-20,github-emulator,pr,merged,67,"Bump pytest-asyncio from 1.4.1 to 1.4.1.post1",https://github.com/fullsend-ai/github-emulator/pull/67
+2026-11-20,github-emulator,pr,merged,66,"Bump jsdom from 26.1.0 to 31.0.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/66
+2026-11-20,github-emulator,pr,merged,64,"Bump vite from 7.3.8 to 8.3.6 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/64
+2026-11-20,github-emulator,pr,merged,63,"Bump python-multipart from 0.0.32 to 0.0.33 in the python-minor-patch group",https://github.com/fullsend-ai/github-emulator/pull/63
+2026-11-20,github-emulator,pr,merged,62,"Bump globals from 16.5.0 to 17.14.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/62
+2026-11-20,github-emulator,pr,merged,61,"Bump the frontend-minor-patch group in /src/frontend with 9 updates",https://github.com/fullsend-ai/github-emulator/pull/61
+2026-11-20,github-emulator,pr,merged,44,"fix(#43): verify runner credentials on token exchange and deregister",https://github.com/fullsend-ai/github-emulator/pull/44
+2026-11-20,github-emulator,pr,merged,37,"Run workflow semantics as GitHub does: container jobs, unresolved and skipped reusable calls, needs on a caller, emulator-hosted actions, jobs list",https://github.com/fullsend-ai/github-emulator/pull/37
+2026-11-20,github-emulator,pr,merged,35,"Fill the github context and runner environment as GitHub does",https://github.com/fullsend-ai/github-emulator/pull/35
+2026-11-20,github-emulator,pr,merged,33,"Keep SQLite's writer lock short and survive contention under parallel runners",https://github.com/fullsend-ai/github-emulator/pull/33
+2026-11-20,github-emulator,pr,closed,56,"Bump ubuntu from 24.04 to 25.10 in /src/runners/upstream",https://github.com/fullsend-ai/github-emulator/pull/56
+2026-11-20,github-emulator,pr,closed,55,"Bump ubuntu from 24.04 to 25.10 in /src/runners/emulator",https://github.com/fullsend-ai/github-emulator/pull/55
+2026-11-20,github-emulator,issue,opened,102,"Keep the runner images on GitHub's hosted-worker Ubuntu (24.04): add dependabot ignore conditions",https://github.com/fullsend-ai/github-emulator/issues/102
+2026-11-20,github-emulator,issue,opened,101,"Runner: a job end report for a deleted repository's job answers 500",https://github.com/fullsend-ai/github-emulator/issues/101
+2026-11-20,github-emulator,issue,opened,99,"Runner: answer GET jobrequests/{requestId}, keep a finished job's first result, and hold new jobs from a Busy poll",https://github.com/fullsend-ai/github-emulator/issues/99
+2026-11-20,github-emulator,issue,opened,98,"contributionsCollection counts contributions from repositories the viewer cannot read",https://github.com/fullsend-ai/github-emulator/issues/98
+2026-11-20,github-emulator,issue,opened,97,"Record the GraphQL Viewer interface decision as an ADR",https://github.com/fullsend-ai/github-emulator/issues/97
+2026-11-20,github-emulator,issue,opened,94,"A job token's GraphQL `viewer` is the run's actor, not `github-actions[bot]`",https://github.com/fullsend-ai/github-emulator/issues/94
+2026-11-20,github-emulator,issue,opened,93,"Search returns private repositories the caller cannot read",https://github.com/fullsend-ai/github-emulator/issues/93
+2026-11-20,github-emulator,issue,opened,91,"Run on: pull_request workflows beside pull_request_target",https://github.com/fullsend-ai/github-emulator/issues/91
+2026-11-20,github-emulator,issue,opened,89,"Docs: a guide to running the emulator and its runners inside a CI job",https://github.com/fullsend-ai/github-emulator/issues/89
+2026-11-20,github-emulator,issue,opened,88,"ci-workflow-smoke.sh: on timeout, print each job's status, steps and log tail",https://github.com/fullsend-ai/github-emulator/issues/88
+2026-11-20,github-emulator,issue,opened,87,"Log the upstream reason when an action download info request answers 502",https://github.com/fullsend-ai/github-emulator/issues/87
+2026-11-20,github-emulator,issue,opened,86,"Log why an action download answers 502; show job progress when the CI smoke times out",https://github.com/fullsend-ai/github-emulator/issues/86
+2026-11-20,github-emulator,issue,opened,82,"make smoke: check each API step's status and make re-runs idempotent",https://github.com/fullsend-ai/github-emulator/issues/82
+2026-11-20,github-emulator,issue,opened,81,"Compose actions-runner cannot register: Caddy has no certificate for github-emulator",https://github.com/fullsend-ai/github-emulator/issues/81
+2026-11-20,github-emulator,issue,opened,80,"Add scripts that run the emulator and its Actions runners inside one CI job",https://github.com/fullsend-ai/github-emulator/issues/80
+2026-11-20,github-emulator,issue,opened,78,"Docs: reader-first README, contributor and developer guides, working make smoke",https://github.com/fullsend-ai/github-emulator/issues/78
+2026-11-20,github-emulator,issue,closed,99,"Runner: answer GET jobrequests/{requestId}, keep a finished job's first result, and hold new jobs from a Busy poll",https://github.com/fullsend-ai/github-emulator/issues/99
+2026-11-20,github-emulator,issue,closed,94,"A job token's GraphQL `viewer` is the run's actor, not `github-actions[bot]`",https://github.com/fullsend-ai/github-emulator/issues/94
+2026-11-20,github-emulator,issue,closed,93,"Search returns private repositories the caller cannot read",https://github.com/fullsend-ai/github-emulator/issues/93
+2026-11-20,github-emulator,issue,closed,91,"Run on: pull_request workflows beside pull_request_target",https://github.com/fullsend-ai/github-emulator/issues/91
+2026-11-20,github-emulator,issue,closed,89,"Docs: a guide to running the emulator and its runners inside a CI job",https://github.com/fullsend-ai/github-emulator/issues/89
+2026-11-20,github-emulator,issue,closed,86,"Log why an action download answers 502; show job progress when the CI smoke times out",https://github.com/fullsend-ai/github-emulator/issues/86
+2026-11-20,github-emulator,issue,closed,82,"make smoke: check each API step's status and make re-runs idempotent",https://github.com/fullsend-ai/github-emulator/issues/82
+2026-11-20,github-emulator,issue,closed,81,"Compose actions-runner cannot register: Caddy has no certificate for github-emulator",https://github.com/fullsend-ai/github-emulator/issues/81
+2026-11-20,github-emulator,issue,closed,80,"Add scripts that run the emulator and its Actions runners inside one CI job",https://github.com/fullsend-ai/github-emulator/issues/80
+2026-11-20,github-emulator,issue,closed,78,"Docs: reader-first README, contributor and developer guides, working make smoke",https://github.com/fullsend-ai/github-emulator/issues/78
+2026-11-20,github-emulator,issue,closed,43,"Check the runner's credential on the token exchange and deregister routes",https://github.com/fullsend-ai/github-emulator/issues/43
+2026-11-20,strat-creator,pr,opened,131,"feat(types): react-shopping-cart-strategy — the HOW on a Shop RFE's TSTAPP Story",https://github.com/fullsend-ai/strat-creator/pull/131
+2026-11-20,strat-creator,pr,opened,130,"feat(#128): derive intake target versions from Jira release trains",https://github.com/fullsend-ai/strat-creator/pull/130
+2026-11-20,strat-creator,pr,opened,129,"fix(#127): match renamed 3.7 GA RHAII RELEASE version",https://github.com/fullsend-ai/strat-creator/pull/129
+2026-11-20,strat-creator,pr,merged,109,"fix(#108): record push coverage for a partial batch push",https://github.com/fullsend-ai/strat-creator/pull/109
+2026-11-20,strat-creator,issue,opened,128,"Derive intake-JQL target versions from Jira at runtime (release trains + live project versions) instead of the curated static list",https://github.com/fullsend-ai/strat-creator/issues/128
+2026-11-20,strat-creator,issue,opened,127,"config: Jira renamed ""3.7 GA  RHAII RELEASE"" (double space) to single space — GA-RHAII-only RFEs silently skipped by batch discovery (RHAIRFE-3420, 3729, 3851)",https://github.com/fullsend-ai/strat-creator/issues/127
+2026-11-20,strat-creator,issue,closed,108,"Partial batch push success is omitted from progress, forcing successful tickets through refinement again",https://github.com/fullsend-ai/strat-creator/issues/108
+2026-11-20,metrics,issue,opened,46,"Quality chart",https://github.com/fullsend-ai/metrics/issues/46
+2026-11-20,agents,pr,opened,2144,"chore(harness): pin fleet images to the v0.57.1-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/2144
+2026-11-20,agents,pr,opened,2142,"ci(#2141): let the behaviour suite run in shards on the GitHub emulator",https://github.com/fullsend-ai/agents/pull/2142
+2026-11-20,agents,pr,opened,2135,"feat(#2134): let triage view images attached to issues",https://github.com/fullsend-ai/agents/pull/2135
+2026-11-20,agents,pr,opened,2133,"fix!(#2130): upgrade the agent fleet from 4-generation to 5-5 models",https://github.com/fullsend-ai/agents/pull/2133
+2026-11-20,agents,pr,opened,2131,"chore(#2130)!: pin the fleet sonnet alias to claude-sonnet-5-5",https://github.com/fullsend-ai/agents/pull/2131
+2026-11-20,agents,pr,opened,2128,"chore(harness): pin fleet images to the v0.57.0-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/2128
+2026-11-20,agents,pr,merged,2144,"chore(harness): pin fleet images to the v0.57.1-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/2144
+2026-11-20,agents,pr,merged,2142,"ci(#2141): let the behaviour suite run in shards on the GitHub emulator",https://github.com/fullsend-ai/agents/pull/2142
+2026-11-20,agents,pr,merged,2131,"chore(#2130)!: pin the fleet sonnet alias to claude-sonnet-5-5",https://github.com/fullsend-ai/agents/pull/2131
+2026-11-20,agents,pr,merged,2128,"chore(harness): pin fleet images to the v0.57.0-rc.1 release builds",https://github.com/fullsend-ai/agents/pull/2128
+2026-11-20,agents,issue,opened,2146,"Intent-coherence review subagent should exempt strict build, test, and offline-verification prerequisites from scope-bundling findings",https://github.com/fullsend-ai/agents/issues/2146
+2026-11-20,agents,issue,opened,2145,"Security review subagent should audit pre-commit and linter exclusion patterns that bypass secret scanners",https://github.com/fullsend-ai/agents/issues/2145
+2026-11-20,agents,issue,opened,2143,"chore(harness): pin fleet images to the v0.57.1-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/2143
+2026-11-20,agents,issue,opened,2141,"Run the behaviour suite on the GitHub emulator for every pull request",https://github.com/fullsend-ai/agents/issues/2141
+2026-11-20,agents,issue,opened,2140,"Security review persona should recognize intra-sandbox privilege boundaries to eliminate false-positive HMAC/crypto findings",https://github.com/fullsend-ai/agents/issues/2140
+2026-11-20,agents,issue,opened,2139,"Security review persona should audit path containment checks for lexical Path.parents traversal bypasses and check ordering",https://github.com/fullsend-ai/agents/issues/2139
+2026-11-20,agents,issue,opened,2138,"post-review: carried-forward open low-severity findings must not be treated as blocking or override comment/approve verdicts",https://github.com/fullsend-ai/agents/issues/2138
+2026-11-20,agents,issue,opened,2137,"code-result schema: require an artifact only the final commit step can produce so pre-commit stubs fail validation",https://github.com/fullsend-ai/agents/issues/2137
+2026-11-20,agents,issue,opened,2136,"post-code: treat zero commits ahead of merge base as failure and salvage a dirty working tree",https://github.com/fullsend-ai/agents/issues/2136
+2026-11-20,agents,issue,opened,2134,"triage: cannot see images attached to an issue",https://github.com/fullsend-ai/agents/issues/2134
+2026-11-20,agents,issue,opened,2132,"Document the non-dimensional-category exclusion (protected-path, provenance-warning, scope-authorization-implicit) from the review-findings-v2 ledger",https://github.com/fullsend-ai/agents/issues/2132
+2026-11-20,agents,issue,opened,2130,"Breaking change: upgrade the agent fleet from Anthropic 4-8 models to 5-5 models",https://github.com/fullsend-ai/agents/issues/2130
+2026-11-20,agents,issue,opened,2129,"Security review persona should not label documentation-accuracy findings about security-relevant settings as fail-open",https://github.com/fullsend-ai/agents/issues/2129
+2026-11-20,agents,issue,opened,2127,"chore(harness): pin fleet images to the v0.57.0-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/2127
+2026-11-20,agents,issue,closed,2143,"chore(harness): pin fleet images to the v0.57.1-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/2143
+2026-11-20,agents,issue,closed,2141,"Run the behaviour suite on the GitHub emulator for every pull request",https://github.com/fullsend-ai/agents/issues/2141
+2026-11-20,agents,issue,closed,2130,"Breaking change: upgrade the agent fleet from Anthropic 4-8 models to 5-5 models",https://github.com/fullsend-ai/agents/issues/2130
+2026-11-20,agents,issue,closed,2127,"chore(harness): pin fleet images to the v0.57.0-rc.1 release builds",https://github.com/fullsend-ai/agents/issues/2127
+2026-11-20,agents,issue,closed,2100,"Stale `ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-4-6` pin breaks review sub-agents on 5.5-only Vertex projects",https://github.com/fullsend-ai/agents/issues/2100
+2026-11-20,pi-xai-vertex,pr,opened,24,"fix(#23): test against pi 1.6.0 (undici 8.12.4)",https://github.com/fullsend-ai/pi-xai-vertex/pull/24
+2026-11-20,pi-xai-vertex,pr,merged,24,"fix(#23): test against pi 1.6.0 (undici 8.12.4)",https://github.com/fullsend-ai/pi-xai-vertex/pull/24
+2026-11-20,pi-xai-vertex,issue,opened,23,"Test against pi 1.6.0 (undici 8.12.4)",https://github.com/fullsend-ai/pi-xai-vertex/issues/23
+2026-11-20,pi-xai-vertex,issue,closed,23,"Test against pi 1.6.0 (undici 8.12.4)",https://github.com/fullsend-ai/pi-xai-vertex/issues/23
+2026-11-20,pi-anthropic-vertex,pr,opened,20,"fix(#19): test against pi 1.6.0, drop supportsMessageThreads",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/20
+2026-11-20,pi-anthropic-vertex,pr,merged,20,"fix(#19): test against pi 1.6.0, drop supportsMessageThreads",https://github.com/fullsend-ai/pi-anthropic-vertex/pull/20
+2026-11-20,pi-anthropic-vertex,issue,opened,19,"Test against pi 1.6.0: drop the new supportsMessageThreads compat key",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/19
+2026-11-20,pi-anthropic-vertex,issue,closed,19,"Test against pi 1.6.0: drop the new supportsMessageThreads compat key",https://github.com/fullsend-ai/pi-anthropic-vertex/issues/19
+2026-11-20,pi-inference-gateway,pr,opened,47,"chore: bump pi devDependencies to 1.6.0",https://github.com/fullsend-ai/pi-inference-gateway/pull/47
+2026-11-20,pi-inference-gateway,pr,merged,47,"chore: bump pi devDependencies to 1.6.0",https://github.com/fullsend-ai/pi-inference-gateway/pull/47
+2026-11-20,pi-inference-gateway,issue,opened,46,"Bump pi devDependencies to 1.6.0 (undici 8.12.4)",https://github.com/fullsend-ai/pi-inference-gateway/issues/46
+2026-11-20,pi-inference-gateway,issue,closed,46,"Bump pi devDependencies to 1.6.0 (undici 8.12.4)",https://github.com/fullsend-ai/pi-inference-gateway/issues/46
+2026-11-20,org,pr,opened,79,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
+2026-11-20,org,pr,opened,78,"docs(onboarding): guide fullsend-ai repository setup",https://github.com/fullsend-ai/org/pull/78
+2026-11-20,org,pr,opened,77,"chore: onboard OrgPulse upstream repositories",https://github.com/fullsend-ai/org/pull/77
+2026-11-20,org,pr,opened,76,"feat(peribolos): register the four codecov forks",https://github.com/fullsend-ai/org/pull/76
+2026-11-20,org,pr,opened,75,"feat: allowlist fullsend-ai/coverport",https://github.com/fullsend-ai/org/pull/75
+2026-11-20,org,pr,opened,74,"Add devlake to the allowlist",https://github.com/fullsend-ai/org/pull/74
+2026-11-20,org,pr,opened,73,"chore(#72): require behaviour-github-emulator on fullsend main",https://github.com/fullsend-ai/org/pull/73
+2026-11-20,org,pr,merged,78,"docs(onboarding): guide fullsend-ai repository setup",https://github.com/fullsend-ai/org/pull/78
+2026-11-20,org,pr,merged,77,"chore: onboard OrgPulse upstream repositories",https://github.com/fullsend-ai/org/pull/77
+2026-11-20,org,pr,merged,76,"feat(peribolos): register the four codecov forks",https://github.com/fullsend-ai/org/pull/76
+2026-11-20,org,pr,merged,75,"feat: allowlist fullsend-ai/coverport",https://github.com/fullsend-ai/org/pull/75
+2026-11-20,org,pr,merged,74,"Add devlake to the allowlist",https://github.com/fullsend-ai/org/pull/74
+2026-11-20,org,pr,merged,73,"chore(#72): require behaviour-github-emulator on fullsend main",https://github.com/fullsend-ai/org/pull/73
+2026-11-20,org,issue,opened,72,"Require the behaviour-github-emulator check on fullsend's main branch",https://github.com/fullsend-ai/org/issues/72
+2026-11-20,org,issue,closed,72,"Require the behaviour-github-emulator check on fullsend's main branch",https://github.com/fullsend-ai/org/issues/72
+2026-11-20,react-shopping-cart,pr,opened,111,"docs(#110): update architecture docs in the same PR",https://github.com/fullsend-ai/react-shopping-cart/pull/111
+2026-11-20,react-shopping-cart,pr,opened,109,"feat(TSTAPP-8): show an order summary at checkout instead of an alert",https://github.com/fullsend-ai/react-shopping-cart/pull/109
+2026-11-20,react-shopping-cart,pr,merged,109,"feat(TSTAPP-8): show an order summary at checkout instead of an alert",https://github.com/fullsend-ai/react-shopping-cart/pull/109
+2026-11-20,react-shopping-cart,issue,opened,110,"Settle the docs policy: update docs/architecture in the same PR as the behavior change (stops the defer → review flag → fix round)",https://github.com/fullsend-ai/react-shopping-cart/issues/110

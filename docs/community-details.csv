@@ -3744,3 +3744,124 @@ date,repo,type,event,number,actor,title,url
 2026-11-19,agents,pr,reviewed_external,2101,alexeykazakov,"fix(#2100)!: pin the sonnet alias to claude-sonnet-5-5 on Vertex",https://github.com/fullsend-ai/agents/pull/2101
 2026-11-19,org,issue,opened_external,69,ravelley,"Grant theobarberbany read access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/69
 2026-11-19,org,issue,closed_other_external,69,ravelley,"Grant theobarberbany read access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/69
+2026-11-20,coverport,pr,opened_core,192,waynesun09,"chore(fullsend): remove the config.yaml written by the old konflux-ci manifest",https://github.com/fullsend-ai/coverport/pull/192
+2026-11-20,fullsend,issue,opened_external,9766,dhshah13,"Jira poller: an unparseable lastCheck fails every quiet poll cycle",https://github.com/fullsend-ai/fullsend/issues/9766
+2026-11-20,fullsend,issue,opened_external,9752,jflowers,"preflight: warn when invalid env.runner keys are dropped from the preflight_check environment",https://github.com/fullsend-ai/fullsend/issues/9752
+2026-11-20,fullsend,issue,opened_external,9751,dhshah13,"Jira poller: fresh requests wait behind handled tickets and can be missed under load",https://github.com/fullsend-ai/fullsend/issues/9751
+2026-11-20,fullsend,issue,opened_external,9746,jwm4,"jira-poll on GitHub: a hand-off that does not reach the dispatch job loses the whole batch, and the run stays green",https://github.com/fullsend-ai/fullsend/issues/9746
+2026-11-20,fullsend,issue,opened_external,9733,ianw,"repos.yaml: better document tracker setup",https://github.com/fullsend-ai/fullsend/issues/9733
+2026-11-20,fullsend,issue,opened_external,9727,Dannyb48,"gitlab: the unrelated-work check never evaluates source=api, the route the poll job dispatches the agent through",https://github.com/fullsend-ai/fullsend/issues/9727
+2026-11-20,fullsend,issue,opened_external,9726,ianw,"gitlab: allow setting variables for control/agent runners",https://github.com/fullsend-ai/fullsend/issues/9726
+2026-11-20,fullsend,issue,closed_via_pr_external,9708,Dannyb48,"gitlab: a deferred trigger account skips the dispatch gate, so unrelated jobs in scheduled pipelines are never reported",https://github.com/fullsend-ai/fullsend/issues/9708
+2026-11-20,fullsend,issue,closed_other_external,9412,fbricon,"Code agent: session ends one step before `git commit`, reports success, loses the work, and eval scores `trace_fitness = pass`",https://github.com/fullsend-ai/fullsend/issues/9412
+2026-11-20,fullsend,pr,opened_core,9765,waynesun09,"test: scratch PR for the /ok-to-test live check (do not merge)",https://github.com/fullsend-ai/fullsend/pull/9765
+2026-11-20,fullsend,pr,opened_core,9753,ralphbean,"docs: update review etiquette",https://github.com/fullsend-ai/fullsend/pull/9753
+2026-11-20,fullsend,pr,reviewed_external,9264,wchwhite,"docs(adr): define control-repository saga journals",https://github.com/fullsend-ai/fullsend/pull/9264
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,fullsend,pr,reviewed_external,8869,jflowers,"fix(#8771): reject non-plain ${...} preflight forms, keep bare $VAR",https://github.com/fullsend-ai/fullsend/pull/8869
+2026-11-20,rfe-creator,issue,opened_external,309,astefanutti,"Split initiative into the family and the member initiative-rhaistrat; accept the family name for the sole member",https://github.com/fullsend-ai/rfe-creator/issues/309
+2026-11-20,rfe-creator,issue,opened_external,307,astefanutti,"Type families in the registry: abstract family and extends, behaviour-neutral",https://github.com/fullsend-ai/rfe-creator/issues/307
+2026-11-20,rfe-creator,issue,closed_other_external,307,astefanutti,"Type families in the registry: abstract family and extends, behaviour-neutral",https://github.com/fullsend-ai/rfe-creator/issues/307
+2026-11-20,rfe-creator,issue,closed_other_external,304,astefanutti,"Eval: case-007's dictated stack does not survive the create step, so its revise path and flag-clear are never exercised",https://github.com/fullsend-ai/rfe-creator/issues/304
+2026-11-20,rfe-creator,issue,closed_other_external,235,astefanutti,"Baseline comparison: the rfe eval through fullsend versus claude-code",https://github.com/fullsend-ai/rfe-creator/issues/235
+2026-11-20,.fullsend,pr,opened_core,228,waynesun09,"feat(repos): register the codecov forks in the fleet manifest",https://github.com/fullsend-ai/.fullsend/pull/228
+2026-11-20,.fullsend,pr,opened_core,224,ascerra,"chore(mlflow-assessments): register the renamed judge harness files",https://github.com/fullsend-ai/.fullsend/pull/224
+2026-11-20,agent-eval-harness,issue,opened_external,345,theobarberbany,"eval-run: the agent under test can read the eval's own answer keys",https://github.com/fullsend-ai/agent-eval-harness/issues/345
+2026-11-20,agent-eval-harness,issue,opened_external,341,astefanutti,"Numeric execution config values are not validated at load, and the two phases disagree",https://github.com/fullsend-ai/agent-eval-harness/issues/341
+2026-11-20,agent-eval-harness,issue,opened_external,339,astefanutti,"preflight reports its own state file as stale, and the documented remedy deletes it",https://github.com/fullsend-ai/agent-eval-harness/issues/339
+2026-11-20,agent-eval-harness,issue,closed_other_external,341,astefanutti,"Numeric execution config values are not validated at load, and the two phases disagree",https://github.com/fullsend-ai/agent-eval-harness/issues/341
+2026-11-20,agent-eval-harness,issue,closed_other_external,339,astefanutti,"preflight reports its own state file as stale, and the documented remedy deletes it",https://github.com/fullsend-ai/agent-eval-harness/issues/339
+2026-11-20,agent-eval-harness,issue,closed_other_external,329,astefanutti,"Judging concurrency needs a config-level override, not only a CLI flag",https://github.com/fullsend-ai/agent-eval-harness/issues/329
+2026-11-20,agent-eval-harness,issue,closed_other_external,309,theobarberbany,"eval-run: orchestrator picks the run directory, and the scorer looks somewhere else",https://github.com/fullsend-ai/agent-eval-harness/issues/309
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,346,ravelley,"fix(eval-run): keep the eval dataset out of Harbor and fullsend sandboxes, deny it to local file tools",https://github.com/fullsend-ai/agent-eval-harness/pull/346
+2026-11-20,agent-eval-harness,pr,reviewed_external,340,astefanutti,"fix(eval-run): keep skills' own state out of preflight's clean",https://github.com/fullsend-ai/agent-eval-harness/pull/340
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,338,ravelley,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-20,agent-eval-harness,pr,reviewed_external,336,astefanutti,"feat(score): add execution.judge_parallelism config override",https://github.com/fullsend-ai/agent-eval-harness/pull/336
+2026-11-20,agent-eval-harness,pr,reviewed_external,325,astefanutti,"fix(eval-run): resolve the run directory once, in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/325
+2026-11-20,github-emulator,issue,opened_external,102,jctanner,"Keep the runner images on GitHub's hosted-worker Ubuntu (24.04): add dependabot ignore conditions",https://github.com/fullsend-ai/github-emulator/issues/102
+2026-11-20,github-emulator,issue,opened_external,98,jctanner,"contributionsCollection counts contributions from repositories the viewer cannot read",https://github.com/fullsend-ai/github-emulator/issues/98
+2026-11-20,github-emulator,issue,opened_external,97,jctanner,"Record the GraphQL Viewer interface decision as an ADR",https://github.com/fullsend-ai/github-emulator/issues/97
+2026-11-20,github-emulator,pr,opened_core,77,waynesun09,"Let a job token revoke itself; serve a finished job's uploaded step logs",https://github.com/fullsend-ai/github-emulator/pull/77
+2026-11-20,github-emulator,pr,reviewed_external,96,jctanner,"fix(#94): make a job token's GraphQL viewer github-actions[bot]",https://github.com/fullsend-ai/github-emulator/pull/96
+2026-11-20,github-emulator,pr,reviewed_external,96,jctanner,"fix(#94): make a job token's GraphQL viewer github-actions[bot]",https://github.com/fullsend-ai/github-emulator/pull/96
+2026-11-20,github-emulator,pr,reviewed_external,95,jctanner,"fix(#93): limit search results to repositories the caller can read",https://github.com/fullsend-ai/github-emulator/pull/95
+2026-11-20,github-emulator,pr,reviewed_external,85,jctanner,"fix(#82): fail make smoke on API errors, allow re-runs",https://github.com/fullsend-ai/github-emulator/pull/85
+2026-11-20,github-emulator,pr,reviewed_external,85,jctanner,"fix(#82): fail make smoke on API errors, allow re-runs",https://github.com/fullsend-ai/github-emulator/pull/85
+2026-11-20,github-emulator,pr,reviewed_external,84,jctanner,"fix(#81): point compose actions-runner at http://github-emulator:8000",https://github.com/fullsend-ai/github-emulator/pull/84
+2026-11-20,github-emulator,pr,reviewed_external,77,jctanner,"Let a job token revoke itself; serve a finished job's uploaded step logs",https://github.com/fullsend-ai/github-emulator/pull/77
+2026-11-20,github-emulator,pr,reviewed_external,67,jctanner,"Bump pytest-asyncio from 1.4.1 to 1.4.1.post1",https://github.com/fullsend-ai/github-emulator/pull/67
+2026-11-20,github-emulator,pr,reviewed_external,66,jctanner,"Bump jsdom from 26.1.0 to 31.0.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/66
+2026-11-20,github-emulator,pr,reviewed_external,66,jctanner,"Bump jsdom from 26.1.0 to 31.0.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/66
+2026-11-20,github-emulator,pr,reviewed_external,64,jctanner,"Bump vite from 7.3.8 to 8.3.6 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/64
+2026-11-20,github-emulator,pr,reviewed_external,61,jctanner,"Bump the frontend-minor-patch group in /src/frontend with 9 updates",https://github.com/fullsend-ai/github-emulator/pull/61
+2026-11-20,github-emulator,pr,reviewed_external,56,jctanner,"Bump ubuntu from 24.04 to 25.10 in /src/runners/upstream",https://github.com/fullsend-ai/github-emulator/pull/56
+2026-11-20,github-emulator,pr,reviewed_external,55,jctanner,"Bump ubuntu from 24.04 to 25.10 in /src/runners/emulator",https://github.com/fullsend-ai/github-emulator/pull/55
+2026-11-20,github-emulator,pr,reviewed_external,51,jctanner,"Bump js-yaml and @redocly/openapi-core in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/51
+2026-11-20,github-emulator,pr,reviewed_external,51,jctanner,"Bump js-yaml and @redocly/openapi-core in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/51
+2026-11-20,github-emulator,pr,reviewed_external,49,jctanner,"Bump minimatch and typescript-eslint in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/49
+2026-11-20,github-emulator,pr,reviewed_external,49,jctanner,"Bump minimatch and typescript-eslint in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/49
+2026-11-20,github-emulator,pr,reviewed_external,48,jctanner,"Bump @vitest/mocker and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/48
+2026-11-20,github-emulator,pr,reviewed_external,48,jctanner,"Bump @vitest/mocker and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/48
+2026-11-20,github-emulator,pr,reviewed_external,46,jctanner,"Bump tinypool and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/46
+2026-11-20,github-emulator,pr,reviewed_external,46,jctanner,"Bump tinypool and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/46
+2026-11-20,github-emulator,pr,reviewed_external,45,jctanner,"Bump source-map-js from 1.2.1 to 1.2.3 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/45
+2026-11-20,github-emulator,pr,reviewed_external,45,jctanner,"Bump source-map-js from 1.2.1 to 1.2.3 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/45
+2026-11-20,github-emulator,pr,reviewed_external,44,jctanner,"fix(#43): verify runner credentials on token exchange and deregister",https://github.com/fullsend-ai/github-emulator/pull/44
+2026-11-20,strat-creator,issue,opened_external,128,jctanner,"Derive intake-JQL target versions from Jira at runtime (release trains + live project versions) instead of the curated static list",https://github.com/fullsend-ai/strat-creator/issues/128
+2026-11-20,strat-creator,issue,opened_external,127,jctanner,"config: Jira renamed ""3.7 GA  RHAII RELEASE"" (double space) to single space — GA-RHAII-only RFEs silently skipped by batch discovery (RHAIRFE-3420, 3729, 3851)",https://github.com/fullsend-ai/strat-creator/issues/127
+2026-11-20,strat-creator,issue,closed_via_pr_external,108,jctanner,"Partial batch push success is omitted from progress, forcing successful tickets through refinement again",https://github.com/fullsend-ai/strat-creator/issues/108
+2026-11-20,strat-creator,pr,reviewed_external,118,ederign,"Draft: Add an informational UX research review dimension",https://github.com/fullsend-ai/strat-creator/pull/118
+2026-11-20,strat-creator,pr,reviewed_external,109,jctanner,"fix(#108): record push coverage for a partial batch push",https://github.com/fullsend-ai/strat-creator/pull/109
+2026-11-20,strat-creator,pr,reviewed_external,109,jctanner,"fix(#108): record push coverage for a partial batch push",https://github.com/fullsend-ai/strat-creator/pull/109
+2026-11-20,strat-creator,pr,reviewed_external,109,jctanner,"fix(#108): record push coverage for a partial batch push",https://github.com/fullsend-ai/strat-creator/pull/109
+2026-11-20,agents,issue,closed_other_external,2100,alexeykazakov,"Stale `ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-4-6` pin breaks review sub-agents on 5.5-only Vertex projects",https://github.com/fullsend-ai/agents/issues/2100
+2026-11-20,agents,pr,opened_core,2133,rh-hemartin,"fix!(#2130): upgrade the agent fleet from 4-generation to 5-5 models",https://github.com/fullsend-ai/agents/pull/2133
+2026-11-20,org,pr,opened_core,79,waynesun09,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
+2026-11-20,org,pr,reviewed_external,79,mfrancisc,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
+2026-11-20,react-shopping-cart,pr,reviewed_external,109,ederign,"feat(TSTAPP-8): show an order summary at checkout instead of an alert",https://github.com/fullsend-ai/react-shopping-cart/pull/109
