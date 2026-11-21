@@ -429,3 +429,56 @@
   window.addEventListener("resize", () => { hideTooltip(); render(); });
   render();
 })();
+
+// Fix likelihood by band (docs/fix-likelihood.csv, docs/fix-likelihood-check.csv).
+(async function () {
+  "use strict";
+
+  const pct = value => `${(value * 100).toFixed(1)}%`;
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  const bandsEl = document.getElementById("likelihood-bands");
+  const checkEl = document.getElementById("likelihood-check");
+  const order = ["higher", "middle", "lower", "unable_to_assess"];
+  let rows = [];
+  let checks = [];
+  let selectedRepo = "__all__";
+
+  try {
+    [rows, checks] = await Promise.all([
+      d3.csv("fix-likelihood.csv", d => ({ repo: d.repo, band: d.band, merged: +d.merged_prs, fixed: +d.fixed_prs, unjudged: +d.unjudged_candidates })),
+      d3.csv("fix-likelihood-check.csv"),
+    ]);
+  } catch (error) {
+    bandsEl.innerHTML = "<div class='quality-row'><span>Fix-likelihood data could not be loaded.</span></div>";
+    return;
+  }
+
+  function render() {
+    const visible = selectedRepo === "__all__" ? rows : rows.filter(d => d.repo === selectedRepo);
+    const byBand = d3.rollup(visible, v => ({ merged: d3.sum(v, d => d.merged), fixed: d3.sum(v, d => d.fixed) }), d => d.band);
+    bandsEl.innerHTML = byBand.size
+      ? order.filter(band => byBand.has(band)).map(band => {
+        const t = byBand.get(band);
+        return `<div class="quality-row"><span>${esc(band.replace(/_/g, " "))}</span><strong>${pct(t.merged ? t.fixed / t.merged : 0)}</strong>`
+          + `<strong>${t.fixed}</strong><span>${t.merged}</span></div>`;
+      }).join("")
+      : "<div class='quality-row'><span>No closed weeks yet</span></div>";
+    const check = checks.find(d => d.repo === (selectedRepo === "__all__" ? "all" : selectedRepo));
+    const open = d3.sum(visible, d => d.unjudged);
+    const coverage = open ? ` ${open} unjudged or unknown candidates are still open.` : "";
+    if (!check) {
+      checkEl.textContent = coverage.trim();
+    } else if (check.auc === "too_few_fixes") {
+      checkEl.textContent = `Too few fixed PRs to judge the bands here yet (${check.fixed_prs} of ${check.checked_prs}; 20 needed).${coverage}`;
+    } else {
+      checkEl.textContent = `Check on PRs the bands were not fitted on: AUC ${(+check.auc).toFixed(2)} (0.5 = no better than chance), `
+        + `and the riskiest 30% of PRs held ${pct(+check.fixed_in_riskiest_30pct)} of the ${check.fixed_prs} fixed PRs.${coverage}`;
+    }
+  }
+
+  document.getElementById("repo-filter").addEventListener("change", event => {
+    selectedRepo = event.target.value;
+    render();
+  });
+  render();
+})();
