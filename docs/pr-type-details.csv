@@ -2728,3 +2728,11 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-20,agents,2142,ci(#2141): let the behaviour suite run in shards on the GitHub emulator,ci,,,,https://github.com/fullsend-ai/agents/pull/2142
 2026-11-20,agents,2131,chore(#2130)!: pin the fleet sonnet alias to claude-sonnet-5-5,chore,,,,https://github.com/fullsend-ai/agents/pull/2131
 2026-11-20,agents,2128,chore(harness): pin fleet images to the v0.57.0-rc.1 release builds,chore,,,,https://github.com/fullsend-ai/agents/pull/2128
+2026-11-21,fullsend,9776,ci(#9775): pin the GitHub emulator to 2026.11.21 and update the start-failure rows,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9776
+2026-11-21,fullsend,9773,ci(#9772): start emulator-job Go build and image pull after stack,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9773
+2026-11-21,fullsend,9771,docs(#9770): document the behaviour-github-emulator check on a PR,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9771
+2026-11-21,fullsend,9769,chore(deps): update experiments digest to e10d6db,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9769
+2026-11-21,fullsend,9768,docs(#9767): document moving the GitHub emulator pin,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9768
+2026-11-21,agents,2153,docs(#2152): emulator check is required; document shards.txt,docs,,,,https://github.com/fullsend-ai/agents/pull/2153
+2026-11-21,agents,2151,test(#2150): have the canary persona echo its marker so the log always shows it,test,,,,https://github.com/fullsend-ai/agents/pull/2151
+2026-11-21,agents,2148,ci(behaviour): run the live suite in the merge queue; add /ok-to-test <sha> live,ci,,,,https://github.com/fullsend-ai/agents/pull/2148

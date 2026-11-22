@@ -20440,3 +20440,101 @@ date,repo,type,event,number,title,url
 2026-11-20,react-shopping-cart,pr,opened,109,"feat(TSTAPP-8): show an order summary at checkout instead of an alert",https://github.com/fullsend-ai/react-shopping-cart/pull/109
 2026-11-20,react-shopping-cart,pr,merged,109,"feat(TSTAPP-8): show an order summary at checkout instead of an alert",https://github.com/fullsend-ai/react-shopping-cart/pull/109
 2026-11-20,react-shopping-cart,issue,opened,110,"Settle the docs policy: update docs/architecture in the same PR as the behavior change (stops the defer → review flag → fix round)",https://github.com/fullsend-ai/react-shopping-cart/issues/110
+2026-11-21,fullsend,pr,opened,9776,"ci(#9775): pin the GitHub emulator to 2026.11.21 and update the start-failure rows",https://github.com/fullsend-ai/fullsend/pull/9776
+2026-11-21,fullsend,pr,opened,9774,"ci(behaviour-github-emulator): pin the GitHub emulator to 2026.11.21",https://github.com/fullsend-ai/fullsend/pull/9774
+2026-11-21,fullsend,pr,opened,9773,"ci(#9772): start emulator-job Go build and image pull after stack",https://github.com/fullsend-ai/fullsend/pull/9773
+2026-11-21,fullsend,pr,opened,9771,"docs(#9770): document the behaviour-github-emulator check on a PR",https://github.com/fullsend-ai/fullsend/pull/9771
+2026-11-21,fullsend,pr,opened,9769,"chore(deps): update experiments digest to e10d6db",https://github.com/fullsend-ai/fullsend/pull/9769
+2026-11-21,fullsend,pr,merged,9776,"ci(#9775): pin the GitHub emulator to 2026.11.21 and update the start-failure rows",https://github.com/fullsend-ai/fullsend/pull/9776
+2026-11-21,fullsend,pr,merged,9773,"ci(#9772): start emulator-job Go build and image pull after stack",https://github.com/fullsend-ai/fullsend/pull/9773
+2026-11-21,fullsend,pr,merged,9771,"docs(#9770): document the behaviour-github-emulator check on a PR",https://github.com/fullsend-ai/fullsend/pull/9771
+2026-11-21,fullsend,pr,merged,9769,"chore(deps): update experiments digest to e10d6db",https://github.com/fullsend-ai/fullsend/pull/9769
+2026-11-21,fullsend,pr,merged,9768,"docs(#9767): document moving the GitHub emulator pin",https://github.com/fullsend-ai/fullsend/pull/9768
+2026-11-21,fullsend,pr,closed,9750,"chore(deps): update dependency @earendil-works/pi-coding-agent to v1.6.0 - autoclosed",https://github.com/fullsend-ai/fullsend/pull/9750
+2026-11-21,fullsend,pr,closed,8005,"test(#8004): use bare vertex-ai in behaviour fixtures, explain ADR 0075",https://github.com/fullsend-ai/fullsend/pull/8005
+2026-11-21,fullsend,pr,closed,8001,"docs(#8000): clarify preflight_check ${VAR} expansion is a denylist",https://github.com/fullsend-ai/fullsend/pull/8001
+2026-11-21,fullsend,pr,closed,7987,"fix(#7984): refuse agent set moves that leave the harness stale",https://github.com/fullsend-ai/fullsend/pull/7987
+2026-11-21,fullsend,pr,closed,7978,"fix(#6951): retry agents tag resolution, fall back to main",https://github.com/fullsend-ai/fullsend/pull/7978
+2026-11-21,fullsend,issue,opened,9777,"Disable ONNX Runtime telemetry before the ORT environment starts",https://github.com/fullsend-ai/fullsend/issues/9777
+2026-11-21,fullsend,issue,opened,9775,"docs: update the emulator start-failure row for emulator 2026.11.21",https://github.com/fullsend-ai/fullsend/issues/9775
+2026-11-21,fullsend,issue,opened,9772,"behaviour-github-emulator: start the background Go build and image pull after the emulator is up",https://github.com/fullsend-ai/fullsend/issues/9772
+2026-11-21,fullsend,issue,opened,9770,"docs: working with the behaviour-github-emulator check on a pull request",https://github.com/fullsend-ai/fullsend/issues/9770
+2026-11-21,fullsend,issue,closed,9775,"docs: update the emulator start-failure row for emulator 2026.11.21",https://github.com/fullsend-ai/fullsend/issues/9775
+2026-11-21,fullsend,issue,closed,9772,"behaviour-github-emulator: start the background Go build and image pull after the emulator is up",https://github.com/fullsend-ai/fullsend/issues/9772
+2026-11-21,fullsend,issue,closed,9770,"docs: working with the behaviour-github-emulator check on a pull request",https://github.com/fullsend-ai/fullsend/issues/9770
+2026-11-21,fullsend,issue,closed,9767,"Move the GitHub emulator pin to 2026.11.20.2 and document how to move it",https://github.com/fullsend-ai/fullsend/issues/9767
+2026-11-21,github-emulator,pr,opened,118,"chore(deps): catch up all frontend and Python dependencies at once",https://github.com/fullsend-ai/github-emulator/pull/118
+2026-11-21,github-emulator,pr,opened,117,"fix(#115): retry dnsmasq-base install after apt-get update",https://github.com/fullsend-ai/github-emulator/pull/117
+2026-11-21,github-emulator,pr,opened,116,"fix(#114): give the ci-stack.sh TLS CA key usage extensions",https://github.com/fullsend-ai/github-emulator/pull/116
+2026-11-21,github-emulator,pr,opened,113,"fix(#107): wait for the emulator by deadline in ci-stack.sh start",https://github.com/fullsend-ai/github-emulator/pull/113
+2026-11-21,github-emulator,pr,opened,112,"Bump fastapi from 0.162.0 to 0.162.1 in the python-minor-patch group",https://github.com/fullsend-ai/github-emulator/pull/112
+2026-11-21,github-emulator,pr,opened,111,"Bump typescript from 5.9.3 to 7.0.2 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/111
+2026-11-21,github-emulator,pr,opened,110,"Bump @types/node from 24.13.3 to 26.6.6 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/110
+2026-11-21,github-emulator,pr,opened,109,"Bump vitest from 4.1.12 to 5.1.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/109
+2026-11-21,github-emulator,pr,opened,108,"Bump @eslint/js from 9.39.5 to 10.0.1 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/108
+2026-11-21,github-emulator,pr,opened,106,"feat(#105): label runners and build images for Ubuntu 24.04 and 26.04",https://github.com/fullsend-ai/github-emulator/pull/106
+2026-11-21,github-emulator,pr,merged,118,"chore(deps): catch up all frontend and Python dependencies at once",https://github.com/fullsend-ai/github-emulator/pull/118
+2026-11-21,github-emulator,pr,merged,116,"fix(#114): give the ci-stack.sh TLS CA key usage extensions",https://github.com/fullsend-ai/github-emulator/pull/116
+2026-11-21,github-emulator,pr,merged,113,"fix(#107): wait for the emulator by deadline in ci-stack.sh start",https://github.com/fullsend-ai/github-emulator/pull/113
+2026-11-21,github-emulator,pr,merged,106,"feat(#105): label runners and build images for Ubuntu 24.04 and 26.04",https://github.com/fullsend-ai/github-emulator/pull/106
+2026-11-21,github-emulator,pr,merged,104,"fix(#102): keep Dependabot from moving runner images to interim Ubuntu releases",https://github.com/fullsend-ai/github-emulator/pull/104
+2026-11-21,github-emulator,pr,merged,103,"fix(#101): answer a deleted job's end report without a 500",https://github.com/fullsend-ai/github-emulator/pull/103
+2026-11-21,github-emulator,pr,closed,112,"Bump fastapi from 0.162.0 to 0.162.1 in the python-minor-patch group",https://github.com/fullsend-ai/github-emulator/pull/112
+2026-11-21,github-emulator,pr,closed,111,"Bump typescript from 5.9.3 to 7.0.2 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/111
+2026-11-21,github-emulator,pr,closed,110,"Bump @types/node from 24.13.3 to 26.6.6 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/110
+2026-11-21,github-emulator,pr,closed,109,"Bump vitest from 4.1.12 to 5.1.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/109
+2026-11-21,github-emulator,pr,closed,108,"Bump @eslint/js from 9.39.5 to 10.0.1 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/108
+2026-11-21,github-emulator,pr,closed,68,"Bump eslint from 9.39.5 to 10.14.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/68
+2026-11-21,github-emulator,pr,closed,65,"Bump bcrypt from 4.0.1 to 5.0.0",https://github.com/fullsend-ai/github-emulator/pull/65
+2026-11-21,github-emulator,pr,closed,60,"Bump docker/setup-buildx-action from 3 to 4",https://github.com/fullsend-ai/github-emulator/pull/60
+2026-11-21,github-emulator,pr,closed,59,"Bump docker/metadata-action from 5 to 6",https://github.com/fullsend-ai/github-emulator/pull/59
+2026-11-21,github-emulator,pr,closed,58,"Bump docker/login-action from 3 to 4",https://github.com/fullsend-ai/github-emulator/pull/58
+2026-11-21,github-emulator,pr,closed,57,"Bump actions/github-script from 7 to 9",https://github.com/fullsend-ai/github-emulator/pull/57
+2026-11-21,github-emulator,pr,closed,54,"Bump actions/download-artifact from 4 to 8",https://github.com/fullsend-ai/github-emulator/pull/54
+2026-11-21,github-emulator,pr,closed,53,"Bump node from 22-slim to 25-slim",https://github.com/fullsend-ai/github-emulator/pull/53
+2026-11-21,github-emulator,pr,closed,51,"Bump js-yaml and @redocly/openapi-core in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/51
+2026-11-21,github-emulator,pr,closed,50,"Bump brace-expansion from 2.1.4 to 2.1.8 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/50
+2026-11-21,github-emulator,pr,closed,49,"Bump minimatch and typescript-eslint in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/49
+2026-11-21,github-emulator,pr,closed,48,"Bump @vitest/mocker and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/48
+2026-11-21,github-emulator,pr,closed,46,"Bump tinypool and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/46
+2026-11-21,github-emulator,pr,closed,45,"Bump source-map-js from 1.2.1 to 1.2.3 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/45
+2026-11-21,github-emulator,issue,opened,123,"Move the frontend-build stage to the next Node LTS base image",https://github.com/fullsend-ai/github-emulator/issues/123
+2026-11-21,github-emulator,issue,opened,122,"Upgrade bcrypt 4.0.1 -> 5.0.0 with passlib compatibility work",https://github.com/fullsend-ai/github-emulator/issues/122
+2026-11-21,github-emulator,issue,opened,121,"Bump GitHub Actions majors: download-artifact 8, github-script 9, docker login/metadata/setup-buildx",https://github.com/fullsend-ai/github-emulator/issues/121
+2026-11-21,github-emulator,issue,opened,120,"Deferred dependency upgrades: Actions majors, bcrypt 5, node LTS",https://github.com/fullsend-ai/github-emulator/issues/120
+2026-11-21,github-emulator,issue,opened,119,"Upgrade eslint 10 + eslint-plugin-react-hooks 7 (11 pre-existing findings), then typescript 7",https://github.com/fullsend-ai/github-emulator/issues/119
+2026-11-21,github-emulator,issue,opened,115,"ci-stack.sh: dnsmasq-base install fails when the VM's apt lists are missing",https://github.com/fullsend-ai/github-emulator/issues/115
+2026-11-21,github-emulator,issue,opened,114,"ci-stack.sh TLS CA is rejected by Python 3.13+ (missing key usage); breaks on Ubuntu 26.04",https://github.com/fullsend-ai/github-emulator/issues/114
+2026-11-21,github-emulator,issue,opened,107,"ci-stack.sh gives up after about 30 s while the emulator is still starting",https://github.com/fullsend-ai/github-emulator/issues/107
+2026-11-21,github-emulator,issue,opened,105,"Runner labels and images for Ubuntu 24.04 and 26.04",https://github.com/fullsend-ai/github-emulator/issues/105
+2026-11-21,github-emulator,issue,closed,120,"Deferred dependency upgrades: Actions majors, bcrypt 5, node LTS",https://github.com/fullsend-ai/github-emulator/issues/120
+2026-11-21,github-emulator,issue,closed,114,"ci-stack.sh TLS CA is rejected by Python 3.13+ (missing key usage); breaks on Ubuntu 26.04",https://github.com/fullsend-ai/github-emulator/issues/114
+2026-11-21,github-emulator,issue,closed,107,"ci-stack.sh gives up after about 30 s while the emulator is still starting",https://github.com/fullsend-ai/github-emulator/issues/107
+2026-11-21,github-emulator,issue,closed,105,"Runner labels and images for Ubuntu 24.04 and 26.04",https://github.com/fullsend-ai/github-emulator/issues/105
+2026-11-21,github-emulator,issue,closed,102,"Keep the runner images on GitHub's hosted-worker Ubuntu (24.04): add dependabot ignore conditions",https://github.com/fullsend-ai/github-emulator/issues/102
+2026-11-21,github-emulator,issue,closed,101,"Runner: a job end report for a deleted repository's job answers 500",https://github.com/fullsend-ai/github-emulator/issues/101
+2026-11-21,strat-creator,issue,opened,132,"One ticket's failure fails the whole batch that already published the other tickets' work (operational deferral)",https://github.com/fullsend-ai/strat-creator/issues/132
+2026-11-21,agents,pr,opened,2153,"docs(#2152): emulator check is required; document shards.txt",https://github.com/fullsend-ai/agents/pull/2153
+2026-11-21,agents,pr,opened,2151,"test(#2150): have the canary persona echo its marker so the log always shows it",https://github.com/fullsend-ai/agents/pull/2151
+2026-11-21,agents,pr,opened,2149,"test: scratch PR for the /ok-to-test live check (do not merge)",https://github.com/fullsend-ai/agents/pull/2149
+2026-11-21,agents,pr,opened,2148,"ci(behaviour): run the live suite in the merge queue; add /ok-to-test <sha> live",https://github.com/fullsend-ai/agents/pull/2148
+2026-11-21,agents,pr,merged,2153,"docs(#2152): emulator check is required; document shards.txt",https://github.com/fullsend-ai/agents/pull/2153
+2026-11-21,agents,pr,merged,2151,"test(#2150): have the canary persona echo its marker so the log always shows it",https://github.com/fullsend-ai/agents/pull/2151
+2026-11-21,agents,pr,merged,2148,"ci(behaviour): run the live suite in the merge queue; add /ok-to-test <sha> live",https://github.com/fullsend-ai/agents/pull/2148
+2026-11-21,agents,pr,closed,1610,"feat(#1558): add retro-ci-analysis skill for PR CI and merge-queue evidence",https://github.com/fullsend-ai/agents/pull/1610
+2026-11-21,agents,pr,closed,1587,"fix(#1581): capture score.py exit status for RESULT line",https://github.com/fullsend-ai/agents/pull/1587
+2026-11-21,agents,pr,closed,1553,"fix(#1551): require terminal-state coverage for wait/poll loops",https://github.com/fullsend-ai/agents/pull/1553
+2026-11-21,agents,pr,closed,1548,"docs(#1547): add merge-commit secret-scanning checklist",https://github.com/fullsend-ai/agents/pull/1548
+2026-11-21,agents,pr,closed,1519,"fix(#1517): warn when sub-issue check fail-opens",https://github.com/fullsend-ai/agents/pull/1519
+2026-11-21,agents,issue,opened,2152,"docs: behaviour-github-emulator is required; shards.txt and the failure walkthrough",https://github.com/fullsend-ai/agents/issues/2152
+2026-11-21,agents,issue,opened,2150,"review/custom-persona: the canary marker check depends on how the model words its log output",https://github.com/fullsend-ai/agents/issues/2150
+2026-11-21,agents,issue,opened,2147,"behaviour: run the live suite in the merge queue, not on pull requests; add `/ok-to-test <sha> live`",https://github.com/fullsend-ai/agents/issues/2147
+2026-11-21,agents,issue,closed,2152,"docs: behaviour-github-emulator is required; shards.txt and the failure walkthrough",https://github.com/fullsend-ai/agents/issues/2152
+2026-11-21,agents,issue,closed,2150,"review/custom-persona: the canary marker check depends on how the model words its log output",https://github.com/fullsend-ai/agents/issues/2150
+2026-11-21,agents,issue,closed,2147,"behaviour: run the live suite in the merge queue, not on pull requests; add `/ok-to-test <sha> live`",https://github.com/fullsend-ai/agents/issues/2147
+2026-11-21,pi-inference-gateway,pr,opened,49,"feat: opt-in native Gemini transport for thought signatures",https://github.com/fullsend-ai/pi-inference-gateway/pull/49
+2026-11-21,pi-inference-gateway,issue,opened,48,"routing: opt-in native Gemini transport so multi-turn tool calls keep thought_signature",https://github.com/fullsend-ai/pi-inference-gateway/issues/48
+2026-11-21,org,pr,opened,81,"feat(rulesets): require behaviour-github-emulator on agents main",https://github.com/fullsend-ai/org/pull/81
+2026-11-21,org,pr,merged,81,"feat(rulesets): require behaviour-github-emulator on agents main",https://github.com/fullsend-ai/org/pull/81
+2026-11-21,org,issue,opened,80,"Require the behaviour-github-emulator check on agents' main branch",https://github.com/fullsend-ai/org/issues/80
+2026-11-21,org,issue,closed,80,"Require the behaviour-github-emulator check on agents' main branch",https://github.com/fullsend-ai/org/issues/80

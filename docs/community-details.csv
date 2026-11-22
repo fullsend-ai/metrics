@@ -3865,3 +3865,39 @@ date,repo,type,event,number,actor,title,url
 2026-11-20,org,pr,opened_core,79,waynesun09,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
 2026-11-20,org,pr,reviewed_external,79,mfrancisc,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
 2026-11-20,react-shopping-cart,pr,reviewed_external,109,ederign,"feat(TSTAPP-8): show an order summary at checkout instead of an alert",https://github.com/fullsend-ai/react-shopping-cart/pull/109
+2026-11-21,fullsend,pr,opened_core,9774,waynesun09,"ci(behaviour-github-emulator): pin the GitHub emulator to 2026.11.21",https://github.com/fullsend-ai/fullsend/pull/9774
+2026-11-21,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-21,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-21,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-21,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-21,fullsend,pr,reviewed_external,9199,jwm4,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-21,github-emulator,issue,opened_external,120,jctanner,"Deferred dependency upgrades: Actions majors, bcrypt 5, node LTS",https://github.com/fullsend-ai/github-emulator/issues/120
+2026-11-21,github-emulator,issue,opened_external,119,jctanner,"Upgrade eslint 10 + eslint-plugin-react-hooks 7 (11 pre-existing findings), then typescript 7",https://github.com/fullsend-ai/github-emulator/issues/119
+2026-11-21,github-emulator,issue,closed_other_external,120,jctanner,"Deferred dependency upgrades: Actions majors, bcrypt 5, node LTS",https://github.com/fullsend-ai/github-emulator/issues/120
+2026-11-21,github-emulator,issue,closed_via_pr_external,102,jctanner,"Keep the runner images on GitHub's hosted-worker Ubuntu (24.04): add dependabot ignore conditions",https://github.com/fullsend-ai/github-emulator/issues/102
+2026-11-21,github-emulator,pr,reviewed_external,112,jctanner,"Bump fastapi from 0.162.0 to 0.162.1 in the python-minor-patch group",https://github.com/fullsend-ai/github-emulator/pull/112
+2026-11-21,github-emulator,pr,reviewed_external,111,jctanner,"Bump typescript from 5.9.3 to 7.0.2 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/111
+2026-11-21,github-emulator,pr,reviewed_external,110,jctanner,"Bump @types/node from 24.13.3 to 26.6.6 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/110
+2026-11-21,github-emulator,pr,reviewed_external,109,jctanner,"Bump vitest from 4.1.12 to 5.1.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/109
+2026-11-21,github-emulator,pr,reviewed_external,108,jctanner,"Bump @eslint/js from 9.39.5 to 10.0.1 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/108
+2026-11-21,github-emulator,pr,reviewed_external,106,jctanner,"feat(#105): label runners and build images for Ubuntu 24.04 and 26.04",https://github.com/fullsend-ai/github-emulator/pull/106
+2026-11-21,github-emulator,pr,reviewed_external,104,jctanner,"fix(#102): keep Dependabot from moving runner images to interim Ubuntu releases",https://github.com/fullsend-ai/github-emulator/pull/104
+2026-11-21,github-emulator,pr,reviewed_external,103,jctanner,"fix(#101): answer a deleted job's end report without a 500",https://github.com/fullsend-ai/github-emulator/pull/103
+2026-11-21,github-emulator,pr,reviewed_external,103,jctanner,"fix(#101): answer a deleted job's end report without a 500",https://github.com/fullsend-ai/github-emulator/pull/103
+2026-11-21,github-emulator,pr,reviewed_external,68,jctanner,"Bump eslint from 9.39.5 to 10.14.0 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/68
+2026-11-21,github-emulator,pr,reviewed_external,65,jctanner,"Bump bcrypt from 4.0.1 to 5.0.0",https://github.com/fullsend-ai/github-emulator/pull/65
+2026-11-21,github-emulator,pr,reviewed_external,60,jctanner,"Bump docker/setup-buildx-action from 3 to 4",https://github.com/fullsend-ai/github-emulator/pull/60
+2026-11-21,github-emulator,pr,reviewed_external,59,jctanner,"Bump docker/metadata-action from 5 to 6",https://github.com/fullsend-ai/github-emulator/pull/59
+2026-11-21,github-emulator,pr,reviewed_external,58,jctanner,"Bump docker/login-action from 3 to 4",https://github.com/fullsend-ai/github-emulator/pull/58
+2026-11-21,github-emulator,pr,reviewed_external,57,jctanner,"Bump actions/github-script from 7 to 9",https://github.com/fullsend-ai/github-emulator/pull/57
+2026-11-21,github-emulator,pr,reviewed_external,54,jctanner,"Bump actions/download-artifact from 4 to 8",https://github.com/fullsend-ai/github-emulator/pull/54
+2026-11-21,github-emulator,pr,reviewed_external,53,jctanner,"Bump node from 22-slim to 25-slim",https://github.com/fullsend-ai/github-emulator/pull/53
+2026-11-21,github-emulator,pr,reviewed_external,51,jctanner,"Bump js-yaml and @redocly/openapi-core in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/51
+2026-11-21,github-emulator,pr,reviewed_external,50,jctanner,"Bump brace-expansion from 2.1.4 to 2.1.8 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/50
+2026-11-21,github-emulator,pr,reviewed_external,49,jctanner,"Bump minimatch and typescript-eslint in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/49
+2026-11-21,github-emulator,pr,reviewed_external,48,jctanner,"Bump @vitest/mocker and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/48
+2026-11-21,github-emulator,pr,reviewed_external,46,jctanner,"Bump tinypool and vitest in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/46
+2026-11-21,github-emulator,pr,reviewed_external,45,jctanner,"Bump source-map-js from 1.2.1 to 1.2.3 in /src/frontend",https://github.com/fullsend-ai/github-emulator/pull/45
+2026-11-21,strat-creator,issue,opened_external,132,jctanner,"One ticket's failure fails the whole batch that already published the other tickets' work (operational deferral)",https://github.com/fullsend-ai/strat-creator/issues/132
+2026-11-21,agents,pr,opened_core,2149,waynesun09,"test: scratch PR for the /ok-to-test live check (do not merge)",https://github.com/fullsend-ai/agents/pull/2149
+2026-11-21,pi-inference-gateway,issue,opened_external,48,DaoDaoNoCode,"routing: opt-in native Gemini transport so multi-turn tool calls keep thought_signature",https://github.com/fullsend-ai/pi-inference-gateway/issues/48
