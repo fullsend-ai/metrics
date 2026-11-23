@@ -20538,3 +20538,70 @@ date,repo,type,event,number,title,url
 2026-11-21,org,pr,merged,81,"feat(rulesets): require behaviour-github-emulator on agents main",https://github.com/fullsend-ai/org/pull/81
 2026-11-21,org,issue,opened,80,"Require the behaviour-github-emulator check on agents' main branch",https://github.com/fullsend-ai/org/issues/80
 2026-11-21,org,issue,closed,80,"Require the behaviour-github-emulator check on agents' main branch",https://github.com/fullsend-ai/org/issues/80
+2026-11-22,fullsend,pr,opened,9796,"feat(#9648): add on-demand Forgejo OAuth login",https://github.com/fullsend-ai/fullsend/pull/9796
+2026-11-22,fullsend,pr,opened,9791,"fix(#9790): prune fs-* sandboxes and reclaim storage under low disk",https://github.com/fullsend-ai/fullsend/pull/9791
+2026-11-22,fullsend,pr,opened,9785,"fix(#9784): wait for GitLab membership changes to propagate",https://github.com/fullsend-ai/fullsend/pull/9785
+2026-11-22,fullsend,pr,opened,9783,"feat(#9647): manage repositories across named Forgejo instances",https://github.com/fullsend-ai/fullsend/pull/9783
+2026-11-22,fullsend,pr,opened,9782,"test(#9315): add OpenBao behaviour tests for Vault runner secrets",https://github.com/fullsend-ai/fullsend/pull/9782
+2026-11-22,fullsend,pr,opened,9781,"chore(deps): update dependency vue to v3.5.46",https://github.com/fullsend-ai/fullsend/pull/9781
+2026-11-22,fullsend,pr,opened,9780,"test(#9779): retry a fresh repo's lost first event and confirm readiness",https://github.com/fullsend-ai/fullsend/pull/9780
+2026-11-22,fullsend,pr,opened,9778,"fix(#9777): disable ONNX Runtime telemetry before ORT starts",https://github.com/fullsend-ai/fullsend/pull/9778
+2026-11-22,fullsend,pr,merged,9783,"feat(#9647): manage repositories across named Forgejo instances",https://github.com/fullsend-ai/fullsend/pull/9783
+2026-11-22,fullsend,pr,merged,9782,"test(#9315): add OpenBao behaviour tests for Vault runner secrets",https://github.com/fullsend-ai/fullsend/pull/9782
+2026-11-22,fullsend,pr,merged,9778,"fix(#9777): disable ONNX Runtime telemetry before ORT starts",https://github.com/fullsend-ai/fullsend/pull/9778
+2026-11-22,fullsend,pr,merged,9697,"test(#9646): provision forgejo-dev stack in the install driver",https://github.com/fullsend-ai/fullsend/pull/9697
+2026-11-22,fullsend,pr,merged,9614,"refactor(#9584): add harness-specific authorized entity view for CEL",https://github.com/fullsend-ai/fullsend/pull/9614
+2026-11-22,fullsend,pr,closed,7950,"fix(#7949): stop leaking injected status/instance values into logs",https://github.com/fullsend-ai/fullsend/pull/7950
+2026-11-22,fullsend,pr,closed,7821,"docs(agents): add migration guide",https://github.com/fullsend-ai/fullsend/pull/7821
+2026-11-22,fullsend,pr,closed,7795,"docs(#7794): extend forge-abstraction to CI scaffold scripts",https://github.com/fullsend-ai/fullsend/pull/7795
+2026-11-22,fullsend,pr,closed,7785,"docs(#7784): document tri-state config field semantics",https://github.com/fullsend-ai/fullsend/pull/7785
+2026-11-22,fullsend,issue,opened,9797,"Content capture can't be set in repos.yaml or per agent",https://github.com/fullsend-ai/fullsend/issues/9797
+2026-11-22,fullsend,issue,opened,9795,"Test coverage for the GitLab pipeline-var opt-in: install provisioning, containment transitions, live status",https://github.com/fullsend-ai/fullsend/issues/9795
+2026-11-22,fullsend,issue,opened,9794,"GitLab pipeline-var gates: distinguish role-unreported, read-failed, and opt-in-not-set errors",https://github.com/fullsend-ai/fullsend/issues/9794
+2026-11-22,fullsend,issue,opened,9793,"Record the pipeline-var opt-in trigger/webhook widening in ADR 0175 and sweep stale no_one_allowed references",https://github.com/fullsend-ai/fullsend/issues/9793
+2026-11-22,fullsend,issue,opened,9792,"GitLab pipeline-var opt-in: record developer/trigger-route exposure conditions and decide role-gating",https://github.com/fullsend-ai/fullsend/issues/9792
+2026-11-22,fullsend,issue,opened,9790,"gitlab-runner-vm: prune fs-* sandboxes and reclaim storage under low disk",https://github.com/fullsend-ai/fullsend/issues/9790
+2026-11-22,fullsend,issue,opened,9789,"repos install: manage a fullsend lint check",https://github.com/fullsend-ai/fullsend/issues/9789
+2026-11-22,fullsend,issue,opened,9788,"repos install: manage fullsend lint job for GitLab",https://github.com/fullsend-ai/fullsend/issues/9788
+2026-11-22,fullsend,issue,opened,9787,"repos install: manage fullsend lint workflow for GitHub",https://github.com/fullsend-ai/fullsend/issues/9787
+2026-11-22,fullsend,issue,opened,9786,"Fix agent should make substantive changes rather than adding explanatory comments when addressing review findings",https://github.com/fullsend-ai/fullsend/issues/9786
+2026-11-22,fullsend,issue,opened,9784,"gitlab: retry service-account membership verification after role updates",https://github.com/fullsend-ai/fullsend/issues/9784
+2026-11-22,fullsend,issue,opened,9779,"behaviour: first event on a fresh slot repo can start no run after the workflow reports active",https://github.com/fullsend-ai/fullsend/issues/9779
+2026-11-22,fullsend,issue,closed,9777,"Disable ONNX Runtime telemetry before the ORT environment starts",https://github.com/fullsend-ai/fullsend/issues/9777
+2026-11-22,fullsend,issue,closed,9647,"Manage repositories across named Forgejo instances",https://github.com/fullsend-ai/fullsend/issues/9647
+2026-11-22,fullsend,issue,closed,9646,"Provision forgejo-dev through the behavior-test install driver",https://github.com/fullsend-ai/fullsend/issues/9646
+2026-11-22,fullsend,issue,closed,9584,"Build a harness-specific authorized entity view for CEL",https://github.com/fullsend-ai/fullsend/issues/9584
+2026-11-22,agents,pr,opened,2156,"fix(#2155): pass non-ASCII changed paths to the pre-commit gate",https://github.com/fullsend-ai/agents/pull/2156
+2026-11-22,agents,pr,closed,1516,"test(#1515): cover reviewThreads pagination in post-review tests",https://github.com/fullsend-ai/agents/pull/1516
+2026-11-22,agents,pr,closed,1508,"fix(#1507)!: switch triage auto-code to discretionary",https://github.com/fullsend-ai/agents/pull/1508
+2026-11-22,agents,pr,closed,1499,"docs(#1497): document GitHub Actions rerun workflow pinning",https://github.com/fullsend-ai/agents/pull/1499
+2026-11-22,agents,pr,closed,1491,"fix(#1130): skip push when PR is already merged",https://github.com/fullsend-ai/agents/pull/1491
+2026-11-22,agents,pr,closed,1487,"fix(#899): keep one issue open in mutual-duplicate races",https://github.com/fullsend-ai/agents/pull/1487
+2026-11-22,agents,issue,opened,2155,"post-code: pre-commit gate skips changed files with non-ASCII names",https://github.com/fullsend-ai/agents/issues/2155
+2026-11-22,agents,issue,opened,2154,"post-review: verify fix-agent ignition after a REQUEST_CHANGES review instead of relying on the pull_request_review event (refines fullsend-ai/fullsend#6438)",https://github.com/fullsend-ai/agents/issues/2154
+2026-11-22,react-shopping-cart,pr,opened,122,"feat(#120): replace catalog-id shell pipelines with a tested script",https://github.com/fullsend-ai/react-shopping-cart/pull/122
+2026-11-22,react-shopping-cart,pr,opened,121,"chore: upgrade fullsend workflows to v0.57.1",https://github.com/fullsend-ai/react-shopping-cart/pull/121
+2026-11-22,react-shopping-cart,pr,opened,119,"ci(#104): resolve low review threads and report merge blockers",https://github.com/fullsend-ai/react-shopping-cart/pull/119
+2026-11-22,react-shopping-cart,pr,opened,118,"docs(#117): scope catalog id commands and add a tie-breaker",https://github.com/fullsend-ai/react-shopping-cart/pull/118
+2026-11-22,react-shopping-cart,pr,opened,116,"fix(#112): repair catalog and tests broken by the #108 merge",https://github.com/fullsend-ai/react-shopping-cart/pull/116
+2026-11-22,react-shopping-cart,pr,opened,115,"docs(#114): check open PRs for claimed ids before adding a product",https://github.com/fullsend-ai/react-shopping-cart/pull/115
+2026-11-22,react-shopping-cart,pr,merged,121,"chore: upgrade fullsend workflows to v0.57.1",https://github.com/fullsend-ai/react-shopping-cart/pull/121
+2026-11-22,react-shopping-cart,pr,merged,119,"ci(#104): resolve low review threads and report merge blockers",https://github.com/fullsend-ai/react-shopping-cart/pull/119
+2026-11-22,react-shopping-cart,pr,merged,118,"docs(#117): scope catalog id commands and add a tie-breaker",https://github.com/fullsend-ai/react-shopping-cart/pull/118
+2026-11-22,react-shopping-cart,pr,merged,116,"fix(#112): repair catalog and tests broken by the #108 merge",https://github.com/fullsend-ai/react-shopping-cart/pull/116
+2026-11-22,react-shopping-cart,pr,merged,115,"docs(#114): check open PRs for claimed ids before adding a product",https://github.com/fullsend-ai/react-shopping-cart/pull/115
+2026-11-22,react-shopping-cart,pr,merged,111,"docs(#110): update architecture docs in the same PR",https://github.com/fullsend-ai/react-shopping-cart/pull/111
+2026-11-22,react-shopping-cart,pr,merged,108,"feat(TSTAPP-4): add Black & Red Contrast Hoodie to the catalog",https://github.com/fullsend-ai/react-shopping-cart/pull/108
+2026-11-22,react-shopping-cart,pr,merged,105,"docs(#103): document catalog product-add conventions",https://github.com/fullsend-ai/react-shopping-cart/pull/105
+2026-11-22,react-shopping-cart,issue,opened,123,"auto-merge.yml: recheck PR head before auto-resolving threads and before failure-path label removal; add merge-workflow review checklist to AGENTS.md",https://github.com/fullsend-ai/react-shopping-cart/issues/123
+2026-11-22,react-shopping-cart,issue,opened,120,"Replace the AGENTS.md catalog-id shell pipelines with a checked-in, tested script",https://github.com/fullsend-ai/react-shopping-cart/issues/120
+2026-11-22,react-shopping-cart,issue,opened,117,"AGENTS.md catalog id guidance: scope the id/hunk commands to products.json and add a tie-breaker for competing PRs",https://github.com/fullsend-ai/react-shopping-cart/issues/117
+2026-11-22,react-shopping-cart,issue,opened,114,"AGENTS.md 'Adding a catalog product': check open PRs for claimed product ids before taking 'the next sequential id'",https://github.com/fullsend-ai/react-shopping-cart/issues/114
+2026-11-22,react-shopping-cart,issue,opened,113,"Land a build/test CI workflow (re-open of #7/#36): a bad merge just put invalid products.json and broken tests on main undetected",https://github.com/fullsend-ai/react-shopping-cart/issues/113
+2026-11-22,react-shopping-cart,issue,opened,112,"main is broken after #108: products.json is invalid JSON (duplicate id 19) and Filter/Product tests have nested describe blocks",https://github.com/fullsend-ai/react-shopping-cart/issues/112
+2026-11-22,react-shopping-cart,issue,closed,117,"AGENTS.md catalog id guidance: scope the id/hunk commands to products.json and add a tie-breaker for competing PRs",https://github.com/fullsend-ai/react-shopping-cart/issues/117
+2026-11-22,react-shopping-cart,issue,closed,114,"AGENTS.md 'Adding a catalog product': check open PRs for claimed product ids before taking 'the next sequential id'",https://github.com/fullsend-ai/react-shopping-cart/issues/114
+2026-11-22,react-shopping-cart,issue,closed,112,"main is broken after #108: products.json is invalid JSON (duplicate id 19) and Filter/Product tests have nested describe blocks",https://github.com/fullsend-ai/react-shopping-cart/issues/112
+2026-11-22,react-shopping-cart,issue,closed,110,"Settle the docs policy: update docs/architecture in the same PR as the behavior change (stops the defer → review flag → fix round)",https://github.com/fullsend-ai/react-shopping-cart/issues/110
+2026-11-22,react-shopping-cart,issue,closed,104,"auto-merge.yml: check unresolved review threads before merging, report merge failures on the PR, and fix the stale 'no branch protection' header",https://github.com/fullsend-ai/react-shopping-cart/issues/104
+2026-11-22,react-shopping-cart,issue,closed,103,"Document catalog product-add conventions in AGENTS.md (brand-filter keyword rule, images, test touchpoints)",https://github.com/fullsend-ai/react-shopping-cart/issues/103

@@ -1173,3 +1173,5 @@ agents#2144,agents#2021,named,6.9,2026-11-20T21:59:54Z,2026-11-14T00:08:46Z
 agents#2142,fullsend#9760,named,0.0,2026-11-20T22:28:45Z,2026-11-20T21:56:12Z
 fullsend#9771,fullsend#9734,causal+named,1.3,2026-11-21T15:25:28Z,2026-11-20T07:40:02Z
 fullsend#9771,fullsend#9760,causal+named,0.7,2026-11-21T15:25:28Z,2026-11-20T21:56:12Z
+fullsend#9778,fullsend#9763,causal+named,1.2,2026-11-22T02:03:25Z,2026-11-20T20:47:34Z
+fullsend#9614,fullsend#9605,causal+named,2.5,2026-11-22T11:29:43Z,2026-11-20T00:32:58Z

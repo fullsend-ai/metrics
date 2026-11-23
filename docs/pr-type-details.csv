@@ -2736,3 +2736,8 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-21,agents,2153,docs(#2152): emulator check is required; document shards.txt,docs,,,,https://github.com/fullsend-ai/agents/pull/2153
 2026-11-21,agents,2151,test(#2150): have the canary persona echo its marker so the log always shows it,test,,,,https://github.com/fullsend-ai/agents/pull/2151
 2026-11-21,agents,2148,ci(behaviour): run the live suite in the merge queue; add /ok-to-test <sha> live,ci,,,,https://github.com/fullsend-ai/agents/pull/2148
+2026-11-22,fullsend,9783,feat(#9647): manage repositories across named Forgejo instances,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9783
+2026-11-22,fullsend,9782,test(#9315): add OpenBao behaviour tests for Vault runner secrets,test,,,,https://github.com/fullsend-ai/fullsend/pull/9782
+2026-11-22,fullsend,9778,fix(#9777): disable ONNX Runtime telemetry before ORT starts,fix,core,9777,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9778
+2026-11-22,fullsend,9697,test(#9646): provision forgejo-dev stack in the install driver,test,,,,https://github.com/fullsend-ai/fullsend/pull/9697
+2026-11-22,fullsend,9614,refactor(#9584): add harness-specific authorized entity view for CEL,other,,,,https://github.com/fullsend-ai/fullsend/pull/9614

@@ -3901,3 +3901,19 @@ date,repo,type,event,number,actor,title,url
 2026-11-21,strat-creator,issue,opened_external,132,jctanner,"One ticket's failure fails the whole batch that already published the other tickets' work (operational deferral)",https://github.com/fullsend-ai/strat-creator/issues/132
 2026-11-21,agents,pr,opened_core,2149,waynesun09,"test: scratch PR for the /ok-to-test live check (do not merge)",https://github.com/fullsend-ai/agents/pull/2149
 2026-11-21,pi-inference-gateway,issue,opened_external,48,DaoDaoNoCode,"routing: opt-in native Gemini transport so multi-turn tool calls keep thought_signature",https://github.com/fullsend-ai/pi-inference-gateway/issues/48
+2026-11-22,fullsend,issue,opened_external,9795,jflowers,"Test coverage for the GitLab pipeline-var opt-in: install provisioning, containment transitions, live status",https://github.com/fullsend-ai/fullsend/issues/9795
+2026-11-22,fullsend,issue,opened_external,9794,jflowers,"GitLab pipeline-var gates: distinguish role-unreported, read-failed, and opt-in-not-set errors",https://github.com/fullsend-ai/fullsend/issues/9794
+2026-11-22,fullsend,issue,opened_external,9793,jflowers,"Record the pipeline-var opt-in trigger/webhook widening in ADR 0175 and sweep stale no_one_allowed references",https://github.com/fullsend-ai/fullsend/issues/9793
+2026-11-22,fullsend,issue,opened_external,9792,jflowers,"GitLab pipeline-var opt-in: record developer/trigger-route exposure conditions and decide role-gating",https://github.com/fullsend-ai/fullsend/issues/9792
+2026-11-22,fullsend,issue,opened_external,9790,jefferyb,"gitlab-runner-vm: prune fs-* sandboxes and reclaim storage under low disk",https://github.com/fullsend-ai/fullsend/issues/9790
+2026-11-22,fullsend,issue,opened_external,9789,gwenneg,"repos install: manage a fullsend lint check",https://github.com/fullsend-ai/fullsend/issues/9789
+2026-11-22,fullsend,issue,opened_external,9788,gwenneg,"repos install: manage fullsend lint job for GitLab",https://github.com/fullsend-ai/fullsend/issues/9788
+2026-11-22,fullsend,issue,opened_external,9787,gwenneg,"repos install: manage fullsend lint workflow for GitHub",https://github.com/fullsend-ai/fullsend/issues/9787
+2026-11-22,fullsend,issue,opened_external,9784,csoceanu,"gitlab: retry service-account membership verification after role updates",https://github.com/fullsend-ai/fullsend/issues/9784
+2026-11-22,fullsend,pr,reviewed_external,9739,ianw,"docs(#9733): explain config.tracker in managed configuration",https://github.com/fullsend-ai/fullsend/pull/9739
+2026-11-22,fullsend,pr,reviewed_external,9739,ianw,"docs(#9733): explain config.tracker in managed configuration",https://github.com/fullsend-ai/fullsend/pull/9739
+2026-11-22,fullsend,pr,reviewed_external,9739,ianw,"docs(#9733): explain config.tracker in managed configuration",https://github.com/fullsend-ai/fullsend/pull/9739
+2026-11-22,fullsend,pr,reviewed_external,9739,ianw,"docs(#9733): explain config.tracker in managed configuration",https://github.com/fullsend-ai/fullsend/pull/9739
+2026-11-22,agents,issue,opened_external,2155,Benkapner,"post-code: pre-commit gate skips changed files with non-ASCII names",https://github.com/fullsend-ai/agents/issues/2155
+2026-11-22,react-shopping-cart,pr,reviewed_external,105,shairevivo,"docs(#103): document catalog product-add conventions",https://github.com/fullsend-ai/react-shopping-cart/pull/105
+2026-11-22,react-shopping-cart,pr,reviewed_external,105,shairevivo,"docs(#103): document catalog product-add conventions",https://github.com/fullsend-ai/react-shopping-cart/pull/105
