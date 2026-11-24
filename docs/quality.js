@@ -321,11 +321,11 @@
     container.selectAll("*").remove();
     const all = rows.filter(d => d.type === "all");
     const series = (selectedRepo === "__all__"
-      ? [["All repos", all, themeColor("--accent", "#c4ff0e"), null],
-        ["fullsend", all.filter(d => d.repo === "fullsend"), themeColor("--chart-1", "#5cb3ff"), "7 4"],
-        ["agents", all.filter(d => d.repo === "agents"), themeColor("--chart-3", "#ff8f5c"), "2 3"]]
-      : [[selectedRepo, all, themeColor("--chart-1", "#5cb3ff"), null]])
-      .map(([label, items, stroke, dash]) => [label, weekly(items), stroke, dash]);
+      ? [["All repos", all, themeColor("--accent", "#c4ff0e")],
+        ["fullsend", all.filter(d => d.repo === "fullsend"), themeColor("--chart-1", "#5cb3ff")],
+        ["agents", all.filter(d => d.repo === "agents"), themeColor("--chart-3", "#ff8f5c")]]
+      : [[selectedRepo, all, themeColor("--chart-1", "#5cb3ff")]])
+      .map(([label, items, stroke]) => [label, weekly(items), stroke]);
     const points = series.flatMap(([, items]) => items);
     if (!points.length) {
       container.html("<p class='subtitle' role='status'>No closed weeks yet.</p>");
@@ -349,9 +349,8 @@
       .call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat("%b %d")));
     group.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5).tickFormat(value => `${(value * 100).toFixed(0)}%`));
 
-    series.forEach(([label, items, stroke, dash]) => {
+    series.forEach(([label, items, stroke]) => {
       group.append("path").datum(items).attr("fill", "none").attr("stroke", stroke).attr("stroke-width", 2.5)
-        .attr("stroke-dasharray", dash)
         .attr("aria-label", label)
         .attr("d", d3.line().x(d => x(d.date)).y(d => y(d.rate)).curve(d3.curveMonotoneX));
       group.selectAll(null).data(items).enter().append("circle")
@@ -379,12 +378,12 @@
       .on("mouseleave", () => { guide.style("display", "none"); hideTooltip(); });
 
     const legend = container.append("div").attr("class", "chart-legend");
-    series.forEach(([label, , stroke, dash]) => {
+    series.forEach(([label, , stroke]) => {
       const item = legend.append("span").attr("class", "chart-legend-item");
-      // The swatch repeats the line's dash pattern, so series differ by more than colour.
+      // Every series is a solid line; the swatch repeats the line's colour.
       item.append("svg").attr("width", 22).attr("height", 8).attr("aria-hidden", "true")
         .append("line").attr("x1", 0).attr("x2", 22).attr("y1", 4).attr("y2", 4)
-        .attr("stroke", stroke).attr("stroke-width", 2.5).attr("stroke-dasharray", dash);
+        .attr("stroke", stroke).attr("stroke-width", 2.5);
       item.append("span").text(label);
     });
 
