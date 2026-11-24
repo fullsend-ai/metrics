@@ -2741,3 +2741,18 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-22,fullsend,9778,fix(#9777): disable ONNX Runtime telemetry before ORT starts,fix,core,9777,waynesun09,https://github.com/fullsend-ai/fullsend/pull/9778
 2026-11-22,fullsend,9697,test(#9646): provision forgejo-dev stack in the install driver,test,,,,https://github.com/fullsend-ai/fullsend/pull/9697
 2026-11-22,fullsend,9614,refactor(#9584): add harness-specific authorized entity view for CEL,other,,,,https://github.com/fullsend-ai/fullsend/pull/9614
+2026-11-23,fullsend,9804,docs(#9803): split managed config guide from reference rules,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9804
+2026-11-23,fullsend,9801,feat(#9650)!: manage same-instance Forgejo reusable workflow hosts,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9801
+2026-11-23,fullsend,9796,feat(#9648): add on-demand Forgejo OAuth login,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9796
+2026-11-23,fullsend,9791,fix(#9790): prune fs-* sandboxes and reclaim storage under low disk,fix,external,9790,jefferyb,https://github.com/fullsend-ai/fullsend/pull/9791
+2026-11-23,fullsend,9785,fix(#9784): wait for GitLab membership changes to propagate,fix,external,9784,csoceanu,https://github.com/fullsend-ai/fullsend/pull/9785
+2026-11-23,fullsend,9781,chore(deps): update dependency vue to v3.5.46,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9781
+2026-11-23,fullsend,9780,test(#9779): retry a fresh repo's lost first event and confirm readiness,test,,,,https://github.com/fullsend-ai/fullsend/pull/9780
+2026-11-23,fullsend,9764,chore(sandbox): bump codex to 0.170.0 and re-verify the re-check table,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9764
+2026-11-23,fullsend,9728,feat(#9597): add allow_insecure_pipeline_variables GitLab opt-in (ADR 0175),feat,,,,https://github.com/fullsend-ai/fullsend/pull/9728
+2026-11-23,fullsend,9663,refactor(review): centralize unchanged-diff deduplication,other,,,,https://github.com/fullsend-ai/fullsend/pull/9663
+2026-11-23,fullsend,9277,chore(deps): update dependency ty to v0.0.108,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9277
+2026-11-23,fullsend,9264,docs(adr): define control-repository saga journals,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9264
+2026-11-23,agents,2109,feat(retro): add Jira support to the retro agent,feat,,,,https://github.com/fullsend-ai/agents/pull/2109
+2026-11-23,agents,2046,feat(#2045): read parent issue context during triage,feat,,,,https://github.com/fullsend-ai/agents/pull/2046
+2026-11-23,agents,2010,feat(#1953): post no-PR reasons and failures to Jira,feat,,,,https://github.com/fullsend-ai/agents/pull/2010

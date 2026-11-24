@@ -3917,3 +3917,38 @@ date,repo,type,event,number,actor,title,url
 2026-11-22,agents,issue,opened_external,2155,Benkapner,"post-code: pre-commit gate skips changed files with non-ASCII names",https://github.com/fullsend-ai/agents/issues/2155
 2026-11-22,react-shopping-cart,pr,reviewed_external,105,shairevivo,"docs(#103): document catalog product-add conventions",https://github.com/fullsend-ai/react-shopping-cart/pull/105
 2026-11-22,react-shopping-cart,pr,reviewed_external,105,shairevivo,"docs(#103): document catalog product-add conventions",https://github.com/fullsend-ai/react-shopping-cart/pull/105
+2026-11-23,fullsend,issue,opened_external,9818,jasonawant,"docs: Generate platform compatibility matrix on fullsend.sh directly from behavior tests",https://github.com/fullsend-ai/fullsend/issues/9818
+2026-11-23,fullsend,issue,opened_external,9817,jasonawant,"ci: Semgrep ruleset drift scheduled workflow fails on forks",https://github.com/fullsend-ai/fullsend/issues/9817
+2026-11-23,fullsend,issue,opened_external,9816,ianw,"gitlab: /fs-review not triggering on existing merge-requests",https://github.com/fullsend-ai/fullsend/issues/9816
+2026-11-23,fullsend,issue,closed_via_pr_external,9790,jefferyb,"gitlab-runner-vm: prune fs-* sandboxes and reclaim storage under low disk",https://github.com/fullsend-ai/fullsend/issues/9790
+2026-11-23,fullsend,issue,closed_via_pr_external,9784,csoceanu,"gitlab: retry service-account membership verification after role updates",https://github.com/fullsend-ai/fullsend/issues/9784
+2026-11-23,fullsend,issue,closed_other_external,9453,jasonawant,"ADR: Commit to Jira work-item tracker feature parity with native forge issues",https://github.com/fullsend-ai/fullsend/issues/9453
+2026-11-23,fullsend,issue,closed_other_external,9452,jasonawant,"ADR: Commit to GitLab feature parity and establish test parity gates",https://github.com/fullsend-ai/fullsend/issues/9452
+2026-11-23,fullsend,issue,closed_other_external,9451,jasonawant,"docs: Document platform capability and boundary matrix (GitHub, GitLab, Jira)",https://github.com/fullsend-ai/fullsend/issues/9451
+2026-11-23,fullsend,pr,opened_core,9806,rh-hemartin,"ci: manage repo environments via safe-settings",https://github.com/fullsend-ai/fullsend/pull/9806
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,reviewed_external,9810,jflowers,"docs(#9601): document fine-grained GitLab token for repos install",https://github.com/fullsend-ai/fullsend/pull/9810
+2026-11-23,fullsend,pr,reviewed_external,9810,jflowers,"docs(#9601): document fine-grained GitLab token for repos install",https://github.com/fullsend-ai/fullsend/pull/9810
+2026-11-23,fullsend,pr,reviewed_external,9739,ianw,"docs(#9733): explain config.tracker in managed configuration",https://github.com/fullsend-ai/fullsend/pull/9739
+2026-11-23,fullsend,pr,reviewed_external,9561,jasonawant,"docs(#9451): add platform capability matrix for GitHub, GitLab, Jira",https://github.com/fullsend-ai/fullsend/pull/9561
+2026-11-23,fullsend,pr,reviewed_external,9561,jasonawant,"docs(#9451): add platform capability matrix for GitHub, GitLab, Jira",https://github.com/fullsend-ai/fullsend/pull/9561
+2026-11-23,rfe-creator,issue,closed_via_pr_external,309,astefanutti,"Split initiative into the family and the member initiative-rhaistrat; accept the family name for the sole member",https://github.com/fullsend-ai/rfe-creator/issues/309
+2026-11-23,agent-eval-harness,issue,opened_external,348,ravelley,"Prepare Fullsend sandbox images before parallel case execution",https://github.com/fullsend-ai/agent-eval-harness/issues/348
+2026-11-23,agent-eval-harness,issue,closed_via_pr_external,335,astefanutti,"The per-config runs directory is still derived by hand in eval-anova and eval-compare",https://github.com/fullsend-ai/agent-eval-harness/issues/335
+2026-11-23,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-23,test-creator,issue,opened_external,104,fege,"Sandbox cannot reach `api.media.atlassian.com` — attachment-backed strategies silently degrade to Rework / no-acceptance-criteria",https://github.com/fullsend-ai/test-creator/issues/104
+2026-11-23,test-creator,issue,opened_external,103,fege,"Enable the GitLab test-plan producer on Fullsend v0.57.0",https://github.com/fullsend-ai/test-creator/issues/103
+2026-11-23,test-creator,issue,closed_other_external,104,fege,"Sandbox cannot reach `api.media.atlassian.com` — attachment-backed strategies silently degrade to Rework / no-acceptance-criteria",https://github.com/fullsend-ai/test-creator/issues/104
+2026-11-23,test-creator,pr,reviewed_external,105,fege,"fix(test-plan): fail loud when strategy attachment is not fetched",https://github.com/fullsend-ai/test-creator/pull/105
+2026-11-23,test-creator,pr,reviewed_external,100,fege,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/test-creator/pull/100
+2026-11-23,agents,issue,opened_external,2163,andrewevansrh,"Scribe: populate Jira Acceptance Criteria custom field on issue creation",https://github.com/fullsend-ai/agents/issues/2163
+2026-11-23,agents,issue,closed_other_external,1953,jwm4,"Jira-sourced code runs: post the no-PR reason to the Jira issue",https://github.com/fullsend-ai/agents/issues/1953
+2026-11-23,agents,issue,closed_via_pr_external,2045,arewm,"Triage agent unable to follow parent links",https://github.com/fullsend-ai/agents/issues/2045
+2026-11-23,org,pr,opened_core,84,rh-hemartin,"feat(fullsend): automate environments with safe-settings",https://github.com/fullsend-ai/org/pull/84

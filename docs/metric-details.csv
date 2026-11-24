@@ -20605,3 +20605,107 @@ date,repo,type,event,number,title,url
 2026-11-22,react-shopping-cart,issue,closed,110,"Settle the docs policy: update docs/architecture in the same PR as the behavior change (stops the defer → review flag → fix round)",https://github.com/fullsend-ai/react-shopping-cart/issues/110
 2026-11-22,react-shopping-cart,issue,closed,104,"auto-merge.yml: check unresolved review threads before merging, report merge failures on the PR, and fix the stale 'no branch protection' header",https://github.com/fullsend-ai/react-shopping-cart/issues/104
 2026-11-22,react-shopping-cart,issue,closed,103,"Document catalog product-add conventions in AGENTS.md (brand-filter keyword rule, images, test touchpoints)",https://github.com/fullsend-ai/react-shopping-cart/issues/103
+2026-11-23,fullsend,pr,opened,9819,"feat(#9816): allow /fs-review on existing GitLab fork MRs",https://github.com/fullsend-ai/fullsend/pull/9819
+2026-11-23,fullsend,pr,opened,9815,"docs(adr): add ADR 0085, serve changed Jira issues oldest first",https://github.com/fullsend-ai/fullsend/pull/9815
+2026-11-23,fullsend,pr,opened,9814,"fix(#9228): sum Claude turns across result events",https://github.com/fullsend-ai/fullsend/pull/9814
+2026-11-23,fullsend,pr,opened,9813,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-23,fullsend,pr,opened,9810,"docs(#9601): document fine-grained GitLab token for repos install",https://github.com/fullsend-ai/fullsend/pull/9810
+2026-11-23,fullsend,pr,opened,9809,"fix(sandbox)!: sanitize downloaded Git metadata",https://github.com/fullsend-ai/fullsend/pull/9809
+2026-11-23,fullsend,pr,opened,9807,"chore(deps): update ubi10 base images",https://github.com/fullsend-ai/fullsend/pull/9807
+2026-11-23,fullsend,pr,opened,9806,"ci: manage repo environments via safe-settings",https://github.com/fullsend-ai/fullsend/pull/9806
+2026-11-23,fullsend,pr,opened,9804,"docs(#9803): split managed config guide from reference rules",https://github.com/fullsend-ai/fullsend/pull/9804
+2026-11-23,fullsend,pr,opened,9802,"feat(dispatch): add experimental multi-target execution plans",https://github.com/fullsend-ai/fullsend/pull/9802
+2026-11-23,fullsend,pr,opened,9801,"feat(#9650)!: manage same-instance Forgejo reusable workflow hosts",https://github.com/fullsend-ai/fullsend/pull/9801
+2026-11-23,fullsend,pr,opened,9798,"feat(#9787): manage a fullsend lint workflow for GitHub repos",https://github.com/fullsend-ai/fullsend/pull/9798
+2026-11-23,fullsend,pr,merged,9804,"docs(#9803): split managed config guide from reference rules",https://github.com/fullsend-ai/fullsend/pull/9804
+2026-11-23,fullsend,pr,merged,9801,"feat(#9650)!: manage same-instance Forgejo reusable workflow hosts",https://github.com/fullsend-ai/fullsend/pull/9801
+2026-11-23,fullsend,pr,merged,9796,"feat(#9648): add on-demand Forgejo OAuth login",https://github.com/fullsend-ai/fullsend/pull/9796
+2026-11-23,fullsend,pr,merged,9791,"fix(#9790): prune fs-* sandboxes and reclaim storage under low disk",https://github.com/fullsend-ai/fullsend/pull/9791
+2026-11-23,fullsend,pr,merged,9785,"fix(#9784): wait for GitLab membership changes to propagate",https://github.com/fullsend-ai/fullsend/pull/9785
+2026-11-23,fullsend,pr,merged,9781,"chore(deps): update dependency vue to v3.5.46",https://github.com/fullsend-ai/fullsend/pull/9781
+2026-11-23,fullsend,pr,merged,9780,"test(#9779): retry a fresh repo's lost first event and confirm readiness",https://github.com/fullsend-ai/fullsend/pull/9780
+2026-11-23,fullsend,pr,merged,9764,"chore(sandbox): bump codex to 0.170.0 and re-verify the re-check table",https://github.com/fullsend-ai/fullsend/pull/9764
+2026-11-23,fullsend,pr,merged,9728,"feat(#9597): add allow_insecure_pipeline_variables GitLab opt-in (ADR 0175)",https://github.com/fullsend-ai/fullsend/pull/9728
+2026-11-23,fullsend,pr,merged,9663,"refactor(review): centralize unchanged-diff deduplication",https://github.com/fullsend-ai/fullsend/pull/9663
+2026-11-23,fullsend,pr,merged,9277,"chore(deps): update dependency ty to v0.0.108",https://github.com/fullsend-ai/fullsend/pull/9277
+2026-11-23,fullsend,pr,merged,9264,"docs(adr): define control-repository saga journals",https://github.com/fullsend-ai/fullsend/pull/9264
+2026-11-23,fullsend,pr,closed,7757,"docs(#7756): document AgentEntries last-writer-wins convention",https://github.com/fullsend-ai/fullsend/pull/7757
+2026-11-23,fullsend,pr,closed,7737,"docs(#7736): cite cache_read_input_tokens in Grok Vertex caveat",https://github.com/fullsend-ai/fullsend/pull/7737
+2026-11-23,fullsend,pr,closed,7733,"docs(#7732): add Tirith rewrite for heredoc commit messages",https://github.com/fullsend-ai/fullsend/pull/7733
+2026-11-23,fullsend,pr,closed,7695,"docs(#7694): document GitLab rule-based access API quirks",https://github.com/fullsend-ai/fullsend/pull/7695
+2026-11-23,fullsend,issue,opened,9818,"docs: Generate platform compatibility matrix on fullsend.sh directly from behavior tests",https://github.com/fullsend-ai/fullsend/issues/9818
+2026-11-23,fullsend,issue,opened,9817,"ci: Semgrep ruleset drift scheduled workflow fails on forks",https://github.com/fullsend-ai/fullsend/issues/9817
+2026-11-23,fullsend,issue,opened,9816,"gitlab: /fs-review not triggering on existing merge-requests",https://github.com/fullsend-ai/fullsend/issues/9816
+2026-11-23,fullsend,issue,opened,9812,"Behaviour tests: merge-queue reliability and follow-ups after the emulator switch",https://github.com/fullsend-ai/fullsend/issues/9812
+2026-11-23,fullsend,issue,opened,9811,"forge: make the pagination-cap contract consistent across listing methods and forges",https://github.com/fullsend-ai/fullsend/issues/9811
+2026-11-23,fullsend,issue,opened,9808,"Provide a command to prepare/warm sandbox and gateway images and run a sandbox preflight for an agent",https://github.com/fullsend-ai/fullsend/issues/9808
+2026-11-23,fullsend,issue,opened,9805,"Add rh-uxd/ai-helpers to review sandbox egress allowlist for UX sub-agent",https://github.com/fullsend-ai/fullsend/issues/9805
+2026-11-23,fullsend,issue,opened,9803,"docs: getting-started pages mix user-facing setup with machine-oriented details",https://github.com/fullsend-ai/fullsend/issues/9803
+2026-11-23,fullsend,issue,opened,9800,"Skip review and retro dispatch for governance-file-only PRs",https://github.com/fullsend-ai/fullsend/issues/9800
+2026-11-23,fullsend,issue,opened,9799,"Agents use ADRs without the review history behind them",https://github.com/fullsend-ai/fullsend/issues/9799
+2026-11-23,fullsend,issue,closed,9790,"gitlab-runner-vm: prune fs-* sandboxes and reclaim storage under low disk",https://github.com/fullsend-ai/fullsend/issues/9790
+2026-11-23,fullsend,issue,closed,9784,"gitlab: retry service-account membership verification after role updates",https://github.com/fullsend-ai/fullsend/issues/9784
+2026-11-23,fullsend,issue,closed,9779,"behaviour: first event on a fresh slot repo can start no run after the workflow reports active",https://github.com/fullsend-ai/fullsend/issues/9779
+2026-11-23,fullsend,issue,closed,9650,"Manage same-instance Forgejo reusable workflow hosts",https://github.com/fullsend-ai/fullsend/issues/9650
+2026-11-23,fullsend,issue,closed,9648,"Add on-demand Forgejo OAuth login",https://github.com/fullsend-ai/fullsend/issues/9648
+2026-11-23,fullsend,issue,closed,9453,"ADR: Commit to Jira work-item tracker feature parity with native forge issues",https://github.com/fullsend-ai/fullsend/issues/9453
+2026-11-23,fullsend,issue,closed,9452,"ADR: Commit to GitLab feature parity and establish test parity gates",https://github.com/fullsend-ai/fullsend/issues/9452
+2026-11-23,fullsend,issue,closed,9451,"docs: Document platform capability and boundary matrix (GitHub, GitLab, Jira)",https://github.com/fullsend-ai/fullsend/issues/9451
+2026-11-23,fullsend,issue,closed,9373,"Split the DEV behaviour test pool between merge-queue and pull-request runs",https://github.com/fullsend-ai/fullsend/issues/9373
+2026-11-23,fullsend,issue,closed,9326,"refactor(review): compute the unchanged-diff hash in one place via a fullsend CLI subcommand",https://github.com/fullsend-ai/fullsend/issues/9326
+2026-11-23,rfe-creator,pr,opened,313,"Release 0.5.0: the Initiative type family, its RHAISTRAT member and the reclassify recommendation",https://github.com/fullsend-ai/rfe-creator/pull/313
+2026-11-23,rfe-creator,pr,opened,312,"types: make initiative a type family and register its member initiative-rhaistrat (AISDLC-851)",https://github.com/fullsend-ai/rfe-creator/pull/312
+2026-11-23,rfe-creator,pr,merged,313,"Release 0.5.0: the Initiative type family, its RHAISTRAT member and the reclassify recommendation",https://github.com/fullsend-ai/rfe-creator/pull/313
+2026-11-23,rfe-creator,pr,merged,312,"types: make initiative a type family and register its member initiative-rhaistrat (AISDLC-851)",https://github.com/fullsend-ai/rfe-creator/pull/312
+2026-11-23,rfe-creator,pr,merged,311,"Name the project and the parent-key prefix through the launch block, not in the Initiative prose (AISDLC-851)",https://github.com/fullsend-ai/rfe-creator/pull/311
+2026-11-23,rfe-creator,pr,merged,310,"Accept a single-member family's name at every type boundary; derive the last type-keyed tables",https://github.com/fullsend-ai/rfe-creator/pull/310
+2026-11-23,rfe-creator,issue,closed,309,"Split initiative into the family and the member initiative-rhaistrat; accept the family name for the sole member",https://github.com/fullsend-ai/rfe-creator/issues/309
+2026-11-23,agent-eval-harness,pr,merged,344,"feat(eval-anova): resolve the per-config runs dir in the harness",https://github.com/fullsend-ai/agent-eval-harness/pull/344
+2026-11-23,agent-eval-harness,issue,opened,348,"Prepare Fullsend sandbox images before parallel case execution",https://github.com/fullsend-ai/agent-eval-harness/issues/348
+2026-11-23,agent-eval-harness,issue,closed,335,"The per-config runs directory is still derived by hand in eval-anova and eval-compare",https://github.com/fullsend-ai/agent-eval-harness/issues/335
+2026-11-23,test-creator,pr,opened,105,"fix(test-plan): fail loud when strategy attachment is not fetched",https://github.com/fullsend-ai/test-creator/pull/105
+2026-11-23,test-creator,pr,merged,105,"fix(test-plan): fail loud when strategy attachment is not fetched",https://github.com/fullsend-ai/test-creator/pull/105
+2026-11-23,test-creator,pr,merged,100,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/test-creator/pull/100
+2026-11-23,test-creator,issue,opened,104,"Sandbox cannot reach `api.media.atlassian.com` — attachment-backed strategies silently degrade to Rework / no-acceptance-criteria",https://github.com/fullsend-ai/test-creator/issues/104
+2026-11-23,test-creator,issue,opened,103,"Enable the GitLab test-plan producer on Fullsend v0.57.0",https://github.com/fullsend-ai/test-creator/issues/103
+2026-11-23,test-creator,issue,closed,104,"Sandbox cannot reach `api.media.atlassian.com` — attachment-backed strategies silently degrade to Rework / no-acceptance-criteria",https://github.com/fullsend-ai/test-creator/issues/104
+2026-11-23,agents,pr,opened,2166,"docs(#1500): list codex as a runtime for review and retro",https://github.com/fullsend-ai/agents/pull/2166
+2026-11-23,agents,pr,opened,2165,"fix(#2164): repeat workflow-value sanitizing until stable",https://github.com/fullsend-ai/agents/pull/2165
+2026-11-23,agents,pr,opened,2162,"fix(#2160): report no-op code runs to the Jira issue",https://github.com/fullsend-ai/agents/pull/2162
+2026-11-23,agents,pr,opened,2158,"ci(jira): add context verification workflow",https://github.com/fullsend-ai/agents/pull/2158
+2026-11-23,agents,pr,merged,2109,"feat(retro): add Jira support to the retro agent",https://github.com/fullsend-ai/agents/pull/2109
+2026-11-23,agents,pr,merged,2046,"feat(#2045): read parent issue context during triage",https://github.com/fullsend-ai/agents/pull/2046
+2026-11-23,agents,pr,merged,2010,"feat(#1953): post no-PR reasons and failures to Jira",https://github.com/fullsend-ai/agents/pull/2010
+2026-11-23,agents,pr,closed,1489,"fix(#1091): scope re-review delta to PR-vs-base files",https://github.com/fullsend-ai/agents/pull/1489
+2026-11-23,agents,pr,closed,1488,"fix(#1051): filter self-contradicting review findings",https://github.com/fullsend-ai/agents/pull/1488
+2026-11-23,agents,pr,closed,1486,"fix(#864): require fix agent to cover every review finding",https://github.com/fullsend-ai/agents/pull/1486
+2026-11-23,agents,pr,closed,1485,"docs(#843): document event_payload for run-to-PR correlation",https://github.com/fullsend-ai/agents/pull/1485
+2026-11-23,agents,pr,closed,1484,"docs(#1483): add preflight_check raw-command guardrail",https://github.com/fullsend-ai/agents/pull/1484
+2026-11-23,agents,issue,opened,2168,"retro: verify the Jira paths against a live Jira Cloud project",https://github.com/fullsend-ai/agents/issues/2168
+2026-11-23,agents,issue,opened,2167,"style-conventions subagent should tolerate multiple established sibling patterns in governed collections",https://github.com/fullsend-ai/agents/issues/2167
+2026-11-23,agents,issue,opened,2164,"post-failure-report: _sanitize_workflow_value can rebuild :: from split input",https://github.com/fullsend-ai/agents/issues/2164
+2026-11-23,agents,issue,opened,2163,"Scribe: populate Jira Acceptance Criteria custom field on issue creation",https://github.com/fullsend-ai/agents/issues/2163
+2026-11-23,agents,issue,opened,2161,"Allow challenger subagent to verify staleness findings in unchanged repository files outside sparse pr-head",https://github.com/fullsend-ai/agents/issues/2161
+2026-11-23,agents,issue,opened,2160,"post-code: report no-op runs to the Jira issue",https://github.com/fullsend-ai/agents/issues/2160
+2026-11-23,agents,issue,opened,2159,"intent-coherence review sub-agent should recognize context-budget consolidation as authorized budget compliance, not scope creep",https://github.com/fullsend-ai/agents/issues/2159
+2026-11-23,agents,issue,opened,2157,"review: render the actionable/non-actionable disposition of findings in the visible review comment (refines fullsend-ai/fullsend#1368)",https://github.com/fullsend-ai/agents/issues/2157
+2026-11-23,agents,issue,closed,2160,"post-code: report no-op runs to the Jira issue",https://github.com/fullsend-ai/agents/issues/2160
+2026-11-23,agents,issue,closed,1953,"Jira-sourced code runs: post the no-PR reason to the Jira issue",https://github.com/fullsend-ai/agents/issues/1953
+2026-11-23,agents,issue,closed,2045,"Triage agent unable to follow parent links",https://github.com/fullsend-ai/agents/issues/2045
+2026-11-23,org,pr,opened,84,"feat(fullsend): automate environments with safe-settings",https://github.com/fullsend-ai/org/pull/84
+2026-11-23,org,pr,opened,82,"chore(#66): grant tonykay write on react-shopping-cart",https://github.com/fullsend-ai/org/pull/82
+2026-11-23,org,issue,opened,83,"Automate fullsend environments with safe-settings",https://github.com/fullsend-ai/org/issues/83
+2026-11-23,react-shopping-cart,pr,opened,127,"fix(#126): fall back to the smallest free id when ids are unknown",https://github.com/fullsend-ai/react-shopping-cart/pull/127
+2026-11-23,react-shopping-cart,pr,opened,125,"fix(#124): pick the smallest free id within the catalog id margin",https://github.com/fullsend-ai/react-shopping-cart/pull/125
+2026-11-23,react-shopping-cart,pr,merged,125,"fix(#124): pick the smallest free id within the catalog id margin",https://github.com/fullsend-ai/react-shopping-cart/pull/125
+2026-11-23,react-shopping-cart,pr,merged,122,"feat(#120): replace catalog-id shell pipelines with a tested script",https://github.com/fullsend-ai/react-shopping-cart/pull/122
+2026-11-23,react-shopping-cart,issue,opened,126,"catalog-ids.mjs: with an 'ids unknown' PR open, one claim at mainMax+20 still makes next-id refuse for everyone",https://github.com/fullsend-ai/react-shopping-cart/issues/126
+2026-11-23,react-shopping-cart,issue,opened,124,"catalog-ids.mjs: one open PR claiming exactly mainMax+20 makes next-id refuse for everyone",https://github.com/fullsend-ai/react-shopping-cart/issues/124
+2026-11-23,react-shopping-cart,issue,closed,124,"catalog-ids.mjs: one open PR claiming exactly mainMax+20 makes next-id refuse for everyone",https://github.com/fullsend-ai/react-shopping-cart/issues/124
+2026-11-23,react-shopping-cart,issue,closed,123,"auto-merge.yml: recheck PR head before auto-resolving threads and before failure-path label removal; add merge-workflow review checklist to AGENTS.md",https://github.com/fullsend-ai/react-shopping-cart/issues/123
+2026-11-23,react-shopping-cart,issue,closed,120,"Replace the AGENTS.md catalog-id shell pipelines with a checked-in, tested script",https://github.com/fullsend-ai/react-shopping-cart/issues/120
+2026-11-23,react-shopping-cart,issue,closed,113,"Land a build/test CI workflow (re-open of #7/#36): a bad merge just put invalid products.json and broken tests on main undetected",https://github.com/fullsend-ai/react-shopping-cart/issues/113
+2026-11-23,orgpulse,pr,opened,4,"chore(deps): Bump @azure/msal-node and @azure/identity in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/4
+2026-11-23,orgpulse,pr,opened,3,"chore(deps-dev): Bump fast-uri from 3.1.5 to 3.1.9 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/3
+2026-11-23,orgpulse,pr,opened,2,"chore(deps-dev): Bump undici from 7.29.0 to 7.30.2 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/2
+2026-11-23,orgpulse,pr,opened,1,"chore(deps-dev): Bump qs from 6.15.3 to 6.17.1 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/1
