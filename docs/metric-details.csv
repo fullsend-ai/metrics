@@ -20709,3 +20709,90 @@ date,repo,type,event,number,title,url
 2026-11-23,orgpulse,pr,opened,3,"chore(deps-dev): Bump fast-uri from 3.1.5 to 3.1.9 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/3
 2026-11-23,orgpulse,pr,opened,2,"chore(deps-dev): Bump undici from 7.29.0 to 7.30.2 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/2
 2026-11-23,orgpulse,pr,opened,1,"chore(deps-dev): Bump qs from 6.15.3 to 6.17.1 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/1
+2026-11-24,fullsend,pr,opened,9849,"feat(dispatch): review and retro fork pull requests through workflow_run",https://github.com/fullsend-ai/fullsend/pull/9849
+2026-11-24,fullsend,pr,opened,9848,"fix(#9843): reject in-repo CA paths at capture",https://github.com/fullsend-ai/fullsend/pull/9848
+2026-11-24,fullsend,pr,opened,9847,"docs(adr): add ADR 0096, request agents on Jira by label only",https://github.com/fullsend-ai/fullsend/pull/9847
+2026-11-24,fullsend,pr,opened,9846,"test: make timing- and platform-sensitive Go tests pass on macOS",https://github.com/fullsend-ai/fullsend/pull/9846
+2026-11-24,fullsend,pr,opened,9845,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-24,fullsend,pr,opened,9842,"fix(#9840): handle inherited variables on personal repositories",https://github.com/fullsend-ai/fullsend/pull/9842
+2026-11-24,fullsend,pr,opened,9839,"refactor(#9583): add provider-neutral selective entity acquisition",https://github.com/fullsend-ai/fullsend/pull/9839
+2026-11-24,fullsend,pr,opened,9836,"test(forgejostack): isolate fake server HTTP transports",https://github.com/fullsend-ai/fullsend/pull/9836
+2026-11-24,fullsend,pr,opened,9835,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-24,fullsend,pr,opened,9834,"test(#9832): make fetch service and postScriptEnv tests sandbox-safe",https://github.com/fullsend-ai/fullsend/pull/9834
+2026-11-24,fullsend,pr,opened,9833,"wip: work saved from fullsend-ai@flamingo/fullsend",https://github.com/fullsend-ai/fullsend/pull/9833
+2026-11-24,fullsend,pr,opened,9831,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-24,fullsend,pr,opened,9829,"ci(safe-settings): bump setup-node to v7.1.0",https://github.com/fullsend-ai/fullsend/pull/9829
+2026-11-24,fullsend,pr,opened,9828,"docs(#9586): add entity discovery v1 normative contract",https://github.com/fullsend-ai/fullsend/pull/9828
+2026-11-24,fullsend,pr,opened,9827,"docs(adr): give agents context about enabled peers",https://github.com/fullsend-ai/fullsend/pull/9827
+2026-11-24,fullsend,pr,opened,9826,"feat(action): retry failed fullsend run once",https://github.com/fullsend-ai/fullsend/pull/9826
+2026-11-24,fullsend,pr,opened,9824,"test(#9651): implement the Forgejo Actions behaviour-test CI driver",https://github.com/fullsend-ai/fullsend/pull/9824
+2026-11-24,fullsend,pr,opened,9821,"chore(deps): update dependency ty to v0.0.109",https://github.com/fullsend-ai/fullsend/pull/9821
+2026-11-24,fullsend,pr,merged,9842,"fix(#9840): handle inherited variables on personal repositories",https://github.com/fullsend-ai/fullsend/pull/9842
+2026-11-24,fullsend,pr,merged,9834,"test(#9832): make fetch service and postScriptEnv tests sandbox-safe",https://github.com/fullsend-ai/fullsend/pull/9834
+2026-11-24,fullsend,pr,merged,9829,"ci(safe-settings): bump setup-node to v7.1.0",https://github.com/fullsend-ai/fullsend/pull/9829
+2026-11-24,fullsend,pr,merged,9828,"docs(#9586): add entity discovery v1 normative contract",https://github.com/fullsend-ai/fullsend/pull/9828
+2026-11-24,fullsend,pr,merged,9815,"docs(adr): add ADR 0085, serve every changed Jira issue",https://github.com/fullsend-ai/fullsend/pull/9815
+2026-11-24,fullsend,pr,merged,9810,"docs(#9601): document fine-grained GitLab token for repos install",https://github.com/fullsend-ai/fullsend/pull/9810
+2026-11-24,fullsend,pr,merged,9809,"fix(sandbox)!: sanitize downloaded Git metadata",https://github.com/fullsend-ai/fullsend/pull/9809
+2026-11-24,fullsend,pr,merged,9806,"ci: manage repo environments via safe-settings",https://github.com/fullsend-ai/fullsend/pull/9806
+2026-11-24,fullsend,pr,merged,9662,"ci(e2e): configure pool orgs in a dedicated workflow",https://github.com/fullsend-ai/fullsend/pull/9662
+2026-11-24,fullsend,pr,merged,9603,"docs(#9589): define first entity scope and run/poll CLI contract",https://github.com/fullsend-ai/fullsend/pull/9603
+2026-11-24,fullsend,pr,merged,9262,"feat(#9132): read Jira authorization lists from the environment",https://github.com/fullsend-ai/fullsend/pull/9262
+2026-11-24,fullsend,pr,merged,9199,"docs(adr): define entity source bindings and execution integration",https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-24,fullsend,pr,merged,9018,"docs(adr): share GitHub caching with read-only mint tokens",https://github.com/fullsend-ai/fullsend/pull/9018
+2026-11-24,fullsend,pr,closed,9826,"feat(action): retry failed fullsend run once",https://github.com/fullsend-ai/fullsend/pull/9826
+2026-11-24,fullsend,pr,closed,7692,"fix(#6850): warn when __install_only__ leaves CLI unpinned",https://github.com/fullsend-ai/fullsend/pull/7692
+2026-11-24,fullsend,pr,closed,7687,"fix(#6806): capture num_turns from incomplete Claude streams",https://github.com/fullsend-ai/fullsend/pull/7687
+2026-11-24,fullsend,pr,closed,7685,"docs(#6741): document SCM driver platform-specific semantics",https://github.com/fullsend-ai/fullsend/pull/7685
+2026-11-24,fullsend,pr,closed,7684,"fix(#6667): bound PostCompletion mint by MaxMintDuration",https://github.com/fullsend-ai/fullsend/pull/7684
+2026-11-24,fullsend,issue,opened,9844,"A single review-stage output-validation failure neither retries nor alerts: PR sat 26 days with no review",https://github.com/fullsend-ai/fullsend/issues/9844
+2026-11-24,fullsend,issue,opened,9843,"sandbox: follow-ups to downloaded Git metadata handling (CA paths, layout test, comment)",https://github.com/fullsend-ai/fullsend/issues/9843
+2026-11-24,fullsend,issue,opened,9840,"repos install fails with HTTP 422 when checking inherited variables on personal GitHub repositories",https://github.com/fullsend-ai/fullsend/issues/9840
+2026-11-24,fullsend,issue,opened,9838,"Reusable-dispatch config loader hard-fails on open PRs carrying a pre-migration .fullsend/config.yaml after a schema cutover",https://github.com/fullsend-ai/fullsend/issues/9838
+2026-11-24,fullsend,issue,opened,9837,"Managed config schema: upgrade path for the Jira groups_from/accounts_from exception",https://github.com/fullsend-ai/fullsend/issues/9837
+2026-11-24,fullsend,issue,opened,9832,"Six internal/cli tests fail every time they run in the agent sandbox",https://github.com/fullsend-ai/fullsend/issues/9832
+2026-11-24,fullsend,issue,opened,9830,"safe-settings workflow: setup-node v6.5.0 fails to resolve node-version-file",https://github.com/fullsend-ai/fullsend/issues/9830
+2026-11-24,fullsend,issue,opened,9825,"review: make closing on the reject verdict configurable (label-only rejection)",https://github.com/fullsend-ai/fullsend/issues/9825
+2026-11-24,fullsend,issue,opened,9822,"Manage fullsend repo environments via repo-local safe-settings run",https://github.com/fullsend-ai/fullsend/issues/9822
+2026-11-24,fullsend,issue,opened,9820,"jira: if any editor can add labels, why not slash commands as well?",https://github.com/fullsend-ai/fullsend/issues/9820
+2026-11-24,fullsend,issue,closed,9840,"repos install fails with HTTP 422 when checking inherited variables on personal GitHub repositories",https://github.com/fullsend-ai/fullsend/issues/9840
+2026-11-24,fullsend,issue,closed,9832,"Six internal/cli tests fail every time they run in the agent sandbox",https://github.com/fullsend-ai/fullsend/issues/9832
+2026-11-24,fullsend,issue,closed,9830,"safe-settings workflow: setup-node v6.5.0 fails to resolve node-version-file",https://github.com/fullsend-ai/fullsend/issues/9830
+2026-11-24,fullsend,issue,closed,9822,"Manage fullsend repo environments via repo-local safe-settings run",https://github.com/fullsend-ai/fullsend/issues/9822
+2026-11-24,fullsend,issue,closed,9601,"GitLab token for `fullsend repos install` is too widely scoped",https://github.com/fullsend-ai/fullsend/issues/9601
+2026-11-24,fullsend,issue,closed,9589,"Choose first entity scope and define compatible run/poll CLI behavior",https://github.com/fullsend-ai/fullsend/issues/9589
+2026-11-24,fullsend,issue,closed,9586,"Specify entity discovery completeness and recovery guarantees (ADR 0149)",https://github.com/fullsend-ai/fullsend/issues/9586
+2026-11-24,fullsend,issue,closed,9132,"Jira authorization: read write/triage lists from the environment (groups_from, accounts_from)",https://github.com/fullsend-ai/fullsend/issues/9132
+2026-11-24,rfe-creator,pr,opened,317,"Classification digest: member rows carry family, project, own signals and a label (AISDLC-853)",https://github.com/fullsend-ai/rfe-creator/pull/317
+2026-11-24,rfe-creator,pr,opened,316,"Resolve the member of a type family: --project, parent-key and JQL rungs, exit 3 (AISDLC-853)",https://github.com/fullsend-ai/rfe-creator/pull/316
+2026-11-24,rfe-creator,pr,opened,314,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-24,rfe-creator,issue,opened,315,"Family resolution: --project, member signals, one question, headless exit 3 (AISDLC-853)",https://github.com/fullsend-ai/rfe-creator/issues/315
+2026-11-24,.fullsend,issue,opened,229,"Configure Fullsend triage to skip needs-design issues",https://github.com/fullsend-ai/.fullsend/issues/229
+2026-11-24,agent-eval-harness,pr,opened,349,"feat(eval-run): prepare Fullsend before cases",https://github.com/fullsend-ai/agent-eval-harness/pull/349
+2026-11-24,strat-creator,pr,merged,124,"fix(types): the Initiative intake skips both ignore labels",https://github.com/fullsend-ai/strat-creator/pull/124
+2026-11-24,experiments,pr,opened,73,"docs(0032): add shared long-term memory experiment",https://github.com/fullsend-ai/experiments/pull/73
+2026-11-24,test-creator,pr,merged,101,"fix: discover async test functions",https://github.com/fullsend-ai/test-creator/pull/101
+2026-11-24,metrics,pr,opened,47,"feat(dashboard): draw escaped-fix series as solid lines",https://github.com/fullsend-ai/metrics/pull/47
+2026-11-24,metrics,pr,closed,47,"feat(dashboard): draw escaped-fix series as solid lines",https://github.com/fullsend-ai/metrics/pull/47
+2026-11-24,metrics,issue,closed,46,"Quality chart",https://github.com/fullsend-ai/metrics/issues/46
+2026-11-24,agents,pr,merged,2135,"feat(#2134): let triage view images attached to issues",https://github.com/fullsend-ai/agents/pull/2135
+2026-11-24,agents,pr,closed,1466,"fix(#410): auto-include security sub-agent after triage",https://github.com/fullsend-ai/agents/pull/1466
+2026-11-24,agents,pr,closed,1465,"fix(#395): skip requires-manual-review when human already approved",https://github.com/fullsend-ai/agents/pull/1465
+2026-11-24,agents,pr,closed,1464,"fix(#390): fence post-failure comment details",https://github.com/fullsend-ai/agents/pull/1464
+2026-11-24,agents,pr,closed,1462,"fix(#365): warn on post-retro label application failures",https://github.com/fullsend-ai/agents/pull/1462
+2026-11-24,agents,pr,closed,1456,"fix(#285): treat missing review sub-agents as request-changes",https://github.com/fullsend-ai/agents/pull/1456
+2026-11-24,agents,issue,opened,2171,"Instruct review correctness subagent to evaluate operational feasibility of cutover and CI workflow plans",https://github.com/fullsend-ai/agents/issues/2171
+2026-11-24,agents,issue,opened,2170,"Instruct review correctness subagent to validate configuration predicates against tool schemas and repo configs",https://github.com/fullsend-ai/agents/issues/2170
+2026-11-24,agents,issue,opened,2169,"Review agent correctness and style dimensions should detect lossy prose compression and degraded grammatical referents in documentation diffs",https://github.com/fullsend-ai/agents/issues/2169
+2026-11-24,agents,issue,closed,2134,"triage: cannot see images attached to an issue",https://github.com/fullsend-ai/agents/issues/2134
+2026-11-24,org,pr,opened,88,"chore(#87): grant MichaelYochpaz write on epic-creator-eval",https://github.com/fullsend-ai/org/pull/88
+2026-11-24,org,pr,opened,86,"validate #85 dry runs (do not merge)",https://github.com/fullsend-ai/org/pull/86
+2026-11-24,org,pr,opened,85,"fix(rulesets): protect devlake and konflux-devlake-mcp",https://github.com/fullsend-ai/org/pull/85
+2026-11-24,org,pr,merged,88,"chore(#87): grant MichaelYochpaz write on epic-creator-eval",https://github.com/fullsend-ai/org/pull/88
+2026-11-24,org,pr,merged,85,"fix(rulesets): protect devlake and konflux-devlake-mcp",https://github.com/fullsend-ai/org/pull/85
+2026-11-24,org,pr,merged,30,"feat(#1): add fullsend-triagers and fullsend-writers teams",https://github.com/fullsend-ai/org/pull/30
+2026-11-24,org,pr,closed,86,"validate #85 dry runs (do not merge)",https://github.com/fullsend-ai/org/pull/86
+2026-11-24,org,pr,closed,79,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
+2026-11-24,org,issue,opened,87,"Grant MichaelYochpaz write access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/87
+2026-11-24,org,issue,closed,87,"Grant MichaelYochpaz write access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/87
+2026-11-24,org,issue,closed,1,"Split triagers/writers into per-repo-group teams, starting with the fullsend group",https://github.com/fullsend-ai/org/issues/1

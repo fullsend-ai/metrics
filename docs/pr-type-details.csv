@@ -2756,3 +2756,17 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-23,agents,2109,feat(retro): add Jira support to the retro agent,feat,,,,https://github.com/fullsend-ai/agents/pull/2109
 2026-11-23,agents,2046,feat(#2045): read parent issue context during triage,feat,,,,https://github.com/fullsend-ai/agents/pull/2046
 2026-11-23,agents,2010,feat(#1953): post no-PR reasons and failures to Jira,feat,,,,https://github.com/fullsend-ai/agents/pull/2010
+2026-11-24,fullsend,9842,fix(#9840): handle inherited variables on personal repositories,fix,external,9840,fredericlepied,https://github.com/fullsend-ai/fullsend/pull/9842
+2026-11-24,fullsend,9834,test(#9832): make fetch service and postScriptEnv tests sandbox-safe,test,,,,https://github.com/fullsend-ai/fullsend/pull/9834
+2026-11-24,fullsend,9829,ci(safe-settings): bump setup-node to v7.1.0,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9829
+2026-11-24,fullsend,9828,docs(#9586): add entity discovery v1 normative contract,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9828
+2026-11-24,fullsend,9815,"docs(adr): add ADR 0085, serve every changed Jira issue",docs,,,,https://github.com/fullsend-ai/fullsend/pull/9815
+2026-11-24,fullsend,9810,docs(#9601): document fine-grained GitLab token for repos install,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9810
+2026-11-24,fullsend,9809,fix(sandbox)!: sanitize downloaded Git metadata,fix,unlinked,,,https://github.com/fullsend-ai/fullsend/pull/9809
+2026-11-24,fullsend,9806,ci: manage repo environments via safe-settings,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9806
+2026-11-24,fullsend,9662,ci(e2e): configure pool orgs in a dedicated workflow,ci,,,,https://github.com/fullsend-ai/fullsend/pull/9662
+2026-11-24,fullsend,9603,docs(#9589): define first entity scope and run/poll CLI contract,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9603
+2026-11-24,fullsend,9262,feat(#9132): read Jira authorization lists from the environment,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9262
+2026-11-24,fullsend,9199,docs(adr): define entity source bindings and execution integration,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9199
+2026-11-24,fullsend,9018,docs(adr): share GitHub caching with read-only mint tokens,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9018
+2026-11-24,agents,2135,feat(#2134): let triage view images attached to issues,feat,,,,https://github.com/fullsend-ai/agents/pull/2135

@@ -3952,3 +3952,45 @@ date,repo,type,event,number,actor,title,url
 2026-11-23,agents,issue,closed_other_external,1953,jwm4,"Jira-sourced code runs: post the no-PR reason to the Jira issue",https://github.com/fullsend-ai/agents/issues/1953
 2026-11-23,agents,issue,closed_via_pr_external,2045,arewm,"Triage agent unable to follow parent links",https://github.com/fullsend-ai/agents/issues/2045
 2026-11-23,org,pr,opened_core,84,rh-hemartin,"feat(fullsend): automate environments with safe-settings",https://github.com/fullsend-ai/org/pull/84
+2026-11-24,fullsend,issue,opened_external,9840,fredericlepied,"repos install fails with HTTP 422 when checking inherited variables on personal GitHub repositories",https://github.com/fullsend-ai/fullsend/issues/9840
+2026-11-24,fullsend,issue,opened_external,9825,gabipodolnikova,"review: make closing on the reject verdict configurable (label-only rejection)",https://github.com/fullsend-ai/fullsend/issues/9825
+2026-11-24,fullsend,issue,opened_external,9820,ianw,"jira: if any editor can add labels, why not slash commands as well?",https://github.com/fullsend-ai/fullsend/issues/9820
+2026-11-24,fullsend,issue,closed_via_pr_external,9840,fredericlepied,"repos install fails with HTTP 422 when checking inherited variables on personal GitHub repositories",https://github.com/fullsend-ai/fullsend/issues/9840
+2026-11-24,fullsend,pr,opened_core,9849,waynesun09,"feat(dispatch): review and retro fork pull requests through workflow_run",https://github.com/fullsend-ai/fullsend/pull/9849
+2026-11-24,fullsend,pr,opened_core,9836,ifireball,"test(forgejostack): isolate fake server HTTP transports",https://github.com/fullsend-ai/fullsend/pull/9836
+2026-11-24,fullsend,pr,opened_core,9829,rh-hemartin,"ci(safe-settings): bump setup-node to v7.1.0",https://github.com/fullsend-ai/fullsend/pull/9829
+2026-11-24,fullsend,pr,opened_core,9827,ifireball,"docs(adr): give agents context about enabled peers",https://github.com/fullsend-ai/fullsend/pull/9827
+2026-11-24,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-24,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-24,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-24,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-24,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-24,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-24,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-24,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-24,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-24,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-24,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-24,fullsend,pr,reviewed_external,9813,ravelley,"feat(#9808): add fullsend prepare to warm images and preflight a sandbox",https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-24,fullsend,pr,reviewed_external,9628,jwm4,"docs(adr): clarify when to file a decision record",https://github.com/fullsend-ai/fullsend/pull/9628
+2026-11-24,fullsend,pr,reviewed_external,9628,jwm4,"docs(adr): clarify when to file a decision record",https://github.com/fullsend-ai/fullsend/pull/9628
+2026-11-24,rfe-creator,issue,opened_external,315,astefanutti,"Family resolution: --project, member signals, one question, headless exit 3 (AISDLC-853)",https://github.com/fullsend-ai/rfe-creator/issues/315
+2026-11-24,agent-eval-harness,pr,reviewed_external,333,ravelley,"docs(#332): add ADR 0006 for per-case CI jobs",https://github.com/fullsend-ai/agent-eval-harness/pull/333
+2026-11-24,agent-eval-harness,pr,reviewed_external,333,ravelley,"docs(#332): add ADR 0006 for per-case CI jobs",https://github.com/fullsend-ai/agent-eval-harness/pull/333
+2026-11-24,agent-eval-harness,pr,reviewed_external,333,ravelley,"docs(#332): add ADR 0006 for per-case CI jobs",https://github.com/fullsend-ai/agent-eval-harness/pull/333
+2026-11-24,strat-creator,pr,reviewed_external,124,astefanutti,"fix(types): the Initiative intake skips both ignore labels",https://github.com/fullsend-ai/strat-creator/pull/124
+2026-11-24,experiments,pr,opened_core,73,ascerra,"docs(0032): add shared long-term memory experiment",https://github.com/fullsend-ai/experiments/pull/73
+2026-11-24,test-creator,pr,reviewed_external,102,fege,"fix: preserve dots in repository URLs",https://github.com/fullsend-ai/test-creator/pull/102
+2026-11-24,test-creator,pr,reviewed_external,102,fege,"fix: preserve dots in repository URLs",https://github.com/fullsend-ai/test-creator/pull/102
+2026-11-24,test-creator,pr,reviewed_external,102,fege,"fix: preserve dots in repository URLs",https://github.com/fullsend-ai/test-creator/pull/102
+2026-11-24,test-creator,pr,reviewed_external,102,fege,"fix: preserve dots in repository URLs",https://github.com/fullsend-ai/test-creator/pull/102
+2026-11-24,test-creator,pr,reviewed_external,101,fege,"fix: discover async test functions",https://github.com/fullsend-ai/test-creator/pull/101
+2026-11-24,agents,pr,reviewed_external,2126,jwm4,"feat(#1927): apply PR template guidance in HTML comments",https://github.com/fullsend-ai/agents/pull/2126
+2026-11-24,agents,pr,reviewed_external,2126,jwm4,"feat(#1927): apply PR template guidance in HTML comments",https://github.com/fullsend-ai/agents/pull/2126
+2026-11-24,agents,pr,reviewed_external,2126,jwm4,"feat(#1927): apply PR template guidance in HTML comments",https://github.com/fullsend-ai/agents/pull/2126
+2026-11-24,agents,pr,reviewed_external,2126,jwm4,"feat(#1927): apply PR template guidance in HTML comments",https://github.com/fullsend-ai/agents/pull/2126
+2026-11-24,agents,pr,reviewed_external,2126,jwm4,"feat(#1927): apply PR template guidance in HTML comments",https://github.com/fullsend-ai/agents/pull/2126
+2026-11-24,org,issue,opened_external,87,ravelley,"Grant MichaelYochpaz write access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/87
+2026-11-24,org,issue,closed_other_external,87,ravelley,"Grant MichaelYochpaz write access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/87
+2026-11-24,org,pr,opened_core,86,waynesun09,"validate #85 dry runs (do not merge)",https://github.com/fullsend-ai/org/pull/86
+2026-11-24,org,pr,reviewed_external,79,mfrancisc,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
