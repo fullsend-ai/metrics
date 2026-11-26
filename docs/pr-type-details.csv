@@ -2770,3 +2770,19 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-24,fullsend,9199,docs(adr): define entity source bindings and execution integration,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9199
 2026-11-24,fullsend,9018,docs(adr): share GitHub caching with read-only mint tokens,docs,,,,https://github.com/fullsend-ai/fullsend/pull/9018
 2026-11-24,agents,2135,feat(#2134): let triage view images attached to issues,feat,,,,https://github.com/fullsend-ai/agents/pull/2135
+2026-11-25,fullsend,9863,refactor(#9583): add GitHub issue and pull request entity adapter,other,,,,https://github.com/fullsend-ai/fullsend/pull/9863
+2026-11-25,fullsend,9857,"fix(#9856): retry update-ref 422 ""Object does not exist""",fix,core,9856,ifireball,https://github.com/fullsend-ai/fullsend/pull/9857
+2026-11-25,fullsend,9849,feat(dispatch): review and retro fork pull requests through workflow_run,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9849
+2026-11-25,fullsend,9846,test: make timing- and platform-sensitive Go tests pass on macOS,test,,,,https://github.com/fullsend-ai/fullsend/pull/9846
+2026-11-25,fullsend,9845,feat(#9526): support a mix of inference auth methods per repository,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,9839,refactor(#9583): add provider-neutral selective entity acquisition,other,,,,https://github.com/fullsend-ai/fullsend/pull/9839
+2026-11-25,fullsend,9836,test(forgejostack): isolate fake server HTTP transports,test,,,,https://github.com/fullsend-ai/fullsend/pull/9836
+2026-11-25,fullsend,9824,test(#9651): implement the Forgejo Actions behaviour-test CI driver,test,,,,https://github.com/fullsend-ai/fullsend/pull/9824
+2026-11-25,fullsend,9821,chore(deps): update dependency ty to v0.0.109,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9821
+2026-11-25,fullsend,9819,feat(#9816): allow /fs-review on existing GitLab fork MRs,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9819
+2026-11-25,fullsend,9813,feat(#9808): add fullsend prepare to warm images and preflight a sandbox,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9813
+2026-11-25,fullsend,9807,chore(deps): update ubi10 base images,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9807
+2026-11-25,fullsend,9668,chore(deps): update actions/create-github-app-token digest to f418cff,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9668
+2026-11-25,fullsend,9356,chore(deps): update docker.io/library/ubuntu:24.04 docker digest to 562111b,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9356
+2026-11-25,fullsend,9328,chore(deps): update pre-commit hook rhysd/actionlint to v1.7.12,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9328
+2026-11-25,agents,2179,fix(#2172): show triage only images from the author or writers,fix,core,2172,ascerra,https://github.com/fullsend-ai/agents/pull/2179

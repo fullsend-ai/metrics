@@ -3994,3 +3994,114 @@ date,repo,type,event,number,actor,title,url
 2026-11-24,org,issue,closed_other_external,87,ravelley,"Grant MichaelYochpaz write access to epic-creator-eval",https://github.com/fullsend-ai/org/issues/87
 2026-11-24,org,pr,opened_core,86,waynesun09,"validate #85 dry runs (do not merge)",https://github.com/fullsend-ai/org/pull/86
 2026-11-24,org,pr,reviewed_external,79,mfrancisc,"fix(settings): apply the default-branch baseline to devlake",https://github.com/fullsend-ai/org/pull/79
+2026-11-25,fullsend,issue,opened_external,9861,andrewevansrh,"dispatch: pass Jira credentials to forge-originated retro runs",https://github.com/fullsend-ai/fullsend/issues/9861
+2026-11-25,fullsend,issue,opened_external,9860,andrewevansrh,"dispatch: pass Jira credentials to forge-originated retro runs",https://github.com/fullsend-ai/fullsend/issues/9860
+2026-11-25,fullsend,issue,opened_external,9851,amastbau,"ADR 0176 — repository-driven epic creation",https://github.com/fullsend-ai/fullsend/issues/9851
+2026-11-25,fullsend,issue,closed_other_external,9861,andrewevansrh,"dispatch: pass Jira credentials to forge-originated retro runs",https://github.com/fullsend-ai/fullsend/issues/9861
+2026-11-25,fullsend,issue,closed_via_pr_external,9816,ianw,"gitlab: /fs-review not triggering on existing merge-requests",https://github.com/fullsend-ai/fullsend/issues/9816
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9845,jflowers,"feat(#9526): support a mix of inference auth methods per repository",https://github.com/fullsend-ai/fullsend/pull/9845
+2026-11-25,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,jflowers,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,jflowers,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,Benkapner,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,jflowers,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,jflowers,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,jflowers,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9835,jflowers,"docs(ADR-0176): repository-driven epic creation",https://github.com/fullsend-ai/fullsend/pull/9835
+2026-11-25,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-25,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-25,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-25,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-25,fullsend,pr,reviewed_external,9827,jflowers,"docs(adr): give agents context about enabled peers",https://github.com/fullsend-ai/fullsend/pull/9827
+2026-11-25,fullsend,pr,reviewed_external,9827,jflowers,"docs(adr): give agents context about enabled peers",https://github.com/fullsend-ai/fullsend/pull/9827
+2026-11-25,fullsend,pr,reviewed_external,9827,jflowers,"docs(adr): give agents context about enabled peers",https://github.com/fullsend-ai/fullsend/pull/9827
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9699,jflowers,"fix(#5705)!: preserve escaping backslashes in JSON strings during redaction",https://github.com/fullsend-ai/fullsend/pull/9699
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-25,fullsend,pr,reviewed_external,9104,jflowers,"fix(#8672)!: resolve mint URL from config in dispatch workflows",https://github.com/fullsend-ai/fullsend/pull/9104
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-25,rfe-creator,issue,closed_other_external,315,astefanutti,"Family resolution: --project, member signals, one question, headless exit 3 (AISDLC-853)",https://github.com/fullsend-ai/rfe-creator/issues/315
+2026-11-25,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-25,rfe-creator,pr,reviewed_external,196,astefanutti,"Add vLLM vs vLLM-Omni upstream boundary guidance to RFE skills",https://github.com/fullsend-ai/rfe-creator/pull/196
+2026-11-25,agent-eval-harness,issue,opened_external,350,theobarberbany,"report: HTML output previews are blank when the report is embedded (Prow Spyglass)",https://github.com/fullsend-ai/agent-eval-harness/issues/350
+2026-11-25,agents,issue,opened_external,2184,andrewevansrh,"retro: add a Jira-source trigger arm and decide change-proposal scoping",https://github.com/fullsend-ai/agents/issues/2184
+2026-11-25,agents,issue,opened_external,2183,andrewevansrh,"retro: add a Jira-source trigger arm and decide change-proposal scoping",https://github.com/fullsend-ai/agents/issues/2183
+2026-11-25,agents,issue,opened_external,2182,andrewevansrh,"retro: add a Jira-source trigger arm and decide change-proposal scoping",https://github.com/fullsend-ai/agents/issues/2182
+2026-11-25,agents,issue,opened_external,2181,andrewevansrh,"retro: add a Jira-source trigger arm and decide change-proposal scoping",https://github.com/fullsend-ai/agents/issues/2181
+2026-11-25,agents,issue,opened_external,2180,andrewevansrh,"probe: api issue create test",https://github.com/fullsend-ai/agents/issues/2180
+2026-11-25,agents,issue,opened_external,2176,gklein,"GitLab skills' `REPO=` setup line is blocked by the SSRF pre-tool hook (""Malformed URL""), so triage/review/labels stop before reading the work item",https://github.com/fullsend-ai/agents/issues/2176
+2026-11-25,agents,issue,closed_other_external,2184,andrewevansrh,"retro: add a Jira-source trigger arm and decide change-proposal scoping",https://github.com/fullsend-ai/agents/issues/2184
+2026-11-25,agents,issue,closed_other_external,2183,andrewevansrh,"retro: add a Jira-source trigger arm and decide change-proposal scoping",https://github.com/fullsend-ai/agents/issues/2183
+2026-11-25,agents,issue,closed_other_external,2182,andrewevansrh,"retro: add a Jira-source trigger arm and decide change-proposal scoping",https://github.com/fullsend-ai/agents/issues/2182
+2026-11-25,agents,issue,closed_other_external,2180,andrewevansrh,"probe: api issue create test",https://github.com/fullsend-ai/agents/issues/2180
+2026-11-25,pi-inference-gateway,issue,closed_via_pr_external,48,DaoDaoNoCode,"routing: opt-in native Gemini transport so multi-turn tool calls keep thought_signature",https://github.com/fullsend-ai/pi-inference-gateway/issues/48
+2026-11-25,pi-inference-gateway,pr,opened_core,51,waynesun09,"chore: release v0.3.0",https://github.com/fullsend-ai/pi-inference-gateway/pull/51
+2026-11-25,pi-inference-gateway,pr,opened_core,50,waynesun09,"feat: carry tool-call extra_content through the chat-completions transport",https://github.com/fullsend-ai/pi-inference-gateway/pull/50
