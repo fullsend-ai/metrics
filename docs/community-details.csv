@@ -4105,3 +4105,153 @@ date,repo,type,event,number,actor,title,url
 2026-11-25,pi-inference-gateway,issue,closed_via_pr_external,48,DaoDaoNoCode,"routing: opt-in native Gemini transport so multi-turn tool calls keep thought_signature",https://github.com/fullsend-ai/pi-inference-gateway/issues/48
 2026-11-25,pi-inference-gateway,pr,opened_core,51,waynesun09,"chore: release v0.3.0",https://github.com/fullsend-ai/pi-inference-gateway/pull/51
 2026-11-25,pi-inference-gateway,pr,opened_core,50,waynesun09,"feat: carry tool-call extra_content through the chat-completions transport",https://github.com/fullsend-ai/pi-inference-gateway/pull/50
+2026-11-26,fullsend,issue,opened_external,9895,yvonnedevlinrh,"Generate role-aware workflow permissions for review-only installations",https://github.com/fullsend-ai/fullsend/issues/9895
+2026-11-26,fullsend,issue,opened_external,9892,rdiscala,"feat: support native skill fetching from private GitLab repositories",https://github.com/fullsend-ai/fullsend/issues/9892
+2026-11-26,fullsend,issue,opened_external,9888,rdiscala,"GitLab: delayed label-removal webhook fails after the label is re-added",https://github.com/fullsend-ai/fullsend/issues/9888
+2026-11-26,fullsend,issue,opened_external,9875,ianw,"Add more information to --dry-run content drift output",https://github.com/fullsend-ai/fullsend/issues/9875
+2026-11-26,fullsend,issue,opened_external,9874,ianw,"Add a schema checking lint for `repos.yaml`",https://github.com/fullsend-ai/fullsend/issues/9874
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9881,jflowers,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,reviewed_external,9853,jflowers,"feat(jirapoll)!: remove the per-issue lock and check write access first",https://github.com/fullsend-ai/fullsend/pull/9853
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9852,jflowers,"fix(jirapoll): treat an unparseable lastCheck as unset",https://github.com/fullsend-ai/fullsend/pull/9852
+2026-11-26,fullsend,pr,reviewed_external,9831,Benkapner,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-26,fullsend,pr,reviewed_external,9831,Benkapner,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-26,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-26,fullsend,pr,reviewed_external,9831,csoceanu,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9661,jflowers,"feat(#9602): add fullsend bot-role for harness scripts",https://github.com/fullsend-ai/fullsend/pull/9661
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9446,jflowers,"feat(#956): resolve fixed review threads on re-review",https://github.com/fullsend-ai/fullsend/pull/9446
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9399,jflowers,"fix(#9334)!: post every agent result as a new comment",https://github.com/fullsend-ai/fullsend/pull/9399
+2026-11-26,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-26,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-26,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-26,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-26,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-26,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-26,fullsend,pr,reviewed_external,9324,jflowers,"fix(harness): name the harness in lock --update advice",https://github.com/fullsend-ai/fullsend/pull/9324
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9300,jflowers,"fix(scaffold)!: pass the normalized event to fullsend run in stage jobs",https://github.com/fullsend-ai/fullsend/pull/9300
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9214,jflowers,"feat(cli): add e2e authorization check command (2/3)",https://github.com/fullsend-ai/fullsend/pull/9214
+2026-11-26,fullsend,pr,reviewed_external,9104,jflowers,"fix(#8672)!: resolve mint URL from config in dispatch workflows",https://github.com/fullsend-ai/fullsend/pull/9104
+2026-11-26,rfe-creator,issue,opened_external,322,astefanutti,"Second Initiative member as a test fixture: descriptor, emulator seed, create-question fixtures (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/issues/322
+2026-11-26,rfe-creator,issue,opened_external,320,astefanutti,"Skill linter: raise the context-budget warning limit to 4500",https://github.com/fullsend-ai/rfe-creator/issues/320
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,rfe-creator,pr,reviewed_external,314,astefanutti,"eval: content-only quality judge graded against the input, evidence fidelity, first-review check, judge sampling",https://github.com/fullsend-ai/rfe-creator/pull/314
+2026-11-26,agent-eval-harness,pr,reviewed_external,349,Aliciapet11,"feat(eval-run): prepare Fullsend before cases",https://github.com/fullsend-ai/agent-eval-harness/pull/349
+2026-11-26,test-creator,issue,opened_external,107,fege,"Normalize grounded TBDs during test-plan revision",https://github.com/fullsend-ai/test-creator/issues/107
+2026-11-26,test-creator,pr,reviewed_external,106,fege,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/test-creator/pull/106

@@ -20905,3 +20905,72 @@ date,repo,type,event,number,title,url
 2026-11-25,orgpulse,pr,opened,7,"chore(deps-dev): Bump markdown-it from 14.3.0 to 14.3.3 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/7
 2026-11-25,orgpulse,pr,opened,6,"chore(deps-dev): Bump brace-expansion from 5.0.9 to 5.1.0 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/6
 2026-11-25,orgpulse,pr,opened,5,"chore(deps-dev): Bump js-yaml from 4.3.1 to 4.3.2 in /vscode-extension",https://github.com/fullsend-ai/orgpulse/pull/5
+2026-11-26,fullsend,pr,opened,9896,"refactor(#9583): read the GitHub closing actor from the latest close event",https://github.com/fullsend-ai/fullsend/pull/9896
+2026-11-26,fullsend,pr,opened,9894,"chore(deps): update dependency @types/node to v22.20.7",https://github.com/fullsend-ai/fullsend/pull/9894
+2026-11-26,fullsend,pr,opened,9893,"feat(#9884): resolve entity-source config into a canonical model",https://github.com/fullsend-ai/fullsend/pull/9893
+2026-11-26,fullsend,pr,opened,9891,"feat(#9868)!: run agents on Forgejo with FORGEJO_TOKEN",https://github.com/fullsend-ai/fullsend/pull/9891
+2026-11-26,fullsend,pr,opened,9890,"refactor(#9583): read GitHub pull request comments and issue threads",https://github.com/fullsend-ai/fullsend/pull/9890
+2026-11-26,fullsend,pr,opened,9887,"refactor(#9883): let the Jira poller take a set of project keys",https://github.com/fullsend-ai/fullsend/pull/9887
+2026-11-26,fullsend,pr,opened,9882,"refactor(#9583): read GitHub issue comments and pull request reviews",https://github.com/fullsend-ai/fullsend/pull/9882
+2026-11-26,fullsend,pr,opened,9881,"feat(jira): allow repositories to skip Jira actor authorization",https://github.com/fullsend-ai/fullsend/pull/9881
+2026-11-26,fullsend,pr,opened,9880,"refactor(#9583): read GitHub reviewers and current approvals",https://github.com/fullsend-ai/fullsend/pull/9880
+2026-11-26,fullsend,pr,opened,9879,"feat(jirapoll): limit one issue to 250 records and 768 KB per cycle",https://github.com/fullsend-ai/fullsend/pull/9879
+2026-11-26,fullsend,pr,opened,9878,"feat(jirapoll)!: search the whole backfill window, oldest change first",https://github.com/fullsend-ai/fullsend/pull/9878
+2026-11-26,fullsend,pr,opened,9877,"chore(deps): update experiments digest to 8dced36",https://github.com/fullsend-ai/fullsend/pull/9877
+2026-11-26,fullsend,pr,opened,9876,"feat(jirapoll): take each candidate's lastCheck from the search results",https://github.com/fullsend-ai/fullsend/pull/9876
+2026-11-26,fullsend,pr,opened,9873,"feat(#9867): resolve pinned agent definitions from Forgejo",https://github.com/fullsend-ai/fullsend/pull/9873
+2026-11-26,fullsend,pr,opened,9872,"feat(#9866): normalize Forgejo Actions events into NormalizedEvent",https://github.com/fullsend-ai/fullsend/pull/9872
+2026-11-26,fullsend,pr,opened,9871,"refactor(#9583): read GitHub reactions and label applications",https://github.com/fullsend-ai/fullsend/pull/9871
+2026-11-26,fullsend,pr,opened,9870,"refactor(#9865): add Forgejo pull-request, branch, and status operations",https://github.com/fullsend-ai/fullsend/pull/9870
+2026-11-26,fullsend,pr,opened,9869,"refactor(#9864): add Forgejo issue, comment, and label operations",https://github.com/fullsend-ai/fullsend/pull/9869
+2026-11-26,fullsend,pr,merged,9890,"refactor(#9583): read GitHub pull request comments and issue threads",https://github.com/fullsend-ai/fullsend/pull/9890
+2026-11-26,fullsend,pr,merged,9887,"refactor(#9883): let the Jira poller take a set of project keys",https://github.com/fullsend-ai/fullsend/pull/9887
+2026-11-26,fullsend,pr,merged,9882,"refactor(#9583): read GitHub issue comments and pull request reviews",https://github.com/fullsend-ai/fullsend/pull/9882
+2026-11-26,fullsend,pr,merged,9880,"refactor(#9583): read GitHub reviewers and current approvals",https://github.com/fullsend-ai/fullsend/pull/9880
+2026-11-26,fullsend,pr,merged,9873,"feat(#9867): resolve pinned agent definitions from Forgejo",https://github.com/fullsend-ai/fullsend/pull/9873
+2026-11-26,fullsend,pr,merged,9872,"feat(#9866): normalize Forgejo Actions events into NormalizedEvent",https://github.com/fullsend-ai/fullsend/pull/9872
+2026-11-26,fullsend,pr,merged,9871,"refactor(#9583): read GitHub reactions and label applications",https://github.com/fullsend-ai/fullsend/pull/9871
+2026-11-26,fullsend,pr,merged,9870,"refactor(#9865): add Forgejo pull-request, branch, and status operations",https://github.com/fullsend-ai/fullsend/pull/9870
+2026-11-26,fullsend,pr,merged,9869,"refactor(#9864): add Forgejo issue, comment, and label operations",https://github.com/fullsend-ai/fullsend/pull/9869
+2026-11-26,fullsend,pr,closed,9309,"docs(adr): assess vulnerabilities with a read-only agent before the code agent",https://github.com/fullsend-ai/fullsend/pull/9309
+2026-11-26,fullsend,pr,closed,7629,"fix(#5043): fail closed when PAT errors block agent-ref resolution",https://github.com/fullsend-ai/fullsend/pull/7629
+2026-11-26,fullsend,pr,closed,7615,"docs(#4553): document intent-coherence PR-body grounding failure",https://github.com/fullsend-ai/fullsend/pull/7615
+2026-11-26,fullsend,pr,closed,7598,"docs(#7597): document TRACEPARENT sampled-flag invariant",https://github.com/fullsend-ai/fullsend/pull/7598
+2026-11-26,fullsend,pr,closed,7596,"fix(#4058): skip Terminated rewrite when completion exists",https://github.com/fullsend-ai/fullsend/pull/7596
+2026-11-26,fullsend,issue,opened,9897,"Skip review and retro dispatch when PR diff is confined to `.fullsend/` directory",https://github.com/fullsend-ai/fullsend/issues/9897
+2026-11-26,fullsend,issue,opened,9895,"Generate role-aware workflow permissions for review-only installations",https://github.com/fullsend-ai/fullsend/issues/9895
+2026-11-26,fullsend,issue,opened,9892,"feat: support native skill fetching from private GitLab repositories",https://github.com/fullsend-ai/fullsend/issues/9892
+2026-11-26,fullsend,issue,opened,9888,"GitLab: delayed label-removal webhook fails after the label is re-added",https://github.com/fullsend-ai/fullsend/issues/9888
+2026-11-26,fullsend,issue,opened,9886,"Warn about legacy tracker configuration during install and upgrade",https://github.com/fullsend-ai/fullsend/issues/9886
+2026-11-26,fullsend,issue,opened,9885,"Add an in-place migration command for legacy tracker configuration",https://github.com/fullsend-ai/fullsend/issues/9885
+2026-11-26,fullsend,issue,opened,9884,"Implement entity-source configuration v1 as the canonical config model",https://github.com/fullsend-ai/fullsend/issues/9884
+2026-11-26,fullsend,issue,opened,9883,"Refactor Jira poller internals to accept multiple projects",https://github.com/fullsend-ai/fullsend/issues/9883
+2026-11-26,fullsend,issue,opened,9875,"Add more information to --dry-run content drift output",https://github.com/fullsend-ai/fullsend/issues/9875
+2026-11-26,fullsend,issue,opened,9874,"Add a schema checking lint for `repos.yaml`",https://github.com/fullsend-ai/fullsend/issues/9874
+2026-11-26,fullsend,issue,closed,9883,"Refactor Jira poller internals to accept multiple projects",https://github.com/fullsend-ai/fullsend/issues/9883
+2026-11-26,fullsend,issue,closed,9867,"Resolve pinned agent definitions from Forgejo repositories",https://github.com/fullsend-ai/fullsend/issues/9867
+2026-11-26,fullsend,issue,closed,9866,"Normalize Forgejo events into Fullsend events",https://github.com/fullsend-ai/fullsend/issues/9866
+2026-11-26,fullsend,issue,closed,9865,"Add Forgejo pull-request, branch, and status operations to forge.Client",https://github.com/fullsend-ai/fullsend/issues/9865
+2026-11-26,fullsend,issue,closed,9864,"Add Forgejo issue, comment, and label operations to forge.Client",https://github.com/fullsend-ai/fullsend/issues/9864
+2026-11-26,rfe-creator,pr,opened,325,"Emulator HOOLI seed and the fixture member's integration tests (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/325
+2026-11-26,rfe-creator,pr,opened,324,"Test-fixture second Initiative member: tests/fixtures/type-members/initiative-hooli (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/324
+2026-11-26,rfe-creator,pr,opened,323,"eval skeleton: read the revision checks' item id from identity.id_field (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/323
+2026-11-26,rfe-creator,pr,opened,321,"Skill linter: raise the context-budget warning limit to 4500",https://github.com/fullsend-ai/rfe-creator/pull/321
+2026-11-26,rfe-creator,pr,merged,324,"Test-fixture second Initiative member: tests/fixtures/type-members/initiative-hooli (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/324
+2026-11-26,rfe-creator,pr,merged,323,"eval skeleton: read the revision checks' item id from identity.id_field (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/323
+2026-11-26,rfe-creator,pr,merged,321,"Skill linter: raise the context-budget warning limit to 4500",https://github.com/fullsend-ai/rfe-creator/pull/321
+2026-11-26,rfe-creator,issue,opened,322,"Second Initiative member as a test fixture: descriptor, emulator seed, create-question fixtures (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/issues/322
+2026-11-26,rfe-creator,issue,opened,320,"Skill linter: raise the context-budget warning limit to 4500",https://github.com/fullsend-ai/rfe-creator/issues/320
+2026-11-26,test-creator,pr,opened,109,"chore(deps): bump urllib3 from 2.7.0 to 2.8.0",https://github.com/fullsend-ai/test-creator/pull/109
+2026-11-26,test-creator,pr,opened,108,"fix(test-plan-review): normalize grounded TBDs during revision",https://github.com/fullsend-ai/test-creator/pull/108
+2026-11-26,test-creator,pr,merged,106,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/test-creator/pull/106
+2026-11-26,test-creator,issue,opened,107,"Normalize grounded TBDs during test-plan revision",https://github.com/fullsend-ai/test-creator/issues/107
+2026-11-26,agents,pr,opened,2190,"feat(#2188): resolve review threads of findings a change fixed",https://github.com/fullsend-ai/agents/pull/2190
+2026-11-26,agents,pr,opened,2189,"feat(#2187): reconcile GitHub finding threads after fix runs",https://github.com/fullsend-ai/agents/pull/2189
+2026-11-26,agents,pr,opened,2186,"fix(#2105): set GIT_SSL_CAINFO as data the env reader keeps",https://github.com/fullsend-ai/agents/pull/2186
+2026-11-26,agents,pr,merged,2189,"feat(#2187): reconcile GitHub finding threads after fix runs",https://github.com/fullsend-ai/agents/pull/2189
+2026-11-26,agents,issue,opened,2188,"Review agent should resolve evidence-confirmed prior finding threads",https://github.com/fullsend-ai/agents/issues/2188
+2026-11-26,agents,issue,opened,2187,"Fix agent should reconcile GitHub finding threads",https://github.com/fullsend-ai/agents/issues/2187
+2026-11-26,agents,issue,opened,2185,"review: re-review comment verdicts strand newly-introduced actionable findings — no fix dispatch, no tracking, no merge block",https://github.com/fullsend-ai/agents/issues/2185
+2026-11-26,agents,issue,closed,2187,"Fix agent should reconcile GitHub finding threads",https://github.com/fullsend-ai/agents/issues/2187
+2026-11-26,agents,issue,closed,306,"Code-implementation skill extracts contextual Jira references from issue body, producing invalid PR titles",https://github.com/fullsend-ai/agents/issues/306

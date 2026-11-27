@@ -2786,3 +2786,13 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-25,fullsend,9356,chore(deps): update docker.io/library/ubuntu:24.04 docker digest to 562111b,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9356
 2026-11-25,fullsend,9328,chore(deps): update pre-commit hook rhysd/actionlint to v1.7.12,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9328
 2026-11-25,agents,2179,fix(#2172): show triage only images from the author or writers,fix,core,2172,ascerra,https://github.com/fullsend-ai/agents/pull/2179
+2026-11-26,fullsend,9890,refactor(#9583): read GitHub pull request comments and issue threads,other,,,,https://github.com/fullsend-ai/fullsend/pull/9890
+2026-11-26,fullsend,9887,refactor(#9883): let the Jira poller take a set of project keys,other,,,,https://github.com/fullsend-ai/fullsend/pull/9887
+2026-11-26,fullsend,9882,refactor(#9583): read GitHub issue comments and pull request reviews,other,,,,https://github.com/fullsend-ai/fullsend/pull/9882
+2026-11-26,fullsend,9880,refactor(#9583): read GitHub reviewers and current approvals,other,,,,https://github.com/fullsend-ai/fullsend/pull/9880
+2026-11-26,fullsend,9873,feat(#9867): resolve pinned agent definitions from Forgejo,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9873
+2026-11-26,fullsend,9872,feat(#9866): normalize Forgejo Actions events into NormalizedEvent,feat,,,,https://github.com/fullsend-ai/fullsend/pull/9872
+2026-11-26,fullsend,9871,refactor(#9583): read GitHub reactions and label applications,other,,,,https://github.com/fullsend-ai/fullsend/pull/9871
+2026-11-26,fullsend,9870,"refactor(#9865): add Forgejo pull-request, branch, and status operations",other,,,,https://github.com/fullsend-ai/fullsend/pull/9870
+2026-11-26,fullsend,9869,"refactor(#9864): add Forgejo issue, comment, and label operations",other,,,,https://github.com/fullsend-ai/fullsend/pull/9869
+2026-11-26,agents,2189,feat(#2187): reconcile GitHub finding threads after fix runs,feat,,,,https://github.com/fullsend-ai/agents/pull/2189
