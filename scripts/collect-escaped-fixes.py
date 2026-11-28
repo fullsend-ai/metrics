@@ -396,6 +396,16 @@ def rates(candidates: list[dict], judgments: list[dict], details: list[dict], as
     ]
 
 
+def closed_through(aggregate: list[dict]) -> date:
+    """The date weeks close by: the last PR-type day, or the fix-candidate coverage date if earlier."""
+    as_of = date.fromisoformat(max(row["date"] for row in aggregate))
+    through = read_through()
+    if through is None or through < as_of:
+        print(f"  fix candidates collected through {through}: weeks close by that date, not {as_of}", file=sys.stderr)
+        as_of = min(as_of, through or date.min)
+    return as_of
+
+
 def rebuild(answers_file: str | None = None) -> None:
     candidates = read(CANDIDATES)
     judgments = sync_judgments(candidates, read(JUDGMENTS))
@@ -407,11 +417,7 @@ def rebuild(answers_file: str | None = None) -> None:
     aggregate = read(AGGREGATE)
     if not aggregate:
         raise SystemExit("pr-type.csv is empty; run collect-pr-type.sh first")
-    as_of = date.fromisoformat(max(row["date"] for row in aggregate))
-    through = read_through()
-    if through is None or through < as_of:
-        print(f"  fix candidates collected through {through}: weeks close by that date, not {as_of}", file=sys.stderr)
-        as_of = min(as_of, through or date.min)
+    as_of = closed_through(aggregate)
     gaps = gap_weeks(aggregate)
     for week, repo in sorted(gaps):
         print(f"  {repo} week of {week} left out: a day is missing from pr-type.csv", file=sys.stderr)

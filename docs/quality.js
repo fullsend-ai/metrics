@@ -429,3 +429,71 @@
   window.addEventListener("resize", () => { hideTooltip(); render(); });
   render();
 })();
+
+// Fix likelihood by band (docs/fix-likelihood.csv, docs/fix-likelihood-check.csv).
+(async function () {
+  "use strict";
+
+  const pct = value => `${(value * 100).toFixed(1)}%`;
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  const bandsEl = document.getElementById("likelihood-bands");
+  const checkEl = document.getElementById("likelihood-check");
+  const order = ["higher", "middle", "lower", "unable_to_assess"];
+  let rows = [];
+  let checks = [];
+  let selectedRepo = "__all__";
+
+  try {
+    [rows, checks] = await Promise.all([
+      d3.csv("fix-likelihood.csv", d => ({ week: d.week, repo: d.repo, band: d.band, merged: +d.merged_prs, fixed: +d.fixed_prs,
+        unjudged: +d.unjudged_candidates, smallUpTo: d.small_up_to, middleUpTo: d.middle_up_to })),
+      d3.csv("fix-likelihood-check.csv"),
+    ]);
+  } catch (error) {
+    bandsEl.innerHTML = "<div class='quality-row'><span>Fix-likelihood data could not be loaded. Reload the page; "
+      + "if it is still missing, check the latest run of the daily collect workflow.</span></div>";
+    return;
+  }
+
+  // One line per repo and period: a repo with many PRs must not hide one the bands cannot be judged on.
+  function checkLine(check) {
+    const scope = check.period.startsWith("since_")
+      ? `${check.repo}, PRs merged since ${check.period.slice(6)} (new to the rule)`
+      : `${check.repo}, all closed weeks`;
+    if (check.auc === "too_few_fixes") {
+      return `${scope}: too few fixed PRs to judge the bands yet (${check.fixed_prs} of ${check.checked_prs} PRs; 20 needed).`;
+    }
+    return `${scope}: AUC ${(+check.auc).toFixed(2)}, and the riskiest 30% of PRs held `
+      + `${pct(+check.fixed_in_riskiest_30pct)} of the ${check.fixed_prs} fixed PRs.`;
+  }
+
+  function sizeLine(repo) {
+    const latest = d3.greatest(rows.filter(d => d.repo === repo && d.smallUpTo !== ""), d => d.week);
+    return latest
+      ? `${repo}, sizes in the latest closed week: small is up to ${latest.smallUpTo} changed lines, big is more than ${latest.middleUpTo}.`
+      : null;
+  }
+
+  function render() {
+    const visible = selectedRepo === "__all__" ? rows : rows.filter(d => d.repo === selectedRepo);
+    const byBand = d3.rollup(visible, v => ({ merged: d3.sum(v, d => d.merged), fixed: d3.sum(v, d => d.fixed) }), d => d.band);
+    bandsEl.innerHTML = byBand.size
+      ? order.filter(band => byBand.has(band)).map(band => {
+        const t = byBand.get(band);
+        return `<div class="quality-row"><span>${esc(band.replace(/_/g, " "))}</span><strong>${pct(t.merged ? t.fixed / t.merged : 0)}</strong>`
+          + `<strong>${t.fixed}</strong><span>${t.merged}</span></div>`;
+      }).join("")
+      : "<div class='quality-row'><span>No closed weeks yet</span></div>";
+    const repos = selectedRepo === "__all__" ? [...new Set(checks.map(d => d.repo))] : [selectedRepo];
+    const lines = repos.flatMap(repo => [...checks.filter(d => d.repo === repo).map(checkLine), sizeLine(repo)]).filter(Boolean);
+    const open = d3.sum(visible, d => d.unjudged);
+    if (open) lines.push(`${open} possible fixes have no verdict yet, so these rates can still rise.`);
+    checkEl.innerHTML = lines.map(esc).join("<br>");
+  }
+
+  document.getElementById("repo-filter").addEventListener("change", event => {
+    selectedRepo = event.target.value;
+    render();
+  });
+  render();
+})();

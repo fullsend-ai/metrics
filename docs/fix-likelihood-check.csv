@@ -1,0 +1,5 @@
+repo,period,checked_prs,fixed_prs,left_out_open,auc,fixed_in_riskiest_30pct
+fullsend,all_weeks,1690,70,42,0.727,0.614
+fullsend,since_2026-10-01,160,7,36,too_few_fixes,too_few_fixes
+agents,all_weeks,211,11,9,too_few_fixes,too_few_fixes
+agents,since_2026-10-01,23,1,9,too_few_fixes,too_few_fixes
