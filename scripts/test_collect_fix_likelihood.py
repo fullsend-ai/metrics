@@ -30,7 +30,7 @@ class TestBands(unittest.TestCase):
     def test_too_little_history_is_unable_to_assess(self):
         details, sizes = history(weeks=3)  # 30 PRs, under MIN_HISTORY
         banded = mod.bands(details, sizes)
-        self.assertEqual({b for b, _ in banded.values()}, {"unable_to_assess"})
+        self.assertEqual(set(banded.values()), {("unable_to_assess", 0.0, None)})
 
     def test_size_third_and_riskier_type(self):
         details, sizes = history()  # 60 earlier PRs of size 1..60: cuts at about 20 and 40
@@ -45,6 +45,7 @@ class TestBands(unittest.TestCase):
         self.assertEqual(got, {"small-feat": "middle", "big-fix": "middle", "big-feat": "higher",
                                "mid-fix": "lower", "big-untyped": "higher", "big-refactor": "middle",
                                "big-build": "higher"})
+        self.assertEqual(banded["fullsend#100"][2], (20, 40))  # small up to 20 lines, middle up to 40
 
     def test_same_week_prs_are_not_their_own_history(self):
         details, sizes = history(weeks=5)  # exactly MIN_HISTORY earlier PRs
@@ -92,14 +93,25 @@ class TestCheck(unittest.TestCase):
         self.assertEqual(mod.auc([4, 3, 2, 1], [False, False, True, True]), 0.0)
 
     def test_too_few_fixes(self):
-        row = mod.check("agents", [(0.5, True)] * 3 + [(0.1, False)] * 50, 2)
-        self.assertEqual((row["auc"], row["fixed_in_riskiest_30pct"], row["left_out_open"]),
-                         ("too_few_fixes", "too_few_fixes", 2))
+        row = mod.check("agents", mod.ALL_WEEKS, [(0.5, True)] * 3 + [(0.1, False)] * 50, 2)
+        self.assertEqual((row["auc"], row["fixed_in_riskiest_30pct"], row["left_out_open"], row["period"]),
+                         ("too_few_fixes", "too_few_fixes", 2, "all_weeks"))
 
     def test_riskiest_30pct(self):
+        # 32 places: the 20 fixed PRs scoring 2.0, then 12 of the 85 PRs tied at 0.0, which hold 5 fixed PRs.
         prs = [(2.0, True)] * 20 + [(0.0, False)] * 80 + [(0.0, True)] * 5
-        row = mod.check("all", prs, 0)
-        self.assertEqual(row["fixed_in_riskiest_30pct"], "0.800")  # 20 of 25 fixed PRs are in the top 32
+        row = mod.check("fullsend", mod.ALL_WEEKS, prs, 0)
+        self.assertEqual(row["fixed_in_riskiest_30pct"], f"{(20 + 5 * 12 / 85) / 25:.3f}")
+
+    def test_riskiest_30pct_ignores_the_order_of_tied_prs(self):
+        prs = [(1.0, True)] * 20 + [(1.0, False)] * 80
+        self.assertAlmostEqual(mod.share_in_riskiest(prs), 0.3)
+        self.assertAlmostEqual(mod.share_in_riskiest(prs[::-1]), 0.3)
+        self.assertEqual(mod.auc([s for s, _ in prs], [h for _, h in prs]), 0.5)
+
+    def test_only_prs_after_the_study_count_as_new_to_the_rule(self):
+        self.assertEqual(mod.periods("2026-09-30"), ("all_weeks",))
+        self.assertEqual(mod.periods("2026-10-01"), ("all_weeks", "since_2026-10-01"))
 
 
 if __name__ == "__main__":

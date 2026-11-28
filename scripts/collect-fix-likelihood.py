@@ -18,13 +18,18 @@ fix-judge agent).
 Outputs, for weeks whose 30-day window has closed (the same weeks as
 docs/escaped-fixes.csv):
 - docs/fix-likelihood.csv: per week, repo and band: merged PRs, fixed PRs,
-  unjudged or unknown candidates, fix rate.
-- docs/fix-likelihood-check.csv: per repo and for all repos, whether the bands
-  rank the fixed PRs first: AUC of the bands ordered by size inside, and the
-  share of fixed PRs among the riskiest 30% of PRs. Every band uses only earlier
-  PRs, so this checks the rule on PRs it was not fitted on. PRs whose outcome is
-  still open (no confirmed fix, and an unjudged or unknown candidate) are left
-  out; a PR with a confirmed fix is checked even if another candidate is open. Under MIN_FIXES fixed PRs it reports too few to judge.
+  unjudged or unknown candidates, fix rate, and that week's size boundaries
+  (small_up_to and middle_up_to changed lines; a bigger PR is big).
+- docs/fix-likelihood-check.csv: per repo, whether the bands rank the fixed PRs
+  first: AUC of the bands ordered by size inside, and the share of fixed PRs
+  among the riskiest 30% of PRs. Each repo has two rows: all closed weeks, and
+  only PRs merged after STUDY_THROUGH. The size thirds always come from earlier
+  weeks, but the rule itself (size plus kind of change) came from an offline
+  study of these repos' PRs merged through STUDY_THROUGH, so only the second
+  row checks the rule on PRs that are new to it. PRs whose outcome is still
+  open (no confirmed fix, and an unjudged or unknown candidate) are left out; a
+  PR with a confirmed fix is checked even if another candidate is open. Under
+  MIN_FIXES fixed PRs a row reports too few to judge.
 
 The bands are advisory: they show where review should look hardest, and never
 approve or merge a PR.
@@ -61,8 +66,9 @@ SIZES = ef.ROOT / "docs" / "pr-size.csv"
 OUTPUT = ef.ROOT / "docs" / "fix-likelihood.csv"
 CHECK = ef.ROOT / "docs" / "fix-likelihood-check.csv"
 SIZE_HEADER = ["repo", "number", "changed_lines"]
-OUTPUT_HEADER = ["week", "repo", "band", "merged_prs", "fixed_prs", "unjudged_candidates", "fix_rate"]
-CHECK_HEADER = ["repo", "checked_prs", "fixed_prs", "left_out_open", "auc", "fixed_in_riskiest_30pct"]
+OUTPUT_HEADER = ["week", "repo", "band", "merged_prs", "fixed_prs", "unjudged_candidates", "fix_rate",
+                 "small_up_to", "middle_up_to"]
+CHECK_HEADER = ["repo", "period", "checked_prs", "fixed_prs", "left_out_open", "auc", "fixed_in_riskiest_30pct"]
 RISKIER = {"feat", "ci", "build"}  # title prefixes; no conventional prefix also counts
 PREFIX = re.compile(r"^(\w+)(?:\([^)]+\))?!?:")
 BAND = {("small", False): "lower", ("middle", False): "lower", ("small", True): "middle",
@@ -71,6 +77,11 @@ RANK = {"lower": 0, "middle": 1, "higher": 2}
 MIN_HISTORY = 50  # earlier PRs needed before a repo's size thirds mean anything
 MIN_FIXES = 20  # fixed PRs needed before the check is worth reading (as in the spike)
 BATCH = 50  # PRs per GraphQL query
+# The offline study behind the rule used these repos' PRs merged through this day,
+# so only PRs merged after it are new to the rule.
+STUDY_THROUGH = date(2026, 9, 30)
+ALL_WEEKS = "all_weeks"
+AFTER_STUDY = f"since_{STUDY_THROUGH + timedelta(days=1)}"
 
 
 def key(pr: dict) -> str:
@@ -82,6 +93,11 @@ def riskier(pr: dict) -> bool:
     # pr_type folds refactor and build into "other", so read the prefix itself.
     match = PREFIX.match(pr.get("title", "").strip())
     return match is None or match.group(1).lower() in RISKIER
+
+
+def periods(day: str) -> tuple[str, ...]:
+    """The check rows a PR merged on this day counts in."""
+    return (ALL_WEEKS, AFTER_STUDY) if date.fromisoformat(day) > STUDY_THROUGH else (ALL_WEEKS,)
 
 
 def monday(day: str) -> date:
@@ -97,7 +113,7 @@ def fetch_sizes(details: list[dict]) -> None:
                       if pr["repo"] in ef.REPOS and key(pr) not in have})
     if not missing:
         return
-    pr_type = ef._load_pr_type()
+    pr_type = _load("collect_pr_type", "collect-pr-type.py")
     for start in range(0, len(missing), BATCH):
         batch = missing[start:start + BATCH]
         fields = " ".join(
@@ -112,9 +128,13 @@ def fetch_sizes(details: list[dict]) -> None:
     print(f"  {len(missing)} PR sizes fetched")
 
 
-def bands(details: list[dict], sizes: dict[str, int]) -> dict[str, tuple[str, float]]:
-    """repo#N -> (band, size percentile among earlier PRs), from PRs merged in earlier weeks only."""
-    out: dict[str, tuple[str, float]] = {}
+def bands(details: list[dict], sizes: dict[str, int]) -> dict[str, tuple[str, float, tuple[int, int] | None]]:
+    """repo#N -> (band, size percentile among earlier PRs, size boundaries), from PRs merged in earlier weeks only.
+
+    The boundaries are (small_up_to, middle_up_to) in changed lines for the PR's
+    repo and week, or None while the repo has too little history.
+    """
+    out: dict[str, tuple[str, float, tuple[int, int] | None]] = {}
     by_repo: dict[str, list[dict]] = defaultdict(list)
     for pr in details:
         if pr["repo"] in ef.REPOS and key(pr) in sizes:
@@ -129,10 +149,12 @@ def bands(details: list[dict], sizes: dict[str, int]) -> dict[str, tuple[str, fl
             for pr in by_week[week]:
                 size = sizes[key(pr)]
                 if cuts is None:
-                    out[key(pr)] = ("unable_to_assess", 0.0)
+                    out[key(pr)] = ("unable_to_assess", 0.0, None)
                     continue
                 third = "small" if size <= cuts[0] else "middle" if size <= cuts[1] else "big"
-                out[key(pr)] = (BAND[(third, riskier(pr))], bisect.bisect_right(earlier, size) / len(earlier))
+                # Sizes are whole lines, so rounding the boundaries down changes no band.
+                out[key(pr)] = (BAND[(third, riskier(pr))], bisect.bisect_right(earlier, size) / len(earlier),
+                                (math.floor(cuts[0]), math.floor(cuts[1])))
             for pr in by_week[week]:
                 bisect.insort(earlier, sizes[key(pr)])
     return out
@@ -171,14 +193,35 @@ def auc(scores: list[float], hits: list[bool]) -> float:
     return (sum(r for r, h in zip(ranks, hits) if h) - positives * (positives + 1) / 2) / (positives * negatives)
 
 
-def check(repo: str, prs: list[tuple[float, bool]], left_out: int) -> dict:
+def share_in_riskiest(prs: list[tuple[float, bool]], fraction: float = 0.3) -> float:
+    """Share of the fixed PRs that sit in the riskiest `fraction` of PRs.
+
+    PRs with the same score at the cut-off share the places that are left, so
+    the result does not depend on the order of the input (as auc() splits ties).
+    """
+    groups: dict[float, list[int]] = defaultdict(lambda: [0, 0])  # score -> [PRs, fixed PRs]
+    for score, hit in prs:
+        groups[score][0] += 1
+        groups[score][1] += hit
+    places = math.ceil(fraction * len(prs))
+    found = 0.0
+    for score in sorted(groups, reverse=True):
+        count, hits = groups[score]
+        taken = min(count, places)
+        found += hits * taken / count
+        places -= taken
+        if not places:
+            break
+    return found / sum(hit for _, hit in prs)
+
+
+def check(repo: str, period: str, prs: list[tuple[float, bool]], left_out: int) -> dict:
     fixed = sum(h for _, h in prs)
-    row = {"repo": repo, "checked_prs": len(prs), "fixed_prs": fixed, "left_out_open": left_out,
+    row = {"repo": repo, "period": period, "checked_prs": len(prs), "fixed_prs": fixed, "left_out_open": left_out,
            "auc": "too_few_fixes", "fixed_in_riskiest_30pct": "too_few_fixes"}
     if fixed >= MIN_FIXES and fixed < len(prs):
-        ranked = sorted(prs, key=lambda p: -p[0])[:math.ceil(0.3 * len(prs))]
         row["auc"] = f"{auc([s for s, _ in prs], [h for _, h in prs]):.3f}"
-        row["fixed_in_riskiest_30pct"] = f"{sum(h for _, h in ranked) / fixed:.3f}"
+        row["fixed_in_riskiest_30pct"] = f"{share_in_riskiest(prs):.3f}"
     return row
 
 
@@ -194,37 +237,43 @@ def rebuild() -> None:
     fixed, open_pairs = outcomes(ef.read(ef.CANDIDATES), ef.read(ef.JUDGMENTS))
 
     totals: dict[tuple[str, str, str], list[int]] = defaultdict(lambda: [0, 0, 0])
-    checked: dict[str, list[tuple[float, bool]]] = defaultdict(list)
-    left_out: dict[str, int] = defaultdict(int)
+    boundaries: dict[tuple[str, str], tuple[int, int]] = {}  # (week, repo) -> size boundaries
+    checked: dict[tuple[str, str], list[tuple[float, bool]]] = defaultdict(list)  # by (repo, period)
+    left_out: dict[tuple[str, str], int] = defaultdict(int)
     for pr in details:
         if pr["repo"] not in ef.REPOS or key(pr) not in banded:
             continue
         week = monday(pr["date"])
         if week + timedelta(days=6 + ef.WINDOW_DAYS) > as_of or (week.isoformat(), pr["repo"]) in gaps:
             continue
-        band, percentile = banded[key(pr)]
+        band, percentile, cuts = banded[key(pr)]
         bucket = totals[(week.isoformat(), pr["repo"], band)]
         bucket[0] += 1
         bucket[1] += key(pr) in fixed
         bucket[2] += open_pairs.get(key(pr), 0)
-        if band == "unable_to_assess":
+        if cuts is None:
             continue
-        for repo in (pr["repo"], "all"):
+        boundaries[(week.isoformat(), pr["repo"])] = cuts
+        for period in periods(pr["date"]):
             if open_pairs.get(key(pr)) and key(pr) not in fixed:
-                left_out[repo] += 1
+                left_out[(pr["repo"], period)] += 1
             else:
-                checked[repo].append((RANK[band] + percentile * 0.99, key(pr) in fixed))
+                checked[(pr["repo"], period)].append((RANK[band] + percentile * 0.99, key(pr) in fixed))
 
-    ef.write(OUTPUT, OUTPUT_HEADER, [
-        {"week": week, "repo": repo, "band": band, "merged_prs": merged, "fixed_prs": hit,
-         "unjudged_candidates": open_count, "fix_rate": f"{hit / merged:.4f}"}
-        for (week, repo, band), (merged, hit, open_count) in sorted(totals.items())])
-    ef.write(CHECK, CHECK_HEADER, [check(repo, checked[repo], left_out[repo])
-                                   for repo in sorted(checked, key=lambda r: (r == "all", r))])
+    rows = []
+    for (week, repo, band), (merged, hit, open_count) in sorted(totals.items()):
+        small_up_to, middle_up_to = boundaries.get((week, repo), ("", "")) if band != "unable_to_assess" else ("", "")
+        rows.append({"week": week, "repo": repo, "band": band, "merged_prs": merged, "fixed_prs": hit,
+                     "unjudged_candidates": open_count, "fix_rate": f"{hit / merged:.4f}",
+                     "small_up_to": small_up_to, "middle_up_to": middle_up_to})
+    ef.write(OUTPUT, OUTPUT_HEADER, rows)
+    # One row per repo and period, never all repos together: a repo with many PRs would hide the others.
+    ef.write(CHECK, CHECK_HEADER, [check(repo, period, checked[(repo, period)], left_out[(repo, period)])
+                                   for repo in ef.REPOS for period in (ALL_WEEKS, AFTER_STUDY)])
     unsized = sum(1 for pr in details if pr["repo"] in ef.REPOS and key(pr) not in sizes)
     if unsized:
         print(f"  {unsized} PRs have no size yet and are left out", file=sys.stderr)
-    print(f"  {len(totals)} weekly band rows in {OUTPUT.name}, {len(checked)} rows in {CHECK.name}")
+    print(f"  {len(totals)} weekly band rows in {OUTPUT.name}, {2 * len(ef.REPOS)} rows in {CHECK.name}")
 
 
 def main() -> None:

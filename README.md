@@ -91,18 +91,26 @@ needed a fix, and whether the bands rank those PRs first in each repository.
 
 The outcome is a later PR that fixed a medium- or high-severity defect from the
 PR within 30 days (`docs/fix-judgments.csv`), for the same closed weeks as the
-escaped-fix rate. The check uses only PRs whose band came from earlier PRs, so
-the rule is tested on PRs it was not fitted on; PRs whose outcome is still open
-(no confirmed fix, and an open candidate) are left out, and a repository with fewer than 20 fixed PRs reports
-`too_few_fixes`. An offline study of nine repositories found that size and
-kind of change rank later fixes about as well as anything else it tried, and
-weakly in some repositories, which is why the check is per repository. The bands
-are advisory: they show where review should look hardest, and never approve
-or merge a PR.
+escaped-fix rate.
+
+The check is per repository and never for all repositories together, because
+a repository with many PRs would hide one the bands cannot be judged on. Each
+repository has two rows: all closed weeks, and only PRs merged since
+1 October 2026. The size thirds always come from earlier weeks, but the rule
+itself (size plus kind of change) came from an offline study of nine
+repositories, including these two, that used PRs merged through September 2026.
+So only the second row checks the rule on PRs that are new to it, and it fills
+in as weeks close. PRs whose outcome is still open (no confirmed fix, and an
+open candidate) are left out, PRs tied at the riskiest-30% cut-off share the
+places that are left, and a row with fewer than 20 fixed PRs reports
+`too_few_fixes`. The study found that size and kind of change rank later fixes
+about as well as anything else it tried, and weakly in some repositories. The
+bands are advisory: they show where review should look hardest, and never
+approve or merge a PR.
 
 | File | Purpose |
 |------|---------|
 | `docs/pr-size.csv` | Changed lines per merged PR, fetched once over GraphQL |
-| `docs/fix-likelihood.csv` | Per week × repo × band: merged PRs, PRs with a medium+ fix, open candidates, rate |
-| `docs/fix-likelihood-check.csv` | Per repo and all repos: PRs checked, fixed PRs, PRs left out because their outcome is still open, AUC of the bands ordered by size inside, share of fixed PRs in the riskiest 30% |
+| `docs/fix-likelihood.csv` | Per week × repo × band: merged PRs, PRs with a medium+ fix, open candidates, rate, and that week's size boundaries (`small_up_to`, `middle_up_to` changed lines) |
+| `docs/fix-likelihood-check.csv` | Per repo × period (`all_weeks`, `since_2026-10-01`): PRs checked, fixed PRs, PRs left out because their outcome is still open, AUC of the bands ordered by size inside, share of fixed PRs in the riskiest 30% |
 | `scripts/collect-fix-likelihood.py` | Run by `collect-escaped-fixes.sh` after the escaped-fix rate, and by the judge writeback with `--rebuild` |

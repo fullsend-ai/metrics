@@ -178,7 +178,7 @@ The dashboard has grown beyond the original single-page overview:
 | Overview | `docs/index.html`, `docs/dashboard.js` | Core SDLC metrics, community, rework, failures |
 | Drill-down | `docs/details.html` | Per-day detail view (linked from overview charts) |
 | Delivered PR types | `docs/delivered-pr-types.html` | Conventional-commit mix + fix-filer attribution |
-| Quality signals | `docs/quality.html`, `docs/quality.js` | 30-day escaped-fix rate (shown first), then defect-labeled and revert-event rates |
+| Quality signals | `docs/quality.html`, `docs/quality.js` | 30-day escaped-fix rate (shown first), fix likelihood by band, then defect-labeled and revert-event rates |
 
 **Navigation:** `index.html`, `delivered-pr-types.html`, and `quality.html` share a tab header. `details.html` is a drill-down page reached from overview charts, not a peer tab.
 
@@ -243,3 +243,21 @@ source is left out (too noisy to judge daily), which makes the rate a lower
 bound. The replay's verdicts seed `fix-judgments.csv`; new pairs are judged
 by the `fix-judge` Fullsend agent (daily, read-only, verdicts re-validated by
 a separate writeback job) or by hand.
+
+### Fix-likelihood collector
+
+Each merged PR gets a band at merge time (`lower`, `middle`, `higher`) from its
+size within the repository's earlier PRs and its kind of change, and the page
+shows how often each band needed a fix, from the escaped-fix judgments:
+
+- `docs/pr-size.csv` — changed lines per merged PR, fetched once over GraphQL
+- `docs/fix-likelihood.csv` — weekly rows per repo and band, for the same
+  closed weeks as `docs/escaped-fixes.csv`, with that week's size boundaries
+- `docs/fix-likelihood-check.csv` — per repo, whether the bands rank the fixed
+  PRs first (AUC, share of fixes in the riskiest 30%), for all closed weeks
+  and for PRs merged after the study that produced the rule
+- `scripts/collect-fix-likelihood.py` — run by `collect-escaped-fixes.sh`
+  after the rate, and with `--rebuild` (no GitHub calls) by the judge
+  writeback, so new verdicts show the same day
+
+The bands are advisory and gate nothing. See the README for the band rule.
