@@ -241,9 +241,9 @@ week,repo,pr_type,merged_prs,escaped_prs,severe_prs,unjudged_candidates,escaped_
 2026-09-28,fullsend,fix,31,5,2,0,0.1613
 2026-09-28,fullsend,other,7,0,0,0,0.0000
 2026-09-28,fullsend,test,10,0,0,0,0.0000
-2026-10-05,agents,all,13,2,0,1,0.1538
+2026-10-05,agents,all,13,2,0,0,0.1538
 2026-10-05,agents,chore,5,0,0,0,0.0000
-2026-10-05,agents,feat,2,2,0,1,1.0000
+2026-10-05,agents,feat,2,2,0,0,1.0000
 2026-10-05,agents,fix,4,0,0,0,0.0000
 2026-10-05,agents,test,2,0,0,0,0.0000
 2026-10-05,fullsend,all,118,5,0,0,0.0424
@@ -255,8 +255,8 @@ week,repo,pr_type,merged_prs,escaped_prs,severe_prs,unjudged_candidates,escaped_
 2026-10-05,fullsend,other,22,1,0,0,0.0455
 2026-10-05,fullsend,perf,1,0,0,0,0.0000
 2026-10-05,fullsend,test,5,1,0,0,0.2000
-2026-10-12,agents,all,11,0,0,2,0.0000
-2026-10-12,agents,chore,2,0,0,2,0.0000
+2026-10-12,agents,all,11,0,0,1,0.0000
+2026-10-12,agents,chore,2,0,0,1,0.0000
 2026-10-12,agents,feat,2,0,0,0,0.0000
 2026-10-12,agents,fix,5,0,0,0,0.0000
 2026-10-12,agents,test,2,0,0,0,0.0000
@@ -275,11 +275,11 @@ week,repo,pr_type,merged_prs,escaped_prs,severe_prs,unjudged_candidates,escaped_
 2026-10-19,agents,feat,7,0,0,0,0.0000
 2026-10-19,agents,fix,15,1,0,1,0.0667
 2026-10-19,agents,test,7,0,0,0,0.0000
-2026-10-19,fullsend,all,116,6,0,4,0.0517
+2026-10-19,fullsend,all,116,7,0,0,0.0603
 2026-10-19,fullsend,chore,13,0,0,0,0.0000
 2026-10-19,fullsend,ci,2,0,0,0,0.0000
-2026-10-19,fullsend,docs,15,0,0,1,0.0000
-2026-10-19,fullsend,feat,13,0,0,3,0.0000
+2026-10-19,fullsend,docs,15,0,0,0,0.0000
+2026-10-19,fullsend,feat,13,1,0,0,0.0769
 2026-10-19,fullsend,fix,53,4,0,0,0.0755
 2026-10-19,fullsend,other,5,0,0,0,0.0000
 2026-10-19,fullsend,test,15,2,0,0,0.1333
