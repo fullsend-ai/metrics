@@ -1984,3 +1984,14 @@ date,bot,items_touched,items_reworked,rework_rate
 2026-11-26,qodo-code-review[bot],8,8,1.000
 2026-11-26,renovate-fullsend[bot],3,3,1.000
 2026-11-26,__aggregate__,165,123,0.745
+2026-11-27,codecov[bot],4,0,0.000
+2026-11-27,fullsend-ai-coder[bot],19,18,0.947
+2026-11-27,fullsend-ai-prioritize[bot],5,4,0.800
+2026-11-27,fullsend-ai-review[bot],22,22,1.000
+2026-11-27,fullsend-ai-scribe[bot],5,2,0.400
+2026-11-27,fullsend-ai-triage[bot],21,19,0.905
+2026-11-27,github-actions[bot],18,15,0.833
+2026-11-27,github-merge-queue[bot],4,1,0.250
+2026-11-27,qodo-code-review[bot],4,3,0.750
+2026-11-27,renovate-fullsend[bot],5,5,1.000
+2026-11-27,__aggregate__,107,89,0.832

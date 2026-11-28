@@ -4255,3 +4255,50 @@ date,repo,type,event,number,actor,title,url
 2026-11-26,agent-eval-harness,pr,reviewed_external,349,Aliciapet11,"feat(eval-run): prepare Fullsend before cases",https://github.com/fullsend-ai/agent-eval-harness/pull/349
 2026-11-26,test-creator,issue,opened_external,107,fege,"Normalize grounded TBDs during test-plan revision",https://github.com/fullsend-ai/test-creator/issues/107
 2026-11-26,test-creator,pr,reviewed_external,106,fege,"chore: update fullsend per-repo installation",https://github.com/fullsend-ai/test-creator/pull/106
+2026-11-27,fullsend,issue,opened_external,9914,Benkapner,"Proposal: one changelog entry per merged PR in release notes",https://github.com/fullsend-ai/fullsend/issues/9914
+2026-11-27,fullsend,issue,opened_external,9913,Benkapner,"docs/cli: move the poll, dispatch and lock reference out of single table rows",https://github.com/fullsend-ai/fullsend/issues/9913
+2026-11-27,fullsend,issue,opened_external,9901,ianw,"Fixup commit subject ""chore: bump fullsend to v0.57.1 [skip ci]"" when it's not bumping fullsend",https://github.com/fullsend-ai/fullsend/issues/9901
+2026-11-27,fullsend,issue,closed_via_pr_external,9901,ianw,"Fixup commit subject ""chore: bump fullsend to v0.57.1 [skip ci]"" when it's not bumping fullsend",https://github.com/fullsend-ai/fullsend/issues/9901
+2026-11-27,fullsend,issue,closed_other_external,9789,gwenneg,"repos install: manage a fullsend lint check",https://github.com/fullsend-ai/fullsend/issues/9789
+2026-11-27,fullsend,issue,closed_other_external,9788,gwenneg,"repos install: manage fullsend lint job for GitLab",https://github.com/fullsend-ai/fullsend/issues/9788
+2026-11-27,fullsend,issue,closed_other_external,9787,gwenneg,"repos install: manage fullsend lint workflow for GitHub",https://github.com/fullsend-ai/fullsend/issues/9787
+2026-11-27,fullsend,pr,reviewed_external,9831,Benkapner,"fix(#9503)!: dispatch built-in agents from Jira without registration",https://github.com/fullsend-ai/fullsend/pull/9831
+2026-11-27,fullsend,pr,reviewed_external,9567,jflowers,"feat(#7414): pass codex tool call ids, arguments and results through",https://github.com/fullsend-ai/fullsend/pull/9567
+2026-11-27,fullsend,pr,reviewed_external,9567,jflowers,"feat(#7414): pass codex tool call ids, arguments and results through",https://github.com/fullsend-ai/fullsend/pull/9567
+2026-11-27,fullsend,pr,reviewed_external,9567,jflowers,"feat(#7414): pass codex tool call ids, arguments and results through",https://github.com/fullsend-ai/fullsend/pull/9567
+2026-11-27,fullsend,pr,reviewed_external,9567,jflowers,"feat(#7414): pass codex tool call ids, arguments and results through",https://github.com/fullsend-ai/fullsend/pull/9567
+2026-11-27,fullsend,pr,reviewed_external,9567,jflowers,"feat(#7414): pass codex tool call ids, arguments and results through",https://github.com/fullsend-ai/fullsend/pull/9567
+2026-11-27,fullsend,pr,reviewed_external,9567,jflowers,"feat(#7414): pass codex tool call ids, arguments and results through",https://github.com/fullsend-ai/fullsend/pull/9567
+2026-11-27,fullsend,pr,reviewed_external,9567,jflowers,"feat(#7414): pass codex tool call ids, arguments and results through",https://github.com/fullsend-ai/fullsend/pull/9567
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,fullsend,pr,reviewed_external,8852,jflowers,"feat(#7824)!: add OpenCode sandbox hook adapter",https://github.com/fullsend-ai/fullsend/pull/8852
+2026-11-27,rfe-creator,issue,opened_external,327,astefanutti,"Retire the stored `initiative` artifact alias: compare a stored type as written (AISDLC-856)",https://github.com/fullsend-ai/rfe-creator/issues/327
+2026-11-27,rfe-creator,issue,closed_other_external,322,astefanutti,"Second Initiative member as a test fixture: descriptor, emulator seed, create-question fixtures (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/issues/322
+2026-11-27,agent-eval-harness,issue,opened_external,351,theobarberbany,"eval-run: support repeated runs per case so threshold gates aren't a coin toss",https://github.com/fullsend-ai/agent-eval-harness/issues/351
+2026-11-27,agent-eval-harness,issue,closed_other_external,337,ravelley,"Stop guard loses active executor when run directory is reused concurrently",https://github.com/fullsend-ai/agent-eval-harness/issues/337
+2026-11-27,agent-eval-harness,pr,reviewed_external,349,astefanutti,"feat(eval-run): prepare Fullsend before cases",https://github.com/fullsend-ai/agent-eval-harness/pull/349
+2026-11-27,agent-eval-harness,pr,reviewed_external,338,astefanutti,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-27,epic-creator,pr,reviewed_external,60,astefanutti,"[AISDLC-172] Re-review failed epic reviews after unchanged revisions",https://github.com/fullsend-ai/epic-creator/pull/60
+2026-11-27,agents,issue,opened_external,2191,ianw,"triage: jira: discussion using ""Resolution"" field when transitioning issue to Closed",https://github.com/fullsend-ai/agents/issues/2191
+2026-11-27,metrics-executor,issue,opened_external,3,lipka28,"Simple fullsend test",https://github.com/fullsend-ai/metrics-executor/issues/3
+2026-11-27,metrics-executor,issue,closed_other_external,3,lipka28,"Simple fullsend test",https://github.com/fullsend-ai/metrics-executor/issues/3
+2026-11-27,metrics-executor,pr,reviewed_external,4,lipka28,"docs: add test comment to architecture doc",https://github.com/fullsend-ai/metrics-executor/pull/4
+2026-11-27,metrics-executor,pr,reviewed_external,4,lipka28,"docs: add test comment to architecture doc",https://github.com/fullsend-ai/metrics-executor/pull/4
+2026-11-27,metrics-executor,pr,reviewed_external,4,lipka28,"docs: add test comment to architecture doc",https://github.com/fullsend-ai/metrics-executor/pull/4
+2026-11-27,devlake-telemetry-sidecar,issue,opened_external,1,lipka28,"Simple fullsend test",https://github.com/fullsend-ai/devlake-telemetry-sidecar/issues/1
+2026-11-27,devlake-telemetry-sidecar,issue,closed_other_external,1,lipka28,"Simple fullsend test",https://github.com/fullsend-ai/devlake-telemetry-sidecar/issues/1
+2026-11-27,devlake-telemetry-sidecar,pr,reviewed_external,3,lipka28,"docs(readme): add non-rendering fullsend test comment",https://github.com/fullsend-ai/devlake-telemetry-sidecar/pull/3
+2026-11-27,devlake-telemetry-sidecar,pr,reviewed_external,3,lipka28,"docs(readme): add non-rendering fullsend test comment",https://github.com/fullsend-ai/devlake-telemetry-sidecar/pull/3
+2026-11-27,devlake-telemetry-sidecar,pr,reviewed_external,2,lipka28,"docs(readme): add non-rendering test comment",https://github.com/fullsend-ai/devlake-telemetry-sidecar/pull/2
+2026-11-27,orgpulse,issue,opened_external,8,lipka28,"Simple fullsend test",https://github.com/fullsend-ai/orgpulse/issues/8
+2026-11-27,orgpulse,issue,closed_other_external,8,lipka28,"Simple fullsend test",https://github.com/fullsend-ai/orgpulse/issues/8
+2026-11-27,orgpulse,pr,reviewed_external,10,lipka28,"docs(workflows): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/10
+2026-11-27,orgpulse,pr,reviewed_external,10,lipka28,"docs(workflows): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/10
+2026-11-27,orgpulse,pr,reviewed_external,10,lipka28,"docs(workflows): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/10
+2026-11-27,orgpulse,pr,reviewed_external,9,lipka28,"docs(e2e): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/9

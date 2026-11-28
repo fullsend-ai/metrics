@@ -2796,3 +2796,9 @@ date,repo,number,title,pr_type,fix_source,issue_number,issue_author,url
 2026-11-26,fullsend,9870,"refactor(#9865): add Forgejo pull-request, branch, and status operations",other,,,,https://github.com/fullsend-ai/fullsend/pull/9870
 2026-11-26,fullsend,9869,"refactor(#9864): add Forgejo issue, comment, and label operations",other,,,,https://github.com/fullsend-ai/fullsend/pull/9869
 2026-11-26,agents,2189,feat(#2187): reconcile GitHub finding threads after fix runs,feat,,,,https://github.com/fullsend-ai/agents/pull/2189
+2026-11-27,fullsend,9910,fix(#9901): only label scaffold commits as a bump on version change,fix,external,9901,ianw,https://github.com/fullsend-ai/fullsend/pull/9910
+2026-11-27,fullsend,9896,refactor(#9583): read the GitHub closing actor from the latest close event,other,,,,https://github.com/fullsend-ai/fullsend/pull/9896
+2026-11-27,fullsend,9894,chore(deps): update dependency @types/node to v22.20.7,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9894
+2026-11-27,fullsend,9877,chore(deps): update experiments digest to 8dced36,chore,,,,https://github.com/fullsend-ai/fullsend/pull/9877
+2026-11-27,agents,2190,feat(#2188): resolve review threads of findings a change fixed,feat,,,,https://github.com/fullsend-ai/agents/pull/2190
+2026-11-27,agents,2059,fix(#2058): print ::add-mask:: only on GitHub Actions,fix,core,2058,ascerra,https://github.com/fullsend-ai/agents/pull/2059

@@ -20974,3 +20974,67 @@ date,repo,type,event,number,title,url
 2026-11-26,agents,issue,opened,2185,"review: re-review comment verdicts strand newly-introduced actionable findings — no fix dispatch, no tracking, no merge block",https://github.com/fullsend-ai/agents/issues/2185
 2026-11-26,agents,issue,closed,2187,"Fix agent should reconcile GitHub finding threads",https://github.com/fullsend-ai/agents/issues/2187
 2026-11-26,agents,issue,closed,306,"Code-implementation skill extracts contextual Jira references from issue body, producing invalid PR titles",https://github.com/fullsend-ai/agents/issues/306
+2026-11-27,fullsend,pr,opened,9915,"docs(#9913): move poll, dispatch and lock reference to own pages",https://github.com/fullsend-ai/fullsend/pull/9915
+2026-11-27,fullsend,pr,opened,9912,"chore(deps): update dependency ty to v0.0.112",https://github.com/fullsend-ai/fullsend/pull/9912
+2026-11-27,fullsend,pr,opened,9910,"fix(#9901): only label scaffold commits as a bump on version change",https://github.com/fullsend-ai/fullsend/pull/9910
+2026-11-27,fullsend,pr,opened,9900,"chore(deps): update dependency sigstore/cosign to v3.1.6",https://github.com/fullsend-ai/fullsend/pull/9900
+2026-11-27,fullsend,pr,opened,9899,"chore(jirapoll): merge main into feat/jirapoll-skip-idle",https://github.com/fullsend-ai/fullsend/pull/9899
+2026-11-27,fullsend,pr,opened,9898,"feat(jirapoll)!: serve issues oldest first up to a per-cycle limit",https://github.com/fullsend-ai/fullsend/pull/9898
+2026-11-27,fullsend,pr,merged,9910,"fix(#9901): only label scaffold commits as a bump on version change",https://github.com/fullsend-ai/fullsend/pull/9910
+2026-11-27,fullsend,pr,merged,9896,"refactor(#9583): read the GitHub closing actor from the latest close event",https://github.com/fullsend-ai/fullsend/pull/9896
+2026-11-27,fullsend,pr,merged,9894,"chore(deps): update dependency @types/node to v22.20.7",https://github.com/fullsend-ai/fullsend/pull/9894
+2026-11-27,fullsend,pr,merged,9877,"chore(deps): update experiments digest to 8dced36",https://github.com/fullsend-ai/fullsend/pull/9877
+2026-11-27,fullsend,pr,closed,9798,"feat(#9787): manage a fullsend lint workflow for GitHub repos",https://github.com/fullsend-ai/fullsend/pull/9798
+2026-11-27,fullsend,pr,closed,7595,"fix(#4016): split GitHub preflight into CONNECT, REST, GraphQL",https://github.com/fullsend-ai/fullsend/pull/7595
+2026-11-27,fullsend,pr,closed,7587,"fix(#3419): warn when the fix agent produces no commits",https://github.com/fullsend-ai/fullsend/pull/7587
+2026-11-27,fullsend,pr,closed,7576,"fix(#2905): honor repo Co-authored-by prohibitions",https://github.com/fullsend-ai/fullsend/pull/7576
+2026-11-27,fullsend,pr,closed,7571,"docs(#2719): document pre-commit tools registry in AGENTS.md",https://github.com/fullsend-ai/fullsend/pull/7571
+2026-11-27,fullsend,issue,opened,9914,"Proposal: one changelog entry per merged PR in release notes",https://github.com/fullsend-ai/fullsend/issues/9914
+2026-11-27,fullsend,issue,opened,9913,"docs/cli: move the poll, dispatch and lock reference out of single table rows",https://github.com/fullsend-ai/fullsend/issues/9913
+2026-11-27,fullsend,issue,opened,9911,"Measure and visualize merge-queue throughput and latency",https://github.com/fullsend-ai/fullsend/issues/9911
+2026-11-27,fullsend,issue,opened,9909,"Resolve change_proposal.approval.gate for GitHub pull requests in the entity adapter",https://github.com/fullsend-ai/fullsend/issues/9909
+2026-11-27,fullsend,issue,opened,9908,"Expose GitHub entity text facts (title, body, comment and review text, commands) through the content-safety pipeline",https://github.com/fullsend-ai/fullsend/issues/9908
+2026-11-27,fullsend,issue,opened,9907,"Normalize legacy tracker config in memory to provider-named connections",https://github.com/fullsend-ai/fullsend/issues/9907
+2026-11-27,fullsend,issue,opened,9906,"Bind named GitHub and GitLab connections to host-scoped credentials",https://github.com/fullsend-ai/fullsend/issues/9906
+2026-11-27,fullsend,issue,opened,9905,"Wire entity kinds and filters into harness configuration",https://github.com/fullsend-ai/fullsend/issues/9905
+2026-11-27,fullsend,issue,opened,9904,"Provision credentials for named Jira connections",https://github.com/fullsend-ai/fullsend/issues/9904
+2026-11-27,fullsend,issue,opened,9903,"Port fullsend repos lifecycle to canonical tracker connections",https://github.com/fullsend-ai/fullsend/issues/9903
+2026-11-27,fullsend,issue,opened,9902,"Port runtime and CLI tracker consumers to canonical connections",https://github.com/fullsend-ai/fullsend/issues/9902
+2026-11-27,fullsend,issue,opened,9901,"Fixup commit subject ""chore: bump fullsend to v0.57.1 [skip ci]"" when it's not bumping fullsend",https://github.com/fullsend-ai/fullsend/issues/9901
+2026-11-27,fullsend,issue,closed,9901,"Fixup commit subject ""chore: bump fullsend to v0.57.1 [skip ci]"" when it's not bumping fullsend",https://github.com/fullsend-ai/fullsend/issues/9901
+2026-11-27,fullsend,issue,closed,9789,"repos install: manage a fullsend lint check",https://github.com/fullsend-ai/fullsend/issues/9789
+2026-11-27,fullsend,issue,closed,9788,"repos install: manage fullsend lint job for GitLab",https://github.com/fullsend-ai/fullsend/issues/9788
+2026-11-27,fullsend,issue,closed,9787,"repos install: manage fullsend lint workflow for GitHub",https://github.com/fullsend-ai/fullsend/issues/9787
+2026-11-27,rfe-creator,pr,opened,328,"A stored type is compared as written; try_canonical goes (AISDLC-856)",https://github.com/fullsend-ai/rfe-creator/pull/328
+2026-11-27,rfe-creator,pr,opened,326,"Docs: the fixture member walkthrough, the enable checklist, the deferred eval (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/326
+2026-11-27,rfe-creator,pr,merged,326,"Docs: the fixture member walkthrough, the enable checklist, the deferred eval (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/326
+2026-11-27,rfe-creator,pr,merged,325,"Emulator HOOLI seed and the fixture member's integration tests (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/pull/325
+2026-11-27,rfe-creator,issue,opened,327,"Retire the stored `initiative` artifact alias: compare a stored type as written (AISDLC-856)",https://github.com/fullsend-ai/rfe-creator/issues/327
+2026-11-27,rfe-creator,issue,closed,322,"Second Initiative member as a test fixture: descriptor, emulator seed, create-question fixtures (AISDLC-854)",https://github.com/fullsend-ai/rfe-creator/issues/322
+2026-11-27,agent-eval-harness,pr,merged,338,"fix(stop-guard): give each executor its own pidfile",https://github.com/fullsend-ai/agent-eval-harness/pull/338
+2026-11-27,agent-eval-harness,issue,opened,351,"eval-run: support repeated runs per case so threshold gates aren't a coin toss",https://github.com/fullsend-ai/agent-eval-harness/issues/351
+2026-11-27,agent-eval-harness,issue,closed,337,"Stop guard loses active executor when run directory is reused concurrently",https://github.com/fullsend-ai/agent-eval-harness/issues/337
+2026-11-27,agents,pr,opened,2193,"fix(#2192): mask the review token only on GitHub Actions",https://github.com/fullsend-ai/agents/pull/2193
+2026-11-27,agents,pr,merged,2190,"feat(#2188): resolve review threads of findings a change fixed",https://github.com/fullsend-ai/agents/pull/2190
+2026-11-27,agents,pr,merged,2059,"fix(#2058): print ::add-mask:: only on GitHub Actions",https://github.com/fullsend-ai/agents/pull/2059
+2026-11-27,agents,issue,opened,2194,"A vulnerability gets assessed again for every tracker that points at the same commit",https://github.com/fullsend-ai/agents/issues/2194
+2026-11-27,agents,issue,opened,2192,"post-review prints the review token to the job log outside GitHub Actions when the token is not a masked CI/CD variable",https://github.com/fullsend-ai/agents/issues/2192
+2026-11-27,agents,issue,opened,2191,"triage: jira: discussion using ""Resolution"" field when transitioning issue to Closed",https://github.com/fullsend-ai/agents/issues/2191
+2026-11-27,agents,issue,closed,2188,"Review agent should resolve evidence-confirmed prior finding threads",https://github.com/fullsend-ai/agents/issues/2188
+2026-11-27,agents,issue,closed,2058,"post-code prints the push token to the job log outside GitHub Actions when the token is not a masked CI/CD variable",https://github.com/fullsend-ai/agents/issues/2058
+2026-11-27,metrics-executor,pr,opened,4,"docs: add test comment to architecture doc",https://github.com/fullsend-ai/metrics-executor/pull/4
+2026-11-27,metrics-executor,pr,closed,4,"docs: add test comment to architecture doc",https://github.com/fullsend-ai/metrics-executor/pull/4
+2026-11-27,metrics-executor,issue,opened,3,"Simple fullsend test",https://github.com/fullsend-ai/metrics-executor/issues/3
+2026-11-27,metrics-executor,issue,closed,3,"Simple fullsend test",https://github.com/fullsend-ai/metrics-executor/issues/3
+2026-11-27,devlake-telemetry-sidecar,pr,opened,3,"docs(readme): add non-rendering fullsend test comment",https://github.com/fullsend-ai/devlake-telemetry-sidecar/pull/3
+2026-11-27,devlake-telemetry-sidecar,pr,opened,2,"docs(readme): add non-rendering test comment",https://github.com/fullsend-ai/devlake-telemetry-sidecar/pull/2
+2026-11-27,devlake-telemetry-sidecar,pr,closed,3,"docs(readme): add non-rendering fullsend test comment",https://github.com/fullsend-ai/devlake-telemetry-sidecar/pull/3
+2026-11-27,devlake-telemetry-sidecar,pr,closed,2,"docs(readme): add non-rendering test comment",https://github.com/fullsend-ai/devlake-telemetry-sidecar/pull/2
+2026-11-27,devlake-telemetry-sidecar,issue,opened,1,"Simple fullsend test",https://github.com/fullsend-ai/devlake-telemetry-sidecar/issues/1
+2026-11-27,devlake-telemetry-sidecar,issue,closed,1,"Simple fullsend test",https://github.com/fullsend-ai/devlake-telemetry-sidecar/issues/1
+2026-11-27,orgpulse,pr,opened,10,"docs(workflows): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/10
+2026-11-27,orgpulse,pr,opened,9,"docs(e2e): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/9
+2026-11-27,orgpulse,pr,closed,10,"docs(workflows): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/10
+2026-11-27,orgpulse,pr,closed,9,"docs(e2e): add fullsend smoke-test comment",https://github.com/fullsend-ai/orgpulse/pull/9
+2026-11-27,orgpulse,issue,opened,8,"Simple fullsend test",https://github.com/fullsend-ai/orgpulse/issues/8
+2026-11-27,orgpulse,issue,closed,8,"Simple fullsend test",https://github.com/fullsend-ai/orgpulse/issues/8
